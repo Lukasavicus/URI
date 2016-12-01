@@ -1,0 +1,8 @@
+Problems List and Probable Solutions Strategies:
+
+URI
+
+1478 - Knapsack w/ repetitions;
+1608 - Greedy -> Determine the cost of each cake, sort, and pick the cheapest;
+1029 - Brute-Force -> Using a global variable calculate how many call functions are made;
+1905 - Brute-Force -> 
