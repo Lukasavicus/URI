@@ -3,24 +3,16 @@
 #include <stdio.h>
 
 #define MAXN 200
+#define MAXF 1000
 
-int founded[2*MAXN];
-int qnt_diff = 0;
-
-int present(int f){
-	int i;
-	for(i = 0; i < qnt_diff; i++)
-		if(founded[i] == f)
-			break;
-
-	return (i != qnt_diff);
-}
-
-
-main(){
+int main(){
+	int founded[MAXF];
 	int m[MAXN][MAXN];
 
 	int n, qnt_diff = 0, i, j, pi, pj, f;
+
+	for(i = 0; i < MAXF; i++)
+		founded[i] = 0;
 
 	scanf("%d", &n);
 
@@ -35,10 +27,14 @@ main(){
 	for(i = 0; i < n; i++){
 		scanf("%d %d", &pi, &pj);
 		f = m[pi-1][pj-1];
-		if(!present(f)){
-			founded[qnt_diff++] = f;
-		}
+		founded[f-1]++;
 	}
 
-	printf("%d\n", qnt_diff-1);
+	for(i = 0, qnt_diff = 0; i < MAXF; i++)
+		if(founded[i])
+			qnt_diff++;
+
+	printf("%d\n", qnt_diff);
+
+	return 0;
 }

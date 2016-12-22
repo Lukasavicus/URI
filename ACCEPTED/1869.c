@@ -2,8 +2,10 @@
 
 #include <stdio.h>
 
-void n10to32(int n){
-	int div;
+typedef unsigned long long int ulli;
+
+void n10to32(ulli n){
+	ulli div;
 
 	div = n / 32;
 	if(div != 0){
@@ -21,13 +23,13 @@ void n10to32(int n){
 }
 
 void main(){
-	int n;
+	ulli n;
 
 	while(1){
-		scanf("%d", &n);
-		if(n == 0)
-			break;
+		scanf("%llu", &n);
 		n10to32(n);
 		printf("\n");
+		if(n == 0)
+			break;
 	}
 }
