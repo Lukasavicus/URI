@@ -7,17 +7,23 @@
 </head>
 <body>
 	<div>
-		<input type="number" name="pid" id="_pid">
-		<button id="search_prob" onclick="update()"> Search </button>
+		<input type="number" name="pid" id="_pid" min="1001" placeholder="Ex.: 1001">
+		<button id="search_prob" onclick="update_search()"> Search </button>
+		<button id="next" onclick="update_next()"> Next problem </button>
+		<button id="previous" onclick="update_previous()"> Previous problem </button>
 	</div>
 
-	<div align="center">
+	<div align="center" width="90%">
 
-		<object id='myPdfObject' type='application/pdf' width="90%" height="500 px">
-			<embed id='myPdfEmbed' type='application/pdf' width="90%" height="500 px"></embed>
-		</object>
+		<div  style="float: left">
+			<object id='myPdfObject' type='application/pdf' width="800 px" height="500 px">
+				<embed id='myPdfEmbed' type='application/pdf'></embed>
+			</object>
+		</div>
 
-		<div width="70%" height="500 px">
+		<button id="_toggle" onclick="toggle_code_viz()">Show me dat Code!</button>
+
+		<div width="70%" height="500 px" id="_div_code" style="display:none">
 			<pre>
 				<code id="_code" class="language-clike"></code>
 			</pre>
@@ -27,21 +33,36 @@
 
 	<script type="text/javascript">
 
-		document.onload = update();
+		var pid = 1001;
+		var toggle = false;
+		document.onload = update(pid);
 
-		function update(){
-			var pid = document.getElementById('_pid').value || 1001;
-			//loadProblemPDFById(pid);
-			loadProblemPDFById2();
+		function update(pid){
+			loadProblemPDFById(pid);
 			loadSolutionCodeById(pid);
+			document.getElementById('_pid').value = pid;
+
+			document.getElementById("_div_code").style.display = "none";
+			document.getElementById("_toggle").innerHTML = "Show me dat Code!";
+			toggle = false;
+		}
+
+		function update_search(){
+			pid = document.getElementById('_pid').value;
+			update(pid);
+		}
+
+		function update_next(){
+			update(++pid);
+		}
+
+		function update_previous(){
+			if(pid > 1001)
+				update(--pid);
 		}
 
 		function loadProblemPDFById(pid){
-			//var pdfUrl = "./URI-Problems/" + pid + ".pdf";
-
-			//var pdfUrl = "https://github.com/Lukasavicus/URI/blob/master/URI-Problems/1001.pdf";
-
-			var pdfUrl = "https://raw.githubusercontent.com/Lukasavicus/URI/master/URI-Problems/1001.pdf";
+			var pdfUrl = "./URI-Problems/" + pid + ".pdf";
 
 			var pdfViewerObject = document.getElementById("myPdfObject");
 			pdfViewerObject.setAttribute("data", pdfUrl);
@@ -52,12 +73,6 @@
 			pdfViewerEmbed.outerHTML = pdfViewerEmbed.outerHTML.replace(/src="(.+?)"/, 'src="' + pdfUrl + '"');
 		}
 
-		function loadProblemPDFById2(){
-			var pdfUrl = "https://github.com/Lukasavicus/URI/blob/master/URI-Problems/1001.pdf";
-			//var pdfUrl = "https://raw.githubusercontent.com/Lukasavicus/URI/master/URI-Problems/1001.pdf";
-			loadXMLFile(pdfUrl);
-		}
-
 		function loadSolutionCodeById(pid){
 			var code = "https://raw.githubusercontent.com/Lukasavicus/URI/master/ACCEPTED/" + pid;
 			loadXMLDoc(code);
@@ -65,13 +80,14 @@
 
 		function loadXMLDoc(theURL, extension_idx = 0){
 			var extensions = ['.c', '.cpp'];
+			var number_of_possible_attempts = extensions.length;
 			url_and_extension = theURL + extensions[extension_idx];
-	       if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari, SeaMonkey
-	           xmlhttp=new XMLHttpRequest();
-	       }
-	       else{// code for IE6, IE5
-	           xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
-	       }
+			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari, SeaMonkey
+				xmlhttp=new XMLHttpRequest();
+			}
+			else{// code for IE6, IE5
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
 
 	       xmlhttp.onreadystatechange=function(){
 	           if (xmlhttp.readyState==4){
@@ -85,32 +101,30 @@
 		            	document.getElementById("_code").innerHTML = code_formatted;
 		            }
 		            else if(xmlhttp.status==400 || xmlhttp.status==404){
-		            	loadXMLDoc(theURL, extension_idx+1);
+		            	if(extension_idx <= number_of_possible_attempts)
+		            		loadXMLDoc(theURL, extension_idx+1);
+		            	else{
+		            		document.getElementById("_div_code").innerHTML = "Sorry, I don't have this answer!";
+		            	}
 		            }
 	           }
 	       }
 
 	       xmlhttp.open("GET", url_and_extension, false);
 	       xmlhttp.send();
-	   }
+		}
 
-	   	function loadXMLFile(theURL){
-			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari, SeaMonkey
-				xmlhttp=new XMLHttpRequest();
+		function toggle_code_viz(){
+			if(toggle){
+				document.getElementById("_div_code").style.display = "none";
+				document.getElementById("_toggle").innerHTML = "Show me dat Code!";
 			}
-			else{// code for IE6, IE5
-				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			else{
+				document.getElementById("_div_code").style.display = "block";
+				document.getElementById("_toggle").innerHTML = "Hide solution";
 			}
-
-	          xmlhttp.onreadystatechange=function(){
-	              if (xmlhttp.readyState==4 && xmlhttp.status==200){
-	   	            	alert(xmlhttp.responseText);
-	   	            }
-	          }
-
-	          xmlhttp.open("GET", theURL, false);
-	          xmlhttp.send();
-	    }
+			toggle = !toggle;
+		}
 
 	</script>
 
