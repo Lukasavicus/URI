@@ -48,6 +48,29 @@ def insert_update_problem(id, name, category, solved_num, level):
     
     return (cursor.rowcount != 0)
 
+def insert_update_problem(cursor, id, name, category, solved_num, level):
+    
+    select_cmd = """SELECT * FROM problems WHERE id=(%s)""";# + id + ";"
+    #print(select_cmd)
+    cursor.execute(select_cmd, (id))
+    result_sel = cursor.fetchone()
+    
+    print("sel: ")
+    print(result_sel)
+
+    #insert_cmd = """INSERT INTO problems VALUES(" + id + ", \"" + name + "\", " + category + ", " + solved_num + ", " + level + ");""";
+    insert_cmd = """INSERT INTO problems VALUES(%s,\"%s\",%s,%s,%s)""";
+
+    #print(insert_cmd)
+    if(result_sel == None):
+        cursor.execute(insert_cmd, (id, name, category, solved_num, level))
+        result_ins = cursor.fetchall()
+        print(insert_cmd)
+        print("ins: ")
+        print(result_ins)
+    return (cursor.fetchone() != None)
+>>>>>>> 186b778ab81d81181f0e78868ecd164759003144
+
 def craw_problems():
     print("craw_problems()")
     num_pages = get_num_pages();
@@ -70,9 +93,17 @@ def craw_problems():
             try:
                 category = categories.index(category_text) + 1
             except ValueError:
+<<<<<<< HEAD
                 category = 10
+=======
+                category = 0
+>>>>>>> 186b778ab81d81181f0e78868ecd164759003144
 
             #print(identifier + "\t" + name + "\t" + category_text + "\t" + solved_by_x_users + "\t" + level +  "\n")
             category = str(category)
             cursor = get_cursor()
+<<<<<<< HEAD
             insert_update_problem(identifier, name, category, solved_by_x_users, level)
+=======
+            insert_update_problem(cursor, identifier, name, category, solved_by_x_users, level)
+>>>>>>> 186b778ab81d81181f0e78868ecd164759003144

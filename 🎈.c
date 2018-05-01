@@ -42,7 +42,6 @@
 	/* --------------------------------------------------------------- */
 	// Other Variables
 	lli TC = 0; // Test cases var
-
 /* ======================================================================= */
 
 
@@ -83,6 +82,16 @@
 	//ordenacao asc e desc; (compare)
 
 	// ordenacao lexicografica asc e desc (compare)
+	
+	//Cálculos de áreas
+
+	//Exponenciação Rápida
+
+	//RSA e Cripto
+
+	//ordenação asc e desc; (compare)
+
+	// ordenação lexicográfica asc e desc (compare)
 
 /* ======================================================================= */
 
@@ -376,6 +385,7 @@
 			
 			Hyperbolic functions
 			cosh			Compute hyperbolic cosine
+			Hyperbolic functions			cosh			Compute hyperbolic cosine
 			sinh			Compute hyperbolic sine
 			tanh			Compute hyperbolic tangent
 			acosh 			Compute area hyperbolic cosine
@@ -384,6 +394,7 @@
 			
 			Exponential and logarithmic functions
 			exp			Compute exponential function
+			Exponential and logarithmic functions			exp			Compute exponential function
 			frexp			Get significand and exponent
 			ldexp			Generate value from significand and exponent
 			log			Compute natural logarithm
@@ -412,6 +423,15 @@
 			
 			Rounding and remainder functions
 			ceil			Round up value
+			Power functions			pow			Raise to power
+			sqrt			Compute square root
+			cbrt 			Compute cubic root
+			hypot 			Compute hypotenuse
+			Error and gamma functions			erf 			Compute error function
+			erfc 			Compute complementary error function
+			tgamma 			Compute gamma function
+			lgamma 			Compute log-gamma function
+			Rounding and remainder functions			ceil			Round up value
 			floor			Round down value
 			fmod			Compute remainder of division
 			trunc 			Truncate value
@@ -438,6 +458,14 @@
 			
 			Other functions
 			fabs			Compute absolute value
+			Floating-point manipulation functions			copysign 			Copy sign
+			nan 			Generate quiet NaN
+			nextafter 			Next representable value
+			nexttoward 			Next representable value toward precise value
+			Minimum, maximum, difference functions			fdim 			Positive difference
+			fmax 			Maximum value
+			fmin 			Minimum value
+			Other functions			fabs			Compute absolute value
 			abs			Compute absolute value
 			fma 			Multiply-add
 		}

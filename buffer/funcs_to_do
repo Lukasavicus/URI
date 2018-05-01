@@ -1,0 +1,5 @@
+read until EOF;
+split integer number into array of digits
+compose a integer number by the number that compose it
+
+count how many digits an int have
