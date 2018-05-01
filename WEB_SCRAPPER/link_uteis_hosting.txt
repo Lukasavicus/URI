@@ -1,0 +1,15 @@
+https://stackoverflow.com/questions/14047979/executing-python-script-in-php-and-exchanging-data-between-the-two
+
+https://docs.python.org/2/library/simplexmlrpcserver.html#simplexmlrpcserver-example
+
+https://en.wikipedia.org/wiki/XML-RPC#Data_types
+
+https://www.youtube.com/watch?v=gpSJ0_rwTcA
+
+http://docs.python-guide.org/en/latest/scenarios/web/
+
+https://github.com/alex-sherman/python-jrpc
+
+https://www.simple-is-better.org/rpc/
+
+https://docs.pylonsproject.org/projects/webob/en/stable/jsonrpc-example.html
