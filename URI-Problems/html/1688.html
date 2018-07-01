@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1688 - Nim Intergalático</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1688 - Nim Intergalático" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1688</span>
+                <h1>Nim Intergalático</h1>
+                <div>
+                    <p>Por Felipe Rasinhas, IME <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Durante sua última visita ao planeta Tatooine, Han Solo foi capturado por mercenários de Jabba, the Hutt e levado ao seu palácio. Jabba, sabendo que Solo não tem dinheiro para pagar sua dívida propôs um acordo. Ambos iriam disputar uma partida de Nim Intergalático e, se Han vencesse sua dívida estaria paga, caso contrário, sua dívida seria duplicada.</p>
+
+                    <p>O Nim Intergalático é uma variação do conhecido jogo de Nim, onde pedras são arrumadas em colunas e em cada rodada um jogador tem que remover uma ou mais pedras de uma das colunas. O jogador que não puder realizar mais movimentos é considerado o perdedor. No caso do Nim Intergalático um dos jogadores (nesse caso Jabba) escolhe um número N (N &lt;= 10^18) e as pedras são colocadas em N colunas sendo que a i-ésima coluna contém i pedras (primeira coluna com 1 pedra, segunda coluna com 2 pedras, e assim por diante).</p>
+
+                    <p>Tendo vasto conhecimento sobre esse tipo de jogos, e sabendo que quem faz o primeiro movimento (nesse caso Jabba) tem maior chance de ganhar, Han sugeriu uma pequena modificação no jogo. Ele poderia escolher três inteiros A, B e K e adicionar K pedras a todas as colunas entre A e B inclusive. Jabba aceitou sua proposta mas com uma limitação: o conselheiro de Jabba vai considerar Q possíveis operações deste tipo e Solo deve aplicar cada uma destas operações independentemente ao jogo original. Como Han não está acompanhado de seu fiel companheiro Chewbacca (que costuma ajuda-lo nessas situações), ele pediu para você ajuda-lo a vencer Jabba.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste e termina com <strong>EOF</strong>.</p>
+                    
+                    <p>A primeira linha do teste consiste de dois inteiros <strong>N</strong> (<strong>N</strong> &lt;= <strong>10<sup>18</sup></strong>) e <strong>Q</strong> (<strong>Q</strong> &lt;= <strong>10<sup>5</sup></strong>), o número escolhido por Jabba e a quantidade de operações na lista do conselheiro respectivamente.</p>
+
+                    <p>As <strong>Q</strong> próximas linhas consistirão de <strong>3</strong> inteiros <strong>A</strong>, <strong>B</strong> (<strong>1</strong> &lt;= <strong>A</strong> &lt;= <strong>B</strong> &lt;= <strong>N</strong>) e <strong>K</strong> (<strong>-A</strong> &lt;= <strong>K</strong> &lt;= <strong>10<sup>18</sup></strong>) descrevendo as operações escolhidas pelo conselheiro.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, a saída consiste em <strong>Q</strong> linhas contendo o vencedor do jogo (considerando que ambos jogam de forma ótima) para cada uma das <strong>Q</strong> operações sugeridas pelo conselheiro. </p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>8 3</p>
+
+                                <p>4 6 5</p>
+
+                                <p>3 6 -2</p>
+
+                                <p>1 1 8</p>
+
+                            </td>
+                            <td>
+                                <p>JABBA</p>
+
+                                <p>JABBA</p>
+
+                                <p>HAN</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    As operações selecionadas pelo conselheiro são independentes.</br>
+                    Contest Road to Fortaleza II 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

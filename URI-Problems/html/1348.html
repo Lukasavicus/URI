@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1348 - X-Mart</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1348 - X-Mart" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1348</span>
+            <h1>X-Mart</h1>
+            <div><p>Por Guilherme Ottoni <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    A bem conhecida rede de supermercados X-Mart decidiu cortar custos, reduzindo o número de diferentes produtos disponíveis nas prateleiras de suas lojas. O departamento de marketing ficou preocupado se esta decisão afetaria as vendas, e decidiu explorar a redução dos produtos para promover a relação com clientes.</p>
+
+                <p>
+                    Para tal, a rede de supermercados X-Mart organizou uma votação na Internet, na qual os clientes poderiam escolher quais produtos eles gostariam que permanecessem nas prateleiras, e quais produtos eles gostariam que fossem retirados destas. A lista dos produtos disponíveis atualmente foi publicada na Internet.</p>
+
+                <p>
+                    Para simplificar o sistema de votação, foi permitido a cada consumidor escolher no máximo dois produtos para votar a favor (significando que o supermercado deveria continuar a vender estes) e no máximo dois produtos para votar contra (significando que o supermercado deveria parar de vender estes).</p>
+
+                <p>
+                    Sendo que o departamento de marketing possui todos os votos em sua base de dados, este quer saber se é possível escolher uma nova lista de produtos que satisfaça TODOS os clientes que votaram. O departamento de marketing considera que um cliente estará satisfeito se pelo menos um dos produtos que ele/ela votou a favor continua sendo vendido, e se pelo menos um dos produtos que ele/ela votou contra foi removido das prateleiras dos supermercados. Você pode considerar que um cliente não vota a favor e contra um mesmo produto.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Seu programa deverá processar diversos casos de teste. A primeira linha de um caso de teste contém dois inteiros <strong>C</strong> e <strong>P</strong>, representando respectivamente o número de clientes e o número de produtos no teste (1 ≤ <strong>C</strong> ≤ 1000 e 1 ≤ <strong>P</strong> ≤ 10000). Cada uma das próximas <strong>C</strong> linhas descreve a preferência de um cliente, representada por quatro inteiros <strong>X</strong>, <strong>Y</strong>, <strong>S</strong> e <strong>T</strong> (0 ≤ <strong>X</strong>, <strong>Y</strong>, <strong>S</strong>, <strong>T</strong> ≤ <strong>P</strong>). <strong>X</strong> e <strong>Y</strong> são os produtos que o cliente quer que o supermercado continue vendendo, <strong>S</strong> e <strong>T</strong> são os produtos que o cliente quer que o supermercado pare de vender. Um valor 0 (zero) para qualquer uma das variáveis <strong>X</strong>, <strong>Y</strong>, <strong>S</strong> e <strong>T</strong> significa que o cliente não está fazendo uso daquele voto. Uma linha com <strong>C</strong> = <strong>P</strong> = 0 indica o fim da entrada.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste seu programa deve imprimir uma linha, contendo ou a palavra 'yes' (se é possível satisfazer a todos os clientes que votaram) ou a palavra 'no' (se não é possível).</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                        <p>
+                            3 4<br />
+                            1 2 3 4<br />
+                            3 4 1 2<br />
+                            2 3 1 4<br />
+                            4 4<br />
+                            1 2 3 4<br />
+                            3 4 1 2<br />
+                            1 3 2 4<br />
+                            1 4 2 3<br />
+                            4 4<br />
+                            1 2 3 4<br />
+                            3 4 1 0<br />
+                            1 3 2 4<br />
+                            2 4 0 3<br />
+                            0 0</p>
+                        </td>
+                        <td>
+                            <p>
+                            yes<br />
+                            yes<br />
+                            no</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2003.
+            </p>
+        </div>
+
+    </body>
+</html>

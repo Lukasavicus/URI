@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1400 - Jogo - Contando</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1400 - Jogo - Contando" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        <style type="text/css">
+            #game {
+                 text-align: center; 
+                 width: 100px;
+                 margin: 20px auto;                 
+            }
+            #game td {
+                 width: 17%;
+                 border: #bbb solid 1px;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1400</span>
+            <h1>Jogo - Contando</h1>
+            <div>Por Rujia Liu <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cn.gif' alt=""/> China</div>
+	     	<strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Existem n pessoas que estão em uma linha, em um famoso jogo chamado "contando". Quando o jogo começa, a pessoa mais à esquerda diz "1" em voz alta, em seguida, a segunda pessoa (as pessoas estão numerados de 1 a n, da esquerda para a direita) diz "2" em voz alta. Isto é seguido pela terceira pessoa dizendo "3", e assim por diante. Quanda o e-nésima pessoa (ou seja, a pessoa mais a direita) diz "n" em voz alta, a próxima vez vai para a sua pessoa imediatamente à esquerda (ou seja, a (n - 1)-nésima pessoa), que deve dizer "n + 1" em voz alta, então a (n - 2)-ésima pessoa deve dizer "n + 2 " em voz alta. Depois que a pessoa mais à esquerda falou de novo, a contagem vai para a direita novamente. Há um senão (caso contrário, o jogo seria muito chato!): Se uma pessoa dizer um número que é múltiplo de 7, ou sua representação decimal contém o dígito 7, ele deve bater palmas em vez disso! A tabela a seguir nos mostra o processo de contagem para n = 4 ('X' representa uma salva de palmas). Quando a 3ª pessoa bate palmas pela 4 vez, ele está realmente contando 35.</p>
+				
+                
+                    <table id="game">
+                        <tbody>
+                            <tr>
+                                <td>Person</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Action</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>X</td>
+                                <td>8</td>
+                                <td>9</td>
+                            </tr>
+                            <tr>
+                                <td>Person</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Action</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>X</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>X</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <td>Person</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>Action</td>
+                                <td>19</td>
+                                <td>20</td>
+                                <td>X</td>
+                                <td>22</td>
+                                <td>23</td>
+                                <td>24</td>
+                                <td>25</td>
+                                <td>26</td>
+                                <td>X</td>
+                            </tr>
+                            <tr>
+                                <td>Person</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>2</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                                <td>3</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>Action</td>
+                                <td>X</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td>32</td>
+                                <td>33</td>
+                                <td>34</td>
+                                <td>X</td>
+                                <td>36</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                
+
+                <p>Dado n, m e k, a sua tarefa é descobrir, quando a m-ésima pessoa bate palmas pela k-ésima vez, e qual é o número real que está sendo contado.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Haverá, no máximo, 100 casos de teste na entrada. Cada teste contém três inteiros <strong>n</strong>, <strong>m</strong> e <strong>k</strong> (2 ≤ <strong>n</strong> ≤ 100, 1 ≤ <strong>m</strong> ≤ <strong>n</strong>, 1 ≤ <strong>k</strong> ≤ 100) em uma única linha. O último caso de teste é seguido por uma linha com <strong>n</strong> = <strong>m</strong> = <strong>k</strong> = 0, e que não deverá ser processada.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada linha, imprima o número real que está sendo contado, quando a <strong>m</strong>-ésima pessoa bate palmas pela <strong>k</strong>-ésima vez. Se isso nunca pode acontecer, imprima '-1'.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>4 3 1<br />
+                                4 3 2<br />
+                                4 3 3<br />
+                                4 3 4<br />
+                                0 0 0</p>
+
+                        </td>
+                        <td>
+                            <p>17<br />
+                                21<br />
+                                27<br />
+                                35</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+               The Seventh Hunan Collegiate Programming Contest. Agradecimeto Especial: Yiming Li & Jane Alam Jan. E/S por UOJ.</p>
+        </div>
+
+    </body>
+</html>

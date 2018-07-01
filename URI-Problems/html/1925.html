@@ -1,0 +1,135 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1925 - Ordan e as Novinhas</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema E - Ordan e as Novinhas" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1925</span>
+				<h1>Ordan e as Novinhas</h1>
+				<div>
+					<p>Por Gustavo Ribeiro, IFPB - Campina Grande <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Ordan está no grandioso Shopping de Campina Grande, ele vai participar de um evento de games e animes. Hoje é o primeiro dia do evento e a abertura já está prestes a acontecer, ela será no salão de palestras do Shopping. Algumas pessoas já estão acomodadas no salão, há muitos boe e muitas novinhas também, para a alegria de Ordan.</p>
+
+					<p>Ele quer sentar em um lugar do salão em que haja o maior número de novinhas juntas, para ele poder aplicar nelas, é claro. O salão pode ser visto como um grid de 2 dimensões, e as cadeiras do salão são identificadas por um par de números inteiros, o número da linha e da coluna onde a mesma se encontra. Se houver ‘n’ na cadeira então é uma novinha que lá está sentada, se houver um ‘b’ então é um boe que lá está sentado, caso haja um ‘*’, então essa cadeira está vazia.</p>
+
+					<p class="center">&nbsp; &nbsp;&nbsp;1 2 3 4</p>
+
+					<p class="center">1 &nbsp;n n n n</p>
+
+					<p class="center">2 &nbsp;b n * n</p>
+
+					<p class="center">3 &nbsp;n b * b</p>
+
+					<p class="center">4 &nbsp;b b n b</p>
+
+					<p>Nesse exemplo, há duas cadeiras vazias, caso Ordan sente na cadeira (2, 3) ele estará perto de 6 novinhas que estão juntas, caso ele sente na cadeira (3, 3) ele estará perto de apenas uma novinha. Dessa forma, ele deve sentar na cadeira (2, 3).</p>
+
+					<p>Sua tarefa é determinar qual a cadeira vazia que Ordan deve sentar para que ele esteja próximo do maior número de novinhas juntas, caso haja dois ou mais lugares que podem ser a resposta, escolha aquele que tem o menor número da linha, se ainda assim houver mais de uma cadeira que pode ser a resposta, escolha aquela que tenha o menor número da coluna.</p>
+
+					<p>É garantido que sempre haverá pelo menos uma cadeira livre.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada irá conter dois inteiros 1 ≤ <strong>l</strong>, <strong>c</strong> ≤ 10<sup>3</sup>, que representam o número de linhas e de colunas do salão, respectivamente. Cada uma das próximas <strong>l</strong> linhas irá conter <strong>c</strong> caracteres. Os caracteres podem ser ('n','b','*').</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima a linha e a coluna da cadeira que Ordan deve sentar separados por vírgula.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 4</p>
+
+<p>nnnn</p>
+
+<p>bn*n</p>
+
+<p>nb*b</p>
+
+<p>bbnb</p>
+
+							</td>
+							<td>
+								<p>2,3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 5</p>
+
+<p>nnnnn</p>
+
+<p>b*b*b</p>
+
+<p>nnnnn</p>
+
+<p>nnnnn</p>
+
+<p>*****</p>
+
+							</td>
+							<td>
+								<p>2,2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Homenagem a Ordan, a pessoa mais seletiva que conheço.<br />
+					Tapioca's Round I, 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

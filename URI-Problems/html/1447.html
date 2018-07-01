@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1447 - Back to the Future</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1447 - Back to the Future" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1447</span>
+            <h1>Back to the Future</h1>
+            <div>Maratona de Programação IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+           
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Um grupo de amigos resolveu ir à Alemanha para apoiar a seleção brasileira em sua jornada gloriosa rumo ao hexa. Como as passagens aéreas e as estadias eram caras, cada um trouxe uma quantidade de dinheiro que julgou suﬁciente para passar o mês com conforto e voltar para casa sem problemas.</p>
+
+                <p>Porém, após a bela campanha do Brasil na copa do mundo, o grupo de amigos se viu obrigado a gastar o dinheiro que tinha guardado para as etapas ﬁnais da copa com a famosa cerveja alemã. As consequências de tais atos foram terríveis. Após uma grande bebedeira, todos foram pegos pela polícia local dormindo na rua, e receberam multas pesadíssimas. Além disso, todos perderam suas passagens de volta. Devido a esses contratempos, a viagem de volta ﬁcou ameaçada. De repente, eles descobriram que precisavam voltar para casa gastando a menor quantidade possível de dinheiro.</p>
+
+                <p>Analisando as rotas aéreas disponíveis, os amigos notaram que em todas as rotas o número de assentos disponíveis nos aviões era sempre o mesmo. Porém, os preços das viagens entre uma cidade e outra eventualmente variavam bastante. Assustados com a possibilidade de não encontrar lugares suﬁciente nos aviões para que todos pudessem voltar e preocupados em gastar a menor quantidade possível de dinheiro, o grupo de amigos resolveu pedir sua ajuda.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>O problema é composto por várias instâncias. Cada instância começa com uma linha com dois inteiros positivos <b>N</b> (2 ≤ <b>N</b> ≤ 100) e <b>M</b> (1 ≤ <b>M</b> ≤ 5000), onde <b>N</b> é o número de cidades que pertencem às <b>M</b> rotas de voo consideradas. Os amigos querem ir da cidade 1 até a cidade <b>N</b>.</p>
+
+                <p>Nas próximas <b>M</b> linhas são fornecidos triplas de inteiros <b>A</b> <b>B</b> <b>C</b> descrevendo a rota do avião (<b>A</b> e <b>B</b>) e o preço da passagem aérea por pessoa (<b>C</b>). Os valores de <b>A</b> e <b>B</b> estão entre 1 e n. As rotas são bidirecionais (ou seja, há um voo de <b>A</b> até <b>B</b> e um voo de <b>B</b> até <b>A</b> com preço <b>C</b>) e haverá no máximo uma rota entre duas cidades. Na próxima linha são dados dois inteiros, D e K, onde D é o número de amigos e K é o número de assentos livres em cada voo. Cada rota só pode ser utilizada uma vez.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada instância, imprima a linha "Instancia <b>k</b>", onde <b>k</b> é o número da instância atual. Além disso, imprima a menor quantidade possível de dinheiro que os amigos vão gastar para voltar ao Brasil (que está limitada por 10<sup>15</sup>). Caso não seja possível escolher um conjunto de voos que levem todos para casa, imprima "impossivel".</p>
+                    
+                <p>Imprima uma linha em branco após cada instância.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>4 5<br>
+                                1 4 1<br>
+                                1 3 3<br>
+                                3 4 4<br>
+                                1 2 2<br>
+                                2 4 5<br>
+                                20 10<br>
+                                4 4<br>
+                                1 3 3<br>
+                                3 4 4<br>
+                                1 2 2<br>
+                                2 4 5<br>
+                                20 100<br>
+                                4 4<br>
+                                1 3 3<br>
+                                3 4 4<br>
+                                1 2 2<br>
+                                2 4 5<br>
+                                20 1</p>
+
+                        </td>
+                        <td>
+						<p>
+							    Instancia 1<br />
+                                80<br /><br />
+                                Instancia 2<br />
+                                140<br /><br />
+                                Instancia 3<br />
+                                impossivel<br /></p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                X Maratona de Programação IME-USP 2006.
+            </p>           
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2788 - Aula</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema A - Aula" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+		<script type="text/javascript" src="https://urionlinejudge.r.worldssl.net/judge/js/math-jax/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2788</span>
+			<h1>Aula</h1>
+			<div>
+				<p>Por Gabriel Poesia <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+			   <p>
+Em uma aula de Teoria dos Números, a professora Gina estava mostrando algumas propriedades
+de múltiplos de um número. Ela anunciou aos alunos que escreveria no quadro um múltiplo de 823.
+Porém, em um súbito momento de distração enquanto refletia sobre as consequências do Lema de Burnside,
+ela escreveu o número <span class="math-class">\(234\)</span>, que na verdade era a quantidade de dimensões do problema no qual
+ela ficou pensando na madrugada anterior.
+</p>
+<p>
+Impacientes, os alunos começaram a rir. ``Mas professora, 234 não é múltiplo de 823!'', disse
+o mais inteligente da turma, depois de usar uma máquina de calcular para verificar esta
+complexa relação entre esses dois inteiros positivos.
+</p>
+<p>
+Mas Gina é uma matemática preparada para tudo. Sem pensar muito, ela respondeu:
+``Não terminei de escrever ainda''. Em seguida, adicionou um dígito 1 à esquerda do <span class="math-class">\(234\)</span> e um dígito
+5 à direita. Agora sim, <span class="math-class">\(12345\)</span> é um múltiplo de 823. Ela então seguiu com sua explicação.
+</p>
+<p>
+Apesar de ter se saído bem nessa, Gina gostaria de estar melhor preparada para essas situações.
+Como ideias sobre problemas aleatórios surgem a qualquer momento, ela prefere ter um programa
+para salvá-la em situações parecidas e assim liberar sua mente para atingir o nirvana matemático em paz.
+</p>
+<p>
+Ajude Gina. Dados dois números <span class="math-class">\(N\)</span> e <span class="math-class">\(M\)</span>, diga qual é o menor múltiplo de <span class="math-class">\(M\)</span> que pode ser obtido
+adicionando dígitos à direita e/ou à esquerda de <span class="math-class">\(N\)</span>. Note que você pode precisar de adicionar
+vários dígitos, e que não é permitido adicionar dígitos no meio de <span class="math-class">\(N\)</span>. Gina não quer apagar
+o número que já escreveu, apenas escrever mais dígitos para torná-lo múltiplo de <span class="math-class">\(M\)</span>.
+Além disso, é possível que não seja necessário escrever nenhum dígito adicional.
+</p>
+
+         </div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+			   
+<p>
+A entrada contém apenas uma linha com os dois inteiros <span class="math-class">\(N\)</span> e <span class="math-class">\(M\)</span>, separados por espaço.
+</p>
+<p><p><span class="math-class">\(1 \leq N \leq 10^{12}\)</span></p>
+<p><span class="math-class">\(1 \leq M \leq 2 \times 10^5\)</span></p>
+</p>
+
+         </div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+			   
+<p>
+Escreva na saída uma linha contendo um número: o menor múltiplo de <span class="math-class">\(M\)</span> que pode
+ser obtido adicionando-se quantos dígitos forem necessários à direita ou esquerda de <span class="math-class">\(N\)</span>.
+</p>
+
+         </div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>1 2<br />
+</p>
+
+						</td>
+						<td>
+							<p>10<br />
+</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+         
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p> 2 11<br />
+ </p>
+						</td>
+						<td>
+							<p> 22<br />
+ </p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+         
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p> 234 823<br />
+ </p>
+						</td>
+						<td>
+							<p> 12345<br />
+ </p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+         
+			<p class="footer">
+				Maratona Mineira 2018
+			</p>
+		</div>
+	</body>
+</html>

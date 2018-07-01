@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2121 - Turismo em Ecaterimburgo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2121 - Turismo em Ecaterimburgo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2121</span>
+                <h1>Turismo em Ecaterimburgo</h1>
+                <div>
+                    <p>Por XVII Maratona de Programação IME-USP, 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Muitos podem pensar: “O que vou fazer em Ecaterimburgo? Essa cidade é no fim do mundo!!!”. Entretanto, muitas coisas interessantes ocorreram na cidade, possuindo vários monumentos e locais históricos. Para citar alguns, Ecaterimburgo tem um monumento que é um grande teclado de computador localizado na beira do rio Izet; um monumento a Michael Jackson (!!); na mansão Ipatiev foram assassinados os Romanovs (o czar Nicolau, sua esposa, quatro filhas e filho); lá houve um vazamento de antraz em 1979; um piloto de U2 americano foi capturado e condenado por espionagem; entre outros. Ou seja, existe muito há fazer nos dias em que a cidade for visitada.</p>
+
+                    <p>A central de turismo de Ecaterimburgo construiu um mapa com as principais atrações turísticas da cidade, assim como os belos passeios ligando esses caminhos. Esse mapa também mostra um nível de dificuldade de cada passeio (relacionado à duração, pavimentação da via, relevo etc.) e o sentido no qual ele deve ser feito. Eles desejavam construir uma rota que passasse por todas as atrações turísticas e os passeios. Foi idealizado, então, um concurso que visava fazer esta rota e, ao mesmo tempo, homenageava uma das cidades irmãs de Ecaterimburgo: Caliningrado, cujo nome até o final da segunda guerra mundial era Königsberg. A ideia era construir uma rota em que se partisse de uma das atrações, e passando por todos os passeios se retornasse ao ponto de partida. Sabemos que, como no caso das pontes de Königsberg, nem sempre é possível construir uma rota assim. Por isso a central permitiu que, se necessário, os passeios poderiam ser feitos mais de uma vez. No entanto, ela exigiu que a dificuldade total da rota (soma das dificuldades de cada passeio multiplicado pelo número de vezes que ele é feito) fosse mínima. Dessa forma, o concurso consistia de propor, a partir de uma rota inicial, quais passeios deveriam ser percorridos mais de uma vez e quantas vezes, para se obter uma rota como a desejada pela central.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF).</p>
+
+                    <p>A primeira linha de cada instância contém dois inteiros <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 50) e <strong>M</strong> (0 ≤ <strong>M</strong> ≤ <strong>N<sup>2</sup></strong>+10<sup>3</sup>), o número de atrações da cidade e o número de passeios respectivamente. As próximas <strong>M</strong> linhas contém três inteiros, <strong>a<sub>i</sub>, b<sub>i</sub>, d<sub>i</sub></strong> (1 ≤ <strong>a<sub>i</sub>, b<sub>i </sub></strong>≤ <strong>N</strong>) indicando que o passeio <strong>i</strong> começa em <strong>a<sub>i</sub></strong>, termina em <strong>b<sub>i</sub></strong> e tem dificuldade <strong>d<sub>i</sub></strong> (1 ≤ <strong>d<sub>i</sub></strong> ≤ 3x10<sup>4</sup>).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância imprima a dificuldade total mínima da rota desejada. Se for impossível obter uma rota da forma desejada, imprima “<strong>impossivel</strong>”.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 2<br />
+1 2 10000<br />
+2 1 30000<br />
+4 7<br />
+1 2 1<br />
+2 1 2<br />
+2 3 4<br />
+2 3 4<br />
+3 2 3<br />
+3 4 10<br />
+4 3 100<br />
+3 2<br />
+1 2 1000<br />
+2 3 1000</p>
+
+                            </td>
+                            <td>
+                                <p>40000<br />
+127<br />
+impossivel</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XVII Maratona de Programação IME-USP, 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

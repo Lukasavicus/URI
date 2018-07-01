@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1489 - Engenharia de Software</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1489 - Engenharia de Software" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1489</span>
+            <h1>Engenharia de Software</h1>
+            <div>X Maratona de Programação IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Wander Vega é um experiente gerente de projetos numa grande empresa de desenvolvimento de sistemas. Ele recentemente leu na renomada revista científica Boas Práticas os resultados de uma pesquisa que indicam que alguns aspectos de metodologias de desenvolvimento ágil podem ser aplicadas em grandes equipes aumentando a produtividade. Ele ficou surpreso ao descobrir que um desses aspectos é a programação pareada (<i>pair programming</i>), onde dois desenvolvedores trabalham juntos, usando o mesmo computador. Ávido por impor mudanças que sejam notadas pela diretoria, Wander resolveu adotar programação pareada no próximo grande projeto que irá gerenciar. Só que como todo bom engenheiro de software, Wander quer otimizar esse processo. Ele resolveu que irá usar pares fixos de desenvolvedores. Além disso ele vai alocar os pares de programadores previamente.</p>
+
+                <p>Porém, Wander não está disposto a correr riscos desnecessários, e só permitirá a composição de duplas de desenvolvedores que tenham níveis aceitáveis de produtividade, comunicação e capacidade de interação em trabalhos conjuntos. Caso isso não seja possível, Wander colocará todos os desenvolvedores de seu próximo projeto numa sala quente, com várias esfihas, refrigerantes e um computador, e aplicará as técnicas de programação extrema (<i>extreme programming</i>) para viabilizar o desenvolvimento do sistema.</p>
+
+                <p>Avaliando suas possibilidades ele percebeu que seu plano seria mais reutilizável em outros projetos se ele tivesse um programa que verificasse a viabilidade do <i>pair programming</i> em sua empresa. Nesse momento ele pensou em você, o mais novo estagiário da empresa, para escrever um programa que resolva esse problema. Wander fez uma profunda análise de requisitos e chegou na seguinte especificação que seu programa deve seguir.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A primeira linha da entrada contém um número <strong>k</strong>, que indica o número de instâncias. Cada instância é composta por uma linha contendo um número inteiro 2 ≤ n ≤ 100, a quantidade de profissionais de desenvolvimento da empresa, seguida por <strong>n</strong> linhas. A <strong>i</strong>-ésima linha começa com um número <strong>p</strong>, indicando o número de pessoas com a qual o <strong>i</strong>-ésimo programador tem produtividade aceitável, e vem seguida por <strong>p</strong> inteiros, cada um entre 1 e <strong>n</strong>, indicando tais parceiros.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>O programa deve imprimir a cada instância uma linha com <i>Instancia i</i>, onde <strong>i</strong> é o número de <strong>i</strong>-ésima instância. A linha seguinte deve conter a expressão <i>pair programming</i> se a proposta de Wander for viável. Caso contrário, imprima a expressão <i>extreme programming</i>. Após cada instância, seu programa deve imprimir uma linha em branco.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                6<br />
+                                0<br />
+                                3 3 4 6<br />
+                                1 2<br />
+                                1 2<br />
+                                0<br />
+                                1 2<br />
+                                4<br />
+                                2 3 4<br />
+                                1 4<br />
+                                2 1 4<br />
+                                3 1 2 3
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Instancia 1<br />
+                                extreme programming<br />
+                                <br />
+                                Instancia 2<br />
+                                pair programming<br />
+                                <br />
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                X Maratona de Programação IME-USP 2006.
+            </p>
+        </div>
+
+    </body>
+</html>

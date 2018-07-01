@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1034 - Festival de Estátuas de Gelo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1034 - Festival de Estátuas de Gelo" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1034</span>
+            <h1>Festival de Estátuas de Gelo</h1>
+            <div><p>
+                    Por Wanderley Guimarães, USP <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" /> Brasil</p>
+            </div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1034.jpg" style="width: 309px; height: 163px; float: right;" />Todos os anos, artistas de todo o mundo se reúnem na cidade, onde fazem esculturas de gelo gigantescas. A cidade vira uma galeria de arte ao céu aberto, uma vez que as esculturas ficam expostas na rua por semanas, sem derreter. Afinal, a temperatura média no inverno de Harbin (época em que ocorrerá a final mundial do ICPC) é de -20 graus.</p>
+                    <p>
+                    O primeiro passo para fazer a escultura é montar um grande bloco de gelo da dimensão pedida pelo artista. Os blocos são recortados das geleiras de Harbin em blocos de altura e profundidade padrão e vários comprimentos diferentes. O artista pode determinar qual o comprimento que ele deseja que tenha o seu bloco de gelo para que a escultura possa começar a ser esculpida.</p>
+                    <p>
+                    Os comprimentos disponíveis dos blocos são {<em>a<sub>1</sub>; a<sub>2</sub>; ...;&nbsp; a<sub>N</sub></em>} e o comprimento que o artista deseja é <em>M</em>. O bloco de comprimento 1 é muito usado, por este motivo ele sempre aparece na lista de blocos disponíveis. Sua tarefa é determinar o número mínimo de blocos tal que a soma de seus comprimentos seja <em>M</em>.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong><em>T</em></strong> indicando o número de instâncias. A primeira linha de cada instância contém dois inteiros <strong><em>N</em></strong> (1 ≤ N ≤ 25) e <strong><em>M</em></strong> (1 ≤ M ≤ 1000000) representando o número de tipos de blocos e o comprimento desejado pelo artista, respectivamente. A próxima linha contém os inteiros <strong><em>a<sub>1</sub>; a<sub>2</sub>; ...; a<sub>N</sub> </em></strong>, onde (1 ≤ a<sub>i </sub>≤ 100) para todo i (1,2,...N) separados por espaço.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada instância, imprima o número mínimo de blocos necessários para obter um bloco de comprimento <strong>M</strong>.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                6 100<br />
+                                1 5 10 15 25 50<br />
+                                2 103<br />
+                                1 5</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                2<br />
+                                23</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                XIII Maratona de Programação IME-USP 2009.
+            </p>
+        </div>
+
+    </body>
+</html>

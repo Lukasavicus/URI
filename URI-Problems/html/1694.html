@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1694 - Loteria</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1694 - Loteria" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1694</span>
+                <h1>Loteria</h1>
+                <div>
+                    <p>Por VC++, Colégio Etapa <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 4</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Pinkie Pie está se sentindo com sorte. Ela está indo para a lotérica de sua cidade para fazer uma aposta e tentar a sorte.</p>
+
+                    <p >O bilhete da aposta consiste em uma matriz de N linhas por M colunas. As casas são numeradas de 0 a N*M-1 de forma que o número da casa da r-ésima linha e c-ésima coluna (indexadas a partir do 0) é r * M + c. Uma aposta consiste em escolher K números distintos dentre os disponíveis.</p>
+
+                    <p class="center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/contests/20_3_pt.png" style="height:255px; width:458px" /></p>
+
+                    <p>Pinkie pressente que os números vencedores estarão próximos uns aos outros, então ela decide escolher números que estão ou todos na mesma linha ou todos na mesma coluna. Pinkie também acredita que números primos trazem má sorte, e não fará nenhuma aposta que contém ao menos um número primo.</p>
+
+                    <p>Twilight passou em frente à lotéria e encontrou Pinkie incapaz de chegar a uma decisão. Querendo testar suas habilidades matemáticas, ela decidiu, enquanto Pinkie fazia sua escolha, calcular quantas apostas diferentes Pinkie Pie poderia fazer. Duas apostas são consideradas distintas se existe um elemento presente em uma aposta e ausente na outra.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Existem diversos casos testes. Cada caso de teste consiste de uma única linha contendo três inteiros <strong>N</strong>, <strong>M</strong> e <strong>K</strong> (<strong>1</strong> ≤ <strong>N</strong>, <strong>M</strong> ≤ <strong>50</strong>; <strong>1</strong> ≤ <strong>K</strong> ≤ <strong>10</strong>). O último caso de teste é seguido de uma linha contendo três zeros.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma única linha contendo o número de apostas diferentes que Pinkie Pie pode fazer, de forma que os números estejam todos ou na mesma linha ou na mesma coluna, e que nenhum número primo seja escolhido. Um número primo é um número natural maior que <strong>1</strong> que não possui divisores positivos além de <strong>1</strong> e si mesmo.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 3 4<br />
+                                3 4 3<br />
+                                3 6 3<br />
+                                25 14 8<br />
+                                0 0 0</p>
+
+                            </td>
+                            <td>
+                                <p>0<br />
+                                2<br />
+                                11<br />
+                                7988161</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Road to Fortaleza III 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

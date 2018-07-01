@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1266 - Tornado!</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1266 - Tornado!" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1266</span>
+                <h1>Tornado!</h1>
+                <div><p>
+	Por Ricardo Anido&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	É este tempo louco o resultado da interferência contínua da humanidade no meio ambiente? Ou é simplesmente o ciclo normal das mudanças climáticas através dos tempos? Ninguém parece saber ao certo, mas o fato é que os fenômenos naturais, como tornados e furacões atingem nosso país com mais força e freqüência do que nas décadas passadas.</p>
+    <p>
+	Um tornado acaba de atingir a fazenda Silverado, produtora de gado e de leite, e fez estragos. O telhado do celeiro foi rasgado, várias árvores foram arrancadas, o caminhão da fazenda foi derrubado... Mas o pior é que o tornado destruiu várias seções da cerca que rodeava a propriedade. A cerca foi muito bem construída, com postes de concreto a cada dois metros, e arame farpado encerrando o perímetro de toda a fazenda (o perímetro, em metros, é um número par, o que torna a cerca perfeitamente regular).</p>
+    <p>
+	Agora vários postes estão quebrados ou faltando, e há falhas na cerca. Para evitar que o gado fique de fora da propriedade, a cerca deve ser restaurada o mais rápido possível. Reconstruindo o muro à sua forma original, com postes de concreto, vai levar um longo tempo. Enquanto isso, os proprietários da fazenda decidiram fechar as lacunas com uma cerca temporária, feita com postes de madeira. Postes de madeira serão colocados exatamente nos mesmos pontos onde os postes estão faltando ou foram quebrados. No entanto, a fim de tornar a reconstrução temporária mais rápida e menos dispendiosa, os donos decidiram utilizar menos postes: um poste de madeira será utilizado para substituir um poste de concreto ausente / quebrado somente se o comprimento do arame farpado necessário para fechar a distância até o próximo poste (de madeira ou concreto) for superior a quatro metros.</p>
+<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1266.png" style="width: 444px; height: 180px;" /></p>
+<p>
+	Dada a descrição de quantos postes estão quebrados ou faltando, você deve escrever um programa que determine a menor quantidade de postes de madeira que são necessários para fechar as lacunas da cerca, de acordo com a decisão dos proprietários.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém vários casos de teste. A primeira linha de um caso de teste contém um <strong>N</strong>&nbsp;indicando o número original de postes de concreto da cerca(5 ≤&nbsp;<strong>N&nbsp;</strong>≤&nbsp;5000). A segunda linha de um caso de teste irá conter <strong>N</strong>&nbsp;inteiros&nbsp;<strong>X</strong><sub><em>i</em></sub>&nbsp;indicando o estado de cada poste de concreto após a passagem do tornado (0 ≤&nbsp;<strong>X</strong><sub><em>i</em></sub>&nbsp;≤&nbsp;1 para 1 ≤&nbsp;<em>i</em>&nbsp;≤&nbsp;<strong>N</strong>) . Se&nbsp;<strong>X</strong><sub><em>i</em></sub>&nbsp;= 1 o poste <em>i</em>&nbsp;esté em boas condições, se&nbsp;<strong>X</strong><sub><em>i</em></sub>&nbsp;= 0 o poste <em>i</em>&nbsp;está quebrado ou faltando. Note que o poste <strong>N</strong>&nbsp;é ao lado do poste 1. O final da entrada é indicado por&nbsp;<strong>N</strong>&nbsp;= 0 .</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste da entrada seu programa deve produzir uma linha de saída, contendo um inteiro indicando o menor número de postes de madeira que são necessários para restaurar o muro, de acordo com a decisão dos proprietários.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	10<br />
+	1 0 0 1 0 0 1 0 1 1<br />
+	11<br />
+	1 0 0 1 0 0 0 1 1 0 1<br />
+	12<br />
+	0 0 0 0 0 1 1 0 0 0 1 1<br />
+	0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	2<br />
+	2<br />
+	3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+	ACM/ICPC South America Contest 2005</p>
+    
+            </div>
+
+        </body>
+    </html>

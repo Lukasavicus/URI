@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1102 - Ataque Fulminante</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - 1102 - Ataque Fulminante" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1102</span>
+                <h1>Ataque Fulminante</h1>
+                <div>
+                    <p>Maratona de Programação da SBC<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+                </div>				
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Desde que o Rei da Nlogônia construiu, décadas atrás, um enorme muro de proteção ao redor de todo o reino, os seus habitantes vivem em segurança. O muro é imponente, extremamente reforçado, e tem o formato de um círculo que envolve todos os domínios do Rei.</p>
+<p>
+	No entanto, há algumas semanas os habitantes da Nlogônia estão apreensivos. Há boatos de que cientistas da Quadradônia, um povo bárbaro que habita as vizinhanças da Nlogônia, desenvolveram uma arma mortal, capaz de pulverizar tudo que esteja em sua mirada.</p>
+<p>
+	A nova arma é um canhão que emite um feixe de prótons que se espalha com ângulo<em> ø</em> a partir da boca do canhão. A direção do tiro é indicada por um ângulo <em>alpha</em>, medido a partir do eixo x, no sentido anti-horário. A figura abaixo ilustra (a) um exemplo de ataque, (b) o que restaria da Nlogônia e (c) a área que seria destruída.</p>
+<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1102_pt.png" style="width: 647px; height: 282px;"></p>
+<p>
+	Dados a coordenada do canhão, a direção do tiro e o ângulo de espalhamento do feixe de prótons, bem como a coordenada do centro e o valor do raio do muro de proteção, você deve escrever um programa para calcular a área da Nlogônia que será destruída.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém vários casos de teste. Cada caso de teste é composto por duas linhas. A primeira linha contém três números inteiros X, Y , R, com (X, Y ) representando as coordenadas do centro do círculo do muro de proteção (0 ≤ X ≤ 1000 e 0 ≤ Y ≤ 1000), e R o seu raio (1≤R≤100). A segunda linha contém quatro números inteiros P , Q, A e T , com (P, Q) representando as coordenadas da localização do canhão (0≤P≤1000 e 0≤Q≤1000), A representando a direção, em graus, do tiro (0≤A≤359), e T representa o ângulo de espalhamento, também em graus (1≤T≤179). O ângulo A é medido a partir do eixo x no sentido anti-horário, e o canhão está sempre fora dos domínios da Nlogônia, ou seja, a distância entre (X, Y ) e (P, Q) é maior do que R.</p>
+<p>
+	O final da entrada é indicado por uma linha que contém três zeros separados por espaços em branco.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste da entrada seu programa deve imprimir uma única linha, contendo um número real, escrito com precisão de uma casa decimal, indicando a área da Nlogônia que seria destruída pelo ataque. 
+
+           </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Sample Input</td>
+                            <td>Sample Output</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+1 1 1<br>
+3 1 180 90<br>
+4 4 3<br>
+8 4 90 90<br>
+4 4 3<br>
+8 4 180 179<br>
+0 0 0</p>	
+                            </td>
+                            <td>
+                                <p>
+3.1<br>
+0.2<br>
+28.3</p>
+	
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+              <p class="footer">
+                    Maratona de Programação da SBC 2009
+                </p>      
+            </div>
+
+        </body>
+    </html>

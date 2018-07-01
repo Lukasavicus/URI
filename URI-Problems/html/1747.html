@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1747 - Distribuição Igual</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1747 - Distribuição Igual" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1747</span>
+                <h1>Distribuição Igual</h1>
+                <div>
+                    <p>Por Bruno Junqueira Adami, Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Endre tem muitos sobrinhos e sobrinhas. Uma vez por ano, ele leva alguns deles em uma viagem para um arquipélago onde um barco empresa opera serviços bidirecionais entre alguns pares de ilhas. Como Endre e as crianças podem voar e retornar diretamente de ou para qualquer uma das ilhas, qualquer viagem pode ser descrita como uma seqüência não vazia <em>i<sub>1</sub>, i<sub>2</sub>,..., i<sub>n</sub></em> de ilhas, de tal modo que cada par consecutivo de ilhas <em>i<sub>j</sub></em> e <em>i<sub>j + 1</sub></em> têm um serviço de barco entre eles. A primeira e as última ilha de uma viagem pode ou não ser a mesma ilha, e as ilhas podem ser visitadas mais de uma vez durante a viagem.</p>
+
+                    <p>Cada ilha do arquipélago produz uma diferente variedade peculiar de doces, e recebe os seus visitantes dando a cada grupo que chega um determinado número de peças de doces. Endre não gosta de doces, mas as crianças comem todos quase que instantaneamente. Para evitar brigas, cada vez que o grupo chega a uma ilha e recebe doces, ele distribui uniformemente eles entre os filhos.</p>
+
+                    <p>Você pode se perguntar como Endre sempre consegue distribuir uniformemente os doces que recebem em cada ilha. Bem, a resposta é realmente muito simples. A cada ano, a agência de viagens envia-lhe o plano de viagem (a seqüência <em>i<sub>1</sub>, i<sub>2</sub>,..., i<sub>n</sub></em> ) de antemão. Como ele quer viajar com a maior quantidade de seus sobrinhos e sobrinhas possíveis, ele calcula o número máximo de crianças <em>k</em> ele pode levar para a viagem sem violar a regra sobre a distribuição uniforme de doces. Observe que cada plano de viagem determina exclusivamente o número de crianças a serem tomadas.</p>
+
+                    <p>Isso vem acontecendo há anos, e cada vez Endre acaba levando um número diferente de crianças na viagem. Ele gostaria de saber quantos números diferentes de crianças, ele pode levar em uma viagem, ou seja, o número de inteiros <em>k</em> tal que existe um plano de viagem para a qual ele acaba levando <em>k</em> crianças na viagem. Agora Endre está ocupado preparando a viagem deste ano. Você pode ajudá-lo com a resposta?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém dois números inteiros <strong>I</strong> e <strong>S</strong> (1 ≤ <strong>I</strong>, <strong>S</strong> ≤ 10<sup>4</sup>), que representam, respectivamente, o número de ilhas e o número de serviços de barco entre eles. Ilhas são identificados com números inteiros distintos de 1 a <strong>I</strong>. A segunda linha contém I<strong> </strong>inteiros <strong>C<sub>1</sub></strong>, <strong>C<sub>2</sub></strong>,. . . , <strong>C<sub>I</sub></strong>, onde <strong>C<sub>i</sub></strong> indica o número de doces o grupo recebe ao chegar a ilha <strong>i</strong> (1 ≤ <strong>C<sub>i</sub></strong> ≤ 10<sup>5</sup> para <strong>i</strong> = 1, 2,..., <strong>I</strong>). Cada uma das próximas linhas <strong>S</strong> descreve um serviço de barco diferente, com dois inteiros <strong>A</strong> e <strong>B</strong> (1 ≤ <strong>A</strong> &lt; <strong>B</strong> ≤ <strong>I</strong>), o que representa que é possível viajar da ilha <strong>A</strong> para ilha <strong>B</strong> e da ilha <strong>B</strong> para a ilha <strong>A</strong>. Não existem dois serviços de barco permitem viajar entre o mesmo par de ilhas.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Aprezente uma linha com um inteiro que representa o número de inteiros <strong>k</strong> tal que existe um plano de viagem para que Endre acaba levando <strong>k</strong> crianças na viagem.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 1<br />
+1 9<br />
+1 2</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    ACM/ICPC Latin America Contest 2014.
+                </p>
+            </div>
+
+        </body>
+    </html>

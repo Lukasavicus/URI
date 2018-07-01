@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1139 - Necessidades Elétricas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - 1139 - Necessidades Elétricas" />     
+    
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1139</span>
+                <h1>Necessidades Elétricas</h1>
+                <div>
+<div>
+	por Pablo Ariel Heiber <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif" style="width: 16px; height: 11px; " /> Argentina</div>
+
+</div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                   
+<div>
+	<div>
+		Você irá construir uma nova fábrica na sua cidade. Já que você necessida de muita energia elétrica, ter a fábrica posicionada perto de uma estação de força é importante. Você quer construir uma lista priorizada das possíveis localizações.</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		A área onde a fábrica precisa ser construída pode ser representada como uma grade retangular de&nbsp;<strong>N</strong>&nbsp;linhas e&nbsp;<strong>M</strong>&nbsp;colunas de células. Algumas dessas células contem uma estação de força. A nova fábrica ocupa exatamente uma célula, e pode ser construída em qualquer célula livre (ou seja, qualquer célula que não contém uma estação de força).</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		Numerando as linhas de 1 até&nbsp;<strong>N</strong>&nbsp;e as colunas de 1 até&nbsp;<strong>M</strong>, a localização de uma célula pode ser descrita por dois inteiros. A célula (&nbsp;<em>i</em>&nbsp;,&nbsp;<em>j</em>&nbsp;) é a célula na linha&nbsp;<em>i</em>&nbsp;e coluna&nbsp;<em>j</em>. A distância entre as células (<em>i</em><sub>0&nbsp;</sub>,&nbsp;<em>j</em><sub>0</sub>) e (<em>i</em><sub>1</sub>&nbsp;,&nbsp;<em>j</em><sub>1</sub>) é max( |<em>i</em><sub>0</sub>&nbsp;-&nbsp;<em>i</em><sub>1</sub>| , |<em>j</em><sub>0</sub>&nbsp;-&nbsp;<em>j</em><sub>1</sub>| ) onde |&nbsp;<em>x</em>&nbsp;| representa o valor absoluto de&nbsp;<em>x</em>. A prioridade elétrica de uma localização é a menor distância até qualquer estação de força.</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		Com isso em mente, você vai numerar todas as possíveis localizações com inteiros consecutivos começando de 1. Você fará isso em ordem crescente de prioridade elétrica. Dentre locais com a mesma prioridade elétrica, você vai numerá-los em ordem crescente de seu índices de linha. Dentre locais com mesmas prioridade elétrica e índice de linha, você vai listá-los em ordem crescente de seu índices de coluna.</div>
+	<div>
+		&nbsp;</div>
+	<div>
+		Na figura abaixo você pode ver uma grade 4 x 7. Células pretas são as células onde há uma estação de força. Células cinza escuras possuem prioridade elétrica 1, cinza claras prioridade elétrica 2 e células brancas prioridade elétrica 3. O número dentro de cada célula é o número atribuído por você à célula.</div>
+	<div>
+		&nbsp;</div>
+	<div class="center">
+		<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1139.png" style="width: 238px; height: 96px; " /></div>
+	<div>
+		&nbsp;</div>
+	<div>
+		Você receberá inúmeras consultas sobre a lista construída. Em cada consulta será dado um número representando a posição na lista final e você deverá dizer a qual célula foi atribuída a posição dada.</div>
+</div>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+<div>
+	Cada caso de teste se estende por várias linhas. A primeira linha contém três inteiros&nbsp;<strong>N</strong>,&nbsp;<strong>M</strong>&nbsp;e&nbsp;<strong>P</strong>, representando o número de linhas e colunas da grade (1&nbsp;≤&nbsp;<strong>N</strong>,<strong>M&nbsp;</strong>&nbsp;≤&nbsp;10<sup>9</sup>) e o número de estações de força (1&nbsp;≤&nbsp;<strong>P&nbsp;</strong>≤&nbsp;20). Cada uma das&nbsp;<strong>P</strong>&nbsp;linhas seguintes contém dois inteiros&nbsp;<strong>R</strong>&nbsp;e&nbsp;<strong>C</strong>&nbsp;representando a linha e a coluna de uma estação de força (1&nbsp;≤&nbsp;<strong>R</strong>&nbsp;≤&nbsp;<strong>N</strong>&nbsp;e 1&nbsp;≤&nbsp;<strong>C&nbsp;</strong>&nbsp;≤&nbsp;<strong>M</strong>). Em cada caso de teste, todas as estações de força estão em células distintas. A próxima linha contém um único inteiro&nbsp;<strong>Q</strong>&nbsp;representando o número de consultas (1&nbsp;≤&nbsp;<strong>Q&nbsp;</strong>≤&nbsp;50). Então segue uma linha com&nbsp;<strong>Q</strong>&nbsp;inteiros&nbsp;<em>p</em><sub>1</sub>, ... ,&nbsp;<em>p</em><sub>Q</sub>&nbsp;representando as posições da lista priorizada (1&nbsp;≤&nbsp;<em>p</em><sub>i</sub>&nbsp;≤&nbsp;<strong>N</strong>&nbsp;x&nbsp;<strong>M</strong>&nbsp;-&nbsp;<strong>P</strong>).</div>
+<div>
+	&nbsp;</div>
+<div>
+	O último caso de teste é seguido de uma linha contendo três zeros.</div>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste, imprima <strong>Q</strong>+1 linhas. A linha <em>i</em> das primeiras <strong>Q</strong> linhas devem conter dois inteiros representando a linha e a coluna da localização que foi atribuída ao número <em>p<sub>i</sub></em>. A última linha de cada caso deve conter um único caractere '-' (hífen).</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	4 7 2<br />
+	2 5<br />
+	4 4<br />
+	6<br />
+	1 6 11 16 21 26<br />
+	1000000000 1000000000 1<br />
+	1 1<br />
+	1<br />
+	999999999999999999<br />
+	0 0 0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	1 4<br />
+	3 3<br />
+	4 5<br />
+	2 7<br />
+	4 7<br />
+	4 1<br />
+	-<br />
+	1000000000 1000000000<br />
+	-</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                    ACM/ICPC South America Contest 2010.</p>
+            </div>
+
+        </body>
+    </html>

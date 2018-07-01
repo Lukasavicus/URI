@@ -1,0 +1,145 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2265 - Up a Tree</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2265 - Up a Tree" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2265</span>
+				<h1>Up a Tree</h1>
+				<div>
+					<p>Por ICPC 2013 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ru.gif' alt='RU' /> Russian Federation</p>
+				</div>
+				<strong>Timelimit: 6</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Anatoly Cheng McDougal is a typical student in many ways. Whenever possible he tries to cut and paste code instead of writing it from scratch. Unavoidably this approach causes him problems. For example, when he first learned about preorder, inorder and postorder traversals of trees, and was given code for a preorder print of a tree (shown on the left below), he simply cut and pasted the code, then moved the print statement to the correct location and renamed the procedure. However, he forgot to rename the procedure calls inside the code, resulting in the defective inorder print and postorder print code shown below.</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_153_K.png" width="600" alt="function sample" /> </center>
+
+					<p>At this point, Anatoly did not behave like a typical student. He actually tested his code! Unfortunately, when the results were not correct, he reverted back to typical student behavior. He panicked and started randomly changing calls in all three procedures, hoping to get things right. Needless to say, the situation became even worse now than when he started.</p>
+
+					<p>Anatoly’s professor tested the code on a random tree of characters. When she looked at the output of his three print routines, she correctly guessed what had happened. However, instead of going directly to his code, she decided to try to reconstruct Anatoly’s code just by observing the output. In order to do this, she correctly made the following assumptions:</p>
+
+					<ol>
+						<li>The output statement in each print routine is in the correct location (for example, between the two recursive calls in the inPrint routine).</li>
+						<li>Among the six recursive calls made by the three routines, exactly two calls are to prePrint, exactly two are to inPrint, and exactly two are to postPrint, though potentially in the wrong routines.</li>
+					</ol>
+
+					<p>Soon the professor realized that reconstructing Anatoly’s code and the test tree from his output was not a simple task and that the result might be ambiguous. You will have to help her find all possible reconstructions of Anatoly’s code. In addition, for each such reconstruction, you are to find the alphabetically first tree (as described in the output section) giving the observed output.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case. A test case consists of three strings on three separate lines: the observed output of Anatoly’s prePrint, inPrint and postPrint routines (in that order) on some test tree. Each of these strings consists of <strong>n</strong> uppercase letters (4 ≤ <strong>n</strong> ≤ 26), with no repeated letters in any string. The test case is guaranteed to have at least one solution.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Display all possible reconstructions for the test case, ordered as described in the last paragraph below. The output for each reconstruction consists of two parts. The first part is a single line and describes the six calls in Anatoly’s routines: first the two (recursive) calls in Anatoly’s prePrint routine, followed by the calls in his inPrint routine, and finally the calls in his postPrint routine. The calls are described by the words Pre, In, and Post, separated by spaces. For example, if Anatoly’s routines were correct, the resulting output of the first part of the reconstruction would be Pre Pre In In Post Post.</p>
+
+					<p>The second part consists of three lines and describes the first test tree that could have generated the observed outputs. The first line is the correct preorder print of the tree, and the second and third lines contain the correct inorder and postorder prints, respectively. The first tree is the one with the alphabetically first preorder print. If there are multiple such trees, the first of these is the one with the alphabetically first inorder print.</p>
+
+					<p>Every reconstruction is a sequence of 6 tokens chosen from Pre, In, and Post. The ordering of reconstructions is lexicographic with respect to the following ordering of tokens: Pre &lt; In &lt; Post.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>HFBIGEDCJA</p>
+
+								<p>BIGEDCJFAH</p>
+
+								<p>BIGEDCJFAH</p>
+
+							</td>
+							<td>
+								<p>Pre Post In Post In Pre</p>
+
+								<p>HFBJCDEGIA</p>
+
+								<p>BIGEDCJFAH</p>
+
+								<p>IGEDCJBAFH</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>BNLFAGHPEDOCMJIK</p>
+
+								<p>NLBGAPHCODEIJMKF</p>
+
+								<p>NLFAGHPEDOCMJIKB</p>
+
+							</td>
+							<td>
+								<p>In Pre In Post Post Pre</p>
+
+								<p>BLNFKMEHAGPCODIJ</p>
+
+								<p>NLBAGHPEODCMIJKF</p>
+
+								<p>NLGAPHDOCEJIMKFB</p>
+
+								</br>
+
+								<p>Post Pre In In Post Pre</p>
+
+								<p>BLNFKICPGAHEODMJ</p>
+
+								<p>NLBGAPHCODEIJMKF</p>
+
+								<p>NLAGHPDOECJMIKFB</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC 2013 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

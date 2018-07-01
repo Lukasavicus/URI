@@ -1,0 +1,113 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1969 - Generations</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema G - Generations" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+             <style>#events{margin:15px auto;width:600px}#events .division{width:10%!important}</style>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1969</span>
+				<h1>Generations</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Ainda não é possível construir uma máquina que permita viagens no tempo a um corpo de matéria. No entanto, o físico Asdrubal Keyla Monteiro já conseguiu desenvolver uma máquina que consegue enviar mensagens através do tempo, comunicando-se com gerações do futuro. Teoricamente também seria possível utilizar essa máquina para enviar mensagens a gerações do passado, mas elas não teriam a tecnologia para receber essas mensagens. Cada mensagem é uma sequência binária de um comprimento fixo estabelecido pela geração com a qual A. K. M. está se comunicando. O fim de cada mensagem é sempre marcado por <strong>11</strong>, padrão que obviamente não pode ocorrer em nenhum outro lugar da mensagem, senão a mensagem chegaria truncada ao seu destino. Por exemplo, se o comprimento de mensagem estabelecido pela geração com a qual A. K. M. está se comunicando é 6, há 5 possibilidades para a mensagem enviada para aquela geração:</p>
+
+<p class="center">000011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;001011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;010011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;100011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;101011</p>
+
+<p>O interessante desse protocolo de comunicação é que, concatenando-se mensagens, é possível entrar com um único arquivo na máquina para que ela envie uma mensagem para cada uma dentre um conjunto de gerações especificadas. Por exemplo, se A. K. M. deseja se comunicar com as gerações cadastradas na máquina respectivamente como 1, 2 e 3, e se os comprimentos de mensagem estabelecidos pelas gerações são respectivamente 3, 5 e 3, são 3 possibilidades para o arquivo com o qual se pode entrar na máquina:</p>
+
+<p class="center">01100011011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01101011011&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;01110011011</p>
+
+<p>A máquina que A. K. M. desenvolveu apenas envia mensagens. Por enquanto, ainda não é possível receber mensagens do futuro. A única coisa que é possível receber de uma geração do futuro é a informação do comprimento da mensagem. Frequentemente as gerações atualizam esse valor, e A. K. M. precisa estar atento.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada consiste de dois inteiros, <strong>G</strong> e <strong>E</strong> (1 ≤ <strong>G</strong>, <strong>E</strong> ≤ 10<sup>5</sup>), os quais representam respectivamente o número de gerações cadastradas na máquina e o número de eventos descritos na entrada. As gerações são identificadas na entrada pelos inteiros de 1 a <strong>G</strong>. A segunda linha da entrada consiste de <strong>G</strong> inteiros, de modo que o <strong>i</strong>-ésimo inteiro, <strong>C<sub>i</sub></strong> (2 ≤ <strong>C<sub>i</sub></strong> ≤ 10<sup>10</sup>, 1 ≤ <strong>i</strong> ≤ <strong>G</strong>), representa o comprimento de mensagem estabelecido pela geração <strong>i</strong>. Cada uma das <strong>E</strong> linhas seguintes representa um evento e obedece um dos formatos abaixo:</p>
+
+                    <table id="events">
+                        <tr>
+                            <td class="division"><strong>-> A B</strong></td>
+                            <td>indica que A. K. M. entrou com um arquivo na máquina para enviar uma mensagem para cada geração de <strong>A</strong> até <strong>B</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>G</strong>);</td>
+                        </tr>
+                        <tr>
+                            <td class="division"><strong><- A C</strong></td>
+                            <td>indica que o comprimento de mensagem estabelecido pela geração <strong>A</strong> deve ser atualizado para <strong>C</strong> (1 ≤ <strong>A</strong> ≤ <strong>G</strong>, 2 ≤ <strong>C</strong> ≤ 10<sup>10</sup>).</td>
+                        </tr>
+                    </table>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada evento da forma <strong>-> A B</strong>, imprima uma linha contendo um valor que represente o número de possibilidades para o arquivo com o qual se entrou na máquina. Após processar todos os eventos, imprima uma linha extra contendo um valor que represente o número de possibilidades para o arquivo com o qual A. K. M. entraria na máquina se desejasse enviar uma mensagem para todas as <strong>G</strong> gerações. Como os números de possibilidades representados em cada linha da saída podem ser muito grandes, imprima apenas o resto que eles deixam quando divididos por 10<sup>9</sup> + 7.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 6<br />
+3 5 3<br />
+-&gt; 1 3<br />
+&lt;- 1 4<br />
+-&gt; 2 3<br />
+&lt;- 3 6<br />
+-&gt; 1 2<br />
+-&gt; 1 3</p>
+
+							</td>
+							<td>
+								<p>3<br />
+3<br />
+6<br />
+30<br />
+30</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					3<sup>ạ</sup> Maratona de Programação <em>Júnior</em> da UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

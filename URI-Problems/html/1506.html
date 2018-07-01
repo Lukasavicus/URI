@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1506 - Rabito e Bones</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1506 - Rabito e Bones" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1506</span>
+                <h1>Rabito e Bones</h1>
+                <div>
+                    <p>Por Bugs, Lucas y Coyote <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Rabito e Rayito estão jogando um jogo legal. Eles começam com um grafo conexo bidirecional com pesos (todos os pesos são positivos) e um conjunto de K ossos colocados em alguns dos vértices.</p>
+
+                    <p>Eles começam se revezando com Rabito jogando por primeiro. O jogo consiste em deslocar os ossos através do grafo até o vértice 1. Em sua vez, um dos jogadores pega um subconjunto de pelo menos 1 e no máximo P dos ossos (que não atingiram o vértice 1) e move estes ossos através de uma ou mais das arestas do grafo (os movimentos dos ossos são independentes uns do outros) sujeito a esta condição: ele pode usar uma aresta específica para um osso se, eventualmente, o osso atingir o vértice 1 usando o mínimo possível de tempo (leva A unidades de tempo para mover um osso através de uma aresta de peso A) e se a aresta faz com que este osso, eventualmente, atinja o vértice 1 com a maior quantidade de arestas.</p>
+
+                    <p>Há um osso enorme esperando o vencedor do jogo, assim que sua tarefa é decidir qual dos dois cães vai triunfar neste jogo e ter uma boa refeição (assumindo que ambos os cães jogam com uma estratégia ideal). O perdedor do jogo é, obviamente, o cão que não se pode fazer um movimento.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém um único inteiro <strong>T</strong> (<strong>T</strong> &lt;= 100) que representa a quantidade de casos de teste descritas a seguir. Um caso de teste inicia com uma linha contendo dois inteiros <strong>N</strong>, <strong>M</strong> (1 &lt;= <strong>N</strong> &lt;= 100, 1 &lt;= <strong>M</strong> &lt;= 2000) que denotam o número de vértices e arestas do grafo, em seguida há <strong>M</strong> linhas, cada uma com três inteiros <strong>u</strong>, <strong>v</strong>, <strong>w</strong> (1 &lt;= <strong>u</strong>, <strong>v</strong> &lt;= <strong><strong>N</strong></strong>) (0 &lt; <strong>w</strong> &lt;= 1000000) que representam os vértices da n-ésima aresta e seus pesos. Segue uma linha com dois inteiros <strong>K</strong> (0 &lt; <strong>K</strong> &lt;= 1000) e <strong>P</strong> (0 &lt; <strong>P</strong>) denotando o número de ossos inicialmente colocados no grafo e o parâmetro <strong>P</strong> descrito na expecificação do problema. Finalmente uma única linha contendo <strong>K</strong> inteiros descreventos as posições iniciais dos <strong>K</strong> ossos.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima <strong>T</strong> linhas, uma para cada caso de teste. Se Rabito tem uma estratégia que irá garantir a sua vitório imprima "Yes", caso contrário imprima "No".</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1<br />
+3 3<br />
+1 2 3<br />
+2 3 4<br />
+3 1 5<br />
+2 1<br />
+2 3</p>
+
+
+
+                            </td>
+                            <td>
+                                <p>No</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Maratona Verão 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

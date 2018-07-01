@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2689 - Jogo do Mião</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 1006 - Jogo do Mião" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2689</span>
+			<h1>Jogo do Mião</h1>
+			<div>
+				<p>Por Samuel Lucas Santos Gomes, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>A muito tempo acontece o secreto jogo do mião. Dizem que o jogo é chato e muito difícil pois ninguém conseguiu ganhar o famoso prêmio, mas mesmo assim Webscript Junior (WBJ) decidiu tentar. O jogo funciona da seguinte maneira: um espantalho mostra um quadro com maletas, onde só haverá uma maleta com o mião. Nem mesmo o espantalho lembra em qual maleta o guardou e WBJ só tem uma oportunidade de levar esse "MIÃO!" para casa. WBJ pegou o índices das maletas que já foram escolhidas por outros jogadores para ver se existia algum padrão.</p>
+
+<p>Após várias e várias pesquisas, WBJ concluiu que a maleta premiada estava em uma i-ésima posição de uma sequência, então ele apresentou o jogo para alguns amigos para ver como o jogo e o espantalho se comportavam a cada jogada e com isso obter mais informações para sua pesquisa. A informação mais relevante é que, além de sorte, as maletas onde a subtração dos índices é diferente da diferença que mais se repete, serve como padrão para definir quais são as possíveis maletas premiadas.</p>
+
+<p>Para uma precisão mais correta WBJ pediu sua ajuda, ele quer um programa que gere uma listas com os índices das maletas onde possivelmente estaria o prêmio. Ele te da 9 maletas em um grid(3x3), seu programa gera a lista e ele só precisa acertar o número da maleta, dentro das possíveis maletas que ele teria como referência gerada pelo seu programa.</p>
+
+<p>Por exemplo:<br />
+Vamos supor que as maletas que WBJ escolheu foram:<br />
+78 7 8<br />
+9 7 8<br />
+8 7 9</p>
+
+<p>A diferença é calculada da seguinte forma: o primeiro elemento é calculado com o próximo, e os outros dois com o seu anterior ignorando o sinal, desse modo a diferença entre as maletas fica assim:</p>
+
+<p>71 71 1<br />
+2 2 1<br />
+1 1 2</p>
+
+<p>O primeiro número é resultado de 78 menos 7, o segundo é 7 menos 78, e o terceiro é 8 menos. O processo se repete nas demais linhas. Então concluímos que a diferença que mais se repete é o número 1. O próximo passo é verificar se a diferença entre os números não é a que mais se repete. A diferença para o primeiro número é calculado com o segundo e terceiro, a diferença do segundo número é calculado com o primeiro e o último, logo a diferença do último com os dois anteriores. Caso o resultado dessas diferenças seja 1, o número não é exibido, por exemplo: o segundo número menos o terceiro das maletas que WBJ lhe deu é igual a 1, então o segundo numero não é valido e a mesma coisa acontece com o terceiro. O resultado final fica assim:</p>
+
+<p>Possiveis maletas: 78;</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>WBJ deixou <strong>P</strong> listas com uma área 3x3, onde ele tem certeza que a maleta premiada estará nela. São três linhas, cada linha com três números inteiros menores que 100.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Com isso pediu para você ver as possíveis maletas. Exiba uma mensagem "Possíveis maletas: " e logo em seguida as maletas selecionadas, separadas por "," e no final um ";" e o quebra linha.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4<br />
+2 4 5<br />
+8 9 10<br />
+1 6 3<br />
+7 3 1<br />
+9 5 6<br />
+4 8 4<br />
+3 1 4<br />
+7 2 6<br />
+9 8 10<br />
+78 7 8<br />
+9 7 8<br />
+8 7 9</p>
+
+						</td>
+						<td>
+							<p>Possiveis maletas: 2, 1, 6, 3;<br />
+Possiveis maletas: 1, 6;<br />
+Possiveis maletas: 4, 7, 2, 6, 9;<br />
+Possiveis maletas: 78;</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				Primeiro Contest Sam Well - IFSULDEMINAS
+			</p>
+		</div>
+	</body>
+</html>

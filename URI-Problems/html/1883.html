@@ -1,0 +1,115 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1883 - Fuga de Ayutthaya</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema E - Fuga de Ayutthaya" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1883</span>
+				<h1>Fuga de Ayutthaya</h1>
+				<div>
+					<p>Por Renzo Gonzalo Gómez Diaz, Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Ayutthaya foi um dos primeiros reinos da Tailândia. Ele existiu entre os anos 1351 e 1767. A organização de Investigadores de Mistérios Extraordinários (IME) tem um grande interesse em revelar os segredos dessa antiga civilização. Um dos historiadores mais renomeados dessa instituição é Márcio "o imprescindível" Himura. Atualmente, ele está investigando as regras de conduta e os castigos que eram impostos na época do rei Ramathibodi I, fundador de Ayutthaya. Descobertas recentes mostram uma forma de punição dada aos habitantes de Ayutthaya que não se convertiam ao budismo theravada, religião que foi adotada pelo rei Ramathibodi I.</p>
+
+					<p>Esse castigo consistia em deixar a pessoa presa em uma sala que tinha uma única saída, e onde era aceso fogo em diferentes lugares. Se a pessoa conseguia chegar à saída antes de ser atingida pelo fogo, sua vida era perdoada. Márcio tem acesso a diferentes registros que mostram a estrutura de algumas salas onde eram feitos esses castigos. Porém, não existem documentos onde se registre se a pessoa punida foi perdoada ou não. Márcio gostaria de saber se para cada uma dessas pessoas existe alguma chance de ela ter sido perdoada. Para isso, Márcio representou cada sala como uma grade de <em>N</em> linhas e <em>M</em> colunas onde cada posição contém um símbolo com o seguinte significado</p>
+
+					<p class="center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/contests/59_6.jpg" style="height:183px; width:182px" /></p>
+
+					<p>onde "início" se refere à posição da pessoa dentro da sala quando o fogo foi aceso. Além disso, Márcio impôs as seguintes restrições para modelar cada situação:</p>
+
+<ul>
+	<li>O fogo se propaga nas quatro direções cardinais (N, S, E, O) à velocidade de uma célula por minuto.</li>
+	<li>A pessoa presa também se move em essas quatro direções com essa mesma velocidade.</li>
+	<li>Nem o fogo e nem a pessoa presa podem ultrapassar uma parede.</li>
+	<li>Se a pessoa e o fogo chegarem a ocupar a mesma posição no mesmo instante de tempo, então considera-se que essa pessoa morre instantaneamente.</li>
+</ul>
+
+<p>Você é um membro do IME e Márcio quer saber se você merece tal distinção. Por isso, encarregou a você a tarefa de determinar se um preso teve a chance de ser perdoado.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+<p>Cada instância consiste de diversas linhas. A primeira linha contém dois inteiros, <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>3</sup>) e <strong>M </strong> (1 ≤ <strong>M</strong> ≤ 10<sup>3</sup>) . A seguintes <strong>N</strong> linhas contêm exatamente <strong>M</strong> símbolos representando, como descrito no enunciado, uma sala onde uma pessoa foi presa.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprima uma linha contendo um único caractere. Imprima 'Y' se a pessoa teve alguma chance de ter sido perdoada; caso contrário, imprima 'N'.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+4 5<br />
+....S<br />
+.....<br />
+.....<br />
+F...E<br />
+4 4<br />
+...S<br />
+....<br />
+....<br />
+F..E<br />
+3 4<br />
+###S<br />
+####<br />
+E..F</p>
+
+							</td>
+							<td>
+								<p>Y<br />
+N<br />
+N</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIX Maratona de Programação IME-USP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

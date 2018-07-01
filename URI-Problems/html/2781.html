@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2781 - Câmara de Compensação</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 8 - Câmara de Compensação" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+		
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2781</span>
+			<h1>Câmara de Compensação</h1>
+			<div>
+				<p>Por  OBI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Em uma cidade, muitas pessoas emprestam dinheiro para outras pessoas. A coisa chegou a um tal ponto que tem gente que é ao mesmo tempo devedor e credor. As pessoas resolveram então pagar suas dívidas e cada uma emitiu os cheques para pagar suas dívidas. Por exemplo, na figura, item (a), a pessoa <strong>C</strong> emitiu um cheque de 5 dinheiros para a pessoa <strong>A</strong>, e a pessoa <strong>D</strong> emitiu um cheque de 3 dinheiros para a pessoa <strong>C</strong>. Ou seja, a pessoa <strong>C</strong> recebeu da pessoa <strong>D</strong> e pagou a pessoa <strong>A</strong>. Pior ainda, existe um ciclo vicioso, em que a pessoa <strong>D</strong> emitiu um cheque de 3 dinheiros para a pessoa <strong>C</strong>, que por sua vez emitiu um cheque de 2 dinheiros para a pessoa B, que por sua vez emitiu um cheque de 1 dinheiro para a pessoa <strong>D</strong>. A situação mostrada no item (a) da Figura abaixo é descrita através de uma lista de cheques, com quatro triplas da forma (X, V, <strong>Y</strong>), para indicar que <strong>X</strong> emitiu um cheque de <strong>V</strong> dinheiros para <strong>Y</strong> . Na mesma Figura, no item (b), a situação é descrita com uma lista de apenas três cheques.</p>
+				<p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2781.png" alt=''/></p>
+<p>Entretanto, as duas listas são equivalentes: o saldo na conta bancária de uma pessoa é o mesmo em ambas as listas de cheques. Em ambos os casos, completada a compensação de todos os cheques, a pessoa A terminará com 5 dinheiros a mais na sua conta, a pessoa B terminará com 1 dinheiro a mais na sua conta, a pessoa C terminará com 4 dinheiros a menos na sua conta e a pessoa D terminará com 2 dinheiros a menos na sua conta.</p>
+
+<p>Vamos então definir equivalência de listas de cheques emitidos: duas listas de cheques são equivalentes se, ao final do processo de compensação de todos os cheques, o seguinte vale para cada pessoa: seu saldo bancário ao final da compensação de uma lista é o mesmo que o saldo bancário da pessoa ao final da compensação da outra lista.</p>
+
+<p>O total de valores compensados no item (a) da figura é igual a 11 dinheiros ao passo que no item (b) o total é de apenas 6 dinheiros! Este problema tem duas subtarefas:</p>
+
+<p>• Subtarefa A: determinar, dada uma lista de cheques, se é possível ou não diminuir o total de valores compensados utilizando uma outra lista de cheques equivalente.</p>
+
+<p>• Subtarefa B: determinar o total mínimo de valores compensados em uma lista de cheques equivalente. Você deve escrever um programa que resolva apenas a Subtarefa A ou que resolva as duas subtarefas.</p>
+
+<p>Você deve escrever um programa que resolva apenas a Subtarefa A ou que resolva as duas subtarefas.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A primeira linha contém dois inteiros, <strong>M</strong>&nbsp;(1 ≤ M ≤ 106) e <strong>N </strong>(2 ≤ <strong>N</strong> ≤ 103), onde <strong>M</strong> é o número de cheques emitidos e <strong>N</strong> é o número de habitantes da cidade. Os habitantes são identificados por números inteiros de 1 a <strong>N</strong>. Cada uma das <strong>M</strong> linhas seguintes descreve um cheque da lista e contém três inteiros <strong>X&nbsp;</strong>(1 ≤ <strong>X</strong> ≤ <strong>N</strong>), <strong>V</strong>&nbsp;(1 ≤ <strong>V</strong> ≤ 102)&nbsp; e <strong>Y</strong> (1 ≤ <strong>Y</strong> ≤ <strong>N</strong>, <strong>Y</strong>&nbsp;!= <strong>X</strong>)&nbsp;que indica que <strong>X</strong> emitiu um cheque de <strong>V</strong> dinheiros a favor de <strong>Y</strong> . É possível que haja mais de um cheque de <strong>X</strong> a <strong>Y</strong>. Também é possivel que haja cheques de <strong>X</strong> a <strong>Y</strong> e de <strong>Y</strong> a <strong>X</strong>, mas não de <strong>X</strong> a <strong>X</strong>.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Seu programa deve produzir duas linhas na saída. A primeira linha descreve a resposta para a Subtarefa A e deve conter um único caractere. O caractere deve ser <strong>S</strong> para indicar que é possível diminuir o total dos cheques compensados com uma lista de cheques equivalente, ou <strong>N</strong> para indicar que não é possível diminuir o total de cheques compensados.</p>
+
+<p>Se o seu programa resolve também a Subtarefa <strong>B</strong>, a segunda linha descreve a resposta para essa subtarefa e deve conter um número inteiro, o valor mínimo do total de cheques compensados, em uma lista equivalente. Se o seu programa não resolve a Subtarefa <strong>B</strong>, você pode deixar a linha em branco ou colocar um valor inteiro arbitrário.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4 4</p>
+
+<p>2 1 4</p>
+
+<p>3 5 1</p>
+
+<p>3 2 2</p>
+
+<p>4 3 3</p>
+
+						</td>
+						<td>
+							<p>S</p>
+
+<p>6</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>5 4</p>
+
+<p>4 50 3</p>
+
+<p>2 25 1</p>
+
+<p>3 10 2</p>
+
+<p>2 100 1</p>
+
+<p>4 50 3</p>
+
+                </td>
+                <td>
+                    <p>S</p>
+
+<p>215</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>4 4</p>
+
+<p>3 10 1</p>
+
+<p>2 40 1</p>
+
+<p>2 30 4</p>
+
+<p>2 20 4</p>
+
+                </td>
+                <td>
+                    <p>N</p>
+
+<p>100</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2018 - Fase 1	
+			</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1766 - O Elfo Das Trevas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema H - O Elfo Das Trevas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1766</span>
+                <h1>O Elfo das Trevas</h1>
+                <div>
+                    <p>Por Jean Bez, URI Online Judge <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>O estábulo onde ficam as renas foi intencionalmente aberto pelo Elfo das Trevas permitindo que cada uma delas corresse e voasse livremente pela fábrica do Papai Noel, causando o maior transtorno. Os elfos estão tentando desesperadamente fazer o possível para deixar o trenó pronto para embarque. Você ficou responsável por colocar cada rena na sua posição correta assim que ela é capturada por um dos outros elfos.</p>
+
+                    <p class="center"><img src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1766.gif" alt="" width="91" height="200" /></p>
+
+                    <p>Você sabe que o estábulo segue uma organização baseada na ordem que as renas irão ocupar no trenó. Desta forma, na hora da partida todas podem ser facilmente posicionadas. Diferentemente do que muitos pensam, as renas são posicionadas em uma fila única à frente no trenó. Nem todas as renas do estábulo são utilizadas em cada viagem, isto depende da carga total do trenó.</p>
+
+                    <p>Você conseguiu a lista com as características que são utilizadas para determinar a ordem de rena. Elas devem ser ordenadas primeiramente de forma decrescente por peso. Caso duas ou mais apresentarem o mesmo peso elas devem ser ordenadas de forma ascendente pela idade, após pela altura e caso ainda persista empate, pelo nome.</p>
+
+                    <p>Utilizando seu computador mágico de última geração você quer escrever um programa que ordene as renas, de acordo com as características informadas, e exiba somente o número exato de renas que serão utilizadas no trenó (de forma ordenada).</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Este problema possui diversos casos de teste. A primeira linha de entrada contém um inteiro <strong>T</strong> (1 &le; <strong>T</strong> &le; 10<sup>5</sup>) que indica o número de casos de teste a seguir. A primeira linha de cada caso de teste contém dois inteiros <strong>N</strong> e <strong>M</strong> (5 &le; <strong>N</strong>, <strong>M</strong> &le; 10<sup>3</sup>) que indicam respectivamente o número total de renas e o número de renas que irão puxar o trenó. Na sequência serão informados uma string <strong>S</strong> seguida por 2 inteiros <strong>P</strong> (1 &le; <strong>P</strong> &le; 300) e <strong>I</strong> (1 &le; <strong>I</strong> &le; 300) e por um número de ponto flutuante <strong>A</strong> (0.00 &le; <strong>A</strong> &le; 3.00), indicando respectivamente o nome, o peso, a idade e a altura de cada uma das renas. O nome de cada uma das renas é composto somente por uma palavra com até 100 caracteres.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste você deverá exibir a mensagem "CENARIO {<strong>i</strong>}", onde <strong>i</strong> indica o caso de teste atual, seguido da posição e o nome de cada umas das <strong>M</strong> renas que irão puxar o trenó, ordenadas conforme descrito acima.</p>
+
+                    <p></p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+                                    1<br/>
+                                    9 5<br/>
+                                    Rudolph 50 100 1.12<br/>
+                                    Dasher 10 121 1.98<br/>
+                                    Dancer 10 131 1.14<br/>
+                                    Prancer 7 142 1.36<br/>
+                                    Vixen 50 110 1.42<br/>
+                                    Comet 50 121 1.21<br/>
+                                    Cupid 50 107 1.45<br/>
+                                    Donner 30 106 1.23<br/>
+                                    Blitzen 50 180 1.84
+                                </p>
+                            </td>
+                            <td>
+                                <p>
+                                    CENARIO {1}<br/>
+                                    1 - Rudolph<br/>
+                                    2 - Cupid<br/>
+                                    3 - Vixen<br/>
+                                    4 - Comet<br/>
+                                    5 - Blitzen
+                                </p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Contest de Natal 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

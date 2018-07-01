@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1816 - Vikings em Praga?</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1816 - Vikings em Praga?" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1816</span>
+                <h1>Vikings em Praga?</h1>
+                <div>
+                    <p>Por Maratona de Programação 2003, IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Vestígios de uma antiga civilização viking foram descobertos nos arredores de Praga, e uma grande quantidade de material impresso foi achada junto ao sítio arqueológico. Como esperado, a leitura deste material mostrou-se uma tarefa árdua e desafiadora, já que essa civilização utilizava um esquema de codifucação de texto para evitar que seu conhecimento fosse assimilado por seus rivais.</p>
+
+<p>Recentemente, pesquisadores tchecos anunciaram com grande euforia à imprensa a compreensão do mecanismo de codificação utilizado por esses vikings. De acordo com os pesquisadores, o alfabeto viking era composto pelas letras de A até Z (incluindo as letras K, W e Y).</p>
+
+<p>A codificação era realizada da forma que segue. Inicialmente, era construída uma lista em que a letra A aparecia na primeira posição, a letra B aparecia na segunda, e assim sucessicamente,com as letras sequindo a mesma ordem que em nosso alfabeto. Em sequida, o texto a ser codificado era barrido da esquerda para a direita e, para cada letra <i>l</i> encontrada, o número de sua posição na lista era impresso e <i>l</i> era movida para o início da lista. Por exemplo, a codificação viking para a mensagem:</p>
+
+<p class="center">A B B B A A B B B B A C C A B B A A A B C</p>
+
+<p>era dada pela seguinte sequência de inteiros:</p>
+
+<p class="center">1 2 1 1 2 1 2 1 1 1 2 3 1 2 3 1 2 1 1 2 3</p>
+
+<p>Os pesquisadores tchecos pediram sua ajuda para construir um programa que recebe uma sequência de inteiros que representa uma mensagem codificada e decodifica-a.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Seu programa deve estar preparado para trabalhar com diversas instâncias. Cada instância tem a estrutura que segue. Na primeira linha é fornecido um inteiro <strong>m</strong>&nbsp;(0 ≤&nbsp;<strong>m</strong>&nbsp;≤ 10000) que representa o número de inteiros que compõem o texto codificado. Na próxima linha são dados, separados por espaços em branco, os <strong>m</strong> valores inteiros (cada valor é maior ou igual a 1 e menor ou igual a 26). Um valor <strong>m = 0</strong> indica o final das instâncias e não ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identificador <strong>Instancia h</strong> em que <strong>h</strong> é um número inteiro, sequêncial e crescente a partir de 1. Na linha seguinte, você deve imprimir o texto decodificado. Uma linha em branco deve ser impressa após cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>21<br />
+1 2 1 1 2 1 2 1 1 1 2 3 1 2 3 1 2 1 1 2 3<br />
+5<br />
+22 6 8 4 15<br />
+3<br />
+24 1 1<br />
+26<br />
+22 10 6 4 13 16 16 12 5 1 4 20 1 21 21 5 10 7 16 6 15 12 5 3 8 9<br />
+0</p>
+
+                            </td>
+                            <td>
+Instancia 1<br />
+ABBBAABBBBACCABBAAABC<br />
+<br />
+Instancia 2<br />
+VEGAN<br />
+<br />
+Instancia 3<br />
+XXX<br />
+<br />
+Instancia 4<br />
+VIDALONGAAOSSTRAIGHTEDGERS<br />
+<br />               
+							</td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VII Maratona de Programação IME-USP 2003.
+                </p>
+            </div>
+
+        </body>
+    </html>

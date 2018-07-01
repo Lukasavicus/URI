@@ -1,0 +1,101 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2448 - Carteiro</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2448 - Carteiro" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2448</span>
+				<h1>Carteiro</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2014<img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Um carteiro é o responsável por entregar as encomendas na rua de Joãozinho. Por política da empresa, as encomendas devem ser entregues na mesma ordem que foram enviadas, mesmo que essa não seja a forma mais rápida. Cansado de subir e descer aquela rua tantas vezes, nosso amigo quer mostrar à empresa quanto tempo ele leva para entregar as encomendas, na tentativa de derrubar essa política.</p>
+
+<p>A rua de Joãozinho tem N casas. Naturalmente, as casas são numeradas de forma ordenada (não necessariamente por números consecutivos). Como as casas possuem aproximadamente o mesmo tamanho, você pode assumir que o carteiro leva uma unidade de tempo para caminhar de uma casa até a casa imediatamente vizinha.</p>
+
+<p>Há M encomendas para essa rua, que devem ser entregues na mesma ordem em que chegaram. Cada encomenda contém o número da casa onde deve ser entregue.</p>
+
+<p>Escreva um programa que determine quanto tempo o carteiro levará para entregar todas as encomendas, assumindo que quando o tempo começa a contar, ele está na primeira casa (a de menor número), e o tempo termina de contar quando todas as encomendas foram entregues (mesmo que o carteiro não esteja de volta na primeira casa). Você pode desprezar o tempo para colocar a encomenda na caixa de correio (ou seja, se ele só tiver uma encomenda, para a primeira casa, a resposta para o problema é zero).</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros, <strong>N</strong> e <strong>M </strong>(1 ≤ <strong>N</strong>, <strong>M</strong> ≤ 45.000), respectivamente o número de casas e o número de encomendas. A segunda linha contém <strong>N </strong>(1 ≤ <strong>N<sub>i </sub></strong>≤ 10<sup>9</sup>) inteiros em ordem estritamente crescente, indicando os números das casas. A terceira linha contém <strong>M</strong> (1 ≤ <strong>M<sub>i</sub></strong> ≤ 10<sup>9</sup>) inteiros indicando os números das casas onde as encomendas devem ser entregues, na ordem dada na entrada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve produzir uma única linha, contendo um único inteiro, o tempo que o carteiro levará para entregar todas as encomendas na ordem correta, assumindo que ele começa na casa de menor número.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 5</p>
+								<p>1 5 10 20 40</p>
+								<p>10 20 10 40 1</p>
+							</td>
+							<td>
+								<p>10</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 4</p>
+								<p>50 80 100</p>
+								<p>80 80 100 50</p>
+							</td>
+							<td>
+								<p>4</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática - 2014 Fase 1 Modalidade Universitária (PU)
+				</p>
+			</div>
+
+		</body>
+	</html>

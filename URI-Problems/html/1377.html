@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1377 - Recuperador de Arquivos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1377 - Recuperador de Arquivos" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1377</span>
+            <h1>Recuperador de Arquivos</h1>
+            <div>Por Pablo Heiber <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=""/> Argentina</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Sua escola tem um computador que é usado como um servidor web para hospedar seu site institucional, páginas pessoais dos funcionários, sites para grupos de pesquisa, assuntos, e muitos outros. Recentemente, a tabela do disco rígido foi corrompida, por isso a organização de todos os arquivos foi perdida. Infelizmente, não há backups dessas informações. A única esperança é olhar através de todo o disco de dados e tentar descobrir quais partes correspondem a cada arquivo. Felizmente, o disco foi usando um sistema de arquivos que manteve cada arquivo contíguo, apenas as partes contíguas de dados precisam ser inspecionadas.</p>
+
+                <p>Os dados do disco é uma seqüência de bytes. Cada byte neste disco em particular pode armazenar uma letra do alfabeto Inglês (maiúsculas e minúsculas distintas), um dígito decimal, um ponto ou uma vírgula, totalizando 64 caracteres diferentes.</p>
+
+                <p>Enquanto você estava pensando em como resolver o problema, você de repente se lembrou de que o sistema de arquivos também manteve várias cópias de cada arquivo, portanto, apenas os pedaços de bytes contíguos que se repetem tem a chance de ser um arquivo. Além disso, para cada repetição dos mesmos bytes contíguos, apenas uma cópia precisa ser verificada. Por exemplo, se os dados forem 'ababcabb', as subsequências repetidos contíguas são 'a', 'b' e 'ab', mas nada que contenha 'c', nem 'ba' ou 'Bb' é. Portanto, temos 3 pedaços de bytes contíguos que precisam de verificação neste caso. Você precisa escrever um programa que calcule exatamente quantas sequências precisam de verificação, isto é o número de sequências diferentes de bytes contíguos que aparecem em pelo menos duas vezes nos dados.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Há diversos casos de teste. A entrada de cada caso de teste é dada em exatamente uma linha, contendo uma string não-vazia de no máximo 10<sup>5</sup> caracteres que representa os dados do disco. Cada caractere da string poderá ser uma letra minúscula, uma letra maiúscula, um dígito, um ponto ou uma vírgula. O último caso de teste é seguido por uma linha contendo um único asterisco.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, seu programa deverá retornar uma linha com um inteiro, representando o número de diferentes subsequências contíguas que aparecem pelo menos duas vezes na seqüência de entrada.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>ababcabb<br />
+                                mississippi<br />
+                                aaaaaaaaaaaaaaaaaaaaaaaaaa<br />
+                                012345678,abcdefg.STUVWXYZ<br />
+                                say.twice,say.twice<br />
+                                *</p>
+
+                        </td>
+                        <td>
+                            <p>3<br />
+                                9<br />
+                                25<br />
+                                0<br />
+                                45</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Adaptado por walison divino azeredo da silva
+            </p>
+        </div>
+
+    </body>
+</html>

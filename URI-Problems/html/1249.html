@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1249 - Rot13 </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1249 - Rot13 " />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1249</span>
+            <h1>Rot13 </h1>
+            <div><p>
+                    Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif" style="width: 16px; height: 11px;" /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Escreva um programa que receba uma mensagem "secreta" e retorne esta mensagem codificada.
+                    A mensagem é codificada com uma cifra chamada rot13. Rot13 funciona da seguinte maneira, 
+                    é atribuido para cada letra um índice, baseado em sua posição no alfabeto. a = 1, b = 2, c = 3, ..., z = 26. 
+                    Cada letra da mensagem deve ser deslocada 13 posições para a direita, se o fim do alfabeto 
+                    for atingido, a contagem recomeça no primeiro caracter do alfabeto. Por exemplo, o caracter "a" 
+                    (aspas apenas para evidenciar), seria mapeado para "n", "y" para "l", "f" para "s", e assim por diante.
+                    O mesmo processo é feito para letras maiúsculas também. Quaisquer caracteres não-alfabéticos 
+                    devem ser repassados para a saída sem alterações.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste e termina com final de arquivo (EOF). Cada caso de teste consiste de uma linha que 
+                    contém uma mensagem com no mínimo 1 no máximo 50 caracteres inclusive, 
+                    contendo letras, números, e os símbolos: !@#$%^&amp;*()-_=+[]{}|;':,./&lt;>?"</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada linha da entrada, imprima uma linha na saída com a mensagem cifrada pelo método rot13.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                z<br />
+                                a<br />
+                                x<br />
+                                Hello world!<br />
+                                This is a test message.<br />
+                                abc123&lt;>,xyz?*$<br />
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                m<br />
+                                n<br />
+                                k<br />
+                                Uryyb jbeyq!<br />
+                                Guvf vf n grfg zrffntr.<br />
+                                nop123&lt;>,klm?*$<br />
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                * Este problema é de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por Jeferson T. para utilização (autorizada) no URI OJ.<br />
+                * A reprodução não autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. é estritamente proibida.</p>
+
+        </div>
+
+    </body>
+</html>

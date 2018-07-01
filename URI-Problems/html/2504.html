@@ -1,0 +1,97 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2504 - Biorritmo</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2504 - Biorritmo" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2504</span>
+				<h1>Biorritmo</h1>
+				<div>
+					<p>Por Hamilton José Brumatto, UESC <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>No início do século XX, o psicólogo vienense Hermann Swoboda e o médico alemão Wilhelm Fliess, perceberam que o ser humano possui ciclos favoráveis e desfavoráveis ao longo da vida. Estes ciclos estão associados a três estados humanos: físico, emocional e intelecto. Ao nascer todos os ciclos começam de forma crescente. E ao longo dos dias variam de forma senoidal entre um máximo e um mínimo.</p>
+
+<ul>
+	<li>O biorritmo de natureza física tem ciclo de 23 dias.</li>
+	<li>O biorritmo do estado emocional tem ciclo de 28 dias.</li>
+	<li>O biorritmo da capacidade intelectual tem ciclo de 33 dias.</li>
+</ul>
+
+<p>O biorritmo, no período positivo indica uma fase favorável aos desafios físico, emocional ou intelectual. Por exemplo, quem estiver na fase positiva do biorritmo intelectual terá mais vantagens nesta competição que aqueles em uma fase negativa.</p>
+
+<p>No dia 0 (nascimento) todos os biorritmos estão zerados. No dia 1 estão já na fase positiva. No dia 14, por exemplo, o biorritmo emocional estará zerado novamente, o físico já estará negativo e o de intelecto ainda positivo. E assim sucessivamente. A pergunta é, passados vários dias de vida, quais os estágios do biorritmo na data de hoje (7/11/2016)? A você foi pedido um programa que recebe como entrada a data de nascimento e diga, para os biorritmos: físico, emocional e intelectual (nesta ordem), se no dia 7/11/2016 estarão: positivo, negativo ou zerado.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste. Cada linha representa um caso de teste e contém uma data no formato&nbsp;<strong>D/M/AAAA</strong>&nbsp;(ano completo), uma data válida e anterior a 7/11/2016. A anterioridade não supera 100 anos.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste deverão ser fornecidos, em uma linha única, três palavras, separadas por um único espaço, de acordo com o biorritmo físico, emocional e intelectual, nesta ordem. Se o biorritmo específico estiver na fase positiva a palavra de saída será: "POSITIVO", se estiver na fase negativa: "NEGATIVO", ou se for um dia de biorritmo zerado: "ZERADO".</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7/1/1989<br />
+31/3/2003<br />
+19/9/1999</p>
+
+							</td>
+							<td>
+								<p>ZERADO POSITIVO POSITIVO<br />
+POSITIVO ZERADO NEGATIVO<br />
+POSITIVO POSITIVO NEGATIVO</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Este problema fez parte da CPU2016 (Competição de Programação Universitária) da Universidade Estadual de Santa Cruz - UESC.
+				</p>
+			</div>
+
+		</body>
+	</html>

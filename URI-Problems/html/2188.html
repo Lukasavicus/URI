@@ -1,0 +1,113 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2188 - Macaco-prego</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2188 - Macaco-prego" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2188</span>
+				<h1>Macaco-prego</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2000 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O macaco-prego é um animal irrequieto e barulhento, merecedor também dos adjetivos desordeiro e despudorado. A sua cabeça, encimada por uma densa pelagem negra ou marrom-escura, semelhante a um gorro, torna seu aspecto inconfundível. Apesar de ser o macaco mais comum nas matas do país, uma de suas sub-espécies encontra-se seriamente ameaçada de extinção: o macacoprego-do-peito-amarelo, que se distingue das demais pela coloração amarelada do peito e da parte anterior dos braços.</p>
+
+<p>Um grande esforço foi feito pelos primatologistas para aumentar a população dos macacos-pregodo-peito-amarelo. Sabe-se que eles se alimentam de plantas, das quais consomem preferencialmente frutos e brotos. Alimentam-se também de muitos animais, preferencialmente lesmas, lagartas e rãs, e preferem as florestas mais densas. Para determinar o melhor local do país para criar uma nova reserva ambiental para os macacos-prego-do-peito-amarelo, o governo fez um levantamento das regiões no país onde as condições preferidas desses animais ocorrem: regiões de floresta densa, regiões com frutos, regiões com muitos brotos, etc. Ajude a salvar os macacos-pregodo-peito-amarelo.</p>
+
+<p>As regiões propícias para o macaco-prego-do-peito-amarelo foram determinadas como retângulos cujos lados são todos verticais ou horizontais. Sua tarefa é encontrar o local ideal para a reserva ambiental, definida como a interseção de todas as regiões dadas.</p>
+
+<p class="center"><img alt='' style="width: 700px; height: 175px;" src = "https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_00148_B.png"></p>
+
+<p>As regiões foram divididas de tal forma que uma região não tangencia qualquer outra região. Assim, a interseção entre quaisquer duas regiões ou é um retângulo ou é vazia.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Seu programa deve ler vários conjuntos de teste. A primeira linha de um conjunto de teste contém um inteiro não negativo, <strong>N</strong> (0 ≤ <strong>N</strong> ≤ 10000), que indica o número de regiões (o valor <strong>N</strong> = 0 indica o final da entrada). Seguem-se <strong>N</strong> linhas, cada uma contendo quatro números inteiros <strong>X</strong>, <strong>Y</strong>, <strong>U</strong> e <strong>V</strong> (-10000 ≤ <strong>X</strong>,<strong>Y</strong>,<strong>U</strong>,<strong>V</strong> ≤ 10000)que descrevem uma região: o par <strong>X</strong>, <strong>Y</strong> representa a coordenada do canto superior esquerdo e o par <strong>U</strong>, <strong>V</strong> representa a coordenada do canto inferior direito de um retângulo.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada conjunto de teste da entrada seu programa deve produzir três linhas na saída. A primeira linha deve conter um identificador do conjunto de teste, no formato “Teste n”, onde n é numerado a partir de 1. A segunda linha deve conter as coordenadas do retângulo de interseção encontrado pelo seu programa, no mesmo formato utilizado na entrada. Caso a interseção seja vazia, a segunda linha deve conter a expressão “nenhum”. A terceira linha deve ser deixada em branco. A grafia mostrada no Exemplo de Saída, abaixo, deve ser seguida rigorosamente.&nbsp;</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+<p>0 6 8 1</p>
+
+<p>1 5 6 3</p>
+
+<p>2 4 9 0</p>
+
+<p>3</p>
+
+<p>0 4 4 0</p>
+
+<p>3 1 7 -3</p>
+
+<p>6 4 10 0</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>Teste 1</p>
+
+<p>2 4 6 3</p><br/>
+
+
+<p>Teste 2</p>
+
+<p>nenhum</p><br/>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2000
+				</p>
+			</div>
+
+		</body>
+	</html>

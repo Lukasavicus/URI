@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1438 - Desempilhando Caixas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1438 - Desempilhando Caixas" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1438</span>
+            <h1>Desempilhando Caixas</h1>
+            <div>Por Alessandro de Luna Almeida <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Joãozinho e sua família acabaram de se mudar. Antes da mudança, ele colocou todos os seus livros dentro de várias caixas numeradas. Para facilitar a retirada dos livros, ele fez um inventário, indicando em qual caixa cada livro foi colocado, e o guardou na caixa de número 1.</p><p>Chegando no seu novo quarto, ele viu que seus pais guardaram as caixas em várias pilhas, arrumadas em fila, com cada pilha encostada na pilha seguinte.</p><p>Joãozinho é um garoto muito sistemático. Por isso, antes de abrir qualquer outra caixa, ele quer recuperar seu inventário. Joãozinho também é um garoto muito desajeitado. Para tirar uma caixa de uma pilha, ele precisa que a caixa esteja no topo da pilha e que ao menos um de seus lados, não importa qual, esteja livre (isto é, não tenham nenhuma caixa adjacente).</p><p>Para isso, Joãozinho precisa desempilhar algumas das caixas. Como o quarto dele é bem grande, ele sempre tem espaço para colocar as caixas retiradas em outro lugar, sem mexer nas pilhas que os pais dele montaram. </p><p>Para minimizar seu esforço, Joãozinho quer que você escreva um programa que, dadas as posições das caixas nas pilhas, determine quantas caixas Joãozinho precisa desempilhar para recuperar seu inventário.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada é composta de vários casos de teste. A primeira linha de cada caso de teste contém dois números inteiros <b>N</b> e <b>P</b> , indicando, respectivamente, o número de caixas e o número de pilhas (1 ≤ <b>P</b> ≤ <b>N</b> ≤ 1.000). As caixas são numeradas seqüencialmente de 1 a <b>N</b>. </p><p>Cada uma das <b>P</b> linhas seguintes descreve uma pilha. Cada linha contém um inteiro Qi, indicando quantas caixas há na pilha i, seguido de um espaço em branco, seguido de uma lista de Qi números, que são os identificadores das caixas. Os elementos da lista são separados por um espaço em branco.</p><p>Todas as pilhas contêm pelo menos uma caixa, e todas as caixas aparecem exatamente uma vez na entrada. As caixas em cada pilha são listadas em ordem, da base até o topo da pilha. Todas as caixas têm o mesmo formato. </p><p>O final da entrada é indicado por <b>N</b> = <b>P</b> = 0. </p><p>A entrada deve ser lida da entrada padrão.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste da entrada, seu programa deve imprimir uma única linha, contendo um único inteiro: o número mínimo de caixas, além da caixa 1, que Joãozinho precisa desempilhar para recuperar o seu inventário.</p><p>A saída deve ser escrita na saída padrão.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                4 3<br />
+                                1 3<br />
+                                2 1 2<br />
+                                1 4<br />
+                                4 3<br />
+                                1 3<br />
+                                2 2 1<br />
+                                1 4<br />
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>2<br />
+                                ​0</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programacao da SBC 2007.
+            </p>
+        </div>
+
+    </body>
+</html>

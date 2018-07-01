@@ -1,0 +1,188 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2330 - Telemarketing</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2330 - Telemarketing" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2330</span>
+				<h1>Telemarketing</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 5</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O telemarketing foi patenteado em 1982 pelo empresário Nadji Tehrani e consiste em vender produtos através do telefone. Uma das formas de venda utilizadas hoje em dia é obter-se uma lista de possíveis compradores para os produtos vendidos e seus respectivos telefones e utilizar um time de vendedores para ligar para esse conjunto de pessoas.</p>
+
+					<p>Bo Ber Man é um empresário estrangeiro dono da Mar Ato Na, cujos ideogramas em seu idioma significam "Empresa Nacional de Telemarketing". Sua empresa realiza vendas dos produtos mais variados para diversas companhias.</p>
+
+					<p>Ele possui um time de <em>N</em> vendedores e uma lista de ligações a serem feitas. Para cada ligação sabe-se o tempo <em>T</em> em minutos que ela vai durar. Os vendedores são identificados por números de 1 a <em>N</em> e fazem as ligações da seguinte forma:</p>
+
+					<ul>
+						<li>Inicialmente, todos os vendedores estão inativos.</li>
+						<li>Sempre que um vendedor realizar uma ligação, ele ficará ocupado pelos <em>T</em> minutos descritos na lista para aquela ligação. O tempo entre duas ligações consecutivas as do mesmo vendedor é desprezível.</li>
+						<li>Um vendedor não pode fazer mais de uma ligação ao mesmo tempo.</li>
+						<li>Um vendedor que esteja inativo deverá fazer a ligação que estiver no topo da lista. Caso mais de um vendedor esteja inativo no mesmo instante, o vendedor com o menor identificador dentre os vendedores inativos deverá fazer a ligação que estiver no topo da lista.</li>
+						<li>Assim que uma ligação é atribuída a um vendedor, ela é removida da lista.</li>
+						<li>Um vendedor fica inativo sempre que termina uma ligação.</li>
+					</ul>
+
+					<p>Por exemplo, suponha que um time de 4 vendedores deve fazer 6 ligações, cujos tempos sejam 5, 2, 3, 3, 4, 9. Como inicialmente nenhum vendedor está ocupado, o primeiro vendedor fará a ligação de 5 minutos, o segundo vendedor a ligação de 2 minutos e os vendedores de número 3 e 4 farão ligações de 3 minutos. Como o segundo vendedor terminará a sua ligação antes dos demais, ele fará a quinta ligação, de 4 minutos e, por fim, o terceiro vendedor (cujo tempo é igual ao do quarto vendedor, mas o número é menor) fará a sexta ligaçao, de 9 minutos.</p>
+
+					<p>Escreva um programa que, dados o número de vendedores, o número de ligações e a duração de cada ligação, determine o número de ligações feitas por cada vendedor.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do <em>dispositivo de entrada padrão</em> (normalmente o teclado). A primeira linha da entrada contém dois inteiros, <strong><em>N</em></strong> e <strong><em>L</em></strong> indicando o número de vendedores e o número de ligações a serem realizadas (1 ≤ <strong><em>N</em></strong> ≤ 1.000, 1 ≤ <strong><em>L</em></strong> ≤ 1.000.000). As <strong><em>L</em></strong> linhas seguintes contêm um inteiro <strong><em>T</em></strong> cada (1 ≤ <strong><em>T</em></strong> ≤ 30), em que <strong><em>T</em></strong> representa a duração de cada ligação.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na <em>saída padrão</em>, <em>N</em> linhas, uma para cada vendedor, contendo dois inteiros <em>I</em> e <em>P</em> representando o número do vendedor e o número de ligações realizadas por este vendedor. Os vendedores devem ser apresentados em ordem crescente de identificador, começando a partir de 1.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 3</p>
+
+								<p>2</p>
+
+								<p>2</p>
+
+								<p>1</p>
+
+							</td>
+							<td>
+								<p>1 1</p>
+
+								<p>2 1</p>
+
+								<p>3 1</p>
+
+								<p>4 0</p>
+
+								<p>5 0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+		        <table>
+		            <thead>
+		            </thead>
+		            <tbody>
+		                <tr>
+		                    <td class="division">
+		                        <p>4 6</p>
+
+								<p>5</p>
+
+								<p>2</p>
+
+								<p>3</p>
+
+								<p>3</p>
+
+								<p>4</p>
+
+								<p>9</p>
+
+		                    </td>
+		                    <td>
+		                        <p>1 1</p>
+
+								<p>2 2</p>
+
+								<p>3 2</p>
+
+								<p>4 1</p>
+
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+
+		        <div class="both"></div>
+
+		        <table>
+		            <thead>
+		            </thead>
+		            <tbody>
+		                <tr>
+		                    <td class="division">
+		                        <p>3 9</p>
+
+								<p>3</p>
+
+								<p>5</p>
+
+								<p>1</p>
+
+								<p>1</p>
+
+								<p>1</p>
+
+								<p>1</p>
+
+								<p>1</p>
+
+								<p>1</p>
+
+								<p>1</p>
+
+		                    </td>
+		                    <td>
+		                        <p>1 3</p>
+
+								<p>2 1</p>
+
+								<p>3 5</p>
+
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2007 Fase 2 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

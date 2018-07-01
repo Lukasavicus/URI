@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2636 - 3-RSA</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2636 - 3-RSA" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2636</span>
+			<h1>3-RSA</h1>
+			<div>
+				<p>Por Edson Alves da Costa Júnior, UNB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>
+					Pedro, assim como muitos outros estudantes de graduação, ficou fascinado com a beleza e sofisticação da criptografia. Começou a ler referências históricas, estudar os principais algoritmos e a buscar artigos e reportagens que abordassem o tema sob os mais diferentes aspectos.
+				</p>
+				<p>
+					Contudo, o grande volume de informações adquiridas num curto espaço de tempo o levou a alguns questionamentos e temores. Preocupado com a computação quântica, que em teoria inutilizaria a criptografia RSA, e motivado pela história do algoritmo DES, que teve uma evolução mais segura denominada 3DES, ele resolveu propôr uma versão mais segura do RSA, denominada 3-RSA.
+				</p>
+				<p>
+				    No 3-RSA, o módulo n, composto no algoritmo original por dois números primos ı́mpares distintos, seria agora composto por 3 primos ı́mpares distintos! Pedro estava certo que esta modificação traria maior dificuldade de quebra do algoritmo, uma vez que os atacantes agora teriam que encontrar 3 fatores de n, e não apenas 2.
+				</p>
+				
+				<p>
+				    Sabendo que, em criptografia, às vezes menos é mais, e disposto a mostrar ao motivado e bem intencionado Pedro que a modificação proposta, de fato, enfraquece o RSA, fatore o módulo n do algoritmo 3-RSA, exibindo seus três fatores primos.
+				</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>
+				    A entrada consiste em uma série de casos de teste. Cada teste é representado por uma única linha, contém o inteiro <strong>n</strong> (105 ≤ <strong>n</strong> ≤ 10<sup>18</sup>), o que representa o módulo do algoritmo 3-RSA. A entrada termina com o valor <strong>n</strong> = 0, o qual não deve ser processado.
+				</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>
+                    Para cada caso de teste deve ser impressa uma linha contendo a mensagem <em>’n = p x q x r’</em>, onde <strong>p</strong>, <strong>q</strong>, <strong>r</strong> são os fatores primos de <strong>n</strong>, com 3 ≤ <strong>p</strong> x <strong>q</strong> x <strong>r</strong>.
+				</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>105</p>
+                            <p>231</p>
+                            <p>7163</p>
+                            <p>89348965057411</p>
+                            <p>0</p>
+						</td>
+						<td>
+							<p>105 = 3 x 5 x 7</p>
+                            <p>231 = 3 x 7 x 11</p>
+                            <p>7163 = 13 x 19 x 29</p>
+                            <p>89348965057411 = 17393 x 51437 x 99871</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Maratona de Programação UnB/CIC 2015.
+			</p>
+		</div>
+
+	</body>
+</html>

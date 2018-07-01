@@ -1,0 +1,130 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2365 - Bolão do Brasileirão</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema K - Bolão do Brasileirão" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2365</span>
+				<h1>Bolão do Brasileirão</h1>
+				<div>
+					<p>Por Alexandre Davis, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Muitos irão dizer que é sorte, mas Dilson possui uma incrível habilidade em bolões de campeonatos de futebol. Sua última façanha foi ganhar o bolão da computação da Copa do Mundo acertando, inclusive, os surpreendentes placares de Brasil X Alemanha e Espanha X Holanda. Pensando em se tornar um profissional do bolão, ele pede a você para criar um programa que irá computar o ranking final de um bolão. </p>
+
+<p>Em um bolão, competidores palpitam em placares de partidas de futebol antes do início de um torneio. Após a realização de cada partida, são atribuídos pontos ao participantes de acordo com as seguintes regras:</p>
+
+<ul>
+	<li><strong>10 pontos</strong> - Se o participante acertou o resultado\footnote{Por resultado compreende-se o time vencedor ou empate} e os gols marcados por cada time.</li>
+	<li><strong>7 pontos</strong> - Se o participante acertou o resultado e os gols marcados por um time.</li>
+	<li><strong>5 pontos</strong> - Se o participante acertou apenas resultado.</li>
+	<li><strong>2 pontos</strong> - Se o participante acertou os gols marcados por um time.</li>
+	<li><strong>0 pontos</strong> - Se o participante não acertou nada.</li>
+</ul>
+
+<p>Ao final do torneio, o participante que tiver mais pontos é o campeão. Neste problema, você deve retornar o ranking final do bolão. A ordem lexicográfica do nome do participante é o único critério de desempate (mais uma vantagem para Dilson).</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Existem múltiplos casos de teste. A primeira linha de cada caso de teste  é composta por 2 inteiros <strong>P</strong> (1 ≤ <strong>P</strong> ≤ 10) e <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10) indicando, respectivamente, o número de participantes do bolão e o número de partidas disputadas. As linhas seguintes descreverão os palpites dos participantes.</p>
+
+<p>Os palpites do <strong>i</strong>-ésimo participante serão descritos em <strong>N+1</strong> linhas. A primeira linha possui apenas uma string <strong>S<sub>i</sub></strong>, que é o nome do participante <strong>i</strong>. As <strong>N</strong> linhas seguintes descrevem os palpites de cada partida <strong>j</strong>. Esses palpites são descritos por <strong>A<sub>j</sub> G<sup>A</sup><sub>i,j</sub> B<sub>j</sub> G<sup>B</sup><sub>i,j</sub></strong>, onde <strong>A<sub>j</sub></strong> e <strong>B<sub>j</sub></strong> são strings indicando os times que irão se enfrentar na <strong>j</strong>-ésima partida, <strong>G<sup>A</sup><sub>i,j</sub></strong> e <strong>G<sup>B</sup><sub>i,j</sub></strong> ( 0 ≤ <strong>G<sup>A</sup><sub>i,j</sub></strong> , <strong>G<sup>B</sup><sub>i,j</sub></strong> ≤ 100 ) são inteiros  que representam, respectivamente, a quantidade de gols que o participante <strong>i</strong> espera que os times <strong>A<sub>j</sub></strong> e <strong>B<sub>j</sub></strong> marquem na partida <strong>j</strong>. Os participantes sempre palpitam seguindo a mesma ordem. Logo, <strong>A<sub>j</sub></strong> e <strong>B<sub>j</sub></strong> será o mesmo para todos os participantes.</p>
+
+<p>Por fim, existem <strong>N</strong> linhas que descrevem o resultado real das partidas. Cada linha possui <strong>A<sub>j</sub></strong> <strong>R<sup>A</sup><sub>j</sub></strong> <strong>B<sub>j</sub></strong> <strong>R<sup>B</sup><sub>j</sub></strong>, onde <strong>R<sup>A</sup><sub>j</sub></strong> e <strong>R<sup>B</sup><sub>j</sub></strong> ( 0 ≤ <strong>R<sup>A</sup><sub>j</sub></strong> , <strong>R<sup>B</sup><sub>j</sub></strong> ≤ 100 ) são inteiros  que representam a quantidade de gols marcados pelos times <strong>A<sub>j</sub></strong> e <strong>B<sub>j</sub></strong> nesta partida.</p>
+
+<p>A entrada termina quando <strong>P = N = 0</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saida é descrita em <strong>P</strong> linhas. Cada linha deve conter uma string <strong>S<sub>i</sub></strong> indicando o nome do jogador e um inteiro <strong>K<sub>i</sub></strong>, indicando quantos pontos o jogador <strong>i</strong> marcou, separados por um espaço. Essas linhas devem estar ordenadas de acordo com os valores <strong>K<sub>i</sub></strong> e o critério de desempate.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+							<p>
+							3 4<br/>
+Dilson<br/>
+Barcelona 10 Santos 0<br/>
+Atletico 9 Cruzeiro 2<br/>
+Atletico 1 Barcelona 0<br/>
+PontePreta 2 Cruzeiro 0<br/>
+Henrique<br/>
+Barcelona 34 Santos 0<br/>
+Atletico 0 Cruzeiro 1<br/>
+Atletico 0 Barcelona 52<br/>
+PontePreta 0 Cruzeiro 3<br/>
+Filipe<br/>
+Barcelona 7 Santos 1<br/>
+Atletico 0 Cruzeiro 1<br/>
+Atletico 0 Barcelona 10<br/>
+PontePreta 0 Cruzeiro 0<br/>
+Barcelona 10 Santos 0<br/>
+Atletico 9 Cruzeiro 2<br/>
+Atletico 3 Barcelona 0<br/>
+PontePreta 2 Cruzeiro 0<br/>
+0 0
+</p>
+								
+							</td>
+							<td>
+							<p>
+							Dilson 37<br/>
+Filipe 7<br/>
+Henrique 7
+</p>
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p>Dilson marca 10 + 10 + 7 + 10 = 37 Pontos Henrique marca 7 + 0 + 0 + 0 = 7 Pontos Filipe marca 5 + 0 + 0 + 2 = 7 Pontos Filipe fica na  frente de Henrique pelo crit&#233;rio de desempate (ordem lexicogr&#225;fica)</p>
+
+				<br/>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Seletiva UFMG 2014
+				</p>
+			</div>
+
+		</body>
+	</html>

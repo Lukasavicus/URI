@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1714 - Letras</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1643 - Letras" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1714</span>
+                <h1>Letras</h1>
+                <div>
+                    <p>Por Guilherme Albuquerque Pinto <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Os parques na Cidade da Lógica são reticulados de N × N quadrados (2 ≤ N ≤ 100), onde cada quadrado contém uma das 10 primeiras letras ASCII, abcdefghijABCDEFGHIJ, em caixa minúscula ou maiúscula. As pessoas na Cidade da Lógica têm orgulho de seguir apenas caminhos consistentes quando cruzam os parques. Por exemplo, se eles passam por um c minúsculo, eles não vão se permitir, mais adiante, passar por um C maiúsculo. Para definir isso mais precisamente, um caminho consistente é uma sequência de quadrados satisfazendo: quadrados consecutivos na sequência são adjacentes ortogonalmente; nenhuma letra ocorre na sequência tanto minúscula quanto maiúscula. Quer dizer, ou a letra não está na sequência, ou ela ocorre apenas em caixa minúscula, ou somente em caixa maiúscula.</p>
+
+                    <p style="text-align: center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1714.png" style="width: 600px; width: 230px; heith: 230px"/></p>
+
+                    <p>Você deve escrever um programa para ajudar as pessoas da Cidade da Lógica a computar o comprimento do menor caminho consistente entre o quadrado de coordenadas (1, 1), no canto superior esquerdo, e o quadrado de coordenadas (N, N ), no canto inferior direito. Por exemplo, para o parque acima, o menor caminho consistente tem comprimento 13.</p>
+
+
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada contém um inteiro <strong>N</strong> (<strong>2</strong> ≤ <strong>N</strong> ≤ <strong>100</strong>), o tamanho do parque. As <strong>N</strong> linhas seguintes contêm, cada uma, uma sequência de <strong>N</strong> letras, definindo o parque.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Seu programa deve imprimir uma linha contendo um inteiro, o comprimento de um caminho consistente mínimo. Se não houver um caminho consistente, imprima -1.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>7</p>
+
+<p>aAaaaaa</p>
+
+<p>aAaaaAa</p>
+
+<p>aAaaaAA</p>
+
+<p>aaAaAaa</p>
+
+<p>AaAaaAa</p>
+
+<p>aaAAaAa</p>
+
+<p>aaaaaAa</p>
+
+                            </td>
+                            <td>
+                                <p>-1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Maratona de Programacao da SBC 2014.
+                </p>
+            </div>
+
+        </body>
+    </html>

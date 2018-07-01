@@ -1,0 +1,91 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2326 - Sacoleiro</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2326 - Sacoleiro" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2326</span>
+				<h1>Sacoleiro</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Seu amigo sacoleiro pediu sua ajuda num problema que ele está enfrentando. Ele tem um mapa de cidades que ele já conhece e que são interessantes para ele, além das rotas entre as mesmas. Ele pretende fazer uma viagem para comprar presentes para seu filho e para sua filha. O problema é que nem todos os presentes têm o mesmo preço, alguns são obviamente mais caros que os outros, e ele não quer ser injusto dando presentes mais caros para um ou para outro. O objetivo é fazer com que diferença entre a soma dos valores dos presentes seja a menor possível (de preferência que sejam iguais, naturalmente). Há, também, um limite de quanto ele pode gastar na viagem.</p>
+
+<p>O sacoleiro tem um mapa com N cidades e as rotas que as ligam. Além disso, cada cidade pertence ao grupo A ou ao grupo B. No grupo A estão as cidades em que há presentes para o filho, enquanto que no grupo B estão as cidades com presentes para a filha. Sempre que ele para numa cidade ele pode comprar ou não o presente, mesmo que ele já tenha estado lá antes, inclusive pode comprar mais de uma unidade do mesmo presente (enquanto tiver dinheiro disponível, naturalmente). As cidades são numeradas de 0 a N - 1. O trajeto deve sempre começa na cidade 0. O tamanho do percurso não importa para o sacoleiro. O total disponível de dinheiro para os presentes é T. O sacoleiro não pode terminar a viagem sem ter comprado pelo menos um presente para algum dos filhos.</p>
+
+<p>Escreva um programa que, dadas N cidades, as rotas entre elas e os valores de presentes de cada cidade, retorne qual a diferença mínima possível entre a soma dos presentes do grupo A e a soma dos presentes do grupo B.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado). A primeira linha da entrada contém um inteiro <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 30) que indica a quantidade de cidades. A segunda linha contém um inteiro <strong>T</strong><strong> </strong>(10 ≤ <strong>T</strong> ≤ 100) que indica a quantidade de dinheiro que o sacoleiro tem para gastar. As <strong>N</strong> linhas seguintes contêm a descrição cada cidade. Cada uma dessas linhas tem o formato XPCKV0V1...VK-1, onde X é um inteiro que representa a cidade (numeradas de 0 a <strong>N</strong> - 1); <strong>P</strong> é um inteiro (1 ≤ <strong>P</strong> ≤ 10) que indica o valor do presente da cidade <strong>X</strong>; <strong>C</strong> é um caractere A ou B, indicando a que grupo a cidade <strong>X</strong> pertence; <strong>K</strong> é um inteiro (0 ≤ <strong>K</strong> &lt; <strong>N</strong> ) que indica quantas rotas saem da cidade <strong>X</strong>; e cada <strong>V<sub>i</sub></strong> é um inteiro indicando um dos possíveis destinos a partir da cidade X. Note que as rotas não são bidirecionais. Uma cidade nunca terá rota para ela mesma e pode-se assumir que <strong>i</strong> ≠ <strong>j</strong> =&gt; <strong>V<sub>i</sub></strong> ≠ <strong>V<sub>j</sub></strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na saída padrão, uma única linha com um inteiro representando a menor diferença possível de valores entre os presentes comprados para o grupo A e para o grupo B.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4<br />
+20<br />
+0 9 A 2 1 2<br />
+1 8 B 1 2<br />
+2 7 A 1 3<br />
+3 6 B 1 1</p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2007 Fase 1 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

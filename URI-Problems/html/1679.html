@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1679 - Bebida, com Gelo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1679 - Bebida, com Gelo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1679</span>
+                <h1>Bebida, com Gelo</h1>
+               <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Uma boa bebida é sempre servida com gelo. Dito isto, a quantidade de gelo é o que faz a diferença. Se for muito, a bebida será bem gelada, no entanto, isso é um pouco de fraude já que poderia haver menos gelo (e mais Vodka, por exemplo). Por outro lado, se há muito pouco gelo a bebida fica quente, o que é inaceitável. Você deve ajudar o garçom, é claro que não com a mistura nem com a bebida, mas com o cálculo do resultado esperado de tais misturas.</p>
+
+<p>Para facilitar as coisas, vamos supor que a água pura é misturada com gelo em um sistema fechado, isto é, não há nenhum problema com a temperatura exterior ou o aquecimento da garrafa, etc. Portanto, depois de um algum tempo passou, o sistema pode ser considerado como equilibrado (não há nenhuma outra alteração na temperatura e não há mais derretimento ou congelamento). Sua tarefa é calcular a temperatura final deste sistema balanceado e a quantidade de gelo e de água neste estado de equilíbrio.</p>
+
+<p>Como você conhece da física, é necessário 4.19 Joules para aquecer um grama de água em um Kelvin, enquanto é necessário 2.09 Joules se for gelo. Nós definimos as capacidades c<sub>w</sub> = 4.19 J/(g*K) e c<sub>i</sub> = 2,09 J/(g*K). Para derreter um grama de gelo é necessário 335 Joules, onde a temperatura permanece constante em zero. Nós definimos a constante e<sub>m</sub> = 335 J/g. A energia térmica total do gelo e da água antes do experimento são iguais à energia térmica ao final da mistura.</p>
+
+<p>A figura abaixo mostra a energia de um grama de gelo, mistura-gelo-água, ou água, onde a temperatura é medida em relação a -30 graus Celsius. O salto em 0 graus representa o derretimento do gelo para a água. A quantidade de energia obtida é proporcional à quantidade de gelo já derretido.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/promocao/drink%20on%20ice.gif" style="height:200px; width:253px" /></p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada caso de teste consiste de quatro números reais<strong> m<sub>w</sub>, m<sub>i</sub>, t<sub>w</sub>, t<sub>i</sub></strong>. A massa de água <strong>m<sub>w</sub></strong> e a massa de gelo <strong>m<sub>i</sub></strong> são ambas não-negativas, dados em gramas, e <strong>m<sub>w</sub></strong> + <strong>m<sub>i</sub></strong> &gt; 0. A temperatura da água <strong>t<sub>w</sub></strong> e a temperatura do gelo <strong>t<sub>i</sub></strong> são informadas na sequencia, ambos em graus Celsius, e você pode assumir que -30 &lt; <strong>t<sub>i</sub></strong> ≤ 0 ≤ <strong>t<sub>w</sub></strong> &lt; 100. O último caso de teste é seguido por quatro zeros.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima a quantidade de gelo e água, em gramas, e a temperatura final da mistura em graus Celsius. Todos os números devem ser arredondados para um dígito. Adote a saída de exemplo como o formato esperado.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>100 20 50 -10<br />
+100 22 0 0<br />
+100 35 25 -10.5<br />
+10 90 25 -28<br />
+0 0 0 0</p>
+
+                            </td>
+                            <td>
+                                <p>0.0 g of ice and 120.0 g of water at 27.5 C<br />
+22.0 g of ice and 100.0 g of water at 0.0 C<br />
+6.0 g of ice and 129.0 g of water at 0.0 C<br />
+100.0 g of ice and 0.0 g of water at -4.2 C</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                     University of Ulm Local Contest 2003/2004
+                </p>
+                </p>
+            </div>
+
+        </body>
+    </html>

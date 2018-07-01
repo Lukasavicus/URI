@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2720 - Presentes Grandes</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema D - Presentes Grandes" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2720</span>
+			<h1>Presentes Grandes</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Bruninho adora o natal! Ele gosta da comida, das músicas clássicas, e, especialmente, dos presentes que o Papai Noel lhe dá todos os anos!</p>
+
+<p>Assim como nos anos anteriores, Bruninho irá ganhar exatamente <strong>K</strong> presentes dentre os <strong>N</strong> presentes que Papai Noel tem disponível. Agora, ele deve decidir quais presentes ele irá pedir para o bom velhinho.</p>
+
+<p>Como toda criança pensa, quanto maior é o pacote do presente, mais legal o presente é! Logo, ele decidiu pedir os presentes com os <strong>K</strong> maiores <em>volumes</em>. Dada a descrição de todos os <strong>N</strong> presentes que o Papai Noel tem, determine os <strong>K</strong> presentes que Bruninho deve pedir.</p>
+
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha contém um inteiro <strong>T</strong> (≤20), o número de casos de teste.</p>
+
+<p>A primeira linha de cada caso de teste contém dois inteiros <strong>N</strong> e <strong>K</strong> (1&nbsp;≤ <strong>N</strong> ≤ 10<sup>3</sup> <sup>*</sup> ou 1&nbsp;≤ <strong>N</strong>&nbsp;≤ 10<sup>5</sup> <sup>**</sup>, 1&nbsp;≤ <strong>K</strong>&nbsp;≤<strong> N</strong>), o número de presentes que o Papai Noel tem e o número de presentes que Bruninho irá ganhar.</p>
+
+<p>Cada uma das próximas <strong>N</strong> linhas descrevem um presente. Cada linha contém quatro inteiros <strong>I</strong>, <strong>H</strong>, <strong>W</strong> e <strong>L</strong> (0&nbsp;≤ <strong>I</strong>&nbsp;≤ 10<sup>9</sup>, 1&nbsp;≤ <strong>H</strong>, <strong>W</strong>, <strong>L</strong>&nbsp;≤ 100), o número de identificação (<em>id</em>) do presente e a altura, largura e comprimento do seu pacote, em centímetros. Todos os presentes tem <em>id</em>s diferentes.</p>
+
+<p><sup>*</sup> Em aproximadamente 40% dos casos de teste<br />
+<sup>**</sup> Nos demais casos de teste</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha contendo <strong>K</strong> inteiros, separados por espaços, descrevendo os <em>id</em>s dos presentes que Bruninho deve pedir. Imprima os <em>id</em>s em ordem crescente. Não imprima um espaço após o último<em> id</em>.</p>
+
+<p>Se existir mais de uma solução possível, imprima a lexicograficamente menor, isto é, o menor <em>id</em> na saída deve ser minimizado; no caso de empate, o segundo menor <em>id</em> na saída deve ser minimizado, e assim por diante.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>2<br />
+3 2<br />
+1 1 2 3<br />
+2 2 1 1<br />
+3 2 2 1<br />
+2 1<br />
+32 4 5 1<br />
+25 10 1 2</p>
+
+						</td>
+						<td>
+							<p>1 3<br />
+25</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Contest de Natal 2017
+			</p>
+		</div>
+
+	</body>
+</html>

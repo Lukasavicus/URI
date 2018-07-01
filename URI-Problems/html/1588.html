@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1588 - Ajude a Federação</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge 1588 - Problema 1588 - Ajude a Federação" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1588</span>
+                <h1>Ajude a Federação</h1>
+                <div>
+                    <p>Por Bruno Adami, Universidade de São Paulo - São Carlos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A federação de futebol te contratou para elaborar a classificação dos times do campeonato. Você vai receber uma lista com alguns jogos ocorridos e deve ordenar os times. Uma vitória garante 3 pontos ao time, um empate 1 ponto e uma derrota 0 pontos.</p>
+                    <p>Leia atentamente a seguir o regulamento sobre como a classificação deve ser feita: Primeiramente o time com mais pontos deve ficar em primeiro. Caso haja empate, o time com mais vitórias fica na frente. Caso ainda tenha empate, o time com mais gols fica na frente. Por último se nenhum dos critérios acima possa desempatar os times, o que aparecer primeiro na entrada fica na frente.</p>
+                    <p>Dado os times e os jogos que já aconteceram, ordene e imprima o nome dos times na ordem de classificação.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+         
+                    <p>Na primeira linha teremos um inteiro <strong>T</strong> (<strong>T</strong> &le; 100), indicando o número de casos de teste.</p>
+                    <p> Na primeira linha de cada caso teremos dois números, <strong>N</strong> (2 &le; <strong>N </strong>&le; 20* ou 2 &le; <strong>N</strong> &le; 100**) e <strong>M</strong> (1 &le; <strong>M</strong> &le; 100* ou 1 &le; <strong>M</strong> &le; 1000**), indicando quantos times estão no campeonato e quantos jogos já aconteceram. Nas próximas <strong>N</strong> linhas teremos os nomes dos times, que são únicos, contendo apenas letras minúsculas do alfabeto. Nas próximas <strong>M</strong> linhas há a informação dos jogos na seguinte forma: <strong>X timeA Y timeB</strong>, indicando que o <strong>timeA</strong> jogou contra o <strong>timeB</strong> e o primeiro marcou <strong>X</strong> gols e o segundo <strong>Y</strong> gols. As strings terão tamanho entre 1 e 20 e o número de gols de um time em cada partida será entre 0 e 100.Um time nunca joga contra ele mesmo, porém ele pode jogar inúmeras vezes contra qualquer outro time. </p>
+                    <p>* ocorrerá em aproximadamente 90% dos casos de teste;</br>
+                    ** ocorrerá no restante dos casos.</p>
+                    
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima na ordem de classificação os times da entrada, um time em cada linha. Não é necessário imprimir nada entre os casos de teste!</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+                                <p>2 2</p>
+                                <p>palmeiras</p>
+
+                                <p>santos</p>
+                                <p>1 palmeiras 2 santos</p>
+                                <p>2 palmeiras 0 santos</p>
+                                <p>2 2</p>
+                                <p>b</p>
+                                <p>a</p>
+                                <p>1 a 1 b</p>
+                                <p>1 b 1 a</p>
+                                <p>4 7</p>
+                                <p>b</p>
+                                <p>a</p>
+                                <p>c</p>
+                                <p>d</p>
+                                <p>2 a 1 b</p>
+                                <p>1 b 1 a</p>
+                                <p>2 c 3 a</p>
+                                <p>4 b 2 d</p>
+                                <p>0 b 1 c</p>
+                                <p>1 b 0 c</p>
+                                <p>7 d 1 b</p>
+                            </td>
+                            <td>
+                                <p>palmeiras</p>
+                                <p>santos</p>
+                                <p>b</p>
+                                <p>a</p>
+                                <p>b</p>
+                                <p>a</p>
+                                <p>d</p>
+                                <p>c</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Seletiva USP São Carlos 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

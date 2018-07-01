@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1100 - Movimentos do Cavalo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - 1100 - Movimentos do Cavalo" />
+            
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1100</span>
+                <h1>Movimentos do Cavalo</h1>
+                <div><p>
+	Autor Desconhecido</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Pedro está fazendo uma pesquisa sobre o problema do movimento do cavalo em um tabuleiro de xadrez e incumbiu você da tarefa de encontrar o menor conjunto de movimentos possíveis, podendo sair de qualquer quadrado a e podendo chegar em qualquer quadrado b dentro do tabuleiro, sendo que a e b são quadrados diferentes. Ele pensa que a parte mais difícil do problema é determinar o menor número de movimentos do cavalo entre 2 quadrados fornecidos e que uma vez que você está comprometido com esta tarefa, encontrar a sequência de movimentos entre estes 2 quadrados será uma tarefa muito fácil.</p>
+<p>
+	É claro que você sabe que o movimento é vice versa. Portanto você deve fornecer a Pedro um programa que resolva esta questão.</p>
+<p>
+	Seu trabalho então será escrever um programa que, pegando dois quadrados a e b como entrada, determine o número de movimentos para encontrar a rota mais curta de <em>a </em>até <em>b</em>.</p>
+<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1100.jpg" style="width: 320px; height: 303px;" /></p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém um ou mais casos de teste. Cada caso de teste consiste de uma linha contendo dois quadrados separados por um espaço. Um quadrado será uma string consistindo de uma letra (a-h) representando a coluna e um dígito (1-8) representando a linha do tabuleiro de xadrez (veja figura acima).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	para cada caso de teste imprima uma linha dizendo "<tt>To get from <i>xx</i> to <i>yy</i> takes <i>n</i> knight moves.</tt>". No caso <em>xx </em>é a origem<em>, </em>yy é o destino e <em>n </em>é a quantidade de movimentos necessários para ir de <em>xx&nbsp; </em>até <em>yy</em>.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                                                        <td class="division">
+                                <p>
+e2 e4<br />
+a1 b2<br />
+b2 c3<br />
+a1 h8<br />
+a1 h7<br />
+h8 a1<br />
+b1 c3<br />
+f6 f6</p>
+
+                            </td>
+                            <td>
+                                <p>
+To get from e2 to e4 takes 2 knight moves.<br />
+To get from a1 to b2 takes 4 knight moves.<br />
+To get from b2 to c3 takes 2 knight moves.<br />
+To get from a1 to h8 takes 6 knight moves.<br />
+To get from a1 to h7 takes 5 knight moves.<br />
+To get from h8 to a1 takes 6 knight moves.<br />
+To get from b1 to c3 takes 1 knight moves.<br />
+To get from f6 to f6 takes 0 knight moves.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+	Entrada e saída por Neilor</p>
+    
+            </div>
+
+        </body>
+    </html>

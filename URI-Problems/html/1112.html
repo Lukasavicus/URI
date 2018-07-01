@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1112 - Schweisen</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1112 - Schweisen" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1112</span>
+            <h1>Schweisen</h1>
+            <div>
+                <p>By Leonardo Alt <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;"> Brasil</p>
+            </div>
+            <strong>Timelimit: 4</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Conan é um importante membro do Clube Atlético de Desrugenstein, que possui um time de futebol de campo profissional: ele é o responsável pelo gramado do campo onde ocorrem os jogos em casa. Em 2048 anos de história, o campo do CAD sempre esteve em perfeitas condições para os jogos, graças a Conan. Ele já ganhou vários prêmios por isso, sendo o mais importante deles o "Grama de Ouro", prêmio que ganhou 1024 vezes.</p>
+
+                <p>Amanhã acontecerá a final do campeonato Universal de futebol, e o CAD é um dos finalistas. Como o jogo será em casa, Conan foi ver o estado do gramado e reparar se necessário. Chegando lá, entrou em desespero ao ver várias schweisen no campo, estragando todo o gramado!!</p>
+                
+                <p>Sendo assim, Conan precisa de sua ajuda para determinar quanto irá gastar com deswevileutssen para matar todas as schweisen. Cada deswevileutssen mata uma schwisen. Conan pode lhe mandar mensagens de dois tipos: dizendo que encontrou algumas schweisen, ou perguntando quanto ele vai gastar para matar certas schweisen.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada possui vários casos de teste. A primeira linha de um caso de teste contém 3 inteiros X (≤ 1000), Y (≤ 1000) e P (≤ 10), que representam, respectivamente, o tamanho (X e Y) do campo e o preço de cada deswevileutssen. A próxima linha contém um inteiro Q (≤ 10000). As próximas Q linhas representam mensagens de Conan para você, e estão em uma das duas seguintes formas:</p>
+                
+                <p>- A N X Y - “Achei N (≤ 10) schweisen em (X,Y) - (0 ≤ X &lt; Largura), (0 ≤ Y &lt; Altura)”</p>
+                
+                <p>- P X Y Z W - “Quanto vou gastar para matar todas as schweisen na área retangular de (X,Y) até (Z,W)?”</p>
+                
+                <p>Considere que no início nenhuma schweisen foi vista.</p>
+                
+                <p>A entrada termina quando X, Y e P são iguais a 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada mensagem do tipo "P", imprima o valor que responde a pergunta feita. Deixe uma linha em branco após cada caso de teste, inclusive após o último.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2 2 10<br>
+                                7<br>
+                                A 5 1 1<br>
+                                A 9 1 0<br>
+                                A 2 0 0<br>
+                                P 1 0 1 1<br>
+                                A 4 0 1<br>
+                                A 7 1 0<br>
+                                P 0 1 1 0<br>
+                                0 0 0
+                            </p>
+                        </td>
+                        <td>
+                            <p>
+                                140<br>
+                                270
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </body>
+</html>

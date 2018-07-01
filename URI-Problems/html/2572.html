@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2572 - Escalação</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 0000 - Escalação" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2572</span>
+			<h1>Escalação</h1>
+			<div>
+				<p>Por Gabriel Poesia, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+			</div>
+			<strong>Timelimit: 4</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Escalar uma equipe é uma tarefa complicada em vários esportes. Por exemplo, no futebol, se montarmos um time com os 11 melhores jogadores de futebol de todos os tempos, teríamos provavelmente um time com nenhum goleiro ou zagueiro.</p>
+
+<p>O caso é um pouco mais simples no Pokémon Ho. Neste jogo, cada jogador tem seu conjunto de bichos, chamados de Pokémons, que podem batalhar entre si. Numa batalha entre dois treinadores, cada um deve escolher um conjunto de até&nbsp;<strong>K</strong>&nbsp;Pokémons para batalhar. Uma equipe não precisa ter <strong>K</strong>&nbsp;Pokémons, mas precisa ter pelo menos um. Cada Pokémon tem um multiplicador de ataque, e o dano total causado por todos os Pokémons é simplesmente o produto dos multiplicadores de todos os Pokémons da equipe do treinador. Este produto é chamado de&nbsp;<em>ataque total</em>. Como a interação entre os multiplicadores dos Pokémons é mais simples que entre jogadores de um esporte de equipe, não é tão difícil escolher os Pokémons que maximizam o ataque total para uma batalha.</p>
+
+<p>Antes de lançar o jogo, a NlogNintendo está avaliando as equipes que podem ser formadas em cada região do mundo. Há <strong>N</strong>&nbsp;Pokémons no jogo, numerados de 1 a <strong>N</strong>. Para cada região do mundo, a NlogNintendo decidiu liberar apenas alguns Pokémons. Assim, para capturar todos os Pokémons, os jogadores teriam que viajar por vários países, o que deixa a experiência mais interessante (apesar de mais cara). Para simplificar a escolha, foi decidido que cada região terá acesso a uma parte contígua da sequência de Pokémons. Mais precisamente, na região <strong>i</strong>, os jogadores têm acesso aos Pokémons de números <strong>L_i</strong>, <strong>L_{i}+1</strong>, <strong>...</strong>, <strong>R_{i} - 1</strong>, <strong>R_{i}</strong>, isto é, todos os Pokémons com números entre <strong>L_i</strong>&nbsp;e <strong>R_i</strong>.</p>
+
+<p>Dados os multiplicadores de ataque de cada Pokémon, a sequência de Pokémons disponíveis em cada região, e o tamanho máximo <strong>K</strong>&nbsp;das equipes que podem batalhar, a empresa contratou você para dizer qual é o melhor ataque total possível que alguém poderia formar apenas com os Pokémons de cada região.</p>
+
+
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada começa com uma linha contendo três inteiros separados por espaço: <strong>N </strong>(&nbsp;<strong>N&nbsp;</strong><u>&lt; </u>&nbsp;2*10<sup>5&nbsp;</sup>)&nbsp;(número de Pokémons no jogo), <strong>K </strong>(&nbsp;<strong>K </strong><u>&lt;</u>&nbsp;40 )&nbsp;(tamanho máximo de uma equipe de Pokémons que pode batalhar) e <strong>R </strong>(&nbsp;<strong>R&nbsp;</strong><u>&lt;</u>&nbsp;2*10<sup>5</sup>&nbsp;)&nbsp;(número de regiões no jogo). Em seguida, a próxima linha contém&nbsp;<strong>N</strong>&nbsp;inteiros <strong>m_i </strong>( 0&nbsp;<u>&lt;</u>&nbsp;<strong>m_i&nbsp;</strong><u>&lt;&nbsp;</u>10<sup>4</sup>&nbsp;)&nbsp;separados por espaço, onde <strong>m_i</strong>&nbsp;é o multiplicador de ataque do Pokémon de número <strong>i</strong>. Por fim, há&nbsp;<strong>R</strong>&nbsp;linhas descrevendo quais Pokémons estão disponíveis em cada região. Cada uma dessas linhas contém dois inteiros,&nbsp;<strong>L_i</strong>&nbsp;e <strong>R_i</strong>&nbsp;(1<strong>&nbsp;</strong><u>&lt;&nbsp;</u><strong>L_i </strong><u>&lt;</u>&nbsp;<strong>R_i</strong> <u>&lt;</u> <strong>N</strong>), significando que na <strong>i</strong>-ésima região do jogo apenas os Pokémons com números entre <strong>L_i</strong>&nbsp;e&nbsp;<strong>R_i</strong>&nbsp;estão disponíveis.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>A saída contém <strong>R</strong>&nbsp;linhas. Na <strong>i</strong>-ésima linha, imprima um inteiro: o ataque total da melhor equipe de até <strong>K</strong>&nbsp;Pokémons que se pode formar com os Pokémons disponíveis na <strong>i</strong>-ésima região. Como este número pode ser muito grande, imprima o seu resto da divisão por <strong>10<sup>9</sup>&nbsp;+ 7</strong>.<br />
+&nbsp;</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4 2 3<br />
+3 1 2 4<br />
+1 1<br />
+2 4<br />
+1 4</p>
+
+						</td>
+						<td>
+							<p>3<br />
+8<br />
+12</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				VI Maratona Mineira de Programação
+			</p>
+		</div>
+
+	</body>
+</html>

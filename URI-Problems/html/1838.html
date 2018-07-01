@@ -1,0 +1,113 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1838 - A Pedra Filosofal</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1234 - A Pedra Filosofal" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1838</span>
+				<h1>A Pedra Filosofal</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A Universidade Federal da Fronteira Sul (UFFS) foi criada no dia 15 de setembro de 2009, tendo suas atividades de ensino, pesquisa e extensão começado em 29 de março de 2010 em prédios provisórios alugados. Atualmente, a UFFS possui 6 <em>campi</em>, nas cidades de: Chapecó, Laranjeiras do Sul, Realeza, Cerro Largo, Erechim e Passo Fundo. Em Chapecó, a mudança dos prédios provisórios para o <em>campus</em> ocorreu no 2<sup>ọ</sup> semestre de 2013.</p>
+
+					<p>No prédio provisório em que funcionava o curso de Ciência da Computação funcionavam também vários outros cursos, como o curso de Defesa contra as Artes das Trevas, mas havia somente 3 laboratórios, 2 auditórios e 1 pedra filosofal. Todos os pesquisadores interessados em usar a pedra filosofal precisavam fazer suas requisições com no mínimo uma semana de antecedência. Com base na lista de requisições feitas para a semana, o secretário decidia quais requisições atender visando minimizar o tempo em que a pedra filosofal ficaria ociosa. A pedra filosofal ficava disponível para uso 12 horas por dia, o que corresponde a 3.600 minutos por semana. Numerando-se, então, esses 3.600 minutos de 1 a 3.600, cada pesquisador, ao fazer sua requisição, deveria informar o minuto a partir do qual gostaria de começar a usar a pedra filosofal e o minuto a partir do qual a pedra filosofal estaria livre para ser usada por outro pesquisador.</p>
+
+					<p>Escreva um programa capaz de gerenciar as requisições conforme descrito. Nós nos encarregaremos de voltar no tempo para entregar seu programa ao secretário.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada é constituída por um único inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>3</sup>), o qual representa o número de requisições que foram feitas para a semana. Cada uma das <strong>N</strong> linhas seguintes, por sua vez, descreve uma requisição através de dois inteiros <strong>i</strong> e <strong>j</strong> (1 ≤ <strong>i</strong>&nbsp;&lt;&nbsp;<strong>j</strong> ≤ 3.600), os quais representam respectivamente o minuto a partir do qual o pesquisador gostaria de começar a usar a pedra filosofal e o minuto a partir do qual a pedra filosofal estaria livre para ser usada por outro pesquisador.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma única linha contendo o número máximo de minutos da semana em que é possível não deixar a pedra filosofal ociosa.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5<br />
+								1 1200<br />
+								960 2880<br />
+								3360 3600<br />
+								1680 2160<br />
+								2640 3600</p>
+
+							</td>
+							<td>
+								<p>2639</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6<br />
+								1 240<br />
+								240 960<br />
+								2400 2880<br />
+								3120 3360<br />
+								720 1440<br />
+								2640 3360</p>
+
+							</td>
+							<td>
+								<p>1679</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					4º Maratona UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

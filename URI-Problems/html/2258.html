@@ -1,0 +1,108 @@
+
+    <!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2258 - Factors</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 2258 - Factors" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2258</span>
+                <h1>Factors</h1>
+                <div>
+                    <p>By ICPC 2013 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ad.gif' alt='AD' /> Andorra</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>The fundamental theorem of arithmetic states that every integer greater than 1 can be uniquely represented as a product of one or more primes. While unique, several arrangements of the prime factors may be possible. For example:</p>
+
+                    <p style="text-align:center">10 = 2 · 5</p>
+
+                    <p style="text-align:center">10 = 5 · 2</p>
+
+                    </br>
+
+                    <p style="text-align:center">20 = 2 · 2 · 5</p>
+
+                    <p style="text-align:center">20 = 2 · 5 · 2</p>
+
+                    <p style="text-align:center">20 = 5 · 2 · 2</p>
+
+                    <p>Let <strong>f</strong>(<strong>k</strong>) be the number of different arrangements of the prime factors of <strong>k</strong>. So <strong>f</strong>(10) = 2 and <strong>f</strong>(20) = 3. Given a positive number <strong>n</strong>, there always exists at least one number <strong>k</strong> such that <strong>f</strong>(<strong>k</strong>) = <strong>n</strong>. We want to know the smallest such <strong>k</strong>.</p>
+                </div>
+
+                <h2>Input</h2>
+
+                <div class="input">
+                    <p>The input consists of at most 1 000 test cases, each on a separate line. Each test case is a positive integer <strong>n</strong> &lt; 2<sup>63</sup> .</p>
+                </div>
+
+                <h2>Output</h2>
+
+                <div class="output">
+                    <p>For each test case, display its number <strong>n</strong> and the smallest number <strong>k</strong> &gt; 1 such that <strong>f</strong>(<strong>k</strong>) = <strong>n</strong>. The numbers in the input are chosen such that <strong>k</strong> &lt; 2<sup>63</sup>. Remember to let a blank space at the end of the line.</p>
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Input Sample</td>
+                            <td>Output Sample</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1</p>
+
+                                <p>2</p>
+
+                                <p>3</p>
+
+                                <p>105</p>
+
+                            </td>
+                            <td>
+                                <p>1 2</p>
+
+                                <p>2 6</p>
+
+                                <p>3 12</p>
+
+                                <p>105 720</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>
+
+                <p class="footer">
+                    ICPC 2013 World Finals
+                </p>
+            </div>
+
+        </body>
+    </html>

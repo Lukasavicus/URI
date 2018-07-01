@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Visualizer </title>
+	<script type="text/javascript" src="prism.js"></script>
+	<link rel="stylesheet" type="text/css" href="prism.css">
+</head>
+<body>
+	<div>
+		<input type="number" name="pid" id="_pid" min="1001" placeholder="Ex.: 1001">
+		<button id="search_prob" onclick="update_search()"> Search </button>
+		<button id="next" onclick="update_next()"> Next problem </button>
+		<button id="previous" onclick="update_previous()"> Previous problem </button>
+		<button id="_toggle" onclick="toggle_code_viz()">Show me dat Code!</button>
+	</div>
+
+
+	<div align="center" width="90%" height="500 px">
+
+		<div  style="float: left">
+			<iframe src="./URI-Problems/html/1001.html"></iframe>
+			<object id='myPdfObject' type='application/pdf' width="800 px" height="500 px">
+				<embed id='myPdfEmbed' type='application/pdf'></embed>
+			</object>
+		</div>
+
+		<div height="500 px" id="_div_code" style="display:none">
+			<pre>
+				<code id="_code" class="language-clike"></code>
+			</pre>
+		</div>
+	</div>
+
+	<div>
+	</div>
+
+	<script type="text/javascript">
+
+		var pid = 1001;
+		var toggle = false;
+		document.onload = update(pid);
+
+		function update(pid){
+			loadProblemPDFById(pid);
+			loadSolutionCodeById(pid);
+			document.getElementById('_pid').value = pid;
+
+			document.getElementById("_div_code").style.display = "none";
+			document.getElementById("_toggle").innerHTML = "Show me dat Code!";
+			toggle = false;
+
+			var precode = document.getElementById('_code');
+			Prism.highlightElement(precode);
+		}
+
+		function update_search(){
+			pid = document.getElementById('_pid').value;
+			update(pid);
+		}
+
+		function update_next(){
+			update(++pid);
+		}
+
+		function update_previous(){
+			if(pid > 1001)
+				update(--pid);
+		}
+
+		function loadProblemPDFById(pid){
+			var pdfUrl = "./URI-Problems/pdf/" + pid + ".pdf";
+
+			var pdfViewerObject = document.getElementById("myPdfObject");
+			pdfViewerObject.setAttribute("data", pdfUrl);
+			pdfViewerObject.outerHTML = pdfViewerObject.outerHTML.replace(/data="(.+?)"/, 'data="' + pdfUrl + '"');
+			 
+			var pdfViewerEmbed = document.getElementById("myPdfEmbed");
+			pdfViewerEmbed.setAttribute("src", pdfUrl);
+			pdfViewerEmbed.outerHTML = pdfViewerEmbed.outerHTML.replace(/src="(.+?)"/, 'src="' + pdfUrl + '"');
+		}
+
+		function loadSolutionCodeById(pid){
+			var code = "https://raw.githubusercontent.com/Lukasavicus/URI/master/ACCEPTED/" + pid;
+			loadXMLDoc(code);
+		}
+
+		function loadXMLDoc(theURL, extension_idx = 0){
+			var extensions = ['.c', '.cpp'];
+			var number_of_possible_attempts = extensions.length;
+			url_and_extension = theURL + extensions[extension_idx];
+			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari, SeaMonkey
+				xmlhttp=new XMLHttpRequest();
+			}
+			else{// code for IE6, IE5
+				xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+			}
+
+	       xmlhttp.onreadystatechange=function(){
+	           if (xmlhttp.readyState==4){
+	           		if(xmlhttp.status==200){
+		            	//alert(xmlhttp.responseText);
+		            	var code_as_text = String(xmlhttp.responseText);
+
+		            	var code_formatted = code_as_text.replace(/>/g,"&gt");
+		            	code_formatted = code_formatted.replace(/</g, "&lt");
+
+		            	document.getElementById("_code").innerHTML = code_formatted;
+		            }
+		            else if(xmlhttp.status==400 || xmlhttp.status==404){
+		            	if(extension_idx <= number_of_possible_attempts)
+		            		loadXMLDoc(theURL, extension_idx+1);
+		            	else{
+		            		document.getElementById("_div_code").innerHTML = "Sorry, I don't have this answer!";
+		            	}
+		            }
+	           }
+	       }
+
+	       xmlhttp.open("GET", url_and_extension, false);
+	       xmlhttp.send();
+		}
+
+		function toggle_code_viz(){
+			if(toggle){
+				document.getElementById("_div_code").style.display = "none";
+				document.getElementById("_toggle").innerHTML = "Show me dat Code!";
+			}
+			else{
+				document.getElementById("_div_code").style.display = "block";
+				document.getElementById("_toggle").innerHTML = "Hide solution";
+			}
+			toggle = !toggle;
+		}
+
+	</script>
+
+</body>
+</html>

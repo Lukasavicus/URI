@@ -1,0 +1,129 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2342 - Overflow</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2342 - Overflow" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2342</span>
+				<h1>Overflow</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2009 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Os computadores foram inventados para realizar cálculos muito rapidamente, e atendem a esse requisito de maneira extraordinária. Porém, nem toda conta pode ser feita num computador, pois ele não consegue representar todos os números dentro de sua memória. Em um computador pessoal atual, por exemplo, o maior inteiro que é possível representar em sua memória é 4.294.967.295. Caso alguma conta executada pelo computador dê um resultado acima desse número, ocorrerá o que chamamos de overflow, que é quando o computador faz uma conta e o resultado não pode ser representado, por ser maior do que o valor máximo permitido (em inglês overflow significa trasbordar).</p>
+
+<p>Por exemplo, se um computador só pode representar números menores do que 1023 e mandamos ele executar a conta 1022 + 5, vai ocorrer overflow.</p>
+
+<p>Dados o maior número que um computador consegue representar e uma expressão de soma ou multiplicação entre dois inteiros, determine se ocorrerá overflow.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado).</p>
+
+<p>A primeira linha da entrada contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 500.000) representando o maior número que o computador consegue representar. A segunda linha contém um inteiro <strong>P</strong><strong> </strong>(0 ≤ <strong>P</strong> ≤ 1000), seguido de um espaço em branco, seguido de um caractere <strong>C</strong> (que pode ser ‘+’ ou ‘*’, representando os operadores de adição e multiplicação, respectivamente), seguido de um espaço em branco, seguido de um outro inteiro <strong>Q</strong> (0 ≤ <strong>Q</strong> ≤ 1000). Essa linha representa a expressão <strong>P</strong> + <strong>Q</strong>, se o caractere <strong>C</strong> for ‘+’, ou <strong>P</strong> × <strong>Q</strong>, se o caractere <strong>C</strong> for ‘*’.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na saída padrão, a palavra ‘OVERFLOW’ se o resultado da expressão causar um overflow, ou a palavra ‘OK’ caso contrário. Ambas as palavras devem ser escritas com letras maiúsculas.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>10</p>
+
+<p>5 + 5</p>
+
+							</td>
+							<td>
+								<p>OK</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>44</p>
+
+<p>23 * 2</p>
+
+                    </td>
+                    <td>
+                        <p>OVERFLOW</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>323500</p>
+
+<p>42 * 35</p>
+
+                    </td>
+                    <td>
+                        <p>OK</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2009 Fase 1 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,101 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1886 - Resguardando os Templos</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema H - Resguardando os Templos" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1886</span>
+				<h1>Resguardando os Templos</h1>
+				<div>
+					<p>Por Renzo Gonzalo Gómez Diaz, Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Existem milhares de templos budistas na Tailândia. Em geral, os templos budistas são chamados de "wat". Além disso, existem alguns templos que recebem uma distinção pela sua importância e são chamados de "templos reais". Um exemplo desse último tipo é o templo "Wat Phra Kaew", localizado no Grande Palácio de Bangkok. Esse templo acolhe a imagem do Buda Esmeralda, que é a mais venerada na Tailândia. Em 2016, a final mundial do ACM ICPC será realizada em Phuket, Tailândia. Por isso, espera-se que o turismo se incremente nessa cidade. Isso levou às autoridades de Phuket a pensar em melhorar a segurança dos templos reais da cidade.</p>
+
+<p>Por esta razão a Unidade de Segurança de Phuket (USP) contratou a pesquisadora Lua "a engenhosa" Kuratowski. A USP está interessada em resolver o seguinte problema, dados <em>N</em> templos reais e <em>M</em> ruas que ligam esses templos, posicionar guardas nessas ruas de forma que todo templo real seja vigiado. Consideramos que um templo é vigiado se pelo menos uma das ruas que tem como extremo esse templo é vigiada por algum guarda. Por outro lado, as ruas foram construídas de forma que sempre existe uma sequência de ruas que liga dois templos quaisquer. Além disso, por costumes ancestrais de Tailândia, se fazemos uma trilha pelos templos reais da cidade, sempre andando por ruas distintas e visitando templos distintos até retornar ao templo de partida, sempre temos a certeza de ter passado por um número par de ruas, já que existe certa superstição com os números ímpares.</p>
+
+<p>Como Lua é muito esperta, basta-lhe apenas olhar a descrição dos templos de Phuket, que ela já sabe qual é a resposta ótima (aquela que usa o número mínimo de guardas). Ela escreveu a resposta em um papel, enquanto assobiava "Elephant Gun", e o entregou à USP.</p>
+
+<p>Ela sabe que você deseja participar da final mundial do próximo ano, e considera que este é um bom problema para testar suas habilidades. Por isso, desafia a você a resolvê-lo.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+<p>Cada instância consiste de diversas linhas. A primeira linha contém dois inteiros, <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>3</sup>) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 5*10<sup>3</sup>) que representam o número de templos reais de Phuket e o número de ruas entre templos reais, respectivamente. Cada templo e identificado por um inteiro entre <em>1</em> e <strong>N</strong>. As seguintes <strong>M</strong> linhas descrevem as ruas da cidade. Cada rua é descrita por dois inteiros que representam os templos que ela liga.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprima uma única linha contendo o numero mínimo de guardas necessários para vigiar todos os templos reais da cidade.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2<br />
+5 5<br />
+1 2<br />
+1 4<br />
+2 3<br />
+4 3<br />
+3 5<br />
+4 3<br />
+1 2<br />
+1 3<br />
+1 4</p>
+
+							</td>
+							<td>
+								<p>3<br />
+3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIX Maratona de Programação IME-USP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

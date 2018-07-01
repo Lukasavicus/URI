@@ -1,0 +1,116 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2301 - Vivo ou Morto</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2301 - Vivo ou Morto" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2301</span>
+				<h1>Vivo ou Morto</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2005 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Toda criança certamente já brincou de “vivo ou morto”. A brincadeira é dirigida por um “chefe” (um adulto), que comanda dois ou mais participantes (crianças). A brincadeira é composta de rodadas. No início, os participantes são organizados pelo chefe em fila única. A cada rodada o chefe grita “vivo” ou “morto” e todos os participantes tentam seguir sua ordem, levantando-se ao ouvir a palavra “vivo” ou abaixando-se ao ouvir a palavra “morto”. Um participante que não segue a ordem do chefe é eliminado, deixando o seu lugar na fila. Os participantes remanescentes agrupam-se novamente em fila única, preenchendo as posições dos participantes eliminados, mas mantendo suas posições relativas. O jogo continua até que uma rodada seja composta por exatamente um participante. Tal participante é dito o vencedor do jogo.</p>
+
+<p>Por exemplo, considere que a brincadeira inicie com cinco participantes, identificados por números inteiros de 1 a 5, e que o chefe organize a fila na ordem m 3 → 2 → 1 → 4 → 5. Se na primeira rodada forem eliminados os participantes 2 e 4, a fila da segunda rodada será formada por 3 → 1 → 5; se na segunda rodada for eliminado o participante 1, a fila da terceira rodada será formada por 3 → 5. Se na terceira rodada o participante 3 for eliminado, o vencedor da brincadeira será o participante 5.</p>
+
+<p>Sua tarefa é escrever um programa que determine o vencedor de uma partida de “vivo ou morto”, a partir da informação das ordens dadas pelo chefe e das ações executadas pelos participantes em cada rodada.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é constituída de vários casos de teste, cada um representando uma partida. A primeira linha de um caso de teste contém dois números inteiros <strong>P</strong> e <strong>R</strong> indicando respectivamente a quantidade inicial de participantes (2 ≤ <strong>P</strong> ≤ 100) e quantidade de rodadas da partida (1 ≤ <strong>R</strong> ≤ 100). Os participantes são identificados por números de 1 a <strong>P</strong>. A segunda linha de um caso de teste descreve a fila organizada pelo chefe, contendo P números inteiros distintos <strong>x<sub>1</sub></strong>, <strong>x<sub>2</sub></strong>, . . . <strong>x<sub>P</sub></strong> , onde <strong>x<sub>1</sub></strong> representa o identificador do participante no primeiro lugar na fila, x2 representa o identificador do participante no segundo lugar na fila, e assim por diante (1 ≤ <strong>x<sub>i</sub></strong> ≤ <strong>P</strong>). Cada uma das <strong>R</strong> linhas seguintes representa uma rodada, contendo um número inteiro inteiro <strong>N</strong> indicando o número de participantes da rodada (2 ≤ <strong>N</strong> ≤ <strong>P</strong>), um número inteiro inteiro <strong>J</strong> representando a ordem dada pelo chefe (0 ≤ <strong>J</strong> ≤ 1) e <strong>N</strong> números inteiros <strong>A<sub>i</sub></strong> representando a ação do participante colocado na i-ésima posição na fila (0 ≤ <strong>A<sub>i</sub></strong> ≤ 1). Ordens e ações “vivo” são representadas pelo valor 1, ordens e ações “morto” pelo valor zero. Cada partida tem exatamente um vencedor, determinado somente na última rodada fornecida no caso de teste correspondente. O final da entrada é indicado por&nbsp;<strong>P</strong> = <strong>R</strong> = 0.</p>
+
+<p>A entrada deve ser lida do dispositivo de entrada padrão (normalmente o teclado).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste seu programa deve produzir três linhas. A primeira identifica o conjunto de teste no formato “Teste n”, onde n é numerado a partir de 1. A segunda linha deve conter o identificador do vencedor. A terceira linha deve ser deixada em branco. A grafia mostrada no Exemplo de Saída, abaixo, deve ser seguida rigorosamente.</p>
+
+<p>A saída deve ser escrita no dispositivo de saída padrão (normalmente a tela).</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 2</p>
+
+<p>2 1</p>
+
+<p>2 1 1 1</p>
+
+<p>2 1 1 0</p>
+
+<p>5 4</p>
+
+<p>3 2 1 4 5</p>
+
+<p>5 1 1 1 1 1 1</p>
+
+<p>5 0 0 1 0 1 0</p>
+
+<p>3 0 0 1 0</p>
+
+<p>2 1 0 1</p>
+
+<p>0 0</p>
+
+							</td>
+							<td>
+								<p>Teste 1</p>
+
+<p>2</p><br/>
+
+<p>Teste 2</p>
+
+<p>5</p><br/>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2005 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,132 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1972 - Nêmesis</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema J - Nêmesis" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1972</span>
+				<h1>Nêmesis</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Nêmesis, a deusa da vingança, irou-se contra Euterpe, a musa dos prazeres, e a pôs num labirinto infestado de bestas. Agora, apenas Hércules poderá salvar Euterpe. Iniciando sua jornada em alguma posição do labirinto, Hércules só pode avançar para uma posição do labirinto guardada por uma besta se matar a besta. Embora terrível, uma besta nunca deixa a posição que guarda. Ainda, bestas diferentes podem exigir de Hércules quantias diferentes de energia para serem mortas. Ajude Hércules a salvar Euterpe gastando o mínimo de energia possível, sabendo que ele só pode se mover nas direções horizontal e vertical e, apesar de ser um herói invencível e de possuir energia infinita, Hércules não consegue destruir as paredes do labirinto.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada consiste de dois inteiros, <strong>N</strong> e <strong>M</strong> (2 ≤ <strong>N</strong>, <strong>M</strong> ≤ 500), os quais representam o número de linhas e o número de colunas no labirinto. As próximas <strong>N</strong> linhas descrevem o labirinto e possuem exatamente <strong>M</strong> caracteres cada, os quais podem ser:</p>
+
+<ul>
+	<li><strong>H</strong>, se aquela é a posição onde Hércules começa sua jornada;</li>
+	<li><strong>E</strong>, se aquela é a posição onde Euterpe está presa;</li>
+	<li><strong>.</strong>, se aquela posição é uma posição livre;</li>
+	<li><strong>#</strong>, se aquela posição é uma parede;</li>
+	<li>um inteiro <strong>X</strong> entre 1 e 9, se aquela posição é guardada por uma besta que requer <strong>X</strong> de energia hercúlea para ser morta.</li>
+</ul>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo unicamente a quantidade mínima de energia necessária para Hércules chegar até Euterpe. Se não é possível a Hércules chegar até Euterpe, imprima uma linha contendo unicamente a palavra <strong>ARTSKJID</strong>.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 10<br />
+.138764..2<br />
+7H###19##2<br />
+.23#61.E#2</p>
+
+							</td>
+							<td>
+								<p>27</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 2<br />
+E#<br />
+#H</p>
+
+							</td>
+							<td>
+								<p>ARTSKJID</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 2<br />
+H2<br />
+2E</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					3<sup>ạ</sup> Maratona de Programação <em>Júnior</em> da UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

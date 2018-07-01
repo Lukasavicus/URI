@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1407 - Loteria de Fim de Semana</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1407 - Loteria de Fim de Semana" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1407</span>
+            <h1>Loteria de Fim de Semana</h1>
+            <div>Por Ricardo Anido, UNICAMP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Algumas pessoas são contra loterias por motivos morais, alguns governos as proíbem, mas com a criação da internet essa popular forma de aposta, que teve início na China e ajudou a financiar a Grande Muralha, está prosperando.</p>
+
+                <p>Mas as chances de se ganhar em uma loteria nacional são pequenas, por conta disso seus colegas de classe decidiram organizar uma loteria particular, cujo sorteio se realiza toda sexta-feira. A loteria é baseada em um estilo popular: um estudante que quer apostar escolhe C números distintos entre 1 e K e paga US$ 1.00 (note que as loterias tradicionais como a US National Lotto usam C=6 e K=49). Na sexta-feira durante o almoço, C números (também de 1 a K) são sorteados. O estudante que acertar a maior quantidade de números sorteados recebe o montante coletado nas apostas. O montante é dividido no caso de empates e acumulado para a próxima semana se ninguém acertar qualquer um dos números sorteados.</p>
+
+                <p>Alguns de seus colegas não acreditam nas leis da probabilidade e pediram para você para escrever um programa que determine os números que foram sorteados o menor número de vezes considerando todos os sorteios prévios, para que eles possam apostar nesses números.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém diversos casos de teste. A primeira linha de um caso de teste contém três inteiros <strong>N</strong>, <strong>C</strong> e <strong>K</strong> que indicam, respectivamente, o número de sorteios que já aconteceram (1 ≤ <strong>N</strong> ≤ 10000), quantos números compõem uma aposta (1 ≤ <strong>C</strong> ≤ 10) e o valor máximo que pode ser escolhido numa aposta (<strong>C</strong> &lt; <strong>K</strong> ≤ 100). Cada uma das próximas <strong>N</strong> linhas contém <strong>C</strong> inteiros distintos <strong>X<sub>i</sub></strong> indicando os números sorteados em cada concurso prévio (1 ≤ <strong>X<sub>i</sub></strong> ≤ <strong>K</strong>, para 1 ≤ <strong>i</strong> ≤ <strong>C</strong>). O fim da entrada é indicado por <strong>N</strong> = <strong>C</strong> = <strong>K</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, seu programa deve escrever uma linha de saída, contendo o conjunto de números que foram sorteados o menor número de vezes. Este conjunto deve ser impresso como uma lista em ordem crescente. Deixe um espaço em branco entre dois números consecutivos na lista.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>5 4 6<br />
+                                6 2 3 4<br />
+                                3 4 6 5<br />
+                                2 3 6 5<br />
+                                4 5 2 6<br />
+                                2 3 6 4<br />
+                                4 3 4<br />
+                                3 2 1<br />
+                                2 1 4<br />
+                                4 3 2<br />
+                                1 4 3<br />
+                                0 0 0</p>
+
+                        </td>
+                        <td>
+                            <p>1<br />
+                                1 2 3 4</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2006.
+            </p>
+        </div>
+
+    </body>
+</html>

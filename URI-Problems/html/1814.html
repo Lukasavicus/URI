@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1814 - DNA Storage?</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1814 - DNA Storage?" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1814</span>
+                <h1>DNA Storage?</h1>
+                <div>
+                    <p>Por Maratona de Programação 2003, IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A Universidade Charles, situada em Praga, a exemplo de diversas outras universidades de renome ao redor do mundo, instituiu recentemente um programa interdepartamental de pós-graduação na área de biologia computacional. Integrante do corpo docente, Ms. Dolejškova está atualmente interessada no problema das árvores filogenéticas, e trabalhando, portanto, com <em>n</em> cadeias de DNA. Para simplificar o trabalho, Ms. Dolejškova resolveu trabalhar apenas com cadeias gênicas de comprimento <em>m</em> (isto é, todas as cadeias possuem exatamente <em>m</em> bases nitrogenadas).</p>
+
+                    <p>Um subproblema interessante envolve o armazenamento das <em>n</em> cadeias em disco. Até o momento, Ms. Dolejškova está utilizando um esquema ingênuo que requer <em>n</em> × <em>m</em> caracteres, além dos delimitadores. Isto é, todas as sequências são gravadas dentro de um arquivo texto, sequencialmente. Mr. Chuchle, um colega de departamento e especialista em técnicas de armazenamento, sugeriu uma alternativa que pode ser mais econômica.</p>
+
+                    <p>Segundo Mr. Chuchle, é possível armazenar uma cadeia juntamente com informações que permitam transformá-la em outras. Mais especificamente, considere duas cadeias de DNA D<sub>1</sub> = ACTA e D<sub>2</sub> = AGTC, onde A, C, G, T representam as bases nitrogenadas adenina, citosina, guanina e timina, nesta ordem. Observe que é possível transformar D<sub>1</sub> em D<sub>2</sub> trocando-se as bases nitrogenadas C e A das posições 2 e 4 de D<sub>1</sub> para G e C, respectivamente. Considere agora uma terceira cadeia D3 = CGTC. E necessária apenas uma modificação para transformar D<sub>2</sub> em D<sub>3</sub> e são necessárias três modificações para transformar D<sub>1</sub> em D<sub>3</sub>. Logo, é vantajoso permitir a transitividade das modificações entre as cadeias.</p>
+
+                    <p>Ms. Dolejškova observou rapidamente que, se as cadeias envolvidas forem muito diferentes entre si, este esquema de armazenamento alternativo não oferece ganhos. Assim, em vez de adotá-lo prontamente, ela solicitou a você que construa um programa que recebe as n cadeias, e determina o número mínimo de transformações que devem ser gravadas (além de uma cadeia) para que seja possível, no futuro, obter-se novamente as <em>n</em> cadeias originais. Baseado no resultado fornecido por seu programa, Ms. Dolejškova vai decidir qual dos esquemas deve utilizar em cada instância de dados que tiver.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Seu programa deve estar preparado para trabalhar com diversas instâncias. Cada instância tem a estrutura que segue. Na primeira linha são fornecidos dois inteiros <strong>n</strong> e <strong>m</strong> (0 ≤ <strong>n</strong> ≤ 100 e 1 ≤ <strong>m</strong> ≤ 1000) que representam, nesta ordem, o número de cadeias de DNA e o comprimento delas. Nas próximas <strong>n</strong> linhas são fornecidas as <strong>n</strong> cadeias, uma por linha, sem espaços adicionais. Cada cadeia é uma sequência de caracteres tomada sobre o alfabeto Σ = {A, C, G, T}. Um valor <strong>n</strong> = 0 indica o final das instâncias e não deve ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identificador Instancia <strong>h</strong> em que <strong>h</strong> é um número inteiro, sequencial e crescente a partir de 1. Na linha seguinte, você deve imprimir o número mínimo de transformações que devem ser gravadas para esta instância. Uma linha em branco deve ser impressa após cada instância</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 4<br />
+                                ACTA<br />
+                                AGTC<br />
+                                CGTC</p>
+
+                                <p>4 5<br />
+                                AAAAA<br />
+                                ATATA<br />
+                                ATCTA<br />
+                                AACAA</p>
+
+                                <p>0 0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+                                3</p>
+                                <br />
+                                <p>Instancia 2<br />
+                                4</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VII Maratona de Programação IME-USP 2003.
+                </p>
+            </div>
+
+        </body>
+    </html>

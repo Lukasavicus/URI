@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1587 - BIT Park</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1587 - BIT Park" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+            <style>
+                #events{
+                    margin: 15px auto;
+                    width: 600px;
+                }
+                #events .division{
+                    width: 10% !important;
+                }
+            </style>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1587 </span>
+                <h1>BIT Park</h1>
+                <div>
+                    <p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A Final Nacional da Maratona de Programação da Sociedade Brasileira de Computação (SBC) de 2014 será em Fortaleza, e os desbravadores maratonistas chapecoenses, ansiosos, já começam a fazer as malas, esperançosos da classificação na Etapa Regional. A capital do Ceará, com uma população de 2.551.805 habitantes (segundo o Censo Populacional de 2013 do IBGE), é mundialmente conhecida por suas belas praias, seus luxuosos hotéis, pousadas e restaurantes, suas magníficas obras de Arquitetura, seu povo alegre e hospitaleiro, e também pelos seus extraordinários parques aquáticos. Visando derrubar a hegemonia do maior parque aquático da cidade, uma empresa local de TI, denominada NCC (Núcleo de Computação Cearense), construiu um parque aquático maior ainda, denominado <em>BIT Park</em>, o qual será inaugurado ainda neste ano. Para a inauguração toda a população da cidade foi convidada, e o NCC promete várias atividades para entreter o povo a tarde toda.</p>
+
+                    <p>Uma das atividades previstas para a inauguração ocorrerá na maior piscina do <em>BIT Park</em>: um colossal jogo de <em>futebol aquático</em>, do qual poderão participar todos os habitantes de Fortaleza, já que a piscina em questão possui nada mais nada menos que 1 km de largura por 2 km de comprimento. O <em>futebol aquático</em> funciona basicamente como o futebol convencional, mas com algumas diferenças:</p>
+
+                    <ul>
+                    	<li>o jogo ocorre dentro d'água, então, a bola é passada com as mãos, não com os pés;</li>
+                    	<li>o jogo pode ser jogado por qualquer número par de jogadores, desde que haja o mesmo número de jogadores nos dois times --- e desde que todos os jogadores caibam na piscina;</li>
+                    	<li>não há goleiros, já que todos os jogadores podem defender a bola com as mãos;</li>
+                    	<li>assim como no futebol convencional, a <em>legalidade</em> da posição de um jogador é avaliada de acordo com a <em>linha</em> paralela à <em>linha</em> do gol adversário em que se encontra, considerando-se também as <em>linhas</em> em que se encontram os jogadores adversários: a posição de um jogador <strong>J</strong> é considerada <em>ilegal</em> — e o jogador, consequentemente, considerado <em>impedido</em> — se menos de 2/11 dos jogadores adversários encontram-se em <em>linhas</em> mais próximas da <em>linha</em> do gol adversário que a <em>linha</em> em que se encontra <strong>J</strong>;</li>
+                    	<li>apenas pode pegar a bola um jogador que esteja numa posição <em>legal</em>, diferentemente do que ocorre no futebol convencional, em que o impedimento é avaliado no momento do passe, não no momento da recepção.</li>
+                    </ul>
+
+                    <p>Na Figura, em que o time <strong>A</strong> joga contra o time <strong>B</strong>, estão impedidos os jogadores A4 e A5.</p>
+
+                    <p class="center"><img alt="" src="http://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1587.jpg" style="height:270px; width:600px" /></p>
+
+
+                    <p>O NCC percebeu que avaliar as legalidades das posições dos jogadores durante o jogo seria impraticável; afinal, toda a população de Fortaleza poderia estar na piscina. A decisão, então, foi deixar o jogo rolar para depois reavaliar todos os eventos e recalcular o placar através de um programa. A partir do momento em que um jogador impedido recebe a bola, o próximo gol que ocorre na partida deve ser anulado, a menos que a bola saia da piscina. No início do jogo, e toda vez que a bola sai da piscina ou que ocorre algum gol, o árbitro sorteia um jogador qualquer — não necessariamente não impedido — e lhe concede a bola para dar continuidade à atividade.</p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversos casos de teste. A primeira linha de cada caso de teste é composta por dois inteiros <strong>N</strong> e <strong>E</strong> (1 &lt; <strong>N</strong> &lt; 2.551.805, 1 &lt; <strong>E</strong> &lt; 10<sup>4</sup>), os quais encerram a entrada quando são ambos nulos. <strong>N</strong> é um número par que indica o número de fortalezenses que participaram do jogo. <strong>E</strong> é o número de eventos que aconteceram durante o jogo. Os times são chamados de <strong>A</strong> e de <strong>B</strong>, e os jogadores, de A1, A2, A3… e de B1, B2, B3… Todas as posições são determinadas pela distância em milímetros da <em>linha</em> do gol do time <strong>A</strong>, ou seja, o gol do time <strong>A</strong> está na posição 0 e o gol do time <strong>B</strong> está na posição 2.000.000. A segunda linha de um caso de teste contém <strong>N</strong> / 2 inteiros <strong>x<sub>i</sub><sup>A</sup></strong> (0 ≤ <strong>x<sub>i</sub><sup>A</sup></strong> ≤ 2.000.000, 1 ≤ <strong>i</strong> ≤ <strong>N</strong> / 2), indicando cada <strong>x<sub>i</sub><sup>A</sup></strong> a posição do jogador A<strong>i </strong>no início da partida. De igual modo, a terceira linha contém <strong>N</strong> / 2 inteiros <strong>x<sub>i</sub><sup>B</sup></strong> (0 ≤ <strong>x<sub>i</sub><sup>B</sup></strong> ≤ 2.000.000, 1 ≤ <strong>i</strong> ≤ <strong>N</strong> / 2), indicando cada <strong>x<sub>i</sub><sup>B</sup></strong> a posição inicial do jogador B<strong>i</strong>. Seguem, então, <strong>E</strong> linhas, cada uma descrevendo um evento do jogo. O quadro abaixo lista todos os eventos possíveis e como cada um deles é descrito na entrada.</p>
+
+                    <table id="events">
+                        <tr>
+                            <td class="division">I</span> <strong>X<sub>i</sub></strong></td>
+                            <td>o árbitro concede a bola ao jogador <strong>X<sub>i</sub></strong> (<strong>X</strong> ∈ {<strong>A</strong>, <strong>B</strong>}, 1 ≤ <strong>i</strong> ≤ <strong>N</strong> / 2 ) para iniciar uma jogada</td>
+                        </tr>
+                        <tr>
+                            <td class="division">M</span> <strong>X<sub>i</sub> x</strong></td>
+                            <td>o jogador <strong>X<sub>i</sub></strong> (<strong>X</strong> ∈ {<strong>A</strong>, <strong>B</strong>}, 1 ≤ <strong>i</strong> ≤ <strong>N</strong> / 2) se movimenta para a posição <strong>X</strong> (0 ≤ <strong>X</strong> ≤ 2000000)</td>
+                        </tr>
+                        <tr>
+                            <td class="division">P</span> <strong>X<sub>i</sub></strong></td>
+                            <td>a bola passa para as mãos do jogador <strong>X<sub>i</sub></strong> (<strong>X</strong> ∈ {<strong>A</strong>, <strong>B</strong>}, 1 ≤ <strong>i</strong> ≤ <strong>N</strong> / 2)</td>
+                        </tr>
+                        <tr>
+                            <td class="division">G</span> <strong>X</strong></td>
+                            <td>a bola entra no gol do time <strong>X</strong> (<strong>X</strong> ∈ {<strong>A</strong>, <strong>B</strong>})</td>
+                        </tr>
+                        <tr>
+                            <td class="division">S</span></td>
+                            <td>a bola sai da piscina</td>
+                        </tr>
+
+
+                    </table>
+
+                    <p>Assuma que um evento I</span> ocorre se e somente se é o primeiro evento da partida ou o evento anterior é um evento G</span> ou S</span>.</p>
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima uma linha revelando o placar final do jogo de acordo com os eventos fornecidos e com as regras descritas. Os exemplos esclarecem o formato em que o placar deve ser impresso.</p>
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>6 4<br />
+0 700000 0<br />
+1500000 2000000 2000000<br />
+I B1<br />
+M A2 2000000<br />
+P A2<br />
+G B<br />
+6 4<br />
+0 700000 0<br />
+1500000 2000000 2000000<br />
+I B1<br />
+M A2 1999999<br />
+P A2<br />
+G B<br />
+6 5<br />
+0 700000 0<br />
+1500000 2000000 2000000<br />
+I B1<br />
+M A2 1999999<br />
+P A2<br />
+P B2<br />
+G B<br />
+6 5<br />
+0 700000 0<br />
+1500000 2000000 2000000<br />
+I B1<br />
+M A2 1999999<br />
+P A2<br />
+P B2<br />
+G A<br />
+0 0</p>
+                            </td>
+                            <td>
+                                <p>0 X 0<br />
+1 X 0<br />
+1 X 0<br />
+0 X 1</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Aquecimento para a OBI 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

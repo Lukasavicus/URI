@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1031 - Crise de Energia</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1031 - Crise de Energia" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1031</span>
+                <h1>Crise de Energia</h1>
+                <div><p>
+            	   Autor desconhecido</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1031.jpg" style="width: 265px; height: 160px; float: right;" />Durante uma crise de energia na Nova Zelândia no inverno passado (causada por uma escassez de chuva e, consequentemente, por causa dos níveis baixos nas barragens hidrográficas), um esquema de contingência foi desenvolvido para desligar a energia para as áreas do país de forma sistemática, de uma forma totalmente justa. O país foi dividido em N regiões (Auckland seria a região número 1 e Wellington a número 13). Um número, m, seria escolhido randomicamente e a energia deveria ser desligada primeiro na região 1 (claramente o ponto de início mais justo) e então em cada <em>m</em> região após esta, indo de uma a outra região e ignorando as regiões já desligadas. Por exemplo, se <strong><em>N </em></strong><em>= 17</em> e <strong><em>m </em></strong><em>= 5</em>, a energia deverá ser desligada em todas as regiões seguindo a seguinte ordem: 1,6,11,16,5,12,2,9,17,10,4,15,14,3,8,13,7.</p>
+                    <p>O problema é que, claramente seria mais justo desligar a região de Wellington por último (Isso porque é onde a sede da empresa se encontra). Portanto, para um dado <strong><em>N </em></strong>(regiões), o número aleatório <strong><em>m</em></strong> (salto) precisa ser cuidadosamente escolhido de forma que a região 13 seja a última região a ser escolhida.</p>
+                    <p>Escreva um programa que leia o número de regiões e determine o menor número <strong>m </strong>que assegure que Wellington (região 13) possa continuar funcionando enquanto o resto do país esteja desligado.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada consistirá de uma série de linhas, cada uma contendo o número de regiões <strong><em>N </em></strong>(13 ≤ N ≤ 100 ). O fim da entrada é indicado por uma linha consistindo de um valor zero (0).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>A saída consistirá de uma série de linhas, uma linha para cada linha de entrada. Cada linha consistirá de um <strong><em>m</em></strong> de acordo com o esquema acima apresentado.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+                            	17<br />
+                            	0</p>
+
+                            </td>
+                            <td>
+                                <p>
+                                7</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+	               Tradução, entrada e saída por Neilor</p>
+    
+            </div>
+
+        </body>
+    </html>

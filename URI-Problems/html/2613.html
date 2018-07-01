@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2613 2613 - Filmes em Promoção</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - SQL - Problema 2613 - Filmes em Promoção" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default-sql.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28047757-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <span>URI Online Judge <strong>SQL</strong> | 2613 </span>
+      <h1>Filmes em Promoção</h1>
+      <div>
+        <p>Paulo R. Rodegheri <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem-sql">
+    
+      <div>
+        <p>Antigamente a locadora fez um evento em que vários filmes estavam em promoção, queremos saber que filmes eram esses.</p>
+        <p>Seu trabalho para nós ajudar é selecionar o ID e o nome dos filmes cujo preço for menor que 2.00.</p>
+      </div>
+
+      <div>
+        <h2>Esquema</h2>
+        <div>
+          <table class="tables-model-two">
+            <caption>movies</caption>
+              <tr>
+                <td class="half-column"><strong>Coluna</strong></td>
+                <td class="half-column"><strong>Tipo</strong></td>
+              </tr>
+              <tr>
+                <td>id (PK)</td>
+                <td>numeric</td>
+              </tr>
+              <tr>
+                <td>name</td>
+                <td>varchar</td>
+              </tr>
+              <tr>
+                <td>id_prices (FK)</td>
+                <td>numeric</td>
+              </tr>
+            </table>
+            
+            <table class="tables-model-two-inline">
+              <caption>prices</caption>
+              <tr>
+                <td class="half-column"><strong>Coluna</strong></td>
+                <td class="half-column"><strong>Tipo</strong></td>
+              </tr>
+              <tr>
+                <td>id (PK)</td>
+                <td>numeric</td>
+              </tr>
+              <tr>
+                <td>categorie</td>
+                <td>varchar</td>
+              </tr>
+              <tr>
+                <td>value</td>
+                <td>numeric</td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+
+        <div>
+          <h2>Tabelas</h2>
+          <div>
+            <table class="tables-model-two">
+              <caption>movies</caption>
+              <tr>
+                <td><strong>id</strong></td>
+                <td><strong>name</strong></td>
+                <td><strong>id_prices</strong></td>
+              </tr>
+              <tr>
+                <td class="center">1</td>
+                <td>Batman</td>
+                <td class="center">3</td>
+              </tr>
+              <tr>
+                <td class="center">2</td>
+                <td>The Battle of the Dark River</td>
+                <td class="center">3</td>
+              </tr>
+              <tr>
+                <td class="center">3</td>
+                <td>White Duck</td>
+                <td class="center">5</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td>Breaking Barriers</td>
+                <td class="center">4</td>
+              </tr>
+              <tr>
+                <td class="center">5</td>
+                <td>The Two Hours</td>
+                <td class="center">2</td>
+              </tr>
+            </table>
+            
+            <table class="tables-model-two-inline">
+              <caption>prices</caption>
+              <tr>
+                <td><strong>id</strong></td>
+                <td><strong>categorie</strong></td>
+                <td><strong>value</strong></td>
+              </tr>
+              <tr>
+                <td class="center">1</td>
+                <td>Releases</td>
+                <td class="center">3.50</td>
+              </tr>
+              <tr>
+                <td class="center">2</td>
+                <td>Bronze Seal</td>
+                <td class="center">2.00</td>
+              </tr>
+              <tr>
+                <td class="center">3</td>
+                <td>Silver Seal</td>
+                <td class="center">2.50</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td>Gold Seal</td>
+                <td class="center">3.00</td>
+              </tr>
+              <tr>
+                <td class="center">5</td>
+                <td>Promotion</td>
+                <td class="center">1.50</td>
+              </tr>
+            </table>            
+        
+          </div>
+        </div>
+        
+        <div>
+          <h2>Exemplo de saída</h2>
+          <div>
+            <table class="tables-model-two">
+              <tr>
+                <td><strong>id</strong></td>
+                <td><strong>name</strong></td>
+              </tr>
+              <tr>
+                <td class="center">3</td>
+                <td>White Duck</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        
+    </div>
+      
+  </body>
+</html>

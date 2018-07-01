@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1269 - ICPC Ataca Novamente</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1269 - ICPC Ataca Novamente" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1269</span>
+                <h1>ICPC Ataca Novamente</h1>
+                <div><p>
+	Por Alessandro Luna Almeida&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" />&nbsp;Brasil</p>
+</div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	A Companhia Internacional de Projetos Concretos (ICPC) é uma empresa de construção especializada na construção de casas para o mercado high-end. A empresa é mais rentável do mundo devido a um método muito eficiente em divisão de terras que tem sido usado em seus projetos de desenvolvimento de habitações desde o ano passado. Recentemente houve um caos na ICPC, porque os funcionários se recusaram a trabalhar alegando que eles não ganhavam o suficiente. Preocupado com a perda de lucros devido à greve, a diretoria da empresa propôs um novo método para calcular os salários, que foi felizmente aceito por todos.<br />	<br />
+	O salário de um trabalhador reflete na importância das tarefas que ele / ela tem para realizar e é influenciado pela forma como as tarefas dependem uma das outras.</p>
+    <p>
+	Uma tarefa X depende de uma tarefa Y se (i) X depende diretamente de Y, ou (ii) existe uma tarefa T tal que X depende diretamente de T e T depende de Y. Uma vez que todas as tarefas em ICPC devem ser realizadas, não há circularidade da relação de dependência da tarefa. Além disso, a tarefa pode ser realizada por mais do que um trabalhador. Um significado básico está associado com cada tarefa que reflete na sua importância (por exemplo, o desenvolvimento de um método eficiente na divisão de terras é mais importante do que a construção de casas em si). O significado de uma tarefa T é então definido como o significado básico de T mais o significado de cada tarefa que depende diretamente de T.</p>
+    <p>
+	Note que se nenhuma outra tarefa depende diretamente da tarefa T, o significado básico e o significado de T são iguais.</p>
+    <p>
+	O salário de um trabalhador é a soma dos significados de todas as tarefas que ele executa as quais não dependem de qualquer outra tarefa realizada por ele. Em outras palavras, um valor igual ao significado da tarefa X será adicionado ao salário de um trabalhador W que trabalha em uma tarefa X se não houver nenhuma outra tarefa Y da qual X depende, e na qual W trabalha também em Y.</p>
+    <p>
+	ICPC deseja que você ajude-os a determinar o salário de cada um de seus funcionários.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém vários casos de teste. A primeira linha de um caso de teste contém dois inteiros <strong>T</strong> e<strong> E </strong>indicando, respectivamente, o número de tarefas e do número de empregados (1 ≤<strong> T</strong> ≤ 1000 e 1 ≤ <strong>E</strong> ≤ 1000). As tarefas são numeradas de 1 a <strong>T</strong> e empregados de 1 a <strong>E</strong>.</p>
+    <p>
+	Em seguida, vai vir uma sequência de linhas que descrevem as tarefas 1 a <strong>T</strong> em ordem crescente. Cada tarefa é descrita por duas linhas. A primeira dessas linhas contém três inteiros <strong>BS</strong>, <strong>ND </strong>e <strong>NE</strong>, representando respectivamente o significado básico da tarefa, o número de tarefas que dependem diretamente sobre ela, e o número de empregados que executam-la (1 ≤ <strong>BS</strong>&nbsp;≤ 1000, 0 ≤ <strong>ND</strong> &lt;&nbsp;<strong>T</strong> e 1 ≤ &nbsp;<strong>NE</strong>&nbsp;≤ <strong>E</strong>). A segunda linha contém inteiros <strong>ND</strong> + <strong>NE</strong> correspondentes primeiro ao <strong>ND</strong>&nbsp;que tem tarefas diretamente dependentes e depois os funcionários <strong>NE </strong>que executaram a tarefa. O fim da entrada é indicado por <strong>T</strong> = <strong>E</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Os casos de teste devem ser respondidos na ordem em que foram apresentados. Para cada caso de teste, você deve imprimir:<br />
+	• uma única linha contendo cinco estrelas&nbsp;<span class="code">*****</span> indicando o início do processo<br />
+	• para cada empregado <strong>i</strong>, uma linha com dois inteiros <strong>i</strong> e <strong>s</strong>, separados por um espaço em branco, o que significa que <strong>i</strong> tem um salário de <strong>s</strong>.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	3 2<br />
+	100 2 2<br />
+	2 3 1 2<br />
+	40 0 1<br />
+	1<br />
+	60 0 1<br />
+	2<br />
+	7 2<br />
+	10 2 1<br />
+	2 3 1<br />
+	10 2 1<br />
+	4 5 2<br />
+	10 2 1<br />
+	6 7 2<br />
+	10 0 1<br />
+	1<br />
+	10 0 1<br />
+	1<br />
+	10 0 1<br />
+	1<br />
+	10 0 1<br />
+	1<br />
+	0 0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	*****<br />
+	1 200<br />
+	2 200<br />
+	*****<br />
+	1 70<br />
+	2 60</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+	ACM/ICPC South America Contest 2005</p>
+    
+            </div>
+
+        </body>
+    </html>

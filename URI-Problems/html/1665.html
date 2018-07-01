@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1665 - Decorando a Parede</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1665 - Decorando a Parede" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1665</span>
+                <h1>Decorando a Parede</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 5</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Depois de construir sua mansão, o Sr. Rico não ficou satisfeito com as cores de suas paredes. para ele as paredes estão muito brancas. Para mudar isso, ele começou pendurar quadros de sua rara coleção. Mas logo percebeu que é muito difícil encontrar um lugar na parede onde uma pintura possa ser colocada sem sobrepor outra pintura. Agora ele precisa de um programa que informe a ele, onde colocar a próxima pintura sem mover qualquer outra pintura já colocada na parede,(ou informe que isso é impossível). As pinturas tem formato retangular e serão colocadas paralelamente ao lado da parede. Se não houver problemas o Sr. Rico irá lhe recompensar com uma bela recompensa, vá em frente e resolva o problema.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha do ficheiro de entrada contém um número que representa o número de casos de teste a seguir. Cada caso de teste começa com uma linha contendo três números <strong>n</strong>, <strong>w</strong> e <strong>h</strong>. <strong>n</strong> é o número de quadros já pendurados na parede, <strong>w</strong> é a largura da parede e <strong>h</strong> é a altura da parede. As próximas <strong>n</strong> linhas contêm quatro números inteiros <strong>x1</strong>, <strong>y1</strong>, <strong>x2</strong>, <strong>y2</strong> cada (0 ≤ <strong>x1</strong> &lt; <strong>x2</strong> ≤ <strong>w</strong>, 0 ≤ <strong>y1</strong> &lt; <strong>y2 </strong>≤ h); as coordenadas x fornecem a distância para o lado esquerdo da parede, as coordenadas y fornecem a distância até ao fundo da parede. (<strong>x1</strong>, <strong>y1</strong>) é a posição do canto inferior esquerdo de uma pintura, (<strong>x2</strong>, <strong>y2</strong>) é a posição do canto superior direito. A última linha de cada caso de teste contém as dimensões da próxima pintura para ser colocada, primeiro a sua largura <strong>w</strong>', então sua altura <strong>h</strong>' (1 ≤ <strong>w'</strong> ≤ <strong>w</strong>, 1 ≤ <strong>h</strong> ≤ <strong>'h</strong>). Você não tem permissão para girar a pintura. Você pode supor que 0 ≤ <strong>n</strong> ≤ 200 e 1 ≤ <strong>w</strong>, <strong>h</strong> ≤ 1000000. Além disso, todas as pinturas já pendurados não se sobrepõem.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Retorne uma linha de saída para cada caso de teste. Escreva "Fail!" se não há lugar à esquerda na parede onde a pintura poassa ser colocada sem sobrepor outra pintura. Caso contrário, escreva as coordenadas onde o canto inferior esquerdo da pintura deve ser colocado. No caso de haver mais de uma solução, selecione a solução com menor coordenada y, e em caso de empate utilizando a menor coordenada x.</p>
+
+
+                    <p>A seguinte imagem representa o segundo caso de teste:</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/promocao/decorate%20the%20wall.jpg" style="height:228px; width:228px" /></p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2</p>
+
+<p>1 10 9</p>
+
+<p>5 4 10 9</p>
+
+<p>9 5</p>
+
+<p>2 10 10</p>
+
+<p>5 5 10 10</p>
+
+<p>0 0 4 3</p>
+
+<p>3 4</p>
+
+                            </td>
+                            <td>
+                                <p>Fail!</p>
+
+<p>4 0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="footer">
+                   Univeristy of Ulm Local Contest 2005/2006
+                </p>
+            </div>
+
+        </body>
+    </html>

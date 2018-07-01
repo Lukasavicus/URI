@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1419 - Bakugan</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br">
+        <meta name="description" content="URI Online Judge - Problema 1419 - Bakugan">
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1419</span>
+            <h1>Bakugan</h1>
+            <div>Por Ines Kereki <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/uy.gif' alt=""/> Uruguai</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Mark e Leti adoram brincar com suas bolas 
+                    Bakugan. Essas bolas são pequenas esferas de plástico com um pequeno 
+                    brinquedo-monstro dentro. Quando jogada ao chão, a bola Bakugan se abre,
+                    fazendo um som incrível e liberando um monstro Bakugan assustador. Mark
+                    e Leti adoram brincar com seus monstros, mas abrir as bolas Bakugan 
+                    também é bem divertido.
+                </p>
+
+                <p>
+                    Cada um deles recebeu uma bolsa com bolas Bakugan e eles inventaram 
+                    um jogo para abrir as bolas. Existem 10 monstros diferentes, e para o 
+                    jogo Mark e Leti associaram cada monstro a um inteiro diferente de 1 a 
+                    10, de acordo com o nível de feiura do monstro. O jogo é composto de R 
+                    rodadas. A cada rodada:
+                </p>
+
+                <ul>
+                    <li>Os dois jogadores jogam suas bolas ao chão simultaneamente;</li>
+                    <li>Cada jogador acumula um número de pontos coincidente com o número associado ao monstro liberado por sua bola;</li>
+                    <li>O primeiro (e apenas o primeiro) jogador que liberar o mesmo 
+                        monstro em três rodadas consecutivas ganha 30 pontos adicionais; se essa
+                        condição acontecer na mesma rodada para ambos os jogadores então 
+                        ninguém ganha pontos extras.</li>
+                </ul>
+
+                <p>O vencedor do jogo é o jogador que acumular mais pontos. Por favor ajude Mark e Leti anunciar o vencedor do jogo!</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Cada caso de testo é descrito por três linhas. A primeira linha contém um inteiro <b>R</b> indicando o número de rodadas do jogo (1 ≤ <b>R</b> ≤ 10). A segunda linha contém <b>R</b> inteiros <b>M<sub>i</sub></b> indicando os monstros liberados por Mark a cada rodada (1 ≤ <b>M<sub>i</sub></b> ≤ 10, para 1 ≤ <b>i</b> ≤ <b>R</b>). A terceira linha contém <b>R</b> inteiros <b>L<sub>i</sub></b> indicando os monstros liberados por Leti a cada rodada (1 ≤ <b>L<sub>i</sub></b> ≤ 10, para 1 ≤ <b>i</b> ≤ <b>R</b>).</p>
+
+                <p>O último caso de teste é composto por uma linha contendo zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste imprima uma linha com um caractere representando o resultado do jogo: "<b>M</b>" caso o vencedor seja Mark, "<b>L</b>" caso o vencedor seja Leti, ou "<b>T</b>" caso haja um empate (tie).</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>10<br/>
+                                4 2 2 2 5 6 7 8 1 1<br/>
+                                1 4 4 4 1 1 1 1 2 3<br/>
+                                5<br/>
+                                3 3 3 3 2<br/>
+                                8 9 9 9 9<br/>
+                                10<br/>
+                                8 4 7 1 1 9 5 2 4 3<br/>
+                                5 6 9 7 9 4 2 3 7 4<br/>
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>M<br/>
+                                T<br/>
+                                L</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2011 Warm-Up.</p>
+        </div>
+
+    </body>
+</html>

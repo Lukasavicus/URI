@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2479 - Ordenando a Lista de Crianças do Papai Noel</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2479 - Ordenando a Lista de Crianças do Papai Noel" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2479</span>
+			<h1>Ordenando a Lista de Crianças do Papai Noel</h1>
+			<div>
+				<p>Por Cristian J. Ambrosi, URI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Papai Noel está nos preparativos finais para a entrega dos presentes para as crianças do mundo todo pois o natal está chegando mais uma vez. Olhando suas novas listas de crianças que iram ganhar presentes neste ano ele percebeu que o duende estagiário (que havia ficado responsável por fazer as listas) não havia colocado os nomes em ordem alfabética.</p>
+
+				<p>Como o Papai Noel é um homem muito organizado ele deseja que cada lista de crianças possua, no seu final, o total de crianças que foram bem comportadas neste ano e um total das que não foram. Assim ele pode comparar a quantidade de crianças que se comportam este ano com as dos anos anteriores.</p>
+
+				<p>Para ajudar o bom velhinho, seu dever é criar um programa que leia todos os nomes da lista e imprima os mesmos nomes em ordem alfabética. No final da lista, você deve imprimir o total de crianças que foram e não foram comportadas neste ano.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A entrada é composta por vários nomes. O primeiro valor <strong>N</strong> (0 ≤ <strong>N</strong> ≤ 100), indica quantos nomes tem na lista. As <strong>N</strong> linhas seguintes, contem um caracter especial correspondente ao comportamento da criança (<strong>+</strong> indica que a criança foi bem comportada, <strong>-</strong> indica que a criança não foi bem comportada). Após o caracter especial, segue o nome da criança com no máximo 20 caracteres.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada lista de crianças, você deve imprimir os nomes em ordem alfabética. Após imprimir os nomes das crianças, você deve mostrar o total de crianças que se comportaram bem ou mal durante o ano.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>16<br />
++ Tininha<br />
++ Dudinha<br />
+- Carlinhos<br />
+- Marquinhos<br />
++ Joaozinho<br />
++ Bruninha<br />
+- Leandrinho<br />
+- Fernandinha<br />
++ Rafinha<br />
+- Pedrinho<br />
++ Aninha<br />
+- Tamirinha<br />
+- Gaguinho<br />
+- Zezinho<br />
+- Luquinhas<br />
++ Julhinha</p>
+
+						</td>
+						<td>
+							<p>Aninha<br />
+Bruninha<br />
+Carlinhos<br />
+Dudinha<br />
+Fernandinha<br />
+Gaguinho<br />
+Joaozinho<br />
+Julhinha<br />
+Leandrinho<br />
+Luquinhas<br />
+Marquinhos<br />
+Pedrinho<br />
+Rafinha<br />
+Tamirinha<br />
+Tininha<br />
+Zezinho</p>
+
+<p>Se comportaram: 7 | Nao se comportaram: 9</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>10<br />
++ Zezinho<br />
++ Mangojatinha<br />
++ Bruninha<br />
+- Joaozinho<br />
+- Fernandinha<br />
++ Aninha<br />
+- Luquinhas<br />
++ Pedrinho<br />
+- Tininha<br />
+- Marquinhos</p>
+
+                </td>
+                <td>
+                    <p>Aninha<br />
+Bruninha<br />
+Fernandinha<br />
+Joaozinho<br />
+Luquinhas<br />
+Mangojatinha<br />
+Marquinhos<br />
+Pedrinho<br />
+Tininha<br />
+Zezinho</p>
+
+<p>Se comportaram: 5 | Nao se comportaram: 5</p>
+
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>15<br />
++ Joaozinho<br />
+- Fernandinha<br />
++ Bruninha<br />
++ Pedrinho<br />
+- Zezinho<br />
++ Mangojatinha<br />
+- Marquinhos<br />
++ Carlinhos<br />
++ Aninha<br />
+- Luquinhas<br />
++ Rafinha<br />
++ Leandrinho<br />
+- Tamirinha<br />
++ Julhinha<br />
++ Gaguinho</p>
+
+                </td>
+                <td>
+                    <p>Aninha<br />
+Bruninha<br />
+Carlinhos<br />
+Fernandinha<br />
+Gaguinho<br />
+Joaozinho<br />
+Julhinha<br />
+Leandrinho<br />
+Luquinhas<br />
+Mangojatinha<br />
+Marquinhos<br />
+Pedrinho<br />
+Rafinha<br />
+Tamirinha<br />
+Zezinho</p>
+
+<p>Se comportaram: 10 | Nao se comportaram: 5</p>
+
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+			<p class="footer">
+				Contest de Natal 2016.
+			</p>
+		</div>
+
+	</body>
+</html>

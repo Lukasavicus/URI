@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1111 - Desrugenstein</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1111 - Desrugenstein" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1111</span>
+                <h1>Desrugenstein</h1>
+                <div><p>
+	<em>By</em> Leonardo Alt&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;"> Brasil</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	A cidade de Desrugenstein é uma bagunça completa. Olhando para o mapa ela parece organizada, já que foi criada na forma de uma grade quadrada, mas não há padrões de direções. Cada esquina diz para onde você pode ir a partir de lá (norte, sul, leste, oeste). O prefeito Daniel Cobra é cabeça-dura e preguiçoso o suficiente para deixar tudo como está e proibir qualquer tentativa de mudança. Incapaz de fazer muito, o Conselheiro Espiritual Mestre de Desrugenstein, Giordano Marfyn, te pediu, Conselheiro Espiritual Nível XVII de Desrugenstein, programador-chefe de Desrugenstein, para escrever um programa para calcular o custo de ir de uma esquina (x, y) a outra esquina (z, w), considerando as ruas bagunçadas.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	O arquivo de entrada possui vários casos de teste. A primeira linha de cada caso de teste contém um inteiro N (1 ≤ N ≤ 10) que representa altura e largura da grade quadrada que mapeia a cidade (uma grade N x N). A entrada termina quando N = 0, caso que não deve ser processado. Cada uma das próximas N linhas representa uma rua da cidade, começando da mais ao norte (N – 1) até a mais ao sul. Em cada uma destas linhas há 4*N inteiros, 4 para cada esquina: A (norte) B (sul) C (oeste) D (leste). Cada um é 0 se não é possível seguir na respectiva direção a partir daquela esquina, ou 1 se é possível.</p>
+<p>
+	Depois do mapa da cidade, seu programa deve ler um inteiro P (1 ≤ P ≤ 100). As próximas P linhas contém 4 inteiros cada, x<sub>0</sub> y<sub>0</sub> x<sub>1</sub> y<sub>1</sub> representando a questão: “Qual o custo mínimo de ir da esquina (x<sub>0</sub> , y<sub>0</sub>) até a esquina (x<sub>1</sub> , y<sub>1</sub>)?”. O custo de ir de uma esquina para a esquina mais próxima em qualquer direção é 1.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada questão, responda “Impossible”, se não existe um caminho válido entre as esquinas (respeitando as regras de direções para esquinas), ou o custo mínimo, se há caminho(s). Imprima uma linha em branco após cada caso de teste.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                 <p>
+	4<br>
+	0 1 0 1 0 0 1 0 0 0 0 1 0 1 0 0<br>
+	0 0 0 0 1 0 0 1 0 0 0 1 0 1 0 0<br>
+	1 0 0 0 1 0 1 0 1 1 0 0 0 1 1 0<br>
+	0 0 0 0 0 0 1 0 0 0 1 0 0 0 0 0<br>
+	5<br>
+	1 3 0 3<br>
+	2 3 3 0<br>
+	2 3 0 0<br>
+	3 1 3 2<br>
+	0 3 0 0<br>
+	0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	1<br>
+	4<br>
+	7<br>
+	3<br>
+	Impossible</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    
+            </div>
+
+        </body>
+    </html>

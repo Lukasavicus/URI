@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2132 - Não é Mais Um Joguinho Canadense!</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2132 - Não é Mais Um Joguinho Canadense!" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2132</span>
+                <h1>Não é Mais Um Joguinho Canadense!</h1>
+                <div>
+                    <p>Por XI Maratona de Programação IME-USP, 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>O Canadá é um país muito frio. Em 8 meses por ano as temperaturas praticamente impedem que as ruas sejam ocupadas por vida inteligente, restando apenas criaturas resistentes ao frio como alces, ursos e canadenses (brincadeirinha). Nestes longos meses de inverno famílias buscam diversão em frente de suas lareiras (ou, para as mais corajosas, ao redor de suas fogueiras). A família Smith, de Banff, inventou o jogo que descrevemos a seguir.</p>
+
+                    <p>A brincadeira começa com uma das crianças desenhando um diagrama com estados (representados por bolinhas) ligados por transições (flechas ligando os estados). Cada transição tem uma letra e um número associados. Podemos fazer diversos passeios neste diagrama, partindo de um estado inicio caminhando por suas transições e terminando em um estado final. Um passeio forma uma palavra (obtida da concatenação das letras das transições percorridas) e tem um custo (que é dado pelo produto dos números destas transições).</p>
+
+                    <p>Exemplo, considere o diagrama abaixo.</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2132.png" style="width: 172px; height: 173px;"></p>
+
+                    <p class="center">Figura 1: Diagrama</p>
+
+                    <p>Todos os passeios iniciam no estado P e terminam em Q. O passeio que segue pelas transições (P,1A), (P,1A), (P,1B) e termina no estado Q forma a palavra AAB concatenando as letras de cada transição tem custo 1 (produto dos números destas transições).</p>
+
+                    <p>O passeio que segue pelas transições (P,1A), (P,1A), (P,1B), (Q,2B) e termina no estado Q forma a palavra AABB e tem custo 2.</p>
+
+                    <p>O jogo inventado pelo papai Smith era o seguinte. Depois de desenhar um diagrama como esse, um dos membros da família falava uma palavra, e os outros deveriam descobrir a soma dos custos de todos os passeios no diagrama que formam a palavra dada tais que iniciam no estado P e terminam no estado Q. No caso do exemplo do diagrama acima, se o Sr. Smith pedisse a palavra ABA a resposta deveria ser 2.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta de diversas palavras (o diagrama é sempre o da figura). Cada caso é dada por uma linha contendo uma palavra. Uma palavra é uma sequência de letras [<strong>A</strong>, <strong>B</strong>] com no máximo 60 letras. A entrada termina com final de arquivo (EOF).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso, você deverá imprimir um identificador <strong>K</strong>, onde <strong>K</strong> é o número da caso atual. Na linha seguinte imprima a soma dos custos. Após cada caso imprima uma linha em branco.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>a</p>
+
+<p>b</p>
+
+<p>ab</p>
+
+<p>ba</p>
+
+<p>aaaa</p>
+
+<p>bbbb</p>
+
+<p>aabb</p>
+
+<p>abbb</p>
+
+                            </td>
+                            <td>
+                               <p>Palavra 1<br />
+0<br />
+<br />
+Palavra 2<br />
+1<br />
+<br />
+Palavra 3<br />
+1<br />
+<br />
+Palavra 4<br />
+2<br />
+<br />
+Palavra 5<br />
+0<br />
+<br />
+Palavra 6<br />
+15<br />
+<br />
+Palavra 7<br />
+3<br />
+<br />
+Palavra 8<br />
+7</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XI Maratona de Programação IME-USP, 2007
+                </p>
+            </div>
+
+        </body>
+    </html>

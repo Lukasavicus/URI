@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1750 - Ajude o Cupido</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1750 - Ajude o Cupido" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1750</span>
+                <h1>Ajude o Cupido</h1>
+                <div>
+                    <p>Por Pablo Ariel Heiber, Universidad de Buenos Aires <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>O trabalho de Cupido está ficando mais difícil, por isso ele está adotando novas tecnologias para ajuda-lo com sua difícil tarefa de combinar pessoas em casais felizes. Ele nomeou os melhores programadores em sua equipe para um novo projeto chamado Advanced Couples Matching (ACM). Para este projeto, os programadores precisam produzir um algoritmo que leva um conjunto de um número par de <em>N</em> pessoas solitárias e combina-los em <em>N</em>/2 casais, de modo que cada pessoa esteja exatamente em um casal.</p>
+
+                    <p>Infelizmente, os dados disponíveis sobre cada pessoa são limitados. Neste mundo moderno, usando de gênero, etnia, idade ou nacionalidade como critério para formar casais não é uma opção sensata, de modo que os programadores só podem utilizar os dados sobre a conexão à internet de cada candidato. Eles decidiram concentrar-se em fusos horários nesta fase. As pessoas que vivem em zonas de tempo mais próximas são mais propensos a encontrar tempo para interagir uns com os outros. Assim, os programadores decidiram criar casais de modo a minimizar a <em>diferença de tempo total</em>.</p>
+
+                    <p>Cada fuso horário é identificado por um número inteiro entre -11 e 12, inclusive, representando a sua diferença em horas de um fuso horário especial chamado Tempo Universal Coordenado (ou UTC). A diferença de tempo de duas pessoas que vivem em zonas de tempo representados por números inteiros <em>i</em> e <em>j</em> é o mínimo entre | <em>i</em> - <em>j</em> | e 24 - | <em>i</em> - <em>j</em> |. Dada uma partição de um conjunto de um mesmo número <em>N</em> de candidatos em <em>N</em>/2 casais, a sua diferença de tempo total é a soma da diferença de tempo de cada casal.</p>
+
+                    <p>Você está convidado a escrever um programa que recebe como entrada os fusos horários de um conjunto de <em>N</em> candidatos. A saída do programa deve ser o mínimo da diferença total de tempo entre todas as partições possíveis do conjunto para casais.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém um inteiro par <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 1000) representando o número de candidatos que serão acoplados. A segunda linha contém <strong>N</strong> inteiros <strong>T<sub>1</sub></strong>, <strong>T<sub>2</sub></strong>,. . . , <strong>T<sub>N</sub></strong> (-11 ≤ <strong>T<sub>i</sub></strong> ≤ 12 para <strong>i</strong> = 1, 2,..., <strong>N</strong>), indicando os fusos horários dos candidatos.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Apresente uma linha com um inteiro que representa o mínimo da diferença total de tempo entre todas as partições possíveis do conjunto de candidatos em casais.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplos de Entrada</td>
+                            <td>Exemplos de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>6<br />
+-3 -10 -5 11 4 4</p>
+
+                            </td>
+                            <td>
+                                <p>5</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div><table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+-6 6</p>
+
+                            </td>
+                            <td>
+                                <p>12</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>8<br />
+0 0 0 0 0 0 0 0</p>
+
+                            </td>
+                            <td>
+                                <p>0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>              
+            <p class="footer">
+                    ACM/ICPC Latin America Contest 2014.
+                </p>
+            </div>
+
+        </body>
+    </html>

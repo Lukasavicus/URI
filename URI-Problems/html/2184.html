@@ -1,0 +1,140 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2184 - Pomekons</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2184 - Pomekons" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2184</span>
+				<h1>Pomekons</h1>
+				<div>
+					<p>Por Dâmi Henrique, INATEL <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Pomekon GO foi lançado e já é uma febre entre as pessoas. Após vários dias andando em sua cidade procurando por um padrão de onde os pomekons aparecem, Geraldinho tirou algumas conclusões e deseja usar suas habilidades em programação para sair na frente na captura dos pomekons. Geraldinho mapeou sua cidade em vários pontos. Entre cada par de pontos que se conectam diretamente, ele sabe a força do pomekon que aparece por lá.</p>
+
+<p>Agora, Geraldinho quer expandir sua jornada pomekon por todo o mundo e, para isso, ele necessita de sua ajuda.</p>
+
+<p>Existem <strong>Q </strong>possíveis rotas no formato [<strong>A</strong>, <strong>B</strong>]. Isso significa que você deve andar do ponto <strong>A</strong> até o ponto <strong>B</strong>. (Observe que existe apenas um caminho entre quaisquer pares de pontos). Cada rota pode ser usada uma única vez e é possível capturar <strong>apenas</strong> um pomekon por rota, já que as pobekolas estão caras. Outro fato importante é que Geraldinho pode visitar no máximo <strong>K</strong> pontos em sua jornada.</p>
+
+<ul>
+	<li>Se existir duas rotas que passam por um ponto <strong>P</strong>, ele será contado duas vezes.</li>
+	<li>Se existir duas rotas que passam pela mesma ligação, é possível capturar o pomekon nas duas passadas.</li>
+</ul>
+
+<p>Geraldinho quer maximizar a soma das forças dos pomekons que poderá capturar, ajude-o nessa jornada!</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contêm dois inteiros <strong>N</strong>, <strong>K</strong>, indicando, respectivamente, o número de pontos mapeados na cidade e a quantidade máxima de pontos em que Geraldinho pode passar. (2 ≤ <strong>N</strong> ≤ 10<sup>5</sup>,  2 ≤ <strong>K</strong> ≤ 10<sup>3</sup>). </p>
+
+<p>Segue então <strong>N</strong>-1 linhas, contendo três inteiros <strong>X</strong>, <strong>Y</strong>, <strong>F</strong>, indicando que existe uma ligação bidirecional entre o ponto <strong>X</strong> e <strong>Y</strong> contendo um pomekon de força <strong>F</strong>. (1 ≤ <strong>X, Y</strong> ≤ <strong>N</strong>, <strong>X </strong>!= <strong>Y,</strong> 1 ≤ <strong>F</strong> ≤ 1000). </p>
+
+<p>Após isso, há uma linha com um inteiro <strong>Q, </strong>indicando o número de rotas. <strong>Q</strong> linhas seguem com dois inteiros <strong>A</strong>, <strong>B</strong>, indicando que existe uma rota partindo do ponto <strong>A</strong> até o ponto <strong>B</strong>. (1 ≤ <strong>Q</strong> ≤ 5*10<sup>3</sup>,  1 ≤ <strong>A, B</strong> ≤ <strong>N</strong>, <strong>A</strong> ≠ <strong>B</strong>). </p>
+
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma única linha, a maior soma das forças dos pomekons capturados que Geraldinho pode conseguir, respeitando as condições dadas. Caso não consiga capturar nenhum pomekon, imprima -1.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 8</p>
+
+<p>1 2 7</p>
+
+<p>2 3 4</p>
+
+<p>2 4 3</p>
+
+<p>1 5 10</p>
+
+<p>3</p>
+
+<p>3 4</p>
+
+<p>2 1</p>
+
+<p>3 5</p>
+
+							</td>
+							<td>
+								<p>17</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 5</p>
+
+<p>1 2 5</p>
+
+<p>1 3 2</p>
+
+<p>2</p>
+
+<p>1 2</p>
+
+<p>2 3</p>
+
+							</td>
+							<td>
+								<p>10</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Aquecimento para a OBI 2016 - Fase 2
+				</p>
+			</div>
+
+		</body>
+	</html>

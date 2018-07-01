@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1402 - Será Que Indiana Jones Chega Lá?</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br">
+        <meta name="description" content="URI Online Judge - Problema 1402 - Será Que Indiana Jones Chega Lá?">
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1402</span>
+            <h1>Será Que Indiana Jones Chega Lá?</h1>
+             <div>Por Rodrigo Schmidt <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt="" /> Brasil</div>
+		     <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Indiana Jones está numa cidade deserta, 
+                    aniquilada durante uma guerra. Os telhados de todas as casas foram 
+                    destruídos e apenas alguns pedaços de parede ainda estão de pé. O solo 
+                    tem tantas minas que a única maneira segura de se locomover pela cidade é
+                    andando sobre as poucas paredes restantes. A missão de nosso herói é 
+                    salvar uma pessoa que está presa na cidade. Para se locomover entre duas
+                    paredes não conectadas Indiana Jones pensou em levar consigo uma placa 
+                    de madeira, que ele poderia colocar entre as duas paredes e assim passar
+                    sobre a placa de uma para a outra.
+                </p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Will%20Indiana%20Jones%20Get%20There_pt.png" style="width: 364px; height: 194px;">
+				<br />
+				Fig. 1: Mapa da cidade com a rota usada por Indiana Jones
+				</p>
+
+                <p>
+                    As posições iniciais de Indiana Jones e da pessoa presa estão em 
+                    algum ponto das paredes. Além disso, as paredes têm apenas a direção 
+                    Norte-Sul (vertical) ou Oeste-Leste (horizontal).
+                </p>
+
+                <p>
+                    Você receberá um mapa com as ruínas da cidade. Sua missão é 
+                    determinar o menor tamanho da placa de madeira que Indiana Jones precisa
+                    carregar para chegar à pessoa.
+                </p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Seu programa deve processar vários casos de teste. Cada caso de teste começa com um inteiro <b>N</b> indicando o número de porções de paredes restantes na cidade (2 ≤ <b>N</b> ≤ 1000). Cada uma das <b>N</b>
+                    linhas seguintes descrevem uma porção de parede. A primeira porção de 
+                    parede é a porção em que Indiana Jones se localiza inicialmente. A 
+                    segunda porção é aquela em que a pessoa presa se localiza. Cada 
+                    descrição de porção de parede consiste de três inteiros <b>X</b>, <b>Y</b> e <b>L</b> (-10000 ≤ <b>X</b>, <b>Y</b>, <b>L</b> ≤ 10000), onde <b>X</b> e <b>Y</b>
+                    definem ou o ponto mais próximo do Sul (para porções verticais) ou o 
+                    ponto mais próximo do Oeste (para porções horizontais). O valor de <b>L</b> determina o tamanho e a direção da porção: se <b>L</b> ≥ 0, a porção é horizontal, de comprimento <b>L</b>; se <b>L</b> &lt; 0, a seção é vertical, com comprimento <b>|L|</b>. O final da entrada é indicado por <b>N</b> = 0.
+                </p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste da entrada seu programa 
+                    deve imprimir uma linha, contendo um valor real representando o tamanho 
+                    da placa de madeira que Indiana Jones deve carregar. O tamanho deve ser 
+                    impresso como um número real com 2 casas decimais, e o último valor 
+                    decimal deve ser arredondado. A entrada não conterá casos de teste onde 
+                    as diferenças de arredondamento são significativas.
+                </p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                14<br>
+                                1 1 5<br>
+                                6 8 2<br>
+                                7 2 -2<br>
+                                5 3 3<br>
+                                2 5 2<br>
+                                2 3 2<br>
+                                2 3 -2<br>
+                                4 3 -2<br>
+                                0 7 1<br>
+                                1 8 2<br>
+                                3 6 -2<br>
+                                4 7 2<br>
+                                6 6 1<br>
+                                6 6 -2<br>
+                                3<br>
+                                -10 0 20<br>
+                                -5 1 10<br>
+                                50 50 100<br>
+                                0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                1.41<br>
+                                1.00
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+             </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2002.
+            </p>
+        </div>
+
+    </body>
+</html>

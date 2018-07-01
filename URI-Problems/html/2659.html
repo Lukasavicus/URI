@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2659 - Brincadeira</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2659 - Brincadeira" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2659</span>
+			<h1>Brincadeira</h1>
+			<div>
+				<p>Por Maratona de Programação da SBC – 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Um Registrador de Deslocamento é&nbsp;um circuito que desloca de uma posição os elementos de um vetor de bits. O registrador de deslocamento tem uma entrada (um bit) e uma saída (também um bit), e é&nbsp;comandado por um pulso de relógio. Quando o pulso ocorre, o bit de entrada se transforma no bit mais significativo do vetor, o bit menos significativo é&nbsp;jogado na saída do registrador, e todos os outros bits são deslocados de uma posição em direção ao bit menos significativo do vetor (em direção à&nbsp;saída).</p>
+
+<p>Um Registrador de Deslocamento com Retroalimentação Linear (em inglês, LFSR) é&nbsp;um registrador de deslocamento no qual o bit de entrada é&nbsp;determinado pelo valor do ou-exclusivo de alguns dos bits do registrador antes do pulso de relógio. Os bits que são utilizados na retroalimentação do registrador são chamados de torneiras. A figura abaixo mostra um LFSR de 8 bits, com três torneiras (bits 0, 3 e 5).</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2659.png" style="width:700px; height:260px"></p>
+
+<p>Durante uma competição de programação, enquanto aguardam a divulgação do resultado final, Ricardo e Cláudio se divertem com um LFSR que encontraram no local.</p>
+
+<p>Eles usam o LFSR para gerar uma sequência infinita de números. Para gerar tal sequência, antes de cada pulso do relógio, os bits do registrador são convertidos para decimal. Assim, para um LFSR como o da figura os primeiros elementos da sequência são: <strong>A<sub>0</sub></strong> = 169 (10101001), <strong>A<sub>1</sub></strong> = 212 (11010100), <strong>A<sub>2</sub></strong> = 106 (01101010), <strong>A<sub>3</sub></strong> = 53 (00110101) e<strong> A<sub>4</sub></strong> = 26 (00011010). Note que o valor dos bits antes do primeiro pulso é&nbsp;o primeiro elemento da sequência.</p>
+
+<p>Em cada rodada da brincadeira um deles fala dois números inteiros, <strong>X</strong> e <strong>Y</strong> . Daí&nbsp;em diante o outro deve encontrar uma subsequência contígua, de tamanho maior ou igual a <strong>Y</strong> , dos elementos da sequência gerada pelo LFSR, de modo que a soma dos elementos da subsequência contígua seja divisível por <strong>X</strong>.</p>
+
+<p>De alguma forma os dois são capazes de se divertir com isso e encontrar as respostas mesmo sem a ajuda de um computador. E você, dada a descrição de um LSFR e dois inteiros <strong>X</strong> e <strong>Y</strong> , é&nbsp;capaz de encontrar uma subsequência válida (ou informar caso não exista uma)?</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha contém cinco números inteiros <strong>N</strong>, <strong>T</strong>, <strong>A<sub>0</sub></strong>, <strong>X</strong> e<strong> Y</strong> . O inteiro <strong>N </strong>representa o número de bits (2 ≤ <strong>N </strong>≤ 30), <strong>T</strong> é&nbsp;o número de torneiras (1 ≤ <strong>T</strong> ≤ <strong>N</strong>), A0 é&nbsp;a representação decimal do estado inicial do LFSR, <strong>X</strong> o valor pelo qual a soma da subsequência contígua deve ser divisível (1 ≤ <strong>X</strong> ≤ 106 ) e <strong>Y</strong> é&nbsp;a quantidade mínima de elementos na subsequência contígua desejada (1 ≤ <strong>Y</strong> ≤ 106 ). Os bits são identificados por inteiros de 0 (bit menos significativo) a <strong>N</strong> −1 (bit mais significativo). A segunda linha contém <strong>T</strong> inteiros, separados por espaços, representando os identificadores dos bits que são torneiras, em ordem crescente. O bit 0 sempre é&nbsp;uma torneira.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Seu programa deve imprimir, em uma única linha, dois inteiros<strong> I</strong> e <strong>F</strong>, representando os índices do primeiro e do último elementos da subsequência contígua escolhida. Caso não exista uma solução imprima a palavra impossivel. Caso exista mais de uma solução possível escolha aquela que minimiza o valor de <strong>F</strong>. Se mesmo assim houver mais de uma possibilidade opte por aquela que minimiza o valor de <strong>I</strong>.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>8 3 169 169 1</p>
+
+<p>0 3 5</p>
+
+						</td>
+						<td>
+							<p>0 0</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>8 3 169 238 2</p>
+
+<p>0 3 5</p>
+
+						</td>
+						<td>
+							<p>13 25</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				Maratona de Programação da SBC – ACM ICPC – 2017
+			</p>
+		</div>
+
+	</body>
+</html>

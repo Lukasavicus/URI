@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2657 - Sensate</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2602 - Sensate" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2657</span>
+			<h1>Sensate</h1>
+			<div>
+				<p>Por Abner Samuel P. Palmeira, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Sensates, ou Homo sensoriums, são uma espécie de humanos que são conectados telepaticamente com outras pessoas pelo mundo. Um grupo de sensates é chamado de cluster, e os membros de um cluster podem contactar um ao outro independente de onde eles estiverem no mundo. Após saber dos sensates os organizadores de maratonas de programação ficaram muito preocupados, pois mesmo que uma pessoa não saiba programar, se alguém do seu cluster souber ela irá se sair bem na competição mesmo sem saber nada. Por causa disso os organizadores de maratonas criaram novas regras para determinar se uma pessoa poderá participar de uma competição ou não.</p>
+
+<p>Primeiramente cada pessoa no planeta irá receber uma nota de um a dez, com o intuito de medir quão bem ela programa. Após isso para a pessoa participar ela terá que se encaixar em uma das categorias abaixo:</p>
+
+<p>1. Não ser um sensate.</p>
+
+<p>2. Ser um sensate e não ter ninguém no mesmo cluster com nível de programação maior que cinco.</p>
+
+<p>3. Ser um sensate e ter seu nível de programação maior ou igual a 5.</p>
+
+<p>Desenvolva um programa que consiga determinar se uma pessoa poderá ou não participar de competições de programação.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha contém três inteiros <strong>N</strong>,<strong>M</strong> e <strong>Q</strong> (1 ≤ <strong>N</strong>, <strong>M</strong>, <strong>Q</strong> ≤ 10<sup>4</sup>) representando respectivamente o número de pessoas, quantas ligações existem entre essas pessoas e quantas consultas serão realizadas. Cada uma das<strong> N</strong> linhas seguintes contém uma string <strong>S</strong> (1 ≤ |<strong>S</strong>| ≤ 10) e um inteiro <strong>V</strong> (0 ≤ <strong>V</strong> ≤ 10) representando respectivamente o nome da pessoa e seu nível de programação. As próximas <strong>M</strong> vão conter duas strings <strong>S1</strong> e <strong>S2</strong> (1 ≤ |<strong>S1</strong>|, |<strong>S2</strong>| ≤ 10), representando que a pessoa <strong>S1</strong> e <strong>S2</strong> estão no mesmo cluster. As próximas <strong>Q</strong> linhas vão conter uma string <string>T</string> (1 ≤ |<strong>T</strong>| ≤ 10) que representa o nome da pessoa que pretende participar da competição.</p>
+
+<p>As strings serão compostas apenas de letras maiúsculas e minusculas.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada uma das <strong>Q</strong> consultas imprima "S" se a pessoa pode competir ou "N" caso contrário.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>9 7 3</p>
+
+<p>Capheus 1</p>
+
+<p>Nomi 8</p>
+
+<p>Lito 1</p>
+
+<p>Will 1</p>
+
+<p>Kala 1</p>
+
+<p>Wolfgang 1</p>
+
+<p>Sun 1</p>
+
+<p>Riley 1</p>
+
+<p>Abner 5</p>
+
+<p>Capheus Nomi</p>
+
+<p>Nomi Lito</p>
+
+<p>Lito Will</p>
+
+<p>Will Kala</p>
+
+<p>Kala Wolfgang</p>
+
+<p>Wolfgang Sun</p>
+
+<p>Sun Riley</p>
+
+<p>Lito</p>
+
+<p>Nomi</p>
+
+<p>Abner</p>
+
+						</td>
+						<td>
+							<p>N</p>
+
+<p>S</p>
+
+<p>S</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Aquecimento OLIP 2017
+			</p>
+		</div>
+
+	</body>
+</html>

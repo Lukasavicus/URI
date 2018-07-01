@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 1803 - Matring</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema J - Matring" />
+
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 1803 | [PJ][P1]</span>
+			<h1>Matring</h1>
+			<div>
+				<p>Por M.C. Pinto, UNILA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Matring é uma mistura de Matriz e String. Ela foi desenvolvida pela UNILA (União dos Nerds para Integração da Lógica e da Aventura) para manter mensagens seguras de escutas.</p>
+
+				<p>A primeira e última coluna de uma matring guarda a chave para traduzi-la na mensagem original. As colunas restantes de uma matring representam uma string codificada em ASCII, uma coluna por caractere.</p>
+
+				<p>Para uma mensagem com <em>N</em> caracteres, a matring correspondente é uma matriz 4x(<em>N</em>+2) de dígitos. Cada coluna é lida como um número de 4 dígitos; uma sequência de dígitos de cima para baixo é o mesmo que uma sequência de dígitos da esquerda para a direita na horizontal.</p>
+
+				<p>Seja o primeiro número <em>F</em>, o último número <em>L</em> e os restantes uma sequência de números <em>M<sub>i</sub></em>, onde 1 ≤ <em>i</em> ≤ <em>N</em>. A primeira coluna de uma matring é indexada por zero.</p>
+
+				<p>Para decodificar uma matring para uma string, calculamos: <em>C<sub>i</sub></em> = (<em>F</em> * <em>M<sub>i</sub></em> + <em>L</em>) mod 257, onde <em>C<sub>i</sub></em> é o caractere em ASCII na posição <em>i</em> da mensagem original.</p>
+
+				<p>Sua tarefa é desenvolver um algoritmo para decodificar matrings.</p>
+
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A entrada é uma matring, ou seja, uma matriz 4x(<strong>N</strong>+2) de dígitos (de 0 a 9) com 0 &lt; <strong>N</strong> &lt; 80.</p>
+
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>A saída é dada em uma única linha e corresponde a string decodificada. Inclua o caractere de fim-de-linha após a string.</p>
+
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>41805<br />
+								99934<br />
+								39127<br />
+								23659</p>
+
+						</td>
+						<td>
+							<p>OBI</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5686702<br />
+								0531447<br />
+								5115038<br />
+								2795214</p>
+
+						</td>
+						<td>
+							<p>UNILA</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>28665943<br />
+								68409984<br />
+								86877400<br />
+								51804393</p>
+
+						</td>
+						<td>
+							<p>Hodor!</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class="footer">
+				Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática 2015
+			</p>
+		</div>
+	</body>
+</html>

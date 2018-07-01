@@ -1,0 +1,129 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2384 - Tradutor Alienígena</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2384 - Tradutor Alienígena" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2384</span>
+				<h1>Tradutor Alienígena</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática, 2010 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>É de conhecimento público e notório que já fomos visitados por alienígenas diversas vezes. A grande dificuldade que temos, porém, é a comunicação com eles, por causa de grandes diferenças entre as línguas. Além disso, assim como nós, eles também têm várias línguas diferentes.</p>
+
+					<p>Com o intuito de auxiliar no processo de tradução, foi criado um método de mapeamento dos símbolos do alfabeto de cada língua alienígena, atribuindo um número inteiro para cada símbolo. Sendo assim, para um alfabeto alienígena com <strong>N</strong> elementos, atribui-se números de 1 a <em>N</em> a cada um.</p>
+
+					<p>O problema é que o encarregado de transcrever os textos alienígenas para números não foi muito cuidadoso e usou o mesmo espaçamento entre dígitos e números. Assim, por exemplo, digamos que para um alfabeto com 32 símbolos, uma sequência que deveria ser “31 20 4 19” virou “3120419”. Como se pode notar, há diferentes maneiras válidas de interpretar essa sequência além da original, como por exemplo “3 1 20 4 19” e “31 20 4 19”. Repare que a transcrição nunca usa zeros à esquerda de um número e, portanto, a sequência “3 12 04 19” é inválida, assim como “31 20 41 9” por conter um número (49) que não corresponde a um símbolo.</p>
+
+					<p>Dados a quantidade de símbolos do alfabeto e uma sequência transcrita, determine quantas sequências válidas podem ser formadas.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por duas linhas. A primeira contém um número inteiro <strong>N</strong> (1 &lt; <strong>N</strong> &lt; 10<sup>100</sup>) que indica a quantidade de símbolos do alfabeto. A segunda linha contém uma cadeia de dígitos de tamanho mínimo 1 e tamanho máximo 100.000 que corresponde a sequência transcrita.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma linha com o resto da divisão da quantidade de sequências válidas por 1.000.000.007.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>32</p>
+
+								<p>3120419</p>
+
+							</td>
+							<td>
+								<p>4</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>32</p>
+
+								<p>4021333251231253</p>
+
+							</td>
+							<td>
+								<p>0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>500</p>
+
+								<p>12345</p>
+
+							</td>
+							<td>
+								<p>13</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática - 2010 Fase 2 Modalidade Nível 2 (P2)
+				</p>
+			</div>
+
+		</body>
+	</html>

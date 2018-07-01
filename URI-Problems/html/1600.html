@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1600 - O Gato do Zelador do Armazém</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1600 - O Gato do Zelador do Armazém" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1600</span>
+                <h1>O Gato do Zelador do Armazém</h1>
+                <div>
+                    <p>Por Gabriel R. C. Peixoto <img src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" alt="" style="width: 16px; height: 11px; "> Brasil</p>
+                </div>
+                <strong>Timelimit: 5</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Sokoban é um jogo muito conhecido. O que poucas pessoas sabem é que o jogo foi inventado pelos bérberes, povos árabes que habitavam o norte da África, mais especificamente onde hoje existe o Marrocos. Para estes povos os gatos são considerados um animal que traz mau agouro, principalmente por conta de seu comportamento egoísta (como atesta o provérbio destacado acima).</p>
+
+                    <p>Nessa versão original do sokoban o personagem é um gato que fica empurrando os blocos de terra ao seu redor. Há um tabuleiro que consiste de N linhas e M colunas. Você controla o gato que pode se movimentar em qualquer uma das 4 casas adjacentes, desde que essa esteja livre, ou pode empurrar um bloco em qualquer uma dessas 4 direções.</p>
+
+                    <p>Como na versão mais conhecida, seu objetivo é empurrar o bloco até uma posição final especificada. Note que você pode apenas empurrar o bloco e nunca puxar.</p>
+
+                    <p>A versão bérbere do jogo tem uma particularidade. Há algumas casas especiais que são portas. Sempre que o gato ocupa uma posição com porta pela primeira vez, a porta é aberta. O bloco não pode ser empurrado para a posição de uma porta se ela estiver fechada. Após aberta, uma porta se comporta como uma posição livre.</p>
+
+                    <p>Você quer empurrar o bloco para a posição final abrindo o menor número de portas possível.</p>
+
+                    <p>Considere toda posição fora do tabuleiro como uma parede.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF).</p>
+
+                    <p>Cada instância inicia com uma linha contendo 2 inteiros separados por um espaço, <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong>, <strong>M</strong> ≤ 25).</p>
+
+                    <p>Seguem-se <strong>N</strong> linhas, cada uma com <strong>M</strong> caracteres pertencentes ao conjunto {∗, ., j, b, x, #}, onde:</p>
+
+                    <ul>
+                        <li>‘*’ representa uma parede;</li>
+                        <li>‘.’ representa uma posição vazia;</li>
+                        <li>‘j’ representa a posição inicial do gato (Cada instância contêm exatamente um caractere ‘j’);</li>
+                        <li>‘b’ representa a posição inicial do bloco (Cada instancia contêm exatamente um caractere ‘b’);</li>
+                        <li>‘x’ representa a posição final desejada para o bloco (Cada instância contêm exatamente um caractere ‘x’);</li>
+                        <li>‘#’ representa uma porta (Cada instância contêm no máximo 5 caracteres ‘#’);</li>
+                    </ul>
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância imprima uma única linha. Caso seja possível empurrar o bloco para a sua posição final essa linha deverá consistir de 2 inteiros, que são o número mínimo de portas que precisam ser abertas para realizar tal ação e o número mínimo de movimentos que são necessários com esse número de caixas abertas. Imprima ‘-1’ caso não seja possível empurrar o bloco para a sua posição final.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1 4<br />
+jb.x<br />
+1 4<br />
+bj#x<br />
+3 5<br />
+.j..x<br />
+.b*#*<br />
+*####</p>
+
+                            </td>
+                            <td>
+                                <p>0 2<br />
+-1<br />
+4 12</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Quando disseram ao gato que o seu excremento era útil ele começou a enterrá-lo.<br/>
+                    Preliminar Maratona (Seletiva IME-USP)
+                </p>
+            </div>
+
+        </body>
+    </html>

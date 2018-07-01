@@ -1,0 +1,133 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2039 - Programadores Devem Aprender Teoria da Computação</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 9999 - Programadores Devem Aprender Teoria da Computação" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2039</span>
+				<h1>Programadores Devem Aprender Teoria da Computação</h1>
+				<div>
+					<p>Por Matheus Pimenta, UnB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Durante sua aventura em Imaginalândia, Alan Leopold "Butters" Stotch Turing inventou sua famosa máquina de fazer sorvete. Basta dizer para a máquina o sabor, que ela faz um sorvete delicioso!</p>
+
+					<p style="text-align: center;"><img alt="Butters" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2039.png" /><br />Fonte da imagem: http://southpark.cc.com/avatar</p>
+
+					<p>Neste momento, Butters está preocupado com uma coisa. Ele é capaz de construir sua máquina de muitas maneiras diferentes; e está fazendo experimentos para determinar qual é a melhor. Você decidiu ajudá-lo, pois está ansioso por um sorvete de creme. Dada a descrição de uma máquina e uma série de <strong>Q</strong> consultas de sabores, Butters quer saber quantos <em>passos</em> esta máquina leva para fabricar o sorvete de cada consulta.</p>
+
+					<p>Uma máquina de sorvete é uma configuração com um estado (um número inteiro), uma cadeia e uma posição nesta cadeia. Para cada configuração &lt;estado,cadeia,posição&gt;, um <em>passo</em> é gerar uma nova configuração: atualiza-se o estado, atualiza-se o símbolo que está na posição atual; e move-se a posição atual para uma posição adjacente (à esquerda, ou à direita). Caso o comando movimente a posição para uma posição além dos limites da cadeia, deve ser concatenado um espaço em branco no respectivo extremo; e a posição da nova configuração deve apontar para este espaço em branco. A máquina começa na configuração &lt;1,<strong>sabor</strong>,1&gt;, onde <strong>sabor</strong> é uma cadeia e o segundo 1 indica a primeira posição desta cadeia. A máquina termina de fazer o sorvete quando atinge uma configuração cujo estado é o inteiro <strong>S</strong>, de sorvete.</p>
+
+					<p>O truque mágico é que, para cada configuração &lt;estado,cadeia,posição&gt;, a <em>máquina de Butters</em> é capaz de executar vários passos distintos, de modo que ela pode terminar de fazer o sorvete mais rapidamente. Sempre que a máquina chega a uma configuração que leva a múltiplas novas configurações, a máquina cria cópias de si mesma, de modo que cada cópia segue independentemente. Há uma nova cópia para cada nova configuração. Após gerar as cópias para as novas configurações, a máquina morre. Caso uma configuração não gere novas cópias, ela só morre. O processo termina quando alguma cópia termina de fazer o sorvete. É garantido que alguma ramificação da máquina terminará de fazer o sorvete.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por vários casos de teste e termina com fim de arquivo.</p>
+
+					<p>A primeira linha de um caso de teste contém os inteiros <strong>N</strong>, <strong>S</strong> e <strong>Q</strong>, onde 0 ≤ <strong>N</strong> ≤ 25 e 1 ≤ <strong>S</strong>,<strong>Q</strong> ≤ 10.</p>
+
+					<p>As próximas <strong>N</strong> linhas descrevem os comandos da máquina a ser testada. Cada linha está no formato <strong>q</strong> <strong>a</strong> <strong>t</strong> <strong>b</strong> <strong>c</strong>, indicando que se uma configuração estiver no estado <strong>q</strong> e o símbolo na posição atual for <strong>a</strong>, então deve-se gerar uma nova configuração com estado <strong>t</strong>, atualizar o símbolo na posição atual para <strong>b</strong> e deve-se mover a posição na direção <strong>c</strong>, de acordo com a descrição do enunciado. Note que 1 ≤ <strong>q</strong>,<strong>t</strong> ≤ <strong>S</strong>. O dado <strong>a</strong> pode ser uma letra minúscula, '0', ou '~' seguido de uma cadeia não-vazia <strong>w</strong>, que pode conter letras minúsculas ou '0'. No terceiro caso, o comando deve ser executado quando o símbolo na posição atual não aparecer em <strong>w</strong>. O dado <strong>b</strong> pode ser uma letra minúscula, '0', ou '*'. No terceiro caso, o símbolo na posição atual não deve ser atualizado. O dado <strong>c</strong> vale 'E' (esquerda), ou 'D' (direita). O símbolo '0' significa espaço em branco.</p>
+
+					<p>As próximas <strong>Q</strong> linhas descrevem as consultas. Cada linha é uma cadeia <strong>sabor</strong> de letras minúsculas, com no mínimo 1 e no máximo 20 letras.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada consulta de cada caso de teste, imprima uma linha com o número de passos da ramificação que produziu o sorvete.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>0 1 3<br />
+								chocolate<br />
+								morango<br />
+								baunilha<br />
+								9 9 2<br />
+								1 c 2 * D<br />
+								2 a 3 * D<br />
+								3 f 4 * D<br />
+								4 e 9 * D<br />
+								1 c 5 * D<br />
+								5 a 6 * D<br />
+								6 c 7 * D<br />
+								7 a 8 * D<br />
+								8 u 9 * D<br />
+								cafe<br />
+								cacau<br />
+								11 6 3<br />
+								1 ~a0 1 * D<br />
+								1 a 2 0 D<br />
+								2 ~0 2 * D<br />
+								2 0 3 * D<br />
+								3 ~0 3 * D<br />
+								3 0 4 a E<br />
+								4 ~0 4 * E<br />
+								4 0 5 * E<br />
+								5 ~0 5 * E<br />
+								5 0 1 a D<br />
+								1 0 6 * D<br />
+								chocolate<br />
+								morango<br />
+								baunilha</p>
+
+							</td>
+							<td>
+								<p>0<br />
+								0<br />
+								0<br />
+								4<br />
+								5<br />
+								18<br />
+								18<br />
+								31</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Perceba que a solução deste problema é um interpretador!
+				</p>
+			</div>
+
+		</body>
+	</html>

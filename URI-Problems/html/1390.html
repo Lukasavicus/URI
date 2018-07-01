@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1390 - Bases</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1390 - Bases" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1390</span>
+            <h1>Bases</h1>
+            <div>Por Fabio Dias Moreira <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>O que você consegue se multiplicar 6 por 9? A resposta, é claro, é 42, mas somente se você fizer os cálculos na base 13.</p>
+
+                <p>Dado um inteiro B ≥ 2, o sistema de numeração na base B é a maneira de escrever inteiros usando somente dígitos entre 0 e B - 1, inclusive. Em um número escrito na base B, o dígito mais à direita tem seu valor multiplicado por 1, o segundo mais à direita tem seu valor multiplicado por B, o terceiro mais à direita tem seu valor multiplicado por B<sup>2</sup>, e assim por diante.</p>
+
+                <p>Algumas equações são verdadeiras ou falsas dependendo da base em que são consideradas. A equação 2 + 2 = 4, por exemplo, é verdadeira para qualquer B ≥ 5 - ela não vale para a base 4, por exemplo, visto que não existe dígito '4' na base 4. Por outro lado, uma equação como 2 + 2 = 5 nunca é verdadeira.</p>
+
+                <p>Escreva um programa que, dada uma equação, determine em quais bases ela é verdadeira.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Cada linha da entrada contém um caso de teste; cada caso de teste é uma equação da forma "EXPR=EXPR", onde ambos "EXPR" são expressões aritméticas com no máximo 17 caracteres.</p>
+
+                <p>Todas expressões são válidas e contém apenas os caracteres '+', '*' e os dígitos entre '0' e '9'. Nenhuma expressão contém sinais de mais no começo da equação e nenhum número tem zeros à esquerda.</p>
+
+                <p>O final da entrada é indicado por uma linha contendo apenas "=".</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste da entrada seu programa deve produzir uma única linha de saída, indicando para quais bases a equação dada é válida.</p>
+
+                <p>Se a expressão for verdadeira para infinitas bases, imprima "B+", onde B é a primeira base para a qual a equação é válida.</p>
+
+                <p>Se a expressão for válida apenas para um conjunto finito de bases, imprima elas em ordem crescente, separadas por espaço.</p>
+
+                <p>Se a expressão não for verdadeira em nenhuma base, imprima o caractere '*'.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>6*9=42<br />
+                                10000+3*5*334=3*5000+10+0<br />
+                                2+2=3<br />
+                                2+2=4<br />
+                                0*0=0<br />
+                                =</p>
+
+                        </td>
+                        <td>
+                            <p>13<br />
+                                6 10<br />
+                                *<br />
+                                5+<br />
+                                2+</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                 ACM/ICPC South America Contest 2008.
+			</p>
+        </div>
+
+    </body>
+</html>

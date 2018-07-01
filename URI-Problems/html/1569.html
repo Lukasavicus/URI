@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1569 - Sobe e Desce</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1569 - Sobe e Desce" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1569</span>
+                <h1>Sobe e Desce</h1>
+                <div>
+                    <p>Por Ondřej Lhoták, University of Waterloo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ca.gif' alt='CA' /> Canada</p>
+                </div>
+                <strong>Timelimit: 5</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Sobe e Desce é um jogo de tabuleiro jogado em um grid de 10 por 10. As posições do grid são numerados de 1 a 100. Cada jogador possui uma peça colorida que o representa. No começo do jogo, cada jogador coloca sua peça na posíção 1 do tabuleiro. No turno de cada jogador, ele deve jogar um dado que lhe dará um número randômico entre 1 e 6. Depois de jogar o dado, o jogador deve avançar sua peça a quantidade de posições exibidas no dado. Se isso fizer com que sua peça ultrapasse a posição 100, o jogador deve deixá-la exatamente na posição 100 do tabuleiro. Depois de avançar, se a peça estiver em uma posição contendo o início de uma escada, a peça deve avançar para a posição contendo o topo da escada. Da mesma forma, se a peça estiver em uma posição contendo o topo de um escorregador, a peça deve ser movida para a posição contendo o fim do escorregador. Nenhuma posição contém mais de um final de qualquer escorregador ou escada. A posição 100 não contém o topo de um escorregador ou o início de uma escada. Um jogador vence quando sua peça alcança a posição 100. Nesse ponto, o jogo termina.</p>
+
+<p>Dada uma configuração de escorregadores e escadas sobre o tabuleiro e uma sequência de jogadas do dado, você precisa determinar as posições de todas as peças no tabuleiro. A sequência de jogadas do dado não precisa ser completa, ou seja, nenhum jogador precisa sair vitorioso (chegar até a posição 100). A sequência de jogadas do dado também pode continuar após o fim do jogo; neste caso, as jogadas após o jogo terminar devem ser ignoradas.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém o número de casos de teste. O formato de cada caso de teste é o seguinte:</p>
+
+<p>A primeira linha de cada caso contém três inteiros positivos: o número <i><b>a</b></i> de jogadores, o número <i><b>b</b></i> de escorregadores e escadas, e o número <i><b>c</b></i> de jogadas do dado. Não haverão mais do que 1000000 jogadores e não mais do que 1000000 jogadas do dado. Cada uma das <i><b>b</b></i> linhas seguintes contêm dois inteiros especificando um escorregador ou uma escada. O primeiro inteiro indica a posição contendo o topo de um escorregador ou o início de uma escada. O segundo inteiro indica a posição contendo o fim do escorregador ou o topo da escada. As próximas <i><b>c</b></i> linhas contêm cada uma um inteiro dando o número exibido em cada jogada do dado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada jogador, imprima uma linha contendo um texto na forma: Position of player <i><b>N</b></i> is <i><b>P</b></i>., onde <i><b>N</b></i> será substituído pelo número do jogador e <i><b>P</b></i> será substituído pela posição final de cada jogador.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1<br />
+3 1 3<br />
+4 20<br />
+3<br />
+4<br />
+5</p>
+
+                            </td>
+                            <td>
+                                <p>Position of player 1 is 20.<br />
+Position of player 2 is 5.<br />
+Position of player 3 is 6.</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

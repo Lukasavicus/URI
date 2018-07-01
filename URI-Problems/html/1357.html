@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1357 - Em Braille</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1357 - Em Braille" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1357</span>
+            <h1>Em Braille</h1>
+            <div><p>Por Vinicius Santos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    O sistema Braille, desenvolvido por Louis Braille em 1825, revolucionou a comunicação escrita para as pessoas cegas e visualmente debilitadas. Braille, um francês cego, desenvolveu uma linguagem tátil onde cada elemento é representado por uma célula com seis posições, arranjadas em três fileiras e duas colunas. Cada posição pode ser relevada ou não, permitindo 64 configurações diferentes que podem ser sentidas por dedos treinados. A figura abaixo mostra a representação Braille para os dígitos decimais (um ponto preto indica uma posição relevada).</p>
+
+                <p class="center">
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/In%20Braille.png" style="width: 325px; height: 189px;" />​</p>
+
+                <p>
+                    De modo a desenvolver um novo sistema de software para ajudar professores a lidar com estudantes cegos ou visualmente debilitados, um módulo de dicionário Braille é necessário. Dada uma mensagem, composta apenas por dígitos, seu trabalho é traduzi-la para ou do Braille. Você pode ajudar?</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste é descrito usando três ou cinco linhas. A primeira linha contém um inteiro<strong> D</strong> representando o número de dígitos em uma mensagem (1 ≤ <strong>D</strong> ≤ 100). A segunda linha contém uma única letra maiúscula 'S' ou 'B'. Se a letra é 'S', a próxima linha contém uma mensagem composta de <strong>D</strong> dígitos decimais que seu programa deve traduzir para o Braille. Se a letra é 'B', as próxima três linhas contém uma mensagem composta de <strong>D</strong> células Braille que seu programa deve traduzir do Braille. As células Braille são separadas por espaços simples. Em cada célula Braille uma posição relevada é denotada pelo caractere '*' (asterisco), enquanto uma não relevada é denotada por um caractere '.' (ponto).</p>
+
+                <p>
+                    O último caso de teste é seguido por uma linha contendo um zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima apenas os dígitos da tradução correspondente, no mesmo formato que a entrada (veja os exemplos para maiores explicações).</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                10<br />
+                                S<br />
+                                1234567890<br />
+                                3<br />
+                                B<br />
+                                *. *. **<br />
+                                .. *. ..<br />
+                                .. .. ..<br />
+                                2<br />
+                                S<br />
+                                00<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                *. *. ** ** *. ** ** *. .* .*<br />
+                                .. *. .. .* .* *. ** ** *. **<br />
+                                .. .. .. .. .. .. .. .. .. ..<br />
+                                123<br />
+                                .* .*<br />
+                                ** **<br />
+                                .. ..</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2011.
+            </p>
+        </div>
+
+    </body>
+</html>

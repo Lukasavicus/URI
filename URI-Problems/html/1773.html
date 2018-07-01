@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1773 - Preso no Castelo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema E - Preso no Castelo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1773</span>
+                <h1>Preso no Castelo</h1>
+                <div>
+                    <p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Você está preso em um castelo com <strong>N</strong> salas e <strong>M</strong> corredores. As salas são enumeradas com números entre 1 e <strong>N</strong>, e você inicialmente está na sala de número 1. Cada um dos <strong>M</strong> corredores liga duas salas distintas. Para tentar encontrar a saída você decidiu visitar todas as salas deste castelo.</p>
+
+                    <p>Todas estas salas, com exceção da sala de número 1 onde você está, precisam de uma chave para que possam ser visitadas. Para sua sorte, você encontrou algumas anotações no chão, dizendo onde estão todas estas chaves. Por exemplo, sejam S e D duas salas distintas do castelo, para visitar a sala D é preciso antes visitar a sala S que contém a chave que abre a sala D.</p>
+
+                    <p>Dadas as informacões sobre as salas, corredores e as posições das chaves, descubra se é possível visitar todas as salas do castelo.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Haverá no máximo 70 casos de tests. Cada caso de teste inicia com dois inteiros <strong>N</strong> e <strong>M</strong>, indicando o número de salas e corredores do castelo (2 ≤ <strong>N</strong> ≤ 10<sup>3</sup>, 1 ≤ <strong>M</strong> ≤ 10<sup>4</sup>).</p>
+
+                    <p>Em seguida haverá <strong>M</strong> linhas contendo dois inteiros <strong>A</strong> e <strong>B</strong> cada, indicando que há um corredor que liga a sala <strong>A</strong> e <strong>B</strong>, o qual pode ser atravessado em ambas as direções (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong>).</p>
+
+                    <p>Em seguida haverá <strong>N-1</strong> inteiros <strong>k<sub>2</sub></strong>, <strong>k<sub>3</sub></strong>, …, <strong>k<sub>N</sub></strong>, indicando que na sala <strong>k<sub>i</sub></strong> você pode encontrar a chave que abre a sala <strong>i</strong> (1 ≤ <strong>k<sub>i</sub></strong> ≤ <strong>N</strong>, para todo 2 ≤ <strong>i</strong> ≤ <strong>N</strong>). Note que não é dada a sala que contém a chave da sala 1, pois tal sala já está aberta.</p>
+
+                    <p>A entrada termina com final de arquivo (EOF).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Se for possível visitar todas as salas deste castelo imprima a palavra “sim”, caso contrário imprima a palavra “nao”.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4 3<br />
+                                1 2<br />
+                                2 3<br />
+                                3 4<br />
+                                1 2 3<br />
+                                4 3<br />
+                                1 2<br />
+                                2 3<br />
+                                3 4<br />
+                                3 1 2</p>
+
+                            </td>
+                            <td>
+                                <p>sim<br />
+                                nao</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Contest Sigma - 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

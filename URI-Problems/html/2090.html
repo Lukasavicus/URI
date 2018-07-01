@@ -1,0 +1,100 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2090 - Fui ao Mercado e Comprei...</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2090 - Fui ao Mercado e Comprei..." />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2090</span>
+				<h1>Fui ao Mercado e Comprei...</h1>
+				<div>
+					<p>Por Gabriel Duarte, UNIFESO <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Uma brincadeira muito comum entre crianças é "Fui ao mercado e comprei...", nela várias crianças formam uma fila e cada uma deve falar um item que compraria no mercado, porém para aumentar a dificuldade é necessário que cada criança repita todos os produtos que já foram ditos desde o inicio da brincadeira. O jogo termina quando alguém erra a ordem dos produtos ou quando a última criança da fila acerta a sequência.</p>
+
+<p>Vamos imaginar que Maria, Pedro e Amanda começaram a brincar e já decidiram quem irá dizer qual produto, Maria irá dizer Pão, Pedro gosta de Queijo e Amanda irá falar Maçã.<br />
+Supondo que a fila esteja organizada em ordem alfabética o jogo deveria seguir da seguinte forma:<br />
+&nbsp;&nbsp; &nbsp;1º Amanda diz: "Fui ao mercado e comprei Pão"<br />
+&nbsp;&nbsp; &nbsp;2º Maria&nbsp; diz: "Fui ao mercado e comprei Pão e Maçã"<br />
+&nbsp;&nbsp; &nbsp;3º Pedro&nbsp; diz: "Fui ao mercado e comprei Pão, Maçã e Queijo"<br />
+Portanto a ordem dos produtos foi: Pão, Pão, Maçã, Pão, Maçã e Queijo.</p>
+
+<p>Seus amigos de colégio decidiram realizar essa brincadeira para passar o tempo. Depois de algum tempo de jogo a lista de produtos que cada um deveria dizer estava ficando muito grande, dessa forma, verificar se alguém errou não é uma tarefa simples. Foi quando seus amigos lembraram que você é programador e poderia resolver facilmente esse problema.</p>
+
+<p>Dado a quantidade de pessoas na fila e qual produto cada um irá dizer, eles necessitam de um programa que informe qual é o <strong>K</strong>-ésimo produto que será dito. Assim ficará mais fácil de determinar se alguém errou ou não.<br />
+Você conseguirá ajudar seus amigos ?</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso de teste terá dois inteiro <strong>N</strong> e <strong>K</strong> (1 ≤ <strong>N</strong> ≤ 10⁵, 1 ≤ <strong>K</strong> ≤ min(2 * 10⁹, <strong>N</strong> * (<strong>N</strong> + 1) / 2)), representando a quantidade de crianças na brincadeira e qual o produto que seus amigos desejam saber, veja o exemplo para mais detalhes. Na próxima linha terá a sequência s<sub>1</sub>, s<sub>2</sub>, s<sub>3</sub>, ..., s<sub>n</sub>, onde s<sub>i</sub> representa qual o produto a i-ésima criança irá dizer, cada palavra conterá no máximo 20 letras minúsculas. A entrada termina quando <strong>N</strong> = 0 e não deve ser processada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste você deverá imprimir qual será o <strong>K</strong>-ésimo produto que será dito.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 2<br />
+maca mamao<br />
+4 5<br />
+arroz feijao uva melancia<br />
+0 0</p>
+
+							</td>
+							<td>
+								<p>maca<br />
+feijao<br />
+&nbsp;</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					V Maratona Interna de Programação UNIFESO
+				</p>
+			</div>
+
+		</body>
+	</html>

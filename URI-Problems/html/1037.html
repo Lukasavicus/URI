@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1037 - Intervalo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1037 - Intervalo" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1037</span>
+            <h1>Intervalo</h1>
+            <div><p>
+                    Adaptado por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Você deve fazer um programa que leia um valor qualquer e apresente uma mensagem dizendo em qual dos seguintes intervalos ([0,25], (25,50], (50,75], (75,100]) este valor se encontra. Obviamente se o valor não estiver em nenhum destes intervalos, deverá ser impressa a mensagem “Fora de intervalo”.</p>
+                    <p>
+                    O símbolo ( representa "maior que". Por exemplo:<br />
+                    [0,25]&nbsp; indica valores entre 0 e 25.0000, inclusive eles.<br />
+                    (25,50] indica valores maiores que 25 Ex: 25.00001 até o valor 50.0000000</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    O arquivo de entrada contém um número com ponto flutuante qualquer.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    A saída deve ser uma mensagem conforme exemplo abaixo.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                25.01</p>
+                        </td>
+                        <td>
+                            <p>
+                                Intervalo (25,50]</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			<table>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                25.00</p>
+                        </td>
+                        <td>
+                            <p>
+                                Intervalo [0,25]</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			<table>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                100.00</p>
+                        </td>
+                        <td>
+                            <p>
+                                Intervalo (75,100]</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+			<table>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                -25.02</p>
+                        </td>
+                        <td>
+                            <p>
+                                Fora de intervalo</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

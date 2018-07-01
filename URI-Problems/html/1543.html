@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1543 - Quadro Premiado</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1543 - Quadro Premiado" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1543</span>
+                <h1>Quadro Premiado</h1>
+                <div>
+                    <p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Você está em um programa de televisão, e tem uma ótima chance de ganhar muito dinheiro. Trata-se de um jogo com algumas regras peculiares, e o montante de dinheiro resultante dependerá apenas da sua esperteza, podendo-se até sair perdendo caso se jogue mal.</p>
+
+<p>O jogo funciona da seguinte maneira: há um quadro, com <strong>N</strong> linhas e <strong>M</strong> colunas, e em cada posição deste quadro há um inteiro positivo, representando uma quantia em dinheiro. Em cada uma dessas posições você tem a opção de colocar um dos seguintes sinais:</p>
+
+<ul>
+	<li>'+' - Significa que o valor daquela posição deve ser somado à seu prêmio.</li>
+	<li>'-' - Significa que o valor daquela posição deve ser subtraído do seu prêmio.</li>
+	<li>'.' - Significa que tal posição deve ser ignorada.</li>
+</ul>
+
+<p>A vida seria muito simples se você pudesse colocar '+' em todas as posições, portanto há duas regras adicionais ao jogo: para cada linha do quadro, você deve preencher as posições com um dos padrões de sinais montados pelos organizadores do jogo; e para cada coluna do quadro, não é permitido que duas posições adjacentes verticalmente tenham o mesmo sinal (se aplica aos sinais '+' e '-'). É possível usar o mesmo padrão mais de uma vez, desde que não desrespeitando a segunda regra acima.</p>
+
+<p>Veja um exemplo na imagem abaixo, onde os padrões são: “++”, “--”, “.+” e “+.”.</p>
+
+<p class="center"><img src='https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1543.png' alt='' /></p>
+
+<p>Considere que há sempre ao menos uma maneira de se completar o quadro.</p>
+
+<p>Como o jogo é novo, eles deixaram que você usasse seu computador para te ajudar na decisão, sem saber que você era um programador. Escreva um algoritmo que lhe diga qual a soma máxima que é possível alcançar no jogo.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Haverá diversos casos de teste. Cada caso de teste inicia com dois inteiros, <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong>, <strong>M</strong> ≤ 100), indicando o número de linhas e de colunas do quadro, respectivamente.</p>
+
+<p>A seguir haverá <strong>N</strong> linhas, contendo <strong>M</strong> inteiros cada, representando os valores do quadro. Seja <strong>v</strong> o valor de qualquer posição do quadro, 1 ≤ <strong>v</strong> ≤ 100.</p>
+
+<p>A seguir haverá um inteiro <strong>K</strong> (1 ≤ <strong>K</strong> ≤ 100), indicando o número de padrões. Em seguida haverá <strong>K</strong> linhas, cada uma com <strong>M</strong> caracteres, representando cada um dos padrões, conforme a simbologia descrita no enunciado.</p>
+
+<p>O último caso de teste é indicado quando <strong>N</strong> = <strong>M</strong> = 0, o qual não deverá ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma linha, contendo um inteiro, representando a soma máxima que é possível alcançar se os padrões forem escolhidos de forma ótima.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 2<br />
+3 4<br />
+1 2<br />
+4<br />
+++<br />
+--<br />
++.<br />
+.+<br />
+3 3<br />
+1 3 2<br />
+4 2 3<br />
+3 5 1<br />
+2<br />
++.+<br />
+-+-<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>5<br />
+8</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Maratona Algar Telecom XIII 
+                </p>
+            </div>
+
+        </body>
+    </html>

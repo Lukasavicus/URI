@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1406 - Jukebox</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1406 - Jukebox" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1406</span>
+            <h1>Jukebox</h1>
+            <div>Por Carlos Stein, FURB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</div>
+            <strong>Timelimit: 8</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Os juízes ICPC estão preparando um festa para a cerimônia de abertura. Para a festa, eles pretendem adicionar um playlist com algumas músicas para o software jukebox (um simples MP3 player). Entretanto, existem muitas músicas no computador, isso dificulta encontrar aquelas que eles querem adicionar. Como consequência, eles precisam usar algumas buscas muitas vezes.</p>
+
+                <p>Nesta jukebox, quando você pesquisa por uma string s, o software retorna todas músicas cujos títulos ou nomes de artistas contém s como uma substring. A string s é uma substring da string t se t contém todos os caracteres de s como uma sequência contígua (por exemplo, 'bc' é uma substring de 'abcd', mas 'ac' não é). Para salvar o tempo precioso deles, enquanto procuram por uma música, eles sempre usam uma string de ouro da música, isto é, uma das mais curtas strings que retornam de uma pesquisa como resultado somente a música que eles querem.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Jukebox_A.png" style="width: 555px; height: 229px;" /></p>
+
+                <p>Neste exemplo, uma possível string de ouro para a música 'johnnatan' é 'ta'. Note que 'ta' não é uma substring do nome de outra música nem é uma substring do nome do artista de outra música. Note também que não existem strings de tamanho igual a 1 que podem identificar unicamente a música 'johnnatan'.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Jukebox_B.png" style="width: 553px; height: 230px;" />​</p>
+
+                <p>Eles descobriram que se eles removem o campo artista de algumas músicas eles podem obter strings de ouro menores. Para a música 'john', não existe nenhuma string de ouro. Entretanto, se removermos o campo artista de todas as outras músicas, a string 'c' se torna a string de ouro para a música 'john'.</p>
+
+                <p>Dada uma lista de músicas (cada música com nome e artista), sua tarefa é determinar a soma mínima do tamanho das strings de ouro para todas as músicas que podem ser obtidas se em algumas removermos o campo artista. Na figura acima, você pode ver um possível melhor resultado com as strings de ouro em negrito. A soma mínima dos tamanhos das strings de ouro neste caso é 10.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. A primeira linha de cada caso de teste contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 30), que indica o número de músicas. A seguir, existirão <strong>N</strong> pares de linhas (2*<strong>N</strong> linhas), um par para cada música. A primeira linha de um par contém o nome da música, a segunda conterá o nome da artista. Ambos, nome de artista e música, são strings contendo somente letras minúsculas e sobrescritos e terão no mínimo 1 e no máximo 30 caracteres. Existirão no máximo 6 artistas diferentes na lista.</p>
+
+                <p>O fim da entrada é dado por <strong>N</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                Para cada caso de teste seu programa deve produzir uma linha simples com a soma mínima dos tamanhos das strings de ouro. Você pode assumir que sempre existirá uma solução.
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>8<br />
+                                a_flor<br />
+                                los_hermanos<br />
+                                anna_julia<br />
+                                los_hermanos<br />
+                                quem_sabe<br />
+                                los_hermanos<br />
+                                pierrot<br />
+                                los_hermanos<br />
+                                azedume<br />
+                                los_hermanos<br />
+                                johnny<br />
+                                massacration<br />
+                                johnnatan<br />
+                                massacration<br />
+                                john<br />
+                                massacration<br />
+                                4<br />
+                                c<br />
+                                axc<br />
+                                b<br />
+                                axc<br />
+                                d<br />
+                                cc<br />
+                                xc<br />
+                                cc<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>10<br />
+                                5</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2006.
+            </p>
+        </div>
+
+    </body>
+</html>

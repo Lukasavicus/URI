@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1644 - Decifre o Texto</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1644 - Decifre o Texto" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1644</span>
+                <h1>Decifre o Texto</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Brutus teve uma ideia interessante para cifrar textos. A seguir está a descrição de como a codificação é feita:</p>
+
+                    <p>Seja x<sub>1</sub>,x<sub>2</sub>,...,x<sub>n</sub> a sequência de caracteres do texto a ser cifrado.</p>
+
+                    <ol>
+                    	<li>Escolha um inteiro <em>M</em> e <em>N</em> números distintos p<sub>1</sub>, p<sub>2</sub>, ..., p<sub>n</sub> do conjunto {1, 2, ..., <em>N</em>}, ou seja, uma permutação dos números de 1 a <em>N</em>.</li>
+                    	<li>Repita o passo a seguir <em>M</em> vezes.</li>
+                    	<li>Para 1≤ i ≤ <em>N</em> defina y<sub>i</sub> com x<sub>pi</sub>, e então para 1 ≤ i ≤ <em>N</em> substitua x<sub>i</sub> por y<sub>i</sub>.</li>
+                    </ol>
+
+                    <p>Por exemplo, quando nós queremos codificar o texto “hello”, escolhemos o valor <em>M</em> = 3 e a permutação [2, 3, 1, 5, 4], a informação será cifrada em 3 passos: “hello” -&gt; “elhol” -&gt; “lhelo” -&gt; “helol”.</p>
+
+                    <p>Brutus dará a você os textos cifrados, os números <em>M</em> e as permutações [p<sub>1</sub>, ...p<sub>n</sub>] usados para produzir os textos cifrados. Ele vai se gabar de que, por ter usado números <em>M</em> enormes para a codificação, você precisará de muito tempo para decifrar os textos. Você é capaz de decifrá-los rapidamente?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém diversos casos de teste. Cada caso de teste começa com uma linha contendo dois números <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong> ≤ 80, 1 ≤ <strong>M</strong> ≤ 10<sup>9</sup>). A linha seguinte consiste em <strong>N</strong> números distintos p<sub>1</sub>,...,p<sub>n</sub> (1 ≤ <strong>p<sub>i</sub></strong> ≤ <strong>N</strong>). A terceira linha de cada caso de teste consiste em exatamente <strong>N</strong> caracteres, e representa o texto cifrado. O último caso de teste é seguido por uma linha contendo dois números zeros.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma linha com o texto original.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+							<p>5 3<br />
+2 3 1 5 4<br />
+helol<br />
+16 804289384<br />
+13 10 2 7 8 1 16 12 15 6 5 14 3 4 11 9<br />
+scssoet tcaede n<br />
+8 12<br />
+5 3 4 2 1 8 6 7<br />
+encoded?<br />
+0 0</p>
+				                            </td>
+                            <td>
+                                <p>
+hello<br />
+second test case<br />
+encoded?
+</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2008/2009
+                </p>
+            </div>
+
+        </body>
+    </html>

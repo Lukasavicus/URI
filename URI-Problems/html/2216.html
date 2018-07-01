@@ -1,0 +1,102 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2216 - Takeover Wars</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2216 - Takeover Wars" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2216</span>
+				<h1>Takeover Wars</h1>
+				<div>
+					<p>Por ICPC 2012 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/pl.gif' alt='PL' /> Poland</p>
+				</div>
+				<strong>Timelimit: 10</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>You are studying a takeover war between two large corporations, Takeover Incorporated and Buyout Limited. Each of these corporations controls a number of subsidiaries. The aim in this war is simply to drive the competition out of the market. There are N subsidiaries of Takeover Incorporated and M subsidiaries of Buyout Limited, and you know the market value of each subsidiary.</p>
+
+					<p>Each company can designate one of its subsidiaries to perform a takeover. The takeover can either be friendly or hostile. A friendly takeover means a subsidiary of a corporation merges with a different subsidiary of the same corporation. The market value of the merged subsidiary is the sum of the market values of the constituent subsidiaries. There is no constraint on the relative sizes of the subsidiaries participating in a friendly takeover.</p>
+
+					<p>A hostile takeover means a subsidiary A of a corporation attempts to take over a subsidiary B of the other corporation. For this to succeed, the market value of A has to be greater than the market value of B. After this move, B disappears from the market. The market value of A does not change (the gain of incorporating B’s assets is offset by the monetary cost of the takeover). For simplicity we assume that no sequence of moves leads to two subsidiaries of different corporations having the same market value.</p>
+
+					<p>The companies take turns making moves in this takeover war, with Takeover Incorporated going first. A company will do nothing on its turn only if it cannot make a takeover. A company loses the takeover war if all its subsidiaries are taken over.</p>
+
+					<p>Your aim is to learn which company can guarantee a victory from this war. In the first case of the sample data, Takeover Incorporated can simply take over one of the companies of Buyout Limited in its first move with the 7-value subsidiary. Then it will lose one of its small (1-value) subsidiaries to a hostile takeover, and then it will take over the second subsidiary of Buyout Limited. In the second case, Takeover has to make a friendly takeover in its first move. Buyout Limited will join its two subsidiaries into a single company with market value 10. Takeover will have to make a friendly takeover again (as again it will not have a large enough subsidiary to take over Buyout’s giant). Now Takeover will have two subsidiaries, valued either 9 and 3 or 6 and 6. In either case, Buyout takes over one of these subsidiaries, Takeover has to pass, and Buyout takes over the other one.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Each test case is described by three lines of input. The first line contains two numbers 1 ≤ <strong>N</strong> ≤ 10<sup>5</sup> and 1 ≤ <strong>M</strong> ≤ 10<sup>5</sup> denoting respectively the number of subsidiaries of Takeover Incorporated and Buyout Limited. The next line lists the <strong>N</strong> sizes <strong>a<sub>i</sub></strong> of the subsidiaries of Takeover Incorporated (1 ≤ <strong>a<sub>i</sub></strong><sub> </sub>≤ 1012), and the third line lists the <strong>M</strong> sizes <strong>b<sub>j</sub></strong> of the subsidiaries of Buyout Limited (1 ≤ <strong>b<sub>j</sub></strong> ≤ 1012).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>For each test case, display the case number and either the phrase 'Takeover Incorporated' or the phrase 'Buyout Limited' depending on who wins the takeover war if both corporations act optimally.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2</p>
+
+								<p>7 1 1</p>
+
+								<p>5 5</p>
+
+								<p>4 2</p>
+
+								<p>3 3 3 3</p>
+
+								<p>5 5</p>
+
+							</td>
+							<td>
+								<p>Case 1: Takeover Incorporated</p>
+
+								<p>Case 2: Buyout Limited</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					ICPC 2012 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

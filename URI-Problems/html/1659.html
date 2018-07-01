@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1659 - Chamadas Econômicas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1659 - Chamadas Econômicas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1659</span>
+                <h1>Chamadas Econômicas</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 8</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>O telefone que você comprou há muito tempo tem uma memória interna que mantém o controle de todas as chamadas que recebe. Ele registra a data (mês e dia) e a hora (hora e minuto) de cada chamada, juntamente com o número de quem liga. Apenas um número limitado de chamadas podem ser registradas (memória ainda era cara naquela época).</p>
+
+                    <p>Você descobre que o registro está quase cheio e, portanto, pretende apagar algumas entradas do registro. Na escolha das entradas para apagar você tem que considerar duas restrições:</p>
+
+                    <ol>
+                    	<li>Existem algumas entradas (importantes) que você deseja manter.</li>
+                    	<li>Você deve conseguir recuperar o ano (que o telefone <em>não</em> armazena) de cada chamada que você mantém. O processo de recuperação é descrito abaixo.</li>
+                    </ol>
+
+                    <p>Calcule o número mínimo de entradas que devem ser mantidas para satisfazer estes requisitos.</p>
+
+                    <p><strong>Recuperação dos anos</strong></p>
+
+                    <p>Dada uma lista de <em>timestamps</em> (composta de mês, dia, hora e minuto) de chamadas, você descobre o ano de cada chamada pelo seguinte procedimento:</p>
+
+                    <ol>
+                    	<li>A última chamada na lista ocorreu no ano atual.</li>
+                    	<li>Você deve comparar seu <em>timestamp</em> <em>T</em> com o <em>timestamp</em> <em>T'</em> da chamada anterior. Se <em>T' &lt; T</em>, você deve assumir que as duas chamadas ocorreram no mesmo ano. Se <em>T' ≥ T</em>, você deve assumir que a chamada anterior ocorreu no ano anterior.</li>
+                    	<li>Você deve percorrer a lista de trás para frente e fazer como no item 2. a cada passo.</li>
+                    </ol>
+
+                    <p>Nota-se que este procedimento não é o correto de forma geral, mas você pode assumir que é para a entrada que você obtém, e você deve garantir que ele dá o mesmo resultado para um registo encurtado.</p>
+
+                    <p>P.S.: Devido a um erro no software do telefone, nenhuma ligação foi registrada dia 29 de Fevereiro.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+                    <p>A entrada consiste de vários casos de teste. Cada caso de teste começa com o número de entradas <strong>N</strong> no registro, onde 1 ≤ <strong>N</strong> ≤ 1000. Cada uma das próximas <strong>N</strong> linhas contém uma entrada.</p>
+
+                    <p>Cada entrada tem o formato "<em>mm:dd:HH:MM número ±"</em>, sendo "<em>mm"</em> o mês, "<em>dd"</em> o dia, "<em>HH"</em> a hora, "<em>MM"</em> os minutos, e o número (tendo 1-16 dígitos) de cada chamada, seguido por "<em>+"</em> marcando uma chamada que você quer definitivamente manter ou por "<em>-"</em> para marcar as outras chamadas. As entradas vêm diretamente do registro do telefone, ou seja, elas são classificadas por tempo de recepção da chamada correspondente (a última entrada é a mais recente).</p>
+
+                    <p>Você pode assumir que o processo de recuperação descrito acima produz o ano correto de cada chamada.</p>
+
+                    <p>O último caso de teste é demonstrado por um 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, a saída deve conter o número mínimo de entradas que devem ser mantidas para satisfazer os requisitos descritos acima. O processo de recuperação de ano descrito acima deve dar o mesmo resultado para as entradas iniciais do que para as entradas que foram selecionadas para manter na memória.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>7<br />
+12:31:23:59 0123456789012345 +<br />
+07:21:19:00 1337 -<br />
+01:01:00:00 0987654321 -<br />
+07:21:14:00 1337 -<br />
+11:11:11:11 11111111111 +<br />
+01:01:00:00 0123456789 +<br />
+01:01:00:00 0987654321 -<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>6</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2006/2007
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1813 - Anacrônico?</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1813 - Anacrônico?" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1813</span>
+                <h1>Anacrônico?</h1>
+                <div>
+                    <p>Por Desconhecido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Mr. Řež Slovankou é proprietário de uma empresa em Praga especializada no transporte de produtos perecíveis. Por ser uma das mais antigas e tradicionais empresas do ramo, ela é responsável por mais de 90% dos transportes deste tipo de mercadoria realizadas no país. Diariamente, vários caminhões carregados deixam postos da empresa (local onde os produtos ﬁcam armazenados) com destino aos centros consumidores.</p>
+
+<p>Visando um futuro ingresso no Espaço Econômico Europeu, o governo da República Tcheca, através do órgão de inspeção e vigilância sanitária, baixou uma série de medidas para assegurar ainda mais a qualidade dos alimentos consumidos pela população. Para não perder mercado, a empresa de Mr. Řež precisa adequar-se, o mais rápido possível, às novas regras.</p>
+
+<p>Segundo o governo, a partir de agora, produtos destinados a diferentes centros consumidores não mais poderão compartilhar um mesmo caminhão. Além disso, todo transporte deverá ser concluído em um período abaixo de um tempo limite, especiﬁcado para cada mercadoria.</p>
+
+<p>A adequação a essas novas regras trará consigo um aumento generoso nos custos operacionais da empresa. Preocupado com isso, Mr. Řež decidiu que seus caminhões deverão satisfazer às regras, mas que também deverão percorrer sempre o menor caminho possível até os centros consumidores (para economizar combustível, gastar menos os pneus, etc.).</p>
+
+<p>Para resolver este problema logístico, Mr. Řež pediu auxílio a você, que disse ser capaz de construir um programa que recebe um mapa da malha viária (em que cada estrada tem associado um comprimento em quilômetros e um tempo em minutos que leva para ser percorrida), a origem e o destino do transporte, o tempo limite, e diz se é ou não possível realizar a entrega de acordo com as restrições impostas. Em caso aﬁrmativo, você ainda disse que responderá o tempo gasto e a distância percorrida.</p>
+
+<p>Mr. Řež ﬁcou muito impressionado e satisfeito com sua prestatividade, e prometeu-lhe uma boa gratificação.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Seu programa será capaz de resolver várias instâncias do problema logístico. Cada instância possui a estrutura descrita abaixo.</p>
+
+<p>Na primeira linha são fornecidos o número de cidades (0 ≤ <strong>n</strong> ≤ 100) e o número de estradas (0 ≤ <strong>m</strong> ≤ 10000) da malha viária. Nas próximas <strong>m</strong> linhas são dados, em cada linha, quatro números inteiros separados por espaços em branco, <strong>x y c t</strong>, em que<strong> x</strong> e <strong>y</strong> são as cidades de onde sai e onde chega uma estrada, respectivamente, <strong>c</strong> é o comprimento desta estrada e <strong>t</strong> o tempo gasto para percorrê-la (obtido junto ao departamento nacional de estradas e rodagem, que afere o trânsito de tempos em tempos). Observe que 1 ≤ <strong>x</strong>, <strong>y</strong> ≤ <strong>n</strong> e que <strong>c</strong>, <strong>t</strong> ≥ 0. Uma característica interessante na República Tcheca é que as estradas são de mão única para evitar as ultrapassagens indevidas, que causam acidentes.</p>
+
+<p>Na linha seguinte é fornecido um inteiro <strong>k</strong> ≥ 0 que representa o número de entregas que seu programa deve planejar nesta malha viária. As próximas <strong>k</strong> linhas possuem, em ordem, a cidade de origem, a cidade de destino e o tempo limite <strong>t</strong> para o transporte da mercadoria, em minutos. De acordo com o órgão de inspeção e vigilância sanitária, nenhum transporte com duração superior a 100 horas será admitido. Logo, 0 ≤ <strong>t</strong> ≤ 6000. Um valor <strong>n</strong> = 0 indica o término das instâncias e não deve ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identiﬁcador "Instancia h", em que <strong>h</strong> é um número inteiro, sequencial e crescente a partir de 1. As próximas <strong>k</strong> linhas referem-se à possibilidade das entregas. Para 1 ≤ <strong>j</strong> ≤ <strong>k</strong>, você deve imprimir na <strong>j</strong>-ésima linha a mensagem "Impossivel" se não for possível realizar a entrega dentro do tempo limite, ou "Possivel - &lt;d&gt; km, &lt;t&gt; min", onde &lt;d&gt; é a distância que deve ser percorrida e &lt;t&gt; o tempo gasto para percorrer essa distância. Se houver mais de um caminho com a menor distância possível, escolha o de menor tempo.</p>
+
+<p>Uma linha em branco deve separar a saída de cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 8<br />
+1 2 1 3<br />
+1 4 1 1<br />
+2 3 1 8<br />
+2 4 3 1<br />
+3 5 1 3<br />
+4 5 4 2<br />
+5 1 8 8<br />
+5 3 1 1<br />
+5<br />
+1 5 7<br />
+5 1 5<br />
+1 3 4<br />
+1 3 12<br />
+1 3 3<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+Possivel - 5 km, 3 min<br />
+Impossivel<br />
+Possivel - 6 km, 4 min<br />
+Possivel - 2 km, 11 min<br />
+Impossivel</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VII Maratona de Programação IME-USP 2003.
+                </p>
+            </div>
+
+        </body>
+    </html>

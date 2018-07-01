@@ -1,0 +1,95 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2361 - Entradas e Saídas</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2361 - Entradas e Saídas" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2361</span>
+				<h1>Entradas e Saídas</h1>
+				<div>
+					<p>Por Dilson Guimarães, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Alexandre, Dilson, Filipe e Lucas precisavam elaborar questões para a Seletiva da UFMG para a Maratona de 2014 e pensaram no seguinte problema.</p>
+
+<p>Luiz é o mais novo estagiário de uma empresa que desenvolve equipamentos eletrônicos. Uma de suas primeiras tarefas é ligar os pinos de dois componentes, usando ligações em linha reta. Cada um dos dois compoentes possui <strong>N</strong> pinos, numerados de 1 a <strong>N</strong>. Os pinos de mesmo número devem ser ligados por uma linha reta. A figura abaixo mostra um exemplo.</p>
+
+<p></p>
+
+<p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2361_1.png" alt=""/></p>
+
+<p></p>
+
+<p>Os pinos do componente a esquerda sempre são numerados de cima para baixo. Infelizmente, o mesmo não acontece com os pinos do componente da direita e é necessário que ligações se cruzem. Luiz precisa computar qual é a maior quantidade de ligações que podem ser feitas, de forma que duas ligações não se cruzem, que é 3 no exemplo. Luiz não sabe programar e pediu a sua ajuda para realizar essa tarefa. A entrada consiste no número de pinos, <strong>N</strong>, e na sequência de numeração dos pinos do segundo componente.</p>
+
+<p>Os ilustríssimos criadores desse problema andam muito ocupados ultimamente e não tiveram tempo de gerar casos de teste. Por isso, sua tarefa é gerar casos de teste com <strong>N</strong> pinos em que a resposta do problema seja <strong>K</strong>. Assim, na próxima seletiva, seu gerador de casos de teste pode ser usado e o problema poderá ser utilizado.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém dois inteiros, <strong>N</strong> e <strong>K</strong> (1 ≤ <strong>K</strong> ≤ <strong>N</strong> ≤ 10<sup>6</sup>), indicando o número de pinos e a resposta desejada. O final da entrada é indicado por <strong>N=K=0</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima uma linha contendo uma sequência de <strong>N</strong> inteiros separados por espaço. Essa sequência deve representar a numeração do componente mais a direita que faz com que a resposta do problema criado seja <strong>K</strong>. Caso existam várias soluções possíveis, imprima a menor lexicograficamente.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 2<br />
+0 0</p>
+
+							</td>
+							<td>
+								<p>1 5 4 3 2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					Seletiva UFMG 2014
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2778 - Matriz do Dabriel</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema L - Matriz do Dabriel" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+		
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2778</span>
+			<h1>Matriz do Dabriel</h1>
+			<div>
+				<p>Por Gabriel Duarte, UFF <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 3</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Dabriel adora criar jogos um tanto quanto peculiares com as suas incríveis matrizes. O último jogo criado acabou tendo uma complexidade bem mais alta que os outros e como ele anda muito atarefado com o mestrado, solicitou sua ajuda para desenvolver um programa capaz de dizer a resposta do jogo. Este consiste em uma matriz <strong>N</strong> por <strong>M</strong>, onde deseja-se sair da posição (1,1) e chegar na posição (<strong>N</strong>,<strong>M</strong>) e cada célula possui um valor e esse valor é acrescido no custo total do caminho para toda célula visitada. Sua tarefa é encontrar o custo do menor caminho. Porém, como se trata de Dabriel o jogo não é tão simples assim, algumas regras foram impostas:</p>
+
+<ol>
+	<li>&nbsp;Estando em uma célula (i,j) só podemos ir para as células (i+1,j), (i,j+1) ou (i,j-1);</li>
+	<li>Nenhuma célula pode ser visitada mais do que uma vez;</li>
+	<li>Não é permitido passar por mais que <strong>X</strong> casas com valores nulos;</li>
+	<li>Não é permitido passar por mais que <strong>Y</strong> casas com valores negativos.</li>
+</ol>
+
+<p>Dabriel sabe que com tantas regras assim pode existir caso onde não existe tal caminho, portanto ele estará satisfeito se você imprimir "Impossivel" para tais casos. Mas um coisa Dabriel pode te garantir: a célula (<strong>N</strong>,<strong>M</strong>) sempre terá um valor maior que zero.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A entrada é composta por diversos casos de teste. A primeira linha terá 4 inteiros <strong>N</strong>, <strong>M</strong>, <strong>X</strong>, <strong>Y</strong> (1 ≤ <strong>N</strong>, <strong>M</strong> ≤ 100, 0 ≤ <strong>X</strong>, <strong>Y</strong> ≤ 20). Nas próximas <strong>N</strong> linhas terá <strong>M</strong> inteiros <strong>X</strong><sub>ij</sub> (-100 ≤ <strong>X</strong><sub>ij</sub> ≤ 100), representando os valores das células da matriz.<br />
+&nbsp;</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste imprima o menor caminho conforme descrito no texto, em casos onde não houver resposta imprima "Impossivel", sem aspas.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3 4 2 2<br />
+1 2 -5 -50<br />
+0 0 -1 -1<br />
+-50 0 5 2<br />
+3 4 1 1<br />
+1 2 -5 -50<br />
+0 0 -1 -1<br />
+-50 0 5 2<br />
+3 3 0 9&nbsp;<br />
+-1 -1 -1<br />
+-1 -1 -1<br />
+-1 -1 -1</p>
+
+						</td>
+						<td>
+							<p>-42<br />
+9<br />
+-9</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				V Maratona Norte Mineira de Programação
+			</p>
+		</div>
+	</body>
+</html>

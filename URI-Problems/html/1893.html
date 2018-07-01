@@ -1,0 +1,146 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1893 - Fases da Lua</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema A - Fases da Lua" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1893</span>
+				<h1>Fases da Lua</h1>
+				<div>
+					<p>Por Neilor Tonin, URI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Jade ganhou de presente de aniversário um telescópio e ficou muito feliz, pois adora olhar a lua à noite. Ela sempre foi uma estudante muito boa, e só analizando a lua por duas noites seguidas, já consegue identificar as mudanças que ocorreram na iluminação e o percentual aproximado da lua que está iluminada.</p>
+
+				<p style="text-align:center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/contests/fases-lua.png" style="height:90px; width:450px" /></p>
+
+				<p>Você, que é amigo da Jade e estuda Computação, resolveu fazer um pequeno programa que, baseado nesta avaliação que ela fez nas duas últimas noites, informa a fase na qual a lua se encontra. Se a porção visível da lua no momento estiver entre 0 e 2%, por exemplo, é lua nova, se for entre 3 e 96% é lua crescente, se for entre 97 e 100% é lua cheia e se for entre 96 e 3% (diminuindo) é lua minguante.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por uma única linha contendo dois valores inteiros. O primeiro valor corresponde ao percentual observado por Jade na noite de dois dias atrás. O segundo valor corresponde ao percentual observado por jade na noite anterior.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Baseado nos dois percentuais observados por Jade, imprima na tela a fase na qual a lua se encontrava na noite anterior, conforme o exemplo abaixo. Não esqueça de imprimir o caractere de fim de linha após a saída :).</p>
+
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>0 2</p>
+
+							</td>
+							<td>
+								<p>nova</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table>					
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 3</p>
+
+							</td>
+							<td>
+								<p>crescente</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<table>					
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>99 97</p>
+
+							</td>
+							<td>
+								<p>cheia</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table>					
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>97 94</p>
+
+							</td>
+							<td>
+								<p>minguante</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<table>					
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>30 35</p>
+
+							</td>
+							<td>
+								<p>crescente</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="both"></div>
+	
+				<p class="footer">
+					Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática, Fase 2, 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

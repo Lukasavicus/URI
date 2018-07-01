@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2542 - Iu-Di-Oh!</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Iu-Di-Oh!" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2542</span>
+			<h1>Iu-Di-Oh!</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p><em>Iu-di-oh!</em> é um jogo de cartas que virou uma verdadeira febre entre os jovens! Todo jogador de <em>Iu-di-oh!</em> tem seu próprio baralho, contendo várias cartas do jogo. Cada carta contém <strong>N</strong> atributos (como força, velocidade, inteligência, etc.). Os atributos são numerados de 1 a <strong>N</strong> e são dados por inteiros positivos.</p>
+
+<p>Uma partida de <em>Iu-di-oh!</em> é sempre jogada por dois jogadores. Ao iniciar a partida, cada jogador escolhe exatamente uma carta de seu baralho. Após as escolhas, um atributo é sorteado. Vence o jogador cujo atributo sorteado em sua carta escolhida é maior que na carta escolhida pelo adversário. Caso os atributos sejam iguais, a partida empata.</p>
+
+<p>Marcos e Leonardo estão na grande final do campeonato brasileiro de <em>Iu-di-oh!</em>, cujo prêmio é um Dainavision (que é quase um Plaisteition 2!). Dados os baralhos de ambos, a carta escolhida por cada um e o atributo sorteado, determine o vencedor!</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 100), o número de atributos de cada carta. A segunda linha contém dois inteiros <strong>M</strong> e <strong>L</strong> (1 ≤ <strong>M</strong>, <strong>L</strong> ≤ 100), o número de cartas no baralho de Marcos e de Leonardo, respectivamente.</p>
+
+<p>As próximas <strong>M</strong> linhas descrevem o baralho de Marcos. As cartas são numeradas de 1 a <strong>M</strong>, e a <em>i</em>-ésima linha descreve a <em>i</em>-ésima carta. Cada linha contém <strong>N</strong> inteiros <strong>a<sub>i,1</sub></strong>,<strong>a<sub>i,2</sub></strong>,..., <strong>a<sub>i,N</sub></strong> (1 ≤ <strong>a<sub>i,j</sub></strong> ≤ 10<sup>9</sup>). O inteiro <strong>a<sub>i,j</sub></strong> indica o atributo <em>j</em> da carta <em>i</em>. As próximas <strong>L</strong> linhas descrevem o baralho de Leonardo. As cartas são numeradas de 1 e <strong>L</strong> e são descritas de maneira análoga.</p>
+
+<p>A próxima linha contém dois inteiros <strong>C<sub>M</sub></strong> e <strong>C<sub>L</sub></strong> (1 ≤ <strong>C<sub>M</sub></strong> ≤ <strong>M</strong>, 1 ≤ <strong>C<sub>L</sub></strong> ≤ <strong>L</strong>), as cartas escolhidas por Marcos e Leonardo, respectivamente. Por fim, a última linha contém um inteiro <strong>A</strong> (1 ≤ <strong>A</strong> ≤ <strong>N</strong>) indicando o atributo sorteado.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha contendo “Marcos” se Marcos é o vencedor, “Leonardo” se Leonardo é o vencedor, ou “Empate” caso contrário (sem aspas).</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3<br />
+2 2<br />
+3 8 1<br />
+6 7 9<br />
+1 2 3<br />
+8 4 1<br />
+1 2<br />
+2</p>
+
+						</td>
+						<td>
+							<p>Marcos</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				7a Seletiva UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

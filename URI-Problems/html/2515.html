@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2515 - Bolacha</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2522 - Bolacha" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2515</span>
+			<h1>Bolacha</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Carol, Carla, Marcos e Leonardo são companheiros de quarto. Ontem eles fizeram uma grande festa, e hoje eles querem dividir o que sobrou da comida da festa entre si. Enquanto Carol e Carla estão discutindo como vão dividir um certo bolo que sobrou entre elas, Marcos e Leonardo irão dividir um pacote de bolachas entre eles (bolachas, não biscoitos!).</p>
+
+				<p>O pacote de bolacha tem <strong>N</strong> porções. A quantidade de bolacha em cada porção não é necessariamente igual. Como exemplo, considere o pacote de bolacha abaixo. Ele tem <strong>N</strong>=5 porções, que, da esquerda para a direita, têm 3, 1, 2, 3 e 2 bolachas, respectivamente.</p>
+
+				<p class="center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2515.png" /></p>
+
+				<p>Marcos irá dividir o pacote em duas partes, cortando o pacote em algum dos <strong>N</strong>-1 pontos entre duas porções consecutivas. No exemplo, Marcos tem 4 opções de corte, representadas em pontilhado. Após o corte, Leonardo irá escolher qual das duas partes do pacote ele irá comer. Marcos comerá então a outra parte do pacote.</p>
+
+				<p>Depois do corte, obviamente Leonardo irá escolher a parte que mais tem bolachas ao todo. Marcos sabe disso, e, por isso, precisa escolher o corte a ser feito de tal forma que a quantidade de bolachas que ele irá comer seja a máxima possível. Ajude-o com essa tarefa!</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso consiste em um único inteiro <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 10<sup>5</sup>) denotando o número de porções no pacote. A segunda linha contém <strong>N</strong> inteiros <strong>b<sub>1</sub></strong>, <strong>b<sub>2</sub></strong>, ..., <strong>b<sub>N</sub></strong> (1 ≤ <strong>b<sub>i</sub></strong> ≤ 10<sup>4</sup>), o número de bolachas em cada porção, da esquerda pra direita.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma única linha contendo dois inteiros separados por um espaço, indicando quantas bolachas Marcos irá comer e quantas bolachas Leonardo irá comer, nesta ordem.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5<br />
+3 1 2 3 2</p>
+
+						</td>
+						<td>
+							<p>5 6</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				18o Treino UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

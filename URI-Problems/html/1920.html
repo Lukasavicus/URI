@@ -1,0 +1,114 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1920 - Fonte dos Desejos</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1920 - Fonte dos Desejos" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1920</span>
+				<h1>Fonte dos Desejos</h1>
+				<div>
+					<p>Por Dâmi Henrique, Inatel <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Cansada de jogar moedas na fonte dos desejos e não ter nenhum desejo atendido, Chiquinha e Pópis decidiram usar a fonte como alvo na brincadeira de arremesso de moedas. Elas irão tomar uma distância da fonte e jogar, alternadamente, <strong>N</strong> moedas cada tentando acertá-la. Cada moeda arremessada pode cair dentro da fonte, na borda ou fora.</p>
+
+					<p>Dado a coordenada (cx, cy) do centro da fonte, o raio de onde é considerado dentro(r1) , e o raio da borda(r2), sua tarefa é checar os arremessos de ambas e dizer quem acertou mais moedas dentro da fonte. Em caso de empate, ganha quem acertou mais nas bordas. Se o empate persistir, consideraremos que a brincadeira terminou empatada.</p>
+
+					<p>Obs: Se uma moeda cair exatamente nos extremos de qualquer círculo, será considerado borda (pontos vermelhos na imagem abaixo).</p>
+
+					<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/fonte.png" style="-webkit-transform:rotate(0.00rad); border:none; height:210px; transform:rotate(0.00rad); width:286px" /></strong></p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Haverá diversos casos de testes. A primeira linha de cada caso inicia um inteiro <strong>N </strong>(1 ≤ <strong>N</strong> ≤ 1000) representando a quantidade de moedas que cada uma arremessou. A segunda linha conterá quatro inteiros, <strong>CX</strong>, <strong>CY</strong> (-1000 ≤ <strong>CX, CY</strong>≤ 1000), <strong>R1</strong> e <strong>R2</strong></p>
+
+					<p>(1 ≤ <strong>R1 &lt; R2 </strong>≤ 5000), representando respectivamente, o centro da fonte e os raios como mostram a figura acima.</p>
+
+					<p>Após isso, 2*<strong>N</strong> linhas seguem, cada uma contendo dois inteiros <strong>X</strong> e <strong>Y</strong>, representando a coordenada x e y de onde uma moeda caiu. Lembre-se que elas jogam alternadamente e Chiquinha sempre joga primeiro.</p>
+
+					<p>A entrada termina com <strong>N</strong> = <strong>0</strong>, a qual não deve ser processada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso, exiba <strong>C &gt; P</strong> caso Chiquinha vença a disputa, <strong>P &gt; C</strong> caso Pópis vença ou <strong>C = P</strong> caso termine empatado.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+								<p>0 0 3 5</p>
+
+								<p>1 1</p>
+
+								<p>3 3</p>
+
+								<p>2 6</p>
+
+								<p>-4 0</p>
+
+								<p>1</p>
+
+								<p>1 2 6 10</p>
+
+								<p>8 9</p>
+
+								<p>7 7</p>
+
+								<p>0</p>
+
+							</td>
+							<td>
+								<p>C &gt; P</p>
+
+								<p>C = P</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="footer">
+					Codando na Vila - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

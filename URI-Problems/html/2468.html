@@ -1,0 +1,104 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2468 - Mapa</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2468 - Mapa" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2468</span>
+				<h1>Mapa</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2014 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Byteland é uma cidade bastante movimentada, cujo prefeito, Joãozinho, vem lutando recentemente por sua inclusão no grupo das cinco cidades mais importantes de Byteworld. Para uma cidade ser considerada importante em Byteworld, ela precisa seguir alguns critérios. Antes de tudo, vamos definir Byteland, que é uma cidade como qualquer outra, onde esquinas se conectam através de ruas de mão dupla. Sabe-se também que existe um e somente um caminho, sem repetir esquinas, entre qualquer par de esquinas. Além disso, cada rua pode ser considerada importante ou não. Caso ela seja importante, a rua é pintada de branco e caso não seja, é pintada de azul.</p>
+
+<p>Para saber se uma cidade é importante ou não em Byteworld é necessario calcular um valor E: a quantidade de pares de esquinas (A, B) tal que existe ao menos uma rua importante no caminho entre A e B. Note que (A, B) e (B, A) são o mesmo par!</p>
+
+<p>O prefeito de Byteland resolveu pedir sua ajuda para calcular o valor E e saber, assim, se Byteland é ou não uma cidade importante para Byteworld.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>N</strong> (2 ≤&nbsp;<strong>N</strong>&nbsp;≤ 10<sup>5</sup>)&nbsp;indicando a quantidade de esquinas em Byteland. As próximas <strong>N</strong> − 1 linhas da entrada contêm cada uma três inteiros, <strong>A</strong>, <strong>B</strong> (1 ≤&nbsp;<strong>A</strong>,&nbsp;<strong>B</strong>&nbsp;≤&nbsp;<strong>N</strong>)&nbsp;e&nbsp;<strong>C&nbsp;</strong>(0 ≤&nbsp;<strong>C</strong>&nbsp;≤ 1), indicando que existe uma rua entre as esquinas <strong>A</strong> e <strong>B</strong> pintada da cor <strong>C</strong>. Caso <strong>C</strong> seja 1, a rua é branca e importante, caso seja 0, a rua é azul e não importante.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve produzir uma única linha, contendo um único inteiro, o valor <strong>E</strong> definido acima.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+								<p>1 2 0</p>
+								<p>2 3 1</p>
+								<p>3 4 0</p>
+
+							</td>
+							<td>
+								<p>4</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6</p>
+								<p>1 2 0</p>
+								<p>2 3 1</p>
+								<p>3 4 0</p>
+								<p>2 5 0</p>
+								<p>5 6 1</p>
+							</td>
+							<td>
+								<p>11</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática - 2014 Fase 2 Modalidade Universitária (PU)
+				</p>
+			</div>
+
+		</body>
+	</html>

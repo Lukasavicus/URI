@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1027 - Onda Crítica</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1027 - Onda Crítica" />            
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1027</span>
+            <h1>Onda Crítica</h1>
+            <div><p>
+                    Por Monirul Hasan Tomal, Southeast University <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif" style="width: 16px; height: 11px;" /> Bangladesh</p>
+            </div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1027.png" style="width: 357px; height: 264px; float: right;" />A tarefa é simples. Através de alguns pontos críticos em 2D, você deve desenhar uma onda como uma curva. Seu objetivo é incluir tantos pontos quantos forem possível.</p>
+                <ul>
+                    <li>
+                        Haverá uma linha imaginária<strong> y = a</strong>, a qual chamaremos de eixo principal para a curva.<br />
+                    </li>
+                    <li>
+                        Todos os pontos na curva deverão ter diferentes coordenadas x. Suas coordenadas y devem ser na forma <strong>a-1</strong> ou <strong>a+1</strong>.<br />
+                    </li>
+                </ul>
+                <p>
+                    Dois pontos consecutivos na curva devem ter <strong>diferença de 2 na coordenada y</strong>.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Haverá no máximo, 222 casos de testes. Cada caso inicia com um inteiro N, que é o número de pontos no caso de teste. Nas próximas N linhas, haverá N pares de inteiros dando as coordenadas x e y de cada ponto. Não haverá mais do que 1000 pontos em cada caso de teste. Todas coordenadas são inteiros – eles devem ficar dentro de um inteiro de 2 bytes com sinal. Os dados devem ser lidos da entrada padrão.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste, imprima um número – o número máximo de pontos críticos que podem ser incluídos em uma curva desenhada a partir dos pontos dados.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                10<br />
+                                0 1<br />
+                                1 0<br />
+                                1 -1<br />
+                                2 -2<br />
+                                3 1<br />
+                                3 -1<br />
+                                3 -2<br />
+                                4 1<br />
+                                4 -1<br />
+                                5 -1<br />
+                                10<br />
+                                0 2<br />
+                                2 0<br />
+                                1 -1<br />
+                                2 -2<br />
+                                3 1<br />
+                                3 -1<br />
+                                3 -2<br />
+                                4 1<br />
+                                4 -1<br />
+                                5 –1</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                4<br />
+                                3</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                “Se você não considerar sua vida como uma jornada, provavelmente não chegará a lugar algum e provavelmente ela irá parecer a você como uma trilha sem fim e sem esperança.”</p>
+
+        </div>
+
+    </body>
+</html>

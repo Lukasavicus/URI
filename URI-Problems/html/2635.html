@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2635 - Navegador Web</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2635 - Navegador Web" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2635</span>
+			<h1>Navegador Web</h1>
+			<div>
+				<p>Por Guilherme de Lima Bernardes, UNB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>
+					Lucas é um rapaz bem radical quando o assunto envolve licenças de software. Desde que começou sua graduação em engenharia da computação, ele procura desenvolver todas as ferramentas que necessita. Tudo isso começou após experiências ruins ao utilizar softwares proprietários. Agora, ele acredita que um programador de verdade deve ser autossuficiente, ou seja, deve construir todos os programas que precisa, desde uma simples calculadora até seu próprio sistema operacional.
+				</p>
+				<p>
+					Este semestre, Lucas está cursando a disciplina de desenvolvimento de sistemas web. Para continuar sua filosofia de vida,  utilizando apenas softwares construı́dos por ele mesmo, Lucas já está programando seu próprio web browser. Grande parte do trabalho foi concluı́da, porém algumas funcionalidades ainda precisam ser finalizadas.
+				</p>
+				<p>
+				O navegador de Lucas possui um campo de busca onde o usuário poderá inserir uma palavra chave, e ao clicar em um botão de confirmação, ele será redirecionado para outra página com os resultados de sua pesquisa. Quando alguma string for digitada no campo de busca, Lucas quer que seu programa exiba, logo abaixo, algumas opções para auto completar esta string de acordo com as buscas já realizadas pelo usuário.
+				</p>
+				<p>
+				    Por exemplo, se as palavras “algoritmos” e “algas” já foram pesquisadas, ao digitar a string “alg”, o programa deverá sugerir as palavras “algoritmos” e “algas”. Portanto, para cada string digitada, o programa deverá sugerir palavras pesquisadas anteriormente e que possuem como prefixo esta string. Caso alguma palavra seja igual a string digitada, ela também deve ser sugerida.
+				</p>
+				<p>
+				    Lucas está preocupado com a quantidade de palavras que seu programa pode sugerir, além do tamanho máximo que elas podem alcançar. Por isso, ele pediu que você o ajude escrevendo um programa em que dadas algumas palavras já pesquisadas e uma série de consultas compostas por uma string, indique quantas palavras o navegador deverá sugerir ao usuário, além do comprimento da maior dessas palavras.
+				</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>
+				    A entrada é composta por vários casos de teste. A primeira linha de um caso de teste possui um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>4</sup> ) indicando o número de palavras que já foram pesquisadas pelo programa de Lucas. Cada uma das próximas <strong>N</strong> linhas contém uma string não vazia de no máximo 100 letras minúsculas [a − z]. Para cada caso de teste, as <strong>N</strong> palavras são diferentes. Em seguida, haverá um inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 100) indicando o número de consultas. Cada uma das próximas <strong>Q</strong> linhas descreve uma consulta com uma string não vazia de no máximo 100 letras minúsculas [a − z], representando uma string digitada no campo de busca.
+				</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>
+                    Para cada caso de teste imprima <strong>Q</strong> linhas, onde a i-ésima linha é a resposta para a i-ésima consulta. A resposta de cada consulta deverá ser composta por dois inteiros separados por espaço, representando, respectivamente, o número de palavradas sugeridas pelo programa ao digitar a string indicada pela i-ésima consulta, e o comprimento da maior palavra contida nesse subconjunto. Caso nenhuma palavra seja sugerida, imprima -1. Imprima uma linha em branco ao final de cada caso de teste.
+				</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5</p>
+                            <p>maratonaicpc</p>
+                            <p>maraton</p>
+                            <p>programacao</p>
+                            <p>progress</p>
+                            <p>inputs</p>
+                            <p>3</p>
+                            <p>marat</p>
+                            <p>programacao</p>
+                            <p>outputs</p>
+						</td>
+						<td>
+							<p>2 12</p>
+                            <p>1 11</p>
+                            <p>-1</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Maratona de Programação UnB/CIC 2015.
+</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2122 - Votação em Ecaterimburgo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2122 - Votação em Ecaterimburgo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2122</span>
+                <h1>Votação em Ecaterimburgo</h1>
+                <div>
+                    <p>Por XVII Maratona de Programação IME-USP, 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Ecaterimburgo, Rússia, é uma cidade com um curioso sistema de votação. Em uma eleição em que haja V vagas para um cargo, cada eleitor tem direito a fazer V votos, ordenados em sua ordem de preferência. Assim, se, por exemplo, há 3 vagas de senador, cada eleitor vota em até 3 nomes. Serão eleitos os candidatos que tiverem o maior número de votos, sem importar em que posição da preferência do eleitor está o candidato. Apenas quando há empate no número de votos se torna relevante a ordem dada pelos eleitores. Ganha aquele candidato que tiver mais indicações em primeiro lugar. Se persistir o empate, em segundo lugar, e assim por diante. Caso dois ou mais candidatos que estejam em posição de serem eleitos tenham exatamente o mesmo número de indicações em todas as posições, todos são eleitos (podendo inclusive exceder o número de vagas). Candidatos com zero votos podem ser eleitos se ainda existir vagas disponíveis.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF).</p>
+
+                    <p>Cada instância começa com o número <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>) de eleitores, o número <strong>K</strong> de candidatos e <strong>V</strong> (1 ≤ <strong>V</strong> ≤ <strong>K</strong> ≤ 100) de vagas. A seguir vêm <strong>N</strong> linhas com os votos de cada um dos eleitores. Em seu voto, o eleitor <strong>i</strong> indicará o número <strong>L<sub>i</sub></strong> (1 ≤ <strong>L<sub>i</sub></strong> ≤ 100) de candidatos em quem votará, e os índices destes candidatos na sua ordem de preferência. Índices de candidatos fora do intervalo [1, <strong>K</strong>] significam votos em branco apenas para a opção de preferência correspondente. Se indicar mais que <strong>V</strong> votos, os últimos serão desconsiderados. Um eleitor nunca indica o mesmo candidato mais de uma vez.</p>
+
+                    <p>A entrada deve ser lida da entrada padrão.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância da entrada seu programa deverá imprimir, em uma única linha, a lista de candidatos eleitos ordenada pela classificação dos candidatos na eleição. No caso de dois candidatos possuírem a mesma classificação, o de menor índice vem antes.</p>
+
+                    <p>A saída deve ser escrita na saída padrão.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 3 2<br />
+2 1 3<br />
+2 2 3<br />
+2 1 3<br />
+2 2 3<br />
+1 1<br />
+3 6 3<br />
+3 1 5 3<br />
+3 1 0 3<br />
+3 1 4 5</p>
+
+                            </td>
+                            <td>
+                                <p>3 1<br />
+1 5 3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XVII Maratona de Programação IME-USP, 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

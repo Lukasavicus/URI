@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1606 - As Dicas de Ali Babá</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1606 - As Dicas de Ali Babá" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1606</span>
+                <h1>As Dicas de Ali Babá</h1>
+                <div>
+                    <p>Por Marcio T. I. Oshiro <img src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" alt="" style="width: 16px; height: 11px; "> Brasil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>As Mil e Uma Noites são uma coleção de histórias árabes que remontam ao século IX. Algumas traduções para o ocidente foram feitas a partir do século XVII, e algumas destas histórias, como "Simbad, o Marujo", "Aladim e a Lâmpada Mágica" e "Ali Babá e os Quarenta Ladrões" são hoje conhecidas por crianças de todo o mundo. Na história de Ali Babá os tesouros são guardados em uma gruta que se abre quando a expressão "Abre-te Sésamo" é usada. Na verdade, o tesouro estava escondido dentro de um cofre na parede da gruta, que se abria quando uma permutação dos inteiros de 1 a N era recitada. Nem todos os 40 ladrões tinham boa memória, assim Ali Babá era obrigado a manter nas paredes da gruta, dicas de como reconstruir a permutação, caso algum dos ladrões a esquecesse. Ele anotava uma sequência de inteiros <em>a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>k</sub></em> gerada a partir da permutação que abria o cofre após possíveis aplicações das seguintes operações: duplicação (<em>i</em>, <em>j)</em> e espelhamento <em>(i, j)</em>, para <em>i</em> ≤ <em>j</em>. A operação duplicação <em>(i, j)</em> cria uma cópia da subsequência <em>a<sub>i</sub></em>, <em>a<sub>i+1</sub></em>, ... , <em>a<sub>j</sub></em> e a insere entre <em>a<sub>j</sub></em> e <em>a<sub>j</sub>+1</em>. A operação espelhamento <em>(i, j)</em> insere uma cópia invertida da subsequência de <em>a<sub>i</sub></em> até <em>a<sub>j</sub></em> (<em>a<sub>j</sub></em>, <em>a<sub>j-1</sub></em>, ... , <em>a<sub>i</sub></em>) entre <em>a<sub>j</sub></em> e <em>a<sub>j</sub>+1</em>.</p>
+
+                    <p>Por exemplo, dada a sequência (<em>a<sub>1</sub></em>, <em>a<sub>2</sub></em>, <em>a<sub>3</sub></em>, <em>a<sub>4</sub></em>, <em>a<sub>5</sub></em>, <em>a<sub>6</sub></em>), a aplicação da operação espelhamento (3,5) gera a sequência (<em>a<sub>1</sub></em>, <em>a<sub>2</sub></em>, <em>a<sub>3</sub></em>, <em>a<sub>4</sub></em>, <em>a<sub>5</sub></em>, <em>a'<sub>5</sub></em>, <em>a'<sub>4</sub></em>, <em>a'<sub>3</sub></em>, <em>a<sub>6</sub></em>).</p>
+
+                    <p>Sua tarefa é reconstruir a permutação original.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF).</p>
+
+                    <p>A primeira linha de cada instância contém os inteiros <strong>K</strong> (2 ≤ <strong>K</strong> ≤ 10 5) e <strong>N</strong> (1 ≤ <strong>N</strong> ≤ <strong>K</strong>) indicando, respectivamente, o tamanho da sequência escrita por Ali Babá e o maior inteiro da permutação original. A linha seguinte contém os <strong>K </strong>inteiros da sequência, separados por um espaço.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância, imprima uma única linha com a permutação que originou a sequência da entrada, com um espaço separando inteiros consecutivos. Caso exista mais de uma permutação possível, qualquer uma delas será aceita.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4 2<br />
+1 2 1 2<br />
+5 3<br />
+1 2 2 1 3<br />
+ </p>
+
+                            </td>
+                            <td>
+                                <p>1 2</p>
+
+<p>1 2 3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Aperta-lhe a mão, mas confere os dedos depois.<br/>
+                    Preliminar Maratona (Seletiva IME-USP) 
+                </p>
+            </div>
+
+        </body>
+    </html>

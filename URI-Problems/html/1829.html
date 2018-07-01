@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1829 - Jogo do Maior Número</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema A - Jogo do Maior Número" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>'
+    </head>
+    <body>
+        <div class="header">
+            <span>URI Online Judge | 1829</span>
+            <h1>Jogo do Maior Número</h1>
+            <div>
+                <p>Por Edson Alves, Faculdade UnB Gama <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' />Brazil</p>
+            </div>
+            <strong>Timelimit: 3</strong>
+        </div>
+        <div class="problem">
+<div class="description">
+<p>Lucas e Pedro são alunos do ensino médio que ficaram impressionados 
+        após uma aula de matemática, na qual foi apresentado o fatorial de um 
+        número natural <i>n</i>, isto é,
+		<p style="text-align: center;"> <img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1829.png" />
+        com 0! = 1. Ficaram com uma dúvida, porém: qual operação produz os
+        maiores resultados, o fatorial ou a exponenciação?</p>
+<p>Com esta dúvida em mente, propuseram o Jogo do Maior Número: os dois
+        participantes teriam que dizer, ao mesmo tempo e o mais rápido possível,
+        o maior número que viesse a cabeça, sendo o vencedor aquele que dissesse
+        o maior dentre os dois números.
+        Escolheram Beto como juiz, que foi tomando notas dos números que
+        os dois não cessavam de falar. Lucas citava sempre exponenciais, 
+        enquanto Pedro se concentrava nos fatoriais.</p>
+<p>Ao fim da brincadeira, um porém: nem os participantes, tampouco o 
+        juiz, tinha a menor ideia de quem havia sido o vencedor. Escreva, 
+        portanto, um programa que os auxilie a decidir quem foi o vencedor de 
+        cada rodada da brincadeira, e quem se sagrou campeão (maior número de 
+        vitórias, consideradas todas as rodadas).</p>
+</div>
+<h2>Entrada</h2>
+<div class="input">
+<p>A primeira linha da entrada contém o número inteiro positivo 
+        <b>N</b> (<b>N</b> ≤ 1.000), que representa o número de
+        rodadas disputadas.</p>
+<p>Cada rodada é representada por duas linhas: a primeira contém a 
+        exponencial dita por Lucas, na forma <b>a</b>^<b>b</b>
+        (2 ≤ <b>a, b</b> ≤ 10.000), e a segunda contém o fatorial 
+        escolhido por Pedro, na forma <b>n</b>! (2 ≤ <b>n</b> ≤ 
+        10.000).  
+        Os números <b>a, b, n</b> são inteiros e a expressão
+        <b>a</b>^<b>b</b> significa "<b>a</b> elevado à 
+        <b>b</b>-ésima potência".</p>
+</div>
+<h2>Saida</h2>
+<div class="output">
+<p>A primeira linha da saída consiste na mensagem 
+        "Campeao: <b>C</b>!", onde <b>C</b> é o nome do participante
+        que venceu o maior número de rodadas, ou a mensagem 
+        "A competicao terminou empatada!", se for o caso.</p>
+<p>Após esta mensagem inicial, deve ser impressa, para cada rodada 
+        disputada, a mensagem "Rodada #<b>r</b>: <b>V</b> foi o
+        vencedor", onde <b>r</b> é o número da rodada (cuja contagem se 
+        inicia no número um) e <b>V</b> é o nome do participante que 
+        venceu a rodada de número <b>r</b>.</p>
+<p>Ao final de cada mensagem da saída deve ser impressa uma quebra de
+        linha.</p>
+</div>
+    <div class="both"></div>
+    <table>
+        <thead>
+            <tr>
+                <td>Exemplos de Entrada</td>
+                <td>Exemplos de Saída</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>4
+</p>
+<p>99^99
+</p>
+<p>100!
+</p>
+<p>57^199
+</p>
+<p>874!
+</p>
+<p>123^488
+</p>
+<p>123!
+</p>
+<p>7601^5684
+</p>
+<p>7449!
+</p>
+                </td>
+                <td>
+                    <p>A competicao terminou empatada!
+</p>
+<p>Rodada #1: Lucas foi o vencedor
+</p>
+<p>Rodada #2: Pedro foi o vencedor
+</p>
+<p>Rodada #3: Lucas foi o vencedor
+</p>
+<p>Rodada #4: Pedro foi o vencedor
+</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+    </body>
+    <p class="footer">Maratona UnB de Programação 2014</p>
+</html>

@@ -1,0 +1,90 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1861 - O Hall dos Assassinos</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1234 - O Hall dos Assassinos" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1861</span>
+				<h1>O Hall dos Assassinos</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Quem matou Meryn Trant? Quem matou Syrio Forel, se é que ele de fato morreu? Quem matou Stannis Baratheon? Quem matou Myrcella Baratheon? Quem matou Aerys II Targaryen? Quem vai matar (<strong>alerta de spoiler!</strong>) Jaime Lannister? Para algumas destas perguntas já sabíamos a resposta. Para outras, tínhamos apenas especulações. No entanto, recebemos de um correspondente anônimo uma lista descrevendo vários assassinatos, que já aconteceram ou que estão para acontecer, revelando tanto o nome dos assassinos quanto dos assassinados. Mas os assassinatos não estão em ordem lexicográfica, nem mesmo em ordem cronológica, e fica difícil contar quantas pessoas cada assassino matou. Você pode nos ajudar?</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Cada linha da entrada descreve um assassinato informando o nome do assassino seguido pelo nome do assassinado. Cada nome é composto por no mínimo um e no máximo 10 caracteres, sendo o primeiro sempre uma letra maiúscula e os demais sempre letras minúsculas. A entrada consiste de no mínimo uma e no máximo 10<sup>5</sup> linhas e é encerrada em <em>fim de arquivo</em>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A primeira linha da saída deve consistir da frase “HALL OF MURDERERS”, sem as aspas. Cada uma das linhas seguintes deve conter um nome de um assassino seguido do número de pessoas que ele matou. A lista de assassinos deve obedecer a ordem lexicográfica. Se um assassino também acabou sendo assassinado, ele não deve figurar na lista.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>Arya Meryn<br />
+								Meryn Syrio<br />
+								Brienne Stannis<br />
+								Ellaria Myrcella<br />
+								Jaime Aerys<br />
+								Brienne Jaime</p>
+
+							</td>
+							<td>
+								<p>HALL OF MURDERERS<br />
+								Arya 1<br />
+								Brienne 2<br />
+								Ellaria 1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

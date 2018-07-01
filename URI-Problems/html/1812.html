@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1812 - Um Cluster Para Evitar Enchentes</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1812 - Um Cluster Para Evitar Enchentes" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1812</span>
+                <h1>Um Cluster Para Evitar Enchentes</h1>
+                <div>
+                    <p>Por Desconhecido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 0</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+
+<p>A Academia de Ciências da República Tcheca, preocupada com as inundações ocorridas durante os últimos verões em Praga, está fomentando o desenvolvimento de um novo cluster computacional para, entre outras tarefas, promover uma previsão do tempo mais acurada. Este novo cluster é composto por m máquinas iguais operando em paralelo. Por razões orçamentárias, cada máquina pode processar uma única tarefa por vez, e cada tarefa não pode ser processada em mais de uma máquina simultaneamente. O cluster permite, no entanto, preempção. Ou seja, é possível interromper a execução de uma tarefa e retorná-la posteriormente, em outra máquina inclusive. </p>
+
+<p>Por estar em Praga para a realização de um evento relativo à Ciência da Computação, você foi convidado a desenvolver uma versão preliminar do escalonador de tarefas do cluster. Nesta versão, é fornecido um conjunto de tarefas T, em que cada tarefa t ∈ T possui:</p>
+
+<ul>
+    <li>Um requisito de processamento p<sub>t</sub> que denota o número de unidades de tempo necessárias para realizar tal tarefa;</li>
+    <li>Um instante de liberação r<sub>t</sub> , que representa a unidade de tempo a partir da qual a tarefa está disponível para processamento (ela poderia estar aguardando dados, por exemplo);</li>
+    <li>E um valor d<sub>t</sub> ≥ p<sub>t</sub> + r<sub>t</sub> que indica o primeiro instante, em unidades de tempo, em que a tarefa deve, impreterivelmente, ter sido completada. Isto é, a tarefa t deve ser realizada no intervalo [r<sub>t</sub>, d<sub>t</sub>).</li>
+</ul>
+
+<p>Seu escalonador deve receber estes dados, de acordo com o formato descrito abaixo e dizer se existe ou não um escalonamento viável, isto é, um escalonamento que complete todas as tarefas nos intervalos de tempo permitidos.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p> Seu escalonador deve estar preparado para trabalhar com diversas instâncias de entrada. Cada instancia segue o formato que segue. Na primeira linha, são fornecidos os números de máquinas, 0 ≤ <strong>m</strong> ≤ 100, e de tarefas, 0 ≤ <strong>n</strong> ≤ 1000, respectivamente. Nas próximas <strong>n</strong> linhas são fornecidos os valores <strong>p<sub>t</sub></strong> ≥ 0,<strong>r<sub>t</sub></strong> ≥ 0 e <strong>d<sub>t</sub></strong> ≥ 0 (uma tripla por linha) para as tarefas<strong> t</strong> ∈ T. Os instantes<strong> r<sub>t</sub></strong> e <strong>d<sub>t</sub></strong> são inteiros, e <strong>p<sub>t</sub></strong> é decimal. Valores <strong>m</strong> = 0 e <strong>n </strong>= 0 indicam o término do processamento das instâncias e não devem ser processados. Todos os valores da entrada que constem em uma mesma linha são separados por um número qualquer de espaços em branco.</p>
+
+<p> </p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identiﬁcador Instance h, em que <strong>h</strong> é um número inteiro, sequencial e crescente a partir de 1. Na linha seguinte deve ser impresso Viable ou Not Viable, dependendo do escalonamento para a instância ser ou não viável, respectivamente. Uma linha em branco deve separar a saída de cada instância.</p>
+
+<p> </p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 4</p>
+
+<p>1.5  3 5</p>
+
+<p>1.25 1 3</p>
+
+<p>2.1  3 7</p>
+
+<p>3.6  5 9</p>
+
+<p>3 1</p>
+
+<p>3 1 2</p>
+
+<p>0 0</p>
+
+                            </td>
+                            <td>
+                                <p>Instance 1</p>
+
+<p>Viable</p>
+<br>
+
+<p>Instance 2</p>
+
+<p>Not Viable</p>
+
+
+<br>                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VII Maratona de Programação IME-USP 2003.
+                </p>
+            </div>
+
+        </body>
+    </html>

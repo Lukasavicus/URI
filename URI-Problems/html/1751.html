@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1751 - Alpinista Intrépido</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1751 - Alpinista Intrépido" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1751</span>
+                <h1>Alpinista Intrépido</h1>
+                <div>
+                    <p>Por Cristhian Bonilha, Universidade Tecnológica Federal do Paraná <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Quem iria adivinhar? Você escalou a montanha mais alta de sua cidade. Você está tão animado sobre isso que você precisa dizer a todos os seus amigos, e você decidiu começar com aqueles que estão a tentar estar exatamente onde você está neste exato momento.</p>
+
+                    <p>A montanha tem <em>N</em> marcos, e um deles é o topo da montanha, onde você está agora. Cada um de seus amigos que está escalando a montanha está em algum outro local de referência, e você pretende visitar todos eles. Existem trilhas que ligam os pares de pontos de referência, de tal forma que existe exatamente um percurso (isto é, uma sequência de trilhas consecutivas) que vai para baixo a partir do topo da montanha para cada outro ponto de referêmcia. Para visitar dois amigos em duas referências diferentes, você pode ter que descer em algumas trilhas, subir em outras, e descer outras novamente. Descer a montanha é "fácil", já que não consome muito sua energia quando você desce por uma trilha. Mas cada vez que você subir uma trilha, você consome uma certa quantidade de energia. Depois de visitar todos os seus amigos, você pode apenas sentar e descansar.</p>
+
+                    <p>Por exemplo, considere a montanha na imagem abaixo, que tem <em>N</em> = 6 pontos de referência. Se seus amigos estão em raferenciais 5 e 2, você pode visitar tanto se você seguir a seqüência de referências 1 ↓ 2 ↑ 1 ↓ 3 ↓ 5, onde <em>a</em> ↓ <em>b</em> significa que você desce uma trilha de uma referência <em>a</em> até uma referência <em>b</em>, e <em>a</em> ↑ <em>b</em> significa que você subir uma trilha de uma referência <em>a</em> até uma referência <em>b</em>. Outra sequência possível é 1 ↓ 3 ↓ 5 ↑ 3 ↑ 1 ↓ 2.</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1751.png" style="width: 145px; height: 142px;"></p>
+
+                    <p>Dadas as trilhas entre os pontos de referência, a energia necessária para escalá-los, e os pontos de referência onde seus amigos estão, calcular o montante total mínimo de energia necessária para visitar todos os seus amigos a partir do topo da montanha.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém dois inteiros <strong>N</strong> e <strong>F</strong> (1 ≤ <strong>F</strong> &lt;<strong>N</strong> ≤ 10<sup>5</sup>), representando, respectivamente, o número de pontos de referência e o número de seus amigos que estão subindo a montanha. Referenciais são identificados com números inteiros distintos entre 1 e <strong>N</strong>, sendo 1 o topo da montanha, onde você está inicialmente. Cada uma das próximas <strong>N - 1</strong> linhas descreve uma diferente trilha com três números inteiros <strong>A</strong>, <strong>B</strong> e <strong>C</strong>, o que indica que existe uma trilha de <strong>A</strong> a <strong>B</strong>, que vai para baixo e requer uma quantidade de energia <strong>C</strong> para ser escalado (1 ≤ <strong>A</strong> ≤ <strong>N</strong> , 2 ≤ <strong>B</strong> ≤ <strong>N</strong>, <strong>A</strong> = <strong>B</strong> e 1 ≤ <strong>C</strong> ≤ 100). A próxima linha contém <strong>F</strong> diferentes inteiros <strong>L<sub>1</sub>, L<sub>2</sub>,. . . , L<sub>F</sub></strong> (2 ≤ <strong>L<sub>i</sub></strong> ≤ <strong>N</strong> para <strong>i</strong> = 1, 2,.,.,. <strong>F</strong>), representando os marcos onde seus amigos estão. Você pode assumir que as trilhas entre os marcos são tais que existe exatamente uma rota que vai para baixo a partir do topo da montanha para cada outro referencial.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Apresente uma linha com um inteiro que representa o montante total mínimo de energia necessária para visitar todos os seus amigos a partir do topo da montanha.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>6 2<br />
+1 2 2<br />
+2 4 2<br />
+1 3 3<br />
+3 6 3<br />
+3 5 1<br />
+5 2</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>
+                <table>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4 2<br/>
+1 2 2<br/>
+1 3 1<br/>
+3 4 2<br/>
+2 4</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>
+                <table>
+                    <thead></thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4 2<br/>
+1 4 1<br/>
+1 3 1<br/>
+4 2 2<br/>
+2 4</p>
+
+                            </td>
+                            <td>
+                                <p>0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    ACM/ICPC Latin America Contest 2014.
+                </p>
+            </div>
+
+        </body>
+    </html>

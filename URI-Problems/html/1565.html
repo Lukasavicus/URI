@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1565 - Ligue os Pontos</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1565 - Ligue os Pontos" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1565</span>
+                <h1>Ligue os Pontos</h1>
+                <div>
+                    <p>Por Gabriel Dalalio, ITA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 9</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Vou te fazer um desafio! Você irá receber uma matriz de dimensões N por M, com caracteres iguais a <span style="font-family:courier new,courier,monospace">'-', <span style="font-family:courier new,courier,monospace">'#' e <span style="font-family:courier new,courier,monospace">'*'. Veja um exemplo a seguir:</p>
+
+<p style="text-align:center"><span style="font-family:courier new,courier,monospace">*-#-*<br />
+<span style="font-family:courier new,courier,monospace">-----<br />
+<span style="font-family:courier new,courier,monospace">--*--<br />
+####-<br />
+*----</p>
+
+<p><span style="font-family:courier new,courier,monospace"><span style="font-family:arial,helvetica,sans-serif">Os caracteres&nbsp;'#'&nbsp;<span style="font-family:arial,helvetica,sans-serif">significam obstáculos, os caracteres&nbsp;'-'&nbsp;<span style="font-family:arial,helvetica,sans-serif">significam espaços vazios e os caracteres&nbsp;'*'&nbsp;<span style="font-family:arial,helvetica,sans-serif">significam pontos. O seu trabalho é colocar o mínimo de pontos adicionais necessários para deixar todos os pontos conectados. Você só pode colocar mais pontos em espaços vazios. Por exemplo, para a matriz acima, você precisa de no mínimo 7 pontos adicionais para ligar os pontos, assim como mostra a figura a seguir:</p>
+
+<p style="text-align:center"><span style="font-family:courier new,courier,monospace">*-#-*<br />
+<span style="font-family:courier new,courier,monospace">-*-*-<br />
+<span style="font-family:courier new,courier,monospace">--*-*<br />
+####*<br />
+****-</p>
+
+<p><span style="font-family:courier new,courier,monospace"><span style="font-family:arial,helvetica,sans-serif">Você aceita o desafio?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada caso de teste é iniciado por uma linha contendo dois inteiros N e M indicando as dimensões da matriz (1 <span style="font-family:trebuchet ms,helvetica,jamrul,sans-serif; font-size:14px">≤ N*M&nbsp;≤ 100). Após a primeira linha, seguem N linhas descrevendo a matriz da mesma maneira mostrada no enunciado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada teste, a saída consiste de uma linha contendo o número mínimo de pontos que precisam ser adicionados na matriz para conectar todos os pontos. Caso seja impossível conectar todos os pontos, imprima 'impossivel'.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 5</p>
+
+<p>*-#-*<br />
+-----<br />
+--*--<br />
+####-<br />
+*----</p>
+
+<p>3 4</p>
+
+<p>---*</p>
+
+<p>----</p>
+
+<p>*---</p>
+
+<p>1 5</p>
+
+<p>*-#-*</p>
+
+<p>2 2</p>
+
+<p>-#</p>
+
+<p>#-</p>
+
+                            </td>
+                            <td>
+                                <p>7</p>
+
+<p>2</p>
+
+<p>impossivel</p>
+
+<p>0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+               <p class="footer">
+                    Contest Dalalio 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,106 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1878 - Torneios em Sequência</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 9999 - Torneios em Sequência" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1878</span>
+				<h1>Torneios em Sequência</h1>
+				<div>
+					<p>Por Matheus Pimenta, UNB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Denis é um professor de programação competitiva muito justo. Em sua disciplina, ele faz uma sequência de <strong>N</strong> torneios de programação para avaliar seus <strong>M</strong> alunos. A última ideia de Denis foi premiar os três alunos que se saírem melhor nos torneios. Para isto, Denis teve a ideia de criar a seguinte função classificatória.</p>
+
+					<p style="text-align: center;">f(T<sub>1</sub>,T<sub>2</sub>,...,T<strong><sub>N</sub></strong>) = <strong>c<sub>1</sub></strong>T<sub>1</sub> + <strong>c<sub>2</sub></strong>T<sub>2</sub> + ... + <strong>c<sub>N</sub></strong>T<strong><sub>N</sub></strong></p>
+
+					<p>Na função, a <strong>N</strong>-upla (T<sub>1</sub>,T<sub>2</sub>,...,T<strong><sub>N</sub></strong>) indica as classificações de um aluno nos <strong>N</strong> torneios. Por exemplo, se há dois torneios, um aluno fica em terceiro lugar no primeiro torneio e em primeiro lugar no segundo torneio, seu par ordenado é (3, 1).<br />
+					Como Denis quer ser o mais justo possível, ele não quer que haja possibilidade de empate. Como ele também está com preguiça de tentar provar que sua função é livre de empates, ele pediu a sua ajuda para fazer um programa que, dados os coeficientes <strong>c<sub>1</sub></strong>, <strong>c<sub>2</sub></strong>, ..., <strong>c<sub>N</sub></strong>, determine se a função pode de fato ser usada para classificação. Ou seja, se a função não irá classificar dois alunos distintos igualmente.<br />
+					Observe que o <em>software</em> utilizado por Denis para classificar seus alunos em um torneio é livre de empates. Ou seja, não é possível que dois alunos fiquem em primeiro lugar em um mesmo torneio, ou em segundo lugar, etc.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por vários casos de teste e termina com fim de arquivo.</p>
+
+					<p>A primeira linha de um caso de teste é composta por dois inteiros <strong>N</strong> e <strong>M</strong>, que são respectivamente o número de torneios realizados por Denis e o número de alunos que irão competir em cada torneio, onde 1 ≤ <strong>N</strong> ≤ 3 e 1 ≤ <strong>M</strong> ≤ 10.</p>
+
+					<p>Em seguida são dados <strong>N</strong> inteiros <strong>c<sub>1</sub></strong>, <strong>c<sub>2</sub></strong>, ..., <strong>c<sub>N</sub></strong>, os coeficientes da função de Denis, onde <strong>c<sub>i</sub></strong> ≥ 1 para todo i.</p>
+
+					<p>Em um caso de teste, é garantido que os valores da função de Denis não passam de 10<sup>9</sup>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima a linha "Lucky Denis!" se a função pode ser usada por Denis, ou "Try again later, Denis..." em caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 1<br />
+								1<br />
+								3 10<br />
+								1 1 1<br />
+								3 10<br />
+								1 2 3<br />
+								3 10<br />
+								1000001 1000100 1010000<br />
+								 </p>
+
+							</td>
+							<td>
+								<p>Lucky Denis!<br />
+								Try again later, Denis...<br />
+								Try again later, Denis...<br />
+								Lucky Denis!<br />
+								 </p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					
+				</p>
+			</div>
+
+		</body>
+	</html>

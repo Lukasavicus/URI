@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2096 - Horácio e Seus Primos</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2096 - Horácio e Seus Primos" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2096</span>
+                <h1>Horácio e Seus Primos</h1>
+                <div>
+                    <p>Por Fidel I. Schaposnik, Universidad Nacional de La Plata <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Horácio gosta de brincar de escrever números naturais no quadro-negro em seu quarto. Um dos seus jogos favoritos consiste em primeiro escrever um número n, então a soma de todos os diferentes números primos que dividem a n, e assim por diante até que o número escrito na placa se torne um número primo. Por exemplo, se Horácio começa a escrevendo o número n = 90, porque 90 = 2 × 3<sup>2</sup> × 5 o próximo número a ser escrito, será de 2 + 3 + 5 = 10; então, como 10 = 2 × 5 Horácio vai escrever o número 2 + 5 = 7; finalmente, porque 7 é um número primo o jogo terminará aqui.</p>
+                    <p>Formalmente, este jogo em cada número natural n&gt; = 2 define uma sequência cujo primeiro elemento é n, e cada novo elemento é a soma de todos os números primos que dividem o elemento anterior na sequência. O fim do jogo é a posição do primeiro número primo na sequência, e coincide com o número total de números escritos . No exemplo do parágrafo anterior, com n = 90 o fim do jogo é K = 3, porque os números que estão escritos será de 90, 10 e 7.</p>
+                    <p>Agora, nem todos os jogos são igualmente divertido para Horácio, e neste caso ele prefere começar por escrever um número n tal que a ordem do jogo correspondente é um valor especial K. Horácio gostaria de saber quantos diferentes valores de n inclusive entre A e B satisfaçam  esta condição, mas porque ele não sabe como codificar ele precisa de alguém para fazer este cálculo para ele. Você pode ajudá-lo?</p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém um inteiro P que indica o número de questões que  Horácio quer pedir (1 &lt;= P &lt;= 10<sup>5</sup>). Cada uma das próximas P linhas descreve uma pergunta usando três números inteiros A, B e K, o que significa que Horácio gostaria de saber quantos valores diferentes  de n satisfaz  A &lt;= n &lt;= B  e a ordem do jogo começando com  n é K (2 &lt;= A &lt;= B &lt;= 10<sup>6</sup> e 1 &lt;= K &lt;= 10<sup>6</sup>) .</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Você deve imprimir P linhas, cada uma contendo um número inteiro com a resposta a uma das perguntas feitas por Horácio, na ordem em que aparecem na entrada.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplos de Entrada</td>
+                            <td>Exemplos de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1</p>
+
+<p>90 90 3</p>
+
+                            </td>
+                            <td>
+                                <p>1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div><table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5</p>
+
+<p>2 9 1</p>
+
+<p>2 9 2</p>
+
+<p>800 810 4</p>
+
+<p>999999 1000000 2</p>
+
+<p>100000 1000000 1000000</p>
+
+                            </td>
+                            <td>
+                                <p>4</p>
+
+<p>4</p>
+
+<p>5</p>
+
+<p>2</p>
+
+<p>0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+              
+            <p class="footer">
+                    Torneo Argentino de Programación — ACM–ICPC 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

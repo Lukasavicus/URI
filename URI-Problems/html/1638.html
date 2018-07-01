@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1638 - Tamanho da Porção de Comida</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1638 - Tamanho da Porção de Comida" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1638</span>
+                <h1>Tamanho da Porção de Comida</h1>
+               <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A cantina da universidade não quer nenhum estudante deixe a cantina com fome. Portanto, enquanto um aluno estiver com fome, ele pode obter uma outra porção de comida de graça. A cantina usa um tamanho fixo de porção de alimentos, porque levaria muito tempo para pergunta a um estudante a quantidade de comida que ele quer. Pode acontecer que um aluno não terminar a sua última porção de comida e o restante seja jogado fora.</p>
+
+<p>Para minimizar os custos, o gerente da cantina quer determinar um tamanho fixo de porção de alimentos S de tal forma que a quantidade de comida que é desperdiçada seja pequena, mas também o número de vezes que os alunos têm de buscar outra porção da comida não seja muito grande. Note que esses dois objetivos podem ser conflitantes:</p>
+
+<ul>
+	<li>Ao escolher um tamanho muito pequeno da porção de alimentos, não se desperdiçar comida, mas ao mesmo tempo o número de vezes que os alunos voltam para buscar mais comida é grande.</li>
+	<li>Ao escolher um tamanho muito grande da porção de alimentos, pode-se assegurar que cada aluno tem de buscar apenas uma porção, mas, ao mesmo tempo, pode acontecer que uma grande quantidade de comida seja desperdiçada.</li>
+</ul>
+
+<p>O gerente da cantina coletou dados sobre quanto cada aluno consome. O problema a ser resolvido pode agora ser formulado matematicamente como se segue: Seja X a quantidade de alimentos que é desperdiçado, e Y o número de vezes que os estudantes vão buscar alimentos. Então, o objetivo é o de minimizar A × X + B x Y, em que A, B ​​são pesos que representam a importância relativa dos dois objetivos em conflito. Note-se que X e Y dependem do tamanho da porção de alimento S e as quantidades de alimentos cada aluno consome. Nós impomos a restrição adicional de que nenhum estudante deveria ter que passar mais de 3 vezes para buscar alimentos.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>O arquivo de entrada contém vários casos de teste. Cada caso de teste começa com uma linha contendo um inteiro <strong>N</strong>, (1 ≤ <strong>N</strong>&nbsp;≤ 1000), que corresponde o número de alunos que comem na cantina. A próxima linha contém o valor de <strong>A</strong> e <strong>B</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ​​≤ 10). A terceira linha de cada caso de teste consiste de <strong>N</strong> inteiros <strong>Y</strong><sub>1</sub> , ..., <strong>Y</strong><sub>n</sub> (1 ≤ <strong>Y</strong><sub>i</sub> ≤ 100), onde <strong>Y</strong><sub>i</sub> é a quantidade de comida estudante <strong>I</strong> consome. A entrada é terminada por <strong>N</strong>=0.</p>
+<p>
+					<strong>OBS:</strong>  Na primeira entrada, o tamanho ideal porção de alimentos é de 4,5. Note que o tamanho da porção de alimento, de 3 renderia um custo menor de 16, o quinto estudante, no entanto, teria que buscar comida 4 vezes.
+					</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma linha contendo os custos resultantes de uma escolha ideal do tamanho da porção de alimentos. Imprimir cada valor como uma fração reduzida. Se o resultado for um número inteiro, não imprima o denominador 1. Veja o exemplo de saída para mais detalhes.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5</p>
+
+<p>1 1</p>
+
+<p>3 7 1 9 12</p>
+
+<p>3</p>
+
+<p>10 1</p>
+
+<p>11 13 17</p>
+
+<p>2</p>
+
+<p>2 3</p>
+
+<p>6 3</p>
+
+<p>0</p>
+
+                            </td>
+                            <td>
+                                <p>35 / 2</p>
+
+<p>154 / 3</p>
+
+<p>9<br />
+&nbsp;</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2009
+                </p>
+            </div>
+
+        </body>
+    </html>

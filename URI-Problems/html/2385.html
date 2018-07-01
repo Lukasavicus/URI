@@ -1,0 +1,148 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2385 - Multiplicação de Matrizes</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2385 - Multiplicação de Matrizes" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2385</span>
+				<h1>Multiplicação de Matrizes</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática, 2010 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O conglomerado indiano Tutu é um conjunto de empresas que atua nos mais diversos ramos da indústria, produzindo desde sapatos até aviões e foguetes. Por ser tão diversificada, precisa de grandes e rápidos sistemas para cálculos de contabilidade.</p>
+
+					<p>Um dos módulos mais importantes desse sistema é o de fornecimento de produtos, onde fica a base de dados de produtos e fornecedores. Um mesmo produto pode ser fornecido por vários fornecedores diferentes.</p>
+
+					<p>O sistema possui duas grandes matrizes: a matriz <em>A</em>, onde cada linha representa um produto e cada coluna representa um fornecedor. O valor da matriz na linha <em>m</em> e coluna <em>n</em> representa o preço do produto <em>m</em> se for comprado do fornecedor <em>n</em>.</p>
+
+					<p>A outra grande matriz é a <em>B</em>, onde cada linha representa um dia do mês e cada coluna é um produto. O valor da matriz na linha <em>m</em> e coluna <em>n</em> representa a quantidade do produto <em>n</em> a ser adquirido no dia <em>m</em>. Tal empresa tem uma política de fidelidade com seus fornecedores, e uma das práticas efetuadas pela empresa é, em um determinado dia, comprar todos os produtos necessários de um único fornecedor. Isto é, em um dia todos os produtos adquiridos serão comprados do fornecedor <em>x</em>, no outro dia do fornecedor <em>y</em>, e assim por diante.</p>
+
+					<p>Para auxiliar a escolha de qual fornecedor será o escolhido no dia, foi gerada outra matriz C, que é o resultado da multiplicação das matrizes <em>A</em> × <em>B</em>. Essa matriz diz o quanto será gasto pela empresa se adquirir todos os produtos de um determinado fornecedor em um determinado dia.</p>
+
+					<p>As matrizes A e B são quadradas (o número de linhas é igual ao número de colunas) e têm valores definidos pelas fórmulas:</p>
+
+					<p style="text-align:center">A<sub>ij</sub> = (P × i + Q × j) (mod X)<br />
+					B<sub>ij</sub> = (R × i + S × j) (mod Y)</p>
+
+					<p>onde i é o índice da linha da matriz e j é o índice da coluna da matriz (todos os índices vão de 1 até <em>N</em>). Os inteiros <em>P</em>, <em>Q</em>, <em>R</em>, <em>S</em>, <em>X</em> e <em>Y</em> são parâmetros constantes, que definem as duas matrizes A e B.</p>
+
+					<p>Escreva um programa que, dados os parâmetros das matrizes A e B, e a posição de uma das entradas as matriz <em>C</em>, calcula o valor daquela entrada.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>N</strong>, indicando as dimensões das matrizes <strong>A</strong>, <strong>B</strong> e <strong>C</strong> (2 ≤ <strong>N</strong> ≤ 10<sup>5</sup>). A linha seguinte contém seis inteiros <strong>P</strong>, <strong>Q</strong>, <strong>R</strong>, <strong>S</strong>, <strong>X</strong> e <strong>Y</strong>, indicando os parâmetros das matrizes A e B (2 ≤ <strong>X</strong>, <strong>Y</strong> ≤ 10<sup>4</sup>; 0 ≤ <strong>P</strong>, <strong>Q</strong> &lt; <strong>X</strong>; 0 ≤ <strong>R</strong>, <strong>S </strong>&lt; <strong>Y</strong>).</p>
+
+					<p>Finalmente, a última linha da entrada contém dois inteiros <strong>I</strong> e <strong>J</strong>, indicando a linha e a coluna da matriz <strong>C</strong> a serem consultados (1 ≤ <strong>I</strong>, <strong>J</strong> ≤ <strong>N</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma única linha contendo o valor da matriz <strong>C</strong> na linha e coluna especificadas.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+								<p>4 3 2 3 5 6</p>
+
+								<p>2 2</p>
+
+							</td>
+							<td>
+								<p>18</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+								<p>3 5 1 0 6 7</p>
+
+								<p>4 3</p>
+
+							</td>
+							<td>
+								<p>30</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+								<p>2 2 0 1 3 2</p>
+
+								<p>2 1</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática - 2010 Fase 2 Modalidade Nível 2 (P2)
+				</p>
+			</div>
+
+		</body>
+	</html>

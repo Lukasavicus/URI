@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2537 - GigaDrive</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - GigaDrive" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2537</span>
+			<h1>GigaDrive</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>A TéquiToy está relançando no mercado o Giga Drive, um console antigo muito popular nos anos 90. Para comemorar o relançamento do console, a TéquiToy vai lançar um jogo “inédito” este ano: o Giga Drive ChesseBread 2! Na verdade, o Giga Drive CheeseBread 2 é um clone com poucas alterações de um outro jogo famoso. Por isso, suas regras são muito semelhantes.</p>
+
+<p>Em Giga Drive CheeseBread 2, o tabuleiro do jogo consiste em uma matriz de <strong>N</strong> linhas e <strong>N</strong> colunas. Inicialmente, cada célula da matriz está vazia ou contém uma azeitona (?). Uma partida é composta por <strong>M</strong> rodadas. A cada rodada, o computador coloca uma azeitona em uma célula vazia do tabuleiro. Em seguida, ele pergunta ao jogador o total de azeitonas na região do tabuleiro da célula (<strong>I<sub>1</sub></strong>, <strong>J<sub>1</sub></strong>) até uma célula (<strong>I<sub>2</sub></strong>, <strong>J<sub>2</sub></strong>) dada. Em outras palavras, o computador indica quatro inteiros <strong>I<sub>1</sub></strong>, <strong>J<sub>1</sub></strong>, <strong>I<sub>2</sub></strong> e <strong>J<sub>2</sub></strong>, e pergunta ao jogador o número total de azeitonas nas células na linha <em>i</em> e coluna <em>j</em> tal que <strong>I<sub>1</sub></strong> ≤ <em>i</em> ≤ <strong>I<sub>2</sub></strong> e <strong>J<sub>1</sub></strong> ≤ <em>j</em> ≤ <strong>J<sub>2</sub></strong>.</p>
+
+<p>Para vencer o jogo, você deve acertar a contagem em todas as rodadas do jogo! Entretanto, você tem muito pouco tempo para contar todas as azeitonas. Por isso, escreva um programa para garantir sua vitória!</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém os inteiros <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong> ≤ 1000, 1 ≤ <strong>M</strong> ≤ 10<sup>5</sup>). As próximas <strong>N</strong> linhas contém <strong>N</strong> inteiros cada, descrevendo o tabuleiro inicial. O valor 1 indica uma azeitona, enquanto o valor 0 indica uma célula vazia. As próximas 2×<strong>M</strong> linhas descrevem as rodadas do jogo, uma rodada a cada duas linhas. A primeira linha contém dois inteiros <strong>i</strong> e <strong>j</strong> (1 ≤ <strong>i</strong>, <strong>j</strong> ≤ <strong>N</strong>) indicando a inclusão de uma azeitona na célula na linha <strong>i</strong> e coluna <strong>j</strong>. É garantido que a célula estava vazia antes da rodada. A segunda linha de cada rodada contém quatro inteiros <strong>I<sub>1</sub></strong>, <strong>J<sub>1</sub></strong>, <strong>I<sub>2</sub></strong> e <strong>J<sub>2</sub></strong> (1 ≤ <strong>I<sub>1</sub></strong> ≤ <strong>I<sub>2</sub></strong> ≤ <strong>N</strong>, 1 ≤ <strong>J<sub>1</sub></strong> ≤ <strong>J<sub>2</sub></strong> ≤ <strong>N</strong>), descrevendo a região do tabuleiro da célula (<strong>I<sub>1</sub></strong>, <strong>J<sub>1</sub></strong>) até a célula (<strong>I<sub>2</sub></strong>, <strong>J<sub>2</sub></strong>).</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima, para cada rodada, uma linha indicando o total de azeitonas na região.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4 2<br />
+0 0 1 1<br />
+0 1 0 1<br />
+0 0 1 0<br />
+1 1 0 1<br />
+1 1<br />
+1 1 2 2<br />
+2 3<br />
+1 1 2 4</p>
+
+						</td>
+						<td>
+							<p>2<br />
+6</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

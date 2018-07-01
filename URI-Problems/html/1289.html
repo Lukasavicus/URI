@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1289 - Qual é a Probabilidade?</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1289 - Qual é a Probabilidade?" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1289</span>
+            <h1>Qual é a Probabilidade?</h1>
+            <div><p>Por Shahriar Manzoor <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif' alt=""/> Bangladesh</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Probabilidade sempre foi uma parte importante de algoritmos. Os algoritmos probabilísticos vem para suprir uma lacuna deixada pelos algoritmos determinísticos, que não conseguem resolver determinados problemas em curto espaço de tempo. Neste problema, não estamos lidando com qualquer algoritmo probabilístico. Vamos apenas tentar determinar a probabilidade de ganhar de um determinado jogador.</p>
+                <p> 
+                    ​Um jogo é jogado através do arremesso de um dado(que não se deve presumir que ele tem seis lados como um dado comum). Se um determinado evento ocorre quando um jogador joga os dados (tal como a obtenção de um 3, ficando lado verde em cima ou seja lá o que for) este é declarado o vencedor. Tal jogador pode ser o jogador N. Assim, o primeiro jogador vai jogar os dados, depois o segundo e, finalmente, o jogador N e, novamente, o primeiro e assim por diante. Quando um jogador obter um determinado resultado ele é declarado vencedor e o jogo termina. Você terá que determinar a probabilidade de ganhar de um (O enésimo) destes jogadores.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A primeira linha de entrada irá conter um inteiro <strong>S</strong> (<strong>S</strong> ≤ 1000), que indica a quantidade de casos de teste. Cada caso de teste é composto por uma única linha contendo 3 valores, separados por um espaço em branco. O primeiro destes 3 valores é um inteiro <strong>N</strong> (<strong>N</strong> ≤ 1000) que indica o número de jogadores. Segue um número de ponto flutuante <strong>P</strong> que indica a probabilidade de ocorrência de um evento desejado ou bem sucedido em um único lançamento de dado (Se por exemplo, "bem sucedido" significa conseguir um número 3, então <strong>P</strong> é a probabilidade de obter 3 em uma partida. Para um dado normal a probabilidade de se obter 3 é 1/6). O terceiro e último valor de cada caso de teste é um inteiro <strong>I</strong> (<strong>I</strong> ≤ <strong>N</strong>) que é o número de série do jogador cuja probabilidade de vencer deverá ser determinado (varia de 1 até <strong>N</strong>, inclusive). Você pode assumir que nenhum valor inválido de probabilidade (<strong>P</strong>) será fornecido como entrada.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada conjunto de entrada, deve ser impresso um único valor com 4 casas decimais indicando a probabilidade de ganhar do jogador <strong>I</strong>, conforme apresentado no exemplo abaixo.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                2 0.166666 1<br />
+                                2 0.166666 2</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                0.5455<br />
+                                0.4545</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+    </body>
+</html>

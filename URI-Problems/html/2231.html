@@ -1,0 +1,118 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2231 - Temperatura Lunar</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2231 - Temperatura Lunar" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2231</span>
+				<h1>Temperatura Lunar</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2002 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Sem as proteções da atmosfera e do cinturão magnético que existem na Terra, a Lua fica exposta ao ataque do Sol, que é um astro em constante explosão atômica. As explosões do Sol emitem ondas letais de partículas. Uma pessoa que ficasse desprotegida na superfície da Lua, num lugar onde o Sol incidisse diretamente, sofreria um bombardeio radioativo tão intenso quanto se estivesse nas imediações da usina russa de Chernobyl no momento do acidente que matou 31 pessoas, em 1986. Além da radiação solar, outro efeito desta falta de proteção contra o Sol que existe na Lua é a enorme variação de temperatura. Nas regiões próximas do equador lunar, a variação de temperatura é brutal, passando de cerca de 130 graus positivos durante o dia a 129 graus negativos à noite.</p>
+
+<p>Para estudar com mais precisão as variações de temperatura na superfície da Lua, a NASA enviou à Lua uma sonda com um sensor que mede a temperatura de 1 em 1 minuto. Um dado importante que os pesquisadores desejam descobrir é como se comporta a média da temperatura, considerada em intervalos de uma dada duração (uma hora, meia hora, oito horas, etc.). Por exemplo, para a seqüência de medições 8, 20, 30, 50, 40, 20, -10, e intervalos de quatro minutos, as médias são respectivamente 108/4=27, 140/4=35, 140/4=35 e 100/4=25.</p>
+
+<p>Você foi recentemente contratado pela NASA, e sua primeira tarefa é escrever um programa que, conhecidos a seqüência de temperaturas medidas pelo sensor, e o tamanho do intervalo desejado, informe qual a maior e qual a menor temperatura média observadas, considerando o tamanho do intervalo dado.&nbsp;</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta de vários conjuntos de teste. A primeira linha de um conjunto de teste contém dois números inteiros positivos <strong>N</strong> (0 ≤ <strong>N</strong> ≤ 10000) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ <strong>N</strong>), que indicam respectivamente o número total de medições de <strong>temperatura</strong> (-200 ≤ <strong>temperatura</strong> ≤ 200) de uma seqüência obtida pelo sensor, e o tamanho dos intervalos, em minutos, em que as médias devem ser calculadas. As <strong>N</strong> linhas seguintes contêm um número inteiro cada, representando a seqüência de medidas do sensor. O final da entrada é indicado quando <strong>N</strong> = <strong>M</strong> = 0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada conjunto de teste da entrada seu programa deve produzir três linhas. A primeira linha identifica o conjunto de teste, no formato “Teste n”, onde n é numerado a partir de 1. A segunda linha deve conter dois números inteiros X e Y, separados por ao menos um espaço em branco, representando respectivamente os valores da menor e da maior média de temperatura, conforme determinado pelo seu programa. O valor da média deve ser truncado, se a média não for um número inteiro (ou seja, deve ser impressa apenas a parte inteira). A terceira linha deve ser deixada em branco. A grafia mostrada no Exemplo de Saída, abaixo, deve ser seguida rigorosamente.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 2</p>
+
+<p>-5</p>
+
+<p>-12</p>
+
+<p>0</p>
+
+<p>6</p>
+
+<p>7 4</p>
+
+<p>35</p>
+
+<p>-35</p>
+
+<p>5</p>
+
+<p>100</p>
+
+<p>100</p>
+
+<p>50</p>
+
+<p>50</p>
+
+<p>0 0</p>
+
+							</td>
+							<td>
+								<p>Teste 1</p>
+
+<p>-8 3</p><br/>
+
+<p>Teste 2</p>
+
+<p>26 75</p><br/>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2002
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,130 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2278 - Amalgamated Artichokes</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problem A - Amalgamated Artichokes" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2278</span>
+				<h1>Amalgamated Artichokes</h1>
+				<div>
+					<p>By ICPC 2015 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ma.gif' alt='MA' /> Morocco</p>
+				</div>
+				<strong>Timelimit: 5</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+
+					<img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_155_A_a.png" style="float:right" width="280" alt="" />
+
+					<p>Fatima Cynara is an analyst at Amalgamated Artichokes (AA). As with any company, AA has had some very good times as well as some bad ones. Fatima does trending analysis of the stock prices for AA, and she wants to determine the largest decline in stock prices over various time spans. For example, if over a span of time the stock prices were 19, 12, 13, 11, 20 and 14, then the largest decline would be 8 between the first and fourth price. If the last price had been 10 instead of 14, then the largest decline would have been 10 between the last two prices.</p>
+
+					<p>Fatima has done some previous analyses and has found that the stock price over any period of time can be modelled reasonably accurately with the following equation:</p>
+
+					<p style="text-align:center">price(k) = p · (sin(a · k + b) + cos(c · k + d) + 2)</p>
+
+					<p>where <strong>p</strong>, <strong>a</strong>, <strong>b</strong>, <strong>c</strong> and <strong>d</strong> are constants. Fatima would like you to write a program to determine the largest price decline over a given sequence of prices. Figure A.1 illustrates the price function for Sample Input 1. You have to consider the prices only for integer values of <strong>k</strong>.</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_155_A_b.png" width="500"  alt="graphics" /> </center>
+
+					<p style="text-align:center">Figure A.1: Sample Input 1. The largest decline occurs from the fourth to the seventh price.</p>
+				</div>
+
+				<h2>Input</h2>
+
+				<div class="input">
+					<p>The input consists of a single line containing 6 integers <strong>p</strong> (1 ≤ <strong>p</strong> ≤ 1 000), <strong>a</strong>, <strong>b</strong>, <strong>c</strong>, <strong>d</strong> (0 ≤ <strong>a</strong>, <strong>b</strong>, <strong>c</strong>, <strong>d</strong> ≤ 1 000) and <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 10<sup>6</sup> ). The first 5 integers are described above. The sequence of stock prices to consider is price(1), price(2), . . . , price(<strong>n</strong>).</p>
+				</div>
+
+				<h2>Output</h2>
+
+				<div class="output">
+					<p>Display the maximum decline in the stock prices. If there is no decline, display the number 0. Your output should have an absolute or relative error of at most 10<sup>−6</sup>.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Input Samples</td>
+							<td>Output Samples</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>42 1 23 4 8 10</p>
+
+							</td>
+							<td>
+								<p>104.855110477</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>100 7 615 998 801 3</p>
+
+                    </td>
+                    <td>
+                        <p> 0.00</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>100 432 406 867 60 1000 </p>
+
+                    </td>
+                    <td>
+                        <p>399.303813</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					ICPC 2015 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

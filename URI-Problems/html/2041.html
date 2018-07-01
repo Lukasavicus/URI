@@ -1,0 +1,97 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2041 - Sequência de Gödelito</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2033 - Sequência de Gödelito" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2041</span>
+				<h1>Sequência de Gödelito</h1>
+				<div>
+					<p>Por Daniele Oliveira, Universidade Federal de Uberlândia <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Gödelito é fascinado por questões lógicas e matemáticas e passa muito tempo brincando em tentar descobrir a semântica por traz das sequencias matemáticas. O mais divertido para Gödelito não é tanto encontrar o próximo número da sequência, mas entender os axiomas que determinam o formato das sequencias.<br />
+					Muitas sequencias são ditadas por regras matemáticas, por exemplo a sequência de Fibonacci cujo axioma é que cada número é a soma dos dois anteriores. Outras sequencias envolvem axiomas mais semânticos, por exemplo a sequência: 2, 10, 12, 16, 17, 18, 19, 200..., no qual axioma é: números cujo nome começa com a letra D.<br />
+					Gödelito se deparou atualmente com uma sequência bem interessante. Depois de algum tempo ele descobriu que o axioma da sequência é semântico (ele tentou muitas contas matemáticas primeiro, o que só o deixou mais feliz quando descobriu o significado da sequência). A sequência é a mostrada abaixo:</p>
+
+					<p style="text-align: center;">3<br />
+					13<br />
+					1113<br />
+					3113<br />
+					132113<br />
+					1113122113<br />
+					311311222113<br />
+					...</p>
+
+					<p>Gödelito ficou impressionado com o quanto essa sequência cresce rapidamente. E como não quer gastar as folhas do seu caderno para calcular todos os números que quer, pediu a sua ajuda para criar um algoritmo para encontrar os outros números da sequência. Mas ele te explicou o significado da sequência primeiro para facilitar a sua vida:<br />
+					Cada número da sequência é gerado através da leitura do número anterior, por exemplo, o segundo número é 13 porque a linha de cima contém um (1) número três (3). O terceiro número é 1113, porque a linha de cima contém um (1) número um (1) e um (1) número três (3). O quarto número da sequência é 3113, pois a linha de cima contém três (3) números um (1) e um (1) número três (3). Acho que deu para entender a ideia, não é?</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta de vários casos de teste. Cada caso de teste é composto de uma linha contendo um número inteiro <strong>N</strong>, que representa o enésimo número da sequência que deve ser calculado, com 0&lt;<strong>N</strong>&lt; = <strong>40</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída de cada caso de teste é apenas uma linha contendo o enésimo número da sequência.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5</p>
+								<p>2</p>
+								<p>1</p>
+								<p>4</p>
+							</td>
+							<td>
+								<p>132113</p>
+								<p>13</p>
+								<p>3</p>
+								<p>3113</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>	
+				<p class="footer">
+					
+				</p>
+			</div>
+
+		</body>
+	</html>

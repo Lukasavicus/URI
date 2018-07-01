@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1815 - Drunk People?</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1815 - Drunk People?" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1815</span>
+                <h1>Drunk People?</h1>
+                <div>
+                    <p>Por Maratona de Programação IME-USP 2003 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Nos invernos de Praga o frio é insuportável. Para manter o corpo aquecido, diversos moradores utilizam-se de bebidas quentes (como café ou chá) ou alcoólicas. De tempos em tempos, Mr. Třeboň frequenta um pequeno bar de seu bairro. Porém, depois de muitas horas, alguns acabam exagerando nas doses. Nesse momento, Mr. Třeboň precisa retornar a sua casa. O problema é que ele não está se sentindo bem (ele está bêbado mesmo :-) e não lembra onde mora. Então ele começa a tocar as campainhas das casas e a perguntar se mora ali. Assim faz até encontrar sua casa. Devido ao seu estado, o Mr. Třeboň não segue nenhuma ordem lógica para tocar as campainhas das casas. Após tocar uma campainha e verificar que não é a sua casa, ele irá continuar procurando. Além disso, ele não consegue memorizar quais campainhas já tocou. A forma como ele escolhe as casas para tocar a campainha segue uma distribuição de probabilidade condicionada apenas à última casa tocada. Considere que alguém sempre atende à porta e responde ao Mr. Třeboň se ele mora ali ou não. Queremos saber qual a chance dele não conseguir chegar em casa para dormir, sabendo que após tocar um certo número de campainhas ele não aguentará mais e ficará por ali mesmo.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>O arquivo de entrada tem a seguinte composição para cada instância: a primeira linha contém os inteiros 0 ≤ <strong>n</strong> ≤ 100, 0 &lt; <strong>t</strong> ≤ <strong>n</strong>, 0 &lt; <strong>k</strong> ≤ <strong>n</strong>, 0 &lt; <strong>m</strong> ≤ 100, representando o&nbsp;número de casas, a casa inicial, a casa do Mr. Třeboň e a quantidade de casas que ele poderá tocar a campainha para tentar chegar em casa, respectivamente. São dadas então <strong>n</strong> linhas. A <strong>i</strong>-ésima linha representa a casa <strong>i</strong> e contém os números <strong>a<sub>i1</sub></strong>, ... , <strong>a<sub>ij</sub></strong>, ... , <strong>a<sub>in</sub></strong>, separados por brancos, representando a probabilidade do Mr. Třeboň ir da casa <strong>i</strong> para a casa <strong>j</strong>. A entrada termina com <strong>n</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>O arquivo de saída deve conter, para cada instância de entrada, um identificador <strong>Instancia h</strong>, em que <strong>h</strong> é um número inteiro, seqüencial e crescente a partir de 1. Na linha seguinte um número (arredondado em 6 casas decimais) indicando a probabilidade do Mr. Třeboň não ter encontrado a sua casa após m campainhas tocadas. Uma linha em branco deve separar a saída de cada instância, inclusive na ultima.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 1 2 1<br />
+0.5 0.5<br />
+0.5 0.5<br />
+3 1 2 2<br />
+0.25 0.25 0.5<br />
+0.25 0.5 0.25<br />
+0.5 0.25 0.25<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+0.500000</p>
+&nbsp;
+<p>Instancia 2<br />
+0.562500</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VII Maratona de Programação IME-USP 2003.
+                </p>
+            </div>
+
+        </body>
+    </html>

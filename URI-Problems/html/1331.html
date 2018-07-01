@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1331 - Blocos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1331 - Blocos" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1331</span>
+            <h1>Blocos</h1>
+            <div><p>Por Rujia Liu <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cn.gif' alt=""/> China</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Alguns de vocês já podem ter jogado um jogo chamado "blocos". Há <strong>n</strong> blocos em uma linha, cada caixa tem uma cor. Aqui está um exemplo: Ouro, Prata, Prata, Prata, Bronze, Prata, Bronze, Ouro, Bronze.</p>
+                <p>
+                    Veja a imagem correspondente abaixo:</p>
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Blocks_a.jpg" style="width: 397px; height: 44px;" /></p>
+                <p>
+                    Se algumas caixas adjacentes são da mesma cor, e tanto a caixa para sua esquerda (se existir) e para sua direita (se existir), são de alguma outra cor, nós a chamamos de "segmento de caixa". Há quatro segmentos de caixa. Ou seja: ouro, prata, bronze, ouro. Existem 1, 4, 3, 1 caixa(s), no segmento, respectivamente.</p>
+
+                <p>
+                    Todo o tempo, você pode clicar em uma caixa, então todo o segmento que contém essa caixa DESAPARECE. Se esse segmento é composto de k caixas, você vai ganhar k * k pontos. Por exemplo, se você clicar em uma caixa prata, o segmento prata desaparece e você ganha 4 * 4 = 16 pontos.</p>
+                <p>
+                    Agora vejamos a figura abaixo:</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Blocks_b.jpg" style="width: 662px; height: 320px;" /><br /></p>
+                
+                <p>
+                A primeira opção é a ideal.</p>
+
+                <p>
+                    Encontre a maior pontuação que você pode obter, dado um estado inicial do jogo.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A primeira linha contém o número de casos de teste <strong>t</strong> (1 ≤ <strong>t</strong> ≤ 15). Cada caso contém duas linhas. A primeira linha contém um inteiro <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 200), o número de caixas. A segunda linha contém <strong>n</strong> inteiros, representando as cores de cada caixa. Os inteiros estão no intervalo <strong>1~n</strong>.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste, imprima o número do caso de teste e a maior pontuação possível.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                9<br />
+                                1 2&nbsp;2&nbsp;2&nbsp;2&nbsp;3&nbsp;3&nbsp;3&nbsp;1<br />
+                                1<br />
+                                1</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Case 1: 29<br />
+                                Case 2: 1</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Agradecimento Especial a: Cailiang Liu & Rongjing Xiang do IOI2003 China National Training Team. I/O by Neilor.
+            </p>
+        </div>
+
+    </body>
+</html>

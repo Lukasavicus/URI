@@ -1,0 +1,159 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2007 - Falha Ao Cercar Legumes</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2007 - Falha Ao Cercar Legumes" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2007</span>
+				<h1>Falha Ao Cercar Legumes</h1>
+				<div>
+					<p>Por Pablo Ariel Heiber <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Aos 40 anos, Alice e Bob decidiram se aposentar. Depois de mais de duas décadas de trabalho como exemplos de protocolos de rede, livros teóricos sobre jogos e vários outros textos, eles estavam cansados. Para permanecerem ativos, eles decidiram praticar a jardinagem.<br />
+<br />
+Alice e Bob plantaram vários vegetais em um enorme campo. Depois de terminado, eles perceberam que as plantas precisariam de proteção contra animais selvagens, então eles decidiram construir uma cerca para protegê-los. O campo é representado pelo plano XY e cada vegetal está em um ponto diferente. A cerca é representada como um polígono no plano. De qualquer forma, nem todo polígono é uma cerca válida. Ela deve ser uma cerca de um único polígono simples, com cada um dos seus lados paralelos a um dos eixos. Claro que, o polígono deve conter todos os pontos que representam as plantas. Uma cerca demasiado perto das plantas ou para si poderia tornar difícil para caminhar ao redor, de modo que cada lado do polígono precisa ser afastado de todas as plantas e todos os lados não adjacentes.<br />
+<br />
+Infelizmente, Alice e Bob contrataram uma multinacional desagradável para a construção da cerca. A empresa tinha um monte de advogados na folha de pagamento, mas não há bons designers da cerca, pois eles não cumpriram com todos os requisitos. Eles construíram uma cerca que é um polígono simples com lados paralelos aos eixos e cujos lados são longe de plantas e em si. No entanto, eles se esqueceram de fazer a cerca conter todas as plantas! Alice e Bob querem ajuda para avaliar a extensão do problema.<br />
+<br />
+Uma vez que nem todas as plantas são igualmente valioso para eles, eles querem saber o valor total das plantas que foram deixados do lado de fora da cerca.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>P</strong> e <strong>V</strong>, que representam, respectivamente, o número de plantas e o número de vértices de cima do muro poligonal (1 ≤ <strong>P</strong>, <strong>V</strong> ≤ 10<sup>5</sup>). Cada uma das linhas próximas a <strong>P</strong> descreve uma planta diferente, com dois inteiros <strong>X<sub>p</sub></strong> e <strong>Y<sub>p</sub></strong>, indicando as coordenadas da planta (-10<sup>9</sup> ≤ <strong>X<sub>p</sub>, Y<sub>p</sub></strong> ≤ 10<sup>9</sup>). O valor da planta <strong>p</strong>-th na entrada é <strong>P</strong>, para <strong>p</strong> = 1, 2,. . . , <strong>P</strong>. Cada uma das seguintes linhas<strong> V</strong> descreve um vértice da vedação com dois números inteiros <strong>X<sub>v</sub></strong> e <strong>Y<sub>v</sub></strong>, indicando as coordenadas do vértice (-10<sup>9</sup> ≤ <strong>X<sub>v</sub>, Y<sub>v</sub></strong> ≤ 10<sup>9</sup>).<br />
+Vértices são dadas na ordem anti-horário. Cada um destes pontos é um real vértice do polígono, isto é, ela não é colinear com os seus dois vértices adjacentes. O polígono é representado um polígono simples com cada lado paralelo a um eixo. Não há duas plantas estão na mesma posição, e nenhuma planta encontra-se no lado de uma cerca.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída é uma linha com um número inteiro que representa a soma dos valores de todas as plantas que se encontram no exterior da vedação.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 8<br />
+1 2<br />
+1 0<br />
+5 3<br />
+3 4<br />
+0 1<br />
+6 1<br />
+6 4<br />
+4 4<br />
+4 3<br />
+2 3<br />
+2 5<br />
+0 5</p>
+
+							</td>
+							<td>
+								<p>6</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6 12<br />
+6 5<br />
+1 9<br />
+3 6<br />
+3 4<br />
+2 0<br />
+4 4<br />
+5 8<br />
+5 3<br />
+2 3<br />
+2 5<br />
+4 5<br />
+4 7<br />
+0 7<br />
+0 1<br />
+7 1<br />
+7 10<br />
+0 10<br />
+0 8</p>
+
+							</td>
+							<td>
+								<p>15</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 4<br />
+1 1<br />
+2 0<br />
+2 2<br />
+0 2<br />
+0 0</p>
+
+							</td>
+							<td>
+								<p>0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC Latin American Regional – 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

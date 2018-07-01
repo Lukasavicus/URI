@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2043 - Montanha Alta</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2043 - Montanha Alta" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2043</span>
+                <h1>Montanha Alta</h1>
+                <div>
+                    <p>Por Pablo A. Heiber, Universidad Nacional de La Plata  <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Para sair de férias, Horácio e Hernán sacrificaram sua participação em uma importante competição de programação. Enquanto você estiver nessa competição, eles estão perto do Andes dirigindo ao longo da estrada 40, na Argentina, desfrutando de uma vista agradável das montanhas no horizonte. Neste momento, o céu sobre a rodovia é limpo, azul, enquanto a parte visível das montanhas é um perfil apresentando texturas ricas e atraentes. Isso preocupa Horácio e Hernán, porque temem que as imagens que estão a fotografas vão ser muito caras para imprimir corretamente. Por esta razão, na próxima parada irão pegar os seus computadores portáteis e escrever um programa para calcular a área do perfil de montanha que tem de ser impresso em cada imagem. Você pode terminar este programa antes deles?</p>
+
+                    <p>Horácio e Hernán irão modelar o perfil da montanha da seguinte maneira. Cada montanha é representada por um triângulo isósceles cuja base esta sobre o eixo X do plano XY. Dois lados de igual comprimento conectam as extremidades da base ao vértice oposto do triângulo, que é a ponta da montanha correspondente. Para descrever a posição e a forma do triângulo, usámos as coordenadas ao longo do eixo X dos pontos de extremidade da base, juntamente com a altura da montanha.</p>
+
+                    <p>A figura abaixo é o modelo de um perfil formado por 4 montanha montanhas que são sobrepostas uma com a outra. A área da superfície do perfil da montanha que tem que se calcular é marcado com listras. A montanha menor da figura é descrita pelos valores I = 4 (o ponto de extremidade esquerda da base de montanha), D = 5 (a extremidade direita da base de montanha) e H = 1 (a altura da montanha)</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2043.png" style="width:245px; height:144px"></p>
+
+                    <p>Neste problema, você terá a representação do perfil de montanha, e você tem que encontrar a área da união de todos os triângulos correspondentes, de tal forma que as partes sobrepostas são contadas apenas uma vez.</p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Cada caso de teste é descrito usando várias linhas. A primeira linha contém um único número inteiro N, indicando o número de montanhas (1 ≤ N ≤ 1000). Cada uma das N linhas seguintes descreve uma montanha usando três números inteiros I, D e H, que representam, respectivamente, a coordenada X do ponto de extremidade esquerda da base, o mesmo para a extremidade direita da base, e a altura da montanha (1 ≤ I, D, H ≤ 10<sup>5 </sup>com I &lt;D). Em cada caso de teste não existem duas montanhas que são exatamente a mesma (ou seja, com valores iguais para os três parâmetros I, D e H). O final da entrada é indicado por uma linha contendo -1.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, você deve imprimir uma única linha contendo um número racional, o que representa a área do perfil de montanha correspondente. Aproxime o resultado para o numero mais próximo de dois dígitos decimais. Em caso de empate, aproxime para cima. Note-se que você deve sempre usar exatamente dois dígitos depois do ponto decimal, mesmo que isso signifique que termine com um zero.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4</p>
+
+<p>4 5 1</p>
+
+<p>2 4 2</p>
+
+<p>3 5 3</p>
+
+<p>3 7 2</p>
+
+<p>1</p>
+
+<p>1 2 1</p>
+
+<p>2</p>
+
+<p>10 20 20</p>
+
+<p>20 40 10</p>
+
+<p>2</p>
+
+<p>15 25 20</p>
+
+<p>20 40 10</p>
+
+<p>7</p>
+
+<p>99998 99999 25000</p>
+
+<p>99998 100000 50000</p>
+
+<p>99996 100000 100000</p>
+
+<p>1 3 100000</p>
+
+<p>2 5 100000</p>
+
+<p>1 5 60000</p>
+
+<p>1 99999 100000</p>
+
+<p>5</p>
+
+<p>2 3 10</p>
+
+<p>4 5 6</p>
+
+<p>6 8 11</p>
+
+<p>12 14 3</p>
+
+<p>1 13 2</p>
+
+<p>-1</p>
+
+                            </td>
+                            <td>
+                                <p>6.90</p>
+
+<p>0.50</p>
+
+<p>200.00</p>
+
+<p>190.00</p>
+
+<p>5000331093.88</p>
+
+<p>28.91</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Torneo Argentino de Programación — ACM–ICPC 2012
+                </p>
+            </div>
+
+        </body>
+    </html>

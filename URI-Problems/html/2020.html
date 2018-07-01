@@ -1,0 +1,113 @@
+﻿
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2020 - Elfos e seus Códigos</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema C - Elfos e seus Códigos" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2020</span>
+				<h1>Elfos e seus Códigos</h1>
+				<div>
+					<p>Por Lucas Bucior, URI Online Judge <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Neste ano Papai Noel recebeu várias listas de presentes, com pedidos e mais pedidos. Para dificultar, todas as listas são codificadas por elfos. Como são milhares de listas e o Papai Noel é organizado, decidiu pedir a sua ajuda. Ele sabe que você é dedicado e conhece o padrão de decodificação dos elfos, e para isso disponibilizou 26 gnomos e 676 duendes. Cada lista é decodificada através da colaboração de gnomos e duendes ajudantes do Papai Noel. Os gnomos são enumerados de 1 a 26 e para cada gnomo, 26 duendes que correpondem a letras de A até Z (incluindo as letras K, W, Y). Quando a decodificação é iniciada, todas as N linhas são executadas. Cada N linha corresponde a um presente. Seguem os passos para decodificar uma determinada lista criada por elfos:</p>
+
+                    <ol>
+                        1º Os gnomos e duendes são organizados, gnomos representam linhas e duendes representam as colunas.<br />
+                        <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2020_01.png" style="width:577px; height:115px"></p>
+                        2º Para cada gnomo, é encontrado um duende. Por exemplo, se o número inteiro i for 2 (linha 2) o gnomo é 2 e obrigatoriamente o duende também é 2, correspondendo, portanto, ao caractere B.<br />
+                        <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2020_02.png" style="width:577px; height:115px"></p>
+                        3º Todos os duendes, na posição gnomo devem ser movidos para o final.<br />
+                        <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2020_03.png" style="width:577px; height:115px"></p>
+                        4º A linha correspondente ao gnomo é movida para a última posição válida.<br />
+						<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2020_04.png" style="width:577px; height:115px"></p>
+                        <p> Após este primeiro movimento, se o próximo número da entrada para i for 2 (linha 2) o gnomo agora será 3 e consequentemente o duende também será 3, correspondendo portanto, ao caractere D.</p>
+                    </ol>
+          
+						<p>O 1º passo é executado a cada nova lista codificada por elfos, o 2º, 3º e 4º passo são executados a cada número inteiro i que corresponde a linha da matriz. Papai Noel quer saber os presentes que contém na lista codificada por elfos.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha de cada caso de teste contém um inteiro <strong>N</strong> (1 ≤ <strong>N </strong>≤ 10000), que corresponde ao número de linhas codificadas por elfos. As <strong>N </strong> linhas seguintes contém um número indefinido de inteiros <strong>i </strong>(1 ≤ <strong>i </strong>≤ 27), cada número inteiro <strong>i </strong> representa a linha da matriz e se <strong>i </strong>for 27, um espaço. A entrada termina com final de arquivo (EOF).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada lista codificada por elfos, deve-se apresentar a mensagem “LISTA #X:”, onde X é o número da lista seguindo a sequência (1, 2, 3, ...), em seguida deve-se listar todos os presentes em ordem alfabética e maiúsculo, um em cada linha.  Imprimir uma linha em branco entre dois casos de teste consecutivos. No fim da saída não deve haver uma linha em branco.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1<br />
+                                13 1 10 3 12 18 27 2 25 27 22 7 5 23 24<br />
+                                7<br />
+                                18 5 10 11 5 5 18<br />
+                                22 15 14 19 19 5 13<br />
+                                3 1 11 9 21 17 25 25<br />
+                                17 10 22 21 18 22 24 24<br />
+                                21 25 17 21 20 23 22<br />
+                                26 17 21 26 11 20 18 9<br />
+                                6 24 22 26 25 22 25</p>
+							</td>
+							<td>
+								<p>LISTA #1:<br />
+                                 MALETA DE POKER<br />
+                                <br />
+									LISTA #2:<br />
+									CAMISETA<br />
+									CARTEIRA<br />
+									CELULAR<br />
+									CHOPEIRA<br />
+									MOCHILA<br />
+									PERFUME<br />
+									RELOGIO</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+             
+				<p class="footer">
+                    Contest de Natal 2015.
+				</p>
+			</div>
+
+		</body>
+	</html>

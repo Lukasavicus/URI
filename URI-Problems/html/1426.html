@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1426 - Coloque Tijolos na Parede</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1426 - Coloque Tijolos na Parede" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1426</span>
+            <h1>Coloque Tijolos na Parede</h1>
+            <div>Por Ginés García Mateos, UM <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/es.gif' alt=""/> Espanha</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Não, não é "mais um tijolo na parede", é apenas um problema sobre somar números.</p>
+
+                <p>Suponha que você tem uma parede com o formato de um triângulo, como a mostrada abaixo. A parede tem 9 linhas, e a i-ésima linha tem exatamente i tijolos, considerando que a linha mais acima é a 1ª e que a mais abaixo é a 9ª. Alguns tijolos são rotulados com um número, enquanto os demais estão em branco. Os tijolos rotulados aparecem apenas em linhas ímpares, e ocupam posições ímpares dentro das suas linhas.</p>
+
+                <p class="center">​<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1426.png" style="width: 475px; height: 291px;" /></p>
+
+                <p>O problema que você deve resolver consiste em rotular os tijolos em branco com números, de tal forma que a seguinte regra seja satisfeita: O número de um tijolo é igual à soma dos números dos dois tijolos abaixo dele. Obviamente, esta regra não é aplicada à 9ª linha. Todos os números devem ser inteiros.</p>
+
+                <p><em>Nota</em>: O exemplo de entrada contém dois casos de teste. O primeiro dele corresponde à parede mostrada acima.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A primeira linha da entrada contém um inteiro <strong>N</strong>, indicando o número de casos de teste. Esta linha é seguida pelos casos de teste. Cada caso é descrito por 5 linhas. Essas linhas correspondem às linhas ímpares da parede, de cima para baixo, como descrito acima. Cada linha contém os números nos tijolos já rotulados da linha correspondente na parede, da esquerda para a direita, separados por um espaço em branco.</p>
+
+                <p>Você pode assumir que todo caso de teste é correto, isto é, existe uma solução para o problema descrito.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, a saída deve ser formada por 9 linhas descrevendo os números de todos os tijolos da parede. Assim, a <strong>i</strong>-ésima linha deve conter os números correspondentes aos <strong>i</strong> tijolos da <strong>i</strong>-ésima linha da parede, da esquerda para a direita, separados por um espaço.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                255<br />
+                                54 67<br />
+                                10 18 13<br />
+                                3 3 5 2<br />
+                                2 1 2 1 1<br />
+                                256<br />
+                                64 64<br />
+                                16 16 16<br />
+                                4 4 4 4<br />
+                                1 1 1 1 1
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                255<br />
+                                121 134<br />
+                                54 67 67<br />
+                                23 31 36 31<br />
+                                10 13 18 18 13<br />
+                                5 5 8 10 8 5<br />
+                                3 2 3 5 5 3 2<br />
+                                2 1 1 2 3 2 1 1<br />
+                                2 0 1 0 2 1 1 0 1<br />
+                                256<br />
+                                128 128<br />
+                                64 64 64<br />
+                                32 32 32 32<br />
+                                16 16 16 16 16<br />
+                                8 8 8 8 8 8<br />
+                                4 4 4 4 4 4 4<br />
+                                2 2 2 2 2 2 2 2<br />
+                                1 1 1 1 1 1 1 1 1
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Olimpiadas Murcianas de Programación 2009.
+            </p>
+        </div>
+
+    </body>
+</html>

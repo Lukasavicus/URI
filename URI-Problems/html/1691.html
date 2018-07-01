@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1691 - Super Circunferência</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1691 - Super Circunferência" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1691</span>
+                <h1>Super Circunferência</h1>
+                <div>
+                    <p>Por Davi Duarte Pinheiro, UFPE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Skyrk desenvolveu um jogo chamado Super Circunferência. Sua simplicidade é contrastada por sua grande dificuldade. O objetivo de Super Circunferência é controlar um ponto que se desloca ao redor uma circunferência central tentando evitar contato com as paredes circulares que se aproximam.</p>
+
+                    <p class="center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/contests/D.png" style="height:260px; width:260px" /></p>
+
+                    <p>O ponto preto circula ao redor da circunferência vermelha a uma velocidade de uma revolução completa por segundo. Um nível tem vários conjuntos de paredes circulares que se aproximam, com as quais o ponto deve evitar o contato. Uma parede se aproximando pode ser interpretada como um setor de uma circunferência. O conjunto de paredes se aproxima do centro na velocidade de um conjunto a cada P segundos. O jogador consegue vencer se ele desviar de todas as paredes com sucesso.</p>
+
+                    <p>Um novo nível foi criado com N conjuntos de paredes. Para ajustar a sua dificuldade corretamente, você deve encontrar o menor valor de P que ainda torne o nível possível de ser completado.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém <strong>T</strong> (<strong>T</strong> ≤ <strong>100</strong>) – o número de casos teste. Após essa linha, haverá <strong>T</strong> casos teste. A primeira linha de um caso teste contém um inteiro <strong>N</strong> (<strong>1</strong> ≤ <strong>N</strong> ≤ <strong>10<sup>4</sup></strong>) – o número de conjuntos de paredes. As próximas <strong>N</strong> linhas contém a descrição de um conjunto de paredes da seguinte forma: Primeiro o número <strong>K</strong> (<strong>0</strong> ≤ <strong>K</strong> ≤ <strong>10</strong>) – o número de paredes que esse conjunto possui. Após isso, <strong>K</strong> tuplas de números de ponto flutuante da seguinte forma: <strong>X</strong>,<strong>Y</strong> (<strong>0</strong> ≤ <strong>X</strong>, <strong>Y</strong> &lt; <strong>2π</strong>) – A parede começa no ângulo <strong>X</strong> e estende ao longo da circunferência em sentido horário até o ângulo <strong>Y</strong>. Paredes do mesmo conjunto nunca se intersectam. Nenhum dos conjuntos será uma circunferência completa. Quando o jogo começa, o primeiro conjunto atinge o centro após <strong>P</strong> segundos e o ponto preto pode começar em qualquer posição.</p>
+
+                    <p>A figura acima ilustra o primeiro teste de exemplo.</p>
+
+                </div>
+
+                <h2>Output</h2>
+
+                <div class="output">
+                    <p>Para cada caso teste imprima uma única linha com "<strong>Case #A: B</strong>" onde <strong>A</strong> é o número do caso teste (começando de <strong>1</strong>) e <strong>B</strong> é o menor <strong>P</strong> possível de forma que o nível ainda seja possível de ser completado. <strong>B</strong> deve ser arredondado para <strong>4</strong> dígitos após o ponto decimal. A entrada será de tal forma que erros até <strong>10<sup>-5</sup></strong> ainda darão a resposta correta. </p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+                                3<br />
+                                1 1 5.28<br />
+                                2 1.5 4.28 5 1<br />
+                                3 0 2 2.5 3 3.8 4.5<br />
+                                2<br />
+                                2 0 1 2 3<br />
+                                2 0.9 2.1 2.9 0.1</p>
+
+                            </td>
+                            <td>
+                                <p>Case #1: 0.0446<br />
+                                Case #2: 0.0159</p>
+                                
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Road to Fortaleza II 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

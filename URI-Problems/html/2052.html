@@ -1,0 +1,118 @@
+﻿<!DOCTYPE html>
+<html>
+		<head>
+			<title>URI 2052 - Mapas de Karnaugh II</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 0000 - Mapa de Karnaugh ||" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2052</span>
+				<h1>Mapas de Karnaugh II</h1>
+				<div>
+					<p>Por Lucas Bucior, URI Online Judge <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O professor Jack entregou uma lista de exercícios de revisão, afirmando que na próxima aula vai fazer uma avaliação. O conteúdo principal desta lista é Mapas de Karnaugh. John recebeu a lista, mas percebeu que faltou as aulas de Mapas de Karnaugh. John é esperto e conhece um amigo que sempre vai as aulas, e sabe como resolver Mapas de Karnaugh. Neste problema você é o amigo de John, será que você consegue ajudar John? Conectando a menor quantidade de pares possíveis? Seguindo as especificações do professor:
+                    <ol>
+                        1º Formar pares: Um par é conectado, quando encontrar o menor ponto adjacente presente.<br />
+                        2º Formar termos isolados: Pares conectados não precisam ser conectados uma segunda vez.
+				    </ol>
+
+
+
+					 <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2052.png" style="width:240px; height:220px"></p>
+
+                    <ol>
+                        No Mapa de Karnaugh acima é possível identificar os pontos conectados seguindo as especificações do professor. Pares conectados: O par [ 2-6 ] indica que o ponto 2 encontrou o menor ponto adjacente presente 6. Pares isolados: Note que o par [ 6-8 ] não é um par isolado. O ponto 6 está conectado com o ponto 2, e o ponto 8 está conectado com o ponto 7. Portanto não é um par válido. Um par é válido se, e somente se, um de seus pontos não estiver conectado a nenhum outro ponto. Cada par consiste de [ origem-destino ], os pares sempre começam a ser conectados do menor ponto presente na N linha da entrada, origem, com o menor ponto adjacente presente de destino, um determinado ponto de origem tem quatro pontos de destino, por exemplo o ponto de origem 16 tem os pontos [ 8, 12, 14, 15 ] de destino.
+                      </ol>
+					<p>
+                        Uma instância contém um número inteiro N. As próximas N linhas consistem em pontos verdadeiros no Mapa de Karnaugh. Estamos falando de Mapas de Karnaugh de quatro variáveis. Portanto no máximo 16 números. Como o professor mostrou um exemplo, tudo fica mais fácil. Na imagem acima é possível observar que são quatro pares conectados: [ 2-6 ] [ 7-8 ] [ 12-16 ] [ 13-14 ]. E todos os pontos estão conectados. Ajude John a resolver os exercícios da revisão.
+                    </p>
+                  
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha de cada instância contém um inteiro <strong>N</strong> ( 1 ≤ <strong>N </strong>≤ 10<sup>5</sup> ), que corresponde ao número de exercícios presentes na lista do professor Jack. As <strong>N </strong> linhas seguintes contém um número indefinido de inteiros <strong>E </strong>( 1 ≤ <strong>E </strong>≤ 16 ). Cada número inteiro <strong>E </strong> indica que no Mapa de Karnaugh na posição <strong>E</strong>, é verdadeira, isto é contém 1, como mencionado acima. A entrada termina com final de arquivo (EOF).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprimir a mensagem <strong>"</strong>Instance #<strong>H</strong>:<strong>"</strong>, onde <strong>H</strong> é o número da instância, sequêncial e crescente a partir de 01. Em seguida, para cada <strong>N</strong> linha da instância, o professor pediu para imprimir, o número de pares conectados, o número de pontos não conectados, seguido da mensagem <strong>"</strong>-><strong>"</strong>. Após, listar todos os pares conectados em ordem ascendente, com um espaço entre dois pares conectados. Se não conseguir conectar nenhum ponto, imprimir a mensagem <strong>"</strong>No connection found<strong>"</strong>. Imprimir uma linha em branco entre duas instâncias consecutivas.</p>
+
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1<br />
+2 6 7 8 12 13 14 16<br />
+7<br />
+6 7 14<br />
+8 11 15<br />
+1 2 7 16<br />
+1 4 5 10 16<br />
+4 6 8 9 10 15<br />
+2 4 7 9 8 10 15<br />
+1 4 6 7 10 11 16 15</p>
+							</td>
+							<td>
+
+<p>Instance #01:<br />
+4 0 -> 2-6 7-8 12-16 13-14<br />
+<br />
+Instance #02:<br />
+1 1 -> 6-14<br />
+1 1 -> 11-15<br />
+1 2 -> 1-2<br />
+1 3 -> 1-5<br />
+3 1 -> 4-8 6-8 9-10<br />
+4 0 -> 2-4 7-8 9-10 15-7<br />
+3 4 -> 7-15 11-15 16-15</p>
+
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	                
+                <p class="footer">
+                    
+				</p>
+			</div>
+
+		</body>
+</html>

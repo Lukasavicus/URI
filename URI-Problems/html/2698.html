@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2698 - Dispositivo Assombrado</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema D - Dispositivo Assombrado" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2698</span>
+			<h1>Dispositivo Assombrado</h1>
+			<div>
+				<p>Por Walter Erquinigo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/pe.gif' alt='PE' /> Peru</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Em uma recente viagem a uma escavação arqueológica na ilha caribenha de São Basil, você encontrou um misterioso dispositivo com instruções que lembram um enigma. Seu guia local Vibenas diz que caso você resolva o enigma, o dispositivo talvez lhe mostre o local onde um grande tesouro deixado pelo sanguinário pirata Lyerpes está escondido.</p>
+
+<p>O dispositivo tem uma fita com <strong>L</strong> células indexadas de 0 à <em>L</em>-1. Cada célula possui uma cor que pode ser alterado através dos comandos do dispositivo. Cada cor é codificada como um inteiro, e inicialmente todas as células possuem a mesma cor. As instruções que você encontrou representam <strong>N</strong> passos que devem ser executados antes do dispositivo mostrar o caminho do tesouro. Cada passo é descrito usando 4 inteiros <strong>P</strong>, <strong>X</strong>, <strong>A</strong> e <strong>B</strong>. As instruções dizem que para completar um passo você deve contar o número de células que atualmente possuem a cor <strong>P</strong>. Digamos que este número seja <strong>S</strong>. Então você deve calcular os valores</p>
+
+<p>M<sub>1</sub> = (<strong>A</strong> + <strong>S</strong><sup>2 </sup>) mod <strong>L</strong> ,</p>
+
+<p>M<sub>2</sub> = (<strong>A</strong> + (<strong>S</strong> + <strong>B</strong>)<sup>2</sup> ) mod <strong>L</strong> .</p>
+
+<p>Finalmente você deve fazer todas as células no intervalo fechado [min(<strong>M</strong><sub>1</sub>,<strong>M</strong><sub>2</sub>, max(<strong>M</strong><sub>1</sub>,<strong>M</strong><sub>2</sub>)] serem da cor de <strong>X</strong>.</p>
+
+<p>Após essa exaustiva tarefa de processar os <strong>N</strong> passos requeridos pelo dispositivo, você tera ainda um trabalho: dada a cor que aparece o maior número de vezes no dispositivo após todos os passos (isto é, a cor mais frequente), você deve ir ao local do naufrágio do navio de Lyerpe e dizer em voz alta o número de celulas que possuem tal cor. Note que este número é único mesmo se mais de uma cor aparecer o maior número de vezes no dispositivo após todos os passos.</p>
+
+<p>Realizando todos estes cálculos no dispositivo levariam gerações, mas você, um renomado programador, pode criar um programa que rapidamente indica a resposta para o enigma. Após isso, o verdadeiro desafio será encontrar o local do naufrágio do velho navio de Lyerpes.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>O primeiro número contem três inteiros&nbsp;<strong>L</strong>, <strong>C</strong> e <strong>N</strong> (1 ≤ <strong>L</strong>, <strong>C</strong>, <strong>N</strong> ≤ 10<sup>5</sup>&nbsp;), representando respectivamente o número de celulas na fita, o número de cores disponíveis e o número de passos nas instruções. Cores são identificadas por inteiros distintos indo de 1 à <strong>C</strong> e inicialmente todas as células contem 1 cor. Cada uma das próximas <strong>N</strong> linhas descreve um passo das instruções com 4 inteiros <strong>P</strong>, <strong>X</strong>, <strong>A</strong> e <strong>B</strong> (1 ≤ <strong>P</strong>, <strong>X</strong> ≤ <strong>C</strong> and 0 ≤ <strong>A</strong>, <strong>B</strong> ≤ 10<sup>8</sup> ), indicando respectivamente a cor a qual o número de celulas é usado para decidir o intervalo dos valores usado para calcular os limites como acima descritos.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Dado uma cor que aparece o maior número de vezes na fita do dispositivo após realizar a sequência de passos descrita na entrada, imprima uma única linha com um inteiro que indica o número de células contendo aquela cor.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>7 5 2</p>
+
+<p>1 2 5 3</p>
+
+<p>3 3 0 1</p>
+
+						</td>
+						<td>
+							<p>4</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>7 10 8</p>
+
+<p>10 6 5 6</p>
+
+<p>5 1 7 5</p>
+
+<p>9 9 10 1</p>
+
+<p>3 2 6 7</p>
+
+<p>8 3 4 8</p>
+
+<p>3 7 7 4</p>
+
+<p>9 3 9 7</p>
+
+<p>1 1 8 1000</p>
+
+						</td>
+						<td>
+							<p>3</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				ICPC Latin American Regional – 2017
+			</p>
+		</div>
+
+	</body>
+</html>

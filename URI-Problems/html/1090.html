@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1090 - Set</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1090 - Set" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1090</span>
+            <h1>Set</h1>
+            <div><p>
+                    Por Fábio Dias Moreira&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" />&nbsp;Brasil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Set é um jogo jogado com um baralho no qual cada carta pode ter uma, duas ou três figuras. Todas as figuras em uma carta são iguais, e podem ser círculos, quadrados ou triângulos. Um set é um conjunto de três cartas em que, para cada <em>característica </em>(número e figura), ou as três cartas são iguais, ou as três cartas são diferentes.</p>
+
+
+                <p>Por exemplo, na figura abaixo, (a) é um set válido, já que todas as cartas têm o mesmo tipo de figura e todas elas têm números diferentes de figuras. Em (b), tanto as figuras quanto os números são diferentes para cada carta. Por outro lado, (c) não é um set, já que as duas últimas cartas têm a mesma figura, mas esta é diferente da figura da primeira carta.</p>
+                <p class="center">
+                    <br>
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1090.png" style="width: 270px; height: 112px;"></p>
+                <p>
+                    <p>O objetivo do jogo é formar o maior número de sets com as cartas que estão na mesa; cada vez que um set é formado, as três cartas correspondentes são&nbsp; removidas de jogo. Quando há poucas cartas na mesa, é fácil determinar o maior número de sets que podem ser formados; no entanto, quando há muitas cartas há muitas&nbsp; combinações possíveis. Seu colega quer treinar para o campeonato mundial de Set, e por isso pediu que você fizesse um programa que calcula o maior número de sets que podem ser formados com um determinado conjunto de cartas.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. A primeira linha de cada caso de teste contém um inteiro N (3 ≤ <strong>N</strong> ≤ 3 x 10<sup>4</sup>), indicando o número de cartas na mesa; cada uma das N linhas seguintes contém a descrição de uma carta.</p>
+                <p>
+                    A descrição de uma carta é dada por duas palavras separadas por um espaço; a primeira palavra é "um" ou "dois" &nbsp; ou "tres" e indica quantas figuras aquela carta possui. A segunda palavra é, “circulo” (ou “circulos”), “quadrado” (ou “quadrados”) ou “triangulo” (ou “triangulos”) indica qual tipo de figura está naquela carta.</p>
+                <p>
+                    O final da entrada é indicado por uma linha contendo um zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste da entrada seu programa deve imprimir uma única linha na saída, contendo um número inteiro, indicando o maior número de sets que podem ser formados com as cartas dadas.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br>
+                                um circulo<br>
+                                dois circulos<br>
+                                tres circulos<br>
+                                3<br>
+                                um triangulo<br>
+                                tres quadrados<br>
+                                dois circulos<br>
+                                6<br>
+                                dois quadrados<br>
+                                dois quadrados<br>
+                                dois quadrados<br>
+                                dois quadrados<br>
+                                dois quadrados<br>
+                                dois quadrados<br>
+                                4<br>
+                                um quadrado<br>
+                                tres triangulos<br>
+                                um quadrado<br>
+                                dois triangulos<br>
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                1<br>
+                                1<br>
+                                2<br>
+                                0</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table> <p class="footer">
+                Maratona de Programação da SBC 2008.</p>
+        </div>
+
+    </body>
+</html>
+

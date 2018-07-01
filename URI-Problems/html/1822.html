@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1822 - Obras da China</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1822 - Obras da China" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1822</span>
+                <h1>Obras da China</h1>
+                <div>
+                    <p>Por Autor Desconhecido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Devido à abertura econômica ocorrida na China nos últimos anos, boa parte do país foi transformada em canteiro de obras. Algumas construções em curso são tão monumentais que, juntamente com a já famosa Muralha da China, poderão ser vistas da lua a olho nu.</p>
+
+                    <p>Uma empreiteira radicada em Shangai é responsável pela execução de várias obras no país. Após algum tempo, os engenheiros da empreiteira perceberam que, a cada nova obra, tinham de resolver um problema semelhante ao que já tinham resolvido no início das obras anteriores. Cansados de realizar sempre os mesmos tipos de cálculos, pediram a sua ajuda na construção de um programa que resolvesse o problema deles, descrito a seguir.</p>
+
+                    <p>Considere uma obra que tem duração de <em>n</em> semanas. Na<em> i-ésima</em> semana da obra, para <em>i ≤ 1 ≤ n</em>, são necessários <em>f<sub>i</sub></em> funcionários para executá-la. Os custos com recrutamento e instrução de um funcionário são de <em>x</em> yuan. Gasta-se <em>y</em> yuan para demitir um funcionário. Um funcionário necessário custa <em>z</em> yuan por semana e cada funcionário excedente, isto é, cada funcionário contratado que não é necessário em uma semana da obra, custa w yuan por semana para a empreiteira. (yuan é a moeda chinesa.) Funcionários podem ser contratados e demitidos a cada semana. Inicialmente, a obra não possui nenhum funcionário. Ao final da mesma, todos os funcionários devem ser demitidos. O problema consiste em determinar o menor valor possível que a empreiteira deve gastar com funcionários ao longo da obra, satisfazendo sempre as restrições semanais. Ou seja, não pode haver menos de <em>f<sub>i</sub></em> funcionários trabalhando na obra na <em>i-ésima</em> semana.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Seu programa deve estar preparado para trabalhar com diversas obras, doravante denominadas instâncias. Cada instância tem a estrutura que segue.</p>
+
+                    <p>Na primeira linha é fornecido um inteiro <strong>n</strong> (0 ≤ <strong>n</strong> ≤ 200) que representa o número de semanas de duração da obra.</p>
+
+                    <p>Na próxima linha são dados, separados por espaços em branco, <strong>n</strong> valores inteiros não negativos e menores ou iguais a 50, em que o <strong>i-ésimo</strong> valor (1 ≤ <strong>i</strong> ≤ <strong>n</strong>) representa o número <strong>f<sub>i</sub></strong> de funcionários necessários na <strong>i-ésima</strong> semana.</p>
+
+                    <p>Na linha seguinte, também separados por espaços em branco, são fornecidos quatro inteiros <strong>x, y, z </strong>e<strong> w</strong> (0 ≤ <strong>x, y, z, w</strong> ≤ 1000), em que <strong>x</strong> é o custo de recrutamento e instrução de um funcionário novo, <strong>y </strong>é o custo de demitir um funcionário empregado, <strong>z</strong> é o custo semanal de um funcionário necessário e <strong>w</strong> é o custo para manter um funcionário excedente, por uma semana, na obra.</p>
+
+                    <p>Um valor <strong>n</strong> = 0 indica o final das instâncias e não deve ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identificador “<strong>Instancia h</strong>” em que <strong>h</strong> é um número inteiro, sequencial e crescente a partir de 1. Na linha seguinte, você deve imprimir o menor valor possível que a empreiteira deve gastar com funcionários ao longo dessa obra.</p>
+
+                    <p>Uma linha em branco deve separar a saída de cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5<br />
+10 7 9 8 11<br />
+80 120 100 160<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+7380</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VIII Maratona de Programação IME-USP 2004.
+                </p>
+            </div>
+
+        </body>
+    </html>

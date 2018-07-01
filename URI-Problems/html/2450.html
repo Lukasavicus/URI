@@ -1,0 +1,123 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2450 - Matriz Escada</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2450 - Matriz Escada" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2450</span>
+				<h1>Matriz Escada</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2014 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Joãozinho está aprendendo sobre matrizes. Hoje ele aprendeu como deixar matrizes na forma escada, e está exercitando. Para ajudá-lo, você deve escrever um programa que determine se o resultado dele realmente está no formato correto.</p>
+
+					<p>Uma matriz está na forma escada quando, para cada linha, as condições a seguir forem satisfeitas:</p>
+
+					<ul>
+						<li>Se a linha só possuir zeros, então todas as linhas abaixo desta também só possuem zeros.</li>
+						<li>Caso contrário, seja X o elemento diferente de zero mais à esquerda da linha; então, para todas as linhas abaixo da linha de X, todos os elementos nas colunas à esquerda de X e na coluna de X são iguais a zero.</li>
+					</ul>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha possui dois inteiros <strong>N</strong> e <strong>M </strong>(1 ≤ <strong>N</strong>,<strong> M</strong> ≤ 500), as dimensões da matriz. Cada uma das <strong>N</strong> linhas seguintes contém <strong>M</strong> (0 ≤ <strong>M<sub>ij </sub></strong>≤ 10<sup>5</sup>) inteiros não negativos, os elementos da matriz.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve produzir uma única linha, contendo o caractere ‘S’ caso a matriz esteja no formato escada, ou ‘N’, caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 6</p>
+								<p>1 2 9 9 9 9</p>
+								<p>0 0 3 9 9 9</p>
+								<p>0 0 0 0 5 9</p>
+								<p>0 0 0 0 0 6</p>
+							</td>
+							<td>
+								<p>S</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 8</p>
+								<p>0 5 1 0 3 2 2 0</p>
+								<p>0 0 0 0 4 0 1 2</p>
+								<p>0 0 0 0 0 0 0 0</p>
+								<p>0 0 0 0 0 0 0 0</p>
+								<p>0 0 0 0 0 0 0 0</p>
+							</td>
+							<td>
+								<p>S</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 5</p>
+								<p>1 1 2 3 4</p>
+								<p>0 1 1 4 5</p>
+								<p>0 1 2 3 6</p>
+								<p>0 0 0 2 0</p>
+								<p>0 0 0 0 0</p>
+							</td>
+							<td>
+								<p>N</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática - 2014 Fase 1 Modalidade Universitária (PU)
+				</p>
+			</div>
+
+		</body>
+	</html>

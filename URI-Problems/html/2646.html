@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2646 - Secret Chamber at Mount Rushmore</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2646 - Secret Chamber at Mount Rushmore" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2646</span>
+			<h1>Secret Chamber at Mount Rushmore</h1>
+			<div>
+				<p>Por ACM-ICPC World Finals 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif' alt='US' /> United States</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2646.png" style="float:right; height:349px; width:240px; padding:20px;" /></p>
+
+<p>By now you have probably heard that there is a spectacular stone sculp- ture featuring four famous U.S. presidents at Mount Rushmore. How- ever, very few people know that this monument contains a secret cham- ber. This sounds like something out of a plot of a Hollywood movie, but the chamber really exists. It can be found behind the head of Abraham Lincoln and was designed to serve as a Hall of Records to store impor- tant historical U.S. documents and artifacts. Historians claim that the construction of the hall was halted in 1939 and the uncompleted cham- ber was left untouched until the late 1990s, but this is not the whole truth.</p>
+
+<p>In 1982, the famous archaeologist S. Dakota Jones secretly visited the monument and found that the chamber actually was completed, but it was kept confidential. This seemed suspicious and after some poking around, she found a hidden vault and some documents inside. Unfortu- nately, these documents did not make any sense and were all gibberish. She suspected that they had been written in a code, but she could not decipher them despite all her efforts.</p>
+
+<p>Earlier this week when she was in the area to follow the ACM-ICPC World Finals, Dr. Jones finally dis- covered the key to deciphering the documents, in Connolly Hall of SDSM&amp;T. She found a document that contains a list of translations of letters. Some letters may have more than one translation, and others may have no translation. By repeatedly applying some of these translations to individual letters in the gibberish documents, she might be able to decipher them to yield historical U.S. documents such as the Declaration of Independence and the Constitution. She needs your help.</p>
+
+<p>You are given the possible translations of letters and a list of pairs of original and deciphered words. Your task is to verify whether the words in each pair match. Two words match if they have the same length and if each letter of the first word can be turned into the corresponding letter of the second word by using the available translations zero or more times.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>The first line of input contains two integers <strong>m</strong> (1 ≤ <strong>m</strong> ≤ 500) and <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 50), where <strong>m</strong> is the number of translations of letters and <strong>n</strong> is the number of word pairs. Each of the next <strong>m</strong> lines contains two distinct space-separated letters <strong>a</strong> and <strong>b</strong>, indicating that the letter <strong>a</strong> can be translated to the letter <strong>b</strong>. Each ordered pair of letters (<strong>a</strong>, <strong>b</strong>) appears at most once. Following this are <strong>n</strong> lines, each containing a word pair to check. Translations and words use only lowercase letters ‘a’–‘z’, and each word contains at least 1 and at most 50 letters.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>For each pair of words, display "yes" if the two words match, and "no" otherwise.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>9 5<br />
+c t<br />
+i r<br />
+k p<br />
+o c<br />
+r o<br />
+t e<br />
+t f<br />
+u h<br />
+w p<br />
+we we<br />
+can the<br />
+work people<br />
+it of<br />
+out the</p>
+
+						</td>
+						<td>
+							<p>yes<br />
+no<br />
+no<br />
+yes<br />
+yes</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>3 3<br />
+a c<br />
+b a<br />
+a b<br />
+aaa abc<br />
+abc aaa<br />
+acm bcm</p>
+
+						</td>
+						<td>
+							<p>yes<br />
+no<br />
+yes</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				ACM-ICPC World Finals 2017
+			</p>
+		</div>
+
+	</body>
+</html>

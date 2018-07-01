@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1351 - Supermercado</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1351 - Supermercado" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1351</span>
+            <h1>Supermercado</h1>
+            <div>Por Rodrigo Schmidt <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Sr. Jones é um marido exemplar. Todo sábado de manhã a Sra. Jones lhe dá uma lista de itens a serem comprados no supermercado e ele compra exatamente o que lhe foi pedido, sempre escolhendo as marcas com os menores preços. Mas Sr. Jones odeia ir ao mercado nos sábados, visto que seus corredores estão lotados de carregadores. Ele deseja mudar o jeito com que ele faz compras. Ao invés de ir para lá e para cá para comprar os produtos na lista de sua esposa, ele vai tentar comprar os itens passando apenas uma vez por cada corredor, pegando os produtos na ordem exata dada na lista. Então ele pediu a você para escrever um programa que o ajude com seu novo estilo de fazer compras.</p>
+
+                <p>Dada as informações sobre os produtos disponíveis no supermercado junto com seus preços na ordem em que aparecem na lista de Sr. Jones e a lista de produtos dada pela sua mulher, seu programa deve determinar o menor preço que ele pagaria.</p>
+
+                <p>Sr. Jones compra os produtos na ordem em que eles aparecem em sua lista e ele nunca volta atrás enquanto anda pelos corredores. Portanto, se ele compra o<em> i</em>-ésimo produto no seu caminho para o<em> j</em>-ésimo item da lista, o próximo produto a ser comprado é o <em>(j+1)</em>-ésimo item da lista – e deve ser comprado dos produtos que vem depois de i em seu caminho. A figura abaixo mostra um exemplo onde produtos são identificados por inteiros. Note que diferentes marcas do mesmo produto poder aparecer separadamente. No exemplo Sr. Jones deve comprar os produtos 1, 1, 2, 20 (note que o produto 1 aparece duas vezes na lista). Para o exemplo, o custo mínimo que Sr. Jones pode conseguir, seguindo suas limitações, é 21.30. Note também que com esse novo estilo de fazer comprar pode ser impossível para Sr. Jones comprar todos os itens da sua lista; neste caso, seu programa deve alertar Sr. Jones.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Supermarket.png" style="width: 536px; height: 85px;" /></p>
+
+                <p class="center">(a) Lista da&nbsp;Sra. Jones &nbsp; (b) Lista de produtos com seus respectivos preços e ordem&nbsp;em que aparecem na direção de Sr. Jones pelos corredores.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Seu programa deverá processar dados para diversos casos de teste (sessões de compra). A primeira linha na descrição de uma sessão de compra contém dois inteiros <strong>M </strong>e <strong>N</strong>; <strong>M </strong>indica o número de itens na lista da Sra. Jones (1 ≤ <strong>M </strong>≤ 100) e <strong>N </strong>representa o número total de produtos disponíveis no supermercado (1 ≤ <strong>N </strong>≤ 100,000). 
+				
+				A próxima linha contém <strong>M </strong>inteiros <strong>X<sub>i</sub></strong>, representando a lista de produtos da lista da Sra. Jones (<strong>1 &lt; X<sub>i</sub> </strong>≤ 100000, 1 ≤ i ≤ <strong>M</strong>). Seguem <strong>N</strong> linhas, representando os produtos do supermercado na ordem em que eles aparecem no caminho do Sr. Jones. Cada uma destas linhas contém um inteiro <strong>K </strong>e um número real <strong>P</strong>, que representam, respectivamente, um identificador de produto e seu preço (1 ≤ <strong>K </strong>≤ 100,000). O fim da entrada é indicado por <strong>M </strong>= <strong>N </strong>= 0.</p>
+
+            </div>
+
+            <div class="output">
+                <p>Para cada sessão de compra da entrada, seu programa deve produzir uma linha de saída,&nbsp; contendo o menor custo que Sr. Jones pode conseguir. Se não é possível comprar todos os itens da sessão, imprima “Impossible”. O custo deve ser impresso como um número real com precisão de duas casas decimais, e o último dígito decimal deve ser arredondado. A entrada não vai conter casos de teste onde diferenças de arredondamento são significantes.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>4 8<br />
+                                1 1 2 20<br />
+                                2 0.29<br />
+                                1 0.30<br />
+                                20 0.15<br />
+                                1 1.00<br />
+                                5 0.05<br />
+                                2 10.00<br />
+                                20 20.00<br />
+                                20 10.00<br />
+                                2 5<br />
+                                1 2<br />
+                                3 1.00<br />
+                                4 1.00<br />
+                                2 0.01<br />
+                                1 1.00<br />
+                                2 1.50<br />
+                                2 3<br />
+                                1 2<br />
+                                2 0.05<br />
+                                1 10.00<br />
+                                1 3.00<br />
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>21.30<br />
+                                2.50<br />
+                                Impossible</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2002.
+            </p>
+        </div>
+
+    </body>
+</html>

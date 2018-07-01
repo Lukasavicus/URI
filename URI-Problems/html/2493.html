@@ -1,0 +1,113 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2493 - Jogo do Operador</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2493 - Jogo do Operador" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+			<style>
+				.desc-example {
+					font-family: "Courier New", Courier, "Nimbus Mono L", monospace;
+				}
+			</style>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2493</span>
+				<h1>Jogo do Operador</h1>
+				<div>
+					<p>Por João Marcos Salvanini Bellini de Moraes, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Samu Elmito adora criar jogos peculiares para desafiar seus amigos. Desta vez, ele inventou um jogo chamado "Jogo do Operador", em que ele cria expressões básicas e cada jogador deve escolher uma expressão e preencher a lacuna com o operador correto para validá-la. Os jogadores poderão escolher operadores de somente três tipos: adição, subtração e multiplicação. Porém, se o jogador achar que não há operador entre os três tipos que valide a expressão, poderá responder Impossível.</p>
+
+<p>Sua tarefa é simples: dadas as expressões e as respostas dos jogadores, determinar os jogadores que não passarão para a outra fase do jogo.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por um inteiro <strong>T</strong> (2 ≤ <strong>T</strong> ≤ 50) que indica a quantidade de expressões e de jogadores. Cada caso de teste é composto por <strong>T</strong> expressões na forma "<span class="desc-example">X Y=Z</span>", indicando que <strong>X</strong> operador <strong>Y</strong> (0 ≤ <strong>X</strong>, <strong>Y </strong>≤ 10<sup>3</sup>)<sup> </sup>é igual a <strong>Z </strong>(-10<sup>3</sup> ≤ <strong>Z</strong> ≤ 10<sup>6</sup>), seguido de <strong>T</strong> jogadores e suas respectivas respostas na forma "<span class="desc-example">N E R</span>", sendo <strong>N</strong> o nome do jogador (até 50 caracteres e sem espaços), <strong>E</strong> o índice da expressão escolhida (1 ≤ <strong>E </strong>≤ <strong>T</strong>) e <strong>R </strong>a resposta (+, -, * ou I, indicando Impossível). A entrada termina com EOF (fim de arquivo).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, se todos os jogadores passarem, imprima "<span class="desc-example">You Shall All Pass!</span>"; se nenhum jogador passar, imprima "<span class="desc-example">None Shall Pass!</span>"; caso contrário, imprima, em ordem lexicográfica e entre espaços, o nome dos jogadores que erraram a resposta e, desta forma, não passarão para a próxima fase do jogo.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+<p>8 4=5</p>
+
+<p>2 5=5</p>
+
+<p>1 3=4</p>
+
+<p>Samuel 2 +</p>
+
+<p>Abner 3 +</p>
+
+<p>Aline 1 *</p>
+
+<p>2</p>
+
+<p>1 2=-1</p>
+
+<p>0 7=7</p>
+
+<p>Luiz 2 -</p>
+
+<p>Absolut 1 +</p>
+
+							</td>
+							<td>
+								<p>Aline Samuel</p>
+
+<p>None Shall Pass!</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					The Last Contest 2016 - IFSULDEMINAS
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1274 - P-Networks</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1274 - P-Networks" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1274</span>
+            <h1>P-Networks</h1>
+            <div><p>
+                    Por Rodrigo Cardoso&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" />&nbsp;Brasil</p>
+            </div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Pretty Networks Inc. é uma empresa que constrói alguns artefatos curiosos, cujo propósito é transformar um conjunto de valores de entrada de uma determinada maneira. A transformação é determinada por aquilo que eles chamam de uma P-Network. A imagem abaixo mostra um exemplo de uma P-Network.</p>
+                <p class="center">
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1274.png" style="width: 473px; height: 127px;" /></p>
+                <p>
+                    No caso geral, uma P-Network de ordem N e tamanho M, tem N fios horizontais numerados de 1, 2,. . . N, e M cursos verticais. Cada curso conecta dois fios consecutivos. Não há dois cursos diferentes tocando o mesmo ponto de nenhum fio e não há nenhum curso tocando o ponto mais à esquerda ou mais à direita de qualquer fio. O exemplo acima é uma P-Network de ordem 5 e tamanho 9.</p>
+                    <p>
+                    A transformação determinada por uma P-Network pode ser explicada através de um conjunto de regras que governam a maneira como um P-Network deve ser percorrida:<br />
+                    1. comece no ponto mais à esquerda de um fio, e vá para a direita;<br />
+                    2. cada vez que um curso aparecer mude para o fio conectado, e continue indo da esquerda para a direita;<br />
+                    3. pare quando o ponto mais à direita de um fio for alcançado.<br />
+                    Se partindo do fio i a travessia termina no fio j, dizemos que o P-Network transforma i em j, e denotamos isso com i → j. No exemplo acima, o P-Network determina o conjunto de transformações</p><br/>
+                <p class="center">
+                    {1 → 3, 2 → 5, 3 → 4, 4 → 1, 5 → 2}.</p>
+                <p><br/>
+                    A empresa Pretty Networks contratou você para resolver o seguinte problema de projeto da P-Network: dado um número N e um conjunto de transformações&nbsp;{1 → i<sub>1</sub>, 2 → i<sub>2</sub>, . . . N → i<sub>N</sub>}, decida se uma P-Network de ordem N pode ser construída para realizar estas transformações e, nesse caso, forneça uma P-Network que faça isto.</p>
+                    <p>
+                    Quando existe uma solução com um determinado tamanho, em muitos casos há uma outra solução com um tamanho maior. Cientistas da Pretty Networks afirmaram que se existe uma solução para um problema de projeto da P-Network, então esta solução tem tamanho inferior a&nbsp;4N<sup>2</sup>&nbsp;. Portanto, eles estão interessados apenas em soluções com um tamanho inferior a este limite.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada tem um certo número de problemas de projeto da P-Network. Cada problema é descrito em apenas uma linha que contém os&nbsp;valores&nbsp;<strong>N</strong>, <strong>i<sub>1</sub></strong>, <strong>i<sub>2</sub></strong>,. . . <strong>i<sub>N</sub></strong>, separados por um único espaço em branco. O valor de <strong>N</strong> é a ordem da P-Network desejada, isto é, o seu número de fios (1 ≤ <strong>N</strong> ≤ 20). Os valores <strong>i<sub>1</sub></strong>,&nbsp;<strong>i<sub>2</sub></strong>,. . .&nbsp;<strong>i<sub>N&nbsp;</sub></strong>representam que a P-Network deve determinar o conjunto de transformações {1 → <strong>i<sub>1</sub></strong>, 2 →&nbsp;<strong>i<sub>2</sub></strong>,. . .&nbsp;<strong>N</strong>&nbsp;→&nbsp;<strong>i<sub>N</sub></strong>} (1 ≤ <strong>i<sub>j</sub></strong> ≤ <strong>N</strong>, para cada 1 ≤ <strong>j</strong> ≤ <strong>N</strong>). A entrada termina com uma linha com <strong>N</strong> = 0 e que não deve ser processada.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Cada problema de projeto da P-Network na entrada deverá gerar uma única linha de saída. Se o problema não tem solução a saída deve ser <em>No solution</em>. Caso contrário, a linha deverá conter uma descrição de uma P-Network qualquer (com&nbsp;<strong>N&nbsp;</strong>fios e menos do que 4<strong>N</strong><sup>2</sup>&nbsp;cursos), que realiza o conjunto de transformações solicitado. A descrição é dada por um conjunto de valores&nbsp;<strong>M</strong>,&nbsp;<strong>s<sub>1</sub></strong>,&nbsp;<strong>s<sub>2</sub></strong>, . . .&nbsp;<strong>s<sub>M</sub></strong>, em que os valores consecutivos são separados por um único espaço em branco. O valor de <strong>M</strong> é o tamanho da P-Network, isto é, o número de cursos. Os valores de&nbsp;<strong>s<sub>1</sub></strong>,&nbsp;<strong>s<sub>2</sub></strong>, . . .&nbsp;<strong>s<sub>M</sub></strong>&nbsp;descrevem os cursos da P-Network; isto deve ser entendido como o&nbsp;<strong>i</strong>-ésimo curso da esquerda para a direita, que liga os fios&nbsp;<strong>s<sub>i</sub></strong>&nbsp;e 1 +&nbsp;<strong>s<sub>i</sub></strong>&nbsp;(1 ≤&nbsp;<strong>i</strong>&nbsp;≤&nbsp;<strong>M</strong>). Observe que&nbsp;0 ≤&nbsp;<strong>M</strong>&nbsp;&lt; 4<strong>N</strong><sup>2</sup>&nbsp;, enquanto 1 ≤&nbsp;<strong>s<sub>i</sub></strong>&nbsp;&lt;&nbsp;<strong>N</strong>&nbsp;para cada 1 ≤&nbsp;<strong>i</strong>&nbsp;≤&nbsp;<strong>M</strong>.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                5 3 5 4 1 2<br />
+                                3 1 1 3<br />
+                                2 1 2<br />
+                                1 1<br />
+                                2 2 1<br />
+                                3 1 2 1<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                7 3 4 2 3 4 1 2<br />
+                                No solution<br />
+                                0<br />
+                                0<br />
+                                1 1<br />
+                                No solution</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2005.</p>
+
+        </div>
+
+    </body>
+</html>

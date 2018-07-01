@@ -1,0 +1,115 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2177 - Rio 2016</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema D - Rio 2016" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2177</span>
+				<h1>Rio 2016</h1>
+				<div>
+					<p>Por Marianne Linhares, Universidade Federal de Campina Grande <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Maria adora esportes e está muito animada com o ínicio das Olímpiadas 2016. No auge de sua animação Maria acabou comprando vários ingressos para os jogos e competições, mas infelizmente devido à distância da sua casa para os locais em que os jogo irão acontecer, que pode ser muito grande, ela provavelmente não conseguirá chegar em todas partidas a tempo.</p>
+					<p>Maria sabe que você adora desafios de programação tanto quanto ela adora esportes, então ela te pediu para escrever um programa que dados os locais (posição (x, y) no plano) em que as partidas vão ocorrer e quanto tempo resta até cada partida começar indique quais jogos ela conseguirá chegar a tempo, ou seja antes do jogo começar, se ela sair agora do ponto em que ela está e for diretamente para o local do jogo.</p>
+
+<p>Maria se encontra numa certa posição (x, y) e se move com velocidade 1 metro por minuto (apesar da animação Maria anda lentamente para não perder nenhum pokestop no caminho), a distância entre os pontos, também em metros, é definida pela Distância Euclidiana, e o tempo restante para ínicio das partidas se encontra em minutos.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada consiste da posição de Maria dada por <strong>x </strong>e <strong>y</strong> (0 &le; <strong>x</strong>, <strong>y</strong> &le; 1000) e de um número <strong>n</strong> (1 &le; <strong>n</strong> &le; 10⁶) que indica o número de ingressos que Maria comprou.</p>
+
+<p>As próximas <strong>n</strong> linhas são formadas por 3 números, <strong>xi, yi, ti</strong>, respectivamente a posição <strong>x</strong> do local do jogo <strong>i</strong>, a posição <strong>y</strong> do local do jogo <strong>i</strong>, e o tempo restante para o jogo <strong>i</strong> iniciar (0 &le; <strong>xi</strong>, <strong>yi</strong> &le; 1000 e 1 &le; <strong>ti</strong> &le; 1000000). </p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída deve ser composta de uma única linha contendo os identificadores (índices) ordenados do menor para o maior de quais jogos Maria conseguirá assistir. Se Maria não conseguir assistir nenhum jogo imprima "-1" (sem as aspas)</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>0 0 3</p>
+
+<p>0 1 1</p>
+
+<p>1 0 2</p>
+
+<p>0 1 2</p>
+
+							</td>
+							<td>
+								<p>2 3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>0 0 3</p>
+
+<p>4 5 10</p>
+
+<p>2 3 3</p>
+
+<p>10 10 20</p>
+
+							</td>
+							<td>
+								<p>1 3 </p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Aquecimento para a OBI 2016 - Fase 2
+				</p>
+			</div>
+
+		</body>
+	</html>

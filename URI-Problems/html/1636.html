@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1636 - Permutações Antimonotônicas Cíclicas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1636 - Permutações Antimonotônicas Cíclicas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1636</span>
+                <h1>Permutações Antimonotônicas Cíclicas</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 4</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Uma permutação é uma sequência de números inteiros, que contém cada número inteiro entre 1 e n exatamente uma vez. Neste problema estamos à procura de permutações com propriedades especiais:</p>
+
+<ol>
+	<li>Antimonotônica: para cada 3 valores consecutivos p<sub>i-1</sub>, p<sub>i</sub>, p<sub>i+1</sub> (1 &lt; i &lt; n), pi deve ser tanto o menor ou o maior dos três valores.</li>
+	<li>Cíclica: A permutação deve consistir de apenas um ciclo, isto é, quando nós utilizarmos p<sub>i</sub> como um ponteiro a partir de i a p<sub>i</sub>, ele poderá começar na posição 1 e seguir os ponteiros alcançando todas as posições de n antes de retornar para a posição 1.</li>
+</ol>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>O arquivo de entrada contém vários casos de teste. Cada caso de teste consiste de uma linha contendo um número inteiro <strong>n</strong>, (3 ≤ <strong>n</strong> ≤ 10<sup>6</sup>), o número de inteiros na permutação. A entrada é terminada por <strong>n</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma permutação dos números inteiros de 1 a <strong>n</strong>, que é tanto antimonotônica quanto cíclica. No caso de existirem várias soluções, você pode imprimir qualquer uma. Separe todos os inteiros por caracteres em branco.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3<br />
+5<br />
+10<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>3 1 2<br />
+4 5 2 3 1<br />
+6 10 2 9 3 5 4 7 1 8</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+               <p class="footer">
+                    Univeristy of Ulm Local Contest 2009
+                </p>
+            </div>
+
+        </body>
+    </html>

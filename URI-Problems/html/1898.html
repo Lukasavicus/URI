@@ -1,0 +1,98 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1898 - Soma de Propina</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema F - Soma de Propina" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1898</span>
+				<h1>Soma de Propina</h1>
+				<div>
+					<p>Por Neilor Tonin, URI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A agência gaúcha para investigações criminais denominada OBI (Operação de Baita Investigação) notou que, a exemplo do que ocorreu na Petrobrás, muito dinheiro foi desviado dos cofres públicos do estado para pagamento de propina a políticos nos últimos anos, especialmente pelo partido QU (Quadrilha Unida).</p>
+
+					<p>A investigação está em andamento e a agência recrutou você para converter alguns valores que ficaram com caracteres estranhos após terem sidos descriptografados dos arquivos originais. Sua tarefa neste caso é relativamente simples: basta retirar todos os caracteres estranhos (não numéricos) de cada um dos dois valores disponíveis e somar estes valores. Apenas tome o cuidado de separar da soma os primeiros 11 dígitos do primeiro valor. Eles correspondem ao CPF do corrupto :)</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>	A entrada é composta por duas linhas, cada uma delas contendo entre 1 e 60 caracteres ('0'-'9' e outros caracteres não numéricos ou, pelo menos, 1 caracter '0'-'9') e no máximo um ponto ".". Desconsiderando os caracteres não numéricos, o número final não deve ter mais de 17 caracteres (incluindo o ponto decimal).&nbsp;Qualquer número após a segunda casa decimal deve ser descartado.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima o CPF do corrupto, conforme apresentado abaixo e soma dos valores que foram desviados dos cofres públicos, sempre com duas casas decimais.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7a5a6adfg4a4adsfgsd9fg6aa904aa91#$%11.23<br />
+								42**&amp;774667</p>
+
+							</td>
+							<td>
+								<p>cpf 75644969049<br />
+								42774778.23</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>11#$%11111*&¨1111&*(1198-=&8789."34"8<br />
+								%(&567.22%99</p>
+							</td>
+							<td>
+							    <p>cpf 11111111111<br />
+								<p>11989356.56</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="both"></div>
+	
+				<p class="footer">					
+					Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática-Fase 2, 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

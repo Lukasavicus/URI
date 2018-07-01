@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1675 - Construção de Busca Binária de Heap</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1675 - Construção de Procura Binária de Heap" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1675</span>
+                <h1>Construção de Procura Binária de Heap</h1>
+               <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Leia o enunciado do problema G para as definições sobre heaps. A seguir nós definimos a terminologia básica de heaps. Uma heap é uma árvore cujos nós internos tem, cada um, uma prioridade (definida por um número) sendo que a prioridade de cada nó interno é menor que a prioridade de seu nó-pai. Como consequência, a rais será o nó de maior prioridade da árvore. Isso é uma das razões pelas quais heaps podem comumente ser usadas para a implemantação de filas de prioridade e para ordenações.</p>
+
+                    <p>Uma árvore binária na qual cada nó interno tem ambos um rótulo e uma prioridade, e é tanto uma arvore binária de busca com atenção para rótulos; quanto uma fila com atenção para prioridades, é chamada de treap(árvore-heap). A sua tarefa é: Dado um conjunto de pares de rótulos e prioridades, com rótulos únicos e prioridades únicas, construir uma treap com essas informações.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada caso de teste começa com um inteiro <strong>n</strong>. Você pode assumir que 1≤ <strong>n </strong> ≤ 50000. Então segue <strong>n</strong> pares de strings e números rótulo<sub>1</sub>/prioridade<sub>1 </sub>, ... , rótulo<sub>n</sub>/prioridade<sub>n</sub>. As strings são não-nulas e em caixa-baixa, e os números são inteiros não-negativos. O último caso de teste é seguido por um zero.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Cada linha de cada caso de teste deve conter uma treap com os nós especificados. Uma treap é impressa como (&lt;Sub-treap da Esquerda&gt;&lt;Rótulo&gt;/&lt;Prioridade&gt;&lt;Sub-treap da Direita&gt;) As sub-treaps são impressas recursivamente e omitidas se forem folhas.
+                    </p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>7 a/7 b/6 c/5 d/4 e/3 f/2 g/1</p>
+
+<p>7 a/1 b/2 c/3 d/4 e/5 f/6 g/7</p>
+
+<p>7 a/3 b/6 c/4 d/7 e/2 f/5 g/1</p>
+
+<p>0</p>
+
+                            </td>
+                            <td>
+                                <p>(a/7(b/6(c/5(d/4(e/3(f/2(g/1)))))))</p>
+
+<p>(((((((a/1)b/2)c/3)d/4)e/5)f/6)g/7)</p>
+
+<p>(((a/3)b/6(c/4))d/7((e/2)f/5(g/1)))</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2004/2005
+                </p>
+            </div>
+
+        </body>
+    </html>

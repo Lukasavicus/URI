@@ -1,0 +1,138 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2024 - Empilhando Presentes</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema G - Empilhando Presentes" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2024</span>
+				<h1>Empilhando Presentes</h1>
+				<div>
+					<p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Cansado de gerenciar a produção de presentes e calcular o caminho mínimo para entregá-los às crianças durante o natal, Papai Noel resolveu tirar um cochilo. Quando os duendes perceberam a ausência do Noel eles resolveram tirar uma folga do trabalho para jogar um jogo que vieram elaborando por um tempo.</p>
+
+<p>O jogo que os duendes inventaram envolve <em>N</em> presentes que eles tinham recentemente fabricado, os quais tem formato de cubo com dimensões AxBxC, ou seja, A centímetros de largura, B centímetros de altura e C centímetros de profundidade.</p>
+
+<p>O objetivo é simples: dados os <em>N</em> presentes, ganha o jogo aquele que conseguir colocar os <em>N</em> presentes um em cima do outro formando a pilha de maior altura possível. Os presentes devem ser empilhados em ordem, ou seja, primeiro posiciona-se o presente 1 no chão, em seguida empilha-se o presente 2 em cima do presente 1, e assim por diante.</p>
+
+<p>Vale notar que é possível rotacionar o presente em qualquer eixo de forma que qualquer uma de suas 6 faces esteja paralela ao chão, porém o perímetro desta face deve estar completamente contido no perímetro da face superior do presente abaixo. No caso do primeiro presente é possível escolher qualquer face, pois o chão é grande o suficiente.</p>
+
+<p>Por exemplo, seja <em>N</em> = 2, onde o primeiro presente tem dimensões 5x2x2, e o segundo presente tem dimensões 1x3x4, é possível posicionar o primeiro presente com a face de dimensões 2x2 para baixo e alcançar uma altura igual a 5, porém desta maneira não será possível posicionar o segundo presente em cima deste. Uma possível solução seria posicionar o primeiro presente com a face de dimensões 5x2 para baixo, e posicionar o segundo presente com a face de dimensões 3x1 logo acima deste, alcançando uma solução válida com altura igual a 6, tal como exemplificado na Figura 1.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2024.png" style="width: 400px; height:285px"></p>
+
+<p>Após um bom tempo jogando os duendes ficaram curiosos para saber se realmente chegaram ao melhor resultado, e para isso pediram sua ajuda. Dadas as dimensões dos <em>N</em> presentes, verifique se é possível formar uma pilha com os <em>N</em> presentes e qual seria a altura máxima alcançada.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Cada caso de teste inicia com um inteiro <strong>N</strong>, representando a quantidade de presentes (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>).</p>
+
+<p>Em seguida haverá <strong>N</strong> linhas, cada uma contendo três inteiros cada, <strong>A</strong>, <strong>B</strong> e <strong>C</strong>, representando as medidas dos presentes, conforme especificado no enunciado (1 ≤ <strong>A</strong>, <strong>B</strong>, <strong>C</strong> ≤ 10<sup>4</sup>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste imprima uma linha contendo um inteiro, representando a altura máxima da pilha caso seja possível empilhar os <strong>N</strong> presentes, ou -1 caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2<br />
+5 2 2<br />
+1 3 4</p>
+
+							</td>
+							<td>
+								<p>6</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+3 3 3<br />
+2 2 2<br />
+1 1 1</p>
+
+							</td>
+							<td>
+								<p>6</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2<br />
+2 2 2<br />
+3 3 3</p>
+
+							</td>
+							<td>
+								<p>-1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Contest de Natal 2015.
+				</p>
+			</div>
+
+		</body>
+	</html>

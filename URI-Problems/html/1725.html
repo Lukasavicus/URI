@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1725 - Quadtree II</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1745 - Quadtree II" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1725</span>
+                <h1>Quadtree II</h1>
+                <div>
+                    <p>Por Mark Dettinger <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Quando percebeu que o mapa do tesouro codificado em quadtree era uma falsificação, Florida Jones fez um plano maligno para pregar uma peça no próximo caçador de tesouros que viesse atrás do tesouro. Mas para isso, ele precisa da sua ajuda novamente.</p>
+
+                    <p>Você pode escrever um programa que use uma figura no formato XBM e <em>codifica-la </em>no esquema quadtree?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <ul>
+                    	<li>A primeira linha será “#define quadtree_width <strong>N</strong>”, onde <strong>N</strong> é o tamanho da figura em pixels. (A figura é quadrática, contendo <strong>N</strong>*<strong>N</strong> pixels).</li>
+                    	<li>A segunda linha será “define quadtree_height <strong>N</strong>”, concordando com a primeira.</li>
+                    	<li>A terceira linha será “#define quadtree_bits[ ] = {“.</li>
+                    	<li>Então seguirão <strong>N</strong> linhas, cada uma codificando uma linha de pixels na figura. Haverão <strong>N</strong>/8 números hexadecimais por linha.<br />
+                    	Cada número hexadecimal é composto por 8 bits que codificam 8 pixels da esquerda para a direita (onde o bit da extrema esquerda tem valor 1 e o bit da extrema direita tem valor 128). Os números hexadecimais são impressos no formato 0x<em>dd</em>, onde <em>d</em> é um dos caracteres do conjunto { 0,1,2,3,4,5,6,7,8,9,a,b,c,d,e,f }.<br />
+                    	Exemplo: Os 8 pixels WBBBWWB são escritos como 0x9e. (2 + 4 + 8 + 16 + 128 = 158 = 0x9e)</li>
+                    	<li>A última linha será “};”.</li>
+                    </ul>
+
+                    <p><strong>Nota</strong>: Os comentários no exemplo de entrada (delimitados por /* e */) não são parte da entrada. Eles devem ajudar a explicar o formato <strong>XBM</strong>.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Primeiro, imprima o inteiro <strong>N </strong>(8 ≤<strong> N</strong> ≤ 512) em uma única linha. Então, imprima uma string de letras <strong>B</strong>, <strong>W</strong> e <strong>Q</strong> que corretamente codificam a figura com o esquema quadtree. Finalmente, acabe a string com um caractere de nova linha.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>#define quadtree_width 16</p>
+
+                                <p>#define quadtree_height 16</p>
+
+                                <p>static char quadtree_bits[] = {</p>
+
+                                <p>0xf0,0xf0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* WWWWBBBB WWWWBBBB */</p>
+
+                                <p>0xf0,0xf0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* WWWWBBBB WWWWBBBB */</p>
+
+                                <p>0xf0,0xf0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* WWWWBBBB WWWWBBBB */</p>
+
+                                <p>0xf0,0xf0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* WWWWBBBB WWWWBBBB */</p>
+
+                                <p>0x0f,0x0f,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* BBBBWWWW BBBBWWWW */</p>
+
+                                <p>0x0f,0x0f,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* BBBBWWWW BBBBWWWW */</p>
+
+                                <p>0x0f,0x0f,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* BBBBWWWW BBBBWWWW */</p>
+
+                                <p>0x0f,0x0f,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/* BBBBWWWW BBBBWWWW */</p>
+
+                                <p>0xf0,0xf0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* WWWWBBBB WWWWBBBB */</p>
+
+                                <p>0xf0,0xf0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* WWWWBBBB WWWWBBBB */</p>
+
+                                <p>0xf0,0xf0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* WWWWBBBB WWWWBBBB */</p>
+
+                                <p>0xf0,0xf0,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* WWWWBBBB WWWWBBBB */</p>
+
+                                <p>0x0f,0x0f,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* BBBBWWWW BBBBWWWW */</p>
+
+                                <p>0x0f,0x0f,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* BBBBWWWW BBBBWWWW */</p>
+
+                                <p>0x0f,0x0f,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* BBBBWWWW BBBBWWWW */</p>
+
+                                <p>0x0f,0x0f,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /* BBBBWWWW BBBBWWWW */</p>
+
+                                <p>};</p>
+
+                            </td>
+                            <td>
+                                <p>16</p>
+
+                                <p>QQWBBWQWBBWQWBBWQWBBW</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 1999/2000
+                </p>
+            </div>
+
+        </body>
+    </html>

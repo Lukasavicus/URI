@@ -1,0 +1,113 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2354 - Kill the Werewolf</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problem K - Kill the Werewolf" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2354</span>
+				<h1>Kill the Werewolf</h1>
+				<div>
+					<p>By Luis Fernando Dorelli de Abreu <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>In the popular board game <em>One Night Werewolf</em>, players are distributed randomly in the roles of villagers and Werewolves. The goal of the villagers is to decide together on one person to kill during the night – hopefully they will kill a Werewolf. Werewolves pose as villagers in the hope that the person killed is a villager, not a Werewolf.</p>
+
+<p>In the variation <em>Uncertain Werewolf</em>, only one Werewolf exists and the game consists of two phases. During the first phase the players are still uncertain about who they should vote to kill, so each of them chooses two other players as possible victims. After the first phase the Werewolf reveals himself, and then in the second phase each player has to decide which one of their two initial choices they will vote to kill. The Werewolf is the last one to decide between his two initial choices, doing so after all the other players have decided already.</p>
+
+<p>The Werewolf then loses the game if he has more votes than anyone else. If there is a draw, the Werewolf wins.</p>
+
+<p>You are given the votes of <strong>N</strong> players after the first phase of the game. You should answer how many players could reveal themselves at this point as the Werewolf and still win the game if the other players chose their votes optimally to kill the Werewolf.</p>
+				</div>
+
+				<h2>Input</h2>
+
+				<div class="input">
+					<p>The first line contains an integer <strong>N</strong> (3 ≤ <strong>N</strong> ≤ 50), the number of players in the game. Each of the following <strong>N</strong> lines contains two integers, <strong>a<sub>i</sub></strong> and <strong>b<sub>i</sub></strong> (1 ≤ <strong>a<sub>i</sub></strong> , <strong>b<sub>i</sub></strong> ≤ <strong>N</strong> , <strong>a<sub>i</sub></strong>&nbsp; ≠ <strong> b<sub>i</sub></strong>), the index of the players the i-th player decided to kill in the first voting phase. No player will try to kill himself.</p>
+				</div>
+
+				<h2>Output</h2>
+
+				<div class="output">
+					<p>Output a line with one integer representing the number of players that could win the game if they were the Werewolf and everyone played optimally.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Input Samples</td>
+							<td>Output Samples</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5<br />
+3 4<br />
+1 3<br />
+2 4<br />
+1 3<br />
+2 3</p>
+
+							</td>
+							<td>
+								<p>4</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4<br />
+3 4<br />
+1 4<br />
+4 1<br />
+3 1</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ACM/ICPC South America Contest 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

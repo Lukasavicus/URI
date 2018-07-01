@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1108 - Torres de Telefonia Celular</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1108 - Torres de Telefonia Celular" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1108</span>
+                <h1>Torres de Telefonia Celular</h1>
+               <div><p>Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p></div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Uma nova operadora de telefonia pretende oferecer serviços de telefone residencial em sua cidade. Os telefones serão residenciais, mas a operadora vai utilizar tecnologia de telefonia celular, com torres de transmissão, para evitar os gastos de construir uma rede de cabos por toda a cidade. A potência do transmissor/receptor colocado em uma torre define o raio de cobertura da torre (que por sua vez define a área de cobertura do equipamento, que é um círculo, já que a cidade é perfeitamente plana). O custo do equipamento instalado em cada torre depende de sua potência, e portanto de seu raio de cobertura. A operadora decidiu que utilizará exatamente duas torres na cidade.</p>
+
+<p>
+	O mesmo tipo de equipamento será instalado nas duas torres, ou seja, as duas torres terão o mesmo raio de cobertura. Como a operadora quer poder oferecer o seu serviço para todas as residências, a área de cobertura das duas torres em conjunto deve englobar todas as resid^encias da cidade. Adicionalmente, o raio de cobertura das duas torres deve ser o menor possível, para miniminar o custo dos equipamentos. A figura abaixo mostra duas possíveis configurações de cobertura das duas torres para uma cidade com dez residências. Tanto (a) quanto (b) oferecem cobertura a todas as residências da cidade, mas (b) é a que utiliza o menor raio de cobertura possível.</p>
+<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1108_a.png" style="width: 517px; height: 212px;"></p>
+<p>
+	Dada a localização de cada residência na cidade, você deve escrever um programa para calcular o menor raio de cobertura das torres, de forma a garantir que todas as residências sejam cobertas.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém vários casos de teste. A primeira linha de um caso de teste contém um número inteiro <strong>N</strong>, o número de residências da cidade (3 ≤ <strong>N </strong>≤ 40). Cada uma das <em><strong>N </strong></em>linhas seguintes contém dois inteiros <em><strong>X </strong></em>e <em><strong>Y </strong></em>, separados por um espaço em branco (0 ≤ <strong>X </strong>≤ 10<sup>4</sup> e 0 ≤ <strong>Y </strong>≤ 10<sup>4</sup>), representando a coordenada de uma residência. Cada residência tem uma localização diferente.</p>
+
+<p>
+	O final da entrada é indicado por uma linha que contém apenas um zero.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste da entrada seu programa deve imprimir uma única linha, contendo um número real, escrito com precisão de duas casas decimais, indicando o raio de cobertura do equipamento a ser utilizado nas duas torres.</p>
+
+<p>
+	O resultado de seu programa deve ser escrito na saída padrão.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	3<br>
+	0 0<br>
+	1 0<br>
+	0 4<br>
+	10<br>
+	0 0<br>
+	0 3<br>
+	1 6<br>
+	2 2<br>
+	3 5<br>
+	5 3<br>
+	6 3<br>
+	9 5<br>
+	10 5<br>
+	11 3<br>
+	0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	0.50<br>
+	3.05</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                Maratona de Programação da SBC 2009<br/>
+	            Conversão HTML e ajustes by Neilor Tonin</p>
+    
+            </div>
+
+        </body>
+    </html>

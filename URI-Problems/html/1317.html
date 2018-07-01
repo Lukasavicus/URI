@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1317 - Eu Odeio SPAM, Mas Algumas Pessoas Amam</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br"/>
+        <meta name="description" content="URI Online Judge - Problema 1317 - Eu Odeio SPAM, Mas Algumas Pessoas Amam"/>
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1317</span>
+            <h1>Eu Odeio SPAM, Mas Algumas Pessoas Amam</h1>
+            <div><p>Por Rodolfo Jardim Azevedo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Hoje em dia, infelizmente, mensagens de SPAM estão ficando mais e mais comuns. Algumas delas têm efeito de multiplicação, já que pedem que repasses para teus amigos. Algumas mensagens de SPAM desejam boa sorte, outras, prometem que tornar-se-á rico, e outras apenas lhe lembram o quão importante é contar a seus amigos o quanto você se importa com suas amizades. Eis um exemplo de SPAM:</p>
+                <span class="code">
+                    &nbsp;&nbsp; De: Alice<br />
+                    &nbsp;&nbsp; Para: Bob, Mary, Julia, Paul<br /><br />
+                    &nbsp;&nbsp; Olá, este é um e-mail de boa sorte. Desejo que se torne milionário, mas<br /> 
+                    &nbsp;&nbsp; isso depende de você. Se você:<br>
+                    &nbsp;&nbsp;  * mandar esse e-mail para 10 pessoas você se ficará milionário<br />
+                    &nbsp;&nbsp;  * mandar esse e-mail para 5 ou mais pessoas você ficará rico<br />
+                    &nbsp;&nbsp;  * mandar esse e-mail para menos de 5 pessoas você será pobre<br />
+                    &nbsp;&nbsp; Como eu disse, depende de você. Escreve seu e-mail e seja rico! :-)<br /><br />
+
+                    &nbsp;&nbsp;  Alice
+                </span>
+
+                <p>
+                    Pessoas normalmente reagem de dois modos diferentes quando recebem SPAM:</p>
+                <ul>
+                    <li>Eles descartam a mensagem imediatamente sem ao menos lê-la (eles odeiam SPAM);</li>
+                    <li>Eles encaminham a mensagem para todos que conhecem (eles amam SPAM).</li>
+                </ul>
+
+                <p>
+                    Para esse problema, nós assumiremos que todos amam SPAM, mas ninguém manda a mesma mensagem duas vezes. Cada mensagem de SPAM tem um efeito baseado no número de amigos que você manda as mensagens. Por exemplo: uma mensagem de SPAM poderá lhe dizer que ficarás pobre se mandares a mensagem para 5 amigos, mas serás rico se mandares para 10, e serás o mais rico do mundo se mandares para 20 amigos, e assim vai.</p>
+
+                <p>
+                    Consideraremos apenas as mensagens de SPAM similares ao exemplo acima. Mais especificamente, uma mensagem de SPAM definirá dois valores limiares T1 e T2 e três atribuidores A1, A2 e A3. Uma pessoa adquire um dos três valores dependendo do número de mensagens enviadas para aquele SPAM específico. Se a pessoa encaminha T mensagens e T &lt; T1 então o atributo dele/dela é A1, se T1 ≤ T &lt; T2 então o atributo dele/dela é A2, caso contrário o atributo dela é A3.</p>
+
+                <p>
+                    Lhe será dado os nomes de um grupo de pessoas, e para cada pessoa do grupo, um conjunto de amigos que ele/ela conhece o endereço de e-mail. Lhe será dado um conjunto distinto de mensagens de SPAM, e para cada mensagem de SPAM ela limita valores e atributos, e a informação sobre cada pessoa que iniciou a proliferação do SPAM. Você tem que escrever um programa que determine, para cada pessoa no grupo dado, quais atributos ele/ela adquiriu, baseado no SPAM encaminhado.</p>
+
+                <p>
+                    Você assumirá que o originador do SPAM tenha pelo menos um amigo (em outras palavras, ele/ela enviará pelo menos uma mensagem), e a pessoa não mandará para si mesma.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Seu programa deverá processar vários casos de teste. A primeira linha do caso de teste contém um inteiro <strong>N</strong> indicando o número de pessoas no grupo (2 ≤ <strong>N</strong> ≤ 20). Na entrada a pessoa é identificada por um inteiro de 1 a <strong>N</strong>. As <strong>N</strong> linhas seguintes contêm cada, uma lista de amigos de cada pessoa (a linha <strong>i</strong> contém a lista de amigos da pessoa <strong>i</strong>). A lista de amigos da pessoa <strong>i</strong> descreve os amigos que a pessoa <strong>i</strong> conhece o endereço de e-mail, e consiste de uma lista de inteiros <strong>Fi</strong> (1 ≤ <strong>Fi</strong> ≤ <strong>N</strong>, <strong>Fi</strong> ≠ <strong>i</strong>) terminada pelo valor 0 (zero). Seguindo a lista de amigos vem a descrição das mensagens de SPAM (terá no máximo 100 mensagens). Cada descrição aparece em uma linha diferente. A descrição consiste de um inteiro <strong>P</strong> identificando a pessoa originadora do SPAM (2 ≤ <strong>P</strong> ≤ <strong>N</strong>); dois inteiros <strong>T1</strong> e <strong>T2</strong> representando os valores limites; e os três atributos <strong>A1</strong>, <strong>A2</strong> e <strong>A3</strong> (cada atributo é uma palavra de não mais que vinte letras). A lista de SPAM acaba com uma linha contendo apenas o valor 0 (zero). As <strong>N</strong> linhas contém cada, um nome, que é uma palavra apenas, com não mais que vinte letras. O nome na linha de <strong>i</strong> é o nome da pessoa número <strong>i</strong>. O fim da entrada é indicado por <strong>N</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste seu programa deverá exibir uma lista de nomes seguida dos atributos que adquiriram. Seu programa deve escrever os nomes das pessoas na ordem em que aparecerem na entrada, seguido de ‘:’ e de um espaço, seguido de seus atributos de acordo com os SPAM que enviaram. Os atributos devem ser escritos na ordem que apareceram na entrada; cada atributo deve ser seguido de espaço.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                5<br />
+                                2 3 0<br />
+                                1 3 5 4 0<br />
+                                5 0<br />
+                                0<br />
+                                4 1 0<br />
+                                1 2 4 poor rich millionaire<br />
+                                5 3 10 sad normal happy<br />
+                                0<br />
+                                Bob<br />
+                                Paul<br />
+                                Mary<br />
+                                Alice<br />
+                                Julia<br />
+                                6<br />
+                                2 0<br />
+                                1 3 0<br />
+                                1 2 4 0<br />
+                                1 2 3 5 0<br />
+                                1 2 3 4 0<br />
+                                1 3 4 0<br />
+                                1 2 4 red green blue<br />
+                                1 2 4 dumb normal smart<br />
+                                6 3 5 ugly bad good<br />
+                                0<br />
+                                Peter<br />
+                                Paul<br />
+                                Victoria<br />
+                                John<br />
+                                Julia<br />
+                                Anne<br />
+                                0 0</p>
+                        </td>
+                        <td>
+                            <p>
+                                Bob: rich sad&nbsp;<br />
+                                Paul: millionaire normal&nbsp;<br />
+                                Mary: poor sad&nbsp;<br />
+                                Alice: poor sad&nbsp;<br />
+                                Julia: rich sad&nbsp;<br />
+                                Peter: red dumb ugly&nbsp;<br />
+                                Paul: green normal ugly&nbsp;<br />
+                                Victoria: green normal bad&nbsp;<br />
+                                John: blue smart bad&nbsp;<br />
+                                Julia: blue smart bad&nbsp;<br />
+                                Anne: red dumb bad</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2002.
+            </p>
+        </div>
+
+    </body>
+</html>

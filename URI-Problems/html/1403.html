@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1403 - Meu Avô é Famoso</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1403 - Meu Avô é Famoso" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1403</span>
+            <h1>Meu Avô é Famoso</h1>
+            <div>Por Ricardo Anido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>A família toda ficou excitada pela novidade. Todos sabiam que o meu avô tinha sido um excelente jogador de bridge por décadas, mas quando foi anunciado que ele estaria no Guinness Book, o livro dos recordes, como o jogador de bridge de maior sucesso de todos os tempos, wow, aquilo foi surpreendente.</p>
+
+                <p>A Associação Internacional de Bridge (AIB) tem mantido, por diversos anos, um ranking semanal dos melhores jogadores do mundo. Considerando que cada aparição em um ranking semanal constitui um ponto para o jogador, meu avô foi nominado o melhor jogador de todos os tempos porque ele conseguiu o maior número de pontos.</p>
+
+                <p>Tendo muitos amigos que também estavam competindo com ele, meu avô está extremamente curioso para saber que jogador(es) ficou(aram) com o segundo lugar. Ele precisa de um programa, o qual, dada uma lista com os ranking semanais, descubra que jogador(es) ficou(aram) com o segundo lugar, de acordo com o número de pontos.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém diversos casos de teste. Jogadores são identificados por inteiros de 1 a 10000. A primeira linha de um caso de teste contém dois inteiros <strong>N</strong> e <strong>M</strong>, indicando, respectivamente, o número de rankings disponíveis (2 ≤&nbsp;<strong>N</strong> ≤&nbsp;500) e o número de jogadores em cada ranking (2 ≤&nbsp;<strong>M</strong> ≤&nbsp;500). Cada uma das próximas <strong>N</strong> linhas contém a descrição de um ranking semanal. Cada descrição é composta por uma sequência de <strong>M</strong> inteiros, separados por um espaço em branco, identificando os jogadores que apareceram naquele ranking semanal. Você pode assumir que:</p>
+
+                <ul>
+                    <li>em&nbsp;cada caso de teste há exatamente um melhor jogador e ao menos um segundo melhor jogador,</li>
+                    <li>cada ranking semanal consiste de <strong>M</strong> jogadores distintos.</li>
+                </ul>
+
+                <p>O final da entrada é indicado por <strong>N</strong> = <strong>M</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste da entrada seu programa deve produzir uma linha de saída, contendo o identificador do jogador que é o segundo melhor, em número de aparições nos rankings. Se há um empate para segundo lugar, imprima os identificadores de todos os segundo colocados, em ordem crescente. Cada identificador produzido deve ser seguido por um espaço em branco.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                4 5<br />
+                                20 33 25 32 99<br />
+                                32 86 99 25 10<br />
+                                20 99 10 33 86<br />
+                                19 33 74 99 32<br />
+                                3 6<br />
+                                2 34 67 36 79 93<br />
+                                100 38 21 76 91 85<br />
+                                32 23 85 31 88 1<br />
+                                0 0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                32 33<br />
+                                1 2 21 23 31 32 34 36 38 67 76 79 88 91 93 100
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2004.
+            </p>
+        </div>
+
+    </body>
+</html>

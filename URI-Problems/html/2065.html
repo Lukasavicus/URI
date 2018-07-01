@@ -1,0 +1,133 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2065 - Fila do Supermercado</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2065 - Fila do Supermercado" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2065</span>
+				<h1>Fila do Supermercado</h1>
+				<div>
+					<p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Hoje é a inauguração de um grande supermercado em sua cidade, e todos estão muito excitados com os baixos preços prometidos.</p>
+
+<p>Este supermercado tem <strong>N</strong> funcionários que trabalham no caixa, identificados por números de 1 a <strong>N</strong>, onde cada funcionário leva um determinado tempo <strong>v<sub>i</sub></strong> para processar um item de um cliente. Ou seja, se um cliente tem <strong>c<sub>j</sub></strong> itens em sua cesta, um determinado funcionário levará <strong>v<sub>i</sub></strong>*<strong>c<sub>j</sub></strong> segundos para processar todos os itens deste cliente.</p>
+
+<p>Quando um cliente entra na fila para ser atendido ele espera até que um funcionário esteja livre para o atendê-lo. Se mais de um funcionário estiverem livres ao mesmo tempo, o cliente será atendido pelo funcionário de menor número de identificação. Tal funcionário só estará livre novamente após processar todos os itens deste cliente.</p>
+
+<p>Há <strong>M</strong> clientes na fila para serem atendidos, cada um com um determinado número de itens na sua cesta. Dadas as informações sobre os funcionários nos caixas e os clientes, o gerente pediu sua ajuda para descobrir quanto tempo levará para que todos os clientes sejam atendidos.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha conterá dois inteiros <strong>N</strong> e <strong>M</strong>, indicando o número de funcionários no caixa e o número de clientes, respectivamente (1 ≤ <strong>N</strong> ≤ <strong>M</strong> ≤ 10<sup>4</sup>).</p>
+
+<p>Em seguida haverá <strong>N</strong> inteiros <strong>v<sub>i</sub></strong>, indicando quanto tempo leva para o <strong>i</strong>-ésimo funcionário processar um item (1 ≤ <strong>v<sub>i</sub></strong> ≤ 100, para todo 1 ≤<strong> i</strong> ≤ <strong>N</strong>).</p>
+
+<p>Em seguida haverá <strong>M</strong> inteiros <strong>c<sub>j</sub></strong>, indicando quantos itens o <strong>j</strong>-ésimo cliente tem em sua cesta (1 ≤ <strong>c<sub>j</sub></strong>&nbsp;≤ 100, para todo 1 ≤ <strong>j</strong>&nbsp;≤ <strong>M</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo um inteiro, indicando quanto tempo levará para que todos os clientes sejam atendidos.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 1<br />
+3<br />
+6</p>
+
+							</td>
+							<td>
+								<p>18</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 2<br />
+1<br />
+5 3</p>
+
+							</td>
+							<td>
+								<p>8</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 3<br />
+1 2<br />
+10 5 3</p>
+
+							</td>
+							<td>
+								<p>13</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Aquecimento para a OBI 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

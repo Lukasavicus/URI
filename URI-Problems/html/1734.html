@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1734 - Limite Encontrado</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1736 - Limite Encontrado" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1734</span>
+                <h1>Limite Encontrado</h1>
+                <div>
+                    <p>University of Ulm local Contest <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 5</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Sinais possivelmente de origem extraterrestre foram recebidos e digitalizados pela Aeronautic and Space Administration (que deve estar passando por uma fase desafiadora: "Mas eu quero usar pés, e não metros!"). Cada sinal parece vir em duas partes: uma sequência de valores inteiros n e um inteiro não negativo t. Não vamos entrar em detalhes, mas os pesquisadores descobriram que um sinal codifica dois valores inteiros. Estes podem ser encontrados como o limite inferior e superior de uma subfaixa da sequência cujo valor absoluto de sua soma é mais próximo de t.</p>
+
+                    <p>Dada à sequência de n números inteiros e o alvo não negativo t, você deve encontrar uma variedade não vazia da sequência (ou seja, uma subsequência contínua) e saída de seu índice mais baixo l e seu índice superior u. O valor absoluto da soma dos valores da sequência a partir do l<sup>-nésimo</sup> para o elemento de u<sup>-nésimo</sup> (inclusive) deve ser pelo menos tão perto de t como o valor da soma absoluta quanto qualquer outro intervalo não vazio.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>O arquivo de entrada contém vários casos de teste. Cada caso de teste começa com dois números de <strong>n </strong>(1 ≤ <strong>n</strong> ≤ 10<sup>5</sup>) e <strong>k</strong>. A entrada é terminada por <strong>n</strong> = <strong>k</strong> = 0. Caso contrário, segue <strong>n</strong> inteiros com valores absolutos menores do que 10<sup>4</sup> que constituem a sequência. Em seguida, segue <strong>k</strong> consultas para esta sequência. Cada consulta é um alvo <strong>t </strong>(0 ≤ <strong>t</strong> ≤ 10<sup>9</sup>).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada consulta imprima três números em uma mesma linha: sendo o valor absoluto da soma mais próxima e os índices inferiores e superiores de algum intervalo onde esta soma absoluta é alcançada. Possíveis índices começam com 1 e vão até <strong>n</strong>.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 1</p>
+
+                                <p>-10 -5 0 5 10</p>
+
+                                <p>3</p>
+
+                                <p>10 2</p>
+
+                                <p>-9 8 -7 6 -5 4 -3 2 -1 0</p>
+
+                                <p>5 11</p>
+
+                                <p>15 2</p>
+
+                                <p>-1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1</p>
+
+                                <p>15 100</p>
+
+                                <p>0 0</p>
+
+                            </td>
+                            <td>
+                                <p>5 4 4</p>
+
+                                <p>5 2 8</p>
+
+                                <p>9 1 1</p>
+
+                                <p>15 1 15</p>
+
+                                <p>15 1 15</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 2001/2002.
+                </p>
+            </div>
+
+        </body>
+    </html>

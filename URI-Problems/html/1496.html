@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1496 - Suba os "Ultras"</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1496 - Suba os Ultras" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1496</span>
+                <h1>Suba os "Ultras"</h1>
+                <div>Por Guilherme Albuquerque Pinto <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+A proeminência topográfica de um pico é uma medida de especial interesse para os alpinistas e pode ser definido como se segue: a proeminência de um pico p com a altitude h, em relação ao nível do mar, é o maior valor d tal que qualquer caminho no terreno a partir de p para qualquer pico estritamente superior vai passar através de um ponto de altitude h - d. Se não houver um pico estritamente superior, então a proeminência é h. Aqueles picos com proeminência topográfica maior ou igual a 150000 centímetros (precisão é de grande importância para os alpinistas!) têm um nome especial: eles são chamados de "Ultras".
+Você deve escrever um programa que identifica todos os "Ultras" que ocorrem em um perfil bidimensional de uma cadeia de montanhas representada como uma sequência de pontos. Note que a distância horizontal entre os pontos não é importante, tudo o que você precisa é a altitude de cada ponto. Na figura abaixo, os "Ultras" são os pontos 7, 12, 14, 20 e 23.</p> <br /><p style="text-align: center;"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1496.png" style="width: 590px; height: 240px;"  /> </p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversos casos de teste e termina em EOF. A primeira linha de cada caso contém um inteiro &nbsp;<strong>N</strong> (3 ≤ <strong>N</strong> ≤ 10<sup>5</sup>) que representa o número de pontos em um perfil. A segunda linha contém <strong>N</strong> inteiros Hi que indicam a altitude (em centimetros) dos pontos, na ordem em que eles aparecem no perfil (0 ≤ <strong>Hi</strong> ≤ 10<sup>6</sup> para i = 1, 2, . . . , <strong>N</strong>). Pontos consecutivos tem altitudes diferentes (<strong>Hi</strong> != <strong>Hi+1</strong> for i = 1, 2, . . . , <strong>N</strong> − 1), já o primeiro e o último pontos estão no nível no mar (<strong>H1</strong> = <strong>HN</strong> = 0). Você pode assumir que o perfil contém pelo menos um "Ultra".</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma linha com os índices que todos os "Ultas" no intervalo da montanha, na ordem com que eles aparecem no perfil.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+5<br />
+0 10000 100000 884813 0<br />
+7<br />
+0 100000 0 200000 180000 200000 0<br />
+&nbsp;</p>
+
+                            </td>
+                            <td>
+                                <p>4<br />
+4 6<br />
+&nbsp;</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                    ACM/ICPC South America Contest 2013.
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1191 - Recuperação da Árvore</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1191 - Recuperação da Árvore" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1191</span>
+            <h1>Recuperação da Árvore</h1>
+            <div>
+                <p>Por Sebastião Alves <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " />&nbsp;Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    A pequena Valentina gostava muito de brincar com árvores binárias. Seu jogo favorito era construir árvores binárias aleatórias com letras em maiúsculo nos nodos.<br />
+                    <br />
+                    Este é um exemplo de uma de suas criações:<br />
+                    &nbsp;</p>
+                <p class="center">
+                    <span class="code">D<br />
+                        / \<br />
+                        / &nbsp; \<br />
+                        B&nbsp; &nbsp;&nbsp; E<br />
+                        / \ &nbsp; &nbsp; \<br />
+                        /&nbsp;&nbsp; \ &nbsp; &nbsp; \<br />
+                        A&nbsp; &nbsp;&nbsp; C&nbsp;&nbsp;&nbsp;&nbsp; G<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; /<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; F</span><br />
+                    &nbsp;</p>
+                <p>
+                    Para salvar suas árvores para uso futuro, ela escreveu duas strings para cada árvore: o percurso prefixo (raíz, sub-árvore esquerda, sub-árvore direita) e o percurso infixo (sub-árvore esquerda, raíz, sub-árvore direita).<br />
+                    <br />
+                    Para o desenho acima o percurso prefixo é <span class="code">DBACEGF</span> e o infixo é <span class="code">ABCDEFG</span>.<br />
+                    <br />
+                    Agora, anos depois, olhando para as strings, ela notou que reconstruir as árvores era realmente possível, mas só porque ela não havia usado a mesma letra duas vezes na mesma árvore.<br />
+                    <br />
+                    Reconstruir a árvore a mão tornou-se chato.<br />
+                    <br />
+                    Então agora ela pede que você escreva um programa que faça o trabalho por ela!</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada irá conter um ou mais casos de teste. Cada caso de teste consiste em uma linha contendo duas strings representando o percurso prefixo e infixo de uma árvore binária. Ambas as strings consistem de letras maiúsculas, sem repetir. (Então elas não são maiores de 26 caracteres.)<br />
+                    <br />
+                    Entrada termina com EOF (fim de arquivo).</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste, imprima uma linha com o percurso posfixo (sub-árvore esquerda, sub-árvore direita, raíz).</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                DBACEGF ABCDEFG<br />
+                                BCAD CBAD</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                ACBFGED<br />
+                                CDAB</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Adaptação, entradas e saídas por Jean Bez</p>
+
+        </div>
+
+    </body>
+</html>

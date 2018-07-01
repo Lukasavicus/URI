@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1741 - Notação Reversa de João</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1741 - Notação Reversa de João" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1741</span>
+                <h1>Notação Reversa de João</h1>
+                <div>
+                    <p>Por Contest Road to Fortaleza VII <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    
+                <p> O pequeno João está aprendendo como resolver expressões aritmética. Mas as expressão convencionais são muito
+                chatas para ele. Por causa disso, o seu pai está ensinando como resolver expressões escritas em formas diferentes.
+                A primeira forma que ele aprendeu é a Notação Polonesa Reversa, uma forma interessante que não precisa de parentêses
+                . João achou interessante essa notação, mas achou que poderia criar uma ainda mais legal. Por isso ele criou
+                a Notação Reversa de João (NRJ). </p>
+
+                <p> João chegou a seguinte definição recursiva para NRJ</p>
+
+                <ul>
+                    <li>Um único dígito é uma expressão válida e o resultado é o valor deste dígito.</li>
+                    <li>Um operador binário (+, −, * or /), seguido por duas expressões válidas, é uma expressão válida. O resultado
+                    dessa expressão é aplicação do operador com os dois argumentos trocados. Isto é, + a b vale a soma dos dois operandos
+                    - a b, vale b - a, * a b vale o produto dos dois operandos e /a b vale floor(b/a).</li>
+                </ul>
+
+                <p> João agora se diverte escrevendo e resolvendo expressões nesse novo formato. Como ele é uma criança aventureira,
+                ele gosta de expressões grandes. Porém, algumas vezes ele acha algum problema. Parte da expressão que ele escreve não
+                tem solução, porque elas estão mal-formadas ou ocasionam divisão por 0. Mas quando ele resolve novamente, encontra outro valor</p>
+
+                <p> Agora ele gostaria de ter certeza do resultado. Como você realmente gosta do João, você escreveu um programa
+                para ajudá-lo</p>
+
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+                <p> A entrada contém diversos cados testes. Cada caso teste é uma linha com <strong>n</strong> caracteres (1 ≤ <strong>n</strong> ≤ 2×10<sup>6</sup>)
+                que pode possivelmente representar uma expressão em NRJ. Essa expressão conterá apenas dígitos de 0 a 9 e os operadores mencionados acima separados por um único espaço.</p>
+
+                <p> A entrada termina com fim de arquivo.</p>
+
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso teste, imprima uma única linha no seguinte formato.</p>
+
+                    <p><strong>“The answer is N.”</strong> se a expressão é válida, pode ser resolvida e o resultado é N</p>
+                    
+                    <p><strong>“Division by zero.”</strong> se a expressão é válida sintaticamente, mas existe divisão por 0.</p>
+                    
+                    <p><strong>“Invalid expression.”</strong> se a expressão não pode ser resolvida em NRJ</p>
+
+                    <p>Todos os resultados, tanto finais quanto intermediários caberão em um inteiro com sinal de 32 bits.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+<p>                                
++ 2 2<br>
+- 5 * 2 * 7 8<br>
+/ 2 0<br>
+/ 0 2<br>
+2 3 +<br>
+</p>
+                            </td>
+                            <td>
+<p>                               
+The answer is 4.<br>
+The answer is 107.<br>
+The answer is 0.<br>
+Division by zero.<br>
+Invalid expression.<br>
+</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Road to Fortaleza VII - 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

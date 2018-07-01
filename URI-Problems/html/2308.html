@@ -1,0 +1,152 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2308 - Museu</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2308 - Museu" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2308</span>
+				<h1>Museu</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2006 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Desde que o arquiteto Frank Gehry projetou o Museu Guggenheim de Bilbao, os museus têm sido construídos com formas cada vez mais complexas, fugindo de padrões pré-estabelecidos e de simetrias. Um típico museu moderno é&nbsp;composto por um conjuto de salas ligadas por corredores e escadas, sem preocupação com a prédefinição de caminhos a serem seguidos pelas pessoas.</p>
+
+<p>Henriqueta é&nbsp;uma professora do ensino fundamental que deseja visitar o museu da Ordem Brasileira de Medicina (OBM) para mostrar aos seus alunos de ciências como o corpo humano funciona e como as cirurgias eram feitas nos séculos XIX e XX. Henriqueta quer planejar uma visita pelas salas do museu, obedecento as seguintes restrições:</p>
+
+<ul>
+	<li>a visita deve começar e terminar em uma mesma sala;</li>
+	<li>exceto a sala de partida, nenhuma sala do museu pode ser visitada mais de uma vez;</li>
+	<li>a visita deve incluir pelo menos duas salas;</li>
+	<li>os corredores são unidirecionais, ou seja, as pessoas podem caminhar, em um corredor, apenas em uma direção.</li>
+	<li>a visita deve tomar o menor tempo possível.</li>
+</ul>
+
+<p>Um estudo preliminar, realizado pelo próprio museu, indica o tempo médio que cada visitante fica em uma sala e quanto tempo leva-se para atravessar um corredor ou uma escada. Henriqueta quer a sua ajuda para calcular o tempo total da menor visita que ela pode efetuar, obedecendo as restrições dadas.</p>
+
+<p>Escreva um programa que, dados um conjunto de salas, um conjunto de corredores e escadas que ligam essas salas e o tempo necessário para percorrer cada sala e cada corredor, determine qual é&nbsp;o menor tempo possível para uma visita. Note que o tempo de visita da sala onde a visita se inicia deve ser contado apenas uma vez.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado). A primeira linha da entrada contém dois inteiros <strong>S</strong> e <strong>C</strong>, que indicam, respectivamente, o número de salas (1 ≤ <strong>S</strong> ≤ 1000) e o número de corredores e escadas (1 ≤ <strong>C</strong> ≤ 1000). As salas são numeradas de 1 a <strong>S</strong>. A segunda linha contém <strong>S</strong> inteiros representando o tempo gasto para percorrer cada sala. Cada uma das <strong>C</strong> linhas seguintes descreve um corredor ou escada. A descrição ´e composta por três inteiros, <strong>I</strong>, <strong>F</strong> e <strong>T</strong> , indicando que o corredor somente pode ser percorrido da sala <strong>I</strong> (1 ≤ <strong>I</strong><strong> </strong>≤ <strong>N</strong>) para a sala <strong>F</strong> (1 ≤ <strong>F</strong> ≤ <strong>N</strong>) no tempo <strong>T</strong> (1 ≤ <strong>T</strong> ≤ 1000). O tempo total máximo é&nbsp;sempre menor ou igual a 1000000.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na saída padrão, uma única linha contendo o tempo gasto na visita de menor duração que Henriqueta pode realizar no museu. Existe pelo menos uma visita que atende as restrições impostas.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 2<br />
+1 1<br />
+1 2 1<br />
+2 1 3</p>
+
+							</td>
+							<td>
+								<p>6</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>5 6<br />
+5 5 10 10 5<br />
+1 2 1<br />
+2 3 1<br />
+5 1 1<br />
+3 4 1<br />
+4 1 1<br />
+5 2 1</p>
+
+                    </td>
+                    <td>
+                        <p>34</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>8 10<br />
+3 10 8 4 1 1 8 1<br />
+1 2 1<br />
+1 3 10<br />
+4 1 1<br />
+5 8 1<br />
+3 7 1<br />
+7 5 2<br />
+8 4 2<br />
+2 3 2<br />
+3 6 1<br />
+6 7 2</p>
+
+                    </td>
+                    <td>
+                        <p>42</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2006 Fase 1 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

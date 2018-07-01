@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1689 - Radares</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1689 - Radars" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1689</span>
+                <h1>Radares</h1>
+                <div>
+                    <p>Por Rodrigo Rusa, ICMC - USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1 second</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Antonio, prefeito de Rio Pequeno, está querendo implantar radares na estrada principal da cidade. </p>
+
+                    <p>Para isso, ele tem uma lista de possíveis pontos onde os radares podem ser instalados. Cada radar tem um lucro associado. Sabe-se que a distância entre dois radares não pode ser inferior a  <em>K</em>, de acordo com a legislação de trânsito. </p>
+
+                    <p>Dada a lista de pontos e os seus lucros, a sua tarefa é ajudar Antonio a escolher os pontos para instalar os radares de modo que o lucro seja maximizado. Printe o lucro máximo!</p>
+
+                    <p>Por exemplo, imagine radares nas posições 1, 2 and 3, com lucro 2, 5 e 3, respectivamente. Se <em>K</em> for igual a 2, uma solução ótima seria escolher os radares nas posições 1 e 3, somando 5 de lucro.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha conterá um número <strong>T</strong> (<strong>1</strong> ≤ <strong>T</strong> ≤ <strong>100</strong>), indicando a quantidade de casos de teste.</p>
+
+                    <p>Para cada caso de teste, a primeira linha conterá um inteiro <strong>N</strong> (<strong>1</strong> ≤ <strong>N</strong> ≤ <strong>10<sup>6</sup></strong>) e <strong>K</strong> (<strong>1</strong> ≤ <strong>K</strong> ≤ <strong>10<sup>6</sup></strong>), o número de radares e a menor distância entre <strong>2</strong> radares, respectivamente. A próxima linha conterá <strong>N</strong> inteiros separados por espaços, indo de <strong>1</strong> até <strong>10<sup>6</sup></strong>, indicando a posição dos radares, em ordem crescente. A última linha conterá <strong>N</strong> inteiros positivos separados por espaços, indo de <strong>1</strong> a <strong>10<sup>3</sup></strong>, indicando o lucro de cada radar.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima um único número, a resposta para o problema.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+                                <p>2 1</p>
+
+                                <p>1 1</p>
+
+                                <p>3 2</p>
+
+                                <p>3 2</p>
+
+                                <p>1 2 3</p>
+
+                                <p>2 5 3</p>
+
+                                <p>5 5</p>
+
+                                <p>1 5 10 15 17</p>
+
+                                <p>5 20 10 15 25</p>
+
+                            </td>
+                            <td>
+                            <p>3</p>
+                                <p>5</p>
+
+                                <p>55</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Dados de entrada gigantesco, cuidado com certas linguagens!</br>
+                    Contest Road to Fortaleza II 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

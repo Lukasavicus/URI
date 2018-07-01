@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2687 - Dominação Bacteriana</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 0002 - Dominação Bacteriana" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2687</span>
+			<h1>Dominação Bacteriana</h1>
+			<div>
+				<p>Por Samuel Lucas Santos Gomes, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>O Instituto Federal do Sul de Minas (IF), campus Muzambinho abriu vagas para o novo curso superior: Medicina veterinária. A coordenadora do curso já previa alguns problemas com as bactérias estudadas, pois é inevitável que um pote com bactérias caia no chão. Se isso acontecesse, seria difícil controlá-las pois para aplicação do antídoto é necessária uma proporcionalidade, além disso precisa ser jogado ao redor da bactéria, matando de fora para dentro.</p>
+
+<p>Além de uma quantidade exata, o antídoto tem que ser jogado ao redor da bactéria, por isso a área da bactéria precisa ser calculada para que a coordenadora possa aplicar a dose certa. A areá de uma bactéria é dada em um grid(x,y) e nele a coordenadora marca a borda da bactéria representados por 1. A partir disso a área da bactéria é dada pelo (perímetro(borda(1)) + o conteúdo(o lado de dentro da borda ou seja quantidade de zeros cercados por 1) dividido por dois, uma média simples.</p>
+
+<p>Por sua boa reputação, pediu a você para desenvolver um aplicativo que resolva esse problema. Valendo alguns pontos extra, desenvolva o algorítimo capaz de calcular a área dominada pela bactéria, que por sinal possui formatos muitos bizarros, esboçada pela coordenadora, para que a aplicação do antídoto tenha resultado.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A entrada possui <strong>Q</strong>(0 &lt; <strong>Q</strong> &lt; 100) quantidades de bactérias expostas, e em seguida uma pequena descrição da área, composta de um inteiro <strong>L</strong> (0 &lt; <strong>L</strong> &lt; 15) indicando a largura e altura do grid e por último  o grid(<strong>L</strong>x<strong>L</strong>) com o desenho da borda da bactéria.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Como informado, exiba a área dominada com duas casas decimais.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>2<br />
+8<br />
+0 0 0 0 0 0 0 0<br />
+0 1 1 1 1 1 1 0<br />
+0 1 1 1 0 0 1 0<br />
+0 0 0 1 0 0 1 0<br />
+0 0 1 1 0 0 1 0<br />
+0 0 0 1 1 1 0 0<br />
+0 0 0 1 1 0 0 0<br />
+0 0 0 0 0 0 0 0<br />
+9<br />
+1 0 0 1 0 1 0 0 1<br />
+0 1 0 1 0 1 0 1 0<br />
+0 0 1 1 1 1 1 0 0<br />
+0 1 1 0 0 0 1 1 0<br />
+0 0 1 0 0 0 1 0 0<br />
+0 1 1 0 0 0 1 1 0<br />
+0 1 0 0 0 0 0 1 0<br />
+0 1 1 1 1 1 1 1 0<br />
+1 0 0 1 0 1 0 0 1</p>
+
+						</td>
+						<td>
+							<p>13.00<br />
+25.00</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				Primeiro Contest Sam Well - IFSULDEMINAS
+			</p>
+		</div>
+	</body>
+</html>

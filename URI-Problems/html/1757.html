@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1757 - Viagem Barril</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1757 - Viagem Barril" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1757</span>
+                <h1>Viagem Barril</h1>
+                <div>
+                    <p>Por Victor Marcilio Peixoto, UNIVASF <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Donkey Kong tem alguns assuntos pendentes a resolver ao redor do país e como está com muita pressa, optou por se deslocar de um local à outro através do SUTVB (Sistema Unificado de Transporte Via Barril). </p>
+
+                    <p class="center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/contests/D_01.png" style="height:300px; width:400px" /></p>
+
+                    <p>Cada uma das cidades possui um único barril que consegue disparar para o barril de qualquer outra cidade que o "passageiro" desejar ir.</p>
+
+                    <p>Donkey quer fazer uma viagem discreta e pediu sua ajuda para encontrar um conjunto de rotas que minimize a quantidade de disparos em que ele é visto.</p>
+
+                    <p>O conjunto de rotas que Donkey deseja encontrar depende do posicionamento das nuvens. Como mostra a figura acima, os barris ficam imediatamente acima das nuvens. O plano de Donkey é utilizar as nuvens para esconder seu trajeto. Pra facilitar seu trabalho, Donkey te emprestou um radar que mostra quais rotas podem ser visualizadas do solo em um dado momento.</p>
+
+                    <p>Sua tarefa é dizer a Donkey qual a menor quantidade de rotas visíveis que ele precisará usar de modo que consiga chegar a qualquer cidade que deseje.</p>
+
+                    <p>Cada rota é considerada apenas uma vez na contagem, independente da direção em que for usada. Em outras palavras, Se a rota A-B é visível e ele usar 10 vezes essa rota, só será contabilizado como 1 rota visível.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada conterá um inteiro <strong>T</strong> (1 ≤ <strong>T</strong> ≤ 100) indicando o número de casos de teste.</p>
+
+                    <p>A primeira linha de cada caso de teste contém os inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 100) e <strong>V </strong>(0 ≤ <strong>V</strong> &lt; <strong>N</strong><sup>2</sup>/2), a quantidade de cidades e a quantidades de rotas visíveis do solo, respectivamente.</p>
+
+                    <p>As próximas <strong>V </strong>linhas conterão os inteiros <strong>A</strong><sub><strong>i</strong> </sub>e <strong>B<sub>i</sub></strong> (<strong>A<sub>i </sub></strong>≠ <strong>B<sub>i</sub></strong>; 0 ≤ <strong>A</strong><sub><strong>i</strong>,</sub> <strong>B<sub>i</sub></strong> &lt; <strong>N</strong>) , indicando que a rota entre os barris das cidades <strong>A</strong><sub><strong>i</strong> </sub>e <strong>B<sub>i</sub>​</strong> encontra-se visível do solo. Em nenhum caso de teste o par <strong>A</strong><sub><strong>i,</strong></sub> <strong>B<sub>i</sub> </strong>aparecerá mais que uma vez.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma única linha contendo o inteiro que representa a menor quantidade de rotas visíveis que Donkey deverá usar.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+                                5 4<br />
+                                0 1<br />
+                                0 2<br />
+                                0 3<br />
+                                0 4<br />
+                                5 4<br />
+                                0 1<br />
+                                0 2<br />
+                                0 3<br />
+                                2 4</p>
+
+                            </td>
+                            <td>
+                                <p>1</p>
+
+                                <p>0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Contest Peixoto 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

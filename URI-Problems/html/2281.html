@@ -1,0 +1,129 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2281 - Cutting Cheese</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problem D - Cutting Cheese" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2281</span>
+				<h1>Cutting Cheese</h1>
+				<div>
+					<p>By ICPC 2015 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ma.gif' alt='MA' /> Morocco</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+
+					<img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_155_D.png" style="float:right" width="400" alt="Cheese" />
+
+					<p>Of course you have all heard of the International Cheese Processing Company. Their machine for cutting a piece of cheese into slices of exactly the same thickness is a classic. Recently they produced a machine able to cut a spherical cheese (such as Edam) into slices – no, not all of the same thickness, but all of the same weight! But new challenges lie ahead: cutting Swiss cheese.</p>
+
+					<p>Swiss cheese such as Emmentaler has holes in it, and the holes may have different sizes. A slice with holes contains less cheese and has a lower weight than a slice without holes. So here is the challenge: cut a cheese with holes in it into slices of equal weight.</p>
+
+					<p>By smart sonar techniques (the same techniques used to scan unborn babies and oil fields), it is possible to locate the holes in the cheese up to micrometer precision. For the present problem you may assume that the holes are perfect spheres.</p>
+
+					<p>Each uncut block has size 100×100×100 where each dimension is measured in millimeters. Your task is to cut it into s slices of equal weight. The slices will be 100 mm wide and 100 mm high, and your job is to determine the thickness of each slice.</p>
+				</div>
+
+				<h2>Input</h2>
+
+				<div class="input">
+					<p>The first line of the input contains two integers <strong>n</strong> and <strong>s</strong>, where 0 ≤ <strong>n</strong> ≤ 10 000 is the number of holes in the cheese, and 1 ≤ <strong>s</strong> ≤ 100 is the number of slices to cut. The next <strong>n</strong> lines each contain four positive integers <strong>r</strong>, <strong>x</strong>, <strong>y</strong>, and <strong>z</strong> that describe a hole, where <strong>r</strong> is the radius and <strong>x</strong>, <strong>y</strong>, and <strong>z</strong> are the coordinates of the center, all in micrometers.</p>
+
+					<p>The cheese block occupies the points (<strong>x</strong>, <strong>y</strong>, <strong>z</strong>) where 0 ≤ <strong>x</strong>, <strong>y</strong>, <strong>z</strong> ≤ 100 000, except for the points that are part of some hole. The cuts are made perpendicular to the <strong>z</strong> axis.</p>
+
+					<p>You may assume that holes do not overlap but may touch, and that the holes are fully contained in the cheese but may touch its boundary.</p>
+				</div>
+
+				<h2>Output</h2>
+
+				<div class="output">
+					<p>Display the <strong>s</strong> slice thicknesses in millimeters, starting from the end of the cheese with <strong>z</strong> = 0. Your output should have an absolute or relative error of at most 10<sup>−6</sup>.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Input Samples</td>
+							<td>Output Samples</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>0 4 </p>
+
+							</td>
+							<td>
+								<p>25.000000000</p>
+
+								<p>25.000000000</p>
+
+								<p>25.000000000</p>
+
+								<p>25.000000000</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 5</p>
+
+								<p>10000 10000 20000 20000</p>
+
+								<p>40000 40000 50000 60000</p>
+
+							</td>
+							<td>
+								<p>14.611103142</p>
+
+								<p>16.269801734</p>
+
+								<p>24.092457788</p>
+
+								<p>27.002992272</p>
+
+								<p>18.023645064</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC 2015 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

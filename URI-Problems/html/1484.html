@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1484 - Tecle & Some</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1484 - Tecle & Some" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1484</span>
+            <h1>Tecle & Some</h1>
+            <div>Por Ricardo Anido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brazil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Strike Boy, como o apelido sugere, é um garoto fanático por todo tipo de jogos em computador. Ele está passando as férias em uma ilha paradisíaca, onde computadores não são permitidos. Ele se divertiu por algum tempo com os jogos em seu telefone celular, mas a bateria acabou e não há eletricidade na ilha, de forma que ele parou de jogar. Strike Boy então decidiu inventar um novo passatempo, usando o teclado de seu telefone celular. Neste novo jogo, para dois jogadores, um deles escolhe dois inteiros <em>S</em> e <em>D</em>. O jogador oponente deve então encontrar uma sequência de termos tal que:</p>
+
+                <ul>
+                    <li>Cada termo da sequência é um número com <em>D</em> dígitos decimais, exceto pelo último termo, que pode ter entre 1 e <em>D</em> dígitos;</li>
+                    <li>A soma de todos os termos da sequência é igual a <em>S</em>;</li>
+                    <li>Os dígitos utilizados para formar um termo correspondem às teclas de um teclado padrão de telefone celular (‘0’ a ‘9’);</li>
+                    <li>Cada dígito é utilizado no máximo uma vez na sequência;</li>
+                    <li>O primeiro termo de uma sequência pode começar com qualquer dígito, mas a ordem dos dígitos da sequência, quando lidos da esquerda para a direita, é tal que a próxima tecla corresponde sempre a uma tecla imediatamente vizinha da tecla utilizada previamente (na vertical, na horizontal ou na diagonal).</li>
+                </ul>
+
+                <p>Por exemplo, se <em>S</em> = 230 e <em>D</em> = 3, há apenas duas soluções possíveis obedecendo as regras do jogo: [074, 156] e [085, 142, 3]. A sequência [230] não é uma solução porque a tecla ‘3’ não é vizinha da tecla ‘0’.</p>
+
+                <p style="text-align: center;"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Tecle%20%26%20Some.png" style="width: 426px; height: 120px;" /></p>
+
+                <p>Imagem da esquerda: Teclado ilustrando as teclas utilizadas para formar a sequência [074, 156]</p>
+
+                <p>Imagem da direita: Teclado ilustrando as teclas utilizadas para formar a sequência [085, 142, 3]</p>
+
+                <p>Ajude Strike Boy a verificar se as respostas do oponente estão corretas: escreva um programa que, dados <em>S</em> e <em>D</em>, imprima todas as soluções possíveis.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. Cada caso de teste consiste em apenas uma linha, contendo dois inteiros <strong>S</strong> e <strong>D</strong>, separados por um espaço, representando a soma desejada e o número de dígitos de cada termo (0 ≤ <strong>S</strong> ≤ 10.000.000.000 e 1 ≤ <strong>D</strong> ≤ 10). O final da entrada é indicado por <strong>S</strong> = <strong>D</strong> = −1.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste da entrada seu programa deve produzir uma resposta. A primeira linha de uma resposta deve conter um identificador do caso de teste, no formato '#i', onde 'i' tem inicialmente o valor 1 e é incrementado a cada caso de teste. Então, se uma solução para o passatempo existe, seu programa deve produzir uma lista das possíveis sequências de termos. Se mais de uma sequência é possível, elas devem aparecer em ordem lexicográfica crescente. Cada sequência de termos deve ser impressa em uma linha, com os termos separados por um espaço em branco. Se não há solução, seu programa deve imprimir uma linha contendo a palavra 'impossivel' (note ausência de acentuação).</p>
+
+                <p><em>Definição:</em> considere as sequências <em>Sa</em> = a<sub>1</sub>a<sub>2&nbsp;</sub>... a<em><sub>m</sub></em> e <em>S<sub>b</sub></em> = b<sub>1</sub>b<sub>2</sub> ... b<em><sub>n</sub></em>. <em>S<sub>a</sub></em> precede <em>S<sub>b</sub></em> em ordem lexicográfica se e apenas se S<sub>b</sub> é não-vazia e uma das seguintes condições é verdadeira:</p>
+
+                <ul>
+                    <li>S<sub>a</sub> é uma sequência vazia;</li>
+                    <li>a<sub>1</sub> &lt; b<sub>1</sub>;</li>
+                    <li>a<sub>1</sub> = b<sub>1</sub> e a sequência a<sub>2</sub>a<sub>3</sub> ...&nbsp;a<sub>m</sub> precede a sequência b<sub>2</sub>b<sub>3</sub> ...&nbsp;b<sub>n</sub>.</li>
+                </ul>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>7 1<br />
+                                10 2<br />
+                                230 3<br />
+                                6311 4<br />
+                                2 2<br />
+                                -1 -1</p>
+
+                        </td>
+                        <td>
+                            <p>#1<br />
+                                0 7<br />
+                                1 2 4<br />
+                                1 4 2<br />
+                                2 1 4<br />
+                                2 4 1<br />
+                                2 5<br />
+                                4 1 2<br />
+                                4 2 1<br />
+                                5 2<br />
+                                7<br />
+                                7 0<br />
+                                #2<br />
+                                impossivel<br />
+                                #3<br />
+                                074 156<br />
+                                085 142 3<br />
+                                #4<br />
+                                0896 5412 3<br />
+                                0986 5321 4<br />
+                                0986 5324 1<br />
+                                0987 5324<br />
+                                #5<br />
+                                2</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+              Maratona de Programacao da SBC 2005.
+            </p>
+        </div>
+
+    </body>
+</html>

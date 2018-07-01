@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2688 - Escolhendo um Lugar</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 1007 - Escolhendo um Lugar" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2688</span>
+			<h1>Escolhendo um Lugar</h1>
+			<div>
+				<p>Por Samuel Lucas Santos Gomes, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>As refeições do refeitório do Instituto Federal do Sul de Minas (IF), campus Muzambinho são uma delícia, todos os dias os estudantes esperam ansiosamente para degustar suas delícias. Webscrit Junior (WBJ), sempre é um dos últimos da fila e encontra o refeitório quase lotado, só com algumas cadeiras vagas. Como WBJ é muito observador ele anda pelos corredores, procurando lugares disponíveis para sentar. Um lugar onde ele possa sentar é a cadeira disponível onde a média da altura das pessoas adjacentes daquele lugar seja menor que o tamanho de WBJ e sempre o mais perto da saída (que se encontra na linha 1 coluna 8, indicado na figura pelo numero 77. O número 77 foi adicionado apenas para facilitar a visualização). Todo esse cuidado para depois correr nos espaços livre, e não perder nenhum segundo da sua matéria preferida (AED).</p>
+
+<p>Abaixo temos um exemplo do refeitório vazio:</p>
+
+<center><p><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2688.png" /></p></center>
+
+<p>Atenção:<br />
+- A prioridade é a cadeira que tenha a média dos adjacentes menor que a altura e o menor caminho até a saída;<br />
+- Não existem lugares disponíveis nas paredes (88), nos espaços fora do refeitório (11) ou nos últimos lugares da mesa (nas quinas); não se tem uma boa visualização do refeitório sentando nas quinas;<br />
+- A cada cadeira que WEJ passa é considerado 1 passo;<br />
+- Não haverá empates, sempre terá uma cadeira que atende os requesitos;<br />
+- Os "00" da figura servem para mostrar onde as cadeiras ficam, APENAS para facilitar visualização;<br />
+- A saída do refeitório é fixa, sendo sempre na posição [Linha 1 | Coluna 8]. Na imagem, essa cordenada contém o numero 77 apenas para facilitar a visualização do refeitório.<br />
+- Assim como a saída é sempre fixa o tamanho do refeitório (13x13) também é fixo;<br />
+- Os adjacentes da cadeira são todas as cadeiras que estão ao redor;<br />
+- A saída (1,8) será sempre uma parede;</p>
+
+<p>Pegando a entrada abaixo como exemplo temos:<br />
+- &nbsp;Cadeira 1 com posição (L = 3 | C = 3);<br />
+- &nbsp;Cadeira 2 com posição (L = 6 | C = 6);<br />
+- &nbsp;Cadeira 3 com posição (L = 8 | C = 12);<br />
+* a contagem começa apartir do um.</p>
+
+<p>Suponhamos que a cadeira 1 e 2, citadas a cima (como base), atende os critérios da média de seus adjacentes. Podemos concluir que a cadeira 1 está mais perto da saída do que a cadeira 2, pois o número de cadeiras que WBJ irá passar até a saída é menor. E é mais perto que a cadeira 3(L = 8 | C = 12) que além de estar na quina da mesa (um local considerável) está longe da saída.</p>
+
+<p>Enquanto está na fila, WBJ resolveu te ligar para que rapidamente o ajude na escolha do melhor lugar.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>O programa pede um inteiro A (50 &lt; <strong>A</strong> &lt; 100) referente a altura de WBJ. Em seguida um breve raio-x de 13x13 do refeitório é informado. Nele contém os possíveis locais onde ele pode se sentar (0), a saída [Linha 1 | Coluna 8], as paredes (88), o patio (11), e os corredores(99). A saída será por EOF.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Imprima a linha e a coluna da cadeira, "linha &gt; x coluna &gt; y", sem aspas, onde a média dos adjacentes dela sejam menor que a altura de WBJ e a distância até a saída seja a mínima possivél.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>89<br />
+99 99 99 99 99 99 99 88 11 11 11 11 11<br />
+99 45 36 99 82 53 99 88 11 11 11 11 11<br />
+99 52 00 99 86 34 99 88 11 11 11 11 11<br />
+99 63 53 99 48 98 99 88 11 11 11 11 11<br />
+99 74 62 99 59 73 99 88 11 11 11 11 11<br />
+99 58 76 99 64 00 99 88 88 88 88 88 88<br />
+99 59 85 99 75 63 99 99 99 99 99 99 99&nbsp;<br />
+99 64 95 99 84 75 99 76 82 00 67 45 83<br />
+99 00 75 99 93 83 99 85 96 38 78 86 42<br />
+99 63 65 99 53 98 99 99 99 99 99 99 99&nbsp;<br />
+99 85 59 99 75 00 99 36 47 87 86 48 96<br />
+99 94 96 99 76 62 99 00 58 87 87 47 74<br />
+99 99 99 99 99 99 99 99 99 99 99 99 99&nbsp;</p>
+
+						</td>
+						<td>
+							<p>linha &gt; 3 coluna &gt; 3</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				Primeiro Contest Sam Well - IFSULDEMINAS
+			</p>
+		</div>
+	</body>
+</html>

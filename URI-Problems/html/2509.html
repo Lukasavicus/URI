@@ -1,0 +1,97 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2509 - Editor Latex</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2509 - Editor Latex" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2509</span>
+				<h1>Editor Latex</h1>
+				<div>
+					<p>Por Hamilton José Brumatto <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O LATEX é&nbsp;um excelente interpretador de linguagem de formatação&nbsp;para construção de textos, artigos, apresentaçõees, ...&nbsp;Para facilitar a construção de um texto em LATEX&nbsp;normalmente se utiliza um editor específico. O poder da linguagem vem da grande facilidade de inclusão de módulos e pacotes. Um destes pacotes é o pstricks que junto com pst-node e pst-tree permite construir árvores gerais. O nosso intuito é construir árvores binárias. O comando a seguir constrói a árvore da figura:<br />
+\pstree{\Tcircle{A}}{\pstree{\Tcircle{B}}{\Tcircle{D}\Tcircle{E}}\Tcircle{C}}</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2509_01.jpg" style="width:200 height:150px"></p>
+
+<p>De uma forma geral o comando \pstree{}{} recebe dois argumentos: o primeiro argumento é o raiz, necessariamente um nó, e o segundo são as árvores filhas que podem ser nó&nbsp;ou árvore (recursivamente por um comando \pstree{}{}). Um nó é representado pelo comando \Tcircle{} que irá&nbsp;criar um círculo com seu argumento escrito em seu interior. Os filhos, precisam ser exatamente 2 (para nosso objetivo: árvore binária). Como este comando possui vários níveis de recursividade profundidade da árvore) acaba ficando confuso a contagem de parˆentesis. Uma pequena troca produz resultados inesperados. Veja o exemplo:<br />
+\pstree{\Tcircle{A}}{\pstree{\Tcircle{B}}{\Tcircle{D}}{\Tcircle{E}}\Tcircle{C}}</p>
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2509_02.jpg" style="width:170 height:150px"></p>
+<p>A você&nbsp;foi pedido um programa, para ser incorporado em um Editor LATEX, que verifique se a sintaxe do pstree está correta para formar árvores binárias.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de vários casos de teste, cada caso de teste consiste de uma linha única&nbsp;com uma expressão de formatação do LATEX para a construção de uma árvore&nbsp;binária usando os comandos \pstree{}{} e \Tcircle{}. O tamanho máximo da expressão é&nbsp;de 1000 caracteres sem qualquer espaço em branco inserido. Como argumento do comando \Tcircle{} temos sempre um único caracter no intervalo 'A'&nbsp;a 'Z'. Não existe redundância de chaves, somente as chaves de primeiro nível que abriga os argumentos de cada comando.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste da entrada seu programa deve gerar em uma linha única a saída "SIM" se a expressão de formatação está&nbsp;construída como uma árvore binária, ou "NAO" (sem acentuação) caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>\pstree{\Tcircle{A}}{\Tcircle{B}\Tcircle{C}}<br />
+\pstree{\Tcircle{A}}{\Tcircle{B}}{\Tcircle{C}}<br />
+\pstree{\Tcircle{A}}{\pstree{\Tcircle{B}}{\Tcircle{D}\Tcircle{E}}\Tcircle{C}}<br />
+\pstree{\Tcircle{A}}{\pstree{\Tcircle{B}}{\Tcircle{D}}{\Tcircle{E}}\Tcircle{C}}</p>
+
+							</td>
+							<td>
+								<p>SIM<br />
+NAO<br />
+SIM<br />
+NAO</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Este problema fez parte da CPU2016 (Competição de Programação Universitária) da Universidade Estadual de Santa Cruz - UESC.
+				</p>
+			</div>
+
+		</body>
+	</html>

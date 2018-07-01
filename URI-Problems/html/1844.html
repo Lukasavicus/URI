@@ -1,0 +1,120 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1844 - As Relíquias da Morte</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1234 - As Relíquias da Morte" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1844</span>
+				<h1>As Relíquias da Morte</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A cultura dos povos nativos do Brasil está morrendo! Enquanto que se estima que no séc. XV havia mais de mil povos indígenas no Brasil, hoje há o registro de apenas 215 povos. Recentemente, foram descobertas na região do oeste catarinense relíquias fósseis atribuídas a um povo indígena extinto. As relíquias tratam-se provavelmente de bases de muros de edificações. A figura abaixo ilustra algumas relíquias encontradas representando cada relíquia por um segmento de reta.</p>
+
+					<p class="center">
+					<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1844_a.jpg" style="width: 424px; height: 404px;"></p>
+
+					<p>Agora, o Governo quer transformar todas as terras em que estão as relíquias em área de preservação ambiental. Para facilitar o trabalho dos arqueólogos, o governo também construirá trilhas, cada uma conectando duas relíquias. A intenção é construir o mínimo possível de trilha, a fim de que o impacto ambiental seja o menor possível, mas que haja caminho entre quaisquer duas trilhas. A figura abaixo ilustra uma maneira de construir trilhas entre as relíquias da figura acima de modo a minimizar a soma total dos comprimentos das trilhas.</p>
+
+					<p class="center">
+					<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1844_b.jpg" style="width: 424px; height: 404px;"></p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada é constituída unicamente por um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>3</sup>), o qual representa o número de relíquias encontradas. Cada uma das <strong>N</strong> linhas seguintes descreve uma relíquia através de quatro inteiros, <strong>x<sub>A</sub></strong>, <strong>y<sub>A</sub></strong>, <strong>x<sub>B</sub></strong> e <strong>y<sub>B</sub></strong> (0 ≤ <strong>x<sub>A</sub></strong>, <strong>y<sub>A</sub></strong>, <strong>x<sub>B</sub></strong>, <strong>y<sub>B</sub></strong> ≤ 10<sup>4</sup>), os quais representam as coordenadas dos extremos (<strong>x<sub>A</sub></strong>, <strong>y<sub>A</sub></strong>) e (<strong>x<sub>B</sub></strong>, <strong>y<sub>B</sub></strong>) do segmento de reta, de comprimento não necessariamente positivo, que representa a relíquia.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha constituída unicamente por um valor que representa a soma total ótima dos comprimentos das trilhas que conectam as relíquias. Como a empresa contratada para construir as trilhas cobra por unidade inteira de trilha construída, se o valor não for inteiro arredonde-o para cima.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7<br />
+								0 0 3 2<br />
+								1 12 1 17<br />
+								9 4 7 7<br />
+								13 1 18 1<br />
+								16 14 13 11<br />
+								16 20 21 15<br />
+								16 19 21 19</p>
+
+							</td>
+							<td>
+								<p>31</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7<br />
+								0 0 0 2<br />
+								0 4 0 6<br />
+								2 6 4 6<br />
+								6 6 8 6<br />
+								8 4 8 2<br />
+								8 0 6 0<br />
+								4 0 2 0</p>
+
+							</td>
+							<td>
+								<p>12</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					4º Maratona UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

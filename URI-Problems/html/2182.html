@@ -1,0 +1,126 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2182 - Luciano e a Bicicletinha</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2182 - Luciano e a Bicicletinha" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2182</span>
+				<h1>Luciano e a Bicicletinha</h1>
+				<div>
+					<p>Por Dâmi Henrique, INATEL <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Luciano é um fã de esportes, ainda mais quando se trata do ciclismo. Luciano possui uma bicicleta e a cuida como se fosse seu filho, evitando ao máximo andar em ruas ruins, ou seja, ruas com muitos buracos. Luciano irá mudar de cidade e precisa de sua ajuda para encontrar o melhor bairro para se morar.</p>
+
+<p>Para Luciano, o melhor bairro é aquele onde a média da quantidade de buracos entre todos os caminhos é a menor possível. Duas casas estão no mesmo bairro se for possível sair de uma e chegar até a outra usando os caminhos existentes. Após decidir o bairro, Luciano escolhe a casa baseado no seu identificador, ele prefere a casa com o <strong>maior</strong> identificador possível.</p>
+
+<p>Você receberá uma lista com <strong>N</strong> casas disponíveis para Luciano morar e <strong>M </strong>caminhos entre essas casas. Em cada um desses caminhos existe uma quantidade de buracos. Nunca haverá mais de um caminho direto entre duas casas. Cada casa possui um identificador [1, <strong>N</strong>].</p>
+
+<p>Se existir um bairro com apenas uma casa, a quantidade de buracos nesse bairro será 0, já que não existe caminhos.</p>
+
+<p>Ajude Luciano e diga qual o identificador da casa onde deverá morar.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contêm dois inteiros, <strong>N</strong>, <strong>M</strong>, representando a quantidade de casas disponíveis e a quantidade de caminhos entre elas. (1 ≤ <strong>N</strong> ≤ 10<sup>4</sup>, 0 ≤ <strong>M</strong> ≤ 10<sup>5</sup>).</p>
+
+<p>Após isso, M linhas seguem, cada uma com três inteiros, <strong>X</strong>, <strong>Y</strong>, <strong>B</strong>, representando um caminho bidirecional entre as casas <strong>X</strong> e <strong>Y</strong> com uma quantidade <strong>B</strong> de buracos. (1 ≤&nbsp;<strong>X, Y</strong>&nbsp;≤&nbsp;<strong>N</strong>,&nbsp;<strong>X</strong>&nbsp;!=&nbsp;<strong>Y,</strong>&nbsp;0 ≤&nbsp;<strong>B</strong>&nbsp;≤ 100).&nbsp;</p>
+
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima um único inteiro, o índice da casa onde Luciano deverá morar.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 4<br />
+1 2 5<br />
+2 3 15<br />
+4 5 9<br />
+1 3 3</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 7<br />
+2 4 3</p>
+
+<p>1 2 2</p>
+
+<p>1 3 4</p>
+
+<p>2 3 5</p>
+
+<p>5 4 8</p>
+
+<p>2 5 3</p>
+
+<p>5 3 4</p>
+
+							</td>
+							<td>
+								<p>5</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Aquecimento para a OBI 2016 - Fase 2
+				</p>
+			</div>
+
+		</body>
+	</html>

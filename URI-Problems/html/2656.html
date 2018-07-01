@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2656 - Rhombus</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2601 - Rhombus" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2656</span>
+			<h1>Rhombus</h1>
+			<div>
+				<p>Por Abner Samuel P. Palmeira, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Dado um grid com seus valores iniciais definidos como zero e <strong>Q</strong> queries dos tipos:</p>
+
+<p><strong>1 x y</strong>: Coloca o valor um na posição (x,y) do tabuleiro.</p>
+
+<p><strong>2 x y</strong>: Coloca o valor zero na posição (x,y) do tabuleiro.</p>
+
+<p>3<strong> x y d</strong>: Retorna a soma dos valores de todas as posições do tabuleiro que estão a uma distância de Manhattan de no máximo <strong>D</strong> da posição (x,y).</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha contém um inteiro <strong>Q</strong>(1 ≤ <strong>Q</strong> ≤ 10<sup>5</sup>).</p>
+
+<p>As próximas <strong>Q</strong> linhas contém queries como descrito anteriormente.</p>
+
+<p>(0 ≤ <strong>X</strong>, <strong>Y</strong>, <strong>D</strong> ≤ 10<sup>5</sup>)</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada query do tipo três imprima a soma de todas as posições do tabuleiro que estão a uma distância de Manhattan de no máximo <strong>D</strong> da posição (x,y).</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>12</p>
+
+<p>1 2 2</p>
+
+<p>3 2 2 1</p>
+
+<p>1 2 3</p>
+
+<p>1 2 1</p>
+
+<p>3 2 2 1</p>
+
+<p>1 3 2</p>
+
+<p>1 1 2</p>
+
+<p>1 3 3</p>
+
+<p>3 2 2 1</p>
+
+<p>3 2 2 2</p>
+
+<p>2 2 2</p>
+
+<p>3 2 2 2</p>
+
+						</td>
+						<td>
+							<p>1</p>
+
+<p>3</p>
+
+<p>5</p>
+
+<p>6</p>
+
+<p>5</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Aquecimento OLIP 2017
+			</p>
+		</div>
+
+	</body>
+</html>

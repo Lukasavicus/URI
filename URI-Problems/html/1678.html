@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1678 - Gerenciamento de Partição Fixa em Competição</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1678 - Gerenciamento de Partição Fixa em Competição" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1678</span>
+                <h1>Gerenciamento de Partição Fixa em Competição</h1>
+               <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                <p>Uma técnica usada em estratégias iniciais de competição de programação envolve particionar a capacidade intelectual disponível de uma equipe por um número de membros, com cada membro tendo uma quantia fixa de inteligência, e diferentes membros potencialmente tendo quantidades diferentes. A soma da capacidade de todos os membros é igual a capacidade intelectual total da equipe.</p>
+
+                <p>Dado um conjunto de problemas, a tarefa da equipe é atribuir os problemas a diferentes membros da equipe, de modo que os problemas possam ser resolvidos simultaneamente. Esta tarefa é difícil devido ao fato de que o tempo para a solução de um problema pode depender da quantidade de informações disponíveis. Todo problema tem um requisito mínimo de inteligência: se a atribuição for para um membro mais brilhante, o tempo de solução pode aumentar ou diminuir.</p>
+
+                <p>Nesta tarefa, você tem que determinar atribuições ideais de problemas aos membros da equipe. O programa informa as capacidades intelectuais dos membros da equipe disponíveis para a solução dos problemas, e uma descrição, para cada problema, de como o tempo de solução depende da quantidade de informação disponível. O programa tem que encontrar um cronograma de solução que minimiza o tempo médio de solução para os problemas. Um cronograma de solução é uma atribuição de problemas aos membros da equipe em relação ao tempo, de tal forma que não há dois problemas que usam o mesmo membro ao mesmo tempo, e não há problema que é atribuído a um membro da equipe com menos capacidade do que o seu requisito mínimo. O tempo para a solução do problema é a diferença entre o tempo em que o problema foi submetido para ser resolvido (o início da competição começa no tempo zero para todos os problemas desta tarefa), e o tempo em que o problema foi resolvido.</p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Os dados de entrada conterão vários casos de teste. Cada caso de teste começa com uma linha contendo um par de números inteiros <strong>m</strong> e <strong>n</strong>. O número <strong>m</strong> especifica o número de membros da equipe (1 &le; <strong>m </strong> &le; 3), e <strong>n</strong> especifica o número de problemas a serem resolvidos (1 &le; <strong>n</strong> &le; 10).</p>
+
+					<p>A próxima linha contém <strong>m</strong> inteiros positivos informando os valores de inteligência dos membros da equipe <strong>m</strong>. Em seguida, as <strong>n</strong> linhas descrevem as compensações de tempo de capacidade para cada um dos <strong>n</strong> problemas. Cada linha começa com um <strong>k</strong> inteiro positivo (<strong>k</strong> &le; 10), seguido por pares de <strong>k</strong> inteiros positivos <strong>s<sub>1</sub></strong> ,<strong>t<sub>1</sub></strong> , <strong>s<sub>2</sub></strong> , <strong>t<sub>2</sub></strong> ,..., <strong>s<sub>k</sub></strong> , <strong>t<sub>k </sub></strong>que satisfazem <strong>s<sub>i</sub></strong>  &lt;  <strong>s<sub>i+1</sub></strong> para 1 &le; <strong>i</strong>  &lt;  <strong>k</strong> . O requisito mínimo de inteligência do problema é <strong>s<sub>1</sub></strong>, ou seja, não pode ser resolvido por um membro com menos capacidade intelectual do que este número. Se o problema é resolvido por um membro da equipe com capacidade  <strong>s</strong> , onde <strong>s<sub>1 </sub></strong>&le;  <strong>s</strong>  &lt; <strong>s<sub>i+1</sub></strong> para algum  <strong>i</strong> , então o tempo de solução será <strong>t<sub>1</sub></strong>. Finalmente, se o problema é resolvido por um membro da equipe com capacidade intelectual <strong>s<sub>k</sub></strong> ou mais, então o tempo de execução será <strong>t<sub>k</sub></strong>.</p>
+
+					<p>Um par de zeros será a entrada para o último caso de teste.</p>
+
+					<p>Você pode assumir que cada problema será resolvido exatamente no tempo especificado para a capacidade informada, independentemente do número de outros problemas que estão sendo resolvidos por outros membros da equipe ao mesmo tempo. Nenhum problema terá um requisito de inteligência maior do que a do membro da equipe mais brilhante.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, primeiro apresentar o número do caso (começando com 1 e aumentando sequencialmente). Em seguida, imprima o tempo médio de solução para o conjunto de problemas com dois dígitos à direita do ponto decimal. Siga a descrição de um cronograma de solução que alcança esse tempo médio de solução. Visualiza uma linha para cada problema, na ordem em que foi informado na entrada, que identifica o número do problema, o membro utilizado para resolver (numerado de acordo com a ordem de entrada), o tempo que o membro começou a resolver o problema, e o tempo em que o problema foi resolvido. Siga o formato mostrado no exemplo de saída, e imprima uma linha em branco após cada caso de teste.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+							
+							
+							
+                                <p>2 4<br/>
+
+40 60<br/>
+
+1 35 4<br/>
+
+1 20 3<br/>
+
+1 40 10<br/>
+
+1 60 7<br/>
+
+3 5<br/>
+
+10 20 30<br/>
+
+2 10 50 12 30<br/>
+
+2 10 100 20 25<br/>
+
+1 25 19<br/>
+
+1 19 41<br/>
+
+2 10 18 30 42<br/>
+
+0 0<br/>
+</p>
+
+                            </td>
+                            <td>
+                                <p>Case 1<br/>							
+								
+Average solution time = 7.75<br/>
+Problem 1 is solved by member 2 from 0 to 4<br/>
+Problem 2 is solved by member 1 from 0 to 3<br/>
+Problem 3 is solved by member 1 from 3 to 13<br/>
+Problem 4 is solved by member 2 from 4 to 11<br/>
+<br/>
+Case 2<br/>
+Average solution time = 35.40<br/>
+Problem 1 is solved by member 3 from 19 to 49<br/>
+Problem 2 is solved by member 2 from 0 to 25<br/>
+Problem 3 is solved by member 3 from 0 to 19<br/>
+Problem 4 is solved by member 2 from 25 to 66<br/>
+Problem 5 is solved by member 1 from 0 to 18<br/>
+</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                     Univeristy of Ulm Local Contest 2003/2004
+                </p>
+                </p>
+            </div>
+
+        </body>
+    </html>

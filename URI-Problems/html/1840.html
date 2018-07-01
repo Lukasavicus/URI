@@ -1,0 +1,105 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1840 - O Prisioneiro de Azkaban</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1234 - O Prisioneiro de Azkaban" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1840</span>
+				<h1>O Prisioneiro de Azkaban</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Em 1950, quatro homens foram presos acusados de incendiarem a igreja de Chapecó. Se de fato eram os culpados ou não nunca se saberá, mas a fúria do povo é sempre mais rápida a julgar que os tribunais. Preocupado em preservar a integridade física dos prisioneiros, o delegado de polícia local quis transferi-los para Azkaban. “Eles estarão mais seguros nas mãos dos dementadores que nas mãos do povo de Chapecó”, declarou enquanto acertava com o Ministro da Magia os detalhes da transferência, programada para a manhã seguinte.</p>
+
+					<p>Enquanto esperavam sem sono pela transferência que jamais aconteceria, os presos resolveram jogar Dane-se, um jogo muito popular no Brasil. Numa de suas muitas versões, as regras do jogo são:</p>
+
+					<ul>
+						<li>São usadas apenas 40 cartas de um baralho francês tradicional com 52 cartas, descartando-se todas as cartas com número 8, 9 ou 10. A ordem crescente básica de valor das figuras empregada no Dane-se é:</li>
+					</ul>
+
+					<p style="text-align:center">4 5 6 7 Q J K A 2 3</p>
+
+					<ul>
+						<li>Um dos jogadores distribui a cada jogador <strong>n</strong> cartas. Depois, ainda vira uma carta sobre a mesa, a qual determina as <em>manilhas</em> do jogo, que são as cartas com figura imediatamente posterior à figura da carta virada na ordem básica. Por exemplo, se é virada uma carta com figura 7, são definidas como manilhas do jogo as cartas Q♦, Q♠, Q♥&nbsp;e Q♣. Se é virada uma carta com figura 3, as manilhas são 4♦, 4♠, 4♥&nbsp;e 4♣. As manilhas de uma partida valem mais que qualquer outra carta. Embora o naipe não interfira no valor de cartas que não são manilhas, entre manilhas a ordem crescente de valor dos naipes é:</li>
+					</ul>
+
+					<p style="text-align:center">♦ &nbsp;♠ &nbsp;♥ &nbsp;♣</p>
+
+					<ul>
+						<li>Uma vez definidas as manilhas da partida, cada jogador tem de dizer quantas das <strong>n</strong> <em>rodadas</em> ele acha que <em>fará</em>. Todos os jogadores devem declarar seus palpites antes mesmo de começarem as rodadas. Iniciam-se, então, as rodadas, em cada uma das quais cada jogador joga uma de suas cartas revelando-a sobre a mesa. Diz-se que um jogador <em>faz</em> uma rodada se a carta que ele joga naquela rodada é de maior valor que todas as outras cartas jogadas naquela rodada. Quando uma rodada não é feita por jogador algum, o que é possível dado que o desempate por naipe ocorre apenas entre as manilhas, diz-se que aquela rodada <em>embuchou</em>.</li>
+						<li>Ao final do jogo, cada jogador ganha tantos pontos quanto for a diferença entre o número de rodadas que o jogador disse que faria e o número de rodadas que de fato fez. Vence o jogador com menos pontos.</li>
+					</ul>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada informa o inteiro <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 9), seguido da carta virada sobre a mesa no início da partida. Cada uma das 4 linhas seguintes informa o nome de um jogador, seguido de um inteiro <strong>m</strong> (0 ≤ <strong>m</strong> ≤ <strong>n</strong>), o qual representa o número de rodadas que o jogador declarou que faria no início da partida. A ordem em que são informados os jogadores é sempre a mesma ordem em que jogam em cada rodada. Seguem-se por fim <strong>n</strong> linhas, de modo que a <strong>i</strong>-ésima dessas linhas informa as 4 cartas que foram jogadas na <strong>i</strong>-ésima rodada, na ordem em que foram jogadas. Cada carta é informada no formato <strong>XY</strong>, com <strong>X</strong> ∈ {4, 5, 6, 7, Q, J, K, A, 2, 3}, <strong>Y</strong> ∈ {D, S, H, C}, e D, S, H e C correspondendo respectivamente aos naipes ♦,&nbsp;♠,&nbsp;♥,&nbsp;♣. Considere que o nome de cada jogador é composto por no mínimo 1 e no máximo 10 caracteres do conjunto {a, b, …, z, A, B, …, Z}.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo unicamente o nome do vencedor da partida. Se não é possível definir um único vencedor para a partida, imprima uma linha contendo unicamente o caractere asterisco (*).</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 4H<br />
+								Ivo 3<br />
+								Romano 2<br />
+								Orlando 0<br />
+								Armando 1<br />
+								2C 3S JD 6H<br />
+								2H KS 7D 4C<br />
+								5C 7C QH 5D</p>
+
+							</td>
+							<td>
+								<p>Orlando</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					4º Maratona UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

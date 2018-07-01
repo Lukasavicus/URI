@@ -1,0 +1,173 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2430 - Catálogo de Músicas</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2430 - Catálogo de Músicas" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2430</span>
+				<h1>Catálogo de Músicas</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Joyce é uma menina que gosta muito de ouvir música, e possui uma enorme coleção de músicas num dvd. Ela é uma menina organizada e deixa suas músicas em pastas, mas como o número de músicas e de pastas é grandre, Joyce construiu um catálogo para melhor localizá-las.</p>
+
+<p>Para o catálogo Joyce utilizou uma convenção usual em sistemas operacionais, em que a descrição da localiza- ção de cada arquivo é formada pela sequência dos nomes das pastas no caminho da raiz do dvd até o arquivo, separados pelo caractere barra (‘/’). Por exemplo, na figura abaixo, a descrição da música Sampa.mp3 no catálogo é MPB/Caetano/Sampa.mp3.</p>
+
+<p class="center"><img style="width: 500px" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_175_E.png' alt='' /></p>
+
+<p>Utilizando essa convenção, o catálogo do dvd mostrado na figura é:</p>
+
+<ul><p>Rock/AngraCarryOn.mp3<br>
+
+MPB/Caetano/Sampa.mp3<br>
+
+MPB/Cartola/Alvorada.mp3</p></ul>
+
+<p>Como o dvd de Joyce tem muitas músicas e pastas, o catálogo é muito grande. Joyce notou no entanto que o catálogo poderia ser menor (ter um número menor de caracteres) caso ela utilizasse outro conceito usual na nomeação de arquivos em sistemas operacionais: usar uma pasta como referência, ao invés da raiz.</p>
+
+<p>Se uma pasta diferente da raiz for escolhida como referência, então para todos os arquivos que estejam diretamente nessa pasta ou em alguma subpasta não será mais necessário escrever o nome da pasta referência no catálogo. Para as demais pastas, é necessário indicar o caminho utilizando as pastas acima (na direção da raiz) utilizando a convenção ‘../’ para a pasta imediatamente acima da pasta referência. No exemplo da figura acima, no caso de a referência ser a pasta Caetano, a música Sampa.mp3 seria simplesmente descrita como Sampa.mp3. Já a música Alvorada.mp3 seria descrita como ../Cartola/Alvorada.mp3.</p>
+
+<p>Assim, se a pasta Caetano for utilizada como referência, o catálogo será:</p>
+
+<ul><p>../../Rock/AngraCarryOn.mp3<br>
+
+Sampa.mp3<br>
+
+../Cartola/Alvorada.mp3</p></ul>
+
+<p>Nesse caso, a descrição do catálogo tem 59 carateres, menor do que quando a referência utilizada é a raiz do DVD.</p>
+
+<p>Seu objetivo é, dada a informação de todas as músicas do catálogo, determinar o número mínimo de caracteres necessários para descrever o catálogo.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>),&nbsp;indicando quantos arquivos Joyce possui no dvd. Cada uma das <strong>N</strong> linhas seguintes contém a descrição de um arquivo, a partir da raiz.</p>
+
+<ul>
+	<li>Número de pastas na entrada ≤ 10<sup>5</sup></li>
+	<li>O nome de cada pasta e de cada arquivo é composto por no máximo 20 caracteres, entre letras minúsculas, maiúsculas e ponto (.)</li>
+	<li>Cada pasta possui no máximo 100 pastas como filhas diretas.</li>
+</ul>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma única linha, contendo apenas um inteiro, o número mínimo de caracteres necessários para descrever o catálogo.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+<p>Rock/AngraCarryOn.mp3</p>
+
+<p>MPB/Caetano/Sampa.mp3</p>
+
+<p>MPB/Cartola/Alvorada.mp3</p>
+
+							</td>
+							<td>
+								<p>59</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>2</p>
+
+<p>Preferidas/chacoalha/uia.mp3</p>
+
+<p>Preferidas/chacoalha/eia.mp3</p>
+
+                    </td>
+                    <td>
+                        <p>14</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>6</p>
+
+<p>delta/india/juliet/lima</p>
+
+<p>bravo/echo</p>
+
+<p>bravo/foxtrot</p>
+
+<p>charlie/hotel</p>
+
+<p>delta/india/kilo</p>
+
+<p>bravo/golf</p>
+
+                    </td>
+                    <td>
+                        <p>76</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2013 Fase 1 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

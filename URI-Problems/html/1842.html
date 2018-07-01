@@ -1,0 +1,122 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1842 - A Ordem da Fênix</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1234 - A Ordem da Fênix" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1842</span>
+				<h1>A Ordem da Fênix</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Dentre as mais importantes rodovias que cruzam o estado de Santa Catarina estão a BR282, que o cruza de leste a oeste, e a BR153, que cruza praticamente o Brasil inteiro de norte a sul. O encontro entre essas duas rodovias é conhecido popularmente como Trevo de Irani, porque ocorre na cidade de Irani, ou Trevo da Fênix, porque sua forma, vista de cima, lembra a criatura mítica fênix, conforme mostra a Figura. A região do estado em que fica o Trevo da Fênix é chamada de Vale do Contestado, porque foi palco de uma das mais importantes guerras civis da história do Brasil: a Guerra do Contestado (1912–1916), entre rebeldes da população cabocla, sob a liderança notória do monge José Maria dentre outras, e tropas federais do Exército Brasileiro, sob a liderança notória do Cel. João Gualberto dentre outras.</p>
+
+					<p class="center">
+					<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1842.png" style="width: 730px; height: 530px;"></p>
+
+					<p>Conta-se que, certa vez, um grupo de rebeldes fugia desesperado das tropas do Exército e veio parar no Trevo da Fênix. Frustrado com a batalha que haviam perdido no dia, um deles chutou o pó da terra. O vento levantou o pó, o qual, na verdade, não era pó, mas cinzas, e por um momento os caboclos viram uma fênix, que lhes deu uma Ordem: “Morse!”. Tendo regressado ao acampamento no dia seguinte e contado a história ao monge José Maria, os caboclos passaram a estudar o Código Morse, a interceptar mensagens das tropas do Cel. João Gualberto e a tentar identificar padrões repetidos nessas mensagens.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por uma cadeia <strong>S</strong> de no mínimo 1 e no máximo 10<sup>5</sup> caracteres, finalizada por uma quebra de linha, a qual representa uma mensagem interceptada. Além da quebra de linha, apenas os caracteres ‘.’ (ponto) e ‘-’ (traço) compõem a entrada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha composta unicamente da maior subcadeia de <strong>S</strong> com no mínimo 3 caracteres que se repete em <strong>S</strong> no mínimo uma vez. Se há mais de uma subcadeia que se repete com comprimento máximo, imprima a primeira delas em ordem lexicográfica, lembrando que o caractere ‘-’ aparece antes na tabela ASCII que o caractere ‘.’. Se não há subcadeias de <strong>S</strong> com comprimento no mínimo 3 que se repetem, a linha de saída deve ser composta unicamente do caractere ‘*’.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>.---.-..--</p>
+
+							</td>
+							<td>
+								<p>.--</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>-.-.-.-.-.-.-</p>
+
+							</td>
+							<td>
+								<p>-.-.-.-.-.-</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>-.--...</p>
+
+							</td>
+							<td>
+								<p>*</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					4º Maratona UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

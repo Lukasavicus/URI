@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1322 - Desejos das Crianças</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1322 - Desejos das Crianças" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1322</span>
+            <h1>Desejos das Crianças</h1>
+            <div><p>Por Alejandro Strejilevich de Loma <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=""/> Argentina</p></div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Kevin é uma criança. Ele almoça na escola junto com muitas outras crianças. Eles costumam ir até o pátio e almoçar sentados no chão. Eles adoram formar um grande círculo onde cada criança tem exatamente dois vizinhos, um na esquerda e outro na direita. Às vezes a professora tem problemas para organizar o círculo pois muitas crianças desejam sentar ao lado de outras crianças. Cada criança pode desejar sentar ao lado de no máximo duas outras crianças já que cada criança tem apenas dois vizinhos. A professora quer saber se é possível organizar o círculo de forma que todos os desejos de todas as crianças sejam satisfeitos. Você limpa o lugar quando o almoço termina. Já que você quer terminar seu trabalho o mais cedo possível, ajude a professora a responder essa questão.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste se estende por várias linhas. A primeira linha contém dois inteiros <strong>K</strong> e <strong>W</strong> representando respectivamente o número de crianças (3 ≤ <strong>K</strong> ≤ 10<sup>9</sup>) e o número de desejos (0 ≤ <strong>W</strong> ≤ 10<sup>5</sup>). Crianças são identificadas por números inteiros entre 1 e <strong>K</strong>. Cada uma das próximas <strong>W</strong> linhas descreve um desejo através de dois inteiros distintos<strong> A</strong> e <strong>B</strong> (1 ≤<strong> A, B</strong> ≤ <strong>K</strong>); esses valores significam que a criança <strong>A</strong> deseja sentar ao lado da criança <strong>B</strong>. Cada criança possui no máximo dois desejos.</p>
+                <p>
+                    ​O último caso de teste é seguido de uma linha contendo dois zeros.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste, imprima uma única linha contendo um caractere 'Y' se é possível organizar o círculo de forma que todas crianças tenham seus desejos atendidos, ou um 'N' caso contrário.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                4 3 <br/>
+                                2 3 <br/>
+                                1 3 <br/>
+                                2 1 <br/>
+                                1000000000 0 <br/>
+                                3 6 <br/>
+                                3 2 <br/>
+                                2 1 <br/>
+                                1 2 <br/>
+                                1 3 <br/>
+                                2 3 <br/>
+                                3 1 <br/>
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                N<br/>
+                                Y<br/>
+                                Y</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2010.            </p>
+        </div>
+
+    </body>
+</html>

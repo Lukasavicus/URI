@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1431 - Níveis de Klingon</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1431 - Níveis de Klingon" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1431</span>
+            <h1>Níveis de Klingon</h1>
+            <div>Por Pablo Heiber <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=''/> Argentina</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>No ensino médio da América Latina, Klingon se tornou tão popular que muitos dos estudantes começaram a aprender essa língua artificial por conta própria. Após tomar conhecimento da situação, os diretores deciriram implementar cursos formais de Klingon. O problema é que as crianças possuem diferentes níveis iniciais da linguagem. Sendo assim, os diretores decidiram oferecer dois níveis de curso: básico e avançado.</p>
+
+                <p>A escola possui diversas divisões, com cada estudante pertencendo a exatamente uma divisão. Devido à burocracia e conflitos de agenda, estudantes de divisões diferentes não podem fazer parte do mesmo curso. Além disso, para ser justo, os níveis básico e avançado devem ser oferecidos a todas as divisões, e ter o mesmo nível de dificuldade em uma divisão.</p>
+
+                <p>Sendo assim, cada divisão será particionada em dois grupos: um grupo será associado ao nível básico e o outro grupo ao nível avançado. É possível que uma divisão não possua nenhum estudante em um dos níveis.</p>
+
+                <p>Para definir os grupos, um teste de Klingon foi aplicado previamente a todos os estudantes da escola, cada um tirando uma nota entre 0 e 1000, inclusive. Os diretores da escola decidiram que todos os estudantes com uma nota maior ou igual a algum valor T serão matriculados no nível avançado, e todos os estudantes com nota menor que T serão matriculados no nível básico.</p>
+
+                <p>No entanto, eles não conseguiram decidir o melhor valor de T. Eles gostariam de um valor que dividisse igualmente todas as divisões. Para isso, eles bolaram uma métrica: eles querem o valor de T que minimize a diferença acumulada, ou seja, a soma da diferença entre o número de estudantes nos dois grupos (básico e avançado) em cada divisão.</p>
+
+                <p>Por exemplo, se a escola possui duas divisões, onde uma divisão possui 10 estudantes no nível básico e 20 no nível avançado, enquanto a outra possui 17 e 15, respectivamente, a diferença acumulada seria |10 - 20| + |17 - 15| = 12;</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. Cada caso é dado em várias linhas. A primeira linha de cada caso de teste contém um único inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>4</sup>), o número de divisões na escola. 2 x <strong>N</strong> linhas seguem, com cada divisão sendo descrita em duas linhas consecutivas. A primeira linha de cada par contém um único inteiro <strong>Ki </strong>(1 ≤ <strong>Ki</strong> ≤ 10<sup>4</sup>), o número de estudantes na divisão <strong>i</strong>. A segunda linha contém<strong> Ki </strong>inteiros entre 0 e 1000, inclusive, separados por espaços simples, representando as notas de cada um dos estudantes da divisão <strong>i</strong>. Você pode assumir que o número total de estudantes em cada caso de teste (ou seja, a soma de todos <strong>Ki</strong>) não é maior que 10<sup>5</sup>.</p>
+
+                <p>O último caso de teste é seguido de uma linha contendo um único zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, imprima uma única linha com um único inteiro representando o menor valor para a diferença acumulada se <strong>T</strong> for escolhido de forma ótima.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                2<br />
+                                1 2<br />
+                                2<br />
+                                3 4<br />
+                                2<br />
+                                2<br />
+                                1 4<br />
+                                2<br />
+                                2 3<br />
+                                3<br />
+                                4<br />
+                                1 10 100 1000<br />
+                                3<br />
+                                5 55 555<br />
+                                5<br />
+                                4 16 64 256 1000<br />
+                                1<br />
+                                4<br />
+                                500 500 500 500<br />
+                                0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                2<br />
+                                0<br />
+                                2<br />
+                                4
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+             <p class="footer">
+               ACM/ICPC South America Contest 2009.
+            </p>
+        </div>
+
+    </body>
+</html>

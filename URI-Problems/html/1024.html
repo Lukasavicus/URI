@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1024 - Criptografia</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1024 - Criptografia" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1024</span>
+                <h1>Criptografia</h1>
+                <div><p>
+				Por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+				</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Solicitaram para que você construisse um programa simples de criptografia. Este programa deve possibilitar enviar 
+	mensagens codificadas sem que alguém consiga lê-las. O processo é muito simples. São feitas três passadas em 
+	todo o texto. <br /> <br />
+	Na primeira passada, somente caracteres que sejam letras minúsculas e maiúsculas devem ser deslocadas 3 posições para a direita, segundo a tabela ASCII: letra 'a' deve virar letra 'd', letra 'y' deve virar caractere '|' e assim sucessivamente. Na segunda passada, a linha deverá ser invertida. 
+	Na terceira e última passada, todo e qualquer caractere a partir da metade em diante (truncada) devem ser deslocados uma posição para a esquerda na tabela ASCII. Neste caso, 'b' vira 'a' e 'a' vira '`'.<br /> <br />
+	Por exemplo, se a entrada for “Texto #3”, o primeiro processamento sobre esta entrada deverá produzir “Wh{wr #3”.  
+	O resultado do segundo processamento inverte os caracteres e produz “3# rw{hW”. Por último, com o deslocamento dos caracteres da metade em diante, 
+	o resultado final deve ser “3# rvzgV”.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+					A entrada contém vários casos de teste. A primeira linha de cada caso de teste contém um inteiro <strong>N </strong>(1 ≤ <strong>N </strong>≤
+	1*10<sup>4</sup>), indicando a quantidade de linhas que o problema deve tratar. As <strong>N </strong>linhas contém cada 
+	uma delas <strong>M</strong> (1 ≤ <strong>M </strong>≤ 1*10<sup>3</sup>) caracteres.<br /> </p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+					Para cada entrada, deve-se apresentar a mensagem criptografada.<br />
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+								4<br />
+				Texto #3<br />
+				abcABC1<br />
+				vxpdylY .ph<br />
+				vv.xwfxo.fd</p>
+                            </td>
+                            <td>
+                                <p>
+				3# rvzgV<br />
+				1FECedc<br />
+				ks. \n{frzx<br />
+				gi.r{hyz-xx</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+
+        </body>
+    </html>

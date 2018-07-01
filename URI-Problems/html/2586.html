@@ -1,0 +1,124 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2586 - Cubonacci</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 2584 - Cubonacci" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2586</span>
+            <h1>Cubonacci</h1>
+            <div>
+                <p>Por Ricardo Martins, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Certo dia, Rubiko, um exímio jogador de cubo mágico, queria inventar um jogo diferente, usando tal ferramenta. Ele comprou um cubo sem cores, separou as três camadas, e colocou um número em cada parte de cada camada, conforme no exemplo abaixo.</p>
+
+                <p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2586.png" alt="Cubonacci"></p>
+
+                <p>Após isso, baseado na sequência de Fibonacci, a qual cada próximo número é formado pela soma dos dois números anteriores, ele criou a sequência de Cubonacci, sendo que, a cada nova iteração, o número de cada parte de cada camada é atualizado com a soma da própria parte e de todas as partes adjacentes a essa. Seguindo o exemplo acima, o valor onde está o número 1, na próxima iteração, passará a ser 60, que é a soma de 1 + 2 + 4 + 5 + 10 + 11 + 13 + 14.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>Primeiramente, é lido um valor <strong>C</strong>, representando a quantidade de casos de teste. Em cada caso de teste, será lido um valor <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 9), representando a quantidade de iterações feitas na sequência de Cubonacci. Por fim, serão lidos 27 números inteiros <strong>X<sub>i</sub></strong> (0 ≤ <strong>X<sub>i</sub></strong> ≤ 9), representando os valores de cada parte de cada camada do cubo.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, imprima os 27 valores finais do cubo, após todas as iterações determinadas pela sequência, conforme no exemplo abaixo.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2<br />
+                            1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            2<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1<br />
+                            1 1 1</p>
+
+                        </td>
+                        <td>
+                            <p>8 12 8<br />
+                            12 18 12<br />
+                            8 12 8<br />
+                            12 18 12<br />
+                            18 27 18<br />
+                            12 18 12<br />
+                            8 12 8<br />
+                            12 18 12<br />
+                            8 12 8<br />
+                            125 175 125<br />
+                            175 245 175<br />
+                            125 175 125<br />
+                            175 245 175<br />
+                            245 343 245<br />
+                            175 245 175<br />
+                            125 175 125<br />
+                            175 245 175<br />
+                            125 175 125</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <p class="footer">
+                VII Olimpíada Interna de Programação do IFSULDEMINAS - OLIP 2017
+            </p>
+        </div>
+
+    </body>
+</html>

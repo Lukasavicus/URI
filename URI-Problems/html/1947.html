@@ -1,0 +1,120 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1947 - Rota do Taxista</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1947 - Rota do Taxista" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1947</span>
+				<h1>Rota do Taxista</h1>
+				<div>
+					<p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Um evento importante acontecerá hoje na sua cidade, e com isso há muitos turistas perdidos. Para que todos consigam chegar a seus destinos nessa cidade desconhecida eles costumam chamar táxis. Você foi contratado para ajudar os taxistas, que estão sobrecarregados com tantas chamadas.</p>
+
+					<p>A cidade pode ser representada por N pontos de referências, e M ruas que interligam estes pontos. Cada rua tem um determinado comprimento, e sempre haverá um caminho entre quaisquer dois pontos distintos da cidade.</p>
+
+					<p>O objetivo do taxista o qual você vai ajudar é atender a K pedidos. Cada pedido consiste de dois pontos no mapa, O e D (origem e destino), sendo que o turista atualmente está no ponto O e deseja chegar no ponto D. O taxista está inicialmente no ponto 1, pretende atender a apenas um pedido por vez (na ordem em que desejar), e após o último pedido deve voltar ao ponto 1.</p>
+
+					<p>Por exemplo, considere uma cidade com N = 5 pontos de referência e K = 2 turistas, onde o primeiro turista deseja ir do ponto 4 ao ponto 3, e o segundo deseja ir do ponto 2 ao ponto 4. O taxista então tem duas opções de trajeto: 1 -&gt; 4 -&gt; 3 -&gt; 2 -&gt; 4 -&gt; 1; ou 1 -&gt; 2 -&gt; 4 -&gt; 3 -&gt; 1. Note que A -&gt; B representa um caminho entre os pontos A e B, contendo uma ou mais ruas.</p>
+
+					<p>Confuso com tantas opções de trajeto e querendo economizar combustível, o taxista pediu que você calculasse qual trajeto teria a menor distância percorrida.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Cada caso de teste inicia com três inteiros <strong>N</strong>, <strong>M</strong> e <strong>K</strong> (2 ≤ <strong>N</strong> ≤ 10<sup>4</sup>, <strong>N</strong>-1 ≤ <strong>M</strong> ≤ 10<sup>5</sup>, 1 ≤ <strong>K</strong> ≤ 15).</p>
+
+					<p>Em seguida haverá <strong>M</strong> linhas, cada uma com três inteiros <strong>A</strong>, <strong>B</strong> e <strong>C</strong>, indicando que há uma rua que interliga os pontos <strong>A</strong> e <strong>B</strong>, a qual pode ser percorrida em ambas as direções, de comprimento <strong>C</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong>, 1 ≤ <strong>C</strong> ≤ 100, <strong>A</strong> &lt;&gt; <strong>B</strong>).</p>
+
+					<p>Em seguida haverá <strong>K</strong> linhas, cada uma com dois inteiros <strong>O</strong> e <strong>D</strong>, indicando que há um turista no ponto <strong>O</strong> que deseja chegar no ponto <strong>D</strong> (1 ≤ <strong>O</strong>, <strong>D</strong> ≤ <strong>N</strong>, <strong>O</strong> &lt;&gt; <strong>D</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste imprima uma linha contendo um inteiro, indicando a menor distância possível de ser percorrida se o taxista iniciar no ponto 1, atender a todos os pedidos (um por vez), e voltar ao ponto 1.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 3 1</p>
+								<p>1 2 2</p>
+								<p>2 3 4</p>
+								<p>3 1 3</p>
+								<p>2 3</p>
+							</td>
+							<td>
+								<p>9</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 7 3</p>
+								<p>1 2 3</p>
+								<p>1 3 7</p>
+								<p>1 4 5</p>
+								<p>2 3 2</p>
+								<p>3 4 6</p>
+								<p>3 5 5</p>
+								<p>4 5 3</p>
+								<p>2 4</p>
+								<p>4 5</p>
+								<p>1 3</p>
+							</td>
+							<td>
+								<p>26</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					III Maratona de Programação FACE - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

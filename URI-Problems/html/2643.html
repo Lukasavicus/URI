@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2643 - Posterizar</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 2643 - Posterizar" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2643</span>
+            <h1>Posterizar</h1>
+            <div>
+                <p>Por ACM-ICPC Final Mundial 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif' alt='US' /> United States</p>
+            </div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+<p class='center'><img  alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2643_a.jpg"/></p>
+
+<p>Os pixels em uma imagem digital podem ser representados com três números inteiros no intervalo de 0 a 255 que indicam a intensidade das cores vermelha, verde e azul. Para comprimir uma imagem ou para criar um efeito artístico, muitas ferramentas de edição de fotos incluem uma operação de "posterizar" que funciona da seguinte forma. Cada canal de cores é examinado separadamente; Este problema concentra-se apenas no canal vermelho. Em vez de permitir todos os inteiros de 0 a 255 para o canal vermelho, uma imagem posterizada permite no máximo <strong>k</strong> inteiros desse intervalo. A intensidade vermelha de cada pixel é substituída pelas mais próximas dos inteiros permitidos. A ferramenta de edição de fotos seleciona um conjunto de <strong>k</strong> inteiros que minimiza a soma dos erros quadrados introduzidos em todos os pixels na imagem original. Se houver <strong>n</strong> pixels que possuem valores vermelhos originais <strong>r<sub>1</sub></strong> , . . . , <strong>r<sub>n</sub></strong> , e <strong>k</strong> permitiu inteiros <strong>v<sub>1</sub></strong> , . . . , <strong>v<sub>k</sub></strong> , a soma de erros quadrados é definida como</p>
+
+<p class='center'><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2643_b.png" /></p>
+
+<p>Sua tarefa é calcular a soma mínima possível de erros quadrados, dado o parâmetro <strong>k</strong> e uma descrição
+das intensidades vermelhas dos pixels de uma imagem.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A primeira linha da entrada contém dois inteiros <strong>d</strong> (1 ≤ <strong>d</strong> ≤ 256), o número de valores vermelhos distintos que ocorrem na imagem original, e <strong>k</strong> (1 ≤ <strong>k</strong> ≤ <strong>d</strong>), o número de valores vermelhos distintos permitidos na imagem posterizada. As restantes linhas <strong>d</strong> indicam o número de pixels da imagem com vários valores vermelhos. Cada uma dessas linhas contém dois inteiros <strong>r</strong> (0 ≤ <strong>r</strong> ≤ 255) e <strong>p</strong> (1 ≤ <strong>p</strong> ≤ 2<sup>26</sup> ), onde <strong>r</strong> é um valor de intensidade vermelha e <strong>p</strong> é o número de pixels com intensidade vermelha <strong>r</strong>. Essas linhas <strong>d</strong> são dadas em ordem crescente de valor vermelho.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Mostre a soma dos erros quadrados para um conjunto de valores inteiros permitidos <strong>k</strong>.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2 1<br />
+50 20000<br />
+150 10000</p>
+
+                        </td>
+                        <td>
+                            <p>66670000</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>2 2<br />
+50 20000<br />
+150 10000</p>
+
+                </td>
+                <td>
+                    <p>0</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>4 2<br />
+0 30000<br />
+25 30000<br />
+50 30000<br />
+255 30000</p>
+
+                </td>
+                <td>
+                    <p>37500000</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+            <p class="footer">
+                ACM-ICPC World Finals 2017
+            </p>
+        </div>
+
+    </body>
+</html>

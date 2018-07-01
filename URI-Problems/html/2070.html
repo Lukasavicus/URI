@@ -1,0 +1,103 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2070 - Contando Sequências Boladas</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2070 - Contando Sequências Boladas" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2070</span>
+				<h1>Contando Sequências Boladas</h1>
+				<div>
+					<p>Por Thalyson Nepomuceno, UEC <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Dado um inteiro <strong>K</strong> e 3 sequências <strong>S<sub>1</sub></strong>, <strong>S<sub>2</sub></strong> e <strong>S<sub>3</sub></strong>, chamamos de sequência<strong> Bolada</strong>, uma sequência constituída de inteiros positivos menores ou iguais a K e que não é subsequência de S<sub>1</sub>, S<sub>2</sub> ou S<sub>3</sub>. Lembrando que uma subsequência é uma sequência que pode ser derivada de outra sequência por exclusão de alguns elementos, sem alterar a ordem dos elementos restantes.</p>
+
+<p>Por exemplo, para K = 3, S<sub>1</sub> = &lt;1, 2, 3, 1, 2&gt;, S<sub>2 </sub>= &lt;2, 3, 1, 2&gt; e S<sub>3</sub> = &lt;3, 1, 2, 3, 1, 2&gt;, todas as sequências possíveis de tamanho 1 (&lt;1&gt;, &lt;2&gt; e &lt;3&gt;) não são sequências Boladas, pois todas são subsequências de S<sub>1</sub>, S<sub>2</sub> e S<sub>3</sub>.</p>
+
+<p>Analisando todas as sequências possíveis de tamanho 2 para K = 3, temos 9 sequências:</p>
+
+<ul>
+	<li><strong>&lt;1, 1&gt; não é subsequência de S<sub>2</sub>, logo &lt;1, 1&gt; é uma sequência Bolada;</strong></li>
+	<li>&lt;1, 2&gt; é subsequência das 3 sequências;</li>
+	<li><strong>&lt;1, 3&gt; não é subsequência de S<sub>2</sub>, logo &lt;1, 3&gt; é uma sequência Bolada;</strong></li>
+	<li>&lt;2, 1&gt; é subsequência das 3 sequências;</li>
+	<li>&lt;2, 2&gt; é subsequência das 3 sequências;</li>
+	<li>&lt;2, 3&gt; é subsequência das 3 sequências;</li>
+	<li>&lt;3, 1&gt; é subsequência das 3 sequências;</li>
+	<li>&lt;3, 2&gt; é subsequência das 3 sequências;</li>
+	<li><strong>&lt;3, 3&gt; não é subsequência de S<sub>1</sub> e S<sub>2</sub>, logo &lt;3, 3&gt; é uma sequência Bolada;</strong></li>
+</ul>
+
+<p>Assim, o tamanho da menor sequência Bolada, para esse exemplo, é igual a 2. Também concluímos que existem 3 sequências Boladas de tamanho 2.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada é constituída de 4 inteiros <strong>K</strong>, <strong>L<sub>1</sub></strong>, <strong>L<sub>2</sub></strong> e <strong>L<sub>3</sub></strong>, representando, respectivamente, o inteiro <strong>K</strong> e os tamanhos das sequências <strong>S<sub>1</sub></strong>, <strong>S<sub>2</sub></strong> e <strong>S<sub>3</sub></strong> (1 ≤ <strong>K</strong> ≤ 20 e 1 ≤ <strong>L<sub>1</sub></strong>, <strong>L<sub>2</sub></strong> e <strong>L<sub>3</sub></strong> ≤ 200). A segunda linha é constituída de <strong>L<sub>1</sub></strong> inteiros, representando os elementos da sequência <strong>S<sub>1</sub></strong>. A terceira linha é constituída de <strong>L<sub>2</sub></strong> inteiros, representando os elementos da sequência <strong>S<sub>2</sub></strong>. A quarta linha é constituída de <strong>L<sub>3 </sub></strong>inteiros, representando os elementos da sequência <strong>S<sub>3</sub></strong>. Considere que todos os elementos das sequências <strong>S<sub>1</sub></strong>, <strong>S<sub>2</sub></strong> e <strong>S<sub>3</sub></strong> são inteiros positivos menores ou iguais a <strong>K</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Sendo <strong>M</strong> o menor tamanho de uma sequência Bolada para os dados de entrada. Imprima uma única linha contendo <strong>M</strong> e a quantidade de sequências Boladas de tamanho <strong>M</strong>.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 5 4 6<br/>
+1 2 3 1 2<br/>
+2 3 1 2<br/>
+3 1 2 3 1 2<br/></p>
+
+							</td>
+							<td>
+								<p>2 3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Aquecimento para a OBI 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

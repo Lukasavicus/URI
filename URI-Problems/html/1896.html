@@ -1,0 +1,134 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1896 - É Hora do Duelo!</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema D - É Hora do Duelo!" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1896</span>
+				<h1>É Hora do Duelo!</h1>
+				<div>
+					<p>Por Caio Russi, UNOESTE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Monstros de Duelo é o mais famoso campeonato de cartas do mundo. Cada duelo é disputado por dois jogadores, onde cada jogador começa com&nbsp;8.000 Pontos de Vida e com o seu Deck (Baralho). Cada carta representa um monstro que tem os atributos de Ataque, Defesa e habilidade.&nbsp;Estamos no duelo final com os dois maiores duelistas da história.&nbsp;De um lado Charlinho, um garoto que gosta muito de estudar, mas que também sabe sentir o coração das cartas.&nbsp;Do outro lado Gilmar, que não foi criado a leite com pêra, mas é reconhecido como o Mestre das Cartas.&nbsp;É a vez de Charlinho, e ele acaba de combinar seus monstros na mesa para obter o proíbido "Prassódia".</p> 
+					<p>Prassódia é o monstro mais forte do jogo, e quando invocado, a partida é finalizada na hora e o jogador que o invocou ganha o duelo.&nbsp;Para invocar Prassódia é necessário combinar duas ou mais cartas na mesa somando ataque com ataque, defesa com defesa e habilidade com habilidade&nbsp;para obter os atributos de Prassódia informados no início do duelo.</p>
+					<p>Se uma carta for escolhida para ser combinada, os atributos da carta tem que ser utilizados por inteiro,&nbsp;sendo inválido apenas utilizar o ataque ou apenas utilizar a defesa ou apenas a habilidade daquela carta&nbsp;e ainda não podendo utilizar apenas uma parte do ataque e/ou uma parte da defesa e/ou uma parte da habilidade.</p> 
+					<p>Gilmar se espanta por um momento,&nbsp;pois&nbsp;ele foi o único em toda a história&nbsp;que conseguiu invocar Prassódia,&nbsp;mas acaba duvidando da jogada de Charlinho&nbsp;porque haviam várias cartas na mesa, o que tornaria tal jogada muito suspeita.&nbsp;</p>
+					<p>Você é o Juíz do duelo e&nbsp;ficou responsável por avaliar se o Charlinho realmente conseguiu invocar ou não Prassódia com as cartas na mesa.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém 4 inteiros, o primeiro inteiro <strong>N</strong> ( 1 ≤&nbsp;<strong>N</strong> ≤ 20) representa o número de cartas na mesa seguido&nbsp;por 3 inteiros <strong>A</strong>,<strong>D</strong>,<strong>H</strong> (1 ≤ <strong>A</strong>,<strong>D</strong>,<strong>H</strong>, ≤ 1000) que representam respectivamente o ataque, a defesa e a habilidade exata para invocar Prassódia.&nbsp;Cada uma das N linhas seguintes representam uma carta da mesa, onde cada linha contém os atributos na ordem <strong>X</strong>,<strong>Y</strong>,<strong>Z</strong> (1 ≤ <strong>X</strong>,<strong>Y</strong>,<strong>Z</strong> ≤ 50) ataque, defesa e habilidade respectivamente.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída deverá conter "<strong>Y</strong>" caso Charlinho consiga realizar uma combinação válida para invocar Prassódia ou "<strong>N</strong>" caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 5 20 10<br />
+									8 10 7<br />
+									9 10 3</p>
+
+							</td>
+							<td>
+								<p>N</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 13 9 15<br />
+									7 6 5<br />
+									6 3 10<br />
+									5 9 15</p>
+							</td>
+							<td>
+								<p>Y</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+				
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 10 10 10<br />
+10 10 10<br />
+9 4 5<br />
+1 6 4</p>
+
+							</td>
+							<td>
+								<p>N</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+				
+	
+				<p class="footer">
+					Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática-Fase 2, 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

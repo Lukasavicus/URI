@@ -1,0 +1,172 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2486 - C Mais ou Menos?</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2486 - C Mais ou Menos?" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2486</span>
+				<h1>C Mais ou Menos?</h1>
+				<div>
+					<p>Por João Marcos Salvanini Bellini de Moraes, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Ultimamente, diversas pessoas estão indo à Dra. Cláudia Café com Leite para saber se estão consumindo a quantidade recomendada diária de vitamina C. Isso tem a deixado exausta, e por isso ela lhe pediu para escrever um programa que, dado o consumo diário de alimentos ricos em vitamina C por uma pessoa, indique o quanto essa pessoa deve consumir a mais ou a menos para atingir o recomendado.</p>
+
+<p>Para tal, você poderá utilizar a tabela a seguir:</p>
+
+<style>
+	.cmm {
+		border:1px solid #C0C0C0;
+		border-collapse:collapse;
+		padding:5px;
+		width: 100%;
+	}
+	.cmm th {
+		border:1px solid #C0C0C0;
+		padding:5px;
+		background:#F0F0F0;
+	}
+	.cmm td {
+		border:1px solid #C0C0C0;
+		text-align:center;
+		padding:5px;
+	}
+	.desc-example {
+		font-family: "Courier New", Courier, "Nimbus Mono L", monospace;
+	}
+</style>
+<table class="cmm">
+	<thead>
+	<tr>
+		<th>Alimentos ricos em Vitamina C</th>
+		<th>Quantidade de Vitamina C</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>suco de laranja</td>
+		<td>120 mg</td>
+	</tr>
+	<tr>
+		<td>morango fresco</td>
+		<td>85 mg</td>
+	</tr>
+	<tr>
+		<td>mamao</td>
+		<td>85 mg</td>
+	</tr>
+	<tr>
+		<td>goiaba vermelha</td>
+		<td>70 mg</td>
+	</tr>
+	<tr>
+		<td>manga</td>
+		<td>56 mg</td>
+	</tr>
+	<tr>
+		<td>laranja</td>
+		<td>50 mg</td>
+	</tr>
+	<tr>
+		<td>brocolis</td>
+		<td>34 mg</td>
+	</tr>
+	<tbody>
+</table>
+
+<p>Considere que o consumo diário recomendado de vitamina C está entre 110 mg e 130 mg, inclusive.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Cada caso de teste é composto um inteiro <strong>T</strong> (1 ≤ <strong>T</strong> ≤ 7) indicando que a pessoa consome diariamente <strong>T</strong> alimentos entre os 7 alimentos da tabela. Em seguida, haverá <strong>T</strong> linhas com um inteiro <strong>N</strong> e um alimento (totalmente em caixa baixa e sem acentuações), indicando que a pessoa consome uma quantidade <strong>N </strong>daquele alimento. A entrada termina com <strong>T</strong> = 0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste (<strong>T</strong>), se o consumo ultrapassou o limite recomendado, imprima "<span class="desc-example">Menos X mg</span>", em que X representa a quantidade a menos a ser consumida para atingir o limite recomendado; se o consumo não atingiu o recomendado, imprima "<span class="desc-example">Mais X mg</span>", em que X representa a quantidade a mais para atingir o recomendado; se o consumo está dentro do intervalo recomendado, imprima "<span class="desc-example">X mg</span>", em que X representa a quantidade consumida diariamente pela pessoa.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+<p>2 suco de laranja</p>
+
+<p>3 mamao</p>
+
+<p>1</p>
+
+<p>3 brocolis</p>
+
+<p>2</p>
+
+<p>1 manga</p>
+
+<p>1 laranja</p>
+
+<p>1</p>
+
+<p>1 suco de laranja</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>Menos 365 mg</p>
+
+<p>Mais 8 mg</p>
+
+<p>Mais 4 mg</p>
+
+<p>120 mg</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					The Last Contest 2016 - IFSULDEMINAS
+				</p>
+			</div>
+
+		</body>
+	</html>

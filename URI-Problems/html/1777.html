@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1777 - Calçada da Fama</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema C - Calçada da Fama" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1777</span>
+                <h1>Calçada da Fama</h1>
+                <div>
+                    <p>Por Gustavo Stor, UFPE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Na calçada da fama, há várias estrelas no chão com os nomes dos artistas. Alguns vândalos, talvez por inveja ou talvez pelo simples fato de querer vandalizar, estavam pichando várias dessas estrelas e colocando outros nomes no lugar:</p>
+
+                    <p style="text-align:center"><img alt=" " src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1777_1.png" style="-webkit-transform:rotate(0.00rad); border:none; height:276px; transform:rotate(0.00rad); width:390px" /></p>
+
+                    <p>O prefeito, afim de tentar minimizar esse problema, instalou várias câmeras nessa calçada. A calçada pode ser vista como um segmento [1..N], onde cada posição possivelmente se encontra uma estrela.</p>
+
+                    <p style="text-align:center"><img alt=" " src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1777_2.png" style="-webkit-transform:rotate(0.00rad); border:none; height:71px; transform:rotate(0.00rad); width:483px" /></p>
+
+                    <p>Cada câmera protege um segmento [a..b], inclusivos. Deseja-se saber, para cada estrela, se elas estão cobertas por uma câmera ou não. Você foi contratado para fazer esse trabalho.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada contém <strong>T</strong> (1 &le; <strong>T</strong> &le; 100), o número de casos de teste. Cada caso de teste começa com dois inteiros <strong>N</strong> (1 &le; <strong>N</strong> &le; 10⁹) e <strong>C</strong> (1 &le; <strong>C</strong> &le; 10⁴), o tamanho da calçada e o número de câmeras, respectivamente. A seguir há <strong>C</strong> linhas, cada uma descrevendo uma câmera <strong>i</strong> com dois inteiros <strong>a</strong><sub><strong>i</strong></sub> e <strong>b</strong><sub><strong>i</strong></sub> (1 &le; <strong>a</strong><sub><strong>i</strong></sub> &le; <strong>b</strong><sub><strong>i</strong></sub> &le; <strong>N</strong>), representando o intervalo coberto pela câmera. A seguir, há um número <strong>E</strong> (1 &le; <strong>E</strong> &le; 10⁴), o número de estrelas. A seguir há uma linha com <strong>E</strong> inteiros <strong>x</strong><sub><strong>i</strong></sub>, indicando a posição da estrela <strong>i</strong> na calçada (1 &le; <strong>x</strong><sub><strong>i</strong></sub> &le;N).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso imprima “Caso #<strong>X</strong>: <strong>Y</strong>”, onde <strong>X</strong> é o número do caso atual, começando em 1, e <strong>Y</strong> é o número de estrelas que estão cobertas por alguma câmera.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+                                10 3<br />
+                                1 3<br />
+                                1 4<br />
+                                7 8<br />
+                                3<br />
+                                2 5 8<br />
+                                2 1<br />
+                                1 2<br />
+                                3<br />
+                                1 1 2</p>
+
+                            </td>
+                            <td>
+                                <p>Caso #1: 2<br />
+                                Caso #2: 3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Adaptação da Prova Final da Seletiva UFPE - 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

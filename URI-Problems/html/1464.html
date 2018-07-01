@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1464 - Camadas de Cebola</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1464 - Camadas de Cebola" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1464</span>
+            <h1>Camadas de Cebola</h1>
+            <div>Por Walter J. Hernández <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ve.gif' alt=''/> Venezuela</div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Dr. Kabal, um reconhecido biólogo, recentemente descobriu um líquido que é capaz de curar as mais avançadas doenças. O líquido é extraído de uma cebola muito rara que pode ser encontrada em um país chamado Cebolândia. Mas nem todas cebolas de Cebolândia são apropriadas para se levar ao laboratório para processamento. Somente cebolas com um numero ímpar de camadas contém o líquido milagroso. Isto é uma descoberta ímpar!</p>
+
+                <p style="text-align: center;"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Onion%20Layers.png" style="width: 338px; height: 129px;" /></p>
+
+                <p style="text-align: center;">Figura 1: Cebola de Cebolândia</p>
+
+                <p>Dr. Kabal contratou muitos assistentes de pesquisa para coletar e analisar cebolas para ele. Como ele não quer compartilhar sua descoberta com o mundo ainda, ele não disse para os assistentes procurarem por cebolas com um numero ímpar de camadas. Ao invés disso, a cada assistente foi dada a tarefa de coletar cebolas, e selecionar pontos de cada uma das beiradas da camada mais externa, isso dá uma aproximação da estrutura de camadas da cebola que pode ser reconstruída depois. Dr. Kabal disse aos assistentes que o próximo passo seria a "análise complicada" desses pontos. De fato, tudo que eles farão é usar os pontos para contar o número de camadas em cada uma das cebolas, e selecionar aquelas com um número ímpar de camadas.</p>
+
+                <p style="text-align: center;"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Onion%20Layers_B.png" style="width: 347px; height: 142px;" /></p>
+
+                <p style="text-align: center;">Figura 2: Pontos coletados por um assistente</p>
+
+                <p>É claro que a aproximação obtida por Dr. Kabal, dos pontos coletados, pode ter uma aparência diferente da cebola original. Por exemplo, somente alguns pontos da cebola mostrada na figura 1 podem ser extraídos no processo, dando origem a um conjunto de pontos como mostrado na figura 2. Com estes pontos Dr. Kabal tentará aproximar as camadas originais da cebola, obtendo algo como mostrado na figura 3. O procedimento de aproximação seguido pelo Dr. Kabal (cujo resultado é mostrado na figura 3) é simplesmente recursivamente encontrar polígonos convexos aninhados tais que no fim todo ponto pertencerá a um dos polígonos. Os assistentes foram informados para selecionar pontos de tal forma que o número de camadas na aproximação, se feita desta forma recursiva, seja o mesmo que na cebola original, o que é bom para o Dr. Kabal. Os assistentes também estão cientes de que eles precisam de pelo menos três pontos para aproximar uma camada, mesmo as internas.</p>
+
+                <p style="text-align: center;"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Onion%20Layers_C.png" style="width: 308px; height: 126px;" />​</p>
+
+                <p style="text-align: center;">Figura 3: Aproximação do Dr. Kabal</p>
+
+                <p>Sua tarefa é escrever um programa que, dado o conjunto de pontos coletado pelo assistente (como mostrado na figura 2), determine se a respectiva cebola pode ser levada para o laboratório.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. Cada caso de teste consiste de um inteiro 3 ≤ <strong>N</strong> ≤ 2000 em uma linha simples, indicando o número de pontos coletados pelo assistente. A seguir, haverão <strong>N</strong> linhas, cada uma contendo dois inteiros -2000 ≤ <strong>X</strong>, <strong>Y</strong> ≤ 2000 correspondendo às coordenadas de cada ponto. A entrada terminará com<strong> N</strong> = 0, que não deve ser processado.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Deverá haver uma linha de saída para cada caso de teste na entrada. Para cada caso de teste imprima a string</p>
+
+                <p><strong>Take this onion to the lab!</strong></p>
+
+                <p>se a cebola deve ser levada para o laboratório ou</p>
+
+                <p><strong>Do not take this onion to the lab!</strong></p>
+
+                <p>se a cebola não deve ser levada para o laboratório.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>7<br />
+                                0 0<br />
+                                0 8<br />
+                                1 6<br />
+                                3 1<br />
+                                6 6<br />
+                                8 0<br />
+                                8 8<br />
+                                11<br />
+                                2 6<br />
+                                3 2<br />
+                                6 6<br />
+                                0 0<br />
+                                0 11<br />
+                                1 1<br />
+                                1 9<br />
+                                7 1<br />
+                                7 9<br />
+                                8 10<br />
+                                8 0<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>Do not take this onion to the lab!<br />
+                                Take this onion to the lab!</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2006.
+            </p>
+        </div>
+    </body>
+</html>

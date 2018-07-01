@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2223 - Inventário de Pomekon</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - Problema 2223 - Inventário de Pomekon" />
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+  </head>
+  <body>
+
+    <div class="header">
+      <span>URI Online Judge | 2223</span>
+      <h1>Inventário de Pomekon</h1>
+      <div>
+        <p>Por Gabriel Duarte, UNIFESO <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem">
+
+      <div class="description">
+        <p>Depois de capturar diversos Pomekons, Dabriel resolveu separá-los em diversas pilhas e aplicar algumas operações sobre elas. Como todos já sabem, Dabriel é um Mestre Pomekon, então seus conhecimentos com programação são bem limitados, com isso ele solicitou sua ajuda para resolver o problema dele.</p>
+
+        <p>Dabriel deseja realizar <strong>Q </strong>operações nas pilhas, cada operação poderá ser de 2 tipos, como descrito abaixo:</p>
+
+        <p><strong>1 X Y K</strong>: Retorna a quantidade de Pomekons que existiam no intervalo entre as posições <strong>X</strong> e <strong>Y</strong>, após a <strong>K</strong>-ésima operação do tipo 2. É garantido que a <strong>K</strong>-ésima operação já terá sido feita.</p>
+
+        <p><strong>2 X W</strong>: Atualiza o total de Pomekons da pilha <strong>X</strong> com o valor <strong>W</strong>.</p>
+      </div>
+
+      <h2>Entrada</h2>
+
+      <div class="input">
+        <p>
+          A entrada é composta por
+          diversas instâncias. A primeira linha da entrada contém um inteiro <b>T</b>
+          indicando o número de instâncias.
+          Cada instância inicia com um inteiro <strong>N</strong> (1 ≤
+          <strong>N</strong> ≤ 10⁵), representando a quantidade de pilhas
+          existentes. A segunda linha terá <strong>N</strong> inteiros<strong>
+            pi </strong>(1 ≤ <strong>pi</strong> ≤ 10⁵), representando quantos
+          Pomekons existem na pilha <strong>i</strong>.
+          Na próxima linha haverá um inteiro <strong>Q</strong> (1 ≤
+          <strong>Q</strong> ≤ 10⁵), que representa a quantidade de operações
+          que serão realizadas. Seguirão <strong>Q</strong> linhas,
+          representando as <strong>Q</strong> operações realizadas.
+        </p>
+      </div>
+
+      <h2>Saída</h2>
+
+      <div class="output">
+        <p>Para cada operação do tipo 1, imprima uma única linha contendo a quantidade de Pomekons que existem entre as pilhas <strong>X</strong> e <strong>Y </strong>após a <strong>K</strong>-ésima operação.</p>
+      </div>
+
+      <div class="both"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <td>Exemplo de Entrada</td>
+            <td>Exemplo de Saída</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="division">
+              <p>
+                1<br />
+                4<br />
+                1 2 3 4<br />
+                9<br />
+                1 1 2 0<br/>
+                1 1 3 0<br/>
+                1 1 4 0<br/>
+                2 1 5<br/>
+                1 1 4 1<br/>
+                1 1 1 1<br/>
+                2 4 0<br/>
+                1 1 4 0<br/>
+                1 1 4 2<br/>
+                </p>
+            </td>
+            <td>
+              <p>3</br/>
+                6</br/>
+                10</br/>
+                14</br/>
+                5</br/>
+                10</br/>
+                10</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="both"></div>
+
+      <p class="footer">
+        II Maratona de programação do IFCE-Aracati 
+      </p>
+    </div>
+
+  </body>
+</html>

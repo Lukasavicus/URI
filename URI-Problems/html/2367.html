@@ -1,0 +1,136 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2367 - Competição de Chocolate</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2367 - Competição de Chocolate" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2367</span>
+				<h1>Competição de Chocolate</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2009 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Carlos e Paula acabaram de ganhar um saco com bolinhas de chocolate. Como sabem que vão comer tudo muito rápido inventaram uma brincadeira:</p>
+
+					<ul>
+						<li>Eles vão comer de forma alternada, um depois o outro, sendo que sempre a Paula começa.</li>
+						<li>A cada vez, só se pode comer de 1 a M bolinhas, sendo o M decidido pela mãe de Paula, de forma que não engasguem com o chocolate.</li>
+						<li>Se um comeu K bolinhas em sua vez, o próximo não pode comer o mesmo tanto, tendo que comer um número de bolinhas distinto.</li>
+						<li>Quem não puder mais jogar de maneira válida perde.</li>
+					</ul>
+
+					<p>Um exemplo de partida para M = 5 e 20 bolinhas, onde Carlos ganhou:</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_168_D.png" alt="sample" width="500"> </center>
+
+					<p>Observe que no final Carlos não poderia comer 2 bolinhas para ganhar, pois seria o mesmo que Paula comeu na vez anterior. Mas Paula também não pôde comer a última bolinha, pois Carlos havia comido apenas uma na rodada anterior, assim Paula ficou sem opção de jogada e perdeu.</p>
+
+					<p>Ambos são muito espertos e jogam de maneira ótima, de forma que se existe para um deles uma sequência de jogadas que garante a vitória independente da jogada do outro, essa pessoa jogará dessa forma.</p>
+
+					<p>Sua tarefa é determinar quem vai ganhar a brincadeira, se ambos jogam de forma ótima.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado).</p>
+
+					<p>A entrada consiste de uma linha contendo dois inteiros <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 10<sup>6</sup>) e <strong>M</strong> (2 ≤ <strong>M</strong> ≤ 10<sup>3</sup>), sendo <strong>N</strong> o número de bolinhas de chocolate e <strong>M</strong> o número de bolinhas permitidas por vez.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na saída padrão, uma linha, contendo o nome do vencedor, como exemplificado abaixo.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 3</p>
+
+							</td>
+							<td>
+								<p>Paula</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+		        <table>
+		            <thead>
+		            </thead>
+		            <tbody>
+		                <tr>
+		                    <td class="division">
+		                        <p>20 5</p>
+
+		                    </td>
+		                    <td>
+		                        <p>Carlos</p>
+
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+
+		        <div class="both"></div>
+
+		        <table>
+		            <thead>
+		            </thead>
+		            <tbody>
+		                <tr>
+		                    <td class="division">
+		                        <p>5 6</p>
+
+		                    </td>
+		                    <td>
+		                        <p>Paula</p>
+
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2009 Fase 2 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

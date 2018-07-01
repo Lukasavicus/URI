@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 #include <unistd.h>
 #include <string.h>
 
@@ -20,11 +21,27 @@ void int2str(char *s, const int n){
 
 }
 
-int main(){
-
+long long int str2int(const char *s){
+	int size = strlen(s);
 	int i;
-	const int min = 2000;
-	const int max = 2255;
+	long long int ans = 0;
+	for(i = 0; i < size; i++){
+		ans += pow(s[i], size-i);
+	}
+	return ans;
+}
+
+int main(const int argc, const char **argv ){
+
+	//if(argc != 3)
+	//	printf("Error, parameters min_id and max_id not founded\nPlease use the program as follow:\n\turi_down 1001 1020");
+	
+	int i;
+	int min = 1363;
+	int max = 2795;
+	
+	//min = int(argv[1]);
+	//max = int(argv[2]);
 
 	//Existem 1300 problemas ou seja o último é o 2301
 

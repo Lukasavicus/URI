@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1373 - Sequências de DNA</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1373 - Sequências de DNA" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1373</span>
+            <h1>Sequências de DNA</h1>
+            <div><p>Por Cláudio L. Lucchesi <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 4</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Thomas, um cientista da computação que trabalha com sequências de DNA, precisa computar as maiores subsequências comuns de dados pares de strings. Considere um alfabeto S de letras e uma palavra w = a<sub>1</sub>a<sub>2&nbsp;</sub>... a<sub>r</sub>, onde a<sub>i</sub> ∈ Σ, para i = 1, 2, ..., r. Uma subsequencia de w é uma palavra x = a<sub>i1</sub>a<sub>i2&nbsp;</sub>... a<sub>is</sub> tal que 1 ≤ i<sub>1</sub> &lt; i<sub>2</sub> &lt; ... &lt; i<sub>s</sub> ≤ r. A subsequência x é um segmento de w se i<sub>j+1</sub> = i<sub>j</sub> + 1, para j = 1, 2, ..., s-1. Por exemplo a palavra ove é um segmento da palavra lovely, enquanto a palavra loly é uma subsequência de lovely, mas não um segmento.</p>
+
+                <p>
+                    Uma palavra é uma subsequência comum de duas palavras w<sub>1</sub> e w<sub>2</sub> se ela é uma subsequência de cada uma das duas. Uma maior subsequência comum de w<sub>1</sub> e w<sub>2</sub> uma subsquência comum de w<sub>1</sub> e w<sub>2</sub> tendo o maior comprimento possível. Por exemplo, considere as palavras w<sub>1</sub> = lovxxelyxxxxx e w<sub>2</sub> = xxxxxxxlovely. As palavras w<sub>3</sub> = lovely e w<sub>4</sub> = xxxxxxx, a última de comprimento 7, são ambas subsequências comuns de w<sub>1</sub> e w<sub>2</sub>. De fato, w<sub>4</sub> é a maior subsequência comum delas. Perceba que a palavra vazia, de comprimento zero, é sempre uma subsequência comum, apesar não ser necessariamente a mais longa.</p>
+
+                <p>
+                    No caso do Thomas, existe um requerimento extra: a subsequência tem que ser formada de segmentos comuns tendo comprimento K ou maior. Por exemplo, se Thomas decidir que K = 3, então ele considera lovely como uma subsequência comum aceitável de lovxxelyxxxxx e xxxxxxxlovely, enquanto xxxxxxx, que tem um comprimento de 7 e também é uma subsequência comum, não é aceitável. Você pode ajudar Thomas?</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada consiste de vários casos de teste. A primeira linha de um caso de teste contém um inteiro <strong>K</strong> representando o comprimento mínimo de segmentos comuns, onde 1 ≤ <strong>K</strong> ≤ 100. As próximas duas linhas contém, em cada, uma palavra com letras minúsculas do alfabeto tradicional de 26 letras. O comprimento <strong>L</strong> de cada palavra satisfaz a desigualdade 1 ≤ <strong>L</strong> ≤ 10<sup>3</sup>. Não existem espaços nas linhas de entrada. O final da entrada é indicado por uma linha contendo um zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste na entrada, seu programa deve imprimir uma única linha, contendo o comprimento da maior subsequência formada por segmentos consecutivos de comprimento de pelo menos <strong>K</strong> de ambas palavras. Se não existir uma subsequência comum de comprimento maior que zero, então deve ser imprimido 0.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                lovxxelyxxxxx<br />
+                                xxxxxxxlovely<br />
+                                1<br />
+                                lovxxelyxxxxx<br />
+                                xxxxxxxlovely<br />
+                                3<br />
+                                lovxxxelxyxxxx<br />
+                                xxxlovelyxxxxxxx<br />
+                                4<br />
+                                lovxxxelyxxx<br />
+                                xxxxxxlovely<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                6<br />
+                                7<br />
+                                10<br />
+                                0</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+             </table>
+             <p class="footer">
+                 ACM/ICPC South America Contest 2008.
+			 </p>
+        </div>
+
+    </body>
+</html>

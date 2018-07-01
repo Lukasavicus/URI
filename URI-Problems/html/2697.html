@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2697 - Sequencia Completa de Naebbirac</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema C - Sequencia Completa de Naebbirac" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2697</span>
+			<h1>Sequencia Completa de Naebbirac</h1>
+			<div>
+				<p>Por Yonny Mondelo Hernández <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cu.gif' alt='CU' /> Cuba</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Naebbirac é um jovem marinheiro que se entedia facilmente. Ele gosta de sequências de inteiros, e desenvolveu modos de classifica-las. Naebbirac diz que toda a sequência é completa para um dado inteiro <b>K</b>, se a sequência apenas contem inteiros entre 1 e <b>K</b>, e que cada inteiro entre 1 e <b>K</b> aparece o mesmo número de vezes.</p>
+
+<p>Baseado nisso, Naebbirac criou um jogo para entreter a si e aos seus colegas quando as águas estão calmas e não muito o que possam fazer para passar o tempo no meio do oceano.</p>
+
+<p>Primeiro ele escolhe um inteiro positivo <b>K</b> e então ele usa giz para desenhar no convés uma sequência <b>S</b> contendo <b>N</b> inteiros entre 1 e <b>K</b>. Após isso ele desafia algum de seus camaradas. O objetivo do desafio é transformar a sequência <b>S</b> em uma sequência completa executando uma das três seguintes operações:</p>
+
+<ul>
+	<li>”-x” : remove uma das ocorrências do inteiro x de <b>S</b>;</li>
+	<li>”+x”: adiciona um novo inteiro de valor x em <b>S</b>; ou</li>
+	<li>”-x +y”: substitui uma ocorrência do inteiro x de <b>S</b> por um inteiro de valor y.</li>
+</ul>
+
+<p>Naebbirac é bem esperto. Ele nunca escreve uma sequência já completa e frequentemente escreve inteiros que não seguem padrão algum, tornando bem difícil encontrar uma operação que resolva o enigma. Um de sus amigos, que frequentemente navega com Naebbirac, está cansado de sempre perder o jogo. Você é capaz de ajudar seu amigo e criar um programa que ache a solução ao enigma proposto antes que eles voltem a velejar?</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha contem dois inteiros <b>K</b> (3 ≤ K ≤ 1000) e <b>N</b>  ( 1 ≤ <b>N</b>≤ 10<sup>4</sup>), indicando respectivamente o inteiro que Naebbirac escolheu para começar o jogo e o comprimento da sequencia escrita no convés. A segunda linha contem <b>N</b> inteiros <b>S</b><sub>1</sub>, <b>N</b><sub>2</sub>,…,<b>S<sub>N </sub></b>(1 ≤ <b>S</b> <sub>i </sub>≤<b> K</b> for i = 1, 2, . . . , <b>N</b>) representando a&nbsp;sequência escrita; você pode seguramente assumir que a sequência não está completa.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Imprima uma única linha com a descrição da operação que possibilita o seu amigo ganhar o jogo ou um <b>“*”</b> (asterisco) se não existe maneira de ganhar. A descrição da operação deve seguir o formato mostrado no enunciado, i.e. “-x”, “+x” ou “-x +y”.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3 5</p>
+
+<p>1</p>
+
+<p>3</p>
+
+<p>2</p>
+
+<p>3</p>
+
+<p>1</p>
+
+						</td>
+						<td>
+							<p>+2</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>3 7</p>
+
+<p>1</p>
+
+<p>2</p>
+
+<p>3</p>
+
+<p>3</p>
+
+<p>3</p>
+
+<p>2</p>
+
+<p>1</p>
+
+                </td>
+                <td>
+                    <p>-3</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>3 6</p>
+
+<p>3</p>
+
+<p>1</p>
+
+<p>2</p>
+
+<p>1</p>
+
+<p>3</p>
+
+<p>1</p>
+
+                </td>
+                <td>
+                    <p>-1 +2</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>3 6</p>
+
+<p>2</p>
+
+<p>3</p>
+
+<p>2</p>
+
+<p>2</p>
+
+<p>2</p>
+
+<p>1</p>
+
+                </td>
+                <td>
+                    <p>*</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+
+			<p class="footer">
+				ICPC Latin American Regional – 2017
+			</p>
+		</div>
+
+	</body>
+</html>

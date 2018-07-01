@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2595 - Cash Roial</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 2570 - Cash Roial" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2595</span>
+            <h1>Cash Roial</h1>
+            <div>
+                <p>Por Abner Samuel P. Palmeira, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+            </div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Cash Róial é um jogo mobile muito popular, que está disponível para os celulares Ciborgue e AOS (Aifone OS). O jogo é disputado por dois jogadores, que invocam tropas em uma arena com objetivo de derrotar o oponente.</p>
+
+<p>Irineu gosta muito de jogar Cash Róial, mas atualmente ele não tem conseguido muitas vitórias, então ele pediu sua ajuda. Irineu sabe como está a arena neste exato momento, ele quer invocar uma tropa na posição (<strong>X,Y</strong>) e saber se ela será derrotada ou não. Uma tropa é derrotada se nas posições adjacentes houver pelo menos cinco tropas inimigas.</p>
+
+<p>A posição no canto superior esquerdo representa as coordenadas (1,1) e a posição no canto inferior direito representa as coordenadas (<strong>N,M</strong>).</p>
+
+<p>Sua tarefa é responder às perguntas de Irineu.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A primeira linha de entrada contém um inteiro <strong>C</strong> que indica a quantidade de casos de teste.</p>
+                    <p>A primeira linha de cada caso de teste contém três números inteiros <strong>N</strong>, <strong>M</strong> e <strong>P</strong>, indicando respectivamente o número de linhas, o número de colunas da arena e o número de perguntas. Cada uma das <strong>N</strong> linhas seguintes da entrada descreve uma linha de células da arena e contém uma cadeia com <strong>M</strong> caracteres. As próximas <strong>P</strong> linhas contém dois inteiros <strong>X</strong>,<strong>Y</strong> indicando o local que Irineu quer colocar uma tropa.</p>
+
+<p>Cada célula da arena pode conter um dos seguintes caracteres:</p>
+
+<p>‘.’ — célula vazia.</p>
+
+<p>'T' — célula que contém uma tropa inimiga.</p>
+
+<p>(1 &le; <strong>N</strong> &le; 1000)</p>
+
+<p>(1 &le;  <strong>M</strong> &le;  1000)</p>
+
+<p>(1 &le;  <strong>P </strong>&le;  1000)</p>
+
+<p>(1 &le;  <strong>X </strong>&le; N)</p>
+
+<p>(1 &le;  <strong>Y </strong>&le;  M)</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada pergunta de Irineu, escreva "GG IZI" se a tropa vai viver e "GRRR" caso contrário.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>1<br />
+                            8 8 2<br />
+........<br />
+........<br />
+........<br />
+...T....<br />
+..T.T...<br />
+..TTT...<br />
+........<br />
+........<br />
+5 4<br />
+6 2</p>
+
+                        </td>
+                        <td>
+                            <p>GRRR<br />
+                            GG IZI</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <p class="footer">
+                The First Contest 2017 - IFSULDEMINAS
+            </p>
+        </div>
+
+    </body>
+</html>

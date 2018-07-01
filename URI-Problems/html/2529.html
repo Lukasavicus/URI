@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2529 - Circo das Pulgas</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Circo das Pulgas" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2529</span>
+			<h1>Circo das Pulgas</h1>
+			<div>
+				<p>Por Flávio Zavan, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 2</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Vasya e Petya resolveram investir em um novo empreendimento. Eles abriram um circo de pulgas.</p>
+
+<p>Neste exato momento, eles estão ensaiando com suas <strong>P</strong> pulgas em uma linha reta. Cada inseto carrega uma pequena placa com um número inteiro e sabe seguir 4 ordens diferentes:</p>
+
+<ul>
+	<li>Trocar o número em sua placa por outro especificado;</li>
+	<li>Gritar a quantidade de números pares nas placas das pulgas de um dado intervalo de posições;</li>
+	<li>Gritar a quantidade de números ímpares nas placas das pulgas de um dado intervalo de posições;</li>
+	<li>Começar a dançar enquanto as pulgas de um dado intervalo de posições invertem a ordem de suas placas.</li>
+</ul>
+
+<p>Alguns animais não entenderam a última tarefa e pediram um exemplo. Vasya prosseguiu:</p>
+
+<p>Suponha que existam 10 pulgas inicialmente segurando placas com os seguintes valores:</p>
+
+<p>70, 15, 3, 4, 15, 59, 0, 1, 444, 2</p>
+
+<p>Se a ordem for para inverter a ordem das placas no intervalo [3, 7], a nova configuração seria:</p>
+
+<p>70, 15, 0, 59, 15, 4, 3, 1, 444, 2</p>
+
+<p>A dupla pediu para que você escrevesse um programa que simule o ensaio das pulgas. Desta forma, eles podem verificar se elas estão bem treinadas.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso de teste contém dois inteiros <strong>P</strong> e <strong>Q</strong> (1 ≤ <strong>P</strong>, <strong>Q</strong> ≤ 10<sup>5</sup>). A linha seguinte contém <strong>P</strong> inteiros <strong>p<sub>i</sub></strong> (0 ≤ <strong>p<sub>i</sub></strong> ≤ 10<sup>9</sup>) separados por espaços com o número inicialmente escrito na placa das pulgas.</p>
+
+<p>As <strong>Q</strong> linhas seguintes descrevem as ordens dadas aos insetos e seguem uma das quatro possibilidades:</p>
+
+<ul>
+	<li><em>S <strong>a</strong> <strong>v</strong></em>: Trocar o número da placa da pulga na posição <strong>a</strong> (1 ≤ <strong>a</strong> ≤ <strong>P</strong>) por <strong>v</strong>;</li>
+	<li><em>E <strong>a b</strong></em>: Gritar a quantidade de números pares nas placas das pulgas no intervalo [<strong>a</strong>,<strong>b</strong>] (1 ≤ <strong>a</strong> ≤ <strong>b </strong> ≤ <strong>P</strong>);</li>
+	<li><em>O <strong>a b</strong></em>: Gritar a quantidade de números ímpares nas placas das pulgas no intervalo [<strong>a</strong>,<strong>b</strong>] (1 ≤ <strong>a</strong> ≤ <strong>b</strong> ≤ <strong>P</strong>);</li>
+	<li><em>I <strong>a b</strong></em>: Inverter a ordem das placas no intervalo [<strong>a</strong>,<strong>b</strong>] (1 ≤ <strong>a</strong> ≤ <strong>b</strong> ≤ <strong>P</strong>).</li>
+</ul>
+<p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha com o valor a ser gritado para cada operação de grito (tanto <em>E</em> quanto <em>O</em>).</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>7 8<br />
+30 50 1 2 3 4 10<br />
+O 1 7<br />
+S 2 7<br />
+E 1 7<br />
+S 3 8<br />
+O 1 7<br />
+O 1 3<br />
+I 3 5<br />
+O 1 3</p>
+
+						</td>
+						<td>
+							<p>2<br />
+4<br />
+2<br />
+1<br />
+2</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				6a Seletiva UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

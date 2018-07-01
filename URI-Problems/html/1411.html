@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1411 - Encolhendo Polígonos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1411 - Encolhendo Polígonos" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1411</span>
+            <h1>Encolhendo Polígonos</h1>
+            <div>Por Ricardo Anido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Um polígono é dito inscrito em um círculo quando todos seus vértices estão naquele círculo. Nesse problema você receberá um polígono inscrito em um círculo, e você deve determinar o número mínimo de vértices que devem ser removidos para transformar o polígono dado em um polígono regular, i.e., um polígono que é equiângular (todos ângulos são congruentes) e equilateral (todos lados têm o mesmo comprimento).</p>
+
+                <p>Quando você remove um vértice v você primeiro remove o vértice e os segmentos de reta conectando-o aos seus vértices adjacentes w1 e w2, e então você cria um novo segmento de reta conectando w1 e w2. A figura (a) abaixo ilustra um polígono inscrito em um círculo, com dez vértices, e a figura (b) mostra um pentágono (polígono regular com cinco lados) formado ao remover cinco vértices do polígono em (a).</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Shrinking%20Polygons.png" style="width: 351px; height: 177px;" />​</p>
+
+                <p>Nesse problema consideraremos que qualquer polígono deve ter pelo menos três lados.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém diversos casos de teste. A primeira linha de um caso de teste contém um inteiro <strong>N</strong> indicando o número de vértices do polígono inscrito (3 ≤ <strong>N</strong> ≤ 10<sup>4</sup>). A segunda linha contém <strong>N</strong> inteiros <strong>X<sub>i</sub></strong> separados por espaços (1 ≤ <strong>X<sub>i</sub></strong> ≤ 10<sup>3</sup> para 0 ≤ <strong>i</strong> ≤ <strong>N</strong> - 1). Cada <strong>X<sub>i</sub></strong> representa o comprimento do arco definido no círculo circunscrito, no sentido horário, pelos vértices <strong>i</strong> e (<strong>i</strong>+1) mod <strong>N</strong>. Lembre-se que um arco é um segmento da circunferência de um círculo; não o confunda com coda, que é um segmento de linha cujos ambos extremos estão no círculo.</p>
+
+                <p>O final da entrada é indicado por uma linha contendo apenas um zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, seu programa deve imprimir uma única linha, contendo o número mínimo de vértices que precisam ser removidos do polígono dado para formar um polígono regular. Se não for possível formar um polígono regular, a linha deve conter apenas o valor -1.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>3<br />
+                                1000 1000 1000<br />
+                                6<br />
+                                1 2 3 1 2 3<br />
+                                3<br />
+                                1 1 2<br />
+                                10<br />
+                                10 40 20 30 30 10 10 50 24 26<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>0<br />
+                                2<br />
+                                -1<br />
+                                5</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+             </table>
+            <p class="footer">
+                 ACM/ICPC South America Contest 2008.
+			</p>
+        </div>
+
+    </body>
+</html>

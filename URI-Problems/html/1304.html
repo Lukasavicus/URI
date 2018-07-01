@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1304 - Velocidade Média</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1304 - Velocidade Média" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1304</span>
+            <h1>Velocidade Média</h1>
+            <div><p>Por Gordon Cormack <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ca.gif' alt=""/> Canada</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Você comprou um carro para dirigir de Waterloo para uma cidade grande. O odômetro do seu carro está quebrado, então você não pode medir a distância. Mas o velocímetro e o Cruise Control (sistema que mantém a velocidade, previamente programada, do veículo constante) estão funcionando, de modo que o carro pode manter uma velocidade constante, que pode ser ajustada de tempos em tempos em resposta aos limites de velocidade, engarrafamentos ou filas nas fronteiras. Você tem um cronômetro e anota o tempo decorrido toda vez que a velocidade muda. De vez em quando você se pergunta: “O quão longe eu estou?”. Para resolver este problema, você deve escrever um programa para ser executado em seu computador portátil no banco do passageiro.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada padrão contém várias linhas de entrada: Cada alteração de velocidade é indicada por uma linha específica com o tempo decorrido desde o início da viagem (hh:mm:ss), seguido da nova velocidade em km/h. Cada consulta é indicada por uma linha que contém o tempo decorrido. No início da viagem o carro está parado. O tempo decorrido é dado em ordem não decrescente e há, no máximo, uma variação de velocidade por linha de entrada.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada consulta na entrada padrão, você deve imprimir uma linha dando o tempo e a distância percorrida, no formato abaixo, utilizando o arredondamento padrão da linguagem.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                00:00:01 100<br />
+                                00:15:01<br />
+                                00:30:01<br />
+                                01:00:01 50<br />
+                                03:00:01<br />
+                                03:00:05 140</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                00:15:01 25.00 km<br />
+                                00:30:01 50.00 km<br />
+                                03:00:01 200.00 km</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Adaptado por Gerson Groth
+            </p>
+        </div>
+
+    </body>
+</html>

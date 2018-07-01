@@ -1,0 +1,109 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2021 - Luzes de Natal</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema D - Luzes de Natal" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2021</span>
+				<h1>Luzes de Natal</h1>
+				<div>
+					<p>Por Leonardo Falk, URI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Chegou o Natal e é época de organizar a casa para refletir o clima de festividades do fim de ano. A familia de Jon começou a enfeitar a casa e sua função é pendurar inúmeras luzes de natal ao redor da casa no formato de um retângulo. No entanto essas luzes são um pouco chatas, após guardá-las durante todo o ano algumas acabam quebradas e outras queimadas. O modelo de luzes que ele está usando é no formato de retângulo.</p>
+
+					<p>Jon vai comprar todas as luzes avulsas que precisam ser substituidas porque ele não sabe que a primeira coluna das luzes funciona de forma paralela enquanto que pra cada linha elas funcionam em série fazendo-o pensar que todas a partir de um determinado ponto estão queimadas. O que ele faz na verdade é contar, em ordem, o numero das luzes até achar aquela que não acende mais e então anota o seu número num papel e então pula para a próxima linha recomeçando a contagem.</p>
+
+					<p>Por exemplo numa rede 5x5 existem 2 posições que ele encontrou 5 e 1, isso teria a seguinte representação:</p>
+
+					<p style="text-align:center">****-<br />
+					- - - - -<br />
+					*****<br />
+					*****<br />
+					*****</p>
+
+					<p>Logo a quantidade que Jon deve comprar é 6.</p>
+
+					<p>Sua tarefa é dizer quantas luzes estão apagadas a partir das posições que Jon anotou para que ele possa comprar elas avulsas.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste em multiplas entradas que começam com uma linha com 3 inteiros <strong>M</strong>, <strong>N</strong> e <strong>P</strong> (2 <em>≤</em> <strong>M</strong>, <strong>N</strong> <em>≤</em> 500 e 1 <em>≤</em> <strong>P</strong> <em>≤</em> <strong>N</strong>) que representam respectivamente altura, largura e quantidade de posições que ele encontrou. As próximas <strong>P</strong> linhas contém um número <strong>Q</strong> (1 <em>≤</em> <strong>Q</strong> <em>≤</em> <strong>M</strong>*<strong>N</strong>) que são as posições de cada luz apagada. A entrada termina quando <strong>M</strong> = <strong>N</strong> = <strong>P</strong> = 0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso imprima a frase "Lights: X" sendo X o total de luzes apagadas que Jon deve comprar.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>10 5 2</p>
+								<p>5</p>
+								<p>1</p>
+								<p>10 10 10</p>
+								<p>1</p>
+								<p>2</p>
+								<p>3</p>
+								<p>4</p>
+								<p>5</p>
+								<p>5</p>
+								<p>4</p>
+								<p>3</p>
+								<p>2</p>
+								<p>1</p>
+								<p>0 0 0</p>
+							</td>
+							<td>
+								<p>Lights: 6</p>
+								<p>Lights: 80</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					Contest de Natal 2015.
+				</p>
+			</div>
+
+		</body>
+	</html>

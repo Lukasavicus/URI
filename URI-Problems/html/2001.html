@@ -1,0 +1,96 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2001 - Bile</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2001 - Bile" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2001</span>
+				<h1>Bile</h1>
+				<div>
+					<p>Por Alisson Soares, UECE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 5</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Bile é um garoto esperto que gosta bastante de recorrências. Ele estava participando de uma competição em que a melhor sequência ganharia um premio. Bile criou uma sequência <em>F</em> em que os <em>N</em> primeiros valores são conhecidos, e para descobrir o valor de <em>F</em><sub><em>K</em></sub>, para um <em>K</em>  <em>N</em>, é utilizada a formulação abaixo.</p>
+
+<p></p>
+
+<p>Para <em>N</em>  <em>K</em>: <em>F</em><sub><em>K</em></sub> = 1*<em>F</em><sub><em>K</em>-1</sub> + 2*<em>F</em><sub><em>K</em>-2</sub> + ... + <em>N</em>*<em>F</em><sub><em>K-N</em></sub></p>
+
+<p></p>
+
+<p>Mas Bile não sabe calcular de forma rápida os valores de sua sequência e pediu a sua ajuda.</p>
+
+<p>No primeiro caso de teste: <em>N</em> = 2, <em>K</em> = 3, <em>F</em><sub>1</sub> = 2, <em>F</em><sub>2</sub> = 5, <em>F</em><sub>3</sub> = <em>F</em><sub>2</sub> + 2*<em>F</em><sub>1</sub> = 9, <em>F</em><sub>4 </sub>= <em>F</em><sub>3</sub> + 2*<em>F</em><sub>2</sub> = 19 ...</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste em vários casos de teste. Cada caso de teste consiste de duas linhas. A primeira linha de cada caso de teste contém dois inteiros, <strong>N</strong> ( 2 ≤ <strong>N</strong> ≤ 100 ) e <strong>K</strong> ( <strong>N</strong> ≤ <strong>K</strong> ≤ 10<sup>18</sup> ), representando o número de valores inicialmente conhecidos da sequência de Bile. A segunda linha consiste de <strong>N</strong> inteiros <strong>F</strong><sub>i</sub> ( <strong>F</strong><sub>1</sub>, <strong>F</strong><sub>2</sub>, … ,<strong>F</strong><sub><strong>N</strong></sub> ) e ( 0 ≤ <strong>F</strong><sub><strong>i</strong> </sub>≤ 10<sup>10</sup> ) que representam os valores inicialmente conhecidos. A entrada termina com final de arquivo (EOF).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste imprima o valor do <strong>F</strong><sub><strong>K</strong></sub> e a soma de todos os elementos da função de Bile menores ou iguais a <strong>F</strong><sub><strong>K</strong></sub>, separados por um espaço. Suas respostas devem ser apresentadas em módulo 303700049.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 3<br />
+2 5<br />
+5 6<br />
+1 2 3 4 5</p>
+
+							</td>
+							<td>
+								<p>9 16<br />
+35 50</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Olimpíada Cearense de Informática - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

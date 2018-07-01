@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1278 - Justificador II </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1278 - Justificador II " />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1278</span>
+            <h1>Justificador II </h1>
+            <div><p>
+                    Por Bruno Santos <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    N&oacute;s temos alguns textos e queremos format&aacute;-los e justific&aacute;-los &agrave; direita, ou seja, alinhar suas linhas &agrave;
+                    margem direita de cada um. Crie um programa que, ap&oacute;s ler um texto, reimprima esse texto com apenas um espa&ccedil;o entre as palavras e suas linhas
+                    justificadas &agrave; direita em todo o texto.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada cont&eacute;m diversos casos de teste. A primeira linha de cada caso de teste cont&eacute;m um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 100) que indica o n&uacute;mero de linhas de texto que virão a seguir. Cada uma destas <strong>N</strong> linhas de texto contém de 1 a 50 letras mai&uacute;sculas (&lsquo;A&rsquo;-&lsquo;Z&rsquo;) ou espa&ccedil;os (&lsquo; &rsquo;). Todas as linhas de texto contém no mínimo uma letra. Poder&aacute; haver mais de um espa&ccedil;o entre as palavras. &Eacute; tamb&eacute;m poss&iacute;vel haver espa&ccedil;os no
+                    in&iacute;cio e no final da linha. O fim da entrada &eacute; indicado por <strong>N</strong> = 0.</p>
+
+            </div>
+
+            <h2>Sa&iacute;da</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima o texto com apenas um espa&ccedil;o entre as palavras, e inserindo tantos espa&ccedil;os quanto forem
+                    necess&aacute;rios &agrave; esquerda de cada linha do texto, para que elas apare&ccedil;am alinhadas &agrave; margem direita daquele
+                    texto, e na mesma ordem da entrada. Deixe uma linha em branco entre os casos de testes. N&atilde;o imprima espa&ccedil;os no
+                    final de cada linha, nem espa&ccedil;os desnecess&aacute;rios &agrave; esquerda, de modo que pelo menos uma das linhas impressa
+                    em cada texto inicie com uma letra.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Sa&iacute;da</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ROMEO&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AND<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JULIET&nbsp;WERE&nbsp;&nbsp;<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IN LOVE&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                                4<br />
+                                WHO<br />
+                                ELSE<br />
+                                LOVES<br />
+                                STAIRS<br />
+                                3<br />
+                                A TEXT CAN BE JUSTIFIED<br />
+                                ON&nbsp;&nbsp;&nbsp;BOTH&nbsp;&nbsp;&nbsp;SIDES&nbsp;&nbsp;&nbsp;&nbsp;OR<br />
+                                JUST&nbsp;&nbsp;&nbsp;TO&nbsp;&nbsp;&nbsp;THE&nbsp;&nbsp;&nbsp;RIGHT<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                &nbsp;&nbsp;ROMEO AND<br />
+                                JULIET WERE<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;IN LOVE<br />
+                                <br />
+                                &nbsp;&nbsp;&nbsp;WHO<br />
+                                &nbsp;&nbsp;ELSE<br />
+                                &nbsp;LOVES<br />
+                                STAIRS<br />
+                                <br />
+                                A TEXT CAN BE JUSTIFIED<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ON BOTH SIDES OR<br />
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;JUST TO THE RIGHT</p>
+                            </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2576 - Invertendo Setas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 0000 - Invertendo Setas" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2576</span>
+            <h1>Invertendo Setas</h1>
+            <div>
+                <p>Por Dâmi Henrique, INATEL <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+            </div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Bibi e Bibika estão jogando um jogo simples onde o juiz, a cada rodada, faz um desenho com vários círculos e setas ligando alguns deles.</p>
+
+<p>Bibi deve contar a menor quantidade<strong> X </strong>de setas que precisam ser invertidas para existir ao menos um caminho de <strong>A</strong> até&nbsp;<strong>B </strong>e Bibika deve contar a menor quantidade <strong>Y</strong> de setas invertidas para existir ao menos um caminho no sentido contrário, de <strong>B</strong> até <strong>A</strong>. Ganha o jogo quem encontrar o menor valor. Caso não exista, independente da quantidade de setas invertidas, um caminho entre <strong>A</strong> &gt; <strong>B</strong> ou <strong>B</strong> &gt; <strong>A</strong>, o jogo termina empatado.</p>
+
+<p>Como o juiz em algumas rodadas faz um desenho muito grande, fica bastante complicado checar a veracidade das respostas dadas pelas meninas. Sua tarefa é automatizar esse processo para ele.<br />
+&nbsp;</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+
+                    <p>A primeira linha de cada caso de teste contêm quatro inteiros <strong>C</strong> (<strong> 1 &le; C &le; 10<sup>4</sup> ) </strong>, <strong>S</strong> (<strong> 0  &le; S  &le;  5 x  10<sup>5</sub></strong>), <strong>A</strong> e <strong>B</strong>, ( <strong> 1 &le; A, B &le; C </strong>), sendo <strong>C</strong> a quantidade de círculos, <strong>S</strong> a quantidade de setas, <strong>A</strong> e<strong> B </strong>os extremos do jogo. Cada uma das próximas <strong>S</strong> linhas contêm dois inteiros <strong>C1</strong> e <strong>C2</strong>, representando uma seta ligando o círculo <strong>C1</strong> ao círculo <strong>C2</strong>.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, exiba o nome da vencedora e a quantidade <strong>Q</strong> de setas invertidas, no formato Bibi: <strong>Q</strong> ou Bibika: <strong>Q</strong>. Caso o jogo termine empatado, exiba Bibibibika.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>6 7 1 5<br />
+1 2<br />
+1 6<br />
+3 2<br />
+4 2<br />
+4 6<br />
+5 4<br />
+5 3</p>
+
+                        </td>
+                        <td>
+                            <p>Bibika: 1</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                                <p>3 2 1 2<br />
+1 2<br />
+2 3</p>
+
+                        </td>
+                        <td>
+                            <p>Bibi: 0</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                VI Maratona Mineira de Programação
+            </p>
+        </div>
+
+    </body>
+</html>

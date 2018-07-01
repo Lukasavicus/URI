@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1326 - Química</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1326 - Química" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+        <div class="header">
+            <span>URI Online Judge | 1326</span>
+            <h1>Química</h1>
+            <div><p>Por Guilherme Ottoni <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+        <div class="problem">
+            <div class="description">
+                <p>
+                    Internacional Chemical Products Company (ICPC) é uma empresa conhecida mundialmente pelos seus bons produtos e acessíveis, o que inclui shampoos, produtos de limpeza, matadores de insetos, e alguns tipos de vacinas. Os engenheiros da ICPC sempre estão procurando meios de reduzir o custo de fabricação de seus produtos, sem perder a qualidade.</p>
+                <p>
+                    Um dos engenheiros, Sr. Poucher, tem uma nova ideia de reduzir o custo, que visa reduzir o número de recipientes necessários para manter as substâncias durante a sequência de reações químicas para se obter uma última substância. Essas substâncias finais são obtidas através de uma sequência de reações na forma de X + Y → Z, onde X e Y são substâncias iniciais ou intermediarias (que já foram geradas em reações anteriores). Essas reações são feitas dentro de um recipiente de reações, que quando vazio pode ser limpo e usado novamente. O processo de gerar a substância final pode ser descrevido por uma sequência de duas simples operações:</p>
+                <ul>
+                    <li>Colocar uma substância disponível em um recipiente de reação vazio C;</li>
+                    <li>Realizar a reação de X + Y → Z ou colocando X no recipiente de reação contendo Y, ou colocando Y no recipiente de reação contendo X. A ordem não afeta o resultado final da reação.</li>
+                </ul>
+                <p>
+                    O que Sr. Poucher percebeu é que escolhendo a sequência de reação correta, ICPC poderia cortar o número de reações necessárias na companhia drasticamente . Por exemplo, considerando a seguinte sequência de reações químicas usadas para obter a substância final P:</p>
+                <p>
+                    1) A + B -&gt; T1<br />
+                    2) C + D -&gt; T2<br />
+                    3) E + F -&gt; T3<br />
+                    4) T2 + T3 -&gt; T4<br />
+                    5) T4 + T1 -&gt; P</p>
+                <p>
+                    Nesse exemplo, A, B, C, D, E e F são as substância iniciais (somente aparecem no lado esquerdo das reações), T1, T2, T3 e T4 são substâncias intermediarias (aparecem no lado esquerdo pelo menos uma vez, e exatamente uma na direita de alguma outra reação) e P é a substância final (só aparece na direita de uma única reação, que vai ser a última listada).<br/> Se a sequência de reações é realizada como foi dito então três recipientes são necessários em ordem para produzir a substância final P:</p>
+                <p>
+                    Recipientes<br />
+                    Operações C1 C2 C3</p>
+                <p>
+                    colocar A em C1: A - -<br />
+                    adicionar B para C1: T1 - -<br />
+                    colocar C em C2: T1 C -<br />
+                    adicionar D para C2: T1 T2 -<br />
+                    colocar E em C3: T1 T2 E<br />
+                    adicionar F para C3: T1 T2 T3<br />
+                    colocar T2 em C3: T1 - T4<br />
+                    colocar T4 em C1: P - -</p>
+                <p>
+                    Nota-se, contudo, que se as reações são realizadas na sequência 2, 3, 4, 1, 5, dois recipientes são suficientes:</p>
+                <p>
+                    Recipientes<br />
+                    Operações C1 C2</p>
+                <p>
+                    colocar C em C1: C<br />
+                    adicionar D para C1: T2<br />
+                    colocar E em C2: T2 E<br />
+                    adicionar F para C2: T2 T3<br />
+                    colocar T2 em C2: - T4<br />
+                    colocar A em C1: A T4<br />
+                    adicionar B para C1: T1 T4<br />
+                    colocar T1 em C2: - P</p>
+                <p>
+                    Você foi contratado pela ICPC, e sua tarefa é criar um programa de computador que determine o número minimo de recipientes necessárias para executar a sequência de reações necessárias para obter a substância final.</p>
+                <p>
+                    Você deve assumir que:</p>
+                <ul>
+                    <li>A reação de produção da substância final é a última listada, e a reação que produz uma substância intermediária sempre vai preceder as reações onde essa substância intermediária é usada.</li>
+                    <li>Uma sequência de reações que produzem a última substância é sempre possível.</li>
+                    <li>ICPC tem um suprimento ilimitado de substâncias iniciais.</li>
+                    <li>No início do processo de produção, cada substância inicial está em um recipiente de armazenamento, usado para guardar todo estoque de substâncias da ICPC. Tais recipientes não podem ser utilizados como recipiente de reação para armazenar produtos intermediários da reação.</li>
+                    <li>Todos os recipientes de reação são grandes o suficiente para manter todas as substâncias resultantes.</li>
+                    <li>A quantidade de substâncias geradas por uma única reação é suficiente para ser usada como entrada para uma única outra reação. Por exemplo, se um produto intermediário Z é necessário como entrada para duas diferentes reações, este produto deve ser produzido duas vezes.</li>
+                    <li>Cada reação usa exatamente duas substâncias diferentes e gera também uma substância distinta, isto é, toda reação tem a forma X + Y → Z, onde X, Y e Z são distintos.</li>
+                </ul>                    
+            </div>
+            <h2>Entrada</h2>
+            <div class="input">
+                <p>
+                    A entrada consiste de vários casos de teste. Cada caso de teste começa com uma linha contento um inteiro R, indicando o número de reações para serem consideradas(1 &lt;= <strong>R</strong> &lt;= 5000). A seguir <strong>R</strong> linhas são da forma:</p>
+                <p>
+                    S1 + S2 → S3</p>
+                <p>
+                    Descreve uma reação que consome S1 e S2 e produz S3 como resultado. Os nomes de todas as substâncias são cadeias-alfanumericas de tamanho no máximo 5. Um caso de teste com <strong>R</strong> = 0 indica o final da entrada.</p>
+            </div>
+            <h2>Saída</h2>
+            <div class="output">
+                <p>
+                    Para cada caso de teste da entrada, seu programa deve produzir uma linha, contendo a string 'PRODUCT requires N containers', onde o PRODUCT é a substância final e N é o número de recipientes necessários para produzi-lo.</p>
+            </div>
+            <div class="both"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                1<br />
+                                2H + O -&gt; Water<br />
+                                5<br />
+                                A + B -&gt; T1<br />
+                                C + D -&gt; T2<br />
+                                E + F -&gt; T3<br />
+                                T2 + T3 -&gt; T4<br />
+                                T4 + T1 -&gt; P<br />
+                                3<br />
+                                a + b -&gt; ab<br />
+                                ab + c -&gt; abc<br />
+                                abc + d -&gt; abcd<br />
+                                0<p>
+                        </td>
+                        <td>
+                            <p>
+                                Water requires 1 containers<br />
+                                P requires 2 containers<br />
+                                abcd requires 1 containers<p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programação da SBC 2004.</p>
+        </div>
+    </body>
+</html>

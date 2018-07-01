@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1652 - Deli Deli</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1652 - Deli Deli" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1652</span>
+                <h1>Deli Deli</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Sra. Deli está trabalhando em uma casa de mercearias finas "Deli Deli". No ano passado, a Sra. Deli decidiu expandir seu negócio e construir uma loja online. Ela contratou um programador que implementou a loja online.</p>
+
+                    <p>Recentemente alguns de seus novos clientes online reclamaram das notas fiscais eletrônicas. O programador esqueceu-se de usar o plural, no caso em que um item é comprado várias vezes. Infelizmente o programador da Sra. Deli está de férias e agora é sua tarefa de implementar esse recurso para a Sra. Deli. Aqui está uma descrição de como fazer o plural:</p>
+
+                    <ol>
+                    	<li>Se a palavra está na lista de palavras irregulares substitua-a com o plural dado.</li>
+                    	<li>Senão se a palavra termina em uma consoante seguida por "y", substitua "y" por "ies".</li>
+                    	<li>Senão se a palavra termina em "o", "s", "ch", "sh" ou "x", acrescente "es" à palavra.</li>
+                    	<li>Senão acrescente "s" à palavra.</li>
+                    </ol>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+
+                    <p>A primeira linha do arquivo de entrada consiste de dois inteiros <strong>L</strong> e <strong>N</strong> (0 ≤ <strong>L</strong> ≤ 20, 1 ≤ <strong>N</strong> ≤ 100). As seguintes <strong>L</strong> linhas contém a descrição das palavras irregulares e sua forma plural. Cada linha é composta de duas palavras separadas por um caractere de espaço, onde a primeira palavra é o singular, a segunda palavra é a forma plural de uma palavra irregular. Depois da lista de palavras irregulares, as <strong>N</strong> linhas seguintes contém uma palavra cada, que você tem que transformar para o plural. Você pode assumir que cada palavra é composta de no máximo 20 letras minúsculas do alfabeto Inglês (<strong>'a'</strong> a <strong>'z'</strong>).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima <strong>N</strong> linhas na saída, onde a i-ésima linha é a forma plural da i-ésima palavra de entrada.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 7<br />
+rice rice<br />
+spaghetti spaghetti<br />
+octopus octopi<br />
+rice<br />
+lobster<br />
+spaghetti<br />
+strawberry<br />
+octopus<br />
+peach<br />
+turkey</p>
+
+                            </td>
+                            <td>
+                                <p>rice<br />
+lobsters<br />
+spaghetti<br />
+strawberries<br />
+octopi<br />
+peaches<br />
+turkeys</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2007/2008
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1433 - O Clube da Divisão</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1433 - O Clube da Divisão" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1433</span>
+            <h1>O Clube da Divisão</h1>
+            <div>Por Paulo Oliva <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>O clube ACM (All Can Meet) foi criado com o propósito de atrair pessoas de todas as idades, com a ideia de que todas as pessoas poderiam sentar e compartilhar experiências de vida, para o benefício de todos. Mas como aconteceu, o clube tornou-se um sucesso tão grande que tornou-se praticamente impossível reunir todos os membros no mesmo local ao mesmo tempo. O clube decidiu então dividir seus membros em "seções" menores. Em função de manter uma boa divisão, o diretor so clube decidiu impor os seguintes requerimentos:</p>
+
+                <p>A. todos os membros da mesma idade devem estar na mesma seção,</p>
+                <p>B. todos os membros devem fazer parte de exatamente uma seção,</p>
+                <p>C. em cada seção, o número máximo de pessoas com a mesma idade não podem ser mais que <b>R</b> vezes o número mínimo de pessoas da mesma idade, onde <b>R</b> é um número racional entre 1.0 e 2.0. O número <b>R</b> é chamado de o fator divisor do clube.</p>
+
+                <p>A última condição garante que não há um grupo menor de jovens que talvez sintam-se inconfortáveis na seção. Por exemplo, denotados por [<b>N</b>,<b>M</b>] um grupo com <b>N</b> menbros que tem <b>M</b> anos. Então a seção {[10,50],[6,45],[70,12],[43,23]} o número máximo de pessoas com a mesma idade é 70, o número mínimo de pessoas com a mesma idade é 6. Se <b>R</b> = 2.0, então dizemos que esta seção não satisfaz os requerimentos (<b>C</b>) desde que 70/6 &le; 2.0. No entanto podemos dividir esta seção em duas menores seções, nominando {[10,50],[6,45]} e {[70,12],[43,23]}, no qual satisfazem os requerimentos.</p>
+
+                <p>Dado o fator divisor <b>R</b> e uma lista de membros do clube, você deve escrever um programa para achar o número de seções que satisfazem os três requerimentos acima.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Seu programa deve processar vários casos de teste. A primeira linha de um caso de teste contém um inteiro <b>K</b> e um racional <b>R</b>. <b>K</b> representa o número de idades diferentes do clube (1 &le; K &le; 120), e <b>R</b> representa o fator divisor especificado pelo diretor do clube (1.0 &le; R &le; 2.0). As próximas <b>K</b> linhas descrevem os membros do grupo, cada linha contém 2 inteiros <b>N</b> e <b>M</b>, indicando que existem <b>N</b> membros que tem <b>M</b> anos no clube (1 &le; N &le; 10000 e 1 &le; M &le; 120). O fim da entrada é indicado por uma linha com <b>K</b> = 0 e <b>R</b> = 0.0.</p>
+
+                <p>Os valores de entrada serão tais que um erro eventual na representação binária interna de <b>R</b> não afetará o resultado.</p>
+
+                <p><i>A entrada deve ser lida da entrada padrão.</i></p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada instância do problema você deve imprimir uma única linha, contendo o número mínimo de grupos que satisfazem os 3 requerimentos acima.</p>
+
+                <p><i>A saída deve ser escrita pela saída padrão.</i></p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                5 1.7<br />
+                                100 7<br />
+                                18 10<br />
+                                11 17<br />
+                                567 25<br />
+                                62 34<br />
+                                3 1.0<br />
+                                12 18<br />
+                                107 11<br />
+                                250 57<br />
+                                0 0.0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                3<br />
+                                3
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+          <p class="footer">
+                ACM/ICPC South America Contest 2003. 
+            </p>
+        </div>
+
+    </body>
+</html>

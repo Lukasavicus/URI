@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1466 - Percurso em Árvore por Nível </title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1466 - Percurso em Árvore por Nível " />
+            
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1466</span>
+                <h1>Percurso em Árvore por Nível</h1>
+                <div><p>
+				Por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+				</div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Em uma árvore binária, o percurso por nível é um percurso denominado breadth first search (BFS) ou em português, busca em largura, a qual seria não-recursiva por natureza. Este percurso utiliza uma fila ao invés de pilha para armazenar os próximos 2 nodos que devem ser pesquisados (filho à esquerda e à direita). Esta é a razão pela qual você deve percorrer os nodos na ordem FIFO ao invés da ordem LIFO, obtendo desta forma a recursão.</p>
+	<p> Portanto nossa tarefa aqui, após algumas operações de inserção sobre uma árvore binária de busca (pesquisa), é imprimir o percurso por nível sobre estes nodos. Por exemplo, uma entrada com a sequência de valores inteiros: 8 3 10 14 6 4 13 7 1 resultará na seguinte árvore:</p>
+	
+	<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1466.png" style="width: 198px; height: 164px;" /></p>
+	<p>Com a saída de uma listagem por nível: 8 3 10 1 6 14 4 7 13. </p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém vários casos de teste. A primeira linha da entrada contém um inteiro <strong>C</strong> (<strong>C</strong> ≤ 1000), indicando o número de casos de teste 
+	que virão a seguir. Cada caso de teste é composto por 2 linhas. A primeira linha contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 500) que 
+	indica a quantidade de 	números que deve compor cada árvore e a segunda linha contém <strong>N</strong> inteiros distintos e não negativos, 
+	separados por um espaço em branco.</p>
+	
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste de entrada você deverá imprimir a mensagem "Case <strong>n</strong>:", onde <strong>n</strong> indica o número do caso de teste seguido por uma linha contendo a listagem por nível dos nodos da árvore, conforme o exemplo abaixo.
+    <br /><br />Obs: Não deve haver espaço em branco após o último item de cada linha e há uma linha em branco após cada caso de teste, inclusive após o último. A árvore resultante não terá nodos repetidos e também não terá mais do que 500 níveis.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+               <table>
+                    <thead>
+                        <tr>
+                            <td>Sample Input</td>
+                            <td>Sample Output</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	2<br />
+	3<br />
+	5 2 7<br />
+	9<br />
+	8 3 10 14 6 4 13 7 1</p>
+
+                            </td>
+                            <td>
+                                <p>
+	Case 1:<br />
+	5 2 7<br />
+	<br />
+	Case 2:<br />
+	8 3 10 1 6 14 4 7 13</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    
+            </div>
+
+        </body>
+    </html>

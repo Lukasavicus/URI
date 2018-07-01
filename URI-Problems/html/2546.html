@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2546 - Mesada</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Mesada" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2546</span>
+			<h1>Mesada</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 2</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Está cada vez mais difícil para a sra. Marie gerenciar a mesada que ela dá para seus netinhos. Por isso, ela lhe pediu para escrever um programa de computador para ajudá-la nesta tarefa.</p>
+
+<p>A sra. Marie tem <strong>N</strong> netos, numerados de 1 a <strong>N</strong>. Inicialmente, o neto <em>i</em> ganha <strong>M<sub>i</sub></strong> reais de mesada de sua vovó. A sra. Marie pode aumentar a mesada de alguns de seus netos várias vezes. Sempre que deseja dar um aumento, ela escolhe dois números <strong>i</strong> e <strong>j</strong> e aumenta a mesada de todos os netos de números entre <strong>i</strong> e <strong>j</strong>, inclusive, em um mesmo valor <strong>v</strong>. Por exemplo, se ela escolher dar um aumento de <strong>v</strong>=10 reais para todos os netos entre <strong>i</strong>=1 e <strong>j</strong>=3, então a mesada dos netos 1, 2, e 3 aumentam em 10 reais cada uma.</p>
+
+<p>Além disso, ela também pode querer consultar quem é o neto que recebe a maior mesada dentre todos os netos de números entre <strong>i</strong> e <strong>j</strong> dados, inclusive. Ajude a sra. Marie a responder todas as suas consultas!</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém dois inteiros <strong>N</strong> e <strong>Q</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>, 1 ≤ <strong>Q</strong> ≤ 10<sup>6</sup>), o número de netos e de operações, respectivamente. A próxima linha contém <strong>N</strong> inteiros <strong>M<sub>1</sub></strong>, <strong>M<sub>2</sub></strong>,...,<strong>M<sub>N</sub></strong> (1 ≤ <strong>M<sub>i</sub></strong> ≤ 200), a mesada inicial de cada neto. As próximas <strong>Q</strong> linhas descrevem uma operação cada. Uma operação no formato <em>A <strong>i j v</strong></em> (1 ≤ <strong>i</strong> ≤ <strong>j</strong> ≤ <strong>N</strong>, 1 ≤ <strong>v</strong> ≤ 200) indica um aumento de mesada. Uma operação no formato <em>C <strong>i j</strong></em> (1 ≤ <strong>i</strong> ≤ <strong>j</strong> ≤ <strong>N</strong>) indica uma consulta.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima, para cada consulta, uma linha contendo o número do neto que recebe a maior mesada dentre os netos de números entre <strong>i</strong> e <strong>j</strong>, inclusive. Caso haja mais de um neto recebendo a maior mesada dentre estes, imprima o de menor número.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5 6<br />
+40 55 45 55 70<br />
+C 2 4<br />
+C 1 5<br />
+A 1 3 10<br />
+C 3 4<br />
+A 4 4 20<br />
+C 1 5</p>
+
+						</td>
+						<td>
+							<p>2<br />
+5<br />
+3<br />
+4</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

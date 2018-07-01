@@ -1,0 +1,150 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2350 - Game of Matchings</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problem G - Game of Matchings" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2350</span>
+				<h1>Game of Matchings</h1>
+				<div>
+					<p>By Luís Fernando Dorelli de Abreu <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Adam and Carol are having a great time playing the Game of Matchings. The game is played on a string <strong>S</strong> composed of |<strong>S</strong>| lowercase English letters, <strong>s<sub>1</sub>s<sub>2</sub></strong> . . . <strong>s<sub>|S|</sub></strong>. The goal is to find all matchings of a special kind of pattern <strong>P</strong> in <strong>S</strong>. The pattern has length <strong>N</strong> and is defined by a sequence of integers between 1 and 26.</p>
+
+<p>We consider a contiguous substring <strong>s<sub>i</sub>s<sub>i+1</sub></strong> . . . <strong>s<sub>i+N−1</sub></strong> starting at position <strong>i</strong> of <strong>S</strong> a matching of pattern <strong>P</strong> if there is a mapping from the numbers in <strong>P</strong> to lowercase English letters such that the pattern is mapped to <strong>s<sub>i</sub>s<sub>i+1</sub></strong>...<strong>s<sub>i+N−1</sub></strong> but no two distinct numbers are mapped to the same letter.</p>
+
+<p>For instance, if <strong>S</strong> is ”awawww” and <strong>P</strong> is [10, 21, 10], the matchings of <strong>P</strong> are the substrings of <strong>S</strong> of length three starting at positions 1 and 2: ”awa” and ”waw”. Note that ”www” is not an occurence because pattern numbers 10 and 21 would both map to ’w’.</p>
+
+<p>Adam and Carol lost the answer sheet and are not sure if they are finding all occurrences for some of the strings in the game. Given <strong>S</strong> and <strong>P</strong> can you find the number of matchings for them?</p>
+				</div>
+
+				<h2>Input</h2>
+
+				<div class="input">
+					<p>The first line contains a non-empty string <strong>S</strong> of at most 5 × 10<sup>5</sup> characters. Each character of <strong>S</strong> is a lowercase English letter from ’a’ to ’z’. The second line contains an integer <strong>N</strong> representing the size of the pattern (1 ≤ <strong>N</strong> ≤ |<strong>S</strong>|). The third line contains <strong>N</strong> integers <strong>P<sub>1</sub>, P<sub>2</sub>, . . . , P<sub>N</sub></strong> denoting the pattern (1 ≤ <strong>P<sub>i</sub></strong> ≤ 26 for <strong>i</strong> = 1, 2, . . . ,<strong>N</strong>).</p>
+				</div>
+
+				<h2>Output</h2>
+
+				<div class="output">
+					<p>Output a line with one integer representing the number of matchings of <strong>P</strong> found in <strong>S</strong>.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Input Samples</td>
+							<td>Output Samples</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>awawww<br />
+3<br />
+10 21 10</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>abcdefghij<br />
+10<br />
+1 2 3 4 5 6 7 8 9 1</p>
+
+                    </td>
+                    <td>
+                        <p>0</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>abbabaabbaababba<br />
+4<br />
+1 2 2 1</p>
+
+                    </td>
+                    <td>
+                        <p>5</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>aabcddabccefkkgem<br />
+5<br />
+10 10 3 14 9</p>
+
+                    </td>
+                    <td>
+                        <p>4</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					ACM/ICPC South America Contest 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

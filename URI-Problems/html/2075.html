@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2075 - Zé Coquinho</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2075 - Zé Coquinho" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2075</span>
+                <h1>Zé Coquinho</h1>
+                <div>
+                    <p>Por XIV Maratona de Programação IME-USP, 2010 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Zé Coquinho é um artesão que produz esculturas feitas com cocos. Os cocos secos são cortados ao meio e as cuias formadas pelas cascas são pintadas e utilizadas para construir as esculturas. As esculturas são muito famosas, sendo procuradas por colecionadores de todo o mundo.</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2075.png" style="height:62px; width:193px" /></p>
+
+                    <p class="center">Figura 1: A mais famosa escultura de coco feita por Zé Coquinho.</p>
+
+                    <p>As esculturas de Zé Coquinho são sequências de cuias coladas umas nas outras. Uma escultura <em>bem-formada</em> é definida pelo seguinte conjunto de regras:</p>
+
+                    <ul>
+                        <li>Uma sequência vazia de cuias é uma escultura bem-formada.</li>
+                        <li>Se <strong>T</strong> é um escultura bem-formada, então uma escultura formada por <strong>(T)</strong> (ou seja, uma cuia aberta para a direita, seguida de <strong>T</strong> , seguida de uma cuia aberta para a esquerda) é uma escultura bem-formada;</li>
+                        <li>Se <strong>T</strong> e <strong>S</strong> são esculturas bem-formadas, então <strong>ST</strong> (ou seja, a escultura <strong>S</strong> seguida de <strong>T</strong>) é uma escultura bem-formada.</li>
+                    </ul>
+
+                    <p>Note que todas as esculturas bem-formadas são construídas usando apenas as regras descritas acima. Seja <strong>T</strong> uma escultura formada por cuias de coco. Se <strong>T</strong> não é uma escultura bem-formada, dizemos que <strong>T</strong> é uma escultura <em>mal-formada</em>.</p>
+
+                    <p>Uma característica marcante das esculturas de Zé Coquinho é que elas nunca são bem-formadas; todas as esculturas que ele fez na sua longa vida são mal-formadas.</p>
+
+                    <p>O Museu de Arte Moderna de Graviúna quer fazer uma exposição de esculturas de Zé Coquinho. Para organizar a exposição, o museu resolveu ordenar as esculturas em ordem lexicográfica. Na ordem lexicográfica definida pelo museu o símbolo <strong>(</strong> vem antes do símbolo <strong>)</strong>. Por exemplo, <strong>(((</strong> &lt; <strong>(()</strong> e <strong>)(</strong> &lt; <strong>))</strong>.</p>
+
+                    <p>O comprimento de uma escultura mal-formada é o número de cuias que a mesma possui.</p>
+
+                    <p>Dados dois inteiros <strong>N</strong> e <strong>K</strong>, você deve determinar a <strong>K</strong>-ésima escultura mal-formada de comprimento <strong>N</strong> considerando a ordem definida pelo museu. Considere que Zé Coquinho fez todas as esculturas mal-formadas de comprimento <strong>N</strong>.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+                    <p>A primeira (e única) linha de cada instância contém dois inteiros <strong>N</strong> e <strong>K</strong>, onde 1 ≤ <strong>N</strong> ≤ 50 e 1 ≤ <strong>K</strong> ≤ 2<strong><sup>n</sup></strong> − 1, indicando respectivamente o comprimento da escultura e o índice da escultura (na ordem lexicográfica) que você deve determinar.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância imprima uma linha contendo a <strong>K</strong>-ésima escultura mal-formada de comprimento <strong>N</strong> . Caso não exista uma tal escultura imprima uma linha contendo <strong>−1</strong>.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4</p>
+
+<p>4 0</p>
+
+<p>4 4</p>
+
+<p>6 63</p>
+
+<p>7 13</p>
+
+                            </td>
+                            <td>
+                                <p>((((</p>
+
+<p>())(</p>
+
+<p>-1</p>
+
+<p>((())()</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XIV Maratona de Programação IME-USP, 2010
+                </p>
+            </div>
+
+        </body>
+    </html>

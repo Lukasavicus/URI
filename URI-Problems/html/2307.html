@@ -1,0 +1,129 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2307 - Jogo de Cartas</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2307 - Jogo de Cartas" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2307</span>
+				<h1>Jogo de Cartas</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2006 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Marlene está&nbsp;jogando um passatempo de sua autoria. Ela possui um baralho com N cartas, numeradas de 1 a N, tal que não existem duas cartas com o mesmo número. O jogo consiste de várias rodadas, e são utilizadas três pilhas denominadas Compra, Descarte e Morto. Inicialmente, as cartas são embaralhadas e colocadas com a face para cima, constituindo a pilha Compra (as pilhas Descarte e Morto est˜ao inicialmente vazias). Marlene então tira as cartas da pilha Compra, uma a uma, e as coloca na pilha Descarte, com as faces para baixo, na mesma ordem, até&nbsp;encontrar a carta com o número 1. Quando a encontra, Marlene a coloca na pilha Morto e recomeça o processo de retirar cartas da pilha Compra, agora procurando a próxima carta na sequência (2), e o processo é&nbsp;repetido para as outras cartas na sequência (3, 4, ...).</p>
+
+					<p>Quando as cartas da pilha Compra terminam, encerra-se uma rodada. Nesse momento, Marlene vira a pilha Descarte de modo que as cartas fiquem com a face para cima (sem reembaralhar) e a coloca no lugar da pilha Compra. Inicia-se uma nova rodada, e processo recomeça, com Marlene procurando a próxima carta na sequência.</p>
+
+					<p>Repete-se esse processo até&nbsp;que a carta removida do baralho seja a de número N, quando o jogo acaba. O resultado do jogo é&nbsp;o número de rodadas.</p>
+
+					<p class = "center"><img alt='' style="width: 500px;"src = "https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_159_F.png" /></p>
+
+					<p>Escreva um programa que, dada a ordem em que as cartas estÃo na pilha Compra no inÍcio do jogo, determine o resultado do jogo (ou seja, o número de rodadas).</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado). A primeira linha da entrada contém um inteiro <strong>N</strong> que indica quantas cartas existem no baralho (1 ≤ <strong>N</strong> ≤ 100000). A segunda linha contém <strong>N</strong> inteiros, representando as cartas do baralho, na sequência em que serão tiradas por Marlene da pilha Compras.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na saída padrão, uma única linha, contendo o número de vezes que Marlene terá&nbsp;que descartar as cartas durante o jogo.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+2 1 3</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>5<br />
+3 5 1 4 2</p>
+
+                    </td>
+                    <td>
+                        <p>3</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>7</p>
+
+<p>3 6 7 1 5 4 2</p>
+
+                    </td>
+                    <td>
+                        <p>4</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2006 Fase 1 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

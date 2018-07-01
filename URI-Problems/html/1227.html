@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1227 - Perdido na Noite</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1227 - Perdido na Noite" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1227</span>
+                <h1>Perdido na Noite</h1>
+               <div><p>
+	Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Numa cidade da Nlogônia, o sistema viário é composto de <strong>N</strong> rotatórias e <strong>N</strong>−1 ruas, sendo que cada rua liga duas rotatórias distintas. Utilizando o sistema viário, é possível ir de qualquer rotatória para qualquer outra rotatória da cidade.<br />
+	<br />
+	A cidade possui apenas dois hotéis: um barato, localizado na rotatória <strong>B</strong>, e um caro, localizado na rotatória <strong>C</strong>. Um turista veio à cidade para celebrar o aniversário de um amigo, cuja festa está sendo realizada em um clube localizado na rotatória <strong>A</strong>. Como o turista não fez reserva em nenhum dos hotéis e a noite está agradável, após a festa ele decidiu passear a pé pelas ruas e rotatórias até encontrar um dos hotéis (ele também decidiu hospedar-se no primeiro hotel que encontrar).<br />
+	<br />
+	Seu plano foi dificultado porque como ele não conhece a cidade e bebeu um pouco além da conta, todas as ruas lhe parecem iguais. Assim, ele decidiu usar a seguinte estratégia: a cada rotatória ele escolhe, com probabilidade uniforme, uma das ruas que saem da rotatória, e usa essa rua para ir a uma outra rotatória, até chegar à rotatória onde um dos hotéis está localizado. Note que como o turista não consegue distinguir as ruas, pode ocorrer de ele escolher a mesma rua pela qual chegou à rotatória.<br />
+	<br />
+	Você deve escrever um programa que, dadas a descrição do sistema viário, a localização <strong>A</strong> da festa de aniversário, a localização <strong>B</strong> do hotel barato e a localização <strong>C</strong> do hotel caro, determine a probabilidade de o turista chegar ao hotel barato antes de chegar ao hotel caro.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A primeira linha de um caso de teste contém quatro inteiros <strong>N</strong> (3 ≤ <strong>N</strong> ≤ 100), <strong>A</strong> (1 ≤ <strong>A</strong>), <strong>B</strong> e <strong>C</strong> (<strong>C</strong> ≤ <strong>N</strong>), indicando respectivamente o número de rotatórias do sistema viário, a rotatória onde a festa de aniversário foi realizada, a rotatória onde o hotel barato está localizado, e a rotatória onde o hotel caro está localizado. Cada uma das <strong>N</strong>−1 linhas seguintes contém dois inteiros <strong>X</strong> (1 ≤ <strong>X</strong>) e <strong>Y</strong> (<strong>Y</strong> ≤ <strong>N</strong>), indicando que existe uma rua que liga as rotatórias <strong>X</strong> e <strong>Y</strong>.<br />
+	<br />
+	Nota: B != C, A != B, A != C e X != Y</p>
+<p>
+	 </p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Seu programa deve imprimir uma única linha, contendo a probabilidade de o turista chegar ao hotel barato antes de chegar ao hotel caro, com 6 casas decimais.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	4 1 2 3<br />
+	1 4<br />
+	2 4<br />
+	3 4<br />
+	5 3 1 5<br />
+	1 2<br />
+	2 3<br />
+	3 4<br />
+	4 5</p>
+
+                            </td>
+                            <td>
+                                <p>
+	0.500000<br />
+	0.500000</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                Maratona de Programação da SBC 2012</p>
+            </div>
+
+        </body>
+    </html>

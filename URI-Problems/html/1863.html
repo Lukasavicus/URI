@@ -1,0 +1,112 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1863 - O Contra-ataque de Ramsay</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 9998 - O Contra-ataque de Ramsay" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1863</span>
+				<h1>O Contra-ataque de Ramsay</h1>
+				<div>
+					<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Ramsay: <em>"Não preciso de um exército. Preciso de 20 homens bons."</em></p>
+
+					<p>Os Boltons conquistaram o castelo de Winterfell e agora precisam protegê-lo da invasão do "Rei" Stannis. Os <strong>N</strong> soldados de Stannis estão posicionados entre Castle Black, que fica a nordeste de Winterfell, e Winterfell. Para cada soldado <strong>i</strong> (1 ≤ <strong>i</strong> ≤ <strong>N</strong>), os Boltons sabem sua posição (<strong>x</strong>[<strong>i</strong>], <strong>y</strong>[<strong>i</strong>]) no mapa.</p>
+
+					<p>Ramsay Bolton decidiu contra-atacar antes que a invasão ocorra, enviando seus homens para matar alguns dos soldados de Stannis. Ramsay quer que eles morram um de cada vez, em uma ordem tal que seus homens precisem viajar apenas para o norte e para o leste, e tal que todo soldado deve ser mais forte que os que morreram antes dele (isto é loucura, mas Ramsay é mesmo louco).</p>
+
+					<p>Em outras palavras, Ramsay quer encontrar uma sequência de soldados (<strong>s<sub>1</sub></strong>, <strong>s<sub>2</sub></strong>, ..., <strong>s<sub>K</sub></strong>) tal que, para todo 1 &lt; <strong>i</strong> ≤ <strong>K</strong>:</p>
+
+					<ul>
+						<li><strong>x</strong>[<strong>s<sub>i</sub></strong>] &gt; <strong>x</strong>[<strong>s<sub>i-1</sub></strong>];</li>
+						<li><strong>y</strong>[<strong>s<sub>i</sub></strong>] &gt; <strong>y</strong>[<strong>s<sub>i-1</sub></strong>]; e</li>
+						<li><strong>s<sub>i</sub></strong> é mais forte que <strong>s<sub>i-1</sub></strong></li>
+					</ul>
+
+					<p>Um espião forneceu a Ramsay uma lista de <strong>M</strong> pares ordenados de soldados na forma (<strong>i</strong>, <strong>j</strong>), indicando que o soldado <strong>i</strong> é mais forte que o soldado <strong>j</strong>. Note que esta relação é transitiva, isto é, se <strong>i</strong> é mais forte que <strong>j</strong> e <strong>j</strong> é mais forte que <strong>k</strong>, então <strong>i</strong> é mais forte que <strong>k</strong>, mesmo que o par (<strong>i</strong>, <strong>k</strong>) não apareça na lista.   Além disso, para qualquer par de soldados <strong>i </strong>e <strong>j</strong>, se não é possível concluir que um soldado é mais forte que o outro através da lista, então <strong>i</strong> não é considerado mais forte que <strong>j</strong>, e nem <strong>j</strong> é considerado mais forte que <strong>i</strong>.  Por fim, a lista é dada de tal forma que, para todo soldado <strong>i</strong>, existe no máximo um soldado <strong>j</strong> tal que (<strong>i</strong>, <strong>j</strong>) está na lista.</p>
+
+					<p>Sua tarefa é determinar o número máximo de soldados que podem ser mortos pelos homens de Ramsay.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>N</strong> e <strong>M</strong> (0 ≤ <strong>M</strong> &lt; <strong>N</strong> ≤ 5×10<sup>4</sup>). As próximas <strong>N</strong> linhas fornecem as posições dos soldados. A <strong>i-</strong>ésima linha contém dois inteiros <strong>x</strong>[<strong>i</strong>] e <strong>y</strong>[<strong>i</strong>] (-400 ≤ <strong>x</strong>[<strong>i</strong>], <strong>y</strong>[<strong>i</strong>] ≤ 400). Não há dois soldados na mesma posição.  As próximas <strong>M</strong> linhas contém dois inteiros <strong>i</strong> e <strong>j</strong> cada (1 ≤ <strong>i</strong>, <strong>j</strong> ≤ <strong>N</strong>, <strong>i</strong> ≠ <strong>j</strong>), descrevendo a lista fornecida pelo espião.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo o número máximo de soldados que podem ser mortos.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6 5<br />
+								1 3<br />
+								4 2<br />
+								5 5<br />
+								3 7<br />
+								8 1<br />
+								9 3<br />
+								1 4<br />
+								4 3<br />
+								2 4<br />
+								5 1<br />
+								6 5</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+
+				<div class="both"></div>
+
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

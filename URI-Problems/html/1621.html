@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1621 - Labirinto</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1621 - Labirinto" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1621</span>
+                <h1>Labirinto</h1>
+                <div>
+                    <p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Labirinto de papel é o passatempo favorito de Rafael, mas ele anda reclamando que os labirintos que ele encontra para resolver são muito fáceis. Para ser mais específico, a distância entre o início do labirinto e a saída é sempre muito pequena.</p>
+
+                    <p>A entrada de um labirinto é por onde o jogador deve começar a resolvê-lo, e a saída é por onde o jogador deve terminar o labirinto. O jogador pode dar passos nas quatro direções – cima, direita, baixo ou esquerda – e a distância entre a entrada e a saída do labirinto é dado pela soma de passos do menor caminho que pode ser feito.</p>
+                    
+                    <p>Dado um labirinto de <em>N</em> linhas e <em>M</em> colunas, diga qual a distância máxima que pode ser definida se a entrada e a saída for escolhida de forma ótima.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém diversos casos de teste. Cada caso de teste inicia com dois inteiros <strong>N</strong> e <strong>M</strong> (5 ≤ <strong>N</strong>, <strong>M</strong> ≤ 500), representando o número de linhas e colunas do labirinto, respectivamente.</p>
+
+                    <p>A seguir haverá <strong>N</strong> linhas contendo <strong>M</strong> caracteres cada, representando o labirinto a ser analizado. O caractere da <strong>i</strong>-ésima linha e da <strong>j</strong>-ésima coluna indica o que há na posição <strong>i</strong>, <strong>j</strong> do labirinto. Se o caractere for um “.” (ponto), significa que aquele é um espaço vazio, por onde o jogador pode passar. Caso seja um “#”, significa que aquele é um obstáculo, por onde o jogador não pode passar.</p>
+                    
+                    <p>Haverá sempre ao menos dois espaços vazios no labirinto, e só há um caminho entre quaisquer dois espaços vazios. A entrada e a saída do labirinto não necessariamente precisam estar nas bordas.</p>
+                    
+                    <p>O último caso de teste é indicado quando <strong>N</strong> = <strong>M</strong> = 0, o qual não deverá ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma linha, contendo um inteiro, indicando a distância entre a entrada e a saída do labirinto se a localização da entrada e da saída do labirinto for escolhida de forma ótima.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 5<br />
+                                .#...<br />
+                                ...##<br />
+                                .#..#<br />
+                                .##..<br />
+                                #####<br />
+                                5 5<br />
+                                .....<br />
+                                ####.<br />
+                                .....<br />
+                                .####<br />
+                                .....<br />
+                                0 0</p>
+
+                            </td>
+                            <td>
+                                <p>8<br />
+                                <p>16</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XIV Contest Algar Telecom 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

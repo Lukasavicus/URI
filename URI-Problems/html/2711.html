@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2711 - Destravando o Celular</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema B - Destravando o Celular" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2711</span>
+            <h1>Destravando o Celular</h1>
+            <div>
+                <p>Por Diego Rangel, FACIT <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+            </div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Aquela aula criptografia e Rangel está com tédio.</p>
+
+<p>-Gu, Oh Gu! - Rangel chamando seu amigo.</p>
+
+<p>-Fala Brother! - Responde Gustavo ao seu amigo.</p>
+
+<p>-Me empresta seu celular? - Diz esperançoso o entendiado Rangel.</p>
+
+<p>-Não hahaha.. Você vai ficar comentando as postanges das minhas redes sociais – Diz o jovem Gustavo.</p>
+
+<p>- OK, :d! - Responde Rangel todo triste.</p>
+
+<p>Gustavo é uma pessoa muito legal e não que ver seu amigo triste! Pesando nisso, chama Vânia e os dois bolam um desafio para diminuir o tédio de Rangel e fazer com que ele passe a gostar de criptografia!</p>
+
+<p>-Vamos lá, Rangel! Nos te desafiamos! - Diz Gustavo e Vânia ambos sorridentes.</p>
+
+<p>-Desafio? Que tipo de desafio? - Diz Rangel.</p>
+
+<p>-Não quer mexer no meu celular? Vamos lá, temos um desafio para para você!</p>
+
+<p>Deseja aceitar? - Indagam os dois.</p>
+
+<p>-Sim! Vamos lá! - Diz Rangel ainda mais curioso.</p>
+
+<p>-Ok! Vamos te explicar o desafio:</p>
+
+<p>Vamos mudar a senha do celular e você deverá descobrir essa senha! Para descobrir não será uma terefa muito simples! Te daremos três número <strong>B</strong>, <strong>N</strong> e <strong>M</strong> e queremos que você descubra um quarto número. Esse quarto número será a senha do meu celular! Mas não pense que será fácil, para descobrir esse quarto número basta resolver a seguinte equação:</p>
+
+<p style="text-align:center"><strong>B<sup>E</sup>&nbsp;= N mod M</strong></p>
+
+<p>Simples, não? Estamos interessados que você descobrua o valor de <strong>E</strong>, garantimos pra você que o valor de <strong>E</strong> está no intervalo<strong>&nbsp;[0</strong>,&nbsp;<strong>M - 1]</strong> e que <strong>M </strong>é um número primo! Hahaha – Vamos lá, você precisa ser rápido! Pois você só tem o tempo da aula pra resolver!</p>
+
+<p>-Eu topo! Mas irei usar meu computador para me auxiliar - Diz Rangel, todo animado.</p>
+
+<p>-Ok! Mostre do que você é capaz! - Diz Gustavo e Vânia.</p>
+
+<p>-Vou te dar uma dica!Lembre-se Rangel, o valor está entre <strong>[0, M – 1]</strong> inclusive, se não estiver a resposta é <strong>-1</strong>! - Diz Vânia.</p>
+
+<p>Rangel está preparado para o desafio e resolveu utilizar programação para ajudar nesse desafio. Ele pediu a sua ajuda para auxilia-lo no código. Vamos lá você vai deixar passar esse desafio?</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>São vários casos de teste. Cada caso de consiste de três inteiros <strong>B</strong>, <strong>N</strong>, <strong>M</strong>, onde <strong>B</strong> e <strong>N</strong>&nbsp;<strong>(0 &lt; B, N &lt; 10<sup>5</sup>)</strong> e <strong>M</strong> é um número primo <strong>(2 &lt; M &lt; 10<sup>9</sup>)</strong>.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso, você deverá imprimir o valor de <strong>E</strong>, caso o valor de <strong>E</strong> não obedeça a seguinte pripriedade <strong>[0, M - 1]</strong> deverá imprimir <strong>-1</strong>. Vamos lá! Ajudem Rangel!!</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2 64 107</p>
+
+<p>5 15625 18047</p>
+
+<p>5 1458 107</p>
+
+<p>77 12 19</p>
+
+<p>1 1 3</p>
+
+                        </td>
+                        <td>
+                            <p>6</p>
+
+<p>6</p>
+
+<p>27</p>
+
+<p>-1</p>
+
+<p>0</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <p class="footer">
+                VI Maratona Interna de Programação UNIFESO
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,121 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2155 - Os Icosaedros do Lagarto</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2155 - Os Icosaedros do Lagarto" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2155</span>
+				<h1>Os Icosaedros do Lagarto</h1>
+				<div>
+					<p>Por Ricardo Martins, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Reza a lenda que os Icosaedros do Lagarto são cristalinos e podem invocar o Lagarto Shen Long Int, que tem a habilidade de conceder desejos para quem conseguir juntar os sete icosaedros. Os icosaedros vêm em conjuntos de sete com cada mostrando o número de estrelas. Estes são difíceis de encontrar porque eles se dispersam ao redor do planeta, e se desativam por um ano a cada desejo, se transformando em pedras. Para ter a oportunidade de invocar o Lagarto, um tem que viajar ao redor do globo para encontrá-las. Certo dia, Kogu ganha o icosaedro de quatro estrelas de seu avô, Hogan. Ao saber da lenda, Kogu resolve ir atrás dos outros icosaedros, para que possa perder o medo de injeção. Como a tecnologia progrediu, isso ficou mais fácil, e bem simples com a invenção de sua amiga Mulba, o Radar do Lagarto. Só que, para ganharem tempo, precisam saber qual ordem de busca dos icosaedros eles devem seguir, de modo que percorram a menor distância possível, com a sua nuvem voadora.</p>
+
+
+<p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2155.jpg" alt="Icosahedrons" style="width: 337px; height: 150px;"></p>
+
+<p>Escreva um programa que, dadas as coordenadas dos icosaedros, informe o caminho de menor distância, saindo de sua casa, capture todos os icosaedros e volte para casa, além de informar a distância de tal caminho.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha terá um valor inteiro <strong>C</strong> indicando o número de casos de teste. Para cada caso de teste, haverá uma linha com dois inteiros, <strong>X</strong> e <strong>Y</strong>, indicando as coordenadas da casa de Kogu, de posse do icosaedro de quatro estrelas. Depois haverá mais seis linhas, cada uma com três inteiros, <strong>N</strong>, <strong>X<sub>N</sub></strong> e <strong>Y<sub>N</sub></strong>, representando o icosaedro de N estrelas, e as coordenadas onde tal icosaedro se encontra. </p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste imprima a palavra Caso, seguida por um espaço, o número do caso e dois pontos. Na linha seguinte, imprima o percurso feito, saindo de casa e voltando para lá, de modo que tenha obtido o menor caminho, separando cada local visitado por um hífen e um sinal de maior, dando uma ideia de seta, seguido de dois pontos, um espaço, e a distância do percurso total, com cinco casas decimais. Caso o menor caminho tenha mais de uma possibilidade, imprima o caminho lexicograficamente menor. Ou seja, se tem um percurso saindo de casa e indo para o icosaedro de uma estrela, e outro indo para o de duas estrelas, opte por ir na de uma estrela primeiro, desde que ambos os caminhos tenham a mesma distância.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+<p>11 11</p>
+
+<p>1 15 14</p>
+
+<p>2 19 17</p>
+
+<p>3 23 20</p>
+
+<p>5 23 2</p>
+
+<p>6 19 5</p>
+
+<p>7 15 8</p>
+
+<p>11 11</p>
+
+<p>7 15 14</p>
+
+<p>6 19 17</p>
+
+<p>5 23 20</p>
+
+<p>3 23 2</p>
+
+<p>2 19 5</p>
+
+<p>1 15 8</p>
+
+							</td>
+							<td>
+								<p>Caso 1:</p>
+
+<p>4-&gt;1-&gt;2-&gt;3-&gt;5-&gt;6-&gt;7-&gt;4: 48.00000</p>
+
+<p>Caso 2:</p>
+
+<p>4-&gt;1-&gt;2-&gt;3-&gt;5-&gt;6-&gt;7-&gt;4: 48.00000</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					VI Olimpíada Interna de Programação do IFSULDEMINAS - OLIP 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

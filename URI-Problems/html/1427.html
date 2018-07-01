@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1427 - O Problema da Scrooge Co.</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1427 - O Problema da Scrooge Co." />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1427</span>
+            <h1>O Problema da Scrooge Co.</h1>
+            <div>Por Ginés García Mateos, UM <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/es.gif' alt=""/> Espanha</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>A empresa de entregas Scrooge Co. quer estabelecer um sistema para pagar a menor quantia necessária de dinheiro a seus empregados durante suas entregas. A empresa sabe qual é a quantia mínima de dinheiro necessária para ir diretamente de uma localização até outra.</p>
+
+                <p>A empresa pediu para você escrever um programa que compute a menor quantia de dinheiro que um empregado deve receber para poder ir de uma localização até outra, e a rota que ele deve usar.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada começa com uma linha contendo um inteiro <strong>C</strong> (1&nbsp;≤ <strong>C</strong>&nbsp;≤ 99), indicando o número de casos de testes. Cada caso de teste é descrito a seguir.</p>
+
+                <p>A primeira linha de um caso de teste contém um inteiro <strong>P</strong> (1 ≤ <strong>P</strong> ≤ 99), indicando o número de localizações existentes. A segunda linha contém os nomes das localizações, separados por um TAB. Cada nome tem no máximo 20 caracteres.&nbsp; As próximas <strong>P</strong> linhas contém os custos para ir de uma localização diretamente para outra, também separados por TAB. A primeira destas linhas contém os custos para ir diretamente da primeira localização para todas as outras; a segunda linha contém os custos para ir da segunda localização para todas as outras; e assim por diante. Um custo é dado por um inteiro <strong>W</strong> (-1&nbsp;≤ <strong>W</strong>&nbsp;≤ 300), onde <strong>W</strong> = -1 indica que a viagem direta entre as localizações é muito cara e não pode ser realizada, e <strong>W</strong> = 0 indica o custo para ir diretamente de uma localização a ela mesma.&nbsp; Depois das <strong>P</strong> linhas, há uma linha contendo um inteiro <strong>R</strong> (1&nbsp;≤ <strong>R</strong>&nbsp;≤ 99), indicando o número de rotas a serem consideradas. As próximas <strong>R</strong> linhas contém cada uma o nome de um funcionário e o nome das localizações de origem e destino de sua entrega. Os nomes das localizações diferenciam maiúsculas e minúsculas (<em>case sensitive</em>), e o nome do funcionário tem no máximo 30 caracteres.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada rota de cada caso de teste, você deve produzir uma ou duas linhas de saída. Se existe uma rota entre as localizações solicitadas, você deve produzir duas linhas: uma contendo o custo mínimo da viagem e outra contendo a rota utilizada. As linhas devem ser impressas no seguinte formato (sem aspas):</p>
+
+                <p>"<em>Mr &lt;empregado&gt; to go from &lt;localização de origem&gt; to &lt;localização de destino&gt;, you will receive &lt;custo mínimo&gt; euros</em>"<br />
+                    "<em>Path:&lt;localização de origem&gt; &lt;localizações separadas por espaços&gt; &lt;localização de destino&gt;</em>"</p>
+
+                <p>Se não há uma rota possível entre as localizações de origem e destino, você deve produzir uma linha, no seguinte formato (sem aspas):</p>
+
+                <p>"<em>Sorry Mr &lt;empregado&gt; you can not go from &lt;localização de origem&gt; to &lt;localização de destino&gt;</em>"</p>
+
+                <p>Se houver dois caminhos minimos possiveis entre A e B e os dois tem vertices intermediarios, a preferencia é do caminho que aparece antes na entrada, por exemplo:</p>
+                <p>
+                    Se as cidades da entrada forem: A B C D E F, o caminho "A C D B" tem mais prioridade que o caminho "A E B" (pois E aparece depois que D) e o caminho "A D E B" tem mais prioridade sobre "A C F B" (pois F aparece depois que E). A analise é feita olhando-se a ordem de entrada dos vértices intermediários.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2<br />
+                                6<br />
+                                Ofi1&nbsp;&nbsp; &nbsp;Ofi2&nbsp; &nbsp;&nbsp;Ofi3&nbsp;&nbsp; &nbsp;ofi4&nbsp;&nbsp; &nbsp;ofi5&nbsp;&nbsp; &nbsp;ofi6<br />
+                                0&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;4&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp; &nbsp; &nbsp; &nbsp;-1&nbsp;&nbsp; &nbsp; &nbsp;4&nbsp; &nbsp; &nbsp; &nbsp;-1<br />
+                                4&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;0&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-1&nbsp;&nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; &nbsp; &nbsp;3&nbsp; &nbsp;&nbsp; &nbsp; 4<br />
+                                1&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; -1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp; &nbsp; &nbsp; &nbsp;-1&nbsp;&nbsp; &nbsp; &nbsp;3&nbsp; &nbsp; &nbsp; &nbsp;-1<br />
+                                -1&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;2&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-1&nbsp;&nbsp; &nbsp; &nbsp;0&nbsp; &nbsp; &nbsp; &nbsp;-1&nbsp; &nbsp; &nbsp;&nbsp;1<br />
+                                4&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;3&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp; &nbsp; &nbsp; &nbsp;-1 &nbsp; &nbsp; &nbsp;0&nbsp; &nbsp; &nbsp; &nbsp;2<br />
+                                -1&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;4&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;-1&nbsp; &nbsp;&nbsp; &nbsp;1&nbsp; &nbsp; &nbsp; &nbsp;2&nbsp; &nbsp; &nbsp; &nbsp;0<br />
+                                1<br />
+                                emp1&nbsp;&nbsp; &nbsp;Ofi1&nbsp;&nbsp; &nbsp;ofi4<br />
+                                3<br />
+                                Murcia&nbsp;&nbsp;Alicante&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;Albacete<br />
+                                0 &nbsp; &nbsp; &nbsp; 3 &nbsp; &nbsp;&nbsp; &nbsp;-1<br />
+                                -1 &nbsp;&nbsp; &nbsp; 0 &nbsp; &nbsp;&nbsp; &nbsp;4<br />
+                                -1 &nbsp; &nbsp; &nbsp;-1 &nbsp; &nbsp;&nbsp;&nbsp;0<br />
+                                2<br />
+                                Dofyl&nbsp;&nbsp;&nbsp;Murcia &nbsp;Albacete<br />
+                                Dofyl&nbsp;&nbsp;&nbsp;Albacete &nbsp; &nbsp; &nbsp;&nbsp; Murcia</p>
+
+                        </td>
+                        <td>
+                            <p>Mr emp1 to go from Ofi1 to ofi4, you will receive 6 euros<br />
+                                Path:Ofi1 Ofi2 ofi4<br />
+                                Mr Dofyl to go from Murcia to Albacete, you will receive 7 euros<br />
+                                Path:Murcia Alicante Albacete<br />
+                                Sorry Mr Dofyl you can not go from Albacete to Murcia</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Olimpiadas Murcianas de Programación 2009.
+            </p>
+        </div>
+
+    </body>
+</html>

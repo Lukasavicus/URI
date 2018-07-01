@@ -1,0 +1,153 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1826 - A Linguagem é Infinita?</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2000 - A Linguagem é Infinita?" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1826</span>
+				<h1>A Linguagem é Infinita?</h1>
+				<div>
+					<p>Por Matheus Pimenta, UNB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Gramática livre-do-contexto – GLC – é uma estrutura matemática utilizada para gerar cadeias, que são sequências finitas de símbolos terminais. Dizemos que o conjunto de todas as cadeias que podem ser geradas por uma GLC <em>G</em> é a linguagem de <em>G</em>, escrito <em>L(G)</em>. Neste problema, dada uma GLC <em>G</em>, você deve determinar se <em>L(G)</em> é um conjunto vazio, finito, ou infinito.</p>
+
+<p>Uma GLC é uma 4-upla <em>(V, Σ, R, S)</em>, onde</p>
+
+<ol>
+	<li><em>V</em> é um conjunto finito e não-vazio cujos elementos chamamos de variáveis.</li>
+	<li><em>Σ</em> é um conjunto finito e não-vazio, disjunto de <em>V</em>, cujos elementos chamamos de símbolos terminais.</li>
+	<li><em>R</em> é um conjunto regras. Uma regra tem a forma 
+	<p style="text-align:center"><em>A → U<sub>1</sub>U<sub>2</sub>...U<sub>k</sub></em>
+	onde <em>A ∈ V</em>, <em>k ≥ 0</em> e <em>U<sub>i</sub> ∈ V ∪ Σ</em> para <em>i = 1,2,...,k</em></p>.</li>
+	<li><em>S ∈ V</em> é a variável inicial.</li>
+</ol>
+
+<p>Para gerar uma cadeia utilizando uma GLC, realizamos o seguinte procedimento.</p>
+
+<p>Primeiro, escrevemos a variável inicial <em>S</em>. Em seguida, escolhemos uma regra para substituir <em>S</em>, digamos, <em>S → U<sub>1</sub>U<sub>2</sub>...U<sub>k</sub></em>. Após esta escolha, apagamos o <em>S</em> e escrevemos em seu lugar a cadeia de variáveis e/ou terminais <em>U<sub>1</sub>U<sub>2</sub>...U<sub>k</sub></em>. Repetimos este processo até que não restem variáveis escritas. Se não é possível gerar uma cadeia sem variáveis partindo apenas da variável inicial, dizemos que a linguagem da GLC é vazia.</p>
+
+<p>Por exemplo, seja a GLC abaixo, onde <em>S</em> é a variável inicial.</p>
+
+<p style="text-align:center"><em>S → </em>a<em>S</em>a</p>
+
+<p style="text-align:center"><em>S → </em>b<em>S</em>b</p>
+
+<p style="text-align:center"><em>S → </em>a</p>
+
+<p style="text-align:center"><em>S → </em>b</p>
+
+<p style="text-align:center"><em>S → </em></p>
+
+<p>Utilizando a GLC acima, podemos gerar qualquer palíndromo feito de a's e b's. Por exemplo:</p>
+
+<p style="text-align:center"><em>S → </em>a<em>S</em>a<em> → </em>ab<em>S</em>ba<em> → </em>abba</p>
+
+<p>Observe que a cadeia vazia é uma cadeia válida. Logo, se uma GLC <em>G</em> gera, por exemplo, apenas a cadeia vazia, <em>L(G)</em> é finita, mas não é vazia.</p>
+
+<p>Neste problema, as variáveis serão palavras feitas somente de letras maiúsculas, ou seja, caracteres entre A e Z. Os símbolos terminais serão letras minúsculas, ou seja, caracteres entre a e z. As regras serão dadas conforme descrito na próxima seção. A variável inicial será sempre a primeira variável do caso de teste.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste. Cada caso de teste fornece a descrição de uma gramática livre-do-contexto.</p>
+
+<p>A primeira linha de um caso de teste contém dois inteiros <strong>v</strong> e <strong>r</strong>, onde <strong>v</strong> é a quantidade de variáveis da GLC, <strong>r</strong> é a quantidade de regras, 1 ≤ <strong>v</strong> ≤ 10<sup>2</sup> e 0 ≤ <strong>r</strong> ≤ 2·10<sup>2</sup>.</p>
+
+<p>Cada uma das próximas <strong>v</strong> linhas contém uma palavra feita somente de letras maiúsculas, ou seja, uma variável da GLC. A variável da primeira linha é a variável inicial.</p>
+
+<p>Cada uma das próximas <strong>r</strong> linhas descreve uma regra da GLC. É dada uma palavra de letras maiúsculas, um inteiro 0 ≤ <strong>k</strong> ≤ 10<sup>2</sup> e uma sequência de <strong>k</strong> elementos, onde cada elemento é uma variável, ou um símbolo terminal.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima uma linha com a palavra "vazia" se a GLC não gera nenhuma cadeia de terminais, ou a palavra "finita" se a GLC gera alguma, mas não infinitas cadeias de terminais, ou a palavra "infinita" se a GLC gera infinitas cadeias de terminais.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 0<br />
+VARINICIAL<br />
+1 1<br />
+S<br />
+S 1 S<br />
+1 1<br />
+S<br />
+S 0<br />
+1 3<br />
+S<br />
+S 0<br />
+S 2 a a<br />
+S 1 b<br />
+2 3<br />
+S<br />
+A<br />
+S 2 S A<br />
+S 1 b<br />
+A 0<br />
+1 5<br />
+S<br />
+S 3 a S a<br />
+S 3 b S b<br />
+S 1 a<br />
+S 1 b<br />
+S 0</p>
+
+							</td>
+							<td>
+								<p>vazia<br />
+vazia<br />
+finita<br />
+finita<br />
+finita<br />
+infinita</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1486 - Circuito Bioquímico Digital</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1486 - Circuito Bioquímico Digital" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1486</span>
+            <h1>Circuito Bioquímico Digital</h1>
+            <div>Por Ricardo Anido, UNICAMP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brazil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Um circuito bioquímico digital (CBD) é um artefato composto de um conjunto de <em>pontos de processamento</em>. Cada ponto de processamento é constituído por um minúsculo receptáculo para reagentes bioquímicos, feito de um substrato biológico que se comporta como um microcircuito eletrônico digital. Dependendo do estado da reação no receptáculo, o substrato gera dois níveis de voltagem. Um leitor acoplado ao CBD é capaz de realizar a leitura de todos os pontos de processamento de um CDB num dado instante, interpretando os dois níveis de voltagem como 0 ou 1.</p>
+
+                <p>Um experimento com o CBD é realizado da seguinte maneira. Os pontos de processamento são carregados com as substâncias de interesse e reagentes apropriados e, a cada intervalo fixo de tempo (tipicamente alguns milissegundos), os pontos de processamento são lidos. Assim, o experimento resulta em uma sequência de conjuntos (vetores) de bits, cada vetor correspondendo a uma medição do CBD.</p>
+
+                <p>Uma sequência ininterrupta de bits 1 de um mesmo ponto de processamento ao longo do tempo é denominada de palito. O comprimento de um palito é o número de bits 1 que o compõe (note que o comprimento dos palitos de um experimento pode variar entre um e o número de medições efetuadas). Uma característica importante de um experimento com o CBD é a quantidade e o comprimento dos palitos gerados. A figura abaixo mostra o resultado de um experimento realizado com um CBD de seis pontos de processamento, em que foram efetuadas quatro medições, contendo três palitos de comprimento um, um palito de comprimento dois e um palito de comprimento quatro.</p>
+
+                <p style="text-align: center;"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Circuito%20Bioqu%C4%B1mico%20Digital.png" style="width: 113px; height: 86px;" /></p>
+
+                <p>Você foi contratado para escrever um programa que determine, dado o resultado de um experimento, quantos palitos de comprimento igual ou maior do que um certo valor foram gerados.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. A primeira linha de um caso de teste contém três inteiros <strong>P</strong>, <strong>N</strong> e <strong>C</strong> que indicam respectivamente o número de pontos de processamento (1 ≤ <strong>P</strong> ≤ 1000), o número de medições efetuadas (1 ≤ <strong>N</strong> ≤ 1000) e o comprimento mínimo de palitos de interesse (1 ≤ <strong>C</strong> ≤ <strong>N</strong>). Cada uma das próximas N linhas contém sequências de <strong>P</strong> dígitos {0, 1}, separados por um espaço em branco. O final da entrada é indicado por <strong>P</strong> = <strong>N</strong> = <strong>C</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste da entrada seu programa deve produzir uma única linha da saída, contendo o número de palitos de comprimento maior ou igual a <strong>C</strong> produzidos pelo experimento.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2 2 2<br />
+                                1 1<br />
+                                1 1<br />
+                                4 5 3<br />
+                                0 1 0 1<br />
+                                1 1 1 1<br />
+                                1 0 0 1<br />
+                                1 0 1 1<br />
+                                1 1 0 0<br />
+                                0 0 0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                2<br />
+                                2
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programacao da SBC 2006.
+            </p>
+        </div>
+
+    </body>
+</html>

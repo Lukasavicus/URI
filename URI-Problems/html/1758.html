@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1758 - Pontos Extras</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1758 - Pontos Extras" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1758</span>
+                <h1>Pontos Extras</h1>
+                <div>
+                    <p>Por Victor Marcilio Peixoto, UNIVASF <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A instituição em que o professor Charles ensina possui o seguinte critério para decidir a aprovação de um aluno:</p>
+
+                    </br>
+
+                    <p>média ≥ 7.0 = APROVADO</p>
+
+                    <p>4.0 ≤ média &lt; 7.0 = PROVA FINAL</p>
+
+                    <p>média &lt; 4.0 = REPROVADO</p>
+
+                     </br>
+
+                    <p>O professor Charles resolveu dar uma bonificação aos seus alunos com base no seu desempenho e estabeleceu os seguintes critérios:</p>
+
+                    <p>1 - Arredondamentos que prejudiquem o aluno serão desconsiderados, permanecendo a nota original.</p>
+
+                    <p>2 - Nenhum arredondamento deve modificar a situação do aluno (APROVADO, FINAL, REPROVADO).</p>
+
+                    <p>3 - Se o aluno foi aprovado ou se tem nota suficiente para realizar a prova final, a média desse aluno será substituida pela maior nota obtida nas provas.</p>
+
+                    <p>4 - Os alunos reprovados foram preguiçosos e não devem receber nenhuma pontuação extra. </p>
+
+                    <p>A aplicação da regra 3 deve ocorrer sempre que possível, desde que não viole as regras 1 ou 2.</p>
+
+                    <p>Escreva um programa que recebe as notas que os alunos obtiveram em cada prova e calcule a sua média conforme os critérios do professor.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada contém o inteiro <strong>T</strong> ( 1 ≤ <strong>T </strong>≤ 5000) que indica a quantidade de casos de teste.</p>
+
+                    <p>A primeira linha de um caso de teste contém os inteiros <strong>P</strong> (2 ≤ <strong>P </strong>≤ 5) e <strong>N </strong>(2 ≤ <strong>N </strong>≤ 50), indicando a quantidade de provas que o professor realizou e a quantidade de alunos matriculados na turma, respectivamente.</p>
+
+                    <p>As <strong>N</strong> linhas seguintes conterão <strong>P</strong> números de ponto flutuante com um dígito após o ponto decimal, indicando as notas (0.0 ≤ nota ≤ 10.0)  obtidas pelo i-ésimo aluno em cada uma das provas aplicadas pelo professor.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada aluno imprima uma única linha contendo a média obtida pelo aluno após o arredondamento do professor. A média deve ter exatamente dois dígitos após o ponto decimal.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2</p>
+
+                                <p>3 5<br />
+                                3.1 7.7 0.5<br />
+                                0.5 5.9 5.5<br />
+                                0.1 8.5 9.2<br />
+                                9.3 4.6 8.0<br />
+                                5.4 3.5 0.0</p>
+
+                                <p>5 3<br />
+                                9.0 10.0 6.0 6.0 6.0<br />
+                                10.0 5.0 5.0 5.0 5.0<br />
+                                10.0 5.0 5.0 4.0 0.0</p>
+
+                            </td>
+                            <td>
+                                <p>3.77<br />
+                                3.97<br />
+                                5.93<br />
+                                9.30<br />
+                                2.97</p>
+
+                                <p>10.00<br />
+                                6.00<br />
+                                5.00</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Contest Peixoto 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

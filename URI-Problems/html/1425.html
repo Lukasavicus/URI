@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1425 - Presente?!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1425 - Presente?!" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1425</span>
+            <h1>Presente?!</h1>
+            <div>Por Rujia Liu <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cn.gif' alt="" /> China</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Existe um belo riacho em uma bela vila. <b>N</b> Pedras estão alinhadas em linha reta do número 1 até <b>N</b>, da margem esquerda à margem direita, como mostrado abaixo.</p>
+
+                <p>[Flanco esquerdo] - [Pedra 1] - [Pedra 2] - [Pedra 2] - [Pedra 3] - [Pedra 4] - [Pedra <b>N</b>] - [Flanco Direito]</p>
+
+                <p>A distância entre duas Pedras adjacentes é exatamente 1 metro, enquanto a distância entre a margem esquerda e a Pedra 1 e a distância entre a Pedra <b>N</b> e a margem direita também são 1 metro.</p>
+
+                <p>
+                    O sapo Frank está prestes a atravessar o riacho, seu vizinho, o sapo Funny veio a ele e disse:<br /><br />
+                    'Olá Frank, feliz dia das Crianças! Eu tenho um presente para você. Vê? Um pequeno pacote na Pedra 5.'<br /><br />
+                    'Oh, que legal! Obrigado! Eu vou pegar.'<br /><br />
+                    'Espere! Este presente é apenas para sapos inteligentes. Você não pode pegar pulando direto.'<br /><br />
+                    'Oh? Então o que devo fazer?'<br /><br />
+                    'Pular mais vezes. Seu primeiro pulo deve ser da margem esquerda para a Pedra 1, então, pule quantas vezes quiser - não importa se for pra frente ou para traz - mas seu pulo i deve cobrir 2 × <b>i</b> - 1 metros. E mais, uma vez que alcance a margem direita ou esquerda, o jogo termina, sem mais pulos!'<br /><br />
+                    'Hummmm, nada fácil... deixa eu pensar!' Respondeu sapo Frank, 'Devo tentar?'
+                </p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém mais de 2000 casos de teste. Cada caso de teste contém um única linha. Ela contém dois positivos inteiros <b>N</b>(2 ≤ <b>N</b> ≤ 10<sup>6</sup>), e <b>M</b>(1 ≤ <b>M</b> ≤ <b>N</b>), <b>M</b> indica o número da pedra em que o presente está. O caso de teste no qual <b>N</b> = 0, <b>M</b> = 0 terminará a entrada e não deve ser contado como caso de teste.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada cado de teste, imprima uma única linha contendo 'Let me try!'(Me deixe tentar) se for possível chegar a Pedra <b>M</b>, caso contrário, imprima um linha contendo 'Don't make fun of me!'(Não ria de mim!).</p>
+
+
+
+            </div>
+
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>9 5<br />
+                                12 2<br />
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>Don't make fun of me!<br />
+                                Let me try!</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                <strong>Nota:</strong><br />
+
+
+                No caso 2, Frank consegue chegar por este caminho:<br />
+                Frente (para Pedra 4) | Frente (para Pedra 9) | Traz (para Pedra 2, pegou o presente!)<br />
+                Note que se Frank pular para frente em seu último pulo, ele chegará no flanco direito (assumindo que a margem é larga o suficiente), consequentemente perdendo o jogo.
+            </p>
+        </div>
+
+    </body>
+</html>

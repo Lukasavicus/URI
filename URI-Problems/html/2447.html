@@ -1,0 +1,115 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2447 - Torneio</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2447 - Torneio" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2447</span>
+				<h1>Torneio</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Juquinha foi convidado para participar do prestigiado torneio de tênis de Rolando Barros, na Nlogônia. O torneio é composto de N rodadas no estilo mata-mata: todo jogador que perde uma partida é eliminado do torneio, e o vencedor desta partida avança para a próxima rodada. Como o número de jogadores ativos cai pela metade a cada rodada, é necessário que o número de jogadores participantes seja uma potência de 2.</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_176_H.png" width="500" alt="" /> </center>
+					<p>Os jogadores são inicialmente dispostos na chave por sorteio. Em uma disposição é atribuido a cada jogador um valor de 1 a 2<strong><sup>N</sup></strong> , que corresponde a sua posição na chave do torneio. Jogadores vencedores avançam para a direita da chave, e disputam com o vencedor da sub-chave vizinha. Na imagem acima, caso os jogadores das posições 1 e 3 vençam suas partidas na primeira rodada, estes se enfrentarão na segunda rodada.</p>
+
+					<p>Juquinha não quer perder a chance de tornar-se um jogador mundialmente famoso, e para isso contratou você para ajudá-lo em suas análises estatísticas. Ele atribuiu a cada jogador um coeficiente de habilidade <strong>H<sub>i </sub></strong>(0 ≤ <strong>H<sub>i</sub></strong> ≤ 10<sup>9</sup>), e sabe que se dois jogadores disputarem uma partida, aquele com maior coeficiente de habilidade certamente será o vencedor. Seu papel é calcular quantas disposições iniciais dos jogadores forçam Juquinha perder na <strong>K</strong>-ésima rodada (ou vencer o torneio, caso <strong>K</strong> = <strong>N</strong> + 1). Duas disposições são consideradas distintas se para algum jogador foi atribuido um valor diferente nas duas disposições.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>N (</strong>1 ≤ <strong>N</strong> ≤ 16) e <strong>K</strong>(1 ≤ <strong>K</strong> ≤ <strong>N</strong> + 1). Cada uma das próximas 2<sup><strong>N</strong></sup> linhas seguintes contêm um único inteiro representando o coeficiente de habilidade de um jogador. O coeficiente de Juquinha é representado pelo primeiro desses inteiros.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma única linha contendo um único inteiro indicando o número de disposições iniciais que forçam Juquinha a perder na <strong>K</strong>-ésima rodada (ou ganhar o torneio, se <strong>K</strong> = <strong>N</strong> + 1). Como este número pode ser muito grande, imprima o resto que este número deixa quando dividido por 1.000.000.007 (109 + 7).</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 2</p>
+
+								<p>3</p>
+
+								<p>4</p>
+
+								<p>2</p>
+
+								<p>1</p>
+
+							</td>
+							<td>
+								<p>16</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 2</p>
+
+								<p>7</p>
+
+								<p>5</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2013 Fase 2 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

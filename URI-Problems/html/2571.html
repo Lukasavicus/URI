@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2571 - Doador</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 9999 - Doador" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2571</span>
+            <h1>Doador</h1>
+            <div>
+                <p>Por Lucas Maciel, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Dilson, Gilson ou Wilson, como você preferir chamar, é um dos poucos bons mineiros que já se ouviu falar.  Todo ano ele ajuda comunidades carentes, povoados, creches e escolas. Nesse ano, Dilson, que é um dos homens mais ricos de Minas Gerais, está querendo doar parte de suas economias. Ele pretende doar por mês <strong>p</strong> por cento do total de dinheiro que possui. O dinheiro de Gilson (quer dizer, Dilson) é mantido numa aplicação que rende <strong>j</strong> porcento todo mês. Dilson utliza uma parte desse rendimento para pagar suas contas, que totalizam <strong>x</strong> reais por mês, e gasta o restante dele viajando. </p>
+
+<p>Eis que ele se perguntou: "Se eu continuar doando meu dinheiro e gastando os rendimentos dessa maneira, por quantos meses serei capaz de pagar as contas?"</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A entrada consiste de um inteiro <strong>M </strong>(0 ≤ <strong>M </strong> ≤ 10<sup>18</sup>) representando o dinheiro inicial de Dilson, dois números reais <strong>p </strong>(0 &lt; <strong>p</strong> ≤ 100) e <strong>j </strong>(0 ≤ <strong>j</strong> ≤ 100) de cinco casas decimais cada representando a porcentagem dele que Dilson doa e o quanto de juros que ele recebe por mês e um inteiro <strong>x </strong>(1 ≤ <strong>x </strong>≤ 10<sup>6</sup>) que representa a quantidade mínima necessária que o dinheiro deve render por mês.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Um número inteiro correspondente ao número de meses que Dilson pode doar seu dinheiro.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>1000000 10.000000 5.000000 45000</p>
+
+                        </td>
+                        <td>
+                            <p>1</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                                <p>1000000 10.000000 5.000000 35000</p>
+
+                        </td>
+                        <td>
+                            <p>3</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                No primeiro caso, Dilson começa com um montante de R$1000000.00 recebendo um juros de 5% desse valor, no total de R$50000.00. Em seguida, doa 10% desse valor, ficando com apenas R$900000.00. No mês seguinte, recebe do juros o valor de R$45000.00 que é o mínimo que ele precisa. Então Dilson pára de doar, pois se continuasse, no mês seguinte ele iria receber apenas R$40500.00 o que não é o suficiente para ele. <br />
+                No segundo caso, Dilson começa com um montante de R$1000000.00. Ele termina o primeiro mês com R$900000.00, termina o segundo mês com R$810000.00 e o terceiro mês com R$729000.00. No quarto mês, Dilson atinge a quantia de R$656100.00 e rendimentos de R$32805.00, que pela primeira vez são insuficientes para pagar as contas.
+                 </br>
+                 </br>
+                VI Maratona Mineira de programação
+            </p>
+        </div>
+
+    </body>
+</html>

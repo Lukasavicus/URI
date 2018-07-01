@@ -1,0 +1,128 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2254 - Bem-me-quer, Malmequer Japonês</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2170 - Bem-me-quer, Malmequer Japonês" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2254</span>
+				<h1>Bem-me-quer, Malmequer Japonês</h1>
+				<div>
+					<p>Por Felipe Fragoso, UFPB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>No Japão, a primavera sempre dar o ar de sua graça e todos ficam ansiosos pelo Hanami, um ritual para contemplar a florada das flores de cerejeira, mais conhecidas como sakuras.  </p>
+
+<p style="text-align:center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2254.jpg" alt="Cerejeiras" /></p>
+
+<p>Kikuka Bakana, um rapaz inteligente e apaixonado, mora no Japão e decidiu inventar uma brincadeira chamada de bem-me-quer/malmequer de chomsky. Ele pretende contar a quantidade de pétalas da sakura que estão espalhadas pelo seu quintal para servir de índice para a sequência gerada pela sua brincadeira. Obviamente, ele não é louco para varrer todo o quintal e contar quantas pétalas estão no chão. Então, ele pretende estimar a quantidade de pétalas usando suas habilidades matemáticas e usar um programa feito pelo seu melhor amigo brasileiro para saber se “she loves me” ou “she loves not".</p>
+
+<p>O bem-me-quer/malmequer de chomsky possui um símbolo inicial e um conjunto de regras geradoras. A partir de cada símbolo de uma sequência, podemos aplicar as regras geradoras sucessivamente (<em>ad infinitum</em>) para gerar uma nova sequência. </p>
+
+<p> </p>
+
+<p>Kikuka Bakana utilizou a seguinte definição para sua brincadeira:</p>
+
+<p>Símbolo Inicial: she loves not</p>
+
+<p>Regras: (she loves not ==&gt; she loves not, she loves me), (she loves me ==&gt; she loves me, she loves not)</p>
+
+<p> </p>
+
+<p>Exemplo de 3 etapas da geração:</p>
+
+<p>{she loves not} ==&gt; {she loves not, she loves me}  ==&gt; {she loves not, she loves me, she loves me, she loves not}</p>
+
+<p> </p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada possui vários casos de teste.  Cada caso de teste contem uma linha com o número <strong>N</strong> (0 &lt;= <strong>N</strong> &lt;= 10^9) de pétalas estimadas. A entrada termina com <strong>EOF</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso mostre, em uma linha, a frase correspondente na sequência gerada pelo bem-me-quer/malmequer de chomsky. (A primeira frase da sequência tem índice 0)</p>
+
+<p> </p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>0</p>
+
+<p>1</p>
+
+<p>2</p>
+
+<p>3</p>
+
+<p>4</p>
+
+<p>1234</p>
+
+							</td>
+							<td>
+								<p>she loves not</p>
+
+<p>she loves me</p>
+
+<p>she loves me</p>
+
+<p>she loves not</p>
+
+<p>she loves me</p>
+
+<p>she loves me</p>
+
+<p> </p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					-
+				</p>
+			</div>
+
+		</body>
+	</html>

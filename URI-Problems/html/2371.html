@@ -1,0 +1,157 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2371 - Batalha Naval</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2371 - Batalha Naval" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2371</span>
+				<h1>Batalha Naval</h1>
+				<div>
+					<p>OBI - Olimpíada Brasileira de Informática 2010<img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Pedro e Paulo gostam muito de jogar batalha naval; apesar de serem grandes amigos, Pedro desconfia que Paulo não esteja jogando honestamente. Para tirar essa dúvida, Pedro decidiu usar um programa de computador para verificar o resultado do jogo, mas Pedro não sabe programar e por isso pediu a sua ajuda. O jogo de batalha naval é jogado em um tabuleiro retangular com <strong>N</strong> linhas e <strong>M</strong> colunas. Cada posição deste tabuleiro é um quadrado que pode conter água ou uma parte de um navio. Dizemos que dois quadrados são vizinhos se estes possuem um lado em comum. Se duas partes de navio estão em posições vizinhas, então essas duas partes pertencem ao mesmo navio. A regra do jogo proíbe que os quadrados de duas partes de navios distintos tenham um canto em comum (em outras palavras, que quadrados de duas partes de navios distintos compartilhem um vértice). Cada disparo que um jogador faz deve ser feito em um dos quadrados do tabuleiro do outro jogador. Um jogador informa ao outro a coluna e a linha do quadrado alvo do disparo. Para que um navio seja destruído, o jogador deve acertar todas as partes deste navio.&nbsp;</p>
+
+<p>Escreva um programa que, dadas a configuração do tabuleiro e uma sequência de disparos feitos por um jogador, determina o número de navios do outro jogador que foram destruídos.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém dois inteiros <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong> ≤ 100 e <strong>M</strong> ≤ 100) representando respectivamente o número de linhas e de colunas do tabuleiro. As <strong>N</strong> seguintes linhas correspondem ao tabuleiro do jogo. Cada uma dessas linhas contém <strong>M</strong> caracteres. Cada caractere indica o conteúdo da posição correspondente no tabuleiro. Se esse caractere for ‘.’, essa posição contém água; se for ‘#’, essa posição contém uma parte de um navio. A próxima linha contém um número <strong>K</strong> que é o número de disparos feitos pelo jogador (1 ≤ <strong>K</strong> ≤ <strong>N</strong> × <strong>M</strong> ). As próximas <strong>K</strong> linhas indicam os disparos feitos pelo jogador. Cada linha contém dois inteiros <strong>L</strong> e <strong>C</strong>, indicando a linha e a coluna do disparo feito pelo outro jogador (1 ≤ <strong>L</strong> ≤ <strong>N</strong> e 1 ≤ <strong>C</strong> ≤ <strong>M</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma única linha contendo um único número inteiro, o número de navios destruídos. Tenha cuidado ainda que em um conjunto de casos de teste que totaliza 30 pontos, os navios são todos compostos por exatamente uma parte (ou seja, um quadrado) e um conjunto de casos de teste que totaliza 50 pontos, cada navio está contido em exatamente uma linha.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 5<br />
+..#.#<br />
+#....<br />
+...#.<br />
+#....<br />
+...#.<br />
+5<br />
+1 3<br />
+1 4<br />
+1 5<br />
+2 1<br />
+3 4</p>
+
+							</td>
+							<td>
+								<p>4</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 5<br />
+..###<br />
+.....<br />
+#####<br />
+.....<br />
+#.##.<br />
+5<br />
+5 1<br />
+5 2<br />
+1 3<br />
+1 4<br />
+1 5</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7 7<br />
+.#....#<br />
+###..##<br />
+.#....#<br />
+....#.#<br />
+.#..#.#<br />
+.####.#<br />
+.......<br />
+8<br />
+1 1<br />
+1 2<br />
+2 1<br />
+2 2<br />
+2 3<br />
+3 2<br />
+5 2<br />
+6 2</p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2010 Fase 1 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

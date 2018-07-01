@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1378 - Triângulos Isósceles</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1378 - Triângulos Isósceles" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1378</span>
+            <h1>Triângulos Isósceles</h1>
+            <div>Por Pablo Heiber <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=""/> Argentina</div>
+            <strong>Timelimit: 6</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Um dado triângulo pode ser equilátero (três lados de mesmo comprimento), escaleno (três lados de comprimentos diferentes), ou isósceles (dois lados de mesmo comprimento e um terceiro lado de comprimento diferente). Sabe-se que pontos com coordenadas inteiras não podem ser vértices de um triângulo equilátero.</p>
+
+                <p>É dado um conjunto de pontos distintos com coordenadas inteiras no plano XY tal que três pontos distintos deste conjunto não pertencem a uma mesma reta. Sua tarefa é calcular o número de subconjuntos de três pontos que contém vértices de um triângulo isósceles.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Há vários casos de teste. Cada caso de teste é descrito em várias linhas. A primeira linha de cada caso de teste contém um inteiro <strong>N</strong> indicando o número de pontos no conjunto (3&nbsp;≤ <strong>N</strong>&nbsp;≤ 1000). Cada uma das próximas <strong>N</strong> linhas descreve um ponto do conjunto e contém dois inteiros <strong>X</strong> e <strong>Y</strong> separados por um espaço (1&nbsp;≤ <strong>X</strong>, <strong>Y</strong>&nbsp;≤ 10<sup>6</sup>); esses valores representam as coordenadas do ponto no plano XY. Você pode assumir que, em cada caso de teste, não há dois pontos com a mesma localização e não há três pontos colineares.</p>
+
+                <p>O último caso de teste é seguido por uma linha contendo um único zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, imprima uma única linha com um único inteiro indicando o número de subconjuntos de três pontos que contém vértices de um triângulo isósceles.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>5<br />
+                                1 2<br />
+                                2 1<br />
+                                2 2<br />
+                                1 1<br />
+                                1000 1000000<br />
+                                6<br />
+                                1000 1000<br />
+                                996 1003<br />
+                                996 997<br />
+                                1003 996<br />
+                                1003 1004<br />
+                                992 1000<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>4<br />
+                                10</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                 ACM/ICPC South America Contest 2009.
+			</p>
+        </div>
+
+    </body>
+</html>

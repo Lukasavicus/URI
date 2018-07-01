@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2566 - Viagem Para BH</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Viagem Para BH" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2566</span>
+			<h1>Viagem Para BH</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Está chegando a grande final do Campeonato Nlogonense de Surf Aquático, que este ano ocorrerá na cidade de Bonita Horeleninha (BH)! Você decidiu que irá viajar de sua cidade natal para BH para acompanhar a final.</p>
+
+<p>Existem <strong>N</strong> cidades em Nlogônia, numeradas de 1 a <strong>N</strong>. Considere que cidade 1 é sua cidade natal, e a cidade <strong>N</strong> é BH.</p>
+
+<p>Além disso, existem <strong>M</strong> trechos pelos quais é possível viajar. Cada trecho pode ser usado para ir de uma cidade para alguma outra do país. Alguns trechos são feitos de ônibus, enquanto os demais são feitos de avião. Para cada trecho, você conhece o preço, em reais, da passagem que deve pagar para poder utilizá-lo.</p>
+
+<p>Para não tornar sua viagem muito cansativa com deslocamentos entre rodoviárias e aeroportos, você decidiu que irá utilizar apenas um meio de transporte em toda sua viagem, isto é, você quer ir para BH ou utilizando apenas ônibus, ou utilizando apenas aviões.</p>
+
+<p>Sua tarefa é determinar o custo mínimo necessário, em reais, para viajar da sua cidade natal para BH, dada a restrição que o meio de transporte não deve ser alterado durante a viagem.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém dois inteiros <strong>N</strong> e <strong>M</strong> (2 ≤ <strong>N</strong> ≤ 100, 1 ≤ <strong>M</strong> ≤ 2(<strong>N</strong><sup>2</sup> -<strong>N</strong>)), o número de cidades e de trechos, respectivamente. As próximas <strong>M</strong> linhas descreve um trecho cada. Cada linha contém quatro inteiros <strong>A B T R</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong>, <strong>A</strong>≠<strong>B</strong>,<strong>T</strong> = 0 ou 1, 1 ≤ <strong>R</strong> ≤ 10<sup>4</sup>), indicando um trecho que sai da cidade <strong>A</strong> e chega na cidade <strong>B</strong> (nesta ordem), feito por ônibus se <strong>T</strong> = 0 ou por avião se <strong>T</strong> = 1, e cuja passagem custa <strong>R</strong> reais.</p>
+
+<p>É garantido que existe ao menos um caminho de sua cidade para BH utilizando apenas um meio de transporte. Além disso, para cada par ordenado de cidades (A,B), existe no máximo um trecho de A para B para cada meio de transporte possível (mas note que pode haver um trecho de ônibus e outro de avião de A para B).</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma única linha contendo um inteiro indicando o custo mínimo necessário para fazer sua viagem, dadas as restrições acima.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5 6<br />
+1 2 0 200<br />
+1 3 1 400<br />
+2 4 0 300<br />
+3 4 1 300<br />
+2 5 0 700<br />
+4 5 1 100</p>
+
+						</td>
+						<td>
+							<p>800</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

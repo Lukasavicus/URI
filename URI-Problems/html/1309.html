@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1309 - Formatação Monetária</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1309 - Formatação Monetária" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1309</span>
+            <h1>Formatação Monetária</h1>
+            <div><p> Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif"  /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Frequentemente é necessário escrever valores monetários em um formato padrão.
+
+                    Decidimos a formatação de quantidades na seguinte forma: <br/>
+
+                    &nbsp;&nbsp;&nbsp;1. O montante deve começar com '$';<br/>
+                    &nbsp;&nbsp;&nbsp;2. A quantidade deve terminar com um ponto decimal e exatamente dois dígitos seguintes;<br/>
+                    &nbsp;&nbsp;&nbsp;3. Os dígitos à esquerda do ponto decimal devem ser separador em grupos de três por vírgulas.</p>
+
+                <p>
+                    Sua tarefa neste problema é criar um programa que, recebendo dois valores inteiros dólares e centavos retorne a String formatada corretamente.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada é composta por vários casos de teste. Cada caso de teste é composto por dois valores inteiros,&nbsp;<strong>dolares</strong>&nbsp;(0 ≤ <strong>dolares</strong> ≤ 2 * 10<sup>9</sup>) e <strong>centavos</strong> (0 ≤ <strong>centavos</strong> ≤ 99), respectivamente.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima a string formatada de acordo com os regras de formatação.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                123456<br />
+                                0<br />
+                                49734321<br />
+                                9<br />
+                                20502030<br />
+                                70</p>
+                        </td>
+                        <td>
+                            <p>
+                                $123,456.00<br />
+                                $49,734,321.09<br />
+                                $20,502,030.70</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                * Este problema é de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por Mateus Lazarotto para utilização (autorizada) no URI OJ.<br />
+                * A reprodução não autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. é estritamente proibida.</p>
+
+        </div>
+
+    </body>
+</html>

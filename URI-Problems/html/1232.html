@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1232 - Ciclo de Rubik</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1232 - Ciclo de Rubik" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1232</span>
+                <h1>Ciclo de Rubik</h1>
+                <div><p>
+	Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Provavelmente todos conhecem o Cubo de Rubik, um passatempo 3-D desafiador, que tem cada uma das seis faces cobertas com nove etiquetas, cada etiqueta de uma cor (azul, amarelo, laranja, branco, verde e vermelho). No estado inicial, todas as nove etiquetas de uma face têm a mesma cor. Um mecanismo engenhoso permite que cada face seja rotacionada independentemente, fazendo com que as cores das etiquetas nas faces possam ser misturadas.<br />
+	<br />
+	Cada uma das faces do Cubo de Rubik é denotada por uma letra: F, B, U, D, L, e R, como ilustrado na figura abaixo.</p><br />
+<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1232.png" style="width: 221px; height: 200px; " /></p>
+<p><br />
+	U F D R L B A rotação de uma face é denominada de um movimento. Para descrever os movimentos utilizamos as letras identificadoras das faces:</p>
+<ul>
+	<li>
+		uma letra maiúscula representa um giro de 90<sup>o</sup> no sentido horário da face correspondente;</li>
+	<li>
+		uma letra minúscula representa um giro de 90<sup>o</sup> no sentido anti-horário da face correspondente.</li>
+</ul>
+<p>
+	<br />
+	Por exemplo, F representa um giro de 90<sup>o</sup> no sentido horário da face F; r representa um giro de 90<sup>o</sup> no sentido anti-horário da face R. Uma sequência de movimentos é denotada por uma sequência de letras identificadoras de faces. Assim, rDF representa um giro de 90<sup>o</sup> no sentido anti-horário da face R, seguido de um giro de 90<sup>o</sup> no sentido horário da face D, seguido de um giro de 90<sup>o</sup> no sentido horário da face F.<br />
+	<br />
+	Uma propriedade interessante do Cubo de Rubik é que qualquer sequência de movimentos, se aplicada repetidas vezes, faz com que o cubo retorne ao estado original (estado que tinha antes da primeira aplicação da sequência). Por exemplo, após quatro aplicações da sequência B o cubo retorna ao estado original.<br />
+	<br />
+	Você deve escrever um programa que, dada uma sequência de movimentos, determine o menor número de aplicações completas dessa sequência para que o cubo retorne ao seu estado original.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	Cada caso de teste é descrito em uma única linha, que contém a sequência de movimentos. Obs: Cada sequência tem no mínimo um movimento e no máximo 80 movimentos.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste seu programa deve imprimir uma única linha, contendo um único inteiro, indicando o menor número de aplicações completas da sequência para que o cubo retorne ao seu estado original.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	Rr<br />
+	LLL<br />
+	dl<br />
+	RUUdBd</p>
+
+                            </td>
+                            <td>
+                                <p>
+	1<br />
+	4<br />
+	105<br />
+	1260</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <p class="footer">
+                    Maratona de Programação da SBC 2012</p>
+            </div>
+
+        </body>
+    </html>

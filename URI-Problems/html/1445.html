@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1445 - Quem Vai à Festa?</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1445 - Quem Vai à Festa?" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1445</span>
+            <h1>Quem Vai à Festa?</h1>
+            <div>Por Lucas Hermann Negri, UDESC <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>A garoa fina que caiu na última semana levou o professor Claudius Virux ficar saudoso de seus tempos de Campina Grande – Pb,  como estudante  na UFCG.  Lá,  o inverno é um período marcado por uma chuvinha igual a de Joinville, com noites frias.</p>
+
+                <p>Na universidade, as festinhas  dos estudantes,  que ocorriam em quase todas as sextas-feiras e sábados,  eram um programa e tanto. O mais interessante é que se encontravam as figuras mais inusitadas, poetas, cantores, professores, e outros artistas, além, é claro, dos estudantes.  Sempre havia  algum  motivo para  organizar  uma  festa,  quando  não,  a ideia era celebrar  a semana dura da universidade que se passou.</p>
+
+                <p>O mais curioso era a sistemática de como o anfitrião fazia o convite. O dono(a)  da casa (em seus tempos  se chamava  de república) convidada os seus amigos imediatos, estes por sua vez convidavam outros,  e  assim, sucessivamente. Chegado o dia da festa, o anfitrião queria conhecer os seus novos amigos, a fim de verificar como tal corrente de convite tinha se propagada.</p>
+
+                <p>Para  controlar quantos e como os convidados vieram à festa, o anfitrião solicitou a cada um que chegasse, escrevesse seu nome, e quem o convidou.</p>
+
+                <p>Sua tarefa é contar quantos convidados estão presentes em cada  festa, dada apenas a relação imediata entre convidado e um amigo.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Para  cada festa, haverá um número de relação entre os convidados. Este é um valor <strong>N</strong> escrito antes das relações que seguem em pares do tipo (x, y) = (y, x).  Onde x é o nome de um amigo e y o seu convidado. Os valores de x e y são numerados  de 1 a 1000, e o <strong>anfitrião é sempre o número 1</strong>.</p>
+
+                <p>A leitura de 0 na entrada indica fim de festa! O formato dessas entradas seguem os padrões abaixo.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>A cada conjunto de relação, imprima o número total de participantes na festa, incluindo o anfitrião. O total da festa, uma por linha. Na entrada  0 não escreva nada.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>3<br />
+                                (1,2) (2,3) (4,5)<br />
+                                3<br />
+                                (2,3) (3,4) (4,5)<br />
+                                5<br />
+                                (1,2) (5,2) (6,5) (5,4) (4,3)<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>3<br />
+                                1<br />
+                                6</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programacao UDESC 2013.
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,129 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2120 - Tutores</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2120 - Tutores" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2120</span>
+				<h1>Tutores</h1>
+				<div>
+					<p>Por Lucca Siaudzionis, University of British Columbia <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ca.gif' alt='CA' /> Canada</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Cada vez que um novo aluno entra da Organização Educacional Farias Brito, ele recebe um tutor para ajudá-lo a conhecer a todos e tudo na escola.</p>
+
+<p>O sistema da escola para determinar o tutor de cada novo aluno foi criado por um louco chamado Succa Liaudzionis. Succa decidiu usar o número de matrícula de cada aluno para seguir o padrão de uma árvore binaria de busca (porque sim), desta maneira:</p>
+
+<ol>
+	<li>O primeiro aluno, com matrícula <b>X<sub>1</b> </sub>vira a raíz da árvore e então não possui tutor.</li>
+	<li>Os números <b>X<sub>2</sub></b>, <b>X<sub>3</sub></b>, …, <b>X<sub>n</b> </sub>são adicionados um a um a árvore. Para adicionar um número <b>X<sub>i</sub></b>, você deve percorrer a árvore partindo da raíz e usando as seguintes regras:</li>
+</ol>
+
+<ul>
+	<li>O ponteiro está inicialmente apontando para a raíz da árvore.</li>
+	<li>Se <b>X<sub>i </sub></b>é menor que o número do nó atual, o filho da esquerda passar a ser o nó atual. Senão, o filho da direita vira.</li>
+	<li>Se, em algum momento, o filho desejado não existir, cria-se um novo nó contendo o valor de <b>X<sub>i</sub></b>. A matrícula do tutor do estudante atual é o pai de <b>X<sub>i </sub></b>na árvore.</li>
+</ul>
+
+<p>Por exemplo, se a ordem na qual os números forem adicionados for (3, 1, 4, 2, 5), a árvore fica desta maneira:</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_E.png" style="width:300px; height:220px"></p>
+
+
+
+<p>Succa precisava de espaço extra em seu computador e decidiu apagar toda informação envolvendo os tutores dos alunos. Agora, seu chefe, Jeixeira Túnior, pediu a mesma informação sobre <b>Q</b> alunos que ele acabou de deletar! Succa considerou perguntar a cada estudante quem é seu tutor, mas isso demoraria tempo demais.</p>
+
+<p>Por outro lado, Succa ainda sabe a ordem na qual os estudantes foram adicionados a árvore. Como Succa não é tão brilhante quanto louco, ele precisa da sua ajuda para usar essa informação e determinar o tutor de cada aluno.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de quatro linhas. A primeira contém um inteiro <b><em>N </em></b>(2 ≤ <em><b>N</b> ≤ </em>100 000), o número de estudantes do Farias Brito. A segunda linha contém <em>n </em>inteiros distintos <b>X<sub>i </sub></b>(1 ≤ <b>X<sub>i </sub></b>≤ 10<sup>9</sup>), representando a matrícula de cada um dos <b><em>n </em></b>alunos na ordem em que eles foram adicionados ao sistema. A terceira linha contém <b>Q</b> (1 ≤ <em><b>Q</b> ≤ </em>99 999). A quarta linha contém os <b>Q</b> alunos representados por números de 1 a <b>N</b> que se quer informação (não será pedida informação sobre o primeiro aluno).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída consiste em <b><em>Q</em></b> inteiros. Os inteiros representam, em ordem, a matrícula dos tutores de cada aluno na ordem que foi pedida.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+<p>5 1 2</p>
+<p>1</p>
+<p>2</p>
+
+							</td>
+							<td>
+								<p>5</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5</p>
+
+<p>3 1 4 2 5</p>
+<p>2</p>
+<p>2 5</p>
+
+							</td>
+							<td>
+								<p>3 4</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					I Contest Farias Brito
+				</p>
+			</div>
+
+		</body>
+	</html>

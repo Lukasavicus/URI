@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1488 - Números Mágicos?</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1488 - Números Mágicos?" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1488</span>
+            <h1>Números Mágicos?</h1>
+           <div>VII Maratona de Programacao IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p><em>"Os números sempre desempenharam um papel de acentuado relevo não só nos altos campos da Fé e da Verdade, como no humílimos terreiros da Superstição e do Erro."</em> (Prof. Marão)</p>
+
+                <p>Malba Tahan, em seu clássico "O Homem Que Calculava", conta uma fábula de superstição envolvendo os números quadripartidos. Mal sabia ele que séculos antes, na antiga civilização Tcheca, a superstição envolvendo os números quadripartidos já se fazia presente. Na antiguidade, uma importante comunidade que vivia nos arredores de Neratovice, utilizava as propriedades dos números quadripartidos para prever o futuro, batizar as crianças e até mesmo para escolher os seus líderes.</p>
+
+                <p>Um número inteiro <em>n</em> é quadripartido se existe alguma divisão desse número em quatro parcelas inteiras (p<sub>1</sub> + p<sub>2</sub> + p<sub>3</sub> + p<sub>4</sub> = <em>n</em>) e um operador mágico (<em>m</em>) de modo que a primeira parcela somada ao operador mágico, a segunda diminuída dele, a terceira multiplicada por ele e a quarta dividida por ele deem o mesmo resultado (p<sub>1</sub> + <em>m</em> = p<sub>2</sub> − <em>m</em> = p<sub>3</sub> * <em>m</em> = p<sub>4</sub> / <em>m</em>).</p>
+
+                <p>Assim, 128 é quadripartido, porque podemos dividir 128 em 4 parcelas (31, 33, 32 e 32) de modo que existe um operador mágico (no caso, 1) que faz com que p<sub>1</sub> + m, p<sub>2</sub> − m, p<sub>3</sub> * m e p<sub>4</sub> / m sejam iguais. De fato: 31 + 1 = 33 − 1 = 32 * 1 = 32 / 1 = 32.</p>
+
+                <p>Um grupo de pesquisadores de Praga está reconstruindo o passado de Neratovice, e pediu a sua ajuda. Eles querem que você faça um programa que identifique quando um número é ou não quadripartido e qual é o seu operador mágico associado.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Cada linha da entrada contém um inteiro <strong>n</strong> (0 ≤ <strong>n</strong> ≤ 500000) que seu programa deverá analisar e classificar em quadripartido ou não. O valor <strong>n</strong> = 0 corresponde ao final do arquivo de entrada e não deve ser processado.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada valor da entrada, seu programa deve imprimir um identificador <strong>Instancia h</strong>, em que <strong>h</strong> é um número inteiro, sequencial e crescente a partir de 1. Na linha seguinte, separados por um espaço em branco, os cinco números que comprovam a condição de quadripartido, quando <strong>n</strong> for quadripartido. Siga a ordem: <strong>m p<sub>1</sub> p<sub>2</sub> p<sub>3</sub> p<sub>4</sub></strong>.</p>
+
+                <p>Se <strong>n</strong> não for quadripartido, seu programa deve imprimir a mensagem <strong>n nao e quadripartido</strong>. No primeiro caso, é possível que exista mais de uma sequencia que atenda às condições estabelecidas. Se isto ocorrer, seu programa deverá escolher a que apresentar o maior valor possível para <strong>m</strong>.</p>
+
+                <p>Uma linha em branco deve separar a saída de cada instância.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                128<br />
+                                1<br />
+                                8<br />
+                                0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Instancia 1<br />
+                                7 7 21 2 98<br />
+                                <br />
+                                Instancia 2<br />
+                                1 nao e quadripartido<br />
+                                <br />
+                                Instancia 3<br />
+                                1 1 3 2 2<br />
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                VII Maratona de Programação IME-USP 2003.
+            </p>
+        </div>
+
+    </body>
+</html>

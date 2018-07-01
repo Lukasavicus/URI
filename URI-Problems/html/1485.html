@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1485 - Roleta Turca</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1485 - Roleta Turca" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1485</span>
+            <h1>Roleta Turca</h1>
+            <div>Por Ricardo Anido, UNICAMP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Roleta turca é um jogo de azar que usa uma roleta com S espaços, cada um numerado com um inteiro entre -64 e 64. Em cada turno do jogo, os jogadores apostam em B bolas, cada uma também numerada de -64 a 64. Para cada uma das B bolas, exatamente um jogador apostará nela.</p>
+
+                <p>Após girar a roleta, o representante da banca joga as B bolas sequencialmente. Quando a roleta para, cada bola está disposta em dois espaços adjacentes, como descrito na figura a seguir, que mostra uma roleta com 32 espaços e 4 bolas. Note que, como a figura ilustra, uma bola ocupa dois espaços adjacentes, e, portanto, há espaço para no máximo <em>floor(S/2)</em> bolas na roleta.</p>
+
+               <p style="text-align: center;"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1485.png" style="width: 295px; height: 293px;" /></p>
+
+                <p>As bolas terminam dispostas na mesma posição relativa em que elas foram jogadas na roleta. Isto é, se as bolas a, b e c são jogadas nessa sequência, elas terminam dispostas tais que, na direção horária, a é seguida por b que é seguida por c que é seguida por a.</p>
+
+                <p>O valor de uma bola em um turno é calculado pela multiplicação do número da bola pela soma dos números dos espaços adjacentes sobre os quais a bola está disposta. Se o valor de uma bola é positivo, o jogador que apostou nessa bola recebe essa quantia (o valor da bola) da banca; se o valor de um bola é negativo, o jogador que apostou nessa bola deve pagar essa quantia para a banca. A arrecadação da banca em um turno é a quantia total recebida menos a quantia total paga.</p>
+
+                <p>Por exemplo, na figura anterior, a banca paga $5.00 para bola numerada -1, paga $7.00 para bola numerada -7, recebe $24 pela bola numerada 12 e não paga nem recebe pela bola numerada 3. Portanto, neste turno a banca fez uma arrecadação de $12.00 (24 -5 -7); note que a arrecadação da banca em turno pode ser negativa (perda).</p>
+
+                <p>Será dada a descrição da roleta, a descrição das bolas e a sequência em que as bolas foram jogadas na roleta. Escreva um programa que determine a arrecadação máxima que a banca pode fazer em um turno.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. A primeira linha de um caso de teste contém dois inteiros <strong>S</strong> e <strong>B</strong> que indicam respectivamente o número de espaços na roleta (3 ≤ <strong>S</strong> ≤ 250) e o número de bolas usadas (1 ≤ <strong>B</strong> ≤ <strong>floor(S/2)</strong>). A segunda linha de um caso de teste contém <strong>S</strong> inteiros <strong>X<sub>i</sub></strong>, indicando os números associados com os espaços da roleta, na direção horária (-64 ≤ <strong>X<sub>i</sub></strong> ≤ 64, para 1 ≤ <strong>i</strong> ≤ <strong>S</strong>). A terceira linha de um caso de teste contém <strong>B</strong> inteiros <strong>Y<sub>i</sub></strong>, indicando o número associado com as bolas (-64 ≤ <strong>Y<sub>i</sub></strong> ≤ 64, para 1 ≤ <strong>i</strong> ≤ <strong>B</strong>), na sequência em que as bolas são jogadas na roleta (note que elas estão na ordem que elas terminam dispostas na roleta, na direção horária). O fim da entrada é indicada por <strong>S</strong> = <strong>B</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste na entrada seu programa deve escrever uma linha de saída, contendo um inteiro indicando a máxima arrecadação que a banca pode obter em um turno. A saída deve ser escrita na saída padrão.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>4 2<br />
+                                -1 0 2 -1<br />
+                                -1 1<br />
+                                5 2<br />
+                                3 2 -1 7 1<br />
+                                2 3<br />
+                                7 3<br />
+                                -4 3 2 1 0 -4 -2<br />
+                                -10 0 1<br />
+                                4 2<br />
+                                0 2 3 0<br />
+                                -2 -2<br />
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>4<br />
+                                -11<br />
+                                56<br />
+                                10</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+             </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2006.
+            </p>
+        </div>
+    </body>
+</html>

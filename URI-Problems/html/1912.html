@@ -1,0 +1,102 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1912 - Ajude Seu Madruga</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1912 - Ajude Seu Madruga" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1912</span>
+				<h1>Ajude Seu Madruga</h1>
+				<div>
+					<p>Por Dâmi Henrique, Inatel <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 4</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Seu Madruga finalmente arrumou um emprego, é sua grande chance de pagar os 14 meses de aluguel que estão atrasados. Seu cargo é o de cortador de papel e o salário é excelente.</p>
+
+					<p>Madruga irá receber <strong>N</strong> tiras retangulares de papel com 1 cm de largura e <strong>C</strong> cm de comprimento. As tiras devem ser colocadas uma ao lado da outra de forma que suas bases estejam alinhadas. A tarefa de seu Madruga será, com apenas um corte em linha reta, paralelo à base, fazer com que a soma das áreas das tiras cortadas seja igual a <strong>A</strong> cm².</p>
+
+					<p>Veja a ilustração abaixo com <strong>N</strong> = 5 e as tiras com 5, 3, 6, 2 e 3 cm de comprimento, respectivamente, para um <strong>A </strong>= 3 cm².</p>
+
+					<p class="center"><strong><img src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/Ajude_o_Madruga_D.png" style="-webkit-transform:rotate(0.00rad); border:none; height:203px; transform:rotate(0.00rad); width:571px"; alt="comprimento das tiras" /></strong></p>
+
+					<p>Com um corte feito a uma altura de 4 cm em relação a base, a área resultante, pintada de vermelho, é exatamente igual a <strong>A</strong> cm². Sua tarefa é descobrir essa altura <strong>H</strong> e ajudar Seu Madruga a se manter no emprego.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Haverá diversos casos de testes. A primeira linha de cada caso inicia com dois inteiros <strong>N </strong>(1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>) e <strong>A</strong> (1 ≤ <strong>A</strong> ≤ 10<sup>9</sup>) representando, respectivamente, a quantidade de tiras e a área resultante esperada. A próxima linha conterá <strong>N</strong> inteiros, representando o comprimento C<strong><sub>i</sub></strong> (1 &lt;= C<strong><sub>i</sub></strong> &lt;= 10<sup>4</sup>) de cada tira.</p>
+
+					<p>A entrada termina com <strong>N</strong> = <strong>A</strong> = 0, a qual não deve ser processada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso, exiba uma única linha, a altura <strong>H</strong> do corte que Seu Madruga deve fazer para que a soma da área das tiras cortadas seja igual a <strong>A</strong> cm². Use 4 casas decimais após o ponto.</p>
+
+					<p>Exiba “<strong>:D</strong>”, caso nenhum corte seja necessário, ou  “<strong>-.-</strong>“ caso seja impossível.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 3</p>
+
+								<p>5 3 6 2 3</p>
+
+								<p>4 14</p>
+
+								<p>2 5 2 5</p>
+
+								<p>0 0</p>
+
+							</td>
+							<td>
+								<p>4.0000</p>
+
+								<p>:D</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+	
+				<p class="footer">
+					Codando na Vila - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

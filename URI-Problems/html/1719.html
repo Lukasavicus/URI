@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1719 - Computadores Simples</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1700 - Computadores Simples" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1719</span>
+                <h1>Computadores Simples</h1>
+                <div>
+                    <p>University of Ulm local Contest <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Você escreverá um interpretador para um computador simples. Este computador usa um processador com um pequeno número de instruções de máquina. Além disso, é equipado com 32 bytes de memória, um acumulador de 8 bits (accu) e um contador de programa de 5 bits (pc). A memória contém dados, bem como código, que é a arquitetura habitual de von Neumann. </p>
+
+                    <p>O contador de programa contém o endereço da instrução a ser executada em seguida. Cada instrução tem um comprimento de 1 byte - os 3 bits mais significativos (bits mais a esquerda) definem o tipo de instrução e os 5 bits menos significativos definem um operando opcional que é sempre um endereço de memória (xxxxx). Para instruções que não precisam de um operando, os 5 bits menos significativos não têm significado (-----). Aqui está uma lista de instruções da máquina e a sua semântica:</p>
+                    </br>
+
+                    <p class="code">000xxxxx &nbsp; STA x &nbsp;&nbsp;armazena o valor do acumulador no byte x da memória<br />
+                    001xxxxx &nbsp; LDA x &nbsp;&nbsp;carrega o valor do byte x da memória para o acumulador<br />
+                    010xxxxx &nbsp; BEQ x &nbsp;&nbsp;se o valor do acumulador for 0, carregue o valor x para o contador de programa<br />
+                    011----- &nbsp; NOP &nbsp; &nbsp;&nbsp;nenhuma operação<br />
+                    100----- &nbsp; DEC &nbsp; &nbsp;&nbsp;subtraia 1 do acumulador<br />
+                    101----- &nbsp; INC &nbsp; &nbsp;&nbsp;adicione 1 ao acumulador<br />
+                    110xxxxx &nbsp; JMP x &nbsp;&nbsp;carregue o valor de x para o contador de programa<br />
+                    111----- &nbsp; HLT &nbsp; &nbsp;&nbsp;finaliza o programa</p>
+
+                    </br>
+
+                    <p>No início, o acumulador e o contador do programa são definidos como 0. Depois de buscar uma instrução, mas antes de sua execução, o contador de programa é incrementado. Você pode assumir que os programas serão encerrados.</p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>O arquivo de entrada contém vários casos de teste. Cada caso de teste especifica o conteúdo da memória antes da execução do programa. Byte 0 a 31 são dadas em linhas separadas em representação binária. Um byte é indicado por seus bits mais e menos significativos. A entrada é terminada por EOF.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, dê como saída o valor final do acumulador em representação binária, novamente: bits mais significativos primeiro.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+                                00111110<br/>
+                                10100000<br />
+                                01010000<br />
+                                11100000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00111111<br />
+                                10000000<br />
+                                00000010<br />
+                                11000010<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                00000000<br />
+                                11111111<br />
+                                10001001</p>
+
+                            </td>
+                            <td>
+                                <p>10000111</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 2000/2001
+                </p>
+            </div>
+
+        </body>
+    </html>

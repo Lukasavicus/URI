@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1729 - Média Não é Rápida o Suficiente!</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1735 - Média Não é Rápida o Suficiente!" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1729</span>
+                <h1>Média Não é Rápida o Suficiente!</h1>
+                <div>
+                    <p>University of Ulm local Contest <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Uma corrida de revezamento é feita para dois ou mais times de corredores. Cada membro de um time corre uma parte da corrida. Sua tarefa é ajudar a computar o resultado de uma corrida de revezamento. Você tem que avaliar varios times. É dado uma lista com os tempos das seções da corrida de cada time. Você deve calcular o tempo médio por quilômetro ao longo de toda a distância. Isto é fácil, certo?</p>
+
+                    <p>Então se você gosta de um pouco de diversão e desafio, você provavelmente irá gostar de uma corrida de revezamento. Estudantes da universidade de Ulm participaram da corrida de revezamento "SOLA", em Zurique, Suiça. </p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada especifica o número <strong>N</strong> de seções seguido pela distancia total <strong>D</strong>, em kilometros, da corrida de revezamento. Você pode assumir que 1 ≤ <strong>N</strong> ≤ 20 e 0.0 &lt; <strong>D</strong> &lt; 200.00. Cada linha seguinte possui informação sobre um time: o número (inteiro) do time <strong>T</strong> e seguido por <strong>N</strong> resultados de cada seção, separado por um espaço. O tempo é dado no formato <em>"h:mm:ss"</em>, sendo horas, minutos e segundos números inteiros. Se algum corredor foi desclassificado, o tempo da corrida será denotado por "-:--:--". E no final, a linha é acabada por um caracter de "<em>nova linha</em>". Entrada é terminada por<em> EOF</em>.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada time deverá ser impresso uma linha contendo o numero do time t e o tempo médio no formato "<em>m:ss".</em> Se ao menos um corredor do time foi desclassificado, a saída devera ser<em> "-"</em>. Olhe o exemplo de Saída para o formato exato de apresentação.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 12.5<br />
+                                &nbsp; 5 0:23:21 0:25:01<br />
+                                &nbsp;42 0:23:32 -:--:--<br />
+                                &nbsp; 7 0:33:20 0:41:35</p>
+
+                            </td>
+                            <td>
+                                <p>&nbsp;&nbsp;5: 3:52 min/km<br />
+                                  &nbsp;42: -<br />
+                                &nbsp;&nbsp;7: 6:00 min/km</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 2001/2002.
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1513 - Cavalo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1513 - Cavalo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1513</span>
+                <h1>Cavalo</h1>
+                <div>
+                    <p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Rafael gosta tanto de jogar xadrez que resolveu inventar novas maneiras de se desafiar. Dessa vez ele resolveu jogar com a peça do cavalo, pois a forma como ela se movimenta pareceu adicionar um pouco de dificuldade ao jogo, segundo Rafael.</p>
+
+<p>O desafio é o seguinte: Há um cavalo e <strong>K</strong> peões no tabuleiro. Dada uma posição inicial do cavalo e dos peões, qual a menor quantidade de movimentos necessários para capturar os <strong>K</strong> peões e voltar à posição inicial?</p>
+
+<p>Lembre que a peça do cavalo pode mover-se usando saltos de formato L, ou seja, duas posições para a vertical e uma posição para a horizontal, ou duas posições para a horizontal e uma posição para a vertical. Para capturar um peão, basta ocupar a mesma posição que ele no tabuleiro.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Haverá diversos casos de teste. Cada caso de teste inicia com três inteiro <strong>N</strong>, <strong>M</strong> e <strong>K</strong> (5 ≤ <strong>N</strong>, <strong>M</strong> ≤ 100, 2 ≤ <strong>K</strong> ≤ 15), representando, respectivamente, a quantidade de linhas e de colunas do tabuleiro, e a quantidade de peões a serem capturados.</p>
+
+<p>As próximas <strong>N</strong> linhas irão conter <strong>M</strong> caracteres cada, onde o caractere na linha <strong>i</strong> e coluna <strong>j</strong> indica que na posição [<strong>i</strong>, <strong>j</strong>] do tabuleiro há:</p>
+
+<ul>
+	<li>'.' uma posição válida onde o cavalo pode pular.</li>
+	<li>'#' uma posição inválida onde o cavalo não pode pular.</li>
+	<li>'C' a posição inicial do cavalo de Rafael.</li>
+	<li>'P' a posição de um dos K peões o qual Rafael deve capturar.</li>
+</ul>
+
+<p>O último caso de teste é indicado quando <strong>N</strong> = <strong>M</strong> = <strong>K</strong> = 0, o qual não deve ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima um inteiro, representando a quantidade mínima de saltos que o cavalo de Rafael deve fazer para capturar os <strong>K</strong> peões e retornar à posição inicial.</p>
+
+<p>É garantido que sempre haverá ao menos uma maneira de capturar todos os peões.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 5 2<br />
+.....<br />
+.P...<br />
+...P.<br />
+.....<br />
+..C..<br />
+4 6 2<br />
+.P##.P<br />
+..##..<br />
+..##..<br />
+..C...<br />
+0 0 0</p>
+
+                            </td>
+                            <td>
+                                <p>4<br />
+8</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Bonilha 2014 
+                </p>
+            </div>
+
+        </body>
+    </html>

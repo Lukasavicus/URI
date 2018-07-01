@@ -1,0 +1,110 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2460 - Fila</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2460 - Fila" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2460</span>
+				<h1>Fila</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2014 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Com a proximidade da Copa do Mundo, o fluxo de pessoas nas filas para compra de ingressos aumentou consideravelmente. Como as filas estão cada vez maiores, pessoas menos pacientes tendem a desistir da compra de ingressos e acabam deixando as filas, liberando assim vaga para outras pessoas. Quando uma pessoa deixa a fila, todas as pessoas que estavam atrás dela dão um passo a frente, sendo assim nunca existe um espaço vago entre duas pessoas. A fila inicialmente contém N pessoas, cada uma com um identificador diferente. Joãozinho sabe o estado inicial dela e os identificadores em ordem das pessoas que deixaram a fila. Sabendo que após o estado inicial nenhuma pessoa entrou mais na fila, Joãozinho deseja saber o estado final da fila.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong><strong> </strong>≤ 50000) representando a quantidade de pessoas inicialmente na fila. A segunda linha contém <strong>N</strong> inteiros representando os identificadores das pessoas na fila. O primeiro identificador corresponde ao identificador da primeira pessoa na fila. É garantido que duas pessoas diferentes não possuem o mesmo identificador. A terceira linha contém um inteiro <strong>M</strong>&nbsp;(1 ≤ <strong>M</strong> ≤ 50000 e <strong>M</strong> &lt; <strong>N</strong>) representando a quantidade de pessoas que deixaram a fila. A quarta linha contém <strong>M</strong> inteiros representando os identificadores das pessoas que deixaram a fila (cada identificador está entre 1 e 100000), na ordem em que elas saíram. É garantido que um mesmo identificador não aparece duas vezes nessa lista.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma linha contedo N − M inteiros com os identificadores das pessoas que permaneceram na fila, em ordem de chegada.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>8</p>
+
+<p>5 100 9 81 70 33 2 1000</p>
+
+<p>3</p>
+
+<p>9 33 5</p>
+
+							</td>
+							<td>
+								<p>100 81 70 2 1000</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+<p>10 9 6 3</p>
+
+<p>1</p>
+
+<p>3</p>
+
+							</td>
+							<td>
+								<p>10 9 6</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2014 Fase 1 Nível Júnior
+				</p>
+			</div>
+
+		</body>
+	</html>

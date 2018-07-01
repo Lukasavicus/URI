@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1092 - Maior Subseqüência Crescente</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1092 - Maior Subseqüência Crescente" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1092</span>
+                <h1>Maior Subseqüência Crescente</h1>
+                 <div><p>
+	Por Ricardo Anido&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" />&nbsp;Brasil</p></div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Determinar a subseqüência (contígua) crescente de maior comprimento em uma lista de números é um problema já clássico em competições de programação. Este é o problema que você deve resolver aqui, mas para não deixar você bocejando de tédio enquanto o soluciona, introduzimos uma pequena modificação: a lista de números é dada na forma de uma matriz bidimensional e a seqüência de comprimento máximo está “embutida” em uma submatriz da<br>
+	matriz original.</p>
+<p>
+	Vamos definir mais precisamente o problema. A linearização de uma matriz bidimensional é a justaposição de suas linhas, da primeira à última. Uma submatriz é uma região retangular (de lados paralelos aos da matriz) de uma matriz. O tamanho de uma submatriz é seu número de elementos. Você deve escrever um programa que, dada uma matriz de números inteiros, determine a maior submatriz que, quando linearizada, resulta em uma seqüência crescente.</p>
+<p>
+	A figura abaixo mostra alguns exemplos de submatrizes de tamanho máximo que contêm subseqüências crescentes. Note que mais de uma submatriz que contém uma subseqüência de comprimento máximo pode estar presente em uma mesma matriz. Note ainda que numa seqüência crescente não pode haver elementos repetidos: 22, 31, 33 é uma seqüência crescente, ao passo que 22, 31, 31, 33 não é.</p>
+<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1092.png" style="width: 404px; height: 98px;"></p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém vários casos de teste. A primeira linha de um caso de teste contém dois inteiros <em><strong>N </strong></em>e <em><strong>M </strong></em>indicando as dimensões da matriz (<i>1 ≤ <strong>N</strong>, <strong>M </strong>≤ 600</i>). Cada uma das <em><strong>N </strong></em>linhas seguintes contém <em><strong>M </strong></em>inteiros, separados por um espaço, descrevendo os elementos da matriz. O elemento <i>X<sub>i,j </sub></i>da matriz é o j-ésimo inteiro da i-ésima linha da entrada(<i>-10<sup>6</sup> ≤ X<sub>i,j</sub> ≤ 10<sup>6</sup></i>).</p>
+<p>
+	O final da entrada é indicado por uma linha que contém apenas dois zeros, separados por um espaço em branco.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada um dos casos de teste da entrada seu programa deve imprimir uma única linha, contendo o número de elementos da maior submatriz que, quando linearizada, resulta em uma seqüência crescente.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	3 3<br>
+	1 2 5<br>
+	4 6 7<br>
+	10 8 3<br>
+	3 4<br>
+	1 2 1 2<br>
+	9 6 7 3<br>
+	8 7 2 8<br>
+	4 2<br>
+	-23 -12<br>
+	0 2<br>
+	16 15<br>
+	57 33<br>
+	4 4<br>
+	2 2 2 2<br>
+	2 2 2 2<br>
+	2 2 2 2<br>
+	2 2 2 2<br>
+	0 0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	4<br>
+	3<br>
+	4<br>
+	1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> <p class="footer">
+             Maratona de Programação da SBC 2008.</p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1055 - Soma Permutada Elegante</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1055 - Soma Permutada Elegante" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1055</span>
+            <h1>Soma Permutada Elegante</h1>
+            <div><p>
+                    Por Sohel Hafiz <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif" style="width: 16px; height: 11px;" /> Bangladesh*</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    São disponibilizados a você <strong>n</strong> inteiros   <strong>A<sub>1 </sub>A<sub>2 </sub>A<sub>3 </sub>... A<sub>n</sub></strong>. Encontre uma permutação destes <strong>n</strong> inteiros de forma que a soma da diferença absoluta entre os elementos adjacentes seja maximizada.</p>
+                    <p>
+                    Supondo <strong>n = 4</strong> e que os inteiros fornecidos sejam <strong>  4 2 1 5</strong>. A permutação <strong>  2 5 1 4 </strong> permite a máxima soma. Para esta permutação, teríamos<strong> soma = abs(2-5) + abs(5-1) + abs(1-4) = 3+4+3 = 10</strong>.</p>
+                    <p>
+                    De todas as <strong>24</strong> permutações possíveis, você não vai obter qualquer soma cujo valor exceda <strong>10</strong>. Nós iremos chamar este valor <strong>10</strong>, de <em>soma permutada elegante.</em></p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A primeira linha de entrada é um valor inteiro <strong>T </strong>( <strong>T </strong> &lt; 100 ) que representa o número de caso de testes. Cada caso de teste consiste de uma linha que inicia com n ( 1 &lt; <strong>n &lt; </strong>51 ) seguida por n inteiros não-negativos, separados por um único espaço. Nenhum dos elementos da permutação fornecida irá exceder 1000.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso, mostre o número do caso de teste seguido pela <em>soma permutada elegante</em>.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                4 4 2 1 5<br />
+                                4 1 1 1 1<br />
+                                2 10 1</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Case 1: 10<br />
+                                Case 2: 0<br />
+                                Case 3: 9</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Agradecimentos especiais: Jane Alam Jan<br />
+                *No momento está na Universidade do Texas, em San Antonio - USA</p>
+
+        </div>
+
+    </body>
+</html>

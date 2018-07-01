@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1270 - Fibra Óptica</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1270 - Fibra Óptica" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1270</span>
+                <h1>Fibra Óptica</h1>
+                <div><p>
+	Por Guilherme Ottoni&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" />&nbsp;Brasil</p>
+</div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+                        Um país em desenvolvimento está tentando melhorar sua infra-estrutura de comunicação. Atualmente, cada cidade do país tem a sua rede de computadores local, mas não há uma comunicação rápida entre as cidades. O Ministério Autônomo das Comunicações (ACM) do país decidiu criar uma rede de fibra óptica de grande velocidade que ligará todas as cidades. A fim de fazer isso, eles decidiram fazer a seguinte abordagem. Pares de cidades foram escolhidas para ter uma ligação de fibra óptica instalada entre elas. A escolha foi tal que haverá apenas um caminho de fibra entre qualquer par de cidades, a fim de reduzir o custo. Os pares de cidades foram escolhidos considerando diversos fatores, incluindo a análise de demanda estimada e a distância entre as cidades.</p>
+                    <p>
+	Cada cidade terá um roteador óptico instalado, o qual será utilizado para conectar todas as ligações óticas com uma extremidade da cidade. Em cada cidade, há muitos locais diferentes onde o roteador óptico pode ser instalados. Sua tarefa, como engenheiro que está trabalhando neste projeto, é desenvolver um programa de computador que receba as localizações de cada uma das cidades e minimize o tamanho total de fibra que seria necessária para este projeto.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada consiste de vários casos de teste. Cada caso de teste começa com uma linha contendo o número de cidades <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 1000) no país. A seguir, para cada cidade, há uma sequência de linhas. A primeira linha contém o nome (único) da cidade (apenas letras maiúsculas, no máximo de 15 letras), e o número de locais candidatos <strong>Ci</strong> (1 ≤ <strong>Ci</strong> ≤ 50) em que o roteador óptico pode ser instalado. Então, existe uma linha para cada local candidato, contendo dois inteiros <strong>X</strong> e <strong>Y</strong>&nbsp;que representam as coordenadas do local (-10000 ≤ <strong>X</strong>, <strong>Y</strong> ≤ 10000). Você deve usar a distância euclidiana entre os sites para calcular o comprimento da fibra correspondente necessário para ligá-los. Depois da descrição de cada cidade, com seus sites candidatos, haverá <strong>N</strong> - 1 linhas, cada uma delas contendo o nomes de duas cidades que terão um link de fibra instalado entre elas. O final da entrada é indicado por <strong>N</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste, seu programa deve imprimir uma linha com o comprimento total mínimo de fibra óptica necessária para ligar as cidades informadas. Sua resposta deve ser arredondada para um dígito decimal.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	3<br />
+	AUSTIN 1<br />
+	500 500<br />
+	DALLAS 2<br />
+	1000 10<br />
+	990 -10<br />
+	ELPASO 2<br />
+	0 0<br />
+	30 0<br />
+	ELPASO AUSTIN<br />
+	DALLAS ELPASO<br />
+	3<br />
+	HUSTON 3<br />
+	100 0<br />
+	100 50<br />
+	100 100<br />
+	AUSTIN 2<br />
+	200 0<br />
+	180 40<br />
+	SANANTONIO 2<br />
+	0 -10<br />
+	10 -50<br />
+	HUSTON AUSTIN<br />
+	HUSTON SANANTONIO<br />
+	0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	1646.3<br />
+	189.9</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+	ACM/ICPC South America Contest 2005</p>
+    
+            </div>
+
+        </body>
+    </html>

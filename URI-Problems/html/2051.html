@@ -1,0 +1,135 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2051 - Mapas de Karnaugh</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 0000 - Mapa de Karnaugh" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2051</span>
+				<h1>Mapas de Karnaugh I</h1>
+				<div>
+					<p>Por Lucas Lise, URI Online Judge <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Mapa de Karnaugh é uma tabela montada para facilitar o processo de minimização das expressões lógicas. Eles permitem simplificações com 2, 3, 4 ou mais variáveis, nesse problema utilizaremos no máximo expressões com 4 variáveis. Sua tarefa é simples, dado a tabela verdade você deverá &nbsp;imprimir o respectivo Mapa de Karnaugh e dizer se a expressão é uma "Tautologia", uma "Contradicao" ou uma "Contingencia".</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha do arquivo de entrada contém um inteiro <strong>N</strong> (0 ≤ <strong>N</strong> ≤ 50) que indica o número de casos de testes, na primeira linha do caso de teste contém um inteiro <strong>V</strong> [2, 3, 4] que indica a quantidade de variáveis que serão&nbsp;utilizadas, as próximas 2<sup>V</sup> linhas conterão a tabela verdade.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso, você deverá apresentar a mensagem “Mapa de Karnaugh”, seguido pelo mesmo conforme o exemplo abaixo, após apresentar o mapa você deverá identificar se é "Tautologia","Contradicao" ou "Contingencia", uma linha em branco deverá separar os casos de teste, cuidado com os espaços, os valores no mapa deverão ser alinhados com o primeiro dígito da coluna.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+2<br />
+0 0 - 1<br />
+0 1 - 1<br />
+1 0 - 0<br />
+1 1 - 1<br />
+3<br />
+0 0 0 - 0<br />
+0 0 1 - 0<br />
+0 1 0 - 0<br />
+0 1 1 - 0<br />
+1 0 0 - 0<br />
+1 0 1 - 0<br />
+1 1 0 - 0<br />
+1 1 1 - 0<br />
+4<br />
+0 0 0 0 - 1<br />
+0 0 0 1 - 1<br />
+0 0 1 0 - 0<br />
+0 0 1 1 - 1<br />
+0 1 0 0 - 0<br />
+0 1 0 1 - 1<br />
+0 1 1 0 - 1<br />
+0 1 1 1 - 0<br />
+1 0 0 0 - 1<br />
+1 0 0 1 - 1<br />
+1 0 1 0 - 0<br />
+1 0 1 1 - 1<br />
+1 1 0 0 - 0<br />
+1 1 0 1 - 1<br />
+1 1 1 0 - 1<br />
+1 1 1 1 - 0&nbsp;</p>
+
+							</td>
+							<td>
+								<p>Mapa de Karnaugh<br />
+&nbsp; 0 1<br />
+0|1 0<br />
+1|1 1<br />
+Contingencia</p>
+
+</br>
+
+<p>Mapa de Karnaugh<br />
+&nbsp; 00 01 11 10<br />
+0|0 &nbsp;0 &nbsp;0 &nbsp;0<br />
+1|0 &nbsp;0 &nbsp;0 &nbsp;0<br />
+Contradicao</p>
+
+</br>
+
+<p>Mapa de Karnaugh<br />
+&nbsp; &nbsp;00 01 11 10<br />
+00|1 &nbsp;0 &nbsp;0 &nbsp;1<br />
+01|1 &nbsp;1 &nbsp;1 &nbsp;1<br />
+11|1 &nbsp;0 &nbsp;0 &nbsp;1<br />
+10|0 &nbsp;1 &nbsp;1 &nbsp;0<br />
+Contingencia</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+
+				</p>
+			</div>
+
+		</body>
+	</html>

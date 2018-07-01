@@ -1,0 +1,144 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2324 - Pastas</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2324 - Pastas" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2324</span>
+				<h1>Pastas</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Estela é uma secretária dedicada da OBI (Organização Burocrática Internacional), um megaconglomerado empresarial voltado a criação de documentos e preenchimento de formulários. Todo dia ela recebe milhares de pastas suspensas e seu objetivo é organizá-las de uma forma que seja simples recuperar uma pasta do arquivo.</p>
+
+<p>Cada pasta possui uma pequena aba, que fica anexada à pasta e é visível quando a pasta está suspensa em seu arquivo. Todo funcionário fixa a aba em uma das posições especificadas pelo manual de fixação de abas, embora ele possa escolher, ao acaso, qualquer uma das posições descritas no manual. Tais posições são numeradas de 1 até P .</p>
+
+<p>Estela notou que fica consideravelmente mais fácil encontrar as pastas se elas forem arquivadas da seguinte forma: primeiro uma pasta com aba na posição 1, depois uma com aba na posição 2, e assim sucessivamente, até que uma pasta com aba na posição P seja arquivada. Logo após, repete-se o processo, arquivando uma pasta com aba na posição 1. Para Estela, um conjunto de pastas é arquivado de forma perfeita se todas as pastas desse conjunto forem arquivadas da forma descrita anteriormente, ou seja:</p>
+
+<ul>
+	<li>Imediatamente após toda pasta com aba na posição I , I &lt; P , existe uma pasta com aba na posição I + 1 ou não há nenhuma pasta.</li>
+	<li>Imediatamente após toda pasta com aba na posição P , existe uma pasta com aba na posição 1 ou não há nenhuma pasta.</li>
+	<li>Todas as pastas do conjunto são armazenadas.</li>
+</ul>
+
+<p>Dado um conjunto de pastas e a posição de suas abas, determinar se é possível arquivar esse conjunto de pastas de forma perfeita.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do&nbsp;<em>dispositivo de entrada padrão</em>&nbsp;(normalmente o teclado). A primeira linha da entrada contém dois inteiros&nbsp;<strong><em>P</em></strong>&nbsp;e&nbsp;<strong><em>N</em></strong>&nbsp;que indicam, respectivamente, o número de posições possíveis para se colar as abas (1 ≤&nbsp;<strong><em>P</em></strong>&nbsp;≤ 1.000) o número pastas a serem armazenadas (1 ≤&nbsp;<strong><em>N</em></strong>&nbsp;≤ 1.000.000). As&nbsp;<strong><em>N</em></strong>&nbsp;linhas seguintes contém um inteiro<strong>&nbsp;<em>I</em></strong>&nbsp;(1 ≤&nbsp;<strong><em>I</em></strong>&nbsp;≤&nbsp;<strong><em>P</em></strong>&nbsp;) cada representando a posição onde a aba da&nbsp;<strong><em>I</em></strong>&nbsp;-ésima pasta foi colada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na&nbsp;<em>saída padrão</em>, uma única linha, contendo a letra&nbsp;<strong>S</strong>&nbsp;se for possível fazer um arquivamento perfeito ou&nbsp;<strong>N</strong>&nbsp;caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 2<br />
+1<br />
+2</p>
+
+							</td>
+							<td>
+								<p>S</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>3 6<br />
+1<br />
+2<br />
+3<br />
+1<br />
+2<br />
+1</p>
+
+                    </td>
+                    <td>
+                        <p>N</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>4 7<br />
+1<br />
+1<br />
+2<br />
+2<br />
+3<br />
+3<br />
+4</p>
+
+                    </td>
+                    <td>
+                        <p>S</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2007 Fase 1 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

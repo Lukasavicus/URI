@@ -1,0 +1,121 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2236 - Andando no Tempo</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2236 - Batata Quente" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2236</span>
+				<h1>Batata Quente</h1>
+				<div>
+					<p>Por Maratona de Programação SBC <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Batata quente é uma brincadeira bastante popular entre crianças na escola.  A brincadeira é simples:  a  criança  que  está  com  a  batata  a  joga  para  uma  outra  criança.   Em  algum  momento,  o  professor,  que  não  está  olhando  para  o  que  está  acontecendo,  irá  dizer  que  a  brincadeira  acabou.  Quando  isso acontece, a criança que está com a batata perde.</p>
+					<p>Uma variação da brincadeira, jogada na fila da cantina, é proposta por um professor.  As crianças estão  numeradas  de  1  a  <strong>N</strong>  de  acordo  com  sua  posição  na  fila,  onde  a  criança  com  o  número  1  é  a primeira da fila.  Cada uma receberá um papel com um número, e sempre que receber a batata, deverá passá-la para a criança na posição anotada em seu papel.  O jogo termina com o professor vitorioso se       a batata chegar em uma posição menor ou igual a <strong>X</strong> na fila, com <strong>X</strong> definido no início da brincadeira.    Se  isso  nunca  acontecer,  o  jogo  nunca  termina,  porém  as  crianças  saem  vitoriosas:   no  dia  seguinte todas ganham um desconto na cantina.</p>
+					<p>
+					O  professor  começa  o  jogo  jogando  a  batata  para  alguma  criança  na  fila.   Como  sua  mira  não  é muito boa, ele só consegue garantir que vai jogar a batata para alguma criança em um invervalo <strong>L</strong> . . . <strong>R</strong> da fila com a mesma probabilidade.  Ele está considerando vários possíveis intervalos da fila para iniciar       a brincadeira. Para isso, o professor gostaria de descobrir, para cada um desses intervalos, qual o valor de  <strong>X</strong>  que  ele  deve  escolher  para  que  o  jogo  seja  o  mais  justo  possível,  ou  seja,  a  probabilidade  de  o jogo terminar seja a mais próxima possível da probabilidade de o jogo não terminar.
+					</p>
+					<p>
+					Você  deve  auxiliar  o  professor  a  avaliar  as  propostas.   Dados  os  papéis  de  cada  criança  da  fila  e vários  intervalos  possíveis,  responda,  para  cada  intervalo,  o  valor  de  <strong>X</strong>  que  torne  o  jogo  mais  justo possível.  Se houver empate, responda o <strong>X</strong>  mais próximo do início da fila.
+					</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A  primeira  linha  da  entrada  contém  dois  inteiros,  <strong>N</strong>  e  <strong>Q</strong>  (2  ≤  <strong>N</strong>  ≤  50000,  1  ≤  <strong>Q</strong>  ≤  10<sup>5</sup>).   A linha  seguinte  contém  <strong>N</strong>  inteiros  <strong>p<sub>1</sub></strong>, <strong>p<sub>2</sub></strong> . . . <strong>p<sub>N</sub></strong>  (1 ≤ <strong>p<sub>i</sub></strong> ≤ <strong>N</strong> ),  os  valores  dos  papéis  recebidos  por  cada uma  das  crianças.   Seguem  então  <strong>Q</strong>  linhas,  cada  uma  com  dois  inteiros  <strong>L</strong>  e  <strong>R</strong>  (1  ≤  <strong>L</strong>  ≤  <strong>R</strong>  ≤  <strong>N</strong> ), representando um intervalo  considerado pelo  professor.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima  <strong>Q</strong> linhas,  cada  uma  contendo,  para  cada  intervalo  considerado  pelo  professor,  o  número inteiro <strong>X</strong>  que o professor deverá escolher para que a brincadeira seja a mais justa possível.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>9 4</p>
+<p>2 3 4 5 6 7 4 9 5</p>
+<p>1 3</p>
+<p>3 5</p>
+<p>2 8</p>
+<p>7 9</p>
+
+							</td>
+							<td>
+								<p>1</p>
+<p>3</p>
+<p>3</p>
+<p>1</p>
+
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>3 3</p>
+<p>1 3 3</p>
+<p>1 1</p>
+<p>1 2</p>
+<p>2 3</p>
+
+                    </td>
+                    <td>
+                        <p>1</p>
+<p>1</p>
+<p>2</p>
+
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					Maratona de Programação SBC 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 1802 - Catálogo de Livros</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema I - Catálogo de Livros" />
+
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 1802 | [P1]</span>
+			<h1>Catálogo de Livros</h1>
+			<div>
+				<p>Por Thalyson Nepomuceno, Universidade Estadual do Ceará <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 2</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Bino está elaborando um catálogo de livros escolares. Ele está organizando um catálogo com conjuntos distintos de livros para vender em sua loja online. Cada conjunto de livros é formado por 5 livros, sendo um de cada matéria (português, matemática, física, química e biologia). Dois conjuntos de livros são considerados distintos se existe pelo menos um livro que está em um e não está no outro. Bino quer expor no site apenas os conjuntos distintos mais caros, e pediu sua ajuda.</p>
+
+				<p>O valor de um conjunto é a soma dos valores de cada livro que está nele. Sua tarefa é informar qual a soma dos valores dos <strong>K</strong> conjuntos distintos de livros mais caros. Em caso de empate entre conjuntos mais caros, Bino escolhe qualquer um dos conjuntos empatados. </p>
+
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A entrada consiste em 6 linhas: A primeira linha contém um inteiro <strong>P </strong>(5 ≤<strong> P</strong> ≤ 10), representando que Bino tem <strong>P</strong> tipos diferentes de livros de português, seguido por <strong>P </strong>inteiros <strong>v<sub>i</sub> (</strong> 1 ≤ <strong>v<sub>i</sub></strong> ≤ 1000<strong>)</strong>, representando os valores de cada livro de português.&nbsp; A segunda linha contém um inteiro <strong>M </strong>(5 ≤<strong> M</strong> ≤ 10), representando que Bino tem <strong>M</strong> tipos diferentes de livros de matemática, seguido por <strong>M </strong>inteiros <strong>v<sub>i</sub> (</strong> 1 ≤ <strong>v<sub>i</sub></strong> ≤ 1000<strong>)</strong>, representando os valores de cada livro de matemática. A terceira linha contém um inteiro <strong>F </strong>(5 ≤<strong> F</strong> ≤ 10), representando que Bino tem <strong>F</strong> tipos diferentes de livros de física, seguido por <strong>F </strong>inteiros <strong>v<sub>i</sub> (</strong> 1 ≤ <strong>v<sub>i</sub></strong> ≤ 1000<strong>)</strong>, representando os valores de cada livro de física. A quarta linha contém um inteiro <strong>Q </strong>(5 ≤<strong> Q</strong> ≤ 10), representando que Bino tem <strong>Q</strong> tipos diferentes de livros de química, seguido por <strong>Q </strong>inteiros <strong>v<sub>i</sub> (</strong> 1 ≤ <strong>v<sub>i</sub></strong> ≤ 1000<strong>)</strong>, representando os valores de cada livro de química. A quinta linha contém um inteiro <strong>B </strong>(5 ≤<strong> B</strong> ≤ 10), representando que Bino tem <strong>B</strong> tipos diferentes de livros de biologia, seguido por <strong>B </strong>inteiros <strong>v<sub>i</sub> (</strong> 1 ≤ <strong>v<sub>i</sub></strong> ≤ 1000<strong>)</strong>, representando os valores de cada livro de biologia. A sexta linha contém um inteiro <strong>K </strong>(1 ≤<strong> K</strong> ≤ <strong>P</strong>*<strong>M</strong>*<strong>Q</strong>*<strong>F</strong>*<strong>B</strong>), representando a quantidade de conjuntos distintos de livros que o catálago de livros terá.</p>
+
+
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Imprima o valor da soma dos valores dos <strong>K</strong> conjuntos distintos de livros mais caros.</p>
+
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5 2 5 6 3 8<br />
+								5 9 6 3 1 5<br />
+								5 4 8 5 2 6<br />
+								5 3 2 4 9 5<br />
+								5 7 8 5 1 4<br />
+								1</p>
+
+						</td>
+						<td>
+							<p>42</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5 2 5 6 3 8<br />
+								5 9 6 3 1 5<br />
+								5 4 8 5 2 6<br />
+								5 3 2 4 9 5<br />
+								5 7 8 5 1 4<br />
+								10</p>
+
+						</td>
+						<td>
+							<p>397</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="both"></div>
+
+			<p class="footer">
+				Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática 2015
+			</p>
+		</div>
+	</body>
+</html>

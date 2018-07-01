@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2520 - O Último Analógimôn</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2520 - O Último Analógimôn" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2520</span>
+			<h1>O Último Analógimôn</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p><em>Analógimôn Go!</em> é um jogo bastante popular. Em sua jornada, o jogador percorre diversas cidades capturando pequenos monstrinhos virtuais, chamados <em>analógimôns</em>. Você acabou de chegar em uma cidade que contém o último <em>analógimôn</em> que falta para sua coleção!</p>
+
+				<p>A cidade pode ser descrita como um <em>grid</em> de <strong>N</strong> linhas e <strong>M</strong> colunas. Você está em uma dada posição da cidade, enquanto o último <em>analógimôn</em> está em outra posição da mesma cidade. A cada segundo, você pode se mover (exatamente) uma posição ao norte, ao sul, a leste ou a oeste. Considerando que o <em>analógimôn</em> não se move, sua tarefa é determinar o menor tempo necessário para ir até a posição do monstrinho.</p>
+
+				<p>A figura abaixo descreve o exemplo da entrada, e apresenta um caminho percorrido em 5 segundos. Outros caminhos percorridos no mesmo tempo são possíveis, mas não há outro caminho que pode ser percorrido em um tempo menor.</p>
+
+				<p class="center"><img src='https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2520.png' alt=''/></p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém dois inteiros <strong>N</strong> e <strong>M</strong> (2 ≤ <strong>N</strong>, <strong>M</strong> ≤ 100), o número de linhas e de colunas na cidade, respectivamente. As próximas <strong>N</strong> linhas contém <strong>M</strong> inteiros cada, descrevendo a cidade. O inteiro 0 indica uma posição em branco; o inteiro 1 indica a sua posição na cidade; o inteiro 2 indica a posição do <em>analógimôn</em> na cidade. É garantido que haverá exatamente um inteiro 1 e exatamente um inteiro 2 na descrição da cidade, e que os demais inteiros serão iguais a 0.</p>
+
+					<p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha contendo o menor tempo necessário para ir até o monstrinho, em segundos.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4 4<br />
+							2 0 0 0<br />
+							0 0 0 0<br />
+							0 0 0 0<br />
+							0 0 1 0</p>
+
+						</td>
+						<td>
+							<p>5</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2667 - Jogo de Boca</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2667 - Jogo de Boca" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2667</span>
+			<h1>Jogo de Boca</h1>
+			<div>
+				<p>Por Maratona de Programção da SBC, ACM ICPC 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Um jogo infantil, muito popular, é o 21 de boca . O jogo é jogado da seguinte forma: o primeiro jogador diz um nímero, <strong>n<sub>0</sub></strong> , que pode ser 1 ou 2. O segundo jogador pode então dizer um número <strong>n<sub>1</sub></strong> tal que <strong>n<sub>1</sub></strong> ∈{ <strong>n<sub>0</sub></strong> + 1 , <strong>n<sub>0</sub></strong> + 2 } . E assim por diante, os jogadores se alternam, dizendo sempre um número que é um ou dois maior do que o anterior. O jogador que disser 21 ganha o jogo. Por exemplo, a sequência de números poderia ser: 1 , 3 , 5 , 6 , 7 , 9 , 11 , 12 , 14 , 15 , 16 , 18 , 19 , 21. Neste jogo, o primeiro jogador sempre perde, se o segundo souber jogar bem.</p>
+
+<p>A cada nova geração as crianças ficam mais espertas. Atualmente, apesar de acharem o 21 de boca um jogo interessante, muitas crianças não se sentem desafiadas o bastante e por isso resolveram generalizar o jogo, criando assim o <strong>N</strong> de boca .Dado um inteiro <strong>N</strong> , no lugar do 21, o primeiro jogador pode escolher 1 ou 2. A partir daí os jogadores se alternam, adicionando 1 ou 2 ao número anterior, até que um deles diga o número <strong>N</strong> e ganhe o jogo. Sabendo que ambos os jogadores são excelentes e sabem jogar muito bem, seu problema é determinar qual o inteiro inicial que o primeiro jogador deve escolher para ganhar o jogo.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada consiste de uma única linha que contém o inteiro <strong>N</strong> (3 ≤ <strong>N</strong> ≤ 10<sup>100</sup> ) escolhido para a partida atual do <strong>N</strong> de boca.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Seu programa deve produzir uma única linha com um inteiro representando o número, em { 1 , 2 } , que o primeiro jogador deve escolher, para ganhar o jogo. Se não for possível, então o inteiro deve ser zero.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>7</p>
+
+						</td>
+						<td>
+							<p>1</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>9</p>
+
+                </td>
+                <td>
+                    <p>0</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>12341234123412341234123412341234</p>
+
+                </td>
+                <td>
+                    <p>2</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+				Maratona de Programção da SBC-ACM ICPC 2017
+			</p>
+		</div>
+
+	</body>
+</html>

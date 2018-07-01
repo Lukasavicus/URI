@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1696 - Brincando Com Operadores</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1696 - Brincando Com Operadores" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1696</span>
+                <h1>Brincando Com Operadores</h1>
+                <div>
+                    <p>Por Anderson Silva, ICMC - USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Rusa e Sanches são amigos na escola primária. Este mês eles estão aprendendo como somar e subtrair números inteiros. O professor de matemática deles deu um bom exercício para praticarem estes novos operadores. O exercício é um jogo (para aumentar o interesse dos alunos). É necessário que dois alunos joguem juntos, e como Rusa e Sanches estão sempre fazendo as tarefas juntos, dessa vez não será diferente. O professor deu a eles várias sequências e os movimentos que eles podem realizar são:</p>
+                    
+                    <p>- Primeiro jogador: Gerar uma nova sequência com a soma do primeiro e segundo números, do terceiro e quarto, do quinto e sexto, etc.</p>
+                    
+                    <p>- Segundo jogador: Gerar uma nova sequência com a subtração do primeiro e segundo números (nessa ordem), do terceiro e quarto, do quinto e sexto, etc.</p>
+
+                
+                    <p>Se o tamanho da sequência for ímpar, o último número não deve ser modificado. Os jogadores alternam jogadas. O jogo continua até que reste apenas um número, chamado último número. Se ele é ímpar, o primeiro jogador vence. Caso contrário, o segundo vence. Como você pode ver o jogo é previsível, eles não podem alterar o resultado final dado uma sequência inicial. Entretanto, o professor também pediu para eles calcularem o último número da sequência depois de uma substituição num elemento da sequência inicial. Haverá várias substituições, e para cada uma eles tem que jogar novamente. Estas substituições são cumulativas. Ambos precisam aprender a somar e subtrair. Então, no primeiro caso de teste, Rusa será o primeiro jogador e Sanches, o segundo. No segundo caso de teste, eles trocam de ordem, i.e., Sanches é o primeiro jogador e Rusa, o segundo. No terceiro eles mudam de novo, e assim por diante. O professor deu muitas sequências para Rusa e Sanches. Eles já estão chateados do exercício porque eles já aprenderam a lição. Eles precisam terminar todos jogos até o final da semana e eles estão pedindo a você para ajudar com isso.</p>
+                    
+                    <p>Por exemplo, vamos assumir que a sequência inicial é (4, 2, 3, 5, 1, 6, 10, 2). Então, os movimentos são: (4, 2, 3, 5, 1, 6, 10, 2) → (6, 8, 7, 12) → (-2, -5) → (-7). O último número é -7, e o vencedor é Rusa, porque -7 é impar, e este é o primeiro caso de teste. Vejamos um segundo exemplo, vamos assumir que a sequência inicial é (4, 2, 3). Então, os movimentos são: (4, 2, 3) → (6, 3) → (3). O último número é 3, e o vencedor é Sanches, porque 3 é impar e este é o segundo caso de teste.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha conterá um número <strong>T</strong> (1 ≤ <strong>T</strong> ≤ 100), quantos casos de teste seguem. Para cada caso de teste, a primeira linha conterá um número <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>4</sup>) e <strong>Q</strong> (0 ≤ <strong>Q</strong> ≤ 10<sup>4</sup>), o número de inteiros na sequência inicial e o número de substituições, respectivamente. A próxima linha contém <strong>N</strong> inteiros da sequência <strong>S1</strong>, <strong>S2</strong>, …, <strong>SN</strong> (-10<sup>4</sup> ≤ <strong>Si</strong> ≤ 10<sup>4</sup>). As próxima  <strong>Q</strong> linhas contém <strong>A</strong> (1 ≤ <strong>A</strong> ≤ <strong>N</strong> ) e <strong>B</strong> (-10<sup>4</sup> ≤ <strong>B</strong> ≤ 10<sup>4</sup>), que significa que o elemento <strong>SA</strong> da sequência inicial é substituído por <strong>B</strong> (<strong>SA</strong> = <strong>B</strong>).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima <strong>Q + 1</strong> linhas. Na primeira linha, imprima o <strong>último</strong> número do jogo e o vencedor da sequência inicial e nas próximas <strong>Q</strong> linhas, o <strong>útimo</strong> número e o vencedor depois de cada substituição.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4</p>
+
+                                <p>1 0</p>
+
+                                <p>10</p>
+
+                                <p>2 2</p>
+
+                                <p>1 3</p>
+
+                                <p>1 2</p>
+
+                                <p>2 5</p>
+
+                                <p>8 1</p>
+
+                                <p>4 2 3 5 1 6 10 2</p>
+
+                                <p>1 1</p>
+
+                                <p>3 0</p>
+
+                                <p>4 2 3</p>
+
+                            </td>
+                            <td>
+                                <p>10 Sanches</p>
+
+                                <p>4 Rusa</p>
+
+                                <p>5 Sanches</p>
+
+                                <p>7 Sanches</p>
+
+                                <p>-7 Rusa</p>
+
+                                <p>-10 Sanches</p>
+
+                                <p>3 Sanches</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Road to Fortaleza IV 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1341 - Crianças em uma Grade</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1341 - Crianças em uma Grade" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1341</span>
+            <h1>Crianças em uma Grade</h1>
+            <div><p>Por Rujia Liu <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cn.gif' alt=""/> China</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Duas crianças estão caminhando em uma grade com H linhas e W colunas. Cada quadrado da grade contém um caractere (cujo código ASCII está entre 33 e 127). Ambas as crianças podem se mover ao norte, a leste, a oeste ou ao sul a cada passo. A primeira criança já deu N passos, enquanto a segunda já deu M passos (0 ≤ N ≤ M ≤ 500).</p>
+
+                <p>
+                    Se escrevermos todos os caracteres nos quais cada criança andou em sequência, obtemos duas <em>strings</em> S<sub>A</sub> e S<sub>B</sub>. Sua tarefa é remover o menor número possível de caracteres dessas <em>strings</em> de tal forma que elas se tornem iguais.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A primeira linha da entrada contém um inteiro <strong>t</strong> (1 ≤ <strong>t</strong> ≤ 1000), o número de casos de teste. Cada caso de teste é descrito por várias linhas.</p>
+
+                <p>
+                    A primeira linha contém dois inteiros <strong>H</strong> e <strong>W</strong> (1 ≤ <strong>H</strong>, <strong>W</strong> ≤ 20). As próximas <strong>H</strong> linhas descrevem a grade. A linha seguinte contém três inteiros <strong>N</strong>, <strong>X<sub>0</sub></strong> e <strong>Y<sub>0</sub></strong> (1 ≤ <strong>X<sub>0</sub></strong> ≤ <strong>H</strong>, 1 ≤ <strong>Y<sub>0</sub></strong> ≤ <strong>W</strong>), indicando que a primeira criança deu <strong>N</strong> passos, começando no quadrado de coordenadas (<strong>X<sub>0</sub></strong>, <strong>Y<sub>0</sub></strong>). A coordenada <strong>X</strong> cresce de norte a sul, enquanto a coordenada <strong>Y</strong> cresce de oeste a leste. A próxima linha contém uma <em>string</em> de tamanho <strong>N</strong> contendo os caracteres 'N' (norte), 'E' (leste), 'W' (oeste) ou 'S' (sul), indicando o caminho percorrido pela primeira criança. Seguem-se então as informações da segunda criança, no mesmo formato.</p>
+
+                <p>
+                    Você pode assumir que as sequências de passos são sempre corretas, isto é, nenhuma criança irá sair da grade.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso, imprima o número do caso de teste e dois inteiros <strong>X<sub>A</sub></strong> e <strong>X<sub>B</sub></strong>, indicando o número de caracteres removidos de <strong>S<sub>A</sub></strong> e <strong>S<sub>B</sub></strong>, respectivamente. Formate a saída como apresentado no exemplo de saída.</p>
+
+                <p>
+                    <em>Nota:</em> No primeiro exemplo, <strong>S<sub>A</sub></strong> = <em>ABCDG</em> e <strong>S<sub>B</sub></strong> = <em>ADEB</em>. Se removermos 3 caracteres de <strong>S<sub>A</sub></strong> e 2 caracteres de <strong>S<sub>B</sub></strong>, podemos obter <strong>S<sub>A</sub></strong> = <strong>S<sub>B</sub></strong> = <em>AB</em> (<strong>S<sub>A</sub></strong> = <strong>S<sub>B</sub></strong> = <em>AD</em> também é possível).</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                3 4<br />
+                                ABCD<br />
+                                DEFG<br />
+                                ABCD<br />
+                                4 1 1<br />
+                                EEES<br />
+                                3 3 1<br />
+                                NES<br />
+                                3 4<br />
+                                ABCD<br />
+                                DEFG<br />
+                                ABCD<br />
+                                4 1 1<br />
+                                EEES<br />
+                                3 3 1<br />
+                                NES</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Case 1: 3 2<br />
+                                Case 2: 3 2</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </body>
+</html>

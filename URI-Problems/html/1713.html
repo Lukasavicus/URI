@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1713 - Teletransporte</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1642 - Teletransporte" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1713</span>
+                <h1>Teletransporte</h1>
+                <div>
+                    <p>Por Vinícius "Cabessa" Fernandes dos Santos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A Confederação Galática instalou um novo sistema de teletransporte em suas naves espaciais. Cada nave recebeu uma cabine de teletransporte, na qual há um painel com quatro botões. Cada botão é rotulado com uma letra diferente A, B, C ou D e com um número que indica a nave destino para a qual o usuário será transportado, instantaneamente, se o respectivo botão for pressionado (como todos sabem, as naves da Confederação são identificadas por inteiros de 1 a N ). </p>
+
+                    <p>Para usar o sistema, o usuário deve adquirir um bilhete para cada viagem que deseja realizar (uma viagem corresponde a pressionar um botão). Note que como o número botões no painel é pequeno comparado com o número de naves da Confederação, pode ser necessário que o usuário tenha que comprar um bilhete múltiplo de L viagens para ir de uma dada nave S para uma outra nave T. </p>
+
+                    <p>Por exemplo, para as naves da figura abaixo, se o usuário está na cabine de teletransporte da nave 3 e pressiona o botão B ele é transportado para a nave 2. Se ele tem um bilhete múltiplo e pressiona novamente o botão B ele é então transportado para a nave 1.</p>
+
+                    <p style="text-align: center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1713.png" style="width: 568px"/></p>
+
+                    <p>Sua tarefa neste problema é, dados a nave de partida S, a nave de chegada T e o número de viagens L do bilhete, determinar quantas sequências distintas de L botôes levam o usuário da nave S para a nave T . Por exemplo, para as naves da figura acima, existem quatro sequências distintas de L = 2 botôes que levam um usuário da nave S = 3 para a nave T = 1: CD, DA, AB, e BB.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada contém dois inteiros <strong>N</strong> (<strong>1</strong> ≤ <strong>N</strong> ≤ <strong>100</strong>) e <strong>L</strong> (<strong>0</strong> ≤ <strong>L</strong> &lt; <strong>2<sup>30</sup></strong> ), indicando respectivamente o número de naves e o número de viagens do bilhete. A segunda linha da entrada contém dois inteiros <strong>S</strong> e <strong>T</strong> (<strong>1</strong> ≤ <strong>S</strong>, <strong>T</strong> ≤ <strong>N</strong> ), indicando respectivamente a nave de partida e a nave de chegada. Cada uma das <strong>N</strong> linhas seguintes descreve o painel da cabine de teletransporte de uma nave. A i-ésima dessas linhas, <strong>1</strong> ≤ <strong>i</strong> ≤ <strong>N</strong> , contém quatro inteiros <strong>A</strong>, <strong>B</strong>, <strong>C</strong> e <strong>D</strong> (<strong>1</strong> ≤ <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong> ≤ <strong>N</strong> ), que representam os números escritos nos quatro bot ̃oes da cabine de teletransporte da nave de número <strong>i</strong>.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Seu programa deve produzir uma única linha, contendo um único inteiro, que deve ser igual a <strong>r</strong> módulo <strong>10<sup>4</sup></strong> , onde <strong>r</strong> é o número de sequências distintas de <strong>L</strong> botões que levam o usuário da nave <strong>S</strong> para a nave <strong>T</strong>.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 20</p>
+
+<p>1 1</p>
+
+<p>2 2 2 2</p>
+
+<p>1 1 1 1</p>
+
+<p>2 29</p>
+
+<p>1 1</p>
+
+<p>2 2 2 2</p>
+
+<p>1 1 1 1</p>
+
+<p>2 0</p>
+
+<p>1 1</p>
+
+<p>2 2 2 2</p>
+
+<p>1 1 1 1</p>
+
+<p>2 0</p>
+
+<p>1 2</p>
+
+<p>2 2 2 2</p>
+
+<p>1 1 1 1</p>
+
+<p>3 2</p>
+
+<p>3 1</p>
+
+<p>1 2 2 2</p>
+
+<p>2 1 3 2</p>
+
+<p>2 2 3 1</p>
+
+                            </td>
+                            <td>
+                                <p>7776</p>
+
+<p>0</p>
+
+<p>1</p>
+
+<p>0</p>
+
+<p>4</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Maratona de Programacao da SBC 2014.
+                </p>
+            </div>
+
+        </body>
+    </html>

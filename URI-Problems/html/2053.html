@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2053 - ET Phone Home</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2053 - ET Phone Home" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2053</span>
+                <h1>ET Phone Home</h1>
+                <div>
+                    <p>Por X Maratona de Programação IME-USP, 2006 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Desde o início de 2006 o Seti@home (programa de busca de vida alienígena) tem registrado padrões estranhos em transmissões de rádio recebidas do espaço. Inicialmente imaginou-se tratar apenas de estática. Porém, com o tempo e a repetição das transmissões os pesquisadores foram se convencendo que algo mais havia. Convidados a participar do projeto, linguistas da Universidade de Baylor identificaram uma linguagem na transmissão. Era uma linguagem bastante simples.</p>
+
+                    <p>A língua tem várias regras de composição de palavras. As regras de composição serão descritas nesse problema pelos seguintes elementos: um conjunto de símbolos não-terminais <em>V</em>; um conjunto de símbolos terminais <em>T</em>; um símbolo não-terminal especial chamado de raiz; um conjunto de regras de composição de palavras.</p>
+
+                    <p>Todas as regras de composição que consideramos aqui serão ou da forma <strong>A </strong>→<strong> BC</strong> ou da forma <strong>A </strong>→<strong> a</strong>, onde <strong>A, B, C</strong> são elementos de <em>V</em> e <strong><em>a</em></strong> é um elemento de <em>T</em>. A notação acima indica que podemos substituir o não-terminal <strong>A</strong> à esquerda da seta pelo terminal <strong><em>a</em></strong> (no primeiro caso) ou pela concatenação dos não-terminais <strong>A</strong> e <strong>B</strong> (no segundo caso) que aparecem à direita da seta.</p>
+
+                    <p>Aplicando repetidamente as regras de composição sobre o símbolo raiz, podemos montar palavras válidas na língua.</p>
+
+                    <p>Por exemplo, suponha que o seguinte conjunto de regras de composição é válido:</p>
+
+                    <p><strong>S </strong>→<strong> AB</strong></p>
+
+                    <p><strong>A </strong>→<strong> a</strong></p>
+
+                    <p><strong>B </strong>→<strong> b</strong></p>
+
+                    <p>A palavra <strong><em>ab</em></strong> pode ser obtida a partir desse conjunto de regras de composição da seguinte maneira:</p>
+
+                    <p><strong>S </strong>→<strong> AB</strong></p>
+
+                    <p><strong>AB </strong>→<strong> aB</strong>, pois <strong>A&nbsp;</strong>→<strong> a</strong></p>
+
+                    <p><strong>aB </strong>→<strong> ab</strong>, pois <strong>B </strong>→<strong> b</strong></p>
+
+                    <p>Já a palavra <strong><em>b</em></strong> não pode ser produzida a partir de <strong>S</strong> a partir desse mesmo conjunto de regras de composição.</p>
+
+                    <p>Dado um conjunto de regras de composição e uma lista de palavras, sua tarefa é determinar, para cada uma das palavras, se ela pode ou não ser produzida a partir das regras descritas na instância atual.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por vários casos de teste. Cada teste segue as regras descritas acima.</p>
+
+                    <p>Na primeira linha de cada teste aparece o símbolo raiz, que sempre será uma letra maiúscula. Na segunda linha, o conjunto <strong>V</strong> será fornecido como uma palavra composta apenas por letras maiúsculas. Cada letra dessa palavra será identificada como um membro de <strong>V</strong>.</p>
+
+                    <p>O conjunto <strong>T</strong> será dado como uma palavra de caracteres imprimíveis (com exceção de <strong>#</strong> e caracteres em branco) na terceira linha. Cada caractere dessa palavra será identificado como um membro de <strong>T</strong>.</p>
+
+                    <p>A seguir, serão fornecidas várias linhas, que descreverão as regras de composição para a instância atual. Uma regra de composição na forma <strong># </strong>→<strong> #</strong> indica o fim da lista de regras de composição.</p>
+
+                    <p>Por fim, são fornecidas várias linhas, cada uma contendo uma palavra que desejamos saber se pode ou não ser produzida a partir da raiz por meio das regras de composição. Essas palavras não vão conter qualquer caractere em <strong>V</strong> e são compostas por no máximo 50 caracteres. A lista de palavras termina com uma linha contendo # na primeira coluna.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>No início de cada instância imprima a linha<strong> Instancia k</strong>, onde<strong> k</strong> é o número da instância atual. Em seguida, para cada palavra <strong>x</strong> da lista, imprima uma linha na saída dizendo <strong>x e uma palavra valida</strong> se ela pode ser obtida a partir da raiz por meio das regras de composição, e <strong>x nao e uma palavra valida</strong> caso contrário. Imprima uma linha em branco após cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>S<br />
+SAB<br />
+ab<br />
+S -&gt; AB<br />
+A -&gt; a<br />
+B -&gt; b<br />
+# -&gt; #<br />
+ab<br />
+a<br />
+#<br />
+S<br />
+SAB<br />
+ab<br />
+S -&gt; AB<br />
+A -&gt; a<br />
+B -&gt; b<br />
+S -&gt; a<br />
+# -&gt; #<br />
+ab<br />
+a<br />
+#</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+ab e uma palavra valida<br />
+a nao e uma palavra valida</p>
+<br />
+<p>Instancia 2<br />
+ab e uma palavra valida<br />
+a e uma palavra valida</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    X Maratona de Programação IME-USP, 2006
+                </p>
+            </div>
+
+        </body>
+    </html>

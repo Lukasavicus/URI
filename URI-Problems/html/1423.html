@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1423 - A aventura de Super Mario</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1423 - A aventura de Super Mario" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1423</span>
+            <h1>A aventura de Super Mario</h1>
+             <div>Por Rujia Liu <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cn.gif' alt=""/> China</div>
+			 <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Depois de resgatar a bela princesa, Super Mario precisa achar o caminho de casa - com a princesa é claro :-). Ele é familiarizado com "Mundo de Super Mario", então ele não precisa de uma mapa, precisa apenas da melhor rota a fim de ganhar tempo.</p>
+  
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Adventure%20of%20Super%20Mario.jpg" /></p>
+
+                <p>Existem <b>A</b> Vilas e <b>B</b> Castelos neste mundo. Vilas são numeradas 1..<b>A</b>, e Castelos são numerados <b>A</b>+1..<b>A</b>+<b>B</b>. Mario vive na Vila 1, e o Castelo que ele começa é numerado <b>A</b>+<b>B</b>. Também, existem uma via de mão dupla conectando-os. Dois lugares são conectados no máximo por uma rua e um lugar jamais tem uma rua conectando-o a si mesmo. Mario já mediu o comprimento de cada rua, mas não quer caminhar todo o percurso, já que ele se move uma unidade tempo para cada unidade de distância (que lento!).</p>
+
+				
+                <p>Por sorte, Mário encontrou botas mágicas no Castelo onde havia salvado a princesa.  Se ele as utilizar, poderá fazer uma super-corrida de um lugar a outro EM TEMPO ZERO. (Não se preocupe com a princesa, Mario encontrou um jeito de levá-la em sua super-corrida, mas ele não contará a você:-P).</p>
+
+                <p>Uma vez que existem armadilhas nos Castelos, Mario NUNCA faz uma super-corrida através de um Castelo. Ele sempre para quando há um Castelo no caminho. Ele também começa/para suas super-corrridas SOMENTE em Vilas e Castelos.</p>
+
+				<p>Infelizmente, as botas mágicas são velhas, então Mário não pode usar mais que <b>L</b> quilômetros de uma vez, e não pode usar mais que <b>K</b> vezes no total. Quando chegar em casa, ele pode repará-las e usá-las novamente.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A primeira linha da entrada contém um único inteiro <b>T</b>, indicando o número de casos de teste (1 ≤ <b>T</b> ≤ 20). Casa caso de teste começa com cinco inteiros <b>A</b>, <b>B</b>, <b>M</b>, <b>L</b> e <b>K</b> - o número de Vilas, o número de Castelos (1 ≤ <b>A</b>, <b>B</b> ≤ 50), o número de ruas, a distância máxima que pode ser coberta de uma vez (1 ≤ <b>L</b> 500), e o número de vezes as botas podem ser usadas (0 ≤ <b>K</b> ≤ 10). As próximas <b>M</b> linhas, cada uma contém três inteiros <b>Xi</b>, <b>Yi</b>, <b>Li</b>. Isso significa que há uma rua conectando os lugares <b>Xi</b> e <b>Yi</b>. <b>A</b> distância é <b>Li</b>, então o tempo de caminhada é também <b>Li</b> (1 ≤ <b>Li</b> ≤ 100).</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste na entrada imprima uma linha contendo um único inteiro indicando o tempo mínimo necessário para ir para casa com a bela princesa. É garantido que Super Mario pode sempre ir para casa.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>1<br>
+                                4 2 6 9 1<br>
+                                4 6 1<br>
+                                5 6 10<br>
+                                4 5 5<br>
+                                3 5 4<br>
+                                2 3 4<br>
+                                1 2 3</p>
+
+                        </td>
+                        <td>
+                            <p>9</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+           <p class="footer">
+              E/S por UOJ.</p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,96 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1880 - Renzo e a Decoração Capicuânica</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1880 - Renzo e a Decoração Capicuânica" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1880</span>
+				<h1>Renzo e a Decoração Capicuânica</h1>
+				<div>
+					<p>Por Marcio T. I. Oshiro, Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+				<p>Nas ruínas de Wat Phra Si Sanphet (วัดพระศรีสรรเพชญ์) estão inscrições famosas que apenas recentemente tiveram seu significado desvendado. Vários números decoram as ruínas, escritos usando os dígitos tailandeses.</p>
+
+				<p>Há dois anos, o famoso pesquisador peruano Renzo "el intrépido" Morales verificou que a maioria dos números encontrados nas ruínas são capicuas, isto é, representam o mesmo valor se lidos ao contrário. Por exemplo, 171 é capicua, mas 17 não é capicua.</p>
+
+				<p>Intrigado pela presença de números que não são capicuas na decoração dasruínas, Renzo descobriu que, apesar de esses números não serem capicuas quando representados em base 10 (utilizada na escrita tailandesa), eles são capicuas se representados em uma base diferente. A representação em uma base <em>b</em> &gt; 0 de um número <em>N</em> dado na base 10 é dada pela sequência <em>a<sub>m</sub>a<sub>m-1</sub></em>...<em>a<sub>1</sub>a<sub>0</sub></em>, tal que 0 ≤ <em>a<sub>i</sub></em> ≤ <em>b</em>-1, para todo 0 ≤ <em>i</em> ≤ <em>m</em>, <em>a<sub>m</sub></em> &gt; 0 e <em>a<sub>m</sub>b<sup>m</sup></em> + <em>a<sub>m-1</sub>b<sup>m-1</sup></em> + ... + <em>a<sub>1</sub>b</em> + <em>a<sub>0</sub></em>= <em>N</em>. No exemplo anterior, a representação em base 2 do número 17 é 10001, que é capicua.</p>
+
+				<p>Para comprovar sua descoberta, Renzo quer que você escreva um programa que recebe um número representado na base 10 e verifica em quais bases, de 2 a 16, sua representação é capicua.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+				<p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+				<p>Cada instância consiste de uma única linha contendo um número inteiro <strong>N</strong> (0 ≤ <strong>N</strong> &lt; 2<sup>31</sup>) escrito na base 10.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+				<p>Para cada instância, imprima em uma única linha a sequência crescente das bases, de 2 a 16, para as quais a representação de <strong>N</strong> é capicua. Se a representação de <strong>N</strong> não for capicua para nenhuma base entre 2 e 16, imprima -1.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+<p>17</p>
+
+<p>2570</p>
+
+							</td>
+							<td>
+								<p>2 4 16</p>
+
+<p>4 16</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIX Maratona de Programação IME-USP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

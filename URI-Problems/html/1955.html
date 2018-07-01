@@ -1,0 +1,111 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1955 - See World</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema B - See World" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1955</span>
+				<h1>See World</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+                    <p class="center"><img alt="See" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1955.jpg" style="width: 400px; height: 240px"></p>
+
+
+					<p>Sob a orientação da Profª Graziela Tonin, os estudantes de Tópicos Engenharia de Software estão desenvolvendo um sistema para ajudar o <em>See World</em>, o novo parque temático da cidade, a alocar orcas em dois tanques gigantes. As orcas, em particular, possuem uma hierarquia social bastante complexa, de pelo menos 4 níveis, e o curioso é que orcas são capazes de vocalizar diferentes dialetos, dependendo do nível da hierarquia social pelo qual se relacionam com seus interlocutores. Uma das maiores dificuldades em manter orcas em cativeiro é que, se duas orcas são postas juntas num mesmo tanque mas falam nenhum dialeto em comum, elas eventualmente brigarão, por não se entenderem, e por serem oriundas de culturas totalmente diferentes. Às vezes elas podem se machucar gravemente ou até morrer. Assim, o <em>See World</em> deseja alocar suas orcas nos seus dois tanques de modo que, se duas orcas forem alocadas num mesmo tanque, seja garantido que elas partilhem de ao menos um dialeto.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada consiste de um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>3</sup>), o qual representa o número de orcas do <em>See World</em>. A propósito, cada orca do <em>See World</em> é representada unicamente por um único código entre 1 e <strong>N</strong>. Cada uma das <strong>N</strong> linhas seguintes consiste de <strong>N</strong> inteiros, de modo que o <strong>j</strong>-ésimo inteiro da <strong>i</strong>-ésima linha (1 ≤ <strong>i</strong>, <strong>j</strong> ≤ <strong>N</strong>) é 1 se as orcas de códigos <strong>i</strong> e <strong>j</strong> partilham de ao menos um dialeto ou 0 caso contrário.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo unicamente a expressão <strong>Fail!</strong> se não é possível alocar as orcas nos tanques como desejado ou a expressão <strong>Bazinga!</strong> se é possível.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5<br />
+1 1 1 1 0<br />
+1 1 0 0 1<br />
+1 0 1 1 0<br />
+1 0 1 1 1<br />
+0 1 0 1 1</p>
+
+							</td>
+							<td>
+								<p>Bazinga!</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5<br />
+1 1 0 1 0<br />
+1 1 0 0 1<br />
+0 0 1 1 0<br />
+1 0 1 1 1<br />
+0 1 0 1 1</p>
+
+							</td>
+							<td>
+								<p>Fail!</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					2<sup>ạ</sup> Minimaratona Matutina de Grafos da UFFS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

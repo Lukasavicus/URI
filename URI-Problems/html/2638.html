@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2638 - Construção de um Aeroporto</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 2638 - Construção de um Aeroporto" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2638</span>
+            <h1>Construção de um Aeroporto</h1>
+            <div>
+                <p>Por ACM-ICPC Final Mundial 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif' alt='US' /> Estados Unidos</p>
+            </div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>O país insular tropical da Piconesia é famoso por suas belas praias, vegetação exuberante, platações de cacau e café e clima maravilhoso durante todo o ano. Este paraíso está sendo considerado como um futuro local para a final mundial do Concurso Internacional de Programação Colegial ACM (ou, pelo menos, as um local de férias para o conselho executivo). Existe apenas um pequeno problema: a ilha é muito difícil de alcançar.</p>
+
+<p>Atualmente, a maneira mais rápida de chegar à ilha leva três dias do aeroporto mais próximo e usa uma combinação de barco de pesca, petroleiro, caiaque e submarino. Para tornar a participação da Final do Mundo do ICPC um pouco mais fácil e alavancar o negócio de turismo da ilha, a Piconesia planeja construir seu primeiro aeroporto.</p>
+
+<p>Como as pistas de pouso mais longas podem acomodar aviões maiores, a Piconesia decidiu construir a pista de pouso mais longa o possível na sua ilha. Infelizmente, eles não conseguiram determinar onde essa pista deve estar localizada. Talvez você possa ajudar?</p>
+
+<p>Para este problema modelamos o limite da Piconesia como um polígono. Dado esse polígono, você precisa calcular o comprimento da pista de pouso mais longa (isto é, segmento de linha reta) que pode ser construído na ilha. A pista não deve cruzar o mar, mas pode tocar ou correr ao longo da fronteira da ilha.</p>
+
+<p class="center"><img src='https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2638.jpg' alt='Aeroporto' /></p>
+
+<p class="center">Figura 1: A ilha foi modelada como um polígono. A pista de pouso mais longa possível é mostrada como uma linha grossa.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A entrada começa com uma linha contendo um inteiro <strong>n</strong> (3 ≤ <strong>n</strong> ≤ 200) especificando o número de vértices do polígono. Isto é seguido por <strong>n</strong> linhas, cada uma contendo dois inteiros <strong>x</strong> e <strong>y</strong> (| <strong>x</strong> |, | <strong>y</strong> | ≤ 10<sup>6</sup>) que dão as coordenadas (<strong>x</strong>, <strong>y</strong>) dos vértices do polígono no sentido anti-horário. O polígono é simples, isto é, os vértices são distintos e nenhuma borda do polígono se intersecta ou toca, exceto que as bordas consecutivas tocam no seu vértice comum. Além disso, não há duas bordas consecutivas colineares.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Mostre o comprimento do segmento de linha reta mais longo que se encaixa dentro do polígono, com um erro máximo absoluto ou relativo de 10<sup>-6</sup>.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>7</p>
+
+<p>0 20</p>
+
+<p>40 0</p>
+
+<p>40 20</p>
+
+<p>70 50</p>
+
+<p>50 70</p>
+
+<p>30 50</p>
+
+<p>0 50</p>
+
+                        </td>
+                        <td>
+                            <p>76.157731059</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                                <p>3</p>
+
+<p>0 2017</p>
+
+<p>-2017 -2017</p>
+
+<p>2017 0</p>
+
+                        </td>
+                        <td>
+                            <p>4510.149110617</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM-ICPC World Finals 2017
+            </p>
+        </div>
+
+    </body>
+</html>

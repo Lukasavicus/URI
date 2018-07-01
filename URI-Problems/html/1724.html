@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1724 - Caminhada em um Grafo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1705 - Caminhada em um Grafo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1724</span>
+                <h1>Caminhada em um Grafo</h1>
+                <div>
+                    <p>University of Ulm local Contest  <img src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif" alt="DE" /> Germany</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>"Caminhada em um Grafo" é um jogo jogado em um tabuleiro onde um grafo não-direcionado é desenhado. O grafo é completo e tem todos os ciclos, isso é, para quaisquer dos locais, existe exatamente uma ligação entre eles. As ligações são coloridas. Existem três jogadores e cada um deles tem uma peça. No início do jogo, as três peças estão em lugares pré-determinados no grafo. Em seu turno, os jogadores podem fazer um movimento. Um movimento consiste em mover a peça ao longo de uma ligação para um novo local no tabuleiro. A seguinte restrição é imposta sobre isso: a peça pode ser movida somente entre ligações da mesma cor que a ligação entre as peças dos jogadores adversários.</p>
+                    <p>Nos anos sessenta ("faça amor, não faça guerra") surgiu uma variante para um jogador desse jogo. Nessa variação, uma pessoa move todas as três peças, não necessariamente em ordem, mas apenas uma por vez. O objetivo desse jogo é colocar todas as peças no mesmo local com o menor número de movimentos possível. Encontre o menor número de movimentos necessários para colocar todas as três peças no mesmo local, dada uma configuração de tabuleiro e posições iniciais.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>O arquivo de entrada contém diversos casos de teste. Cada caso de teste começa com o número <strong>n</strong>. A entrada é terminada por <strong>n</strong> = 0. Caso contrário, 1 ≤ <strong>n</strong> ≤ 50. A seguir há três inteiros <strong>p1</strong>, <strong>p2</strong>, <strong>p3</strong> com 1 ≤ <strong>p<sub>i</sub></strong> ≤ <strong>n</strong> denotando as posições iniciais das peças do jogo. As cores das ligações são dadas em seguida como uma matriz <i>m x m</i> de letras minúsculas separadas por espaço. O elemento <i>m<sub>ij</sub></i> denota a cor da ligação entre os locais <i>i</i> e <i>j</i>. Como o grafo não é direcionado, você pode assumir que a matriz é simétrica.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima em uma linha o número mínimo de movimentos necessários para levar as três peças para a mesma posição, ou a palavra "impossible" caso isso não seja possível para o tabuleiro e as posições iniciais dadas. </p>
+                    <p class="center"> <img img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/promocao/hike%20on%20a%20graph.gif" style="width:358px; height:217px"></p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 1 2 3</p>
+                                <p>r b r</p>
+                                <p>b b b</p>
+                                <p>r b r</p>
+                                <p>2 1 2 2</p>
+                                <p>y g</p>
+                                <p>g y</p>
+                                <p>0</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+                                <p>impossible</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 2000/2001
+                </p>
+            </div>
+
+        </body>
+    </html>

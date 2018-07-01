@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1333 - Os Doces de Candy</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1333 - Os Doces de Candy" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1333</span>
+            <h1>Os Doces de Candy</h1>
+            <div><p>Por Pablo Ariel Heiber <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=""/> Argentina</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Candy possui um estoque de doces de F diferentes sabores. Ela irá fazer vários pacotes de doces para então vendê-los. Cada pacote deverá ser ou um pacote contendo doces de um único sabor, ou um pacote sortido, contendo doces de cada sabor. Ela decidiu que um bom empacotamento deve honrar as seguintes condições:</p>
+
+                <ul>
+                    <li>Cada doce deve ser colocado em exatamente um pacote.</li>
+                    <li>Cada pacote, independente de seu tipo, deve conter pelo menos dois doces.</li>
+                    <li>Cada pacote, independente de seu tipo, deve conter o mesmo número de doces.</li>
+                    <li>Dentro de cada pacote sortido, o número de doces de cada sabor deve ser o mesmo.</li>
+                    <li>Deve haver ao menos um pacote sortido.</li>
+                    <li>Deve haver ao menos um pacote de cada sabor.</li>
+                </ul>
+
+                <p>
+                    Candy estava pensando sobre quantos tipos de bons empacotamentos de doces ela poderia fazer. Dois bons empacotamentos de doces são considerados diferentes se e somente se eles diferem no número de pacotes sortidos, ou no número de doces por pacote. Como Candy irá vender seus doces durante a cerimônia de encerramento desta competição, você foi encorajado a responder sua questão tão rápido quanto possível.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste é descrito usando duas linhas. A primeira linha contém um inteiro <strong>F</strong> indicando o número de sabores (2 ≤ <strong>F</strong> ≤ 10<sup>5</sup>). A segunda linha contém <strong>F</strong> inteiros <strong>Ci</strong> , indicando o número de doces de cada sabor (1 ≤ <strong>Ci</strong> ≤ 10<sup>9</sup> para cada 1 ≤<strong> i</strong> ≤ <strong>F</strong>).</p>
+
+                <p>
+                    O último caso de teste é seguido por uma linha contendo um zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cado caso de teste imprima um linha com um inteiro representando o número de diferentes bons empacotamentos de doces, de acordo com as regras dadas acima.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                15 33 21<br />
+                                2<br />
+                                1 1<br />
+                                2<br />
+                                2 2<br />
+                                2<br />
+                                3 3<br />
+                                3<br />
+                                1000000000 1000000000 1000000000<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                4<br />
+                                0<br />
+                                0<br />
+                                1<br />
+                                832519396</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2011.
+            </p>
+        </div>
+
+    </body>
+</html>

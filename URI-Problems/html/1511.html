@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1511 - Tabuleiro GCD</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1511 - Tabuleiro GCD" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1511</span>
+                <h1>Tabuleiro GCD</h1>
+                <div>
+                    <p>Por Mateus Carvalho Dantas, Federal University of Campina Grande <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 5</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Dado um grid infinito totalmente setado para o valor zero e Q queries dos tipos:</p>
+
+<p><span class="code">SET x y d</span>: Seta a posição (x,y) do tabuleiro para o valor d</p>
+
+<p><span class="code">QUERY x y d</span>: Retorna o gcd (Greatest Common Divisor) de todas as posições do tabuleiro que estão a uma distância de manhattan de no máximo d da posição (x,y).</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste e termina com EOF. A primeira linha de cada caso de teste contém um inteiro <strong>Q</strong> (1 &lt;= <strong>Q</strong> &lt;= 10<sup>5</sup>) que representa a quantidade de queries a serem feitas.</p>
+
+<p>As proximas <strong>Q</strong> linhas contém cada uma query, podendo ser dos seguintes tipos:</p>
+
+<p class="code">SET x y d</p>
+
+<p class="code">QUERY x y d</p>
+
+<p>0 &lt;= |<strong>x</strong>|, |<strong>y</strong>| &lt;= 500</p>
+
+<p>0 &lt;= <strong>d</strong> &lt;= 10<sup>6</sup></p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima todas as linhas de saída na sequência, para todos os casos de teste. Para cada query do tipo “QUERY x y d” deverá ser respondido na saida padrão o gcd (Greatest Common Divisor) de todas as posição que estão a uma distância manhattan de no máximo '<strong>d</strong>' da posição do tabuleiro (<strong>x</strong>, <strong>y</strong>).</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>10<br/>
+QUERY 0 0 10<br/>
+SET 0 0 25<br/>
+QUERY 0 0 10<br/>
+SET 0 5 15<br/>
+QUERY 0 0 6<br/>
+SET 0 -7 5<br/>
+QUERY 0 0 7<br/>
+SET 0 -8 4<br/>
+QUERY 0 0 8<br/>
+QUERY 0 -9 1</p>
+
+                            </td>
+                            <td>
+                                <p>0<br/>
+25<br/>
+5<br/>
+5<br/>
+1<br/>
+4</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Maratona Verão 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

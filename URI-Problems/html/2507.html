@@ -1,0 +1,101 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2507 - Código de Hamming</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2507 - Código de Hamming" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2507</span>
+				<h1>Código de Hamming</h1>
+				<div>
+					<p>Por Hamilton José Brumatto, UESC <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O código de Hamming permite detecção e correção de erros de 1 bit na leitura de dados. Vamos considerar palavras de 16 bits. Na tabela abaixo está&nbsp;a palavra 4ac5<sub>hex</sub> em sua forma binária, cada bit possui sua numeração de posição indicada:</p>
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2507_01.jpg" style="width:702 height:57px"></p>
+
+<p>Na codificação de Hamming, a numeração das posições dos bits utiliza uma contagem na qual se reserva&nbsp;os valores de posiçã que são potência de 2: 1, 2, 4, ... para inserir bits de paridade.&nbsp;Estes bits serão utilizados como paridade para a codificação de Hamming. No caso acima ficaria:</p>
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2507_02.jpg" style="width:905px; height:59px"></p>
+
+<p>Para calcular a paridade de cada bit de hamming usamos os bits de acordo com sua posição. Por exemplo, o bit da posição 11 irá&nbsp;influenciar os bits de hamming: 8, 2 e 1, pois 11 = 8+2+1. Para o bit de paridade 2, tomamos todos os que influenciam esta paridade. Para uma palavra de 16 bits são:&nbsp;3 (2+1), 6 (4+2), 7 (4+2+1), 10, 11, 14, 15, 18 e 19. Neste caso, se a soma destes bits for par, a paridade é par e o bit de hamming é 0, caso contrário o bit de hamming é&nbsp;1. Veja a análise completa:</p>
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2507_03.jpg" style="width:913px; height:221px"></p>
+
+<p>Uma vez assim codificada, a palavra resultante de 21 bits pode ser apresentada na forma hexadecimal como: 958a9<sub>hex</sub>. A vantagem disto é&nbsp;que, se na leitura houver erro de no máximo 1 bit, este erro poderá&nbsp;ser corrigido. Veja por exemplo se ao<br />
+ler a palavra, tivéssemos lido o valor 978a9<sub>hex</sub>. Construindo a tabela dos bits teremos:</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2507_04.jpg" style="width:912px; height:192px"></p>
+
+<p>Olhando para as paridades dos bits de Hamming, vemos que a paridade não&nbsp;bate para os bits 1, 4 e 8, isto&nbsp;representa que houve um erro de leitura no bit (1+4+8) 13 e prontamente corrigimos. A você foi pedido um programa que analize as palavras de 21 bits lidas, codificadas com a paridade de hamming, e imprima as palavras corretas de 16 bits.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste. Cada caso contém em uma única linha um valor hexadecimal de 21 bits: <strong>H</strong>, 0&nbsp;≤&nbsp;<strong>H&nbsp;≤&nbsp;</strong>1fffff. <strong>H</strong>&nbsp;representa uma palavra de 16 bits codificada com bits de paridade de hamming, que pode possuir no máximo erro de 1 bit.&nbsp;Os dígitos hexadecimais alfabéticos estão grafados em letras minúsculas.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste da entrada seu programa deve gerar uma única linha de saída uma palavra hexadecimal de 16 bits. Contendo a informação&nbsp;lida corrigida pela técnica de Hamming e livre dos bits de paridade. Os dígitos hexadecimais em letras minúsculas.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>978a9<br />
+1ae2d0<br />
+c9ec8</p>
+
+							</td>
+							<td>
+								<p>4ac5<br />
+d714<br />
+64fe</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Este problema fez parte da CPU2016 (Competição de Programação Universitária) da Universidade Estadual de Santa Cruz - UESC.
+				</p>
+			</div>
+
+		</body>
+	</html>

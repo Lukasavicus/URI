@@ -1,0 +1,130 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2179 - Batuke</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2179 - Batuke" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+			<style>
+                 #figuraBatuke{
+                    margin: 15px auto;
+                    width: 600px;
+					height: 170px;
+	             }
+                #figuraBatuke tbody{
+                    text-align: left;
+					border: 1px solid #C3C3C3;
+                }
+            </style>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2179</span>
+				<h1>Batuke</h1>
+				<div>
+					<p>Por Daniel Ambort, FRSF <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Batuke é um cachorro com comportamento repetitivo que tem uma rotina particular quando sai para caminhar na sua vizinhança. A vizinhança também é de certa forma particular: uma matriz <strong>N </strong>x <strong>N</strong> que batuke percorre rotineiramente em espiral. Batuke inicia percorrendo: 1 célula à direita, uma abaixo, seguida por duas à esquerda, duas acima, então 3 à direita, 3 para baixo, então 4, e assim por diante.</p>
+					<p>Lucas (o dono de Batuke), leva Batuke de carro para a célula inicial e o cão sempre segue sua rotina de corrida pelas células de sua vizinhança.</p>
+					<p>Por exemplo, se a vizinhança tem tamanho <strong>N</strong> = 4, as células são enumeradas como segue:</p>
+
+					<table border="1" id="figuraBatuke">
+                    <tbody>
+						<tr>
+							<td> 
+							<p><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/batuke2.jpg" style="float:left; height:145px; margin:10px; margin-left:10px; margin-right:10px; width:162px" /> </p>
+							
+							<p>e o percurso feito por Batuke, iniciando na célula 1,1 (célula superior esquerda é 0,0) é:</p>
+							<p>6,7,11,10,9,5,1,2,3,4,8,12,16,15,14,13</p>
+							
+							<p>Neste caso, a rotina de Batuke o faz caminhar por 16 células no total.<p>
+							</td>
+						</tbody>
+                    </table>
+					
+					<p>Mas Batuke não compreende nada sobre fronteiras e ele sempre faz sua rotina (mesmo se ele tem que caminhar por diversas células a mais), para atravessar todas as células da vizinhança. Se a célula inicial for 2,2 por exemplo, a travessia em espiral (apenas as células da vizinhança são mostradas) é: 11,12,16,15,14,10,6,7,8,13,9,5,1,2,3,4.</p>
+					<p>Neste caso, Batuke caminha por 24 células no total. Lucas sabe que você está estudando Computação e ele pediu a você um programa para resolver este problema: dado a vizinhança de <strong>N</strong> linhas por <strong>N</strong> colunas e uma célula inicial, você deverá mostrar o percurso em espiral e o total células percorridas.</p>
+									</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste em três números inteiros: <strong>N</strong> (2 &lt; N ≤ 10 ), <strong>F </strong>e <strong>C</strong>. <strong>N</strong> é o número de linhas na vizinhança (células enumeradas em 1..<strong>N</strong>x<strong>N</strong>, por linhas, da esquerda para a direita).<strong> F</strong> e <strong>C</strong> indica linha e coluna aonde Batuke inicia o seu percurso.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída consiste em 2 linhas. A primeira linha contém uma lista contendo as células da vizinhança, ordenadas pelo percurso que Batuke e separadas por um espaço em branco. A segunda linha mostra o número total de células percorridas por Batuke.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 1 1</p>
+
+							</td>
+							<td>
+								<p>6 7 11 10 9 5 1 2 3 4 8 12 16 15 14 13<br />
+16</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 3 3</p>
+
+							</td>
+							<td>
+								<p>16 15 11 12 14 10 6 7 8 13 9 5 1 2 3 4<br />
+46</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Aquecimento para a OBI 2016 - Fase 2
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2640 - Missão Improvável</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 2640 - Missão Improvável" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2640</span>
+            <h1>Missão Improvável</h1>
+            <div>
+                <p>Por ACM-ICPC Final Mundial 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif' alt='US' /> Estados Unidos</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>É um dia ensolarado na primavera e você está prestes a encontrar com Patrick, um amigo íntimo e ex-parceiro do crime. Patrick perdeu a maior parte do seu dinheiro apostando em competições de programação, então ele precisa fazer outro trabalho. Por causa disso ele precisa de sua ajuda, mesmo que você tenha se aposentado da vida do crime. Você está relutante no início, ja que você não tem a mínima vontade de retornar às suas antigas formas criminais, mas você imagina que não há mal em ouvir o plano de seu amigo.</p>
+
+<p>Há um carregamento de widgets caros em um armazém próximo e Patrick pretende roubar o quanto ele puder. Isso implica em encontrar um caminho para dentro do prédio, icapacitar os protetores de segurança, passar através de vários arrays de raios laser - você sabe, as técnicas habituais de roubo. No entanto, o coração do armazém foi equipado com um sistema de segurança que Patrick não pode desabilitar. É aqui que ele precisa de sua ajuda.</p>
+
+<p>O carregamento é armazenado em grandes caixotes cúbicos, todos os quais têm as mesmas dimensões. As bancas são empilhadas em pilhas organizadas, formando uma grade tridimensional. O sistema de segurança tira fotografias das pilhas uma vez por hora usando três câmeras: uma câmera frontal, uma câmera lateral e uma câmera superior. A imagem da câmera frontal mostra a altura da pilha mais alta em cada coluna, a imagem da câmera lateral mostra a altura do pilha mais alta em cada linha, e a imagem da câmera superior mostra se cada pilha está vazia ou não. Se o sistema de segurança detecta uma alteração em qualquer uma das imagens, soa um alarme.</p>
+
+<p>Uma vez que Patrick está dentro, ele irá determinar as alturas das pilhas e enviá-las para você. A Figura C.1 mostra uma Layout possível da grade e a visão de cada uma das câmeras.</p>
+
+<p class="center"><img src='https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2640_a.jpg' alt='Cameras' style='widht:700px;height:190px;' /></p>
+
+<p class="center">Figura 1: Grade de alturas e as visualizações de câmera correspondentes.</p>
+
+<p class="center"><img src='https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2640_b.png' alt='Caixas' style='widht:100px;height:150px;' /></p>
+
+<p class="center">Figura 2: Possível grade de alturas após o choque.</p>
+
+<p>Patrick quer roubar tantos caixotes quanto possível. Como ele não pode desativar o sistema de segurança, ele planeja Enganá-lo arrumando as caixas restantes em pilhas para que o próximo conjunto de imagens da câmera seja o mesmo. No exemplo acima, é possível roubar nove caixotes. A Figura C.2 mostra uma possível configuração pós-roubo que parece idêntico ao sistema de segurança.</p>
+
+<p>Patrick pede-lhe para ajudá-lo a determinar o número máximo de caixas que podem ser roubadas, deixando uma configuração de caixas que enganarão o sistema de segurança. Você o ajudará a conseguir esse trabalho final?</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A primeira linha de entrada contém dois inteiros <strong>r</strong> (1 ≤ <strong>r</strong> ≤ 100) e <strong>c</strong> (1 ≤ <strong>c</strong> ≤ 100), o número de linhas e colunas na grade, respectivamente. Cada uma das seguintes linhas <strong>r</strong> contém <strong>c</strong> inteiros, as alturas (em caixas) das pilhas na linha correspondente. Todas as alturas estão entre 0 e 10<sup>9</sup> inclusive.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Mostre o número máximo de caixas que podem ser roubadas sem serem detectadas.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>5 5</p>
+
+<p>1 4 0 5 2</p>
+
+<p>2 1 2 0 1</p>
+
+<p>0 2 3 4 4</p>
+
+<p>0 3 0 3 1</p>
+
+<p>1 2 2 1 1</p>
+
+                        </td>
+                        <td>
+                            <p>9</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                                <p>2 3</p>
+
+<p>50 20 3</p>
+
+<p>20 10 3</p>
+
+                        </td>
+                        <td>
+                            <p>30</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM-ICPC World Finals 2017
+            </p>
+        </div>
+
+    </body>
+</html>

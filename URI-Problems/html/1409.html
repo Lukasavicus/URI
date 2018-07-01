@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1409 - Zak Galou</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1409 - Zak Galou" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1409</span>
+            <h1>Zak Galou</h1>
+            <div>Por Alessandro de Luna Almeida <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</div>
+            <strong>Timelimit: 4</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Zak Galou é um famoso bruxo matador de monstros. Diz a lenda que existe uma caverna escondida nos confins da selva contendo um tesouro milenar. Até hoje nenhum aventureiro conseguiu recuperar o tesouro, pois ele é bem guardado por terríveis monstros. Mas Zak Galou não é um aventureiro qualquer e decidiu preparar-se para recuperar o tão sonhado tesouro.</p>
+
+                <p>Zak Galou dispõe de uma certa quantidade de mana (uma espécie de energia mágica) e de uma lista de M magias. Cada monstro tem um determinado número de pontos de vida. Cada vez que Zak Galou lança uma magia contra um monstro, Zak gasta uma certa quantidade de mana (o custo da magia) e inflige um certo dano ao monstro. O dano infligido provoca a perda de pontos de vida do monstro (o número de pontos perdidos depende da magia). Um monstro está morto se tiver zero ou menos pontos de vida. Zak sempre luta contra um monstro a cada vez. Como é um bruxo poderoso, ele pode usar a mesma magia várias vezes, desde que possua a quantidade necessária de mana.</p>
+
+                <p>Em suas pesquisas, Zak Galou conseguiu o mapa do tesouro. A caverna é representada como um conjunto de salões conectados por galerias. Os salões são identificados sequencialmente de 1 a N. Zak sempre inicia no salão 1 e o tesouro está sempre no salão N. Existem K monstros identificados sequencialmente de 1 a K. Cada monstro vive em um salão, do qual não sai (note que é possível que mais de um monstro viva no mesmo salão). Durante a busca pelo tesouro, Zak Galou pode sair ou recuperar o tesouro de um salão somente se o salão estiver vazio (sem monstro). Em outras palavras, Zak deve sempre, antes de sair ou de recuperar o tesouro de um salão, matar o(s) monstro(s) que lá viver(em).</p>
+
+                <p>Dadas as descrições das magias, dos monstros e da caverna, sua tarefa é determinar a quantidade mínima inicial de mana necessária para que Zak Galou consiga recuperar o tesouro.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. A primeira linha de cada caso de teste contém quatro inteiros <strong>M</strong>, <strong>N</strong>, <strong>G</strong> e <strong>K</strong>, indicando respectivamente o número de magias (1 ≤&nbsp;<strong>M</strong> ≤&nbsp;1000), de salões (1 ≤&nbsp;<strong>N</strong> ≤&nbsp;1000), de galerias (0 ≤&nbsp;<strong>G</strong> ≤&nbsp;1000000) e de monstros (0 ≤&nbsp;<strong>K</strong> ≤&nbsp;1000).</p>
+
+                <p>Cada uma das <strong>M</strong> linhas seguintes descreve uma magia. A descrição de uma magia contém dois números inteiros, a quantidade de mana consumida (entre 1 e 1000) e o número de pontos de danos provocados (também entre 1 e 1000).</p>
+
+                <p>Em seguida, há <strong>G</strong> linhas, cada uma descrevendo uma galeria. Uma galeria é descrita por dois números inteiros <strong>A</strong> e <strong>B</strong> (<strong>A</strong> ≠&nbsp;<strong>B</strong>), representando os salões que a galeria conecta. Zak pode utilizar a galeria nos dois sentidos, ou seja, para ir de <strong>A</strong> para <strong>B</strong> ou de <strong>B</strong> para <strong>A</strong>.</p>
+
+                <p>Finalmente, as últimas <strong>K</strong> linhas de um caso de teste descrevem os monstros. A descrição de um monstro contém dois números inteiros representando respectivamente o salão no qual ele vive (entre 1 e <strong>N</strong> inclusive) e o seu número inicial de pontos de vida (entre 1 e 1000 inclusive).</p>
+
+                <p>O final da entrada é indicado por <strong>M</strong> = <strong>N</strong> = <strong>G</strong> = <strong>K</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste da entrada seu programa deve produzir uma linha na saída contendo um número inteiro, a quantidade mínima inicial de mana necessária. Caso não seja possível recuperar o tesouro, você deve imprimir -1.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3 4 4 2<br />
+                                7 10<br />
+                                13 20<br />
+                                25 50<br />
+                                1 2<br />
+                                2 4<br />
+                                1 3<br />
+                                3 4<br />
+                                2 125<br />
+                                3 160<br />
+                                3 4 4 1<br />
+                                7 10<br />
+                                13 20<br />
+                                25 50<br />
+                                1 2<br />
+                                2 4<br />
+                                1 3<br />
+                                3 4<br />
+                                2 125<br />
+                                1 3 1 1<br />
+                                1000 1000<br />
+                                1 2<br />
+                                3 1000<br />
+                                0 0 0 0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                70<br />
+                                0<br />
+                                -1
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                 Maratona de Programacao da SBC 2007.
+            </p>
+        </div>
+
+    </body>
+</html>

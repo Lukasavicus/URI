@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2709 - As Moedas de Robbie</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2671 - As Moedas de Robbie" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2709</span>
+			<h1>As Moedas de Robbie</h1>
+			<div>
+				<p>Por Adriano Pereira Almeida, Centro Universitário Estácio da Amazônia <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Robbie é um robô muito carismático, e uma das coisas que ele mais gosta de fazer, além de brincar com Glória, é colecionar moedas. Robbie possui várias moedas com valores iguais ou diferente, e de mesmo mesmo tamanho. e elas são guardadas de maneira organizada uma sobre a outra dentro de um cilindro de vidro. Robbie sempre faz um joguinho com Glória usando suas moedas quando ela pede pra brincar com ele de esconde-esconde, ou quando ela pede pra ele levá-la para passear. O jogo acontece da seguinte maneira: Glória escolhe um número&nbsp;<strong>N&nbsp;</strong>que será o salto das moedas que serão somadas, então a cada&nbsp;<strong>N</strong>moedas o valor&nbsp;<strong>V<sub>i</sub></strong>&nbsp;da moeda é somado até que não haja mais moedas, ou seja, Σ de ((<strong>V</strong><sub><strong>M</strong>-(<strong>N</strong>*0)</sub>)+(<strong>V</strong><sub><strong>M</strong>-(<strong>N</strong>*1)</sub>)+(<strong>V</strong><sub><strong>M-</strong>(<strong>N</strong>*2)</sub>&nbsp;)...),&nbsp;<strong><sub>M</sub></strong>&nbsp;é o número de moedas. Por exemplo, se existirem 5 moedas com os valores 1, 2 , 3, 4 e 5, e Glória escolher 2 como valor do salto, então serão somadas as moedas 5, 3 e 1, resultando em 9, ao final Robbie verifica se a soma dessas moedas é um número primo, se isso acontecer ele faz o que a Glória quer, caso contrário, a garotinha convence Robbie a jogar novamente, pois ela sempre consegue convencer ele de tudo, alegando que deixará de contar histórias pra ele, caso ele não faça a vontade dela.</p>
+
+<p>Você como um bom programador da U.S. Robots, ajudará esses dois amigos, escrevendo um programa irá dizer o resultado do jogo.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha da entrada contém um inteiro&nbsp;<strong>M</strong>&nbsp;(2 ≤&nbsp;<strong>M</strong>&nbsp;≤ 20 ) que representa a quantidade de moedas. Cada uma das próximas&nbsp;<strong>M</strong>&nbsp;linhas contém um inteiro&nbsp;<strong>V<sub>i</sub></strong>&nbsp;(1 ≤&nbsp;<strong>V<sub>i</sub></strong>&nbsp;≤ 500) que representa o valor da moeda&nbsp;<strong>M<sub>i</sub></strong>&nbsp;, e por último um inteiro&nbsp;<strong>N</strong>&nbsp;(1 ≤&nbsp;<strong>N</strong>&nbsp;≤&nbsp;<strong>M</strong>) que é o salto na soma escolhido por Glória.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Imprima “You’re a coastal aircraft, Robbie, a large silver aircraft.”, caso Glória ganhe o jogo, ou “Bad boy! I’ll hit you.”, caso Glória não ganhe o jogo. A saída não deve conter aspas.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5<br />
+1<br />
+2<br />
+3<br />
+4<br />
+5<br />
+2</p>
+
+<p>5<br />
+1<br />
+2<br />
+3<br />
+4<br />
+5<br />
+3</p>
+
+						</td>
+						<td>
+							<p>Bad boy! I’ll hit you.</p>
+
+<p>You’re a coastal aircraft, Robbie, a large silver aircraft.</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Agradecimentos à Sabrina Alves pela ajuda na tradução para o inglês.
+			</p>
+		</div>
+
+	</body>
+</html>

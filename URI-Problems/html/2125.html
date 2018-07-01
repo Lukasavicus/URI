@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2125 - Construtores de Totens</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2125 - Construtores de Totens" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2125</span>
+                <h1>Construtores de Totens</h1>
+                <div>
+                    <p>Por XI Maratona de Programação IME-USP, 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Várias civilizações pré-colombianas habitaram a região de Alberta, Canadá. Pouco restou destas culturas, dizimadas pelo frio intenso, pelos ursos e, finalmente, pelos invasores ingleses e franceses que chegaram depois do descobrimento. Hoje, pesquisadores da Universidade de Alberta tentam desvendar os mistérios destes povos, estudando os totens produzidos na região.</p>
+
+                    <p>Estudos do departamento de artes da universidade mostraram que os construtores de totens gostavam de marcá-los com várias cópias de suas assinaturas. A assinatura do artista era feita com sulcos verticais “|” e horizontais “_”. Estudiosos imaginam que o símbolo era uma representação do mal na cultura primitiva e, portanto, tabu, construindo um padrão quadrado. Já foram identificadas várias assinaturas de artistas daquela época.</p>
+
+                    <p>Sua tarefa neste problema é fazer um programa que recebe o desenho de um totem, através de um padrão quadrado de tamanho n × n de sulcos verticais e horizontais, e uma assinatura quadrada de tamanho m × m com um padrão do mesmo tipo, e encontrar todas as ocorrências da assinatura no totem.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta de diversas instâncias. A primeira linha de cada instância consiste em dois inteiros <strong>n</strong> (1 ≤ <strong>n</strong> ≤1000) e <strong>m</strong> (1 ≤ <strong>m</strong> ≤ 60 e <strong>m</strong> &lt; <strong>n</strong>), indicando os tamanhos dos quadrados. Nas <strong>n</strong> linhas seguintes temos <strong>n</strong> caracteres "|" ou "_" que representam os caracteres do quadrado <strong>n</strong> × <strong>n</strong>. Nas <strong>m</strong> linhas seguintes temos <strong>m</strong> caracteres "|" ou "_" que representam os caracteres do quadrado <strong>m</strong> × <strong>m</strong>.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância, você deverá imprimir um identificador Instancia <strong>k</strong>, em que <strong>k</strong> é o número da instância atual. Imprima a lista de todas ocorrências linha coluna (o canto superior esquerdo é a posição 0 0) do quadrado <strong>m</strong> × <strong>m</strong> no quadrado <strong>n</strong> × <strong>n</strong>. A saída deve estar ordenada primeiro pelas colunas e em seguida pelas linhas. Caso não tenha nenhuma ocorrência, imprima uma linha com nenhuma ocorrência.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4 2<br />
+_|__<br />
+___|<br />
+__|_<br />
+||__<br />
+_|<br />
+|_</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+2 1<br />
+1 2<br />
+<br /></p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XI Maratona de Programação IME-USP, 2007
+                </p>
+            </div>
+
+        </body>
+    </html>

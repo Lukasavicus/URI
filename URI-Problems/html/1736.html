@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1736 - Decodifique a Árvore</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1738 - Decodifique a Árvore" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1736</span>
+                <h1>Decodifique a Árvore</h1>
+                <div>
+                    <p>University of Ulm local Contest <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Uma árvore (isto é, um grafo conexo sem ciclos) com os vértices numerados por números inteiros 1, 2, ..., <strong>n</strong> é dado. O código "Prüfer" de tal estrutura é construído da seguinte forma: a folha (um vértice que tem uma única aresta incidente) com o menor número é escolhido. Esta folha, juntamente com a sua aresta incidente é removida do grafo, enquanto que o número do vértice que era adjacente à folha é anotado. No grafo obtido, este procedimento é repetido, até que haja apenas um vértice restante (que, a propósito, sempre tem o número <strong>n</strong>). A sequência com <strong>n-1</strong> números anotados, é chamado de código de Prüfer da árvore.</p>
+
+                    <p>Sua tarefa é reconstruir uma árvore, dado o seu código de Prüfer. A árvore deve ser indicada por uma palavra da linguagem especificada pela seguinte gramática:</p>
+
+                    <p class="code">
+                        T ::= "(" N S ")"<br/>
+                        S ::= " " T S<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;| vazio<br/>
+                        N ::= número
+                    </p>
+
+                    <p>Ou seja, as árvores têm parênteses em torno delas, e um número que indica o identificador do vértice raiz, seguido por arbitrariamente muitas (talvez nenhuma) subárvores separadas por um único caractere de espaço. Como um exemplo, dê uma olhada na árvore na figura abaixo que é indicado na primeira linha do exemplo de saída.</p>
+
+                    <p>Observe que, de acordo com a definição dada acima, a raiz de uma árvore pode ser uma folha também. Apenas para facilitar a notação nós designamos um vértice como raiz. Normalmente, o que estamos tratando aqui é chamado de "árvore não enraizada".</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/promocao/decode%20the%20tree.gif" style="height:222px; width:222px" /></p>
+
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada caso de teste especifica o código de Prüfer de uma árvore em uma linha. Você encontrará <strong>n-1</strong> números separados por um único espaço. A entrada é terminada por EOF. Você pode assumir que 1 ≤ <strong>n</strong> ≤ 50.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma única linha que contém a árvore correspondente, denotada como descrito acima. Observe que, em geral, há muitas maneiras para denotar tal árvore: escolha sua favorita.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 2 5 2 6 2 8<br />
+                                2 3<br />
+                                2 1 6 2 6</p>
+
+                            </td>
+                            <td>
+                                <p>(8 (2 (3) (5 (1) (4)) (6 (7))))<br />
+                                (3 (2 (1)))<br />
+                                (6 (1 (4)) (2 (3) (5)))</p>
+
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 2001/2002.
+                </p>
+            </div>
+
+        </body>
+    </html>

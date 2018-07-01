@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1646 - Floresta</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1646 - Floresta" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1646</span>
+                <h1>Floresta</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 5</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Bruce Force está na floresta. Ele se pergunta qual é o tronco de árvore mais distante que não está bloqueado, a partir de seu ponto de vista, por outros troncos de árvores.</p>
+
+                    <p>Bruce fez um mapa das árvores da floresta. O mapa mostra a sua posição atual como a origem de um sistema de coordenadas cartesianas. Árvore <em>i</em> é ilustrada no mapa como um círculo com centro (x<sub>i</sub>, y<sub>i</sub>) e raio r<sub>i</sub>. Você pode assumir que um tronco de árvore é visível se e somente se existe um segmento de linha da origem do mapa (0,0) até um ponto na borda do círculo, que representa o tronco da árvore, onde este segmento de linha não cruza ou tocar outro círculo.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. A primeira linha de cada caso de teste contém um inteiro <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 1000), onde <strong>n</strong> especifica quantas árvores existem no mapa. As seguintes <strong>n</strong> linhas contém três inteiros <strong>x</strong><sub>i</sub>, <strong>y</strong><sub>i</sub>, <strong>r</strong><sub>i</sub> (-10000 ≤ <strong>x</strong><sub>i</sub>, <strong>y</strong><sub>i</sub> ≤ 10000, 1 ≤ <strong>r</strong><sub>i</sub> ≤ 1000), onde (<strong>x</strong><sub>i</sub>, <strong>y</strong><sub>i</sub>) é o centro do círculo que representa tronco <strong>i</strong>, e <strong>r</strong><sub>i</sub> é o raio do círculo. Pode-se presumir que não há dois círculos da entrada que se interceptam, ou seja, para quaisquer dois círculos, a distância entre os seus centros é mais do que a soma dos seus raios. Além disso, você pode assumir que nenhum círculo contém a origem.</p>
+
+                    <p>O último caso de teste é seguido por uma linha contendo um zero.</p>
+
+                    <p><strong>Dica:</strong> No segundo caso de teste, as quatro primeiras árvores bloqueiam a visão de todas as árvores mais longe do que estas quatro árvores. </p>
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma linha com a distância máxima euclidiana da origem a uma árvore visível. A distância de uma árvore deve ser medida utilizando a ponta da árvore mais próxima da origem, não importa se este ponto é, de fato, visível ou não.</p>
+
+                    <p>Imprima a resposta com três dígitos depois do ponto decimal.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+<p>10 10 11</p>
+
+<p>1 1 1</p>
+
+<p>-20 -10 20</p>
+
+<p>5</p>
+
+<p>1 2 2</p>
+
+<p>-2 1 1</p>
+
+<p>2 -1 1</p>
+
+<p>-1 -2 2</p>
+
+<p>10000 -10000 1000</p>
+
+<p>0</p>
+
+                            </td>
+                            <td>
+                                <p>3.142</p>
+
+<p>1.236</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2008/2009
+                </p>
+            </div>
+
+        </body>
+    </html>

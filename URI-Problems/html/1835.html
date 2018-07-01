@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1835 - Promessa de Campanha</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema A - Promessa de Campanha" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>'
+    </head>
+    <body>
+        <div class="header">
+            <span>URI Online Judge | 1835</span>
+            <h1>Promessa de Campanha</h1>
+            <div>
+                <p>Por Edson Alves, Faculdade UnB Gama <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+            </div>
+            <strong>Timelimit: 3</strong>
+        </div>
+        <div class="problem">
+<div class="description">
+<p>Durante sua campanha eleitoral, o prefeito do município de Barro 
+        Bravo prometeu que, até o fim de seu mandato, os cidadãos conseguiriam 
+        se locomover entre os principais pontos do município sem passar por 
+        nenhum trecho de estrada de terra (quando assumiu o cargo, não era 
+        possível ir a lugar algum sem passar pelo barro...).</p>
+<p>A primeira providência que tomou foi finalizar as diversas vias de 
+        ligação que haviam sido parcialmente construídas, mas não terminadas. 
+        Assim que concluiu esta etapa, já com o orçamento reduzido, o prefeito 
+        precisava determinar se a promessa já fora cumprida ou não, e caso não 
+        tem sido, quantas estradas ainda deveriam ser construídas para que a 
+        promessa se concretizasse.</p>
+<p>Escreva, portanto, um programa que auxilie o prefeito a obter sua
+        resposta.</p>
+</div>
+<h2>Entrada</h2>
+<div class="input">
+<p>A entrada consiste em uma série de casos de teste. O número 
+        <b>T</b> (<b>T</b> ≤ 100) de casos de teste é indicado na 
+        primeira linha da entrada.</p>
+<p>Cada caso de teste é composto por várias linhas.  A primeira e a 
+        segunda linha do caso de teste contém, respectivamente, os valores 
+        <b>N</b> (1 ≤ <b>N</b> ≤ 100) e <b>M</b> 
+        (0 ≤ <b>M</b> ≤ <b>N</b>(<b>N</b>
+        - 1)/2), onde <b>N</b> é o número de pontos principais da cidade e 
+        <b>M</b> o número de estradas já construídas.  Os principais
+        pontos da cidade são identificados sequencialmente por números 
+        inteiros, a partir do número um.</p>
+<p>As <b>M</b> linhas seguintes contém pares de valores <b>X</b>        e <b>Y</b> (1 ≤ <b>X, Y</b> ≤ <b>N</b>), que indicam
+        que existe uma estrada que liga o ponto <b>X</b> ao ponto 
+        <b>Y</b>.</p>
+</div>
+<h2>Saida</h2>
+<div class="output">
+<p>Para cada caso de teste deverá ser impressa ou a mensagem 
+        "Caso #<b>t</b>: ainda falta(m) <b>E</b> estrada(s)" ou a 
+        mensagem "Caso #<b>t</b>: a promessa foi cumprida", conforme for o 
+        caso, onde <b>t</b> é o número do caso de teste (cuja 
+        contagem tem início no número um) e <b>E</b> é o número mínimo de 
+        estradas que devem ser construídas para que a promessa seja 
+        cumprida.</p>
+<p>Ao final de cada mensagem deve ser impressa uma quebra de linha.</p>
+</div>
+    <div class="both"></div>
+    <table>
+        <thead>
+            <tr>
+                <td>Exemplos de Entrada</td>
+                <td>Exemplos de Saída</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>4
+</p>
+<p>3
+</p>
+<p>2
+</p>
+<p>1 3
+</p>
+<p>2 3
+</p>
+<p>4
+</p>
+<p>2
+</p>
+<p>1 2
+</p>
+<p>3 4
+</p>
+<p>3
+</p>
+<p>0
+</p>
+<p>6
+</p>
+<p>5
+</p>
+<p>1 2
+</p>
+<p>1 3
+</p>
+<p>1 4
+</p>
+<p>2 3
+</p>
+<p>3 4
+</p>
+                </td>
+                <td>
+                    <p>Caso #1: a promessa foi cumprida
+</p>
+<p>Caso #2: ainda falta(m) 1 estrada(s)
+</p>
+<p>Caso #3: ainda falta(m) 2 estrada(s)
+</p>
+<p>Caso #4: ainda falta(m) 2 estrada(s)
+</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+    </body>
+    <p class="footer">Maratona UnB de Programação 2014</p>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1135 - Colônia de Formigas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1135 - Colônia de Formigas" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1135</span>
+            <h1>Colônia de Formigas</h1>
+            <div><p>
+                    por Pablo Ariel Heiber&nbsp;<span style="color: rgb(0, 0, 0); font-family: 'Times New Roman'; font-size: medium; "><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif" style="width: 16px; height: 11px; " />&nbsp;Argentina</p>
+            </div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Um grupo de formigas está muito orgulhoso pois construíram uma grande e magnífica colônia. No entanto, seu enorme tamanho tem se tornado um problema, pois muitas formigas não sabem o caminho entre algumas partes da colônia. Elas precisam de sua ajuda desesperadamente!</p>
+                <p><div>
+                    &nbsp;</div>
+                A colônia de formigas foi criada como uma série de <strong>N</strong> formigueiros conectados por túneis. As formigas, obssessivas como são, numeraram os formigueiros sequencialmente à medida que os construiam. O primeiro formigueiro, numerado 0, não necessitava nenhum túnel, mas para cada um dos formigueiros subsequentes, 1 até <strong>N-1</strong>, as formigas também construíram um único túnel que conectava o novo formigueiro a um dos formigueiros existentes. Certamente, esse túnel era suficiente para permitir que qualquer formiga visitasse qualquer formigueiro já construído, possivelmente passando através de outros formigueiros pelo percurso, portanto elas não se preocupavam em fazer novos túneis e continuavam construindo mais formigueiros.
+                <p><div>
+                    &nbsp;</div>
+                O seu trabalho é: dada a estrutura de uma colônia e um conjunto de consultas, calcular, para cada uma das consultas, o menor caminho entre pares de formigueiros. O comprimento do caminho é a soma dos comprimentos de todos os túneis que necessitam ser visitados.
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste se estende por várias linhas. A primeira linha contém um inteiro <strong>N</strong> representando a quantidade de formigueiros na colônia&nbsp;(2 ≤&nbsp;<strong>N</strong>&nbsp;≤ 10<sup>5</sup>). Cada uma das próximas<strong> N-1</strong> linhas contém dois inteiros que descrevem um túnel. A linha <em>i</em>, para 1&nbsp;≤&nbsp;<em>i</em>&nbsp;≤&nbsp;<strong>N-1</strong>, contém <strong>A<em>i</em></strong> e <strong>L<em>i</em></strong>, indicando que o formigueiro <em>i</em> foi conectado diretamente ao formigueiro&nbsp;<strong>A<em>i</em></strong>&nbsp;por um túnel de comprimento&nbsp;<strong>L<em>i</em></strong>&nbsp;(0&nbsp;≤&nbsp;<strong>A<em>i</em></strong>&nbsp;≤&nbsp;<strong>i-1 </strong>e 1&nbsp;≤&nbsp;<strong>L<em>i</em></strong>&nbsp;≤&nbsp;10<sup>9</sup>). A próxima linha contém um inteiro <strong>Q</strong> representando o número de consultas que seguem (1&nbsp;≤&nbsp;<strong>Q</strong>&nbsp;≤&nbsp;10<sup>5</sup>). Cada uma das <strong>Q</strong> linhas seguintes descreve uma consulta e contém dois inteiros distintos <strong>S</strong> e <strong>T</strong> (0&nbsp;≤&nbsp;<strong>S</strong>,<strong>T</strong>&nbsp;≤&nbsp;<strong>N-1</strong>), representando, respectivamente, os formigueiros de origem e destino.</p>
+                <p><div>
+                    &nbsp;</div>
+                O último caso de teste é seguido por uma linha contendo apenas um zero.
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste, imprima uma única linha com <strong>Q</strong> inteiros, os comprimentos do menor caminho entre os dois formigueiros de cada consulta. Escreva os resultados para cada consulta na mesma ordem em que aparecem na entrada.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                6<br />
+                                0 8<br />
+                                1 7<br />
+                                1 9<br />
+                                0 3<br />
+                                4 2<br />
+                                4<br />
+                                2 3<br />
+                                5 2<br />
+                                1 4<br />
+                                0 3<br />
+                                2<br />
+                                0 1<br />
+                                2<br />
+                                1 0<br />
+                                0 1<br />
+                                6<br />
+                                0 1000000000<br />
+                                1 1000000000<br />
+                                2 1000000000<br />
+                                3 1000000000<br />
+                                4 1000000000<br />
+                                1<br />
+                                5 0<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                16 20 11 17<br />
+                                1 1<br />
+                                5000000000</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                    ACM/ICPC South America Contest 2010.</p>  
+        </div>
+
+    </body>
+</html>

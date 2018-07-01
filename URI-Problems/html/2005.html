@@ -1,0 +1,110 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2005 - Fracil Bolado</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2005 - Fracil Bolado" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2005</span>
+				<h1>Fracil Bolado</h1>
+				<div>
+					<p>Por Thalyson Nepomuceno, Universidade Estadual do Ceará <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Fracil tem uma criação de <em>N</em> ratos e possui <em>M</em> alimentos para alimenta-los.<br />
+Cada rato possui um nível de fome.<br />
+Cada alimento possui um nível de sustento.<br />
+Quando um rato com nível de fome <em>f</em> é alimentado com um alimento com nível sustento maior ou igual a <em>f</em>, o rato fica saciado e seu nível de fome é zerado.<br />
+Quando um rato com nível de fome <em>f </em>é alimentado com um alimento com nível sustento menor que<em> f</em>,<br />
+o novo nível de fome do rato é <em>f</em>-<em>s</em>.</p>
+
+<p>Para alimentar seus ratos, Fracil segue uma estratégia:</p>
+
+<ul>
+	<li>Os alimentos serão fornecidos aos ratos de forma sequencial, primeiro é fornecido o alimento com índice 1, depois o de índice 2 e assim sucessivamente.</li>
+	<li>Fracil tem preferência em alimentar os ratos que tenham o maior nível de fome e que possam ser saciados com a comida da vez.</li>
+	<li>Caso não tenha nem um rato que possa ser saciado, Fracil tem preferência em alimentar os ratos com maior nível de fome.</li>
+	<li>Cada alimento só poderá ser fornecido uma vez e sem divisão (não se pode fornecer partes de um alimento para ratos diferentes).</li>
+</ul>
+
+<p> </p>
+
+<p>Fracil quer saber quantos ratos vão estar saciados quando acabarem os alimentos.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste em vários casos de teste.<br />
+A primeira linha de cada caso de teste contém dois inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 1000) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 1000),<br />
+representando a quantidade de ratos e a quantidade de alimentos.<br />
+A segunda linha de cada caso de teste contém <strong>N</strong> inteiros, representando os níveis de fome dos ratos (1 ≤ <strong>f</strong><sub><strong>i</strong></sub> ≤ 1000).<br />
+A terceira linha de cada caso de teste contém <strong>M</strong> inteiros, representando os níveis de sustento dos alimentos (1 ≤ <strong>s<sub>i</sub></strong> ≤ 1000). A entrada termina com final de arquivo (EOF).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima a quantidade de ratos saciados.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 4<br />
+5 5 5<br />
+10 10 10 10<br />
+3 4<br />
+5 5 5<br />
+10 10 1 1</p>
+
+							</td>
+							<td>
+								<p>3<br />
+2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Olimpíada Cearense de Informática - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

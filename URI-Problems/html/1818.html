@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1818 - Centro de Convenções</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1818 - Centro de Convenções" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1818</span>
+                <h1>Centro de Convenções</h1>
+                <div>
+                    <p>Por Desconhecido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Já com a Final Mundial da Maratona de Programação em mente, o governo chinês iniciou um projeto para a construção de um centro de convenções novo. Esse centro será o mais moderno do mundo, com toda a infraestrutura para sediar importantes eventos. O governo já decidiu (e se decidiu está decidido) construí-lo no formato de uma circunferência. Quando visto de cima esse novo centro, com auxílio de toda sua iluminação de ultima geração, irá dar a impressão de ser uma grande nave espacial redonda. Com truques de luzes, pretende-se ainda criar a impressão de movimento para o imponente prédio.</p>
+
+                    <p>Porém todos sabem que a China possui um grande problema de espaço físico, e o único lugar disponível para a construção fica nos arredores de uma antiga floresta de árvores milenares. Para deixar o projeto ainda mais atraente, decidiu-se que o centro será construído dentro da floresta, mas sem derrubar uma única árvore. A sorte do projetista é que a floresta é esparsa, e existe bastante espaço entre as árvores em alguns lugares. Como se deseja criar o maior (no sentido da área construída) centro de convenções possível, sua tarefa é ajudar a encontrar o melhor lugar para a construção. Seu objetivo é encontrar as coordenadas do ponto central da construção, que deve estar dentro do fecho convexo induzido pelas árvores.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta de diversas instâncias. Cada instância inicia-se com uma linha contendo o número 0 ≤ <strong>n</strong> ≤ 1000 de árvores da floresta, seguida por <strong>n</strong> linhas contendo os pares ordenados <strong>x<sub>i</sub> y<sub>i</sub></strong>, que representam as coordenadas das árvores da floresta. Todas as coordenadas dadas são inteiras. A entrada termina com <strong>n</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identificador <strong>Instancia h</strong> em que <strong>h</strong> é um número inteiro, sequencial e crescente a partir de 1. Na linha seguinte você deve imprimir a posição <strong>x y</strong> ideal para o ponto central do centro de convenções. Caso exista mais que um ponto ideal para a construção, imprima aquele com o menor valor para <strong>x</strong>. Caso ainda exista mais que uma opção, imprima aquele com o menor valor para <strong>y</strong>. Trunque os números impressos em exatamente três casas decimais. Caso não seja possível construir o centro, escreva a palavra <strong>impossível</strong> na linha.</p>
+
+                    <p>Uma linha em branco deve separar a saída de cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4<br />
+0 0<br />
+2 2<br />
+0 2<br />
+2 0<br />
+3<br />
+0 0<br />
+10 10<br />
+6 4<br />
+5<br />
+0 0<br />
+3 3<br />
+1 1<br />
+3 1<br />
+0 3<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+1.000 1.000<br />
+<br />
+Instancia 2<br />
+impossivel<br />
+<br />
+Instancia 3<br />
+1.500 2.500</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VIII Maratona de Programação IME-USP 2004.
+                </p>
+            </div>
+
+        </body>
+    </html>

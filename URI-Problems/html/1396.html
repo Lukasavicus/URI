@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1396 - Hoje tem Prova da Cris!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1396 - Hoje tem Prova da Cris!" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1396</span>
+            <h1>Hoje tem Prova da Cris!</h1>
+           <div>Por Wanderley Guimarães, IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>A Profa. Cristina é muito exigente. Sua fama de maquiavélica já é conhecida fora da universidade e ela até gosta disso... Mas, parece que agora ela exagerou... Na última prova de sua disciplina, a professora exigiu que os alunos formassem fila indiana para entrar na sala de aula. Eles formaram. Quando eles iam entrar, ela gritou: "Mas, vocês não estão em ordem lexicográfica crescente!!!???"</p>
+
+                <p>Os alunos revoltados formaram uma comissão e foram conversar com a professora dizendo que aquilo já era demais. Para não parecerem intransigentes eles disseram que permitiriam no máximo um número k de trocas de posição entre pessoas consecutivas na fila. A professora gostou da idéia, e colocou como um problema extra da prova.</p>
+
+                <p>Dada uma sequência de nomes e um inteiro k, devolver a menor sequência (em ordem lexicográfica) que pode ser obtida a partir da original com no máximo k trocas de elementos vizinhos. Sua tarefa é resolver este exercício para os alunos da Profa. Cristina a fim de que eles consigam entrar na sala e começar a prova.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada é composta de diversas instâncias. Cada instância começa com dois inteiros <strong>n</strong> e <strong>k</strong>, onde 1 ≤ <strong>n</strong> ≤ 100 e 0 ≤ <strong>k</strong> ≤ <strong>n</strong>, indicando a quantidade nomes e a quantidade máxima de trocas, respectivamente. A próxima linha contém uma sequência de <strong>n</strong> nomes. Cada nome possui tamanho máximo de 20 caracteres, e letras de '<em>a</em>' a '<em>z</em>'.</p>
+
+                <p>O programa deve parar de processar a entrada quando <strong>n</strong> = <strong>k</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada instância, você deverá imprimir um identificador "<em>Instancia <strong>c</strong></em>", onde <strong>c</strong> é o número da instância atual. Na linha seguinte você deve imprimir a lista de nomes resultante do processo. Após cada nome, seu programa deve imprimir um espaço em branco, inclusive após o último nome (por exemplo, na saída do primeiro caso de teste abaixo: wanderley<strong><em>b</em></strong>thadeu<strong><em>b</em></strong>chegado<strong><em>b</em></strong>, onde <strong><em>b</em></strong> representa um espaço em branco. Após cada instância, seu programa deve imprimir uma linha em branco, inclusive após a última.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>3 0<br />
+                                wanderley thadeu chegado<br />
+                                3 1<br />
+                                wanderley thadeu chegado<br />
+                                3 2<br />
+                                wanderley thadeu chegado<br />
+                                3 3<br />
+                                wanderley thadeu chegado<br />
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>Instancia 1<br />
+                                wanderley thadeu chegado</p>
+                                <br />
+                            <p>Instancia 2<br />
+                                thadeu wanderley chegado</p>
+                                <br />
+                            <p>Instancia 3<br />
+                                chegado wanderley thadeu</p>
+                                <br />
+                            <p>Instancia 4<br />
+                                chegado thadeu wanderley</p>
+                                <br />
+                        </td>
+                    </tr>
+                </tbody>
+           </table>
+            <p class="footer">
+                XI Maratona de Programação IME-USP 2007.
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2421 - Álbum de Fotos</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2421 - Álbum de Fotos" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2421</span>
+			<h1>Álbum de Fotos</h1>
+			<div>
+				<p>Por OBI - Olimpíada Brasileira de Informática 2012 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Clara está organizando as fotos da sua última viagem num álbum de fotos. Como ela tem muitas fotos, para economizar páginas do álbum ela quer colar duas fotos por página do álbum.</p>
+
+<p>Como as fotos são retangulares, as fotos podem ser coladas giradas (mas sempre com lados paralelos aos da página do álbum, para preservar o equilíbrio estético do álbum), mas elas devem sempre ficar inteiramente contidas no interior da página, e não devem se sobrepor.</p>
+
+<p>Em geral, das muitas formas de posicionar as fotos do álbum só algumas (ou nenhuma) satisfazem estas restrições, então pode ser difícil decidir se é possível colar as duas fotos em uma mesma página do álbum, e por isso Clara pediu a sua ajuda para escrever um programa que, dadas as dimensões da página e das fotos, decide se é possível colar as fotos na página.</p>
+
+<p>Por exemplo, cada página pode ser 5×7, e duas fotos são 3×4. Nesse caso, é possível colar as duas fotos:</p>
+
+<p class="center"><img style="width: 250px" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_174_D.png' alt='' /></p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A primeira linha da entrada contém dois inteiros&nbsp;<strong><em>X</em></strong>&nbsp;e&nbsp;<em><strong>Y</strong> (</em>1 ≤&nbsp;<strong><em>X</em></strong>,&nbsp;<strong><em>Y</em></strong>&nbsp;≤ 1000), indicando a largura e a altura da página do álbum. Cada uma das duas linhas seguintes contém dois inteiros&nbsp;<strong><em>L</em></strong>&nbsp;e&nbsp;<em><strong>H</strong> (</em>1 ≤&nbsp;<strong><em>L</em></strong>,&nbsp;<strong><em>H</em></strong>&nbsp;≤ 1000​<em>)</em>, indicando a largura e a altura das fotos.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Imprima uma única linha, contendo um único caractere: '<strong>S</strong>', se é possível colar as duas fotos na página do álbum, e '<strong>N</strong>', caso contrário.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>7 5</p>
+
+<p>3 4</p>
+
+<p>3 4</p>
+
+						</td>
+						<td>
+							<p>S</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>10 10</p>
+
+<p>6 6</p>
+
+<p>6 6</p>
+
+                </td>
+                <td>
+                    <p>N</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>13 8</p>
+
+<p>4 9</p>
+
+<p>6 5</p>
+
+                </td>
+                <td>
+                    <p>N</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+				OBI - Olimpíada Brasileira de Informática 2012 Fase 2 Nível 2
+			</p>
+		</div>
+
+	</body>
+</html>

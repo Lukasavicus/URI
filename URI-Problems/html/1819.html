@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1819 - Estimando a Produção</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1819 - Estimando a Produção" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1819</span>
+                <h1>Estimando a Produção</h1>
+                <div>
+                    <p>Por Desconhecido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A China é uma grande produtora de alimentos, mas também uma enorme consumidora. Pesquisadores chineses perceberam que em certos momentos de sua história a produção agrícola foi maior que o consumo, e em outros momentos esse quadro se inverteu. Preocupados com o futuro da grande nação, passaram a coletar dados sobre a área de plantio, a quantidade de trabalhadores e a produção agrícola. Para melhor investir seus recursos, eles agora desejam fazer uma previsão sobre a produção do país.</p>
+
+                    <p>O conjunto de dados que os pesquisadores conseguiram coletar é formado por triplas (X<sub>i</sub>,Y<sub>i</sub>,Z<sub>i</sub>), em que X<sub>i </sub>representa a área de plantio, Y<sub>i</sub> a quantidade de trabalhadores e Z<sub>i</sub> a produção agrícola. Como essa produção está ligada diretamente com os demais dados coletados, eles decidiram estimar a produção futura usando a função linear a<sub>1</sub>+a<sub>2</sub>x+a<sub>3</sub>y, que minimiza a soma dos erros quadrados</p>
+
+                    <p style="text-align: center;"> <img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1819.png" /></p>
+
+                    <p>em que n é o total de triplas disponíveis. Desta forma eles serão capazes de planejar melhor a produção e o consumo dos próximos anos. Seu objetivo é calcular a função linear desejada.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta de diversas instâncias. Para cada instância da entrada é dado um número inteiro 3 ≤ <strong>n</strong> ≤ 1000 indicando quantas triplas foram obtidas na coleta de dados. Em cada uma das próximas n linhas é dada uma tripla<strong> X<sub>i</sub></strong><sub>,</sub> <strong>Y</strong><sub><strong>i</strong> e</sub> <strong>Z<sub>i</sub> </strong>,como área de plantio (em milhares de hectares), a quantidade de trabalhadores envolvidos (dado em milhares de pessoas), e a produção agrícola (dada em toneladas de alimentos), respectivamente. O arquivo de entrada termina quando for encontrado <strong>n</strong> = 0. Assuma que não existe uma relação linear entre a quantidade de trabalhadores e a área de plantio, ou seja, não existem constantes α,β tais que, para todo i, xi = αy<sub>i</sub> + β. Assuma também que 0 ≤ <strong>X</strong><sub>i</sub>,<strong>Y</strong><sub>i</sub>,<strong>Z</strong><sub>i</sub> ≤ 1000 e que todos os valores dados são inteiros.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identiﬁcador Instancia <strong>h</strong> em que <strong>h</strong> é um número inteiro, sequencial e crescente a partir de 1. Na próxima linha, você deve imprimir os três números <strong>a<sub>1</sub></strong>, <strong>a<sub>2 </sub></strong>e <strong>a<sub>3</sub></strong>, representando os cocientes da função linear procurada. Esses números devem estar truncados em três casas decimais.</p>
+
+                    <p>Uma linha em branco deve separar a saída de cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+                                <p>1 0 0</p>
+
+                                <p>5 1 1</p>
+
+                                <p>3 2 2</p>
+
+                                <p>5</p>
+
+                                <p>1 3 2</p>
+
+                                <p>3 7 3</p>
+
+                                <p>5 10 4</p>
+
+                                <p>7 400 5</p>
+
+                                <p>9 4 6</p>
+
+                                <p>0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1</p>
+
+                                <p>0.000 0.000 1.000</p>
+
+                                <br />
+
+                                <p>Instancia 2 </p>
+
+                                <p>1.500 0.500 0.000</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VIII Maratona de Programação IME-USP 2004.
+                </p>
+            </div>
+
+        </body>
+    </html>

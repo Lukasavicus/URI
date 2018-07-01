@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1490 - Torres que Atacam</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1490 - Torres que Atacam" />
+			
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1490</span>
+                <h1>Torres que Atacam</h1>
+				<div>Por Pablo Ariel Heiber <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=''/> Argentina</div>                
+                <strong>Timelimit: 6</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Problemas inspirados no Xadrez&nbsp;são uma fonte comum de exercícios nas aulas de algoritmos. Começando com o conhecido problema das&nbsp;8 rainhas, várias generalizações e variações foram feitas. Uma deles é o problema N-torres, que consiste na colocação de N torres em um tabuleiro&nbsp;N x&nbsp;N de tal modo que elas não se ataquem.</p>
+
+<p>Professor Anand apresentou o problema N-torres&nbsp;aos seus alunos. Uma vez que as torres só atacam umas às&nbsp;outras quando elas&nbsp;compartilham uma linha ou coluna, eles logo descobriram que o problema pode ser facilmente resolvido colocando as torres ao longo da diagonal principal da placa. Então, o professor decidiu complicar o problema adicionando alguns peões no tabuleiro. Em um tabuleiro com peões, duas torres se atacam&nbsp;se e somente se elas compartilham uma linha ou coluna e não há nenhum peão colocado entre elas. Além disso, os peões ocupam algumas posições, o que dá uma restrição adicional às posições nas quais as torres podem ser colocadas.</p>
+
+<p>Dado o tamanho do tabuleiro e a localização dos peões, diga ao Professor Anand o número máximo de torres que podem ser colocadas em quadrados vazios tais que dois deles não possam se atacar.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste e termina com EOF. A primeira linha de um caso de teste contém um inteiro <strong>N </strong>(1 ≤ <strong>N</strong> ≤ 100) representando o número de linhas e colunas do tabuleiro. Cada uma das próximas <strong>N</strong> linhas contém uma seqüência de <strong>N</strong> caracteres. Na enésima linha desta string, o enésimo caractere reresenta o quadrado na coluna i, j do tabuleiro. O caractere será o "." (Ponto) ou a letra maiúscula "X", indicando, respectivamente, um quadrado vazio ou um quadrado contendo um peão.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma linha com um inteiro representando o número máximo de torres que podem ser colocados nos quadrados sem que possam se atacar.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5<br />
+X....<br />
+X....<br />
+..X..<br />
+.X...<br />
+....X<br />
+4<br />
+....<br />
+.X..<br />
+....<br />
+....<br />
+1<br />
+X</p>
+
+                            </td>
+                            <td>
+                                <p>7<br />
+5<br />
+0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                    ACM/ICPC South America Contest 2013.
+                </p>
+            </div>
+
+        </body>
+    </html>

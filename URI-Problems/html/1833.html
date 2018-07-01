@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1833 - Decoração Natalina</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema A - Decoração Natalina" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>'
+    </head>
+    <body>
+        <div class="header">
+            <span>URI Online Judge | 1833</span>
+            <h1>Decoração Natalina</h1>
+            <div>
+                <p>Por Edson Alves, Faculdade UnB Gama <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+            </div>
+            <strong>Timelimit: 3</strong>
+        </div>
+        <div class="problem">
+<div class="description">
+<p>Maria bem que tentou ajustar a decoração natalina de seu comércio, 
+        mas o resultado final não a agradou: o jeito foi contratar uma empresa 
+        especializada no ramo de decorações natalinas. O serviço que ela 
+        precisa é simples até: colocar <b>N</b> luzes de pisca-pisca 
+        coloridas em uma dada sequência, mas seus ajudantes conseguiram apenas 
+        colocar <b>M</b> lâmpadas em uma sequência que não era a 
+        desejada.</p>
+<p>A empresa conta com profissionais do ramo, que fazem o serviço com 
+        rapidez e eficiência, e tarifa seu serviço pelo tempo que o profissional
+        levaria para concluí-lo se trabalhasse de maneira ótima. No caso de
+        montagem de pisca-pisca, o profissional leva 30 segundos para remover 
+        uma lâmpada já instalada, um minuto para trocar uma lâmpada já 
+        instalada por outra de outra cor e dois minutos e meio para inserir uma         nova lâmpada na armação (esta tarefa demanda mais tempo que as demais 
+        porque é necessário inserir um novo contato na fiação).</p>
+<p>Dado o valor cobrado pela empresa para cada minuto de trabalho, em 
+        reais, a sequência desejada de <b>N</b> lâmpadas e a sequência de 
+        <b>M</b> lâmpadas montadas na ordem não desejada, calcule o valor 
+        do serviço da empresa, em reais.</p>
+</div>
+<h2>Entrada</h2>
+<div class="input">
+<p>A entrada consiste em <b>T</b> (<b>T</b> ≤ 1.000) casos de         teste, onde o valor de <b>T</b> é informado na primeira linha da
+        entrada</p>.
+
+        
+<p>Cada caso de testes é representado por até cinco linhas: a primeira 
+        delas contém o valor <b>R</b> (1 ≤ <b>R</b> ≤ 10), em 
+        reais, que a empresa cobra por minuto de serviço.  A linha seguinte 
+        contém o número <b>M</b> (0 ≤ <b>M</b> ≤ 100) de lâmpadas 
+        da sequência errada, e as <b>M</b> cores desta sequência são dadas 
+        na linha abaixo (caso <b>M</b> seja maior do que zero),
+        separadas por espaços em branco. Estas cores são strings 
+        de caracteres de tamanho <b>S</b> (1 ≤ <b>S</b> ≤ 50) e 
+        há, no máximo, 20 cores distintas em cada caso de teste.
+        De forma semelhante, as últimas duas linhas do caso de teste contém a
+        quantidade <b>N</b> (0 ≤ <b>N</b> ≤ 100) de lâmpadas da 
+        sequência desejada e a relação das <b>N</b> cores que deve compôr a         montagem final.</p>
+</div>
+<h2>Saida</h2>
+<div class="output">
+<p>Para cada caso de teste deve ser impressa a mensagem
+        "Caso #<b>t</b>: R$ <b>C</b>", onde <b>t</b> é o número do 
+        caso de teste (cuja contagem tem início no número um) e <b>C</b> é 
+        o valor do serviço, com duas casas decimais, representando os centavos,         sem separador de milhar e com a vírgula separando os reais dos 
+        centavos.</p>
+<p>Ao final de cada mensagem deve ser impressa uma quebra de linha.</p>
+</div>
+    <div class="both"></div>
+    <table>
+        <thead>
+            <tr>
+                <td>Exemplos de Entrada</td>
+                <td>Exemplos de Saída</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>4
+</p>
+<p>7
+</p>
+<p>3
+</p>
+<p>amarela azul vermelha
+</p>
+<p>4
+</p>
+<p>vermelha verde azul amarela
+</p>
+<p>10
+</p>
+<p>0
+</p>
+<p>2
+</p>
+<p>vermelha azul
+</p>
+<p>5
+</p>
+<p>3
+</p>
+<p>vermelha vermelha vermelha
+</p>
+<p>4
+</p>
+<p>azul branca vermelha verde
+</p>
+<p>8
+</p>
+<p>3
+</p>
+<p>azul branca amarela
+</p>
+<p>0
+</p>
+                </td>
+                <td>
+                    <p>Caso #1: R$ 31,50
+</p>
+<p>Caso #2: R$ 50,00
+</p>
+<p>Caso #3: R$ 22,50
+</p>
+<p>Caso #4: R$ 12,00
+</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+    </body>
+    <p class="footer">Maratona UnB de Programação 2014</p>
+</html>

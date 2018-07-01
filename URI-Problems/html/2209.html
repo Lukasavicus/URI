@@ -1,0 +1,122 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2209 - Infiltration</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2209 - Infiltration" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2209</span>
+				<h1>Infiltration</h1>
+				<div>
+					<p>Por ICPC 2012 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/pl.gif' alt='PL' /> Poland</p>
+				</div>
+				<strong>Timelimit: 30</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Good morning, agent W-12. Your mission, should you choose to accept it, is as follows.</p>
+
+					<p>We are infiltrating the ever so insidious Association of Chaos and Mischief (ACM) in order to take down their command structure. Unfortunately, they appear to be prepared for such an eventuality, and have given their command structure an annoyingly complex design which makes our infiltration quite difficult.</p>
+
+					<p>The ACM command structure is divided into several cells. For each pair of cells A and B, either A controls B or B controls A. But this “control” relation can be cyclic, so it could happen that A controls B and B controls C and C controls A.</p>
+
+					<p>We can send in agents to infiltrate any particular cell, which gives us control over that cell and the cells that it controls, but not any other cells. So in the example above, infiltrating A would give us control over A and B, but not C.</p>
+
+					<p>For a successful infiltration of the ACM, we must obtain control over all of its cells, otherwise the cells that are out of our control will discover us and start causing some of their trademark chaos and mischief. As you know, we’re on a tight spending leash from higher authority these days, so we need to execute this mission as efficiently as possible. Your mission is to figure out the minimum number of cells we need to infiltrate in order to succeed.</p>
+
+					<p>This mission briefing will self-destruct in five hours. Good luck!</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The first line of a test case contains the number <strong>n</strong> of cells the ACM has (1 ≤ <strong>n</strong> ≤ 75). Each of the next <strong>n</strong> lines contains a binary string of length <strong>n</strong> where the <strong>i<sup>th</sup></strong> character of the <strong>j<sup>th</sup></strong> line is 1 if cell <strong>j</strong> controls cell <strong>i</strong>, and 0 otherwise (1 ≤ <strong>i</strong>, <strong>j</strong> ≤ <strong>n</strong>).</p>
+
+					<p>The <strong>i<sup>th</sup></strong> character of the <strong>i<sup>th</sup></strong> line is 0 and for <strong>i</strong> != <strong>j</strong>, either the <strong>i<sup>th</sup></strong> character of the <strong>j<sup>th</sup></strong> line is 1 or the <strong>j<sup>th</sup></strong> character of the <strong>i<sup>th</sup></strong> line is 1, but not both.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>For each test case, display its case number followed by the minimum number <strong>m</strong> of cells that must be infiltrated to obtain complete control of the ACM. Then display m numbers <strong>c<sub>1</sub></strong>, . . . , <strong>c<sub>m</sub></strong> in any order, indicating the list of cells to infiltrate (cells are numbered from 1 to <strong>n</strong>). If more than one set of <strong>m</strong> cells gives complete control, any one will be accepted.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+								<p>00</p>
+
+								<p>10</p>
+
+								<p>3</p>
+
+								<p>010</p>
+
+								<p>001</p>
+
+								<p>100</p>
+
+								<p>5</p>
+
+								<p>01000</p>
+
+								<p>00011</p>
+
+								<p>11001</p>
+
+								<p>10100</p>
+
+								<p>10010</p>
+
+							</td>
+							<td>
+								<p>Case 1: 1 2</p>
+
+								<p>Case 2: 2 1 2</p>
+
+								<p>Case 3: 2 2 3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					ICPC 2012 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

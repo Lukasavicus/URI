@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1365 - Procurando Assentos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1365 - Procurando Assentos" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1365</span>
+            <h1>Procurando Assentos</h1>
+             <div><p>Por Pablo Heiber <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt="" /> Argentina</p></div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Um grupo K de amigos vai ver um filme. No entanto, já está muito tarde para obter bons ingressos, por isso, eles estão procurando uma boa maneira de sentar-se todos próximos. Uma vez que todos eles são estudantes de ciências, eles decidiram avançar com um problema de otimização em vez de ir em frente com argumentos informais para decidir quais bilhetes comprar.</p>
+
+                <p>
+                    O cinema tem R linhas com C lugares cada, e eles podem ver um mapa com os atuais assentos disponíveis. Eles decidiram que estar perto um do outro é o que importa, mesmo se isso significar estar na fila da frente, onde a tela é tão grande que é impossível ver tudo de uma só vez. Para obedecer os critérios formais, eles acharam que iriam comprar bancos em ordem, a fim de minimizar a extensão do grupo.</p>
+
+                <p>
+                    A extensão é definida como a menor área do retângulo com os lados paralelos aos assentos que contém todos os assentos comprados. A área de um retângulo é o número de assentos nele contidas. Eles levaram um laptop e pediram para você os ajudá-los a encontrar os assentos desejados.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste consistirá em diversas linhas. A primeira linha conterá três inteiros positivo <strong>R</strong>, <strong>C</strong> e <strong>K</strong>, como explicado acima (1 ≤ <strong>R</strong>, <strong>C</strong> ≤ 300, 1 ≤ <strong>K</strong> ≤ <strong>R</strong> × <strong>C</strong>). As próximas linhas <strong>R</strong> conterão exatamente <strong>C</strong> caracteres cada. O <strong>j</strong>-ésimo caractere da <strong>i</strong>-ésima linha será 'X' se o <strong>j</strong>-ésimo assento no a <strong>i</strong>-ésima linha é tomada ou '.' se ele estiver disponível. Sempre haverá pelo menos <strong>K</strong> assentos disponíveis no total.</p>
+
+                <p>
+                    A entrada é terminada com <strong>R</strong> = <strong>C</strong> = <strong>K</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste, imprima uma única linha contendo a extensão mínima que o grupo pode ter.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3 5 5<br />
+                                ...XX<br />
+                                .X.XX<br />
+                                XX...<br />
+                                5 6 6<br />
+                                ..X.X.<br />
+                                .XXX..<br />
+                                .XX.X.<br />
+                                .XXX.X<br />
+                                .XX.XX<br />
+                                0 0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                6<br />
+                                9</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+               ACM/ICPC South America Contest 2007.
+            </p>
+        </div>
+
+    </body>
+</html>

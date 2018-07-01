@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1596 - Torneio de Yusuf II </title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge 1596 - Problema 1596 - Torneio de Yusuf II" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1596 </span>
+                <h1>Torneio de Yusuf II</h1>
+                <div>
+                    <p>Por Marcio T. I. Oshiro <img src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" alt="" style="width: 16px; height: 11px; "> Brasil</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Marrakech é uma das cidadelas do mundo árabe. A cidade foi fortificada nos anos 1122-1123 por Ali ibn Yusuf, filho de um dos primeiros dirigentes da cidade. Um dos grandes chefes da cidade foi o Califa Abu Yaqub Yusuf ‘al-Mustansir’ também conhecido como Yusuf II. O califa viveu apenas 21 anos (1203-1224) e reinou desde os seus 10 anos. Conhecido como um amante das artes e esportes, foi um grande incentivador da construção de palácios e museus. Idealizou uma grande competição de xadrez, uma de suas paixões, disputada por toda a corte. 
+                    <p>O esquema imaginado por Yusuf II para determinar a classificação do campeonato de xadrez era muito interessante. Todos os <em>N</em> competidores jogavam contra todos. Um jogador <em>K</em> é chamado de ملك (malik) se para todo jogador <em>J</em> diferente de <em>K</em>, ou <em>K</em> vence <em>J</em> ou <em>K</em> vence algum jogador <em>J'</em> que vence <em>J</em>. A classificação do campeonato é uma ordenação dos jogadores <em>J<sub>1</sub></em> , <em>J<sub>2</sub></em> , . . . , <em>J<sub>N</sub></em> tal que cada jogador <em>J<sub>i</sub></em> , 1 ≤ <em>i</em> < <em>N</em> , vence <em>J<sub>i+1</sub></em> e é ملك se considerarmos os jogadores que aparecem depois dele na ordenação, isto é, ignorando os anteriores.</p>
+                    <p>Sua tarefa será, dados os resultados dos jogos de um torneio de xadrez em Marrakech, determinar se é possível obter uma classificação de Yusuf II para aquele campeonato.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF).</p>
+
+                    <p>A primeira linha de cada instância contém um inteiro <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 1.000) correspondendo ao número de jogadores do torneio. Os jogadores são numerados de 1 a <strong>N</strong> . Para cada <strong>i</strong> = 1, . . . , <strong>N</strong> , a (<strong>i</strong> + 1)-ésima linha contém um inteiro <strong>d<sub>i</sub></strong> ≥ 0 seguido pela identificação dos <strong>d<sub>i</sub></strong> jogadores vencidos pelo jogador <strong>i</strong>.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância imprima uma linha com os jogadores ordenados de acordo com a classificação de Yusuf II. Caso exista mais de uma classificação possível, qualquer uma será aceita. Caso não exista classificação de acordo com o esquema de Yusuf II, imprima  a palavra inclassificavel.
+                    </p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+                                    3<br />
+                                    1 2<br />
+                                    1 3<br />
+                                    1 1<br />
+                                    3<br />
+                                    2 2 3<br />
+                                    0<br />
+                                    1 2
+                                </p>
+
+                            </td>
+                            <td>
+                                <p>
+                                    1 2 3<br />
+                                    1 3 2
+                                </p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Se fazes tanta questão de ganhar, então joga sozinho.<br/>
+                    Preliminar Maratona (Seletiva IME-USP)
+                </p>
+            </div>
+
+        </body>
+    </html>

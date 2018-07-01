@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1350 - Esta Sentença é Falsa</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1350 - Esta Sentença é Falsa" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1350</span>
+            <h1>Esta Sentença é Falsa</h1>
+            <div><p>Por Paulo Oliva <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    A corte do rei Xeon 2.4 está sofrendo com intrigas e conspirações. Um documento recentemente descoberto pelo Serviço Secreto do Rei revela que talvez faça parte de um esquema malévolo. O documento contém um simples conjunto de sentenças que diz a verdade ou a mentira para cada afirmação. As sentenças tem a forma de "A sentença <b>X</b> é falsa/verdadeira" onde <b>X</b> indefine uma sentença do conjunto. O Serviço Secreto do Rei suspeita que as sentenças se referem a outro, ainda não descoberto, documento.</p>
+
+                <p>
+                    Enquanto eles tentam descobrir a origem e propósito do documento, o Rei ordenou-o a descobrir se o conjunto de sentenças que o documento contém é consistente, isto é, se há uma verdadeira afirmação nas sentenças. Se o conjunto é consistente, o Rei quer que você determine o máximo de números de sentenças que podem ser verdadeiras nas afirmações do documento.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. Cada caso de teste começa com uma linha contendo um único inteiro <b>N</b>, que indica o número de sentenças no documento (1 ≤ <b>N</b> ≤ 1000). As <b>N</b> linhas seguintes contém cada uma, uma sentença. Sentenças são numeradas sequencialmente, na ordem em que aparecem na entrada (a primeira sentença é 1, a segunda é 2, e assim vai). Cada sentença tem a forma "Sentence <b>X</b> is true." (A sentença <b>X</b> é verdadeira) ou "Sentençe <b>X</b> is false." (A sentença <b>X</b> é falsa), onde 1 ≤ <b>X</b> ≤ <b>N</b>.</p>
+
+                <p>
+                    O valor <b>N</b> = 0 indica o fim da entrada.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada entrada seu programa deve gerar uma linha de saída. Se a entrada é consistente, seu programa deve imprimir o número máximo de sentenças verdades da entrada. Caso contrário seu programa deve imprimir a palavra "Inconsistent" (Inconsistente).</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                1<br>
+                                Sentence 1 is false.<br>
+                                1<br>
+                                Sentence 1 is true.<br>
+                                5<br>
+                                Sentence 2 is false.<br>
+                                Sentence 1 is false.<br>
+                                Sentence 3 is true.<br>
+                                Sentence 3 is true.<br>
+                                Sentence 4 is false.<br>
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Inconsistent<br>
+                                1<br>
+                                3</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+           </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2002.
+            </p>
+        </div>
+
+    </body>
+</html>

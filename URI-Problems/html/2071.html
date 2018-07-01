@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2071 - Banco do Faraó</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2071 - Banco do Faraó" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2071</span>
+                <h1>Banco do Faraó</h1>
+                <div>
+                    <p>Por XIV Maratona de Programação IME-USP, 2010 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Pouca gente sabe, mas foi no Antigo Egito que surgiram os primeiros bancos, de uma forma muito semelhante ao que conhecemos hoje. O principal banco era do faraó, que decidia, de tempos em tempos, tomar para o Estado o conteúdo de algumas contas. Isso ocorria da seguinte forma. Dado N, o número de correntistas do Banco do Faraó (era esse o nome do banco), cada conta podia ter uma quantia em menés (moeda do Antigo Egito) que podia ser, inclusive, negativa (indicando que a pessoa devia aquela quantia ao banco), ou seja, o estado de cada conta era um inteiro a<sub>i</sub>. O objetivo do faraó era fazer diversas consultas nas contas de seus súditos. Dado um intervalo [A;B] (correspondente as contas a<sub>A</sub>; a<sub>A+1</sub>; ... ; a<sub>B-1</sub>; a<sub>B</sub>) o faraó desejava encontrar um subintervalo de soma máxima, ou seja, cujo sequestro pelo Estado renderia ao Faraó a maior quantia de dinheiro. Isso era explicado aos correntistas como sendo uma oferenda a Amon-Ahcid, o Deus egípcio do dinheiro. Fazendo regularmente tais oferendas o deus ficava satisfeito e permitia que o sistema econômico funcionasse perfeitamente. Isso durou surpreendentemente mais de 500 anos, até que num desses sequestros os correntistas se rebelaram, tomaram o palácio e mataram o faraó. O banco foi saqueado e o sistema ruiu. Só se ouviu falar de bancos novamente centenas de anos depois.</p>
+
+                    <p>Sua tarefa é dado um registro de contas e uma série de consultas, determinar para cada consulta um intervalo de soma máxima.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias. A primeira linha de cada instância contém um inteiro <strong>N</strong>, indicando o número de contas no Banco do Faraó, onde 1 ≤ <strong>N</strong> ≤ 100 000. A segunda linha de cada instância contém <strong>N</strong> inteiros, entre -10 000 até 10 000, indicando os saldos nas contas dos correntistas. A terceira linha contém um inteiro <strong>Q</strong>, onde 1 ≤ <strong>Q</strong> ≤ 100 000, indicando o número de consultas que serão feitas. Cada uma das <strong>Q</strong> linhas seguintes contém dois inteiros <strong>A</strong> e <strong>B</strong>, onde 1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong>, indicando o intervalo que deve ser consultado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância seu programa deve produzir <strong>Q</strong> linhas na saída, sendo uma para cada consulta. Cada uma dessas linhas deve conter dois inteiros: o primeiro representa a soma do intervalo com maior soma, e o segundo, o número de elementos desse intervalo. Caso haja mais de um intervalo com maior soma, imprima o número de elementos naquele com maior número de elementos.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3<br />
+3<br />
+-1 -2 -3<br />
+1<br />
+1 1<br />
+8<br />
+1 2 -1 4 9 8 -1 2<br />
+4<br />
+1 3<br />
+1 4<br />
+2 5<br />
+7 8<br />
+3<br />
+0 0 0<br />
+1<br />
+1 3</p>
+
+                            </td>
+                            <td>
+                                <p>-1 1<br />
+3 2<br />
+6 4<br />
+14 4<br />
+2 1<br />
+0 3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XIV Maratona de Programação IME-USP, 2010
+                </p>
+            </div>
+
+        </body>
+    </html>

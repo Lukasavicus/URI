@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1229 - Combate ao Câncer</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1229 - Combate ao Câncer" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1229</span>
+                <h1>Combate ao Câncer</h1>
+                <div><p>
+	Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Pesquisadores da Fundação Contra o Câncer (FCC) anunciaram uma descoberta revolucionária na Química: eles descobriram como fazer átomos de carbono ligarem-se a qualquer quantidade de outros átomos de carbono, possibilitando a criação de moléculas muito mais complexas do que as formadas pelo carbono tetravalente. Segundo a FCC, isso permitirá o desenvolvimento de novas drogas que poderão ser cruciais no combate ao câncer.<br />
+	<br />
+	Atualmente, a FCC só consegue sintetizar moléculas com ligações simples entre os átomos de carbono e que não contêm ciclos em suas estruturas: por exemplo, a FCC consegue sintetizar as moléculas (a), (b) e (c) 
+	abaixo, mas não a molécula (d).</p><br />
+<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1229.png" style="width: 603px; height: 101px; " /></p>
+<p>
+	Devido à agitação térmica, uma mesma molécula pode assumir vários formatos. Duas moléculas são equivalentes se for possível mover os átomos de uma das moléculas, sem romper nenhuma das ligações existentes nem criar novas ligações químicas, de forma que ela fique exatamente igual à outra molécula. Por exemplo, na figura acima, a molécula (a) não é equivalente à molécula (b), mas é equivalente à molécula (c).<br />
+	<br />
+	Você deve escrever um programa que, dadas as estruturas de duas moléculas, determina se elas são equivalentes.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A primeira linha de um caso de teste contém um inteiro <strong>N</strong> indicando o número de átomos nas duas moléculas. Os átomos são identificados por números inteiros de 1 a <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 10<sup>4</sup>). Cada uma das <em>2<strong>N</strong> − 2</em> linhas seguintes descreve uma ligação química entre dois átomos: as primeiras <em><strong>N</strong> − 1</em> linhas descrevem as ligações da primeira molécula; as <em><strong>N</strong> − 1</em> últimas descrevem as ligações químicas da segunda molécula. Cada linha contém dois inteiros <strong>A</strong>&nbsp;(1 ≤&nbsp;<strong>A</strong> ) e <strong>B</strong>&nbsp;(<strong>B</strong> ≤ <strong>N</strong>)&nbsp;indicando que existe uma ligação química entre os átomos <strong>A</strong> e <strong>B</strong>.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste seu programa deve imprimir uma única linha, contendo um único caractere: S se as moléculas são equivalentes ou N caso contrário.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	7<br />
+	1 2<br />
+	2 3<br />
+	3 4<br />
+	4 5<br />
+	6 2<br />
+	7 3<br />
+	1 2<br />
+	2 3<br />
+	3 4<br />
+	4 5<br />
+	6 2<br />
+	7 4<br />
+	6<br />
+	1 2<br />
+	1 3<br />
+	2 4<br />
+	2 5<br />
+	3 6<br />
+	2 4<br />
+	5 3<br />
+	6 4<br />
+	1 4<br />
+	5 6</p>
+
+                            </td>
+                            <td>
+                                <p>
+	N<br />
+	S</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <p class="footer">
+                Maratona de Programação da SBC 2012</p>
+            </div>
+
+        </body>
+    </html>

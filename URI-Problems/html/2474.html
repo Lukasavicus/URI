@@ -1,0 +1,94 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2474 - Burlando o Sistema</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2474 - Burlando o Sistema" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2474</span>
+				<h1>Burlando o Sistema</h1>
+				<div>
+					<p>Por Leonardo Blanger, URI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O Natal está chegando, e com ele o Papai-Noel precisa avaliar o quanto cada criança se comportou durante o ano, de forma a definir quantos presentes cada uma delas irá receber neste ano. O critério de avaliação funciona de uma maneira bem peculiar:</p>
+
+<p>Primeiramente, os assistentes do Papai-Noel, capazes de observar todas as crianças do mundo, atribuem para cada uma um número inteiro <strong>N</strong>. Em seguida, a quantidade de presentes que uma criança irá receber será igual a <strong>N-D</strong>, onde <strong>D </strong>é o maior divisor de <strong>N</strong>, diferente de <strong>N</strong>.</p>
+
+<p>Pensando em sabotar a distribuição de presentes em favor de algumas crianças, um grupo de assistentes decidiu modificar o processo. Nesta nova versão, o valor <strong>N </strong>é subdividido em<strong> Q</strong> "partes", cada uma<strong> </strong>valendo <strong>n<sub>i </sub></strong>(1 &lt; <strong>n<sub>i</sub></strong>), de forma que <strong>N = Σn<sub>i</sub></strong>, (1 ≤ <strong>i</strong> ≤ <strong>Q</strong>), e a quantidade de presentes é calculada individualmente para cada uma destas partes. A quantidade total de presentes que uma criança receberá nesta nova abordagem é igual a soma das quantidades de presentes para todos os valores <strong>n<sub>i</sub></strong>.</p>
+
+<p>Sua tarefa é, dada a avaliação ​<strong>N</strong> de cada criança, ajudar os assistentes a fazer esta divisão de forma que a quantidade de presentes recebida pela criança seja a maior possível. Note que os assistentes são livres para definir a quantidade de partes <strong>Q</strong>, bem como o valor de cada uma destas partes, desde que a soma de todas seja exatamente <strong>N</strong>.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste do valor <strong>N </strong>para várias crianças. (1 < <strong>N</strong> ≤ 10<sup>10</sup>)</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada criança, imprima a maior quantidade possível de presentes que ela pode receber, considerando que a escolha de <strong>Q</strong> e a subdivisão são feitas de forma ótima.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2<br />
+4<br />
+33<br />
+10000000000</p>
+
+							</td>
+							<td>
+								<p>1<br />
+2<br />
+31<br />
+9999999998</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Contest de Natal 2016.
+				</p>
+			</div>
+
+		</body>
+	</html>

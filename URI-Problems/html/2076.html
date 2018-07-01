@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2076 - Alocação Ótima de Commodities</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2076 - Alocação Ótima de Commodities" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2076</span>
+                <h1>Alocação Ótima de Commodities</h1>
+                <div>
+                    <p>Por XII Maratona de Programação IME-USP, 2008 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Tjalling C. Koopmans ganhou em 1975 o prêmio Nobel de Economia juntamente com o matemático russo Kantorovich pelas suas contribuições em importantes áreas como a alocação ótima de recursos. Koopmans formou-se em Matemática pela Universidade de Utrecht, na Holanda, e se especializou em economia matemática. Durante a segunda guerra mundial esteve envolvido no estudo de alocação ótima de recursos, que 30 anos mais tarde lhe rendeu o prêmio Nobel. É considerado um dos precursores da teoria de programação linear. Suas contribuições têm importantes aplicações em Economia, Matemática, Física e mesmo em Química.</p>
+
+                    <p>Um dos problemas prediletos de Koopmans era o de alocação ótima de commodities. Neste problema, é dado um valor inicial e um valor ﬁnal da aplicação a ser feita. Entretanto, nem todos os valores podem ser aplicados nos vários investimentos. Cada investimento é deﬁnido através de um número inteiro, e, por convenção, apenas quando o valor a ser aplicado for um múltiplo de pelo menos um número que deﬁne um investimento ele pode ser aplicado.</p>
+
+                    <p>Sua tarefa neste problema é calcular o valor máximo que pode ser aplicado. Ou seja, dado o valor inicial e valor ﬁnal a serem aplicados e uma lista de inteiros que deﬁnem as várias aplicações,você deverá calcular a soma dos valores que podem ser aplicados no intervalo.</p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+                    <p>A primeira linha de cada instância possui três inteiros <strong>I</strong>, <strong>F</strong> e <strong>N</strong> (1 &lt; <strong>I</strong> &lt; <strong>F</strong> &lt; 1000000000 e 1 &lt; <strong>N</strong> &lt; 20) que representam o valor inicial, o valor ﬁnal e o número de elementos da lista de aplicações. A próxima linha contém <strong>N</strong> inteiros 1 &lt;<strong> a<sub>i</sub></strong> &lt; 1000000000 indicando a lista de aplicações.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância imprima uma linha contendo a soma dos valores que podem ser aplicados no intervalo. Como este valor pode ser muito grande então imprima o resultado módulo 1300031.</p>
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3<br />
+1 10 1<br />
+1<br />
+1 9 2<br />
+3<br />
+5<br />
+1 999 2<br />
+3<br />
+5</p>
+
+                            </td>
+                            <td>
+                                <p>55<br />
+23<br />
+233168</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XII Maratona de Programação IME-USP, 2008
+                </p>
+            </div>
+
+        </body>
+    </html>

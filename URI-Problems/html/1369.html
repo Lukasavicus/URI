@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1369 - Gerente de Espaço</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1369 - Gerente de Espaço" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1369</span>
+            <h1>Gerente de Espaço</h1>
+            <div><p>Por Paulo Oliva <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    É bem verdade que a maioria das pessoas não se importa muito com o que ocorre dentro de um computador, desde que ele execute as tarefas que devem ser desempenhadas. Existem, no entanto, alguns poucos nerds que sentem prazer em acompanhar o movimento de bits e bytes dentro da memória do computador.</p>
+
+                <p>
+                    É para esse público, constituído principalmente de adolescentes, que a multinacional de sofware ACM (Abstractions of Concrete Machines) deseja desenvolver um sistema que acompanhe e produza um relatório das operações efetuadas em um disco rígido. Um disco rígido é composto de uma sequência de células atômicas de armazenamento, cada uma de tamanho 1Kb.</p>
+
+                <p>
+                    Especificamente, a ACM deseja acompanhar três tipos de operações:</p>
+
+                <ul>
+                    <li>insere NOME T</li>
+                </ul>
+
+                <p>
+                    Insere no disco o arquivo NOME, de tamanho T. Você pode supor que um arquivo com esse nome não existe ainda no disco. O tamanho T de um arquivo é dado na forma XKb, XMb, ou XGb, onde X é um inteiro (0 &lt; X &lt;= 1023). NOME é uma cadeia de caracteres com comprimento máximo 10.</p>
+
+                <ul>
+                    <li>remove NOME</li>
+                </ul>
+
+                <p>
+                    Remove o arquivo NOME do disco. Se um arquivo com esse nome não existe, não faz nada;</p>
+
+                <ul>
+                    <li>otimiza</li>
+                </ul>
+
+                <p>
+                    Compacta o disco, deslocando os arquivos existentes na direção do início do disco, eliminando espaços livres entre dois arquivos subsequentes, e preservando a ordem em que os arquivos aparecem no disco, de modo a deixar um espaço de memória livre no final do disco.</p>
+
+                <p>
+                    A capacidade de um disco é sempre um número múltiplo de 8Kb. No início, o disco está vazio, ou seja, contém um bloco livre do tamanho da capacidade do disco. Um arquivo é sempre armazenado em um bloco de células de armazenamento contíguas. O arquivo a ser inserido deve ser sempre colocado no início do menor bloco livre cujo tamanho é maior ou igual ao tamanho do arquivo. Se mais de um bloco livre é igualmente adequado, escolha o mais próximo do começo do disco. Caso não seja possível inserir o arquivo por falta de um bloco livre suficientemente grande, deve-se executar automaticamente o comando otimiza. Se após a otimização ainda não for possível inserir o arquivo, uma mensagem de erro deve ser produzida. No caso de todas as operações serem executas sem erro, seu programa deve produzir uma estimativa aproximada do estado final do disco, conforme descrito abaixo.</p>
+
+                <p>
+                    Lembre que 1Mb corresponde a 1024Kb, enquanto 1Gb corresponde a 1024Mb.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada é constituída de vários casos de teste. A primeira linha de um caso de teste contém um único inteiro <strong>N</strong> indicando o número de operações no disco (0 &lt; <strong>N</strong> ≤ 10000). A segunda linha de um caso de teste contém a descrição do tamanho do disco, composta por um inteiro <strong>D</strong> (0 &lt; <strong>D</strong> ≤&nbsp;1023), seguido de um especificador de unidade; o especificador de unidade é uma cadeia de dois caracteres no formato <strong>Kb</strong>, <strong>Mb </strong>ou <strong>Gb</strong>. Cada uma das <strong>N </strong>linhas seguintes contém a descrição de uma operação no disco (<strong>insere</strong>, <strong>remove </strong>ou <strong>otimiza</strong>, conforme descrito acima). O final da entrada é indicado por <strong>N </strong>= 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste seu programa deve produzir uma linha na saída. Se todas as operações de inserção forem executadas sem erro, seu programa deve produzir uma linha contendo uma estimativa aproximada do estado do disco, apresentada como se segue. Divida o número de bytes do disco em oito blocos contíguos de mesmo tamanho. Para cada um dos oito blocos seu programa deve verificar a porcentagem <strong>P </strong>de bytes livres daquele bloco, e apresentar a estimativa do estado final no formato</p>
+
+                <p>
+                    [<strong>C</strong>] [<strong>C</strong>] [<strong>C</strong>] [<strong>C</strong>] [<strong>C</strong>] [<strong>C</strong>] [<strong>C</strong>] [<strong>C</strong>]</p>
+
+                <p>
+                    onde <strong>C </strong>é ' ', '<strong>-</strong>' ou '<strong>#</strong>', dependendo se 75 &lt; <strong>P </strong>≤&nbsp;100, 25 &lt; <strong>P </strong>≤&nbsp;75 ou 0 ≤&nbsp;<strong>P </strong>≤&nbsp;25, respectivamente. Caso um arquivo não possa ser inserido por falta de espaço, seu programa deve produzir uma linha contendo a expressão <strong>ERRO: disco cheio</strong>; nesse caso, operações subsequentes do caso de teste devem ser ignoradas.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                8Kb<br />
+                                insere arq0001 7Kb<br />
+                                insere arq0002 3Mb<br />
+                                remove arq0001<br />
+                                6<br />
+                                8Mb<br />
+                                insere arq0001 4Mb<br />
+                                insere arq0002 1Mb<br />
+                                insere arq0003 512Kb<br />
+                                remove arq0001<br />
+                                remove arq0001<br />
+                                insere arq0001 5Mb<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                ERRO: disco cheio<br />
+                                [#] [#] [#] [#] [#] [#] [-] [ ]</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programacao da SBC 2005.
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2757 - Entrada e saída de números inteiros</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 1001 - Entrada e saída de números inteiros" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+		
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2757</span>
+			<h1>Entrada e Saída de Números Inteiros</h1>
+			<div>
+				<p>Por Roberto A. Costa Jr, UNIFEI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>O seu professor gostaria que você fizesse um programa com as seguintes características:</p>
+
+<ol>
+	<li>Crie três variáveis para armazenar números inteiros;</li>
+	<li>Leia o primeiro número, que pode ser um valor na faixa de: <strong>-10000 ≤ A ≤ 10000</strong>;</li>
+	<li>Leia o segundo número, que pode ser um valor na faixa de: <strong>0 ≤ B ≤ 99</strong>;</li>
+	<li>Leia o terceiro número, que pode ser um valor na faixa de: <strong>0 ≤ C ≤ 999</strong>;</li>
+	<li>Imprima a letra A, um espaço em branco, o sinal de igual, um espaço em branco, o número armazenado na primeira variável, uma virgula, um espaço em branco, a letra B, um espaço em branco, o sinal de igual, um espaço em branco, o número armazenado na segunda variável, uma virgula, um espaço em branco, a letra C, um espaço em branco, o sinal de igual, um espaço em branco, o número armazenado na terceira variável. <em>Não esqueça de pular linha</em>;</li>
+	<li>Repita o procedimento 5, colocando o número em um espaçamento de 10 dígitos e justificado a direita;</li>
+	<li>Repita o procedimento 5, colocando o número em um espaçamento de 10 dígitos e preenchido com zeros;</li>
+	<li>Repita o procedimento 5, colocando o número em um espaçamento de 10 dígitos e justificado a esquerda.</li>
+</ol>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A entrada consiste vários arquivos de teste. Em cada arquivo de teste tem três linhas. Na primeira linha tem um inteiro <strong>A</strong> (<strong>-10000 </strong><strong>≤ <strong>A</strong> ≤ 10000</strong>). Na segunda linha tem um inteiro <strong>B</strong> (<strong>0 </strong><strong>≤ B ≤ 99</strong>). Na terceira linha tem um inteiro <strong>C</strong> (<strong>0 </strong><strong>≤ </strong><strong>C</strong><strong> ≤ 999</strong>). Conforme mostrado no exemplo de entrada a seguir.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada arquivo da entrada, terá um arquivo de saída. O arquivo de saída tem quatro linhas da forma descrita no item 5. Conforme mostra o exemplo de saída a seguir.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>1234</p>
+
+<p>12</p>
+
+<p>123</p>
+
+						</td>
+						<td>
+							<p>A = 1234, B = 12, C = 123</p>
+							<p>A = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1234, B = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12, C = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;123</p>
+							<p>A = 0000001234, B = 0000000012, C = 0000000123</p>
+							<p>A = 1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, B = 12&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, C = 123&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>4567</p>
+
+<p>78</p>
+
+<p>789</p>
+
+                </td>
+                <td>
+                    <p>A = 4567, B = 78, C = 789</p>
+					<p>A = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4567, B = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;78, C = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;789</p>
+					<p>A = 0000004567, B = 0000000078, C = 0000000789</p>
+					<p>A = 4567&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, B = 78&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, C = 789&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>-9991</p>
+
+<p>01</p>
+
+<p>001</p>
+
+                </td>
+                <td>
+                    <p>A = -9991, B = 1, C = 1</p>
+					<p>A = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-9991, B = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1, C = &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1</p>
+					<p>A = -000009991, B = 0000000001, C = 0000000001</p>
+					<p>A = -9991&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, B = 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;, C = 1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+				
+			</p>
+		</div>
+	</body>
+</html>

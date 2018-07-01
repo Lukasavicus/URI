@@ -1,0 +1,112 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1850 - O Labirinto de Ninguém</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1234 - O Labirinto de Ninguém" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1850</span>
+				<h1>O Labirinto de Ninguém</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Nunca tome uma das faces da Casa do Preto e Branco se você não é ‘Ninguém’, ainda que seja para matar Meryn Trant, ou você ficará cego, além de receber várias outras punições. Talvez você veja você mesmo se tornar ‘Ninguém’. Talvez seja isto que esteja acontecendo com Arya. Ou não. Fato é que agora ela está cega e foi colocada num labirinto cheio de portas trancadas. Você pode ajudá-la?</p>
+
+<p>As fechaduras das portas presentes no labirinto onde está Arya são de 7 tipos: <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong>, <strong>E</strong>, <strong>F</strong> e <strong>G</strong>. Há também algumas cópias de chaves espalhadas pelo labirinto, as quais podem ser dos tipos <strong>a</strong>, <strong>b</strong>, <strong>c</strong>, <strong>d</strong>, <strong>e</strong>, <strong>f</strong> ou <strong>g</strong>. Uma chave do tipo <strong>a</strong> abre uma porta do tipo <strong>A</strong>, uma chave do tipo <strong>b</strong> abre uma porta do tipo <strong>B</strong> etc. É claro que, uma vez que Arya tenha aberto uma porta com uma chave, a porta permanece aberta, e Arya pode levar a chave consigo para abrir tantas portas quantas quiser daquele tipo. No labirinto há exatamente uma saída: um buraco no chão através do qual Arya pode entrar no túnel que a conduzirá em segurança à saída da Casa do Preto e Branco.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada representa o labirinto e é composta por no máximo 100 linhas com no máximo 100 caracteres diferentes de <em>fim de linha</em> cada, e o número de caracteres por linha é sempre o mesmo. A posição onde Arya está é identificada pelo caractere <strong>@</strong>, a saída pelo caractere <strong>*</strong>, as paredes do labirinto são identificadas pelo caractere <strong>#</strong>, as portas por caracteres no conjunto {<strong>A</strong>, …, <strong>G</strong>}, as chaves por caracteres no conjunto {<strong>a</strong>, …, <strong>g</strong>}, e as demais posições livres pelo caractere <strong>.</strong> (ponto). O total de caracteres no labirinto diferentes de <strong>#</strong> e de <strong>.</strong> é no máximo 100, e há exatamente um caractere <strong>*</strong> e um caractere <strong>@</strong>. Arya sempre gasta 1 segundo para se mover de uma posição a outra, e só se move na horizontal ou na vertical, pois tem medo de bater o dedinho na quina de uma parede, já que as paredes são quadradas. A entrada termina em <em>fim de arquivo</em>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo um único inteiro, o qual deve representar o tempo mínimo, em segundos, de que Arya precisa para deixar o labirinto. Se não é possível Arya deixar o labirinto, imprima uma linha contendo dois&nbsp;caracteres <strong>-</strong> (hífen), representando os olhos cerrados com que Arya precisará conviver até deixar de ser Arya.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>..............<br />
+.a##########B.<br />
+.#..........#.<br />
+.#.########.#.<br />
+.#.#......#.#.<br />
+.#.#.a##B.#.#.<br />
+.#.#.#.@#.#.#.<br />
+.C.#.D.#ad#.#.<br />
+.#.B.#....#.#.<br />
+.#.#.#####A.#.<br />
+.###........#.<br />
+.#.bA########.<br />
+*#..c.........</p>
+
+							</td>
+							<td>
+								<p>35</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>b...@...A...*</p>
+
+							</td>
+							<td>
+								<p>--</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

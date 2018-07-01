@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2562 - Tipos Analógimôn</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Tipos Analógimôn" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2562</span>
+			<h1>Tipos Analógimôn</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p><em>Analógimôn Go!</em> é um jogo bastante popular. Em sua jornada, o jogador percorre diversas cidades capturando pequenos monstrinhos virtuais, chamados <em>analógimôns</em>. Existem várias espécies de analógimôns. Cada espécie é de (exatamente) um tipo, como fogo, água, elétrico, etc. Algumas espécies podem ser do mesmo tipo, enquanto outras podem se tipos diferentes.</p>
+
+<p>No manual oficial do jogo consta que algumas espécies são do mesmo tipo. Entretanto, o manual pode não apresentar esta informação para todos os pares de espécies que são do mesmo tipo. Por exemplo, se o manual indica que uma espécie <em>a</em> é do mesmo tipo que uma espécie <em>b</em>, e que uma espécie <em>b</em> é do mesmo tipo que uma espécie <em>c</em>, então as espécies <em>a</em> e <em>c</em> certamente são do mesmo tipo, embora esta informação pode não constar no manual.</p>
+
+<p>Você capturou um analógimôn de uma certa espécie. Sua tarefa é determinar o menor número possível de espécies que certamente são do mesmo tipo da espécie do seu analógimôn, de acordo com as informações contidas no manual.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém dois inteiros <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong> ≤ 1000, 0 ≤ <strong>M</strong> ≤ <strong>N</strong>(<strong>N</strong>-1)/2), o número de espécies de analógimôns e o número de informações presentes no manual, respectivamente. As espécies são numeradas de 1 a <strong>N</strong>. Cada uma das próximas <strong>M</strong> linhas contém uma informação presente no manual. Cada linha contém dois inteiros <strong>a</strong> e <strong>b</strong> (1 ≤ <strong>a</strong>, <strong>b</strong> ≤ <strong>N</strong>, <strong>a</strong>≠<strong>b</strong>), indicando que as espécies <strong>a</strong> e <strong>b</strong> são do mesmo tipo. A última linha contém um inteiro <strong>E</strong> (1 ≤ <strong>E</strong> ≤ <strong>N</strong>), indicando a espécie de seu analógimôn.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha com um inteiro indicando a menor quantidade de espécies de analógimôns que certamente são do mesmo tipo da espécie do seu analógimôn, de acordo com o manual. Note que a espécie do seu analógimôn também deve ser contada.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5 3<br />
+1 3<br />
+3 5<br />
+2 4<br />
+1<br />
+							3 1<br />
+1 2<br />
+3</p>
+						</td>
+						<td>
+							<p>3<br />
+							1</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

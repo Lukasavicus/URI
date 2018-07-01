@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1148 - Países em Guerra</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1148 - Países em Guerra" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1148</span>
+                <h1>Países em Guerra</h1>
+                <div><p>
+	por Alessandro Luna <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <div>
+	No ano 2050, após diversas tentativas da <strong>ONU</strong> de manter a paz no mundo, explode a terceira guerra mundial. Segredos industriais, comerciais e militares obrigaram todos os países a utilizar serviços de espionagem extremamente sofisticados, de forma que em cada cidade do mundo há ao menos um espião de cada país. Esses espiões precisam se comunicar com outros espiões, com informantes e mesmo com as suas centrais durante as suas ações. Infelizmente não existe uma forma segura de um espião se comunicar em um período de guerra, então as mensagens são sempre enviadas em código para que somente o destinatário consiga ler a mensagem e entender o seu significado.<br />
+	<br />
+	Os espiões utilizam o unico serviço que funciona no período de guerra, os correios. Cada cidade possui uma agência postal onde as cartas são enviadas. As cartas podem ser enviadas diretamente ao seu destino ou a outras agências postais, até que a carta chegue à agência postal da cidade de destino, se isso for possível.</div>
+<div>
+	<br />
+	Uma agência postal na cidade <strong>A</strong> pode enviar diretamente uma carta impressa para a agência postal da cidade <strong>B</strong> se houver um acordo de envio de cartas, que determina o tempo, em horas, que uma carta leva para chegar da cidade <strong>A</strong> à cidade <strong>B</strong> (e não necessariamente o contrário). Se não houver um acordo entre as agências <strong>A</strong> e <strong>B</strong>, a agência <strong>A</strong> pode tentar enviar a carta a quantas agências for necessário para que a carta chegue ao seu destino, se isso for possível.</div>
+<div>
+	<br />
+	Algumas agências são interligadas por meios eletrônicos de comunicação, como satélites e fibras ópticas. Antes da guerra, essas ligações atingiam todas as agências, fazendo com que uma carta fosse enviada de forma instantânea, mas durante o período de hostilidades cada país passou a controlar a comunicação eletrônica e uma agência somente pode enviar uma carta a outra agência por meio eletrônico (ou seja, instantaneamente) se ela estiver no mesmo país. Duas agências, <strong>A</strong> e <strong>B</strong>, estão no mesmo país se houver uma forma de uma carta impressa enviada de uma das agências ser entregue na outra agência.</div>
+<div>
+	<br />
+	O serviço de espionagem do seu país conseguiu obter o conteúdo de todos os acordos de envios de mensagens existentes no mundo e deseja descobrir o tempo mínimo para se enviar uma carta entre diversos pares de cidades. Você seria capaz de ajudá-lo?</div>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <div>
+	A entrada contém vários casos de teste. A primeira linha de cada caso de teste contém dois inteiros separados por um espaço, <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 500) e <strong>E</strong> (0 ≤ <strong>E</strong> ≤ <strong>N</strong><sup>2</sup>), indicando o número de cidades (numeradas de 1 a <strong>N</strong>) e de acordos de envio de mensagens, respectivamente. Seguem-se, então, <strong>E</strong> linhas, cada uma com três inteiros separados por espaços, <strong>X</strong>, <strong>Y</strong> e <strong>H</strong> (1 ≤ <strong>X</strong>, <strong>Y</strong> ≤ <strong>N</strong>, 1 ≤ <strong>H</strong> ≤ 1000), indicando que existe um acordo para enviar uma carta impressa da cidade <strong>X</strong> à cidade <strong>Y</strong> , e que tal carta será entregue em <strong>H</strong> horas.<br />
+	<br />
+	Em seguida, haverá uma linha com um inteiro <strong>K</strong> (0 ≤ <strong>K</strong> ≤ 100), o número de consultas. Finalmente, virão <strong>K</strong> linhas, cada uma representando uma consulta e contendo dois inteiros separados por um espaço, <strong>O</strong> e <strong>D</strong> (1 ≤ <strong>O</strong>, <strong>D</strong> ≤ <strong>N</strong>). Você deve determinar o tempo mínimo para se enviar uma carta da cidade <strong>O</strong> à cidade <strong>D</strong>. A entrada termina quando <strong>N</strong> = <strong>E</strong> = 0.</div>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <div>
+	Para cada caso de teste da entrada seu programa deve produzir <strong>K</strong> linhas na saída. A <b>I</b>-ésima linha deve conter um inteiro <strong>M</strong> , o tempo mínimo, em horas, para se enviar uma carta na <strong>I</strong>-ésima consulta. Se não houver meio de comunicação entre as cidades da consulta, você deve imprimir ”Nao e possivel entregar a carta”(sem acentos).<br />
+	<br />
+	Imprima uma linha em branco após cada caso de teste.</div>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	4 5<br />
+	1 2 5<br />
+	2 1 10<br />
+	3 4 8<br />
+	4 3 7<br />
+	2 3 6<br />
+	5<br />
+	1 2<br />
+	1 3<br />
+	1 4<br />
+	4 3<br />
+	4 1<br />
+	3 3<br />
+	1 2 10<br />
+	2 3 1<br />
+	3 2 1<br />
+	3<br />
+	1 3<br />
+	3 1<br />
+	3 2<br />
+	0 0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	0<br />
+	6<br />
+	6<br />
+	0<br />
+	Nao e possivel entregar a carta<br />
+        <br />
+	10<br />
+	Nao e possivel entregar a carta<br />
+	0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1128 - Ir e Vir</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1128 - Ir e Vir" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1128</span>
+            <h1>Ir e Vir</h1>
+            <div><p>Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Numa certa cidade há <strong>N</strong> intersecções ligadas por ruas de mão única e ruas com mão dupla de direcão. É uma cidade moderna, de forma que muitas ruas atravessam túneis ou têm viadutos. Evidentemente é necessário que se possa viajar entre quaisquer duas intersecções, isto é, dadas duas intersecções <strong>V</strong> e <strong>W</strong>, deve ser possível viajar de <strong>V</strong> para <strong>W</strong> e de <strong>W</strong> para <strong>V</strong>.<br />
+                    <br />
+                    Sua tarefa é escrever um programa que leia a descrição do sistema de tráfego de uma cidade e determine se o requisito de conexidade é satisfeito ou não.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. A primeira linha de um caso de teste contém dois números inteiros <strong>N</strong> e <strong>M</strong>, separados por um espaço em branco, indicando respectivamente o número de intersecções (2 ≤ <strong>N</strong> ≤ 2000) e o número de ruas (2 ≤ <strong>M</strong> ≤ <strong>N</strong>(<strong>N</strong>−1)/2). O caso de teste tem ainda mais <strong>M</strong> linhas, que contêm, cada uma, uma descrição de cada uma das <strong>M</strong> ruas. A descrição consiste de três inteiros <strong>V</strong>, <strong>W</strong> e <strong>P</strong>, separados por um espaço em branco, onde <strong>V</strong> e <strong>W</strong> são identificadores distintos de intersecções (1 ≤ <strong>V</strong>, <strong>W</strong> ≤ <strong>N</strong> , <strong>V</strong> ≠ <strong>W</strong> ) e <strong>P</strong> pode ser 1 ou 2; se <strong>P</strong> = 1 então a rua é de mão única, e vai de <strong>V</strong> para <strong>W</strong>; se <strong>P</strong> = 2 então a rua é de mão dupla, liga <strong>V</strong> e <strong>W</strong>. Não existe duas ruas ligando as mesmas intersecções.<br />
+                    <br />
+                    O ultimo caso de teste é seguido por uma linha que contém apenas dois números zero separados por um espaço em branco.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste seu programa deve imprimir uma linha contendo um inteiro G, onde G é igual a 1 se o requisito de conexidade está satisfeito, ou G é igual a 0, caso contrário.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+4 5<br />
+1 2 1<br />
+1 3 2<br />
+2 4 1<br />
+3 4 1<br />
+4 1 2<br />
+3 2 <br />
+1 2 2<br />
+1 3 2<br />
+3 2 <br />
+1 2 2<br />
+1 3 1<br />
+4 2<br />
+1 2 2<br />
+3 4 2<br />
+0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                1<br />
+                                1<br />
+                                0<br />
+                                0</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programação da SBC 2010</p>
+        </div>
+
+    </body>
+</html>

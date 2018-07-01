@@ -1,0 +1,104 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2151 - Soco do Rulk</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2151 - Soco do Rulk" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2151</span>
+				<h1>Soco do Rulk</h1>
+				<div>
+					<p>Por Ricardo Martins, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Certo dia, um grupo de cientistas resolveu calcular o poder de destruição do soco do super-herói Rulk, dos Programadores. Constataram que o soco em si afetaria qualquer parede, desde as menores até as gigantes. Assim, conseguiram sintetizar este efeito da seguinte forma: Converteram as paredes em uma matriz MxN, no seu estado de destruição atual, definindo valores inteiros a cada coordenada da parede, sendo 0 para menos destruída, indo até para 100, mais destruída. Além disso, determinaram qual seria a coordenada exata do soco. Constataram que o valor da coordenada do soco aumentaria em 10 pontos em seu estado de destruição, ficando mais frágil; e as coordenadas adjacentes a este ponto aumentariam em 9 pontos; as coordenadas adjacentes a estes aumentariam em 8 pontos; e assim sucessivamente. E quando chegasse a 1 ponto, todo o restante da parede também aumentaria em um ponto, afetando toda a parede.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>C</strong> (1 ≤ <strong>C</strong> ≤ 100), indicando o número de casos de teste. Esta linha é seguida pelos casos de teste. Cada caso é descrito por quatro números inteiros <strong>M</strong>, <strong>N</strong>, <strong>X</strong> e <strong>Y</strong> (1 ≤ <strong>X</strong> ≤ <strong>M</strong> ≤ 100 e 1 ≤ <strong>Y</strong> ≤ <strong>N</strong> ≤ 100), representando a quantidade de linhas e colunas da parede, e as coordenadas onde o soco foi dado. Em seguida, seguem <strong>M</strong> linhas, com <strong>N</strong> números inteiros <strong>Z</strong> (1 ≤ <strong>Z</strong> ≤ 90), separados por um espaço, representando os valores originais de cada bloco da parede.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, a saída deve aparecer a palavra Parede, seguida por um espaço, pelo número do caso e por dois pontos. A partir da linha seguinte deve mostrar a parede, formada por <strong>M</strong> linhas e <strong>N</strong> colunas, separadas por um espaço, descrevendo como ficou a parede após o soco.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+<p>1 4 1 3</p>
+
+<p>10 10 10 10</p>
+
+<p>3 15 2 2</p>
+
+<p>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</p>
+
+<p>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</p>
+
+<p>0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</p>
+
+							</td>
+							<td>
+								<p>Parede 1:</p>
+
+<p>18 19 20 19</p>
+
+<p>Parede 2:</p>
+
+<p>9 9 9 8 7 6 5 4 3 2 1 1 1 1 1</p>
+
+<p>9 10 9 8 7 6 5 4 3 2 1 1 1 1 1</p>
+
+<p>9 9 9 8 7 6 5 4 3 2 1 1 1 1 1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					VI Olimpíada Interna de Programação do IFSULDEMINAS - OLIP 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

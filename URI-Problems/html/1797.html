@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 1797 - Ferozes e Curiosos</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema D - Ferozes e Curiosos" />
+
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 1797 | [P1][P2]</span>
+			<h1>Ferozes e Curiosos</h1>
+			<div>
+				<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Vin Gasoline e seu melhor amigo Paul Runner estão na cobertura de um edifício em Abu Dhabi roubando um Lykan HyperSport. É o ano de 2300, e os andares dos prédios não mais se sustentam um sobre o outro, mas são todos flutuantes e movem-se de vez em quando, apenas mantendo sua altitude. No prédio em que nossos heróis estão, os andares são todos quadrados. A figura à esquerda ilustra o prédio como visto de cima e a figura à direita o ilustra como visto de frente, representando o solo pela linha mais espessa.</p>
+
+				<p class="center"> <img alt="" src="https://www.urionlinejudge.com.br/gallery/images/contests/ferozes.png" style="height:203px; width:529px" /></p>
+
+				<p>Gasoline e Runner querem abandonar o prédio o mais rápido possível e precisam, portanto, acelerar o supercarro para pular da cobertura para o penúltimo andar, do penúltimo para o antepenúltimo andar, e assim sucessivamente até chegarem ao solo e fugirem. Eles sabem que o Lykan HyperSport aguenta pular de um andar <strong>i</strong> para um andar <strong>j</strong> se e somente se <strong>j</strong> = <strong>i</strong> - 1 e a distância horizontal necessária a ser percorrida no ar não é maior que <strong>AAH</strong>, o <em>Alcance Aéreo Horizontal</em> do carro. Com o computador de bordo, eles têm todas as informações pertinentes à localização dos andares, mas precisam rapidamente calcular se a fuga será possível ou não.</p>
+
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A primeira linha da entrada estabelece o número <strong>N</strong> de andares do edifício (1 ≤ <strong>N</strong> ≤ 10<sup>6</sup>) e o valor de <strong>AAH</strong> (0 &lt; <strong>AAH</strong> &lt; 2 × 10<sup>4</sup>). Cada uma das <strong>N</strong> linhas seguintes descreve um andar do edifício através de 3 inteiros: <strong>X<sub>C</sub></strong>, <strong>Y<sub>C</sub></strong> e <strong>L</strong> (0 &lt; <strong>X<sub>C</sub></strong>, <strong>Y<sub>C</sub></strong>, <strong>L</strong> &lt; 10<sup>4</sup>), os quais representam respectivamente as coordenadas do centro e o comprimento do lado do andar. Os andares são descritos em ordem decrescente de altitude.</p>
+
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>A saída de seu programa deve consistir de uma só linha, contendo a palavra <strong class="code">YEAH</strong> caso a fuga seja possível ou a palavra <strong class="code">OUCH</strong> caso não seja.</p>
+
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5 5<br />
+								5 10 8<br />
+								9 14 6<br />
+								2 16 4<br />
+								12 5 10<br />
+								3 3 2</p>
+
+						</td>
+						<td>
+							<p>YEAH</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5 4<br />
+								5 10 8<br />
+								9 14 6<br />
+								2 16 4<br />
+								12 5 10<br />
+								3 3 2</p>
+
+						</td>
+						<td>
+							<p>OUCH</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="both"></div>
+
+			<p class="footer">
+				Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática 2015
+			</p>
+		</div>
+	</body>
+</html>

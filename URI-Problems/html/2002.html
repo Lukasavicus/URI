@@ -1,0 +1,119 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2002 - Casa de Rogério</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2002 - Casa de Rogério" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2002</span>
+				<h1>Casa de Rogério</h1>
+				<div>
+					<p>Por Thalyson Nepomuceno, UECE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Rogério é um menino bem esperto e malino. Ele gosta de usar seu tempo livre para criar jogos de tabuleiro.<br />
+O último jogo criado por Rogério foi o "Casa de Rogério".</p>
+
+<p><br />
+Nesse jogo, o tabuleiro tem tamanho <em>N</em>x<em>M</em>. Cada célula do tabuleiro possui um valor inteiro.<br />
+O Rogério (Personagem do jogo) começa na célula superior esquerda e a casa de Rogério na célula inferior direita.<br />
+O objetivo do jogo é mover Rogério até a casa com menor custo possível.</p>
+
+<p><br />
+Cada rodada, você pode mover Rogério para uma das células adjacentes (não é permitido mover Rogério nas diagonais). O custo para mover Rogério de uma célula de valor <em>X</em> para uma célula de valor <em>Y</em> é definido pela função C(<em>X</em>,<em>Y</em>).</p>
+
+<p></p>
+
+<ul>
+	<li>C(<em>X</em>, <em>Y</em>) = min(<em>X</em>,<em>Y</em>) XOR (min(<em>X</em>,<em>Y</em>)+1) XOR ... XOR max(<em>X</em>,<em>Y</em>).</li>
+</ul>
+
+<p><br />
+Perceba que se <em>X</em> é igual a <em>Y</em>, C(<em>X</em>,<em>Y</em>) = <em>X</em>. XOR é a operação binária conhecida como "ou exclusivo".</p>
+
+<p>Para facilitar a entendimento da função C(<em>X</em>,<em>Y</em>), seu código em C++ está apresentado abaixo:</p>
+
+<p></p>
+
+<p><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2002.jpg" style="float:center; height:200px; width:700px" /></p>
+
+<p></p>
+
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de vários casos de teste.<br />
+A primeira linha de cada caso de teste contém dois inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 100) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 100), representando o tamanho do tabuleiro.<br />
+Em seguida, <strong>N</strong> linhas, cada uma com <strong>M</strong> inteiros, representando os valores das células do tabuleiro (o valor de cada célula pode variar de 1 até 1000000000000). A entrada termina com final de arquivo (EOF). E garantido que a resposta pode ser representada por um inteiro de 64 bits com sinal.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima o menor custo de mover Rogério até a Casa de Rogério</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 2<br />
+5 5<br />
+5 5<br />
+3 3<br />
+8 8 6<br />
+8 6 8<br />
+16 16 6</p>
+
+							</td>
+							<td>
+								<p>10<br />
+35</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Olimpíada Cearense de Informática - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

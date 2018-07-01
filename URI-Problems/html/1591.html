@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1591 - Dia da Vovó</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema - Dia da Vovó" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1591</span>
+                <h1>Dia da Vovó</h1>
+                <div>
+                    <p>Por Bruno Adami, Universidade de São Paulo - São Carlos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Vovó está resolvendo um caça palavras. Você quer ajudar muito sua Vovó e vai desenvolver um programa que, dado o caça palavras e as palavras de busca, imprima o número de vezes que elas aparecem.<p>
+					</p>Neste caça palavras em específico, as palavras estarão apenas na vertical ou horizontal. O caça palavras não dá voltas, ou seja, você não pode ir da última coluna para a primeira! As palavras podem sobrescrever as outras, ou seja, uma letra do caça palavras pode ser usada por mais de uma palavra. Conte palavras de uma letra apenas uma vez, veja o primeiro caso de teste de exemplo!</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+
+                    <p>Na primeira linha terá um inteiro <strong>T</strong> (<strong>T</strong> &lt;= 100) indicando o número de casos de teste.<p>
+					</p>A primeira linha de cada caso terá dois números <strong>L</strong> (1 ≤ <strong>L </strong>≤ 10* ou 1 ≤ <strong>L </strong>≤ 50**) e <strong>C </strong> (1 ≤ <strong>C</strong> ≤ 10* ou 1 ≤ <strong>C</strong> ≤ 50**) indicando o número de linhas e de colunas do caça palavras respectivamente. Nas seguintes <strong>L</strong> linhas terão cada uma <strong>C </strong>caracteres minúsculos do alfabeto indicando as letras do caça palavras. Na linha seguinte terá um número <strong>P</strong> (1 ≤ <strong>P </strong>≤ 50) indicando quantas palavras você deve procurar. Nas próximas <strong>P </strong>linhas terá uma palavra a ser pesquisada. As palavras a serem pesquisadas terão tamanho condizentes com os limites do caça palavras. As strings na entrada só conterão letras minúsculas do alfabeto.</p>
+
+                   <p>*ocorrerá em 90% dos casos;</br>
+                        **ocorrerá nos casos restantes.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso, imprima para cada palavra em uma única linha o número de vezes que ela aparece no caça palavras, na mesma ordem da entrada. Se a palavra não aparecer imprima 0.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3<br />
+                                3 3<br />
+                                asa<br />
+                                bao<br />
+                                oab<br />
+                                6<br />
+                                a<br />
+                                asa<br />
+                                bao<br />
+                                boa<br />
+                                aob<br />
+                                ab<br />
+                                5 5<br />
+                                abcde<br />
+                                fghij<br />
+                                klmno<br />
+                                pqrst<br />
+                                uvwxy<br />
+                                6<br />
+                                agm<br />
+                                cdef<br />
+                                imq<br />
+                                ye<br />
+                                au<br />
+                                gfji<br />
+                                4 3<br />
+                                aaa<br />
+                                aaa<br />
+                                aaa<br />
+                                aaa<br />
+                                3<br />
+                                a<br />
+                                aa<br />
+                                aaa</p>
+
+                            </td>
+                            <td>
+                                <p>4</p>
+
+                                <p>1</p>
+                                
+                                <p>1</p>
+                                
+                                <p>0</p>
+                                
+                                <p>1</p>
+                                
+                                <p>2</p>
+                                
+                                <p>0</p>
+                                
+                                <p>0</p>
+                                
+                                <p>0</p>
+                                
+                                <p>0</p>
+                                
+                                <p>0</p>
+                                
+                                <p>0</p>
+                                
+                                <p>12</p>
+                                
+                                <p>17</p>
+                                
+                                <p>10</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Seletiva USP São Carlos 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

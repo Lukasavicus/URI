@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1672 - Em Perigo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1672 - Em Perigo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1672</span>
+                <h1>Em Perigo</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Flavius Josephus e 40 amigos rebeldes foram encurralados pelos Romanos. Seus companheiros prefiriram o suicídio à rendição, então eles decidiram formar um círculo e matar cada terceira pessoa e continuar até que não sobre ninguém. Josephus não gostou da ideia de se matar então ele calculou a posição para ser o último homem vivo (ele não cometeu suicídio já que ninguém estava olhando).</p>
+
+<p>Nós vamos variar esse "jogo" de modo que cada segunda pessoa saia do círculo. Claro que haverá mais de 41 pessoas uma vez que agora temos computadores. Você deve calcular a posição segura. Seja cuidadoso pois talvez nós utilizemos o seu programa para calcular o ganhador desta competição!</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada caso de teste é composto por um número <strong>N</strong> que representa o número de participantes desse jogo. Para dificultar as coisas, o formato dele é <strong>XYeZ</strong> com a seguinte semântica: quando <strong>N</strong>&nbsp;é escrito em notação decimal, seu primeiro digito é <strong>X&nbsp;</strong>e seu segundo digito é <strong>Y</strong>, seguidos por <strong>Z&nbsp;</strong>zeros. Onde 0 &le; <strong>X</strong>, <strong>Y</strong> &le; 9, o número de zeros é 0 &le; <strong>Z</strong> &le; 6. Você pode assumir que <strong>N</strong> &gt; 0. O último caso de teste é a string <strong>00e0</strong>.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste exiba uma linha contendo a posição da pessoa que sobreviverá. Considere que os participantes possuem identificações sequenciais de <strong>1</strong> a <strong>N</strong> e que a contagem começa com a pessoa 1, i.e., a primeira pessoa a sair do círculo é aquela com o número 2. Por exemplo, se houver 5 pessoas no círculo, a eliminação ocorrerá da seguinte maneira: 2, 4, 1, 5 e a pessoa 3 continuará viva.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>05e0</p>
+
+<p>01e1</p>
+
+<p>42e0</p>
+
+<p>66e6</p>
+
+<p>00e0</p>
+
+                            </td>
+                            <td>
+                                <p>3</p>
+
+<p>5</p>
+
+<p>21</p>
+
+<p>64891137</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2004/2005
+                </p>
+            </div>
+
+        </body>
+    </html>

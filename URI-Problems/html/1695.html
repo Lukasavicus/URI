@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1695 - Ordenando Árvores</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1695 - Ordenando Árvores" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1695</span>
+                <h1>Ordenando Árvores</h1>
+                <div>
+                    <p>Por Carlos Guillen, ICMC - USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>É sabido que o Conde de Limãograb é o cara mais estranho no reino doce, mas a sua mais recente obsessão foi longe demais: ele está tentando descobrir a ordem de todas as coisas!</p>
+
+                    <p>Até agora ele tem tido sucesso em um monte de problemas de ordenação, mas ele está ficando louco, porque ele encontrou um problema que não pode resolver: dada uma árvore com raiz que consiste de N vértices, onde cada vértice i tem um valor Vi, ele tentou descobrir a ordem crescente de todos os valores na subárvore com raiz no vértice X.</p>
+
+                    <p>Ele resolveu facilmente para algumas sub-árvores, mas depois ele se cansou e notou que ninguém seria capaz de realizar essa tarefa em curto espaço de tempo. A fim de aliviar sua frustração, ele pediu-lhe para responder a M consultas: para um dado vértice X lhe dizer qual é o K-ésimo menor valor da subárvore com raiz no vértice X.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém um número inteiro <strong>T</strong> (<strong>1</strong> ≤ <strong>T</strong> ≤ <strong>35</strong>), o número de casos de teste.</p>
+
+                    <p>A primeira linha de cada caso de teste contém dois inteiros <strong>N</strong> e <strong>M</strong> (<strong>1</strong> ≤ <strong>N</strong>, <strong>M</strong> ≤ <strong>10<sup>5</sup></strong>), o número de vértices e o número de consultas, respectivamente.</p>
+
+                    <p>Vamos supor que os vértices das árvores são identificados por inteiros de <strong>1</strong> a <strong>N</strong>, e que a raiz da árvore é o vértice <strong>1</strong>. A próxima linha contém uma seqüência de números inteiros <strong>V1</strong>, <strong>V2</strong>, ..., <strong>VN</strong> (<strong>1</strong> ≤ <strong>Vi</strong> ≤ <strong>10<sup>9</sup></strong>), os valores de cada vértice.</p>
+
+                    <p>Cada uma das próximas <strong>N</strong> - <strong>1</strong> linhas contém dois inteiros <strong>Ai</strong> e <strong>Bi</strong> (<strong>1</strong> ≤ <strong>Ai</strong>, <strong>Bi</strong> ≤ <strong>N</strong>), os pares de vértices conectados por uma aresta na árvore. A árvore é conectada e válida.</p>
+
+                    <p>As próximas <strong>M</strong> linhas contêm as consultas, cada linha contendo dois inteiros <strong>X</strong> e <strong>K</strong> (<strong>1</strong> ≤ <strong>X</strong>, <strong>Ki</strong> ≤ <strong>N</strong>), que é, encontrar o <strong>K</strong>-ésimo menor valor na subárvore com raiz em <strong>X</strong>. É garantido que cada consulta é válida.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma única linha contendo as respostas para as perguntas na ordem em que aparecem na entrada, cada resposta deve ser seguida por um único espaço (mesmo para a última consulta).</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4</p>
+
+                            <p>1 1</p>
+
+                            <p>10</p>
+
+                            <p>1 1</p>
+
+                            <p>3 3</p>
+
+                            <p>1 1 1</p>
+
+                            <p>1 2</p>
+
+                            <p>3 2</p>
+
+                            <p>1 3</p>
+
+                            <p>2 2</p>
+
+                            <p>3 1</p>
+
+                            <p>3 2</p>
+
+                            <p>5 6 7</p>
+
+                            <p>1 2</p>
+
+                            <p>3 1</p>
+
+                            <p>1 2</p>
+
+                            <p>3 1</p>
+
+                            <p>6 2</p>
+
+                            <p>1 5 1 2 3 7</p>
+
+                            <p>2 1</p>
+
+                            <p>6 3</p>
+
+                            <p>2 4</p>
+
+                            <p>3 1</p>
+
+                            <p>5 3</p>
+
+                            <p>1 4</p>
+
+                            <p>3 3</p>
+
+                            </td>
+                            <td>
+                                <p>10 <br />
+                                1 1 1 <br />
+                                6 7 <br />
+                                3 7 </p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Dados de entrada e saida gigantescos, cuidado com certas línguagens!</br>
+                    Contest Road to Fortaleza III 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

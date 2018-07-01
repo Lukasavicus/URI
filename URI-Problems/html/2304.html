@@ -1,0 +1,147 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2304 - Banco Imobiliário</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2304 - Banco Imobiliário" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2304</span>
+				<h1>Banco Imobiliário</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2006 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Monopólio (conhecido no Brasil como Banco Imobiliário) é&nbsp;um dos jogos mais famosos do mundo, com 750 milhões de cópias vendidas. Durante o jogo, os jogadores podem comprar propriedades que estejam disponíveis, vendê-las para que elas voltem a ficar disponíveis, e cobrar aluguel pelo uso de uma determinada propriedade por outro jogador. O objetivo do jogo é&nbsp;acumular a maior quantidade de dinheiro possível.</p>
+
+<p>O jogo é&nbsp;composto por um tabuleiro e um conjunto de cédulas de dinheiro. Três amigos, Dália, Elói e Félix, querem jogar uma partida de Monopólio, mas o irmãozinho menor de Dália escondeu as cédulas de dinheiro. Os três amigos decidiram jogar a partida assim mesmo, anotando em um papel todas as operações que ocorreram durante o jogo (compras, vendas e pagamentos de aluguéis). Assim que eles pararam de jogar, perceberam que levaria muito tempo para descobrir quanto dinheiro cada um acumulou. Eles então pediram sua ajuda para determinar esses valores.</p>
+
+<p>Sua tarefa é&nbsp;escrever um programa que, a partir dos registros de jogadas realizados pelos três jogadores, determine a quantidade de dinheiro acumulada por cada um dos jogadores.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado). A primeira linha da entrada contém dois inteiros, <strong>I</strong> e <strong>N</strong> que indicam respectivamente as quantias de dinheiro que Dália, Elói e Félix possuem no início do jogo (1 ≤ <strong>I</strong> ≤ 1000000) e o número de operações realizadas durante o jogo (1 ≤ <strong>N</strong> ≤ 10000). Note que os três jogadores iniciam a partida com a mesma quantidade de dinheiro. Os jogadores são representados na entrada sempre pela letra inicial de seu nome (‘D’, ‘E’ ou ‘F’). As <strong>N</strong> linhas contém as operações ocorridas durante o jogo. Cada linha pode ter um dos formatos abaixo:</p>
+
+<ul>
+	<li>Compra — a letra C, seguida da letra inicial de um jogador J e de um inteiro X que representa o valor gasto por J na compra (0 &lt; <strong>X</strong> ≤ 1000000). Exemplo: ‘C D 1000’.</li>
+	<li>Venda — a letra V, seguida da letra inicial de um jogador J e de um inteiro X que representa o valor recebido por J na venda (0 &lt; <strong>X</strong> ≤ 1000000). Exemplo: ‘V E 200’.</li>
+	<li>Aluguel — a letra A, seguida da letra inicial de um jogador J que recebe o aluguel, da letra inicial do jogador K que paga o aluguel e de um inteiro X que representa o valor do aluguel (J !=&nbsp;<strong>K</strong> e 0 ≤ <strong>X</strong> ≤ 1000000). Exemplo: ‘A F D 500’.</li>
+</ul>
+
+<p>Os valores intermediários e totais acumulados por cada jogador estão entre 0 e 1000000.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na saída padrão, uma única linha composta de três inteiros que correspondem à&nbsp;quantidade de dinheiro acumulada por Dália, Elói e Félix, nesta ordem.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1000 1</p>
+
+<p>C D 500</p>
+
+							</td>
+							<td>
+								<p>500 1000 1000</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>1000 3</p>
+
+<p>C D 100</p>
+
+<p>V E 200</p>
+
+<p>A D F 1000</p>
+
+                    </td>
+                    <td>
+                        <p>1900 1200 0</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>10000 5</p>
+
+<p>C D 5000</p>
+
+<p>C E 3000</p>
+
+<p>A D F 1000</p>
+
+<p>V E 4000</p>
+
+<p>A F E 1000</p>
+
+                    </td>
+                    <td>
+                        <p>6000 10000 10000</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2006 Fase 1 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

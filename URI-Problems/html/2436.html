@@ -1,0 +1,118 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2436 - Robô</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2436 - Robô" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2436</span>
+				<h1>Robô</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Um novo robô de limpeza para um grande salão retangular está sendo desenvolvido. O robô vai percorrer o caminho definido por uma linha marcada no chão, que é coberto com ladrilhos quadrados, brancos e pretos: ladrilhos pretos indicam o caminho que o robô deve percorrer. Ao movimentar-se, o robô pode andar apenas em linha reta, para a frente. Parado, o robô pode girar para as quatro direções (Norte, Sul, Leste e Oeste).</p>
+
+<p>Dados um mapa indicando a cor de cada ladrilho no chão e a posição inicial do robô, você deve escrever um programa que determine a posição final do robô.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>L</strong> e <strong>C</strong> (1 ≤ <strong>L</strong>, <strong>C</strong> ≤ 1000) indicando as dimensões do salão (número de linhas e número de colunas), medidas em ladrilhos. A segunda linha contém dois inteiros <strong>A</strong> e <strong>B</strong>&nbsp;(1 ≤ <strong>B</strong>&nbsp;≤ <strong>L</strong>, 1 ≤ <strong>B</strong> ≤ <strong>C</strong>) indicando respectivamente a linha e a coluna da posição inicial do robô (as linhas são numeradas de 1 a <strong>L</strong>, de cima para baixo; as colunas são numeradas de 1 a <strong>C</strong>, da esquerda para a direita). Cada uma das <strong>L</strong> linhas seguintes contém <strong>C</strong> inteiros, zeros ou uns. Nessa representação, o valor ‘1’ indica que o ladrilho corresponte é preto. O ladrilho da linha <strong>A</strong> e coluna <strong>B</strong> sempre é preto. O caminho do robô é definido unicamente: em nenhum momento o robô necessita fazer uma escolha sobre em qual direção ir (em outras palavras, todo ladrilho preto tem no máximo dois vizinhos pretos e o ladrilho inicial tem um vizinho preto).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir apenas uma linha, contendo dois números inteiros, respectivamente a linha e a coluna da posição final do robô.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 5</p>
+
+<p>1 1</p>
+
+<p>1 0 0 0&nbsp;1</p>
+
+<p>1 0 0&nbsp;1&nbsp;1</p>
+
+<p>1 1 1 1 0</p>
+
+							</td>
+							<td>
+								<p>1 5</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 7</p>
+
+<p>3 4</p>
+
+<p>0 0 1 1 1 1 1</p>
+
+<p>1 1 1 0 0 0 1</p>
+
+<p>1 0 0 1 0 1 1</p>
+
+<p>1 1 0 1 1 1 0</p>
+
+							</td>
+							<td>
+								<p>4 2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2013 Fase 1 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

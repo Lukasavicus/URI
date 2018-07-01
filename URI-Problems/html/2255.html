@@ -1,0 +1,119 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2255 - Self-Assembly</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2255 - Self-Assembly" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2255</span>
+				<h1>Self-Assembly</h1>
+				<div>
+					<p>Por ICPC 2013 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ru.gif' alt='RU' /> Russian Federation</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Automatic Chemical Manufacturing is experimenting with a process called self-assembly. In this process, molecules with natural affinity for each other are mixed together in a solution and allowed to spontaneously assemble themselves into larger structures. But there is one problem: sometimes molecules assemble themselves into a structure of unbounded size, which gums up the machinery.</p>
+
+					<p>You must write a program to decide whether a given collection of molecules can be assembled into a structure of unbounded size. You should make two simplifying assumptions: 1) the problem is restricted to two dimensions, and 2) each molecule in the collection is represented as a square. The four edges of the square represent the surfaces on which the molecule can connect to other compatible molecules.</p>
+
+					<p>In each test case, you will be given a set of molecule descriptions. Each type of molecule is described by four two-character connector labels that indicate how its edges can connect to the edges of other molecules. There are two types of connector labels:</p>
+
+					<ul>
+						<li>An uppercase letter (A, . . . , Z) followed by + or −. Two edges are compatible if their labels have the same letter but different signs. For example, A+ is compatible with A− but is not compatible with A+ or B−.</li>
+						<li>Two zero digits 00. An edge with this label is not compatible with any edge (not even with another edge labeled 00).</li>
+					</ul>
+
+					<p>Assume there is an unlimited supply of molecules of each type, which may be rotated and reflected. As the molecules assemble themselves into larger structures, the edges of two molecules may be adjacent to each other only if they are compatible. It is permitted for an edge, regardless of its connector label, to be connected to nothing (no adjacent molecule on that edge).</p>
+
+					<p>Figure A.1 shows an example of three molecule types and a structure of bounded size that can be assembled from them (other bounded structures are also possible with this set of molecules).</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_153_A.png" width="550" alt="sample"> </center>
+
+					<p style="text-align: center;">Figure A.1: Illustration of Sample Input 1.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case. A test case consists of two lines. The first contains an integer <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 40 000) indicating the number of molecule types. The second line contains <strong>n</strong> eight-character strings, each describing a single type of molecule, separated by single spaces. Each string consists of four two-character connector labels representing the four edges of the molecule in clockwise order.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Display the word 'unbounded' if the set of molecule types can generate a structure of unbounded size. Otherwise, display the word 'bounded'.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+								<p>A+00A+A+ 00B+D+A- B-C+00C+</p>
+
+							</td>
+							<td>
+								<p>bounded</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1</p>
+
+								<p>K+K-Q+Q</p>
+
+							</td>
+							<td>
+								<p>unbounded</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC 2013 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

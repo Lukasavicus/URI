@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1640 - Reservando Hotéis</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1640 - Reservando Hotéis" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1640</span>
+                <h1>Reservando Hotéis</h1>
+                <div>
+                    <p>Contest Local, University of Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 4</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Uma companhia de transportes frequentemente necessita transportar bens de uma cidade para outra. A companhia de transportes fez um acordo especial com uma rede de hotéis que permite que seus motoristas fiquem hospedados nos hotéis desta rede gratuitamente. Os motoristas podem dirigir apenas 10 horas por dia. A companhia de transportes deseja encontrar uma rota que parte da cidade inicial e termina na cidade de destino tal que o motorista possa sempre passar a noite em um dos hotéis da rede, e que este precise dirigir no máximo 10 horas de um hotel até o próximo, ou até o destino. Naturalmente, o número de dias necessários para a entrega ser realizada também deve ser minimizado.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>O arquivo de entrada contém diversos casos de teste. Cada caso de teste começa com uma linha contendo um inteiro <strong>n</strong>, (2 ≤ <strong>n</strong> ≤ 10000), indicando o número de cidades a serem consideradas durante o planejamento. Por simplicidade, as cidades são numeradas de 1 a <strong>n</strong>, onde 1 é a cidade inicial, e <strong>n</strong> é a cidade de destino. A próxima linha contem um inteiro <strong>h</strong> seguido pelos números<strong> c<sub>1</sub></strong>, <strong>c<sub>2</sub></strong>, ..., <strong>c<sub>h</sub></strong> indicando o número de cidades nas quais os hotéis da rede estão localizados. Você pode assumir que 0 ≤ <strong>h</strong> ≤ min(n, 100). A terceira linha de cada caso de teste contém um inteiro <strong>m</strong>(1 ≤ <strong>m </strong>≤ 10<sup>5</sup>), que representa o número de estradas a serem consideradas para o planejamento da rota. As <strong>m</strong> linhas seguintes descrevem as estradas. Cada estrada é descrita por uma linha contendo três inteiros <strong>a, b, t</strong>(1 ≤ <strong>a</strong>, <strong>b</strong> ≤ <strong>n</strong> e <strong>t</strong> ≤ 600) onde <strong>a, b</strong> são duas cidades conectadas pela estrada, e <strong>t</strong> é o tempo em minutos necessário para o motorista dirigir do final de uma estrada ao outro. A entrada acaba quando <strong>n</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma linha contendo o número mínimo de hotéis nos quais a companhia de transportes deve realizar reserva para uma entrega da cidade 1 à cidade <strong>n</strong>. Se não for possível encontrar uma rota que o motorista tenha de dirigir no máximo 10 horas por dia, imprima -1.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>6</p>
+
+<p>3 2 5 3</p>
+
+<p>8</p>
+
+<p>1 2 400</p>
+
+<p>3 2 80</p>
+
+<p>3 4 301</p>
+
+<p>4 5 290</p>
+
+<p>5 6 139</p>
+
+<p>1 3 375</p>
+
+<p>2 5 462</p>
+
+<p>4 6 300</p>
+
+<p>3</p>
+
+<p>0</p>
+
+<p>2</p>
+
+<p>1 2 371</p>
+
+<p>2 3 230</p>
+
+<p>0</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+
+<p>-1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2009
+                </p>
+            </div>
+
+        </body>
+    </html>

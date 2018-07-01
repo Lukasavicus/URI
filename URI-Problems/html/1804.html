@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 1804 - Precisa-se de Matemáticos em Marte</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema K - Precisa-se de Matemáticos em Marte" />
+
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 1804 | [P2][Univ]</span>
+			<h1>Precisa-se de Matemáticos em Marte</h1>
+			<div>
+				<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Aconteceu na semana passada em Beberibe, CE, o <em>VIII Latin-American Algorithms, Graphs and Optimisation Symposium</em> (LAGOS 2015), uma conferência que reuniu matemáticos e cientistas da Computação do mundo todo para discutirem alguns desafios computacionais. A fim de que os participantes pudessem relaxar um pouco, os organizadores do evento contrataram <em>buggies</em> para levar os pesquisadores a alguns pontos turísticos da região. Os <em>buggies</em> saíram do hotel numa fila, um atrás do outro.</p>
+
+				<p>Quem conhece os passeios de <em>buggy</em> do Ceará sabe que o turista pode pedir ao <em>bugueiro</em> um passeio <em>com emoção</em> ou <em>sem emoção</em>. No entanto, a excursão do LAGOS contou com uma emoção extra. Como em Marte atualmente há uma carência de pesquisadores em Algoritmos, Grafos e Otimização, alienígenas marcianos começaram a abduzir alguns <em>buggies</em>, com todas as pessoas a bordo (inclusive o pobre <em>bugueiro</em>, que nada tinha a ver com a história). Foi muito triste nosso planeta ter perdido mentes tão brilhantes para Marte, mas a tragédia teria sido menor se cada <em>bugueiro</em> mantivesse atualizada a informação de quantas pessoas no total estavam nos <em>buggies</em> atrás dele — assim ele poderia perceber a aproximação da sonda alienígena e acelerar o <em>buggy</em>.</p>
+
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>Um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>) constitui a primeira linha da entrada, o qual representa o número de <em>buggies</em> que deixaram o hotel. A segunda linha da entrada é constituída por <strong>N</strong> inteiros <strong>p<sub>i</sub></strong> (1 ≤ <strong>p<sub>i</sub></strong> ≤ 5, 1 ≤ <strong>i</strong> ≤ <strong>N</strong>), cada um representando o número de pessoas no <em>buggy</em> <strong>i</strong> (incluindo o <em>bugueiro</em>). Cada uma das linhas seguintes pode ser constituída:</p>
+
+				<ul>
+					<li>por um caractere 'a' seguido de um inteiro <strong>i</strong> (1 ≤ <strong>i</strong> ≤ <strong>N</strong>), o qual caracteriza a abdução do <em>buggy</em> <strong>i</strong> (que ainda não havia sido abduzido);</li>
+
+					<li>por um caractere '?' seguido de um inteiro <strong>i</strong> (1 ≤ <strong>i</strong> ≤ <strong>N</strong>), o qual caracteriza que, naquele momento, o <em>bugueiro</em> do (ainda) não abduzido <em>buggy</em> <strong>i</strong> gostaria de saber quantas pessoas da excursão restavam atrás do seu buggy.</li>
+				</ul>
+
+				<p>Considere que o identificador <strong>i</strong> de um <em>buggy</em> não muda. Assim, o terceiro <em>buggy</em> a deixar o hotel deverá sempre ser identificado pelo inteiro 3, mesmo que os <em>buggies</em> 1 e 2 sejam abduzidos.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada linha "? <strong>i</strong>", imprima uma linha contendo o número de pessoas da excursão ainda remascentes atrás do <em>buggy</em> <strong>i</strong> naquele momento. Mas não seja <em>bugueiro</em> (nada de pôr <em>bugs</em> em seu código)!</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>10<br />
+								1 2 3 4 5 4 3 2 1 2<br />
+								a 9<br />
+								? 10<br />
+								a 2<br />
+								a 5<br />
+								? 6<br />
+								a 6<br />
+								? 10</p>
+
+						</td>
+						<td>
+							<p>24<br />
+								8<br />
+								13</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class="footer">
+				Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática 2015
+			</p>
+		</div>
+	</body>
+</html>

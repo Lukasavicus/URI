@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2737 - Advogados</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - SQL - Problema 2737 - Advogados" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default-sql.css">
+  	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28047757-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <span>URI Online Judge <strong>SQL</strong> | 2737 </span>
+      <h1>Advogados</h1>
+      <div>
+        <p>Marcos Lima <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem-sql">
+      
+      <div>
+		<p>O diretor da Mangojata Advogados ordenou que lhe fosse entregue um relatório sobre seus advogados atuais.</p>
+		<p>O diretor quer que você mostre para ele o nome do advogado que têm mais clientes, o nome do advogado que tem menos clientes e a média de clientes entre todos os advogados.</p>
+		<p>OBS: Antes de apresentar a média mostre um campo chamado <b>Average</b> a fim de deixar o relatório mais apresentável. A média deverá ser apresentada em inteiros.</p>
+      </div>
+
+      <div>
+        <h2>Esquema</h2>
+        <div>
+          <table class="tables-fifty">
+            <caption>lawyers</caption>
+		      <tr>
+		        <td class="half-column"><strong>Coluna</strong></td>
+		        <td class="half-column"><strong>Tipo</strong></td>
+		      </tr>
+		      <tr>
+		        <td>register (PK)</td>
+		        <td>integer</td>
+		      </tr>
+		      <tr>
+		        <td>name</td>
+		        <td>varchar</td>
+		      </tr>
+		      <tr>
+		        <td>customers_number</td>
+		        <td>integer</td>
+		      </tr>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <h2>Tabelas</h2>
+          <div>
+            <table class="tables-fifty">
+              <caption>lawyers</caption>
+              <tr>
+                <td><strong>register</strong></td>
+                <td><strong>name</strong></td>
+				<td><strong>customers_number</strong></td>
+              </tr>
+              <tr>
+                <td class="center">1648</td>
+                <td>Marty M. Harrison</td>
+				<td class="center">5</td>
+              </tr>
+              <tr>
+                <td class="center">2427</td>
+                <td>Jonathan J. Blevins</td>
+				<td class="center">15</td>
+              </tr>
+              <tr>
+                <td class="center">3365</td>
+                <td>Chelsey D. Sanders</td>
+				<td class="center">20</td>
+              </tr>
+              <tr>
+                <td class="center">4153</td>
+                <td>Dorothy W. Ford</td>
+				<td class="center">16</td>
+              </tr>
+              <tr>
+                <td class="center">5525</td>
+                <td>Penny J. Cormier</td>
+				<td class="center">6</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <h2>Exemplo de Saída</h2>
+            <div>
+              <table class="tables-fifty">
+                <tr>
+                  <td><strong>name</strong></td>
+				  <td><strong>customers_number</strong></td>
+                </tr>
+                <tr>
+				  <td>Chelsey D. Sanders</td>
+				  <td class="center">20</td>
+                </tr>
+				  <td>Marty M. Harrison</td>
+				  <td class="center">5</td>
+                </tr>
+				<tr>
+				  <td>Average</td>
+				  <td class="center">12</td>				
+				</tr>
+              </table>
+            </div>
+          </div>
+        
+    </div>
+  </body>
+</html>

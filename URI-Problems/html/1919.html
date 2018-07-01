@@ -1,0 +1,112 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1919 - Ajude Nhonho</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1919 - Ajude Nhonho" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1919</span>
+				<h1>Ajude Nhonho</h1>
+				<div>
+					<p>Por Dâmi Henrique, Inatel <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Depois de Professor Girafales descobrir que Nhonho faltava às aulas e pedia para Chaves assinar seu nome na lista de presença em troca de um pão com presunto, Nhonho começou a receber toda semana um desafio especial do professor, e se ele não os resolvesse, seria dedurado para seu pai.</p>
+
+					<p>O desafio dessa semana se chama “Soma permutada”, e consiste em resolver o seguinte enigma: <strong>abc + acb + bac + bca + cab + cba = K</strong>, dado um valor de <strong>K</strong>, sem que ocorram repetições de dígitos (a ≠ b ≠ c).</p>
+
+					<p>Com <strong>K</strong> = <strong>1332</strong>, uma das possíveis soluções seria usar <strong>a = 1</strong>,<strong> b = 2</strong> e <strong>c = 3</strong>, somando suas permutações: 123 + 132 + 213 + 231 + 312 + 321 = <strong>1332</strong>.</p>
+
+					<p>Outra solução seria: <strong>a = 0</strong>,<strong> b = 1</strong>,<strong> c = 5: </strong>015 + 051 + 105 + 150 + 501 + 510 = <strong>1332.</strong></p>
+
+					<p>As explicações acima usaram apenas 3 dígitos para maior facilidade de entendimento, o problema real, que Professor Girafales passou a Nhonho e você terá que ajudá-lo a resolver, consiste em <strong>5 dígitos</strong>, e deverá ser somada todas suas permutações (abcde + abced + ..... + edcba), sem repetição de dígitos (a ≠ b ≠ c ≠ d ≠ e).</p>
+
+					<p>Dado o valor de <strong>K</strong>, exiba, lexicograficamente, todos os possíveis conjuntos de números que satisfaçam o enigma de Girafales.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada possui um inteiro <strong>T</strong>, indicando a quantidade de casos de testes. Cada uma das <strong>T</strong> linhas a seguir contém um inteiro <strong>K </strong>(1 ≤ K ≤ 10<sup>7</sup>), como descrito acima.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso, exiba lexicograficamente o(s) conjunto(s) de valores {a, b, c, d, e} que resolvem o enigma do professor Girafales, ou “impossivel” caso não exista solução.</p>
+
+					<p>Deixe uma linha em branco após cada caso de teste. Observe a formatação de saída.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+								<p>9066576</p>
+
+								<p>8731231</p>
+
+								<p>3199968</p>
+
+							</td>
+							<td>
+								<p>
+									{4,6,7,8,9}<br/>
+
+									<br/>
+
+									<p>impossivel<br/>
+
+									<br/>
+
+									<p>{0,1,2,3,6}<br/>
+
+									<p>{0,1,2,4,5}<br/>
+
+									<br/>
+								</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+	
+				<p class="footer">
+					Codando na Vila - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1239 - Atalhos Bloggo </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1239 - Atalhos Bloggo " />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1239</span>
+            <h1>Atalhos Bloggo </h1>
+            <div><p>
+                    Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif" style="width: 16px; height: 11px;" /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Você está ajudando a desenvolver um sistema de gerenciamento de weblog chamado bloggo. Embora bloggo coloque todo o conteúdo direto no website em HTML, nem todos autores apreciam usar tags HTML em seus textos. Para tornar a vida deles mais fáceis, bloggo oferece uma sintaxe simples chamada <i>atalhos</i> para obter alguns efeitos textuais em HTML. Sua tarefa é, dado um documento escrito com atalhos, traduzi-lo para o HTML apropriado.</p>
+                <p>
+                    <br />Um atalho é usado para colocar texto em itálico. HTML faz isto com as tags &lt;i&gt; e &lt;/i&gt;, mas no bloggo um autor pode simplesmente colocar um pedaço de texto entre dois caracteres de sublinhado, '_'. Portanto, onde um autor escreve </p>
+                <pre>  You _should_ see the baby elephant at the zoo!
+                </pre>
+                <p>
+                    bloggo vai publicar o seguinte:</p>
+                <pre>  You &lt;i&gt;should&lt;/i&gt; see the baby elephant at the zoo!
+                </pre>
+                <p>
+                    Outro atalho serve para colocar texto em negrito, o que, em HTML, é feito com as tags &lt;b&gt; e &lt;/b&gt;. Bloggo permite aos autores fazer o mesmo com pares do caractere asterisco, '*'. Quando um autor escreve o texto</p>
+                <pre>  Move it from *Receiving* to *Accounts Payable*.
+                </pre>
+                <p>
+                    ele vai sair no website assim:</p>
+                <pre>  Move it from &lt;b&gt;Receiving&lt;/b&gt; to &lt;b&gt;Accounts Payable&lt;/b&gt;.
+                </pre>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contem vários casos de teste. Cada caso de teste é composto por uma linha que 
+                    contem uma string <b>texto</b>, com zero ou mais usos dos atalhos itálico e negrito. Cada <b>texto</b> tem de 1 a 50 caracteres, inclusive. Os únicos caracteres permitidos no <b>texto</b> são os caracteres alfabéticos (de 'a' a 'z' e de 'A' a 'Z'), o sublinhado ('_'), o asterisco ('*'), o caractere de espaço e os símbolos de pontuação ',', ';', '.', '!', '?', '-', '(' e ')'. O caractere sublinhado '_' ocorre no <b>texto</b> um número par de vezes. O asterisco '*' também aparece um número par de vezes no <b>texto</b>. Nenhuma substring do <b>texto</b> entre um par de sublinhados ou entre um par de asteriscos pode conter outros sublinhados ou asteriscos, respectivamente.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada linha de entrada seu programa deve gerar uma linha de saída com o texto traduzido
+                    para HTML como demonstrado nos exemplos abaixo. Para tornar itálico um pedaço de texto no HTML, você deve iniciar este pedaço com a tag &lt;i&gt; e terminá-lo com a tag &lt;/i&gt;. Para texto em negrito, inicie com &lt;b&gt; e termine com &lt;/b&gt;.<br />
+                    <br />O final da entrada é determinado por <strong>EOF</strong>.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                You _should_ see the new walrus at the zoo!<br />
+                                Move it from *Accounts Payable* to *Receiving*.<br />
+                                I saw _Chelydra serpentina_ in *Centennial Park*.<br />
+                                _ _ __  _ yabba dabba _   *  dooooo  * ****<br />
+                                _now_I_know_*my*_ABC_next_time_*sing*it_with_me</p>
+                        </td>
+                        <td>
+                            <p>
+                                You &lt;i&gt;should&lt;/i&gt; see the new walrus at the zoo!<br />
+                                Move it from &lt;b&gt;Accounts Payable&lt;/b&gt; to &lt;b&gt;Receiving&lt;/b&gt;.<br />
+                                I saw &lt;i&gt;Chelydra serpentina&lt;/i&gt; in &lt;b&gt;Centennial Park&lt;/b&gt;.<br />
+                                &lt;i&gt; &lt;/i&gt; &lt;i&gt;&lt;/i&gt;  &lt;i&gt; yabba dabba &lt;/i&gt;   &lt;b&gt;  dooooo  &lt;/b&gt; &lt;b&gt;&lt;/b&gt;&lt;b&gt;&lt;/b&gt;<br />
+                                &lt;i&gt;now&lt;/i&gt;I&lt;i&gt;know&lt;/i&gt;&lt;b&gt;my&lt;/b&gt;&lt;i&gt;ABC&lt;/i&gt;next&lt;i&gt;time&lt;/i&gt;&lt;b&gt;sing&lt;/b&gt;it&lt;i&gt;with&lt;/i&gt;me</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+            <p class="footer">
+                * Este problema é de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por M.C. Pinto para utilização (autorizada) no URI OJ.<br />
+                * A reprodução não autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. é estritamente proibida.
+            </p>
+
+        </div>
+
+    </body>
+</html>

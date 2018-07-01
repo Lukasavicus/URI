@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1614 - Ajude o Turista</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1614 - Ajude o Turista" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1614</span>
+                <h1>Ajude o Turista</h1>
+                <div>
+                    <p>Por Daniel Chino, USP - São Carlos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Luís está de férias e gostaria de conhecer os pontos turísticos de Manhattan nos próximos K dias. Através de um mapa, ele sabe a localização dos N pontos turísticos e das M estações de metrô da cidade. Para apreciar bastante os passeios, ele irá visitar apenas um ponto por dia. Entretanto, ele é bastante preguiçoso e gostaria de caminhar a menor distância possível entre o ponto turístico e uma estação de metrô. </p>
+
+                    <p>Em outras palavras, encontre K pares distintos de pontos turísticos e estações de metrô, de forma que a soma das distâncias destes pares seja o mínimo possível. A distância é medida usando-se a métrica de Manhattan, ou seja, dado um ponto A e outro B, a distância entre eles é definida por: D(A,B) = |A_x - B_x| + |A_y - B_y|. Mais informações sobre esta distância: <a href="http://en.wikipedia.org/wiki/Taxicab_geometry">http://en.wikipedia.org/wiki/Taxicab_geometry</a> .</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+
+                    <p>Na primeira linha você terá um inteiro <strong>T</strong> (<strong>T</strong> = 100) indicando o número de casos de teste.</p>
+
+                    <p>Na primeira linha de cada caso de teste estarão três números inteiros <strong>N</strong> (1 ≤ <strong>N</strong>*) , <strong>M</strong> (<strong>M</strong> ≤ 100*) e <strong>K</strong> considerando 1 ≤ <strong>K</strong> ≤ min(10, <strong>N</strong>*<strong>M</strong>). Nas próximas <strong>N</strong>  linhas estarão as localizações dos pontos turísticos e nas próximas <strong>M</strong> linhas as localizações das estações de metrô, todas dadas por um par de inteiros (<strong>x</strong>, <strong>y</strong> - 0 &lt;= x,y &lt;= 1000* ou 0 &lt;= x,y &lt;= 10<sup>5</sup>**). Não há pontos turísticos ou estações de metrô na mesma localização.</p>
+
+                    <p>*Ocorre em aproximadamente 90% dos casos de teste;</p>
+                    <p>**Ocorre nos demais casos de teste.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima a soma das distâncias percorridas por Luís em cada caso. Lembre-se que você deve minimizar este valor.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+                                <p>1 2 1</p>
+                                
+                                <p>0 0</p>
+                                
+                                <p>2 2</p>
+                                
+                                <p>1 1</p>
+                                
+                                <p>2 1 2</p>
+                                
+                                <p>2 2</p>
+                                
+                                <p>2 3</p>
+                                
+                                <p>2 4</p>
+                                
+                                <p>5 4 5</p>
+                                
+                                <p>1 1</p>
+                                
+                                <p>2 3</p>
+                                
+                                <p>4 2</p>
+                                
+                                <p>5 4</p>
+                                
+                                <p>6 1</p>
+                                
+                                <p>1 2</p>
+                                
+                                <p>2 1</p>
+                                
+                                <p>2 6</p>
+                                
+                                <p>4 4</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+
+                                <p>3</p>
+                                
+                                <p>7</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                   Seletiva USP São Carlos - Segunda Prova 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

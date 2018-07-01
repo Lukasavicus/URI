@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1623 - Linguagem</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1623 - Linguagem" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1623</span>
+                <h1>Linguagem</h1>
+                <div>
+                    <p>Por Umberto Maia, Centro Universitário do Triângulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 7</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Germanio um guerreiro intergaláctico e conquistador de planetas tem uma dificuldade para falar quando ele fica nervoso, ele fica um pouco gago. Então, palavras como QUERO, ele fala QQUERO, VAMOS, ele fala VVAMOS e assim por diante.</p>
+
+                    <p>Aborrecido com esta situação, Germanio decidiu que toda nova conquista de um novo planeta ele iria inventar uma nova língua. Dado um alfabeto, onde não ocorre repetição de caracteres, por exemplo, QABCDEFG, todas as palavras da nova língua começariam com a letra Q duas vezes. Neste caso, a palavra QQABCDEFG seria válida.</p>
+                    
+                    <p>Você analisou o caso, e ainda fez a sugestão para que os caracteres a serem repetidos possam ocorrer em qualquer parte da nova palavra desde que sejam na mesma ordem e sempre juntos. No exemplo dado, ABCDEFGQQ seria válido também.</p>
+                    
+                    <p>O amado guerreiro Germanio gostou de sua ideia e pediu para você calcular quantas palavras estes novos idiomas terão. Mas, se o idioma tiver um número muito grande de palavras ele quer descartar este idioma.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Haverá diversos casos de teste. Cada caso de teste inicia com dois números inteiros <strong>N</strong> e <strong>Q</strong> (1 < <strong>N</strong> ≤ 100000, 1 ≤ <strong>Q</strong> &lt; <strong>N</strong>), indicando o tamanho do alfabeto e o número de caracteres do alfabeto que será considerado na repetição que pode ocorrer em qualquer parte da palavra, respectivamente. A segunda linha é composta por um inteiro <strong>T</strong>( 1 ≤ 10<sup>5000</sup>) indicando o número máximo de palavras permitido por idioma.</p>
+
+                    <p>O último caso de teste é indicado quando <strong>N</strong> = <strong>Q</strong> = 0, o qual não deverá ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma linha contendo um inteiro, indicando o número de palavras distintas que esta nova língua terá. E imprimirá “descartado” caso o número de palavras ultrapasse o valor de <strong>T</strong>.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4 1</p>
+
+                                <p>100</p>
+                                
+                                <p>5 2</p>
+                                
+                                <p>30</p>
+                                
+                                <p>6 3</p>
+                                
+                                <p>10</p>
+                                
+                                <p>0 0</p>
+
+                            </td>
+                            <td>
+                                <p>24</p>
+
+                                <p>24</p>
+                                
+                                <p>descartado</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XIV Contest Algar Telecom 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

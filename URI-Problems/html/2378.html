@@ -1,0 +1,153 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2378 - Elevador</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1278 - Elevador" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2378</span>
+				<h1>Elevador</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2010 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A Subindo Bem Confortavelmente (SBC) é uma empresa tradicional, com mais de 50 anos de experiência na fabricação de elevadores. Todos os projetos da SBC seguem as mais estritas normas de segurança, mas infelizmente uma série de acidentes com seus elevadores manchou a reputação da empresa.</p>
+
+<p>Ao estudar os acidentes, os engenheiros da companhia concluíram que, em vários casos, o acidente foi causado pelo excesso de passageiros no elevador. Por isso, a SBC decidiu fiscalizar com mais rigor o uso de seus elevadores: foi instalado um sensor em cada porta que detecta a quantidade de pessoas que saem e entram em cada andar do elevador. A SBC tem os registros do sensor de todo um dia de funcionamento do elevador (que sempre começa vazio). Eles sabem que as pessoas são educadas e sempre deixam todos os passageiros que irão sair em um andar saírem antes de outros passageiros entrarem no elevador, mas ainda assim eles têm tido dificuldade em decidir se a capacidade máxima do elevador foi excedida ou não.</p>
+
+<p>Sua tarefa é escrever um programa que, dada uma sequência de leituras do sensor e a capacidade máxima do elevador, determinar se a capacidade máxima do elevador foi excedida em algum momento.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém dois inteiros <strong>N</strong> e <strong>C</strong>, indicando o número de leituras realizadas pelo sensor e a capacidade máxima do elevador, respectivamente (1 ≤ <strong>N</strong> ≤ 1000 e 1 ≤ <strong>C</strong> ≤ 1000). As <strong>N</strong> linhas seguintes contém, cada uma, uma leitura do sensor. Cada uma dessas linhas contém dois inteiros <strong>S</strong> e <strong>E</strong>, indicando quantas pessoas saíram e quantas pessoas entraram naquele andar, respectivamente (0 ≤ <strong>S</strong> ≤ 1000 e 0 ≤ <strong>E</strong> ≤ 1000).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma uníca linha contendo o caractere ‘S’, caso a capacidade do elevador tenha sido excedida em algum momento, ou o caractere ‘N’ caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 10</p>
+
+<p>0 5</p>
+
+<p>2 7</p>
+
+<p>3 3</p>
+
+<p>5 2</p>
+
+<p>7 0</p>
+
+							</td>
+							<td>
+								<p>N</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 10</p>
+
+<p>0 3</p>
+
+<p>0 5</p>
+
+<p>0 2</p>
+
+<p>3 4</p>
+
+<p>6 4</p>
+
+							</td>
+							<td>
+								<p>S</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6 4</p>
+
+<p>0 5</p>
+
+<p>3 5</p>
+
+<p>4 5</p>
+
+<p>1 0</p>
+
+<p>1 1</p>
+
+<p>1 1</p>
+
+							</td>
+							<td>
+								<p>S</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2010 Fase 1 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

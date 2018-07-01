@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2707 - Marblecoin</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema M - Marblecoin" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2707</span>
+			<h1>Marblecoin</h1>
+			<div>
+				<p>Por Paulo Cezar Pereira Costa <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Cubiconia é conhecida por ter impostos absurdamente altos. Impostos são calculados numa base diária e mesmo coisas que parecem sem valor são sujeitas a impostos. Visando evitar esses impostos loucos, alguns dos amigos do imperador criaram uma nova moeda usando bolinhas. Infelizmente não funcionou, pois as bolinhas tornaram-se alvo dos impostos também.</p>
+
+<p>Deixando isso de lado, o imperador acredita que usar bolinhas como moedas é uma ideia incrível e que no futuro valera muito mais. Então ele decidiu roubar as bolinhas de seus amigos. Para evitar atenção desnecessária, na calada da noite ele visitara um amigo e durante a visita roubara exatamente uma bolinha. Como seus amigos mantêm suas bolinhas em pilhas, apenas a bolinha no topo da pilha pode ser roubada.</p>
+
+<p>Cada bolinha possui um valor associado a ela. A quantia devida em impostos por bolinha é <strong>V</strong> x 365<strong><sup>D</sup></strong>, onde <strong>V </strong>é o valor associado a bolinha e <strong>D</strong> é o número de dias que a bolinha foi possuida. O imperador pretende vender todas as bolinhas assim que ele acabar de roubá-las Isto significa que, se existe um total <strong>T</strong> de bolinhas, a bolinha que passar menos tempo em posse tera sido possuída por 1 dia, enquanto a possuída pelo maior período tera sido possuída por <strong>T</strong> dias.</p>
+
+<p>O imperador é esperto e já se deu conta de que o total em impostos depende da ordem em que as bolinhas são roubadas. Para evitar pagar mais taxas do que o necessário, ele gostaria de saber a melhor ordem a qual roubar as bolinhas. Você pode ajudá-lo?</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira&nbsp;linha contem um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup> ) representando o número de pilhas as quais o imperador ira assaltar. Cada uma das próximas <strong>N</strong> linhas descreve uma pilha com <strong>K</strong> (1 ≤ <strong>K</strong> ≤ 10<sup>5 </sup>) seguido de <strong>K</strong> inteiros <strong>V</strong><sub>1</sub>, <strong>V</strong><sub>2</sub>, . . . , <strong>V</strong><sub><strong>K</strong> </sub>(1 ≤ <strong>V</strong><em><sub>i</sub></em> ≤ 300 para <em>i</em> = 1, 2, . . . , <strong>K</strong>); o número <strong>K</strong> é a quantia de bolinhas na pilha, enquanto os números <strong>V</strong><sub>1</sub>, <strong>V</strong><sub>2</sub>, . . . , <strong>V<sub>K</sub></strong> são os valores das bolinhas na pilha, do topa a base. O total de bolinhas é de no máximo 4 x 10<sup>5</sup>.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Imprima uma única linha com um inteiro representando o valor devido em impostos caso as bolinhas sejam roubadas na ordem mais eficiente possível. Devido possibilidade deste número ser imenso, imprima o resto da sua divisão por 10<sup>9</sup> + 7</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3</p>
+
+<p>1 1</p>
+
+<p>1 2</p>
+
+<p>1 3</p>
+
+						</td>
+						<td>
+							<p>48894670</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>3</p>
+
+<p>3 2 5 7</p>
+
+<p>4 1 4 6 10</p>
+
+<p>3 3 2 1</p>
+
+						</td>
+						<td>
+							<p>227712621</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				ICPC Latin American Regional – 2017
+			</p>
+		</div>
+
+	</body>
+</html>

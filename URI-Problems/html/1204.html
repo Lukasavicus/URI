@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1204 - Myachowski, o Futebol Russo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1204 - Myachowski, o Futebol Russo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1204</span>
+                <h1>Myachowski, o Futebol Russo</h1>
+                <div><p>
+	Por Cristiane M. Sato <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" /> Brasil</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Muitas origens diferentes são atribuídas ao futebol. A atividade mais antiga que se assemelha ao futebol era praticada na China entre os séc. III e II a.C. e chamava-se ts’uh Kúh (cuju), e consistia em jogar uma pequena bola com os pés para uma rede. No Japão existe o kemari, praticado até hoje em eventos culturais. Em Roma jogava-se o harpastum, e na Grécia o epislcyros. Com a descoberta do novo mundo descobriu-se também um jogo maia muito semelhante ao futebol, o pok ta pok que teria mais de 3 000 anos de história. Na idade média jogava-se em Florença o calcio florentino, que muitos reputam ser o berço do futebol moderno. Até hoje índios do Amazonas jogam um jogo muito semelhante em que uma bola é empurrada usando apenas a cabeça em direção às metas inimigas. Seja como for, é quase&nbsp; impossível dizer qual o jogo que deu origem ao futebol hoje jogado, cujas regras foram formalmente estabelecidas pelos ingleses no final do século XIX.<br><br />
+	Pouco se tem notícia de um jogo russo, também ancestral do futebol e com regras bastante claras (como diria o Arnaldo). É o Myachowski, também conhecido como Otskok. O nome vem provavelmente de 
+	Myach que significa "bola" em russo. No jogo um jogador entra em um campo que é uma elipse fechada e deve acertar um buraco localizado na parede do campo. Porém, o ponto só é computado se a bola entra no buraco após ser chutada contra as paredes do campo, sendo desviada para dentro do buraco.<br /><br>
+	Dadas a posição inicial da bola, a direção na qual ela está se movimentando e a descrição do campo, sua tarefa é determinar os próximos dois pontos de contato da bola com a parede do campo. Considere que o centro do campo é a posição (0; 0).<br /><br />
+	
+	<strong><em>Reflexão da Bola:</em></strong> Suponha para esse problema que a bola é refletida perfeitamente quando atinge a parede do campo. Isso é, o ângulo que o vetor de entrada faz com a reta tangente à parede do campo no ponto de contato é o mesmo que ângulo de saída. A Figura abaixo exemplifica esse comportamento.<br />
+	
+	<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1204.png" style="width: 413px; height: 215px;" />
+	<br />
+	Ângulo de entrada é igual ao ângulo de saída</p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada é composta por diversas instâncias e termina com final de arquivo (EOF). Cada instância consiste em uma linha contendo 6 inteiros, X, Y, Dx, Dy, (-1000 &lt;= Dx,Dy &lt;= 1000), A e B, (1 &lt;= A,B &lt;= 500). A posição inicial da bola é dada pelo ponto (X; Y ) dentro da elipse e a direção pelo vetor (Dx;Dy).<br />
+	<br/> O campo tem o formato de uma elipse descrita pela equação
+	<p class="center">
+	<span class="code">x²&nbsp;&nbsp;&nbsp;&nbsp;y²&nbsp;<br />
+	&nbsp;&nbsp;&nbsp; -&nbsp;&nbsp;+&nbsp;&nbsp;- &nbsp;= 1.<br />
+	A²&nbsp;&nbsp;&nbsp;&nbsp;B²&nbsp;<br /></span></p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada instância imprima duas linhas. A primeira linha deve conter o primeiro ponto de contato da bola com a parede do campo e a segunda linha deve conter o segundo ponto de contato. Um ponto de contato deve ser impresso como dois números racionais separados por um espaço. Imprima os números com exatamente 3 casas decimais.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	0 0 1 1 1 1<br />
+	0 0 1 0 2 3<br />
+	-30 40 30 7 200 100</p>
+
+                            </td>
+                            <td>
+                                <p>
+	0.707 0.707<br />
+	-0.707 -0.707<br />
+	2.000 0.000<br />
+	-2.000 0.000<br />
+	127.955 76.856<br />
+	192.310 -27.464</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+	
+	XVI Maratona de Programação IME-USP, 2012. Agradecimento especial a Carlos E. Ferreira.</p>    
+            </div>
+
+        </body>
+    </html>

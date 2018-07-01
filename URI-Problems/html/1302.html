@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1302 - Juntando Casais</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1302 - Juntando Casais" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1302</span>
+            <h1>Juntando Casais</h1>
+            <div><p>Por Ray Williams Robinson Valiente, UCI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cu.gif' alt=""/> Cuba</p></div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Regulamentos de tráfego aéreo na Nlogônia exigem que cada cidade deve registrar exatamente um vôo de saída para outra cidade. Os passageiros podem usar esse vôo somente na direção registrada, ou seja, pode haver um vôo registrado da cidade <strong>X</strong> para a cidade <strong>Y</strong> e nenhum vôo registrado da cidade <strong>Y</strong> para a cidade <strong>X</strong>. Assim, o número de vôos registados é igual ao número de cidades. Esta regra, como se pode imaginar, torna as viagens aéreas um pouco complicadas, mas a tradição e uma decisão forte da Rainha torna qualquer alteração difícil. Além disso, algumas empresas até tem lucro por causa dos problemas causados ​​pela regra.</p>
+                <p>
+                    A Associação para a Correspondência de Casal (ACM) é a criação de um novo serviço para ajudar os clientes a encontrarem as suas&nbsp; almas gêmeas: o Programa Internet para conexão de Casais (ICPC). O serviço consiste em calcular o número mínimo total de vôos que um casal precisa tomar para se encontrarem (talvez em uma cidade onde nenhum deles viva). Assumindo que as cidades de partida do casal são <strong> A </strong> e <strong> B </strong>, a agência vai tentar encontrar uma cidade <strong> C </strong> tal que <strong> C </strong> é acessível por transporte aéreo de ambos <strong> A </strong> e <strong> B </strong>, e a soma do número de voos necessários para ir de <strong> A </strong> para <strong> C </strong> e do número de voos necessárias para ir de <strong> B </strong> para <strong> , C </strong> é minimizado. Note que <strong> C </strong> pode ser igual a <strong> A </strong> ou <strong>B</strong> ou igual a ambos. Você terá a lista de todos os voos disponíveis e uma lista de consultas consistindo de pares de cidades onde os indivíduos de cada casal vivem. Para cada consulta, você deve calcular o número mínimo total de vôos que são necessárias para que eles se encontram.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste é descrito usando várias linhas. A primeira linha contém um inteiro<strong>N</strong> representando o número de cidades ( 2 ≤ <strong>N</strong> ≤ 10<sup>5</sup>). Cidades são identificadas por diferentes inteiros de 1 até <strong>N</strong>. A segunda linha contém <strong>N</strong> inteiros <strong>F</strong><sub>i</sub>, onde <strong>F</strong><sub><em>i </em></sub>indica que o vôo de saida registrado da cidade i é para a cidade <strong>F</strong><em><sub>i</sub></em> ( 1 ≤ <strong>F</strong><em><sub>i</sub></em> ≤ N, <strong>F</strong><em><sub>i</sub></em> = <em>i</em> for <em>i</em> = 1, 2,..., <strong>N</strong>). A terceira linha contém um inteiro <strong>Q</strong> representando o número de consultas ( 1 ≤ <strong>Q</strong> ≤ 10<sup>5</sup>). Cada uma das próximas <strong>Q</strong> linhas descreve uma consulta com dois inteiros <strong>A</strong> e <strong>B</strong> indicando a cidade inicial do casal( 1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong>). Em cada caso de teste, se for possível viagar por via aérea da cidade <strong>X</strong> até a cidade <strong>Y</strong>, o número máximo de vôos necessários deverá ser 10<sup>4</sup>.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima <strong>Q</strong> linhas. Na enésima (<em> i-th</em> ) linha escreva um inteiro com a resposta para a enésima (<em>i-th</em>) consulta.&nbsp;Se o casal correspondente pode se encontrar através de viagens aéreas, escreva o número mínimo total de vôos que o casal deve tomar para encontrar-se. Se for&nbsp;impossível para o casal encontrar-se por viagens aéreas, escreve&nbsp;o número "-1".</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                2 1 2<br />
+                                3<br />
+                                1 2<br />
+                                1 3<br />
+                                1 1<br />
+                                7<br />
+                                2 1 4 5 3 5 6<br />
+                                5<br />
+                                1 3<br />
+                                4 7<br />
+                                7 4<br />
+                                6 2<br />
+                                2 1</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                1<br />
+                                2<br />
+                                0<br />
+                                -1<br />
+                                3<br />
+                                3<br />
+                                -1<br />
+                                1</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2012.
+            </p>
+        </div>
+
+    </body>
+</html>

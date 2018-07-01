@@ -1,0 +1,93 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2225 - Penalização</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2225 - Penalização" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2225</span>
+				<h1>Penalização</h1>
+				<div>
+					<p>Por Thalyson Nepomuceno, UECE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>No jogo Pomekon, um dos objetivos é visitar lugares reais para conseguir novos itens e experiência. Como Fulyane não gosta muito de sair de casa, ela fez um programa que simula sua localização, fornecendo falsas coordenadas de sua localização para o jogo. Ela também fez um controle, que faz com que ela possa se movimentar nas coordenadas falsas, simulando como se estivesse realmente caminhando, porém sem sair de casa.</p>
+
+<p>Pesquisando em fóruns, viu que para não ser banida do jogo, teria que se mover utilizando apenas as rotas reais, porém, também viu que podia se mover instantaneamente de um lugar para outro, sem utilizar as rotas reais, no máximo&nbsp;<strong>K</strong>&nbsp;vezes por dia, pois caso ela se teletransportar além de&nbsp;<strong>K</strong>&nbsp;vezes, poderia ser banida do jogo para sempre.</p>
+
+<p>Fulyane começa sempre no lugar identificado pelo índice 1, e quer visitar todos os demais o mais rápido possível, se teletransportando no máximo&nbsp;<strong>K</strong>&nbsp;vezes.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro&nbsp;<strong>T</strong>&nbsp;indicando o número de instâncias. A primeira linha de cada instância contém três inteiros&nbsp;<strong>N</strong>&nbsp;(1 ≤&nbsp;<strong>N</strong>&nbsp;≤ 15),&nbsp;<strong>M</strong>&nbsp;(1 ≤&nbsp;<strong>M</strong>&nbsp;≤&nbsp;<strong>N</strong><strong><sup>2</sup></strong>) e (0 ≤&nbsp;<strong>K</strong>&nbsp;≤ 5), representando, respectivamente, a quantidade de lugares, quantidade de &nbsp;rotas e a quantidade máximo permitida de teletransportes. Então seguiram&nbsp;<strong>M</strong>&nbsp;linhas, cada uma contendo três inteiros&nbsp;<strong>A</strong>,&nbsp;<strong>B</strong>&nbsp;e&nbsp;<strong>C</strong>&nbsp;(1 ≤&nbsp;<strong>C</strong>&nbsp;≤ 30000), representando que uma rua conecta os lugares <strong>A</strong>&nbsp;e <strong>B</strong>, e Fulyane demora&nbsp;<strong>C</strong>&nbsp;minutos para ir de&nbsp;<strong>A</strong>&nbsp;até&nbsp;<strong>B</strong>&nbsp;utilizando esta rua.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprima a quantidade mínima de minutos para Fulyane visitar todos os&nbsp;<strong>N</strong>&nbsp;lugares utilizando, no máximo,&nbsp;<strong>K</strong>&nbsp;teletransportes. Caso não seja possível visitar os&nbsp;<strong>N</strong>&nbsp;lugares, imprima -1.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+3 2 0<br />
+1 2 2<br />
+2 3 3<br />
+5 0 3<br />
+5 0 5</p>
+
+							</td>
+							<td>
+								<p>5<br />
+-1<br />
+0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					II Maratona de programação do IFCE-Aracati
+				</p>
+			</div>
+
+		</body>
+	</html>

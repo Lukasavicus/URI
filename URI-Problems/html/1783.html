@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1783 - Ih, Ferrou, um Buraco Negro!</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema I - Ih, Ferrou, um Buraco Negro!" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1783</span>
+                <h1>Ih, Ferrou, um Buraco Negro!</h1>
+                <div>
+                    <p>Por Mário Henrique, UFPE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>André é um astrônomo amador que luta para revelar uma verdade ao mundo: há um buraco negro em direção à Terra! Todos os outros astrônomos tratam ele feito louco, e por consequência, as pessoas normais também, mas ele não desiste de derrubar essa conspiração!</p>
+
+                    <p>Mas como ele descobriu esse buraco negro? Foi assim: buracos negros possuem uma gravidade avassaladora, e todas as estrelas próximas a um começam a girar em torno dele. Algumas mais rápidas, outras mais lentas, algumas mais próximas, outras mais distantes, mas sempre mantendo velocidade angular e distância do buraco negro constantes. Ao observar o céu com seu telescópio um certo dia, André anotou as posições de todas as estrelas que viu. Um mês depois, repetiu a experiência e viu que duas certas estrelas haviam se movido, o que indica que caíram na órbita de um buraco negro!</p>
+
+                    </br>
+
+                    <p style="text-align:center"><img alt=" " src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1783.png" style="-webkit-transform:rotate(0.00rad); border:none; height:345px; transform:rotate(0.00rad); width:502px" /></p>
+
+                    </br>
+
+                    <p>A imagem acima ilustra a trajetória de duas estrelas ao redor do buraco negro.</p>
+
+                    <p>Porém, André não é bom em matemática, e ele não sabe como calcular a posição exata do buraco negro. A superfície do céu pode ser representada por um plano coordenado por eixos X e Y, e ele possui as coordenadas antigas e novas das duas estrelas. Ajude-o calculando as coordenadas do buraco negro no céu e salve o mundo antes que seja tarde demais!</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém um inteiro <strong>T</strong> (1 ≤ <strong>T </strong> ≤ 10000), o número de casos de teste. Cada caso de teste possui 4 linhas, cada uma com um par de números reais com 2 casas decimais, <strong>X</strong> e <strong>Y</strong> (-1000.0 ≤ <strong>X</strong>, <strong>Y </strong>≤ 1000.0). Cada par representa, respectivamente, as antigas coordenadas da primeira e da segunda estrela, e as novas coordenadas da primeira e da segunda estrela. As posições antiga e nova de cada estrela são diferentes, assim como as posições de duas estrelas no mesmo instante de tempo.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso imprima uma linha contendo "Caso #<strong>i</strong>: <strong>X Y</strong>", onde <strong>i</strong> é o número do caso atual, iniciando em 1, e (<strong>X</strong>, <strong>Y</strong>) são as coordenadas de onde o buraco negro deve estar. <strong>X</strong> e <strong>Y</strong> são números reais com 2 casas decimais cada um. Para cada caso haverá exatamente uma solução válida.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                3<br>
+                                12.00 2.00<br>
+                                5.00 6.00<br>
+                                10.00 8.00<br>
+                                2.00 7.00<br>
+                                0.50 -0.50<br>
+                                -1.00 0.00<br>
+                                -0.50 -0.50<br>
+                                0.00 1.00<br>
+                                0.50 6.50<br>
+                                -10.50 -3.50<br>
+                                -1.50 6.50<br>
+                                -5.50 -8.50<br>
+                            </td>
+                            <td>
+                                Caso #1: 2.00 2.00<br>
+                                Caso #2: 0.00 0.00<br>
+                                Caso #3: -0.50 1.50<br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Adaptação da Prova Final da Seletiva UFPE - 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

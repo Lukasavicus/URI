@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1243 - O Quão Fácil é...</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1243 - O Quão Fácil é... " />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1243</span>
+            <h1>O Quão Fácil é...</h1>
+            <div><p>
+                    Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif" style="width: 16px; height: 11px;" /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    TopCoder decidiu automatizar o processo de atribuição de níveis de dificuldade para os problemas. 
+                    Os desenvolvedores do TopCoder concluíram que a dificuldade do problema esta relacionado apenas ao 
+                    comprimento médio das palavras do enunciado do problema.
+                    Se o comprimento médio das palavras do enunciado é menor ou igual a 3, o problema recebe dificuldade de 250 pontos.
+                    Se o comprimento médio das palavras do enunciado for 4 ou 5, o problema recebe dificuldade de 500 pontos.
+                    Se o comprimento médio das palavras do enunciado for maior ou igual a 6, o problema recebe dificuldade de 1000 pontos.
+                </p><br/>
+                <p>
+                    Definições:</p><p>
+                    Símbolo: um conjunto de carateres ligados em ambos os lados por espaços, ou pelo início da 
+                    descrição do problema, ou ainda pelo fim da descrição do problema.</p><p>
+                    Palavra: um símbolo que contenha apenas letras a-z ou A-Z, e pode terminar com um único ponto.</p><p>
+                    Comprimento da palavra: número de letras de uma palavra (um ponto não é uma letra).</p><br>
+                <p>	
+                    Exemplos de símbolos que são palavras (aspas duplas apenas para exemplificar): "AB", "ab".</p><p>
+                    Exemplo de símbolos que não são palavras: "ab..", "a.b", ".ab", "a.b.", "a2b.", ".".</p><br>
+                <p>
+                    O comprimento médio das palavras é dado pela soma dos tamanhos das palavras do enunciado dividido 
+                    pelo numero de palavras, a divisão é feita por números inteiros. Se o número de palavras for zero, 
+                    então o comprimento médio das palavras é zero.</p><br>
+                <p>
+                    Sua tarefa é dado o enunciado do problema, computar a sua classificação de dificuldade do problema, 
+                    que poderá ser 250, 500, ou 1000.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. Cada caso de teste é composto por uma linha que contém o 
+                    enunciado de um problema, é uma string que contém entre 1 e 50 caracteres ('A'-'Z', 'a'-'z', '0'-'9', ' ', '.'), 
+                    inclusive.
+                    O final da entrada é determinado por EOF.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Compute o comprimento médio das palavras do enunciado do problema, e mostre a classificação do problema, 
+                    para mais detalhes olhe o exemplo abaixo.
+                </p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                This is a problem statement<br />
+                                523hi.<br />
+                                Implement a class H5 which contains some method.<br />
+                                &nbsp;no9 . wor7ds he8re. hj..</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                500<br />
+                                250<br />
+                                500<br />
+                                250</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                * Este problema é de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por Jeferson T. para utilização (autorizada) no URI OJ.<br />
+                * A reprodução não autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. é estritamente proibida.</p>
+
+        </div>
+
+    </body>
+</html>

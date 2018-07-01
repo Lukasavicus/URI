@@ -1,0 +1,122 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2451 - PacMan</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2451 - PacMan" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2451</span>
+				<h1>PacMan</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2014 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Pacman é um jogo muito conhecido, onde o personagem tenta comer a maior quantidade possível de bolinhas, tendo ao mesmo tempo que fugir de vários fantasmas. Dessa vez, nosso personagem quer carregar a comida coletada para casa, mas o encontro com um fantasma, ao invés de terminar o jogo, faz com que toda a comida coletada seja roubada.</p>
+
+					<p>Neste problema os fantasmas não se movem, e o jogador sempre faz o Pacman percorrer o seguinte caminho:</p>
+
+					<ol>
+						<li>O Pacman começa no canto superior esquerdo do tabuleiro.</li>
+						<li>O Pacman percorre toda a linha, da esquerda para direita, até chegar ao lado direito do tabuleiro.</li>
+						<li>O jogador desce uma posição, e percorre toda a linha, desta vez da direita para a esquerda.</li>
+						<li>As etapas 2 e 3 se repetem até que todo o tabuleiro tenha sido percorrido.</li>
+					</ol>
+
+					<p>Infelizmente, Pacman não pode ignorar os comandos do usuário para fugir dos fantasmas ou pegar mais comida, mas ele pode, a qualquer momento, se aproveitar de um bug de implementação e interromper o jogo, levando consigo toda a comida que estiver carregando.</p>
+
+					<p>Você deve escrever um programa que determine a maior quantidade de comida que o Pacman pode levar, se escolher a melhor hora possível para sair. Note que o jogador também tem a opção de não sair antes do final do jogo.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém um inteiro <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 100), o tamanho do tabuleiro do jogo, que é quadrado. Cada uma das <strong>N</strong> linhas seguintes contém <strong>N</strong> caracteres, que podem ser (aspas para melhor clareza):</p>
+
+					<ul>
+						<li>‘.’ um espaço vazio;</li>
+						<li>‘o’ uma comida;</li>
+						<li>‘A’ um fantasma.</li>
+					</ul>
+
+					<p>Não há um fantasma e uma comida na mesma posição.</p>
+					<p>Não há fantasma nem comida na posição inicial do Pacman (ou seja, o primeiro caractere da primeira linha do tabuleiro é ‘.’).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve produzir uma única linha contendo um único inteiro, a quantidade máxima de comida que o Pacman pode levar para casa.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5</p>
+								<p>.ooo.</p>
+								<p>..ooA</p>
+								<p>..Aoo</p>
+								<p>Aoooo</p>
+								<p>..ooo</p>
+							</td>
+							<td>
+								<p>6</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+								<p>.o.</p>
+								<p>oAA</p>
+								<p>ooo</p>
+							</td>
+							<td>
+								<p>4</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática - 2014 Fase 1 Modalidade Universitária (PU)
+				</p>
+			</div>
+
+		</body>
+	</html>

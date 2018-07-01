@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2048 - Houston, Nós Temos Um Problema!</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2048 - Houston, Nós Temos Um Problema!" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2048</span>
+                <h1>Houston, Nós Temos Um Problema!</h1>
+                <div>
+                    <p>Por IX Maratona de Programação IME-USP, 2005 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>No dia primeiro de julho de 1947, um estranho objeto foi detectado por radares da força aérea americana instalados em Roswell, White Sands e Alamogordo. A tremenda velocidade e os movimentos erráticos do objeto indicaram que ele não era um avião ou meteorito. Quatro dias depois um pastor de ovelhas e um grupo de arqueólogos encontram restos de um objeto acidentado ao norte de Roswell. A partir daí, autoridades americadas entram em cena e transportam os restos de tal objeto para Fort Worth no Texas. Elas disseram que os destroços encontrados eram simplesmente restos de um balão meteorológico experimental. Muitas pessoas, no entanto, acharam que se tratavam dos restos de um objeto voador não identificado (UFO). Muitos anos se passaram desde então, e o caso continua atraindo atenção e gerando polêmica.</p>
+
+                    <p>Um grupo de ufólogos radicado em San Antonio, uma cidade texana situada a sul-sudoeste de Fort Worth, está convencido de que seres extraterrestres têm visitado a região com frequência desde então. Após muita pesquisa, os ufólogos descobriram que poderiam construir uma rede de comunicação alternativa para tentar contactar os ETs. Tal rede utilizaria resquícios do antigo sistema de telégrafos existentes no deserto do Texas e o fato de sua alternatividade advém da tentativa de evitar, segundo eles, a intromissão das autoridades supra citadas.</p>
+
+                    <p>Após um minucioso levantamento (que identificou postes, fiações, condensadores, transformadores, etc.), os ufólogos perceberam que informações transmitidas em certos trechos da antiga estrutura dos telégrafos apresentavam qualidade pior do que em outros. Baseados em amostras estatísticas, levantaram, para alguns pares de pontos u e  v da antiga rede, uma probabilidade  p<sub>uv</sub> de haver interferência nas informações transmitidas entre u e v. Sabendo que você estaria na região em abril do ano que vem, eles pediram a você que construísse um programa para identificar o menor conjunto de trechos a serem utilizados, de forma que (i) todos os pontos por eles desejados estejam interligados (mesmo que indiretamente), e tal que (ii) a probabilidade total de interferência nas mensagens enviadas nesta rede alternativa seja mínima. Ávido de interesse em descobrir a verdade (que "está lá fora..."), você prontamente atendeu à solicitação.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Seu programa deve estar preparado para lidar com diversas instâncias. Cada instância possui o formato que segue. Na primeira linha, são especificados dois inteiros 0  ≤  <strong>n</strong>  ≤ 100 e 0  ≤  <strong>m</strong>  ≤  <strong>n</strong>(<strong>n</strong>-1)/2 que representam, respectivamente, o número de pontos na rede alternativa e o número de pares desses pontos para os quais as probabilidades de haver interferência foram medidas. Nas  <strong>m</strong>  linhas seguintes, são dados (em cada linha) dois inteiros 1  ≤  <strong>u</strong>,<strong>v</strong>  ≤  <strong>n</strong>  e um racional 0  ≤  <strong>p<sub>uv</sub></strong>  ≤ 1 representando que entre os dois pontos  <strong>u</strong>  e  <strong>v</strong>, a probabilidade de interferência é  <strong>p<sub>uv</sub></strong>. Um valor  <strong>n</strong>  = 0 indica o término das instâncias e não deve ser processado. Você pode supor que sempre será possível satisfazer a restrição (i).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identificador Instancia  <strong>h</strong>, em que  <strong>h</strong>  é um número inteiro, sequencial e crescente a partir de 1. Na próxima linha, você deve imprimir (com cinco casas decimais) a probabilidade mínima de interferência calculada para tal instância. Uma linha em branco deve separar a saída de cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 8<br />
+1 2 0.4<br />
+1 3 0.1<br />
+1 4 0.6<br />
+2 3 0.9<br />
+2 4 0.5<br />
+3 4 0.2<br />
+3 5 0.7<br />
+4 5 0.1<br />
+3 3<br />
+1 2 1.0<br />
+1 3 1.0<br />
+2 3 1.0<br />
+0 0<br />
+  </p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+0.61120<br />
+<br />
+Instancia 2<br />
+1.00000<br />
+  </p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    IX Maratona de Programação IME-USP, 2005
+                </p>
+            </div>
+
+        </body>
+    </html>

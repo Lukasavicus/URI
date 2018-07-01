@@ -1,0 +1,104 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1852 - Lobos Stark</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 9997 - Lobos Stark" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1852</span>
+				<h1>Lobos Stark</h1>
+				<div>
+					<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Jon:<em> "Lorde Stark? Há cinco filhotes, um para cada criança Stark. O lobo é o brasão de sua Casa. Elas devem tê-los."</em></p>
+
+<p>Durante uma viagem, Ned Stark encontrou <strong>N</strong> filhotes de lobo e decidiu dar um filhote para cada um de seus <strong>N</strong> filhos. Ned quer fazer tanto as crianças quanto os lobos felizes, e, por isso, deseja encontrar a combinação ideal de lobos e crianças.</p>
+<p>Depois de brincar um pouco com os filhotes, cada filho deu a Ned uma lista de lobos em ordem de preferência. Desta forma, cada criança quer ficar com o filhote que está no topo de sua lista; se isto não for possível, a criança quer ficar com o filhote que aparece em segundo na lista, e assim por diante.</p>
+<p>Depois de observar como cada lobo reage a cada filho, Ned também deduziu, para cada lobo, a lista de crianças que ele quer que sejam seus donos, também em ordem de preferência.</p>
+<p>Ned precisa encontrar uma combinação tal que, para toda criança <strong>C<sub>i</sub></strong> e todo lobo <strong>D<sub>j</sub></strong>, <strong>não</strong> ocorre que <strong>C<sub>i</sub></strong> prefere <strong>D<sub>j</sub></strong> ao filhote combinado a ela e <strong>D<sub>j</sub></strong> prefere <strong>C<sub>i</sub></strong> à criança combinada a ele. Se existe mais de uma combinação possível, Ned deseja aquela em que cada filho tem o melhor lobo (mais preferido) que pode ter.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém o inteiro <strong>N</strong> (1&nbsp;≤ <strong>N</strong>&nbsp;≤ 200). As próximas <strong>N</strong> linhas descrevem os filhos de Ned. Cada linha contém <strong>N</strong>+1 <em>strings</em>. A primeira é o nome da criança. As próximas <strong>N</strong> <em>strings</em> são os nomes dos lobos em sua ordem de preferência. O primeiro lobo dado na linha é o preferido da criança.&nbsp; As próximas <strong>N</strong> linhas descrevem os filhotes de lobo. Cada linha contém o nome do filhote e sua lista de crianças, também em ordem de preferência.</p>
+
+<p>Cada <em>string</em> contém no máximo 10 letras maiúsculas e/ou minúsculas.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima <strong>N</strong> linhas. Cada linha deve conter duas <em>strings</em> <strong>C<sub>i</sub></strong> e <strong>D<sub>j</sub></strong>, indicando que a criança <strong>C<sub>i</sub></strong> deve ficar com o filhote <strong>D<sub>j</sub></strong>. Imprima os filhos na mesma ordem em que são descritos na entrada.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6<br />
+Robb GreyWind Summer Ghost Nymeria Lady Shaggydog<br />
+Jon Shaggydog GreyWind Summer Lady Ghost Nymeria<br />
+Sansa Summer Lady Ghost GreyWind Nymeria Shaggydog<br />
+Arya GreyWind Shaggydog Ghost Nymeria Lady Summer<br />
+Bran GreyWind Lady Summer Ghost Shaggydog Nymeria<br />
+Rickon Shaggydog Lady Ghost GreyWind Summer Nymeria<br />
+GreyWind Rickon Robb Arya Bran Sansa Jon<br />
+Ghost Jon Arya Sansa Bran Rickon Robb<br />
+Lady Sansa Robb Rickon Jon Arya Bran<br />
+Nymeria Rickon Bran Sansa Robb Arya Jon<br />
+Summer Rickon Bran Robb Arya Sansa Jon<br />
+Shaggydog Sansa Rickon Arya Jon Robb Bran</p>
+
+							</td>
+							<td>
+								<p>Robb GreyWind<br />
+Jon Ghost<br />
+Sansa Lady<br />
+Arya Nymeria<br />
+Bran Summer<br />
+Rickon Shaggydog</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

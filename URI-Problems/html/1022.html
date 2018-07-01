@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1022 - TDA Racional</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1022 - TDA Racional" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1022</span>
+            <h1>TDA Racional</h1>
+            <div><p>
+                    Por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    A tarefa aqui neste problema é ler uma expressão matemática na forma de dois números Racionais (numerador / denominador) e apresentar o resultado da operação. Cada operando ou operador é separado por um espaço em branco. A sequência de cada linha que contém a expressão a ser lida é: número, caractere, número, caractere, número, caractere, número. A resposta deverá ser apresentada e posteriormente simplificada. Deverá então ser apresentado o sinal de igualdade e em seguida a resposta simplificada. No caso de não ser possível uma simplificação, deve ser apresentada a mesma resposta após o sinal de igualdade.</p>
+                <p>
+                    Considerando N1 e D1 como numerador e denominador da primeira fração, segue a orientação de como deverá ser realizada cada uma das operações: <br />
+                    Soma: (N1*D2 + N2*D1) / (D1*D2)<br />
+                    Subtração: (N1*D2 - N2*D1) / (D1*D2)<br />
+                    Multiplicação: (N1*N2) / (D1*D2)<br />
+                    Divisão: (N1/D1) / (N2/D2), ou seja (N1*D2)/(N2*D1)<br /> 
+                </p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contem vários casos de teste. A primeira linha de cada caso de teste contem um inteiro <strong>N </strong>(1 ≤ <strong>N </strong>≤ 1*10<sup>4</sup>), indicando a quantidade de casos de teste que devem ser lidos logo a seguir. Cada caso de teste contém um valor racional <strong>X </strong>(1 ≤ <strong>X </strong>≤ 1000), uma operação (-, +, * ou /) e outro valor racional <strong>Y </strong>(1 ≤ <strong>Y </strong>≤ 1000).<br />
+                </p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    A saída consiste em um valor racional, seguido de um sinal de igualdade e outro valor racional, que é a simplificação do primeiro valor. No caso do primeiro valor não poder ser simplificado, o mesmo deve ser repetido após o sinal de igualdade.<br />
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                4<br />
+                                1 / 2 + 3 / 4<br />
+                                1 / 2 - 3 / 4<br />
+                                2 / 3 * 6 / 6<br />
+                                1 / 2 / 3 / 4</p>
+                        </td>
+                        <td>
+                            <p>
+                                10/8 = 5/4<br />
+                                -2/8 = -1/4<br />
+                                12/18 = 2/3<br />
+                                4/6 = 2/3</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </body>
+</html>

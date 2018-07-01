@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1655 - 106 Milhas Para Chicago</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1655 - 106 Milhas Para Chicago" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1655</span>
+                <h1>106 Milhas Para Chicago</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 5</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>No filme "Os Irmãos Cara de Pau", o orfanato onde Elwood e Jake foram criados pode ser vendido para o Conselho de Educação se eles não pagarem 5000 dólares em impostos no Gabinete do Assessor do Condado de Cook em Chicago. Depois de dar um show no salão de baile do Hotel Palace para ganhar esses 5000 dólares eles têm de achar um caminho para Chicago. No entanto isso não é fácil e parece que eles estão perseguidos pela polícia, uma banda country e um grupo de nazistas. Mais que isso, eles estão a 106 milhas de Chicago, está escuro e eles estão usando óculos escuros.</p>
+
+                    <p>Como eles estão em uma missão Divina você deve ajudá-los a achar o caminho mais seguro para Chicago. Neste problema o caminho mais seguro é considerado a rota que maximiza a probabilidade deles não serem pegos.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta de diversas instâncias.</p>
+
+                    <p>A primeira linha de cada instância contém dois inteiros <strong>n</strong> e <strong>m</strong> (2 ≤ <strong>n</strong> ≤ 100 , 1 ≤ <strong>m</strong> ≤ <strong>n</strong>*(<strong>n</strong>-1)/2). <strong>n</strong> é o número de interseções, <strong>m</strong> é o número de ruas a ser considerado.</p>
+
+                    <p>As próximas <strong>m</strong> linhas contém a descrição das ruas. Cada rua é descrita por uma linha contendo 3 inteiros <strong>a</strong>, <strong>b</strong> e <strong>p</strong> (1 ≤ <strong>a</strong>, <strong>b</strong> ≤ <strong>n</strong> , <strong>a</strong> ≠ <strong>b</strong>, 1 ≤ <strong>p</strong> ≤ 100): <strong>a</strong> e <strong>b</strong> são dois pontos finais de uma rua e <strong>p</strong> é a probabilidade dos irmãos Blues conseguirem usar essa rua sem serem pegos. Cada rua pode ser usada nas duas direções. Você pode supor que há no máximo uma rua entre dois pontos finais.</p>
+
+                    <p>A última instância é seguida por um zero.</p>
+                    <p><strong>Obs.: </strong>O caminho mais seguro a ser seguido no exemplo de entrada é 1 -> 4 -> 3 -> 5</p>
+                 
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância, calcule a probabilidade do caminho mais seguro da interseção 1 (o Hotel Palace) até a interseção <strong>n</strong> (o Honorável Centro Richard J. Daley em Chicago). Você pode supor que exista ao menos um caminho entre as interseções 1 e <strong>n</strong>.</p>
+
+                    <p>Imprima a probabilidade como uma porcentagem com exatamente 6 dígitos depois da vírgula. O valor precentual será considerado correto se difeir no máximo 10<sup>-6</sup> da saída do juíz. Use o formato mostrado abaixo e imprima uma linha por instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 7</p>
+
+<p>5 2 100</p>
+
+<p>3 5 80</p>
+
+<p>2 3 70</p>
+
+<p>2 1 50</p>
+
+<p>3 4 90</p>
+
+<p>4 1 85</p>
+
+<p>3 1 70</p>
+
+<p>0</p>
+
+                            </td>
+                            <td>
+                                <p>61.200000 percent</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+				   	Univeristy of Ulm Local Contest 2005/2006
+                
+                 </p>
+            </div>
+
+        </body>
+    </html>

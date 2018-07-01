@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1576 - The Skyline Problem</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1576 - The Skyline Problem" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1576</span>
+                <h1>O Problema da Linha do Horizonte</h1>
+                <div>
+                    <p>Autor Desconhecido</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+<div class="problem">
+
+                <div class="description">
+                    <p>Com o advento das estações de trabalho de alta velocidade gráfica, CAD (desenho assistido por computador ou DAC) e outras áreas (CAM, design VLSI) têm feito uso cada fez mais eficaz dos computadores. Um dos problemas com imagens de desenho é a eliminação de linhas ocultas - linhas obscurecidas por outras partes do desenho.</p>
+					<p>Você deverá desenvolver um programa para ajudar um arquiteto no desenho da linha do horizonte de uma cidade, dado a localização dos edifícios da cidade. Para tornar o problema tratável, todos os edifícios possuem formas retangulares e eles compartilham uma base comum (a cidade em que eles são construídos é muito plana). A cidade também é vista como bidimensional. Um edifício é especificado por uma tripla ordenada (L<sub>i</sub>, H<sub>i</sub>, R<sub>i</sub>), onde L<sub>i</sub> e R<sub>i</sub> são coordenadas esquerda e direita, repectivamente, do edifício i e H<sub>i</sub> é a altura do edifício. No diagrama abaixo os edifícios são mostrados à esquerda com triplas</p>
+
+<p class="center">(1,11,5),(2,6,7),(3,13,9),(12,7,16),(14,3,25),(19,18,22),(23,13,29),(24,4,28)</p>
+
+<p>a linha do horizonte, exibida à direita, é representada pela sequência:</p>
+
+<p class="center">(1,11,3,13,9,0,12,7,16,3,19,18,22,3,23,13,29,0)</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1576.png" style="height:216px; width:650px" /></img>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é uma sequência de triplas de edifícios. Todas as coordenadas dos edifícios são inteiros menores que 10000 e haverá ao menos um e não mais do que 5000 edifícios no arquivo de entrada. Cada tripla de edifícios está em uma linha por si só no arquivo de entrada. Todos os inteiros em uma tripla são separados por um ou mais espaços. As triplas serão ordenadas por L<sub>i</sub>, a coordenada x à esquerda do edifício, de modo que o edifício com a menor coordenada x à esquerda é o primeiro no arquivo de entrada.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>A saída deve consistir de um vetor que descreve a linha do horizonte, como mostrado no exemplo acima. No vetor da linha do horizonte (v<sub>1</sub>, v<sub>2</sub>, v<sub>3</sub>, . . . , v<sub>n−2</sub>, v<sub>n−1</sub>, v<sub>n</sub>), o v<sub>i</sub> tal que i é um número par representa a linha horizontal (altura). O v<sub>i</sub> tal que i é um número ímpar representa  a linha vertical (coordenada x). O vetor deve representar o "caminho" tomado, por exemplo, por um inseto iniciando na menor coordenada x e viajando horizontalmente e verticalmente sobre todas as linhas que definem a linha do horizonte (skyline). Assim, a última entrada de todos os vetores da linha do horizonte será um 0 (zero).</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1 11 5<br />
+2 6 7<br />
+3 13 9<br />
+12 7 16<br />
+14 3 25<br />
+19 18 22<br />
+23 13 29<br />
+24 4 28</p>
+
+                            </td>
+                            <td>
+                                <p>1 11 3 13 9 0 12 7 16 3 19 18 22 3 23 13 29 0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

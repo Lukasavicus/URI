@@ -1,0 +1,143 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1951 - Validador de Circuitos</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1951 - Validador de Circuitos" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1951</span>
+				<h1>Validador de Circuitos</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O Prof. Padilha pediu um trabalho para a componente curricular de Circuitos Digitais e agora está todo mundo desesperado! Os calouros precisam construir um circuito combinacional usando apenas circuitos de uma lista de circuitos publicados pelo professor. No entanto, devido a alguns problemas com tamanho, eles mal estão conseguindo determinar se os circuitos que eles construíram são válidos, quanto mais decidir se estão corretos. Cabe agora a você, veterano, fazer um programa para validar os circuitos construídos pelos calouros. Você pode ajudá-los?</p>
+
+<p>A propósito, de acordo com o que o Prof. Padilha pediu, um circuito <strong>C</strong> é válido se:</p>
+
+<ul>
+	<li>para toda entrada de <strong>C</strong> e toda saída de um circuito menor usado internamente na construção de <strong>C</strong> existe ao menos um caminho até alguma saída de <strong>C</strong>;</li>
+	<li>para toda saída de <strong>C</strong> existe ao menos um caminho que vem de alguma entrada de <strong>C</strong>;</li>
+	<li>não há ciclos em <strong>C</strong>.</li>
+</ul>
+
+<p>Todos os circuitos publicados pelo professor possuem só uma saída cada, embora os circuitos construídos pelos calouros possam ter várias saídas. É óbvio que os circuitos publicados pelo professor são todos válidos.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém a descrição de um circuito <strong>C</strong>, o qual se deseja validar. A primeira linha da entrada consiste de três inteiros, <strong>I</strong>, <strong>N</strong> e <strong>O</strong> (1 ≤ <strong>I</strong>, <strong>N</strong>, <strong>O</strong> ≤ 10<sup>4</sup>), os quais representam respectivamente o número de entradas de <strong>C</strong>, o número de circuitos publicados pelo professor usados internamente na construção de <strong>C</strong> e o número de saídas de <strong>C</strong>, de modo que as entradas são identificadas pelos inteiros 1, …, <strong>I</strong>, os circuitos internos pelos inteiros <strong>I</strong> + 1, …, <strong>I</strong> + <strong>N</strong>, e as saídas identificadas pelos inteiros <strong>I</strong> + <strong>N</strong> + 1, …, <strong>I</strong> + <strong>N</strong> + <strong>O</strong>. Cada uma das próximas <strong>N</strong> linhas descreve como é alimentado cada um dos circuitos internos, seguindo a ordem <strong>I</strong> + 1, …, <strong>I</strong> + <strong>N</strong>, e consiste de um inteiro <strong>K</strong> (1 ≤ <strong>K</strong> ≤ 10<sup>2</sup>), o qual representa o número de entradas no circuito interno, seguido por <strong>K</strong> inteiros, os quais identificam a origem do sinal alimentado em cada entrada. A última linha da entrada consiste de <strong>O</strong> inteiros, identificando a origem do sinal devolvido por cada saída de <strong>C</strong>, seguindo a ordem <strong>I</strong> + <strong>N</strong> + 1, …, <strong>I</strong> + <strong>N</strong> + <strong>O</strong>.</p>
+
+<p>A figura abaixo ilustra o circuito <strong>C</strong> descrito pelo primeiro exemplo de entrada.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/validador.jpg" style=""></p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo unicamente <strong>o.o</strong> se o circuito descrito na entrada é válido ou <strong>u.u</strong> caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 3 3<br />
+3 1 2 3<br />
+3 1 2 6<br />
+2 3 4<br />
+1 5 6</p>
+
+							</td>
+							<td>
+								<p>o.o</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 3 2<br />
+3 1 2 3<br />
+1 6<br />
+1 5<br />
+4 6</p>
+
+							</td>
+							<td>
+								<p>u.u</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 3 2<br />
+3 1 2 3<br />
+3 1 2 6<br />
+2 3 4<br />
+1 6</p>
+
+							</td>
+							<td>
+								<p>u.u</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					1<sup>ạ</sup> Minimaratona Noturna de Grafos da UFFS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1306 - Numerando Estradas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1306 - Numerando Estradas" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+
+        <style type="text/css">
+            #roads {
+                border-right: #bbb solid 1px;
+                border-left: #bbb solid 1px;
+                display: inline-table;
+                max-width:120px;
+                text-align: center;
+                vertical-align: middle;
+            }
+
+            #roads tbody {
+                background: #fff;
+            }
+
+            #roads td {
+                border-top: #bbb solid 1px;
+                border-bottom: #bbb solid 1px; 
+                padding: 5px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1306</span>
+            <h1>Numerando Estradas</h1>
+            <div><p>Por Shahriar Manzoor <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif' alt="" /> Bangladesh</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1306.jpg" style="width: 264px; height: 387px; float: right; margin-left:20px;" /></p>
+                <p>
+                    No meu país, as ruas não têm nomes, cada uma delas tem apenas um número como nome. Estes números devem ser únicos, mas nem sempre este é o caso. O governo local aloca alguns inteiros para citar as estradas e, em muitos casos, o número de inteiros alocados é menor do que o número total de estradas. Nesse caso, para que os nomes das estradas sejam único, alguns sufixos de caracteres únicos são utilizados. Assim, as estradas são nomeadas como 1, 2, 3, 1A, 2B, 3C etc. É claro que o número de sufixos também é sempre limitado a 26 (A, B, …, Z). Por exemplo, se existem 4 estradas e dois inteiros diferentes são alocados para nomear, então algumas declarações de nomes possíveis podem ser:</p>
+
+                <div class="center">
+                    <table id="roads">
+
+                        <tbody>
+                            <tr>
+                                <td>
+                                    1, 2, 1A, 2B
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1, 2, 1A, 2C
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    3, 4, 3A, 4A
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    1, 2, 1B, 1C
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p>
+                    Dado o número de estradas (R) e os números de inteiros alocados para a nomeação (N), o seu trabalho é determinar o número mínimo de sufixos diferentes necessários (de todas as nomeações possíveis) para nomear as ruas, assumindo que não existam duas ruas com o mesmo nome.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    O arquivo de entrada pode conter até <b>10002 </b>linhas de entrada. Cada linha contém dois inteiros <b>R</b> e <b>N</b> (<b>R</b> &lt; 10001, 0 &lt; <b>N</b>). Aqui <b>R</b> é o número total de ruas a serem nomeadas e <b>N</b> indica o número de inteiros alocados para a nomeação. A entrada termina com "0 0" que não deve ser processado.</p>
+
+            </div>
+            <br/>
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada linha de entrada, você de produzir uma linha de saída. Esta linha contém o número de série de saída, seguido por um inteiro <b>D</b> que indica o número mínimo de sufixos necessários para nomear as ruas. Se não é possível nomear todas as ruas, você deve imprimir “impossible” no lugar (sem as aspas).</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                8 5<br/>
+                                100 2<br/>
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Case 1: 1<br/>
+                                Case 2: impossible</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p class="footer">
+                Agradecimento especial: Sohel Hafiz. Adaptado por Gerson Groth.
+            </p>
+        </div>
+
+    </body>
+</html>

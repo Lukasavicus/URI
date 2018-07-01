@@ -1,0 +1,136 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2325 - Repositórios</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema G - Repositórios" />
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2325</span>
+				<h1>Repositórios</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Uma das boas práticas ao administrar um conjunto de computadores é manter os aplicativos sempre atualizados. Entretanto, em uma grande corporação com milhares de aplicativos instalados, a simples verificação do que precisa ser atualizado pode tornar-se uma tarefa bem complicada. Para facilitar isso, alguns fabricantes armazenam todos os aplicativos existentes em grandes bases de dados chamadas repositórios e um programa é responsável por verificar esse repositório e atualizar as versões dos aplicativos.</p>
+
+					<p>M.V.Lzr, um administrador de sistemas e rapper nas horas vagas, trabalha em uma empresa que, infelizmente, não utiliza um sistema com repositórios. Para facilitar sua vida, ele decidiu que era a hora de ter o seu próprio sistema e pediu a sua ajuda.</p>
+
+					<p>Periodicamente ele varre a Internet em busca das páginas que possam conter os aplicativos e constrói uma lista com as versões dos aplicativos que deseja instalar disponíveis em cada página. Um programa deve verificar então qual a versão de cada programa instalado nos computadores (todos eles possuem os mesmos aplicativos instalados e nas mesmas versões) e instalar todos aqueles que ainda não foram instalados ou cuja versão instalada seja anterior à versão mais recente. Como ele não sabe programar direito, ele pediu sua ajuda.</p>
+
+					<p>Dada uma lista de aplicativos instaladas nos computadores da empresa, com suas respectivas versões e uma lista de aplicativos disponíveis na internet que devem ser instalados, determinar quais devem ser instalados e em quais versões.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado). A primeira linha da entrada contém dois inteiros <strong>C</strong> (1 ≤ <strong>C</strong> ≤ 10.000) e <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 1.000) que representam o número total de programas instalados na empresa, e o número total de aplicativos e versões disponíveis na internet, respectivamente. As <strong>C</strong> linhas seguintes possuem dois inteiros cada, <strong>Pc</strong> (1 ≤ <strong>Pc</strong> ≤ 1.000.000.000) e <strong>Vc</strong> (1 ≤ <strong>Vc</strong> ≤ 1.000.000.000), representando o número do programa e o número da versão instalada nos computadores. Todo aplicativo está instalado uma única vez em cada máquina e em uma única versão. Em seguida, as As <strong>N</strong> linhas seguintes possuem dois inteiros cada, <strong>Pn</strong> (1 ≤ <strong>Pn</strong> ≤ 1.000.000.000) e <strong>Vn</strong> (1 ≤ <strong>Vn</strong> ≤ 1.000.000.000), representando o número do programa e o número da versão disponível na internet. Um dado programa pode estar disponível em mais de uma versão na internet.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na saída padrão, diversas linhas, cada uma contendo dois inteiros, Ps e Vs com o número do programa e a versão que deve ser instalada. Em todo caso de teste existe pelo menos um programa que deve ser instalado</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 1<br />
+5215 1<br />
+5215 3</p>
+
+							</td>
+							<td>
+								<p>5215 3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>3 2<br />
+1640 1<br />
+2540 4<br />
+1870 3<br />
+2540 1<br />
+1640 4</p>
+
+                    </td>
+                    <td>
+                        <p>1640 4</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>2 5<br />
+2000 4<br />
+2001 5<br />
+2000 1<br />
+2001 4<br />
+2001 6<br />
+2000 2<br />
+2000 3</p>
+
+                    </td>
+                    <td>
+                        <p>2001 6</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2007 Fase 1 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

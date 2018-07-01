@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1310 - Lucro</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1310 - Lucro" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1310</span>
+            <h1>Lucro</h1>
+            <div> <p>Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif"  /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    George é dono de um circo e traz seu circo de cidade em cidade. Ele sabe o quanto de receita ele pode obter em qualquer dia de uma série de dias em uma cidade. Ele também sabe o custo constante diário para manter o seu circo. George quer trazer seu circo à cidade para a série de dias que resulta em maior lucro.</p>
+                <p>
+                    Por exemplo, se em uma determinada cidade o custo for de $ 20 por dia em um exemplo com 6 dias, sendo que as receitas previstas por dia são {$ 18, $ 35, $ 6, $ 80, $ 15, $ 21}, George pode obter o máximo de lucro trazendo o seu circo para esta cidade do dia 2 ao dia 4. Desta forma ele pode lucrar (35 + 80 + 6) - (3 * 20) = $ 61.</p>
+                <p>
+                    Nota: A série de dias que George traz seu circo para a cidade pode ser entre 0 e o número máximo de dias, inclusive. Obviamente, se George traz seu circo para a cidade por 0 dias, ele obtém $ 0 de lucro.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém muitos casos de teste. A primeira linha de cada caso de teste contém um inteiro <strong>N </strong>(1 ≤ <strong>N </strong>≤ 50) que representa o número de dias que George pode trazer o seu circo para a cidade. A segunda linha do caso de teste contém um número inteiro <strong>custoPorDia </strong>(0 ≤ <strong>custoPorDia </strong>&lt; 1000) que representa o custo em manter o circo na cidade. Segue <strong>N </strong>linhas (uma por cada dia), contendo cada um um inteiro <strong>receita </strong>(0 ≤ <strong>receita </strong>&lt; 1000) representa a receita que o circo obtem em cada dia. O final da entrada é indicado por EOF (fim de arquivo).</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima o máximo de dinheiro que George pode ganhar trazendo o seu circo para a cidade de acordo com o exemplo abaixo.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                6<br />
+                                20<br />
+                                18<br />
+                                35<br />
+                                6<br />
+                                80<br />
+                                15<br />
+                                21<br />
+                                4<br />
+                                40<br />
+                                30<br />
+                                20<br />
+                                10<br />
+                                38</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                61<br />
+                                0</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                * Este problema é de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por Neilor para utilização (autorizada) no URI OJ.<br />
+                * A reprodução não autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. é estritamente proibida.</p>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2564 - Troca ou Não Troca</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Troca ou Não Troca" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2564</span>
+			<h1>Troca ou Não Troca</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Você provavelmente conhece programas de TV do tipo Troca ou não Troca?, onde um participante pode ganhar um prêmio que pode ir desde uma caneta até uma casa com piscina.</p>
+
+<p>Existem <strong>N</strong> prêmios, numerados de 1 a <strong>N</strong>. O participante começa o programa com o prêmio 1. O programa tem então <strong>N</strong>-1 rodadas. Na rodada <em>i</em>, o apresentador pergunta ao participante se ele deseja trocar seu prêmio atual pelo prêmio <strong>P<sub>i</sub></strong>. O participante, que não sabe qual prêmio está sendo oferecido, deve responder “sim” ou “não”. Se o participante responder “sim”, seu prêmio atual é trocado pelo prêmio <strong>P<sub>i</sub></strong>. Se o participante responder “não”, seu prêmio atual não é alterado. Após a última rodada, o participante leva para casa o prêmio que tiver.</p>
+
+<p>Seu irmão será o participante do programa que está prestes a começar! Antes do programa, ele lhe contou a resposta que pretende dar em cada rodada. Entretanto, você tem o poder de controlar sua mente! Ao utilizar o poder em alguma rodada, a resposta dele para aquela rodada é alterada, isto é, ele irá dizer “sim” caso pretendia dizer “não”, e vice-versa.</p>
+
+<p>Você acabou de descobrir qual prêmio será oferecido em cada rodada. Você quer muito que ele termine o programa com o prêmio <strong>N</strong>, o de maior valor entre todos os prêmios. Qual a quantidade mínima de vezes que seu poder deve ser utilizado para garantir que seu irmão irá levar o prêmio <strong>N</strong>?</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém o inteiro <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 100), o número de prêmios. As próximas <strong>N</strong>-1 linhas descrevem uma rodada cada, em ordem. Cada linha contém dois inteiros <strong>P<sub>i</sub></strong> e <strong>R<sub>i</sub></strong> (2 ≤ <strong>P<sub>i</sub></strong> ≤ <strong>N</strong>, <strong>R<sub>i</sub></strong> = 0 ou 1), o prêmio oferecido na rodada e a resposta que seu irmão pretende dar na rodada, respectivamente. <strong>R<sub>i</sub></strong> = 0 indica “não”, enquanto <strong>R<sub>i</sub></strong> = 1 indica “sim”.</p>
+
+<p>Nenhum prêmio será oferecido mais de uma vez, e o prêmio 1 não será oferecido novamente.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha com a quantidade mínima de vezes que você deve usar seu poder para garantir que o prêmio <strong>N</strong> será conquistado.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3<br />
+3 1<br />
+2 0<br />
+							4<br />
+3 0<br />
+4 0<br />
+2 1</p>
+						</td>
+						<td>
+							<p>0<br />
+							2</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

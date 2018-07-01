@@ -1,0 +1,103 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2710 - Jogo da Matriz</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2255 - Jogo da Matriz" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2710</span>
+				<h1>Jogo da Matriz</h1>
+				<div>
+					<p>Por Luciano Ribeiro, Inatel <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Dâmi e Marcus gostam de criar jogos de computadores. Recentemente criaram um jogo baseado em matrizes&nbsp;e agora estão precisando de sua ajuda para testá-lo.</p>
+
+<p>É dado a você uma matriz <strong>M</strong> inicialmente preenchida com zeros. Então&nbsp;será dado <strong>Q</strong> operações. São elas:</p>
+
+<ul>
+	<li><strong>U X Y Z W V</strong> - Incrementar <strong>V</strong> em todas as posições na sub-matriz de <strong>M</strong> definida pelo canto superior esquerdo (<strong>X</strong>,<strong>Y</strong>) e canto inferior direito (<strong>Z</strong>,<strong>W</strong>)</li>
+	<li><strong>A X Y</strong> - Retorna o valor de <strong>m<sub><strong>x</strong>,y</sub></strong></li>
+</ul>
+
+<p>Após deles terem&nbsp;criado o jogo, agora&nbsp;querem que você ajude-os a avaliar se o código deles está correto.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Cada caso de teste começará com um inteiro&nbsp;<strong>Q</strong>&nbsp;(<strong>Q</strong>&nbsp;≤&nbsp;100 000). Após isso você deverá ler&nbsp;<strong>Q</strong>&nbsp;operações no formato descrito acima&nbsp;(1&nbsp;≤ <strong>X</strong>&nbsp;≤&nbsp;<strong>Z</strong>&nbsp;≤&nbsp;500&nbsp;e 1&nbsp;≤ <strong>Y</strong>&nbsp;≤ <strong>W&nbsp;</strong>≤&nbsp;500&nbsp;&nbsp;e<strong> |V|&nbsp;</strong>≤ 5000).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada operação do tipo "A", imprima&nbsp;o valor correspondente conforme o exemplo de saída.&nbsp;</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6<br />
+U 2 2 5 6 2<br />
+U 3 4 8 5 1<br />
+A 4 3<br />
+A 3 5<br />
+A 7 5<br />
+A 1 1</p>
+
+							</td>
+							<td>
+								<p>2<br />
+3<br />
+1<br />
+0</p>
+
+
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+
+				</p>
+			</div>
+
+		</body>
+	</html>

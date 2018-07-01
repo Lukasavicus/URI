@@ -1,0 +1,130 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2364 - Henrique</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema J - Henrique" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2364</span>
+				<h1>Henrique</h1>
+				<div>
+					<p>Por Filipe Arcanjo, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Nos primórdios da computação, os professores exigiam que trabalhos práticos de Algoritmos e Estruturas de Dados II (AEDs II) fossem feitos em uma linguagem chamada <em>DCCembly</em>. Infelizmente, apenas um aluno era insano o bastante para fazer trabalhos a partir do zero utilizando essa linguagem. Esse aluno se chamava <em>Henrique</em>. Os demais alunos copiavam trabalhos de semestres anteriores, o que sempre acabava introduzindo pequenos erros.</p>
+
+<p>Nesse problema, você deve escrever um programa que ajude a detectar essas cópias. Seu programa deve receber como entrada dois programas válidos escritos em <em>DCCembly</em> e retornar como saída a quantidade de entradas (módulo 10<sup>9</sup> + 7) para as quais ambos os programas retornem a mesma resposta.</p>
+
+<ul>
+	<li><u>Valores de Retorno:</u> [<em>I<sub>i</sub></em> R <em>v</em>]
+
+	<p>Para o programa e retorna o valor booleano v ∈{0,1} como saída.</p>
+	</li>
+	<li><u>Desvios condicionais:</u> [<em>I<sub>i</sub></em> D <em>j I<sub>k</sub> I<sub>l</sub></em>]
+	<p>Lê o valor de entrada <em>x<sub>j</sub></em> e desvia a execução para a instrução de rótulo <em>I<sub>k</sub></em> se <em>x<sub>j</sub> = 1</em> e <em>I<sub>l</sub></em> se <em>x<sub>j</sub> = 0</em>.</p>
+
+	<p>Denotaremos por var(<em>I<sub>i</sub></em>) a variável considerada por uma instrução. Assim, se [<em>I<sub>i</sub></em> D <em>j I<sub>k</sub> I<sub>l</sub></em>] é uma instrução, var(<em>I<sub>i</sub></em>) = <em>j</em>. Para instruções com valores de retorno como [<em>I<sub>i</sub> </em>R <em>v</em>], assumiremos que var(<em>I<sub>i</sub></em>) = <em>M + 1</em>.</p>
+	</li>
+</ul>
+
+<p>Todo programa válido em <em>DCCembly</em> deve satisfazer as seguinte propriedades:</p>
+
+<ul>
+	<li>Para toda instrução de rótulo <em>I<sub>i</sub></em>, existe uma entrada X = (<em>x<sub>1</sub>, …, x<sub>M</sub></em>) tal que <em>I<sub>i</sub></em> seja executada quando o programa recebe X.</li>
+	<li>Para toda instrução de desvio [<em>I<sub>i</sub> </em>D <em>j I<sub>k</sub> I<sub>l</sub></em>], temos var(<em>I<sub>i</sub></em>) &lt; var(<em>I<sub>k</sub></em>) e var(<em>I<sub>i</sub></em>) &lt; var(<em>I<sub>l</sub></em>).</li>
+	<li>Uma instrução de desvio só pode ter como destinos instruções que apareceram previamente no código.</li>
+	<li>A execução se inicia pela <em>última</em> instrução.</li>
+	<li>Os identificadores de instruções são únicos dentro de um único programa.</li>
+</ul>
+
+<p>Escreva um programa que receba dois códigos válidos em <em>DCCembly</em> como entrada e retorne o número de entradas distintas para as quais os dois programas tem como saída o mesmo valor. Como a resposta pode ser muito grande, basta computa-la módulo 10<sup>9</sup> + 7.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por multiplos casos de teste e deve ser lida da entrada padrão. Cada caso de teste começa com uma linha contendo 3 inteiros: <strong>M, L<sub>0</sub></strong> e <strong>L<sub>1</sub></strong>. O inteiro <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 10<sup>6</sup> ) denota a quantidade de variáveis de entrada. Já <strong>L<sub>0</sub></strong> corresponde ao número de instruções no primeiro programa (1 ≤ <strong>L<sub>0</sub></strong> ≤ 1000) e <strong>L<sub>1</sub></strong> corresponde ao número de instruções no segundo (1 ≤ <strong>L<sub>1</sub></strong> ≤ 1000).</p>
+
+<p>Em seguida, há <strong>L<sub>0</sub></strong> linhas contendo o primeiro programa. Instruções de desvio do tipo [<em>I<sub>i</sub></em> D<em> j I<sub>k</sub> I<sub>l</sub></em>] são denotadas por um identificador <strong>I<sub>i</sub></strong> (1 ≤ <strong>I<sub>i</sub></strong> ≤ <strong>L<sub>0</sub></strong>) seguido do caractere “D” e de três inteiros <strong>j, I<sub>k</sub>, </strong>e <strong>I<sub>l</sub></strong>. O inteiro <strong>j</strong> indica que a variável <em>x<sub>j</sub></em> é considerada pelo desvio (1 ≤ <strong>j</strong> ≤ <strong>M</strong>). Já os inteiros <strong>I<sub>k</sub></strong> e <strong>I<sub>l</sub></strong> (1 ≤ <strong>I<sub>k</sub></strong>, <strong>I<sub>l</sub></strong> ≤ <strong>L<sub>0</sub></strong>) indicam as instruções de destino do desvio caso <em>x<sub>j</sub>=1</em> e caso <em>x<sub>j</sub> = 0</em>, respectivamente. Finalmente, instruções de retorno [<em>I<sub>i</sub></em> R <em>v</em>] são denotadas por um identificador numérico <strong>I<sub>i</sub></strong> (1 ≤ <strong>I<sub>i</sub></strong> ≤ <strong>L<sub>0</sub></strong>) seguido do caractere “R” e de um inteiro <strong>v ∈{0, 1}</strong>.</p>
+
+<p>Finalmente, outras <strong>L<sub>1</sub></strong> linhas descrevem o segundo programa. Como antes, instruções de desvio do tipo [<em>I<sub>i</sub></em> D<em> j I<sub>k</sub> I<sub>l</sub></em>] são denotadas por um identificador <strong>I<sub>i</sub></strong> (1 ≤ <strong>I<sub>i</sub></strong> ≤ <strong>L<sub>1</sub></strong>) seguido do caractere “D” e de três inteiros <strong>j, I<sub>k</sub>, </strong>e <strong>I<sub>l</sub></strong>. O inteiro <strong>j</strong> indica que a variável <em>x<sub>j</sub></em> é considerada pelo desvio (1 ≤ <strong>j</strong> ≤ <strong>M</strong>). Já os inteiros <strong>I<sub>k</sub></strong> e <strong>I<sub>l</sub></strong> (1 ≤ <strong>I<sub>k</sub></strong>, <strong>I<sub>l</sub></strong> ≤ <strong>L<sub>1</sub></strong>) indicam as instruções de destino do desvio caso <em>x<sub>j</sub>=1</em> e caso <em>x<sub>j</sub> = 0</em>, respectivamente. Finalmente, instruções de retorno [<em>I<sub>i</sub></em> R <em>v</em>] são denotadas por um identificador numérico <strong>I<sub>i</sub></strong> (1 ≤ <strong>I<sub>i</sub></strong> ≤ <strong>L<sub>1</sub></strong>) seguido do caractere “R” e de um inteiro <strong>v ∈{0, 1}</strong>.</p>
+
+<p>Note que embora os identificadores de instruções são únicos apenas dentro de um único programa.</p>
+
+<p>A entrada termina com uma linha contendo três zeros, que não deve ser processada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima uma única linha na saída padrão contendo o número de entradas distintas (<em>x<sub>1</sub>, …, x<sub>M</sub></em>) para as quais ambos os programas retornem a mesma resposta módulo 10<sup>9</sup> + 7.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>10 1 1<br />
+1 R 0<br />
+1 R 0<br />
+400 4 5<br />
+1 R 0<br />
+2 R 1<br />
+3 D 3 1 2<br />
+4 D 1 3 2<br />
+1 R 1<br />
+2 R 0<br />
+3 D 4 2 1<br />
+4 D 3 3 1<br />
+5 D 1 4 2<br />
+0 0 0</p>
+
+							</td>
+							<td>
+								<p>1024<br />
+824612832</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Seletiva UFMG 2014
+				</p>
+			</div>
+
+		</body>
+	</html>

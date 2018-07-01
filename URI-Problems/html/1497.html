@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1497 - Esconde-Esconde</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1497 - Esconde-Esconde" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1497</span>
+                <h1>Esconde-Esconde</h1>
+                <div>Por Pablo Ariel Heiber <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=''/> Argentina</div>
+                <strong>Timelimit: 7</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p><br />
+Em um playground (parque infantil), um grupo de crianças está brincando de Esconde-Esconde. Como o nome sugere, o jogo é sobre crianças se escondendo e procurando outras crianças. Cada criança, ou é uma criança que se esconde ou uma criança que procura. As crianças que se escondem apenas tentam não ser encontradas, enquanto as que procuram tentam encontrá-las.<br />
+Como você pode notar, tanto as crianças que se escondem quanto as que procuram tentam não ser encontradas, e para fazer isso, elas usam algumas paredes que existem no parque. Cada parede é representada por um segmento de linha e cada criança é representada por um ponto no plano XY. Duas crianças se enxergam se e somente se o segmento de linha entre eles não fizer intersecção com nenhum segmento de parede.<br />
+Sua tarefa é calcular quantas outras crianças cada criança que procura consegue ver. Para simplificar o problema, você pode assumir que as paredes não se cruzam, mesmo nas suas pontas (extremidades). Além disso, não há três pontos<br />
+colineares dentro do conjunto formado por crianças e pontos de extremidade das paredes, o que implica que as crianças não estão dentro das paredes, e que não há duas crianças no mesmo local.<br />
+<br />
+</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste e termina com EOF. Cada caso de teste consiste de várias linhas. A primeira linha contém 3 inteiros <strong>S</strong>, <strong>K</strong> e <strong>W</strong>, representando respectivamente o número de crianças procurando, o número total de crianças e o número de paredes do playground&nbsp;(1 ≤ <strong>S</strong> ≤ 10; 1 ≤ <strong>K</strong>, <strong>W</strong> ≤ 10<sup>4</sup> e <strong>S</strong> ≤ <strong>K</strong>). Cada uma das próximas <strong>K</strong> linhas descreve uma criança com dois inteiros <strong>X</strong> e <strong>Y</strong>(−10<sup>6</sup>&nbsp;≤ <strong>X</strong>, <strong>Y</strong> ≤ 10<sup>6</sup>&nbsp;), indicando que a localização da criança no plano XY é o ponto (<strong>X</strong>, <strong>Y</strong>); o primeiro S destas linhas descreve crianças procurando. Cada uma das próximas W linhas descreve uma parede com quatro inteiros <strong>X</strong><sub>1</sub>, <strong>Y</strong><sub>1</sub>, <strong>X</strong><sub>2</sub> e <strong>Y</strong><sub>2</sub> (−10<sup>6</sup> ≤ <strong>X</strong><sub>1</sub>, <strong>Y</strong><sub>1</sub>, <strong>X</strong><sub>2</sub>, <strong>Y</strong><sub>2</sub> ≤ 10<sup>6</sup>), indicando que os dois pontos finais da parede no plano XY são (<strong>X</strong><sub>1</sub>, <strong>Y</strong><sub>1</sub>) e (<strong>X</strong><sub>2</sub>, <strong>Y</strong><sub>2</sub>). Você pode assumir que os segmentos de paredes não se interseccionam e que nenhum dos 3 pontos dados na entrada são colineares.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima S linhas, cada uma delas contendo um inteiro. Na enésima linha escreva o número de outros garotos que o enésimo garoto pode enxergar.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 3 2<br />
+0 0<br />
+100 0<br />
+0 100<br />
+50 -1 48 3<br />
+49 49 51 52<br />
+4 4 4<br />
+-100 0<br />
+0 100<br />
+0 -100<br />
+100 0<br />
+3 3 -2 -2<br />
+-101 50 101 50<br />
+-101 -101 101 -101<br />
+-49 -50 49 -50<br />
+5 6 4<br />
+40 40<br />
+60 10<br />
+70 30<br />
+60 80<br />
+30 81<br />
+20 40<br />
+0 10 40 50<br />
+10 61 30 61<br />
+-100 90 200 90<br />
+50 20 50 50<br />
+&nbsp;</p>
+
+                            </td>
+                            <td>
+                                <p>
+1<br />
+0<br />
+1<br />
+0<br />
+2<br />
+1<br />
+1<br />
+2<br />
+3<br />
+5<br />
+2<br />
+&nbsp;</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+               <p class="footer">
+                    ACM/ICPC South America Contest 2013.
+                </p>
+            </div>
+
+        </body>
+    </html>

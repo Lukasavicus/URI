@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1615 - Insatisfação nas Eleições</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1615 - Insatisfação nas Eleições" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1615</span>
+                <h1>Insatisfação nas Eleições</h1>
+                <div>
+                    <p>Por Bruno Adami, Universidade de São Paulo - São Carlos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Uma eleição foi feita em uma pequena cidade de M habitantes, onde havia N candidatos. As pessoas escreviam o número do candidato em um pedaço de papel, e inseriam na urna.</p>
+
+                    <p>Ao final da eleição, se um candidato receber uma quantidade estritamente maior do que 50% dos votos, ele é considerado o vencedor. Caso contrário um segundo turno de eleições é feito.</p>
+
+                    <p>Como o processo de contagem manual é muito lento, você deve desenvolver um programa que decide qual o candidato vencedor ou se nenhum recebeu votos suficientes e um segundo turno será necessário.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+                    <p>Na primeira linha você terá um inteiro <strong>T</strong> (<strong>T</strong> ≤ 100) indicando o número de casos de teste.</p>
+                    
+                    <p>Para cada caso de teste, na primeira linha você terá os números inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 10<sup>3</sup>* ou 1 ≤ <strong>M</strong> ≤ 5*10<sup>4</sup>**). Na próxima linha, <strong>M</strong> inteiros seguirão separados por espaços, indicando o candidato em que cada pessoa votou, ou seja, o número escrito em cada pedaço de papel dentro da urna.</p>
+                    
+                    <p>*Ocorre em aproximadamente 90% dos casos de teste;</p>
+                    <p>**Ocorre nos demais casos de teste.</p>
+                    
+                 
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso, imprima o número do candidato vencedor, ou -1 caso haverá segundo turno.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+                                <p>2 3</p>
+                                
+                                <p>1 1 2</p>
+                                
+                                <p>2 5</p>
+                                
+                                <p>1 2 2 1 2</p>
+                                
+                                <p>3 4</p>
+                                
+                                <p>1 2 3 1</p>
+
+                            </td>
+                            <td>
+                                <p>1</p>
+
+                                <p>2</p>
+                                
+                                <p>-1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                   Seletiva USP São Carlos - Segunda Prova 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

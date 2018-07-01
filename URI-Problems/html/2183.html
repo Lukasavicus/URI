@@ -1,0 +1,147 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2183 - Batalha Final</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2183 - Batalha Final" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2183</span>
+				<h1>Batalha Final</h1>
+				<div>
+					<p>Por Dâmi Henrique, INATEL <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Bia está jogando um jogo de Zumbi e está prestes a começar o último desafio. Modelaremos esse desafio como uma matriz <strong>N</strong>x<strong>N</strong>, onde o objetivo de Bia é sair da sala situada na posição [1, 1] e chegar na sala da posição [<strong>N</strong>, <strong>N</strong>]. Porém, como nada nessa vida é tão simples, existem salas que contêm zumbis, salas que são bloqueadas e salas que contêm itens mágicos para serem pegos que, quando fundidos, dão a Bia um grande poder.</p>
+
+<ul>
+	<li>A sala [1, 1] contém sempre uma letra ‘I’ e a sala [<strong>N</strong>, <strong>N</strong>] a letra ‘F’ significando, respectivamente, o início e fim do desafio.</li>
+	<li>As salas bloqueadas conterão o símbolo ‘#’, sendo assim impossível passar por elas.</li>
+	<li>Salas com um número inteiro <strong>D</strong> significam que existem zumbis e, ao passar por elas, Bia perderá <strong>D</strong> pontos de vida.</li>
+	<li>As outras salas conterão uma das seguintes letras: ‘P’, ‘O’, ‘W’, ‘E’ ou ‘R’, significando a inicial de cada um dos cinco itens mágicos. Quando Bia passa por uma sala com algum desses itens, ela pega e guarda em sua mochila, e no exato momento que junta todos eles, Bia se torna imune aos zumbis nas próximas <strong>K</strong> salas que entrar. É possível ter apenas um item de cada ao mesmo tempo na mochila e, quando usado, todos serão perdidos e poderão ser coletados novamente ao decorrer da batalha. Se Bia juntar todos os itens em um momento que ainda estiver sob o efeito de uma junção anterior, a quantidade de sala imune não será acumulada, e sim voltará ao valor máximo de <strong>K</strong>.</li>
+</ul>
+
+<p>Sua tarefa é descobrir qual a menor quantidade inicial de pontos de vida para que Bia consiga vencer o desafio, dado que ela sempre escolhe o melhor caminho possível. Bia vence o desafio se chegar a sala [<strong>N</strong>, <strong>N</strong>] com pelo menos 1 ponto de vida.</p>
+
+<p>Se Bia está no momento na sala [<strong>X</strong>, <strong>Y</strong>], ela pode andar apenas para as salas [<strong>X</strong>+1, <strong>Y</strong>] ou [<strong>X</strong>, <strong>Y</strong>+1].</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contêm dois inteiros <strong>N</strong>, <strong>K</strong>, indicando, respectivamente, a dimensão da matriz e a quantidade de salas imunes que Bia fica quando junta todos os itens mágicos. (2 ≤ <strong>N</strong> ≤ 100, 1 ≤ <strong>K</strong> ≤ 10).</p>
+
+<p>A seguir temos <strong>N</strong> linhas que descrevem a matriz, cada uma dessas linhas conterá a informação de <strong>N</strong> salas, sendo os caracteres: ‘I’, ‘F’, ‘#’, ‘P’, ‘O’, ‘W’, ‘E’, ‘R’ ou um número inteiro <strong>D</strong>, todos descritos acima. (1 ≤ <strong>D</strong> ≤ 9).</p>
+
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma única linha, a menor quantidade inicial de pontos de vida para que Bia consiga vencer o desafio. Caso seja impossível chegar a sala final, imprima ‘-1’.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 1<br />
+I 5 1 # W&nbsp;<br />
+8 # 2 3 1&nbsp;<br />
+P # E 4 3&nbsp;<br />
+O 9 1 W #&nbsp;<br />
+9 # 3 2 F</p>
+
+							</td>
+							<td>
+								<p>12</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>7 2<br />
+I 3 O 1 1 # #&nbsp;<br />
+1 # 2 # 1 # #&nbsp;<br />
+1 # W P E 9 R&nbsp;<br />
+1 1 P 2 1 2 9&nbsp;<br />
+# 1 5 # 9 # 9&nbsp;<br />
+# R 2 1 4 # 1&nbsp;<br />
+# # O W 3 9 F</p>
+
+                    </td>
+                    <td>
+                        <p>16</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>2 1</p>
+
+<p>I #</p>
+
+<p># F</p>
+
+                    </td>
+                    <td>
+                        <p>-1</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					Aquecimento para a OBI 2016 - Fase 2
+				</p>
+			</div>
+
+		</body>
+	</html>

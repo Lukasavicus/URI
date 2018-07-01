@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2665 - Hipercampo</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2665 - Hipercampo" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2665</span>
+			<h1>Hipercampo</h1>
+			<div>
+				<p>Por Maratona de Programção da SBC, ACM ICPC 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>São dadas duas âncoras, dois pontos <strong>A</strong> = ( <strong>X<sub>A</sub></strong> , 0) e <strong>B</strong> = ( <strong>X<sub>B</sub></strong> , 0), formando um segmento horizontal, tal que 0 &lt; <strong>X<sub> A</sub></strong> &lt; <strong>X<sub>B</sub></strong> , e um conjunto <strong>P</strong> de <strong>N</strong> pontos da forma ( <strong>X</strong>, <strong>Y</strong> ), tal que <strong>X</strong> &gt; 0 e <strong>Y</strong> &gt; 0. A figura mais à esquerda exemplifica uma possível entrada.</p>
+
+<p style="text-align:center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2665.jpg" style="height:202px; width:719px" /></p>
+
+<p>Para “ligar” um ponto <em>v</em> ∈ <strong>P</strong> precisamos desenhar os dois segmentos de reta ( <em>v</em>, <strong>A</strong> ) e ( <em>v</em>, <strong>B</strong> ). Queremos ligar vários pontos, mas de modo que os segmentos se interceptem apenas nas âncoras. Por exemplo, a figura do meio mostra dois pontos, 1 e 4, que não podem estar ligados ao mesmo tempo, pois haveria interseção dos segmentos fora das âncoras. A figura mais à direita mostra que é possível ligar pelo menos 3 pontos, 8, 5 e 3, com interseção apenas nas âncoras.</p>
+
+<p>Seu programa deve computar o número máximo de pontos que é possível ligar com interseção de segmentos apenas nas âncoras.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha da entrada contém três inteiros, <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 100), <strong>X<sub>A</sub></strong> e <strong>X<sub>B</sub></strong> (0 &lt; <strong>X<sub>A</sub></strong> &lt; <strong>X</strong><sub><strong>B</strong> </sub>≤ 10<sup>4</sup> ), representando, respectivamente, o número de pontos no conjunto <strong>P</strong> e as abscissas das âncoras <strong>A</strong> e <strong>B</strong> . As <strong>N</strong> linhas seguintes contêm, cada uma, dois inteiros <strong>X<sub>i</sub> </strong>e <strong>Y<sub>i</sub></strong> (0 &lt; <strong>X<sub>i</sub></strong> , <strong>Y<sub>i</sub></strong> ≤ 10<sup>4</sup> ), representando as coordenadas dos pontos, para 1 ≤ <strong>i</strong> ≤ <strong>N</strong> . Não há pontos coincidentes e não há dois pontos <strong>u</strong> e <strong>v</strong> distintos tais que { <strong>A</strong>, <strong>u</strong>, <strong>v</strong> } ou { <strong>B</strong>, <strong>u</strong>, <strong>v</strong> } sejam colineares.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Seu programa deve imprimir uma linha contendo um inteiro, representando o número máximo de pontos de <strong>P</strong> que podem ser ligados com interseção de segmentos apenas nas âncoras.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4 1 10</p>
+
+<p>2 4</p>
+
+<p>5 1</p>
+
+<p>6 5</p>
+
+<p>7 8</p>
+
+						</td>
+						<td>
+							<p>3</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>2 2 8</p>
+
+<p>3 4</p>
+
+<p>7 4</p>
+
+						</td>
+						<td>
+							<p>1</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				Maratona de Programção da SBC-ACM ICPC 2017
+			</p>
+		</div>
+
+	</body>
+</html>

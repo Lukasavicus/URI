@@ -1,0 +1,106 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1909 - Ajude Kiko</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1909 - Ajude Kiko" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1909</span>
+				<h1>Ajude Kiko</h1>
+				<div>
+					<p>Por Dâmi Henrique, Inatel <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Depois de tanto pedir uma bola quadrada à sua mãe, Kiko não ganhou apenas uma, mas sim várias bolas de aniversário! A diversão de Kiko é soltar várias bolas de uma vez no chão e ficar observando elas quicarem. Como as bolas possuem tamanho, peso e são feitas de matérias diferentes, o tempo de quique de uma para outra é variável. Nesse problema iremos supor que toda bola quica infinitamente de acordo com seu tempo de quique.</p>
+
+					<p>Kiko soltou ao mesmo tempo <strong>N</strong> bolas e percebeu que dependendo das bolas que solta, em alguns instantes, todas as bolas quicam ao mesmo tempo, e ele achou isso genial!</p>
+
+					<p>Dado o tempo de quique em segundos das <strong>N</strong> bolas que Kiko escolheu e um tempo <strong>T</strong>, que é o segundo que Kiko deseja que todas as bolas quiquem ao mesmo tempo, sua tarefa é escolher o menor tempo de quique de mais uma bola para que todas as <strong>N</strong>+1 bolas, quando forem soltas juntas, quiquem todas ao mesmo tempo pela primeira vez exatamente no segundo <strong>T</strong>.</p>
+
+					<p>Obs: O tempo de quique que irá escolher, não pode ser igual ao de nenhum previamente escolhido por Kiko e deverá ser maior que 1.</p>
+
+					<p>Tempo de quique é a diferença dos tempos que a bola encosta no chão por duas vezes consecutivas. Se uma bola tem tempo de quique = 4, iremos considerar que ela quicará nos segundos 4, 8, 12, 16...</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Haverá diversos casos de testes. A primeira linha de cada caso inicia com dois inteiros <strong>N </strong>(1 ≤ <strong>N</strong> ≤ 100) e <strong>T</strong> (1 ≤ <strong>T </strong>≤ 10<sup>5</sup>) representando a quantidade de bolas que Kiko tem em mãos e o segundo que Kiko deseja ver as N+1 bolas quicando juntas. Na próxima linha, <strong>N</strong> inteiros no intervalo [<strong>1, T</strong>] seguem representando o tempo de quique de cada uma das bolas.  </p>
+
+					<p>A entrada termina com <strong>N</strong> = <strong>T</strong> = 0, a qual não deve ser processada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso, exiba o tempo de quique da bola escolhida por você, ou “impossivel” caso não exista uma bola que irá satisfazer o desejo de Kiko.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 12</p>
+
+								<p>2 4</p>
+
+								<p>2 20</p>
+
+								<p>3 2</p>
+
+								<p>3 100</p>
+
+								<p>4 5 20</p>
+
+								<p>0 0</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+								<p>impossivel</p>
+
+								<p>25</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+	
+				<p class="footer">
+					Codando na Vila - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

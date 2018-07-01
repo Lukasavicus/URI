@@ -1,0 +1,120 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1891 - Removendo Moedas no Kem Kradãn</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1891 - Removendo Moedas no Kem Kradãn" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1891</span>
+				<h1>Removendo Moedas no Kem Kradãn</h1>
+				<div>
+					<p>Por Marcos Kawakami, Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Andréh e Andréas são dois amigos multiperitos que gostam muito de jogos. Sabendo que vários de seus amigos anseiam por uma viagem a Phuket, na Tailândia, Andréh e Andréas querem desafiar</p>
+
+<p>seus amigos em um tradicional jogo tailandês, o Kem Kradãn.</p>
+
+<p>Kem Kradãn (เกมกระดาน) é um jogo de tabuleiro tailandês existente desde o século II a.C. As peças do jogo são <em>N</em> moedas em que uma das faces é dourada e a outra é branca. Inicialmente as moedas são dispostas em linha sobre o tabuleiro e numeradas de 1 a <em>N</em>, da esquerda para a direita.</p>
+
+<p>Quando uma moeda de número <em>i</em> está com a face dourada exposta, ela pode ser retirada da mesa. Ao fazê-lo, as moedas de números <em>i-1</em> e <em>i+1</em>, caso existam e ainda estejam no tabuleiro, são revertidas. Isto é, se estavam com a face dourada exposta, passam a ficar com a face branca exposta e vice-versa. O jogo consiste em tentar remover todas as moedas da mesa.</p>
+
+<p>Antes de desafiar seus amigos, Andréh e Andréas querem ter certeza que as configurações escolhidas para o desafio têm solução. Para ajudá-los, dada uma configuração inicial, você deve determinar se é possível remover todas as moedas e, se possível, mostrar como fazer isso.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+<p>Cada instância é dada por um inteiro <strong>N</strong> (0 ≤ <strong>N</strong> ≤ 10<sup>5</sup>), representando o número de moedas, seguido por uma cadeia de comprimento <strong>N</strong>, formada pelos caracteres 'B' (face branca exposta) e 'D' (face dourada exposta), representando uma configuração inicial.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprima em uma linha Y se for possível remover todas as moedas, ou <strong>N</strong> caso contrário. Se for possível remover todas as moedas, a linha seguinte deve conter uma lista de <strong>N</strong> inteiros separados por espaços, cada qual representando o número de uma moeda, indicando a sequência em que elas devem ser removidas. Caso haja mais de uma sequência possível, imprima a lexicograficamente menor.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+<p>3</p>
+
+<p>BDB</p>
+
+<p>5</p>
+
+<p>DBDDB</p>
+
+<p>5</p>
+
+<p>DDBDD</p>
+
+<p>6</p>
+
+<p>DBBBBB</p>
+
+							</td>
+							<td>
+								<p>Y</p>
+
+<p>2 1 3</p>
+
+<p>Y</p>
+
+<p>1 2 4 3 5</p>
+
+<p>N</p>
+
+<p>Y</p>
+
+<p>1 2 3 4 5 6</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIX Maratona de Programação IME-USP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

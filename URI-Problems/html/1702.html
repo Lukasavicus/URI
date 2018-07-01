@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1702 - Colorindo Grafos</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema C - Colorindo Grafos" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1702</span>
+                <h1>Colorindo Grafos</h1>
+                <div>
+                    <p>Por Contest Road to Fortaleza V <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Seja G um grafo simples com N vértices coloridos e M arestas. Nós desejamos saber se é possível adicionar exatamente P arestas em G de tal forma que o grafo resultante seja simples, conexo e nenhuma aresta conecte dois vértices da mesma cor.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém múltiplos casos testes. A primeira linha contém a quantidade de casos testes <strong>T</strong> (<strong>T</strong> &lt; 70). Cada caso teste começa com 4 inteiros na seguinte ordem: o número de vértices <strong>N</strong> (1 &lt;= <strong>N</strong> &lt;= 10^3), o número de arestas no grafo original <strong>M</strong> (0 &lt;= <strong>M</strong> &lt;= 10^5), o número de arestas a serem inseridas <strong>P</strong> (0 &lt;= <strong>P</strong> &lt;= 10^6) e o número de cores <strong>K</strong> (1 &lt;= <strong>K</strong> &lt;= 10^3). A linha seguinte contém <strong>N</strong> números <strong>Xi</strong> indicando a cor do i-ésimo vértice (1 &lt;= <strong>Xi</strong> &lt;= <strong>K</strong>). As <strong>M</strong> seguintes linhas contém um par de inteiros (<strong>V_i</strong>, <strong>V_j</strong>) indicando a presença de uma aresta entre os vértices <strong>V_i</strong> e <strong>V_j</strong>. (1 &lt;= <strong>V_i</strong>,<strong>V_j</strong> &lt;= <strong>N</strong>).</p>
+
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso teste, imprima uma única lina com "<strong>Y</strong>" (sem aspas) se é possível construir tal grafo ou "<strong>N</strong>" caso contrário.</p>
+
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+                                4 2 1 2<br />
+                                1 1 2 2<br />
+                                1 3<br />
+                                2 4<br />
+                                4 1 1 2<br />
+                                1 1 2 2<br />
+                                1 3</p>
+                            </td>
+                            <td>
+                                <p>Y</p>
+
+                                <p>N</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Road to Fortaleza V 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

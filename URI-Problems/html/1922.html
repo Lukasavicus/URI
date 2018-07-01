@@ -1,0 +1,116 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1922 - Diego e o Jogo do Martelo</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1922 - Diego e o Jogo do Martelo" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1922</span>
+				<h1>Diego e o Jogo do Martelo</h1>
+				<div>
+					<p>Por Gustavo Ribeiro, IFPB - Campina Grande <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Durante a festa do Padroeiro de Lagoa de Roça, diferentes jogos, brinquedos e parques de diversão se instalam no centro da pequena cidade do interior da Paraíba. Um deles é o não tão conhecido Jogo do Martelo. O jogo consiste de um tabuleiro esburacado e um martelo que cobre totalmente o tabuleiro. Além disso, há pequenas criaturas (bonecos) que vez por outra saem dos buracos do tabuleiro, ficam visíveis por um segundo e após isso voltam a se esconder no buraco por onde saíram. O objetivo do Jogo do Martelo é atingir a maior quantidade de criaturas com uma quantidade <em>m</em> de marteladas.</p>
+
+<p>Após ficar um tempo observando o jogo, Diego percebeu que cada uma das criaturas possuía um padrão de aparição, ou seja, se uma determinada criatura <em>i</em>, apareceu pela primeira vez no instante <em>d<sub>i</sub></em>, ela tornará a aparecer no instante 2<em>d<sub>i</sub></em>, depois no instante 3<em>d<sub>i</sub></em> e assim por diante até que o instante k<em>d<sub>i</sub></em> chegasse, após isso essa criatura não apareceria mais. Diego anotou os instantes da primeira e da última aparição de cada uma das criaturas e agora ele precisa de você. Escreva um programa que com essas informações e com a quantidade <em>m</em> de marteladas disponíveis, informe qual a quantidade máxima de criaturas que podem ser marteladas.</p>
+
+<p><strong>Obs.</strong>: Quando uma criatura é martelada ela não aparece mais durante o jogo.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada será composta por dois inteiros 1 ≤ <strong>n</strong> ≤ 10<sup>3</sup> e 1 ≤ <strong>m</strong> ≤ 10, representando a quantidade de criaturas e a quantidade de marteladas disponíveis, respectivamente. Cada uma das próximas <strong>n</strong> linhas irá conter dois inteiros 2 ≤ <strong>d<sub>i</sub></strong> ≤ 500 e 2 ≤ <strong>kd<sub>i</sub></strong> ≤ 10<sup>3</sup>, representando o instante da primeira e da última aparição da criatura <em>i, </em>respectivamente. É garantido que&nbsp;<strong>d<sub>i <em>&nbsp;</em></sub></strong>≤&nbsp;<strong>kd<sub>i<em>.</em></sub></strong></p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima a quantidade máxima de criaturas que podem ser atingidas com no máximo <strong>m</strong> marteladas.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2</p>
+
+<p>2 4</p>
+
+<p>4 16</p>
+
+<p>16 32</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 1</p>
+
+<p>5 25</p>
+
+<p>2 10</p>
+
+<p>3 9</p>
+
+<p>12 24</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Homenagem a Diego.<br />
+					Tapioca's Round I, 2015
+				</p>
+			</div>
+		</body>
+	</html>

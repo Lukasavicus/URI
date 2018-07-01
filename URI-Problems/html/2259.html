@@ -1,0 +1,169 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2259 - Harvard</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2259 - Harvard" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2259</span>
+				<h1>Harvard</h1>
+				<div>
+					<p>Por ICPC 2013 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ru.gif' alt='RU' /> Russian Federation</p>
+				</div>
+				<strong>Timelimit: 10</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+
+					<img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_153_E.png"/ width="450" style="float:right" alt="calculator" />
+
+					<p>The term “Harvard architecture” applies to a computer that has physically separate memories for instructions and data. The term originated with the Harvard Mark I computer, delivered by IBM in 1944, which used paper tape for instructions and relays for data.</p>
+
+					<p>Some modern microcontrollers use the Harvard architecture – but not paper tape and relays! Data memory is organized in banks, each containing the same number of data items. Each data-referencing instruction has a byte offset <strong>f</strong> to a bank, and a bit <strong>a</strong> that is used to select the bank to be referenced. If <strong>a</strong> is 0, then bank 0 is referenced. If <strong>a</strong> is 1, then the value in a bank select register (BSR) identifies the bank to be used. Assume each instruction takes the same time to execute, and there is an instruction that can set the BSR’s value.</p>
+
+					<p>For example, suppose there are 4 banks of 8 bytes each. To access location 5, either use a single instruction with <strong>a</strong> = 0 and <strong>f</strong> = 5, or set the BSR to 0 in one instruction and then use an instruction with <strong>a</strong> = 1 and <strong>f</strong> = 5. The first approach is faster since it does not require setting the BSR.</p>
+
+					<p>Now suppose (with the same memory) the location to access is 20. Only one approach will work here: execute an instruction that sets the BSR to 2 (unless the BSR already has the value 2) and then use an instruction with <strong>a</strong> = 1 and <strong>f</strong> = 4.</p>
+
+					<p>A program is a sequence of operations. Each operation is either</p>
+
+					<ul>
+						<li>a variable reference, written as <strong>V<sub>i</sub></strong>, where <strong>i</strong> is a positive integer, or</li>
+						<li>a repetition, written as <strong>Rn</strong> &lt;program&gt; <strong>E</strong>, where <strong>n</strong> is a positive integer and &lt;program&gt; is an arbitrary program. This operation is equivalent to <strong>n</strong> sequential occurrences of &lt;program&gt;.</li>
+					</ul>
+
+					<p>Your problem is to determine the minimum running time of programs. In particular, given the number and size of the memory banks and a program to be executed, find the minimum number of instructions (which reference memory location and possibly set the BSR) that must be executed to run the program. To do this you must identify a mapping of variables to memory banks that yields the smallest execution time, and report that execution time – that is, the number of memory references and BSR register settings required. The BSR’s value is initially undefined, and changes only when an instruction explicitly sets its value.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case. A test case consists of two lines. The first line contains two integers <strong>b</strong> and <strong>s</strong>, where 1 ≤ <strong>b</strong> ≤ 13 is the number of memory banks and 1 ≤ <strong>s</strong> ≤ 13 is the number of variables that can be stored in each memory bank. The second line contains a non-empty program with at most 1 000 space-separated elements (each<strong> Rn</strong>, <strong>V<sub>i</sub></strong>, and <strong>E</strong> counts as one element).</p>
+
+					<p>You may assume the following:</p>
+
+					<ul>
+						<li>In a repetition <strong>Rn</strong>, the number of repetitions satisfies 1 ≤ <strong>n</strong> ≤ 10<sup>6</sup> .</li>
+						<li>In a loop operation <strong>Rn</strong> &lt;program&gt; <strong>E</strong>, the loop body &lt;program&gt; is not empty.</li>
+						<li>In a variable reference <strong>V<sub>i</sub></strong>, the variable index satisfies 1 ≤ <strong>i</strong> ≤ min(<strong>b</strong> · <strong>s</strong>, 13).</li>
+						<li>The total number of variable references performed by an execution of the program is at most 10<sup>12</sup>.</li>
+					</ul>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Display the minimum number of instructions that must be executed to complete the program.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 2</p>
+
+								<p>V1 V2 V1 V1 V2</p>
+
+							</td>
+							<td>
+								<p>5</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>2 1</p>
+
+						<p>V1 V2 V1 V1 V2</p>
+
+                    </td>
+                    <td>
+                        <p>6</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>1 2</p>
+
+						<p>R10 V1 V2 V1 E</p>
+
+                    </td>
+                    <td>
+                        <p>30</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+         <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>4 1</p>
+
+						<p>V1 R2 V2 V4 R2 V1 E V3 E</p>
+
+                    </td>
+                    <td>
+                        <p>17</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					ICPC 2013 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

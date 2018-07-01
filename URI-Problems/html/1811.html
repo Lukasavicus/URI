@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1811 - O Óscar Vai Para...</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1811 - O Óscar Vai Para..." />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1811</span>
+                <h1>O Óscar Vai Para...</h1>
+                <div>
+                    <p>Por Desconhecido <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Não há momento de maior angústia entre as estrelas do cinema que a cerimônia de entrega das estatuetas no Kodak Theatre. Não são raros os atores e atrizes que veem suas pulsações atingirem níveis alarmantes. Os riscos de um enfarto crescem muito quando os batimentos se tornam mais e mais rápidos em períodos consecutivos, caracterizando um período de grande ansiedade.</p>
+
+                    <p>Preocupada com este fato, a Academia de Artes e Ciências de Hollywood resolveu monitorar em intervalos regulares os batimento cardíacos dos vários candidatos a receber a estatueta. Com estes dados pretende-se fazer um programa que alerte os médicos de plantão caso um dos famosos esteja à beira de um ataque cardíaco. Sua tarefa neste problema é auxiliar a Academia nesta nobre missão.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>São dadas várias instâncias. A primeira linha de cada instância contem o número 0 ≤ <strong>n</strong> ≤ 1000 de atores/atrizes monitorados (que serão identificados pelos números 1, 2, ..., <strong>n</strong>) e o numero 0 ≤ <strong>m</strong> ≤ 100 de batimentos observados nestes atores. A seguir, em cada um das próximas <strong>n</strong> linhas são dadas as <strong>m</strong> medições (o batimento cardíaco é um inteiro entre 0 e 200). O caso em que <strong>n</strong> = 0 representa o final do arquivo e não deve ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Você devera imprimir um cabeçalho indicando o número da instância que está tratando (<strong>Instancia #i</strong>) e na linha seguinte o numero de ator/atriz que está com maior risco de sofrer um infarto. O risco para o infarto cresce com o número de observações consecutivas em que o numero de batimentos cresceu. Caso haja empate neste critério, devolva o ator que apresenta a maior diferença entre a primeira e a última medição do intervalo em que os batimentos foram aumentando. Se persistir o empate, o risco será maior para aquele com o maior batimento no fim do intervalo. Se ainda não houver decisão, retorne o de menor índice.</p>
+					
+					 <p>Obs: deve ser impressa uma linha em branco após cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4 10<br />
+67 78 87 66 78 87 89 66 67 66<br />
+77 79 99 98 98 98 97 78 78 89<br />
+66 67 68 69 70 71 72 87 88 66<br />
+75 77 90 95 94 97 99 66 88 99<br />
+4 7<br />
+120 135 167 165 188 170 150<br />
+98 76 60 78 108 100 110<br />
+90 95 138 135 133 130 100<br />
+70 68 74 67 75 67 100<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia #1<br />
+                                3</p>
+                                <br />
+                                <p>Instancia #2<br />
+                                3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VI Maratona de Programação IME-USP 2002.
+                </p>
+            </div>
+
+        </body>
+    </html>

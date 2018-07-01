@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2629 - Rodoido</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2629 - Rodoido" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2629</span>
+			<h1>Rodoido</h1>
+			<div>
+				<p>Por Matheus Pimenta, UNB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>
+					Rodoido tem uma banda cover de Arctic Monkeys e faz muitos shows em Brasília. A banda se apresenta em diversos locais, como Velvet Pub, Amsterdam Street e Stadt Bier. Isto, no entanto, atrapalha Pimenta a assistir todos os shows! Ele nunca sabe qual é o próximo local onde o Yellow Shoes irá se apresentar. Para resolver este problema, Pimenta resolveu coletar dados das apresentações e fazer estimativas. Ele conseguiu calcular a probabilidade do próximo show ser no local <strong>j</strong>, dado que o último show foi no local <strong>i</strong>. No entanto, ele não está conseguindo calcular a probabilidade do <strong>K</strong>-ésimo show ser no local <strong>j</strong>, dado que o show inicial foi no local <strong>i</strong>, e pediu a sua ajuda para realizar esta tarefa.
+				</p>
+				
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>
+				
+					A entrada é composta por vários casos de teste e termina com fim de arquivo. A primeira linha de um caso de teste contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 5), que é o número de locais onde o Yellow Shows pode se apresentar. Os locais são rotulados de 1 a <strong>N</strong>. Em seguida virão <strong>N</strong> linhas, cada uma com <strong>N</strong> números. O <strong>i</strong>-ésimo número da <strong>j</strong>-ésima linha é a probabilidade do próximo show ser no local <strong>j</strong>, dado que o último show foi no local <strong>i</strong>. A próxima linha contém um único inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 100), o número de consultas que Pimenta irá fazer. Cada uma das próximas <strong>Q</strong> linhas contém os inteiros <strong>i</strong>, <strong>j</strong> e <strong>K</strong> (1 ≤ <strong>K</strong> ≤ 10<sup>6</sup>) de uma consulta.
+				</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>
+						Para cada consulta de cada caso de teste, imprima uma linha com a probabilidade pedida, com seis casas decimais.
+
+				</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3</p>
+							<p>0.0 0.3 0.1</p>
+							<p>0.3 0.2 0.8</p>
+							<p>0.7 0.5 0.1</p>
+							<p>1</p>
+							<p>1 1 1</p>
+							<p>3</p>
+							<p>0.0 0.3 0.1</p>
+							<p>0.3 0.2 0.8</p>
+							<p>0.7 0.5 0.1</p>
+							<p>3</p>
+							<p>1 1 10</p>
+							<p>3 1 1</p>
+							<p>3 1 2</p>
+						</td>
+						<td>
+							<p>0.000000</p>
+							<p>0.172132</p>
+							<p>0.100000</p>
+							<p>0.250000</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Maratona de Programação UnB/CIC 2015.</p>
+		</div>
+
+	</body>
+</html>

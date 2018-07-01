@@ -1,0 +1,104 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2420 - Guerra por Território</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2420 - Guerra por Território" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2420</span>
+				<h1>Guerra por Território</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2012 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Tombólia do Oeste e Tombólia do Leste travaram uma guerra durante 50 anos. O motivo da guerra era o tamanho do território de cada país. Pelo bem da população dos dois países, os governos resolveram fazer um tratado para finalizar a guerra. O tratado consiste em fazer um divisão justa, e certamente contínua, do território. Eles resolveram pedir sua ajuda para calcular o ponto de divisão do território. Depois de tantos anos de guerra, os países não podem lhe pagar uma viagem para ver previamente o território que será dividido. Ao invés disso, eles prepararam uma lista a<sub>1</sub>,a<sub>2</sub>,…,a<sub><em>N</em></sub>&nbsp;de inteiros que indicam o tamanho de cada seção do território. A seção a<sub>1</sub>&nbsp;é vizinha da seção a<sub>2</sub>&nbsp;que por sua vez é vizinha da seção a<sub>3</sub>; e assim por diante. Os governos querem uma divisão em uma seção k de tal forma que a<sub>1</sub>&nbsp;+ a<sub>2</sub>&nbsp;+ … + a<sub>k</sub>&nbsp;= a<sub>k+1</sub>&nbsp;+ a<sub>k+2</sub>&nbsp;+ … + a<sub><em>N</em></sub>.</p>
+
+<p>Sua tarefa é dada uma lista de inteiros positivos a<sub>1</sub>, a<sub>2</sub>,..., a<sub><em>N</em></sub>&nbsp;, determinar a seção k tal que soma dos comprimentos das seções a<sub>1</sub>&nbsp;até a<sub>k</sub>&nbsp;é igual a soma dos comprimentos das seções a<sub>k+1</sub>&nbsp;até a<sub><em>N</em></sub>.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro&nbsp;<em><strong>N</strong> (</em>1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>)&nbsp;indicando o número de seções do território. A segunda linha da entrada contém&nbsp;<strong><em>N</em></strong>&nbsp;inteiros <strong>a<sub>1</sub></strong>, <strong>a<sub>2</sub></strong>,..., <strong>a<sub><em>N</em></sub></strong>&nbsp;(1 ≤ <strong>a<sub>i</sub></strong> ≤ 100, para <strong>i</strong> = 1, 2, . . . , <strong>N</strong>.)separados por um único espaço que indicam os comprimentos das seções.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma única linha contendo um inteiro que indica a seção do território onde acontecerá a divisão.(É&nbsp;garantido que sempre existe uma divisão que satisfaz as condições dos países).</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+<p>5 3 2 10</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>9</p>
+
+<p>2 8 2 8 4 4 4 4 4</p>
+
+							</td>
+							<td>
+								<p>4</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2012 Fase 2 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

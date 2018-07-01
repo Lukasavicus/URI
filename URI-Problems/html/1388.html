@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1388 - Onde Estão as Bolhas?</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1388 - Onde Estão as Bolhas?" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1388</span>
+            <h1>Onde Estão as Bolhas?</h1>
+            <div>Por Ricardo Anido, UNICAMP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt="" /> Brazil</div>
+            <strong>Timelimit: 7</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Uma das operações mais frequentes em computação é ordenar uma sequência de objetos. Portanto, não é surpreendente que essa operação seja também uma das mais estudadas.</p>
+
+                <p>Um algoritmo bem simples para ordenação é chamado <em>Bubblesort</em>. Ele consiste de vários turnos. A cada turno o algoritmo simplesmente itera sobre a sequência trocando de posição dois elementos consecutivos se eles estiverem fora de ordem. O algoritmo termina quando nenhum elemento trocou de posição em um turno.</p>
+
+                <p>O nome <em>Bubblesort</em> (ordenação das bolhas) deriva do fato de que elementos menores ("mais leves") movem-se na direção de suas posições finais na sequência ordenada (movem-se na direção do início da sequência) durante os turnos, como bolhas na água. A figura abaixo mostra uma implementação do algoritmo em pseudocódigo:</p>
+
+                <p style="font-family: 'courier new', courier, monospace;">
+                    <strong>Para</strong> i <strong> variando de </strong>1 até N <strong>faça</strong> <br />
+                    &nbsp;&nbsp;<strong>Para</strong> j <strong>variando de</strong> N - 1 <strong>a</strong> i <strong>faça</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Se</strong> seq [j - 1]&gt; seq [j] <strong>então</strong><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<em>Intercambie os elementos seq[j - 1] e seq[j]</em><br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<strong>Fim-Se</strong><br />
+                    &nbsp;&nbsp;<strong>Fim-Para</strong><br />
+                    &nbsp;&nbsp;<strong>Se </strong>nenhum elemento trocou de lugar então<br />
+                    &nbsp;&nbsp;&nbsp;&nbsp;<em>Final do algoritmo</em><br />
+                    &nbsp;&nbsp;<strong>Fim-Se</strong><br />
+                    <strong>Fim-Para</strong></p>
+
+                <p>Por exemplo, ao ordenar a sequência [5, 4, 3, 2, 1] usando o algoritmo acima, quatro turnos são necessários. No primeiro turno ocorrem quatro intercâmbios: 1 x 2, 1 x 3, 1 x 4 e 1 x 5; no segundo turno ocorrem três intercâmbios: 2 x 3, 2 x 4 e 2 x 5; no terceiro turno ocorrem dois intercâmbios: 3 x 4 e 3 x 5; no quarto turno ocorre um intercâmbio: 4 x 5; no quinto turno nenhum intercâmbio ocorre e o algoritmo termina.</p>
+
+                <p>Embora simples de entender, provar correto e implementar, o algoritmo <em>bubblesort </em>é muito ineficiente: o número de comparações entre elementos durante sua execução é, em média, diretamente proporcional a N<sup>2</sup>, onde N é o número de elementos na sequência. Você foi requisitado para fazer uma "engenharia reversa" no <em>bubblesort</em>, ou seja, dados o comprimento da sequência, o número de turnos necessários para a ordenação e o número de intercâmbios ocorridos em cada turno, seu programa deve descobrir uma possível sequência que, quando ordenada, produza exatamente o mesmo número de intercâmbios nos turnos.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. A primeira linha de um caso de teste contém dois inteiros <strong>N</strong> e <strong>M</strong> que indicam respectivamente o número de elementos (1 ≤ <strong>N</strong> ≤ 100.000) na sequência que está sendo ordenada, e o número de turnos (0 ≤ <strong>M</strong> ≤ 100.000) necessários para ordenar a sequência usando <em>bubblesort</em>. A segunda linha de um caso de teste contém <strong>M</strong> inteiros X<sub>i</sub>, indicando o número de intercâmbios em cada turno i (1 ≤ X<sub>i</sub> ≤ <strong>N</strong> - 1, para 1 ≤ i ≤ <strong>M</strong>). O final da entrada é indicado por <strong>N</strong> = <strong>M</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste da entrada seu programa deve produzir uma linha na saída, contendo uma permutação dos números {1, 2, ..., N}, que quando ordenada usando <em>bubblesort </em>produz o mesmo número de intercâmbios no mesmo número de turnos especificados na entrada. Ao imprimir a permutação, deixe um espaço em branco entre dois elementos consecutivos. Se mais de uma permutação existir, imprima a maior na ordem lexicográfica padrão para sequências de números (a ordem lexicográfica da permutação a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>N</sub> é maior do que a da permutação b<sub>1</sub>, b<sub>2</sub>, ..., b<sub>N</sub> se para algum 1 ≤ i ≤ N temos a<sub>i</sub> &gt; b<sub>i</sub> e o prefixo a<sub>1</sub>, a<sub>2</sub>, ..., a<sub>i-1</sub> é igual ao prefixo b<sub>1</sub>, b<sub>2</sub>, ..., b<sub>i-1</sub>).</p>
+
+                <p>Em outras palavras, caso exista mais de uma solução, imprima aquela onde o primeiro elemento da permutação é o maior possível. Caso exista mais de uma solução satisfazendo essa restrição, imprima, dentre estas, aquela onde o segundo elemento é o maior possível. Caso exista mais de uma solução satisfazendo as duas restrições anteriores, imprima, dentre estas, a solução onde o terceiro elemento é o maior possível, e assim sucessivamente.</p>
+
+                <p>Para toda entrada haverá pelo menos uma permutação solução.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>3 1<br />
+                                1<br />
+                                5 4<br />
+                                4 3 2 1<br />
+                                6 5<br />
+                                2 2 2 2 1<br />
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>2 1 3<br />
+                                5 4 3 2 1<br />
+                                6 5 1 2 3 4</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programacao da SBC 2007.
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,108 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2444 - Volume da TV</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2444 - Volume da TV" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2444</span>
+				<h1>Volume da TV</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Bruno é um menino que gosta muito de ver televisão. No entanto ele se depara com um problema muito chato. Sempre que começa um novo programa no canal preferido dele, a TV Nlogônia, acontece de o volume do som deste programa estar diferente do anterior, às vezes com volume menor, outras vezes com volume maior. Quando está com volume menor, ele aumenta o volume pressionando uma quantidade de vezes seguidas o botão de aumentar para o volume ficar ideal; a mesma coisa acontece quando está um volume maior, e ele diminui o volume pressionando alguma quantidade de vezes seguidas o botão de diminuir o volume para ficar com o volume que ele goste no momento.</p>
+
+					<p>O aparelho de TV dele tem umas peculiaridades: ele possui volume mínimo, com valor 0 (também chamado de mudo), e volume máximo, com valor 100. A TV nunca ultrapassa os volumes máximo e mínimo. Por exemplo, se o volume já estiver no máximo e ele pressionar o botão de aumentar o som, o volume não se altera. Da mesma forma, se o volume estiver no valor mínimo e ele pressionar o botão de diminuir o som, o volume não se altera.</p>
+
+					<p>Agora Bruno quer sua ajuda: ele lembra qual era o volume inicial da TV, e quantas vezes ele pressionou cada botão. Mas, como foram várias mudanças de volume, ele não sabe qual é o volume atual da TV. Por isso, pediu que você o ajude a calcular qual é o volume atual, dados o volume inicial e a lista de trocas de volume que ele realizou.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém dois números inteiros <strong>V </strong>(0 ≤ <strong>V</strong> ≤ 100)&nbsp;e <strong>T </strong>(0 ≤ <strong>T</strong> ≤ 1000), que indicam, respectivamente, o volume inicial e o número de trocas de volume.</p>
+
+					<p>A segunda linha contém <strong>T</strong> números inteiros <strong>Ai </strong>(−100 ≤ <strong>A<sub>i</sub></strong> ≤ 100)&nbsp;que mostram as modificações de volume realizadas, na ordem em que estas modificações foram feitas. O primeiro número indica a primeira modificação de volume, o segundo número indica a segunda modificação, e assim por diante. Para cada modificação, um número maior do que zero significa quantas vezes Bruno pressionou o botão de aumentar o som; um número menor do que zero significa quantas vezes ele pressionou o botão de diminuir o som. Ou seja, se o número é igual a 5, significa que nessa modificação ele pressionou cinco vezes o botão de aumentar o som; se o número é igual a −3, significa que nessa modificação ele pressionou o botão de diminuir o som três vezes.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir apenas uma linha, contendo apenas um inteiro F, que indica qual o volume atual da TV após as mudanças de volume.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>50 4</p>
+
+								<p>11 20 -15 -13</p>
+
+							</td>
+							<td>
+								<p>53</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>50 5</p>
+
+								<p>30 30 30 40 -78</p>
+
+							</td>
+							<td>
+								<p>22</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2013 Fase 2 Nível Júnior
+				</p>
+			</div>
+
+		</body>
+	</html>

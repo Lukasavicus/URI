@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1321 - Jollo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1321 - Jollo" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1321</span>
+            <h1>Jollo</h1>
+            <div><p>Por Ricardo Anido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Jollo é um simples jogo de cartas que as crianças da Logônia adoram jogar. É um jogo entre dois jogadores usando um baralho normal de 52 cartas. No jogo, as cartas são ordenadas de acordo com seu valor e naipe, produzindo uma sequência de 52 valores distintos.</p>
+                <p>
+                    ​O jogo é composto de três turnos, jogados em uma série melhor de três (um jogador deve ganhar dois turnos para ganhar o jogo). No início do jogo, o baralho é embaralhado e cada jogador recebe três cartas. Em cada turno, os jogadores mostram uma carta ao adversário e o jogador com a carta mais alta ganha o turno. As cartas usadas no turno são descartadas (ou seja, não podem ser usadas novamente).</p>
+                <p>
+                    O filho do Rei adora jogar este jogo, mas ele não é muito esperto, perdendo frequentemente para sua irmã mais nova. E quando perde, ele chora tão alto que ninguém aguenta escutar. O criado que embaralha as cartas para o Príncipe e sua irmã tem medo de ser mandado para a prisão caso o Príncipe continue perdendo. O criado pode ver as cartas que ele entrega, e após distribuir cinco cartas (três à Princesa e duas ao Príncipe) quer saber qual a carta mais baixa que ele deve entregar ao Príncipe tal que não exista nenhuma possibilidade de ele perder o jogo, não importando a maneira como jogue.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste é dado em uma única linha que contém cinco inteiros distintos <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>X</strong> e <strong>Y</strong>, descrevendo as cartas já distribuídas aos jogadores. As primeiras três cartas são dadas à Princesa (1 ≤ <strong>A</strong>,<strong>B</strong>,<strong>C</strong> ≤ 52) e as últimas duas cartas são dadas ao Príncipe (1 ≤ <strong>X</strong>,<strong>Y</strong> ≤ 52).
+                </p>
+                <p>
+                    ​O último caso de teste é seguido de uma linha contendo cinco zeros.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste, imprima uma única linha. Se existe uma carta que fará o Príncipe ganhar independente do modo como jogar, você deve imprimir a menor carta possível. Caso contrário, imprima -1.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                28 51 29 50 52<br />
+                                50 26 19 10 27<br />
+                                10 20 30 24 26<br />
+                                46 48 49 47 50<br />
+                                0 0 0 0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                30<br />
+                                -1<br />
+                                21<br />
+                                51</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2010.                </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,125 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2269 - Game Strategy</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2269 - Game Strategy" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2269</span>
+				<h1>Game Strategy</h1>
+				<div>
+					<p>By ICPC 2014 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ru.gif' alt='RU' /> Russian Federation</p>
+				</div>
+				<strong>Timelimit: 8</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Alice and Bob are playing a board game. The board is divided into positions labeled <strong>a</strong>, <strong>b</strong>, <strong>c</strong>, <strong>d</strong>, . . . and the players use a gamepiece to mark the current position. Each round of the game consists of two steps:</p>
+
+					<ol>
+						<li>Alice makes a choice. Depending on the current position, she has different options, where each option is a set of positions. Alice chooses one set S among the available sets of positions.</li>
+						<li>Bob makes a choice. His choice is one position p from the set S that Alice chose in step 1. Bob moves the gamepiece to position p, which is the position for the start of the next round.</li>
+					</ol>
+
+					<p>Prior to the first round, each player independently selects one of the positions and reveals it at the start of the game. Bob’s position is where the game starts. Alice wins the game if she can force Bob to move the gamepiece to the position she has chosen. To make things interesting, they have decided that Bob will pay Alice a certain amount if he loses, but Alice must pay Bob a certain amount after every round. The game now ends if Alice’s position is reached or when Alice runs out of cash.</p>
+
+					<p>Both Alice and Bob play optimally: Alice will always choose an option that will lead to her winning the game, if this is possible, and Bob will always try to prevent Alice from winning.</p>
+
+					<p>For all possible start and end positions, Alice would like you to determine whether she can win the game and if so, how many rounds it will take.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case. The first line contains the number of positions <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 25). The <strong>n</strong> positions are labeled using the first <strong>n</strong> letters of the English alphabet in lowercase. The rest of the test case consists of <strong>n</strong> lines, one for each position <strong>p</strong>, in alphabetical order. The line for position <strong>p</strong> contains the options available to Alice in position <strong>p</strong>. It starts with the number of options <strong>m</strong> (1 ≤ <strong>m</strong> &lt; 2<sup><strong>n</strong></sup> ), which is followed by <strong>m</strong> distinct strings, one for each option. Each string contains the positions available to Bob if Alice chooses that option. The string has at least 1 character, the characters (which correspond to valid board positions) are in alphabetical order, and no characters are duplicated. The total number of options for the test case is at most 10<sup>6</sup> .</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>For each position <strong>p</strong> in alphabetical order, display one line. In that line, for each position<strong> q</strong> in alphabetical order display the minimal number of rounds in which Alice can be guaranteed to arrive at position <strong>q</strong> when starting the game in position <strong>p</strong>, or −1 if Alice cannot be guaranteed to reach <strong>q</strong> from <strong>p</strong>.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+								<p>2 ab b</p>
+
+								<p>1 b</p>
+
+							</td>
+							<td>
+								<p>0 1</p>
+
+								<p>-1 0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+								<p>1 b</p>
+
+								<p>2 b a</p>
+
+								<p>2 ab ac</p>
+
+							</td>
+							<td>
+								<p>0 1 -1</p>
+
+								<p>1 0 -1</p>
+
+								<p>2 2 0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC 2014 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

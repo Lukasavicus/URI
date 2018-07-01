@@ -1,0 +1,126 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2230 - Pedágio</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2230 - Pedágio" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2230</span>
+				<h1>Pedágio</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2002 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Como prêmio pela primeira colocação na Olimpíada Brasileira de Informática, Juquinha e sua família ganharam uma viagem de uma semana à Coréia do Sul. Como o país é deslumbrante, com tradições, cultura, arquitetura e culinária muito diferentes das do Brasil, o pai de Juquinha, o Sr. Juca, decidiu alugar um carro para conhecer melhor o país. As estradas são muito bem cuidadas; todas são de sentido duplo, e duas cidades podem ser ligadas diretamente por mais de uma estrada. No entanto, em todas as estradas paga-se um pedágio de valor fixo (há um pedágio em cada direção, entre duas cidades). Como o Sr. Juca não tem muito dinheiro para gastar, as viagens com o carro devem ser muito bem planejadas.</p>
+
+<p>Escreva um programa que, conhecidas as cidades e estradas existentes no país, e a cidade onde Juquinha e sua família estão, encontre cada cidade (que não a cidade onde eles estão) que possa ser visitada por eles, dada a restrição de que o Sr. Juca deseja pagar no máximo P pedágios (considerando apenas a viagem de ida).</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta de vários conjuntos de teste. A primeira linha de um conjunto de teste contém quatro números inteiros <strong>C&nbsp;</strong>(0 ≤ <strong>C</strong> ≤ 50), <strong>E&nbsp;</strong>(0 ≤ <strong>E</strong> ≤ 2500), <strong>L</strong>&nbsp;(0 ≤ <strong>L</strong> ≤ <strong>C</strong>) e <strong>P </strong>(0 ≤ <strong>P</strong> ≤ <strong>C</strong>). Os valores <strong>C</strong> e <strong>E</strong> indicam respectivamente o número de cidades e o número de estradas existentes. As cidades são identificadas por inteiros de 1 a <strong>C</strong>. os valores <strong>L</strong> e <strong>P</strong> indicam, respectivamente, a cidade onde a família de Juquinha está no momento e o número máximo de pedágios que o Sr. Juca está disposto a pagar. As <strong>E</strong> linhas seguintes contêm cada uma a informação de uma estrada, representada por um par de números inteiros positivos <strong>X</strong> e <strong>Y&nbsp;</strong>(1 ≤ <strong>X,Y</strong>&nbsp;≤ <strong>C</strong>), indicando que há uma estrada (de sentido duplo) da cidade <strong>X</strong> para a cidade <strong>Y</strong>. O final da entrada é indicado por <strong>C</strong> = <strong>E</strong> = <strong>L</strong> = <strong>P</strong> = 0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada conjunto de teste da entrada seu programa deve produzir três linhas na saída. A primeira linha deve conter um identificador do conjunto de teste, no formato “Teste n”, onde n é numerado a partir de 1. Na segunda linha devem aparecer os identificadores das cidades que podem ser alcançadas, em ordem crescente, separados por pelo menos um espaço em branco. A terceira linha deve ser deixada em branco. A grafia mostrada no Exemplo de Saída, abaixo, deve ser seguida rigorosamente.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 4 2 1</p>
+
+<p>1 2</p>
+
+<p>2 3</p>
+
+<p>3 4</p>
+
+<p>4 5</p>
+
+<p>9 12 1 2</p>
+
+<p>2 1</p>
+
+<p>1 5</p>
+
+<p>2 1</p>
+
+<p>3 2</p>
+
+<p>9 3</p>
+
+<p>3 4</p>
+
+<p>4 8</p>
+
+<p>4 7</p>
+
+<p>7 6</p>
+
+<p>5 6</p>
+
+<p>4 5</p>
+
+<p>3 7</p>
+
+<p>0 0 0 0</p>
+
+							</td>
+							<td>
+								<p>Teste 1</p>
+
+<p>1 3</p><br/>
+
+<p>Teste 2</p>
+
+<p>2 3 4 5 6</p><br/>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2002
+				</p>
+			</div>
+
+		</body>
+	</html>

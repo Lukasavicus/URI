@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2637 - Casa do Batera</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2637 - Casa do Batera" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2637</span>
+			<h1>Casa do Batera</h1>
+			<div>
+				<p>Por Matheus Pimenta, UNB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>
+					A casa do Batera é um lugar onde muita coisa acontece. É lá que surgem ideias como “bora pra chapada, neném?? — Dudu”. É também um lugar onde muita gı́ria jovem é usada, como “pô deivis, mas bem que seria bom...”, ou “beeeeeem...”. E é também onde muitos apelidos são criados, como “Pimenta Filosofal”, “Pai Alan”, “Jonny Boy”, “Pimenta Marinho” e o melhor apelido de todos: “João Henrique”.
+				</p>
+				<p>
+					A rapaziada está jogando o RPG inventando por Dôdo e Leo. O jogo consiste em capturar monstros, treiná-los e usá-los em batalhas. Neste momento, estamos entrando em uma mapa em que há diversos locais “neutros”, rotulados de 1 a <strong>V</strong> . Em cada local, é possı́vel que haja uma moeda e/ou uma alavanca. Sempre que passamos por um local com uma moeda, coletamos a moeda, e não aparece outra moeda no mesmo local se voltarmos a ele mais tarde. Sempre que passamos por um local com uma alavanca, acionamos a alavanca, e nunca mais precisamos acioná-la novamente. Cada alavanca abre um conjunto de caminhos que conectam pares de locais neutros. Alguns caminhos já estão inicialmente abertos. Para atravessar cada caminho, precisamos derrotar (ou capturar, se quisermos nos tornar mestres) os monstros que aparecem neste caminho. Monstros sempre surgem ao atravessar qualquer caminho, então sempre é preciso derrotá-los, mesmo passando por um caminho que já atravessamos antes. Para derrotar um monstro, usamos os monstros que já capturamos. Nossos monstros possuem uma lista de <strong>M</strong> ataques, cada um com um custo de mana e um valor de dano que é causado ao monstro alvo. Estamos no local 1 e a saı́da do mapa está no local <strong>V</strong> . O local 1 não contém moeda ou alavanca.
+				</p>
+				<p>
+				    Como este é um jogo sério, que tem que ser levado a sério, João Henrique, que virou fã da teoria dos grafos após cursar a disciplina do Professor Claus, está tentando otimizar a nossa travessia. Ele pediu a sua ajuda para calcular o custo mı́nimo (de mana) necessário para realizar a travessia, coletando todas as moedas e... não capturando nenhum monstro (pô Jonny, tá achando que o balão é esférico e sem atrito? É assim que você quer se tornar um mestre capturador de monstros, João Henrique?).
+				</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+
+				<p>
+				    A entrada é composta por vários casos de teste e termina com fim de arquivo. A primeira linha de um caso de teste contém os inteiros <strong>M</strong>, <strong>V</strong>, <strong>E</strong>, <strong>C</strong>, e <strong>L</strong>. Cada uma das próximas <strong>M</strong> linhas descreve um ataque. Cada linha é composta pelos inteiros <strong>v</strong> e <strong>w</strong>, que são respectivamente o dano causado pelo ataque e o custo de mana do ataque. Cada uma das próximas <strong>E</strong> linhas descreve um caminho. Cada linha é iniciada com quatro inteiros <strong>a</strong>, <strong>b</strong>, <strong>m</strong>, and <strong>l</strong>. O caminho conecta os locais <strong>a</strong> e <strong>b</strong>. Os próximos m inteiros são os pontos de vida <strong>h</strong> de cada um dos <strong>m</strong> monstros que aparecem no caminho. Se o inteiro <strong>l</strong> for zero, então o caminho está inicialmente aberto. Caso contrário, ele é liberado pela alavanca de rótulo <strong>l</strong>. Há no máximo um caminho conectando um par de locais. Cada uma das próximas <strong>C</strong> linhas descreve uma moeda. Para 1 ≤ <strong>i</strong> ≤ <strong>C</strong>, a <strong>i</strong>-ésima linha contém um inteiro <strong>u</strong>, o rótulo do vértice em que está a moeda de rótulo <strong>i</strong>. Cada uma das próximas <strong>L</strong> linhas descreve uma alavanca. Para 1 ≤ <strong>i</strong> ≤ <strong>L</strong>, a <strong>i</strong>-ésima linha contém um inteiro <strong>u</strong>, o rótulo do vértice em que está a alavanca de rótulo <strong>i</strong>.
+				</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>
+                    Para cada caso de teste, imprima uma única linha com a resposta.
+				</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>1 1 0 0 0</p>
+                            <p>1 1</p>
+                            <p>2 4 4 2 2</p>
+                            <p>9 2</p>
+                            <p>2 1</p>
+                            <p>1 2 1 0 10</p>
+                            <p>1 3 0 2</p>
+                            <p>1 4 3 1 2 11 1</p>
+                            <p>3 4 1 0 100</p>
+                            <p>4</p>
+                            <p>2</p>
+                            <p>3</p>
+                            <p>2</p>
+						</td>
+						<td>
+							<p>0</p>
+							<p>11</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Maratona de Programação UnB/CIC 2015.
+</p>
+			
+		</div>
+
+	</body>
+</html>

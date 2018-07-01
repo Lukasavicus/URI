@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1130 - Jogo da Velha</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1130 - Jogo da Velha" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1130</span>
+            <h1>Jogo da Velha</h1>
+            <div><p>Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    O jogo da velha é um dos jogos mais antigos da humanidade; os primeiros registros dele são do século I antes de Cristo, no Império Romano. João e Maria jogam bastante jogo da velha, mas depois de algum tempo eles decidiram jogar uma variante do jogo da velha tradicional, o jogo da velha 1-D.<br />
+                    <br />
+                    O jogo da velha 1-D é um jogo disputado por dois jogadores em um tabuleiro 1 × <strong>N</strong>; inicialmente, todas as casas do tabuleiro estão vazias. Os jogadores alternam-se desenhando uma cruz sobre uma casa vazia. O primeiro jogador a completar uma sequência de três ou mais cruzes em casas consecutivas ganha o jogo.<br />
+                    <br />
+                    Maria logo percebeu que, dependendo da situação do jogo, sendo sua vez de jogar, ela pode sempre garantir a vitória, independente das jogadas de João. Isto é relativamente fácil para tabuleiros menores, mas para tabuleiros maiores, mesmo após várias jogadas, esta tarefa é mais difícil; por isso, ela pediu que você escrevesse um programa que, dada a situação do tabuleiro, decide se ela tem uma estratégia vencedora.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. A primeira linha de caso de teste contém um inteiro <strong>N</strong>, indicando o tamanho do tabuleiro (3 ≤ <strong>N</strong> ≤ 10<sup>4</sup>). A linha seguinte contém uma sequência de <strong>N</strong> caracteres indicando quais casas do tabuleiro já foram ocupadas: um ‘.’ indica que a casa correspondente está vazia, enquanto um ‘X’ indica que a casa já teve uma cruz desenhada sobre ela. A entrada nunca contém três ‘X’ consecutivos.<br />
+                    <br />
+                    O ultimo caso de teste é seguido por uma linha que contém um único número zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste da entrada seu programa deve imprimir uma única linha contendo um único caractere: ‘S’ caso Maria possua uma estratégia vencedora e ‘N’ caso contrário.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                5<br />
+                                .....<br />
+                                5<br />
+                                ..X..<br />
+                                6<br />
+                                X.X.X.<br />
+                                12<br />
+                                ............<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                S<br />
+                                N<br />
+                                S<br />
+                                N</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programação da SBC 2010</p>
+        </div>
+
+    </body>
+</html>

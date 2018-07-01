@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1764 - Itinerário do Papai Noel</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema F - Itinerário do Papai Noel" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1764</span>
+                <h1>Itinerário do Papai Noel</h1>
+                <div>
+                    <p>Por Neilor Tonin, URI Online Judge <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Antes de Papai Noel começar a fazer as suas viagens de trenó pelo Brasil para entregar os presentes de Natal, ele solicitou que você o ajudasse a desenhar um mapa com todas as cidades que deverá visitar. A regra para desenhar este mapa é a seguinte: a soma de todas rotas (distâncias entre duas cidades) existentes no mapa deve ser a menor possível e deve-se poder chegar em qualquer cidade, independente de onde se esteja partindo. Noel não se importa de passar por uma determinada cidade mais de uma vez, contanto que ele utilize apenas as rotas desenhadas no mapa.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. A primeira linha de cada caso de teste contém dois inteiros, <strong>M</strong> (2 ≤ <strong>M</strong> &lt; 40000) e <strong>N</strong> (1 ≤ <strong>N</strong> &lt; 50000), que indicam respectivamente a quantidade de cidades e a quantidade de caminhos existentes ligando estas cidades. A entrada é terminada por <strong>M</strong> = <strong>N</strong> = 0. Seguem <strong>N</strong> conjuntos de três valores <strong>X</strong> (0 ≤ <strong>X</strong>), <strong>Y</strong> (<strong>Y</strong> &lt; <strong>M</strong>) e <strong>Z</strong> (1 ≤ <strong>Z</strong> ≤ 999), especificando que há uma rota bidirecional entre <strong>X</strong> e <strong>Y</strong> com distância de <strong>Z</strong> kilômetros, sendo que <strong>X</strong> ≠ <strong>Y</strong>e a soma total de todas as rotas de cada mapa é menor do que 2<sup>31</sup>.</p>
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste de entrada, seu programa deverá imprimir um único valor, indicando a soma de todas as distâncias ou rotas existentes no seu mapa.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>6 8<br />
+0 1 350<br />
+1 2 180<br />
+0 3 270<br />
+3 4 200<br />
+4 5 300<br />
+1 4 190<br />
+3 5 500<br />
+2 5 400&nbsp;<br />
+7 11<br />
+0 1 7<br />
+0 3 5<br />
+1 2 8<br />
+1 3 9<br />
+1 4 7<br />
+2 4 5<br />
+3 4 15<br />
+3 5 6<br />
+4 5 8<br />
+4 6 9<br />
+5 6 11<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>1140<br />
+39</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Contest de Natal 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1392 - Conta de Luz</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1392 - Conta de Luz" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1392</span>
+            <h1>Conta de Luz</h1>
+            <div>Por Yandri Clemente <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cu.gif' alt="" /> Cuba</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>O ano é 2100. A eletricidade se tornou muito cara. Recentemente, sua companhia elétrica elevou as taxas de energia mais uma vez. A tabela abaixo mostra as novas taxas (o consumo é sempre um inteiro positivo):</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Eletric%20Bill_PT.png" style="width: 398px; height: 187px;" /></p>
+
+                <p>Isso significa que, calculando a quantidade a pagar, os primeiros 100 LWh (Crazy-Watt-hora) tem o preço de 2 Americus cada; os próximos 9900 LWs (entre 101 e 10000) tem um preço de 3 Americus cada e assim por diante.</p>
+
+                <p>Por exemplo, se você consome 10123 LWs você terá que pagar 2×100+3×9900+5×123 = 30515 Americus.</p>
+
+                <p>Os matemáticos do mal da companhia armaram um jeito de ganhar ainda mais dinheiro. Ao invés de informarem quanta energia você consumiu e quanto deve pagar, eles mostram os números relativos a você e um vizinho aleatório:</p>
+
+                <p><b>A</b>: o total a pagar se as contas fossem somadas; e<br>
+                    <b>B</b>: o valor absoluto entre as contas.</p>
+
+                <p>Se você não consegue descobrir quanto você tem que pagar, você deve pagar mais 100 Americus pelo "serviço". Você é bastante econômico, portanto não tem como ter consumido mais que seus vizinhos. Então, sendo esperto, você sabe que tem como computar quanto você tem que pagar. Por exemplo, suponha que a companhia informou-o os seguintes números: <b>A</b> = 1100 e <b>B</b> = 300. Então o seu consumo e do seu vizinho tem que ser 150 LWh e 250 LWh respectivamente.
+				O consumo total é 400 LWh então <b>A</b> é 2×100+3×300 = 1100. Você deve pagar 2×100+3×50 = 350 Americus, enquanto seu vizinho deve pagar 2×100+3×150 = 650 Americus, então <b>B</b> é |350 - 650| = 300.</p>
+
+                <p>Decidido a não pagar o custo adicional, você resolveu escrever um programa de computador para encontrar quanto você deve pagar.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. Cada teste é composto de uma única linha, contendo dois inteiros <b>A</b> e <b>B</b>, separados por um único espaço, representando os números mostrados a você pela companhia (1 ≤ <b>A</b>, <b>B</b> ≤ 10<sup>9</sup>). Você deve assumir que haja sempre uma única solução, ou seja, existe exatamente um par de números de consumo que produzem tais números.</p>
+
+                <p>O último caso de teste é seguido de uma linha contendo dois zeros separados por um único espaço.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste ser programa deve imprimir uma única linha contendo um inteiro, representando o quanto você deve pagar.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>1100 300<br>
+                                35515 27615<br>
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>350<br>
+                                2900</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+             </table>
+            <p class="footer">
+                 ACM/ICPC South America Contest 2009.
+			</p>
+        </div>
+
+    </body>
+</html>

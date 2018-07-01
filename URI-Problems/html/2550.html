@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2550 - Novo Campus</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Novo Campus" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2550</span>
+			<h1>Novo Campus</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>A Universidade Federal da República dos Pinheiros (UFRP) está construindo um novo campus na capital do país.</p>
+
+<p>Neste momento, todos os <strong>N</strong> prédios do campus estão construídos e prontos para operar! Entretanto, ainda não foi construída nenhuma via ligando estes prédios. Hoje, é impossível sair de algum prédio e ir para outro prédio no campus!</p>
+
+<p>Para resolver este problema, o reitor da UFRP quer construir vias entre pares de prédios do campus de tal forma que todos os prédios estejam conectados, isto é, de tal forma que, utilizando uma ou mais das vias construídas, seja possível sair de qualquer prédio e ir para qualquer outro no campus.</p>
+
+<p>Entretanto, devido ao relevo complicado da capital, pode não ser possível construir uma via entre qualquer par de prédios. Dada a lista de vias que podem ser construídas e o custo de construção de cada via, determine se é possível tornar todos os prédios conectados e, em caso positivo, o custo total mínimo para construir as vias necessárias.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém dois inteiros <strong>N</strong> e <strong>M</strong> (2 ≤ <strong>N</strong> ≤ 1000, 0 ≤ <strong>M</strong> ≤ <strong>N</strong>(<strong>N</strong>-1)/2 ), o número de prédios no campus e de vias que podem ser construídas, respectivamente. Os prédios são numerados de 1 a <strong>N</strong>. As próximas <strong>M</strong> linhas descrevem as vias. Cada linha contém três inteiros <strong>A</strong>, <strong>B</strong> e <strong>C</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong>, <strong>A</strong>≠<strong>B</strong>, 1 ≤ <strong>C</strong> ≤ 10<sup>4</sup>), indicando a possibilidade de construção de uma via que liga os prédios <strong>A</strong> e <strong>B</strong> entre si e cuja construção custa <strong>C</strong> reais. É garantido que, para cada par de prédios, no máximo uma via pode ser construída entre eles.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, caso não seja possível conectar todos os prédios, imprima uma linha contendo “<em>impossivel</em>” (sem aspas). Caso contrário, imprima uma linha contendo o custo mínimo necessário para conectar todos os prédios, em reais.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4 5<br />
+1 2 50<br />
+3 1 75<br />
+2 3 20<br />
+4 2 10<br />
+3 4 15<br />
+							3 1<br />
+1 3 100</p>
+						</td>
+						<td>
+							<p>75<br />
+							impossivel</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1465 - Complexo, Difícil e Complicado</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1465 - Complexo, Difícil e Complicado" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1465</span>
+            <h1>Complexo, Difícil e Complicado</h1>
+            <div>Por Ginés García Mateos, UM <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/es.gif' alt=''/> Espanha</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Números complexos não são apenas complexos, mas também complicados. Então é melhor tentar resolver outro problema...</p>
+
+                <p>Nós temos um números complexo, <b>a</b>+<b>b</b>*<b>i</b>, onde <b>i</b> é a raiz quadrada de -1. Nós queremos torná-lo simples (isto é, real), elevando-o a uma potência natural. Por exemplo, o número complexo 2+2*<b>i</b>, pode ser simplificado elevando-o a 4:</p>
+
+                <p>(2+2*<b>i</b>)<sup>4</sup> = -64</p>
+
+                <p>Você tem que computar o menor número natural, <b>N</b>, (zero não está incluso) tal que (<b>a</b>+<b>b</b>*<b>i</b>)<sup><b>N</b></sup> é um número real. Além disso, pedimos que o valor absoluto de (<b>a</b>+<b>b</b>*<b>i</b>)<sup><b>N</b></sup> não seja maior que 2<sup>30</sup>.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A primeira linha da entrada contém um inteiro <b>M</b>, indicando o número de casos de teste.</p>
+
+                <p>Para cada caso de teste, há uma linha com dois inteiros <b>A</b> e <b>B</b>. <b>A</b> é a parte real do número complexo, e <b>B</b> a parte imaginária.</p>
+
+                <p>Você pode assumir que -10000 ≤ <b>A</b> ≤ 10000, e -10000 ≤ <b>B</b> ≤ 10000.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, a saída deve consistir de um único número natural <b>N</b> em uma linha, indicando a potência tal que (<b>A</b>+<b>B</b>*i)<sup><b>N</b></sup> é real e seu valor absoluto não é maior que 2<sup>30</sup>. Se não houver solução imprima "TOO COMPLICATED".</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                5<br>
+                                817 0<br>
+                                2 2<br>
+                                0 -1<br>
+                                18 92<br>
+                                -7 7
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                1<br>
+                                4<br>
+                                2<br>
+                                TOO COMPLICATED<br>
+                                4
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Olimpiadas Murcianas de Programación 2009.
+            </p>
+        </div>
+
+    </body>
+</html>

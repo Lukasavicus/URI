@@ -1,0 +1,103 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2363 - Brincando com Transformações</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema I - Brincando com Transformações" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2363</span>
+				<h1>Brincando com Transformações</h1>
+				<div>
+					<p>Por Lucas Maciel, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Luiz é um menino bem diferente dos demais em Sildávia. Ele gosta mesmo é de brincar com sequências de números inteiros. Cansado de brincar sempre com a mesma sequência (de 1 a <strong>N</strong>), Luiz propos algumas transformações:</p>
+
+<p></p>
+
+<ul>
+	<li><em>PAR(S)</em> e <em>IMPAR(S)</em> são duas transformações que filtram as posições pares ou ímpares de uma sequência S, retornando a nova sequência.</li>
+	<li><em>REC(S) = REC(PAR(S)) + REC(IMPAR(S))</em>. Essa transformação recursiva concatena duas sequências de acordo com o operador ( + ), filtrando ambas pelas transformações anteriores.</li>
+</ul>
+
+<p></p>
+
+<p>Como as sequências são muito grandes, Luiz deseja saber apenas o somatório de um intervalo <strong>[A, B]</strong> módulo 10<sup>9</sup>+7.</p>
+
+<p><strong>Observações</strong></p>
+
+<p><em>REC(S) = S</em> para <em>|S| = 1</em>. Ou seja, se a sequência possui apenas um elemento, <em>REC</em> dessa sequência é ela própria.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste por diversos casos teste. Cada caso possui três inteiros <strong>N, A</strong> e <strong>B</strong> que representam o tamanho da sequência original (de 1 a N), e o intervalo <strong>[A, B]</strong> da transformação <em>REC</em> na sequência original em que se deseja saber sua soma. (1 ≤ <strong>A</strong> ≤ <strong>B</strong> ≤ <strong>N</strong> ≤ 10<sup>18</sup>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso teste imprima o somatório em uma única linha módulo 10<sup>9</sup>+7.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 2 4<br />
+1000000000 1 1000000000</p>
+
+							</td>
+							<td>
+								<p>10<br />
+21</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p>No primeiro caso, inicialmente Luiz possu&#237; uma sequ&#234;ncia <i>S = {1, 2, 3, 4, 5}</i>. Seja <i>S<sub>1</sub> = PAR(S) = {2, 4}</i> e <i>S<sub>2</sub> = IMPAR(S) = {1, 3, 5}</i>, ent&#227;o <i>REC(S) = REC(S<sub>1</sub>) + REC(S<sub>2</sub>)</i>. Para calcular <i>REC(S<sub>1</sub>)</i> precisamos calcular <i>PAR(S<sub>1</sub>) = {4}</i> e <i>IMPAR(S<sub>1</sub>) = {2}</i>. Como <i>REC({4}) = {4}</i> e <i>REC({2}) = {2}</i>, ent&#227;o <i>REC(S<sub>1</sub>) = {4, 2}</i>. Agora vamos calcular <i>REC(S<sub>2</sub>)</i>. Para isso, seja <i>S<sub>2<sub>1</sub></sub> = PAR(S<sub>2</sub>) = {3}</i> e <i>S<sub>2<sub>2</sub></sub> = IMPAR(S<sub>2</sub>) = {1, 5}</i>, ent&#227;o <i>REC(S<sub>2<sub>1</sub></sub>) = {3}</i> e como voc&#234; deve ter notado, <i>REC(S<sub>2<sub>2</sub></sub>) = {5, 1}</i>. Logo, <i>REC(S<sub>2</sub>) = {3, 5, 1}</i>. Assim, <i>REC(S) = REC(S<sub>1</sub>) + REC(S<sub>2</sub>) = {4, 2} + {3, 5, 1} = {4, 2, 3, 5, 1}</i>. Como queremos saber apenas o somat&#243;rio do segundo ao quarto elemento ([2, 4]), ent&#227;o fazemos 2 + 3 + 5 = 10.</p>
+
+				<br />
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Seletiva UFMG 2014
+				</p>
+			</div>
+
+		</body>
+	</html>

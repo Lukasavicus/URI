@@ -1,0 +1,112 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1882 - Passeios Aleatórios pela Tailândia</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1882 - Passeios aleatórios pela Tailândia" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1882</span>
+				<h1>Passeios Aleatórios pela Tailândia</h1>
+				<div>
+					<p>Por Stefano Tommasini, Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 4</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A Tailândia tem algumas centenas de ilhas. Todas as ilhas de tamanho razoável têm pequenas pistas de voo, onde aviões de pequeno porte operam. O sistema de transporte, no entanto, é bastante estranho às vistas de um estrangeiro...</p>
+
+<p>Os barqueiros são muito confiáveis. Partindo, por exemplo, de Ko Khang Khao (เกาะค้างคาว), você consegue um barco para as ilhas vizinhas a preços razoáveis: Ko Sichang (เกาะสีชัง), Ko Kham Yai (เกาะขามใหญ่), Ko Kham Noi (เกาะขามน้อย), Ko Ram Dok Mai (เกาะร้ามดอกไม้), Ko Prong (เกาะปรง), ou Ko Yai Thao (เกาะใหญ่ท้าว) (sim, Ko significa ilha em tailandês).</p>
+
+<p>Os pilotos de avião, por sua vez, são muito temperamentais. Você pega o avião e ele deixa você em uma ilha aleatória, que ele decide de acordo com sua própria vontade. Toda ilha tem a mesma probabilidade de ser escolhida pelo piloto, inclusive a ilha de origem. Apesar de o destino ser incerto, toda viagem de avião tem o mesmo preço fixo.</p>
+
+<p>Assim, quando você quer ir de uma ilha a outra tem sempre duas opções. Pegar um barco para uma ilha vizinha, cujo preço varia de acordo com o trecho percorrido, ou arriscar e pegar um avião, pagando o preço fixo de <em>K</em> baht.</p>
+
+<p>Considere que as ilhas são numeradas de 1 a <em>N</em>. Sua tarefa neste problema é determinar o valor mínimo esperado de uma viagem a ser feita da ilha 1 para a ilha <em>N</em>.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+<p>Cada instância inicia com 3 inteiros, <strong>N</strong>, <strong>M</strong> (1 ≤ <strong>N</strong>,<strong> M</strong> ≤ 100.000) e <strong>K </strong>(1 ≤ <strong>K</strong> ≤ 1000), representando o número de ilhas, a quantidade de barqueiros e o custo da viagem de avião.</p>
+
+<p>As próximas <strong>M</strong> linhas contêm 3 inteiros cada, <strong>A</strong>, <strong>B</strong>, <strong>C </strong>(1 ≤ <strong>C</strong> ≤ 1.000), indicando que existe um barqueiro cobrando <strong>C</strong> baht para ir da ilha <strong>A</strong> para a <strong>B</strong>, ou da ilha <strong>B</strong> para a <strong>A</strong>. Entre cada par de ilhas existe no máximo um barqueiro.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprima um número real arredondado para 3 casas decimais com o valor mínimo esperado. O número deve sempre ser impresso com as 3 casas decimais.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+<p>3 3 1</p>
+
+<p>0 1 10</p>
+
+<p>0 2 20</p>
+
+<p>1 2 5</p>
+
+<p>3 3 100</p>
+
+<p>0 1 10</p>
+
+<p>0 2 20</p>
+
+<p>1 2 5</p>
+
+							</td>
+							<td>
+								<p>3.000</p>
+
+<p>15.000</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIX Maratona de Programação IME-USP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

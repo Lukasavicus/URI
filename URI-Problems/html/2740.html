@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2740 - Liga</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - SQL - Problema 2740 - Liga" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default-sql.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28047757-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <span>URI Online Judge <strong>SQL</strong> | 2740 </span>
+      <h1>Liga</h1>
+      <div>
+        <p>Marcos Lima <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem-sql">
+      
+      <div>
+		<p>A Liga Internacional de Escavação Subterrânea já é um sucesso entre os esportes alternativos,
+		porém todos que trabalham na organização do evento trabalham com escavação e não computação.
+		Então você foi contratado para solucionar o problema da Liga. </p>
+		<p>Selecione os três primeiros colocados da lista com a frase inicial <strong>Podium:</strong> e
+ 		também, os dois últimos times que serão rebaixados para série B com a frase inicial <strong>Demoted:</strong></p>
+      </div>
+
+      <div>
+        <h2>Esquema</h2>
+        <div>
+          <table class="tables-fifty">
+            <caption>league</caption>
+		      <tr>
+		        <td class="half-column"><strong>Coluna</strong></td>
+		        <td class="half-column"><strong>Tipo</strong></td>
+		      </tr>
+		      <tr>
+		        <td>position (PK)</td>
+		        <td>integer</td>
+		      </tr>
+		      <tr>
+		        <td>team</td>
+		        <td>varchar</td>
+		      </tr>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <h2>Tabelas</h2>
+          <div>
+            <table class="tables-fifty">
+              <caption>league</caption>
+              <tr>
+                <td><strong>position</strong></td>
+                <td><strong>team</strong></td>
+              </tr>
+              <tr>
+                <td class="center">1</td>
+                <td>The Quack Bats</td>
+              </tr>
+              <tr>
+                <td class="center">2</td>
+                <td>The Responsible Hornets</td>
+              </tr>
+              <tr>
+                <td class="center">3</td>
+                <td>The Bawdy Dolphins</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td>The Abstracted Sharks</td>
+              </tr>
+              <tr>
+                <td class="center">5</td>
+                <td>The Nervous Zebras</td>
+              </tr>
+			  <tr>
+				<td class="center">6</td>
+		        <td>The Oafish Owls</td>
+			  </tr>
+			  <tr>
+				<td class="center">7</td>
+		        <td>The Unequaled Bison</td>
+			  </tr>
+			  <tr>
+				<td class="center">8</td>
+		        <td>The Keen Kangaroos</td>
+			  </tr>
+			  <tr>
+				<td class="center">9</td>
+		        <td>The Left Nightingales</td>
+			  </tr>
+			  <tr>
+				<td class="center">10</td>
+		        <td>The Terrific Elks</td>
+			  </tr>
+			  <tr>
+				<td class="center">11</td>
+		        <td>The Lumpy Frogs</td>
+			  </tr>
+			  <tr>
+				<td class="center">12</td>
+		        <td>The Swift Buffalo</td>
+			  </tr>
+			  <tr>
+				<td class="center">13</td>
+		        <td>The Big Chargers</td>
+			  </tr>
+			  <tr>
+				<td class="center">14</td>
+		        <td>The Rough Robins</td>
+			  </tr>
+			  <tr>
+				<td class="center">15</td>
+		        <td>The Silver Crocs</td>
+			  </tr>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <h2>Exemplo de Saída</h2>
+            <div>
+              <table class="tables-fifty">
+                <tr>
+                  <td><strong>name</strong></td>
+                </tr>
+                <tr>
+                  <td>Podium: The Quack Bats</td>
+                </tr>
+                <tr>
+                  <td>Podium: The Responsible Hornets</td>
+                </tr>
+				<tr>
+				  <td>Podium: The Bawdy Dolphins</td>
+				</tr>
+				<tr>
+				  <td>Demoted: The Rough Robins</td>
+				</tr>
+				<tr>
+				  <td>Demoted: The Silver Crocs</td>
+				</tr>
+              </table>
+            </div>
+          </div>
+        
+    </div>
+  </body>
+</html>

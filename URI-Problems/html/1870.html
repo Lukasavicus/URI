@@ -1,0 +1,123 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1870 - Ventiladores e Balões</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1842 - Ventiladores e Balões" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1870</span>
+				<h1>Ventiladores e Balões</h1>
+				<div>
+					<p>Por Ricardo Martins, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Em um feriado, os empregados da empresa fabricante de ventiladores Irmãos Fulano, mais conhecida como IF, propuseram uma gincana. Dada uma caixa retangular, de grandes dimensões, formadas por compartimentos, contendo apenas a parede frontal e traseira, com todos os compartimentos acessíveis internamente, ventiladores pequenos, mas potentes, e sem a grade de proteção, foram amarrados internamente na caixa, em alguns compartimentos. Após isto, um balão é solto dentro da caixa, na reta de uma determinada coluna de compartimentos. Cada ventilador estará ligado com um determinado nível de força. Então, é verificado o ventilador mais próximo à esquerda e à direita do balão. Se ambos estiverem com o mesmo nível de força, o balão continua descendo normalmente. Caso seja diferente, o balão será empurrado para o lado do ventilador com o nível mais fraco, e o mesmo se deslocará tantas colunas forem a diferença entre o maior nível e o menor entre os ventiladores. Veja o caso abaixo em todos os detalhes:</p>
+
+					
+
+					<ul>
+						<li>Balão solto na coluna 6;</li>
+						<li>Na primeira linha, o ventilador mais próximo à direita do balão tem dois níveis a mais que o mais próximo da esquerda, deslocando o balão para a coluna 4;</li>
+						<li>Na segunda linha, o ventilador mais próximo à direita do balão tem dois níveis a mais que o mais próximo da esquerda, deslocando o balão para a coluna 2;</li>
+						<li>Na terceira linha, o ventilador mais próximo à direita do balão tem o mesmo nível em relação ao mais próximo da esquerda, mantendo o balão na coluna 2;</li>
+						<li>Na quarta linha, o ventilador mais próximo à direita do balão tem dois níveis a menos que o mais próximo da esquerda, deslocando o balão para a coluna 4, saindo sem estourar;</li>
+					</ul>
+
+
+					<p>Se, na mesma caixa, o balão fosse solto na coluna 2, o balão teria estourado na linha 1 e coluna 1, nas hélices do ventilador que se encontra neste local.</p>
+
+									<p class="center">
+					                <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1870.png" style="width: 605px; height: 361px;"></p>	
+									
+
+					<p>Escreva um programa que, dada uma matriz, representando a caixa e uma coluna, na qual o balão será solto, e verifique se o mesmo passa por todos os ventiladores sem estourar.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Haverá diversos casos de teste. Cada caso de teste inicia com três inteiros, L, C e P (1 ≤ L ≤ C ≤ P ≤ 9), indicando a quantidade de L linhas e C colunas da matriz e P a posição da coluna a qual o balão será solto.</p>
+
+					<p>O último caso de teste é indicado quando L = C = P = 0, sendo que este caso não deve ser processado.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima, caso o balão tenha passado ileso, a palavra “OUT”, seguida da posição da coluna da qual o mesmo saiu no final; e caso tenha estourado no meio do caminho,  a palavra “BOOM”, e em qual linha e coluna o mesmo estourou.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 7 6</p>
+
+								<p>3 0 0 0 0 0 5</p>
+
+								<p>2 0 0 0 0 0 4</p>
+
+								<p>1 0 1 0 0 0 1</p>
+
+								<p>3 0 0 0 1 0 1</p>
+
+								<p>3 3 2</p>
+
+								<p>1 0 1</p>
+
+								<p>1 0 1</p>
+
+								<p>2 0 1</p>
+
+								<p>0 0 0</p>
+
+							</td>
+							<td>
+								<p>OUT 4</p>
+
+								<p>BOOM 3 3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					V Olimpíada Interna de Programação do IFSULDEMINAS - OLIP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

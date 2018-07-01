@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1262 - Leitura Múltipla </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1262 - Leitura Múltipla " />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1262</span>
+            <h1>Leitura Múltipla </h1>
+            <div><p>
+                    Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif" style="width: 16px; height: 11px;" /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Em diversos sistemas de computação, vários processos podem ler de um mesmo recurso durante o mesmo ciclo de máquina,
+                    mas somente um processo pode escrever no recurso durante o ciclo de máquina. Leituras e gravações não podem se misturar
+                    em um mesmo ciclo de máquina. Dado um histórico de leituras e gravações que ocorreram durante a execução de um determinado
+                    processamento, e um número inteiro que representa o número de processos usados, calcule a duração mínima do processamento,
+                    em ciclos de máquina. O <b>rastro</b> de histórico representa cada leitura por uma letra 'R' e cada gravação por uma letra
+                    'W'.</p>
+                    <p>
+                    Por exemplo, se o <b>rastro</b> de histórico é "<span class="code">RWWRRR</span>" e o número de <b>processos</b> é 3, então o número mínimo
+                de ciclos de máquina será 4: um para a primeira leitura, um para cada uma das gravações e apenas um para todo o último
+                grupo de leituras.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém diversos casos de testes. Cada caso é composto por duas linhas. A primeira linha contém o rastro de
+                    processamento em uma sequência de caracteres 'R' ou 'W' formando um String de 1 a 50 caracteres. A segunda linha contém um
+                    valor inteiro <strong>P&nbsp;</strong>(1 &le;&nbsp;<strong>P&nbsp;</strong>&le; 10), representando o número de processos,
+                    ou seja, uma indicação de quantas operações de leitura podem ser processadas simultaneamente. A entrada termina em EOF.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste determine e imprima o número mínimo de ciclos de máquina necessários para se processar o rastro informado. Vide exemplos abaixo.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                RWWRRR<br />
+                                3<br />
+                                RWWRRRR<br />
+                                3<br />
+                                WWWWW<br />
+                                5<br />
+                                RRRRRRRRRR<br />
+                                4<br />
+                                RWRRWWRWRWRRRWWRRRRWRRWRRWRRRRRRRRRWRWRWRRRRWRRRRR<br />
+                                4</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                4<br />
+                                5<br />
+                                5<br />
+                                3<br />
+                                30</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                * Este problema é de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por bitfreeze para utilização (autorizada) no URI OJ.<br />
+                * A reprodução não autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. é estritamente proibida.</p>
+
+        </div>
+
+    </body>
+</html>

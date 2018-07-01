@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2105 - Monopólio</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2105 - Monopólio" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2105</span>
+                <h1>Monopólio</h1>
+                <div>
+                    <p>Por XIII Maratona de Programação IME-USP, 2009 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    	<p>A Maratona de Programação é um evento que acontece todos os anos com a ajuda de organizações e pessoas que são entusiastas da idéia de competições científicas. Dentre as motivações para participar dela, estão o aumento dos conhecimentos relacionados a algoritmos (e todas as àreas da matemática em geral), a melhora na estrutura de raciocínio, a melhora na velocidade de digitação e também a rede social criada com pessoas de alto nível na área de computação. Para os competidores da Unicamp, no entanto, a motivação é outra. O que leva essas pessoas a participarem da maratona é a oportunidade de viajar para ficar num hotel jogando jogos de tabuleiro.</p>
+                        
+                        <p>Na última maratona houve competições acirradas de várias modalidades de jogos, entre eles um chamado Banco Imobiliário. O objetivo desse jogo é garantir o maior acúmulo de capital possível através de especulação imobiliária.</p>
+
+                        <p>André foi um dos participantes do jogo, e acabou perdendo todas as partidas para seu colega de time Felipe, que foi acusado de bruxaria pela magnitude das vitórias obtidas, num jogo que teoricamente depende apenas de sorte e persuasão.</p>
+
+                        <p>Uma das coisas que mais indignou André foi ele não ter conseguido comprar os terrenos mais caros, enquanto Felipe sempre os comprava. Felipe tentou convencer André de que não praticava mais bruxaria há anos, e que ele não caiu nos territorios caros porque a probabilidade era muito pequena.</p>
+
+                        <p>Para ajudar Felipe a convencer André das probabilidades no tabuleiro, você escreverá um programa que, dada a descrição de um tabuleiro, calcule qual é a probabilidade de se cair numa determinada casa do tabuleiro após infinitas rodadas.</p>
+
+                        <p>O tabuleiro é descrito como uma sequencia de N casas. O tabuleiro é circular, ou seja, após a N-ésima casa, você vai para a primeira casa. Algumas casas são especiais, e te mandam imediatamente para outra casa. No início do jogo, todos estão na casa número 1, e a cada rodada os jogadores lançam um dado de D lados, que vai dizer quantas casas o jogador deve avançar.</p>
+
+                        <p>A descrição do tabuleiro é uma sequência de N inteiros, cada inteiro é:</p>
+
+                        <p>-1 se é uma casa normal;</p>
+
+                        <p>K se for uma casa especial, onde K é um inteiro representando o índice da casa para onde o jogador será imediatamente enviado (o índice da primeira casa é 0). A K-ésima casa é uma casa normal.</p>
+
+                        <p>Por exemplo, se o tabuleiro for descrito como -1 -1 0 1 -1 0, temos um tabuleiro com 6 casas, sendo que a primeira, a segunda e a quinta casa são normais. Se o jogador cai na terceira ou sexta casa, é enviado imediatamente (na mesma rodada) para a casa de índice 0 (a primeira). Se cai na quarta casa, é enviado para a casa de índice 1 (a segunda).</p>
+
+                        <p>Além disso, será dada a quantidade de lados do dado usado, que podem ter de 3 a 20 lados.</p>
+                    </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém várias instâncias. Cada instância é composta por duas linhas. Na primeira linha, serão dados dois números inteiros <strong>N</strong> (3 ≤ <strong>N</strong> ≤ 1000) e <strong>D</strong> (3 ≤ <strong>D</strong> ≤ 20), separados por um espaço em branco, indicando respectivamente a quantidade de casas no tabuleiro e o número de lados no dado.</p>
+
+                    <p>Na segunda linha serão dados <strong>N</strong> números inteiros <strong>a<sub>1</sub></strong>, <strong>a<sub>2</sub></strong>, ... <strong>a<sub>N</sub></strong> (-1 ≤ <strong>a<sub>i</sub></strong> ≤ <strong>N</strong>-1) separados por espaços em branco, que é a descrição do tabuleiro como explicado no enunciado.</p>
+
+                    <p>A entrada termina quando <strong>N</strong> = <strong>D</strong> = 0.</p>
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância na entrada, imprima uma linha com <strong>N</strong> inteiros <strong>p<sub>1</sub></strong>, <strong>p<sub>2</sub></strong>, ... , <strong>p<sub>N</sub></strong>, onde <strong>p<sub>k</sub></strong> é a probabilidade (em porcentagem) de, após infinitas rodadas, o jogador parar na casa <strong>k</strong>. Os números devem estar separados por espaços e ter 3 casas decimais.</p>                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>7 3<br />
+-1 0 0 0 -1 -1 -1<br />
+7 12<br />
+-1 6 -1 2 -1 -1 -1<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>100.000 0.000 0.000 0.000 0.000 0.000 0.000<br />
+15.385 0.000 29.664 0.000 14.363 13.284 27.304</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XIII Maratona de Programação IME-USP, 2009
+                </p>
+            </div>
+
+        </body>
+    </html>

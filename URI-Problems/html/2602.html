@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2602 2602 - Select Básico</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - SQL - Problema 2602- Select Básico"/>
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default-sql.css">
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>  
+
+ </head>
+
+  <body>
+    <div class="header">
+      <span>URI Online Judge <strong>SQL</strong> | 2602 </span>
+      <h1>Select Básico</h1>
+      <div>
+        <p>Paulo R. Rodegheri <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+    
+    <div class="problem-sql">
+      
+      <div>
+        <p>Sua empresa está fazendo um levantamento de quantos clientes estão cadastrados nos estados, porém, faltou levantar os dados do estado do Rio Grande do Sul.</p>
+        <p>Então você deve Exibir o nome de todos os clientes cujo estado seja ‘RS’.</p>
+      </div>
+
+      <div>
+        <h2>Esquema</h2>        
+        <div>
+          <table class="tables-fifty">
+            <caption>customers</caption>
+            <tr>
+              <td class="half-column"><strong>Coluna</strong></td>
+              <td class="half-Column"><strong>Tipo</strong></td>
+            </tr>            
+            <tr>
+              <td>id (PK)</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>varchar</td>
+            </tr>
+            <tr>
+              <td>street</td>
+              <td>varchar</td>
+            </tr>
+            <tr>
+              <td>city</td>
+              <td>varchar</td>
+            </tr>
+            <tr>
+              <td>state</td>
+              <td>char</td>
+            </tr>
+            <tr>
+              <td>credit_limit</td>
+              <td>number</td>
+            </tr>
+          </table>
+                    
+        </div>
+      </div>
+
+      <div>
+        <h2>Tabelas</h2>      
+        <div>
+          <table class="tables-hundred">
+            <caption>customers</caption>
+            <tr>
+              <td><strong>id</strong></td>
+              <td><strong>name</strong></td>
+              <td><strong>street</strong></td>
+              <td><strong>city</strong></td>
+              <td><strong>state</strong></td>
+              <td><strong>credit_limit</strong></td>
+            </tr>
+            <tr>
+              <td class="center">1</td>
+              <td>Pedro Augusto da Rocha</td>
+              <td>Rua Pedro Carlos Hoffman</td>
+              <td>Porto Alegre</td>
+              <td class="center">RS</td>
+              <td class="center">700,00</td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+              <td>Antonio Carlos Mamel</td>
+              <td>Av. Pinheiros</td>
+              <td>Belo Horizonte</td>
+              <td class="center">MG</td>
+              <td class="center">3500,50</td>
+            </tr>
+            <tr>
+              <td class="center">3</td>
+              <td>Luiza Augusta Mhor</td>
+              <td>Rua Salto Grande</td>
+              <td>Niteroi</td>
+              <td class="center">RJ</td>
+              <td class="center">4000,00</td>
+            </tr>
+            <tr>
+              <td class="center">4</td>
+              <td>Jane Ester</td>
+              <td>Av 7 de setembro</td>
+              <td>Erechim</td>
+              <td class="center">RS</td>
+              <td class="center">800,00</td>
+            </tr>
+            <tr>
+              <td class="center">5</td>
+              <td>Marcos Antônio dos Santos</td>
+              <td>Av Farrapos</td>
+              <td>Porto Alegre</td>
+              <td class="center">RS</td>
+              <td class="center">4250,25</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <h2>Exemplo de Saída</h2>              
+        <div>
+          <table class="tables-fifty">
+            <tr>
+              <td><strong>name</strong></td>
+            </tr>
+            <tr>
+              <td>Pedro Augusto da Rocha</td>
+            </tr>
+            <tr>
+              <td>Jane Ester</td>
+            </tr>
+            <tr>
+              <td>Marcos Antônio dos Santos</td>
+            </tr>
+          </table>
+        </div>              
+      </div>
+            
+    </div>
+  </body>
+</html>

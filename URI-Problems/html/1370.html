@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1370 - Regata de Cientistas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1370 - Regata de Cientistas" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1370</span>
+            <h1>Regata de Cientistas</h1>
+            <div><p>Por Alessandro Luna de Almeida, UFPE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt="" /></p> Brasil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Todos os anos, desde 1996, cientistas da computação do mundo todo se encontram para a famosa Regata dos Cientistas. A competição consiste em uma corrida de barcos com obstáculos pelo oceano, onde o objetivo de cada equipe é, partindo de um ponto em comum, alcançar o ponto de chegada sem que nenhum obstáculo seja tocado ou transpassado. Uma equipe que toca ou transpassa um obstáculo é automaticamente desclassificada. A equipe vencedora é aquela que primeiro atinge o ponto de chegada (o ponto de chegada é distinto do ponto de início).</p>
+
+                <p>
+                    Você foi contratado pela equipe brasileira para desenvolver um programa que calcule o comprimento da menor rota válida possível do ponto de partida ao ponto de chegada. O oceano é considerado um plano infinito, onde cada obstáculo é localizado em uma posição fixa e representado por um segmento de reta descrito por seus dois extremos (x<sub>1</sub>, y<sub>1</sub>) e (x<sub>2</sub>, y<sub>2</sub>). Os barcos são adimensionais (representados como um ponto no plano) e os obstáculos possuem espessura desprezível.</p>
+
+                <p>
+                    Os obstáculos são dispostos de tal forma que os mesmos não se interceptam. De forma similar, os pontos de início e de chegada da competição não são interceptados por nenhum obstáculo.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada é composta por vários casos de teste. A primeira linha de um caso de teste contém cinco números inteiros <strong>x<sub>i</sub></strong>, <strong>y<sub>i</sub></strong>, <strong>x<sub>f</sub></strong>, <strong>y<sub>f</sub></strong> e <strong>n</strong>, representando respectivamente as coordenadas do ponto de início (<strong>x<sub>i</sub></strong>, <strong>y<sub>i</sub></strong>), as coordenadas do ponto de chegada (<strong>x<sub>f</sub></strong>, <strong>y<sub>f</sub></strong>) e a quantidade de obstáculos (<strong>n</strong> ≤ 150). Cada uma das <strong>n</strong> linhas seguintes de um caso de teste contém quatro números inteiros <strong>x<sub>1</sub></strong>, <strong>y<sub>1</sub></strong>, <strong>x<sub>2</sub></strong> e <strong>y<sub>2</sub></strong> que descrevem as coordenadas dos dois extremos de um obstáculo. Considere que as coordenadas <strong>x</strong> e <strong>y</strong> de qualquer ponto satisfazem -5000 ≤ <strong>x</strong>, <strong>y</strong> ≤ 5000. O final da entrada é representado por uma linha contendo <strong>x<sub>i</sub></strong> = <strong>y<sub>i</sub></strong> = <strong>x<sub>f</sub></strong> = <strong>y<sub>f</sub></strong> = <strong>n</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste, imprima uma linha contendo o comprimento da menor rota válida possível, arredondado para duas casas decimais.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                0 0 10 0 1<br />
+                                5 -1 5 1<br />
+                                0 0 10 0 1<br />
+                                5 0 5 1<br />
+                                0 0 0 0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                10.20<br />
+                                10.00</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+              Maratona de Programacao da SBC 2005.
+            </p>
+        </div>
+
+    </body>
+</html>

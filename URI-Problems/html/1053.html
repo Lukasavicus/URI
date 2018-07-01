@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1053 - Desenho Contínuo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1053 - Desenho Contínuo" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1053</span>
+            <h1>Desenho Contínuo</h1>
+            <div><p>
+                    Por Sohel Hafiz <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif" style="width: 16px; height: 11px;" /> Bangladesh*</p>
+            </div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1053.jpg" style="width: 296px; height: 220px; float: right;" />Uma tarefa simples! Você receberá os pontos finais de alguns segmentos de linha. Basta desenhá-los! Está achando muito fácil, certo?</p>
+                    <p>
+                    Você decide desafiar a si mesmo e, portanto, adicionar algumas restrições.<br />
+                    1] Iniciar a partir do ponto final de qualquer segmento de linha.<br />
+                    2] Não levante a caneta do papel.<br />
+                    3] Você pode passar por cima de uma linha de mais de uma vez.<br />
+                    4] Não desenhar qualquer outra linha além das citadas.<br />
+                    5] Você só pode mudar de direção em coordenadas inteiras de x e y.<br />
+                    6] Use a menor quantidade de tinta necessária.</p>
+                    <p>
+                    Você precisa de uma unidade de tinta para desenhar uma unidade de linha. As distâncias entre os pontos sucessivos<br />
+                    são: 1 unidade.</p>
+                    <p>
+                    Portanto Distância (A1 até B1) = 1 unidade and Distância (A1 até A2) = 1 unidade.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A primeira linha de entrada é um inteiro <strong>T</strong>(T&lt;20) que indica o número total de casos de teste. Cada caso inicia com um inteiro <strong>N </strong>(<strong>N</strong>&lt;10). Então <strong>N </strong>linhas vem a seguir, cada uma descrevendo um segmento de linha. Um segmento de linha é definido por dois pontos <strong>Y<span id="cke_bm_1561S" style="display: none;">&nbsp;</span><span id="cke_bm_1557S" style="display: none;">&nbsp;</span><span id="cke_bm_1555S" style="display: none;">&nbsp;</span><sub>1</sub><span id="cke_bm_1561E" style="display: none;">&nbsp;</span><span id="cke_bm_1557E" style="display: none;">&nbsp;</span><span id="cke_bm_1555E" style="display: none;">&nbsp;</span>X<span id="cke_bm_1562S" style="display: none;">&nbsp;</span><span id="cke_bm_1558S" style="display: none;">&nbsp;</span><sub>1</sub><span id="cke_bm_1562E" style="display: none;">&nbsp;</span><span id="cke_bm_1558E" style="display: none;">&nbsp;</span><span id="cke_bm_1559S" style="display: none;">&nbsp;</span> Y<span id="cke_bm_1563S" style="display: none;">&nbsp;</span><sub>2</sub><span id="cke_bm_1563E" style="display: none;">&nbsp;</span>X<sub>2</sub></strong><span id="cke_bm_1564E" style="display: none;">&nbsp;</span><span id="cke_bm_1559E" style="display: none;">&nbsp;</span>. <strong>Y<sub>1</sub></strong> e<strong> <span id="cke_bm_1560E" style="display: none;">&nbsp;</span>Y<sub>2</sub></strong> estarão no intervalo<strong> [A,E]</strong>. <strong>X<sub>1</sub> </strong>e <strong>X<sub>2</sub> </strong>estarão no intervalo<strong> [1,5]</strong>. O <span id="cke_bm_1556E" style="display: none;">&nbsp;</span>primeiro exemplo é mostrado na figura acima. Portanto, olhe para o exemplo para compreender o formato exato.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso, imprima o número do caso de teste seguido pela quantidade total de tinta requerida com 2 dígitos depois do ponto decimal. Se as linhas não podem ser desenhadas sem que se levante a caneta, imprima o número do caso de teste seguido de “~ x (“, conforme exemplo abaixo (caso 2).</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                4<br />
+                                A1 C2<br />
+                                B3 C3<br />
+                                C4 C2<br />
+                                C2 D2<br />
+                                2<br />
+                                A1 A5<br />
+                                E1 E5</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Case 1: 8.24<br />
+                                Case 2: ~x(</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Agradecimento especial: Jane Alam Jan.<br />
+                *Atualmente na Universidade de Texas em San Antonio - USA</p>
+
+        </div>
+
+    </body>
+</html>

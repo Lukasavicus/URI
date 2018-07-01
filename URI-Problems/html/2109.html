@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2109 - Duelo de Espiões</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2109 - Duelo de Espiões" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2109</span>
+                <h1>Duelo de Espiões</h1>
+                <div>
+                    <p>Por XVII Maratona de Programação IME-USP, 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Alexey e Boris eram dois agentes da KGB que moravam em Ecaterimburgo nos anos 70. A cidade era um tanto parada, e como nada acontecia,  os dois decidiram inventar um jogo de dados para não morrerem de tédio. Nesse jogo cada um deles começa com A e B pontos de vida respectivamente. Cada um têm à sua disposição um número de ataques possíveis, e eles se alternam atacando um ao outro. Cada ataque é descrito por uma quantidade de dados. Para saber o dano do ataque rodamos essa quantidade de dados e a soma dos valores é igual ao dano causado.</p>
+
+                    <p>Para jogar, eles têm disponível dados honestos com um número de faces entre 1 e 12. Dessa forma, se um dado com L faces for jogado ele vai mostrar um valor inteiro entre 1 e L, com igual probabilidade e de maneira independente de qualquer outro lançamento no jogo.</p>
+
+                    <p>Ambos os jogadores conhecem todos os seus ataques e os do seu oponente e escolhem como atacar em cada turno de forma a maximizar a sua própria probabilidade de vitória.</p>
+
+                    <p>Sua tarefa nesse problema é determinar qual a probabilidade de vitória de cada jogador.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF).</p>
+
+                    <p>A primeira linha de cada instância contém quatro inteiros, <b>VA</b>, <b>VB</b> (1 ≤ <strong>VA</strong> , <strong>VB</strong> ≤ 300), <b>NA</b> and <b>NB</b> (1 ≤ <strong>NA</strong>, <strong>NB</strong> ≤ 10). Cada uma das próximas <b>NA</b> linhas descrevem um ataque do Alexey, elas começam com um inteiro <b>D</b> (1 ≤ <strong>D</strong> ≤ 3) e são seguidas por outros <b>D</b> inteiros <b>L1 , . . . , LD</b> (1 ≤ <strong>L<sub>i</sub></strong> ≤ 12), indicando que nesse ataque Alexey lança <b>D</b> dados, com <b>L1 , L2 , . . . , LD</b> faces. As próximas <b>NB</b> linhas descrevem os ataques do Boris de maneira análoga.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância, imprima uma linha com um único ponto flutuante arredondado para 3 casas decimais, indicando a probabilidade que o Alexey vença o duelo, sendo que ele que começa atacando.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 12 2 1</p>
+
+<p>1 12</p>
+
+<p>3 4 4 5</p>
+
+<p>2 1 1</p>
+
+<p>5 5 1 2</p>
+
+<p>1 6</p>
+
+<p>2 3 5</p>
+
+<p>2 1 6</p>
+
+                            </td>
+                            <td>
+                                <p>0.083</p>
+
+<p>0.534</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XVII Maratona de Programação IME-USP, 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

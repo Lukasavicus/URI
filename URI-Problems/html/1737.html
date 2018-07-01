@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1737 - Etaoin Shrdlu</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1739 - Etaoin Shrdlu" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1737</span>
+                <h1>Etaoin Shrdlu</h1>
+                <div>
+                    <p>University of Ulm local Contest <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A frequência relativa de caracteres em textos de linguagem natural é muito importante para a criptografia. No entanto, as estatísticas variam para diferentes idiomas. Aqui estão os top 9 caracteres ordenados por suas frequências relativas para várias línguas comuns:</p>
+
+                    <ul>
+                    	<li>Inglês: ETAOINSHR</li>
+                    	<li>Alemão: ENIRSATUD</li>
+                    	<li>Francês: EAISTNRUL</li>
+                    	<li>Espanhol: EAOSNRILD</li>
+                    	<li>Italiano: EAIONLRTS</li>
+                    	<li>Finlandês: AITNESLOK</li>
+                    </ul>
+
+                    <p>Tão importante quanto as frequências relativas de caracteres simples são os de pares de caracteres, os chamados dígrafos. Dado vários exemplos de texto, calcule os dígrafos com as melhores frequências relativas.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada um começa com um número <strong>n</strong> em uma linha separada, indicando o número de linhas do caso de teste. A entrada é terminada por <strong>n</strong> = 0. Caso contrário, 1 ≤ <strong>n </strong>≤ 64, e seguem <strong>n</strong> linhas, cada uma com um comprimento máximo de 80 caracteres. A concatenação dessas <strong>n</strong> linhas, onde os caracteres de fim de linha (end-of-line) são omitidos, dá o exemplo de texto que você tem que analisar. O texto irá conter apenas caracteres ASCII imprimíveis.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste gere 5 linhas contendo os top 5 dígrafos juntamente com suas frequências absolutas e relativas. Imprima o último arredondado com uma precisão de seis casas decimais. Se dois dígrafos tiverem a mesma frequência, ordene-os em (ASCII) ordem lexicográfica. Imprima uma linha em branco após cada caso de teste.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+                                Take a look at this!!<br />
+                                !!siht ta kool a ekaT<br />
+                                5<br />
+                                P=NP<br />
+                                &nbsp;Authors: A. Cookie, N. D. Fortune, L. Shalom<br />
+                                &nbsp;Abstract: We give a PTAS algorithm for MaxSAT and apply the PCP-Theorem [3]<br />
+                                &nbsp;Let F be a set of clauses. The following PTAS algorithm gives an optimal<br />
+                                &nbsp;assignment for F:<br />
+                                0</p>
+
+                            </td>
+                            <td>
+                                <p>&nbsp;a 3 0.073171<br />
+                                !! 3 0.073171<br />
+                                a &nbsp;3 0.073171<br />
+                                &nbsp;t 2 0.048780<br />
+                                oo 2 0.048780</p>
+                                <br/>
+                                <p>&nbsp;a 8 0.037209<br />
+                                or 7 0.032558<br />
+                                . &nbsp;5 0.023256<br />
+                                e &nbsp;5 0.023256<br />
+                                al 4 0.018605</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 2001/2002.
+                </p>
+            </div>
+
+        </body>
+    </html>

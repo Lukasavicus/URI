@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2774 - Precisão do Sensor</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema H - Precisão do Sensor" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+		<script type="text/javascript" src="https://urionlinejudge.r.worldssl.net/judge/js/math-jax/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2774</span>
+			<h1>Precisão do Sensor</h1>
+			<div>
+				<p>Por Adriene Magalhães, INATEL <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>O professor está te ensinando sobre sensores. Este é um elemento muito importante em diversas aplicações. Para aprender melhor os conceitos de precisão o professor pediu para realizar uma montagem prática do sensor Termo Ind v4.0 no novo laboratório de Automação.</p>
+
+<p>Você como bom aluno anotou a fórmula para o cálculo da precisão de um sensor:</p>
+
+<p style="text-align:center"><strong><span class="math-tex">\(\sigma\;=\;\sqrt{\frac{\sum_1^{QT}\left(\;X_i-\overline X\;\right)^2}{QT-1}}\)</strong></p>
+
+<p>Onde <strong>QT</strong> é a quantidade de vezes que foi realizado o teste, <strong><span class="math-tex">\(X\)</strong>&nbsp;o valor medido em cada teste e <strong><span class="math-tex">\(\overline X\)</strong>&nbsp;a média dos valores.</p>
+
+<p>Para realizar o teste você ficou <strong>H</strong>&nbsp;horas fazendo testes, e a cada <strong>M</strong> minutos você verificou&nbsp;o valor <strong>X</strong> da temperatura entregue pelo sensor.</p>
+
+<p>Agora que você tem as medidas, e como você tem a habilidade de programar, faça um programa que entregue a precisão do sensor.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>Existem vários casos de teste, cada caso consiste de duas linhas. A primeira contém dois valores&nbsp;<strong>H</strong> e <strong>M</strong>. E a segunda consiste dos&nbsp;valores de ponto flutuante <strong>X<span style="font-size:10.8333px">i</strong>&nbsp;indicando o valor de cada medida do&nbsp;sensor.</p>
+
+<p>É garantido que haverão no mínimo 5 e no máximo 10<sup>5</sup>&nbsp;medidas por caso e que estes valores estão no intervalo [0, 255] com duas casas decimais.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma única linha com um número indicando a precisão do sensor. O valor calculado deve ser apresentado com 5&nbsp;dígitos após o ponto decimal.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>1 10</p>
+
+<p>2.99 2.94 3.02 2.91 3.05 3.11</p>
+
+<p>2 16</p>
+
+<p>5.00 5.00 5.00 5.00 5.00 5.00 5.00</p>
+
+						</td>
+						<td>
+							<p>0.07312</p>
+
+<p>0.00000</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				V Maratona Norte Mineira de Programação
+			</p>
+		</div>
+	</body>
+</html>

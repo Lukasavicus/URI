@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 1807 - Triângulo Trinomial, a Vingança</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema N - Triângulo Trinomial, a Vingança" />
+
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 1807 | [P2]</span>
+			<h1>Triângulo Trinomial, a Vingança</h1>
+			<div>
+				<p>Por M.C. Pinto, UNILA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>O triângulo trinomial é um triângulo numérico de coeficientes trinomiais. Ele pode ser obtido com uma linha contendo um único "1", a próxima linha contendo três 1 e cada elemento das linhas seguintes sendo calculado como a soma do elemento acima à esquerda, imediatamente acima e acima à direita:</p>
+
+				<p class="center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/contests/tritri.png" /></p>
+
+				<p>A primeira linha do triângulo trinomial é numerada com zero, a segunda linha é a de número 1 e assim sucessivamente.</p>
+
+				<p>Sua tarefa é, dado um número de linha <em>R</em>, escrever um programa que exiba a soma de seus elementos. Por exemplo, a soma dos elementos da linha 2 é 9 = 1 + 2 + 3 + 2 + 1.</p>
+
+				<p>Mas desta vez o número de linha <em>R</em> pode ser muito maior! Sendo assim, a soma dos elementos da linha <em>R</em> deve ser mostrada módulo (2<sup>31</sup> - 1). Por exemplo, a soma dos elementos da linha 20 é 3486784401 mas a resposta a ser dada é 1339300754, que é congruente a 3486784401 módulo (2<sup>31</sup> - 1).</p>
+
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A entrada é o número de linha <strong>R</strong> (0 &leq; <strong>R</strong> &leq; 999999999).</p>
+
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>A saída é a soma módulo (2<sup>31</sup> - 1) de todos os elementos da linha <strong>R</strong>. Não esqueça do caractere de fim-de-linha após exibir a soma.</p>
+
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>0</p>
+
+						</td>
+						<td>
+							<p>1</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>2</p>
+
+						</td>
+						<td>
+							<p>9</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>20</p>
+
+						</td>
+						<td>
+							<p>1339300754</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class="footer">
+				Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática 2015
+			</p>
+		</div>
+	</body>
+</html>

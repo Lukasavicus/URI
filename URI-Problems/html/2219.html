@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2219 - Passando Pelos PokeStops</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - Problema 1 - Passando Pelos PokeStops" />
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+  </head>
+  <body>
+
+    <div class="header">
+      <span>URI Online Judge | 2219</span>
+      <h1>Passando Pelos PokeStops</h1>
+      <div>
+        <p>Por Marianne Linhares Monteiro, UFCG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem">
+
+      <div class="description">
+        <p>Rhayane adora cálculo, e claro, também adora pokémons. Ela
+          acredita que seus conhecimentos matemáticos ajudarão na sua
+          jornada de treinadora pokémon. Num momento ela se encontra num
+          longo caminho em linha reta com vários PokeStops no caminho,
+          Rhayane deseja saber qual a maior distância que ela irá andar sem
+          achar nenhum PokeStop e pediu sua ajuda para essa tarefa.</p>
+
+        <p>Dado o comprimento do caminho em metros e dadas as distâncias, também em
+          metros, dos PokeStops até a posição inicial que Rhayane está (onde ela está
+          não tem nenhum PokeStop) faça um programa que determine tal distância. Por
+          exemplo, se as distâncias são: {2, 4, 5, 1} e o caminho tem 7 metros, então a
+          maior distância que ela andará sem encontrar nenhum PokeStop é 2 metros
+          (entre 2 e 4, ou 5 e 7).</p>
+      </div>
+
+      <h2>Entrada</h2>
+
+      <div class="input">
+        <p>A entrada é composta por diversas instâncias. A primeira linha da
+          entrada contém um inteiro <strong>T</strong> (1 &le;
+          <strong>T</strong> &le; 20) indicando o número de instâncias.</p>
+        <p>Para cada instância do problema será dada uma linha composta de dois
+          inteiros <strong>n</strong> e <strong>m</strong> (1 &le;
+          <strong>n</strong>, <strong>m</strong> &le; 10<sup>5</sup>) que representam
+          respectivamente o comprimento do caminho e o número de PokeStops no
+          caminho.</p>
+        
+        <p>Depois haverá uma linha onde serão dados <strong>m</strong> inteiros
+          representando distâncias de vários PokeStops à posição inicial de
+          Rhayane. A distância de um PokeStop à posição inicial de Rhayane é
+          sempre menor ou igual que 10<sup>6</sup>.</p>
+      </div>
+
+      <h2>Saída</h2>
+
+      <div class="output">
+        <p>Para cada instância um único inteiro que é a máxima distância que
+          Rhayane irá percorrer sem encontrar um PokeStop. Deve haver apenas
+          uma quebra de linha entre a saída de cada instância.</p>
+      </div>
+
+      <div class="both"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <td>Exemplos de Entrada</td>
+            <td>Exemplos de Saída</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="division">
+              <p>3</p>
+              <p>10 3</p>
+              <p>1 5 8</p>
+              <p>10 3</p>
+              <p>1 4 2</p>
+              <p>5 2</p>
+              <p>3 4</p>
+            </td>
+            <td>
+              <p>4</p>
+              <p>6</p>
+              <p>3</p>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="footer">
+        II Maratona de programação do IFCE-Aracati
+      </p>
+    </div>
+
+  </body>
+</html>

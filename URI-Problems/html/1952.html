@@ -1,0 +1,90 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1952 - O Cavalo no Xadrez 3D</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1952 - O Cavalo no Xadrez 3D" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1952</span>
+				<h1>O Cavalo no Xadrez 3D</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Caso você ainda não saiba, o estudante Alesom Zorzi, um dos nossos heróis do AKM (time da UFFS que fez 6 balões na Primeira Fase da Maratona de Programação), é enxadrista, tendo inclusive conquistado algumas medalhas em torneios importantes.</p>
+
+<p>Das peças do xadrez, uma das peças mais interessantes é o cavalo, a qual pode pular de uma casa de coordenadas (<strong>i</strong><sub>1</sub>, <strong>j</strong><sub>1</sub>) para uma de coordenadas (<strong>i</strong><sub>2</sub>, <strong>j</strong><sub>2</sub>) se e somente se {|<strong>i</strong><sub>1</sub> - <strong>i</strong><sub>2</sub>|, |<strong>j</strong><sub>1</sub> - <strong>j</strong><sub>2</sub>|} = {1, 2}.</p>
+
+<p>Inspirado na série <em>Star Trek</em>, Alesom desenvolveu sua própria variante do <em>Xadrez 3D</em>, na qual o jogo é composto não de 1, mas de <strong>L</strong> tabuleiros de dimensões <strong>N</strong> × <strong>M</strong>, cada um num <em>nível</em> numerado de 1 a <strong>L</strong>. A propósito, as linhas de cada nível são numeradas de 1 a <strong>N</strong>, e as colunas, de 1 a <strong>M</strong>, de modo que cada posição do jogo pode ser identificado por uma tripla de coordenadas (<strong>i</strong>, <strong>j</strong>, <strong>k</strong>), sendo <strong>i</strong> o índice da linha, <strong>j</strong> o índice da coluna e <strong>k</strong> o índice do nível. Um cavalo nesta variante do Xadrez 3D pode pular de uma casa de coordenadas (<strong>i</strong><sub>1</sub>, <strong>j</strong><sub>1</sub>, <strong>k</strong><sub>1</sub>) para uma de coordenadas (<strong>i</strong><sub>2</sub>, <strong>j</strong><sub>2</sub>, <strong>k</strong><sub>2</sub>) se e somente se {|<strong>i</strong><sub>1</sub> - <strong>i</strong><sub>2</sub>|, |<strong>j</strong><sub>1</sub> - <strong>j</strong><sub>2</sub>|, |<strong>k</strong><sub>1</sub> - <strong>k</strong><sub>2</sub>|} = {0, 1, 2}. A figura ilustra um cavalo na posição (5, 5, 1) de um jogo com 3 níveis de dimensões 8 × 8, destacando suas posições adjacentes.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/xadrez.jpg" style=""></p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém unicamente os inteiros <strong>N</strong>, <strong>M</strong> e <strong>L</strong> (8 ≤ <strong>N</strong>, <strong>M</strong> ≤ 100, 3 ≤ <strong>L</strong> ≤ 100). A segunda linha contém uma tripla de coordenadas (<strong>i</strong><sub>1</sub>, <strong>j</strong><sub>1</sub>, <strong>k</strong><sub>1</sub>), e a terceira linha contém uma tripla de coordenadas (<strong>i</strong><sub>2</sub>, <strong>j</strong><sub>2</sub>, <strong>k</strong><sub>2</sub>) (1 ≤ <strong>i</strong><sub>1</sub>, <strong>i</strong><sub>2</sub> ≤ <strong>N</strong>, 1 ≤ <strong>j</strong><sub>1</sub>, <strong>j</strong><sub>2</sub> ≤ <strong>M</strong>, 1 ≤ <strong>k</strong><sub>1</sub>, <strong>k</strong><sub>2</sub> ≤ <strong>L</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo um único inteiro, o qual represente o número mínimo de movimentos necessários para um cavalo ir da posição (<strong>i</strong><sub>1</sub>, <strong>j</strong><sub>1</sub>, <strong>k</strong><sub>1</sub>) à posição (<strong>i</strong><sub>2</sub>, <strong>j</strong><sub>2</sub>, <strong>k</strong><sub>2</sub>).</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>8 8 3<br />
+5 5 1<br />
+3 4 2</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					1<sup>ạ</sup> Minimaratona Noturna de Grafos da UFFS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

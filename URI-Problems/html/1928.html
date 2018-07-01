@@ -1,0 +1,112 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1928 - Jogo da Memória</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1928 - Jogo da Memória" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1928</span>
+				<h1>Jogo da Memória</h1>
+				<div>
+					<p>Por Guilherme Albuquerque Pinto, Universidade Federal Juiz de Fora  <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt="" /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Pedro e Paulo resolveram complicar um pouco o tradicional Jogo da Memória, em que os jogadores precisam virar duas cartas iguais. Eles colocam <em>N</em> cartas no chão, com as faces viradas para baixo. A face de cada carta tem a figura de um número de 1 até <em>N</em>/2, sendo que exatamente duas cartas possuem a figura de cada número entre 1 e <em>N</em>/2. Como as cartas têm as faces viradas para baixo, elas podem também ser identificadas por suas posições, que são inteiros de 1 a <em>N</em>. Pedro e Paulo então desenham no chão, usando giz, algumas linhas ligando pares de cartas, de modo que para qualquer par de cartas (<em>A, B</em>) existe uma e apenas uma sequência de cartas e linhas desenhadas que leva de <em>A</em> até <em>B</em>. A figura abaixo mostra um exemplo de jogo, (a) com todas as cartas com as faces viradas para baixo, e (b) com todas as cartas com as faces viradas para cima.</p>
+					<p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1928_a.png" alt="">   <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1928_b.png"</p>
+					<p>O jogo é jogado com todas as cartas com as faces viradas para baixo. A cada jogada, o jogador deve escolher um par de cartas <em>A</em> e <em>B</em>. Se as faces das duas cartas escolhidas têm a mesma figura, o jogador acumula um número de pontos igual ao número de linhas desenhadas que existem no caminho entre as cartas <em>A</em> e <em>B</em>. Pedro e Paulo, agora, estão estudando qual é a melhor estratégia para esse jogo e precisam da sua ajuda para resolver uma tarefa específica: dadas as cartas existentes em cada posição, e as ligações desenhadas com giz, calcular o maior valor total de pontos que é possível acumular.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém o número de cartas N (2 ≤ <strong>N</strong> ≤ 50000, <strong>N</strong> é par). A segunda linha da entrada contém <strong>N</strong> inteiros <strong>C</strong><sub><strong>i</strong>,</sub> indicando qual número está anotado na carta na posição i (1 ≤ <strong>C<sub>i</sub></strong> ≤ <strong>N</strong>/2, para 1 ≤ <strong>i</strong> ≤ <strong>N</strong>). As cartas são dadas na ordem crescente das posições: a primeira carta ocupa a posição 1, a segunda a posição 2, e assim por diante até a última carta, que ocupa a posição <strong>N</strong>. Cada uma das <strong>N</strong> − 1 linhas seguintes contém dois números A e B, indicando que existe uma linha desenhada entre as cartas nas posições <strong>A</strong> e <strong>B</strong> (1 ≤ <strong>A</strong> ≤ <strong>N</strong> e 1 ≤ <strong>B</strong> ≤ <strong>N</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve produzir uma linha contendo um inteiro, o maior valor total de pontos que é possível acumular.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6<br />
+								3 2 1 1 2 3<br />
+								1 2<br />
+								3 4<br />
+								6 5<br />
+								2 6<br />
+								3 6</p>
+							</td>
+							<td>
+								<p>5</p>
+							</td>
+						</tr>
+				<table>
+					<thead>
+						<tr>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>8<br />
+								1 2 3 3 2 4 1 4<br />
+								1 2<br />
+								2 3<br />
+								2 6<br />
+								5 6<br />
+								6 8<br />
+								7 8<br />
+								4 7</p>
+							</td>
+							<td>
+								<p>12</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					Olimpíada Brasileira de Informática - 2014.
+				</p>
+			</div>
+
+		</body>
+	</html>

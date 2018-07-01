@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1592 - Elias e Golias</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1592 - Elias e Golias" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1592</span>
+                <h1>Elias e Golias</h1>
+                <div>
+                    <p>Por Bruno Adami, Universidade de São Paulo - São Carlos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Várias cidades são conectadas por estradas. As N cidades são nomeadas com números de 0 até N-1. Golias deseja viajar de carro de sua cidade, identificada pelo número 0, para a capital, identificada pelo número N-1 para visitar seu amigo Elias. Cada estrada é de uma mão, ou seja, os carros viajam em apenas uma direção, e se tem um custo de combustível para atravessá-la.<p>
+					</p>Dado a configuração das cidades e estradas, Golias quer saber qual o menor custo de combustível de maneira que ele passe por no máximo K cidades diferentes. As cidades inicial e final também contam, ou seja, sempre ele terá de visitar no mínimo duas cidades, a inicial e a final.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+                    <p>Na primeira linha terá um inteiro <strong>T </strong> (<strong>T </strong>= 200) indicando o número de casos de teste.<p>
+					</p>Para cada caso, a primeira linha terá três números inteiros, <strong>N</strong> (2 ≤ <strong>N </strong>≤ 50* ou 2 ≤ <strong>N </strong>≤ 1000**), <strong>M </strong> (1 ≤ <strong>M </strong>≤ 200* ou 1 ≤ <strong>M </strong>≤ 3000**) e <strong>K</strong> (2 ≤ <strong>K </strong>≤ <strong>N</strong>), indicando o número de cidades, o número de estradas e o máximo número de cidades diferentes que podem ser visitadas, respectivamente. Nas <strong>M </strong>seguintes linhas haverá três inteiros <strong>A</strong> (0 ≤ <strong>A </strong>≤ <strong>N</strong>-1), <strong>B </strong> (0 ≤ <strong>B </strong>≤ <strong>N</strong>-1) e <strong>C </strong> (1 ≤ <strong>C </strong>≤ 10<sup>5</sup>) indicando que há uma estrada de mão única da cidade <strong>A </strong>para a cidade <strong>B</strong>, e que custa <strong>C </strong> unidades de combustível . Pode haver mais de uma estrada conectando duas cidades, ou uma estrada conectando uma cidade a ela mesma.</p>
+                    <p>*ocorrerá em 90% dos casos;</br>
+                        **ocorrerá nos casos restantes.</p>
+
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima o menor custo de combustível possível para cada caso em uma única linha, e caso Golias não consiga chegar até Elias, imprima -1.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+                                <p>5 5 3</p>
+                                <p>0 1 2</p>
+                                <p>0 2 1</p>
+                                <p>1 4 3</p>
+                                <p>2 3 1</p>
+                                <p>3 4 2</p>
+                                <p>3 2 2</p>
+                                <p>0 1 1</p>
+                                <p>1 2 1</p>
+                                <p>3 3 2</p>
+                                <p>0 1 1</p>
+                                <p>1 2 1</p>
+                                <p>0 2 3</p>
+                            </td>
+                            <td>
+                                <p>5</p>
+                                <p>-1</p>                                
+                                <p>3</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Seletiva USP São Carlos 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

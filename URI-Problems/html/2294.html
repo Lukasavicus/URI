@@ -1,0 +1,122 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2294 - Duende Perdido</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2294 - Duende Perdido" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2294</span>
+				<h1>Duende Perdido</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2005 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Gugo, o duende, ficou preso em uma caverna e precisa sair o mais rapidamente possível. A caverna é&nbsp;formada por salões interligados por túneis, na forma de uma grade retangular, com N linhas e M colunas. Alguns dos salões da caverna têm paredes de cristal. Duendes, como todos sabem, nâo gostam de ficar em ambientes com qualquer tipo de cristal, pois seus organismos entram em ressonância com a estrutura de cristais, e em casos extremos os duendes podem até&nbsp;mesmo explodir. Compreensivelmente, Gugo não quer entrar em nenhum salão com parede de cristal.</p>
+
+					<p>A figura abaixo mostra uma caverna com quatro linhas e cinco colunas de salões; os salões cinza têm paredes de cristal. posição inicial de Gugo é&nbsp;indicada com um caractere ‘*’.</p>
+
+					<p class = "center"><img style="width: 400px" src = "https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_158_B_a.png" alt=''/></p>
+
+					<p>Você&nbsp;deve escrever um programa que, dadas a configuração da caverna e a posição inicial de Gugo dentro da caverna, calcule qual o número mínimo de salões pelos quais o duende deve passar antes de sair da caverna (não contando o salão em que o duende está&nbsp;inicialmente), mas contando o salão que tem saída para o exterior).</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A caverna será&nbsp;modelada como uma matriz de duas dimensões, cujos elementos representam os salões. Um salão que não tem parede de cristal e que tem saída para o exterior da caverna é&nbsp;representado pelo valor 0; um salão que não tem parede de cristal e não tem saída para o exterior é&nbsp;representado pelo valor 1; um salão que tem parede de cristal é&nbsp;representado pelo valor 2; e o salão em que o duende está&nbsp;inicialmente (que não tem saída para o exterior e nem paredes de cristal) é&nbsp;representado pelo valor 3. A figura abaixo mostra a representação da caverna apresentada acima.</p>
+
+					<p class = "center"><img style="width: 200px" src = "https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_158_B_b.png" alt=''/></p>
+
+					<p>A primeira linha da entrada contém dois números inteiros <strong>N</strong> e <strong>M</strong> que indicam respectivamente o número de linhas (1 ≤ <strong>N</strong> ≤ 10) e o número de colunas (1 ≤ <strong>M</strong> ≤ 10) da representação da caverna. Cada uma das <strong>N</strong> linhas seguintes contém <strong>M</strong> números inteiros <strong>C<sub>i</sub></strong> , descrevendo os salões da caverna e a posição inicial do duende (0 ≤ <strong>C<sub>i</sub></strong> ≤ 3). Você&nbsp;pode supor que sempre há&nbsp;um trajeto que leva Gugo à&nbsp;saída da caverna.</p>
+
+					<p>A entrada deve ser lida do dispositivo de entrada padrão (normalmente o teclado).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve produzir uma única linha na saída, contendo um número inteiro representando a quantidade mínima de salões pelos quais Gugo deve passar antes de conseguir sair da caverna (não contando o salão em que ele está&nbsp;inicialmente, mas contando o salão que tem saída para o exterior).</p>
+
+<p>A saída deve ser escrita no dispositivo de saída padrão (normalmente a tela).</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 5</p>
+
+<p>0 1 1 1 1</p>
+
+<p>0 2 2 2 1</p>
+
+<p>2 1 1 1 1</p>
+
+<p>1 1 1 3 1</p>
+
+							</td>
+							<td>
+								<p>8</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 10</p>
+
+<p>2 0 1 1 3 1 1 1 0 1</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2005 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

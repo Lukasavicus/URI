@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2240 - Fundindo Árvores</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2240 - Fundindo árvores" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2240</span>
+				<h1>Fundindo Árvores</h1>
+				<div>
+					<p>Por Maratona de Programação da SBC – 2016 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Em Computação árvores são objetos estranhos: a raiz está no topo e as folhas estão embaixo! Uma árvore é uma estrutura de dados composta de <strong>N</strong> vértices conectados por <strong>N</strong>-1 arestas de forma que é possível chegar de um vértice a qualquer outro vértice seguindo as arestas. Em uma árvore enraizada, cada aresta conecta um vértice pai a um vértice filho. Um único vértice não tem pai, e é chamado de raiz. Assim, partir da raiz é possivel chegar a qualquer outro vértice da árvore seguindo as arestas na direção de pai para filho.</p>
+
+					<p>Em uma árvore ternária cada vértice pode ter até três vértices filhos, chamados esquerdo, central e direito. Uma árvore ternária canhota é uma árvore ternária enraizada em que nenhum vértice tem filho direito. Uma árvore ternária destra é uma árvore ternária enraizada em que nenhum vértice tem filho esquerdo. A raiz de uma árvore ternária é sempre um vértice central. A figura abaixo mostra exemplos de uma árvore canhota e de uma árvore destra.</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2240_a.png" width="500" alt="tree"> </center>
+
+					<p>A superposição S de uma árvore canhota C com uma árvore destra D é uma árvore ternária enraizada em que a raiz é ou a raiz de C ou a raiz de D ou ambas as raízes, de C e de D, superpostas, e que contém a estrutura de ambas as árvores superpostas. A figura abaixo mostra algumas árvores formadas pela superposição da árvore canhota e da árvore destra da figura acima.</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2240_b.png" width="500" alt="tree"> </center>
+
+					<p>Note que na Figura (a) a raiz é o vértice x (da árvore destra) e os pares de vértices (a, y)e(c, u) são superpostos. Na Figura (b) a raiz é o vértice a (da árvore canhota) e os pares de vértices (d, x),(e, y)e(f, u) são superpostos. Na Figura (c) a raiz também é o vértice a (da árvore canhota) e o par de vértices (f, x) é superposto.</p>
+
+					<p>Dadas uma árvore canhota e uma árvore destra, sua tarefa é determinar o número mínimo de vértices necessários para construir uma árvore ternária que é uma superposição das árvores dadas.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha de um caso de teste contém um inteiro <strong>N</strong> indicando o número de vértices da árvore canhota (1 ≤ N ≤ 10<sup>4</sup>). Vértices nesta árvore são identificados por números de 1 a <strong>N</strong>, e a raiz é o vértice de número 1. Cada uma das <strong>N</strong> linhas seguintes contém três inteiros <strong>I</strong>, <strong>L</strong> e <strong>K</strong>, indicando respectivamente o identificador de um vértice <strong>I</strong>, o identificador do filho esquerdo <strong>L</strong> de <strong>I</strong> e o identificador do filho central <strong>K</strong> de <strong>I</strong> (0 ≤ <strong>I</strong>, <strong>L</strong>, <strong>K</strong> ≤ <strong>N</strong>). A linha seguinte contém um inteiro <strong>M</strong> indicando o número de vértices da árvore destra (1 ≤ <strong>M</strong> ≤ 10<sup>4</sup>). Vértices nesta árvore são identificados por números de 1 a <strong>M</strong>, e a raiz é o vértice de número 1. Cada uma das <strong>M </strong>linhas seguintes contém três inteiros <strong>P</strong>, <strong>Q</strong> e <strong>R</strong>, indicando respectivamente o identificador de um vértice <strong>P</strong>, o identificador do filho central <strong>Q</strong> de <strong>P</strong> e o identificador do filho direito <strong>R</strong> de <strong>P</strong> (0 ≤ <strong>P</strong>, <strong>Q</strong>, <strong>R</strong> ≤ N). O valor zero indica um vértice não existente (usado quando um vértice não tem um ou ambos os seus filhos).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima o número mínimo de vértices de uma árvore que é a superposição das duas árvores dadas na entrada.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7<br />
+								1 2 3<br />
+								2 0 0<br />
+								3 4 0<br />
+								4 0 5<br />
+								5 0 6<br />
+								6 7 0<br />
+								7 0 0<br />
+								7<br />
+								1 2 3<br />
+								2 4 0<br />
+								3 5 0<br />
+								4 0 6<br />
+								5 0 0<br />
+								6 0 7<br />
+								7 0 0</p>
+
+							</td>
+							<td>
+								<p>11</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+		        <table>
+		            <thead>
+		            </thead>
+		            <tbody>
+		                <tr>
+		                    <td class="division">
+		                        <p>5<br />
+								1 2 3<br />
+								2 4 5<br />
+								3 0 0<br />
+								4 0 0<br />
+								5 0 0<br />
+								3<br />
+								1 2 3<br />
+								2 0 0<br />
+								3 0 0</p>
+
+		                    </td>
+		                    <td>
+		                        <p>6</p>
+
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+
+		        <div class="both"></div>
+
+		        <table>
+		            <thead>
+		            </thead>
+		            <tbody>
+		                <tr>
+		                    <td class="division">
+		                        <p>3</p>
+
+								<p>3 0 2</p>
+
+								<p>2 0 0</p>
+
+								<p>1 0 3</p>
+
+								<p>2</p>
+
+								<p>2 0 0</p>
+
+								<p>1 2 0</p>
+
+		                    </td>
+		                    <td>
+		                        <p>3</p>
+
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+				<p class="footer">
+					Maratona de Programação da SBC – 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

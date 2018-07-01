@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1493 - Abastecimento de Água Disjunto</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1493 - Abastecimento de Água Disjunto" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1493</span>
+                <h1>Abastecimento de Água Disjunto</h1>
+                 <div>By Jesus Alejandro Peña Mesias <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/pe.gif' alt=''/> Peru </div>
+                  <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+Nlogônia é um reino que consiste em várias cidades localizadas em uma grande montanha. A capital é Logville, localizada no pico da montanha. Logville tem um enorme lago com uma forma perfeitamente redonda, apropriadamente chamado "The Big O". Este é o único lago com água potável em todo o reino, por isso é usado para abastecer todas as cidades. Algumas cidades em Nlogônia estão conectados com tubos de água que permitem a distribuição da água. Como não há bombas, cada tubo leva a água de uma cidade para outra cidade em uma altitude mais baixa, usando a gravidade.
+O sistema de água da Nlogônia tem sido uma fonte de preocupações para a Rainha, já que as cidades dependem de outras cidades para o seu abastecimento de água, por isso ocorrem discussões sobre a quantidade de água que uma cidade pode utilizar. Um caminho de abastecimento de água é uma sequência de cidades em ordem decrescente de altitude, a partir de Logville e de tal forma que existe um tubo de ligação entre cada par de cidades consecutivas na sequência. Duas cidades têm abastecimento de água disjunto se e somente se existem dois caminhos de abastecimento de água, um caminho que termina em cada uma das cidades, de modo que Logville é a única cidade que está presente em ambos os caminhos. Observe que Logville tem abastecimento de água disjunto de todas as outras cidades.
+A rainha considera o abastecimento de água disjunto como uma boa propriedade, já que isso reduz problemas de dependência e também evita que a falta de água se espalhe tão rapidamente através Nlogônia. Portanto, ela ordenou que fosse realizada uma pesquisa para avaliar o estado atual da disjunção do abastecimento de água em todo o reino. Sendo o mais inteligente dos conselheiros na corte da rainha, você foi convocado para ajudar a calcular o número de pares de cidades distintas que têm abastecimento de água separados.
+</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversos casos de teste e termina em EOF. A primeira linha de cada caso de teste contém dois inteiros <strong>C</strong> (2 ≤ <strong>C</strong> ≤ 1000) e&nbsp;<strong>P</strong> (1 ≤ <strong>P</strong> ≤ 10<sup>5</sup>),que representam respectivamente, o número de cidades e o número de tubos de água em Nlogônia. Cidades são identificadas com diferentes números inteiros de 1 a <strong>C</strong>, em ordem decrescente de altitude (duas cidades não têm a mesma altitude); Logville é a cidade 1. Cada uma das <strong>P</strong> linhas seguintes descreve uma tubulação com dois números inteiros <strong>U</strong> e <strong>V</strong> (1 ≤ <strong>U</strong> &lt;<strong>V</strong> ≤ <strong>C</strong>), indicando que o tubo conecta a cidade <strong>U</strong> com a cidade <strong>V</strong>. Você pode assumir que não há dois tubos iguais entre um mesmo par de cidades e que, para cada cidade de Nlogônia há pelo menos um caminho de abastecimento de água que termina nela.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma linha com um inteiro que representa o número de pares de cidades distintas que tem abastecimento de água disjunto.
+&nbsp;</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+6 6<br />
+1 2<br />
+1 3<br />
+1 4<br />
+2 5<br />
+2 6<br />
+3 6<br />
+8 11<br />
+1 2<br />
+1 3<br />
+1 4<br />
+2 5<br />
+3 4<br />
+6 7<br />
+3 6<br />
+3 7<br />
+4 8<br />
+2 6<br />
+5 6<br />
+&nbsp;</p>
+
+                            </td>
+                            <td>
+                                <p>14<br />
+26<br />
+&nbsp;</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                    ACM/ICPC South America Contest 2013.
+                </p>
+            </div>
+
+        </body>
+    </html>

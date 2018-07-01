@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1730 - Global Roaming</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1741 - Global Roaming" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1730</span>
+                <h1>Global Roaming</h1>
+                <div>
+                    <p>University of Ulm local Contest <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Hoje em dia vários dispositivos móveis de comunicação dependem de uma vista direta para um satélite. Portanto, para os provedores de comunicação é crucial saber onde os seus serviços estão disponíveis. Sua tarefa é identificar os locais que têm uma vista direta para um satélite particular, ou seja, este satélite deve estar acima do horizonte. Para facilitar as coisas, você pode assumir que a Terra é uma esfera perfeita com um <strong>raio de 6378km</strong> (montanhas serão adicionadas no próximo ano...). O satélite é um objeto <em>pointlike</em> acima da superfície terrestre.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada consiste de vários casos de teste. Em cada caso de teste, a primeira linha contém o <strong>número de localizações N</strong> a serem verificados, seguido pela a <strong>posição do satélite</strong>: a sua <strong>latitude</strong>, a <strong>longitude</strong> (ambas em grau) e sua <strong>altura </strong>(em km) acima da superfície terrestre.</p>
+
+                    <p>Cada uma das seguintes linhas N contém um local na superfície terrestre: o <strong>nome da localidade</strong> (uma string com menos de 60 caracteres ASCII que não contém espaços em branco), seguido por sua<strong> latitude</strong> e <strong>longitude</strong> (ambos em graus). A entrada é terminada por N = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste o seu programa deverá imprimir uma linha dizendo "Test case K:", onde<strong> K</strong> é o número da <strong>instância atual</strong>. Então nas seguintes linhas, imprimir em linhas separadas,  os <strong>nomes das localidades</strong> onde o satélite é visível na mesma ordem em que aparecem no arquivo de entrada. Imprima uma linha em branco após cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+                                3 20.0 -60.0 150000000.0</p>
+
+                                <p>Ulm 48.406 10.002</p>
+
+                                <p>Jakarta -6.13 106.75</p>
+
+                                <p>Honolulu 21.32 -157.83 2 48.4 10 0.5</p>
+
+                                <p>Ulm 48.406 10.002</p>
+
+                                <p>Honolulu 21.32 -157.83</p>
+
+                                <p>0 0.0 0.0 0.0<br />
+                                 </p>
+
+                            </td>
+                            <td>
+                                <p>
+                                Test case 1:</p>
+
+                                <p>Ulm</p>
+
+                                <p>Honolulu</p>
+
+                                <p> </p>
+
+                                <p>Test case 2:</p>
+
+                                <p>Ulm<br />
+                                 </p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 2001/2002.
+                </p>
+            </div>
+
+        </body>
+    </html>

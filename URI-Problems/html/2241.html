@@ -1,0 +1,156 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2241 - Go--</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2241 - Go--" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2241</span>
+				<h1>Go--</h1>
+				<div>
+					<p>Por Maratona de Programação da SBC – 2016 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<img src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2241.png" alt="board" style="float:right">
+					<p>Go--&nbsp;é&nbsp;até&nbsp;parecido com o tradicional jogo de Go, mas é&nbsp;bem mais fácil! Ele é&nbsp;jogado em um tabuleiro quadrado de dimensão <strong>N</strong>, inicialmente vazio, no qual dois jogadores, um jogando com as pedras pretas e o outro com as brancas, se alternam colocando uma pedra por vez dentro de qualquer célula que ainda não esteja ocupada. A partida termina depois que cada jogador colocou <strong>P</strong> pedras no tabuleiro. Considere todas as possíveis sub-áreas quadradas de dimensão de 1 a <strong>N</strong>. Uma sub-área pertence ao jogador que joga com as pedras pretas se ela contém pelo menos uma pedra preta e nenhuma pedra branca. Da mesma forma, uma sub-área quadrada pertence ao jogador que joga com as pedras brancas se contém ao menos uma pedra branca e nenhuma pedra preta. Note que as áreas que não contenham nenhuma pedra, ou que contenham tanto pedras pretas quanto brancas, não pertencem a nenhum jogador.</p>
+
+<p>Neste problema, dada a posição final do tabuleiro, seu programa deve computar quantas sub-áreas quadradas pertencem a cada jogador, para descobrir quem ganhou a partida. Na figura, as pretas possuem 12 sub-áreas (cinco de dimensão 1, seis de dimensão 2 e uma de dimensão 3). As brancas, que perderam a partida, possuem apenas 10.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém dois inteiros <strong>N</strong> e <strong>P</strong>, 2 ≤&nbsp;<strong>N</strong> ≤ 500, 1 ≤ <strong>P</strong> ≤ 500 e <strong>P</strong> ≤ <strong>N</strong><sup>2</sup>/2, representando, respectivamente, a dimensão do tabuleiro e o número de pedras que cada jogador coloca. Cada uma das <strong>P</strong> linhas seguintes contém dois inteiros <strong>L</strong> e <strong>C</strong> (1 ≤ <strong>L</strong>, <strong>C</strong> ≤ <strong>N</strong>) definindo as coordenadas (linha, coluna) das pedras pretas. Depois, cada uma das próximas <strong>P</strong> linhas contém dois inteiros <strong>L</strong> e <strong>C</strong> (1 ≤&nbsp;<strong>L</strong>, <strong>C</strong> ≤ <strong>N</strong>) definindo as coordenadas (linha, coluna) das pedras brancas. Todas as pedras são colocadas em células distintas.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo dois inteiros separados por um espaço: quantas áreas distintas pertencentes às pretas e às brancas.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 1</p>
+
+<p>1 1</p>
+
+<p>2 2</p>
+
+							</td>
+							<td>
+								<p>1 1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>5 5</p>
+
+<p>1 3</p>
+
+<p>2 3</p>
+
+<p>2 4</p>
+
+<p>4 1</p>
+
+<p>5 3</p>
+
+<p>1 5</p>
+
+<p>2 1</p>
+
+<p>3 5</p>
+
+<p>4 4</p>
+
+<p>5 1</p>
+
+                    </td>
+                    <td>
+                        <p>12 10</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>500 3</p>
+
+<p>500 498</p>
+
+<p>500 499</p>
+
+<p>500 500</p>
+
+<p>120 124</p>
+
+<p>251 269</p>
+
+<p>499 498</p>
+
+                    </td>
+                    <td>
+                        <p>4 12463784</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					Maratona de Programação da SBC – 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

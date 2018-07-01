@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2706 - Linearville</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema L - Linearville" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2706</span>
+			<h1>Linearville</h1>
+			<div>
+				<p>Por Guilherme A. Pinto <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>A cidade de Linearville possui <strong>N</strong> ruas de mão dupla paralelas indo de Oeste para Leste e <strong>N</strong> ruas de mão dupla paralelas indo de Sul para Norte, formando uma grade com (<strong>N</strong>-1)x(<strong>N</strong>-1) blocos. A distancia entre duas ruas paralelas consecutivas é ou 1 ou 5. As Autoridades de Trânsito de Linearville estão conduzindo um experimento e requerem que todos os carros sempre sigam um caminho que alterne entre as direções O-L e S-N em todos os cruzamentos, significando que eles devem ou pegar a esquerda ou a direita quando chegam em um cruzamento. A ATL está desenvolvendo um novo aplicativo de navegação e precisa de sua ajuda para escrever um algoritmo que calcule a distância do menor caminho entre diversos pontos de partida e chegada. O caminho alternado da figura, um exemplo para <strong>N</strong>=10, claramente não é o caminho mais curto. Mas esteja avisado! Linearville pode ser enorme…</p>
+        <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/maratona_L.png"></p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha contem um inteiro<strong> N </strong>(2 ≤ <strong>N</strong> ≤ 10<sup><sub>5</sub></sup> ) representando o número de ruas em cada direção. Para cada direção, as ruas são identificadas por inteiros distintos de 1 a <strong>N</strong> começando no canto S-O da cidade. A segunda linlha contem <strong>N</strong> – 1 inteiros <strong>D</strong><sub>1</sub>, <strong>D</strong><sub>2</sub>, . . . , <strong>D<sub>N</sub></strong>−1 (<strong>D</strong><sub><em>i</em></sub> ∈ {1, 5} para <em>i</em> = 1, 2, . . . , <strong>N</strong> − 1) indicando as distâncias entre as ruas consecutivas indo S-N ( isto é, <strong>D</strong><em>i</em> é a distância entre as ruas <em>i</em> e a rua <em>i</em>+1). A terceira linha contem <strong>N</strong> -1 inteiros <strong>E</strong><sub>1</sub>, <strong>E</strong><sub>2</sub>, . . . , <strong>E</strong><sub>N</sub>−1 (<strong>E</strong><em>i</em> ∈ {1, 5} para <em>i</em> = 1, 2, . . . , <strong>N</strong> − 1) indicando as distancais entre ruas consecuticas indo O-L ( isto é, <strong>E</strong><em>i</em> é a distância entre as ruas <em>i</em> e a rua <em>i</em>+1). A quarta linha contem um inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 10<sup>5</sup> ) representando o número de percursos a serem calculados. Cada uma das próximas <strong>Q</strong> linhas descreve um percurso com 4 inteiros <strong>A</strong><sub>x</sub>, <strong>A</strong><sub>y</sub>, <strong>B</strong><sub>x</sub> e <strong>B</strong><sub>y</sub> (1 ≤ <strong>A</strong><sub>X</sub>, <strong>A</strong><sub>Y</sub> , <strong>B</strong><sub>X</sub>, <strong>B</strong><sub>Y</sub> ≤ <strong>N</strong>), indicando que o começo é o cruzamento em <strong>A</strong><sub>x</sub>, <strong>A</strong><sub>y </sub>e que o destino final é o cruzamento em <strong>B</strong><sub>x</sub>, <strong>B</strong><sub>y</sub>; os valores de <strong>A</strong><sub>x</sub> e <strong>B</strong><sub>x</sub> são ruas indo S-N enquanto os valores de <strong>A</strong><sub>y </sub>e <strong>B</strong><sub>y</sub> são ruas indo W-E. Não existem percursos iguais.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>mprima <strong>Q</strong> linhas, cada linha contendo um inteiro indicando o comprimento do trajeto mais curto usando um caminho alternado como descrito no problema para o percurso correspondente da entrada.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>10</p>
+
+<p>5 1 5 5 5 1 1 5 5</p>
+
+<p>1 5 5 5 1 5 5 1 5</p>
+
+<p>3</p>
+
+<p>4 3 9 10</p>
+
+<p>9 2 2 9</p>
+
+<p>5 1 5 10</p>
+
+						</td>
+						<td>
+							<p>46</p>
+
+<p>50</p>
+
+<p>49</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>5</p>
+
+<p>5 1 5 5</p>
+
+<p>5 1 5 5</p>
+
+<p>2</p>
+
+<p>3 1 4 5</p>
+
+<p>5 5 5 5</p>
+
+						</td>
+						<td>
+							<p>23</p>
+
+<p>0</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				ICPC Latin American Regional – 2017
+			</p>
+		</div>
+
+	</body>
+</html>

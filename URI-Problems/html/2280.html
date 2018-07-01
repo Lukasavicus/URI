@@ -1,0 +1,116 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2280 - Catering</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problem C - Catering" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2280</span>
+				<h1>Catering</h1>
+				<div>
+					<p>By ICPC 2015 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ma.gif' alt='MA' /> Morocco</p>
+				</div>
+				<strong>Timelimit: 4</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+
+					<img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_155_C.png" style="float:right" width="350" alt="" />
+
+
+					<p>Paul owns a catering company and business is booming. The company has <strong>k</strong> catering teams, each in charge of one set of catering equipment. Every week, the company accepts <strong>n</strong> catering requests for various events. For every request, they send a catering team with their equipment to the event location. The team delivers the food, sets up the equipment, and instructs the host on how to use the equipment and serve the food. After the event, the host is responsible for returning the equipment back to Paul’s company.</p>
+
+					<p>Unfortunately, in some weeks the number of catering teams is less than the number of requests, so some teams may have to be used for more than one event. In these cases, the company cannot wait for the host to return the equipment and must keep the team on-site to move the equipment to another location. The company has an accurate estimate of the cost to move a set of equipment from any location to any other location. Given these costs, Paul wants to prepare an Advance Catering Map to service the requests while minimizing the total moving cost of equipment (including the cost of the first move), even if that means not using all the available teams. Paul needs your help to write a program to accomplish this task. The requests are sorted in ascending order of their event times and they are chosen in such a way that for any <strong>i</strong> &lt; <strong>j</strong>, there is enough time to transport the equipment used in the <strong>i<sup>th</sup></strong> request to the location of the <strong>j<sup>th</sup></strong> request.</p>
+				</div>
+
+				<h2>Input</h2>
+
+				<div class="input">
+					<p>The first line of input contains two integers <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 100) and <strong>k</strong> (1 ≤ <strong>k</strong> ≤ 100) which are the number of requests and the number of catering teams, respectively. Following that are <strong>n</strong> lines, where the <strong>i<sup>th</sup></strong> line contains <strong>n</strong> − <strong>i</strong> + 1 integers between 0 and 1 000 000 inclusive. The <strong>j<sup>th</sup></strong> number in the <strong>i<sup>th</sup></strong> line is the cost of moving a set of equipment from location <strong>i</strong> to location <strong>i</strong> + <strong>j</strong>. The company is at location 1 and the <strong>n</strong> requests are at locations 2 to <strong>n</strong> + 1.</p>
+				</div>
+
+				<h2>Output</h2>
+
+				<div class="output">
+					<p>Display the minimum moving cost to service all requests. (This amount does not include the cost of moving the equipment back to the catering company.)</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Input Samples</td>
+							<td>Output Samples</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2</p>
+
+								<p>40 30 40</p>
+
+								<p>50 10</p>
+
+								<p>50</p>
+
+							</td>
+							<td>
+								<p>80</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2</p>
+
+								<p>10 10 10</p>
+
+								<p>20 21</p>
+
+								<p>21</p>
+
+							</td>
+							<td>
+								<p>40</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC 2015 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

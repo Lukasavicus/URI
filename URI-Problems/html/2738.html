@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2738 - Concurso</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - SQL - Problema 2738 - Concurso" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default-sql.css"  >
+	<script type="text/javascript" src="https://urionlinejudge.r.worldssl.net/judge/js/math-jax/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+  	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28047757-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <span>URI Online Judge <strong>SQL</strong> | 2738 </span>
+      <h1>Concurso</h1>
+      <div>
+        <p>Marcos Lima <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem-sql">
+      <div>
+        <p>
+	A Universidade Tecnológica de Marte está com seu concurso aberto para Pesquisadores.
+	Porém o computador que processava os dados dos candidatos estragou. Você deve mostrar a lista dos candidatos, contendo o nome do candidato e a sua pontuação final (com duas casas decimais após a vírgula). 
+	Lembre-se de mostrar a lista ordenada pela pontuação do candidato (maior pontuação no topo da lista).
+	</p>
+	<p>
+	A pontuação do candidato é o resultado da média ponderada descrita abaixo:
+	</p>
+	<p><span class="math-tex">\(Avg = \frac{(math * 2) + (specific * 3) + (project\_plan * 5)}{ 10}\)</span></p>
+
+      </div>
+
+      <div>
+        <h2>Esquema</h2>
+        <div>
+          
+          <table class=tables-model-two>
+            <caption>candidate</caption>
+            <tr>
+              <td class="half-column"><strong>Coluna</strong></td>
+              <td class="half-column"><strong>Tipo</strong></td>
+            </tr>
+            <tr>
+              <td>id (PK)</td>
+              <td>integer</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>varchar</td>
+            </tr>
+          </table>
+          
+          <table class="tables-model-two-inline">
+            <caption>score</caption>
+            <tr>
+              <td class="half-column"><strong>Coluna</strong></td>
+              <td class="half-column"><strong>Tipo</strong></td>
+            </tr>
+            <tr>
+              <td>candidate_id (FK)</td>
+              <td>integer</td>
+            </tr>
+            <tr>
+              <td>math</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>specific</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>project_plan</td>
+              <td>numeric</td>
+            </tr>
+          </table>
+
+        </div>
+      </div>
+
+      <div>
+        <h2>Tabelas</h2>
+        <div>
+          
+          <table class="tables-model-two">
+            <caption>candidate</caption>
+            <tr>
+              <td><strong>id</strong></td>
+              <td><strong>name</strong></td>
+            </tr>
+            <tr>
+              <td class="center">1</td>
+              <td>Michael P Cannon</td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+              <td>Barbra J Cable</td>
+            </tr>
+            <tr>
+              <td class="center">3</td>
+              <td>Ronald D Jones</td>
+            </tr>
+            <tr>
+              <td class="center">4</td>
+              <td>Timothy K Fitzsimmons</td>
+            </tr>
+            <tr>
+              <td class="center">5</td>
+              <td>Ivory B Morrison</td>
+            </tr>
+            <tr>
+              <td class="center">6</td>
+              <td>Sheila R Denis</td>
+            </tr>
+            <tr>
+              <td class="center">7</td>
+              <td>Edward C Durgan</td>
+            </tr>
+            <tr>
+              <td class="center">8</td>
+              <td>William K Spencer</td>
+            </tr>
+            <tr>
+              <td class="center">9</td>
+              <td>Donna D Pursley</td>
+            </tr>
+            <tr>
+              <td class="center">10</td>
+              <td>Ann C Davis</td>
+            </tr>
+          </table>
+          
+          <table class=tables-model-two-inline>
+            <caption>score</caption>
+            <tr>
+              <td><strong>candidate_id</strong></td>
+              <td><strong>math</strong></td>
+              <td><strong>specific</strong></td>
+              <td><strong>project_plan</strong></td>
+            </tr>
+            <tr>
+              <td class="center">1</td>
+							<td class="center">76</td>
+							<td class="center">58</td>
+							<td class="center">21</td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+							<td class="center">4</td>
+							<td class="center">5</td>
+							<td class="center">22</td>
+            </tr>
+            <tr>
+              <td class="center">3</td>
+							<td class="center">15</td>
+							<td class="center">59</td>
+							<td class="center">12</td>
+            </tr>
+            <tr>
+              <td class="center">4</td>
+							<td class="center">41</td>
+							<td class="center">42</td>
+							<td class="center">99</td>
+            </tr>
+            <tr>
+              <td class="center">5</td>
+							<td class="center">22</td>
+							<td class="center">90</td>
+							<td class="center">9</td>
+            </tr>
+            <tr>
+              <td class="center">6</td>
+							<td class="center">82</td>
+							<td class="center">77</td>
+							<td class="center">15</td>
+            </tr>
+            <tr>
+              <td class="center">7</td>
+							<td class="center">82</td>
+							<td class="center">99</td>
+							<td class="center">56</td>
+            </tr>
+            <tr>
+              <td class="center">8</td>
+							<td class="center">11</td>
+							<td class="center">4</td>
+							<td class="center">22</td>
+            </tr>
+            <tr>
+              <td class="center">9</td>
+							<td class="center">16</td>
+							<td class="center">29</td>
+							<td class="center">94</td>
+            </tr>
+            <tr>
+              <td class="center">10</td>
+							<td class="center">1</td>
+							<td class="center">7</td>
+							<td class="center">59</td>
+            </tr>
+          </table>
+                
+        </div>
+      </div>
+            
+      <div>
+        <h2>Exemplo de saída</h2>
+        <div>
+          <table class="tables-model-two">
+            <tr>
+              <td><strong>name</strong></td>
+              <td><strong>avg</strong></td>
+            </tr>
+            <tr>
+              <td>Edward C Durgan</td>
+              <td>74.10</td>
+            </tr>
+            <tr>
+              <td>Timothy K Fitzsimmons</td>
+              <td>70.30</td>
+            </tr>
+            <tr>
+              <td>Donna D Pursley</td>
+              <td>58.90</td>
+            </tr>
+           	<tr>
+              <td>Sheila R Denis</td>
+              <td>47.00</td>
+            </tr>
+						<tr>
+              <td>Michael P Cannon</td>
+              <td>43.10</td>
+            </tr>
+						<tr>
+              <td>Ivory B Morrison</td>
+              <td>35.90</td>
+            </tr>
+						<tr>
+              <td>Ann C Davis</td>
+              <td>31.80</td>
+            </tr>
+						<tr>
+              <td>Ronald D Jones</td>
+              <td>26.70</td>
+            </tr>
+						<tr>
+              <td>William K Spencer</td>
+              <td>14.40</td>
+            </tr>
+						<tr>
+              <td>Barbra J Cable</td>
+              <td>13.30</td>
+            </tr>
+
+          </table>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+</html>

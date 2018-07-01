@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1710 - Confederação</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1639 - Confederação" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1710</span>
+                <h1>Confederação</h1>
+                <div>
+                    <p>Por Vinícius "Cabessa" Fernandes dos Santos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1 </strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A Confederação Galática resolveu fazer uma reforma administrativa, para melhor distribuir os recursos de sua frota. Para isso, ela dividiu todo o espaço em regiões. Para definir as regiões, inicialmente um conjunto de planos infinitos foi especificado, e as regiões foram definidas pelos cortes desses planos. Note que algumas regiões são ilimitadas, mas que também podem existir regiões limitadas. O conjunto de planos foi escolhido de tal maneira que nenhum dos planos intercepta a órbita de um planeta, e portanto cada planeta transita por apenas uma região durante sua órbita (ou seja, um planeta dentro de uma região nunca cruzará um plano para outra região).</p><p>
+                    Sua tarefa consiste em determinar, dadas as equações dos planos e as posições dos planetas, quantos planetas existem na região com o maior número de planetas (em outras palavras, qual o número máximo de planetas dentro de uma região).</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada contém dois inteiros <strong>M</strong> (<strong>1</strong> ≤ <strong>M</strong> ≤ <strong>500</strong>) e <strong>N</strong> (<strong>1</strong> ≤ <strong>N</strong> ≤ <strong>10000</strong>), indicando respectivamente o número de planos e número de planetas. As <strong>M</strong> linhas seguintes contêm cada uma quatro inteiros <strong>A</strong>, <strong>B</strong>, <strong>C</strong> e <strong>D</strong> (<strong>−10000</strong> ≤ <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong> ≤ <strong>10000</strong>), os coeficientes e o termo livre da equação <strong>Ax</strong> + <strong>By</strong> + <strong>Cz</strong> = <strong>D</strong> que define cada um dos planos. A seguir, cada uma das <strong>N</strong> linhas seguintes contém três inteiros <strong>X</strong>, <strong>Y</strong> e <strong>Z</strong> (<strong>−10000</strong> ≤ <strong>X</strong>, <strong>Y</strong>, <strong>Z</strong> ≤ <strong>10000</strong>), indicando a posição (<strong>X</strong>, <strong>Y</strong>, <strong>Z</strong>) de um planeta.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Seu programa deve produzir uma única linha contendo apenas um número inteiro, o número de planetas na região que contém o maior número de planetas.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 5</p>
+
+<p>1 0 0 1</p>
+
+<p>2 0 0 8</p>
+
+<p>0 1 0</p>
+
+<p>2 2 2</p>
+
+<p>3 3 3</p>
+
+<p>5 5 5</p>
+
+<p>2 18 4</p>
+
+                            </td>
+                            <td>
+                                <p>3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Maratona de Programacao da SBC 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

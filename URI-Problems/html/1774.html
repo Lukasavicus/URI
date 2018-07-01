@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1774 - Roteadores</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1754 - Roteadores" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1774</span>
+                <h1>Roteadores</h1>
+                <div>
+                    <p>Por Carlos Andrade, UFMS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 4</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Bruno é o responsável por configurar os roteadores de uma empresa. Os roteadores transmitem os dados entre si através dos cabos de internet, Os dados transmitidos podem trafegar por uma ou mais rotas para serem entregues ao destinatário.</p>
+					
+					<p>O preço dos cabos de rede utilizados nos roteadores da empresa pode chegar a ser muito caro, e a empresa precisa cortar gastos. Pensando nisso a empresa decidiu fazer algumas alterações na infra-estrutura de redes.</p>
+					
+					<p>Bruno deve modificar a infra-estrutura da rede da empresa de forma com que todos os roteadores consigam transmitir dados entre si e exista somente uma rota entre cada par de roteadores, economizando o máximo possível de cabos de internet.</p>
+					
+					<p>A sua tarefa é descobrir qual será o custo total com cabos que a empresa terá após as modificações feitas por Bruno.&nbsp;A figura abaixo mostra (a) a infraestrutura de redes atual; e (b) a infraestrutura de redes após as modificação feitas.</p>
+
+					<p class="center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1774.jpg" style="height:176px; width:600px" /></p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha é composta por dois inteiros&nbsp;<strong>R</strong>&nbsp;(3 ≤&nbsp;<strong>R</strong>&nbsp;≤ 60) e&nbsp;<strong>C</strong>&nbsp;(<strong>R</strong>&nbsp;≤&nbsp;<strong>C</strong>&nbsp;≤ 200)&nbsp;representado respectivamente a quantidade de roteadores e a quantidade de cabos de internet utilizados atualmente.</p>
+					
+					<p >Seguem C linhas, cada uma contendo três inteiros&nbsp;<strong>V&nbsp;</strong>(1 ≤&nbsp;<strong>V</strong>&nbsp;≤&nbsp;<strong>R</strong>),&nbsp;<strong>W&nbsp;</strong>(1 ≤&nbsp;<strong>W</strong>&nbsp;≤&nbsp;<strong>R</strong>) e&nbsp;<strong>P</strong>&nbsp;(1 ≤<strong>&nbsp;P</strong>&nbsp;≤ 10000), sendo&nbsp;<strong>V</strong>&nbsp;e&nbsp;<strong>W</strong>&nbsp;um par de roteadores que estão conectados por um cabo de internet e&nbsp;<strong>P</strong>&nbsp;o preço do cabo de internet utilizado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Seu programa deve imprimir um único valor inteiro que representa o custo total que a empresa gastará com cabos após as modificações.
+					</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+								<p>7 12<br />
+								1 3 6<br />
+								1 4 9<br />
+								2 3 17<br />
+								2 5 32<br />
+								2 7 27<br />
+								3 4 11<br />
+								3 5 4<br />
+								4 5 3<br />
+								4 6 19<br />
+								5 6 13<br />
+								5 7 15<br />
+								6 7 5</p>
+                            </td>
+                            <td>
+                                <p>48</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

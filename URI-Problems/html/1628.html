@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1628 - ChessGuess</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1628 - ChessGuess" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1628</span>
+                <h1>ChessGuess</h1>
+                <div>
+                    <p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Um novo jogo virou a maior sensação na Nlogônia. Batizado de <em>ChessGuess</em>, este jogo baseado no xadrez é definido pelas seguintes regras, as quais compõem o <em>Manifesto do ChessGuess</em>:</p>
+
+                    <ol>
+                    	<li>O <em>ChessGuess</em> pode ser jogado por qualquer número de jogadores maior que 1, sendo um deles escolhido pelo grupo para ser o <em>dealer</em>.</li>
+                    	<li>Em cada rodada, o <em>dealer</em> prepara um tabuleiro de xadrez com qualquer número positivo de peças brancas e um único rei preto, desde que nenhum rei branco seja colocado no tabuleiro. O número de peças de cada tipo não é limitado como no xadrez tradicional, ou seja, podem ser colocados, por exemplo, 63 peões brancos e 1 rei preto sem problemas.</li>
+                    	<li>Após preparar o tabuleiro duma rodada, o <em>dealer</em> escolhe um dos demais jogadores, de modo que cada jogador, à exceção do próprio <em>dealer</em>, seja escolhido exatamente uma vez.</li>
+                    	<li>O jogador escolhido deve, então, escolher uma única peça branca e movê-la tantas vezes quantas achar necessário para pôr o rei preto em xeque. Os movimentos das peças obedecem aos movimentos do xadrez tradicional, com a única exceção de que ao peão não é permitido andar duas casas para frente em seu primeiro movimento.</li>
+                    	<li>Se o jogador for capaz de <em>adivinhar</em> uma escolha ótima, que põe o rei em xeque com o número mínimo de movimentos usando uma só peça, o <em>dealer</em> deve virar uma dose de tequila. Do contrário, quem vira a dose de tequila é o jogador. No exemplo da Figura, 1 é o número máximo de movimentos que o jogador deve fazer para xecar o rei usando uma só peça e se livrar de virar a dose de tequila.</li>
+                    </ol>
+
+                    <p class="center"><img alt="" src="http://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1628.png" style="height:350px; width:350px" /></p>
+
+                    <p>Um problema, porém, está comprometendo o sucesso do novo jogo. Conforme avança a brincadeira, as pessoas vão ficando bastante bêbadas, especialmente o <em>dealer</em>, que já não consegue mais decidir se a escolha feita pelo jogador é ótima ou não. Portanto, a Federação e Associação do <em>ChessGuess</em> Ecológico (FACE) precisa de um programa que, dada a configuração inicial do tabuleiro montada pelo <em>dealer</em>, calcula o número máximo de movimentos que o jogador deve fazer para embebedar o <em>dealer</em> ainda mais.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por vários casos de teste, sendo cada caso de teste composto por 3 linhas. Na primeira linha figura um único inteiro positivo <strong>N</strong>, o qual representa o número de peças brancas que o <em>dealer</em> pôs no tabuleiro. A segunda linha descreve as <strong>N</strong> peças brancas, seguindo a Notação Algébrica¹ do Xadrez. A terceira linha, por fim, indica a posição do rei preto. A entrada é finalizada quando <strong>N</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma linha contendo um único inteiro representando o número máximo de movimentos que o jogador deve fazer para xecar o rei usando uma só peça e se livrar de virar a dose de tequila. Se o número não for finito, imprima “<span class="code">INF</span>” (sem as aspas).</p>
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>6<br />
+Qc2 Bf2 Rc4 f4 c6 Nh8<br />
+f6<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    ¹ Se você não conhece a Notação Algébrica do Xadrez, poderá deduzi-la facilmente percebendo que o exemplo de entrada coincide com o da Figura.<br/>
+                    II Maratona FACE 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

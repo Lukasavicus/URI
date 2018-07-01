@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2055 - Lisp é Melhor que Java, C e C++</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2055 - Lisp é Melhor que Java, C e C++" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2055</span>
+                <h1>Lisp é Melhor que Java, C e C++</h1>
+                <div>
+                    <p>By X Maratona de Programação IME-USP, 2006 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Acredite ou não, esse foi o resultado de um estudo conduzido por Ron Garret (Erann Gat) no início do século. A motivação de Garret foi um outro estudo, feito por Lutz Prechelt e publicado na Communications of the ACM, que comparava a performance de tempo de execução e uso de memória de programas escritos em C, C++ e Java. Porém, diferentemete dos benchmarks tradicionais, Prechelt comparou diferentes implementações de uma mesma tarefa feita por 38 desenvolvedores diferentes (em experiência e conhecimento). O estudo de Prechelt mostrou que Java é de 3 a 4 vezes mais lento que C ou C++, porém a variação maior ocorreu entre os programadores, não entre as linguagens, sugerindo que é melhor gastar mais tempo treinando os desenvolvedores do que discutindo que linguagem deve ser escolhida.</p>
+
+                    <p>Anos depois Garret estendeu esse estudo adicionando Lisp como uma das implementações possíveis para o problema, e dessa vez, além de considerar todos os fatores de comparação de Prechelt, acrescentou o tempo de desenvolvimento como métrica. Os resultados de Garret foram surpreendentes: Lisp ganhou disparado em todos os quesitos, necessitando de menos tempo e linhas de código, consumindo menos memória e executando mais rápido que os programas feitos em C, C++ ou Java. Ficou provado que os programadores de Lisp são muito melhores que os outros programadores. Essa é a sua chance de mostrar que o estudo de Garret está errado. Como? Resolvendo o mesmo problema proposto, em menos tempo e com implementações mais rápidas.</p>
+
+                    <p>O problema que foi a base de ambos os estudos é o seguinte: Considere o seguinte mapeamento entre letras e dígitos:</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2055.png" style="height:112px; width:1117px" /></p>
+
+
+                    <p>Queremos usar esse mapeamento para codificar números de telefone em palavras de forma que seja fácil decorá-los. Sua tarefa é escrever um programa que ache, dado um número de telefone, todas as possíveis codificações do mesmo em palavras. Um número de telefone é uma string arbitrária contendo apenas hífen (-), barras (/) e dígitos. As barras e hífen não devem ser codificados. As palavras são tiradas de um dicionário informado em ordem alfabética. Você deve imprimir apenas as palavras que codifiquem completamente o número de telefone. As palavras no dicionário podem ter letras maiúsculas e mínusculas, hífen (-) e aspas ("), porém você deve usar apenas as letras para codificar um número. A palavra deve ser impressa como foi dada no dicionário. A codificação de um número de telefone pode consistir de uma ou mais palavras, separadas por espaço. A codificação é construída palavra por palavra, da esquerda para a direita. Se, em um dado ponto da codificação nenhuma palavra do dicionário pode ser inserida, então um único dígito de telefone pode ser usado para a codificação, porém dois números consecutivos não são permitidos numa codificação válida. Em outras palavras: em uma codificação parcial que cobre k dígitos, o dígito k+1 é codificado por ele mesmo se e somente se, primeiro, o dígito k não foi codificado por um dígito e, segundo, não existe palavra no dicionário que pode ser usada na codificação começando no dígito k+1.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Cada instância é composta por uma linha contendo um número inteiro 0 &lt; <strong>n</strong> ≤ 75000, o número de palavras no dicionário. AS próximas <strong>n</strong> linhas contêm palavras com no máximo 50 caracteres. Depois do dicionário segue um inteiro 1 &lt; <strong>t</strong> &lt; 100000, e nas <strong>t</strong> linhas seguintes os números de telefone a serem codificados. QUando <strong>n</strong> for 0 seu programa deve parar.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância seu programa deve imprimir uma linha contendo Instancia <strong>k</strong>, onde <strong>k</strong> é o número da <strong>k</strong>-ésima instância. Para cada número de telefone processado seu programa deve imprimir todas as codificaçõs possíveis em ordem lexicográfica (a ordem da tabela ASCII) crescente. Cada codificação deve ser impressa no seguinte formato: o número do telefone seguido de dois pontos (:), um espaço e a codificação. Uma linha em branco deve ser impressa entre dois casos de teste.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>23<br />
+an<br />
+blau<br />
+bo"s<br />
+Boot<br />
+Bo"<br />
+da<br />
+fern<br />
+fort<br />
+Fee<br />
+Fest<br />
+je<br />
+jemand<br />
+mir<br />
+Mix<br />
+Mixer<br />
+neu<br />
+Name<br />
+o"d<br />
+Ort<br />
+so<br />
+Tor<br />
+Torf<br />
+Wasser<br />
+6<br />
+5624-82<br />
+4824<br />
+10/783--5<br />
+1078-913-5<br />
+381482<br />
+04824<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+								5624-82: Mix Tor<br />
+								5624-82: mir Tor<br />
+								4824: Tor 4<br />
+								4824: Torf<br />
+								4824: fort<br />
+								10/783--5: je Bo" da<br />
+								10/783--5: je bo"s 5<br />
+								10/783--5: neu o"d 5<br />
+								381482: so 1 Tor<br />
+								04824: 0 Tor 4<br />
+								04824: 0 Torf<br />
+								04824: 0 fort</p>
+
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    X Maratona de Programação IME-USP, 2006.
+                </p>
+            </div>
+
+        </body>
+    </html>

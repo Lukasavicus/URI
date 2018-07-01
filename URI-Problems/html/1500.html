@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1500 - Consultas Horríveis</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1500 - Consultas Horríveis" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1500</span>
+                <h1>Consultas Horríveis</h1>
+                <div>Por Iqram Mahmud <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif' alt=''/> Bangladesh</div>
+                <strong>Timelimit: 4</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>O mundo está cada vez mais mal e está ficando cada vez mais difícil de entrar na liga do mal. Desde que o lendário Bad Horse se aposentou, você tem que responder corretamente as perguntas do mal do Dr. Horrible, que tem um PhD em malvadeza (mas não em Ciência da Computação). É dado um conjunto de N elementos, que são inicialmente todos 0. Depois disso você receberá C comandos. São eles:</p>
+
+<ul>
+	<li><strong>0 p q v</strong> - você tem que adicionar <strong>v</strong> para todos os números na faixa de <strong>p</strong> à <strong>q</strong> (inclusive), onde <strong>p</strong> e <strong>q</strong> são dois índices do array.</li>
+	<li><strong>1 p q </strong>- imprima uma linha contendo um único inteiro, que é a soma de todos os elementos do array entre <strong>p</strong> e <strong>q</strong> (inclusive).</li>
+</ul>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém <strong>T</strong>, que indica o número de casos de teste.</p>
+
+<p>Cada caso de teste começará com <strong>N</strong>&nbsp;(<strong>N</strong>&nbsp;≤&nbsp;100 000) e&nbsp;<strong>C</strong>&nbsp;(C&nbsp;≤&nbsp;100 000). Após isso você deverá ler <strong>C</strong>&nbsp;operações no formato descrito acima (1&nbsp;≤&nbsp;<strong>p</strong>,&nbsp;<strong>q</strong>&nbsp;≤&nbsp;<strong>N</strong>&nbsp;and 1&nbsp;≤&nbsp;<strong>v</strong>&nbsp;≤&nbsp;10<sup>7</sup>).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima a respostas das consultas, conforme o exemplo de saída.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1<br />
+8 6<br />
+0 2 4 26<br />
+0 4 8 80<br />
+0 4 5 20<br />
+1 8 8<br />
+0 5 7 14<br />
+1 4 8</p>
+
+                            </td>
+                            <td>
+                                <p>80<br />
+508</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+
+        </body>
+    </html>

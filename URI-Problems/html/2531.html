@@ -1,0 +1,98 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2531 - Compras em FdI</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Compras em FdI" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2531</span>
+			<h1>Compras em FdI</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Está chegando a grande final do Campeonato Nlogonense de Surf Aquático. Ano que vem, a final ocorrerá na cidade de Foça do Iguachim (FdI)! A região de FdI e das cidades próximas é famosa por seu comércio, composto por diversas lojas que costumam vender diversos produtos a preços mais atraentes que no restante do país. Você quer aproveitar a viagem para FdI para comprar o novo celular <em>Aifôni</em> (R) (Na verdade, você queria um <em>Sãosunga</em> (R), mas este celular é um verdadeiro estouro!)!</p>
+
+<p>Existem <strong>N</strong> lojas na região, numeradas de 1 a <strong>N</strong>. Todas as lojas vendem o celular, embora o preço do aparelho pode ser diferente em cada loja. Para não tornar sua viagem cansativa, você pode considerar não visitar todas as <strong>N</strong> lojas, mas sim visitar apenas as lojas entre duas dadas lojas <strong>i</strong> e <strong>j</strong>, inclusive. Você está interessado na maior diferença de preços do aparelho entre as lojas visitadas. A diferença é dada por <em>|M - m|</em>, onde <em>M</em> é o maior preço dentre as lojas visitadas, e <em>m</em> é o menor.</p>
+
+<p>Além disso, as lojas podem alterar o preço do celular como desejarem! Sua tarefa é determinar, para várias consultas, a maior diferença de preços nas lojas entre duas dadas lojas, considerando também eventuais alterações de preços nas lojas.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém o inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>). A segunda linha contém <strong>N</strong> inteiros <strong>p<sub>1</sub></strong>,<strong>p<sub>2</sub></strong>,...,<strong>p<sub>N</sub></strong> (1 ≤ <strong>p<sub>i</sub></strong> ≤ 10<sup>5</sup>). O inteiro <strong>p<sub>i</sub></strong> indica o preço inicial do celular na loja <em>i</em>. A terceira linha contém um inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 10<sup>5</sup>), o número de operações. As próximas <strong>Q</strong> linhas descrevem uma operação cada. Cada operação pode ser descrita de duas formas:</p>
+
+<ul>
+	<li>1 <strong>i</strong> <strong>p</strong> (1 ≤ <strong>i</strong> ≤ <strong>N</strong>, 1 ≤ <strong>p</strong> ≤ 10<sup>5</sup>), indicando que o preço do celular foi alterado para <strong>p</strong> na loja <strong>i</strong>.</li>
+	<li>2 <strong>i</strong> <strong>j</strong> (1 ≤ <strong>i</strong> ≤ <strong>j</strong> ≤ <strong>N</strong>), indicando uma consulta.</li>
+</ul>
+<p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha para cada consulta contendo a maior diferença de preços das lojas entre as lojas <strong>i</strong> e <strong>j</strong>, inclusive.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4<br />
+100 150 90 170<br />
+3<br />
+2 1 3<br />
+1 2 50<br />
+2 2 4</p>
+
+						</td>
+						<td>
+							<p>60<br />
+120</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

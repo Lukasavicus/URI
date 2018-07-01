@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2521 - Pergunte à Geógrafa</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2521 - Pergunte à Geógrafa" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2521</span>
+			<h1>Pergunte à Geógrafa</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>América e Vinícius estão estudando o sistema de coordenadas geográficas em esferas, com o qual é possível determinar a posição de qualquer ponto na superfície de uma esfera. Sua amiga Maísa, que é geógrafa, decidiu ajudá-los nesses estudos. Ela então esclareceu o funcionamento deste sistema de coordenadas.</p>
+
+				<p>Neste sistema, um ponto é determinado por sua latitude e sua longitude. A latitude varia de -90<sup>o</sup> a 90<sup>o</sup> e indica o ângulo do ponto em relação ao centro da esfera, no sentido vertical, como indica a figura (a). A longitude, por sua vez, varia de -180<sup>o</sup> a 180<sup>o</sup> e indica o ângulo do ponto em relação ao centro da esfera, no sentido horizontal, como indica a figura (b). Como exemplo, a figura (c) indica a posição de um ponto P com latidude 45<sup>o</sup> e longitude 45<sup>o</sup>.</p>
+
+				<p class="center"><img src='https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2521.png' alt=''/></p>
+
+				<p>Considere que o centro da esfera está na origem O = (0, 0, 0) do sistema cartesiano do espaço, e, olhando a esfera de frente, o eixo x a cruza da esquerda para a direita, o eixo y de baixo para cima, e o eixo z do ponto menos profundo ao mais profundo. A figura (d) indica um exemplo para uma esfera de raio 1, onde o ponto P está em (1∕2, (√2)∕2,-1∕2).</p>
+
+				<p>Dado o raio da esfera e as coordenadas geográficas de um ponto P, determine suas coordenadas no sistema cartesiano do espaço.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>Cada caso de teste contém uma única linha contendo três inteiros <strong>r</strong>, <strong>la</strong> e <strong>lo</strong> (1 ≤ <strong>r</strong> ≤ 50,-90 ≤ <strong>la</strong> ≤ 90,-180 ≤ <strong>lo</strong> &lt; 180), indicando o raio da esfera, a latitude e a longitude do ponto P, em graus. A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma única linha contendo três valores <strong>x</strong>, <strong>y</strong> e <strong>z</strong>, separados por espaço, indicando as coordenadas do ponto P. Arredonde e imprima cada coordenada com exatamente duas casas decimais.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>1 45 45<br />
+							1 0 0<br />
+							1 90 0<br />
+							1 45 90</p>
+
+						</td>
+						<td>
+							<p>0.50 0.71 -0.50<br />
+							0.00 0.00 -1.00<br />
+							0.00 1.00 0.00<br />
+							0.71 0.71 0.00</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				7a Seletiva UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,116 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2200 - Mummy Madness</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2200 - Mummy Madness" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2200</span>
+				<h1>Mummy Madness</h1>
+				<div>
+					<p>Por ICPC 2011 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif' alt='US' /> United States</p>
+				</div>
+				<strong>Timelimit: 20</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>During an excursion to the desert at the 2011 ACM-ICPC World Finals, you come across an old Egyptian tomb. Unfortunately, opening the tomb turns out to be a bad idea: all of a sudden, what was just a few moments ago an empty desert has now become a desert crawling with grumpy mummies (you would be grumpy too if you were suddenly awakened after a few thousand years of peaceful sleep).<sup>2</sup></p>
+
+					<p>Faced with this murderous mass of mad mummies, your only chance is to run for it and try to escape before they catch you. The question is: how long will it take before a mummy catches you, assuming neither you nor the mummies ever get tired?</p>
+
+					<p>We model the desert as a grid of squares. You and the mummies take turns making moves on the grid. You make the first move. In your turns, you can move to any of the eight squares adjacent to your current location, or you can choose to stand still. In the mummies’ turns, each mummy simply moves to the adjacent square that brings it closest to you (measured by Euclidean distance, assuming that you and all the mummies stand in the centers of their respective squares). It is possible for two mummies to occupy the same square.</p>
+
+					<p>A time step consists of your move followed by the mummies’ moves. A mummy catches you if it moves to the square where you are located, or if you move to the square occupied by the mummy. Of course, you try to avoid being caught for as long as possible. After how many time steps will you be caught?</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_149_I.png" alt="ways" /></center>
+
+					<p style="text-align: center;">Figure I.1: A mummy chase</p>
+
+					<p>The figure illustrates what might happen if you are being chased by four mummies. The square labeled H is your initial position, and the squares labeled M are the initial positions of mummies. After four time steps, you are caught by the mummy whose initial position was (3, 4) with respect to your initial position.</p>
+
+					<p><sub>2Fortunately, after solving this problem, you woke up safe and sound in a hotel room in Florida. The enraged mummies had just been a dream. Or had they?</sub></p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of several test cases. Each test case begins with an integer <strong>n</strong> (0 ≤ <strong>n</strong> ≤ 10<sup>5</sup> ) giving the number of mummies in the desert. The following <strong>n</strong> lines each contain two integers <strong>x</strong> and <strong>y</strong>, indicating that there is initially a mummy at coordinates (<strong>x</strong>, <strong>y</strong>) of the desert, where <strong>x</strong> and <strong>y</strong> are both bounded by 10<sup>6</sup> in absolute value. Your starting position is (0, 0), and no mummy starts at this position.</p>
+
+					<p>The last test case is followed by a line containing the number −1.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>For each test case, display its test case number followed by the maximum number of time steps until you are caught (measured as the total number of turns that you get), or the word “never” if you can avoid capture indefinitely.</p>
+
+					<p>Follow the format of the sample output.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+								<p>-3 5</p>
+
+								<p>3 4</p>
+
+								<p>-6 -2</p>
+
+								<p>1 -5</p>
+
+								<p>1</p>
+
+								<p>0 -1</p>
+
+								<p>-1</p>
+
+							</td>
+							<td>
+								<p>Case 1: 4</p>
+
+								<p>Case 2: never</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					ICPC 2011 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

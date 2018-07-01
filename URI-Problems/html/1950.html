@@ -1,0 +1,163 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1950 - Spöhndriger</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1950 - Spöhndriger" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1950</span>
+				<h1>Spöhndriger</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>— <em>Taca-lhe pau, Marco véio!</em></p>
+
+<p>Estas palavras ficaram gravadas para sempre no coração do Dr. Marco Spohn, e é por isso que ele faz tudo com excelência e dedicação. Ultimamente, ele tem trabalhado num sistema operacional que gerencia um robô e um labirinto e que é capaz de fazer o robô encontrar a saída do labirinto. Por enquanto, o projeto está num estágio muito inicial, e na atual versão o robô apenas se move aleatoriamente no labirinto.</p>
+
+<p>O labirinto é uma caixa eletrônica cujas posições formam um <em>grid</em> <strong>N</strong> × <strong>M</strong>. Cada posição do <em>grid</em> pode estar <em>bloqueada</em>, quando uma parede de borracha está erigida na posição do fundo ao topo da caixa, ou <em>livre</em>. Assumindo que a indexação das linhas e colunas do <em>grid</em> começa em 1, a <em>saída</em> do labirinto se encontra sempre na posição (<strong>N</strong>, <strong>M</strong>) e nunca está bloqueada, sendo a única posição não coberta pela tampa da caixa. O robô do Dr. Spohn é esperto e consegue, através de suas câmeras e sensores, saber quais das posições adjacentes à posição em que se encontra estão livres ou bloqueadas. Destarte, a próxima posição para a qual vai é sempre tomada com distribuição uniforme dentre todas as posições livres adjacentes. As adjacências são sempre consideradas apenas nos sentidos horizontal e vertical. Se há posições livres adjacentes, o movimento da posição corrente para a próxima custa uma unidade de tempo constante. Do contrário, o robô fica parado.</p>
+
+<p>Ontem o Dr. Spohn fez um experimento interessante. Primeiramente, ele configurou o labirinto deixando algumas posições livres e as outras bloqueadas. Em seguida, pôs o robô numa posição livre qualquer do labirinto, tampou a caixa, programou dois tempos <strong>T</strong><sub>1</sub> e <strong>T</strong><sub>2</sub> (<strong>T</strong><sub>1</sub> &lt; <strong>T</strong><sub>2</sub>) e iniciou o sistema. Uma vez iniciado o sistema, o robô, sem poder ser visto pelo Dr. Spohn, começou a se mover dentro do labirinto conforme descrito acima, até não conseguir mais se mover, até chegar na posição (<strong>N</strong>, <strong>M</strong>), ou até o tempo <strong>T</strong><sub>2</sub> ser excedido e o experimento ser abortado. Após <strong>T</strong><sub>1</sub> unidades de tempo a partir do início do experimento, o sistema sorteou <strong>K</strong> posições livres em que não estava o robô e as bloqueou, reportando num visor ao Dr. Spohn quais posições foram bloqueadas.</p>
+
+<p>Dados os tempos <strong>T</strong><sub>1</sub> e <strong>T</strong><sub>2</sub>, a configuração inicial do labirinto e as <strong>K</strong> posições livres que foram bloqueadas após <strong>T</strong><sub>1</sub> unidades de tempo, calcule a probabilidade de o robô ter conseguido sair do labirinto em no máximo <strong>T</strong><sub>2</sub> unidades de tempo contando a partir do início do experimento.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada consiste de quatro inteiros, <strong>N</strong>, <strong>M</strong>, <strong>T</strong><sub>1</sub> e <strong>T</strong><sub>2</sub> (1 ≤ <strong>N</strong>, <strong>M</strong> ≤ 30, 1 ≤ <strong>T</strong><sub>1</sub> &lt; <strong>T</strong><sub>2</sub> ≤ 10<sup>5</sup>), os quais representam respectivamente o número de linhas e o número de colunas do <em>grid</em> e os tempos programados no sistema conforme já explanado. As próximas <strong>N</strong> linhas descrevem a configuração inicial do labirinto e contêm exatamente <strong>M</strong> caracteres cada, sendo o <strong>j</strong>-ésimo (1 ≤ <strong>j</strong> ≤ <strong>M</strong>) caractere da <strong>i</strong>-ésima (1 ≤ <strong>i</strong> ≤ <strong>N</strong>) linha <strong>.</strong>, <strong>#</strong> ou <strong>R</strong> se a posição (<strong>i</strong>, <strong>j</strong>) do <em>grid</em> começou, respectivamente, livre, bloqueada ou contendo o robô. A linha seguinte da entrada consiste de um único inteiro <strong>K</strong> (0 ≤ <strong>K</strong> ≤ <strong>N</strong> × <strong>M</strong>), o qual representa o número de posições livres que foram bloqueadas <strong>T</strong><sub>1</sub> unidades de tempo após o início do experimento, e as <strong>K</strong> últimas linhas da entrada descrevem essas posições, cada uma consistindo de dois inteiros <strong>i</strong> e <strong>j</strong> (1 ≤ <strong>i</strong> ≤ <strong>N</strong>, 1 ≤ <strong>j</strong> ≤ <strong>M</strong>) para designar a posição (<strong>i</strong>, <strong>j</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha consistindo de um único valor representando a probabilidade de o robô ter conseguido sair do labirinto em no máximo <strong>T</strong><sub>2</sub> unidades de tempo contando a partir do início do experimento. A probabilidade deve ser exibida como uma porcentagem com duas casas decimais após o ponto decimal.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 3 1 3<br />
+.R.<br />
+0</p>
+
+							</td>
+							<td>
+								<p>75.00%</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 3 1 3<br />
+.R.<br />
+1</p>
+1 1</p>
+								
+							</td>
+							<td>
+								<p>100.00%</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 3 1 4<br />
+...<br />
+#.#<br />
+.R.<br />
+...<br />
+2</p>
+1 2</p>
+3 3</p>
+								
+							</td>
+							<td>
+								<p>22.53%</p>
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 3 2 4<br />
+...<br />
+#.#<br />
+.R.<br />
+...<br />
+2</p>
+1 2</p>
+3 2</p>
+								
+							</td>
+							<td>
+								<p>54.95%</p>
+								
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					1<sup>ạ</sup> Minimaratona Noturna de Grafos da UFFS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

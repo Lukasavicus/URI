@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1393 - Lajotas Hexagonais</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1393 - Lajotas Hexagonais" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1393</span>
+            <h1>Lajotas Hexagonais</h1>
+            <div>Por Ines Kereki <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/uy.gif' alt="" /> Uruguai</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>O caminho para a escola de Maria é uma linha reta pavimentada com lajotas hexagonais. A imagem abaixo mostra um exemplo do caminho com 12 peças numeradas.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Hexagonal%20Tiles.png" style="width: 390px; height: 128px;" />​</p>
+
+                <p>Maria adora matemática. Ao ir para a escola, ela pisa sobre as lajotas do caminho de acordo com as seguintes regras:</p>
+
+                <ul>
+                    <li>Ela sempre começa a partir da lajota com o rosto sorridente (é sempre bom começar com um sorriso!). Esta lajota está sempre presente no inicio do caminho. As outras peças são numeradas consecutivamente, de modo ascendente, a partir de 1, como mostrado na figura.</li>
+                    <li>Não é permitido voltar, isto é, ela não deve pisar em uma telha que tenha um número menor do que a telha que ela está pisando (quando ela decide ir para a escola, ela vai mesmo!).</li>
+                    <li>Ela sempre dá passos de uma lajota para outra vizinha (não há saltos, de modo a manter-se fora de perigo!).</li>
+                    <li>Ela deve sempre terminar na mais alta lajota contada.</li>
+                </ul>
+
+                <p>Quando as aulas terminam, ela está tão cansada que evita o caminho e caminha no gramado. Maria não quer repetir qualquer seqüência de passos nas lajotas e ela gostaria de saber, se o caminho está pavimentado com N lajotas numeradas e uma lajota com um sorriso, quantos dias vai demorar para percorrer cada sequência possível uma só vez.</p>
+
+                <p>Por exemplo, cinco dias serão necessários para que ela tente todas as possíveis sequências de passos se o caminho tem N = 4 lajotas, um dia, para cada uma das sequências: 1-2-3-4, 1-2-4, 1-3-4, 2-3-4 e 2-4. Escreva um programa para determinar quantas sequências diferentes de passos há em um caminho com um determinado número N de lajotas.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. Cada teste é composto por uma linha contendo um número inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 40), o número de peças no caminho. O último caso de teste é seguido por uma linha contendo um único zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada teste, imprimir uma linha contendo um único número inteiro, o número de diferentes sequências de passo.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>1<br />
+                                4<br />
+                                2<br />
+                                10<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>1<br />
+                                5<br />
+                                2<br />
+                                89</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                 ACM/ICPC South America Contest 2009.
+			</p>
+        </div>
+
+    </body>
+</html>

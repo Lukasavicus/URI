@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1162 - Organizador de Vagões</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1162 - Organizador de Vagões" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1162</span>
+                <h1>Organizador de Vagões</h1>
+                <div><p>
+	Autor Desconhecido</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                     <p>
+	Na estação de trem você ainda pode encontrar o último dos “organizadores de vagões”. Um Organizador de vagões um empregado cujo trabalho é apenas reordenar os vagões do trem, trocando-os de posição. Uma vez que os vagões são organizados em uma ordem considerada ótima, o condutor pode desconectar cada vagão e colocá-los na estação.<br />
+	<br />
+	O título “organizador de vagões” é dado à pessoa que realiza esta tarefa, cuja estação fica perto de uma ponte. Ao invés da ponte poder subir ou descer, ela roda sobre um pilar que fica no centro do rio. Após rodar 90 graus, os barcos podem passar na esquerda ou direita dela. O Primeiro organizador de vagões descobriu que girando a ponte 180 graus com dois vagões em cima dela, é possível a troca de lugar entre os dois vagões. Obviamente a ponte pode operar no máximo com dois vagões sobre ela.<br />
+	<br />
+	Agora que quase todos os organizadores de vagões já faleceram, a estação gostaria de automatizar esta operação. Parte do programa a ser desenvolvido é uma rotina que decide para um dado trem com um determinado número de vagões, o número de trocas entre trens adjacentes que são necessárias para que o&nbsp; trem fique ordenado. Sua tarefa é criar tal rotina.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém na primeira linha o número de caso de testes (<strong><i>N</i></strong>). Cada caso de teste consiste de duas linhas de entrada. A primeira linha de um caso de teste contém um inteiro <strong><i>L</i></strong>, determinando o tamanho do trem (0 ≤ <em><strong>L </strong></em>≤ 50). A segunda linha de um caso de teste contém uma permutação dos números 1 até <strong><i>L</i></strong>, indicando a ordem corrente dos vagões. Os vagões devem ser ordenados de forma que o vagão 1 venha por primeiro, depois o 2, etc, com o vagão <strong><i>L</i> </strong>vindo por último.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste imprima a sentença: 'Optimal train swapping takes <strong><i>S</i> </strong>swaps.' onde <em><strong>S </strong></em>é um inteiro.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	3<br />
+	3<br />
+	1 3 2<br />
+	4<br />
+	4 3 2 1<br />
+	2<br />
+	2 1</p>
+
+                            </td>
+                            <td>
+                                <p>
+	Optimal train swapping takes 1 swaps.<br />
+	Optimal train swapping takes 6 swaps.<br />
+	Optimal train swapping takes 1 swaps.</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <p class="footer">
+	Tradução, entrada e saída por Neilor.</p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1605 -Montando Sua Própria Cáfila</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1605 - Montando Sua Própria Cáfila" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1605</span>
+                <h1>Montando Sua Própria Cáfila</h1>
+                <div>
+                    <p>Por Gabriel R. C. Peixoto <img src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" alt="" style="width: 16px; height: 11px; "> Brasil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Camelos foram domesticados e são utilizados pelos povos beduínos há vários milênios. Há dois tipos principais, os camelos bactrianos, com 2 corcovas, que são mais raros, e os dromedários, mais comuns, com apenas uma corcova. Para simplificar, os camelos bactrianos são chamados apenas de camelos.</p>
+
+                    <p>Tanto camelos quanto dromedários têm diferentes características interessantes: alguns são líderes natos, outros têm mais força, outros suportam caminhadas mais longas, etc. No entanto, cada animal possui apenas uma dessas características. Uma caravana precisa de animais com várias dessas características. No comércio desses animais são consideradas N<sub>1</sub> características diferentes para dromedários e N<sub>2</sub> características diferentes para camelos.</p>
+
+                    <p>Os beduínos comercializam esses animais sempre em cáfilas formadas por grupos de três. Essa é uma tradição bérbere que remonta ao século IX, quando os comerciantes de camelos e dromedários só podiam vender seus animais dessa forma. Os compradores não podem escolher os animais. Os lotes de 3 animais são preparados pelo vendedor e o comprador pode apenas dizer o número do lote que deseja comprar, sem mais informações a respeito. Os comerciantes são conhecidos por sua extrema honestidade, e cada lote é formado de forma aleatória. Para cada animal do lote, o comerciante sorteia com probabilidade p<sub>1</sub> se será um dromedário e com probabilidade p<sub>2</sub> = 1 − p<sub>1</sub> se será um camelo, p<sub>1</sub> ≥ p<sub>2</sub> . Escolhido o tipo i de animal, é escolhida uma característica dentre as N<sub>i</sub>, com igual probabilidade, e um animal com essa característica é incluído no lote.</p>
+
+                    <p>Todos os sorteios do comerciante são independentes, podendo um lote conter dois dromedários fortes e um camelo líder, por exemplo, ou mesmo três camelos bons de caminhada. Entretanto, para atestar sua honestidade, sempre que o comerciante produz um lote que tem apenas dromedários ele faz um novo sorteio.</p>
+
+                    <p>Dentre as N<sub>1</sub> características para dromedários, há M<sub>1</sub> que são desejáveis para o comprador. E dentre as N<sub>2</sub> características para camelos, há M<sub>2</sub> que são desejáveis para o comprador. Qual o número esperado de lotes que um comprador deve adquirir para montar uma cáfila que tenha dromedários e camelos com todas as M<sub>1</sub> e M<sub>2</sub> características desejadas?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF).</p>
+
+                    <p>Cada instância consiste de 3 linhas, cada uma contendo 2 inteiros. Na primeira linha temos <strong>N<sub>1</sub></strong> e <strong>N<sub>2</sub></strong> (1 ≤ <strong>N<sub>i</sub></strong> ≤ 50). A segunda linha consiste de <strong>M<sub>1</sub></strong> e <strong>M<sub>2</sub></strong> (0 ≤ <strong>M<sub>i</sub></strong> ≤ <strong>N<sub>i</sub></strong>), enquanto que a terceira linha temos <strong>W<sub>1</sub></strong> e <strong>W<sub>2</sub> </strong>(1 ≤ <strong>W<sub>2</sub></strong> ≤ <strong>W<sub>1</sub></strong> ≤ 100), que dão as probabilidades de cada categoria através da realção:</p>
+
+                    <p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/formula-cafila.png" alt="" /></p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância imprima uma linha contendo um número com 2 casas decimais, que é o número esperado de lotes que o comprador precisa comprar para completar sua cáfila.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1 1</p>
+                                <p>0 0</p>
+
+                                <p>1 1</p>
+
+                                <p>1 7</p>
+
+                                <p>1 0</p>
+
+                                <p>1 1</p>
+
+                                <p>5 5</p>
+
+                                <p>3 2</p>
+
+                                <p>11 6</p>
+
+                            </td>
+                            <td>
+                                <p>0.000</p>
+
+                                <p>1.167</p>
+
+                                <p>7.677</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    O camelo que quer ver sua corcova, torce o pescoço.<br/>
+                    Preliminar Maratona (Seletiva IME-USP)
+                </p>
+            </div>
+
+        </body>
+    </html>

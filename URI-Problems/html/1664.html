@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1664 - Bullshit Bingo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1664 - Bullshit Bingo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1664</span>
+                <h1>Bullshit Bingo</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p><em>Bullshit Bingo</em> é um jogo para fazer palestras, seminários e reuniões menos entediantes. Cada jogador tem um cartão com 5 linhas e 5 colunas. Cada uma das 25 células contém uma palavra (a célula do centro sempre tem a palavra <em>BINGO</em> escrita em si). Sempre que um jogador ouvir uma palavra que estiver escrita em seu cartão, ele pode marcá-la. A célula do centro já é marcada quando o jogo começa. Se um jogador tiver marcado todas as palavras na linha, na coluna ou na diagonal, ele se levanta e grita <em>BULLSHIT</em>. Depois disto, o jogo começa mais uma vez.</p>
+
+                    <p>Sentado em uma palestra, você observa que alguns estudantes no auditório estão jogando <em>Bullshit Bingo</em>. Você se pergunta qual o número médio de palavras diferentes até que <em>BULLSHIT</em> seja exclamado. Para o propósito deste problema, uma palavra consiste de letras do alfabeto Inglês (<em>a</em> a <em>z</em>, <em>A</em> a <em>Z</em>). Palavras são separadas por caracteres com exceção das letras (por exemplo espaços, dígitos e pontuação). Faça a comparação das palavras ignorando se ela estiver em maiúsculo ou minúsculo, em outras palavras, <em>Bingo</em> é o mesmo que <em>bingo</em>. Quando contar o número de palavras, ignore a palavra <em>BULLSHIT</em> (que indica o fim do jogo), e considere somente as palavras do jogo atual, ou seja, se uma palavra já ocorreu no jogo anterior, você ainda pode contá-la no jogo atual. Se o último jogo estiver inacabado, ignore as palavras desse jogo.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>O arquivo de entrada consiste no texto de uma palestra, com <em>BULLSHIT</em> ocorrendo ocasionalmente. O primeiro jogo começa com a primeira palavra da entrada. Cada ocorrência da palavra <em>BULLSHIT</em> indica o fim de um jogo.</p>
+
+                    <p>Você pode assumir, que</p>
+
+                    <ul>
+                    	<li>a palavra <em>BULLSHIT</em> ocorre somente em letras maiúsculas</li>
+                    	<li>cada palavra tem no máximo 25 letras, e cada linha tem no máximo 100 letras</li>
+                    	<li>há no máximo 500 palavras diferentes antes que um jogo termine</li>
+                    	<li>os jogadores seguem as regras, então não há necessidade de verificar se o jogo é válido ou não</li>
+                    </ul>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Consiste em um número: o número médio de palavras diferentes necessárias para ganhar o jogo. Escreva o número como uma fração reduzida no formato mostrado a seguir. Reduzir a fração significa que não pode haver um inteiro maior que 1 que divide o numerador e o denominador. Por exemplo, se havia 10 jogos, e o número de palavras diferentes em cada jogo totalizam 55, imprima <em>11/2.</em></p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>Programming languages can be classified BULLSHIT into following types:<br />
+- imperative and BULLSHIT procedural languages<br />
+- functional languages<br />
+- logical BULLSHIT programming languages<br />
+- object-oriented BULLSHIT languages</p>
+
+                            </td>
+                            <td>
+                                <p>9 / 2</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                   Univeristy of Ulm Local Contest 2005/2006
+                </p>
+            </div>
+
+        </body>
+    </html>

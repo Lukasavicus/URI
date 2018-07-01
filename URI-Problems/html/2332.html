@@ -1,0 +1,146 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2332 - Jogo do Labirinto</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2332 - Jogo do Labirinto" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2332</span>
+				<h1>Jogo do Labirinto</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Um amigo seu está muito empolgado com um novo joguinho que baixou em seu celular. O jogo consiste em uma espécie de labirinto que pode ser representado por um quadriculado de células quadradas com N linhas e M colunas. Cada célula do labirinto contém uma plataforma que está a uma determinada altura do chão, que pode ser representada por um inteiro a que varia de 0 (a mais baixa) a 9 (a mais alta). Você inicia na célula (1, 1) (canto superior esquerdo) e o objetivo é chegar na saída do labirinto que ﬁca na célula (N, M) (canto inferior direito).</p>
+
+					<p>Para sair do labirinto, você deve fazer movimentos entre células adjacentes. O problema é que seu bonequinho não consegue pular muito alto, então se a célula destino estiver duas ou mais unidades acima da sua altura atual, você não consegue movê-lo. Mais especiﬁcamente, a cada turno você pode mover para uma das 4 células adjacentes (cima, baixo, direita, esquerda) caso a altura da célula destino seja menor ou igual à altura da sua célula atual mais uma unidade. Ou seja, se a altura da sua célula for A, você só pode mover a uma célula adjacente caso a altura dela seja menor ou igual a A + 1.</p>
+
+					<p>Para complicar um pouco mais o jogo, a cada turno, após o jogador realizar sua ação, cada célula aumenta em uma unidade sua altura, até o valor máximo de 9. Caso a altura de uma determinada célula seja 9, ela passa a ser 0. Note que, em um dado turno, o jogador não é obrigado a se mover, ele pode simplesmente esperar as plataformas subirem ou descerem. Além disso, repare que nem todas as células têm 4 vizinhos, uma vez que não é permitido ao jogador se mover para fora dos limites do labirinto.</p>
+
+					<p>Você, como bom programador que é, resolve escrever um programa que calcule a menor quantidade de turnos possível para chegar à saída de um dado labirinto.</p>
+
+					<p>Escreva um programa que, dado um labirinto, retorne a menor quantidade de turnos necessária para chegar à saída, de acordo com as restrições dadas.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado). A primeira linha da entrada contém dois inteiros <strong>N</strong> e <strong>M</strong> (2 ≤ <strong>N</strong>, <strong>M</strong> ≤ 50) separados por um espaço em branco, que representam, respectivamente, a quantidade de linhas e colunas do labirinto. As <strong>N</strong> linhas seguintes contêm, cada uma, <strong>M</strong> inteiros que representam a altura inicial (no turno 0) da respectiva plataforma. As alturas estão sempre entre 0 e 9 (inclusive).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na saída padrão, uma única linha, contendo a menor quantidade de turnos possível para sair do labirinto.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 3</p>
+
+								<p>0 0 0</p>
+
+								<p>0 0 0</p>
+
+								<p>0 0 0</p>
+								
+								<p>0 0 0</p>
+
+
+							</td>
+							<td>
+								<p>5</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+		        <table>
+		            <thead>
+		            </thead>
+		            <tbody>
+		                <tr>
+		                    <td class="division">
+		                        <p>3 3</p>
+
+								<p>1 2 3</p>
+
+								<p>4 5 6</p>
+
+								<p>7 8 9</p>
+
+		                    </td>
+		                    <td>
+		                        <p>12</p>
+
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+
+		        <div class="both"></div>
+
+		        <table>
+		            <thead>
+		            </thead>
+		            <tbody>
+		                <tr>
+		                    <td class="division">
+		                        <p>3 5</p>
+
+								<p>1 3 1 1 1</p>
+
+								<p>1 3 1 3 1</p>
+
+								<p>1 1 1 3 1</p>
+
+		                    </td>
+		                    <td>
+		                        <p>10</p>
+
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2007 Fase 2 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

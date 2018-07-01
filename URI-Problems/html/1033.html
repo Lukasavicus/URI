@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1033 - Quantas Chamadas Recursivas?</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1033 - Quantas Chamadas Recursivas?" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1033</span>
+                <h1>Quantas Chamadas Recursivas?</h1>
+                <div><p>
+	Por Monirul Hasan Tomal, Southeast University <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif" style="width: 16px; height: 11px;" /> Bangladesh</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Os números de fibonacci são definidos pela seguinte recorrência:</p>
+<ul>
+	<li>
+		<em>fib(0) = 0</em></li>
+	<li>
+		<em>fib(1) = 1</em></li>
+	<li>
+		<em>fib(n) = fib(n-1)+fib(n-2)</em></li>
+</ul>
+<p>
+	Mas não estamos interessados em números de Fibonacci aqui. Gostaríamos de saber quantas chamadas recursivas seriam necessárias para um determinado número de Fibonacci n, seguindo a recorrência normal. Uma vez que os números serão bem grandes, não será uma tarefa muito simples para você. Mas então vamos torná-la um pouco mais fácil: queremos que você apresente somente o ultimo dígito do numero de chamadas, onde este número deve estar na base <strong>b</strong>.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada consiste em vários casos de teste. Para cada caso de teste haverá dois números inteiros <strong>n </strong>(0 ≤ <strong>n</strong> &lt; (2<sup>63</sup> - 1)) e <strong>b </strong>(1 &lt; <strong>b </strong>≤ 10000). A entrada será terminada por um caso de teste onde <strong>n</strong>=0 e <strong>b</strong>=0, que não deve ser processada.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste deve ser impresso o número do caso de teste na saída. Em seguida, imprima <strong>n</strong>, <strong>b</strong> e o ultimo dígito (na base <strong>b</strong>) do número de chamadas. Deverá haver um único espaço entre estes dois números. <em>Note que o ultimo dígito deverá ser apresentado no formato de um número decimal.</em></p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	0 100<br />
+	1 100<br />
+	2 100<br />
+	3 100<br />
+	10 10<br />
+	3467 9350<br />
+	0 0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	Case 1: 0 100 1<br />
+	Case 2: 1 100 1<br />
+	Case 3: 2 100 3<br />
+	Case 4: 3 100 5<br />
+	Case 5: 10 10 7<br />
+	Case 6: 3467 9350 7631</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    
+            </div>
+
+        </body>
+    </html>

@@ -14,12 +14,11 @@
 		<button id="_toggle" onclick="toggle_code_viz()">Show me dat Code!</button>
 	</div>
 
+
 	<div align="center" width="90%" height="500 px">
 
 		<div  style="float: left">
-			<object id='myPdfObject' type='application/pdf' width="800 px" height="500 px">
-				<embed id='myPdfEmbed' type='application/pdf'></embed>
-			</object>
+			<iframe id="prob_obj" src="./URI-Problems/html/1001.html" width="800px" height="600px"></iframe>
 		</div>
 
 		<div height="500 px" id="_div_code" style="display:none">
@@ -27,8 +26,8 @@
 				<code id="_code" class="language-clike"></code>
 			</pre>
 		</div>
-
 	</div>
+
 
 	<script type="text/javascript">
 
@@ -37,7 +36,7 @@
 		document.onload = update(pid);
 
 		function update(pid){
-			loadProblemPDFById(pid);
+			loadProblemHTMLById(pid);
 			loadSolutionCodeById(pid);
 			document.getElementById('_pid').value = pid;
 
@@ -63,16 +62,9 @@
 				update(--pid);
 		}
 
-		function loadProblemPDFById(pid){
-			var pdfUrl = "./URI-Problems/" + pid + ".pdf";
-
-			var pdfViewerObject = document.getElementById("myPdfObject");
-			pdfViewerObject.setAttribute("data", pdfUrl);
-			pdfViewerObject.outerHTML = pdfViewerObject.outerHTML.replace(/data="(.+?)"/, 'data="' + pdfUrl + '"');
-			 
-			var pdfViewerEmbed = document.getElementById("myPdfEmbed");
-			pdfViewerEmbed.setAttribute("src", pdfUrl);
-			pdfViewerEmbed.outerHTML = pdfViewerEmbed.outerHTML.replace(/src="(.+?)"/, 'src="' + pdfUrl + '"');
+		function loadProblemHTMLById(pid){
+			var source_base = "./URI-Problems/html/"
+			document.getElementById('prob_obj').src = source_base + pid + ".html";
 		}
 
 		function loadSolutionCodeById(pid){
@@ -81,7 +73,7 @@
 		}
 
 		function loadXMLDoc(theURL, extension_idx = 0){
-			var extensions = ['.c', '.cpp'];
+			var extensions = ['.c', '.cpp', '.py'];
 			var number_of_possible_attempts = extensions.length;
 			url_and_extension = theURL + extensions[extension_idx];
 			if (window.XMLHttpRequest){// code for IE7+, Firefox, Chrome, Opera, Safari, SeaMonkey

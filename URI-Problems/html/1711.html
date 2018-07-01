@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1711 - Dona Minhoca</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1640 - Dona Minhoca" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1711</span>
+                <h1>Dona Minhoca</h1>
+                <div>
+                    <p>Por Ricardo Anido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Dona Minhoca fica furiosa quando ouve as pessoas dizerem que minhocas são bichos palíndromes, nos quais não é possível distinguir a cabeça do rabo. Que infâmia!</p>
+
+                    <p>Dona Minhoca vive em uma linda caverna, composta de salões e túneis. Cada túnel liga dois salões distintos e pode ser usado nas duas direções. Um “ciclo” na caverna é uma sequência de salões s<sub>1</sub>, s<sub>2</sub>, . . . , s<sub>n</sub>, s<sub>n+1</sub> = s<sub>1</sub> , tais que s i ≠ s<sub>i+1</sub> e (s<sub>i</sub>, s<sub>i+1</sub>) é um túnel, para 1 ≤ i ≤ n. A caverna de Dona Minhoca pode conter ciclos, mas cada salão faz parte de no máximo um ciclo da caverna. Os túneis e salões são estreitos, de forma que se uma parte do corpo de Dona Minhoca ocupa um túnel ou salão, não há espaço para Dona Minhoca entrar novamente por esse túnel ou salão.</p>
+
+                    <p> Alguns salões da caverna têm acesso a partir da superfície. Dona Minhoca tem um mapa que descreve a caverna, informando para cada túnel o seu comprimento e quais dois salões o túnel liga. Dona Minhoca também é vaidosa e conhece o seu próprio comprimento.</p>
+
+                    <p> Dona Minhoca quer saber, para os salões que têm acesso à superfície, se é possível entrar na caverna pelo salão, percorrer a menor distância possível dentro da caverna, e sair novamente pelo mesmo salão que entrou, sempre andando para a frente, sem nunca dar marcha-a-ré. Você pode ajudá-la?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém dois inteiros <strong>S</strong> (<strong>2</strong> ≤ <strong>S</strong> ≤ <strong>10<sup>4</sup></strong> ) e <strong>T</strong> (<strong>1</strong> ≤ <strong>T</strong> ≤ <strong>2S</strong>) representando respectivamente o número de salões e o número de túneis da caverna. Os salões são identificados por inteiros de <strong>1</strong> a <strong>S</strong>. Cada uma das <strong>T</strong> linhas seguintes descreve um túnel e contém três inteiros <strong>A</strong>, <strong>B</strong> e <strong>C</strong> (<strong>1</strong> ≤ <strong>A</strong> &lt; <strong>B</strong> ≤ <strong>S</strong>; <strong>1</strong> ≤ <strong>C</strong> ≤ <strong>100</strong>), onde <strong>A</strong> e <strong>B</strong> representam os salões ligados pelo túnel, e <strong>C</strong> representa o comprimento do túnel. Um salão é ligado por túneis a no máximo outros 100 salões e cada dois salões são ligados por no máximo um túnel. A próxima linha contém um inteiro <strong>Q</strong> (<strong>1</strong> ≤ <strong>Q</strong> ≤ <strong>100</strong>), que indica o número de consultas. Cada uma das <strong>Q</strong> linhas seguintes descreve uma consulta, e contém dois inteiros <strong>X </strong>(<strong>1</strong> ≤ <strong>X</strong> ≤ <strong>S</strong>) e <strong>M</strong> (<strong>1</strong> ≤ <strong>M</strong> ≤ <strong>10<sup>5</sup></strong> ), que indicam respectivamente o salão pelo qual Dona Minhoca quer entrar e o comprimento de Dona Minhoca.</p>
+
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada consulta da entrada seu programa deve produzir apenas uma linha, contendo apenas um número inteiro, o comprimento do percurso mínimo que Dona Minhoca deve percorrer dentro da caverna para entrar e sair pelo salão indicado na consulta, sem dar marcha-a-ré. Se não for possível para Dona Minhoca entrar e sair sem dar marcha-a-ré, a linha deve conter o valor −1.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+							<p>4 4<br />
+1 2 12<br />
+2 3 10<br />
+3 4 8<br />
+2 4 5<br />
+3<br />
+1 23<br />
+4 10<br />
+1 24<br />
+8 9<br />
+1 2 1<br />
+2 3 1<br />
+3 4 1<br />
+2 5 10<br />
+5 6 25<br />
+2 6 20<br />
+3 7 9<br />
+7 8 3<br />
+3 8 4<br />
+4<br />
+1 10<br />
+4 60<br />
+8 5<br />
+7 55</p>
+					                            </td>
+                            <td>
+                                <p>47<br />
+23<br />
+-1<br />
+20<br />
+-1<br />
+16<br />
+71</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Maratona de Programacao da SBC 2014.
+                </p>
+            </div>
+
+        </body>
+    </html>

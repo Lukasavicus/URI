@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1611- Elevador Lotado</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1611 - Elevador Lotado" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1611 </span>
+                <h1>Elevador Lotado</h1>
+                <div>
+                    <p>Por Bruno Adami, Universidade de São Paulo - São Carlos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Em um prédio de N andares temos um elevador com capacidade para até C pessoas. Os andares são numerados de 0 a N-1. Há um grupo de M pessoas querendo usar o elevador, todas no andar 0. Cada uma deseja ir a um andar específico. Você deve decidir a ordem em que as pessoas devem usar o elevador de forma que a energia utilizada seja a menor possível.</p>
+
+                    <p>Inicialmente um grupo de tamanho no máximo C pessoas decidido por você entra no elevador no andar 0. Depois você deve decidir a ordem em que os andares são visitados. Logicamente, os andares de todas as pessoas dentro do elevador devem ser visitados. O custo de energia do elevador é apenas no deslocamento, ou seja, a cada andar em que ele sobe ou desce você gasta uma unidade de energia. O processo é repetido até que não se tenha mais pessoas no andar 0. No fim o elevador deve voltar ao andar 0.</p>
+
+                    <p>Dado o tamanho do prédio, a capacidade do elevador e os andares das pessoas que querem utilizar o elevador, monte a melhor estratégia que minimize a energia utilizada. Imprima o valor desta energia.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                 
+
+                    <p>Na primeira linha você terá um inteiro <strong>T</strong> (<strong>T</strong> = 100) indicando o número de casos de teste.</p>
+                    
+                    <p>Na primeira linha de cada caso teremos os números inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>4</sup>), <strong>C</strong> (1 ≤ <strong>C</strong> ≤ <strong>M</strong>) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 1000* ou 1 ≤ <strong>M</strong> ≤ 5*10<sup>4</sup>**). Na próxima linha teremos <strong>M</strong> inteiros indicando os andares a serem visitados pelas pessoas.   Os inteiros indicando os andares vão de 1 até <strong>N</strong>-1, inclusive.</p>
+                    
+                    <p>*Ocorre em aproximadamente 90% dos casos de teste;</p>
+                    <p>**Ocorre nos demais casos de teste.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso, imprima em uma única linha o valor da mínima energia necessária.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+                                <p>10 1 3</p>
+                                
+                                <p>1 2 3</p>
+                                
+                                <p>100 2 4</p>
+                                
+                                <p>10 10 10 3</p>
+                                
+                                <p>100 2 5</p>
+                                
+                                <p>100 1 100 1 100</p>
+
+                            </td>
+                            <td>
+                                <p>12</p>
+
+                                <p>40</p>
+                                
+                                <p>402</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Seletiva USP São Carlos - Segunda Prova 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

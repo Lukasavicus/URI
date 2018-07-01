@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 1948 - Compilador</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - Problema 4312 - Compilador" />
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+  </head>
+  <body>
+
+    <div class="header">
+      <span>URI Online Judge | 1948</span>
+      <h1>Compilador</h1>
+      <div>
+        <p>Por Emilio Wuerges, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem">
+
+      <div class="description">
+        <p>Depois do ataque dos alienígenas que acabou com 
+        quase toda a tecnologia avançada da humanidade,
+        você foi designado a participar da força tarefa para reconstruir.</p>
+        
+        <p>Depois de muita tentativa e erro, foi descoberto que os
+        computadores que tinham apenas 2 registradores
+        fonte e um destino eram imunes as radiações alienígenas.
+        O problema agora é que nenhum programa escrito até então funcionava nestes
+        computadores, e muito menos um compilador adequado.</p>
+        
+        <p>Você está de posse de um dos últimos computadores
+        de verdade que ainda funcionam, e
+        sua tarefa será escrever o compilador. Mas como tempo é
+        dinheiro, e tempo de CPU é muito mais dinheiro,
+        antes de compilar o programa inteiro, você deve
+        apenas checar se é possível compilar
+        o programa desejado.</p>
+        
+      </div>
+
+      <h2>Entrada</h2>
+
+      <div class="input">
+        <p>Cada entrada consiste de um programa.
+        O programa só contem 2 tipos de instruções.
+        Uma para declarar o valor de uma variável e outra para executar uma soma.</p>
+        
+        <p>As instruções de declaração são no formato:</p>
+        
+        <p>A := B</p>
+        
+        <p>Onde A é um nome de variável válido e B é um inteiro positivo.</p>
+        
+        <p>As instruções de soma são no formato:</p>
+        
+        <p>A := B + C</p>
+        
+        <p>Onde A é um nome de variável válido e B ou C são ou um
+        nome de variável válido ou um inteiro positivo.</p>
+        
+        <p>Os tokens deste programa são sempre separados por espaço
+        e as instruções são separadas por uma quebra de linha.</p>
+        
+        <p>São nomes de variáveis válidos todas as combinações de até 8 letras minúsculas.</p>
+        <p>Os programas tem, no máximo, 2000 instruções.</p>
+        <p>Variáveis recebem uma atribuição, seja através de uma soma ou de uma declaração, no máximo, 1 vez.</p>
+        
+      </div>
+
+      <h2>Saída</h2>
+
+      <div class="output">
+        <p>A saída consistirá sempre de somente 1 linha:</p>
+        
+        <p>OK</p>
+        
+        <p>No caso de ser possível compilar.</p>
+        
+        <p>Compilation error</p>
+        
+        <p>No caso de não ser possível.</p>
+      </div>
+
+      <div class="both"></div>
+
+       <table>
+        <thead>
+          <tr>
+            <td>Exemplo de Entrada</td>
+            <td>Exemplo de Saída</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="division">
+              <p>a := 0<br />
+              b := 1<br />
+              c := a + b<br />
+              d := a + b</p>
+
+            </td>
+            <td>
+              <p>OK</p>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+     <table>
+        <thead>
+          <tr>
+            <td>Exemplo de Entrada</td>
+            <td>Exemplo de Saída</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="division">
+
+              <p>a := 0<br />
+              b := 1<br />
+              c := a + b<br />
+              d := a + b<br />
+              e := a + c<br />
+              f := a + c</p>
+
+            </td>
+            <td>
+              <p>Compilation Error</p>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="both"></div>
+
+      <p class="footer">
+        III Maratona de Programação FACE - 2015
+      </p>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2705 - Mantenha Coberto</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema K - Mantenha Coberto" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2705</span>
+			<h1>Mantenha Coberto</h1>
+			<div>
+				<p>Por Paulo Cezar Pereira Costa <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Eva ama quebra-cabeça. Ela recentemente comprou um quebra-cabeça que se provou ligeiramente difícil. O quebra-cabeça é feito de um retângulo com uma grade com <strong>R</strong> linhas e<strong> </strong><strong>C</strong> colunas. Algumas células podem estar marcadas com um ponto, enquanto as outras estão vazias. Quatro tipos de peças vem com este quebra-cabeças, e existem <strong>R</strong> x <strong>C</strong> unidades de cada tipo.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/maratona_K.png"></p>
+
+<p>O objetivo do quebra-cabeça é usar algum tipo de peça que preencha a grade; isto é, que cada célula deve estar coberta com uma peça. Fazendo isso, cada peça pode ser rotacionada em 90, 180 ou 270 graus. Mas claro, para deixar mais interessante, existem algumas restrições que devem ser respeitadas:</p>
+
+<ol>
+	<li>Peças do tipo 1 podem apenas serem usadas em células marcadas com um ponto, enquanto as demais peças podem apenas ser usadas nas células brancas.</li>
+	<li>Dado qualquer par de células compartilhando uma borda, a linha desenhada deve combinar.</li>
+	<li>&nbsp;As linhas desenhadas pelas peças não podem encostar nas paredes externas da grade.</li>
+</ol>
+
+
+<p>Como Eva está tendo dificuldades para resolver o quebra-cabeça, ela começou a questionar-se se ele não teria sido feito de forma descuidada e nenhuma solução existe. Você pode dizer a ela se o quebra-cabeça pode ser resolvido?</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha contem dois inteiros <strong>R</strong> e <strong>C</strong> (1 ≤ <strong>R</strong>, C ≤ 20), indicando respectivamente o número de linhas e colunas do quebra-cabeça. As próximas <strong>R</strong> linhas contem uma string <strong>S</strong> de caracteres <strong>C</strong> cada, representando a grade do quebra-cabeça; nessas strings, a letra minúscula “o” indica que a célula marcada com um ponto, enquanto um “-” (hífen) representa uma célula vazia. Existem no máximo 15 células marcadas com um ponto.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Imprima uma linha com a letra maiúscula “Y” caso seja possível resolver o quebra-cabeça como descrito, e a letra “N” caso contrário.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>6 6</p>
+
+<p>o----o</p>
+
+<p>---oo-</p>
+
+<p>------</p>
+
+<p>--o---</p>
+
+<p>o--o--</p>
+
+<p>-----o</p>
+
+						</td>
+						<td>
+							<p>Y</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="both"></div>
+
+	    <table>
+	        <thead>
+	        </thead>
+	        <tbody>
+	            <tr>
+	                <td class="division">
+	                    <p>1 1</p>
+
+	<p>-</p>
+
+
+	                </td>
+	                <td>
+	                    <p>N</p>
+
+	                </td>
+	            </tr>
+	        </tbody>
+	    </table>
+
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>6 7</p>
+
+<p>-------</p>
+
+<p>-o--o--</p>
+
+<p>--o----</p>
+
+<p>-----o-</p>
+
+<p>----o--</p>
+
+<p>o------</p>
+
+                </td>
+                <td>
+                    <p>N</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>3 3</p>
+
+<p>-o-</p>
+
+<p>o-o</p>
+
+<p>-o-</p>
+
+                </td>
+                <td>
+                    <p>N</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+				ICPC Latin American Regional – 2017
+			</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,106 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2353 - Just in Time</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problem J - Problem J – Just in Time" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2353</span>
+				<h1>Just in Time</h1>
+				<div>
+					<p>By Bruno Junqueira Adami <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Hello contestant, I want to play a game. Your coach is in the contest room with a bomb about to explode in his hands. This bomb will be set to detonate in <strong>T</strong> seconds, and if it detonates in the contest room it is going to explode only your team’s balloons.</p>
+
+<p>I can tell you that the contest room is inside a building that contains <strong>N</strong> rooms in total. From each room there is exactly one direct tunnel to another room, which can only be used in one direction. For example if room <strong>A</strong> connects to room <strong>B</strong>, then you can walk from room <strong>A</strong> to room <strong>B</strong>, but not from room <strong>B</strong> to room <strong>A</strong>, unless of course room <strong>B</strong> has a direct tunnel to room <strong>A</strong>.</p>
+
+<p>The bomb has a special mechanism that detects if your coach stops moving, and if so it immediately triggers the detonation taking all your team’s balloons down. For that reason your coach will constantly walk between the rooms, taking exactly one second to move through each tunnel. The only way for your team to save its balloons is for your coach not to be in the contest room when the bomb detonates.</p>
+
+<p>You don’t have the building map in hand, all I can tell you is that the tunnels are chosen uniformly at random. However, I will give you the possibility to set <strong>T</strong> , which must be an integer between 2 and <strong>N</strong> inclusive. Your job is to choose <strong>T</strong> in such a way that it maximizes your balloons’ chance to survive this riddle.</p>
+
+<p>Let the game begin.</p>
+				</div>
+
+				<h2>Input</h2>
+
+				<div class="input">
+					<p>The input consists of a single line that contains one integer <strong>N</strong> , representing how many rooms there are in the building (2 ≤ <strong>N</strong> ≤ 10<sup>9</sup> ).</p>
+				</div>
+
+				<h2>Output</h2>
+
+				<div class="output">
+					<p>Output a line with one integer representing the value of <strong>T</strong> that maximizes your balloons’ chance to survive the riddle.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Input Samples</td>
+							<td>Output Samples</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>12</p>
+
+							</td>
+							<td>
+								<p>11</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ACM/ICPC South America Contest 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

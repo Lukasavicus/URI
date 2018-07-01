@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1372 - Doces</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1372 - Doces" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1372</span>
+            <h1>Doces</h1>
+            <div><p>Por Pedro Demasi, UFRJ <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Pequeno Charlie é um bom garoto viciado em doces. Ele até assina a Revista Todos Doces (All Candies Magazine) e foi selecionado para participar na Competição Internacional de Coleta de Doces (International Candy Picking Contest).</p>
+
+                <p>
+                    Nessa competição um número aleatório de caixas contendo doces são dispostas em M linhas com N colunas cada (então, existe um total de M x N caixas). Cada caixa tem um número indicando quantos doces ela contém.</p>
+
+                <p>
+                    O competidor pode pegar uma caixa (qualquer uma) e pegar todos os doces dentro dela. Mas existe uma sacada (sempre existe uma sacada): quando uma caixa é escolhida, todas as caixas das linhas logo acima e logo abaixo são esvaziadas, assim como as caixas à direita e à esquerda da caixa escolhida. O competidor continua pegando uma caixa até que não hajam mais doces.</p>
+
+                <p>
+                    A figura abaixo ilustra isso, passo a passo. Cada célula representa uma caixa e o número de doces que ela contém. A cada passo, a caixa escolhida é circulada e as células sombreadas representam as caixas que serão esvaziadas. Após oito etapas o jogo acaba e Charlie pegou 10 + 9 + 8 + 7 + 6 + 10 + 1 = 54 doces.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Candy.png" style="width: 603px; height: 311px;" />​</p>
+
+                <p>
+                    Para pequenos valores de M e N, Charlie consegue achar o número máximo de doces que ele consegue coletar facilmente, mas quando os números são muito grandes ele começa a se perder. Você pode ajudar Charlie a maximizar o número de doces que ele pode pegar?</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrade contém vários casos de teste. A primeira linha de um caso de teste contém dois números inteiros <strong>M</strong> e <strong>N</strong> (1 ≤ <strong>M</strong> x <strong>N</strong> ≤ 10<sup>5</sup>), separados por um espaço, indicando o número de linhas e colunas, respectivamente. Cada uma das <strong>M</strong> linhas seguintes contém <strong>N</strong> inteiros separados por espaço, cada uma representando o número inicial de doces na caixa correspondente. Cada caixa terá inicialmente pelo menos 1 e no máximo 10<sup>3</sup> doces.</p>
+
+                <p>
+                    O final da entrade é indicado por uma linha contendo dois zeros separados por um espaço.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste da entrada, seu programa deve imprimir uma única linha, contendo um único valor, o inteiro indicando o número máximo de doces que Charlie pode pegar.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                5 5<br />
+                                1 8 2 1 9<br />
+                                1 7 3 5 2<br />
+                                1 2 10 3 10<br />
+                                8 4 7 9 1<br />
+                                7 1 3 1 6<br />
+                                4 4<br />
+                                10 1 1 10<br />
+                                1 1 1 1<br />
+                                1 1 1 1<br />
+                                10 1 1 10<br />
+                                2 4<br />
+                                9 10 2 7<br />
+                                5 1 1 5<br />
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                54<br />
+                                40<br />
+                                17</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+             </table>
+             <p class="footer">
+                 ACM/ICPC South America Contest 2008.
+			 </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1733 - Vladimir o Vampiro</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1708 - Vladimir o Vampiro" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1733</span>
+                <h1>Vladimir o Vampiro</h1>
+                <div>
+                    <p>Por Ralf Engels <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Vladimir tem a pele branca, dentes muito longos e tem 600 anos, mas isso não é problema, porque Vladimir é um vampiro.</p>
+
+                    <p>Vladimir nunca teve qualquer problema por ser um vampiro. Na verdade, ele é um médico bem sucedido no turno da noite, e tem feito muitos amigos entre os colegas. Ele tem um truque muito impressionante, que sempre mostra em jantares. Ele pode dizer o grupo sanguíneo de uma amostra de sangue apenas pelo seu gosto.</p>
+
+                    <p>Vladimir adora viajar, mas por ser um vampiro, ele passa por três problemas sempre que vai viajar:</p>
+
+                    <ul>
+                    	<li>Primeiro, ele só pode viajar de trem, porque ele tem que levar seu caixão com ele. Mas viaja sempre de primeira classe, pois tem investido muito dinheiro em ações de longo prazo.</li>
+                    	<li>Segundo, ele só pode viajar do anoitecer até o amanhecer, ou seja, das 6 da noite até às 6 da manhã. Durante o dia, ele tem que ficar dentro da estação de trem.</li>
+                    	<li>Terceiro, ele tem que ter algo para comer com ele. Ele precisa de um litro de sangue por dia, que ele bebe ao meio-dia, 12:00, dentro de seu caixão.</li>
+                    </ul>
+
+                    <p>Você deve ajudar Vladimir encontrar rotas mais curtas entre duas cidades, para que ele possa viajar com uma quantidade mínima de sangue, pois do contrário, as pessoas podem acabar fazendo perguntas, como, “O que você vai fazer com todo esse sangue?”.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada contém um único número que diz a quantidade de casos de testes. A segunda linha começa com um único número que diz quantas especificações de rotas haverá seguir, ou seja, quantas conexões, válidas ou não, serão feitas até o seu destino. As linhas seguintes indicam as rotas (conexões entre duas cidades). Cada rota consiste nos nomes de duas cidades, a hora de partida e tempo total de viagem. Os tempos são em horas. Note que, Vladimir não pode usar as rotas que partem antes das 18h ou cheguem depois das 6h. Haverá no máximo 100 cidades, e menos do que 1000 conexões. Nenhuma conexão demora menos que 1 hora ou mais que 24 horas. Lembre-se, Vladimir tem no máximo 12 horas para realizar cada trajetoria, entre o anoitecer e o amanhecer. Todos os nomes de cidades devem ser menores que 32 caracteres.</p>
+                    <p>A última linha de cada caso de teste contém dois nomes de cidades. O primeiro nome é a cidade de partida de Vladimir, o segundo é o nome do destino.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, você deve imprimir na primeira linha, “Test Case #.”, indicando o número do caso de teste. Na linha seguinte você deve imprimir “Vladimir needs # litre(s) of blood.” indicando quantos litros de sangue ele necessita para realizar a(s) rota(s) ou “There is no route Vladimir can take.” caso não exista rota(s) válida(s).</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+                                3<br />
+                                Ulm Muenchen 17 2<br />
+                                Ulm Muenchen 19 12<br />
+                                Ulm Muenchen 5 2<br />
+                                Ulm Muenchen<br />
+                                10<br />
+                                Lugoj Sibiu 12 6<br />
+                                Lugoj Sibiu 18 6<br />
+                                Lugoj Sibiu 24 5<br />
+                                Lugoj Medias 22 8<br />
+                                Lugoj Medias 18 8<br />
+                                Lugoj Reghin 17 4<br />
+                                Sibiu Reghin 19 9<br />
+                                Sibiu Medias 20 3<br />
+                                Reghin Medias 20 4<br />
+                                Reghin Bacau 24 6<br />
+                                Lugoj Bacau</p>
+
+                            </td>
+                            <td>
+                                <p>Test Case 1.<br />
+                                There is no route Vladimir can take.<br />
+                                Test Case 2.<br />
+                                Vladimir needs 2 litre(s) of blood.</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 1999/2000.
+                </p>
+            </div>
+
+        </body>
+    </html>

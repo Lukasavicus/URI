@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1607 - Avance as Letras</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1607 - Avance as Letras" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1607</span>
+                <h1>Avance as Letras</h1>
+                <div>
+                    <p>Por Bruno Adami, Universidade de São Paulo - São Carlos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>É dado na entrada uma string A e outra B. Em uma operação você pode escolher uma letra da primeira string e avançar esta letra. Avançar uma letra significa transformá-la na próxima letra do alfabeto, veja que a próxima letra depois de z vem a letra a novamente! </p>
+
+                    <p>Por exemplo, podemos transformar a string ab em bd em no mínimo 3 operações: ab -&gt; bb -&gt; bc -&gt; bd. Podemos aplicar operações nas letras em qualquer ordem, outra possibilidade seria: ab -&gt; ac -&gt; bc -&gt; bd.</p>
+
+                    <p>Dadas as duas strings, calcule o mínimo número de operações necessárias para transformar a primeira na segunda.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+                    <p>Na primeira linha terá um inteiro <strong>T</strong> (<strong>T</strong> ≤ 100) indicando o número de casos de teste.</p>
+
+                    <p>Para cada caso, na única linha teremos as duas strings <strong>A</strong> (1 ≤ |<strong>A</strong>| ≤ 100* ou 1 ≤ |<strong>A</strong>| ≤ 10<sup>4</sup>** - sendo que |<strong>A</strong>| significa o tamanho da string <strong>A</strong>) e <strong>B</strong> (|<strong>B</strong>| = |<strong>A</strong>|* ou |<strong>B</strong>| = |<strong>A</strong>​|**) separadas por um espaço. Ambas as strings são compostas por letras do alfabeto minúsculas apenas e são do mesmo tamanho.</p>
+
+                    <p>*Ocorre em aproximadamente 90% dos casos de teste;</p>
+                    <p>**Ocorre nos demais casos de teste.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso imprima o número mínimo de operações.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+                                <p>ab bd</p>
+
+                                <p>abc abc</p>
+
+                                <p>abcdefghiz aaaaaaaaaa</p>
+
+                            </td>
+                            <td>
+                                <p>3</p>
+
+                                <p>0</p>
+
+                                <p>173</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Seletiva USP São Carlos - Segunda Prova 2014                 
+                </p>
+            </div>
+
+        </body>
+    </html>

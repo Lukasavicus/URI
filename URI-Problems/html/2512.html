@@ -1,0 +1,140 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2512 - O Jogo Reverse</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2512 - O Jogo Reverse" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2512</span>
+				<h1>O Jogo Reverse</h1>
+				<div>
+					<p>Por Felipe Getúlio, UEA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Você já ouviu falar no jogo reverse? É um jogo bem simples. Dada uma matriz 3x3, composta de ‘*’ (asteriscos) e ‘-’ (traços), o objetivo do jogador é alterar, através de pequenas mudanças feitas em seus caracteres, o estado da matriz de forma a chegar em um estado válido, no qual todos os caracteres da matriz são traços ou todos são asteriscos. A única regra para se fazer alguma mudança na matriz é a seguinte: o jogador escolhe uma célula da matriz e, em seguida, o caracter correspondente a esta e os correspondentes às suas células adjacentes (esquerda, direita, acima e abaixo) devem alterar seu valor para o caracter oposto, ou seja, se houver algum caracter ‘*’, este passará a ser ‘-’, e se houver ‘-’, ‘*’. Abaixo, um exemplo de mudança de estado (em vermelho as células escolhidas).</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2512.jpeg" style="width:400 height:266px"></p>
+<p>A versão multiplayer do jogo se dá na seguinte forma: uma partida é composta por diversas rodadas. Em cada rodada, são dadas duas matrizes de mesmo estado inicial (escolhido ao acaso), uma para cada jogador. Os jogadores devem então, simultaneamente, alterar o estado inicial da sua matriz (através das mudanças descritas acima) para um estado final válido. O jogador decide livremente a qual destes estados ele deve chegar. Ganha uma rodada o jogador que cumprir o objetivo acima em menos passos. Uma mudança na matriz (as alterações dos caracteres correspondentes à célula escohida e adjacentes) corresponde a um passo neste jogo. Desta forma, a quantidade de caracteres alterados durante as mudanças de estado não interfere na quantidade de passos atingida. O empate em uma rodada ocorre quando os jogadores obtêm a mesma quantidade de passos, não importando qual estado final eles escolheram. Ganha a partida o jogador que obtiver mais rodadas ganhas. Há empate em uma partida quando os jogadores tem quantidades iguais de rodadas ganhas.</p>
+
+<p>Ufah! Beleza. Agora que você conhece o jogo, talvez seja capaz de ajudar meus amigos. Fred e Jason são dois viciados em Reverse. Eles jogam de maneira ótima, ou seja, eles sempre sabem, partindo de um estado inicial qualquer, chegar a ambos os estados finais válidos com a menor quantidade de passos possível. Obviamente, também sempre escolhem o caminho com a menor quantidade mínima de passos. Desta forma, o empate torna-se inevitável!</p>
+
+<p>Então, para que o jogo não fique sem graça, uma pequena mudança foi feita: Fred e Jason começam com matrizes diferentes. Desta forma, precisamos que você determine quem vai ganhar a partida, neste formato de jogo.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Cada entrada é composta várias linhas. Na primeira linha, haveŕa um número&nbsp;<strong>R</strong>&nbsp;indicando a quantidade de rodadas em uma única partida. Em seguida são descritas&nbsp;<strong>2*R</strong>&nbsp;matrizes, na representação mostrada acima, uma embaixo da outra, cada par representando respectivamente, na ordem em que aparecem, a matriz inicial de Fred e a matriz inicial de Jason, correspondendo a uma rodada. Há um espaço em branco entre dois caracteres consecutivos na mesma linha de uma matriz e uma linha em branco separando duas matrizes consecutivas.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída é composta por uma linha indicando a mensagem: “Jason wins!”, se Jason ganhar a partida, “Fred wins!”, se Fred ganhar a partida, ou “Its a draw!”, se houver empate na partida.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+<p>- * -</p>
+
+<p>- - -</p>
+
+<p>- * -</p>
+
+<p></p>
+
+<p>- * -</p>
+
+<p>- - *</p>
+
+<p>* * -</p>
+
+<p></p>
+
+<p>* - *</p>
+
+<p>* - *</p>
+
+<p>* - -</p>
+
+<p></p>
+
+<p>- - *</p>
+
+<p>- * -</p>
+
+<p>- * *</p>
+
+<p></p>
+
+<p>- * -</p>
+
+<p>- - *</p>
+
+<p>* - *</p>
+
+<p></p>
+
+<p>- * *</p>
+
+<p>- * *</p>
+
+<p>* - *</p>
+
+<p></p>
+
+							</td>
+							<td>
+								<p>Fred wins!</p>
+
+<p></p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					Obs: considere que para qualquer estado inicial dado, sempre será possível chegar a um estado final válido, a partir de uma sequência de passos.
+				</p>
+			</div>
+
+		</body>
+	</html>

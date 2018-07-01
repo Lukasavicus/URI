@@ -1,0 +1,121 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2500 - William Xorando</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2500 - William Xorando" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2500</span>
+				<h1>William Xorando</h1>
+				<div>
+					<p>Por Francisco Elio Parente Arcos Filho, UEA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>William recentemente aprendeu algumas propriedades sobre o operador bit a bit xor(em linguagem c representado pelo operador '^'). Viu que pode fazer muitos algoritmos interessantes com ele: como achar elementos solitários numa sequência, trocar valores sem precisar de variável auxiliar, criptografia e muitos outros. Então começou a experimentar e decidiu até nomear uma operação com seu nome que utilizar xor, o w-xor.</p>
+
+<p>O w-xor é uma operação feita sobre uma sequência de valores. Exemplo: seja uma sequência <strong>S</strong>={a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, a<sub>4</sub>} aplicar o w-xor sobre <strong>S</strong> uma vez é o equivalente a fazer:</p>
+
+<p style="text-align: center;">a<sub>1</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub></p>
+
+<p style="text-align: center;">a<sub>2</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub></p>
+
+<p style="text-align: center;">a<sub>3</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub></p>
+
+<p style="text-align: center;">a<sub>4</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub></p>
+
+<p style="text-align: center;">a<sub>1</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub></p>
+
+<p>se <strong>S</strong>={a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, a<sub>4</sub>, a<sub>5</sub>} então aplicar um w-xor sobre <strong>S</strong> seria:</p>
+
+<p style="text-align: center;">a<sub>1</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub></p>
+
+<p style="text-align: center;">a<sub>2</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub></p>
+
+<p style="text-align: center;">a<sub>3</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub></p>
+
+<p style="text-align: center;">a<sub>4</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub></p>
+
+<p style="text-align: center;">a<sub>5</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub></p>
+
+<p style="text-align: center;">a<sub>1</sub>= a<sub>1</sub>^a<sub>2</sub>^a<sub>3</sub>^a<sub>4</sub>^a<sub>5</sub></p>
+
+<p>Dada uma Sequência <strong>S</strong> e aplicando sobre ela o w-xor <strong>M</strong> vezes, você saberia dizer qual o valor da <strong>K</strong>-ésima posição?</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta de vários casos de testes. Cada caso de teste começa com três números inteiros <strong>N</strong> (2 &le; <strong>N</strong> &le; 10<sup>3</sup>), <strong>M</strong> (1 &le; <strong>M</strong> &le; 10<sup>6</sup>) e <strong>K</strong> (1 &le; <strong>K</strong> &le; <strong>N</strong>) representando a quantidade de elementos da sequência, o número de operações w-xor aplicadas e a posição do valor a ser consultado (observe que a primeira posição é a 1), respectivamente. Na próxima linha haverá <strong>N</strong> valores inteiros <strong>A</strong><sub><strong>i</strong></sub> (-10<sup>9</sup> &le; <strong>A</strong><sub><strong>i</strong></sub> &le; 10<sup>9</sup>). A entrada termina quando <strong>N=M=K=0</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída consiste em uma linha por caso de teste contendo o valor da <strong>K</strong>-ésima posição da sequência após aplicado <strong>M</strong> vezes o w-xor sobre ela.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 2 2</p>
+
+<p>7 3 9 3</p>
+
+<p>5 3 2</p>
+
+<p>5 4 3 2 1</p>
+
+<p>0 0 0</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+
+				</p>
+			</div>
+
+		</body>
+	</html>

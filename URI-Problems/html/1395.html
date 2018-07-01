@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1395 - Números e Operações</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1395 - Números e Operações" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1395</span>
+            <h1>Números e Operações</h1>
+             <div><i>Por Ginés García Mateos, UM <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/es.gif' alt=""/> Espanha</i></div>
+            <strong>Timelimit: 5</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Queremos resolver um problema clássico de obtenção de um determinado número a partir de um conjunto de números iniciais, de acordo com as seguintes regras:</p>
+
+                <ul>
+                    <li>Todos os números envolvidos no problema são inteiros positivos, e por isso todo resultado intermediário de qualquer operação também deverá ser inteiro. Assim, as operações que levam a não inteiros ou números não positivos serão estritamente proibidas (não vamos considerar truncamento ou resultados de arredondamento, nem qualquer outra coisa do tipo).</li>
+                    <li>Nós podemos fazer qualquer uma das quatro operações aritméticas elementares: adição, multiplicação, subtração e divisão.</li>
+                    <li>Cada número pode ser utilizada no máximo uma vez: quando utilizamos dois números, os mesmos não podem ser utilizados novamente em operações posteriores (mas o resultado desta operação pode, e as mesmas considerações aplicam-se a este novo número).</li>
+                    <li>Não há nenhuma obrigação de fazer uso de todos os números iniciais.</li>
+                </ul>
+
+                <p>Faremos as seguintes premissas sobre os dados de entrada:</p>
+
+                <ul>
+                    <li>Para qualquer número de saída T, ele terá sempre que: 0 &lt; T &lt; 2000.</li>
+                    <li>Para qualquer número de entrada I, ele terá sempre que: 0 &lt; I &lt; 200.</li>
+                    <li>Haverá sempre pelo menos dois números iniciais e sete no máximo.</li>
+                    <li>Não vamos considerar os casos de problemas triviais, ou seja, casos em que o número de destino já está contido nos iniciais.</li>
+                </ul>
+
+                <p>A fim de tornar a única solução oferecida pelo programa, também deverá fazer as seguintes suposições sobre a solução que iremos considerar como correta: O programa deverá fornecer a solução que satifaz as condições, com um número mínimo de operações. Se houver mais do que uma solução com o número mínimo de operações, vamos decidir qual tomar de acordo com as características da primeira operação na qual eles se diferem. As próximas regras serão aplicadas.</p>
+
+                <ul>
+                    <li>Para duas operações iguais, será escolhido aquele cujo operando do lado esquerdo é maior que, ou igual a, o operando do lado direito. Por exemplo, a operação "10 x 5 = 50" terá prioridade sobre "5 x 10 = 50".</li>
+                    <li>Para as operações que envolvem dois operadores diferentes, será preferido aquele cujo operador tem a prioridade mais alta, definidos como se segue: Adição (mais alto) - Multiplicação - Subtração - Divisão (mais baixo).</li>
+                    <li>Para operações com o mesmo operador, será preferido um que envolve o número cuja posição é mais baixa, na ordem em que foram dados na entrada (que aparece em primeiro lugar). Se este primeiro número pode aparecer em duas operações diferentes de mesma precedência, o mesmo critério deve ser aplicado para o segundo operando. Novos números gerados pelas operações são assumidos para serem então, colocados no início da lista ordenada.</li>
+                </ul>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada é constituída por um conjunto de linhas. Cada linha representa um caso de teste, e lhes serão dados no seguinte formato:</p>
+                
+                <p><strong>T N I</strong><sub>1</sub>&nbsp;... <strong>I</strong><sub><strong>N</strong></sub></p>
+                
+                <p><strong>T</strong> é o número de destino, <strong>N</strong> é a quantidade de números iniciais e <strong>I</strong><sub>1</sub>&nbsp;...<strong> I<sub>N</sub></strong>&nbsp;são os próprios números iniciais. Todos os números são separados por um único espaço em branco. Não haverá caractere (/) levando espaços em branco no início e no fim de qualquer linha de entrada. A linha final com um único zero marca o fim da entrada e não será processada.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste o programa deve produzir uma linha com a mensagem:</p>
+
+                <p><em>No solution</em></p>
+
+                <p>Se o resultado não puder ser obtido a partir dos números de entrada, ou se um conjunto de linhas com a seqüência de operações leve a partir dos números iniciais para o resultado, levando em consideração os critérios anteriores. Cada operação deve ser expressa da seguinte forma:</p>
+
+                <p><em>operando_da_esquerda operador operando_da_direita = resultado</em></p>
+
+                <p>Onde operando_da_esquerda e operando_da_direita representam os números envolvidos na operação, o resultado é o resultado da operação, e o operador é um único caractere que representa a operação que deverá ser feita a partir dos seguintes:</p>
+
+                <p>'+': Adição<br />
+                    'x': multiplicação<br />
+                    '-': Subtração<br />
+                    '/': Divisão</p>
+
+                <p>Para cada caso de teste, a última linha de sua solução deve terminar com um símbolo '&lt;-', indicando que esta é a última operação, que dá o número de destino como resultado. Para todos os casos, deverá haver um espaço vazio (apenas um) entre cada impresso e o seguinte. Não deve haver nenhum caractere (/) negociando espaços em branco no início e no fim de cada linha de saída. Cada linha deve terminar com uma marca de final de linha, e não deve aparecer nenhuma linha em branco na saída.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>811 6 7 15 19 25 2 3<br />
+                                911 6 1 2 3 4 5 6<br />
+                                1897 7 33 2 11 25 7 17 13<br />
+                                911 7 7 11 23 27 17 7 2<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>15 + 7 = 22<br />
+                                22 x 19 = 418<br />
+                                418 x 2 = 836<br />
+                                836 - 25 = 811 &lt;-<br />
+                                No solution<br />
+                                25 x 2 = 50<br />
+                                17 x 13 = 221<br />
+                                221 + 50 = 271<br />
+                                271 x 7 = 1897 &lt;-<br />
+                                23 + 11 = 34<br />
+                                34 x 27 = 918<br />
+                                918 - 7 = 911 &lt;-</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+             </table>
+            <p class="footer">
+                 OMP'09, Facultad de Informatica. Universidad de Murcia (SPAIN).
+            </p>
+        </div>
+
+    </body>
+</html>

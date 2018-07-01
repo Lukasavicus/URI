@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1410 - Ele Está Impedido!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1410 - Ele Está Impedido!" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1410</span>
+            <h1>Ele Está Impedido!</h1>
+            <div>Por Fábio Dias Moreira <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>A Rede do Hemisfério é a maior rede de televisão de Tumbolia, um pequeno país situado a leste da América do Sul (ou sul da América do Leste). O esporte mais popular em Tumbolia, obviamente, é o futebol; muitos jogos são transmitidos toda semana em Tumbolia.</p>
+
+                <p>A Rede do Hemisfério recebe muitos pedidos para repassar lances polêmicos; normalmente esses acontecem quando um jogador é dito impedido pelo juíz. Um jogador atacante está impedido se ele está mais próximo da linha do gol do oponente do que o penúltimo adversário. Um jogador não está impedido se</p>
+
+                <ul>
+                    <li>ele está na mesma linha que o penúltimo adversário ou</li>
+                    <li>ele está na mesma linha que os dois últimos adversários.</li>
+                </ul>
+
+                <p>Através do uso de tecnologia de computação gráfica, a Rede do Hemisfério consegue tirar uma foto do campo e determinar as distâncias dos jogadores até a linha do gol do time defensor, mas eles ainda precisam de um programa que, dadas essas distâncias, decida se um jogador está impedido.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>O arquivo de entrada contém vários casos de teste. A primeira linha de cada caso de teste contém dois inteiros <strong>A</strong> e <strong>D</strong> separados por um espaço indicando, respectivamente, o número de jogadores atacantes e defensores envolvidos na jogada (2 ≤ <strong>A</strong>, <strong>D</strong> ≤ 11). A próxima linha contém <strong>A</strong> inteiros <strong>B<sub>i</sub></strong> separados por um espaço, indicando as distâncias dos jogadores atacantes até a linha do gol (1 ≤ <strong>B<sub>i</sub></strong> ≤ 10<sup>4</sup>). A próxima linha contém <strong>D</strong> inteiros <strong>C<sub>j</sub></strong>&nbsp;separados por um espaço, indicando as distâncias dos defensores até a linha do gol (1 ≤ <strong>C<sub>j</sub></strong>&nbsp;≤ 10<sup>4</sup>). O final da entrada é dado por <strong>A</strong> = <strong>D</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste na entrada imprima uma linha contendo um único caractere: "Y" (maiúsculo) se existe um jogador atacante impedido, e "N" (maiúsculo) caso contrário.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2 3<br />
+                                500 700<br />
+                                700 500 500<br />
+                                2 2<br />
+                                200 400<br />
+                                200 1000<br />
+                                3 4<br />
+                                530 510 490<br />
+                                480 470 50 310<br />
+                                0 0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                N<br />
+                                Y<br />
+                                N
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+               ACM/ICPC South America Contest 2007.
+            </p>
+        </div>
+
+    </body>
+</html>

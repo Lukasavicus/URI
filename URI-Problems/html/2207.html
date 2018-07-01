@@ -1,0 +1,114 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2207 - Bus Tour</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2207 - Bus Tour" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2207</span>
+				<h1>Bus Tour</h1>
+				<div>
+					<p>Por ICPC 2012 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/pl.gif' alt='PL' /> Poland</p>
+				</div>
+				<strong>Timelimit: 20</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Imagine you are a tourist in Warsaw and have booked a bus tour to see some amazing attraction just outside of town. The bus first drives around town for a while (a long while, since Warsaw is a big city) picking up people at their respective hotels. It then proceeds to the amazing attraction, and after a few hours goes back into the city, again driving to each hotel, this time to drop people off.</p>
+
+					<p>For some reason, whenever you do this, your hotel is always the first to be visited for pickup, and the last to be visited for dropoff, meaning that you have to suffer through two not-so-amazing sightseeing tours of all the local hotels. This is clearly not what you want to do (unless for some reason you are really into hotels), so let’s fix it. We will develop some software to enable the sightseeing company to route its bus tours more fairly—though it may sometimes mean longer total distance for everyone, but fair is fair, right?</p>
+
+					<p>For this problem, there is a starting location (the sightseeing company headquarters), <strong>h</strong> hotels that need to be visited for pickups and dropoffs, and a destination location (the amazing attraction). We need to find a route that goes from the headquarters, through all the hotels, to the attraction, then back through all the hotels again (possibly in a different order), and finally back to the headquarters. In order to guarantee that none of the tourists (and, in particular, you) are forced to suffer through two full tours of the hotels, we require that every hotel that is visited among the first [<strong>h</strong>/2] hotels on the way to the attraction is also visited among the first [<strong>h</strong>/2] hotels on the way back. Subject to these restrictions, we would like to make the complete bus tour as short as possible. Note that these restrictions may force the bus to drive past a hotel without stopping there (this is not considered visiting) and then visit it later, as illustrated in the first sample input.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The first line of each test case consists of two integers <strong>n</strong> and <strong>m</strong> satisfying 3 ≤ <strong>n</strong> ≤ 20 and 2 ≤ <strong>m</strong>, where <strong>n</strong> is the number of locations (hotels, headquarters, attraction) and <strong>m</strong> is the number of pairs of locations between which the bus can travel.</p>
+
+					<p>The <strong>n</strong> different locations are numbered from 0 to <strong>n</strong>−1, where 0 is the headquarters, 1 through <strong>n</strong>−2 are the hotels, and <strong>n</strong> − 1 is the attraction. Assume that there is at most one direct connection between any pair of locations and it is possible to travel from any location to any other location (but not necessarily directly).</p>
+
+					<p>Following the first line are <strong>m</strong> lines, each containing three integers <strong>u</strong>, <strong>v</strong>, and <strong>t</strong> such that 0 ≤ <strong>u</strong>, <strong>v</strong> ≤ <strong>n</strong>−1, <strong>u</strong> != <strong>v</strong>, 1 ≤ <strong>t</strong> ≤ 3600, indicating that the bus can go directly between locations <strong>u</strong> and <strong>v</strong> in <strong>t</strong> seconds (in either direction).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>For each test case, display the case number and the time in seconds of the shortest possible tour.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 4</p>
+
+								<p>0 1 10</p>
+
+								<p>1 2 20</p>
+
+								<p>2 3 30</p>
+
+								<p>3 4 40</p>
+
+								<p>4 6</p>
+
+								<p>0 1 1</p>
+
+								<p>0 2 1</p>
+
+								<p>0 3 1</p>
+
+								<p>1 2 1</p>
+
+								<p>1 3 1</p>
+
+								<p>2 3 1</p>
+
+							</td>
+							<td>
+								<p>Case 1: 300</p>
+
+								<p>Case 2: 6</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					ICPC 2012 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

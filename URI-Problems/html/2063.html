@@ -1,0 +1,129 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2063 - Caçando Digletts</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2063 - Caçando Digletts" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2063</span>
+				<h1>Caçando Digletts</h1>
+				<div>
+					<p>Por Caio Russi, UNOESTE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Diglett é um Pokémom do tipo terra que fica no subsolo cavando túneis e quase nunca é visto. Ele aparece na superfície através de um buraco no solo de tempo em tempo, onde é possível visualizar apenas a sua cabeça.</p>
+					<p style="text-align: center;"> <img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2063.png" alt="Digglets"/></p>
+					<p>Os túneis construídos por eles são unidirecionais e sempre conectam um buraco de origem a um buraco de destino, por exemplo: se existe um túnel conectando o buraco <strong>A</strong> ao buraco <strong>B</strong>, então é possível ir de <strong>A</strong> para <strong>B</strong> e não o contrário. Cada Diglett possuí o seu próprio buraco, o que indica que se existir <strong>N</strong> buracos vão existir <strong>N</strong> Digletts. Cada buraco possuí exatamente dois túneis: o primeiro túnel, que sai a partir dele para outro buraco e o segundo túnel, que chega até ele a partir de outro buraco.  </p>
+					<p>Os Digletts ficam andando de buraco em buraco a cada instante de tempo, por exemplo: considere um buraco <strong>A</strong> que tenha um túnel que o conecta a um buraco <strong>B</strong>, se um Diglett está no buraco <strong>A</strong> no tempo <strong>T</strong>, então no próximo instante de tempo <strong>T</strong>+1 ele vai estar no buraco <strong>B</strong>. Quando um Diglett chega no seu buraco, ele aparece imediatamente na superfície. Quando não está no seu buraco, ele simplesmente permanece no subsolo e espera o próximo instante de tempo para andar no túnel e ir a outro buraco. É garantido que cada Diglett sempre voltará ao seu buraco em alguns instantes de tempo.</p>
+					<p>Xisto é um Mestre Pokémom e está em busca de capturar a maior quantidade de Digletts com apenas uma pokebola, esta por sua vez é capaz de capturar todos os Digletts visíveis em uma determinada área. Ele precisa da sua ajuda para saber qual é o menor tempo em que todos os Digletts vão aparecer na superfície ao mesmo tempo, para assim poder lançar a pokebola e pegar todos eles.</p>
+					<p><em><strong>Obs</strong>: No instante zero todos os Digletts estão no seu respectivo buraco e não aparecem na superfície.</em></p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>N</strong> (2&nbsp;≤&nbsp;<strong>N</strong>&nbsp;≤&nbsp;100) que representa a quantidade de buracos. A linha seguinte contém <strong>N</strong>&nbsp;inteiros&nbsp;<strong>B<sub>i</sub></strong>&nbsp;(1&nbsp;≤&nbsp;<strong>B<sub>i</sub></strong>&nbsp;≤&nbsp;<strong>N</strong>), onde o <em><strong>i</strong>-ésimo</em> inteiro representa o <em><strong>i</strong>-ésimo</em> buraco, e indica que existe um túnel unidirecional do <em><strong>i</strong>-ésimo</em> buraco para o buraco <strong>B<sub>i</sub></strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima o menor tempo em que todos os Digletts vão aparecer juntos na superfície.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+<p>2 1</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>4</p>
+
+<p>4 3 2 1</p>
+
+                    </td>
+                    <td>
+                        <p>2</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>6</p>
+
+<p>2 1 5 3 6 4</p>
+
+                    </td>
+                    <td>
+                        <p>4</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<div class="both"></div>
+				<p class="footer">
+					Aquecimento para a OBI 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

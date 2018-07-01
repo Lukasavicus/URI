@@ -1,0 +1,119 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1899 - Acerte o Alvo!</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema G - Acerte o Alvo!" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1899</span>
+				<h1>Acerte o Alvo!</h1>
+				<div>
+					<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>"Acerte o Alvo!" é um jogo muito popular na Nlogônia.&nbsp; As regras do jogo são muito simples. Há uma bola no chão. Além disso, existe uma parede a <strong>DT</strong> metros de distância da bola, a qual contém um alvo. O alvo começa a <strong>AT</strong> metros do chão, e termina a <strong>BT</strong> metros do chão (logo, o comprimento do alvo é de <strong>BT</strong>-<strong>AT</strong> metros).</p>
+
+<p>Você deve chutar a bola em alguma direção. A bola irá seguir uma linha reta na direção em que for chutada. O objetivo do jogo é chutar a bola em uma direção tal que ela acerte <em>qualquer</em> ponto do alvo.</p>
+
+<p>Entretanto, há também <strong>N</strong> paredes entre a bola e o alvo. A parede <em>i</em> (1&nbsp;≤ <em>i</em>&nbsp;≤ <strong>N</strong>) está a <strong>D<sub>i</sub></strong> metros de distância da bola. Existe apenas uma abertura em cada parede. A parede <em>i</em> tem uma abertura começando a <strong>A<sub>i</sub></strong> metros do chão e terminando a <strong>B<sub>i</sub></strong> metros do chão.</p>
+
+<p>Naturalmente, a bola deve passar por todas as aberturas e acertar o alvo. No caso da bola passar <em>exatamente</em> em um ponto no qual uma abertura começa ou termina (isto é, a <strong>A<sub>i</sub></strong> ou <strong>B<sub>i</sub></strong> metros do chão), considere que a bola passa pela abertura com sucesso.</p>
+
+<p>Dependendo das posições das paredes e das aberturas, pode não haver uma maneira de acertar o alvo. Sua tarefa é determinar se é possível acertar o alvo ou não.</p>
+
+<p>A imagem a seguir mostra o primeiro exemplo de entrada e uma rota possível para a bola, provando que é possível acertar o alvo neste caso.</p>
+
+<p style="text-align: center;"> <img alt="" src="https://www.urionlinejudge.com.br/gallery/images/contests/alvo.png" style="height:250px; width:468px" /></p>
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém o inteiro <strong>N</strong> (0&nbsp;≤ <strong>N</strong>&nbsp;≤ 1000). As próximas <strong>N</strong> linhas contém três inteiros cada, descrevendo as paredes. A linha <em>i</em> (1&nbsp;≤ <em>i</em> ≤ <strong>N</strong>) contém os inteiros <strong>D<sub>i</sub></strong>, <strong>A<sub>i</sub></strong> e <strong>B<sub>i</sub></strong> (1&nbsp;≤ <strong>D<sub>i</sub></strong> ≤ 10<sup>4</sup>, 1&nbsp;≤ <strong>A<sub>i</sub></strong> &lt; <strong>B<sub>i</sub></strong>&nbsp;≤ 10<sup>4</sup>). A última linha contém três inteiros <strong>DT</strong>, <strong>AT</strong> e <strong>BT</strong> (1&nbsp;≤ <strong>DT</strong>&nbsp;≤ 10<sup>4</sup>, 1&nbsp;≤ <strong>AT</strong> &lt; <strong>BT</strong>&nbsp;≤ 10<sup>4</sup>). Você pode assumir que <strong>D<sub>1</sub></strong> &lt; <strong>D<sub>2</sub></strong> &lt; ... &lt; <strong>D<sub>N</sub></strong> &lt; <strong>DT</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma única linha contendo <strong>Y</strong> se é possível acertar o alvo, ou <strong>N</strong> caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+50 5 30<br />
+100 15 30<br />
+150 30 60<br />
+200 30 60</p>
+
+							</td>
+							<td>
+								<p>Y</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2<br />
+20 20 40<br />
+40 10 30<br />
+60 10 50</p>
+
+							</td>
+							<td>
+								<p>N</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="footer">
+					Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática-Fase 2, 2015 <br />
+				</p>
+			</div>
+
+		</body>
+	</html>

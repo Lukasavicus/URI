@@ -1,0 +1,103 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2497 - Contando Ciclos</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2497 - Contando Ciclos" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2497</span>
+				<h1>Contando Ciclos</h1>
+				<div>
+					<p>Por Beatriz Souza, IFPB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Estamos no ano 2030. Os benefícios da mecânica quântica já são bastante conhecidos e a computação foi e está sendo fortemente modificada em razão das recentes descobertas. Dessa forma, quase todos os computadores e smartphones estão bem diferentes de como eram em 2016 (há 14 anos atrás). Em razão da importância e da imensurável aplicabilidade desse ramo da física no cotidiano, a maioria dos países determinou que os princípios do mesmo devem ser ensinados no último ano do ensino médio.</p>
+
+<p>Maria está concluindo o ensino médio e faz parte da primeira turma que contém a mecânica quântica na grade curricular. As primeiras aulas desse conteúdo já foram ministradas e Maria está estudando para a prova, que será na próxima semana. O conteúdo cobrado na avaliação será: O Princípio da Incerteza e a Superposição dos elétrons.</p>
+
+<p>Você, como bom programador(a) e amigo(a) de Maria, decidiu ajudá-la escrevendo um algoritmo que seja capaz de contar quantos ciclos completos conterá cada experimento que será realizado com elétrons. Sabe-se, pelo princípio da incerteza, que uma característica não interfere em outra como, por exemplo, a cor apresentada por um determinado elétron não implica em sua dureza ou maleabilidade. Você vai considerar que os experimentos começam sempre com a determinação da cor e sem seguida com a determinação da dureza, esse processo pode se repetir dependendo de quantas etapas Maria queira que o experimento possua.</p>
+
+<p>Supondo que ela escolheu 3 etapas, o experimento seria realizado da seguinte forma:</p>
+
+<p style="text-align: center;">Determinação da cor → Determinação da dureza → Determinação da cor</p>
+
+<p>Seu programa deve informar quantos ciclos completos foram realizados, sabendo-se que, para Maria, um ciclo completo é composto pela determinação da cor e da dureza do elétron, respectivamente. No caso de teste apresentado acima, seria 1 ciclo completo. Mas se ela escolhesse 4 etapas, seriam 2 ciclos completos.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por diversos casos de teste. Cada caso de teste é composto por um único inteiro <strong>N</strong>, que representa a quantidade de etapas que Maria deseja que o experimento completo possua (-1 &lt;= <strong>N</strong> &lt;= 1000). É importante lembrar que uma etapa pode ser a determinação da cor ou da dureza, enquanto um ciclo é composto pela determinação das duas características. O programa se encerra com <strong>N</strong> = -1.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada <strong>N</strong> informado por Maria deve ser retornada uma única linha contendo o resultado no seguinte formato: Experiment&nbsp;<strong>X</strong>: <strong>Y</strong> full cycle(s). Em que <strong>X</strong> representa o número do caso de teste e <strong>Y</strong> representa o número de ciclos completos.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+<p>4</p>
+
+<p>8</p>
+
+<p>-1</p>
+
+							</td>
+							<td>
+								<p>Experiment 1: 1 full cycle(s)</p>
+
+<p>Experiment 2: 2 full cycle(s)</p>
+
+<p>Experiment 3: 4 full cycle(s)</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					
+				</p>
+			</div>
+
+		</body>
+	</html>

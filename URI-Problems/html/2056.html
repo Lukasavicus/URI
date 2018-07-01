@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2056 - O Cubo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2056 - O Cubo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2056</span>
+                <h1>O Cubo</h1>
+                <div>
+                    <p>Por X Maratona de Programação IME-USP, 2006 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Num futuro não muito distante as pessoas buscarão jogos cada vez mais perigosos para se divertir. Depois de ultra-leve e bungee-jump as pessoas precisarão de jogos em que suas habilidades mentais sejam também colocadas a prova. É o caso deste jogo, chamado "O Cubo", inventado na Nova Zelândia. Em alguns lugares o jogo também é conhecido pelo seu nome em japonês: "Sokoban".</p>
+
+                    <p>Considere um labirinto bi-dimensional composto por células quadradas. Cada uma delas ou está livre ou está sendo ocupada por uma pedra. A cada passo, você pode sair da célula em que está e se mover para outra célula vizinha livre (acima, abaixo, à direita ou à esquerda).</p>
+
+                    <p>Uma única célula do labirinto contém uma pilha de caixas. A pilha pode ser movida de uma célula i para uma célula k (por exemplo, k = i + 1), vizinha de i, apenas se você estiver numa célula j (no caso, j = i - 1), vizinha de i, e a direção ik é igual à direção ji (ou seja, você está empurrando a caixa para a próxima célula). A caixa não pode ser movida de qualquer outra maneira (você não pode puxá-la, por exemplo). Logo, se ela for parar em algum canto do labirinto, você não será capaz de movê-la novamente. Por fim, note que em cada empurrão você dá um passo, e que o contrário não é necessariamente verdade.</p>
+
+                    <p>Uma das células vazias é marcada como a célula final. Sua tarefa é trazer a caixa para essa célula final através de uma sequência de passos e de empurrões. Como a caixa é pesada, você quer realizar o menor número possível de empurrões.</p>
+
+                    <p>Observe que no jogo da vida real há a possibilidade de você se prender ou mesmo ser esmagado pela caixa, tornando tudo muito mais divertido.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>O arquivo de entrada é composto por várias instâncias. Cada instância começa com uma linha contendo dois inteiros <strong>r</strong> e <strong>c</strong> (20 ≥ <strong>r</strong>,<strong>c</strong>) representando o número de linhas e colunas do labirinto.</p>
+                    
+                    <p>Em seguida, são fornecidas <strong>r</strong> linhas, cada uma contendo <strong>c</strong> caracteres. Cada caractere descreve uma célula do labirinto. Uma célula ocupada por uma pedra é indicada por # e uma célula vazia é representada por um "." (sem aspas). Sua posição inicial é indicada por S, a posição inicial da caixa é indicada por B e a posição final da caixa é indicada por T.</p>
+
+                    <p>A entrada termina quando <strong>r</strong> = <strong>c</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada labirinto, inicialmente imprima o número da instância, conforme mostra o exemplo de saída abaixo. Se for impossível levar a caixa até sua posição final, imprima "Impossivel" (sem aspas).</p>
+
+                    <p>Caso contrário, você deve imprimir dois inteiros <strong>x</strong> e <strong>y</strong>; <strong>x</strong> indica o número de movimentos (passos + empurrões) e <strong>y</strong> o número de empurrões de uma sequência que faz com que você leve a caixa até a posição final. O número de empurrões deve ser minimizado. Caso exista mais de uma sequência possível que utiliza um número mínimo de empurrões, o número total de movimentos deve ser minimizado. Imprima uma linha em branco após cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1 7<br />
+SB....T<br />
+1 7<br />
+SB..#.T<br />
+7 11<br />
+###########<br />
+#T##......#<br />
+#.#.#..####<br />
+#....B....#<br />
+#.######..#<br />
+#.....S...#<br />
+###########<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+5 5</p>
+<br />
+<p>Instancia 2<br />
+Impossivel</p>
+<br />
+<p>Instancia 3<br />
+28 6</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    X Maratona de Programação IME-USP, 2006.
+                </p>
+            </div>
+
+        </body>
+    </html>

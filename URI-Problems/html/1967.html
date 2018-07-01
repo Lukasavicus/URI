@@ -1,0 +1,94 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1967 - A Fronteira Final</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1967 - A Fronteira Final" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1967</span>
+				<h1>A Fronteira Final</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>É o ano de 2.265, e a Universidade da Fronteira Final Sideral (UFFS) já conta com diversos <em>campi</em> espalhados pela galáxia, de modo que todos os cursos de graduação da UFFS são ofertados em todos os <em>campi</em>. Cada curso promove várias atividades por ano, e as atividades promovidas por um curso são as mesmas em todos os <em>campi</em> da UFFS. Para que cada atividade possa acontecer, a Universidade precisa comprar uma certa quantidade de materiais, mas os preços de cada material não são os mesmos para todos os <em>campi</em>. Um lápis, por exemplo, pode custar Ƀ2 (2 <em>bitcoins</em>) para o <em>campus</em> de Chapecó, no planeta Terra, e Ƀ7 (7 <em>bitcoins</em>) para o <em>campus</em> de ShiKahr, no planeta Vulcano. Apesar das diferenças de custo, nunca compensa comprar materiais num <em>campus</em> para enviá-los para outro <em>campus</em>, dados os elevadíssimos custos de transporte e taxas de importação e de exportação. Assim, a fim de que todas as atividades da Universidade possam ser realizadas, a Reitoria precisa transferir para cada curso de cada <em>campus</em> a quantia certa de <em>bitcoins</em> a fim de que os cursos possam eles próprios comprar os materiais.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada consiste de quatro inteiros positivos, <strong>G</strong>, <strong>A</strong>, <strong>M</strong> e <strong>C</strong> (<strong>G</strong> ≤ 600; <strong>A</strong>, <strong>C</strong> ≤ 100; <strong>M</strong> ≤ 2000), os quais representam respectivamente o número de cursos de graduação, o número total de tipos de atividade que podem ocorrer, o número total de tipos de material que podem ser necessários e o número de <em>campi</em> da UFFS. Os cursos são designados na entrada pelos inteiros de 1 a <strong>G</strong>, os tipos de atividade pelos inteiros de 1 a <strong>A</strong>, os tipos de material pelos inteiros de 1 a <strong>M</strong> e os <em>campi</em> pelos inteiros de 1 a <strong>C</strong>. Seguem, então, três tabelas de inteiros não-negativos. Cada tabela é precedida por uma linha em branco, entre duas colunas consecutivas de uma mesma tabela há uma coluna de espaços de largura 1, e espaços adicionais podem preceder cada inteiro duma tabela a fim de que todas as colunas daquela tabela fiquem alinhadas à direita e haja ao menos um inteiro por coluna que não seja precedido por espaços adicionais. A primeira tabela consiste de <strong>G</strong> linhas, cada uma contendo <strong>A</strong> inteiros não maiores que 10, de modo que o <strong>j</strong>-ésimo inteiro da <strong>i</strong>-ésima linha representa quantas atividades do tipo <strong>j</strong> um curso de graduação <strong>i</strong> precisa realizar no ano corrente. A segunda tabela consiste de <strong>A</strong> linhas, cada uma contendo <strong>M</strong> inteiros não maiores que 10, de modo que o <strong>j</strong>-ésimo inteiro da <strong>i</strong>-ésima linha representa de quantos materiais do tipo <strong>j</strong> a realização de uma atividade do tipo <strong>i</strong> precisa. A terceira e última tabela consiste de <strong>M</strong> linhas, cada uma contendo <strong>C</strong> inteiros não maiores que 100, de modo que o <strong>j</strong>-ésimo inteiro da <strong>i</strong>-ésima linha representa o preço, em <em>bitcoins</em>, de uma unidade do material do tipo <strong>i</strong> no planeta em que se situa o campus <strong>j</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima <strong>G</strong> linhas contendo <strong>C</strong> inteiros cada, de modo que o <strong>j</strong>-ésimo inteiro da <strong>i</strong>-ésima linha represente a quantia de <em>bitcoins</em> que a Reitoria precisa transferir para o curso <strong>i</strong> do <em>campus</em> <strong>j</strong>. Siga rigorosamente as mesmas regras de espaçamento entre colunas da entrada.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 3 3 2</p>
+<br />
+<p>1 2 3<br />
+3 2 1</p>
+<br />
+<p>2 0 1<br />
+0 1 3<br />
+2 4 4</p>
+<br />
+<p>&nbsp; 2 &nbsp;7<br />
+&nbsp;11 13<br />
+100 &nbsp;3</p>
+
+							</td>
+							<td>
+								<p>2070 295<br />
+1382 173</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					3<sup>ạ</sup> Maratona de Programação <em>Júnior</em> da UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

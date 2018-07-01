@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1825 - Formigando</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1808 - Formigando" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1825</span>
+                <h1>Formigando</h1>
+                <div>
+                    <p>Por Desconhecido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 0</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Um grupo de cientistas malucos da ACGOP (Academia de Ciência e Ginástica Olímpica Pindamonhangabense) está estudando o comportamento de uma estranha raça de formigas cegas. Após anos de estudo, eles concluíram que:</p>
+
+<ol>
+	<li>Essas formigas só andam em linha reta e seu comportamento é o mesmo da luz. Ou seja, quando encontram uma parede pela frente, sua rota é "refletida" (como se fosse um raio de luz incidindo num espelho plano) e ela segue andando de modo que sua rota forme com o obstáculo um ângulo igual ao de incidência;</li>
+	<li>Essas formigas só param quando passam por um alimento e voltam a andar no mesmo sentido que vinham logo após devorar o alimento;</li>
+	<li>O máximo que uma formiga consegue viajar sem morrer de fome é 2 metros.</li>
+</ol>
+
+<p>Para comprovar essas conclusões, os cientistas construíram uma série de cenários, onde eles colocariam as formigas para andar. Cada cenário consiste num retângulo de dimensões <em>M x N</em>&nbsp;metros com 4 entradas, situadas nos vértices, que de agora em diante chamaremos pelos nomes dos pontos cardeais, conforme a figura:</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Formigando.png" style="height:64px; width:161px" /></p>
+
+<p>Dentro do retângulo foram distribuidas <em>MN</em> comidas, colocadas no centro de cada quadrado de 1 metro de lado interior ao retângulo. As formigas são introduzidas nos retângulos por uma das quatro portas numa rota que forma 45 graus com os lados do retângulo de modo que, após percorrer aproximadamente 0,707 metros, alcançam o primeiro alimento e, em seguida, continuam suas viagens pelo mesmo caminho, até que uma das três situações ocorra:</p>
+
+<ol>
+	<li>A formiga bate na parede: neste caso sua rota é refletida e ela segue andando de modo que sua rota forma com a aparede um ângulo igual ao de incidência (ou seja, permanece 45 graus);</li>
+	<li>A formiga anda mais de 2 metros e não encontra comida: nesse caso ela morre (tadinha);</li>
+	<li>A formiga encontra uma porta: nesse caso ela sai e o experimento está concluído.</li>
+</ol>
+
+<p>Sua missão é escrever um programa que preveja o que vai acontecer com a formiga colocada em cada um dos cenários da pesquisa.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada consistirá de diversos cenários. Para cada cenário serão fornecidas, numa única linha, as medidas do retângulo, primeiro a largura <strong>M</strong> (Norte - Oeste), depois a profundidade <strong>N</strong> (Norte - Leste) (0 &lt; m,n ≤ 100.000), e a porta por onde entrou a formiguinha. Uma linha contendo o valor 0 para uma das dimensões do retângulo marca o final da entrada.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada cenário, você deverá escrever uma linha no arquivo de saída, com um dos seguintes conteúdos:</p>
+
+<ul>
+	<l>No caso da formiga morrer de fome, a espressão "Morreu..."</li>
+	<li>Caso contrário, você deverá escrever:
+	<ul>
+		<li>A porcentagem das comidas que foram devoradas na peregrinação da formiga rumo à saída (com três digitos, espaços à esquerda se for o caso, arredondado para o inteiro mais próximo, ou para baixo, no empate, seguido seguido do sinal %);</li>
+		<li>A quantidade de trombadas que a formiga deu nas paredes do retângulo (10 casas, alinhado à direita, espaços à esquerda);</li>
+		<li>A porta pela qual ela saiu.</li>
+	</ul>
+	</li>
+</ul>
+
+<p>A imagem a seguir é sobre o exemplo abaixo:</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/FormigandoB.png" style="height:66px; width:528px" /></p>
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1 1 Norte</p>
+
+<p>4 8 Norte</p>
+
+<p>3 2 Sul</p>
+
+<p>100000 100000 Oeste</p>
+
+<p>100000 0 QualquerCoisaAquiEstaValendo</p>
+
+                            </td>
+                            <td>
+                                <p>100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 Sul</p>
+
+<p>&nbsp;25%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1 Leste</p>
+
+<p>100%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 Oeste</p>
+
+<p>&nbsp;&nbsp;0%&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0 Leste</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VI Maratona de Programação IME-USP 2002.
+                </p>
+            </div>
+
+        </body>
+    </html>

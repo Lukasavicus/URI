@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1575 - Perseguindo Don Giovanni</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1575 - Perseguindo Don Giovanni" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1575</span>
+                <h1>Perseguindo Don Giovanni</h1>
+                <div>
+                    <p>Autor Desconhecido</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>No Ato II, Masetto está liderando um grupo de aldeões para perseguir Don Giovanni. Giovanni, que acaba de trocar suas roupas com Leporello e está disfarçado como ele, é questionado por Masetto sobre aonde "seu mestre" foi. Para evitar problemas, "Leporello" (disfarçado por Giovanni) quer enganar os aldeões para que eles não consigam encontrar "Don Giovanni" (disfarçado por Leporello). Giovanni sabe a rota que Leporello está tomando, e ele tem uma rota segura (uma rota que os aldeões não encontrariam Leporello) em mente. Ele quer ter certeza de que a rota que ele tomou é de fato segura.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada inicia com um simples inteiro positivo em apenas uma linha, indicando o número de casos de teste que seguem, cada um deles como descrito abaixo. <strong>Esta linha é seguida por uma linha em branco, e também haverá uma linha em branco entre duas entradas consecutivas.</strong></p>
+
+<p>É dado a você a atual posição de Don Giovanni (que também é a posição de Masetto e dos aldeões), e a posição atual de Leporello, em duas linhas separadas. Cada linha tem dois números: o número da rua e o número da avenida. Você pode assumir que as ruas são grids quadrados regulares, com linhas sendo ruas numeradas a partir de um, iniciando no norte, e as colunas sendo avenidas numeradas a partir de um, iniciando no oeste. Portanto, a distância entre ruas e avenidas adjacentes é sempre a mesma.</p>
+
+<p>O resto da entrada possui dois conjuntos de rotas, com o primeiro conjunto sendo de Leporello e o segundo conjunto sendo a rota que Giovanni irá contar para os outros. Cada conjunto inicia com um número indicando a quantidade de paradas na rota, seguido pela lista de paradas. Cada parada é especificada como uma localização, onde Leporello pode mudar a direção. Entre paradas há sempre uma linha reta na direção paralela tanto para ruas quanto para avenidas, que Leporello e os aldeões irão viajar.</p>
+
+<p>Leporello viaja na mesma velocidade que os aldeões. Você pode assumir que o número máximo da rua/avenida é 1000000, e não haverá mais do que 100 paradas.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, a saída deve seguir a descrição abaixo. <strong>A saída de dois casos de teste consecutivos deverá ser separada por uma linha em branco.</strong></p>
+<p>A saída consiste de uma linha dizendo "Yes", caso a rota que Giovanni está dizendo aos aldeões é uma rota segura, e "No" caso contrário. Lembre-se que a rota não é segura somente se os aldeões puderem encontrar Leporello no mesmo lugar ao mesmo tempo; a rota é segura mesmo se os aldeões encontrarem Leporello no destino (porque a missão dele foi realizada). </p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2</p><br />
+
+<p>2 3<br />
+5 2<br />
+3<br />
+5 4<br />
+3 4<br />
+3 6<br />
+4<br />
+4 3<br />
+4 5<br />
+5 5<br />
+5 6</p>
+<br />
+<p>2 2<br />
+4 2<br />
+3<br />
+6 2<br />
+6 3<br />
+3 3<br />
+3<br />
+2 4<br />
+5 4<br />
+5 6</p>
+
+                            </td>
+                            <td>
+                                <p>No</p>
+<br />
+<p>Yes</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

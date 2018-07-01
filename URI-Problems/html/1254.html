@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1254 - Substituição de Tag </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1254 - Substituição de Tag " />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1254</span>
+            <h1>Substituição de Tag </h1>
+            <div><p>
+                    Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif" style="width: 16px; height: 11px;" /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Você está no comando de um sistema de documentos que utiliza tags de código numérico para renderizar 
+                    documentos para impressão. Há um lote de documentos com o texto baseado em tags, que você deve analisar 
+                    e converter para tags numéricas para a entrada no sistema.
+                    Uma tag é iniciada por um caracter '&lt;', que pode ser seguida por letras, números, barras ou espaços, 
+                    e para finalizar a tag um caracter '>'. As tags não podem ser encaixadas umas nas outras.</p>
+                <p>
+                    As seguintes tags não são válidas:<br/>
+                    "&gt;HI", "&lt;a&lt;b&gt;c&gt;", "&lt;a b c&gt;&lt;", "&lt;a&lt;b&gt;".</p>
+                <p>
+                    As seguintes tags são válidas:<br/>
+                    "/=&lt;&gt;HI", "/&lt;&gt;H=I&lt;&gt;/", "&lt;&gt;&lt;&gt;&lt;&gt;&lt;&gt;", "&lt;a=/&gt;&lt;b==//bb&gt;&lt;c223&gt;", "&lt;a b c&gt;".</p>
+                <p>
+                    Para as comparações entre caracteres deve ser desconsiderado o case sensitive.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. Cada caso de teste é composto de três linhas. A primeira linha contém a tag original 
+                    presente no texto do documento, que irá conter apenas letras (a-z, A-Z), e seu tamanho será entre 1 e 10 caracteres inclusive. 
+                    A segunda linha contém um valor numérico pela qual a tag original deverá ser substituida, que será um número 
+                    entre 1 e 1000 inclusive. A terceira e última linha terá entre 1 e 50 caracteres inclusive, 
+                    e poderá conter os letras (a-z, A-Z), números (0-9), sinal de menor (&lt;), sinal de maior (>), 
+                    sinais de igual (=), barras (/), ou espaços em branco. Todos os '&lt;' e '>' são usados apenas em tags.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Converto o texto do documento que é dado na entrada, utilizando as específicações dadas acima e 
+                    imprima em uma única linha, o novo texto do documento com as novas tags, para maiores 
+                    esclarecimentos consulte o exemplo abaixo.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                BODY<br />
+                                10<br />
+                                &lt;&gt;&lt;BODY garbage&gt;body&lt;/BODY&gt;<br />
+                                aBc<br />
+                                923<br />
+                                &lt;dont replacethis&gt;abcabc&lt;abcabcde&gt;<br />
+                                table<br />
+                                1<br />
+                                &lt;ta&gt;bLe&lt;TaBlewidth=100&gt;&lt;/table&gt;&lt;/ta><br />
+                                replace<br />
+                                323<br />
+                                nothing inside<br />
+                                HI<br />
+                                667<br />
+                                92&lt;HI=/&gt;&lt;z==//HIb&gt;&lt;cHIhi&gt; <br />
+                                a<br />
+                                23<br />
+                                &lt;a B c a&gt;<br />
+                                b<br />
+                                2<br />
+                                &lt;b b abc ab c&gt; Mangojata</p>
+                        </td>
+                        <td>
+                            <p>
+                                &lt;&gt;&lt;10 garbage&gt;body&lt;/10&gt;<br />
+                                &lt;dont replacethis&gt;abcabc&lt;923923de&gt;<br />
+                                &lt;ta&gt;bLe&lt;1width=100&gt;&lt;/1&gt;&lt;/ta&gt;<br />
+                                nothing inside<br />
+                                92&lt;667=/&gt;&lt;z==//667b&gt;&lt;c667667&gt; <br />
+                                &lt;23 B c 23&gt;<br />
+                                &lt;2 2 a2c a2 c&gt; Mangojata</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                * Este problema é de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por Jeferson T. para utilização (autorizada) no URI OJ.<br />
+                * A reprodução não autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. é estritamente proibida.</p>
+
+        </div>
+
+    </body>
+</html>

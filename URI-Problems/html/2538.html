@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2538 - Ginásio</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Ginásio" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2538</span>
+			<h1>Ginásio</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p><em>Analógimôn Go!</em> é um jogo bastante popular. Em sua jornada, o jogador percorre diversas cidades capturando pequenos monstrinhos virtuais, chamados <em>analógimôns</em>. As cidades contém localidades especiais chamadas de <em>ginásios</em>. Ao chegar a um ginásio, um jogador pode tentar colocar um de seus <em>analógimôns</em> dentro dele.</p>
+
+<p>Cada <em>anlógimôn</em> tem dois inteiros associados a ele: seu <em>Poder de Combate</em> (<strong><em>PC</em></strong>) e seu <em>Número de Ataques</em> (<strong><em>NA</em></strong>). Além disso, um ginásio tem associado a ele um <em>Intervalo de Poder</em> (<strong><em>IP</em></strong>). Ao tentar colocar um <em>analógimôn</em> em um ginásio, o jogo verifica quantos são os <em>analógimôns</em> já presentes no ginásio cuja diferença do seu <strong><em>PC</em></strong> para o <strong><em>PC</em></strong> do <em>analógimôn</em> sendo colocado é de no máximo <strong><em>IP</em></strong>. Se esta quantidade for menor ou igual ao <strong><em>NA</em></strong> do <em>analógimôn</em> sendo colocado, o monstrinho é inserido no ginásio com sucesso. Caso contrário, ele não é colocado no ginásio. Em ambos os casos, os <em>analógimôns</em> que já estavam no ginásio continuam no ginásio. Como exemplo, considere um ginásio com <strong><em>IP</em></strong>=<em>3</em> com <em>analógimôns</em> de <strong><em>PC</em></strong> iguais a 5, 8, 13 e 20. Se um jogador tenta colocar um <em>analógimôn</em> de <strong><em>PC</em></strong>=10 e <strong><em>NA</em></strong>=4, o jogo contará quantos <em>analógimôns</em> há no ginásio com <strong><em>PC</em></strong> entre 10 - 3 = 7 e 10 + 3 = 13, inclusive. Como há dois <em>analógimôns</em> neste caso, o monstrinho é colocado com sucesso no ginásio, pois 2 ≤ 4. O ginásio passa a conter <em>analógimôns</em> de <strong><em>PC</em></strong> iguais a 5, 8, 10, 13 e 20.</p>
+
+<p>Dadas as informações sobre um ginásio e as tentativas de colocar <em>analógimôns</em> dentro dele, determine quantos <em>analógimôns</em> ficarão no ginásio após todas as tentativas. Considere que o ginásio inicialmente não contém nenhum <em>analógimôn</em>.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém os inteiros <strong>IP</strong> e <strong>M</strong> (1 ≤ <strong>IP</strong>, <strong>M</strong> ≤ 10<sup>5</sup>), o <strong>IP</strong> do ginásio e o número de tentativas, respectivamente. As próximas <strong>M</strong> linhas descrevem as tentativas de colocar um <em>analógimôn</em> no ginásio, na ordem em que são feitas. Cada linha contém dois inteiros <strong>PC</strong> e <strong>NA</strong> (1 ≤ <strong>PC</strong>, <strong>NA</strong> ≤ 10<sup>5</sup>), indicando o <strong>PC</strong> e o <strong>NA</strong> do <em>analógimôn</em>, respectivamente. O Poder de Combate de todos analógimôns são distintos.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha com um inteiro indicando quantos <em>analógimôns</em> ficarão no ginásio.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3 7<br />
+5 2<br />
+13 1<br />
+8 1<br />
+20 5<br />
+6 1<br />
+11 1<br />
+10 4</p>
+
+						</td>
+						<td>
+							<p>5</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

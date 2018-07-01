@@ -1,0 +1,131 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1939 - Ominobox</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1939 - Ominobox" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1939</span>
+				<h1>Ominobox</h1>
+				<div>
+					<p>Por Davi Duarte Pinheiro, Universidade Federal de Pernambuco <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 10</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O planeta de Skyrk nunca vai conhecer a paz enquanto o malvado Mago estiver livre. Dessa vez, o malicioso plano do Mago foi armar uma bomba no meio da maior cidade do planeta. Mago aprecia observar o caos, então, ao invés de explodir a bomba imediatamente, ele colocou um temporizador na bomba e a deixou junto com um desafio. A bomba tem um teclado, e a solução do desafio desarma a bomba.</p>
+
+					<p>O desafio se chama Omnibox; ele consiste de uma caixa retangular com alguns cubos unitários dentro e de uma coleção de todos os possíveis N-ominos. Skyrk deve soltar todo omino em algum lugar da caixa para ganhar pontos. A pontuação máxima é a solução do Ominobox.</p>
+
+					<p>Um N-omino é uma coleção de N quadrados unitários arranjados com lados coincidentes. Um 1-omino é um quadrado unitário, e um N-omino é um (N − 1)-omino com pelo menos um dos seus lados ligados a um quadrado unitário.</p>
+
+					<figure class="center">
+						<img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1939_a.png" alt="omni a">
+						<figcaption>Os seis possíveis 3-ominos.</figcaption>
+					</figure>
+					<figure class="center">
+						<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1939_b.png" style="width:350px; height:150px">
+						<figcaption>Some of the 19 possible 4-omnis.</figcaption>
+					</figure>
+
+					<p>A caixa tem uma superfície retangular e paredes verticais; cada um dos quadrados de um sistema Cartesiano de coordenadas em grade colocado na superfície da caixa possui uma pilha não negativa de cubos unitários. Os cubos não podem ser movidos.</p>
+
+					<p>Skyrk irá alinhar cada omino com os quadrados da grade, e soltá-lo na caixa. O omino irá cair até tocar um cubo ou o fundo. Não é permitido que Skyrk reflita ou rotacione o omino, e ele deve situar-se completamente dentro dos limites da caixa. O número de pontos obtidos após soltá-lo é a distância entre o omino e o topo da caixa. Após soltá-lo, Skyrk anota o número de pontos, remove o omino, e solta o próximo. A pontuação final é a soma de todos os pontos.</p>
+
+					<p>O tempo está passando e a contagem regressiva na bomba diz 5:00 (cinco horas!). Você consegue descobrir a pontuação máxima que Skyrk pode obter para desarmar a bomba e salvar o destino do planeta das mãos do vil Mago?</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém <strong>T</strong> (<strong>T</strong> ≤ 200) — o número de desafios, após essa linha haverá <strong>T</strong> desafios. Cada desafio começa com uma linha com quatro inteiros <strong>R</strong>, <strong>C</strong>, <strong>H</strong> e <strong>N</strong> (1 ≤ <strong>R</strong>, <strong>C</strong>, <strong>H</strong> ≤ 30; 1 ≤ <strong>N</strong> ≤ 10) — as dimensões da superfície da caixa são <strong>R</strong> × <strong>C</strong>, a altura é <strong>H</strong>, e a ordem dos ominos é <strong>N</strong>. Cada uma das próximas <strong>R</strong> linhas contém <strong>C</strong> inteiros <strong>H<sub>ij</sub></strong> (0 ≤ <strong>H<sub>ij</sub></strong> ≤ <strong>H</strong>) — o número de cubos no quadrado (i, j) da grade.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada desafio, imprima uma linha contendo <strong>X</strong>, onde <strong>X</strong> é a solução do Ominobox.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+<p>2 2 3 1</p>
+
+<p>1 2</p>
+
+<p>0 3</p>
+
+<p>2 2 3 2</p>
+
+<p>1 2</p>
+
+<p>0 3</p>
+
+<p>2 2 3 3</p>
+
+<p>1 2</p>
+
+<p>0 3</p>
+
+<p>2 3 5 4</p>
+
+<p>1 2 5</p>
+
+<p>0 3 4</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+<p>3</p>
+
+<p>1</p>
+
+<p>5</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					XX Maratona de Programação da SBC 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

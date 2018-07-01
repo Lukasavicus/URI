@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1631 - O Fantástico Bolo de Bobby</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1631 - O Fantástico Bolo de Bobby" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1631</span>
+                <h1>O Fantástico Bolo de Bobby</h1>
+                <div>
+                    <p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Bobby está muito feliz, afinal, ganhou de aniversário um bolo circular fantástico, de 1 metro de diâmetro, decorado com muitas cerejas. Para facilitar a distribuição dos pedaços entre seus entes queridos, Bobby deseja inicialmente cortar o bolo em dois seguindo uma linha reta. Embora a reta do corte não precise passar pelo centro do bolo, ela precisa passar por ao menos duas cerejas. Além disso, sendo <strong>Σ<sub>ESQ</sub></strong> a soma, para todas as cerejas à esquerda da reta, da distância de cada cereja à reta, e sendo <strong>Σ<sub>DIR</sub></strong> a soma, para todas as cerejas à direita da reta, da distância de cada cereja à reta, Bobby deseja que a diferença entre <strong>Σ<sub>ESQ</sub></strong> e&nbsp;<strong>Σ<sub>DIR</sub></strong> seja a menor possível, como na Figura, em que as cerejas são representadas por pontos. Não obstante, pode-se considerar que cerejas partidas pelo corte não estão nem à esquerda nem à direita da reta, e que o diâmetro das cerejas é desprezível.</p>
+
+                    <p class="center"><img alt="" src="http://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1631.png" style="height:354px; width:351px" /></p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Vários casos de teste compõem a entrada. A primeira linha de cada caso de teste contém um único inteiro positivo <strong>N</strong> (4 ≤ <strong>N</strong> ≤ 100), o qual representa o número de cerejas no bolo. Seguem, então, <strong>N</strong> linhas, cada uma composta por dois inteiros <strong>X</strong> e <strong>Y</strong> (-50 ≤ <strong>X</strong>, <strong>Y</strong> ≤ 50, <strong>X</strong><sup>2</sup> + <strong>Y</strong><sup>2</sup> ≤ 50<sup>2</sup>), os quais representam as coordenadas, em centímetros, das cerejas do bolo, considerando que o centro do bolo está posicionado na origem do plano cartesiano. A entrada é encerrada com <strong>N</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, seu programa deverá imprimir uma linha contendo um valor com 3 casas decimais que representa a menor diferença possível entre <strong>Σ<sub>ESQ</sub></strong> e&nbsp;<strong>Σ<sub>DIR</sub></strong>.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4<br />
+10 10<br />
+-10 20<br />
+-20 -30<br />
+30 -40<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>24.000</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    II Maratona FACE 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,88 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1908 - UFFS Multicampi</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1908 - UFFS Multicampi" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1908</span>
+				<h1>UFFS Multicampi</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>É o ano de 2.265, e a UFFS (Universidade da Fronteira Final da Sapiência) já conta com 112.345 <em>campi</em> espalhados pela galáxia. Para integrar todos os <em>campi</em>, a UFFS criou várias linhas de transporte coletivo em velocidade de dobra. O itinerário de cada linha <strong>L</strong> é uma sequência de |<strong>L</strong>| ≥ 2 <em>campi</em> <strong>C</strong><sub>1</sub>, <strong>C</strong><sub>2</sub>, …, <strong>C</strong><sub>|<strong>L</strong>|</sub>, e cada linha conta com uma única nave, a qual passa por todos os <em>campi</em> da linha, seguindo a ordem do itinerário, parando em cada um deles e dando meia-volta sempre que atinge um extremo do itinerário, revertendo a ordem dos <em>campi</em> no itinerário. O passe do transporte custa Ƀ1 (1 <em>bitcoin</em>, a unidade monetária que se tornou a moeda oficial da galáxia graças aos trabalhos do Prof. Emílio Wuergues no início do séc. XXI), e deve ser pago pelo passageiro ao embarcar na nave, independente do tempo que passará nela. Deste modo, o menor custo para ir do <em>campus</em> <strong>A</strong> ao <em>campus</em> <strong>B</strong> considerando as linhas hipotéticas da figura abaixo é de Ƀ2.</p>
+
+					<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1908_pt.jpg" style=""></p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada consiste de dois inteiros <strong>N</strong> e <strong>K</strong> (2 ≤ <strong>N</strong> ≤ 10<sup>4</sup>, 1 ≤ <strong>K</strong> ≤ 10<sup>3</sup>), os quais representam respectivamente o número de <em>campi</em> e o número de linhas de transporte coletivo criadas pela UFFS. Cada uma das <strong>K</strong> linhas de entrada seguintes descreve uma linha de transporte <strong>L</strong> e consiste do inteiro |<strong>L</strong>| (2 ≤ |<strong>L</strong>| ≤ 10<sup>2</sup>) seguido pelos |<strong>L</strong>| identificadores <strong>C</strong><sub><strong>i</strong></sub> (1 ≤ <strong>C</strong><sub><strong>i</strong></sub> ≤ <strong>N</strong>, 1 ≤ <strong>i</strong> ≤ |<strong>L</strong>|) dos <em>campi</em> pelos quais a nave passa, sendo <strong>C</strong><sub>1</sub> e <strong>C</strong><sub>|<strong>L</strong>|</sub> os extremos de <strong>L</strong>. Para todo <em>campus</em> <strong>A</strong> e todo <em>campus</em> <strong>B</strong> é garantido que é possível ir de <strong>A</strong> a <strong>B</strong> usando o sistema de transporte coletivo da UFFS.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima o menor custo para ir do <em>campus</em> 1 ao <em>campus</em> <strong>N</strong>.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>9 4<br />
+								6 2 3 4 6 7 9<br />
+								4 1 3 4 5<br />
+								3 8 3 4<br />
+								2 9 8</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					1ª Minimaratona Matutina de Grafos da UFFS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

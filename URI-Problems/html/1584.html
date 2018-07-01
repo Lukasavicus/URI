@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1584 - Espertofone</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1584 - Espertofone" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1584 </span>
+                <h1>Espertofone</h1>
+                <div>
+                    <p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A UFFS (União Federal dos Fabricantes de Selulares<sup>[sic]</sup>), uma empresa 100% brasileira, do grupo MEC (Mercado da Espanção<sup>[sic]</sup> Comercial), acaba de lançar o Espertofone, para competir com os smartphones importados. Os Espertofones rodam um sistema operacional próprio, batizado de Androido. Quando um usuário liga um Espertofone com Androido, aparece uma tela de desbloqueio com um grid de N × N botões. O usuário deve, então, sem desencostar seu dedo da tela, deslizá-lo pelos botões de modo a desenhar seu padrão de desbloqueio gravado anteriormente e, dessarte, liberar o aparelho para uso. O sistema sempre mantém na tela um segmento de reta com um extremo no último botão tomado e outro sob o dedo do usuário, e considera que o usuário toma um botão B se e somente esse segmento intercepta o centro de B. Diferentemente do que ocorre com o sistema da concorrência, no Androido o usuário pode repetir botões, desde que isso seja possível. A Figura ilustra um padrão de desbloqueio com K</strong> = 8 segmentos num grid 4 × 4, enumerando os segmentos. Perceba que, num grid 4 × 4, não é possível que o botão (3, 3) suceda o botão (1, 1) num padrão de desbloqueio, pois obrigatoriamente o segmento passaria pelo centro do botão (2, 2). Obviamente, nunca é possível também que um botão suceda a si próprio. Neste problema, considere que o dedo do usuário é tão fino quanto necessário para conectar botões que podem teoricamente suceder um ao outro.</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1584.jpg" style="height:400px; width:400px" /></p>
+
+
+<p>A UFFS quer agora provar que seu sistema é melhor que o da concorrência, calculando o número de padrões de desbloqueio possíveis com <strong>K </strong>segmentos.</p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por vários casos de teste, cada um numa linha e por sua vez constituído apenas de dois números inteiros: <strong>N</strong> e <strong>K</strong> (2 ≤ <strong>N</strong> ≤ 5, 0 ≤ <strong>K</strong> ≤ 10<sup>15</sup>).</p>
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima para cada caso de teste o número de padrões de desbloqueio possíveis com exatos <strong>K</strong> segmentos considerando-se um <em>grid</em> <strong>N</strong> × <strong>N</strong>. Como esse número pode ser muito grande, imprima o resto que ele deixa por 10<sup>9</sup> + 7.</p>
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 0<br />
+2 1<br />
+2 2<br />
+2 3</p>
+                            </td>
+                            <td>
+                                <p>4<br />
+12<br />
+36<br />
+108</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+               </table>
+                
+                <p class="footer">
+                    Aquecimento para a OBI 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2050 - Bar do Ramsey</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2050 - Bar do Ramsey" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2050</span>
+                <h1>Bar do Ramsey</h1>
+                <div>
+                    <p>Por IX Maratona de Programação IME-USP, 2005 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Bill “Snake” Ramsey foi um dos mais famosos donos de saloon em San Antonio. Seu saloon era conhecido até a costa oeste, e suas mesas de pôquer sempre lotadas eram sinônimo de jogos eletrizantes, muito dinheiro e, muitas vezes, muitas disputas sangrentas.</p>
+
+                    <p>Ramsey tinha uma teoria (e seu revólver .38 intimidava os que dele discordavam ao contestá-lo) de que em uma mesa de pôquer com 6 participantes havia sempre ou 3 que eram amigos entre si, ou 3 que eram inimigos entre si (naquela época em San Antonio se você não era amigo de alguém automaticamente se tornava seu inimigo).</p>
+
+                    <p>Hoje sabemos que Ramsey tinha de fato razão. Sua tarefa neste problema é checar a afirmação de Ramsey para vários exemplos.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>São dadas várias mesas de pôquer (cada mesa tem sempre 6 jogadores). Para cada mesa é dado o número −1 ≤ <strong>m</strong> ≤ 15 de pares de amigos seguido, na linha seguinte, dos nomes dos participantes daquele jogo (cada nome é uma string de no mínimo 1 e no máximo 15 caracteres e você pode supor que os nomes dos jogadores são dois a dois distintos). O valor −1 indica o fim dos dados. Em seguida, vêm <strong>m</strong> linhas, cada uma com os nomes de dois amigos naquela mesa. Considere que um jogador não é amigo de si mesmo.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identificador Instancia <strong>h</strong> em que <strong>h</strong> é um número inteiro, seqüencial e crescente a partir de 1. Nas próximas linhas, você deve imprimir os nomes de três jogadores daquela mesa seguida de sao amigos ou sao inimigos conforme o caso. Devem haver tantas linhas quantos forem os casos determinados. Estas linhas devem estar listadas em ordem lexicográfica. O mesmo vale para os três nomes em uma mesma linha. Uma linha em branco deve separar a saída de cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>6<br />
+jack john bill jesse james pil<br />
+jack john<br />
+jack bill<br />
+jack jesse<br />
+bill james<br />
+jesse james<br />
+james pil<br />
+-1</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+bill jesse john sao inimigos<br />
+bill jesse pil sao inimigos<br />
+bill john pil sao inimigos<br />
+jesse john pil sao inimigos</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    IX Maratona de Programação IME-USP, 2005
+                </p>
+            </div>
+
+        </body>
+    </html>

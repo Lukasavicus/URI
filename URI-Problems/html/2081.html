@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2081 - Sonhos, Acredite Neles!</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2081 - Sonhos, Acredite Neles!" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2081</span>
+                <h1>Sonhos, Acredite Neles!</h1>
+                <div>
+                    <p>By XII Maratona de Programação IME-USP, 2008 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Um dos mais importantes ativistas políticos do mundo foi o Dr. Martin Luther King Jr, cujo discurso mais conhecido foi “I have a dream”. Em 1964, ele recebeu o Nobel da Paz por seu empenho na luta pelo fim do preconceito racial nos Estados Unidos, e pela sua liderança nos movimentos não violentos. Pouco tempo depois de ter recebido o prêmio, Luther King foi assassinado momentos antes de uma marcha no Memphis.</p>
+
+                    <p>Além do empenho na luta política, Luther King gostava de jogar quebra-cabeça. Um dos jogos que ele adorava jogar é o seguinte: são dados dois mapas N-por-M, cada um com um robô. Cada mapa contém um ponto inicial e um final. Algumas “casas” do mapa são cercadas por paredes. Uma casa do mapa pode ser ou não um buraco. Um comando dado (Cima, Baixo, Esquerda, Direita) é executado ao mesmo tempo para ambos os mapas. Os robôs não atravessam as paredes e nem flutuam sobre os buracos. O objetivo é chegar com os dois robôs no ponto final ao mesmo tempo, em até 50 movimentos, se isso for possível.</p>
+
+                    <p>Neste problema, sua tarefa é dados dois mapas N-por-M, determinar o número mínimo de movimentos que resolve o problema.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+                    <p>A primeira linha da instância possui dois inteiros <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong>, <strong>M</strong> ≤ 50), indicando o número de linhas dos mapas e o número de colunas dos mapas, respectivamente. Nas linhas seguintes são dados os dois mapas. Para cada mapa teremos <strong>N</strong> linhas com <strong>M</strong> caracteres. O caractere “.” indica uma posição livre; “#” indica uma posição cercada por paredes; “B” indica um buraco; “R” indica a posição inicial do robô e “F” indica a posição final do robô.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância imprima uma linha contendo o número mínimo de movimentos que resolve o problema, ou "impossivel" se não for possível resolver o problema com no máximo 50 movimentos.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+4 4<br />
+....<br />
+....<br />
+...F<br />
+..#R<br />
+....<br />
+....<br />
+.FBB<br />
+#..R<br />
+4 4<br />
+.BFB<br />
+...#<br />
+.#BB<br />
+...R<br />
+####<br />
+.BBF<br />
+....<br />
+#R..</p>
+
+                            </td>
+                            <td>
+                                <p>3<br />
+12</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XII Maratona de Programação IME-USP, 2008
+                </p>
+            </div>
+
+        </body>
+    </html>

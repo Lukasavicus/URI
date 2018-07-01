@@ -1,0 +1,98 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2019 - Cici, Cini e Cino</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema B - Cici, Cini e Cino" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2019</span>
+				<h1>Cici, Cini e Cino</h1>
+				<div>
+					<p>Por Thalyson Gomes, UECE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Cici, Cini e Cino viajaram para o Polo Norte, e querem conhecer os principais pontos turísticos de lá. Para ajuda-los, o Papai Noel decidiu emprestar três renas para eles. As renas do Papai Noel tem capacidade de se teletransportarem, fazendo que as viagens entre os pontos turísticos sejam instantâneas.</p>
+
+<p>Papei Noel informou que existem <em>N</em> pontos turísticos, e que suas renas podem realizar dois tipos de passeios:</p>
+
+<p>Passeio tipo 1: Dada uma sequência de pontos turísticos que deseja visitar, a rena realiza um passeio parando durante um hora em cada ponto da sequência. Por exemplo: Dada a sequência <1, 2, 1>, a rena vai ficar durante uma hora no ponto 1, depois uma hora no ponto 2 e mais uma hora no ponto 1.</p>
+
+<p>Passeio tipo 2: Dada uma sequência de pontos turísticos que deseja visitar, a rena realiza um passeio do tipo 1 utilizando uma subsequência não vazia da sequência escolhida.  Por exemplo, se a sequência escolhida for <1, 2, 1>, a rena pode fazer qualquer um dos 6 passeios distintos, escolhido aleatoriamente por ela:  <1>, <2>, <1, 1>, <1, 2>, <2, 1>, <1,2,1>.</p>
+
+<p>Cici e Cini gostaram do fator surpresa do passeio de tipo 2, porém, Cino optou pelo do tipo 1. Como Cici, Cini e Cino possuem preferências diferentes, cada um pode escolher uma sequência diferente de lugares. Sabendo as sequências escolhidas por Cici e Cini, Cino vai escolher a menor sequência em que seja garantido que em pelo menos um local não seja visitado pelos três amigos ao mesmo tempo.</p>
+
+<p>Por exemplo: O Papei Noel informou que o Polo Norte possui 3 pontos turísticos distintos. Cici escolhe a sequência <1, 2>. Cini escolhe <2, 3>. Logo, Cino pode escolher as sequências <1> e <3>, mas não pode escolher a sequência <2>, pois existe a chance de os três visitarem o ponto <2> ao mesmo tempo. </p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é constituída de múltiplos casos de teste. Cada caso de teste é constituído por 3 linhas. A primeira linha de cada caso de teste contém 3 inteiros, <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 50), X e Y (1 ≤ <strong>X</strong>, <strong>Y</strong> ≤ 10<sup>3</sup>), representando respectivamente a quantidade de pontos turísticos, o tamanho da sequência escolhida por Cici e o tamanho da sequência escolhida por Cini. A segunda linha contém <strong>X </strong>inteiros, representando a sequência escolhida por Cici. A terceira linha contém<strong> Y</strong> inteiros, representando a sequência escolhida por Cini. A entrada termina com final de arquivo (EOF).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima uma linha contendo o tamanho da menor sequência e o número de sequências que Cino pode escolher, separados por um único espaço. É garantido que um inteiro de 64 bits com sinal seja suficiente para armazenar a resposta.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2 2<br />
+1 2<br />
+2 3<br />
+3 3 3<br />
+1 2 3<br />
+2 3 2</p>
+
+							</td>
+							<td>
+								<p>1 2<br />
+1 1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Contest de Natal 2015.
+				</p>
+			</div>
+
+		</body>
+	</html>

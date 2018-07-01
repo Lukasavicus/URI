@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1716 - RSA</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1646 - RSA" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1716</span>
+                <h1>RSA</h1>
+                <div>
+                    <p>Por Vinícius "Cabessa" Fernandes dos Santos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>O algoritmo RSA é um dos algoritmos de criptografia mais utilizados e é considerado uma das alternativas mais seguras existentes. Seu funcionamento básico é descrito a seguir.</p>
+
+                    <p>Dois números primos ímpares P e Q são escolhidos e calcula-se N = PQ. A seguir é calculada a função totiente φ(N) = (P − 1)(Q − 1) e um inteiro e satisfazendo 1 &lt; E &lt; φ(N) é escolhido de forma que mdc(φ(N), e) = 1. Finalmente é calculado o inteiro D, o inverso multiplicativo de e módulo φ(N), ou seja, o inteiro D satisfazendo DE = 1 (mod φ(N)).</p>
+
+                    <p>Assim obtemos a chave pública, formada pelo par de inteiros N e E, e a chave secreta, formada<br />
+                    pelos inteiros N e D.</p>
+
+                    <p>Para criptografar uma mensagem M, com 0 &lt; M &lt; N, calcula-se C = M<sup>e</sup> (mod N), e C é a mensagem criptografada. Para descriptografá-la, ou seja, para recuperar a mensagem original, basta calcular M = C<sup>d</sup> (mod n). Note que, para isso, a chave secreta deve ser conhecida, não sendo suficiente o conhecimento da chave pública. Note ainda que a expressão x = 1 (mod y) usada acima equivale a dizer que y é o menor natural tal que o resto da divisão de x por y é 1.</p><p>
+                    Neste problema você deve escrever um programa para quebrar a criptografia RSA.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A única linha da entrada contém três inteiros <strong>N,</strong> <strong>E</strong>, e <strong>C</strong>, onde 15 ≤ <strong>N</strong> ≤ 10<sup>9</sup> , 1 ≤ <strong>E</strong> &lt; <strong>N</strong> e 1 ≤ <strong>C</strong> &lt; <strong>N</strong>, de forma que <strong>N</strong> e <strong>E </strong>constituem a chave pública do algoritmo RSA descrita acima e <strong>C</strong> é uma mensagem criptografada com essa chave pública.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Seu programa deve produzir uma única linha, contendo um único inteiro <strong>M</strong>, 1 ≤ <strong>M</strong> &lt; <strong>N</strong> , a mensagem original.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1073 71 436</p>
+
+                            </td>
+                            <td>
+                                <p>726</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Maratona de Programacao da SBC 2014.
+                </p>
+            </div>
+
+        </body>
+    </html>

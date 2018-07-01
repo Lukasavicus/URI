@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1578 - Matriz de Quadrados</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1578 -  Matriz de Quadrados" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+            <style>
+                #matriz{
+                    margin: 15px auto;
+                    width: 100px;
+                }
+                #matriz td{
+                    border: #bbb solid 1px;
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+            
+
+            <div class="header">
+                <span>URI Online Judge | 1578 </span>
+                <h1>Matriz de Quadrados</h1>
+                <div>
+                    <p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Atrapalhilton é um estudante muito dedicado, embora muito, muito atrapalhado. Na semana passada, seu professor de Matemática, o Sr. Sabetudilton, recomendou à classe uma lista de exercícios sobre matrizes. Atrapalhilton, aplicado como é, dediciu fazer os exercícios no mesmo dia, tão logo chegou em casa, embora apenas após assistir o episódio vespertino de <em>A Galinha Listradinha</em>, seu programa de TV favorito. O enunciado de um dos exercícios dizia:</p>
+
+                    <ul>
+	                   <li><em>Calcule o quadrado de cada uma das matrizes abaixo…</em></li>
+                    </ul>
+
+                    <p>No entanto, Atrapalhilton fez uma baita duma confusão. Para ele, o quadrado de uma matriz quadrada <em>A</em> é a matriz dos quadrados dos valores da matriz <em>A</em>. Por exemplo, o quadrado da matriz</p>
+
+                    <table id="matriz">
+                      <tr>
+                        <td>1</td>
+                        <td>3</td>
+                      </tr>
+                      <tr>
+                        <td>5</td>
+                        <td>7</td>
+                      </tr>
+                    </table>
+
+
+                    <p class="left">para ele não é</p>
+
+                    <table id ="matriz">
+                      <tr>
+                        <td>16</td>
+                        <td>24</td>
+                      </tr>
+                      <tr>
+                        <td>40</td>
+                        <td>64</td>
+                      </tr>
+                    </table>
+
+
+                    <p class="left">mas</p>
+
+                    <table id ="matriz">
+                      <tr>
+                        <td>1</td>
+                        <td>9</td>
+                      </tr>
+                      <tr>
+                        <td>25</td>
+                        <td>49</td>
+                      </tr>
+                    </table>
+
+                    <p>Atrapalhilton conseguiu calcular o “quadrado” da primeira matriz, da segunda, da terceira e percebeu que já estava muito tarde, que não ia conseguir terminar de calcular os “quadrados” de todas as <em>N</em> matrizes da lista. Então, decidiu escrever um programa que fizesse o serviço para ele.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada é constituída por um único inteiro positivo <strong>N</strong> (<strong>N</strong> ≤ 100), o qual designa o número de matrizes cujos “quadrados” ainda não foram calculados. Em seguida ocorre a descrição de cada uma das <strong>N</strong> matrizes. A primeira linha da descrição de uma matriz consiste de um único inteiro <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 20), o qual representa o número de linhas e o número de colunas da matriz. Seguem, então, <strong>M</strong> linhas, cada uma com <strong>M</strong> inteiros <strong>a<sub>ij</sub></strong> (0 ≤ <strong>a<sub>ij</sub></strong> ≤ 2<sup>32</sup>-1, 1 ≤ i,j ≤ <strong>M</strong>), os quais correspondem às células da matriz, de modo que valores consecutivos numa mesma linha são separados por um espaço em branco.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima o “quadrado” de cada matriz da entrada, conforme o que Atrapalhilton entende pelo “quadrado” de uma matriz. Antes de imprimir cada “quadrado”, imprima a linha “Quadrado da matriz #<strong>x</strong></span>:” (sem as aspas), para ajudar Atrapalhilton a não se perder na hora de passar a limpo os resultados para o caderno. Comece a contagem em <strong>x</strong> = 4, afinal, Atrapalhilton já calculou os “quadrados” das 3 primeiras matrizes. Adicione tantos espaços em branco à esquerda de cada valor quanto necessários para que os valores de uma mesma coluna fiquem todos alinhados à direita, de modo que haja ao menos um valor em cada coluna não precedido por espaços em branco além do espaço em branco obrigatório que separa colunas consecutivas. Imprima também uma linha em branco entre “quadrados” de matrizes consecutivas.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1<br />
+2<br />
+7 12<br />
+1024 1</p>
+
+                            </td>
+                            <td>
+                                <p>Quadrado da matriz #4:<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;49 144<br />
+1048576 &nbsp;&nbsp;1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+               </table>
+                
+                <p class="footer">
+                    Aquecimento para a OBI 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

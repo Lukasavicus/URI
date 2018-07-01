@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1343 - Runner Pawns</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1343 - Runner Pawns" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1343</span>
+            <h1>Runner Pawns</h1>
+            <div><p>Por Sergio Gabriel Tavares <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    O jogo "Runner Pawns" é uma variante do clássico Xadrez que é jogado por apenas uma pessoa. O tabuleiro usado nesse jogo é semelhante ao tabuleiro do Xadrez, dividido em 8x8 quadrados. Como no Xadrez, cada quadrado pode conter apenas uma peça por vez. As peças do jogo são uma série de peões (os "Runner Pawns"), e um único cavalo, que é a única peça que o jogador comanda. O objetivo é capturar todos os peões antes de chegarem a ultima linha e se tornarem reis.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Runner%20Pawns.png" style="width: 141px; height: 141px;" /></p>
+
+                <p class="center">
+                    Possíveis movimentos do cavalo</p>
+
+                <p>
+                    Os movimentos do cavalo são ditos em forma de 'L', uma vez que o cavalo sempre anda dois quadrados em uma direção e mais um quadrado perpendicular a essa direção. A figura acima ilustra os movimentos do cavalo, onde o caractere 'H' indica a posição atual do cavalo e o caractere '•' indica um possível movimento do cavalo. Nota-se que a representação usando quadrados pretos e brancos do tabuleiro de Xadrez não é distinguida.</p>
+
+                <p>
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;01 02 03 04 05 06 07 08<br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;09 10 11 12 13 14 15 16<br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;17 18 19 20 21 22 23 24<br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;25 26 27 28 29 30 31 32 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;Da posição 22, o cavalo pode se mover para as posições 05,<br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;33 34 35 36 37 38 39 40 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;07, 12, 16, 28, 32, 37 ou 39. Da posição 57, o cavalo pode se<br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;41 42 43 44 45 46 47 48 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;mover para as posições 42 ou 51.<br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;49 50 51 52 53 54 55 56<br />
+                    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;57 58 59 60 61 62 63 64</p>
+
+                <p>
+                    O tabuleiro com as células numeradas</p>
+
+                <p>
+                    Os movimentos dos peões são um pouco diferentes do Xadrez, uma vez que o peão só pode se mover um quadrado para frente e todos os outros peões se movem ao mesmo tempo. Eles nunca se movem em diagonal. As casas do tabuleiro são numeradas de 1 a 64, como mostrado acima. Os peões se movem na direção vertical de cima para baixo, de modo que os quadrados numerados 57-64 são os objetivos dos peões.</p>
+
+                <p>
+                    Cada rodada do jogo é composta por um movimento do cavalo seguido por um movimento simultâneo de todos os peões ainda não capturados.</p>
+
+                <p>
+                    A fim de capturar um peão, o jogador deve mover o cavalo para o quadrado onde está o peão. O peão capturado deixa o tabuleiro e somente os peões restantes avançam para a próxima rodada. Para vencer o jogo, o jogador deve capturar todos os peões. Se um peão conseguir chegar a última linha, torna-se um rei. Com isso o cavalo tem apenas mais um movimento para captura-lo. Se isso não acontecer, o rei se move e isso significa que o jogo acaba e o jogador perde. Além disso, se o cavalo se mover para um quadrado que vai ser ocupado por um peão, no próximo movimento dos peões o cavalo é capturado pelo peão e o jogador perde.</p>
+
+                <p>
+                    Sua tarefa é escrever um programa que analise um tabuleiro de "Runner Pawns" e responda se existe uma sequencia de movimentos para o cavalo vencer. Se for possível, o programa deve determinar o número mínimo de movimentos necessários para o cavalo capturar todos os peões.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém várias instâncias do problema, uma por linha. Cada exemplo começa com um inteiro <strong>P</strong> que representa o número de peões (0 ≤ <strong>P</strong> ≤ 8), seguido por <strong>P</strong> inteiros (1 ≤ <strong>A1</strong>, <strong>A2</strong>, ..., <strong>Ap</strong> ≤ 64) que descrevem a posição inicial de cada peão seguido de um inteiro <strong>H</strong> (1 ≤ <strong>H</strong> ≤ 64) que representa a posição inicial do cavalo. O fim da entrada é indicado quando <strong>P</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada instancia do problema da entrada, seu programa deve imprimir uma única linha, contendo a resposta para o problema. Se houver uma sequencia de movimentos para o cavalo que capture todos os peões (e sem que o cavalo seja capturado por um peão), o programa deve imprimir o comprimento da menor sequencia de movimentos possível. Caso contrário, seu programa deve imprimir a palavra 'impossivel'.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                1 1 11<br />
+                                1 60 1<br />
+                                2 33 60 54<br />
+                                0</p>
+                        </td>
+                        <td>
+                            <p>
+                                1<br />
+                                impossible<br />
+                                3</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2003.</p>
+        </div>
+
+    </body>
+</html>

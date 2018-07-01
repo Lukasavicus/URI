@@ -1,0 +1,131 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1874 - Empurrando Blocos</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1846 - Empurrando Blocos" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1874</span>
+				<h1>Empurrando Blocos</h1>
+				<div>
+					<p>Por Ricardo Martins, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A Empresa Blocos Regulares Inventando Serventia de Algo, mais conhecida como BRISA, construi blocos, sempre do mesmo tamanho. Um detalhe que chama a atenção está na forma em que os blocos são armazenados em estoque, depois de fabricados. Os mesmos são formados por uma fileira de pilhas. A retirada de uma caixa do estoque é um tanto quando desordenado, pois se escolhe uma pilha aleatoriamente e retira-se algum bloco do topo dela. Porém, a forma de armazenamento é um tanto quanto interessante: uma esteira, localizada na reta do topo da pilha mais à direita do estoque, é utilizada. Com isto, forma-se uma fila com os novos blocos. A esteira roda da direita para a esquerda. Assim que houver um espaço vago em uma das pilhas seguintes, o bloco será inserido na mesma, caso não haja, ele vai avançando até as pilhas seguintes. Segue abaixo um exemplo de inserção de blocos.</p>
+
+				<p class="center">
+					<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1874.png" style="width: 605px; height: 179px;"></p>				
+				
+
+
+
+					</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Haverá diversos casos de teste. Cada caso de teste terá 3 números inteiros, H, P e F, indicando a altura da pilha mais a direita , a quantidade de pilhas de blocos e o tamanho da fila de blocos a ser inserida. Após isto, serão lidos H linhas com P valores, com valores 1, representando onde tem bloco, e 0, representando onde não tem bloco. A seguir, será lida uma linha com F valores, representando a fila com os blocos novos. O último caso de teste é representado por três zeros, e não deverá ser processado.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima as pilhas após a inserção dos novos blocos. Em alguns casos, a fila de novos blocos será mais que suficiente para que todas as pilhas fiquem do mesmo tamanho. Neste caso, desconsidere os blocos que sobrarem na fila.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 5 4</p>
+
+<p>1 0 0 0 1</p>
+
+<p>1 0 1 0 1</p>
+
+<p>1 1 1 1 1</p>
+
+<p>1 1 1 1 1</p>
+
+<p>2 3 4 5</p>
+
+<p>5 3 6</p>
+
+<p>1 0 1</p>
+
+<p>1 0 1</p>
+
+<p>1 0 1</p>
+
+<p>1 0 1</p>
+
+<p>1 0 1</p>
+
+<p>4 5 6 7 8 9</p>
+
+<p>0 0 0</p>
+
+							</td>
+							<td>
+								<p>1 0 4 3 1</p>
+
+<p>1 5 1 2 1</p>
+
+<p>1 1 1 1 1</p>
+
+<p>1 1 1 1 1</p>
+
+<p>1 8 1</p>
+
+<p>1 7 1</p>
+
+<p>1 6 1</p>
+
+<p>1 5 1</p>
+
+<p>1 4 1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					V Olimpíada Interna de Programação do IFSULDEMINAS - OLIP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

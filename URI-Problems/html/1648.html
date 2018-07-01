@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1648 - Ajude Bob</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1648 - Ajude Bob" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1648</span>
+                <h1>Ajude Bob</h1>
+               <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Bob ama Pizzas, mas sempre está sem dinheiro. Certo dia ele lê nos jornais que sua pizzaria favorita, Alfredo's Pizza Restaurant, está realizando uma competição: para a primeira pessoa que lhes disser o menor preço por área, que se pode conseguir ao comprar qualquer uma das pizzas no máximo uma vez, receberá a doação de uma pizza grande.  "Essa tarefa é fácil!", pensou Bob, "Para cada pizza somente presciso calcular a razão de cada preço e o menor quociente será a resposta.".</p>
+
+                    <p>Infelizmente, o problema é um pouco mais complicado:  Alberto desponibiliza cupons de desconto com a venda de algumas pizzas, para obter outra pizza mais barato, e pior, esses cupons podem ser combinados. As pizzas precisão ser compradas uma após a outra, e não é possivel usar um cupom para ter um desconto retrospectivamente para uma pizza a qual já foi comprada. Você pode ajudar Bob a ser o primeiro a resolver esta tarefa, e ganhar a pizza de graça?</p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+
+                    <p>O arquivo de entrada contém diversos casos testes. Cada caso de teste começa com um número <strong>m</strong>, o número de pizzas Alfredo oferece. A entrada é terminada pelo <strong>m</strong> = 0.Caso contrário, 1 ≤ <strong>m</strong> ≤ 15. Logo, segue<strong> m</strong> linhas descrevendo as pizzas. Cada uma destas seguintes linhas descreve pizza <strong>i</strong> (1 ≤<strong> i </strong>≤ <strong>m</strong>) e começa com os três números inteiros<strong> p<sub>i</sub></strong>, <strong>a<sub>i</sub></strong> e <strong>n<sub>i</sub></strong> especificando respectivamente o preço da pizza, sua área e número de cupons de desconto conseguidos ao compra-la, 1 ≤ <strong> p<sub>i</sub> </strong>≤ 10000, 1 ≤ <strong>a<sub>i</sub></strong> ≤ 10000 e 0 ≤ <strong>n<sub>i</sub> </strong>&lt; <strong>m</strong>. Haverá em seguida<strong> n<sub>i</sub> </strong>pares de números inteiros <strong>x<sub>ij</sub></strong> e <strong>y<sub>ij</sub></strong>, que especificam o índice<strong> x<sub>ij</sub> </strong>(1 ≤<strong> x<sub>ij</sub> </strong>≤ <strong>m</strong>, <strong>x<sub>ij</sub></strong> ≠<strong> i</strong>) da pizza que se obtém cupom de desconto e<strong> y<sub>ij</sub> </strong>(1 ≤ <strong>y<sub>ij</sub> </strong>≤ 50) o desconto em termos de porcentagem obtidos ao comprar a pizza<strong> x<sub>ij</sub></strong>. Você pode assumir que para cada<strong> i</strong> o valor de<strong> x<sub>ij</sub> </strong>é um par distinto.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma linha contendo o menor preço por área que se pode conseguir comprando qualquer uma das pizzas no máximo uma vez. Faça um arredondamento desse número na quarta casa decimal, note que você pode combinar um número de cupons de descontos arbitrários: Por uma pizza de custo 10, e dois cupons de desconto de 50 e 20, para esta mesma pizza, você só teria de pagar 10 * 0.8 * 0.5 = 4 (unidades monetárias).</p>
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Sample Input</td>
+                            <td>Sample Output</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+1<br/>
+80 30 0<br/>
+2<br/>
+200 100 1 2 50<br/>
+200 100 0<br/>
+5<br/>
+100 100 2 3 50 2 50<br/>
+100 100 1 4 50<br/>
+100 100 1 2 40<br/>
+600 600 1 5 10<br/>
+1000 10 1 1 50<br/>
+0<br/>
+</p>
+
+                            </td>
+                            <td>
+                                <p>
+                                    2.6667<br/>
+1.5000<br/>
+0.5333<br/>
+                                </p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2008/2009
+                </p>
+            </div>
+
+        </body>
+    </html>

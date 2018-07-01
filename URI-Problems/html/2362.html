@@ -1,0 +1,111 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2362 - Invasão Alienígena</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema H - Invasão Alienígena" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2362</span>
+				<h1>Invasão Alienígena</h1>
+				<div>
+					<p>Por Dilson Guimarães, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 14</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Os alienígenas invadiram a terra e vão aniquilar a raça humana, a não ser que você consiga detê-los. Recentemente, o S.B.C. (Sistema Brasileiro de Combate) foi equipado com uma arma laser muito poderosa, que será usada para destruir os inimigos alienígenas. Essa arma é poderosa a ponto de poder destruir tudo dentro de qualquer região circular. Felizmente, é possível controlar milimétricamente os disparos dessa arma, de forma que é possível escolher o centro e o raio da região circular que será destruída.</p>
+
+<p>Isso mesmo, é possível realizar um disparo com raio de destruição grande o suficiente para destruir todos os alienígenas. Infelizmente, não é tão simples assim. Ao fazer isso, é possível que toda a humanidade também seja destruída. Decidiu-se, então, que nenhuma vida humana deveria ser tirada por essa arma laser. É claro que ainda queremos destruir os inimigos alienígenas, oras. Por isso, você foi contratado pela S.B.C.. Seu trabalho é determinar qual é o maior número de alienígenas que podem ser destruídos por um único disparo da arma laser, de forma que nenhum ser humano seja destruído.</p>
+
+<p><u>Observações</u></p>
+
+<p>Indivíduos na borda da região de destruição da arma laser também são destruídos. É improvável que meio ser humano consiga sobreviver. Esperamos que seja assim com alienígenas também.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste. Cada caso de teste começa com uma linha contendo dois inteiros, <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong>, <strong>M</strong> ≤ 100), descrevendo o número de alienígenas e de humanos, respectivamente. Cada uma das <strong>N</strong> linhas seguintes contém dois inteiros, <strong>X<sub>i</sub></strong> e <strong>Y<sub>i</sub></strong> (-10<sup>6</sup> ≤ <strong>X<sub>i</sub></strong>, <strong>Y<sub>i</sub></strong> ≤ 10<sup>6</sup>), representado as coordenadas de um dos alienígenas. Da mesma forma, cada uma das <strong>M</strong> linhas seguintes contém dois inteiros, <strong>X<sub>i</sub></strong> e <strong>Y<sub>i</sub></strong> (-10<sup>6</sup> ≤ <strong>X<sub>i</sub></strong>, <strong>Y<sub>i</sub></strong> ≤ 10<sup>6</sup>), representado as coodenadas de um dos seres humanos. Mesmo se tratando de alienígenas, é claro que dois indivíduos não podem ocupar o mesmo lugar. O final da entada é indicado por <strong>N=M=0</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima um inteiro indicando o maior número de alienígenas que podem ser destruídos por um único disparo, sem que nenhum ser humano seja destruído.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 1<br />
+0 0<br />
+1 0<br />
+2 0<br />
+1 1<br />
+1 -1<br />
+3 3<br />
+4 1<br />
+0 0<br />
+2 0<br />
+1 1<br />
+1 -1<br />
+1 0<br />
+5 2<br />
+0 0<br />
+2 2<br />
+3 3<br />
+4 4<br />
+6 6<br />
+1 1<br />
+5 5<br />
+0 0</p>
+
+							</td>
+							<td>
+								<p>5<br />
+2<br />
+3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Seletiva UFMG 2014
+				</p>
+			</div>
+
+		</body>
+	</html>

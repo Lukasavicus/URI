@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1723 - Árvores Filogenéticas Herdadas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1704 - Árvores Filogenéticas Herdadas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+
+            <style>
+                #table-1, #table-2{
+                    display: inline-table;
+                    margin: 20px;
+                    width: 200px;
+                }
+            </style>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1723</span>
+                <h1>Árvores Filogenéticas Herdadas</h1>
+                <div>
+                    <p>University of Ulm local Contest <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Entre outras coisas, Biologia Molecular Computacional lida com o processamento de seqüências genéticas. Considerando a relação evolutiva de duas seqüências, podemos dizer que eles estão intimamente relacionados, se eles não diferem muito. Podemos representar a relação por uma árvore, colocando seqüências de ancestrais acima de seqüências de seus descendentes. Tais árvores são chamadas árvores filogenéticas.</p>
+
+                    <p>Considerando que uma tarefa da filogenia é inferir uma árvore a partir de seqüências de dados, vamos simplificar um pouco as coisas e proporcionar uma estrutura de árvore - esta será uma árvore binária completa. Você receberá as n folhas da árvore. Claro que você sabe, n é sempre uma potência de 2. Cada folha é uma sequência de aminoácidos (designadas pelos códigos compostos de um caractere que você pode ver na figura). Todas as sequências serão de igual comprimento l. Sua tarefa é derivar a seqüência de um ancestral comum com custos mínimos.</p>
+
+                    <div class="center">
+                        <p>
+
+                            <table id="table-1">
+                                <thead>
+                                    <tr><td width="50%" colspan="3" >Aminoácido</td></tr>                           
+                                    <tr><td width="50%">Alanine </td><td>Ala</td><td >A </td> </tr>
+                                    <tr><td>Arginine</td><td>Arg</td><td >R </td></tr>
+                                    <tr><td>Asparagine</td><td>Asn</td><td >N </td></tr>
+                                    <tr><td>Aspartic Acid </td><td>Asp</td><td >D </td></tr>
+                                    <tr><td>Cysteine</td><td>Cys</td><td >C </td></tr>
+                                    <tr><td>Glutamine     </td><td>Gln</td><td >Q </td></tr>
+                                    <tr><td>Glutamic Acid </td><td>Glu</td><td >E </td></tr>
+                                    <tr><td>Glycine       </td><td>Gly</td><td >G </td></tr>
+                                    <tr><td>Histidine     </td><td>His</td><td >H </td></tr>
+                                    <tr><td>Isoleucine    </td><td>Ile</td><td >I </td></tr>
+                                 </thead>
+                            </table>
+                            <table id="table-2">
+                                <thead border="1">
+                                    <tr ><td width="50%" colspan="3" >Aminoácido</td></tr>
+                                    <tr><td width="50%" align="center">Leucine       </td><td>Leu</td><td align="center">L</td></tr>
+                                    <tr><td align="center">Lysine        </td><td>Lys</td><td align="center">K</td></tr>
+                                    <tr><td align="center">Methionine    </td><td>Met</td><td align="center">M</td></tr>
+                                    <tr><td align="center">Phenylalanine </td><td>Phe</td><td align="center">F</td></tr>
+                                    <tr><td align="center">Proline       </td><td>Pro</td><td align="center">P</td></tr>
+                                    <tr><td align="center">Serine        </td><td>Ser</td><td align="center">S</td></tr>
+                                    <tr><td align="center">Threonine     </td><td>Thr</td><td align="center">T</td></tr>
+                                    <tr><td align="center">Tryptophan    </td><td>Trp</td><td align="center">W</td></tr>
+                                    <tr><td align="center">Tyrosine      </td><td>Tyr</td><td align="center">Y</td></tr>
+                                    <tr><td align="center">Valine        </td><td>Val</td><td align="center">V</td></tr>
+                                </thead>
+                            </table>
+                        </p> 
+                    </div>   
+                    <div class="both"></div>
+
+                    <p>Os custos são determinados como se segue: cada nó interior da árvore é marcado com uma sequência de comprimento L. O custo de uma extremidade da árvore é o número de posições nas quais as duas sequências diferem nas extremidades. O total custo é a soma dos custos em todas as bordas. A seqüência de um ancestral comum de todas as sequências é então encontrado na raiz da árvore. Um antepassado comum ideal é um ancestral comum com os custos totais mínimos.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>O arquivo de entrada contém vários casos de teste. Cada caso de teste começa com dois números inteiros <strong>N</strong> e <strong>L</strong>, denota o número de sequências para as folhas e do seu comprimento, respectivamente. A entrada é terminada por <strong>N</strong> = <strong>L</strong> = 0. Caso contrário, 1 ≤ <strong>N</strong> ≤ 1024 e 1 ≤ <strong>L</strong> ≤ 1000. Em seguida, siga <strong>N</strong> palavras de comprimento <strong>L</strong> sobre o alfabeto dos aminoácidos. Eles representam as folhas de uma árvore binária completa, a partir da esquerda para a direita.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma linha contendo algum ancestral comum ideal ótimo e os custos totais mínimos.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4 3<br />
+                                AAG<br />
+                                AAA<br />
+                                GGA<br />
+                                AGA</p>
+
+                                <p><br />
+                                4 3<br />
+                                AAG<br />
+                                AGA<br />
+                                AAA<br />
+                                GGA</p>
+
+                                <p><br />
+                                4 3<br />
+                                AAG<br />
+                                GGA<br />
+                                AAA<br />
+                                AGA</p>
+
+                                <p><br />
+                                4 1<br />
+                                A<br />
+                                R<br />
+                                A<br />
+                                R</p>
+
+                                <p><br />
+                                2 1<br />
+                                W<br />
+                                W</p>
+
+                                <p><br />
+                                2 1<br />
+                                W<br />
+                                Y</p>
+
+                                <p><br />
+                                1 1<br />
+                                Q</p>
+
+                                <p><br />
+                                0 0</p>
+
+                            </td>
+                            <td>
+                                <p>AGA 3<br />
+                                AGA 4<br />
+                                AGA 4<br />
+                                R 2<br />
+                                W 0<br />
+                                Y 1<br />
+                                Q 0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>                
+                <p class="footer">
+                    University of Ulm local Contest 2000/2001
+                </p>
+            </div>
+
+        </body>
+    </html>

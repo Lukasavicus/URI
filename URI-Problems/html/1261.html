@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1261 - Pontos de Feno</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1261 - Pontos de Feno" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1261</span>
+                <h1>Pontos de Feno</h1>
+                <div><p>
+	Por Gordon V. Cormack&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/ca.gif" style="width: 16px; height: 11px; " /> Canadá</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1261.jpg" style="width: 299px; height: 177px; margin-left: 15px; float: right; " />Cada funcionário de um serviço burocrático tem uma descrição do cargo - alguns parágrafos que descrevem as responsabilidades do trabalho. A descrição do cargo combinado com outros fatores, como por exemplo tempo de serviço, é utilizado para determinar qual é o salário deste funcionário.</p>
+    <p>
+	Um sistema denominado <em>Pontos de Feno</em> (<em>Hay Points</em>) libera o departamento de Recursos Humanos de ter que fazer um julgamento inteligente do valor de cada empregado para a empresa. A descrição de um cargo ou função é feita através da verificação de palavras e frases que indicam responsabilidade. Em particular, descrições de cargo que indicam o controle sobre um grande orçamento ou gestão sobe um grande número de pessoas geram escores altos neste sistema.</p>
+    <p>
+	Você deve implementar um sistema de Ponto de Feno simplificado. Você terá como informações um dicionário <em>Hay Point</em>&nbsp;que conterá algumas palavras-chaves que são as descrições dos cargos e um valor em dólares americanos associado com cada um destes cargos. Para cada descrição de trabalho você deverá calcular o salário associado com o trabalho, de acordo com este sistema.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém vários casos de teste. A primeira linha da entrada contém dois números inteiros positivos:&nbsp;<strong>M&nbsp;</strong>(<strong>M&nbsp;</strong>≤ 1000), que é o número de palavras no dicionário <em>Hay Point</em>, e um&nbsp;número inteiro&nbsp;<strong>N&nbsp;</strong>(<strong>N</strong>&nbsp;≤ 100) que corresponde à quantidade&nbsp;de descrições de cargos ou funções.&nbsp;<strong>M&nbsp;</strong>linhas seguem, cada um contém uma palavra (uma seqüência de até 16 letras minúsculas) e um valor de dólar (um número real entre 0 e 1000000). Logo na sequência, após o dicionário, estão as descrições de cada uma dos cargos&nbsp;<strong>N</strong>.<br />
+	<br />
+	Cada descrição de cargo consiste em uma ou mais linhas de texto. Para sua conveniência, o texto contém somente letras minúsculas (de 'a' até 'z'). Cada descrição de cargo é finalizada por uma linha contendo um ponto ".".</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste de entrada, imprima o salário do funcionário que é calculado através deste sistema <em>Pontos de Feno </em>(que nada mais é do que a soma do valor de todas as palavras que aparecem na descrição do cargo). Obs.: o valor das palavras que não aparecem no dicionário é zero (0).</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                         <td class="division">
+                                <p>
+	7 2<br />
+	administer 100000<br />
+	spending 200000<br />
+	manage 50000<br />
+	responsibility 25000<br />
+	expertise 100<br />
+	skill 50<br />
+	money 75000<br />
+	the incumbent will administer the<br />
+    spending of kindergarden milk money<br />
+	and exercise responsibility for making<br />
+    change he or she will share<br />
+	responsibility for the task of managing <br />
+    the money with the assistant<br />
+	whose skill and expertise shall ensure<br /> 
+    the successful spending exercise<br />
+	.<br />
+	this individual must have the skill to <br />
+    perform a heart transplant and<br />
+	expertise in rocket science<br />
+	.</p>
+
+                            </td>
+                            <td>
+                                <p>
+	700150<br />
+	150</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+	Tradução e E/S por Neilor.</p>
+    
+            </div>
+
+        </body>
+    </html>

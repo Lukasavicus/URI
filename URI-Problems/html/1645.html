@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1645 - El Dorado</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1645 - El Dorado" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1645</span>
+                <h1>El Dorado</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Bruce Force foi a Las Vegas, o El Dorado dos apostadores. Ele está especialmente interessado em um jogo de apostas no qual uma máquina escolhe números aleatórios, formando uma sequência de <em>n</em> números. Cada jogador deve estimar previamente quantas subsequências crescentes de tamanho <em>k</em> existirão na sequência de números.</p>
+
+                    <p>Uma subsequência de uma sequência a<sub>1</sub>,...,a<sub>n</sub> é definida como a<sub>i<sub>1</sub></sub>, ..., a<sub>i<sub>l</sub></sub> sendo que 1 ≤ i<sub>1</sub> &lt; i<sub>2</sub> &lt; ... &lt; i<sub>l</sub> ≤ n. A subsequência é crescente se a<sub>i<sub>j-1</sub></sub> &lt; a<sub>i<sub>j</sub></sub> para todos 1 &lt; j ≤ l.</p>
+
+                    <p>Bruce não confia que o Cassino contará corretamente o número de subsequências crescentes de tamanho <em>k</em>. Ele perguntou se você consegue resolver esse problema para ele.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. A primeira linha de cada caso de teste contém dois números <strong>n</strong> e <strong>k</strong> (1 ≤ <strong>k</strong> ≤ <strong>n</strong> ≤ 100), sendo que <strong>n</strong> é o tamanho da sequência escolhida pela máquina e <strong>k</strong> é o tamanho desejado das sequências crescentes. A linha seguinte deve conter <strong>n</strong> inteiros distintos dois a dois <strong>a<sub>i</sub></strong> (-10000 ≤ <strong>a<sub>i</sub></strong> ≤ 10000), sendo <strong>a<sub>i</sub></strong> o i-ésimo número na sequência escolhida pela máquina.</p>
+
+                    <p>A linha seguinte ao último caso de teste deve conter dois zeros.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprimir uma linha com o número de sequências crescentes de tamanho <strong>k</strong> que a sequência de entrada contém. Você pode assumir que a maneira com que as entradas são escolhidas permite que esse número caiba em um inteiro com sinal de 64 bits (em C/C++, você pode usar o tipo de dado "long long", em java, o tipo "long").</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>10 5<br />
+								1 2 3 4 5 6 7 8 9 10<br />
+								3 2<br />
+								3 2 1<br />
+								0 0</p>
+                            <td>
+                                <p>252</p>
+
+<p>0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+               <p class="footer">
+                    Univeristy of Ulm Local Contest 2008/2009
+                </p>
+            </div>
+
+        </body>
+    </html>

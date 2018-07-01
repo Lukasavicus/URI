@@ -1,0 +1,112 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2287 - Proteja sua Senha</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2287 - Proteja sua Senha" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2287</span>
+				<h1>Proteja sua Senha</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2004 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Por questões de segurança, muitos bancos hoje em dia estão alterando a forma como seus clientes digitam as senhas nos caixas eletrônicos, pois alguém pode postar-se atrás do cliente e ver as teclas à medida em que ele as digita.</p>
+
+<p>Uma alternativa bastante utilizada tem sido associar os dez dígitos a cinco letras, de forma que cada letra esteja associada a dois dígitos, conforme o exemplo abaixo:</p>
+
+<p class = "center"><img style = "width:500px;" src = "https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_157_E.png" alt=''/></p>
+
+<p>As associações entre números e letras são mostradas como botões numa tela sensível ao toque, permitindo que o cliente selecione os botões correspondentes à senha. Considerando a disposição dos botões da figura acima, a senha 384729 seria digitada como BCEAEB (note que a mesma seqüência de letras seria digitada para outras senhas, como por exemplo 982123).</p>
+
+<p>Cada vez que o cliente usa o caixa eletrônico, as letras utilizadas são as mesmas (de ‘A’ a ‘E’), com os botões nas mesmas posições, mas os dígitos são trocados de lugar. Assim, caso um intruso veja (mesmo que mais de uma vez) a seqüência de letras digitada, não é possível notar facilmente qual a senha do cliente do banco.</p>
+
+<p>Dada uma seqüência de associações entre letras e números, e as letras digitadas pelo cliente do banco para cada uma dessas associações, você deve escrever um programa para determinar qual é a senha do cliente.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta de vários conjuntos de testes. A primeira linha de um conjunto de testes contém um inteiro <strong>N</strong>, que indica o número de associações entre letras e números e as senhas digitadas (2 ≤ <strong>N</strong> ≤ 10). As N linhas seguintes contêm as entradas da seguinte forma: 10 dígitos, em ordem de associação, para as letras de ‘A’ a ‘E’ (2 dígitos para a letra A, 2 para a B e assim sucessivamente) e 6 letras que representam a senha codificada conforme os dígitos anteriores. As <strong>N</strong> associações fornecidas em um conjunto de testes serão sempre suficientes para definir univocamente a senha do cliente. O final da entrada é indicado por <strong>N</strong> = 0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada conjunto de teste da entrada, seu programa deve produzir três linhas na saída. A primeira linha deve conter um identificador do conjunto de teste, no formato “Teste n”, onde n é numerado seqüencialmente a partir de 1. A segunda linha deve conter a senha do cliente, com um espaço após cada dígito. A terceira linha deve ser deixada em branco. A grafia mostrada no Exemplo de Saída, abaixo, deve ser seguida rigorosamente.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+<p>1 7 3 9 0 8 5 6 2 4 B C E A E B</p>
+
+<p>9 0 7 5 8 4 6 2 3 1 E C C B D A</p>
+
+<p>3</p>
+
+<p>0 1 2 3 4 5 6 7 8 9 B C D D E E</p>
+
+<p>1 3 5 4 6 8 7 9 0 2 E B C D C D</p>
+
+<p>3 2 0 4 5 9 7 6 8 1 A C D D E C</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>Teste 1</p>
+
+<p>3 8 4 7 2 9</p><br/>
+
+<p>Teste 2</p>
+
+<p>2 5 6 7 8 9</p><br/>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2004
+				</p>
+			</div>
+
+		</body>
+	</html>

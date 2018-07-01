@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2113 - O Incidente de Sverdlovsk</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2113 - O Incidente de Sverdlovsk" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2113</span>
+                <h1>O Incidente de Sverdlovsk</h1>
+                <div>
+                    <p>Por XVII Maratona de Programação IME-USP, 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Durante os anos da União Soviética o nome da cidade de Ecaterimburgo era Sverdlovsk, em homenagem ao bolchevique Iakov Sverdlov, filho de um artesão judeu que era excelente orador e foi um dos principais protagonistas ao lado de Lenin na revolução de outubro de 1905. Era considerado honesto, enérgico e trabalhador e respeitado por todos os setores do partido. Faleceu aos 34 anos. A cidade retomou o nome original em 1991 por iniciativa de Boris Yeltsin primeiro presidente da Rússia, nascido na cidade.</p>
+
+                    <p>Em 2 de abril de 1979, quando a cidade ainda se chamava Sverdlovsk houve um vazamento de antraz de uma fábrica militar na cidade. Este incidente é muitas vezes chamado de “Chernobyl biológico”, e causou aproximadamente 100 mortes, apesar de que o número exato de vítimas e contaminados seja desconhecido. A União Soviética negou por anos as reais causas do acidente e todos os registros das vítimas desapareceram, pois poderiam revelar sérias violações da Convenção de Armas Biológicas.</p>
+
+                    <p>As autoridades soviéticas tiveram de recorrer a procedimentos altamente sofisticados de descontaminação, especialmente das áreas rurais. Cada área retangular de dimensões N por M metros era dividida em N × M setores quadrados de um metro quadrado. Estes setores eram identificados pelas coordenadas de seus centros, numeradas de oeste para leste e de sul para norte a partir de (1, 1).</p>
+
+                    <p>Cada setor seria considerado descontaminado se ele for coberto por pelo menos K agentes de saúde. Cada agente era capaz de cobrir uma área circular. O raio dessa área variava de acordo com os equipamentos usados e com a experiência do agente de saúde. Sua tarefa é determinar quantos desses setores são considerados descontaminados, isso é, cobertos por pelo menos K agentes. Consideramos que um setor é coberto se seu centro está numa área coberta por um agente de saúde.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por vários casos de teste e termina com final de arquivo (<em>EOF</em>).</p>
+
+                    <p>A primeira linha de cada caso contém dois inteiros, <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>3</sup>) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 10<sup>5</sup>) , indicando a dimensão da área retangular falada no enunciado. A segunda linha contém o número de agentes, <strong>C </strong>, e o número <strong>K</strong> (1 ≤ <strong>K</strong> ≤ <strong>C</strong> ≤ 10<sup>3</sup>). As <strong>C</strong> linhas seguintes têm a descrição dos agentes <strong>X</strong><sub>c</sub> (1 ≤ <strong>X</strong><sub>c</sub> ≤ <strong>N</strong>), <strong>Y</strong><sub>c</sub> (1 ≤ <strong>Y</strong><sub>c</sub> ≤ <strong>M</strong>) e <strong>R</strong><sub>c</sub> (0 ≤ <strong>R</strong><sub>c</sub> ≤ 10<sup>8</sup>), onde (<strong>X</strong><sub>c</sub> , <strong>Y</strong><sub>c</sub> ) é o centro da área circular de raio <strong>R</strong><sub>c</sub> que o agente cobre. A entrada deve ser lida da entrada padrão.</p>
+
+
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso imprima o número de setores que são cobertos por pelo menos <strong>K</strong> agentes. A saída deve ser escrita na saída padrão.</p>
+
+
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>10 10</p>
+
+<p>2 1</p>
+
+<p>3 3 2</p>
+
+<p>8 8 2</p>
+
+<p>15 15</p>
+
+<p>6 2</p>
+
+<p>4 4 2</p>
+
+<p>5 5 1</p>
+
+<p>6 6 3</p>
+
+<p>7 7 2</p>
+
+<p>10 10 0</p>
+
+<p>11 10 1</p>
+
+                            </td>
+                            <td>
+                                <p>26</p>
+
+<p>20</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Observação: Mais precisamente, um setor com centro (x<sub>s</sub> , y<sub>s</sub>) é coberto por um agente posicionado em (x<sub>a</sub> , y<sub>a</sub>) capaz de descontaminar uma área com raio r se (x<sub>s</sub> − x<sub>a</sub>)<sup>2</sup> + (y<sub>s</sub> − y<sub>a</sub> )<sup>2</sup> ≤ r<sup>2</sup> .<br />
+                    XVII Maratona de Programação IME-USP, 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2541 - Ingrest</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Ingrest" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2541</span>
+			<h1>Ingrest</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p><em>Ingrest</em> é um jogo de realidade aumentada bastante jogado no mundo inteiro. O jogo pode ser descrito como uma gincana mundial. Duas facções disputam entre si para ter o controle da maior área no mundo.</p>
+
+<p>O mapa do jogo pode ser descrito como um plano. Há <strong>N</strong> portais no mapa. Um portal <em>i</em> pode ser descrito como um ponto (<strong>x<sub>i</sub></strong>,<strong>y<sub>i</sub></strong>) no plano.</p>
+
+<p>Para cada par de portais distintos, um jogador pode fazer um <em>link</em> entre ambos. Quando um <em>link</em> entre dois portais é criado, um segmento de reta ligando os portais é desenhado no mapa. Em um conjunto de três portais distintos, quando há um <em>link</em> entre todos os pares de portais, um <em>control field</em> é criado. Um <em>control field</em> é definido pelo triângulo formado pelos <em>links </em>feitos entre os portais. O tamanho de um <em>control field</em> é dado pela área deste triângulo.</p>
+
+<p>Pelas regras do jogo, dois <em>control fields</em> distintos não podem possuir intersecção positiva. Desta forma, dois <em>control fields</em> podem, no máximo, compartilhar um <em>link</em> ou um portal entre si.</p>
+
+<p>Sua missão é, dadas as posições de todos os portais, determinar a maior soma possível dos tamanhos dos <em>control fields</em> que podem ser criados.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém um inteiro <strong>N</strong> (3 ≤ <strong>N</strong> ≤ 10<sup>5</sup>), o número de portais. As próximas <strong>N</strong> linhas contém dois inteiros <strong>x<sub>i</sub></strong> e <strong>y<sub>i</sub></strong> cada (0 ≤ <strong>x<sub>i</sub></strong>, <strong>y<sub>i</sub></strong> ≤ 10<sup>4</sup>), indicando as coordenadas dos portais no mapa.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha contendo a maior soma possível dos tamanhos dos <em>control fields</em> que podem ser criados. Arredonde e imprima a resposta com exatamente duas casas decimais.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3<br />
+1 1<br />
+5 1<br />
+3 3<br />
+								4<br />
+1 2<br />
+3 5<br />
+1 5<br />
+3 2</p>
+						</td>
+						<td>
+							<p>4.00<br />
+							6.00</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				6a Seletiva UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

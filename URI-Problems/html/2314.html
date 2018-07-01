@@ -1,0 +1,222 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2314 - Indentador</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2314 - Indentador" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2314</span>
+				<h1>Indentador</h1>
+				<div>
+					<p>Por Erick Seo, FATEC-SP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p style="text-align:center">Nishi é um aluno do 1º semestre de&nbsp;uma faculdade na área de computação, um amante da linguagem C e possui a certa mania de programar tudo em uma só linha de código. Lúcius, seu professor, manda quinzenalmente um EP (Exercício projeto) e desconta 10% da nota a cada indentação errada. Com medo da reprovação na matéria de LP(Linguagem de Programação), Nishi pediu a sua ajuda com um programa que indente o código automaticamente, já que ele tem que montar seu EP e não terá tempo de fazer um programa para indentar o seu próprio código.</p>
+
+<p><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2314.png" style="float:right; height:116px; width:200px" /></p>
+
+<p>Nishi possui certos padrões na hora de programar:&nbsp;</p>
+
+<p>- A sintaxe utilizada será baseada na linguagem&nbsp;C;</p>
+
+<p>- As “bibliotecas” e “defines” são postas normalmente, com uma quebra de linha;</p>
+
+<p>Exemplo:</p>
+
+<p>#include&lt;stdio.h&gt;</p>
+
+<p>#define MAX 1000001</p>
+
+<p>- Fora as bibliotecas e defines, o restante do código se encontra em apenas uma linha;</p>
+
+<p>Exemplo:</p>
+
+<p>#include&lt;stdio.h&gt;</p>
+
+<p>int main(void){printf(“Hello World\n”);return 0;}</p>
+
+<p>- Ele utiliza&nbsp;somente os comandos de operações aprendidos até o momento (if,else,for,while,switch), funções, defines, printf, scanf, ;</p>
+
+<p>- Não é usada nenhuma variável com nomes semelhantes a comandos;</p>
+
+<p>- É garantida a presença de ‘;’ somente no comando “for” e nos finais de comandos, conforme a sintaxe da linguagem C;</p>
+
+<p>Exemplo de comando que não será utilizado:</p>
+
+<p>printf(“;”);</p>
+
+<p>Exemplo de comando válido:</p>
+
+<p>&nbsp;for(i=0;i&lt;10;i++){printf(“Hello World”);}</p>
+
+<p>- Não será utilizado operadores ternários, considere somente os comandos citados anteriormente;</p>
+
+<p>Os padrões de indentação:</p>
+
+<p>-&nbsp;Todo&nbsp;comando (if,else,for,while,switch)&nbsp;é iniciado com ‘{‘ na linha seguinte, e finalizado com ‘}’&nbsp;na linha seguinte, mesmo se tiver uma única instrução; (Note que existe uma quebra de linha após o ‘}’)</p>
+
+<p>Exemplo:</p>
+
+<p>if(1)</p>
+
+<p>{</p>
+
+<p>....printf(“Hello World\n”);</p>
+
+<p>}</p>
+
+<p>- Todo conteúdo dentro das&nbsp;chaves de abertura e de fechamento&nbsp;deverá ter uma tabulação a direita, a regra vale para as sub-chaves também;</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém várias linhas e termina com EOF. Cada linha poderá ter&nbsp;até 2000&nbsp;caracteres (0 &lt; <strong>C </strong>&lt; 2000). As entradas obedecem aos padrões exigidos por Nishi, como citados anteriormente</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída deverá seguir a indentação (feita com quatro pontos&nbsp;"....",representando uma tabulação a direita) segundo os padrões de Nishi, o&nbsp;último ‘}’ de todo bloco é finalizado com uma quebra de linha, conforme o modelo abaixo.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>#include &lt;stdio.h&gt;<br />
+#include &lt;string.h&gt;<br />
+#include &lt;ctype.h&gt;<br />
+int main(void){if(1){printf("in\n");}else{printf("out\n");}while(1){printf("in\n");break;}printf("out\n");int i;for(i=0;i&lt;10;i++){printf("Hello World\n");}return 0;}<br />
+&nbsp;</p>
+
+							</td>
+							<td>
+								<p>#include &lt;stdio.h&gt;<br />
+#include &lt;string.h&gt;<br />
+#include &lt;ctype.h&gt;<br />
+int main(void)<br />
+{<br />
+....if(1)<br />
+....{<br />
+........printf("in\n");<br />
+....}<br />
+....else<br />
+....{<br />
+........printf("out\n");<br />
+....}<br />
+....while(1)<br />
+....{<br />
+........printf("in\n");<br />
+........break;<br />
+....}<br />
+....printf("out\n");<br />
+....int i;<br />
+....for(i=0;i&lt;10;i++)<br />
+....{<br />
+........printf("Hello World\n");<br />
+....}<br />
+....return 0;<br />
+}<br />
+&nbsp;</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>#include &lt;stdio.h&gt;<br />
+#include &lt;string.h&gt;<br />
+#include &lt;ctype.h&gt;<br />
+int i;int fib(int x){i++;if(x==0){return 0;}else{if(x==1){return 1;}}else{return(fib(x-1)+fib(x-2));}}int main(void){int n,x;scanf("%d",&amp;n);i=0;while(n--){i=0;scanf("%d",&amp;x);printf("fib(%d) = %d calls = %d\n", x, i-1,fib(x));}return(0);}<br />
+&nbsp;</p>
+
+							</td>
+							<td>
+								<p>#include &lt;stdio.h&gt;<br />
+#include &lt;string.h&gt;<br />
+#include &lt;ctype.h&gt;<br />
+int i;<br />
+int fib(int x)<br />
+{<br />
+....i++;<br />
+....if(x==0)<br />
+....{<br />
+........return 0;<br />
+....}<br />
+....else<br />
+....{<br />
+........if(x==1)<br />
+........{<br />
+............return 1;<br />
+........}<br />
+....}<br />
+....else<br />
+....{<br />
+........return(fib(x-1)+fib(x-2));<br />
+....}<br />
+}<br />
+int main(void)<br />
+{<br />
+....int n,x;<br />
+....scanf("%d",&amp;n);<br />
+....i=0;<br />
+....while(n--)<br />
+....{<br />
+........i=0;<br />
+........scanf("%d",&amp;x);<br />
+........printf("fib(%d) = %d calls = %d\n", x, i-1,fib(x));<br />
+....}<br />
+....return(0);<br />
+}<br />
+&nbsp;</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+
+				</p>
+			</div>
+
+		</body>
+	</html>

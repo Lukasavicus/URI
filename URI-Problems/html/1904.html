@@ -1,0 +1,132 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1904 - Par ou Ímpar 2.0</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1904 - Par ou Ímpar 2.0" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1904</span>
+				<h1>Par ou Ímpar 2.0</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 4</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Alice e Bob são dois amigos que moram no planeta Terra 2.0, construído após a destruição do planeta Terra 1.0 pelos Vogons. Em Terra 2.0, tudo é melhorado. Os seres humanos, por exemplo, não possuem 10 dedos nas mãos, mas 10 milhões: 5 milhões em cada mão. O tradicional jogo ‘Par ou Ímpar’, muito jogado em Terra 1.0, também foi bastante melhorado. Alice e Bob jogam ‘Par ou Ímpar 2.0’ o tempo todo. Nesta versão do jogo, os jogadores devem ao mesmo tempo exibir usando as mãos um número inteiro entre 0 e 10 milhões. Se os números exibidos pelos dois jogadores forem iguais, configura-se empate. Senão, os jogadores se alternam escrevendo números num pedaço de papel. Sendo <strong>A</strong> o inteiro exibido por Alice no início da partida e <strong>B</strong> o inteiro exibido por Bob, cada número escrito no papel deve ser um produto de |<strong>A</strong> - <strong>B</strong>| fatores, sendo todos os fatores números primos, não necessariamente distintos, pertencentes ao intervalo definido pelos inteiros <strong>A</strong> e <strong>B</strong>. Além disso, não é permitido que um mesmo número seja escrito no papel mais de uma vez. Perde o jogador que, em sua vez de jogar, não for capaz de escrever no papel um número novo. Como Bob é um cavalheiro, Alice é sempre a primeira a jogar. Note que se não há primos no intervalo definido pelos inteiros <strong>A</strong> e <strong>B</strong>, Alice não consegue escrever número algum no papel na sua primeira jogada, e Bob vence a partida.</p>
+
+<p>Por exemplo, se <strong>A</strong> = 5 e <strong>B</strong> = 2, há somente 10 números que podem ser escritos no papel, os quais são:</p>
+
+<p style="text-align: center;">8 = 2 × 2 × 2</p>
+<p style="text-align: center;">12 = 2 × 2 × 3</p>
+<p style="text-align: center;">20 = 2 × 2 × 5</p>
+<p style="text-align: center;">18 = 2 × 3 × 3</p>
+<p style="text-align: center;">30 = 2 × 3 × 5</p>
+<p style="text-align: center;">50 = 2 × 5 × 5</p>
+<p style="text-align: center;">27 = 3 × 3 × 3</p>
+<p style="text-align: center;">45 = 3 × 3 × 5</p>
+<p style="text-align: center;">75 = 3 × 5 × 5</p>
+<p style="text-align: center;">125 = 5 × 5 × 5</p>
+
+<p>Assim, se tanto Alice quanto Bob jogarem de maneira ótima, Bob vence a partida neste caso.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de dois inteiros <strong>A</strong> e <strong>B</strong> (0 ≤ <strong>A</strong>, <strong>B</strong> ≤ 10<sup>7</sup>), os quais representam respectivamente os números exibidos por Alice e Bob no início do jogo, conforme explicado anteriormente.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma única linha contendo unicamente o nome do vencedor da partida, assumindo-se que ambos os jogadores jogam de maneira ótima. Se a partida empata, a linha da saída deverá conter unicamente o símbolo <strong>?</strong>.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 2</p>
+
+							</td>
+							<td>
+								<p>Bob</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>0 0</p>
+
+							</td>
+							<td>
+								<p>?</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 100</p>
+
+							</td>
+							<td>
+								<p>Alice</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática-Fase 2, 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

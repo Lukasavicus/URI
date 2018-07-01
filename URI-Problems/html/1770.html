@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1770 - Shuffle</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema B - Shuffle" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1770</span>
+                <h1>Shuffle</h1>
+                <div>
+                    <p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Sua banda favorita acaba de lançar um novo álbum, e para tornar a experiência mais empolgante você decidiu escutar as músicas em uma ordem aleatória. Para isto você escreveu um algoritmo que iria montar uma playlist com <strong>K</strong> músicas desse álbum. O problema, porém, é que seu algoritmo não é muito eficiente na forma que as músicas são escolhidas, de forma que algumas músicas poderiam ser tocadas repetidas vezes antes que outras fossem tocadas ao menos uma vez.</p>
+
+                    <p>Dado o número de músicas do álbum, a duração de cada música, e a playlist gerada pelo seu algoritmo, diga quanto tempo se passou até que você tivesse escutado todas as músicas do álbum ao menos uma vez, se isso for possível.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Haverá no máximo 150 casos de teste. Cada caso de teste inicia com dois inteiros <strong>M</strong> e <strong>K</strong>, indicando o número de músicas do álbum e o número de músicas na playlist do seu algoritmo (1 ≤ <strong>M</strong> ≤ 100, 1 ≤ <strong>K</strong> ≤ 1000).</p>
+
+                    <p>Em seguida haverá <strong>M</strong> inteiros <strong>m<sub>i</sub></strong>, indicando que a <strong>i</strong>-ésima música do álbum dura <strong>m<sub>i</sub></strong> minutos (1 ≤ <strong>m<sub>i</sub></strong> ≤ 300, para todo 1 ≤ <strong>i</strong> ≤ <strong>M</strong>).</p>
+
+                    <p>Em seguida haverá <strong>K</strong> inteiros <strong>k<sub>i</sub></strong>, indicando que a <strong>i</strong>-ésima música da playlist é a música de faixa número <strong>k<sub>i</sub></strong> (1 ≤ <strong>k<sub>i</sub></strong> ≤ <strong>M</strong>, para todo 1 ≤ <strong>i</strong> ≤ <strong>K</strong>).</p>
+
+                    <p>A entrada termina com final de arquivo (EOF).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma linha, contendo um inteiro, indicando quanto tempo se passou até que você tivesse escutado todas as músicas do álbum ao menos uma vez. Caso isso não seja possível, imprima -1.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 5<br />
+                                120 135 122<br />
+                                1 3 1 2 3<br />
+                                3 5<br />
+                                120 135 122<br />
+                                1 3 1 3 3</p>
+
+                            </td>
+                            <td>
+                                <p>497<br />
+                                -1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Contest Sigma - 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

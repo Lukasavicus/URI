@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2045 - Defendendo Alamo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2045 - Defendendo Alamo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2045</span>
+                <h1>Defendendo Alamo</h1>
+                <div>
+                    <p>Por IX Maratona de Programação IME-USP, 2005 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>O forte do Alamo, originalmente chamado de Misión San Antonio de Valero, foi fundado pelos missionários para abrigar os padres e os índios convertidos na região que era disputada pelos colonos americanos e espanhóis. Foi fundado no século XVIII e serviu de palco para a mais sangrenta batalha pela emancipação do Texas. A batalha do Alamo ocorreu em 23 de fevereiro de 1836 quando o exército do Gal. Antonio Lopes de Sant’Anna cercou o forte. Texanos e “tejanos” (chamados “defenders”) defenderam a posição por 13 dias.</p>
+
+                    <p>O forte do Alamo era uma fortificação de formato bastante intricado, cercado por uma alta cerca. Muitas vezes era difícil dizer se um soldado estava dentro ou fora dos limites do forte.</p>
+
+                    <p>Sua tarefa neste problema é dada uma instância de um forte, dado pelas coordenadas dos vértices da cerca, as coordenadas da bandeira do Texas e a posição de vários soldados, determinar quais deles são “defenders” e quais são espanhóis.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>São dadas várias instâncias. Cada instância começa com um inteiro que é o número 0 ≤ <strong>N</strong> ≤ 1000 de vértices que a cerca do forte tem. O valor 0 indica o fim dos dados. Nas <strong>N</strong> linhas seguintes vêm as coordenadas dos postes da cerca do forte. Os postes são dados a partir do primeiro, seguindo a cerca em sentido horário. A seguir vem a posição da bandeira do Texas. Na próxima linha, vem o número 0 ≤ <strong>M</strong> ≤ 1000 de pessoas a serem verificadas. Nas <strong>M</strong> linhas seguintes vêm as coordenadas das posições de cada uma das pessoas. Todas as coordenadas fornecidas são números inteiros no intervalo [−100000; +100000].</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identificador <em>Instancia <strong>h</strong></em> em que <strong>h</strong> é um número inteiro, sequencial e crescente a partir de 1. Nas <strong>M</strong> linhas seguintes, você deve imprimir <em>soldado <strong>k</strong></em> (para <strong>k</strong> = 1, . . . ,<strong>M</strong>) seguido de <em>defender</em> ou <em>espanhol</em> respectivamente se o soldado estiver dentro ou fora do forte. Uma linha em branco deve separar a saída de cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>8<br />
+1 5<br />
+3 5<br />
+3 3<br />
+4 4<br />
+4 5<br />
+5 5<br />
+5 1<br />
+1 1<br />
+2 4<br />
+2<br />
+4 3<br />
+6 3<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+soldado 1 defender<br />
+soldado 2 espanhol</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    IX Maratona de Programação IME-USP, 2005
+                </p>
+            </div>
+
+        </body>
+    </html>

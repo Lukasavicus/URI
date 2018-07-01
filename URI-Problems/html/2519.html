@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2519 - Estratégia Campeã</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2519 - Estratégia Campeã" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2519</span>
+			<h1>Estratégia Campeã</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Os <em>Wildcats</em> estão na grande final de basquetebol escolar deste ano! Experiente, o técnico Bolton está utilizando sua famosa estratégia campeã para vencer o jogo e, logo, o torneio. Entretanto, para poder aplicar sua estratégia, ele precisa frequentemente contar o número de jogadores adversários em algumas regiões do campo durante todo o jogo. Mas, sabendo da estratégia do técnico, os jogadores adversários também mudam suas posições frequentemente durante o jogo!</p>
+
+				<p>Considere que o campo tem <strong>N</strong> linhas e <strong>M</strong> colunas, numeradas de 1 a <strong>N</strong> e de 1 a <strong>M</strong>, respectivamente. A figura abaixo exemplifica: (a) um campo com <strong>N</strong>=3, <strong>M</strong>=4, e as posições iniciais de cada jogador adversário; (b) o jogador na posição (1,2) se move para a posição (3,3); (c) há agora 3 jogadores na região entre as posições (1,3) e (3,4), inclusive.</p>
+
+				<p class="center"><img src='https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2519.png' alt=''/></p>
+
+				<p>Dadas as posições iniciais dos jogadores e a movimentação deles durante o jogo, ajude o técnico em suas contagens!</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha de cada caso de teste contém dois inteiros <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong>, <strong>M</strong> ≤ 1000), o número de linhas e de colunas do campo, respectivamente. As próximas <strong>N</strong> linhas contém <strong>M</strong> inteiros cada, descrevendo o campo com as posições iniciais dos jogadores. O inteiro 0 representa uma posição vazia, enquanto o inteiro 1 representa uma posição com um jogador. A próxima linha contém um inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 10<sup>5</sup>), o número de operações. As próximas <strong>Q</strong> linhas descrevem uma operação cada. Cada operação é descrita por cinco inteiros <strong>R I<sub>1</sub> J<sub>1</sub> I<sub>2</sub> J<sub>2</sub></strong>.</p>
+
+					<p>Se <strong>R</strong>=0, o jogador na posição (<strong>I<sub>1</sub></strong>,<strong>J<sub>1</sub></strong>) se move para a posição (<strong>I<sub>2</sub></strong>,<strong>J<sub>2</sub></strong>) (1 ≤ <strong>I<sub>1</sub></strong>,<strong>I<sub>2</sub></strong> ≤ <strong>N</strong>, 1 ≤ <strong>J<sub>1</sub></strong>,<strong>J<sub>2</sub></strong> ≤ <strong>M</strong>). É garantido que, antes da operação, a posição (<strong>I<sub>1</sub></strong>,<strong>J<sub>1</sub></strong>) contém um jogador, e a posição (<strong>I<sub>2</sub></strong>,<strong>J<sub>2</sub></strong>) está vazia.</p>
+
+					<p>Se <strong>R</strong>=1, o técnico faz uma consulta sobre a região (<strong>I<sub>1</sub></strong>,<strong>J<sub>1</sub></strong>) e (<strong>I<sub>2</sub></strong>,<strong>J<sub>2</sub></strong>), inclusive (1 ≤ <strong>I<sub>1</sub></strong> ≤ <strong>I<sub>2</sub></strong> ≤ <strong>N</strong>, 1 ≤ <strong>J<sub>1</sub></strong> ≤ <strong>J<sub>2</sub></strong> ≤ <strong>M</strong>).</p>
+					<p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha para cada consulta contendo o número de jogadores que estão atualmente na região consultada.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3 4<br />
+							0 1 0 1<br />
+							0 0 1 0<br />
+							1 0 0 0<br />
+							3<br />
+							1 1 3 3 4<br />
+							0 1 2 3 3<br />
+							1 1 3 3 4</p>
+
+						</td>
+						<td>
+							<p>2<br />
+							3</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1608 - Bolos da Maria</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1608 - Bolos da Maria" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1608</span>
+                <h1>Bolos da Maria</h1>
+                <div>
+                    <p>Por Fabio Lima, Universidade de São Paulo - São Carlos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Dona Maria é uma senhora que está aposentada e faz doces. Ela começou a fazer bolos para complementar a renda da família.</p>
+
+                    <p>Para fazer um bolo, Dona Maria precisa de certa quantidade de alguns ingredientes diferentes. Cada ingrediente tem um custo fixo por unidade. Ela tem uma quantia de dinheiro <em>D</em> máxima para gastar na compra dos ingredientes. Dentre os tipos de bolos que existem, você deve escolher apenas um tipo, de maneira a maximizar a quantia de bolos.</p>
+
+                    <p>Calcule o número máximo de bolos de um único tipo que podem ser confeccionados.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+
+                    <p>Na primeira linha terá um inteiro <strong>T</strong> (<strong>T</strong> ≤ 100) indicando o número de casos de teste.</p>
+
+                    <p>Para cada cada caso de teste, na primeira linha haverá três números inteiros <strong>D</strong> (1 ≤ <strong>D</strong> ≤ 10<sup>9</sup>), <strong>I</strong> (1 ≤ <strong>I</strong> ≤ 100) e <strong>B</strong> (1 ≤ <strong>B</strong> ≤ 100) indicando o dinheiro que Dona Maria tem, o número de ingredientes existentes e a quantidade de tipo de bolos existentes, respectivamente. A próxima linha conterá <strong>I</strong> números inteiros indicando o preço da unidade de cada ingrediente. Seguem <strong>B</strong> linhas seguirão descrevendo cada bolo. O <em>i-ésimo</em> bolo é descrito da seguinte maneira: inicialmente há um número <strong>Qi</strong> (1 ≤ <strong>Qi</strong> ≤ 100) que indicará quantos ingredientes diferentes serão necessários. Logo em seguida teremos <strong>Qi</strong> pares de números indicando respectivamente o índice do ingrediente e a quantidade necessária, todos na mesma linha separados por espaços.</p>
+
+                    <p>A quantia de cada ingrediente em um bolo poderá variar de 1 até 1000. Cada unidade de um ingrediente custará entre 1 e 1000. Os ingredientes na descrição de cada bolo serão diferentes. Os identificadores de ingrediente vão de 0 até <strong>I</strong>-1.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso imprima o número máximo de bolos do mesmo tipo que podem ser confeccionados.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+                                <p>10 2 2</p>
+                                
+                                <p>3 4</p>
+                                
+                                <p>1 0 2</p>
+                                
+                                <p>1 1 1</p>
+                                
+                                <p>10 4 3</p>
+                                
+                                <p>10 10 10 10</p>
+                                
+                                <p>3 0 1 1 1 2 1</p>
+                                
+                                <p>2 0 1 1 1</p>
+                                
+                                <p>1 3 1</p>
+                                
+                                <p>100 5 3</p>
+                                
+                                <p>6 5 3 8 9</p>
+                                
+                                <p>5 2 3 3 5 1 1 0 10 4 1</p>
+                                
+                                <p>3 2 10 0 10 4 2</p>
+                                
+                                <p>4 4 1 3 1 0 1 1 1</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+
+                                <p>1</p>
+                                
+                                <p>3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Seletiva USP São Carlos - Segunda Prova 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

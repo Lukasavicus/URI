@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2673 - Resistores Série e Paralelo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema F - Resistores Série e Paralelo" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2673</span>
+            <h1>Resistores Série e Paralelo</h1>
+            <div>
+                <p>Por Hamilton José Brumatto, UESC <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Uma associação de resistores sempre resulta em um resistor equivalente. Esta associação pode ser em paralelo, em série ou híbrida. Veja exemplo de uma associação em paralelo:</p>
+
+                <p style="text-align:center"><img alt="Imagem" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2673_a.jpg" style="height:120px; width:170px" /></p>
+
+<p>Esta associação em paralelo é equivalente a um resistor de 10Ω. Também podemos considerar associações em série, como o exemplo abaixo, que resulta em uma resistência equivalente de 40Ω.</p>
+
+                <p style="text-align:center"><img alt="Imagem" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2673_b.jpg" style="height:70px; width:220px" /></p>
+
+<p>Por fim, uma associação híbrida, com série e paralelo. A associação abaixo resulta em 50Ω.</p>
+
+                <p style="text-align:center"><img alt="Imagem" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2673_c.jpg" style="height:170px; width:200px" /></p>
+
+<p>Para melhor representar uma associação vamos considerar a resistência equivalente R<sub>eq</sub> de uma associação em série entre os resistores R<sub>1</sub>&nbsp;e R<sub>2</sub>&nbsp;representada como: R<sub>eq</sub>&nbsp;= R<sub>1</sub> - R<sub>2</sub>. Da mesma forma para a associação em paralelo: R<sub>eq</sub>&nbsp;= R<sub>1</sub> | R<sub>2</sub>. Não existe precedência entre as associações, exceto quando explícito por parêntesis, por exemplo: R<sub>1</sub> - R<sub>2</sub> | R<sub>3</sub>&nbsp;é equivalente a (R<sub>1</sub> - R<sub>2</sub>) | R<sub>3</sub>, e R<sub>1</sub> | R<sub>2</sub> - R<sub>3</sub>&nbsp;é equivalente a (R<sub>1</sub> | R<sub>2</sub>&nbsp;- R<sub>3</sub>. Estes dois circuitos podem ser desenhados, respectivamente, como:</p>
+
+                <p style="text-align:center"><img alt="Imagem" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2673_d.jpg" style="height:200px; width:420px" /></p>
+
+<p>Desta forma uma associação híbrida é representada por uma expressão que segue a seguinte regra, considerando <strong>R</strong>&nbsp;o valor nominal de uma resistência em <em>Ohms</em>&nbsp;(Ω):</p>
+
+<p><em>exp</em>&nbsp;:= <strong>R</strong>;<br />
+<em>exp</em>&nbsp;:= <em>exp</em>&nbsp;-&nbsp;<em>exp</em>;<br />
+<em>exp</em>&nbsp;:= <em>exp</em>&nbsp;| <em>exp</em>;<br />
+<em>exp</em>&nbsp;:= ( <em>exp</em>&nbsp;).</p>
+
+<p>O circuito híbrido da terceira figura acima poderia ser representado pela expressão:</p>
+
+<p style="font-family:courier;">R<sub>eq</sub> = 20 - (20 | 20) - 20 = 50</p>
+
+<p>A você foi solicitado um programa onde, dada a expressão de uma associação, calcule a resistência equivalente.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A entrada contém vários casos de testes, cada caso de teste ocupa uma linha de no máximo 300 símbolos (não existe espaço em branco) e representa uma expressão válida de associação de resistores, onde cada valor de resistor é representado por um inteiro <strong>R</strong> (0 &lt; <strong>R</strong> &lt; 10000). O fim dos casos de testes coincide com o fim das entradas.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, espera-se em uma linha única o valor da resistência equivalente com três casas decimais.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>20-20<br />
+20|20<br />
+20-(20|20)-20</p>
+
+                        </td>
+                        <td>
+                            <p>40.000<br />
+10.000<br />
+50.000</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <p class="footer">
+                Este problema é o problema número 6 da competição ProgBASE-2017, que acontece dentro da ERBASE (Escola Regional Bahia Alagoas e Sergipe).
+            </p>
+        </div>
+
+    </body>
+</html>

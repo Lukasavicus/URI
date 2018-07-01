@@ -1,0 +1,132 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2237 - Containers</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2237 - Containers" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2237</span>
+				<h1>Containers</h1>
+				<div>
+					<p>Por Maratona de Programação da SBC – 2016 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<img src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2237.png" alt="container" style="float:right" />
+					<p>O SBC–Sistema de Balanceamento de Containers precisa ser atualizado para funcionar com uma nova classe de navios, a “dois por quatro”, que são navios que podem carregar oito grandes containers numa disposição de duas linhas e quatro colunas, como mostrado na figura ao lado. Esses navios possuem um guindaste fixo que é&nbsp;capaz de realizar um único tipo de movimentação: levantar dois containers adjacentes, na linha ou na coluna, e trocá-los de posição. Para acelerar o carregamento nos portos, os oito containers são embarcados em qualquer uma das oito posições, definindo uma configuração inicial. Depois que o navio deixa o porto, o guindaste precisa mover os containers para deixá-los numa configuração final pré-definida para a viagem.</p>
+
+					<p>O problema é&nbsp;que o custo de combustível para o guindaste realizar uma movimentação é&nbsp;igual à&nbsp;soma dos pesos dos dois containers adjacentes cujas posições foram trocadas. Dados os pesos dos containers em cada posição nas configurações inicial e final, o SBC precisa computar o custo total mínimo possível de uma sequência de movimentações que leve os containers da configuração inicial à&nbsp;configuração final.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de quatro linhas contendo, cada uma, quatro inteiros entre 1 e 1000, inclusive. As duas primeiras linhas definem os pesos na configuração inicial e as duas últimas linhas, os pesos na configuração final. Sempre existe uma solução, pois os containers nas configurações inicial e final são os mesmos, com as posições possivelmente trocadas.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve produzir uma única linha contendo um inteiro, representando o custo total mínimo de uma sequência de movimentos que leve da configuração inicial à&nbsp;configuração final.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 1 2 1<br />
+4 7 52 9<br />
+7 1 2 1<br />
+3 9 52 4</p>
+
+							</td>
+							<td>
+								<p>81</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>1 2 3 4<br />
+5 10 7 8<br />
+1 2 3 4<br />
+5 8 7 10</p>
+
+                    </td>
+                    <td>
+                        <p>50</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>34 5 6 998</p>
+
+<p>4 17 77 84</p>
+
+<p>34 5 6 998</p>
+
+<p>4 17 77 84</p>
+
+                    </td>
+                    <td>
+                        <p>0</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					Maratona de Programação da SBC – 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,105 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2016 - D como em Daedalus</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2016 - D como em Daedalus" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2016</span>
+				<h1>D como em Daedalus</h1>
+				<div>
+					<p>Por Guilherme Albuquerque Pinto <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Daedalus está jogando o jogo de "Não seja ganancioso", no qual os N jogadores sentam em torno de uma mesa tendo cada um deles cinco cartões rotulados 1, 10, 100, 1000 e 10000 pontos. Em "Não seja ganancioso" os jogadores não podem conversar entre si uma vez que o jogo começa, e existem M rodadas. Em cada rodada, o banco anuncia um orçamento B. Em seguida, cada jogador escolhe uma das cartas e coloca-a, de rosto para baixo, sobre a mesa. O banco então vira as cartas, de modo que todos os jogadores podem ver todos as N cartas. Se a soma dos pontos nas cartas escolhidas é menor ou igual a B, então o banco para cada jogador dá exatamente a quantidade de pontos na placa de que ele ou ela escolheu. Caso contrário, ninguém recebe nada. Cada jogador recebe a sua carta de volta antes da próxima rodada. Os jogadores estão muito racionais e gostariam de maximizar os seus pontos e minimizar os seus arrependimentos! O que você faria nesta situação? Cooperaria ou afundaria o jogo?</p>
+
+					<p>Tome a tabela a seguir como um exemplo. Daedalus ganhou um total de 10 pontos, no final, porque apenas o primeiro round foi bem sucedida. Mas, olhando para trás no jogo, ele vê que ele poderia ter ganho 110 pontos, se tivesse escolhido 100 pontos na primeira rodada e 10 pontos na terceira rodada. Ou seja, Daedalus poderia ter ganho 100 pontos extra! Isto somente, é claro, assumindo que as cartas escolhidas pelos outros jogadores permaneçam inalteradas.</p>
+
+					<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2016.png" style="height:99px; width:650px" /></p>
+
+					<p>Dado o orçamento e as cartas escolhidas em cada rodada, é preciso calcular o número total máximo de pontos extras que Daedalus poderia ter obtido, no final, se tivesse escolhido o melhor cartão de possível em cada rodada, assumindo as cartas escolhidas pelo outro jogadores permaneçam inalteradas.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>N</strong> e <strong>M</strong>, representando respectivamente o número de jogadores e o número de rodadas (1 ≤ <strong>N</strong> ≤ 20 e 1 ≤ <strong>M</strong> ≤ 50). Cada uma das <strong>M</strong> linhas seguintes descreve uma rodada com um número inteiro <strong>B</strong>, indicando o orçamento (1 ≤ <strong>B</strong> ≤ 10<sup>6</sup>), seguido de <strong>N</strong> inteiros <strong>C<sub>1</sub></strong>, <strong>C<sub>2</sub></strong>, ..., <strong>C<sub>N</sub></strong> representam que o jogador i-ésimo escolheu o cartão marcada com <strong>C<sub>i</sub></strong> pontos durante essa rodada (<strong>C<sub>i</sub></strong> ∈ {1, 10, 100, 1000, 10000} para <strong>i</strong> = 1, 2, ..., <strong>N</strong>). Daedalus é o primeiro jogador.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Saída de uma linha com um inteiro representando o número total máximo de pontos extras que Daedalus poderia ter obtido, se ele tivesse escolhido o melhor cartão de possível em cada rodada, assumindo que as cartas escolhidas pelos outros jogadores permaneçam inalteradas.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 3</p>
+								<p>300 10 100 10 1 10</p>
+								<p>1100 100 10 100 1 1000</p>
+								<p>1200 100 100 10 1 1000</p>
+							</td>
+							<td>
+								<p>100</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2</p>
+								<p>2000 1000 1000 1000</p>
+								<p>21 1 1 10</p>
+							</td>
+							<td>
+								<p>9</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC Latin American Regional - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

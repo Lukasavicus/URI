@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2559 - Sexta-Feira 13</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Sexta-Feira 13" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2559</span>
+			<h1>Sexta-Feira 13</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 4</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Hoje é sexta-feira 13! Segundo a tradição, o número 13, assim como o número 7, pode ser considerado um número de azar. Por isso, algumas pessoas preferer tomar cuidado com os números 13 e 7 em paticular!</p>
+
+<p>Flávio tem uma sequência de <strong>N</strong> números inteiros numerados de 1 a <strong>N</strong>, e deseja realizar várias operações sobre ela. Há três operações possíveis:</p>
+
+<ul>
+	<li>Dado um inteiro <strong>i</strong> e um inteiro <strong>v</strong>, trocar o <strong>i</strong>-ésimo número da sequência para <strong>v</strong>;</li>
+	<li>Dados inteiros <strong>i</strong>, <strong>j</strong>, <strong>z</strong> e <strong>v</strong>, com <strong>z</strong>=13 ou 7, trocar todas as ocorrências do número <strong>z</strong> para <strong>v</strong> entre o<strong> i</strong>-ésimo e o <strong>j</strong>-ésimo número da sequência, inclusive;</li>
+	<li>Dados inteiros <strong>i</strong> e <strong>j</strong>, calcular a soma de todos os elementos da sequência entre o <strong>i</strong>-ésimo e o <strong>j</strong>-ésimo número, inclusve.</li>
+</ul>
+
+<p>Por exemplo, se a sequência inicial de Flávio é (2, 13, 5, 13, 7) e troca-se o 1-ésimo número para 3, tem-se o vetor (3, 13, 5, 13, 7). Se todas as ocorrências de 13 entre o 4-ésimo e o 5-ésimo número são trocadas para 6, tem-se o vetor (3, 13, 5, 6, 7). Por fim, a soma dos elementos entre o 2-ésimo e o 4-ésimo número é igual a 13+5+6=24.</p>
+
+<p>Para cada operação do último tipo, calcule e mostre a soma resultante da operação.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 2×10<sup>5</sup>). A segunda linha contém <strong>N</strong> inteiros <strong>a<sub>1</sub></strong>,<strong>a<sub>2</sub></strong>,...,<strong>a<sub>N</sub></strong>, a sequência inicial de Flávio (0 ≤ <strong>a<sub>i</sub></strong> ≤ 10<sup>3</sup>). A terceira linha contém um inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 2×10<sup>5</sup>), o número de operações. As próximas <strong>Q</strong> linhas contém as operações. Cada operação é descrita por uma linha contendo:</p>
+
+<ul>
+	<li><em>1 <strong>i v</strong></em> (1 ≤ <strong>i</strong> ≤ <strong>N</strong>, 0 ≤ <strong>v</strong> ≤ 10<sup>3</sup>), indicando a troca do <strong>i</strong>-ésimo número para <strong>v</strong>; ou</li>
+	<li><em>2 <strong>i j z v</strong></em> (1 ≤ <strong>i</strong> ≤ <strong>j</strong> ≤ <strong>N</strong>, <strong>z</strong>=13 ou 7, 0 ≤ <strong>v</strong> ≤ 10<sup>3</sup>), indicando a troca das ocorrências de <strong>z</strong> entre o <strong>i</strong>-ésimo e o <strong>j</strong>-ésimo número (inclusive) para <strong>v</strong>; ou</li>
+	<li><em>3 <strong>i j</strong></em> (1 ≤ <strong>i</strong> ≤ <strong>j</strong> ≤ <strong>N</strong>), indicando o cálculo da soma dos elementos entre o <strong>i</strong>-ésimo e o <strong>j</strong>-ésimo número, inclusive.</li>
+</ul>
+<p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, para cada operação do último tipo, imprima uma linha contendo a soma resultante da operação.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5<br />
+2 13 5 13 7<br />
+5<br />
+1 1 3<br />
+2 4 5 13 6<br />
+3 2 4<br />
+1 2 0<br />
+3 1 5</p>
+
+						</td>
+						<td>
+							<p>24<br />
+21</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				18o Treino UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

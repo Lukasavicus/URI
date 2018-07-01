@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1461 - Caminhos Simétricos Ótimos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1461 - Caminhos Simétricos Ótimos" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1461</span>
+            <h1>Caminhos Simétricos Ótimos</h1>
+            <div>Por Rujia Liu <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cn.gif' alt=''/> China</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Você tem uma grade de n linhas e n colunas. Cada quadrado da grade contém um dígito, diferente de zero. Você deve ir do quadrado mais acima e mais à esquerda para o quadrado mais abaixo e mais à direita da grade. A cada passo, você pode se mover para o quadrado adjacente que está à esquerda, à direita, acima ou abaixo (você não pode se mover pelas diagonais). Além disso, você não pode passar por um quadrado mais de uma vez. Há ainda uma outra regra: seu caminho deve ser simétrico em relação à linha que conecta o quadrado mais abaixo e mais à esquerda ao quadrado mais acima e mais à direita da grade. A figura abaixo exemplifica um caminho simétrico em uma grade 6 x 6.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Optimal%20Symmetric%20Paths.png" style="width: 282px; height: 272px; margin-left: 10px; margin-right: 10px;" /></p>
+
+                <p>Sua tarefa é descobrir, dentre todos os caminhos válidos, quantos deles têm a soma mínima de dígitos nos quadrados percorridos.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Haverá no máximo 25 casos de teste. Cada caso de teste começa com um inteiro <strong>n</strong> (2 ≤ <strong>n</strong> ≤ 100). As próximas <strong>n</strong> linhas contém <strong>n</strong> dígitos cada, diferentes de zero (isto é, um número em 1, 2, 3, ..., 9). Esses <strong>n<sup>2</sup></strong> inteiros são os dígitos na grade.</p>
+
+                <p>A entrada termina com um caso de teste onde <strong>n</strong> = 0, que não deve ser processado.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, imprima o número de caminhos simétricos ótimos. Imprima o resto da divisão do resultado por <strong>1.000.000.009</strong> .</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2<br />
+                                1 1<br />
+                                1 1<br />
+                                3<br />
+                                1 1 1<br />
+                                1 1 1<br />
+                                2 1 1<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>2<br />
+                                3</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+           <p class="footer">
+                The Seventh Hunan Collegiate Programming Contest.</br>
+                Special Thanks: Yiming Li & Jane Alam Jan. I/O by UOJ.
+            </p>
+        </div>
+
+    </body>
+</html>

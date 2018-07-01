@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1416 - Placar do ICPC</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1416 - Placar do ICPC" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1416</span>
+            <h1>Placar do ICPC</h1>
+            <div>Por Fabio Dias Moreira, PUC-Rio <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Charles é o diretor de torneio do torneio regional do ICPC de Tumbolia. Sua responsabilidade é garantir que o torneio corra perfeitamente, que as regras sejam seguidas, e, claro, anunciar o placar final da competição.</p>
+
+                <p>De acordo com as regras do ICPC, um time com mais problemas resolvidos fica acima de um time com menos problemas resolvidos. Se dois times têm o mesmo número de problemas resolvidos, o time com a menor penalidade fica acima (no caso de os dois times terem o mesmo número de problemas resolvidos e a mesma penalidade, Charles considera eles empatados).</p>
+
+                <p>A penalidade total de um time é a soma da penalidade de todos problemas que o time resolveu. A penalidade de um problema é TP&nbsp;+&nbsp;EP&nbsp;x&nbsp;FA, onde TP é a penalidade de tempo para aquele problema, EP é a penalidade de erro do competidor e FA é o número de tentativas frustradas de resolver o problema antes de submeter uma solução certa.</p>
+
+                <p>A penalidade de tempo para um problema é o tempo desde o início da competição, em minutos, que time demorou para resolver o problema. A penalidade de erro é um inteiro positivo escolhido pelo diretor do torneio, designada para premiar times que submetam soluções corretas na primeira tentativa.</p>
+
+                <p>Charles quer mudar a penalidade de erro do valor "padrão" de 20 minutos para esquentar as coisas. Para estudar os efeitos dessa mudança no placar final, ele quer saber o limite de penalidades de erro que não mudam as posições finais.</p>
+
+                <p>Em outras palavras, se o time A está na frente do time B no placar original, então A deve estar na frente de B no placar modificado; se A e B estão empatados no placar original, eles devem estar empatados no placar modificado (o placar original é aquele obtido com uma penalidade de erro de 20 minutos).</p>
+
+                <p>Charles está muito ocupado organizando a regional Tumboliana, então ele pediu para você fazer um programa que vai calcular o limite para ele.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém diversos casos de teste. A primeira linha de cada caso de teste contém dois inteiros <strong>T</strong> e <strong>P</strong> separados por um espaço, indicando o número de times e o número de problemas, respectivamente (2 ≤ <strong>T</strong> ≤ 100, 1 ≤ <strong>P</strong> ≤ 10). Cada uma das próximas <strong>T</strong> linhas descreve a performance de um time. A descrição da performance de um time é uma linha contendo <strong>P</strong> descrições de problemas separados por um espaço em branco. Os times não são necessariamente dados na ordem da colocação final.</p>
+
+                <p>A descrição de cada problema é uma string "<strong>A/S</strong>", onde <strong>A</strong> é um inteiro representando o número de tentativas que o time correspondente fez para resolver o problema (0 ≤ <strong>A</strong> ≤ 100), e <strong>S</strong> pode ser tanto "-", se o time não resolveu o problema, ou um inteiro indicando quantos minutos o time demorou para submeter um solução correta (1 ≤<strong> S</strong> ≤ 300). Tentativas feitas depois da primeira correta não são contadas.</p>
+
+                <p>O final da entrada é dado por <strong>T</strong> = <strong>P</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste da entrada imprima dois inteiros positivos separados por um espaço, indicando a menor e a maior penalidade por erro que não alteraria a colocação final. Se não existir um limite superior para a penalidade por erro, imprima um "*" ao invés do limite superior.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>5 3<br />
+                                0/- 0/- 0/-<br />
+								2/- 2/- 1/-<br />
+								1/60 1/165 1/-<br />
+								1/80 0/- 2/120<br />
+                                0/- 1/17 0/-<br />
+								4 2<br />
+                                17/- 5/-<br />
+								2/7 3/-<br />
+								3/- 2/-<br />
+								1/15 0/-<br />
+								3 2<br />
+                                1/- 2/15<br />
+                                2/53 1/17<br />
+                                1/70 1/20<br />
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>1 24<br />
+                                9 *<br />
+                                20 20</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+             </table>
+            <p class="footer">
+               ACM/ICPC South America Contest 2007.
+            </p>
+        </div>
+
+    </body>
+</html>

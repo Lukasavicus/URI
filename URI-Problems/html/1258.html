@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1258 - Camisetas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1258 - Camisetas" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1258</span>
+            <h1>Camisetas</h1>
+            <div><p>
+                    Por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1258.png" style="width: 189px; height: 148px; float: right; margin-left: 10px; " />
+
+                    O professor Rolien organizou junto às suas turmas de Ciência da Computação a confecção de uma camiseta polo 
+                    que fosse ao mesmo tempo bonita e barata. Após algumas conversas, ficou decidido com os alunos que seriam feitas 
+                    somente camisetas da cor preta, o que facilitaria a confecção. Os alunos poderiam escolher entre o logo do curso e os detalhes em branco ou vermelho. Assim sendo, Rolien precisa de sua ajuda para organizar as listas de quem quer a camiseta em cada uma das turmas, relacionando estas camisetas pela cor do logo do curso, tamanho (P, M ou G) e por último pelo nome.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. Cada caso de teste inicia com um valor <strong>N</strong>, 
+                    (1 ≤ <strong>N</strong> ≤ 60) inteiro e positivo, que indica a quantidade 
+                    de camisetas a serem feitas para aquela turma. As próximas <strong>N</strong>*2 linhas contém informações de cada uma das camisetas (serão duas linhas de informação para cada camiseta). A primeira linha irá conter o nome do estudante e a segunda linha irá conter a cor do logo da camiseta ("branco" ou "vermelho") seguido por um espaço e pelo tamanho da camiseta "P" "M" ou "G". A entrada termina quando o valor de <strong>N</strong> for igual a zero (0) e esta valor não deverá ser processado.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de entrada deverão ser impressas as informações ordenadas pela cor dos detalhes em ordem ascendente, 
+                    seguido pelos tamanhos em ordem descendente e por último por ordem ascendente de nome, conforme o exemplo abaixo.
+                    <br /><br />
+                    Obs.: Deverá ser impressa uma linha em branco entre dois casos de teste.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                9<br />
+                                Maria Jose<br />
+                                branco P<br />
+                                Mangojata Mancuda<br />
+                                vermelho P<br />
+                                Cezar Torres Mo<br />
+                                branco P<br />
+                                Baka Lhau<br />
+                                vermelho P<br />
+                                JuJu Mentina<br />
+                                branco M<br />
+                                Amaro Dinha<br />
+                                vermelho P<br />
+                                Adabi Finho<br />
+                                branco G<br />
+                                Severina Rigudinha<br />
+                                branco G<br />
+                                Carlos Chade Losna<br />
+                                vermelho P<br />
+                                3<br />
+                                Maria Joao<br />
+                                branco P<br />
+                                Marcio Guess<br />
+                                vermelho P<br />
+                                Maria Jose<br />
+                                branco P<br />
+                                0</p> 
+                        </td>
+                        <td> 
+                            <p>
+                                branco P Cezar Torres Mo<br />
+                                branco P Maria Jose<br />
+                                branco M JuJu Mentina<br />
+                                branco G Adabi Finho<br />
+                                branco G Severina Rigudinha<br />
+                                vermelho P Amaro Dinha<br />
+                                vermelho P Baka Lhau<br />
+                                vermelho P Carlos Chade Losna<br />
+                                vermelho P Mangojata Mancuda<br />
+                                <br />
+                                branco P Maria Joao<br />
+                                branco P Maria Jose<br />
+                                vermelho P Marcio Guess</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>

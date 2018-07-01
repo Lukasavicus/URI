@@ -1,0 +1,148 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1941 - Palíndromo</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1941 - Palíndromo" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1941</span>
+				<h1>Palíndromo</h1>
+				<div>
+					<p>Por Vinícius Fernandes dos Santos, Centro Federal de Educação Tecnológica de Minas Gerais <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Um palíndromo é uma cadeia de caracteres tal que sua reversão é igual à cadeia original. Em outras palavras, é uma cadeia que, quando lida de trás pra frente, é igual à cadeia original. Por exemplo BANANAB é um palíndromo, enquanto BANANAS não. Neste problema estamos interessados em uma questão um pouco mais interessante.</p>
+
+<p>Dada uma cadeia S, queremos encontrar uma subsequência que seja um palíndromo. Uma subsequência é uma cadeia que pode ser obtida a partir da remoção de zero ou mais caracteres da cadeia original. Por exemplo ANNA é uma subsequência de BANANAS.</p>
+
+<p>Será dado também um conjunto de posições de S que chamamos de posições especiais. Sua tarefa é encontrar o tamanho da subsequência que seja um palíndromo e que contenha o maior número de posições especiais possível. Caso exista mais de uma subsequência maximizando o número de posições especiais, você deve imprimir o tamanho da maior delas.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de duas linhas. A primeira linha contém uma cadeia de caracteres maiúsculos <strong>S</strong> com pelo menos 1 e no máximo 2000 caracteres. A segunda linha contém um inteiro <strong>N</strong>, (0 ≤ <strong>N</strong> ≤ <strong>|S|</strong>), indicando o número de posições especiais que estamos interessados em incluir no palíndromo, seguido de <strong>N</strong> números distintos, entre 1 e <strong>|S|</strong>, inclusive, contendo as posições especiais de <strong>S</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir um único inteiro, representando o tamanho do maior palíndromo possível, como definido acima.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>BANANAS</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>5</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>BANANAS</p>
+
+<p>1 7</p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>ACDAAACX</p>
+
+<p>3 2 3 8</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>MARATONA</p>
+
+<p>4 3 1 5 2</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					XX Maratona de Programação da SBC 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

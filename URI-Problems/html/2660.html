@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2660 - Cigarras periódicas</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2660 - Cigarras periódicas" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2660</span>
+			<h1>Cigarras Periódicas</h1>
+			<div>
+				<p>Por Maratona de Programação da SBC – 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>As “cigarras periódicas” americanas têm o ciclo de vida mais longo de todos os insetos conhecidos. A cada 17 anos, estas cigarras periódicas amadurecem, se acasalam, depositam ovos e morrem. Suas crias se refugiam debaixo da terra, a 20 centímetros de profundidade, onde elas se alimentarão da seiva de raízes por 17 anos, até&nbsp;que chegue seu dia de buscar um lugar ao sol.</p>
+
+<p>Acredita-se que esse número não aconteceu por acaso, outras espécies de cigarras da região tem ciclos de 13 anos, assim essas duas espécies emergem ao mesmo tempo apenas a cada 221 anos. Isso é&nbsp;desejável pois dessa forma a chance de que as duas espécies se misturem diminui consideravelmente e características indesejáveis de uma população não são introduzidas na outra.</p>
+
+<p>Inspirado por esse fenômeno, uma nova variação de algoritmo evolutivo foi criada. Na última etapa desse algoritmo as melhores possíveis soluções são divididas em populações de modo que cada população<strong> i</strong> tem um ciclo de vida <strong>C<sub>i</sub></strong> . Além disso uma população extra também é&nbsp;adicionada, de modo que a quantidade de iterações até&nbsp;que o ciclo de vida de todas as populações coincida seja a maior possível. Essas populações são então avaliadas até&nbsp;que o ciclo de vida de todas coincida e a melhor solução ao final do processo é&nbsp;escolhida. Como não é&nbsp;interessante esperar demais até&nbsp;que o algoritmo gere uma resposta, um limite superior <strong>L</strong> no número de iterações também deve ser respeitado.</p>
+
+<p>Dados os ciclos de vida das populações criadas e o limite na quantidade de iterações <strong>L</strong>, sua tarefa é&nbsp;computar qual o período ótimo para a população extra que será&nbsp;adicionada</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha da entrada contém dois inteiros <strong>N</strong> e L, respectivamente, a quantidade de populações geradas pelas etapas anteriores do algoritmo e o limite da quantidade de iterações, 2 ≤ <strong>N</strong> ≤ 10<sup>4</sup> , 1 ≤ <strong>L</strong> ≤ 10<sup>6</sup> . A linha seguinte contém os <strong>N</strong> valores <strong>C<sub>i</sub></strong> representando a quantidade de iterações no ciclo de vida de cada população, onde 1 ≤ <strong>C<sub>i</sub></strong> . Você&nbsp;pode assumir que os ciclos de vida das populações atuais coincidem em menos de <strong>L</strong> iterações.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Seu programa deve produzir uma única linha com um inteiro representando o período da população extra que maximiza a quantidade <strong>T</strong> de iterações até&nbsp;que os ciclos de vida de todas as populações coincidam, respeitando a restrição de que <strong>T</strong> ≤ <strong>L</strong>. Caso exista mais de um valor possível imprima o menor deles.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>2 5000</p>
+
+<p>105 55</p>
+
+						</td>
+						<td>
+							<p>4</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>2 512</p>
+
+<p>3 14</p>
+
+                </td>
+                <td>
+                    <p>72</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>3 80</p>
+
+<p>6 10 15</p>
+
+                </td>
+                <td>
+                    <p>4</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+				Maratona de Programação da SBC – ACM ICPC – 2017
+			</p>
+		</div>
+
+	</body>
+</html>

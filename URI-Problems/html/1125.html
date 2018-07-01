@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1125 - Fórmula 1</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1125 - Fórmula 1" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1125</span>
+            <h1>Fórmula 1</h1>
+            <div><p>Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    A temporada de Fórmula 1 consiste de uma série de corridas, conhecidas como Grandes Prêmios, organizados pela Federação Internacional de Automobilismo (FIA). Os resultados de cada Grande Prêmio são combinados para determinar o Campeonato Mundial de Pilotos. Mais especificamente, a cada Grande Prêmio são distribuídos pontos para os pilotos, dependendo da classificação na corrida. Ao final da temporada, o piloto que tiver somado o maior número de pontos é declarado Campeão Mundial de Pilotos.<br />
+                    <br />
+                    Os organizadores da Fórmula 1 mudam constantemente as regras da competição, com o objetivo de dar mais emoção às disputas. Uma regra modificada para a temporada de 2010 foi justamente a distribuição de pontos em cada Grande Prêmio. Desde 2003 a regra de pontuação premiava os oito primeiros colocados, obedecendo a seguinte tabela:</p>
+                <br />
+                <p class="center">
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1125_a.png" style="width: 260px; height: 68px;"></p>
+                <p>
+                Ou seja, o piloto vencedor ganhava 10 pontos, o segundo colocado ganhava 8 pontos, e assim por diante.</p>
+                <p>
+                    Na temporada de 2010, os dez primeiros colocados receberão pontos obedecendo a seguinte tabela:</p>
+                <br />
+                <p class="center">
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1125_b.png" style="width: 319px; height: 69px;" /></p>
+                <br />
+                <p>
+                A mudança no sistema de pontuação provocou muita especulação sobre qual teria sido o efeito nos Campeonatos Mundiais passados se a nova pontuação tivesse sido utilizada nas temporadas anteriores. Por exemplo, teria Lewis Hamilton sido campeão em 2008, já que a diferença de sua pontuação total para Felipe Massa foi de apenas um ponto? Para acabar com as especulações, a FIA contratou você para escrever um programa que, dados os resultados de cada corrida de uma temporada determine Campeão Mundial de Pilotos para sistemas de pontuações diferentes.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. A primeira linha de um caso de teste contém dois números inteiros <strong>G</strong> e <strong>P</strong> separados por um espaço em branco, indicando respectivamente o número de Grandes Prêmios (1 ≤ <strong>G</strong> ≤ 100) e o número de pilotos (1 ≤ <strong>P</strong> ≤ 100). Os pilotos são identificados por inteiros de 1 a <strong>P</strong>. Cada uma das <strong>G</strong> linhas seguintes indica o resultado de uma corrida, e contém <strong>P</strong> inteiros separados por espaços em branco. Em cada linha, o <em>i</em>-ésimo número indica a ordem de chegada do pilodo <em>i</em> na corrida (o primeiro número indica a ordem de chegada do piloto 1 naquela corrida, o segundo número indica a ordem de chegada do piloto 2 na corrida, e assim por diante). A linha seguinte contém um único número inteiro <strong>S</strong> indicando o número de sistemas de pontuação (1 ≤ <strong>S</strong> ≤ 10), e após, cada uma das <strong>S</strong> linhas seguintes contém a descrição de um sistema de pontuação. A descrição de um sistema de pontuação inicia com um inteiro <strong>K</strong> (1 ≤ <strong>K</strong> ≤ <strong>P</strong>), indicando a última ordem de chegada que receberá pontos, seguido de um espaço em branco, seguido de <strong>K</strong> inteiros <strong>k<sub>0</sub></strong>, <strong>k<sub>1</sub></strong>, ... , <strong>k<sub>n−1</sub></strong> (1 ≤ <strong>k<sub>i</sub></strong> ≤ 100) separados por espaços em branco, indicando os pontos a serem atribuídos (o primeiro inteiro indica os pontos do primeiro colocado, o segundo inteiro indica os pontos do segundo colocado, e assim por diante).<br />
+                    <br />
+                    O último caso de teste é seguido por uma linha que contém apenas dois números zero separados por um espaço em branco.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de sistema de pontuação da entrada seu programa deve imprimir uma linha, que deve conter o identificador do Campeão Mundial de Pilotos. Se houver mais de um Campeão Mundial Pilotos (ou seja, se houver empate), a linha deve conter todos os Campeões Mundiais de Pilotos, em ordem crescente de identificador, separados por um espaço em branco.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                1 3<br />
+                                3 2 1<br />
+                                3<br />
+                                3 5 3 2<br />
+                                3 5 3 1<br />
+                                3 1 1 1<br />
+                                3 10<br />
+                                1 2 3 4 5 6 7 8 9 10<br />
+                                10 1 2 3 4 5 6 7 8 9<br />
+                                9 10 1 2 3 4 5 6 7 8<br />
+                                2<br />
+                                5 5 4 3 2 1<br />
+                                3 10 5 1<br />
+                                2 4<br />
+                                1 3 4 2<br />
+                                4 1 3 2<br />
+                                2<br />
+                                3 3 2 1<br />
+                                3 5 4 2<br />
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                3<br />
+                                3<br />
+                                1 2 3<br />
+                                3<br />
+                                3<br />
+                                2 4<br />
+                                4</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programação da SBC 2010</p>
+        </div>
+
+    </body>
+</html>

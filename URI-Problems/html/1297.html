@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1297 - Proteção do Meio Ambiente</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1297 - Proteção do Meio Ambiente" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1297</span>
+            <h1>Proteção do Meio Ambiente</h1>
+            <div><p>Por Fidel Schaponik, UNLP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=""/> Argentina</p></div>
+            <strong>Timelimit: 6</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Arsênico &amp; Cyanide Mineração (ACM) é uma empresa que recentemente decidiu começar a desenvolver suas minas nas terras perto de sua cidade natal. Como um membro do comité de regulamentação dos cidadãos para as operações da ACM, sua tarefa é controlar o quanto a empresa pode extrair dessas terras, de modo que você terá que manter os empregos e os benefícios de sem sacrificar o meio ambiente e a saúde da população local.</p><br />
+
+                <p>
+                    A ACM tem planos para minerar vários pedaços retangulares de terra. Um pedaço de terra tem a largura W, pode ser desenterrado para uma profundidade máxima D, e tem uma superfície plana a qual nós consideramos ser a profundidade 0. Os minerais em um pedaço de terra estão organizados em três camadas, que podem variar na sua profundidade ao longo da largura deste pedaço, mas sempre tem o mesmo perfil ao longo do seu comprimento total. Por isso, a ACM está apenas interessado no perfil ao longo da largura de cada pedaço, e tem realizado trabalhos exploratórios, a fim de determinar com precisão a sua forma.</p><br />
+
+                <p>
+                    Como resultado, eles descobriram que as duas interfaces entre as três camadas de minerais pode ser representada por duas funções y1(x) e y2(x), em que a primeira descreve o limite entre a camada superior e da camada do meio, e o segundo descreve o limite entre a camada intermédia ea camada inferior. Estas funções são de tal forma que sempre</p><br />
+
+                <p class="center">-D &lt; y2(x) &lt; y1(x) &lt; 0 for 0 ≤ x ≤ W ,</p><br />
+
+                <p>
+                    ou seja, os limites das camadas não se tocam. Além disso, cada função está na forma y<sub>i</sub>(x) = p<sub>i</sub>(x)/q<sub>i</sub>(x), onde</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1297_a_pt.png" style="width: 396px; height: 62px;" />​</p>
+                <br />
+                <p>
+                    para i = 1, 2 e um determinado inteiro K. A figura abaixo mostra o perfil dos dois pedaços de terra no formato representado pela ACM. O pedaço da esquerda tem largura W = 6 e profundidade D = 9, enquanto que o pedaço da direita tem W = 8 e D = 10. Os limites das camadas de cada pedaço são descritos pelas funções definidas abaixo deles.</p><br />
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1297_b_pt.png" style="width: 595px; height: 382px;" />​</p>
+                <br />
+                <p>
+                    A ACM vai cavar tudo em um pedaço de terra até uma certa profundidade de escavação d, e, em seguida, vender todos os minerais assim obtidos para lucrar com isso. No entanto, os minerais da parte superior e das camadas inferiores são essencialmente sem valor, de modo que o lucro de toda a operação vem exclusivamente a partir desses minerais na camada do meio. Na verdade, o lucro é proporcional a área A da camada do meio no perfil que está a uma profundidade de pelo menos d. Dada a descrição de um pedaço de terra e um inteiro A, você gostaria de saber a profundidade de escavação d que você deve permitir que o ACM escave a fim de que peguem uma área de minerais na camada do meio com o perfil exato A.</p>
+                    <p>
+                    Na figura abaixo você pode ver a resposta dos dois casos de teste para a mesma entrada. Para o pedaço da esquerda, a fim de pegar uma área A = 14, a profundidade de escavação deve ser de pelo menos d = 4.00000, enquanto que para o pedaço da direita de área também igual a 14, requer uma profundidade de escavação d = 5.51389.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste é descrito usando 5 linhas. A primeira linha contém 4 inteiros <strong>W</strong>, <strong>D</strong>, <strong>A</strong> e <strong>K</strong>, onde <strong>W</strong> é a largura do pedaço de terra que a ACM deseja minerar (1 ≤ <strong>W</strong> ≤ 8), <strong>D</strong> é a profundidade (1 ≤ <strong>D</strong> ≤ 10), <strong>A</strong> é a área da camada do meio com o perfil que a ACM deseja(1 ≤ <strong>A</strong> ≤ <strong>W</strong> x <strong>D</strong>), e <strong>K</strong> permite a definição das interfaces y<sub>1</sub>(x) e y<sub>2</sub>(x) conforme explicado acima (0 ≤ <strong>K</strong> ≤ 8). Cada uma das outras linhas contém <strong>K</strong> + 1 inteiros entre -108 e 108, inclusive. A segunda linha contem os coeficientes de p<sub>1</sub>(x) desde <strong>P</strong><sub>1,0</sub> até <strong>P</strong><sub>1,K</sub>. A terceira linha contém os coeficientes de q<sub>1</sub>(x) desde <strong>Q</strong><sub>1,0</sub> até <strong>Q</strong><sub>1,K</sub>. A quarta linha contém os coeficientes de p<sub>2</sub>(x) desde <strong>P</strong><sub>2,0</sub> até <strong>P</strong><sub>2,K</sub>. A quinta linha contém os coeficientes de q<sub>2</sub>(x) desde <strong>Q</strong><sub>2,0</sub> até <strong>Q</strong><sub>2,<strong>K</strong></sub>. Em cada caso de teste, <strong>A</strong> é estritamente menor que a area total da camada do meio do perfil e existe um único valor <strong>d</strong> tal que de tal forma que uma profundidade de escavação <strong>d</strong> origina uma área de minerais a partir da camada do meio em um perfil exato <strong>A</strong>. Além disso, q<sub>1</sub>(x) 6= 0, q<sub>2</sub>(x) 6= 0 e -<strong>D</strong> &lt; y<sub>2</sub>(x) &lt; y<sub>1</sub>(x) &lt; 0, para 0 ≤ x ≤ <strong>W</strong>.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste de saída imprima uma linha com um número racional que representa a profundidade <strong>d</strong> que deve ser permitido à ACM cavar o pedaço de terra, de modo que eles peguem uma área de minerais a partir da camada do meio no perfil exato <strong>A</strong>. O resultado deve ser saída como um número racional com exatamente cinco dígitos depois do ponto decimal, arredondado, se necessário.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                6 9 4 1<br />
+                                -10 1<br />
+                                2 0<br />
+                                -16 1<br />
+                                2 0<br />
+                                8 10 14 4<br />
+                                -1392 864 -216 24 -1<br />
+                                1312 -864 216 -24 1<br />
+                                -73 36 -54 36 -9<br />
+                                17 -4 6 -4 1</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                4.00000<br />
+                                5.51389</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2012.
+            </p>
+        </div>
+
+    </body>
+</html>

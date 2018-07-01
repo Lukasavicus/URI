@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2684 - Ajude o Professor Webscript!!</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 0001 - Ajude o Professor Webscript!!" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2684</span>
+			<h1>Ajude o Professor Webscript!!</h1>
+			<div>
+				<p>Por Samuel Lucas Santos Gomes, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>O Professor &nbsp;Webscript, um dos renomados professores do Instituto Federal de Muzambinho ensina seus alunos a desenvolverem sites totalmente responsivos e práticos, sem a necessidade de &nbsp;frameworks. Ele auxilia os mais diversos tipos de alunos de toda a escola, mas cansou de ensinar a sintaxe correta das tags("&gt;" fechar e "&lt;" abre ), de maneira correta. Então, para voltar a paz e a tranquilidade que tinha, ele solicita sua ajuda. Haverá diversos tipos de tag, não é necessário textos entres os sinais das tags, seu programa deverá indicar se uma tag foi usada corretamente ou não. Não esqueça que seu programa deverá seguir alguns critérios como no exemplo abaixo.</p>
+
+<p>I - O primeiro parâmetro indica o tipo da tag:<br />
+1 - Quando a tag é única.<br />
+0 - Quando a tag possui dois pares de sinais;</p>
+
+<p>II - Os sinais como "&gt;" ou "&lt;" só deverão ser usados para indicar o fechamento ou a abertura de uma tag:<br />
+0 &lt;p&gt; Home&gt;Download&gt;Sublime &lt;/p&gt; -&gt; error<br />
+1 &lt;input type="text" name="Next &gt;"&gt; -&gt; error<br />
+0 &lt;ul&gt;&lt;li&gt;Ola&lt;/li&gt;&lt;/ul&gt; -&gt; Successful<br />
+1 &lt;span&gt;&lt;br&gt; -&gt; certo<br />
+0 &lt;&gt;&lt;/li&gt; -&gt; error&nbsp;</p>
+
+<p>Quando inserimos &nbsp;o parâmetro, só existiram tags do padrão escolhido, por exemplo: se colocarmos 0(Quando a tag possui dois pares de sinais) o programa só vai verificar tags com dois pares de sinais, a mesma coisa acontece quando colocamos 1(Quando a tag é única). Então em uma única tag não haverá os dois tipos.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A entrada contém um inteiro &nbsp;0 &lt; <strong>N</strong> &lt; 100 que indica o número situações a serem verificadas. As <strong>N</strong> linhas seguintes correspondem as situações, cada uma com um inteiro <strong>K</strong> (0 ou 1) (que será o meio de identificação da(s) tag) e logo em seguida vem uma linha com o código <strong>S</strong> (0 &gt; <strong>S</strong> &lt; 200) a ser verificado.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Como no exemplo dado, verifique se a tag foi usada corretamente. Seu programa deve informar "Successful!!" se a sintaxe estiver certa ou "error" se estiver faltando alguma coisa. A mensagem deve ser exibida sem as aspas, com o quebra linha no final.<br />
+&nbsp;</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5<br />
+1 &lt;meta charset="UTF-8"&gt;<br />
+0 &lt;p&gt; Home&gt;Download&gt;Sublime &lt;/p&gt;&nbsp;<br />
+1 &lt;input type="text" name="Next &gt;"&gt;<br />
+0 &lt;li&gt;&lt;a href=""&gt;&lt;/a&gt;&lt;/li&gt;<br />
+1&nbsp;&lt;meta charset="UTF-8"&gt;&lt;li&gt;&lt;/li&gt;</p>
+
+						</td>
+						<td>
+							<p>Successful!!<br />
+error<br />
+error<br />
+Successful!!<br />
+error</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				Primeiro Contest Sam Well - IFSULDEMINAS
+			</p>
+		</div>
+	</body>
+</html>

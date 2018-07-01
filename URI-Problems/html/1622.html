@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1622 - Lâmpadas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1622 - Lâmpadas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1622</span>
+                <h1>Lâmpadas</h1>
+                <div>
+                    <p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>No último trabalho da escola, você desenvolveu um projeto um tanto quanto curioso. Trata-se de N lâmpadas dispostas uma ao lado da outra, enumeradas de 1 até N, da esquerda para a direita, e de um único interruptor. Quando este interruptor é pressionado, ele troca o estado de uma das lâmpadas (se está ligada, ela desliga, e vice-versa).</p>
+
+                    <p>O diferencial do seu projeto está no comportamento desse interruptor. Em vez de trocar o estado de apenas uma lâmpada em particular, ele intercala entre as lâmpadas em que ele vai agir, funcionando da seguinte maneira: na primeira vez ele troca o estado da lâmpada número 1; na segunda, e nas próximas vezes, ele troca o estado da lâmpada que está K posições à direita da anterior. Se ele chegar no final da sequência, ele continua a contar da posição 1.</p>
+
+                    <p>Ou seja, seja N = 8 e K = 3, se pressionarmos o interruptor 4 vezes ele vai agir nas lâmpadas 1, 4, 7 e 2, respectivamente.</p>
+
+                    <p>Você ficou um pouco intrigado com sua própria invenção, e resolveu fazer alguns testes. Dado o estado inicial de cada uma das N lâmpadas (ligado ou desligado), o valor de K e um número M de vezes que o interruptor foi pressionado, diga o estado final das N lâmpadas.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Haverá diversos casos de teste. Cada caso de teste inicia com dois inteiros <strong>N</strong> e <strong>Q</strong> (3 ≤ <strong>N</strong> ≤ 100, 1 ≤ <strong>Q</strong> ≤ 1000), representando o número de lâmpadas e o número de consultas, respectivamente.</p>
+
+                    <p>Em seguida haverá uma linha com <strong>N</strong> caracteres, representando o estado das <strong>N</strong> lâmpadas. O <strong>i</strong>-ésimo caractere indica o estado da <strong>i</strong>-ésima lâmpada, estando ela ligada (caractere "o") ou desligada (caractere "x"), para todo 1 ≤ <strong>i</strong> ≤ <strong>N</strong>.</p>
+
+                    <p>Em seguida haverá <strong>Q</strong> linhas, cada uma com dois inteiros <strong>K</strong> e <strong>M</strong> (1 ≤ <strong>K</strong> &lt; <strong>N</strong>, 1 ≤ <strong>M</strong> ≤ 10⁶), indicando o tamanho do “salto” que seu interruptor dá (conforme o enunciado), e o número de vezes que o mesmo foi pressionado, respectivamente. A cada consulta o interruptor inicia na posição 1.</p>
+
+                    <p>O último caso de teste é indicado quando <strong>N</strong> = <strong>Q</strong> = 0, o qual não deverá ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada consulta imprima uma linha, contendo <strong>N</strong> caracteres cada, onde o <strong>i</strong>-ésimo caractere indica o estado da <strong>i</strong>-ésima lâmpada, estado ela ligada (caractere "o") ou desligada (caractere "x").</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>8 3<br />
+                                xxxxxxxx<br />
+                                3 3<br />
+                                3 4<br />
+                                3 7<br />
+                                11 3<br />
+                                xooxoxxxxox<br />
+                                5 6<br />
+                                10 43<br />
+                                9 1000<br />
+                                0 0</p>
+
+                            </td>
+                            <td>
+                                <p>oxxoxxox<br />
+                                ooxoxxox<br />
+                                oooooxoo<br />
+                                ooooxoxxxxo<br />
+                                xxoxoxxxxox<br />
+                                oxooxooooxo</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XIV Contest Algar Telecom 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,141 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2406 - Expressões</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2406 - Expressões" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2406</span>
+				<h1>Expressões</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2011 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Pedrinho e Zezinho estão precisando estudar resolução de expressões matemáticas para uma prova que irão fazer. Para isso, eles querem resolver muitos exercícios antes da prova. Como sabem programar, então decidiram fazer um gerador de expressões matemáticas.</p>
+
+<p>O gerador de expressões que eles criaram funciona em duas fases. Na primeira fase é gerada uma cadeia de caracteres que contém apenas os caracteres '{', '[', '(', '}', ']' e ')'. Na segunda fase, o gerador adiciona os números e operadores na estrutura criada na primeira fase. Uma cadeia de caracteres é dita&nbsp;<em>bem definida</em>&nbsp;(ou válida) se atende as seguintes propriedades:</p>
+
+<ol>
+	<li>Ela é uma cadeia de caracteres vazia (não contém nenhum caractere).</li>
+	<li>Ela é formada por uma cadeia&nbsp;<em>bem definida</em>&nbsp;envolvida por parênteses, colchetes ou chaves. Portanto, se a cadeia&nbsp;<em>S</em>&nbsp;é&nbsp;<em>bem definida</em>, então as cadeias (<em>S</em>), [<em>S</em>] e {<em>S</em>} também são&nbsp;<em>bem definidas</em>.</li>
+	<li>Ela é formada pela concatenação de duas cadeias&nbsp;<em>bem definidas</em>. Logo, se as cadeias&nbsp;<em>X</em>&nbsp;e&nbsp;<em>Y</em>&nbsp;são&nbsp;<em>bem definidas</em>, a cadeia&nbsp;<em>XY</em>&nbsp;é&nbsp;<em>bem definida</em>.</li>
+</ol>
+
+<p>Depois que Pedrinho e Zezinho geraram algumas expressões matemáticas, eles perceberam que havia algum erro na primeira fase do gerador. Algumas cadeias não eram&nbsp;<em>bem definidas</em>. Eles querem começar a resolver as expressões o mais rápido possível, e sabendo que você é um ótimo programador (e participa da OBI) resolveram pedir que escreva um programa que dadas várias cadeias geradas na primeira fase, determine quais delas são&nbsp;<em>bem definidas</em>&nbsp;e quais não são.</p>
+
+<ul>
+</ul>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro&nbsp;<em><strong>T</strong> (</em>1 ≤&nbsp;<strong><em>T</em></strong>&nbsp;≤ 20<em>)</em>&nbsp;indicando o número de instâncias. Em seguida temos&nbsp;<strong><em>T</em></strong>&nbsp;linhas, cada uma com uma cadeia&nbsp;<strong><em>A, </em></strong><em>(</em>a cadeia de caracteres&nbsp;<strong><em>A</em></strong>&nbsp;tem entre 1 e 100000 caracteres), (a cadeia de caracteres&nbsp;<strong><em>A</em></strong>&nbsp;contém apenas caracteres '{', '[', '(', '}', ']' e ')' ).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância imprima uma linha contendo a letra S se a cadeia é&nbsp;<em>bem definida</em>, ou a letra N caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>12</p>
+
+<p>()</p>
+
+<p>[]</p>
+
+<p>{}</p>
+
+<p>(]</p>
+
+<p>}{</p>
+
+<p>([{}])</p>
+
+<p>{}()[]</p>
+
+<p>()]</p>
+
+<p>{[]</p>
+
+<p>(</p>
+
+<p>(([{}{}()[]])(){}){}</p>
+
+<p>(((((((((({([])}])))))))))</p>
+
+							</td>
+							<td>
+								<p>S</p>
+
+<p>S</p>
+
+<p>S</p>
+
+<p>N</p>
+
+<p>N</p>
+
+<p>S</p>
+
+<p>S</p>
+
+<p>N</p>
+
+<p>N</p>
+
+<p>N</p>
+
+<p>S</p>
+
+<p>N</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2011 Fase 2 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

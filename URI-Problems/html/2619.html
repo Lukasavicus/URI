@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2619 2619 - Super Luxo </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - SQL - Problema 2619 - Super Luxo" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default-sql.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28047757-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <span>URI Online Judge <strong>SQL</strong> | 2619 </span>
+      <h1>Super Luxo</h1>
+      <div>
+        <p>Paulo R. Rodegheri <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem-sql">
+      
+      <div>
+        <p>A nossa empresa está querendo fazer um novo contrato para o fornecimento de novos produtos superluxuosos, e para isso precisamos de alguns dados dos nossos produtos.</p>
+        <p>Seu trabalho é exibir o nome dos produtos, nome dos fornecedores e o preço, para os produtos cujo preço seja maior que 1000 e sua categoria seja ‘Super Luxury.</p>
+      </div>
+
+      <div>
+        <h2>Esquema</h2>
+        <div>          
+          
+          <table class="tables-model-two">
+            <caption>products</caption>
+            <tr>
+              <td class="half-column"><strong>Coluna</strong></td>
+              <td class="half-column"><strong>Tipo</strong></td>
+            </tr>
+            <tr>
+              <td>id (PK)</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>character varying (255)</td>
+            </tr>
+            <tr>
+              <td>amount</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>price</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>id_providers (FK)</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>id_categories (FK)</td>
+              <td>numeric</td>
+            </tr>
+          </table>
+          
+          <table class="tables-model-two-inline">
+            <caption>providers</caption>
+            <tr>
+              <td class="half-column"><strong>Coluna</strong></td>
+              <td class="half-column"><strong>Tipo</strong></td>
+            </tr>
+            <tr>
+              <td>id (PK)</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>character varying (255)</td>
+            </tr>
+            <tr>
+              <td>street</td>
+              <td>character varying (255)</td>
+            </tr>
+            <tr>
+              <td>city</td>
+              <td>character varying (255)</td>
+            </tr>
+            <tr>
+              <td>state</td>
+              <td>char (2)</td>
+            </tr>
+          </table>
+            
+          <table class="tables-model-two">
+            <caption>categories</caption>
+            <tr>
+              <td class="half-column"><strong>Coluna</strong></td>
+              <td class="half-column"><strong>Tipo</strong></td>
+            </tr>
+            <tr>
+              <td>id (PK)</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>character varying (255)</td>
+            </tr>
+          </table>
+                                        
+        </div>
+      </div>
+
+      <div class="sampleInput">
+        <h2>Tabelas</h2>
+        <div class="tables">
+          
+          <table class="tables-hundred">
+            <caption>products</caption>
+            <tr>
+              <td><strong>id</strong></td>
+              <td><strong>name</strong></td>
+              <td><strong>amount</strong></td>
+              <td><strong>price</strong></td>
+              <td><strong>id_providers</strong></td>
+              <td><strong>id_categories</strong></td>                
+            </tr>
+            <tr>
+              <td class="center">1</td>
+              <td>Blue Chair</td>
+              <td class="center">30</td>
+              <td class="center">300.00</td>
+              <td class="center">5</td>
+              <td class="center">5</td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+              <td>Red Chair</td>
+              <td class="center">50</td>
+              <td class="center">2150.00</td>
+              <td class="center">2</td>
+              <td class="center">1</td>
+            </tr>
+            <tr>
+              <td class="center">3</td>
+              <td>Disney Wardrobe</td>
+              <td class="center">400</td>
+              <td class="center">829.50</td>
+              <td class="center">4</td>
+              <td class="center">1</td>
+            </tr>
+            <tr>
+              <td class="center">4</td>
+              <td>Blue Toaster</td>
+              <td class="center">20</td>
+              <td class="center">9.90</td>
+              <td class="center">3</td>
+              <td class="center">1</td>
+            </tr>
+            <tr>
+              <td class="center">5</td>
+              <td>TV</td>
+              <td class="center">30</td>
+              <td class="center">3000.25</td>
+              <td class="center">2</td>
+              <td class="center">2</td>
+            </tr>
+          </table>       
+          
+          <table class="tables-hundred">
+            <caption>providers</caption>
+            <tr>
+              <td><strong>id</strong></td>
+              <td><strong>name</strong></td>
+              <td><strong>street</strong></td>
+              <td><strong>city</strong></td>
+              <td><strong>state</strong></td>
+            </tr>
+            <tr>
+              <td class="center">1</td>
+              <td>Ajax SA</td>
+              <td>Rua Presidente Castelo Branco</td>
+              <td>Porto Alegre</td>
+              <td class="center">RS</td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+              <td>Sansul SA</td>
+              <td>Av Brasil</td>
+              <td>Rio de Janeiro</td>
+              <td class="center">RJ</td>
+            </tr>
+            <tr>
+              <td class="center">3</td>
+              <td>South Chairs</td>
+              <td>Rua do Moinho</td>
+              <td>Santa Maria</td>
+              <td class="center">RS</td>
+            </tr>
+            <tr>
+              <td class="center">4</td>
+              <td>Elon Electro</td>
+              <td>Rua Apolo</td>
+              <td>São Paulo</td>
+              <td class="center">SP</td>
+            </tr>
+            <tr>
+              <td class="center">5</td>
+              <td>Mike electro</td>
+              <td>Rua Pedro da Cunha</td>
+              <td>Curitiba</td>
+              <td class="center">PR</td>
+            </tr>
+          </table>            
+        
+          <table class="tables-model-two">
+            <caption>categories</caption>
+            <tr>
+              <td><strong>id</strong></td>
+              <td><strong>name</strong></td>
+            </tr>
+            <tr>
+              <td class="center">1</td>
+              <td>Super Luxury</td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+              <td>Imported</td>
+            </tr>
+            <tr>
+              <td class="center">3</td>
+              <td>Tech</td>
+            </tr>
+            <tr>
+              <td class="center"> 4</td>
+              <td>Vintage</td>
+            </tr>
+            <tr>
+              <td class="center">5</td>
+              <td>Supreme</td>
+            </tr>
+          </table>       
+        
+               
+        </div>
+      </div>
+
+      <div>
+        <h2>Exemplo de saída</h2>
+        <div>
+          <table class="tables-model-two">
+            <tr>
+              <td><strong>name</strong></td>
+              <td><strong>name</strong></td>
+              <td><strong>price</strong></td>
+            </tr>
+            <tr>
+              <td>Red Chair</td>
+              <td>Sansul SA</td>
+              <td class="center">2150.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+            
+    </div>
+      
+  </body>
+</html>

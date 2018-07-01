@@ -1,0 +1,133 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2012 - Altura do Mapa</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2012 - Altura do Mapa" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2012</span>
+				<h1>Altura do Mapa</h1>
+				<div>
+					<p>Por Pablo Ariel Heiber <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Um Height Map é uma matriz bidimensional de inteiros positivos que representa um poliedro. Cada célula da matriz com o valor V representa uma coluna em forma de paralelepípedo 1 × 1 × V que é colocada sobre um dos seus 1 × 1 virado para a célula. Isso cria um poliedro com um único rosto no fundo compo de todas as para baixo de frente para 1 × 1 rostos combinados, e possivelmente várias faces no topo e nos lados.</p>
+
+					<p>Por exemplo, uma matriz de 2 x 2 com todos os valores iguais a 2 representa um cubo do lado 2. No entanto, se a pessoa dos valores é 1, o poliedro representado é o mesmo cubo com um canto cortado. Os seguintes imagem representa ambas as alternativas.</p>
+
+					<p class="center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2012_a.png" style="height:100px; width:650px" /></p>
+
+					<p>Embora nem todos os poliedro pode ser representado desta forma, há vários que pode. Aqui estão um par de outros exemplos.</p>
+
+					<p class="center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2012_b.png" style="height:100px; width:650px" /></p>
+
+					<p>Dado um Mapa, você está convidado a contar o número de faces do poliedro representados. Note-se que uma face é definido como um polígono simples que descreve um limite máximo de contígua e poliedro. Como você pode ver nos dois últimos exemplos, é possível que duas faces coplanares diferentes compartilhar um vértice comum, ou mesmo um lado, ou porções de um lado.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>R</strong> e <strong>C</strong>, representando, respectivamente, o número de linhas e colunas do Height Map (1 ≤ <strong>R</strong>, <strong>C</strong> ≤ 100). Cada uma das linhas próximas <strong>R</strong> contém inteiros <strong>C</strong>; o número inteiro de ordem<strong> j </strong>na linha de ordem <strong>i </strong>é o valor <strong>Vi</strong>, <strong>J</strong> localizado na linha <strong>i</strong>-ésimo e <strong>j</strong>-ésimo coluna da matriz (1 ≤ <strong>Vi</strong>, <strong>J</strong> ≤ 109 para<strong> i</strong> = 1, 2,... , <strong>R</strong> e <strong>j</strong> = 1, 2,..., <strong>C</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Saída de uma linha com um inteiro representando o número de faces do poliedro representados por o Height Map de entrada.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 2<br />
+2 2<br />
+2 2</p>
+
+							</td>
+							<td>
+								<p>6</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 2<br />
+2 2<br />
+2 1</p>
+
+							</td>
+							<td>
+								<p>9</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 3<br />
+3 2 2<br />
+1 3 2</p>
+
+							</td>
+							<td>
+								<p>14</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC Latin American Regional – 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1207 - Os Benefícios da Vodka</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1207 - Os Benefícios da Vodka" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1207</span>
+                <h1>Os Benefícios da Vodka</h1>
+                <div><p>
+	Por Marcio T. I. Oshiro <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" /> Brasil</p>
+</div>
+                <strong>Timelimit: 4</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	São Peterburgo é conhecida como a capital da cerveja russa e abriga diversas cervejarias importantes. Dizem que a qualidade da água da cidade é responsável por uma cerveja de excelente qualidade. Além de fábricas tradicionais, como a Heineken, algumas marcas locais são destacadas, como a Tinkoff e a Baltika. Também na cidade são produzidas algumas das melhores vodkas do mundo. A mais antiga, chamada Liviz, data de 1897. Esta destilaria produz vodkas de&nbsp; excelente qualidade, medida por padrões internacionais. Curiosamente, alguns tipos de vodkas, quando consumidos juntos, acabam tendo, segundo os&nbsp; especialistas, sabor muito melhor. Dessa forma, alguns tipos de vodka são reunidos em categorias que, quando compradas totalmente pelo consumidor, trazem um benefício agregado medido segundo padrões internacionais de qualidade. Cada uma das vodkas tem um preço associado, e sua tarefa é encontrar uma compra que maximize o benefício total menos o custo das vodkas adquiridas.</p>
+    <p>
+	Reescrevendo, cada vodka tem um custo Cj e existem M categorias diferentes, cada qual com um benefício Bi. Um benefício só é computado se todos os tipos de vodka que compõem a categoria são adquiridos. Uma mesma garrafa de vodka pode participar de mais de uma categoria para computar o benefício. Sua tarefa é determinar quais tipos de vodka comprar de forma a maximizar a soma dos benefícios adquiridos menos o custo dos itens&nbsp; comprados. Você pode supor que foi à Russia com dinheiro suficiente para comprar todos os tipos de vodka produzidos pela Liviz (oba!! :D).</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada é composta por diversas instâncias e termina com final de arquivo (EOF). 
+	A primeira linha de cada instância contém dois inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 600) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 400) 
+	representando, respectivamente, a quantidade de tipos diferentes de vodka a venda e o número de categorias existentes. 
+	Os tipos de vodka são identificados por números de 1 a <strong>N</strong> e as categorias por números de 1 a <strong>M</strong>.</p>
+    <p>
+	A linha seguinte contém <strong>N</strong> inteiros, <strong>C</strong><em>j</em> (1 ≤ <strong>C</strong><em>j</em> ≤ 1000) para (1 ≤ <em>j</em> ≤ <strong>N</strong>), 
+	separados por espaço, correspondendo ao custo da vodka <em>j</em>. Na próxima linha existem <strong>M</strong> inteiros, <strong>P</strong><em>i</em> 
+	(1 ≤ <strong>P</strong><em>i</em> ≤ <strong>N</strong>) 
+	para (1 ≤ <em>i</em>  ≤ <strong>M</strong>), separados por espaço, indicando quantos tipos diferentes de vodkas compõe a categoria <em>i</em>. 
+	Cada uma das <strong>M</strong> linhas seguintes descreve uma categoria começando com um inteiro, 
+	<strong>B</strong><em>i</em> (1 ≤ <strong>B</strong><em>i</em> ≤ 1000) para (1 ≤ <em>i</em> ≤ <strong>M</strong>), indicando seu benefício, 
+	seguido pelos tipos de vodka que a 
+	compõe, separados por espaços.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada instância imprima, em uma única linha, o maior valor que pode ser obtido da soma dos benefícios das categorias adquiridas menos o custo dos tipos de vodkas compradas.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	2 3<br />
+	80 80<br />
+	1 2 1<br />
+	90 1<br />
+	50 1 2<br />
+	25 2<br />
+	4 3<br />
+	50 200 50 130<br />
+	2 2 2<br />
+	70 1 2<br />
+	260 2 3<br />
+	120 3 4</p>
+
+                            </td>
+                            <td>
+                                <p>
+	10<br />
+	30</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+	No primeiro exemplo o valor máximo pode ser obtido comprando apenas a vodka 1 e adquirindo a categoria 1. No segundo exemplo o valor máximo pode ser obtido comprando as vodkas 1, 2 e 3 e adquirindo as categoria 1 e 2.<br />
+XVI Maratona de Programação IME-USP, 2012. <br />Agradecimento especial a Carlos E. Ferreira.</p>    
+            </div>
+
+        </body>
+    </html>

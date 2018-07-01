@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1223 - Tobogan de Bolinhas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1223 - Tobogan de Bolinhas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1223</span>
+                <h1>Tobogan de Bolinhas</h1>
+                               <div><p>
+	Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Uma fábrica quer produzir um tobogan de brinquedo como o da figura abaixo, composto de duas hastes de madeira sustentando aletas que se alternam nas duas hastes. Uma bolinha de aço é solta na aleta mais alta do tobogan; sob efeito da gravidade, a bolinha desliza pelas aletas, 
+	terminando por sair do brinquedo.<br /><br />
+	 <p class="center">
+<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1223_a.png" style="width: 138px; height: 192px;" />
+	 </p>
+<p>
+	<br />
+	O projeto do brinquedo, contendo as especificações do tamanho, posição e inclinação das hastes e de cada aleta, foi feito pelo dono da fábrica, e milhares de unidades já estão sendo confeccionadas na China. O gerente da fábrica foi incumbido de comprar as bolinhas de aço, mas antes de fazer o pedido das milhares de bolinhas quer saber o diâmetro máximo da bolinha, para que esta não pare no meio do brinquedo.<br />
+	 <p class="center">
+<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1223_b.png" style="width: 314px; height: 225px;" />
+	 </p>
+<p>
+	<br />
+	Figura 1: Dois exemplos: em (a) a bolinha chega ao final, e (b) a bolinha para no meio do brinquedo e não chega ao final.<br />
+	<br />
+	O gerente da fábrica quer que você escreva um programa que, dadas as especificações do brinquedo, determine o diâmetro máximo da bolinha para que esta não pare no meio do brinquedo.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+	A primeira linha de um caso de teste contém um inteiro <strong>N </strong>(1 ≤ <strong>N </strong>≤ 10<sup>3</sup>) indicando o número de aletas do brinquedo. A segunda linha contém dois inteiros <strong>L </strong>(1 ≤ <strong>L </strong>≤ 10<sup>3</sup>) e <strong>H </strong>(1 ≤ <strong>H </strong>≤ 10<sup>3</sup>), indicando respectivamente a distância entre as hastes e a altura das hastes do brinquedo. A haste esquerda do brinquedo está na posição 0 do eixo de ordenadas <strong>X</strong>, de forma que a haste direita está na posição <strong>L </strong>do eixo <strong>X</strong>.<br />
+	<br />
+	Cada uma das <strong>N </strong>linhas seguintes descreve uma aleta. As aletas são descritas da mais alta para a mais baixa, de forma alternada em relação à haste na qual a aleta está conectada. A aleta mais alta do brinquedo (a primeira a ser descrita) tem a extremidade ligada à haste esquerda; a segunda aleta mais alta (a segunda a ser descrita) tem a extremidade ligada à haste direita, assim alternadamente. As aletas ímpares têm a extremidade ligada à haste esquerda, as aletas pares têm a extremidade ligada à haste direita.<br />
+	<br />
+	Cada aleta é descrita em uma linha contendo três números inteiros <em><strong>Y</strong><sub>i</sub></em>, <em><strong>X</strong><sub>f</sub></em> (0 &lt; <em><strong>X</strong><sub>f</sub></em> &lt; <strong>L</strong>) e <em><strong>Y</strong><sub>f </sub></em>(0 ≤ <em><strong>Y</strong><sub>f</sub></em> ≤ <strong>H</strong>), separados por um espaço em branco. (<em><strong>X</strong><sub>f</sub> , <strong>Y</strong><sub>f</sub></em>) indica a coordenada do final da aleta; para aletas ímpares a coordenada do início da aleta  é (0, <strong><em>Y</em></strong><sub><em>i </em></sub>(0 ≤ <em><strong>Y</strong><sub>i</sub></em> ≤ <strong>H</strong>)), e para aletas pares a coordenada do início da aleta é (<strong>L</strong>, <em><strong>Y</strong><sub>i</sub></em><sub> </sub>). <br />
+	<br />
+	Para todas as aletas <em><strong>Y</strong><sub>i</sub></em> &gt; <em><strong>Y</strong><sub>f</sub></em>  (ou seja, há um declive entre o início e o final da aleta), e o comprimento da aleta é menor do que a largura do brinquedo. Além disso, para duas aletas consecutivas <strong>A </strong>e <strong>B</strong>, <em><strong>Y</strong><sub>fa</sub></em> &gt;= <em><strong>Y</strong><sub>iB</sub></em>  (ou seja, o final da aleta <strong>A</strong> tem altura maior do que ou igual ao início da aleta <strong>B</strong>). Considere que as aletas são muito finas, de forma que a sua espessura pode ser desconsiderada, e que a sua largura é sempre maior do que o diâmetro da bolinha (ou seja, a bolinha sempre tem espaço lateral para deslizar pela aleta). <br />
+	<br />
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste imprima uma linha contendo um único número, com exatamente duas casas decimais, indicando o maior diâmetro de bolinha tal que esta consiga percorrer todo o brinquedo.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	3<br />
+	6 10<br />
+	9 3 8<br />
+	6 2 5<br />
+	4 3 1<br />
+	3<br />
+	5 10<br />
+	9 3 7<br />
+	7 2 4<br />
+	2 3 0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	2.00<br />
+	1.41</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                Maratona de Programação da SBC 2012</p>
+    
+            </div>
+
+        </body>
+    </html>

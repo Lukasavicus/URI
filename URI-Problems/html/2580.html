@@ -1,0 +1,141 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2580 - Mestre Pokémon Ho</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 0000 - Mestre pokémon Ho" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2580</span>
+            <h1>Mestre Pokémon Ho</h1>
+            <div>
+                <p>Por Lucas Maciel, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Em Belo Horizonte, um jogo eletrônico tem tomado as ruas e praças da cidade: é o pokémon Ho.  A startup NlogNintendo que criou o jogo não esperava tamanho sucesso. E ela acabou de te contratar para que você descubra o melhor jeito de se tornar um mestre pokémon Ho.</p>
+
+<p>No pokémon Ho, você possui pokebolas que capturam pokémons (criaturinhas do jogo). A cada vez que se captura um pokémon novo, ganha-se experiência, porém pokémons repetidos não. Um mestre pokémon Ho é um jogador que possui grande quantidade de experiência. E é por isso que  você deseja capturar os mais diversos tipos de pokémons que se é possível. Entretanto, essa não é uma tarefa fácil. Os pokémons, ao tentarem ser capturados, podem quebrar as pokebolas. Alguns com mais facilidade do que outros. De fato, para cada pokémon <strong>i</strong> temos uma probabilidade associada <strong>p<sub>i</sub></strong> do pokémon quebrar a pokebola. Para não deixar alguns pokémons impossíveis de serem capturados, a NlogNintendo assumiu que <strong>p<sub>i</sub></strong> ≤ <strong>0.9</strong>. Ou seja, é garantido ao menos <strong>10%</strong> de chance de capturar um pokémon. Além disso, após cada <strong>j</strong>-ésima tentativa falha, o pokémon <strong>i</strong> tem uma probabilidade <strong>r<sub>{i, j}</sub> </strong>de escapar da batalha. Se o pokémon escapar, não se pode tentar capturá-lo novamente. Como podem ter muitas tentativas, a NLogNintendo disponibiliza apenas <strong>R<sub>i</sub></strong> probabilidades de escapar para cada pokémon <strong>i</strong>. As probabilidades <strong>r<sub>{i, j}</sub></strong>, <strong>1 </strong>≤ <strong>j</strong> ≤ <strong>R<sub>i</sub></strong> se repetem a cada <strong>R<sub>i</sub></strong> tentativas.</p>
+
+<p>A NlogNintendo te mandou a seguinte tarefa: Dado as probabilidades e as experiências de captura associado a cada pokémon e um número finito de pokebolas, encontre o valor esperado de experiência a ser obtido assumindo que o mestre pokémon Ho sempre joga de forma ótima.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A entrada consiste de dois inteiros <strong>N</strong> (1 ≤ <strong>N </strong>≤ 30) e <strong>P </strong>(1 ≤ <strong>P </strong>≤ 10<sup>6 </sup>)  que representam o número de pokémons no jogo, e o número de pokebolas disponíveis para o jogador. As próximas 2*<strong>N</strong> linhas temos uma string <strong>S<sub>i</sub> </strong>(1 ≤ |<strong>S<sub>i</sub></strong>| ≤ 50 )(∀1 ≤ <strong>i </strong>≤ <strong>N </strong>) ,um inteiro <strong>R<sub>i</sub> </strong>( 1 ≤ <strong>R<sub>i</sub> </strong>≤ 10<sup>4 </sup>)(∀1 ≤ <strong>i </strong>≤ <strong>N </strong>), um inteiro <strong>e<sub>i</sub> </strong>(1 ≤ <strong>e<sub>i</sub> </strong>≤ 1000 )(∀1 ≤ <strong>i </strong>≤ <strong>N </strong>) e um real de 3 casas decimais<strong> p<sub>i</sub> </strong>( 0.000 ≤ <strong>p<sub>i</sub> </strong>≤ 0.900 )( ∀1 ≤ <strong>i </strong>≤ <strong>N </strong>) que representam  o nome do pokémon <strong>i</strong>, o número de probabilidades de escapar de uma batalha, a experiência obtida ao capturá-lo e a probabilidade do pokémon <strong>i</strong> quebrar a pokebola, respectivamente. Na próxima linha <strong>R<sub>i</sub></strong> números reais <strong>r<sub>{i, j}</sub> </strong>( 0.000 ≤ <strong>r<sub>{i, j}</sub> </strong>≤ 1.000 )( ∀1 ≤ <strong>i </strong>≤ <strong>N </strong>)( ∀1 ≤ <strong>j</strong><strong> </strong>≤ <strong>R<sub>i</sub> </strong>) que representam a probabilidade do <strong>i</strong>-ésimo pokémon escapar da batalha após a <strong>j</strong>-ésima tentativa de captura. Lembre-se que a cada <strong>R<sub>i</sub> </strong>tentativas, os valores se repetem.</p>
+
+<p>Observação: Não é garantido que se dois pokémons aparecerem com o mesmo nome na entrada, terão todos os valores associados iguais.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Um número real arredondado para 4 casas decimais correspondente a experiência esperada a ser ganha por um mestre pokémon Ho.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2 1<br />
+Pikachu 3 100 0.500<br />
+0.500 0.100 0.900<br />
+Charmander 1 80 0.100<br />
+0.000</p>
+
+                        </td>
+                        <td>
+                            <p>72.0000</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>2 2<br />
+Pikachu 3 100 0.500<br />
+0.500 0.100 0.900<br />
+Charmander 1 80 0.100<br />
+0.000</p>
+
+                </td>
+                <td>
+                    <p>124.2000</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>5 1000000<br />
+Pikachu 3 100 0.500<br />
+0.500 0.100 0.900<br />
+Raichu 3 300 0.899<br />
+0.900 0.200 0.700<br />
+Charmander 1 80 0.100<br />
+0.000<br />
+Bulbasaur 1 80 0.125<br />
+0.000<br />
+Squirtle 1 80 0.050<br />
+0.000</p>
+
+                </td>
+                <td>
+                    <p>344.1143</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+            <p class="footer">
+                VI Maratona Mineira de Programação
+            </p>
+        </div>
+
+    </body>
+</html>

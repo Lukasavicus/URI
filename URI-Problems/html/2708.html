@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2708 - Turistas no Parque Huacachina</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 1 - Turistas no Parque Huacachina" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2708</span>
+			<h1>Turistas no Parque Huacachina</h1>
+			<div>
+				<p>Por André Marcos Silva <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>A agência de turismo municipal da cidade de Ica, no Peru montou um posto de controle de jipes de aventura que sobem para as dunas do parque Hucachina. Como durante o dia, são vários os off-roads que sobem e descem do parque nacional, e nem sempre os turistas usam um mesmo transporte para a ida e volta, a prefeitura precisava ter um melhor controle e segurança sobre fluxo de visitantes no parque. Desenvolva um programa que receba como entrada se um jipe está entrando ou voltando do parque e a quantidade de turistas que este veículo está transportando. Ao final do turno, o programa deve indicar a quantidade de veículos e de turistas que ainda faltam regressar da aventura. </p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>O programa deve receber sucessivos pares de entrada. Cada par deve indicar o movimento do jipe e a quantidade de turistas que este está transportando. A primeira entrada deve ser "<em>SALIDA</em>" ou "<em>VUELTA</em>". "<em>SALIDA</em>" deve indicar que o jipe está saindo da central e entrando no parque; e "<em>VUELTA</em>" que o jipe está retornando do passeio. Imediatamente na sequência, o programa recebe um número inteiro <strong>T</strong> (onde, 0 <= <strong>T</strong> <=20) que indica a quantidade de turistas que estão sendo transportados pelo jipe. A string "<em>ABEND</em>" deve ser o indicador de fim de processamento.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Como objetivo o programa deve apresentar duas saídas, uma em cada linha: a quantidade de turistas e a quantidade de jipes que ainda faltam voltar do parque.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>SALIDA 10<br />
+SALIDA 12<br />
+SALIDA 10<br />
+VUELTA 20<br />
+ABEND</p>
+
+<p> </p>
+
+						</td>
+						<td>
+							<p>12<br />
+2</p>
+
+<p> </p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>SALIDA 15<br />
+SALIDA 20<br />
+VUELTA 15<br />
+VUELTA 15<br />
+SALIDA 0<br />
+VUELTA 0<br />
+ABEND</p>
+
+<p> </p>
+
+						</td>
+						<td>
+							<p>5<br />
+0</p>
+
+<p> </p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				*Amsilva copyright (2017), for use (authorized) in the URI OJ. All rights reserved.
+			</p>
+		</div>
+
+	</body>
+</html>

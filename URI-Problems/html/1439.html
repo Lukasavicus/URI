@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1439 - Bora Bora</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1439 - Bora Bora" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1439</span>
+            <h1>Bora Bora</h1>
+            <div>Por Ricardo Anido, UNICAMP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Bora Bora é um jogo de cartas simples para crianças, inventado na Ilha do Pacífico Sul de mesmo nome. Duas ou mais pessoas podem jogar, usando um baralho de cartas normais. As cartas têm os valores normais: Ás, 2, 3, 4, 5, 6, 7, 8, 9, 10, Valete, Dama e Rei. Cada carta tem também um dos quatro naipes: Paus, Ouros, Copas e Espadas.</p>
+
+                <p>Os jogadores sentam-se em um círculo ao redor da mesa e jogam por turnos. O próximo jogador a jogar pode ser aquele à esquerda (sentido horário) ou o jogador à direita (sentido anti-horário) do jogador atual, dependendo das cartas jogadas, como você verá. No começo, o sentido do jogo é horário.</p>
+
+                <p>O baralho é embaralhado e é dada a cada jogador uma mão de cartas. O restante do baralho é colocado na mesa, virado para baixo; a essa pilha é dado o nome de pilha de saque. Então a primeira (a mais acima) carta é removida da pilha e colocada na mesa, virada para cima, começando outra pilha, chamada de pilha de descarte.</p>
+
+                <p>O objetivo do jogo é que um jogador descarte todas suas cartas. Em cada turno, um jogador descarta no máximo uma carta. Uma carta pode ser descartada apenas se ela tem o mesmo valor ou o mesmo naipe da carta que se encontra no topo da pilha de descarte. Um jogador descarta uma carta colocando-a, virada para cima, na pilha de descarte (essa carta se torna a carta do topo). Se um jogador não tiver uma carta passível de ser descartada em seu turno, ele deve sacar uma carta da pilha de saque e adicionar à sua mão; se ele puder descartar essa carta, ele o faz, caso contrário ele não faz mais nada e seu turno acaba. Um jogador sempre descarta a carta mais alta que ele consegue. O valor de uma carta é determinado primeiro pelo valor da carta e então pelo naipe. A ordem dos valores é o valor em si (Ás é o menor e Rei é o maior), e a ordem dos naipes é, do menor para o maior, Paus, Ouros, Copas e Espadas. Portanto, a carta de maior valor é o Rei de Espadas e a de menor valor é o Ás de Paus. Como exemplo, a Dama de Ouros tem um valor maior que um Valete (qualquer naipe) mas tem um valor menor que a Dama de Copas.</p>
+
+                <p>Algumas das cartas descartadas afetam o jogo, como se segue:</p>
+
+                <ul>
+                    <li>Quando uma Dama é descartada, a direção de jogo é invertida: se a direção é horária, ela se torna anti-horária, e vice-versa;</li>
+                    <li>Quando um Sete é descartado, o próximo jogador deve sacar duas cartas da pilha de saque (o número de cartas em sua mão aumenta por dois), e perde a vez (não descarta nenhuma carta);</li>
+                    <li>Quando um Ás é descartado, o próximo jogador deve sacar uma carta da pilha de saque (o número de cartas em sua mão aumenta por um), e perde sua rodada (não descarta nenhuma carta);</li>
+                    <li>Quando um Valete é descartado, o próximo jogador perde a vez (não descarta nenhuma carta).</li>
+                </ul>
+
+                <p>Perceba que a penalidade da primeira carta da pilha de descarte (a carta sacada da pilha de saque no começo) é aplicada ao primeiro jogador a jogar. Por exemplo, se o primeiro jogador é p e a primeira carta na pilha de descarte é um Ás, o jogador p saca uma carta da pilha de saque e não descarta nenhuma carta em seu primeiro turno. Note também que se a primeira carta é uma Dama, o sentido do jogo é invertido para o anti-horário, mas o primeiro jogador a jogar permanece o mesmo.</p>
+
+                <p>O vencedor é o jogador que descarta todas suas cartas primeiro (o jogo acaba depois de o vencedor descartar sua última carta).</p>
+
+                <p>Dada a descrição do baralho embaralhado e o número de jogadores, escreva um programa que determine quem vencerá o jogo.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém diversos casos de teste. A primeira linha de um caso de teste contém três inteiros <strong>P</strong>, <strong>M</strong> e <strong>N</strong>, separados por espaço, indicando respectivamente o número de jogadores (2 ≤ <strong>P</strong> ≤ 10), o número de cartas distribuídas para cada jogador no começo da partida (1 ≤ <strong>M</strong> ≤ 11) e o número de cartas no baralho embaralhado (3 ≤ <strong>N</strong> ≤ 300). Cada uma das próximas <strong>N</strong> linhas contém a descrição de uma carta. Uma carta é descrita por um inteiro <strong>X</strong> e um caractere <strong>S</strong>, separados por um espaço, representando respectivamente o valor da carta e seu naipe. O valor das cartas é mapeado com inteiros de 1 a 13 (Ás é 1, Valete é 11, Dama é 12 e Rei é 13). Os naipes das cartas são designados pela primeira letra do naipe: 'C' (Paus - Clubs), 'D' (Ouros - Diamonds), 'H' (Copas - Hearts) ou 'S' (Espadas - Spades).</p>
+
+                <p>Os jogadores são identificados com valores de 1 a <strong>P</strong> e sentam-se em um círculo, no sentido horário, 1, 2 ... <strong>P</strong>, 1. As primeiras <strong>P</strong> x <strong>M</strong> cartas do baralho são distribuídas aos jogadores: as primeiras <strong>M</strong> cartas ao primeiro jogador (jogador 1), as próximas <strong>M</strong> cartas ao segundo jogador (jogador 2), e assim por diante. Depois de distribuir as cartas aos jogadores, a próxima carta do baralho - a (<strong>P</strong> x <strong>M</strong> + 1)-ésima carta - é usada para começar a pilha de descarte, e as cartas restantes formam a pilha de saque. A (<strong>P</strong> x <strong>M</strong> + 2)-ésima carta a aparecer na entrada é a carta do topo da pilha de saque, e a última carta a aparecer na entrada (a <strong>N</strong>-ésima carta) é a carta de baixo da pilha de saque (a última carta que pode ser sacada). O jogador 1 é sempre o primeiro a jogar (mesmo se a carta usada para começar a pilha de descarte é uma Dama). Todos os casos de teste têm um vencedor, e em todos casos de teste o número de cartas no baralho é suficiente para jogar até o fim da partida.</p>
+
+                <p>O final da entrada é indicado por uma linha contendo apenas três zeros, separados por espaços.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste na entrada, seu programa deve imprimir uma única linha, contendo o número do jogador que ganha a partida.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2 2 10<br />
+                                1 D<br />
+                                7 D<br />
+                                1 S<br />
+                                3 C<br />
+                                13 D<br />
+                                1 S<br />
+                                5 H<br />
+                                12 D<br />
+                                7 S<br />
+                                2 C<br />
+                                3 2 11<br />
+                                1 S<br />
+                                7 D<br />
+                                11 D<br />
+                                3 D<br />
+                                7 D<br />
+                                3 S<br />
+                                11 C<br />
+                                8 C<br />
+                                9 H<br />
+                                6 H<br />
+                                9 S<br />
+                                3 3 16<br />
+                                1 H<br />
+                                10 C<br />
+                                13 D<br />
+                                7 C<br />
+                                10 H<br />
+                                2 S<br />
+                                2 C<br />
+                                10 S<br />
+                                8 S<br />
+                                12 H<br />
+                                11 C<br />
+                                1 C<br />
+                                1 C<br />
+                                4 S<br />
+                                5 D<br />
+                                6 S<br />
+                                0 0 0</p>
+
+                        </td>
+                        <td>
+                            <p>1<br />
+                                3<br />
+                                2</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                 ACM/ICPC South America Contest 2008.
+			</p>
+        </div>
+
+    </body>
+</html>

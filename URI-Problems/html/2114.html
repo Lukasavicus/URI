@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2114 - Poker</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2114 - Poker" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+
+            <style type="text/css">
+                #tabela{
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                    max-width: 200px;
+                }
+            </style>
+
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2114</span>
+                <h1>Poker</h1>
+                <div>
+                    <p>Por XVII Maratona de Programação IME-USP, 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Poker é jogado com um baralho tradicional de 52 cartas (13 valores com 4 naipes). Os valores das cartas, em ordem crescente, são: <em>2</em>,<em> 3</em>,...,<em> 10</em>,<em> Valete</em>,<em> Dama</em>,<em> Rei</em>,<em> Ás</em>. Dada uma mesa de poker, com dois jogadores, sua tarefa é determinar quem ganhou.</p>
+
+                    <p>Cada jogador possui duas cartas próprias e há cinco cartas comuns aos dois jogadores na mesa. Ganha quem conseguir uma mão de cinco cartas mais valiosa, entre as suas duas cartas próprias e as cinco cartas da mesa. Uma carta da mesa pode ser usada pelos dois jogadores ao mesmo tempo e a mão mais valiosa de um ou dos dois jogadores pode ser obtida ignorando as suas duas cartas próprias e usando as cinco comuns.</p>
+
+                    <p>Para comparar duas mãos de cinco cartas, verifica-se em quais tipos da lista abaixo elas se encaixam. Se uma mão se encaixar em mais de um tipo, escolhe-se o mais valioso. Se as duas mãos se encaixarem num mesmo tipo, se aplica uma regra de desempate específica para este tipo.</p>
+
+                    <p>A lista de tipos de mãos, ordenados do menos valioso para o mais valioso, e seus respectivos critérios de desempate é:</p>
+
+                    <ul>
+                        <li><em>Carta mais alta</em>: qualquer mão que não se enquadre em nenhum dos demais tipos. No desempate, as cinco cartas são comparadas uma a uma, da mais valiosa para a menos, até uma mão apresentar uma carta com valor maior que o da outra.</li>
+                        <li><em>Um par</em>: duas cartas de mesmo valor. O desempate é análogo ao da carta mais alta comparando primeiro o valor do par e depois as demais cartas;</li>
+                        <li><em>Dois pares</em>: dois pares. O desempate é análogo ao da carta mais alta comparando primeiro o valor do par mais valioso, depois o valor do par menos valioso e por fim a carta restante;</li>
+                        <li><em>Trinca</em>: três cartas de mesmo valor. O desempate é análogo ao do par;</li>
+                        <li><em>Straight</em>: sequência de cinco cartas de valores consecutivos. Neste caso o <em>Ás</em> pode tomar o valor tanto de carta mais baixa (antes do 2) ou de mais alta (depois do <em>Rei</em>). O desempate é feito pela carta de maior valor, sendo que excepcionalmente o <em>Ás</em> tem o menor valor se aparecer antes do 2;</li>
+                        <li><em>Flush</em>: cinco cartas do mesmo naipe. O desempate é feito pelo critério da carta mais alta;</li>
+                        <li><em>Full House</em>: uma trinca e um par. No desempate é comparado primeiro o valor da trinca. Persistindo o empate, é comparado o valor do par;</li>
+                        <li><em>Quadra</em>: quatro cartas com um mesmo valor. No desempate compara-se o valor da quadra e depois a carta restante;</li>
+                        <li><em>Straight Flush</em>: <em>straight</em> e <em>ﬂ</em><em>ush</em> simultaneamente. O desempate é feito como no straight.</li>
+                    </ul>
+
+                    <p>Note que é possível persistir o empate mesmo depois de aplicadas as regras de desempate. Os naipes das cartas só são considerados para definir um <em>ﬂush</em>, não sendo considerados em nenhuma regra de desempate.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF).</p>
+
+                    <p>Cada instância é composta por três linhas. As duas primeiras linhas contêm a descrição de duas cartas cada uma, separadas por espaço. A primeira linha corresponde às cartas do primeiro jogador enquanto a segunda corresponde às cartas do segundo jogador. A terceira linha contém a descrição das cinco cartas na mesa, também separadas por espaço.</p>
+
+                    <p>
+                        <table id="tabela">
+                            <tr>
+                                <td>Caracter</td>
+                                <td>Carta</td>
+                            <tr>
+                                <td> '2'- '9' </td>
+                                <td> 2 - 9 </td>
+                            </tr>
+                            <tr>
+                                <td> 'T' </td>
+                                <td> 10 </td>
+                            </tr>
+                            <tr>
+                                <td> 'J' </td>
+                                <td> Valete </td>
+                            </tr>
+                            <tr>
+                                <td> 'Q' </td>
+                                <td> Dama </td>
+                            </tr>
+                            <tr>
+                                <td> 'K' </td>
+                                <td> Rei </td>
+                            </tr>
+                            <tr>
+                                <td> 'A' </td>
+                                <td> Ás </td>
+                            </tr>
+                            <tr>
+                                <td> 'e' </td>
+                                <td> Espadas </td>
+                            </tr>
+                            <tr>
+                                <td> 'c' </td>
+                                <td> Copas </td>
+                            </tr>
+                                <td> 'o' </td>
+                                <td> Ouros </td>
+                            </tr>
+                            <tr>
+                                <td> 'p' </td>
+                                <td> Paus </td>
+                            </tr>
+                        </table>
+
+                    </p>
+                    <p>A descrição de uma carta é dada por 2 caracteres, o primeiro indica o valor da carta e o segundo o seu naipe, conforme a tabela acima.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância, imprima uma linha contendo um número inteiro. Imprima 1 se o primeiro jogador ganha essa instância, imprima 2 caso o segundo ganhe e imprima 0 se houver um empate, mesmo depois de aplicadas as regras de desempate.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>Te Je</p>
+
+<p>Tp Jp</p>
+
+<p>Qe Qp Ke Kp Ae</p>
+
+<p>Ae 7o</p>
+
+<p>Ac 8e</p>
+
+<p>Ap Ao 9e Jc Kp</p>
+
+<p>Ae 7o</p>
+
+<p>Ac 8e</p>
+
+<p>Ap Ao 6e 3c Kp</p>
+
+                            </td>
+                            <td>
+                                <p>1</p>
+
+<p>0</p>
+
+<p>2</p>
+
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="footer">
+                    XVII Maratona de Programação IME-USP, 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

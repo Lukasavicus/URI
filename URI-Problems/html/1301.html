@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1301 - Produto do Intervalo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1301 - Produto do Intervalo" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1301</span>
+            <h1>Produto do Intervalo</h1>
+            <div><p>Por Renato Parente, IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    É normal sentir-se preocupado e tenso o dia antes de uma competição de programação. Para relaxar, você saiu para beber com alguns amigos em um pub. Para manter sua mente afiada para o dia seguinte, você decidiu jogar o seguinte jogo. Para começar, seus amigos vão dar-lhe uma seqüência de <strong>N</strong> inteiros <strong>X</strong><em><sub>1</sub></em>, <strong>X</strong><em><sub>2</sub></em>, ..., <strong>X</strong><em><sub>N</sub></em>. Em seguida, haverá <strong>K </strong>rodadas; a cada rodada, seus amigos vão emitir um comando, que pode ser:</p>
+
+                <ul>
+                    <li>um comando de alteração, quando seus amigos querem mudar um dos valores na seqüência, ou</li>
+                    <li>um comando de produto, quando seus amigos lhe dar dois valores <strong>I</strong>, <strong>J</strong> e perguntar-lhe se o produto <strong>X</strong><em><sub>I</sub></em> <span class="code">x</span> <strong>X</strong><em><sub>I+1</sub></em> <span class="code">x</span> ... <span class="code">x</span> <strong>X</strong><em><sub>J-1</sub></em> <span class="code">x</span> <strong>X</strong><em><sub>J</sub></em> é positivo, negativo ou zero.
+                    ​</li>
+                </ul>
+
+
+                <p>
+                    Uma vez que você está em um pub, foi decidido que a pena para uma resposta errada é beber um copo de cerveja. Você está preocupado como isso poderia afetá-lo negativamente na competição do dia seguinte, e você não quer verificar se a teoria do pico de Ballmer é correta. Felizmente, seus amigos lhe deram o direito de usar o seu notebook. Uma vez que você confia mais nas suas habilidades de codificação do que na sua matemática, você decidiu escrever um programa que o ajudasse no jogo.</p>
+
+                <p> </p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste é descrito usando várias linhas. A primeira linha contém dois inteiros <strong>N</strong> e <strong>K</strong> respectivamente, indicando o número de elementos na seqüência e o número de rodadas do jogo (1 ≤ <strong>N</strong>, <strong>K</strong> ≤ 10<sup>5</sup>). A segunda linha contém <strong>N</strong> inteiros <strong>X</strong><em><sub>i</sub></em> que representam os valores iniciais da sequência (-100 ≤ <strong>X</strong><em><sub>i </sub>≤ </em>100 para <em>i</em> = 1, 2, ...,<strong> N</strong>). Cada uma das próximas <strong>K </strong>linhas descreve um comando e começa com uma letra maiúscula 'C' ou 'P'. Se a letra é 'C', a linha descreve um comando de mudança, e a letra é seguida por dois inteiros <strong>I</strong> e <strong>V</strong>,indicando que os <strong>X</strong><em><sub>I</sub></em> devem receber o valor <strong>V</strong> (1 ≤ <strong>I</strong> ≤ <strong>N</strong> e -100 ≤ <strong>V</strong> ≤ 100). Se a letra for 'P', a linha de comando descreve um produto, e a letra é seguida por dois números inteiros <strong>I</strong> e <strong>J</strong>, indicando que o produto a partir de <strong>X</strong><sub><em>I</em></sub> até <strong>X</strong><em><sub>J</sub></em>, inclusive deve ser calculado (1 ≤ <strong>I</strong> ≤ <strong>J</strong> ≤ <strong>N</strong>). Dentro de cada teste há pelo menos um comando de produto.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima uma linha com uma string que representa o resultado de todos os comandos de produto do caso de teste. O caracte i da string representa o resultado do enésimo (<em>i-th</em>) comando de produto. Se o resultado do comando for positivo, o caractere deve ser '+' (mais), se o resultado for negativo, o caractere deve ser '-' (menos), se o resultado é zero, o caractere deve ser '0' (zero) .</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                4 6<br />
+                                -2 6 0 -1<br />
+                                C 1 10<br />
+                                P 1 4<br />
+                                C 3 7<br />
+                                P 2 2<br />
+                                C 4 -5<br />
+                                P 1 4<br />
+                                5 9<br />
+                                1 5 -2 4 3<br />
+                                P 1 2<br />
+                                P 1 5<br />
+                                C 4 -5<br />
+                                P 1 5<br />
+                                P 4 5<br />
+                                C 3 0<br />
+                                P 1 5<br />
+                                C 4 -5<br />
+                                C 4 -5</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                0+-<br />
+                                +-+-0</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2012.
+            </p>
+        </div>
+
+    </body>
+</html>

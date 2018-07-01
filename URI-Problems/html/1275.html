@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1275 - Light Up</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1275 - Light Up" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1275</span>
+                <h1>Light Up</h1>
+                <div><p>
+	Por Ricardo Anido&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" />&nbsp;Brasil</p>
+</div>
+                <strong>Timelimit: 8</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Light Up (Iluminar - em português) é um enigma ou jogo definido em uma placa retangular dividida em quadrados menores. Alguns quadrados desta placa são "vazios" (quadrados brancos na figura abaixo) e outros quadrados são "barreiras" (quadrados escuros na figura abaixo). Um quadrado que indica uma barreira pode ter um número inteiro i associado a ele (0 ≤ i ≤ 4).</p><br />
+<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1275.png" style="width: 367px; height: 162px;" /></p>
+<p class="center">
+	Figura: (a) Puzzle com 6 linhas, 7 colunas e 7 barreiras; (b) uma solução para o enigma.</p><br />
+    <p>
+	Neste puzzle o objetivo é "iluminar" todos os quadrados vazios, colocando lâmpadas em alguns dos quadrados (as lâmpadas são representadas como círculos na figura). Cada lâmpada ilumina o quadrado em que está além de todos os quadrados alinhados com ele, horizontalmente ou verticalmente até um quadrado que contenha uma barreira ou até o fim do tabuleiro.<br />
+	Uma configuração vencedora satisfaz as seguintes condições:<br />
+	• todos os quadrados vazios devem ser acesos;<br />
+	• a luz não pode ser acesa por outra lâmpada;<br />
+	• todos os quadrados numerados como barreira devem ter exatamente o número de lâmpadas adjacentes a eles (nos seus quatro lados acima, abaixo, e para o lado);<br />
+	• quadrados que indicam uma barreira não numerados podem ter qualquer número de lâmpadas adjacentes a eles.<br/></p>
+                <p>
+	Você deve escrever um programa para determinar o menor número de lâmpadas que são necessárias para alcançar uma configuração vencedora.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém vários casos de teste. A primeira linha de um caso de teste contém dois números inteiros <strong>N</strong>, <strong>M</strong> indicando respectivamente o número de linhas e o número de colunas da placa (1 ≤ <strong>N</strong> ≤ 7, 1 ≤ <strong>M</strong> ≤ 7). A segunda linha contém um <strong>B</strong> inteiro que indica o número de quadrados do tipo barreira (0 ≤ <strong>B</strong> ≤ <strong>N</strong> × <strong>M</strong>). Cada uma das <strong>B</strong> linhas seguintes descrevem uma barreira, que contém três inteiros <strong>R</strong>, <strong>C</strong> e <strong>K</strong>, representando, respectivamente, o número da linha (1 ≤ <strong>R</strong> ≤ <strong>N</strong>), o número da coluna (1 ≤ <strong>C</strong> ≤ <strong>M</strong>) e o número da barreira (-1 ≤ <strong>K</strong> ≤ 4). <strong>K</strong> = -1 significa que a barreira é não numerada. O final da entrada é indicado por <strong>N</strong> = <strong>M</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste da entrada seu programa deverá produzir uma linha de saída, contendo ou um inteiro indicando o menor número de lâmpadas necessárias para alcançar uma configuração vencedora caso ela existir. Caso contrário, seu programa deverá imprimir a mensagem ‘No solution’, conforme exemplo abaixo.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	2 2<br />
+	0<br />
+	2 2<br />
+	1<br />
+	2 2 1<br />
+	6 7<br />
+	7<br />
+	2 3 -1<br />
+	3 3 0<br />
+	4 2 1<br />
+	5 4 3<br />
+	5 6 2<br />
+	1 7 -1<br />
+	6 5 -1<br />
+	0 0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	2<br />
+	No solution<br />
+	8</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+               </table>
+                <p class="footer">
+	ACM/ICPC South America Contest 2005.</p>
+    
+            </div>
+
+        </body>
+    </html>

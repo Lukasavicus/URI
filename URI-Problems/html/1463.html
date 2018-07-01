@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1463 - Árvore Binária de Expressão</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1463 - Árvore Binária de Expressão" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1463</span>
+            <h1>Árvore Binária de Expressão</h1>
+            <div>Por Neilor Tonin, URI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>A árvore binária de expressão aritmética é uma aplicação específica de uma árvore binária para avaliar expressões. Ela pode ser usado para representar uma expressão algébrica ou booleana, como por exemplo, a expressão <span class="code">4 * a - ( 6 + b ) + 8 / ( 9 - 7 )</span> &nbsp;que é apresentada na figura abaixo.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1463.png" style="width: 372px; height: 206px;" /></p>
+
+                <p>Essas árvores podem representar expressões que contêm operadores unários e binários. As ávores de expressão são implementadas como árvores binárias, principalmente porque permitem ao usuário encontrar rapidamente o que está procurando.</p>
+
+                <p>O limite superior de passos necessários para encontrar a informação requerida em árvores binárias igual a log<sub>2</sub><em>N</em>, em que <em>N</em> indica o número de todos os nós de uma árvore.</p>
+
+                <p>A fim de fazer um exercício diferente, o professor pediu para listar uma expressão armazenada em uma árvore binária, nível a nível, iniciando no primeiro nível (zero) e terminando no nível <em>n</em>.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. Cada caso de teste consiste de uma expressão aritmética contendo no mínimo dois operandos e uma operação simples e no máximo até 100 elementos. Esta expressão poderá conter letras maiúsculas, letras minúsculas, números, parênteses e operações aritméticas básicas (+, -, *, /) conforme o exemplo abaixo. Cada operando pode ter apenas um dígito ('0 '- '9') ou letra ('a', 'B', etc). O final da entrada é indicado pelo fim de arquivo (EOF). O final da entrada é indicado por final de arquivo (EOF).</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, seu programa deverá imprimir várias linhas de saída correspondentes aos níveis da árvore de expressão e contendo todos os elementos presentes em cada um destes níveis, da esquerda para a direita. Estas linhas devem iniciar sempre com a mensagem "Nivel n: ", conforme o exemplo fornecido abaixo. Imprima uma linha em branco entre dois casos de teste.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>4 * a - ( 6 + b ) + 8 / ( 9 - 7 )<br />
+                                a + b<br />
+                                ( a + b * c ) * a - 4 * 5 - 6 + 1 + c * 3<br />
+                                &nbsp;</p>
+
+                        </td>
+                        <td>
+                            <p>Nivel 0: +<br />
+                                Nivel 1: -/<br />
+                                Nivel 2: *+8-<br />
+                                Nivel 3: 4a6b97<br />
+                                <br />
+                                Nivel 0: +<br />
+                                Nivel 1: ab<br />
+                                <br />
+                                Nivel 0: +<br />
+                                Nivel 1: +*<br />
+                                Nivel 2: -1c3<br />
+                                Nivel 3: -6<br />
+                                Nivel 4: **<br />
+                                Nivel 5: +a45<br />
+                                Nivel 6: a*<br />
+                                Nivel 7: bc</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </body>
+</html>

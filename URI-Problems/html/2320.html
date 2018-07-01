@@ -1,0 +1,129 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2320 - Subsequência</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2320 - Subsequência" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2320</span>
+				<h1>Subsequência</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2006 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Uma subsequência de uma sequência de caracteres S é&nbsp;definida como uma sequência de caracteres de S, não necessariamente consecutivos, na mesma ordem em que eles ocorrem na sequência original.</p>
+
+<p>Dadas duas sequências de caracteres, S<sub>1</sub> e S<sub>2</sub>, dizemos que S<sub>1</sub> possui grau N de independência em relação a S<sub>2</sub> se, dada qualquer subsequência de tamanho N de S<sub>1</sub>, não ´e possível formar tal subsequência a partir de S<sub>2</sub>.</p>
+
+<p>Por exemplo, o grau de independência da sequência S<sub>1</sub>=‘ababaa’ em relação à&nbsp;sequência S<sub>2</sub>=‘abbaa’ é&nbsp;igual a 3, pois todas as subsequências de S<sub>1</sub> de tamanho 1 (‘a’, ‘b’) e todas as subsequências de tamanho 2 (‘aa’, ‘ab’, ‘ba’, ‘bb’) podem ser formadas a partir de S<sub>2</sub>, mas a subsequência ‘bab’, de tamanho 3, não pode ser formada a partir de S<sub>2</sub>.</p>
+
+<p>Escreva um programa que, dadas duas sequências S<sub>1</sub> e S<sub>2</sub>, determine o grau N de independência de S<sub>1</sub> em relação a S<sub>2</sub>.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado). A entrada contém três linhas. A primeira linha contém dois inteiros <strong>N</strong> e <strong>M</strong> que indicam respectivamente o comprimento da sequência <strong>S<sub>1</sub></strong> (1 ≤ <strong>N</strong> ≤ 2000) e o comprimento da sequência <strong>S<sub>2</sub></strong> (1 ≤ <strong>M</strong> ≤ 2000). A segunda linha contém a sequência <strong>S<sub>1</sub></strong> e a terceira linha contém a sequência <strong>S<sub>2</sub></strong>. As sequências são formadas somente pelas letras minúsculas sem acento (’a’ - ’z’). As sequências possuem no máximo 2000 caracteres. Sempre existe uma solução para os casos de teste fornecidos.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na saída padrão, uma única linha, contendo o grau N de indepedência de <strong>S<sub>1</sub></strong> em relação a <strong>S<sub>2</sub></strong>.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 5</br>
+								cbbca</br>
+								ccabc</p>
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+						<p>10 5</br>
+						ababaaaaaa</br>
+						ababa</p>
+
+                    </td>
+                    <td>
+                        <p>4</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>10 11</br>
+						bcbcccacab</br>
+						baaabcbaaca
+						</p>
+
+                    </td>
+                    <td>
+                        <p>3</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2006 Fase 2 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

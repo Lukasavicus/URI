@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1536 - Libertadores</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1536 - Libertadores" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1536</span>
+                <h1>Libertadores</h1>
+                <div>
+                    <p>Por Fabiola de Souza, UFU <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A Copa Libertadores da América é a principal competição de futebol entre clubes profissionais da América do Sul, organizada pela Confederação Sul-Americana de Futebol (CONMEBOL). Ela é conhecida por ter um regulamento muito complicado, principalmente nas fases das oitavas, quartas e semi-final.</p>
+
+<p>Nessas fases são jogadas partidas de ida e volta no sistema mata-mata. Ganha quem fizer a maior pontuação no acumulado das duas partidas, sendo 3 pontos para vitória e 1 ponto em caso de empate, ambos por partida. Em caso de igualdade na pontuação, são critérios de desempate:</p>
+
+<p>1) saldo de gols (número de gols a favor menos o número de gols contra).</p>
+
+<p>2) mais gols marcados na casa do adversário.</p>
+
+<p>3) disputa por pênaltis.</p>
+
+<p>Todos os critérios devem ser aplicados considerando o acumulado das duas partidas.</p>
+
+<p>Será que você consegue elaborar um algoritmo que, dados os resultados das partidas de ida e de volta, ele identifica o time vencedor?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha de entrada indica o número de casos de teste <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 100). Cada caso de teste é composto por dois placares: o resultado da partida 1 e o resultado da partida 2. O placar é representado pelo formato <strong>M</strong> x <strong>V</strong>, onde <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 100) é o número de gols do time mandante da partida e <strong>V</strong> (1 ≤ <strong>V</strong> ≤ 100) é o número de gols do time visitante. Como em cada caso de teste existem 2 partidas, considere que o Time 1 é sempre o mandante da primeira e o visitante da segunda e vice-versa para o Time 2.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma linha contendo "Time 1" (sem aspas) caso o Time 1 seja o vencedor do mata-mata, "Time 2" (sem aspas) caso o Time 2 seja o vencedor do mata-mata e "Penaltis" (sem aspas) caso não seja possível identificar o vencedor no tempo convencional.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4</p>
+
+<p>1 x 1</p>
+
+<p>2 x 1</p>
+
+<p>2 x 0</p>
+
+<p>2 x 1</p>
+
+<p>1 x 1</p>
+
+<p>2 x 2</p>
+
+<p>3 x 1</p>
+
+<p>3 x 1</p>
+
+                            </td>
+                            <td>
+                                <p>Time 2</p>
+
+<p>Time 1</p>
+
+<p>Time 1</p>
+
+<p>Penaltis</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Maratona Algar Telecom XIII 
+                </p>
+            </div>
+
+        </body>
+    </html>

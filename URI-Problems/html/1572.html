@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1572 - O Torneio Surreal</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1572 - O Torneio Surreal" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1572</span>
+                <h1>O Torneio Surreal</h1>
+                <div>
+                    <p>Por Shahriar Manzoor, SEU <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif' alt='BD' /> Bangladesh</p>
+                </div>
+                <strong>Timelimit: 7</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Neste problema particular, o Torneiro Surreal é um torneio, que participam apenas duas equipes. Vamos nomear estas duas equipes de Abahoni e Mohamedan. Eles jogam entre eles não mais de 2N - 1 jogos, o vencedor é a primeira equipe a conseguir N vitórias. Você pode assumir que não há jogos combinados, o resultado de cada jogo é independente e para qualquer jogo há uma constante P que é a probabilidade da equipe Abahoni ganhar e, portanto, há uma constante probabilidade Q(Q = 1 - P) que a probabilidade da equipe Mohamedan ganhar.</p>
+
+<p>P(i, j) é a probabilidade da equipe Abahoni ganhar a série, uma vez que eles ainda precisam i vitórias para conseguir isso, enquanto equipe Mohamedan ainda precisa J vitórias se quiserem vencer. A P(i, j) pode ser calculado com uma função tal como:</p>
+<strong>
+Função P(i, j){<br />
+&nbsp;&nbsp;&nbsp;se i = 0, então, retorne 1<br />
+&nbsp;&nbsp;&nbsp;senão se j = 0, então, retorne 0<br />
+&nbsp;&nbsp;&nbsp;senão retorne pP(i - 1, j) + qP(i, j - 1)<br />
+}</strong></p>
+
+<p>Você vai ter que escrever um programa que dá a probabilidade de ganhar para qualquer P, i e j e também dá o número de chamadas recursivas necessárias da função acima para obter a probabilidade P(i, j).</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários conjuntos de entrada. A primeira linha contém um número de ponto flutuante <strong>P</strong>(0 &lt; <strong>P</strong> &lt; 1), e um inteiro <strong>N</strong>(0 ≤ <strong>N</strong> &lt;1001), onde <strong>P</strong> é a probabilide de Abahoni ganhar e <strong>N</strong> é o número de consultas a seguir. Cada uma das <strong>N</strong> linhas seguintes contém dois inteiros <strong>i</strong>(0 ≤ <strong>i</strong> ≤ 1000) e <strong>j</strong> (0 ≤ <strong>j</strong> ≤ 1000). A entrada é terminada por um conjunto, que tem o valor de <strong>N</strong> como 0. Esta entrada não deve ser processada.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada consulta deverá imprimir duas linhas. A primeira linha contém o valor de <strong>P</strong>(i, j) com cinco dígitos após o ponto decimal e a segunda linha contém um número o qual é o número de chamadas recursivas necessários se a função acima mencionada foi utilizada para determinar o valor de <strong>P</strong>(i, j). Se o valor de <strong>P</strong>(i, j) é indefinido deverá imprimir -1 como o seu valor com formatação similar. Uma linha em branco deve ser impresso entre as saídas dos dois conjuntos consecutivos.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>0.5 3<br />
+1 1<br />
+2 2<br />
+3 3<br />
+0.5 2<br />
+10 3<br />
+10 2<br />
+0.7 0</p>
+
+                            </td>
+                            <td>
+                                <p>0.50000<br />
+2<br />
+0.50000<br />
+10<br />
+0.50000<br />
+38<br />
+<br />
+0.01929<br />
+570<br />
+0.00586<br />
+130</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

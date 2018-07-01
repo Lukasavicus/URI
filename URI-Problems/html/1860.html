@@ -1,0 +1,114 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1860 - A Caminhada da Vergonha de Cersei</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 9449 - A Caminhada da Vergonha de Cersei" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1860</span>
+				<h1>A Caminhada da Vergonha de Cersei</h1>
+				<div>
+					<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Septa Unella: <em>"Vergonha! Vergonha!"</em></p>
+
+					<p>Para pagar por seus pecados, Cersei deve caminhas pelas ruas de King's Landing, nua.</p>
+
+					<p>Considere King's Landing como um plano Cartesiano. Cersei deve caminhar a partir do ponto (0, 0) até o ponto (<strong>X</strong>, 0), em linha reta. Note que, para completar seu trajeto, Cersei não deve deixar o eixo x.</p>
+
+					<p>Entretanto, ela planeja não completar todo o trajeto! Em algum ponto (<strong>x<sub>l</sub></strong>, 0) (0 ≤ <strong>x<sub>l</sub></strong> ≤ <strong>X</strong>), ela sairá de seu trajeto e correrá para um dos <strong>N</strong> esconderijos na cidade. Ela quer ficar o mais longe possível do trajeto original. Por isso, ela correrá para o esconderijo que ficar mais longe do ponto (<strong>x<sub>l</sub></strong>, 0).</p>
+
+					<p>Entretanto, Cersei deve chegar ao esconderijo o mais cedo possível. Sua tarefa é ajudar Cersei a determinar o valor de <strong>x<sub>l</sub></strong> tal que, se ela sair do trajeto no ponto (<strong>x<sub>l</sub></strong>, 0), a distância para o esconderijo mais longe é minimizada.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>N</strong> e <strong>X</strong> (1 ≤ <strong>N</strong> ≤ 5×10<sup>4</sup>, 10 ≤ <strong>X</strong> ≤ 10<sup>4</sup>). As próximas <strong>N</strong> linhas indicam as posições dos esconderijos. Cada linha contém dois inteiros <strong>x<sub>i</sub></strong> e <strong>y<sub>i</sub></strong> (0 ≤ <strong>x<sub>i</sub></strong> ≤ <strong>X</strong>, -10<sup>4</sup> ≤ <strong>y<sub>i</sub></strong> ≤ 10<sup>4</sup>, <strong>y<sub>i</sub></strong> ≠ 0) indicando a existência de um esconderijo no ponto (<strong>x<sub>i</sub></strong>, <strong>y<sub>i</sub></strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha com dois valores: o valor de <strong>x<sub>l</sub></strong> e a distância para o esconderijo mais longe. Arredonde e imprima ambos os valores com exatamente duas casas decimais.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 100<br />
+								50 10<br />
+								50 -20</p>
+
+							</td>
+							<td>
+								<p>50.00 20.00</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 50<br />
+								5 5<br />
+								45 -20<br />
+								15 -15</p>
+
+							</td>
+							<td>
+								<p>29.69 25.19</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

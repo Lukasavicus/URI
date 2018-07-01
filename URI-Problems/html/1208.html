@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1208 - As dinastias de São Petersburgo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1208 - As dinastias de São Petersburgo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1208</span>
+                <h1>As dinastias de São Petersburgo</h1>
+                <div><p>
+	Por Gabriel R. de C. Peixoto <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	São Petersburgo foi fundada no dia 27 de maio de 1703 pelo czar Pedro, o Grande, e foi capital imperial da Rússia por 
+	um período curto logo após (de 1713 a 1728) e depois por quase dois séculos, de 1732 a 1918. Neste último período o trono imperial russo acabou sendo ocupado por diversos imperadores, muitas vezes de linhas de dinastia diferentes. Na tradição imperial russa chama-se de текущий (lê-se текущий 1*) uma sequência de descendentes dentro de uma dinastia, ou seja, um elemento, seu filho, seu neto, e assim por diante. A determinação destas текущий é fundamental quando se deseja determinar o sucessor do atual imperador, uma vez que o próximo imperador é o elemento vivo de uma текущий que esteja mais próxima do atual imperador.<br />
+	<br />
+	É claro que uma árvore genealógica pode ser dividida em текущий de várias formas diferentes. O interessante é encontrar uma partição que minimize o número de текущий necessário para cobrir todos os elementos da dinastia.<br />
+	<br />
+	Sua tarefa neste problema é determinar, dada a árvore genealógica da família imperial russa, o menor número de текущий que particionam toda a família imperial, isso é, todos os imperadores tem que pertencer à exatamente uma текущий e essas têm que ser o menor número possível.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada é composta por diversas instâncias e termina com final de arquivo (EOF). 
+	A primeira linha de cada instância contém dois inteiros <strong>N </strong>(1 ≤ <strong>N</strong> ≤ 1000) 
+	e (<strong>M</strong> 0 ≤ <strong>M</strong> ≤ 10000) representando, respectivamente, a quantidade de imperadores 
+	e o número de relações de filiação naquela instância. Os imperadores são identificados por números de 1 
+	à <strong>N</strong>. Cada uma das próximas M linhas contém dois 
+	inteiros <strong>P</strong><em>i</em> (1 ≤ <strong>P</strong><em>i</em> &lt; <strong>F</strong><em>i</em>) e 
+	<strong>F</strong><em>i</em> (<strong>P</strong><em>i</em> &lt; <strong>F</strong><em>i</em> ≤ <strong>N</strong>), 
+	indicando que <strong>P</strong><em>i</em> é pai de <strong>F</strong><em>i</em>. 
+	Uma particularidade da da árvore genealógica dada é que em caso de dúvidas de paternidade, todos os possíveis pais eram indicados, ou seja, uma pessoa pode ter qualquer número de pais.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada instância imprima uma linha contendo um único número inteiro, que é o número mínimo de текущий necessários para particionar todos os imperadores daquela instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	3 2<br />
+	1 2<br />
+	2 3<br />
+	3 2<br />
+	1 3<br />
+	2 3<br />
+	5 4<br />
+	1 3<br />
+	2 3<br />
+	3 4<br />
+	3 5<br />
+	4 4<br />
+	1 2<br />
+	1 3<br />
+	1 4<br />
+	2 4</p>
+
+                            </td>
+                            <td>
+                                <p>
+	1<br />
+	2<br />
+	3<br />
+	2</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+	1* Russo é uma língua fonética ;)<br />
+XVI Maratona de Programação IME-USP, 2012. <br />Agradecimento especial a Carlos E. Ferreira.</p>
+    
+            </div>
+
+        </body>
+    </html>

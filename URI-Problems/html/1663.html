@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1663 - Permutações Ambíguas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1663 - Permutações Ambíguas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1663</span>
+                <h1>Permutações Ambíguas</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 5</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Alguns problemas de competições de programação são mesmo melindrosos: não apenas exigem um formato de saída diferente do que você podia esperar, mas também o exemplo de saída não mostra a diferença. Por exemplo, vejamos as permutações.</p>
+
+                    <p>Uma <strong>permutação</strong> dos inteiros de <em>1</em> a <em>n</em> é uma ordenação desses inteiros. Então a maneira natural de se representar uma permutação é listar os inteiros nessa ordem. Para <em>n = 5</em>, uma permutação seria 2, 3, 4, 5, 1.</p>
+
+                    <p>Entretanto, há outra possibilidade de representar-se uma permutação: Cria-se uma lista de números onde o <em>i</em>-ésimo número é a posição do inteiro <em>i</em> na permutação. Chamemos essa segunda possibilidade de uma <strong>permutação inversa</strong>. A permutação inversa da sequência acima é 5, 1, 2, 3, 4.</p> 
+
+                    <p>Uma <strong>permutação ambígua</strong> é uma permutação que não pode distinguida de sua permutação inversa. A permutação 1, 4, 3, 2, por exemplo, é ambígua, porque sua permutação inversa é a mesma. Para se livrar desses irritantes exemplos de casos de teste, você deve escrever um programa que detecta se a permutação dada é ambígua ou não.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada consiste de vários casos de teste.</p>
+
+                    <p>A primeira linha de cada caso de teste contém um inteiro <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 100000). A linha seguinte contém uma permutação de inteiros 1 a <strong>n</strong>. Há exatamente um caractere de espaço entre inteiros consecutivos. Assuma que todo inteiro entre 1 e <strong>n</strong> aparece exatamente uma vez na permutação.</p> 
+
+                    <p>O último caso de teste é seguido por uma linha que contém um zero.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima se a permutação é ambígua ou não, de acordo com o formato mostrado no exemplo de saída.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4<br />
+1 4 3 2<br />
+5<br />
+2 3 4 5 1<br />
+1<br />
+1<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>ambiguous<br />
+not ambiguous<br />
+ambiguous</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                   Univeristy of Ulm Local Contest 2005/2006
+                </p>
+            </div>
+
+        </body>
+    </html>

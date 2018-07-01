@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1225 - Coral Perfeito</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1225 - Coral Perfeito" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1225</span>
+                <h1>Coral Perfeito</h1>
+                <div><p>
+	Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	A Maestrina do coral está planejando o espetáculo que apresentará na famosa Semana Brasileira de Corais. Ela pensou em preparar uma nova música, definida da seguinte maneira:<br />
+	<br />
+	• cada um dos integrantes do coral inicia cantando uma nota, e somente muda de nota quando determinado pela Maestrina;<br />
+	<br />
+	• ao final de cada compasso, a Maestrina determina que exatamente dois integrantes alterem a nota que cantam: um integrante passa a cantar a nota imediatamente acima da nota que cantava, e o outro integrante passa a cantar a nota imediatamente abaixo da nota que cantava;<br />
+	<br />
+	• a música termina ao final do primeiro compasso em que todos os integrantes do coral cantam a mesma nota.<br />
+	<br />
+	A Maestrina já tem várias ideias de como distribuir as notas no início da música entre os integrantes do coral, de forma a criar o efeito desejado. No entanto, ela está preocupada em saber se, dada uma distribuição de notas entre os integrantes, é possível chegar ao final da música da forma desejada (todos cantando a mesma nota) e, caso seja possível, qual o número mínimo de compassos da música. Você pode ajudá-la?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A primeira linha de um caso de teste contém um inteiro <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 10<sup>4</sup>) indicando
+	o número de integrantes do coral. As notas serão indicadas por números inteiros. A segunda linha contém <strong>N</strong> números inteiros,
+	indicando as notas iniciais (−10<sup>5</sup> ≤ <em>nota<sub>i</sub> </em>≤10<sup>5</sup>), onde 0 ≤ <em>i </em>≤ <strong>N</strong>−1, que cada integrante deve cantar. As notas são dadas em ordem não decrescente de altura (<em>nota<sub>i </sub></em>≤<em>nota<sub>i+1</sub></em>).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste imprima uma linha contendo um único número inteiro indicando o número mínimo de compassos que a música terá. Se não é possível terminar a música com todos os integrantes cantando a mesma nota, imprima o valor−1.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	3<br />
+	1 2 3<br />
+	4<br />
+	3 6 9 12<br />
+	6<br />
+	1 2 3 4 5 723<br />
+	5<br />
+	10 10 10 10 10</p>
+
+                            </td>
+                            <td>
+                                <p>
+	2<br />
+	-1<br />
+	601<br />
+	1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <p class="footer">
+                Maratona de Programação da SBC 2012</p>
+            </div>
+
+        </body>
+    </html>

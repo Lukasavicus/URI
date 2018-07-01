@@ -1,0 +1,99 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2067 - Jogo do Quadrado</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2067 - Jogo do Quadrado" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2067</span>
+				<h1>Jogo do Quadrado</h1>
+				<div>
+					<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O "jogo do quadrado" é um jogo muito popular hoje em dia! O jogo é muito simples: é dada um retângulo de <strong>N</strong> linhas e <strong>M</strong> colunas contendo números inteiros não negativos. A imagem a seguir mostra um retângulo com 3 linhas e 4 colunas.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2067.png" style="height:110px; width:150px" /></p>
+
+<p>Também é dado um inteiro <strong>S</strong>. Você deve escolher algum quadrado com <strong>S</strong> linhas e <strong>S</strong> colunas contido inteiramente dentro do retângulo. Sua pontuação é dada pelo produto de todos os inteiros dentro do quadrado que você escolheu. Por exemplo, se <strong>S</strong>=2 e você escolheu o quadrado mostrado em azul na imagem acima, sua pontuação será igual a 2×3×2×1 = 12.</p>
+
+<p>Você percebeu que, dependendo do quadrado que você escolher, sua pontuação pode ser igual a zero. São dados um retângulo e uma lista de consultas. Para cada consulta, é dado um inteiro <strong>S</strong> e você deve determinar se é possível escolher algum quadrado <strong>S</strong>x<strong>S</strong> de tal forma que sua pontuação não será igual a zero.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>N</strong> e <strong>M</strong> (1&nbsp;≤ <strong>N</strong>, <strong>M</strong>&nbsp;≤ 200) indicando o número de linhas e de colunas do retângulo. As próximas <strong>N</strong> linhas contém <strong>M</strong> inteiros cada, descrevendo o retângulo. Cada inteiro no retângulo não é maior que 10<sup>9</sup>.</p>
+
+<p>A próxima linha contém um inteiro <strong>Q</strong> (1&nbsp;≤ <strong>Q</strong>&nbsp;≤ 200) indicando o número de consultas. Cada uma das próximas <strong>Q</strong> linhas descreve uma consulta. Cada linha contém um inteiro <strong>S</strong> (1&nbsp;≤ <strong>S</strong>&nbsp;≤ min(<strong>N</strong>,<strong>M</strong>)) indicando o comprimento do lado do quadrado que você deve escolher.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada consulta, imprima uma linha contendo <strong>yes</strong> se é possível escolher um quadrado tal que sua pontuação não será igual a zero, ou <strong>no</strong> caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 4<br />
+3 4 0 3<br />
+0 2 3 1<br />
+4 2 1 0<br />
+3<br />
+2<br />
+3<br />
+1</p>
+
+							</td>
+							<td>
+								<p>yes<br />
+no<br />
+yes</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Aquecimento para a OBI 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

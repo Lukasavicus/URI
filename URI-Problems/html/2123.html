@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2123 - A Lei Vai a Cavalo!</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2123 - A Lei Vai a Cavalo!" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2123</span>
+                <h1>A Lei Vai a Cavalo!</h1>
+                <div>
+                    <p>Por XI Maratona de Programação IME-USP, 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A Polícia Montada Real Canadense (Royal Canadian Mounted Police) é uma instituição muito famosa, cujas origens remontam ao século XIX. Sua tarefa é levar a lei aos locais mais longínquos do país continental. Hoje a polícia montada tem um efetivo de 25000 homens e cerca de 5000 cavalos.</p>
+
+                    <p>Cada sede da RCMP tem uma fazenda de cavalos em que os animais são muito bem cuidados, e designados aos policiais com quem têm mais afinidade. Esta afinidade é inferida em observações dos oficiais com vários anos de experiência, observando os policiais montando os animais disponíveis. No Fairmont Banff Springs Stables, onde ficam os cavalos montados pelos policiais da região de Banff Springs, é necessário resolver o problema de decidir quais soldados montarão quais cavalos. Note que um cavalo pode ser montado por vários policiais, mas um policial só monta um determinado cavalo. Cada cavalo tem um limite de policiais que podem montá-lo. Ou seja, de posse da afinidade dos vários policiais com os animais que montou nos últimos tempos, deseja-se encontrar uma atribuição dos cavalos aos vários policiais, de tal forma que o maior número possível de policiais tenham um cavalo para montar.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta de diversas instâncias. A primeira linha de cada instância consiste em três inteiros <em><strong>n</strong></em> (1 ≤ <em><strong>n</strong></em> ≤ 100), <em><strong>m</strong></em> (1 ≤ <em><strong>m</strong></em> ≤ 100) e <em><strong>k</strong></em> (1 ≤ <em><strong>k</strong></em> ≤ 1000) indicando o número de cavalos, o número de soldados e o número de afinidades. A linha seguinte contêm <em>n</em> inteiros <em>c<sub>1</sub></em>, <em>c<sub>2</sub></em>, .., <em>c<sub>n</sub></em> indicando que no <em>i</em>-ésimo cavalo pode montar <strong><em>c<sub>i</sub></em></strong> (1 ≤ <strong><em>c<sub>i</sub></em></strong> ≤ 100) soldados. Nas <strong><em>k</em></strong> linhas seguintes temos dois inteiros <strong><em>u</em></strong> (1 ≤ <strong><em>u</em></strong> ≤ <strong><em>n</em></strong>) e <strong><em>v</em></strong> (1 ≤ <strong><em>v</em></strong> ≤ <strong><em>m</em></strong>) indicando que existe afinidade entre o cavalo <strong><em>u</em></strong> e o soldado <strong><em>v</em></strong>.</p>
+
+                    <p>A entrada termina com final de arquivo.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância, você deverá imprimir um identificador <em>Instancia<strong> k</strong></em>, onde <em><strong>k</strong></em> é o número da instância atual. Na linha seguinte imprima o número máximo de policiais que podem ter um cavalo para montar em uma atribuição.</p>
+
+                    <p>Após cada instância imprima uma linha em branco.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 3 7<br />
+1 1 1 1 1<br />
+1 1<br />
+1 2<br />
+2 1<br />
+2 2<br />
+2 3<br />
+4 3<br />
+5 3</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+3<br />
+</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XI Maratona de Programação IME-USP, 2007
+                </p>
+            </div>
+
+        </body>
+    </html>

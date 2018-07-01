@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1620 - Triangulação de Delaunay</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1620 - Triangulação de Delaunay" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1620</span>
+                <h1>Triangulação de Delaunay</h1>
+                <div>
+                    <p>Por Roberto Costa, UNIFEI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Em matemática, uma Triangulação de Delaunay para um conjunto de pontos P no plano é uma triangulação DT(P) onde nenhum ponto em P está dentro da circunferência formada por qualquer triângulo na DT(P). A Triangulação de Delaunay maximiza o menor ângulo de todos os triângulos na triangulação; esta tende a evitar triângulos com ângulos internos muito pequenos.</p>
+
+                    <p>A triangulação foi inventada por Boris Delaunay em 1934. Para um conjunto de pontos em uma mesma linha, não existe Triangulação de Delaunay (o conceito de triangulação é desfeito para este caso). Para quatro ou mais pontos em um mesmo círculo (isto é, os vértices de um retângulo) a Triangulação de Delaunay não é única: cada uma das duas possibilidades de triangulação que divide o quadrilátero em dois triângulos satisfaz a “condição Delaunay”, isto é, que as circunferências de todos os triângulos tenham interiores vazios. Considerando que as circunferências são esferas, a noção de Triangulação de Delaunay estende-se a três dimensões. Generalizações são possíveis para métricas diferentes das Euclidianas. Entretanto, nestes casos não se pode garantir a existência ou a unicidade da Triangulação de Delaunay.</p>
+
+                    <p>O doutor Louco da Silva, em seu doutorado, resolveu verificar a afirmativa sobre a triangulação de Delaunay anteriormente dita era verdadeira. Analisou as configurações de polígonos perfeito, como mostra a figura.</p>
+
+                    <p style="text-align: center;"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/delaunay_fig1.jpg" /></p>
+                    
+                    <p>Ele verificou que é verdadeira e que a quantidade de arcos que criam a triangulação de Delaunay para a mesma quantidade de pontos era sempre a mesma. Por exemplo, para 3 pontos é sempre 3, para 4 pontos é sempre 5, para 5 pontos é sempre 7 e para 6 pontos é sempre 9 e assim sucessivamente.</p>
+                    
+                    <p>Ele resolveu então criar um número real (X) determinado pela relação da quantidade de arco (I) com a quantidade de pontos (L) que é:</p>
+                    
+                    <p style="text-align: center;"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/delaunay_formula.jpg" /></p>
+                    
+                    <p>Ajude o doutor fazendo um programa que calcule o valor do número real X.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta de um conjunto de teste, que contém uma única linha com um valor inteiro <strong>L</strong> (3 ≤ <strong>L</strong> ≤ 10<sup>80</sup>). A entrada termina quando <strong>L</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para a entrada seu programa deve produzir um único resultado real X com precisão de seis casas decimais. Utilize variáveis de dupla precisão para o cálculo.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+                                <p>4</p>
+                                
+                                <p>5</p>
+                                
+                                <p>6</p>
+                                
+                                <p>0</p>
+
+                            </td>
+                            <td>
+                                <p>0.000000</p>
+
+                                <p>0.250000</p>
+                                
+                                <p>0.400000</p>
+                                
+                                <p>0.500000</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XIV Contest Algar Telecom 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

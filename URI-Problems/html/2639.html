@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2639 - Cluedo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 2639 - Cluedo" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2639</span>
+            <h1>Cluedo</h1>
+            <div>
+                <p>Por ACM-ICPC Final Mundial 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif' alt='US' /> Estados Unidos</p>
+            </div>
+            <strong>Timelimit: 4</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Desenvolvido na década de 1940 no Reino Unido, o jogo Cluedo é um dos jogos de tabuleiro mais populares no mundo. O objetivo do jogo é determinar quem assassinou o Sr. Body, qual arma foi usada para assassiná-lo, e onde o assassinato ocorreu. O jogo usa um conjunto de cartas que representam seis pessoas (rotuladas A, B, ... F), seis armas (rotuladas G, H, ..., L) e nove salas (rotuladas M, N, ..., U). No começo Do jogo, um cartão de uma pessoa, um cartão de uma arma e um cartão de uma sala são selecionados aleatoriamente e removidos do baralho para que ninguém possa vê-los - eles representam o assassino, a arma do crime e a localização do assassinato. Os restantes 18 cartões são embaralhados e distribuídos aos jogadores, começando pelo jogador 1, depois o jogador à direita do jogador 1, o jogador 2, e assim por diante. Alguns jogadores podem acabar com um cartão a mais do que os outros. Para os fins deste problema há quatro jogadores, então a pessoa à direita do jogador 4 é o jogador 1.</p>
+
+<p>O resto do jogo é gasto procurando por pistas. Os jogadores se revezam em turnos, começando com o jogador 1 e passando para o jogador à direita deste. Um turno consiste em fazer uma sugestão (um suspeito de homicídio, uma arma e uma sala) e perguntar aos outros jogadores se eles têm alguma evidência que refute a sugestão. Por exemplo, você pode dizer para outro jogador "Eu acredito que o assassino era a pessoa A, usando a arma L, no quarto T." Se o outro jogador estiver segurando exatamente um desses cartões, esse jogador deve  te mostrar (e apenas para você) esse cartão. Se ele tiver mais que um desses cartões, ele pode  te mostrar qualquer um deles.</p>
+
+<p>Ao fazer uma sugestão, você deve primeiro questionar a pessoa ao seu lado direito por qualquer evidência. Se ela não tiver nenhuma, você continua com a pessoa à direita da que você questionou, e assim por diante, até que alguém tenha provas, ou ninguém tem algum dos cartões na sua sugestão.</p>
+
+<p>Muitas vezes você pode obter informações, mesmo que você não seja a pessoa que faz a sugestão. Suponha, no exemplo acima, você é o terceiro jogador e tem as cartas A e T. Se outra pessoa mostrar uma evidência ao jogador que fez a sujestão, você sabe que deve ser o cartão de arma L. Seguir as sugestões e quem forneceu provas em cada turno é uma estratégia importante.</p>
+
+<p>Para ganhar o jogo, você deve fazer uma acusação, onde você declara seu palpite final sobre o assassino, arma e sala. Depois de fazer sua acusação, você verifica os três cartões que foram colocados de lado no início do jogo - se eles combinarem com sua acusação, você ganha! É evidente que você quer estar absolutamente seguro de sua acusação antes de fazê-la.</p>
+
+<p>Aqui está o seu problema. Você é jogador 1. Dado um conjunto de cartas para você e um histórico de sugestões e evidências, você precisa decidir o quão perto você está de poder fazer uma acusação.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A entrada começa com um número inteiro <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 50), o número de sugestões feitas durante o jogo. Segue esta uma linha que contém os cinco cartões que você tem, todas letras maiúsculas no intervalo 'A'. . . 'U'. O restante <strong>n</strong> linhas contêm uma sugestão por linha. Cada uma dessas linhas começa com três caracteres respresentando a sujestão (jogador fazendo a sujestão, arma, sala), seguido das respostas de até três jogadores, começando com o jogador à direita do jogador fazendo a sugestão. Se um jogador não apresentar evidências, um '-' (Dash) será listado; caso contrário, um "caracter de evidência" será listado. Se o cartão de evidência específico for visto por você (porque você forneceu ou você era a pessoa que recebeu a evidência), então o caracter de evidência identifica esse cartão; Caso contrário, o caracter de evidência é '*'. Note que apenas a última resposta pode ser uma caráter de evidência. Todos os caracteres são separados um espaço. Apenas sequências de sujestões/respostas válidas aparecem na entrada.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Mostre três caracteres que identifiquem o assassino, a arma do crime e a sala. Se o assassino pode ser identificado, use a carta apropriada para essa pessoa; caso contrário, use '?'. Faça o mesmo com a arma do crime e a sala.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>1<br />
+B I P C F<br />
+A G M - - -</p>
+
+                        </td>
+                        <td>
+                            <p>AGM</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>2<br />
+A B C D H<br />
+F G M M<br />
+F H M - *</p>
+
+                </td>
+                <td>
+                    <p>E??</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>3</p>
+
+<p>A C M D S</p>
+
+<p>B G S - G</p>
+
+<p>A H S - - S</p>
+
+<p>C J S *</p>
+
+                </td>
+                <td>
+                    <p>???</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+            <p class="footer">
+                ACM-ICPC World Finals 2017
+            </p>
+        </div>
+
+    </body>
+</html>

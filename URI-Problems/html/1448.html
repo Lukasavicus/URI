@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1448 - Telefone Sem Fio</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1448 - Telefone Sem Fio" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1448</span>
+            <h1>Telefone Sem Fio</h1>
+            <div>Por Wanderley Guimarães, USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brazil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Toda criança já brincou de "telefone sem fio". Joãozinho inventou uma variação da brincadeira.</p>
+
+                <p>O grupo de crianças é dividido em dois times. Os times se organizam como na brincadeira original, em que cada um repete o que lhe foi falado para o seguinte, até que o último diz o que chegou até ele. No caso da brincadeira de Joãozinho será falada uma frase com n caracteres (contando letras, espaços, sinais de pontuação, etc). Todos sabem que a frase tem este comprimento. A frase é falada pelo juiz ao primeiro competidor de cada time que a repete para o segundo, e este para o terceiro e assim sucessivamente, até que o último competidor de cada time escreve a frase final (garantindo que n caracteres sejam escritos) e a entrega para o juiz.</p>
+
+                <p>A equipe vencedora é aquela cuja frase final seja mais próxima da frase original. Para calcular a semelhança entre duas frases de mesmo comprimento você deve contar o número de vezes em que o caractere da frase do time coincide com o caractere da frase original. Ganha o time para o qual o número de coincidências seja máximo. Se os dois times empataram neste critério, a primeira vez que um dos times acertou e o outro errou decide.</p>
+
+                <p>Exemplo: Se a frase original foi "O rato roeu a roupa do rei.", o primeiro time escreveu "O ator morreu, garoupa rei." e o segundo time escreveu "O pato moeu garoupa dorlei." O segundo time ganhou pois teve 21 coincidências contra 9 coincidências do primeiro:</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Telefone%20sem%20fio.png" style="width: 514px; height: 46px; margin: 10px;" /></p>
+
+                <p>Assim como os juízes da Maratona de Programação, estes juízes são muitos preguiçosos. Logo, pediram para você escrever um programa que resolve este problema.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada começa com um inteiro <strong>t</strong>, onde 1&nbsp;≤ <strong>t</strong>&nbsp;≤ 1000, indicando o número de instâncias que seu programa deve analisar.</p>
+
+                <p>Cada instância é composta por três linhas, na primeira a frase correta, na segunda a frase do primeiro time e na terceira a frase do segundo time. Cada frase tem no máximo 100 caracteres, e as frases possuem sempre o mesmo tamanho.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada instância, você deverá imprimir um identificador <em>Instancia <strong>k</strong></em>, onde <strong>k</strong> é o número da instância atual. Na linha seguinte você deve imprimir qual dos times foi o vencedor ou se houve empate. Após cada instância, seu programa deve imprimir uma linha em branco.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2<br />
+                                O RATO ROEU A ROUPA DO REI.<br />
+                                O ATOR MORREU, GAROUPA REI.<br />
+                                O PATO MOEU GAROUPA DORLEI.<br />
+                                IH EMPATOU!<br />
+                                IH EMPATOU!<br />
+                                IH EMPATOU!</p>
+
+                        </td>
+                        <td>
+                            <p>Instancia 1<br />
+                                time 2<br />
+								<br />
+								Instancia 2<br />
+                                empate<br /></p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+           <p class="footer">
+                XI Maratona de Programação IME-USP 2007.
+            </p>
+        </div>
+
+    </body>
+</html>

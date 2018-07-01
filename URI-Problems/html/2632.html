@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2632 - Magic and Sword</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2632 - Magic and Sword" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2632</span>
+			<h1>Magic and Sword</h1>
+			<div>
+				<p>Por Edson Alves da Costa Júnior, UNB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>
+					No tower defense Magic and Sword, o jogador pode lançar magias de área para derrotar as unidades inimigas. As magias são elementais: fogo, água, ar e terra, e a região afetada é determinada por um círculo cujo raio depende do nível da magia.
+				</p>
+				<p>
+					A tabela abaixo lista cada magia, o dano e o respectivo raio por nível:
+				</p>
+					 <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2632.png" style="width:600px; height:160px"></p>
+
+				<p>
+					As unidades inimigas são delimitadas por um retângulo de largura w e altura h, com canto inferior esquerdo posicionado no ponto (x0, y0). O inimigo sofrerá dano caso seu retângulo delimitador tenha qualquer intercessão com a área deﬁnida pelo círculo da magia.
+				</p>
+				<p>
+					Dada a posição e o retângulo delimitador da unidade inimiga, o centro da explosão e o identiﬁcador e o nível da magia, determine o dano sofrido pela unidade. Caso a unidade esteja fora do alcance da magia, o dano sofrido é igual a zero.
+				</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>
+					A entrada consiste em <strong>T</strong> (1 ≤ <strong>T</strong> ≤ 1000) casos de teste, onde o valor de <strong>T</strong> é informado na primeira linha da entrada. Cada caso de teste é composto por duas linhas. A primeira contém quatro número inteiros que repre-sentam as dimensões <strong>w</strong> e <strong>h</strong> (1 ≤ <strong>w</strong>, <strong>h</strong> ≤ 1000) do retângulo e as coordenadas <strong>x0</strong> e <strong>y0</strong> (0 ≤ <strong>x0</strong>, <strong>y0</strong> ≤ 1000) do canto inferior esquerdo. A segunda linha do caso de teste contém uma string com o identiﬁcador da magia (ﬁre para fogo, water para água, earth para terra e air para ar), o nível N desta magia (1 ≤ <strong>N</strong> ≤ 3) e as coordenadas <strong>cx</strong> e <strong>cy</strong> (0 ≤ <strong>cx</strong>, <strong>cy</strong> ≤ 1000) do centro da área da explosão.
+				</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>
+					Para cada caso de teste, a saída deve ser o valor do dano recebido pela unidade, seguido de uma quebra de linha.
+				</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4</p>
+							<p>10 10 50 50</p>
+							<p>fire 1 85 55</p>
+							<p>10 10 50 50</p>
+							<p>fire 2 85 55</p>
+							<p>10 10 50 100</p>
+							<p>water 3 100 100</p>
+							<p>10 10 50 100</p>
+							<p>air 3 100 100</p>
+						</td>
+						<td>
+							<p>0</p>
+							<p>200</p>
+							<p>300</p>
+							<p>100</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Maratona de Programação UnB/CIC 2015.
+</p>
+		</div>
+
+	</body>
+</html>

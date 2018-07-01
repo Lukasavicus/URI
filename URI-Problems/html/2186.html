@@ -1,0 +1,128 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2186 - Bino, Prant e a Indecisao</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2186 - Bino, Prant e a Indecisao" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2186</span>
+				<h1>Bino, Prant e a Indecisao</h1>
+				<div>
+					<p>Por Thalyson Nepomuceno, UECE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 5</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Como você já deve saber, Prant é um garoto muito indeciso, de tal modo que foi muito difícil escolher o nome do seu cachorro. Depois de Prant escolher o nome <strong>S</strong> para seu cachorro, Bino propôs um desafio.&nbsp; O desafio de Bino consiste em <strong>N</strong> rodadas, e em cada rodada pode ser realizada uma das seguintes operações sobre o nome <strong>S</strong>:</p>
+
+<p><strong>1 A B C</strong>: Retornar a quantidade de ocorrências de um caractere <strong>C </strong>no intervalo entre as posições<strong> A </strong>e<strong> B</strong>. Por exemplo, para <strong>S </strong>= “abcda”, <strong>A</strong> = 1, <strong>B</strong> = 5 e <strong>C</strong> = ‘a’, a resposta é 2.</p>
+
+<p><strong>2 A B C</strong>: Encontrar a primeira e a última ocorrência de um caractere <strong>C </strong>no intervalo entre as posições<strong> A </strong>e<strong> B. </strong>Por exemplo, para <strong>S </strong>= “abcda”, <strong>A</strong> = 1, <strong>B</strong> = 5 e <strong>C</strong> = ‘a’, a primeira ocorrência de <strong>C</strong> é na posição 1, e a última é na posição 5.</p>
+
+<p><strong>3 A B</strong>: Inverter todas as letras no intervalo entre as posições<strong> A</strong> e <strong>B</strong>. Por exemplo, para <strong>S </strong>= “abcd”, <strong>A</strong> = 2 e <strong>B</strong> = 4, após a operação, <strong>S</strong> = “adcb”.</p>
+
+<p><strong>4 A C</strong>: Adicionar um caractere <strong>C</strong> antes o caractere da posição <strong>A</strong>. Por exemplo, para <strong>S </strong>= “abcd”, <strong>A</strong> = 2 e <strong>C</strong> = ‘z’, após a operação, <strong>S</strong> = “azbcd”.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada consiste de dois inteiros <strong>L ( 1 ≤ L ≤&nbsp; 10<sup>6</sup>)</strong> e <strong>N ( 1 ≤ N ≤&nbsp; 10<sup>5</sup>)</strong>, representando a quantidade de letras que formam inicialmente o nome <strong>S</strong>, e a quantidade de rodas, respectivamente. A segunda linha contém uma string <strong>S</strong>, representando o nome inicial do cachorro de Prant. Então, seguiram <strong>N</strong> linhas, representando as <strong>N</strong> operações realizadas.</p>
+
+<p>É garantido que a string <strong>S</strong> contém apenas letras minúsculas do alfabeto.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada operação 1, imprima uma única linha contendo a quantidade de ocorrências do caractere <strong>C </strong>no intervalo entre as posições<strong> A </strong>e<strong> B.</strong></p>
+
+<p>Para cada operação 2, imprima a primeira e a última ocorrência do caractere <strong>C </strong>no intervalo entre as posições<strong> A </strong>e<strong> B</strong>. Caso não exista o caractere <strong>C</strong> no intervalo, imprima -1.</p>
+
+<p>Ao final das <strong>N</strong> operações, imprima a string resultante das operações.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 4<br />
+abcda<br />
+1 1 5 a<br />
+1 2 4 a<br />
+3 1 4<br />
+2 1 5 a</p>
+
+							</td>
+							<td>
+								<p>2<br />
+0<br />
+4 5<br />
+dcbaa</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 5<br />
+nomep<br />
+4 5 o<br />
+4 5 k<br />
+3 1 7<br />
+2 2 6 o<br />
+2 1 7 x</p>
+
+							</td>
+							<td>
+								<p>2 6<br />
+-1<br />
+pokemon</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Aquecimento para a OBI 2016 - Fase 2
+				</p>
+			</div>
+
+		</body>
+	</html>

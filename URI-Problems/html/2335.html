@@ -1,0 +1,100 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2335 - O Desafio de Arquibaldo</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2335 - O Desafio de Arquibaldo" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2335</span>
+				<h1>O Desafio de Arquibaldo</h1>
+				<div>
+					<p>Por Felipe Getúlio, UEA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Arquibaldo é um menino muito inteligente conhecido por ser o “bam-bam-bam” das questões matemáticas relacionadas a figuras geométricas. Cálculo de áreas, perímetros, medidas de lados, Arquibaldo já estava cansado de pequenos desafios. Para ele, era tudo muito fácil. Sua tia Helena, no entanto, sendo professora de matemática, resolveu passar um desafio ao seu sobrinho, um pouco acima dos com que ele estava acostumado a lidar. Helena lhe mostrou quatro triângulos retângulos idênticos e formou com eles um quadrado tal que seus lados eram as medidas das hipotenusas dos triângulos escolhidos. Então ela disse ao sobrinho que dependendo das medidas dos triângulos retângulos, pode ou não haver um segundo quadrado menor no centro do maior. As ilustrações abaixo mostram com clareza estes casos:</p>
+
+<p>                                      <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2335.png" style="height:194px; width:511px" /></p>
+
+<p>Ela então o desafiou: “Se eu te der os lados dos quadrados interno e externo, l1 e l2, por exemplo, você consegue me dizer qual a medida, em graus, do menor ângulo interno do triângulo retângulo que formaria com outros três triângulos idênticos um quadrado de lado l1 e outro de lado l2?”. Arquibaldo, começou a tentar resolver o desafio. Como ele não poderia usar calculadora, sua tia foi boazinha e permitiu que apenas a resposta inteira fosse apresentada, ou seja, sem casas decimais. Assim, Arquibaldo teria agora que encontrar a maior medida inteira do menor ângulo do triângulo retângulo tal que o lado do<br />
+quadrado interno formado por esse novo triângulo (com medidas de ângulos internos inteiras) seja maior ou igual ao lado do quadrado interno dado, ou seja, este deveria “caber” no novo quadrado interno. Por exemplo: se os lados dos quadrados interno e externo tiverem medidas 1 e 5, respectivamente, então, o menor ângulo terá medida aproximada de 36,87º, porém, a maior medida inteira é 36º, pois um conjunto de quatro triângulos retângulos de angulação 36º e 54º(complemento) formam quadrados de lado 5 e 1,10 unidades de medida, ou seja, o quadrado fornecido de lado 1 “caberia” em um quadrado de lado 1,10, com esta angulação.<br />
+“Atente também para a existência do triângulo! Lembre-se: agora as medidas dos ângulos só podem ser inteiras!”, alertou Helena a Arquibaldo para possíveis erros porque ela é brother. No exemplo acima, o triângulo existe, pois tem ângulos de 36º, 54º e 90º. Sabendo, que você é um programador (não foi informado à Helena se você era bom ou não), Helena pediu a você que faça um programa que informe o gabarito dos valores fornecidos por ela ao seu sobrinho, para saber se ele realmente soube resolver o desafio.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta de vários casos de teste. Cada caso corresponde a uma linha que contém os valores dos lados dos quadrados interno e externo, <strong>L1</strong> e <strong>L2</strong> (1 &lt;= <strong>L1</strong>, <strong>L2</strong> &lt;= 10<sup>5</sup>), não necessariamente nesta ordem.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima a maior medida inteira do menor ângulo interno do triângulo retângulo, respeitando as condições acima. Se o triângulo do ângulo em questão não existir, imprima a mensagem “Nao existe tal triangulo.”.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>102 100<br />
+100 101<br />
+40 40<br />
+2 1<br />
+1 5<br />
+1 10<br />
+32293 22321</p>
+
+							</td>
+							<td>
+								<p>1<br />
+Nao existe tal triangulo.<br />
+Nao existe tal triangulo.<br />
+24<br />
+36<br />
+40<br />
+15</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					
+				</p>
+			</div>
+
+		</body>
+	</html>

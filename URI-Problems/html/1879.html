@@ -1,0 +1,116 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1879 - Bridge</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema A - Bridge" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1879</span>
+				<h1>Bridge</h1>
+				<div>
+					<p>Por Stefano Tommasini, Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Bridge é um grande jogo de cartas! O mundial juvenil de bridge foi realizado na Tailândia em 2006, mesmo país da final mundial da ICPC em 2016! Vamos falar sobre as regras do jogo. Ele é jogado com um baralho de 52 cartas, 13 de cada naipe (copas, espadas, paus e ouros). As cartas têm uma ordenação (A, K, Q, J, 10, 9, 8, 7, 6, 5, 4, 3, 2), onde ás é a maior carta e 2 a menor. Existe também um trunfo pré definido (H = copas, S = espadas, C = paus, D = ouros, NT = não há trunfo). Um naipe definido como trunfo vale mais que os outros.</p>
+
+<p>O jogo é jogado por 4 jogadores (N, E, S, W), como mostrado na figura, e consiste de várias rodadas, chamadas de vazas. Um jogador começa a rodada/vaza jogando uma carta. Em seguida, cada jogador, em sentido horário, joga uma carta até que todos os jogadores tenham jogado. Nesse momento, acaba a vaza. O jogador que começa a vaza pode jogar a carta que quiser; o naipe dessa carta é definido como o naipe da vaza. Todo jogador que não for o jogador que começou a vaza é obrigado a jogar uma carta com o mesmo naipe da vaza atual, a não ser que ele não tenha nenhuma tal carta. Nesse caso, pode jogar qualquer carta.</p>
+
+<p>O vencedor de uma vaza é definido da seguinte forma: se uma carta de trunfo tiver sido jogada na vaza, ganha o jogador que jogou a maior carta de trunfo. Caso contrário, ganha a maior carta do naipe da vaza. O jogador que ganhou a vaza começa a seguinte.</p>
+
+<p>O jogador N inicia a primeira vaza. Os jogadores N e S formam uma dupla, enquanto E e W formam outra. O objetivo do jogo é ganhar o maior número possível de vazas.</p>
+
+<p class="center"><img alt="Exemplo de uma situação onde cada jogador tem 13 cartas." src="https://www.urionlinejudge.com.br/gallery/images/contests/59_1.jpg" style="height:208px; width:260px" /></p>
+
+<p class="center">Nesse problema, cada jogador tem <em>R</em> cartas e queremos saber quantas vazas a dupla NS consegue ganhar se todos jogarem de forma ótima.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+<p>Cada instância inicia com uma linha contendo uma string (dentre H,S, C, D, NT) indicando o trunfo da partida e um inteiro <strong>R</strong> (1 ≤ <strong>R</strong> ≤ 4) indicando o número de cartas que os jogadores têm. Cada uma das próximas 4 linhas contém uma lista de <strong>R</strong> cartas separadas por espaços. Uma carta é representada como uma cadeia <strong>XY</strong>, onde <strong>X</strong> está dentre A, K, Q, J, T (representando 10), 9, 8, 7, 6, 5, 4, 3, 2, e <strong>Y </strong>representa o naipe (dentre H, S, C, D). As 4 linhas contêm as cartas dos jogadores N, E, S e W, nessa ordem. Note que não existe carta repetida!</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprima uma linha contendo um único inteiro, correspondente ao número máximo de vazas que a dupla NS pode ganhar.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+<p>S 1</p>
+
+<p>2H</p>
+
+<p>AH</p>
+
+<p>2S</p>
+
+<p>KH</p>
+
+<p>NT 1</p>
+
+<p>2H</p>
+
+<p>AH</p>
+
+<p>2S</p>
+
+<p>KH</p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+<p>0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIX Maratona de Programação IME-USP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

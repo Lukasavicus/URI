@@ -1,0 +1,133 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1859 - Arqueologia Congelante</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1234 - Arqueologia Congelante" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1859</span>
+				<h1>Arqueologia Congelante</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 4</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Após desfazerem o plano maquiavélico do malévolo Hans e salvarem o reino de Arendelle, Elsa, Anna e Kristoff iniciaram um projeto arqueológico para saber mais sobre o passado pré-histórico do continente sobre o qual hoje se situa Arendelle. Durante as escavações, eles descobriram que na verdade o continente foi formado geologicamente através da colisão entre quatro continentes outrora separados. Eles conseguiram inclusive descobrir os nomes com os quais os povos da época chavam esses continentes: Westeros, Essos, Sothoryos e Ulthos. No entanto, ainda estão no processo de identificar as famílias que habitavam o primeiro continente, Westeros, já que a promiscuidade entre os povos antigos era muito grande e os registros parecem muito confusos. Na presente etapa do projeto, eles estão considerando apenas que os povos eram divididos em duas grandes famílias: Stark e Lannister. Futuramente eles pretendem dividir essas famílias melhor. Por ora, o objetivo é, dados os códigos genéticos dos indivíduos fossilizados, classificar os indivíduos nessas duas famílias visando minimizar as relações de parentesco entre indivíduos classificados em famílias diferentes.</p>
+
+					<p>Mais formalmente, dizemos que um indivíduo <strong>X</strong> <em>é parente</em> de um indivíduo <strong>Y</strong> se os códigos genéticos de ambos os indivíduos partilham de uma parte idêntica e contígua com comprimento no mínimo <strong>P</strong>% do comprimento de um dos códigos — como os indivíduos são todos humanos, os códigos genéticos possuem sempre o mesmo comprimento. Por exemplo, tomemos os indivíduos de códigos GATAGACA e CATACAGA. Se o critério de parentesco <strong>P</strong> é igual a 62, os indivíduos devem ser considerados parentes, já que ACAGA é uma parte contígua comum a ambos de comprimento 5 ≥ 8 × 62% (se você não consegue entender por que ACAGA é uma parte contígua de <u>GA</u>TAG<u>ACA</u>, entenda que Elsa e sua equipe consideram códigos genéticos como cadeias circulares). Agora, se <strong>P</strong> = 63, os indivíduos não devem ser considerados parentes. Destarte, o objetivo dos pesquisadores de Arendelle é classificar os indivíduos fossilizados nas famílias Stark e Lannister visando minimizar o número de <em>pares maus</em>. Dizemos que um par (<strong>s</strong>, <strong>l</strong>) é <em>mau</em> se satisfaz as três condições a seguir:</p>
+
+					<ol>
+						<li><strong>s</strong> foi classificado como Stark;</li>
+						<li><strong>l</strong> foi classificado como Lannister;</li>
+						<li><strong>s</strong> deve ser considerado parente de <strong>l</strong> segundo o critério de parentesco estabelecido.</li>
+					</ol>
+
+					<p>Obrigatoriamente, ao menos um indivíduo deve ser classificado como Stark e ao menos um como Lannister.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada consiste de dois inteiros, <strong>N</strong> e <strong>P</strong> (2 ≤ <strong>N</strong> ≤ 50, 0 ≤ <strong>P</strong> ≤ 100), os quais representam respectivamente o número de indivíduos fossilizados e o critério de parentesco estabelecido. Cada uma das <strong>N</strong> linhas seguintes consiste de no máximo 10<sup>4</sup> caracteres no conjunto {A, T, C, G}, representando o código genético de um indivíduo. À possível exceção da primeira, as linhas da entrada possuem todas o mesmo número de caracteres.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo unicamente o menor número possível de pares maus numa classificação dos indivíduos nas famílias.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 62<br />
+								GATAGACA<br />
+								CATACAGA</p>
+							</td>
+							<td>
+								<p>1</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 63<br />
+								GATAGACA<br />
+								CATACAGA</p>
+							</td>
+							<td>
+								<p>0</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 50<br />
+								GATAGACA<br />
+								CATACAGA<br />
+								CAGACAGA<br />
+								TAGATAGA<br />
+								TATAGACA</p>
+							</td>
+							<td>
+								<p>2</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

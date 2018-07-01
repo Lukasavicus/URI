@@ -1,0 +1,135 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2319 - Penalidade Mínima</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2319 - Penalidade Mínima" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2319</span>
+				<h1>Penalidade Mínima</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2006 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A Sra. Bastos é&nbsp;uma elaboradora de passatempos matemáticos e pediu para que você&nbsp;criasse um programa que conseguisse jogar de forma eficiente a sua mais nova criação.</p>
+
+<p>O jogo consiste em um tabuleiro formado por casas dispostas em N linhas por N colunas. Cada casa contém um inteiro não-negativo. No começo do jogo, uma peça é&nbsp;colocada na casa localizada no canto superior esquerdo, ou seja, na posição (1,1). O objetivo do jogo é&nbsp;mover a peça até&nbsp;a casa localizada no canto inferior direito (posição (N,N)) somente movendo um único quadrado para baixo ou para a direita em cada passo. Além disso, a peça não pode ser colocada em nenhum quadrado que contenha o número zero.</p>
+
+<p>O custo do caminho utilizado para percorrer o tabuleiro corresponde ao produto de todos os números das casas percorridos no caminho. A penalidade é&nbsp;definida utilizando a representação decimal do custo, sendo representada pelo número de dígitos zeros, contados da direita para a esquerda, antes do primeiro dígito diferente de zero. Por exemplo, um custo igual a 501000 tem penalidade 3, e um custo igual a 501 tem penalidade zero.</p>
+
+<p>O objetivo do jogo é&nbsp;conseguir chegar à&nbsp;casa (N,N) através de um caminho “otimizado”. Dizemos que o caminho foi otimizado se a penalidade for mínima.</p>
+
+<p>Escreva um programa que, dado um tabuleiro, determine a penalidade do custo otimizado.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado). A primeira linha da entrada contém um inteiro <strong>N</strong> que indica o número de linhas e colunas do tabuleiro (1 ≤ <strong>N</strong> ≤ 1000). As <strong>N</strong> linhas seguintes contêm <strong>N</strong> inteiros <strong>I</strong> cada (1 ≤ <strong>I</strong> ≤ 1000000), que representam o valor da casa do tabuleiro naquela posição. Existe pelo menos uma solução possível para todos os casos de teste.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na saída padrão, uma única linha, contendo a penalidade do custo “otimizado”.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+1 2 3<br />
+4 5 6<br />
+7 8 9</p>
+
+							</td>
+							<td>
+								<p>0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>3<br />
+5 7 6<br />
+4 0 1<br />
+3 2 5</p>
+
+                    </td>
+                    <td>
+                        <p>1</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>4<br />
+1 3 0 0<br />
+0 8 2 25<br />
+6 5 0 3<br />
+0 15 7 4</p>
+
+                    </td>
+                    <td>
+                        <p>2</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					Olimpíada Brasileira de Informática 2010 Fase 2 Modalidade Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

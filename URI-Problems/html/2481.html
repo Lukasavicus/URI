@@ -1,0 +1,106 @@
+<html>
+<head>
+<title>URI 2481 - É Uma Cilada Bino</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+<meta name="description" content="URI Online Judge - Problema 2481 - É Uma Cilada Bino" />
+
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+</head>
+<body>
+
+<div class="header">
+<span>URI Online Judge | 2481</span>
+<h1>É Uma Cilada Bino</h1>
+<div>
+<p>Por Thalyson Nepomuceno, IFCE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+</div>
+<strong>Timelimit: 1</strong>
+</div>
+
+<div class="problem">
+
+<div class="description">
+<p>Bino é um caminhoneiro, e foi encarregado para levar os presentes de natal para <strong>N</strong> cidades. As cidades são dispostas em uma linha, e Bino quer entregar os presentes o mais rápido possível. Bino inicia sua jornada na posição 0 e pretende visitar todas as <strong>N</strong> cidades.</p>
+
+<p>Bino viaja com seu amigo Pedro, um duende enviado pelo Papai Noel para protegê-lo.</p>
+
+<p>Cada cidade i possui uma posição <strong>X<sub>i</sub></strong> e um valor de comida <strong>C<sub>i</sub></strong>.</p>
+
+<p>Na visita de uma cidade, Bino pode optar por comprar comida para Pedro. Quando Bino opta por comprar comida para Pedro em uma cidade <strong>i</strong>, ele paga <strong>C<sub>i</sub></strong> moedas de ouro pela comida, porém Pedro passa a produzir <strong>X<sub>i</sub></strong> moedas por cada unidade de distância percorrida. Como forma agradecimento, Bino sempre paga a comida para Pedro na cidade <strong>N</strong>.</p>
+
+<p>Perceba que se Pedro já estiver produzindo <strong>K</strong> moedas de ouro, e Bino comprar comida em outra cidade <strong>i</strong>, Pedro vai começar a produzir <strong>X<sub>i </sub></strong>moedas de ouro, e não <strong>K</strong>+<strong> X<sub>i.</sub></strong></p>
+
+<p>Bino quer saber qual a maior quantidade de moedas de ouro que pode conseguir durante a viajem da cidade 1 até a cidade <strong>N</strong>.</p>
+
+<p>É garantido que as cidades serão fornecidas na entrada por ordem crescente de posição. Também é garantido que não existem duas cidades situadas na mesma posição.</p>
+</div>
+
+<h2>Entrada</h2>
+
+<div class="input">
+<p>A primeira linha da entrada contém um inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 100) representando a quantidade de casos de teste. A primeira linha de cada caso de teste contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>), representando a quantidade de cidades. Cada uma das próximas <strong>N </strong>linhas do caso de teste contém 2 inteiros <strong>X<sub>i</sub></strong> (1 ≤ <strong>X<sub>i</sub></strong> ≤ 10<sup>7</sup>), e <strong>C<sub>i </sub></strong>(1 ≤ <strong>C<sub>i</sub></strong> ≤ 10<sup>10</sup>)<strong>, </strong>representando a posição e o valor da comida na cidade <strong>i </strong>(1 ≤ <strong>i</strong> ≤ <strong>N</strong>), respectivamente.</p>
+</div>
+
+<h2>Saída</h2>
+
+<div class="output">
+<p>Para caso de teste, caso seja possível Bino ganhar moedas na viagem, imprima a quantidade máxima de moedas que Bino pode ganhar, caso contrário, imprima a quantidade mínima que ele pode perder. Siga a grafia dos exemplos.</p>
+</div>
+
+<div class="both"></div>
+
+<table>
+<thead>
+<tr>
+<td>Exemplo de Entrada</td>
+<td>Exemplo de Saída</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="division">
+<p>3</p>
+
+<p>3<br />
+0 15<br />
+5 20<br />
+10 10<br />
+3<br />
+0 15<br />
+5 15<br />
+10 10<br />
+3<br />
+0 15<br />
+5 5<br />
+10 10</p>
+
+</td>
+<td>
+<p>Perde 5<br />
+Perde 0<br />
+Ganha 10</p>
+
+</td>
+</tr>
+</tbody>
+</table>
+
+<div class="both"></div>
+<p class="footer">
+Contest de Natal 2016.
+</p>
+</div>
+
+</body>
+</html>

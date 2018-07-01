@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1903 - Cadeia Alimentar</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1903 - Cadeia Alimentar" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1903</span>
+				<h1>Cadeia Alimentar</h1>
+				<div>
+					<p>Por Thalyson Nepomuceno, Universidade Estadual do Ceará <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Na viagem de Bino, ele desenhou algumas cadeias alimentares dos seres de Binox. Porém ele notou que em algumas cadeias, todos os pares de espécies se relacionavam (diretamente ou indiretamente). Ele denominou essas cadeias de Cadeias Boladas.</p>
+
+					<p>Representando a cadeia alimentar como um grafo, todos os pares de espécies (<strong>u</strong>, <strong>v</strong>) se relacionam se existe um caminho de <strong>u</strong> para <strong>v</strong> OU um caminho de <strong>v</strong> para <strong>u</strong>.</p>
+
+					<p style="text-align:center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/contests/cadeia.jpg" style="height:161px; width:450px" /></p>
+
+					<p>Dado uma cadeia alimentar, Bino quer saber se ela é uma Cadeia Bolada ou não.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste em múltiplas linhas. A primeira linha contém dois inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 100000) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 1000000), representando a quantidade de espécies e o número de relações respectivamente. As próximas <strong>M</strong> linhas contêm dois inteiros <strong>U</strong> (1 ≤ <strong>U</strong> ≤ <strong>N</strong>) e <strong>V</strong> (1 ≤ <strong>V</strong> ≤ <strong>N</strong>), representando que existe uma relação unidirecional entre <strong>U</strong> e <strong>V</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha com a mensagem "Bolada" (sem aspas) se a cadeia for uma Cadeia Bolada, ou "Nao Bolada" caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 3<br />
+1 3<br />
+2 3<br />
+3 1</p>
+
+							</td>
+							<td>
+								<p>Bolada</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2<br />
+1 3<br />
+2 3</p>
+
+							</td>
+							<td>
+								<p>Nao Bolada</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+
+				<p class="footer">
+					Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática-Fase 2, 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

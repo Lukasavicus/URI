@@ -1,0 +1,126 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2442 - Plantação</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2442 - Plantação" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2442</span>
+				<h1>Plantação</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 5</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A N-logônia é uma região com um clima muito intenso e variável, onde em questão de poucos dias é possível observar uma forte seca, seguida de uma intensa estação de chuvas. O Seu João tem uma plantação de obilina, uma fruta típica e muito apreciada na região, o que a torna muito valiosa. A obilina, entretanto, é muito suscetível a mudanças climáticas, de forma que é difícil prever quanto desta fruta será colhido durante a safra.</p>
+
+					<p>Observou-se que as árvores de obilina seguem as seguintes regras:</p>
+
+					<ul>
+						<li>As árvores produzem frutas todos os dias, exceto quando elas morrem;</li>
+						<li>As árvores mortas não produzem frutas, e infelizmente, mesmo que volte a chover, continuam mortas;</li>
+						<li>Se choveu na noite anterior, a árvore produz uma fruta a mais que no dia anterior;</li>
+						<li>Se estiou na noite anterior, a árvore produz uma fruta a menos que no dia anterior; e</li>
+						<li>Uma árvore morre se não produzir nenhuma fruta.</li>
+					</ul>
+
+					<p>O Seu João deseja vender toda a obilina produzida para uma grande rede de mercados local, mas para isso, precisa saber exatamente quantas frutas de obilina ele colherá durante a safra.</p>
+
+					<p>Para ajudar o Seu João nesta tarefa, você deve escrever um programa que, dada a previsão do tempo para cada noite do período da safra, e quantas frutas cada árvore do Seu João produziu no dia anterior ao início da safra, determine quantas obilinas serão colhidas durante a safra.</p>
+
+					<p>Por exemplo, considerando apenas um pé de obilina, se a safra dura dois dias, choveu durante duas noites, e o pé de obilina produziu 3 frutos antes de começar a safra, a produção total da safra será de 9 frutas: 4 no primeiro dia da safra, e 5 no segundo dia.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém dois inteiros, <strong>N</strong>(1 ≤ <strong>N</strong> ≤ 100000) e <strong>K </strong>(1 ≤ <strong>K</strong> ≤ 100 000), respectivamente o número de dias que dura a safra, e o número de árvores que o Seu João possui.</p>
+
+					<p>A segunda linha contém <strong>K</strong> inteiros <strong>a<sub>i</sub> </strong>(1 ≤ <strong>a<sub>i</sub></strong> ≤ 100, para todo <strong>i</strong>) indicando quantas frutas foram produzidas no dia anterior ao início da safra por cada uma das <strong>K</strong> árvores.</p>
+
+					<p>A linha seguinte contém <strong>N</strong> letras separadas por um espaço em branco. Cada uma das letras indica se choveu ou se estiou durante a noite respectiva: a primeira letra se refere à primeira noite, a segunda letra se refere à segunda noite, e assim por diante. Se a letra for um ‘C’, indica que choveu aquela noite chuvosa, e se for um ‘E’, indica que estiou (ou seja, não choveu).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma única linha, contendo um único inteiro, indicando o número de frutas que serão produzidas pela plantação do Seu João.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2</p>
+
+								<p>1 2</p>
+
+								<p>C E C</p>
+
+							</td>
+							<td>
+								<p>13</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 3</p>
+
+								<p>2 3 1</p>
+
+								<p>E E E C C</p>
+
+							</td>
+							<td>
+								<p>4</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2013 Fase 2 Nível Júnior
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1446 - Diagrama de Venn?</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1446 - Diagrama de Venn?" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1446</span>
+            <h1>Diagrama de Venn?</h1>
+            <div>Maratona de Programacao IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Mickayil estava na escola estudando teoria de conjuntos. As escolas em Praga são bastante rigorosas. A professora ensinou para os alunos como desenhar diagramas de Venn para três conjuntos, e pediu aos alunos que trabalhassem com os diagramas. Para impressionar a professora com diagramas bem desenhados, Mickayil decidiu que iria fazer diagramas coloridos. Para atingir esse objetivo, ele recortou três figuras convexas usando finos papéis coloridos. Mickayil percebeu que, sobrepondo as figuras, as intersecções podiam gerar novas cores.</p>
+
+                <p>Assim, temos três figuras convexas sobre uma superfície plana, cada figura com uma cor. Quando figuras estão sobrepostas, a cor que vemos é uma mistura das cores das figuras. Podemos representar as cores por inteiros entre 0 e 15. A mistura de cores é feita através da soma dos valores das correspondentes cores módulo 16. Queremos saber o que enxergamos ao olhar para o diagrama de Venn do Mickayil, isto é, quais cores e em que quantidade elas aparecem. Vamos medir isso através da área visível de cada cor.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>São dadas várias instâncias. Cada instância é composta por três figuras. Essas figuras são dadas uma por linha, com o formato</p>
+
+                <p><em>n<sub>i</sub> c<sub>i</sub> x<sub>i1</sub> y<sub>i1 </sub>x<sub>i2</sub> y<sub>i2</sub> ... x<sub>ij </sub>y<sub>ij</sub> ... x<sub>in</sub> y<sub>in</sub>​</em></p>
+
+                <p>para <em>i</em> = 1, 2, 3, onde 0 ≤ <strong>n<sub>i </sub></strong>≤ 200 é o número de pontos na borda da figura i, <strong>c<sub>i</sub></strong> é a cor da figura i e os pares (<strong>x<sub>ij</sub></strong> , <strong>y<sub>ij</sub></strong>) representam os pontos da borda de i no sentido anti–horário, dados por inteiros. A entrada termina quando <strong>n<sub>1</sub></strong> = 0 (note que essa instância não deve ser processada).</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Você deverá imprimir um cabeçalho indicando o número da instância que está tratando (Instancia h) e nas linhas seguintes o par cor e área total visível desta cor. Estas linhas devem ser ordenadas pelas áreas, de forma decrescente. Resolva os empates de forma crescente na cor. Apenas para simplificar a apresentação, mostre os valores das áreas arredondados em duas casas decimais. Imprima uma linha em branco após cada instância.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                4 5 -1 -1 1 -1 1 1 -1 1<br />
+                                4 13 0 0 2 0 2 2 0 2<br />
+                                3 7 3 0 4 0 4 1<br />
+                                4 1 0 1 3 1 3 4 0 4<br />
+                                4 2 2 2 5 2 5 5 2 5<br />
+                                4 8 1 0 4 0 4 3 1 3<br />
+                                0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Instancia 1<br />
+                                5 3.00<br />
+                                13 3.00<br />
+                                2 1.00<br />
+                                7 0.50
+                            </p>
+
+                            <p>
+                                Instancia 2<br />
+                                2 6.00<br />
+                                1 4.00<br />
+                                8 4.00<br />
+                                9 3.00<br />
+                                3 1.00<br />
+                                10 1.00<br />
+                                11 1.00
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                VII Maratona de Programacao IME-USP 2003.
+            </p>           
+        </div>
+
+    </body>
+</html>

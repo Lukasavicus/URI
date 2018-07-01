@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1443 - Engarrafamento</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1443 - Engarrafamento" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1443</span>
+            <h1>Engarrafamento</h1>
+            <div>Por Lucas Hermann Negri, UDESC <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Marcos é um cientista de computação que trabalha em uma empresa de transporte, analisando dados das viagens dos caminhões de carga da empresa e otimizando notas de veículos. Devido aos constantes congestionamentos envolvendo veículos da empresa, esta designou uma nova tarefa para Marcos: computar a distância percorrida por cada veículo em situações de tráfego intenso. Marcos está muito ocupado com outras tarefas na empresa, e designou esta tarefa de calcular a distância percorrida em viagens para você, o novo estagiário da empresa.</p>
+
+                <p>De forma mais específica, a distância percorrida de cada viagem deve ser calculada a partir dos dados de aceleração durante a viagem. Nestes dados constam as faixas de tempo onde o motorista pisou no acelerador (aceleração constante de 1m/s², até uma velocidade máxima de 10m/s), sendo que quando o veículo não estiver acelerando o motorista estará com o pé no freio (veículo parado ou freando com uma desaceleração constante de 2m/s²). A distância total percorrida na viagem deve ser calculada a partir destas faixas de tempo, assumindo que o veículo está inicialmente parado.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada é composta por vários casos de teste. Cada caso corresponde a uma viagem e é iniciado por uma linha contendo um inteiro <strong>N</strong>, que diz a quantidade de faixas de aceleração do veículo durante a viagem. O final da entrada é marcado com <strong>N</strong> = 0, caso que não deve ser processado.</p>
+
+                <p>Cada uma das próximas <strong>N</strong> linhas contém dois inteiros, <strong>a</strong> e <strong>b</strong>, designando as faixas de tempo (em segundos) onde o motorista está com o pé no acelerador (acelerou no tempo t = <strong>a</strong> até t = <strong>b</strong>). No primeiro caso de teste do exemplo abaixo (primeira viagem) o motorista pisou no acelerador no tempo t = 0s até t = 5s, pisou no freio entre t = 5s e t = 8s, acelerou de t = 8s até t = 15s, freou entre t = 16s e t = 17s e acelerou até t = 50s. A distância percorrida deve ser computada de t = 0s até o segundo final da última faixa de aceleração, neste caso de t = 0s até t = 50s.</p>
+
+                <p>Limites: 0 ≤&nbsp;<strong>N</strong> ≤&nbsp;1000, sendo que cada viagem demora no máximo 30h.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>O programa deverá imprimir, para cada viagem, uma linha contendo a distância percorrida em metros (com duas casas decimais).</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>3<br />
+                                0 5<br />
+                                8 15<br />
+                                17 50<br />
+                                1<br />
+                                5 30<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            358.75<br />
+                            200.00<br />
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+             <p class="footer">
+                Maratona de Programacao UDESC 2013.
+            </p>
+        </div>
+
+    </body>
+</html>

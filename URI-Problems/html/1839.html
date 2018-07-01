@@ -1,0 +1,97 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1839 - A Câmara Secreta</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1234 - A Câmara Secreta" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1839</span>
+				<h1>A Câmara Secreta</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A cidade de Chapecó, no oeste do estado brasileiro de Santa Catarina, é onde ficam situados a Reitoria da Universidade Federal da Fronteira Sul e um dos 6 <em>campi</em> da universidade. No próximo dia 25 de agosto, comemorar-se-ão os 98 anos da cidade, e os vereadores já estão organizando os preparativos da festa. O objetivo desta festa, além da celebração do aniversário da cidade, é arrecadar fundos para a construção da nova Câmara de Vereadores, a qual será uma Câmara Secreta, onde os vereadores poderão votar mais tranquilamente os aumentos da tarifa de ônibus sem serem tão incomodados pelos estudantes.</p>
+
+					<p>A Câmara Secreta será um verdadeiro labirinto, isso para que eventuais invasores não consigam sair com tanta facilidade. Mas os arquitetos ainda não estão certos quanto à planta e querem fazer modificações no projeto. Para facilitar o trabalho, eles projetaram toda a planta sobre um <em>grid</em> de unidades quadradas, de modo que cada unidade quadrada fosse integralmente parede ou integralmente espaço livre, como na figura abaixo.</p>
+
+					<p class="center">
+					<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1839_a.jpg" style="width: 271px; height: 200px;"></p>
+
+					<p>Visando atacar o problema de modo mais restrito, os arquitetos ainda elegeram algumas regiões da planta para estudarem cada região isoladamente. Agora, eles querem saber qual o número de possibilidades que têm para rearranjar as unidades quadradas de parede de cada região apenas dentro da própria região. Por exemplo, para a região destacada na figura acima, há 5 possibilidades, as quais ilustramos na figura abaixo.</p>
+
+					<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1839_b.jpg" style="width: 650px; height: 68px;"></p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada informa as dimensões <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong>, <strong>M</strong> ≤ 50) da planta em unidades quadradas, as quais representam respectivamente o número de linhas e o número de colunas do <em>grid</em>, e as <strong>N</strong> linhas seguintes descrevem o <em>grid</em>, de modo que unidades quadradas livres são representadas pelo caractere ‘.’ e unidades quadradas de parede pelo caractere ‘#’. Cada uma das demais linhas da entrada é composta por quatro inteiros <strong>x<sub>A</sub></strong>, <strong>y<sub>A</sub></strong>, <strong>x<sub>B</sub></strong> e <strong>y<sub>B</sub></strong> (1 ≤ <strong>x<sub>A</sub></strong> &lt; <strong>x<sub>B</sub></strong> ≤ <strong>N</strong>, 1 ≤ <strong>y<sub>A</sub></strong> &lt; <strong>y<sub>B</sub></strong> ≤ <strong>M</strong>), os quais definem uma região através do ponto superior esquerdo (<strong>x<sub>A</sub></strong>, <strong>y<sub>A</sub></strong>) e do ponto inferior direito (<strong>x<sub>B</sub></strong>, <strong>y<sub>B</sub></strong>) da região. A entrada termina em fim de arquivo.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada região descrita na entrada, imprima uma linha contendo unicamente o número de possibilidades que os arquitetos têm para rearranjar as unidades quadradas de parede da região apenas dentro da própria região. Como o número de possibilidades pode ser muito grande, imprima apenas o resto que o número deixa quando dividido por 10<sup>9</sup> + 7.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 6<br />
+								#...#.<br />
+								..#.#.<br />
+								##....<br />
+								......<br />
+								2 2 3 3<br />
+								3 3 4 6<br />
+								1 1 4 6</p>
+
+							</td>
+							<td>
+								<p>5<br />
+								0<br />
+								134595</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					4º Maratona UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

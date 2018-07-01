@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1283 - Caixas e Pedras</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1283 - Caixas e Pedras" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1283</span>
+                <h1>Caixas e Pedras</h1>
+                <div><p>Por Fidel Schaposnik, UNLP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=""/> Argentina</p></div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Paulo e Carolina gostam de jogar um jogo com S pedras e B caixas enumeradas de 1 até B. Antes de iniciar o jogo, eles arbitrariamente distribuem as S pedras entre as caixas desde a caixa 1 até a caixa B - 1, deixando a caixa B vazia. O jogo então avança algumas rodadas. Em cada rodada, primeiro Paulo escolhe um subconjunto P das pedras que estão nas caixas; ele pode escolher tantas pedras quantas deseja a partir de tantas caixas quantas ele quiser, ou ele pode simplesmente não escolher nenhuma pedra, e neste caso P é vazio. Então, Carole decide o que fazer a seguir: ela pode ou promover o subconjunto P e descartar as pedras restantes (isto é, aquelas pedras não escolhidas por Paulo na primeira etapa), ou ela pode descartar o subconjunto P e promover as pedras restantes.<br /><br />
+	Promover um dado subconjunto significa pegar cada pedra deste subconjunto e movê-la para a caixa com o próximo número na sequência, de modo que, se houver uma pedra neste subconjunto dentro de uma caixa b, ela é movida para a caixa b + 1. Descartar um determinado subconjunto significa remover todas as pedras deste subconjunto de sua correspondente caixa, de modo que essas pedras não sejam utilizadas ​​no jogo para as rodadas restantes. A figura abaixo mostra um exemplo das duas primeiras rodadas de um jogo.</p><br />
+<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1283_pt.png" style="width: 627px; height: 128px;" /></p>
+<p><br />
+	Paulo e Carolina jogam até que pelo menos uma pedra atinja uma caixa com número B, caso em que Paulo vence o jogo, ou até que não haja mais pedras deixadas nas caixas, caso em que Carolina ganha o jogo. Paulo é um jogador muito racional, mas Carolina é um rival digno, porque ela não é apenas extremamente boa nesse jogo, mas também tem muita sorte. Gostaríamos de saber quem é o melhor jogador, mas antes disso temos que compreender como o resultado de um jogo depende da distribuição inicial das pedras. Em particular, gostaríamos de saber de quantas maneiras as pedras S poderiam ser distribuídas inicialmente entre as primeiras B - 1 caixas de modo que Carolina possa ter certeza de que irá ganhar o jogo se jogar da melhor maneira possível, mesmo que Paulo nunca cometa nenhum erro.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	Cada caso de teste é composto por uma linha. A linha contém dois inteiros <strong>S</strong> (1 ≤ <strong>S</strong> ≤ 200) e <strong>B</strong> (2 ≤ <strong>B</strong> ≤ 100), representando respectivamente, o número de pedras e o número de caixas no jogo.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste deverá ser impressa uma linha com um número inteiro que representa o número de maneiras nas quais as <strong>S</strong> pedras podem ser distribuídas entre as primeiras <strong>B</strong> - 1 caixas, de modo que Carolina fique certa que ela pode ganhar o jogo. Como este número poderá ser muito grande, você é obrigado a imprimí-lo como o restante deste número dividido por 10<sup>9</sup> + 7.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	2 3<br />
+	8 4<br />
+	42 42</p>
+
+                            </td>
+                            <td>
+                                <p>
+	2<br />
+	0<br />
+	498467348</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                    ACM/ICPC South America Contest 2012.
+                </p>
+            </div>
+
+        </body>
+    </html>

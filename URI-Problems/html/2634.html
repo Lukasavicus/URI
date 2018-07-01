@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2634 - Em Prol da Ciência</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2634 - Em Prol da Ciência" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2634</span>
+			<h1>Em Prol da Ciência</h1>
+			<div>
+				<p>Por Edson Alves da Costa Júnior, UNB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>
+					Um grupo de cientistas vem mantendo uma pesquisa ambrangente sobre o comportamento de bactérias, mais especificamente seu ciclo de reprodução e evolução.
+                </p>
+                <p>    
+                    Os dados estavam registrados por semanas, e a cada semana era realizada uma série de experimentos para determinar uma matriz de transição A<sub>t</sub> , de dimensões 2 x 2, de modo que as informações do vetor u<sub>t</sub> da semana <sub>t</sub> pudesse se computado através da expressão <strong>u<sub>t</sub>= A<sub>t</sub> u<sub>t-1</sub></strong>, sendo o valor inicial u 0 conhecido. Contudo, às vésperas da publicação deste resultados em uma importante revista cientı́fica, uma descarga elétrica corrompeu os discos rı́gidos onde estavam armazenadas as matrizes!
+				</p>
+				<p>
+					A equipe começou um árduo trabalho de tentar recuperar tais informações em tempo hábil. Logo ficou claro que algumas das matrizes recuperadas tinham determinante igual a zero, o que apontava que os dados estavam corrompidos, pois todas as matrizes de transição devem ter determinante não nulo.
+				</p>
+				<p>
+				    Auxilie a equipe escrevendo um software que, dadas as matrizes de transição recuperadas de <strong>N</strong> semanas, permita:
+				</p>
+				<ol>
+				    <p>1. Saber se todas as matrizes de um intervalo de tempo estão consistentes ou se há alguma matriz corrompida;</p>
+                    <p>2. Atualizar a matriz A t de uma determinada semana;</p>
+                    <p>3. Determinar o maior intervalo de tempo onde todas as matrizes consecutivas são consistentes.</p>
+				</ol>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					
+				<p>
+				    A entrada consiste em <strong>T</strong> (1 ≤ <strong>T</strong> ≤ 10) casos de teste, onde o valor de <strong>T</strong> é dado na primeira linha da entrada. Cada caso de teste é representado por várias linhas: a primeira linha contém a semana <strong>w</strong> (1 ≤ <strong>w</strong> ≤ 52) e o ano <strong>y</strong> (1 ≤ <strong>y</strong> ≤ 2015) onde o experimento teve inı́cio (isto é, onde foi feito o primeiro registro). Considere, para este problema, que cada ano é composto de exatamente 52 semanas. A segunda linha contém o número <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>) de semanas consecutivas que tiveram matrizes de transição registradas. As <strong>N</strong> linhas seguintes contém, cada uma, quatro valores inteiros a<sub>11</sub> , a<sub>12</sub> , a<sub>21</sub> , a<sub>22</sub> (−100 ≤ a<sub>ij</sub> ≤ 100), representando os coeficientes de transição da matriz <strong>A</strong><sub>t</sub> (1 ≤ <sub>t</sub> ≤ <strong>N</strong>). Em seguida, há uma linha com o número <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 10<sup>5</sup>) comandos a serem executados. As <strong>M</strong> linhas seguintes contém os comandos, seguindo a formatação a seguir:
+				    <ol>
+				        <p>1. “Q a b”, com 1 ≤ a ≤ b ≤ <strong>N</strong>, onde a e b são os números da semana inicial e final do intervalo que deve ser consultado com o intuito de verificar se há ou não matrizes corrompidas neste intervalo;</p>
+                        <p>2. “U<sub>t</sub> a<sub>11</sub> a<sub>12</sub> a<sub>21</sub> a<sub>22</sub>”, com 1 ≤ <sub>t</sub> ≤ <strong>N</strong>, onde <sub>t</sub> é o número da semana que deve ter a matriz substituı́da pela matriz com os coeficientes a <sub>ii</sub> dados nesta linha;</p>
+                        <p>3. “<strong>M</strong>”, que é o comando que retorna o maior intervalo de tempo onde todas as matrizes consecutivas do intervalo são consistentes (isto é, tem determinante diferente de zero).</p>
+				    </ol>
+				</p>
+				<p>
+				Observação: haverão no máximo 10<sup>3</sup> comandos do tipo ‘<strong>M</strong>’.
+				</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>
+                        Para cada caso de teste deve ser impressa a mensagem “Experimento #e:”, seguida de uma quebra de linha, onde <strong>e</strong> é o número do caso de teste (cuja contagem tem inı́cio com o número um). Para cada comando <strong>Q</strong> deve ser impressa uma linha com a mensagem “<strong>w</strong><sub>1</sub>/<strong>y</strong><sub>1</sub> a <strong>w</strong><sub>2</sub>/<strong>y</strong><sub>2</sub>": dados consistentes" ou “<strong>w</strong><sub>1</sub>/<strong>y</strong><sub>1</sub> a <strong>w</strong><sub>2</sub>/<strong>y</strong><sub>2</sub>: dados corrompidos”, onde <strong>w</strong><sub>1</sub>, <strong>w</strong><sub>2</sub> representam as semanas (com dois dı́gitos e com zeros à esquerda, se necessário) e <strong>y</strong><sub>1</sub>, <strong>y</strong><sub>2</sub> representam os anos (com quatro dı́gitos e com zeros à esquerda, se necessário) do intervalo solicitado. Para cada comando <strong>M</strong> a mensagem deve ser “Maior periodo consistente: <strong>w</strong><sub>1</sub>/<strong>y</strong><sub>1</sub> a <strong>w</strong><sub>2</sub>/<strong>y</strong><sub>2</sub>”. Cada mensagem associada a um comando deve estar em uma única linha e dois casos de teste sucessivos devem estar separados por uma linha em branco.
+				</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>2</p>
+                            <p>7 2012</p>
+                            <p>3</p>
+                            <p>1 2 3 4</p>
+                            <p>3 6 2 4</p>
+                            <p>1 1 0 0</p>
+                            <p>6</p>
+                            <p>Q 2 3</p>
+                            <p>M</p>
+                            <p>U 3 5 3 4 5</p>
+                            <p>M</p>
+                            <p>Q 1 3</p>
+                            <p>50 2014</p>
+                            <p>5</p>
+                            <p>1 2 3 4</p>
+                            <p>1 1 1 1</p>
+                            <p>1 -1 1 -1</p>
+                            <p>3 5 -6 8</p>
+                            <p>2 7 -9 4</p>
+                            <p>3</p>
+                            <p>M</p>
+                            <p>U 2 1 2 3 4</p>
+                            <p>M</p>
+						</td>
+						<td>
+							<p>Experimento #1:</p>
+                            <p>08/2012 a 09/2012: dados corrompidos</p>
+                            <p>Maior periodo consistente: 07/2012 a 07/2012</p>
+                            <p>Maior periodo consistente: 07/2012 a 09/2012</p>
+                            <p>07/2012 a 09/2012: dados consistentes (D > 0)</p>
+                            </br>
+                            <p>Experimento #2:</p>
+                            <p>Maior periodo consistente: 01/2015 a 02/2015</p>
+                            <p>Maior periodo consistente: 50/2014 a 51/2014</p>
+         
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Maratona de Programação UnB/CIC 2015.
+			</p>
+		</div>
+
+	</body>
+</html>

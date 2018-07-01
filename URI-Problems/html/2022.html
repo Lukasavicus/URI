@@ -1,0 +1,147 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2022 - Presentes de Natal</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema E - Presentes de Natal" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2022</span>
+				<h1>Presentes de Natal</h1>
+				<div>
+					<p>Por Jessica Dagostini, URI Online Judge <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Ah o natal... época mágica, tempo de sentimentos bons, jantares cheios de pessoas legais e recheados de boas comidas e, é claro: muitos presentes. </p>
+					<p>
+					Jucilena foi uma boa menina durante esse ano. Sabendo disso, está montando sua lista de desejos natalinos. 
+					Porém, Jucilena é uma menina muito indecisa (e seus desejos são muitos), o que acaba confundindo o seu Nicolau quanto ao presente que ela realmente quer ganhar. Em suas listas, ela elencou o nome do presente desejado, seu preço (campo este solicitado pela sua mãe) e a escala de preferência pelo mesmo, do menos preferido (1) ao mais desejado (10). Vendo essa ideia de Jucilena, seus amigos também fizeram o mesmo, pois todos tinham diversas opções de presentes. 
+					</p>
+					<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2022.jpg" style="width:300px; height:200px"></p>
+					<p>Todo esse emaranhado de listas e presentes deixaram o seu Nicolau maluco! Vendo isso, o espírito natalino lhe tocou e você decidiu que ajudará Noel, criando um programa que elencará a lista dos mais desejados presentes para Jucilena e seus amigos. Os presentes devem ser mostrados na ordem descrescente do valor de preferência. Caso a preferência entre um e outro presente seja a mesma, o presente que deverá ser mostrado antes é o de menor preço. Caso haja semelhança entre preferência e preço, eles deverão ser elencados em ordem alfabética.</p>
+					
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de vários casos de teste. A primeira linha de cada caso de teste contém o <strong>Nome</strong> (sem espaços) do respectivo dono da lista, junto com um inteiro <strong>Q</strong>, (1 <u>&lt;</u> <strong>Q</strong> <u>&lt;</u>100) que define a quantidade de presentes listados. As próximas <strong>Q</strong>*2 linhas consistem no nome <strong>O</strong> do objeto desejado descrito em uma linha e o <strong>P</strong> preço do mesmo (1<u>&lt;</u> <strong>P</strong> <u>&lt;</u> 100.000.000) e a escala de preferência <strong>E</strong> (1<u>&lt;</u> <strong>E</strong> <u>&lt;</u> 10) na linha seguinte.  A entrada termina em <strong>EOF.</strong></p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Deve ser impressa a lista ordenada, dentro das especificações descritas anteriormente, sendo mostrado primeiramente o nome do dono da lista antecedido de "Lista de " seguido por uma lista que mostra somente o nome do objeto seguido do seu preço em reais, definido com duas casas após o ponto decimal. Deve ser mostrada uma linha em branco após <em>todas</em> as saídas.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>Jucilena 7<br />
+Xbox<br />
+1250.50 7<br />
+Notebook<br />
+2200.00 9<br />
+Quadro magnetico<br />
+150.00 5<br />
+Xadrez<br />
+50.00 7<br />
+Smartphone<br />
+950.00 10<br />
+Livro Star Wars<br />
+35.00 6<br />
+Porta retratos<br />
+15.00 2</p>
+Anelise 10<br />
+Televisao<br />
+700.00 7<br />
+Colecao Harry Potter<br />
+180.00 8<br />
+Bolsas<br />
+150.00 8<br />
+Camera fotografica<br />
+1200.75 10<br />
+Playstation 3<br />
+1200.75 10<br />
+Viagem Disney<br />
+5000.56 10<br />
+Cachorrinho<br />
+300.30 5<br />
+Assinatura 1 ano Netflix<br />
+240.00 9<br />
+Cd The Script<br />
+35.00 8<br />
+Blusas<br />
+50.00 2
+
+							</td>
+							<td>
+								<p>Lista de Jucilena <br />
+							Smartphone - R$950.00 <br />
+Notebook - R$2200.00 <br />
+Xadrez - R$50.00 <br />
+Xbox - R$1250.50 <br />
+Livro Star Wars - R$35.00 <br />
+Quadro magnetico - R$150.00 <br />
+Porta retratos - R$15.00 <br />
+<br />
+Lista de Anelise <br />
+Camera fotografica - R$1200.75 <br />
+Playstation 3 - R$1200.75 <br />
+Viagem Disney - R$5000.56 <br />
+Assinatura 1 ano Netflix - R$240.00 <br />
+Cd The Script - R$35.00 <br />
+Bolsas - R$150.00 <br />
+Colecao Harry Potter - R$180.00 <br />
+Televisao - R$700.00 <br />
+Cachorrinho - R$300.30 <br />
+Blusas - R$50.00 <br />
+<br />
+						</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				
+				<p class="footer">
+					Contest de Natal 2015.
+				</p>
+			</div>
+
+		</body>
+	</html>

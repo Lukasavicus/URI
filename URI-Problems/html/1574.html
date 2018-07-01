@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1574 - Instruções do Robô</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1574 - Instruções do Robô" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1574</span>
+                <h1>Instruções do Robô</h1>
+                <div>
+                    <p>Por Rujia Liu, Tsinghua University <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cn.gif' alt='CN' /> China</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p> Você possui um robô na origem do eixo <em>x</em>. O robô receberá algumas instruções. Sua tarefa é predizer sua posição depois de executar todas as instruções.</p>
+
+<ul>
+	<li>LEFT: move uma unidade para a esquerda (diminui&nbsp;<em>p</em>&nbsp;em 1, onde <em>p</em> é a posição do robô antes de mover)</li>
+	<li>RIGHT: move uma unidade para a direita (incrementa&nbsp;<em>p</em>&nbsp;em 1)</li>
+	<li>SAME AS&nbsp;<em>i</em>: executa a mesma ação que na <em>i</em>-ésima instrução. É garantido que <em>i</em>&nbsp;é um inteiro positivo não maior que o número de instruções já executadas.</li>
+</ul>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém o número de casos de testes <em>T (T &lt;=&nbsp;100)</em>. Cada caso de teste inicia com um inteiro <em>n ( 1 &lt;= n &lt;= 100)</em>, o número de instruções. Cada uma das <em>n</em> linhas seguintes contém uma instrução.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima a posição final do robô. Note que após processar cada caso de teste, o robô deve ter sua posição inicial resetada para a origem.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+3<br />
+LEFT<br />
+RIGHT<br />
+SAME AS 2<br />
+5<br />
+LEFT<br />
+SAME AS 1<br />
+SAME AS 2<br />
+SAME AS 1<br />
+SAME AS 4</p>
+
+                            </td>
+                            <td>
+                                <p>1<br />
+-5</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Agradecimentos: Feng Chen, Md. Mahbubul Hasan
+                </p>
+            </div>
+
+        </body>
+    </html>

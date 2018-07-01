@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1639 - Gerando Números Aleatórios</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1639 - Gerando Números Aleatórios" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1639</span>
+                <h1>Gerando Números Aleatórios</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">                  
+
+                <p>John von Neumann propôs em 1946 um método de criação de sequências de números pseudo-aleatórios. Sua ideia é conhecida como o método do meio do quadrado e funciona da seguinte forma: Escolhe-se um valor inicial <strong>a<sub>0</sub></strong> que possui um comprimento de no máximo <strong>n</strong> em sua representação decimal. Multiplica-se o valor de <strong>a<sub>0</sub></strong> por ele mesmo, adiciona-se zeros a esquerda para obter uma representação decimal de comprimento <strong>2 × n </strong>e toma-se os <strong>n</strong> dígitos centrais para formar <strong>a<sub>i</sub></strong>. Repete-se o processo para cada <strong>a<sub>i</sub></strong> com <strong>i</strong> &gt; 0. Para este problema será utilizado <strong>n</strong> = 4.</p>
+
+                <p>Exemplo 1: <strong>a<sub>0</sub></strong>=5555, <strong>a<sub>0</sub><sup>2</sup></strong>=30858025, <strong>a<sub>1</sub></strong>=8580,...</p>
+
+                <p>Examplo 2: <strong>a<sub>0</sub></strong>=1111, <strong>a<sub>0</sub><sup>2</sup></strong>=01234321, <strong>a<sub>1</sub></strong>=2343,...</p>
+
+                <p>Infelizmente, este gerador de números aleatórios não é muito bom. Dado um valor inicial, ele não produz todos os outros números com a mesma quantidade de dígitos.</p>
+
+                <p>Sua tarefa é checar quantos números diferentes são produzidos para um valor inicial <strong>a<sub>0</sub></strong>.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada teste consite de uma linha contendo <strong>a<sub>0</sub></strong> (0 &lt; <strong>a<sub>0</sub></strong> &lt; 10000). Possivelmente, os números podem ter zeros à esquerda de forma a deixar cada número com exatamente 4 dígitos. A entrada é finalizada com uma linha contendo o valor 0.</p>
+					
+					<p> <strong>Obs.:</strong> Note que o terceiro caso de teste possui a maior quantidade de números diferentes gerados entre as entradas possíveis.
+					</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprimir uma linha contendo o número de diferentes valores <strong>a<sub>i</sub></strong> gerados por este gerador de números aleatórios quando inicializado com um valor <strong>a<sub>0</sub></strong>. Note que <strong>a<sub>0</sub></strong> também deve ser contabilizado.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5555<br />
+0815<br />
+6239<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>32<br />
+17<br />
+111</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2009
+                </p>
+            </div>
+
+        </body>
+    </html>

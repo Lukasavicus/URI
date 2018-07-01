@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1562 - Escolhendo as Duplas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1562 - Escolhendo as Duplas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1562</span>
+                <h1>Escolhendo as Duplas</h1>
+                <div>
+                    <p>Por Gabriel Dalalio, ITA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Uma professora quer dividir todos os alunos de uma sala em duplas para a realização de um trabalho em grupo. Nessas horas, há muita briga entre os alunos para escolher as duplas, porque muitos alunos querem fazer dupla com os melhores alunos da sala.</p>
+
+<p>A professora decidiu dessa vez escolher as duplas de uma forma diferente. Cada aluno poderá dizer à professora um outro aluno com o qual queira fazer uma dupla. Após isso, a professora escolherá as duplas de forma com que todas as duplas satisfaçam pelo menos o desejo de um dos alunos da dupla.</p>
+
+<p>Agora acho que você já sabe qual será seu trabalho neste problema. Dada a lista de desejos dos alunos, imprima a lista de duplas que a professora deve escolher.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por vários casos de teste. Cada caso de teste é composto por duas linhas. A primeira linha de um caso de teste contém um inteiro <strong>N</strong> (2&nbsp;≤&nbsp;<strong>N</strong>&nbsp;≤ 10000) igual ao número de alunos da sala de aula. A segunda linha contém os desejos de todos os alunos em ordem (a pessoa escolhida pelo aluno 1, pelo aluno 2, assim por diante). Nenhum aluno irá escolher a si próprio.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada teste, a saída é composta por uma linha. Caso seja impossível formar as duplas do jeito que a professora quer, imprima "IMPOSSIBLE". Caso haja solução, imprima em ordem os parceiros de cada aluno (o parceiro do aluno 1, do aluno 2, assim por diante). Caso haja mais de uma solução, deve se priorizar o desejo dos alunos de menor índice, ou seja, sempre que possível deve-se atender o desejo do aluno 1, depois tentar atender o desejo do aluno 2, e assim por diante. Lembre-se que o problema pede para formar duplas, se o parceiro do aluno <strong>X</strong> é igual a<strong> Y</strong>, o parceiro do aluno <strong>Y</strong> deve ser igual a <strong>X</strong>.</p>
+
+<p>No último caso de entrada do exemplo, os pares são (1,3), respeitando o desejo do aluno 1, e também (2,4), respeitando o desejo do aluno 4.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2</p>
+
+<p>2 1</p>
+
+<p>3</p>
+
+<p>2 3 1</p>
+
+<p>4</p>
+
+<p>3 1 4 2</p>
+
+                            </td>
+                            <td>
+                                <p>2 1</p>
+
+<p>IMPOSSIBLE</p>
+
+<p>3 4 1 2</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Dalalio 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

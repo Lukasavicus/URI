@@ -1,0 +1,124 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2271 - Messenger</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2271 - Messenger" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2271</span>
+				<h1>Messenger</h1>
+				<div>
+					<p>Por ICPC 2014 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ru.gif' alt='RU' /> Russian Federation</p>
+				</div>
+				<strong>Timelimit: 4</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Misha needs to send packages to his friend Nadia. Both of them often travel across Russia, which is very large. So they decide to hire a messenger. Since the cost of the messenger service depends on the time it takes to deliver the package, they need your help to optimize a little bit.</p>
+
+					<p>Assume Misha and Nadia move on a two-dimensional plane, each visiting a sequence of places and moving along straight line segments from place to place. Your task is to find the shortest possible delivery time given their two paths.</p>
+
+					<p>Misha hands the package to the messenger at some point along his path. The messenger moves without delay along a straight line from the pick-up to intercept Nadia, who is traveling along her path. Misha, Nadia and the messenger move with a constant speed of 1 distance unit per time unit. The delivery time is the time between Misha handing over the package and Nadia receiving it.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case. The test case contains two path descriptions, the first for Misha and the second for Nadia. Each path description starts with a line containing an integer <strong>n</strong>, the number of places visited (2 ≤ <strong>n</strong> ≤ 50 000). This is followed by <strong>n</strong> lines, each with two integers <strong>x<sub>i</sub></strong> and <strong>y<sub>i</sub></strong> specifying the coordinates of a place (0 ≤ <strong>x<sub>i</sub></strong> , <strong>y<sub>i</sub></strong> ≤ 30 000). Coordinates of the places are listed in the order in which they are to be visited, and successive places do not have the same coordinates.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Display the minimal time needed for delivery. Give the answer with an absolute error of at most 10<sup>−3</sup> or a relative error of at most 10<sup>−5</sup> . If the package cannot be delivered, display 'impossible' instead.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+								<p>0 0</p>
+
+								<p>0 10</p>
+
+								<p>2</p>
+
+								<p>4 10</p>
+
+								<p>4 0</p>
+
+							</td>
+							<td>
+								<p>4.00000</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+								<p>0 0</p>
+
+								<p>1 0</p>
+
+								<p>3</p>
+
+								<p>2 0</p>
+
+								<p>3 0</p>
+
+								<p>3 10</p>
+
+							</td>
+							<td>
+								<p>5.00000</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC 2014 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

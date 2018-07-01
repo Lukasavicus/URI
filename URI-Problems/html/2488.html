@@ -1,0 +1,159 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2488 - É Na Batida do Cavalo!</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2488 - É Na Batida do Cavalo!" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2488</span>
+				<h1>É Na Batida do Cavalo!</h1>
+				<div>
+					<p>Por João Marcos Salvanini Bellini de Moraes, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Furacão é um apostador famoso da região, mais conhecido por ganhar todas as apostas em corridas de cavalo nos últimos 10 anos. Há quem diga que é fraude, há quem diga que ele usa estratégias infalíveis para sempre vencer. De qualquer modo, é inegável que Furacão é um ótimo apostador. Porém, ele está cansado de tanto ganhar, e dessa forma, desafiou aquele que conseguir lançar uma aposta em que ele não consiga vencer. Pensando nisso, foi criado o Clube de Apostas para o Recomeço e para a Realização do Extermínio do Tal Apostador Furacão (<em>C. A. R. R. E. T. A. Furacão</em>) com o único propósito de fazer Furacão perder.</p>
+
+<p>A primeira "corrida de cavalos" promovida pelo <em>CARRETA Furacão </em>ocorrerá de forma muito diferente das corridas tradicionais: Haverá somente um cavalo, e este, ao invés de correr, deverá andar todo o percurso em marcha batida, afinal, esta "corrida" tem o objetivo de fazer com que o Apostador seja derrotado. Ela ocorrerá da seguinte forma: O cavalo iniciará sua marcha em determinado ponto, e cada vez que ele passar por um ponto de reconhecimento de percurso, será realizado o cálculo da distância entre o ponto atual e o ponto anterior, ou seja, ao final da marcha, haverá diversas distâncias isoladas, referentes somente a dois pontos.</p>
+
+<p>O desafio proposto ao Apostador é que ele responda a diversas perguntas do tipo "Qual é a maior distância percorrida pelo cavalo do ponto (x<sub>1</sub>, y<sub>1</sub>) ao ponto (x<sub>2</sub>, y<sub>2</sub>)?" em não mais do de 1 segundo! O <em>CARRETA Furacão</em> está certo de que ele irá perder desta vez, mas como Furacão é um homem muito esperto, ele atentou-se à possibilidade de contratar um programador para realizar essa atividade para ele, isto é, para criar um programa que ele possa usar no dia do evento para não perder a aposta.</p>
+
+<p>Ao saber que você é um ótimo programador e que participa de atividades ilegais se receber bem por isso, Furacão o contratou sem pensar duas vezes. Sua tarefa, portanto, é escrever um programa que diga a maior distância percorrida pelo cavalo entre dois pontos dados. Tenha em mente que sempre haverá somente um caminho entre um ponto e outro.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha de entrada contém o número de pontos <strong>N </strong>(2 ≤ <strong>N </strong>≤ 10<sup>4</sup>) e o número de perguntas <strong>P </strong>(2 ≤ <strong>P </strong>≤ 10<sup>4</sup>). Cada linha das próximas <strong>N </strong>linhas irá conter um ponto (<strong>x</strong>,<strong><sub> </sub>y</strong>), (0 ≤ <strong>x</strong>,<sub> </sub><strong>y </strong>≤ 10<sup>4</sup>), representando o ponto em que o cavalo foi reconhecido, isto é, o ponto em que ele se encontra atualmente. Não serão dados dois pontos de reconhecimento iguais na entrada. Em seguida, cada linha das próximas <strong>P </strong>linhas irá conter dois pontos: (<strong>x<sub>1</sub></strong>, <strong>y<sub>1</sub></strong>) e (<strong>x<sub>2</sub></strong>, <strong>y<sub>2</sub></strong>), representando a pergunta da maior distância percorrida entre eles.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada pergunta feita em cada caso de teste, imprima a maior distância percorrida pelo cavalo entre o ponto (<strong>x<sub>1</sub></strong>, <strong>y<sub>1</sub></strong>) e o ponto (<strong>x<sub>2</sub></strong>, <strong>y<sub>2</sub></strong>), com precisão de duas casas decimais.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 3</p>
+
+<p>1 0</p>
+
+<p>1 4</p>
+
+<p>1 2</p>
+
+<p>1 0 1 2</p>
+
+<p>1 4 1 0</p>
+
+<p>1 2 1 4</p>
+
+							</td>
+							<td>
+								<p>4.00</p>
+
+<p>4.00</p>
+
+<p>2.00</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 5</p>
+
+<p>1 2</p>
+
+<p>2 1</p>
+
+<p>3 3</p>
+
+<p>4 5</p>
+
+<p>5 1</p>
+
+<p>2 1 5 1</p>
+
+<p>3 3 1 2</p>
+
+<p>1 2 4 5</p>
+
+<p>3 3 4 5</p>
+
+<p>3 3 5 1</p>
+
+							</td>
+							<td>
+								<p>4.12</p>
+
+<p>2.24</p>
+
+<p>2.24</p>
+
+<p>2.24</p>
+
+<p>4.12</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="description">
+
+					<h2>Observações</h2>
+
+					<p>Os <strong>N</strong> pontos dados na entrada representam o caminho feito pelo cavalo, isto é, o primeiro ponto dado é o ponto de reconhecimento inicial (início da marcha), e o último ponto dado é o último ponto em que o cavalo foi reconhecido (fim da marcha).</p>
+
+				</div>
+
+				<br />
+
+				<p class="footer">
+					The Last Contest 2016 - IFSULDEMINAS
+				</p>
+			</div>
+
+		</body>
+	</html>

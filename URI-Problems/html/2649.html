@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2649 - Visual Python++</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2649 - Visual Python++" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+                <style type="text/css">
+                #cb{
+                 filter:  progid:DXImageTransform.Microsoft.BasicImage(rotation=2);  /* IE6,IE7 */
+	         ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)"; /* IE8 */
+	         -moz-transform: rotate(-180deg);  /* FF3.5+ */
+	         -o-transform: rotate(-180deg);  /* Opera 10.5 */
+	         -webkit-transform: rotate(-180deg);  /* Safari 3.1+, Chrome */
+	         position: absolute;
+                }
+                </style>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2649</span>
+			<h1>Visual Python++</h1>
+			<div>
+				<p>Por ACM-ICPC World Finals 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif' alt='US' /> United States</p>
+			</div>
+			<strong>Timelimit: 5</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>In the recently proposed Visual Python++ programming language, a block of statements is represented as a rectangle of characters with top-left corner in row <strong>r<sub>1</sub></strong> and column <strong>c<sub>1</sub></strong> , and bottom-right corner in row <strong>r<sub>2</sub></strong> and column <strong>c<sub>2</sub></strong> . All characters at locations (<strong>r</strong>, <strong>c</strong>) with <strong>r<sub>1</sub></strong> ≤ <strong>r</strong> ≤ <strong>r<sub>2</sub></strong> and <strong>c<sub>1</sub></strong> ≤ <strong>c</strong> ≤ <strong>c<sub>2</sub></strong> are then considered to belong to that block. Among these locations, the ones with <strong>r</strong> = <strong>r<sub>1</sub></strong> or <strong>r</strong> = <strong>r<sub>2</sub></strong> or <strong>c</strong> = <strong>c<sub>1</sub></strong> or <strong>c</strong> = <strong>c<sub>2</sub></strong> are called a border.</p>
+
+<p>Statement blocks can be nested (rectangles contained in other rectangles) to an arbitrary level. In a syntac- tically correct program, every two statement blocks are either nested (one contained in the other) or disjoint (not overlapping). In both cases, their borders may not overlap.</p>
+
+<p>Programmers are not expected to draw the many rectangles contained in a typical program – this takes too long, and Visual Python++ would not have a chance to become the next ICPC programming language. So a programmer only has to put one character '⌐' in the top-left corner of the rectangle and one character '<span id="cb">⌐</span> &nbsp; &nbsp;' in the bottom-right corner. The parser will automatically match up the appropriate corners to obtain the nesting structure of the program.</p>
+
+<p>Your team has just been awarded a five-hour contract to develop this part of the parser.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>The first line of the input contains an integer <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 10<sup>5</sup> ), the number of corner pairs. Each of the next n lines contains two integers <strong>r</strong> and <strong>c</strong> (1 ≤ <strong>r</strong>, <strong>c</strong> ≤ 10<sup>9</sup> ), specifying that there is a top-left corner in row <strong>r</strong> and column <strong>c</strong> of the program you are parsing. Following that are <strong>n</strong> lines specifying the bottom-right corners in the same way. All corner locations are distinct.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Display <strong>n</strong> lines, each containing one integer. A number <strong>j</strong> in line <strong>i</strong> means that the <strong>i</strong> th top-left corner and the <strong>j<sup>th</sup></strong> bottom-right corner form one rectangle. Top-left and bottom-right corners are each numbered from 1 to <strong>n</strong> in the order they appear in the input. The output must be a permutation of the numbers from 1 to n such that the matching results in properly nested rectangles. If there is more than one valid matching, any one will be accepted. If no such matching exists, display syntax error.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>2<br />
+4 7<br />
+9 8<br />
+14 17<br />
+19 18</p>
+
+						</td>
+						<td>
+							<p>2<br />
+1</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>2<br />
+4 7<br />
+14 17<br />
+9 8<br />
+19 18</p>
+
+                </td>
+                <td>
+                    <p>1<br />
+2</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>2<br />
+4 8<br />
+9 7<br />
+14 18<br />
+19 17</p>
+
+                </td>
+                <td>
+                    <p>syntax error</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>3<br />
+1 1<br />
+4 8<br />
+8 4<br />
+10 6<br/>
+6 10<br/>
+10 10</p>
+
+                </td>
+                <td>
+                    <p>syntax error</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+				ACM-ICPC World Finals 2017
+			</p>
+		</div>
+
+	</body>
+</html>

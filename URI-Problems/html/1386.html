@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1386 - Códigos Ambíguos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1386 - Códigos Ambíguos" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1386</span>
+            <h1>Códigos Ambíguos</h1>
+            <div>Por Pablo Heiber <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=""/> Argentina</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Uma extensa área de pesquisa em ciência da computação é o campo das comunicações. Como as redes de computador fazem parte do cotidiano de muitas pessoas, o desenvolvimento de formas para fazer estas redes mais rápidas, mais confiáveis ​​e seguras é constantemente necessário. Esta necessidade prática motiva uma atividade de pesquisa extensa na teoria por trás das comunicações.</p>
+
+                <p>A primeira coisa necessária para estabelecer qualquer tipo de comunicação é um código comum. Um código é uma maneira de alterar a forma de uma peça de informação em alguma outra forma, de um modo geral, fazer possível transmitir esse pedaço de informação de um lugar para outro. Códigos de bandeira usados por barcos e o código Morse utilizados na telegrafia são exemplos de códigos para traduzir as letras em diferentes formas para permitir a comunicação através de diferentes meios de comunicação.</p>
+
+                <p>Mais formalmente, um código é um conjunto de strings composto de símbolos de um alfabeto. Cada string definida no código é chamado de uma palavra. A mensagem é então composta de um conjunto concatenado de palavras de código para transmitir a informação necessária. Por exemplo, no código Morse o alfabeto é composto de símbolos hífen e ponto; letra "S" é representada pela palavra de código "..." letra "O" é representada pela palavra de código "---", e, portanto, a mensagem de socorro "SOS" em código Morse é "... --- ...".</p>
+
+                <p>Códigos para a comunicação podem ter muitas propriedades desejáveis ​​e indesejáveis, tais como a ambigüidade, entropia, redundância, e muitos mais. Neste problema, vamos nos concentrar na ambigüidade como uma propriedade chave.</p>
+
+                <p>Um código é ambíguo quando existe uma mensagem usando esse código, que pode ser dividida em diferentes sequências de palavras de código. Em outras palavras, um código ambíguo pode ter em uma mensagem mais de um significado. Por exemplo, considere o alfabeto binário, composto de símbolos {0,1}. Para o código das palavras composto {10, 01, 101} na mensagem 10101 pode ser entendida como 10-101 ou 101-01 e, portanto, o código é ambíguo. Por outro lado, para o código composto das palavras {01, 10, 011} existe nenhuma mensagem ambígua e, por tanto, o código é inequívoco.</p>
+
+                <p>Como parte da comunidade de ciência da computação, você é obrigado a desenvolver um testador que verifica se os códigos são ambíguos. No caso de um código ser de fato ambíguo, você também deverá comunicar o comprimento (isto é, o número de símbolos) da mensagem ambígua mais curto para o código.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Cada caso de teste consistirá em diversas linhas. Em todos os casos, o teste será o alfabeto conjunto de dígitos hexadecimais (dígitos decimais mais as letras maiúsculas "A" a "F"). A primeira linha de um caso de teste conterá um número inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 100) e o número de palavras de código no código. Cada uma das próximas <strong>N</strong> linhas descrevem uma palavra de código e contém uma seqüência diferente não-vazio de até 50 dígitos hexadecimais. A entrada é terminada por <strong>N</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada teste a saída será de uma única linha, com o comprimento da mais curta mensagem ambígua para o código fornecido ou -1 se o código é inequívoco.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>3<br />
+                                10<br />
+                                01<br />
+                                101<br />
+                                3<br />
+                                AB<br />
+                                BA<br />
+                                ABB<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>5<br />
+                                -1</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+           </table>
+            <p class="footer">
+               ACM/ICPC South America Contest 2007.
+            </p>
+        </div>
+
+    </body>
+</html>

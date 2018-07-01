@@ -1,0 +1,127 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1906 - Senhas de Collatz</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1906 - Senhas de Collatz" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1906</span>
+				<h1>Senhas de Collatz</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Quando o Prof. Antônio Neri, mais jovem, conheceu a Conjectura de Collatz, ficou muito fascinado. Caso você ainda não conheça a Conjectura de Collatz, ela enuncia que, para qualquer inteiro positivo <strong>X</strong>, a <em>sequência de Collatz para</em> <strong>X</strong> eventualmente atinge 1. A propósito, a sequência de Collatz para um inteiro positivo <strong>X</strong> é definida como a sequência infinita <strong>a</strong><sub>0</sub>, <strong>a</strong><sub>1</sub>, <strong>a</strong><sub>2</sub>… tal que <strong>a</strong><sub>0</sub> = <strong>X</strong> e, para todo <strong>i</strong> > 0, <strong>a<sub>i</sub></strong> = <strong>a</strong><sub><strong>i</strong>-1</sub> / 2 se <strong>a</strong><sub><strong>i</strong>-1</sub> é par ou <strong>a<sub>i</sub></strong> = 3 × <strong>a</strong><sub><strong>i</strong>-1</sub> + 1 se <strong>a</strong><sub><strong>i</strong>-1</sub> é ímpar. Por exemplo, para <strong>X</strong> = 7, os primeiros 20 termos da sequência de Collatz são:</p>
+
+					<p>7, 22, 11, 34, 17, 52, 26, 13, 40, 20, 10, 5, 16, 8, 4, 2, 1, 4, 2, 1…</p>
+
+					<p>A Conjectura de Collatz ainda não foi provada, apesar de existirem vários matemáticos brilhantes neste mundo, como o Prof. Antônio Neri. Ele continua tão fascinado pelo assunto que, noutro dia, ao olhar para o teclado do sistema de alarme da sua casa, o qual contém uma tecla para cada inteiro de 1 a <strong>N</strong>, ele resolveu trocar sua senha para que a nova senha seja uma sequência de <strong>K</strong> números que apareçam consecutivamente numa sequência de Collatz. Por exemplo, se <strong>N</strong> = 20 e <strong>K</strong> = 5, há 11 possibilidades para a nova senha do Prof. Antônio Neri:</p>
+
+					<p>1, 4, 2, 1, 4</p>
+
+					<p>2, 1, 4, 2, 1</p>
+
+					<p>3, 10, 5, 16, 8</p>
+
+					<p>4, 2, 1, 4, 2</p>
+
+					<p>5, 16, 8, 4, 2</p>
+
+					<p>6, 3, 10, 5, 16</p>
+
+					<p>8, 4, 2, 1, 4</p>
+
+					<p>10, 5, 16, 8, 4</p>
+
+					<p>12, 6, 3, 10, 5</p>
+
+					<p>16, 8, 4, 2, 1</p>
+
+					<p>20, 10, 5, 16, 8</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A única linha da entrada consiste de dois inteiros positivos <strong>N</strong> e <strong>K</strong> (<strong>N</strong>, <strong>K</strong> ≤ 10<sup>7</sup>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A única linha da saída deve consistir de apenas um único inteiro, representando o número de possibilidades para a nova senha do Prof. Antônio Neri, considerando que o teclado contém uma tecla para cada inteiro de 1 a <strong>N</strong> e que a nova senha é uma sequência de <strong>K</strong> números que aparecem consecutivamente numa sequência de Collatz.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>20 5</p>
+
+							</td>
+							<td>
+								<p>11</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>10 1</p>
+
+							</td>
+							<td>
+								<p>10</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					1ª Minimaratona Matutina de Grafos da UFFS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

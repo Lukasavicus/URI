@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2714 - Minha Senha Provisória</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 1 - Senha Provisória 2" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2714</span>
+			<h1>Minha Senha Provisória</h1>
+			<div>
+				<p>Por , Silva A. M. <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Uma instituição de ensino lisboeta tem como prática para atribuição de senha de acesso ao portal acadêmico utilizar o RA (registro acadêmico) do aluno. Nesta instituição os RA's são strings de 20&nbsp;caracteres iniciados sempre pelos caracteres "RA" e seguidos por 18 dígitos numéricos. por exemplo: RA000000000000012340. Estes identificadores são gerados automaticamente pelo sistema de matrículas e são formados por três&nbsp;partes principais: (a) iniciados pelos caracteres "RA", (b) seguidos por <strong>Z</strong>&nbsp;digitos zeros formatadores de posição <strong>(onde, 0 <= Z <= 17)</strong>, e por fim, (c) o número identificador&nbsp;do aluno propriamente dito, considerando os <strong>X</strong> números mais a direita do RA não iniciados por zero <strong>(onde, 1 <= X <= 18)</strong>.&nbsp;&nbsp;&nbsp;<br />
+&nbsp;</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha de entrada é um valor inteiro <strong>N (onde, 1 <= N <= 1000)</strong> que representa a quantidade de RA's que deve ser considerada pelo programa. As <strong>N</strong> seguintes linhas representam, cada uma, strings, de no máximo 100 caracteres, que representam os RA's enviados pelo sistema de matrícula.<br />
+&nbsp;</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>As saídas válidas para o programa são: a apresentação da senha provisória ou a indicação de "<strong>INVALID DATA</strong>". A senha provisória é formada pelos X caracteres númericos não iniciados em 0 mais a direita da string, por exemplo: para o identificador "RA000000000000012340" a senha provisória deve ser "12340". Caso a string recebida não esteja de acordo com as regras de formação, o programa deve indicar "<strong>INVALID DATA</strong>".<br />
+&nbsp;</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>7<br />
+RA000000000000000001<br />
+RA000000000000000100<br />
+RA000000000000012345<br />
+RA123456789012345678<br />
+ra000000000000000333<br />
+RA12345<br />
+12345678901234567890<br />
+&nbsp;</p>
+
+						</td>
+						<td>
+							<p>1<br />
+100<br />
+12345<br />
+123456789012345678<br />
+INVALID DATA<br />
+INVALID DATA<br />
+INVALID DATA</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				*Amsilva copyright (2017), for use (authorized) in the URI OJ. All rights reserved.
+			</p>
+		</div>
+
+	</body>
+</html>

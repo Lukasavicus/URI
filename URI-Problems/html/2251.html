@@ -1,0 +1,118 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2251 - Torres de Hanói</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2251 - Torres de Hanói" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2251</span>
+				<h1>Torres de Hanói</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2003 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O quebra-cabeças Torres de Hanoi é muito antigo e conhecido, sendo constituído de um conjunto de N discos de tamanhos diferentes e três pinos verticais, nos quais os discos podem ser encaixados.</p>
+
+					<p class = "center"><img alt='' style="width: 350px; height: 200px;" src = "https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_151_F.png"></p>
+
+					<p>Cada pino pode conter uma pilha com qualquer número de discos, desde que cada disco não seja colocado acima de outro disco de menor tamanho. A configuração inicial consiste de todos os discos no pino 1. O objetivo do quebra-cabeças é mover todos os discos para um dos outros pinos, sempre obedecendo à restrição de não colocar um disco sobre outro menor.</p>
+
+					<p>Um algoritmo para resolver este problema é o seguinte.</p>
+
+					<p><strong>procedimento</strong> Hanoi(N, Orig, Dest, Temp)</p>
+
+					<p>&nbsp;&nbsp;&nbsp;<strong>se</strong><strong> </strong>N = 1 <strong>então</strong></p>
+
+					<p>&nbsp; &nbsp; &nbsp; mover o menor disco do pino Orig para o pino Dest;</p>
+
+					<p>&nbsp; &nbsp;<strong>senão</strong></p>
+
+					<p>&nbsp; &nbsp; &nbsp; Hanoi(N-1, Orig, Temp, Dest);</p>
+
+					<p>&nbsp; &nbsp; &nbsp; mover o N-ésimo menor disco do pino Orig para o pino Dest;</p>
+
+					<p>&nbsp; &nbsp; &nbsp; Hanoi(N-1, Temp, Dest, Orig);</p>
+
+					<p><strong>&nbsp; &nbsp;fim-se</strong></p>
+
+					<p><strong>fim</strong></p>
+
+					<p>Sua tarefa é escrever um programa que determine quantos movimentos de trocar um disco de um pino para outro serão executados pelo algoritmo acima para resolver o quebra-cabeça.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada possui vários conjuntos de teste. Cada conjunto de teste é composto por uma única linha, que contém um único número inteiro <strong>N</strong> (0 ≤ <strong>N</strong> ≤ 30), indicando o número de discos. O final da entrada é indicado por <strong>N</strong> = 0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada conjunto de teste, o seu programa deve escrever três linhas na saída. A primeira linha deve conter um identificador do conjunto de teste, no formato “Teste n”, onde n é numerado seqüencialmente a partir de 1. A segunda linha deve conter o número de movimentos que são executados pelo algoritmo dado para resolver o problema das Torres de Hanói com N discos. A terceira linha deve ser deixada em branco. A grafia mostrada no Exemplo de Saída, abaixo, deve ser seguida rigorosamente.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1</p>
+
+<p>2</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>Teste 1</p>
+
+<p>1</p><br/>
+
+<p>Teste 2</p>
+
+<p>3</p><br/>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2003
+				</p>
+			</div>
+
+		</body>
+	</html>

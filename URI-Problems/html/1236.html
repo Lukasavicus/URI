@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1236 - Compactação de Nulos e Brancos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1236 - Compactação de Nulos e Brancos" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1236</span>
+            <h1>Compactação de Nulos e Brancos</h1>
+            <div><p>
+                    Por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    O Professor Francisco solicitou sua ajuda para compactar alguns arquivos de texto que ele possui. Como os arquivos basicamente possuem muito espaço em branco e valores nulos (0), o compactador deve ser algo bem simples. O texto somente contém letras do alfabeto, espaços e números. Para simplificar, vamos considerar o $ como símbolo para compactação de espaços em branco e o # como símbolo para compactação de zeros. Só lembre de 2 detalhes:</p>
+                <ul>
+                    <li>
+                        É o caractere da tabela AscII correspondente à frequência que deve ser gravado, e não o número decimal.</li>
+                    <li>
+                        caso apareça mais do que 255 caracteres seguidos de nulos ou brancos, a gravação deverá ser feita em mais do que um bloco. Por exemplo, para compactar 380 zeros seguidos, o primeiro bloco compacta as 255 ocorrências e o segundo bloco as 125 restantes, e assim por diante. O resultado seria "# #}". Note que o caractere 255 é invisível (aparece como se fosse um espaço em branco).</li>
+                </ul>
+                <p>
+                    Para você entender um pouco melhor a entrada e a saída, considere a tabela ASCII abaixo: Por exemplo CHR(3) equivale ao “ETX” </p>
+                <p class="center">
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1236.png" style="width: 234px; height: 61px;" />
+                </p>
+                <p> Observações:         </p>
+                <ul>
+                    <li>Não compactar quando ocorrerem apenas dois zeros ou apenas dois espaços seguidos ("*00*" ou "*&nbsp;&nbsp;*"), pois a compactação não teria efeito.</li>
+                    <li>o nosso toolkit pode não mostrar alguns caracteres especiais exigidos no output deste problema.</li>
+                </ul>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. A primeira linha contém um valor <strong>N</strong> que indica a quantidade de casos de teste. Cada caso de teste contém uma linha com até 2000 caracteres para serem compactados.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Cada linha de entrada deve produzir uma linha de saída que é a compactação da linha de entrada, conforme exemplo abaixo.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                124000000000000000000000000000000000002342340234Movimento<br />
+                                00&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0TT<br />
+                                00f0a&nbsp;&nbsp;s0&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;00 5</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                124##2342340234Movimento<br />
+                                00$&amp;0TT<br />
+                                00f0a&nbsp;&nbsp;s0$,00 5</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </body>
+</html>

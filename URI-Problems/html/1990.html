@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1990 - Equilíbrio</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1990 - Equilíbrio" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1990</span>
+                <h1>Equilíbrio</h1>
+                <div>
+                    <p>Por Pablo A. Heiber, Universidad de Buenos Aires <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A média e a mediana geralmente confunde os alunos por causa de sua ortografia semelhante, mas eles são muito diferentes conceitos. Neste problema, vamos trabalhar com a média e a mediana de um conjunto constituído por<strong> N</strong> pares inteiros distintos, onde<strong> N</strong> é ímpar. A média de tal conjunto é definida, como é habitual, como a soma dos números divididos por <strong>N</strong>, enquanto que a mediana é o único elemento no conjunto que é maior do que (<strong>N</strong>-1) / 2 dos seus elementos, e menor do que o outro (<strong>N</strong>-1) / 2 elementos do conjunto. Por exemplo, se o conjunto é {0, 2, 6, 4, 13}, a média é 5 enquanto a mediana é 4.</p>
+
+                    <p>Nosso objetivo é tornar a vida do aluno mais fácil através da geração de conjuntos "equilibrados", isto é, conjuntos compostos por um número ímpar de inteiros, todos distintos entre si, onde a média e a mediana coincidem. Por exemplo, o conjunto {0, 2, 6, 4, -2} é equilibrado, uma vez que tem <strong>N</strong> = 5 inteiros diferentes, e a média e mediana, são ambos iguais a 2.</p>
+
+                    <p>O procedimento seguinte tem sido sugerido para a obtenção de conjuntos equilibrados. Um conjunto com um número par de inteiros distintos é escolhido, e um número inteiro adicional diferente de cada elemento do conjunto é adicionada a ele, de tal modo que o conjunto resultante é equilibrado. Nós queremos que você verifique se o procedimento indicado funciona. Por isso a sua tarefa é, dado<strong> N</strong>-1 inteiros distintos, com <strong>N</strong> ímpar, contar o número de conjuntos equilibrados que podem ser formados, seguindo o procedimento descrito.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada caso de teste é descrito em duas linhas. A primeira linha contém um único número inteiro positivo <strong>N</strong> que indica o número de elementos do conjunto equilibrado deve ter (3 &lt;=<strong> N</strong> &lt;= 499). A segunda linha contém <strong>N</strong>-1 inteiros distintos <strong>Z_i</strong> que representam os elementos dados do conjunto (-10<sup>14</sup> &lt;= <strong>Z_i</strong> &lt;= 10<sup>14</sup> para 1 &lt;= <strong>i</strong> &lt;= <strong>N</strong>-1). A última linha da entrada contém o número -1, e não deve ser processado como um caso de teste.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima por linha um inteiro que representa o número total de diferentes conjuntos equilibrados que pode ser obtido através da adição de um número inteiro para o conjunto dado, tal como se explica na descrição do problema.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5<br/>
+
+0 2 6 4<br/>
+
+7<br/>
+
+1 2 3 4 5 8<br/>
+
+3<br/>
+
+-100000000000000 100000000000000<br/>
+
+-1</p>
+
+                            </td>
+                            <td>
+                                <p>3<br />
+1<br />
+3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Torneo Argentino de Programación — ACM–ICPC 2011
+                </p>
+            </div>
+
+        </body>
+    </html>

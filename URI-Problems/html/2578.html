@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2578 - Ontarama Meraini</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 0000 - Ontarama Meraini" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2578</span>
+            <h1>Ontarama Meraini</h1>
+            <div>
+                <p>Por Comissão da VI Maratona Mineira de Programação <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Chegando para a abertura da VI Maratona Mineira Programação, os times se depararam com um banner um tanto quanto confuso, onde dizia: "<em>Bem-vindos à VI Ontarama Meraini!</em>". Depois de ler algumas vezes, os mais atenciosos perceberam que se tratava de um anagrama de " Maratona Mineira ", já que Astolfo, o criador da arte, é um cara apaixonado por anagramas.</p>
+
+<p>Um anagrama de uma palavra é qualquer outra palavra que se forma apenas alterando a ordem de uma ou mais de suas letras, por exemplo: "Alergia", "Regalia" e "Galeria" são alguns dos anagramas de "Alegria".</p>
+
+<p>Astolfo deseja fazer uma brincadeira à parte com os competidores envolvendo anagramas, para quebrar o gelo e descontrair os competidores. Para isso, ele gerou um texto  <strong>T  </strong>em seu computador, e o imprimiu em uma tira gigante de papel. Nesta tira, há lições de vida importantes que os competidores devem procurar.</p>
+
+<p>Ele gostaria de diminuir a tira para que ela caiba em sua mala, já que ela ficou enorme. Porém, a graça da tira é justamente que Astolfo escondeu no texto alguns anagramas de uma profunda mensagem  <strong>M</strong>. Assim ao diminuir a tira, Astolfo deseja que ao menos um anagrama de  <strong>M</strong>  sobre na tira final. Ele fará a redução da seguinte forma. Primeiro, escolhera um inteiro  <strong>b </strong>entre 1 e  <strong>T </strong>inclusive, e cortará as  <strong>b </strong>primeiras letras de  <strong>T</strong>, descartando o restante.    Em seguida, ele escolherá um segundo inteiro  <strong>e  </strong>entre 1 e  <strong>b</strong>  inclusive, e cortará as últimas  <strong>e</strong>  letras da tira que restou, descartando as demais letras. Esta é a tira final de Astolfo.</p>
+
+<p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/ontarama.jpg" alt="ontarama"/></p>
+
+<p>Astolfo percebeu que pode haver mais de uma forma de realizar este procedimento de forma que a tira resultante contenha um anagrama de  <strong>M</strong>. Assim, ele escolheu  <strong>T  </strong>e  <strong>M</strong>  de maneira tal a esconder uma mensagem importante também nesse número de formas. Assim caso você também deseje saber qual é a mensagem de Astolfo, basta resolver o seguinte problema: dados <strong>T  </strong>e  <strong>M</strong>, calcule o número de maneiras distintas que Astolfo tem de cortar a tira com o procedimento descrito acima de forma que a tira final contenha ao menos uma ocorrência de um anagrama qualquer de  <strong>P</strong>.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A entrada é composta por duas linhas. A primeira linha contém o texto <strong>T</strong>, composto apenas por letras minúsculas entre 'a' e 'z'. A segunda linha contém a mensagem <strong>M</strong>, também composta por letras minúsculas entre 'a' e 'z'. (1 ≤ <strong>|M|</strong> ≤<strong>|T|</strong> ≤ 10<sup>6</sup>) </p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Imprima um único inteiro, representando o número de formas que Astolfo tem de cortar extremidades de tira com o texto  <strong>T</strong>  de forma que a tira final contenha uma ocorrência de ao menos um anagrama de  <strong>M</strong>, em qualquer posição.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>acbac<br />
+bc</p>
+
+                        </td>
+                        <td>
+                            <p>6</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>bca<br />
+ab</p>
+
+<p>  </p>
+
+                </td>
+                <td>
+                    <p>0</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>aaaaa<br />
+a</p>
+
+                </td>
+                <td>
+                    <p>15</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+            <p class="footer">
+                No caso de teste, as sub-tiras de <em>acbac</em> que contém um anagrama de <em>bc</em> são: <em>cb</em>, <em>cbac</em>, <em>acb</em>, <em>cba</em>, <em>acbac</em> e <em>acba</em>.<br />
+                VI Maratona Mineira de Programação
+            </p>
+        </div>
+
+    </body>
+</html>

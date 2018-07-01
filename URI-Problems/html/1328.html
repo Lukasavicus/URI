@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1328 - Vá com Calma</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1328 - Vá com Calma" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1328</span>
+            <h1>Vá com Calma</h1>
+            <div><p>Por Paulo Oliva * <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    O prefeito de uma cidade pretende introduzir um novo sistema de transporte para simplificar a vida de seus habitantes. Isso será feito através da utilização de um cartão de débito, que o prefeito nomeou "GoEasy". Há dois meios de transporte na cidade: trens e ônibus. O sistema de trem é "baseado em zonas", enquanto o sistema de ônibus é "baseado em jornadas". A tarifa para a viagem é calculada como segue:</p>
+
+                <ul>
+                    <li>Primeiramente há uma taxa de duas unidades monetárias para entrar no sistema de transporte, independentemente do meio inicial de transporte.</li>
+                    <li>Quando viajar de trem um cliente paga quatro unidades monetárias para cada mudança de zona.</li>
+                    <li>Ao viajar de ônibus a cliente paga uma unidade monetária a cada vez que ele/ela embarca num ônibus.</li>
+                </ul>
+
+                <p>
+                    Um mapa do sistema de transporte irá proporcionar informações sobre as estações pertencentes a cada zona, e a seqüência de estações para cada itinerário de ônibus e trem. Ônibus e trens se movem em ambas as direções em cada itinerário, e nenhum trem ou ônibus passa pela mesma estação duas vezes durante uma única viagem através de um itinerário. É sempre possível ir de qualquer estação a qualquer outra estação usando trens e/ou ônibus. As regras para as tarifas de computação são rígidas: se durante uma viagem de trem um cliente entra em uma determinada zona duas vezes, ele/ela é cobrado(a) duas vezes, da mesma forma, se durante uma viagem de ônibus o cliente utiliza duas vezes o ônibus para o mesmo itinerário, ele/ela é cobrado(a) duas vezes.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/GoEasy.png" style="width: 365px; height: 344px;" />​</p>
+
+                <p>
+                    No mapa do transporte acima um cliente pode viajar da estação 2 para a estação 4 pagando apenas duas unidades monetárias, usando a linha T1, uma vez que elas estão na mesma zona. Mas se o cliente precisa ir da estação 2 à 5, então o melhor é tomar o ônibus B3 para a estação 10 e, em seguida, tomar o ônibus B2 para a estação 5, pagando um total de quatro unidades monetárias. Ao invés de rastrear toda a viagem de cada passageiro, a idéia do prefeito é que máquinas sejam colocadas em todas as estações, e os viajantes devem passar seu cartão pessoal GoEasy apenas no começo e término de toda a viagem. Uma vez que todas as máquinas são interligadas em rede, com base na saída e entrada do sistema de estações, pode-se calcular o custo mínimo possível para a viagem, e qual o valor será cobrado do cartão de débito do viajante. Tudo o que falta é um sistema de computador para fazer os cálculos para a tarifa a ser deduzida. Assim, dado o mapa do sistema de transporte na cidade, você deve escrever um programa para calcular a tarifa mínima que o cliente deve pagar para viajar entre duas paradas/estações dadas.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. A primeira linha de um caso de teste contém dois inteiros <strong>Z</strong> e <strong>S</strong>, que indicam, respectivamente, o número de zonas (1 ≤ <strong>Z</strong> ≤ 30) e o número de estações de trem/ônibus na cidade (1 ≤ <strong>S</strong> ≤ 100). Cada estação tem um único número de identificação variando de 1 a <strong>S</strong>, e cada estação pertence exatamente a uma zona. Cada uma das seguintes <strong>Z</strong> linhas descreve as centrais pertencentes a uma zona. A descrição de uma zona começa com um <strong>K</strong> inteiro que indica o número de estações (1 ≤ <strong>K</strong> ≤ <strong>S</strong>) na zona, seguido de <strong>K</strong> inteiros representando as estações na zona. Depois disso vem uma linha com dois números inteiros <strong>T</strong> e <strong>B</strong>, representando, respectivamente, o número de itinerários de trem (1 ≤ <strong>T</strong> ≤ 50) e o número de itinerários de ônibus (1 ≤ <strong>B</strong> ≤ 50). Em seguida, vem <strong>T</strong> linhas descrevendo itinerários de trem, seguido por <strong>B</strong> linhas descrevendo itinerários de ônibus. A descrição de cada itinerário é composto de uma linha contendo <strong>L</strong> um inteiro que indica o número de estações (2 ≤ <strong>L</strong> ≤ <strong>S</strong>) no itinerário, seguido por <strong>L</strong> inteiros especificando a seqüência de estações no itinerário. Finalmente, vem uma linha com dois inteiros <strong>X</strong> e <strong>Y</strong> (1 ≤ <strong>X</strong> ≤ <strong>S</strong>, 1 ≤ <strong>Y</strong> ≤ <strong>S</strong> e <strong>X</strong> ≠ <strong>Y</strong>), especificando que o cliente viajou da estação <strong>X</strong> para a estação<strong>Y</strong>. O final da entrada é indicado por <strong>Z</strong> = <strong>S</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste seu programa deve imprimir uma linha, contendo um inteiro representando o valor a ser deduzido do cartão GoEasy do viajante.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3 15<br />
+                                2 8 9<br />
+                                7 2 3 4 7 12 13 14<br />
+                                6 1 5 6 10 11 15<br />
+                                3 3<br />
+                                5 1 2 3 4 5<br />
+                                3 1 6 11<br />
+                                4 4 8 12 11<br />
+                                6 2 7 12 13 14 15<br />
+                                3 5 10 15<br />
+                                6 1 2 3 8 9 10<br />
+                                11 6<br />
+                                3 15<br />
+                                2 8 9<br />
+                                7 2 3 4 7 12 13 14<br />
+                                6 1 5 6 10 11 15<br />
+                                3 3<br />
+                                5 1 2 3 4 5<br />
+                                3 1 6 11<br />
+                                4 4 8 12 11<br />
+                                6 2 7 12 13 14 15<br />
+                                3 5 10 15<br />
+                                6 1 2 3 8 9 10<br />
+                                11 5<br />
+                                0 0</p>
+                        </td>
+                        <td>
+                            <p>
+                                2<br />
+                                4</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programação da SBC 2004.
+            </p>
+        </div>
+
+    </body>
+</html>

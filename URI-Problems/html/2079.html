@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2079 - Produto de Guerra</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2079 - Produto de Guerra" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2079</span>
+                <h1>Produto de Guerra</h1>
+                <div>
+                    <p>Por XII Maratona de Programação IME-USP, 2008 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>O Comitê Internacional da Cruz Vermelha, organização sem fins lucrativos cujo objetivo é defender e amparar as vítimas de guerras (ou melhor, vítimas do capital) ou catástrofes naturais, ganhou os prêmios Nobel de 1917, 1945 e 1963 pelo seu importantíssimo trabalho. Como é de se imaginar, a Cruz Vermelha sempre teve problemas de locomoção no meio da guerra. Muitas ligações (estradas, ferrovias, etc.) entre cidades de países em guerra podem ser destruídas por bombardeios ou dominadas por tiranos.</p>
+
+                    <p>O departamento de inteligência da Cruz Vermelha está empenhado em criar um programa de computador que auxilie as operações da Cruz Vermelha no futuro. A ideia é, dado um mapa da região que será ajudada, determinar em quais cidades devem ser feitas as bases da Cruz Vermelha. Inicialmente, o Departamento está interessado em testar a primeira versão do programa em cidades com as seguintes características: (a) sempre existe um caminho entre duas cidades que passa por uma ou mais ligações; (b) não existem dois caminhos diferentes entre duas cidades quaisquer. Apesar dos recursos da Cruz Vermelha geralmente serem limitados, eles querem escolher o maior número possível de bases, e garantir que ou existe uma base na cidade ou existe uma base em uma cidade vizinha, com a restrição adicional de que não é permitido criar bases em duas cidades vizinhas. Esta última restrição é dada pelo fato de que se estivesse em período de guerra, a Cruz Vermelha, como sabemos deve ter livre acesso nas cidades, e com isso pode surgir a suspeita de espionagem, o que pode comprometer o objetivo principal da organização.</p>
+
+                    <p>Sua tarefa é escrever a primeira versão do programa que o Departamento quer testar.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha de um caso de teste possui um inteiro <strong>T</strong> que indica o número de instâncias seguintes.</p>
+
+                    <p>A primeira linha de cada instância possui um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 6000) indicando o número de cidades do mapa. As cidades são identificadas por 1, 2, ..., <strong>N</strong>. As próximas <strong>N-1</strong> linhas possuem dois inteiros <strong>u</strong> e <strong>v</strong> (1 ≤ <strong>u</strong>, <strong>v</strong> ≤ <strong>N</strong>, <strong>u</strong> ≠ <strong>v</strong>) que indicam uma ligação entre as cidades <strong>u</strong> e <strong>v</strong> (considere que tais ligações permitem acesso de <strong>u</strong> até <strong>v</strong> e de <strong>v</strong> até <strong>u</strong>).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância imprima uma inteiro indicando o número máximo de bases que a Cruz Vermelha consegue construir levando-se em consideração as restrições descritas anteriormente.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+10<br />
+1 2<br />
+1 3<br />
+2 4<br />
+2 5<br />
+2 6<br />
+3 7<br />
+7 8<br />
+7 9<br />
+7 10<br />
+5<br />
+1 2<br />
+1 3<br />
+2 4<br />
+2 5</p>
+
+                            </td>
+                            <td>
+                                <p>7<br />
+3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XII Maratona de Programação IME-USP, 2008
+                </p>
+            </div>
+
+        </body>
+    </html>

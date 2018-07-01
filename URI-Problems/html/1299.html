@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1299 - Jogo de Mosaicos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1299 - Jogo de Mosaicos" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1299</span>
+            <h1>Jogo de Mosaicos</h1>
+            <div><p>Por Pablo Ariel Heiber, UBA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=""/> Argentina</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Jogo de mosaicos ou de ladrilhos é um jogo para dois jogadores, jogado sobre uma placa rectangular na forma de uma tabela de <strong>R</strong> linhas e <strong>C</strong> colunas de&nbsp; células quadradas chamados mosaicos. No início do jogo, alguns dos quadrados podem ser pintados de preto e o restante permanece branco. Em seguida, o jogador 1 e jogador 2 alternam jogadas e o primeiro que não pode fazer um movimento válido perde o jogo. O primeiro movimento do jogo é feito por um jogador e consiste na escolha de um ladrilho branco&nbsp; escrevendo o número do 1 nele. Depois disso, cada movimento subsequente i consiste em escrever o número i em um azulejo branco não utilizado que é adjacente horizontalmente ou verticalmente (mas não na diagonal)&nbsp; ao ladrilho numerado <em>i</em> - 1. Note que o jogador 1 sempre escreve números ímpares e jogador 2 sempre escreve números pares.</p>
+                    <p>
+                    ​A figura a seguir mostra três exemplos possíveis de configurações de uma placa com <strong>R</strong> = 3 e <strong>C</strong> = 4, durante um jogo. À esquerda ela mostra a configuração inicial. No centro, mostra um estado intermediário, onde as células em cinza marca os movimentos possíveis para o jogador 2. E à direita mostra a configuração quando o jogo é ganho pelo jogador 2, que escolheu o movimento apropriado.&nbsp;</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1299.png" style="font-size: 13px; text-align: center; width: 432px; height: 94px;" /></p>
+
+                <p><br />
+                    Sua tarefa é escrever um programa que, dada a configuração inicial do tabuleiro, determina qual jogador irá ganhar, se ambos jogarem de maneira perfeita.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste é descrito utilizando várias linhas. A primeira linha contém dois inteiros&nbsp;<strong>R</strong> e&nbsp;<strong>C</strong>&nbsp;que representam respectivamente o número de linhas e o número de colunas do tabuleiro (1 ≤&nbsp;<strong>R</strong>, <strong>C</strong> ≤ 50). A enésima (<em>i</em>-th) das próximas <strong>R</strong> linhas&nbsp;contém uma&nbsp;string <strong>B</strong><sub><em>i</em></sub>&nbsp;de&nbsp;<strong>C</strong> caracteres que descreve a enésima (<em>i</em>-th) linha do tabuleiro inicial. O enésimo (j-th) caracter de&nbsp;<strong>B</strong><em>i</em>&nbsp;é&nbsp;ou&nbsp;`.' (ponto) ou a letra maiúscula&nbsp;'X', representando que o ladrilho na linha&nbsp;<em>i</em>&nbsp;e coluna&nbsp;<em>j</em>&nbsp;é respectivamente branco ou preto. Dentro de cada caso de teste pelo menos um dos ladrilhos ou mosaicos é branco.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima uma linha com um inteiro que representa o número do jogador (1 ou 2) que vai ganhar o jogo, se ambos jogarem de maneira perfeita.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3 4<br />
+                                ....<br />
+                                XX.X<br />
+                                ...X<br />
+                                3 4<br />
+                                ....<br />
+                                .X.X<br />
+                                ...X<br />
+                                3 4<br />
+                                ....<br />
+                                .X.X<br />
+                                ....<br />
+                                1 1<br />
+                                .<br />
+                                1 11<br />
+                                ....X......</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                2<br />
+                                1<br />
+                                1<br />
+                                1<br />
+                                2</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2012.
+            </p>
+        </div>
+
+    </body>
+</html>

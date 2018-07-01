@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2107 - As Pirâmides de Ecaterinburgo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2107 - As Pirâmides de Ecaterinburgo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2107</span>
+                <h1>As Pirâmides de Ecaterinburgo</h1>
+                <div>
+                    <p>Por XVII Maratona de Programação IME-USP, 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                <p>As pirâmides são estruturas muito frequentes em civilizações antigas de todo o mundo. As mais famosas, as do Egito, foram construídas mais de 2000 anos antes da passagem de  Cristo pela Terra. Outras pirâmides famosas são as encontradas no México e América Central, ligadas às civilizações astecas e maias.</p>
+
+                <p>Poucos conhecidas, porém, são as pirâmides construídas nos montes Urais, perto da cidade de Ecaterimburgo. Tais pirâmides remontam ao início da era cristã, e acredita-se que foram construídas por povos mongois, que invadiram a Europa através dos montes Urais vindos da Asia. Diferentemente das outras pirâmides conhecidas, estas tinham base triangular. Dessa forma tais pirâmides tinham 4 faces triangulares. Muitas dessas pirâmides eram construídas sobre colunas, o que permitia construções não paralelas ao solo e até mesmo que a base “de baixo” ficasse exposta.</p>
+
+                <p>Isso era muito importante, pois as faces da pirâmide eram pintadas com figuras que representavam deuses antigos, figuras mitológicas, planetas e outros corpos celestes, e assim por diante. Dessa forma, em algum ponto da cidade, um cidadão poderia visualizar uma ou mais das faces da pirâmide. Isso era importante na religião local, e encontrar uma casa de cuja janela se vislumbrasse as melhores faces das pirâmides era muito valorizado naquela época.</p>
+
+                <p>Sua tarefa é, dadas as posições no espaço dos vértices de uma pirâmide, e a posição no espaço de um observador, determinar quais das faces da pirâmide são visíveis a ele, considerando que não existe nenhum obstáculo entre o observador e a pirâmide.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF).</p>
+
+                    <p>Cada instância consiste de 5 linhas. Cada linha contém três inteiros, separados por espaços e representam as coordenadas dos pontos <strong>A</strong>, <strong>B</strong>, <strong>C</strong>, <strong>D</strong> e <strong>X</strong> respectivamente, onde <strong>X</strong> é a posição do observador e os demais pontos são vértices da pirâmide.</p>
+
+                    <p>Todos os pontos fornecidos têm coordenadas inteiras entre -100 e 100.</p>
+
+                    <p>Os pontos <strong>A</strong>, <strong>B</strong>, <strong>C</strong> e <strong>D</strong> não são coplanares.</p>
+
+                    <p>Todos os pontos fornecidos são distintos.</p>
+
+                    <p>O ponto <strong>X</strong> não pertence nem ao interior nem a nenhuma face da pirâmide.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância, imprima uma linha contendo 4 caracteres. O primeiro caractere deve ser <em>S</em> se o observador enxerga a face da pirâmide oposta ao vértice <strong>A</strong> e <em>N</em> caso contrário. Analogamente para o segundo, terceiro e quarto caracteres, mas levando em conta as faces opostas aos vértices <strong>B</strong>, <strong>C</strong> e <strong>D</strong> respectivamente.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>0 0 0<br />
+1 0 0<br />
+0 1 0<br />
+0 0 1<br />
+1 1 1<br />
+0 0 0<br />
+1 0 0<br />
+0 1 0<br />
+0 0 1<br />
+-1 -1 -1<br />
+0 0 0<br />
+1 0 0<br />
+0 1 0<br />
+0 0 1<br />
+1 1 0</p>
+
+                            </td>
+                            <td>
+                                <p>SNNN<br />
+NSSS<br />
+SNNN</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XVII Maratona de Programação IME-USP, 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

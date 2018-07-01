@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2606 2606 - Categorias</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - SQL - Problema 2606 - Categorias...?" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default-sql.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28047757-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <span>URI Online Judge <strong>SQL</strong> | 2606</span>
+      <h1>Categorias</h1>
+      <div>
+        <p>Paulo R. Rodegheri <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem-sql">
+      <div>
+        <p>Quando os dados foram migrados de Banco de Dados, houve um pequeno mal-entendido por parte do antigo DBA.</p>
+        <p>Seu chefe precisa que você exiba o código e o nome dos produtos, cuja categoria inicie com 'super'.</p>
+      </div>
+
+      <div>
+        <h2>Esquema</h2>
+        <div>    
+          <table class="tables-model-two">
+            <caption>products</caption>
+            <tr>
+              <td class="half-column"><strong>Coluna</strong></td>
+              <td class="half-column"><strong>Tipo</strong></td>
+            </tr>
+            <tr>
+              <td>id (PK)</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>varchar</td>
+            </tr>
+            <tr>
+              <td>amount</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>price</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>id_categories (FK)</td>
+              <td>numeric</td>
+            </tr>
+          </table>
+          
+          <table class="tables-model-two-inline">
+            <caption>categories</caption>
+            <tr>
+              <td class="half-column"><strong>Coluna</strong></td>
+              <td class="half-column"><strong>Tipo</strong></td>
+            </tr>
+            <tr>
+              <td>id (PK)</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>varchar</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div>
+        <h2>Tabelas</h2>
+        <div>
+          <table class="tables-hundred">
+            <caption>products</caption>
+            <tr>
+              <td><strong>id</strong></td>
+              <td><strong>name</strong></td>
+              <td><strong>amount</strong></td>
+              <td><strong>price</strong></td>
+              <td><strong>id_categories</strong></td>
+            </tr>
+            <tr>
+              <td class="center">1</td>
+              <td>Lampshade</td>
+              <td class="center">100</td>
+              <td class="center">800</td>
+              <td class="center">4</td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+              <td>Table for painting</td>
+              <td class="center">1000</td>
+              <td class="center">560</td>
+              <td class="center">9</td>
+            </tr>
+            <tr>
+              <td class="center">3</td>
+              <td>Notebook desk</td>
+              <td class="center">10000</td>
+              <td class="center">25.50</td>
+              <td class="center">9</td>
+            </tr>
+            <tr>
+              <td class="center">4</td>
+              <td>Computer desk</td>
+              <td class="center">350</td>
+              <td class="center">320.50</td>
+              <td class="center">6</td>
+            </tr>
+            <tr>
+              <td class="center">5</td>
+              <td>Chair</td>
+              <td class="center">3000</td>
+              <td class="center">210.64</td>
+              <td class="center">9</td>
+            </tr>
+            <tr>
+              <td class="center">6</td>
+              <td>Home alarm</td>
+              <td class="center">750</td>
+              <td class="center">460</td>
+              <td class="center">4</td>
+            </tr>
+          </table>
+
+          <table class="tables-model-two">
+            <caption>categories</caption>
+            <tr>
+              <td><strong>id</strong></td>
+              <td><strong>name</strong></td>
+            </tr>
+            <tr>
+              <td class="center">1</td>
+              <td>old stock</td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+              <td>new stock</td>
+            </tr>
+            <tr>
+              <td class="center">3</td>
+              <td>modern</td>
+            </tr>
+            <tr>
+              <td class="center">4</td>
+              <td>commercial</td>
+            </tr>
+            <tr>
+              <td class="center">5</td>
+              <td>recyclable</td>
+            </tr>
+            <tr>
+              <td class="center">6</td>
+              <td>executive</td>
+            </tr>
+            <tr>
+              <td class="center">7</td>
+              <td>superior</td>
+            </tr>
+            <tr>
+              <td class="center">8</td>
+              <td>wood</td>
+            </tr>
+            <tr>
+              <td class="center">9</td>
+              <td>super luxury</td>
+            </tr>
+            <tr>
+              <td class="center">10</td>
+              <td>vintage</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+              
+      <div>
+        <h2>Exemplo de Saída</h2>
+        <div>
+          <table class="tables-model-two">
+            <tr>
+              <td><strong>id</strong></td>
+              <td><strong>name</strong></td>
+            </tr>
+            <tr>
+              <td class="center">2</td>
+              <td>Table for painting</td>
+            </tr>
+            <tr>
+              <td class="center">3</td>
+              <td>Notebook desk</td>
+            </tr>
+            <tr>
+              <td class="center">5</td>
+              <td>Chair</td>
+            </tr>
+          </table>
+        </div>
+      </div>    
+    </div>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1670 - Lógica Booleana</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1670 - Lógica Booleana" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+            <style>
+                 #logica{
+                    margin: 10px auto;
+                    width: 400px;
+                }
+                #logica tbody{
+
+                    text-align: center;
+                }
+            </style>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1670</span>
+                <h1>Lógica Booleana</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Proposições são fórmulas lógicas que consistem em símbolos de proposição e operadores conectivos. Eles são definidos recursivamente pelas seguintes regras:</p>
+
+                    <ol>
+                    	<li>Todos os símbolos de proposição (neste problema, caracteres alfabéticos minúsculos, por exemplo, a e z) são proposições.</li>
+                    	<li>Se P é uma proposição, (!P) é uma proposição, e P é uma subfórmula direta dela.</li>
+                    	<li>Se P e Q são proposições, (P&amp;Q), (P|Q), (P--&gt;Q), e (P&lt;-&gt;Q) são proposições, e P e Q são subfórmulas diretas delas.</li>
+                    	<li>Nada mais é uma proposição.</li>
+                    </ol>
+
+                    <p>As operações !, &amp;, |, --&gt;, e &lt;-&gt; denotam negação, conjunção, disjunção, implicação e equivalência, respectivamente. A proposição P é uma subfórmula de uma proposição R se P=R ou se P é uma subfórmula direta de uma proposição Q e Q é uma subfórmula de R.</p>
+
+                    <p>Seja P uma proposição e atribui-se valores boleanos (isto é, 0 ou 1) a todos os símbolos de proposição que ocorrem em P. Isto induz um valor booleano para todas as subfórmulas de P, de acordo com a semântica padrão dos operadores lógicos:</p>
+
+
+                    <table id="logica">
+                    <thead>
+                        <tr>
+                            <th>Negação&nbsp;</th> 
+                            <th>Conjunção&nbsp;</th>
+                            <th>Disjunção&nbsp;</th> 
+                            <th>Implicação&nbsp;</th> 
+                            <th>Equivalência</th> 
+                        </tr>
+                    </thead>
+
+
+                    <tbody>
+                    <tr>
+                    <td><code>!</code><i>0</i>=<i>1</i>
+                    </td><td><i>0</i><code>&amp;</code><i>0</i>=<i>0</i>
+                    </td><td><i>0</i><code>|</code><i>0</i>=<i>0</i>
+                    </td><td><i>0</i><code>--&gt;</code><i>0</i>=<i>1</i>
+                    </td><td><i>0</i><code>&lt;-&gt;</code><i>0</i>=<i>1</i>
+                    </td></tr><tr>
+                    <td><code>!</code><i>1</i>=<i>0</i>
+                    </td><td><i>0</i><code>&amp;</code><i>1</i>=<i>0</i>
+                    </td><td><i>0</i><code>|</code><i>1</i>=<i>1</i>
+                    </td><td><i>0</i><code>--&gt;</code><i>1</i>=<i>1</i>
+                    </td><td><i>0</i><code>&lt;-&gt;</code><i>1</i>=<i>0</i>
+                    </td></tr><tr>
+                    <td>
+                    </td><td><i>1</i><code>&amp;</code><i>0</i>=<i>0</i>
+                    </td><td><i>1</i><code>|</code><i>0</i>=<i>1</i>
+                    </td><td><i>1</i><code>--&gt;</code><i>0</i>=<i>0</i>
+                    </td><td><i>1</i><code>&lt;-&gt;</code><i>0</i>=<i>0</i>
+                    </td></tr><tr>
+                    <td>
+                    </td><td><i>1</i><code>&amp;</code><i>1</i>=<i>1</i>
+                    </td><td><i>1</i><code>|</code><i>1</i>=<i>1</i>
+                    </td><td><i>1</i><code>--&gt;</code><i>1</i>=<i>1</i>
+                    </td><td><i>1</i><code>&lt;-&gt;</code><i>1</i>=<i>1</i>
+                    </td></tr>
+                    </tbody>
+                    </table>
+
+
+                    <p>Dessa forma, o valor de P pode ser calculado. Este valor depende da escolha da atribuição de valores booleanos aos símbolos proposição. Se P contém n símbolos proposição diferentes, existem <em>2<sup>n</sup></em> atribuições diferentes. Para avaliar todas as tarefas possíveis, podemos utilizar tabelas de verdade.</p>
+
+                    <p>Uma tabela verdade contém uma linha por atribuição (ou seja, <em>2<sup>n</sup></em> linhas no total). Cada linha contém os valores de todas as subfórmulas sob a designação escolhida. O valor de uma subfórmula está alinhado com o símbolo da proposição, se a subfórmula é um símbolo proposição, e, de outra forma, com o centro do operador.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste, cada um em uma linha separada. Cada caso de teste denota uma proposição e pode conter quantidades arbitrárias de espaços no meio. O arquivo de entrada termina imediatamente após o símbolo de nova linha após o último caso de teste.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste seu programa deve gerar uma tabela verdade para a proposição denotada. Comece a tabela verdade repetindo a linha de entrada. Avalie a proposição (e as suas subfórmulas) para todas as atribuições para as suas variáveis, e use uma linha para cada atribuição. A linha deve ter o mesmo comprimento que a linha de entrada correspondente e deve conter apenas espaços e os caracteres 0 e 1. Imprima uma linha em branco após cada caso de teste.</p>
+
+                    <p>Deixe os símbolos de proposição (s1, ..., sn) na proposição denotada classificados em ordem alfabética. Então, todas as atribuições de 0 a s1 devem preceder as atribuições de 1 a s1. Dentro de cada um destes blocos de atribuições, todas as atribuições de 0 a s2 devem preceder as atribuições de 1 a s2, e assim por diante.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>((b --&gt; a) &lt;-&gt; ((! a) --&gt; (! b)))<br/>
+
+((y &amp; a) - -&gt;(c |c))</p>
+
+                            </td>
+                            <td>
+                                <p>((b --&gt; a) &lt;-&gt; ((! a) --&gt; (! b)))<br/>
+
+&nbsp; 0 &nbsp;1 &nbsp; 0 &nbsp; 1 &nbsp; &nbsp;1 0 &nbsp; 1 &nbsp; &nbsp;1 0<br/>
+
+&nbsp;&nbsp;1 &nbsp;0&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;1 &nbsp; &nbsp;1 0 &nbsp; 0 &nbsp; &nbsp;0 1<br/>
+
+&nbsp;&nbsp;0 &nbsp;1 &nbsp; 1&nbsp;&nbsp;&nbsp;1 &nbsp; &nbsp;0 1 &nbsp; 1 &nbsp; &nbsp;1 0<br/>
+
+&nbsp;&nbsp;1 &nbsp;1 &nbsp; 1&nbsp;&nbsp;&nbsp;1 &nbsp; &nbsp;0 1 &nbsp; 1 &nbsp; &nbsp;0 1<br/>
+
+<br/>
+
+((y &amp; a) - -&gt;(c |c))<br/>
+
+&nbsp; 0 0 0 &nbsp; 1 &nbsp; 0 00<br/>
+
+&nbsp; 1 0 0 &nbsp; 1 &nbsp; 0 00<br/>
+
+&nbsp; 0 0 0 &nbsp; 1 &nbsp; 1 11<br/>
+
+&nbsp; 1 0 0 &nbsp; 1 &nbsp; 1 11<br/>
+
+&nbsp; 0 0 1 &nbsp; 1 &nbsp; 0 00<br/>
+
+&nbsp; 1 1 1 &nbsp; 0 &nbsp; 0 00<br/>
+
+&nbsp; 0 0 1 &nbsp; 1 &nbsp; 1 11<br/>
+
+&nbsp; 1 1 1 &nbsp; 1 &nbsp; 1 11<br/>
+</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                     Univeristy of Ulm Local Contest 2004/2005
+                </p>
+            </div>
+
+        </body>
+    </html>

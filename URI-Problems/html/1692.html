@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1692 - Curo Ataque </title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1692 - Curo Ataque " />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1692</span>
+                <h1>Curo Ataque </h1>
+                <div>
+                    <p>Por Jose Miguel Noblecilla, Pontificia Universidad Católica del Perú <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/pe.gif' alt='PE' /> Peru</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+
+                <p>Uma nova rede universitária é composta por N servidores distribuídos em todo o campus , cada par de servidor é ligado por um caminho único feito de fios e são N - 1 fios ao todo, mas o Departamento de Informática esqueceu de atribuir os servidores para o instituto de matemática.</p>
+
+                <p>Um estudante de matemática preguiçoso, chamado Curo , está se sentindo ressentido, porque agora ele não pode executar seus programas em uma máquina poderosa. Então , ele decidiu implantar um vírus, feito por ele durante seu tempo livre, porque ele odeia seus cursos de matemática e prefere codificar algo mais divertido, ao invés de escrever números e símbolos intediantes.</p>
+
+                <p>Curo quer infectar o número máximo de servidores e ter sua vingança contra o departamento de Informática. Ele preparou uma simulação do ataque, mas seu computador não é poderoso o suficiente para executá-lo . Assim, ele precisa de sua ajuda para esta tarefa, mas primeiro você tem que saber como o vírus funciona.</p>
+
+                <p>Se o vírus infectar um servidor, os servidores adjacentes serão infectados também. Além disso, o programa tem uma variável pseudo-aleatória chamada Kuro-number. </p>
+
+                <p>No final do processo de infecção, a maior distância entre dois servidores infectados deve ser o Kuro-number.</p>
+
+                <p>Dada uma rede de computadores e um Kuro-number você deve obter, se existe, o número máximo de servidores infectados, caso contrário, você deve imprimir "Impossible Revenge!"
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Existem vários testes, a primeira linha de cada teste contém dois inteiros <strong>N</strong> e <strong>K</strong> --- Número de servidores na rede e o Kuro-number (<strong>2</strong> &le; <strong>K</strong> &lt;<strong>N</strong> &le; <strong>1000</strong>). As próxima <strong>N</strong> - <strong>1</strong> linhas contém a descrição dos <strong>N</strong> - <strong>1</strong> fios dessa rede --- Cada linha contém um par (<strong>u</strong>, <strong>v</strong>) significa que há uma conexão entre o servidor <strong>u</strong> e o servidor <strong>v</strong> (<strong>1</strong> &le; <strong>u</strong>, <strong>v</strong> &le; <strong>N</strong>).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprimir se existe, o número máximo de servidores infectados. Caso contrário, você deve imprimir "Impossible Revenge!".</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>9 3<br />
+                                1 2<br />
+                                2 7<br />
+                                2 3<br />
+                                2 4<br />
+                                4 5<br />
+                                4 6<br />
+                                4 8<br />
+                                8 9</p>
+
+                                <p>5 3<br />
+                                1 2<br />
+                                2 3<br />
+                                2 4<br />
+                                2 5</p>
+
+                            </td>
+                            <td>
+                                <p>8<br />
+                                Impossible revenge!</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Road to Fortaleza III 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2735 - O Presente de Nina</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema I - Presente de Natal" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2735</span>
+			<h1>O Presente de Nina</h1>
+			<div>
+				<p>Por Giovanna Kobus Conrado, USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 3</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Nina ganhou de natal <strong>N </strong>números distintos de 0&nbsp;a N-1. Ela percebeu que esses números podem formar uma permutação, ou seja, um vetor de&nbsp;<strong>N</strong><strong>&nbsp;</strong>números no qual cada número de 0&nbsp;a N-1 aparece apenas uma vez. Ao notar isso, ela lembrou que tinha uma permutação&nbsp;de tamanho <strong>N&nbsp;</strong>muito especial guardada em sua gaveta, e decidiu usá-la para brincar com seus novos blocos. Ela inventou a seguinte brincadeira:</p>
+
+<p>No dia 0, ela vai colocar primeiro o número 0, depois o 1, e assim por diante, até o <strong>N-1</strong>, formando o vetor&nbsp;<strong>V<sub>0</sub></strong>. No&nbsp;dia x, ela vai rearranjar os números para formar o vetor&nbsp;<strong>V<sub>x</sub></strong>, no qual <strong>V<sub>x</sub><sub>&nbsp;</sub>[ i ] = V<sub>x</sub><sub>-1&nbsp;</sub>[ P [ i ] ]</strong>, sendo&nbsp;<strong>P</strong>&nbsp;a permutação favorita de Nina.</p>
+
+<p>Sua irmãzinha Nani ficou com muita inveja, e resolveu questionar os conhecimentos de Nina sobre sua permutação com perguntas do tipo: dado<strong> J</strong> e <strong>K</strong>, qual o menor número&nbsp;<strong>Y </strong>tal que&nbsp;<strong>V<sub>Y</sub> [ ( J + K ) % N ] = J&nbsp;</strong>?</p>
+
+<p>Ajude Nina a responder sua irmã.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A primeira linha da entrada consiste de um número&nbsp;<strong>t&nbsp;</strong>(<strong>t</strong>=10) , referente à quantidade de casos teste.</p>
+
+<p>Cada um dos casos começa com um inteiro<strong>&nbsp;N</strong>&nbsp;(0&lt;=<strong>N</strong>&lt;=10<sup>5</sup>): o número de blocos que Nina ganhou, seguido de&nbsp;<strong>N</strong>&nbsp;inteiros distintos de 0 a N-1, a permutação&nbsp;<strong>P</strong>.</p>
+
+<p>A linha seguinte terá um inteiro&nbsp;<strong>Q</strong>&nbsp;(1&lt;=<strong>Q</strong>&lt;=10<sup>5</sup>) representando o número de perguntas de Nani, seguido de&nbsp;<strong>Q&nbsp;</strong>linhas, cada uma contendo dois inteiros<strong>&nbsp;J</strong>&nbsp;e <strong>K </strong>(0&lt;=<strong>J,K</strong>&lt;<strong>N</strong>).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada prgunta, a saída deverá ser uma linha contendo a resposta da mesma. Caso ela não exista, imprima&nbsp;-1.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>1</p>
+
+<p>5</p>
+
+<p>2 0&nbsp;1&nbsp;4&nbsp;3</p>
+
+<p>3</p>
+
+<p>0 2</p>
+
+<p>2 0</p>
+
+<p>2 1</p>
+
+						</td>
+						<td>
+							<p>2</p>
+
+<p>0</p>
+
+<p>-1</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				Made By Women Contest 2018
+			</p>
+		</div>
+	</body>
+</html>

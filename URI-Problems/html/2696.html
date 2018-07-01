@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2696 - ICPC Bugado</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema BCer - CICP Bugado" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2696</span>
+			<h1>ICPC Bugado</h1>
+			<div>
+				<p>Por Gabriel Poesia <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Alan Curing é um famoso programador competitivo. Ele é o criador do modelo teórico computacional conhecido como Maquina de Alan Curing (MAC). Ele é mais famoso por criar seu próprio computador para competições de programação: o Computador Integrado para Competições de Programação (CICP). Este computador tem um sistema especializado de comandos para submeter códigos e testar executáveis em entradas de amostra, um gerador de entrada, uma tela para debugar e um teclado bem macio. Entretanto, como ocorre mesmo com os melhores, a criação de Alan possui um bug nefasto. Toda vez que Alan digita uma vogal no CICP, o conteúdo da linha é invertido.</p>
+
+<p>O bug foi extremamente dificil de localizar, então Alan decidiu aceitar o desafio e usar o computador como ele é. Ele está atualmente treinando digitar no ICPC. Por hora, eles apensa digita strings usando letras minúsculas e sem espaços. Quando Alan digita uma consoante, ela é anexada ao fim da linha, como o esperado. Quando ele digita uma vogal entretanto, o caractere digitado é o primeiro a ser adicionado ao fim da linha, mas logo após isto toda a linha é invertida. Por exemplo, se a linha tem atualmente “imc” e Alan digitar “a” (uma vogal), por um breve momento a linha será “imca” mas então o bug ataca e a linha torna-se “acmi”. Se após isso ele digitar as consoantes “c”, “p”, “c”, nesta ordem, a linha tornar-se-á “acmicpc”.</p>
+
+<p>Quando pratica, Alan primeiro pensa no texto que ele quer escrever, e depois tenta descobrir uma sequência de caracteres que quando digitados em ordem ele possa obter o texto original desejado. Ele está tendo problemas entretanto, já que algumas strings são impossíveis de obter (como “ca”), e existem diversas maneiras de obter outros textos ( como “ac”, que pode ser obtido tanto se digitando “ac” quanto “ca”). Ajude Alan em seu treino dizendo quantas maneiras existem para que ele possa digitar o texto que ele deseja escrever. Uma forma de digitar um texto T pode ser codificada por uma string W com |T| caracteres de tal forma que se os caracteres sejam digitados no CICP na ordem que eles aparecem em W (i.e W[1], W[]2, . . . , W[T]) o resultado final seja igual a T, considerando o conhecido bug no CICP quando digitada as letras “a”, “e”, “i”, “o” e “u”.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A Entrada consiste de uma única linha contendo uma string não vazia T com no maximo 10<sup>5</sup> letras minúsculas, representando o texto que Alan quer digitar no CICP.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Imprima uma única linha contendo um inteiro representando o número distinto de maneiras que Alan pode digitar o texto T desejado considerando o bug conhecido do CICP.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>ac</p>
+
+						</td>
+						<td>
+							<p>2</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>ca</p>
+
+                </td>
+                <td>
+                    <p>0</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>acmicpc</p>
+
+                </td>
+                <td>
+                    <p>3</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+				ICPC Latin American Regional – 2017
+			</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2641 - Dinheiro por Nada</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 2641 - Dinheiro por Nada" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2641</span>
+            <h1>Dinheiro por Nada</h1>
+            <div>
+                <p>Por ACM-ICPC Final Mundial 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif' alt='US' /> United States</p>
+            </div>
+            <strong>Timelimit: 5</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Neste problema, você estará resolvendo um dos desafios mais difíceis da humanidade&nbsp;em todo o mundo desde o início dos tempos - como ganhar muito dinheiro.</p>
+
+<p>Você é um intermediário no mercado de widgets. Seu trabalho é comprar widgets de empresas produtoras de widgets e vendê-los para empresas de consumo de widgets. Cada empresa de consumo de widgets possui um pedido aberto para um widget por dia, até uma data de término, e um preço no qual está disposto a comprar os widgets. Por outro lado, cada empresa produtora de widgets possui uma data de início na qual pode começar a entregar widgets e um preço no qual ele irá entregar cada widget.</p>
+
+<p>Devido a leis de concorrência leal, você pode assinar um contrato com apenas uma empresa produtora e apenas uma empresa de consumo. Você vai comprar widgets da empresa produtora, um por dia, a partir do dia em que pode começar a ser entregue e terminando na data especificada pelo cliente. Em cada um desses dias você ganha a diferença entre o preço de venda do produtor e o preço de compra do consumidor.</p>
+
+<p>Seu objetivo é escolher a empresa de consumo e a empresa produtora que maximizarão seus lucros.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+<p>A primeira linha de entrada contém dois inteiros <strong>m</strong> e <strong>n</strong> (1 &lt;= <strong>m</strong>; <strong>n</strong> &lt;= 500 000) indicando o número de empresas produtoras e consumidoras no mercado, respectivamente. Seguem-se linhas <strong>m</strong>, cujo <strong>i<sup>th</sup></strong>&nbsp;contém dois inteiros <strong>p<sub>i</sub></strong>&nbsp;e <strong>d<sub>i</sub></strong>&nbsp;(1 &lt;= <strong>p<sub>i</sub></strong>; <strong>d<sub>i</sub></strong> &lt;= 109), o preço (em dólares) no qual o <strong>i</strong>-ésimo produtor vende um widget e o dia em que o primeiro widget estará disponível nesta empresa. Em seguida, siga <strong>n</strong> linhas, sendo que o <strong>j<sup>th</sup></strong>&nbsp;contém dois inteiros <strong>q<sub>j</sub></strong>&nbsp;e <strong>e<sub>j</sub></strong>&nbsp;(1 &lt;= <strong>q<sub>j</sub></strong>; <strong>e<sub>j</sub></strong>&nbsp; &lt;= 109), o preço (em dólares) no qual o <strong>j<sup>th</sup></strong> consumidor está disposto a comprar widgets e o dia imediatamente após o dia em que o último widget deve ser entregue a esta empresa.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Mostre o número total máximo de dólares que você pode ganhar. Se não houver nenhuma maneira de assinar contratos que lhe ofereçam lucros, mostre 0.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2 2<br />
+1 3<br />
+2 1<br />
+3 5<br />
+7 2</p>
+
+                        </td>
+                        <td>
+                            <p>5</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                                <p>1 2<br />
+10 10<br />
+9 11<br />
+11 9</p>
+
+                        </td>
+                        <td>
+                            <p>0</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM-ICPC World Finals 2017
+            </p>
+        </div>
+
+    </body>
+</html>

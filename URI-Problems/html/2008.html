@@ -1,0 +1,119 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2008 - Expondo a Corrupção</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2008 - Expondo a Corrupção" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2008</span>
+				<h1>Expondo a Corrupção</h1>
+				<div>
+					<p>Por Walter Erquínigo Pezo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/pe.gif' alt='PE' /> Peru</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O Comitê Central em Nlogônia é formado por muitos membros do congresso. Como o sistema político é dicotômico, cada membro do congresso pertence a um dos dois partidos: o Partido Sério Mortal e o Partido Festa! Festa!. Por tradição, chamam-os de DSP e PPP, respectivamente.<br />
+					<br />
+Edward é um jornalista investigativo. Ele descobriu que os congressistas são corruptos e vai mudar de partido, se for oferecido à ele uma determinada quantidade de Nlogmoney. Cada membro do Congresso tem o seu preço específico, mas todos eles têm um preço. Como de costume na política, existem rivalidades entre alguns pares de congressistas. Rivais nunca aceitariam estar no mesmo partido. <br />
+<br />
+Edward tem um orçamento e quer usá-lo para fazer alguns congressistas mudarem de partido e assim coletar provas irrefutáveis ​​para sua investigação. Ao fazer isso, ele tem que respeitar rivalidades: depois que todos os políticos envolvidos aceitarem sua proposta, os rivais devem ser colocados em diferentes partidos.<br />
+<br />
+Edward quer causar o máximo impacto. Você pode ajudá-lo a descobrir o número máximo de congressistas que podem pertencer a DSP se ele usar no máximo todo o seu orçamento para esse objetivo? Da mesma forma, o que é o número máximo de membros do Congresso que pode pertencer a PPP sob o mesmo restrições?</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste; cada caso de teste é formatado como segue.<br />
+A primeira linha contém quatro inteiros <strong>D</strong>, <strong>P</strong>, <strong>R</strong> e <strong>B</strong>, que representam, respectivamente, o número de congressistas que, inicialmente, pertencem a DSP (1 ≤ <strong>D</strong> ≤ 100), o número de congressistas que, inicialmente, pertencem a PPP (1 ≤ <strong>P</strong> ≤ 100), o número de rivalidades entre os membros do congresso (1 ≤ <strong>R</strong> ≤ 2,000), e o orçamento do jornalista expresso em Nlogmoney (1 ≤ <strong>B</strong> ≤ 10<sup>4</sup>). Os membros do DSP são identificados com números inteiros de <strong>1</strong> a distintas <strong>D</strong>, enquanto os membros do PPP são identificados com inteiros distintos de <strong>1</strong> a <strong>P</strong>. A segunda linha contém <strong>D</strong> inteiros <strong>S<sub>1</sub></strong>, <strong>S<sub>2</sub></strong>, ..., <strong>S<sub>D</sub></strong>, indicando que <strong>i</strong> membro de DSP mudará de partido se oferecido <strong>S<sub>i</sub></strong> Nlogmoney (1 ≤ <strong>S<sub>i</sub> </strong>≤ 100 para <strong>i = </strong>1, 2, ..., <strong>D</strong>). A terceira linha contém inteiros <strong>P</strong> <strong>T<sub>1</sub>, T<sub>2</sub>, ..., T<sub>P</sub></strong>, indicando que <strong>j</strong> membros de PPP vão mudar de partido, se for oferecido <strong>T<sub>j</sub></strong> Nlogmoney (1 ≤ <strong>T<sub>j</sub></strong> ≤ 100 para <strong>j </strong>= 1, 2, ...<strong>, P</strong>). Cada uma das próximas <strong>R </strong>linhas descreve uma rivalidade com dois inteiros <strong>X</strong> e <strong>Y</strong>, onde <strong>X</strong> representa o membro de DSP e <strong>Y </strong>o de PPP que são rivais (1 ≤ <strong>X</strong> ≤ <strong>D</strong> e 1 ≤ <strong>Y</strong> ≤ <strong>P</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste na entrada, a saída deve conter dois números inteiros representando o número máximo de congressistas que podem pertencer a DSP usando o orçamento dado e, da mesma forma, o número máximo dos congressistas que pode pertencer a PPP usando o orçamento dado.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 3 2 55<br />
+20 30<br />
+40 30 1<br />
+2 3<br />
+1 3</p>
+
+							</td>
+							<td>
+								<p>3 4</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2 6 30<br />
+5 5 5<br />
+5 5<br />
+2 1<br />
+2 2<br />
+1 1<br />
+1 2<br />
+3 1<br />
+3 2</p>
+
+							</td>
+							<td>
+								<p>3 3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				
+				<p class="footer">
+					ICPC Latin American Regional – 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

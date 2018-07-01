@@ -1,0 +1,180 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2429 - Rodovia</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2429 - Rodovia" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2429</span>
+				<h1>Rodovia</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>As estradas da Nlogônia estão severamente danificadas, devido ao intenso fluxo de veículos pesados criado pelo desenvolvimento econômico do reino. Para resolver o problema, o rei da Nlogônia decretou que seriam construídas novas rodovias. O decreto determinou que:</p>
+
+<ul>
+	<li>todas as rodovias construídas terão mão única, e ligarão exatamente duas cidades;</li>
+	<li>nenhum par de rodovias se intersectará — serão construídos viadutos, túneis e pontes conforme necessário;</li>
+	<li>por razões orçamentárias, o número de rodovias a construir será igual ao número de cidades que existem na Nlogônia;</li>
+	<li>deve ser possível, partindo de qualquer cidade, chegar a qualquer outra cidade usando só as novas rodovias, sempre respeitando a mão das rodovias.</li>
+</ul>
+
+<p>O engenheiro-chefe do reino desenhou uma proposta de mapa viário; o rei verificou que o plano satisfaz as três primeiras restrições, mas não conseguiu verificar a última. Por isso, ele pediu que você escrevesse um programa que determina se o plano de rodovias permite viajar de qualquer cidade até qualquer outra cidade da Nlogônia.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha de cada caso de teste contém um inteiro <strong>N&nbsp;</strong>(2 ≤ <strong>N</strong> ≤ 10<sup>4</sup>), indicando o número de cidades. Cada uma das <strong>N</strong> linhas seguintes descrevem uma estrada: a linha contém dois inteiros <strong>A</strong> e <strong>B</strong>&nbsp;(<strong><em>A</em></strong>&nbsp;≠&nbsp;<strong><em>B</em></strong>)que indicam que existe uma estrada de mão única ligando a cidade A a outra cidade, B (as cidades são numeradas de 1 a N).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma única linha contendo um único caractere: ‘S’ se for possível ir de qualquer cidade a qualquer outra cidade por rodovias e ‘N’ caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+<p>1 2</p>
+
+<p>2 3</p>
+
+<p>3 1</p>
+
+							</td>
+							<td>
+								<p>S</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>3</p>
+
+<p>1 2</p>
+
+<p>2 3</p>
+
+<p>1 3</p>
+
+                    </td>
+                    <td>
+                        <p>N</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>6</p>
+
+<p>1 2</p>
+
+<p>2 3</p>
+
+<p>4 1</p>
+
+<p>5 6</p>
+
+<p>3 5</p>
+
+<p>6 4</p>
+
+                    </td>
+                    <td>
+                        <p>S</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+		<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>6</p>
+
+<p>1 2</p>
+
+<p>2 3</p>
+
+<p>3 1</p>
+
+<p>4 5</p>
+
+<p>5 6</p>
+
+<p>6 4</p>
+
+                    </td>
+                    <td>
+                        <p>N</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2013 Fase 1 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

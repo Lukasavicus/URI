@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1457 - Oráculo de Alexandria</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1457 - Oráculo de Alexandria" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1457</span>
+            <h1>Oráculo de Alexandria</h1>
+            <div>XIV Maratona de Programação IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Todo computólogo que se preza conhece o livro "O guia do mochileiro das galáxias" (The Hitchhiker’s Guide to the Galaxy) e sabe qual é a resposta para a pergunta fundamental sobre a vida, o universo e tudo mais. Mas, o que poucos sabem, é que a história de Douglas Adams é baseada em uma lenda egípcia, de um oráculo situado na cidade de Eskendereyya (Alexandria). Alexandria hoje é a maior cidade do Egito, com mais de 4 milhões de habitantes. Fica no delta do Nilo, e extende-se por 32km na costa do Mediterrâneo. Na Antiguidade, a cidade fundada em 331 a.C. por Alexandre, o Grande, foi umas das principais cidades do mundo e lá ficava o Farol de Alexandria (uma das 7 maravilhas do mundo antigo), a Biblioteca de Alexandria (a maior do mundo antigo) além de outras obras fantásticas. A lenda diz também que lá ficava o grande oráculo de Alexandria. Os habitantes da cidade entregavam ao oráculo pequenos bilhetes com números anotados, e recebiam de volta um número, que seria a resposta a uma pergunta fundamental do universo relacionada aos dois números dados.</p>
+
+                <p>No seu tratado de 227 d.C. Cleómenes de Naucratis (que se tornou administrador de Alexandria quando Alexandre partiu para suas conquistas) relata alguns resultados obtidos do oráculo:</p>
+
+                <ul>
+                    <li>Dados 8 e 1 o oráculo devolvia 40320;</li>
+                    <li>Dados 10 e 3, devolvia 280;</li>
+                    <li>Dados 4 e 2, devolvia 8;</li>
+                    <li>Dados 21 e 19, devolvia 42.</li>
+                </ul>
+
+                <p>Estudos modernos dão conta que o que o oráculo devolvia nada mais era que uma generalização do fatorial de um número inteiro. Como sabemos,</p>
+
+                <p class="center">N! = N x (N-1) x ... x 1.</p>
+
+                <p>O oráculo devolvia para os dados N e K o K-fatorial de N , ou seja,</p>
+
+                <p class="center">N x (N-K) x (N-2K) x (N-3K) x ...,</p>
+
+                <p>em que o produto era feito enquanto a diferença é maior ou igual a 1. Podemos representar o K-fatorial de um número por ele seguido por K exclamações:</p>
+
+                <ul>
+                    <li>8! = 40320;</li>
+                    <li>10!!! = 280;</li>
+                    <li>4!! = 8;</li>
+                    <li>21!!!!!!!!!!!!!!!!!!! = 42</li>
+                </ul>
+
+                <p>Dizem que ao ler sobre a lenda do oráculo de Eskendereyya, Douglas Adams teve sua inspiração para sua obra. Também, no Egito está a inspiração do Restaurante do fim do universo, mas isso é outra história...</p>
+
+                <p>Sua tarefa é dado inteiros N e K determinar K-fatorial de N.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+                <p>A primeira (e única) linha de cada instância contém um inteiro <strong>N</strong> seguido de <strong>K</strong> pontos de exclamação, onde 1 ≤ <strong>N</strong> ≤ 100 e 1 ≤ <strong>K</strong> ≤ 20.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada instância imprima uma linha contendo o <strong>K</strong>-fatorial de <strong>N</strong>.</p>
+
+                <p>É garantido que nenhuma instância na entrada possui resultado maior que 10<sup>18</sup>.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>4<br />
+                                3!<br />
+                                10!!!<br />
+                                19!!!!<br />
+                                4!!</p>
+
+                        </td>
+                        <td>
+                            <p>6<br />
+                                280<br />
+                                65835<br />
+                                8</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                XIV Maratona de Programação IME-USP 2010.</p>
+        </div>
+
+    </body>
+</html>

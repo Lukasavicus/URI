@@ -1,0 +1,109 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2476 - Entregas do Noel</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2476 - Entregas do Noel" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2476</span>
+				<h1>Entregas do Noel</h1>
+				<div>
+					<p>Por Gabriel Duarte, UNIFESO <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Por incrível que pareça, Papai Noel ainda não começou a fabricar os presentes que serão entregues no natal. Para ele não se atrasar foi bolado um plano para agilizar as entregas e a fabricação.</p>
+
+<p>O plano de Noel consiste em escolher duas crianças (<strong>A</strong> e <strong>B</strong>), para serem as primeiras a receberem os presentes, mas o que ele reparou é que no caminho entre a casa da criança <strong>A</strong> até a casa da criança <strong>B</strong>, ele acabará passando por outras crianças que também enviaram suas cartinhas com o que gostariam de ganhar. Portanto Noel decidiu que irá entregar todos os presentes das crianças que estão entre as casas <strong>A</strong> e <strong>B</strong> em apenas uma viagem.</p>
+
+<p>A parte da entrega é muito simples para o Noel, mas ele precisa otimizar a compra de matérias-primas para a confecção de todos os presentes, e é aqui que você entra para o auxiliar.</p>
+
+<p>Será dado a você o mapa com todas as casas onde ocorrerá entregas, que consiste em <strong>N</strong> casas, com <strong>N</strong> - 1 ligações, tendo exatamente um caminho entre cada uma delas, como Noel sempre viaja de trenó, todas as ligações podem ser usadas nos dois sentidos. Após isto Noel irá fazer diversas perguntas do tipo <strong>A</strong> <strong>B</strong>, e você deverá responder quantos presentes distintos ele terá que entregar no caminho entre a casa <strong>A</strong> e a casa <strong>B</strong>.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contêm dois inteiros <strong>N</strong> e <strong>M</strong> (2 ≤ <strong>N</strong> ≤ 10⁵, 1 ≤ <strong>M</strong> ≤ 10⁵), indicando respectivamente o total de casas e o total de perguntas que Noel irá fazer.</p>
+
+<p>Na próxima linha terá a descrição de cada presente que será entregue nas casas. Cada presente será uma palavra com letras minúsculas contendo no máximo 20 caracteres. O presente na posição <strong>i</strong>, indica o que a criança na casa <strong>i</strong> deseja ganhar.</p>
+
+<p>Segue então <strong>N</strong> - 1 linhas, contendo dois inteiros <strong>A</strong> e <strong>B</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong>, <strong>A</strong> != <strong>B</strong>), indicando que existe uma ligação entre as casas <strong>A</strong> e <strong>B</strong>.</p>
+
+<p><strong>M</strong> linhas seguem com dois inteiros <strong>A</strong> e <strong>B</strong>, representando a pergunta de Noel.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada pergunta de Noel, você deverá imprimir a quantidade distinta de presentes que serão entregues.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>8 4<br />
+carrinho boneca boneco bola videogame celular bicicleta bicicleta<br />
+1 2<br />
+1 3<br />
+1 4<br />
+3 5<br />
+3 6<br />
+3 7<br />
+4 8<br />
+2 5<br />
+7 8<br />
+7 7<br />
+6 7</p>
+
+							</td>
+							<td>
+								<p>4<br />
+4<br />
+1<br />
+3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Contest de Natal 2016.
+				</p>
+			</div>
+
+		</body>
+	</html>

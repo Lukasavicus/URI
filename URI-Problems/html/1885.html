@@ -1,0 +1,105 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1885 - Loteria Tailandesa</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema G - Loteria tailandesa" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1885</span>
+				<h1>Loteria Tailandesa</h1>
+				<div>
+					<p>Por Arthur Nascimento, Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Borommarachathirat IV (สมเด็จพระบรมราชาธิราชที่ 4) foi um monarca do reino de Ayutthaya no século XVI. Borommarachathirat IV decidiu organizar uma loteria para sua população de súditos, utilizando uma certa quantidade de dados. São dados tradicionais tailandeses, que podem ter várias faces, cada face podendo ocorrer com a mesma probabilidade.</p>
+
+<p>Por seu forte senso de justiça, o monarca exige que o sorteio seja perfeitamente justo, ou seja, que cada um de seus súditos tenha a mesma chance de ser sorteado. O sorteio consiste de um número finito de lançamentos e, após cada lançamento, é decidido se houve algum vencedor ou se será necessário realizar um novo lançamento. Os lançamentos devem seguir as seguintes regras:</p>
+
+<ul>
+	<li>vários dados podem ser jogados simultaneamente no mesmo lançamento;</li>
+	<li>resultados anteriores podem influenciar na escolha dos dados para os lançamentos seguintes;</li>
+	<li>um mesmo dado pode ser escolhido para vários lançamentos.</li>
+</ul>
+
+<p>O importante é garantir que, como resultado do sorteio, cada um dos habitantes tenha iguais chances de ser sorteado. Veja que nem sempre isso é possível. Por exemplo, se tivermos 5 pessoas e apenas um dado de 6 faces, não há como realizar o sorteio. Já com este dado é possível realizar o sorteio se a população for de 3, 6, 18, ou 36 pessoas, por exemplo.</p>
+
+<p>Sua tarefa neste problema é fazer um programa para ajudar o monarca a decidir se é possível realizar o sorteio com os dados disponíveis.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+<p>Cada instância é composta por duas linhas. A primeira linha contém 2 inteiros, <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>18</sup>) e <strong>K</strong> (0 ≤ <strong>K</strong> ≤ 10<sup>5</sup>), que representam o número de pessoas e o número de dados, respectivamente. A segunda linha contém <strong>K</strong> inteiros. O <em>i</em>-ésimo inteiro dessa linha, digamos <strong>f<sub>i</sub></strong> (1 ≤ <strong>f<sub>i</sub></strong> ≤ 10<sup>18</sup>), representa o número de faces do <em>i</em>-ésimo dado.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprima uma linha contendo um único caractere. Imprima 'Y' se for&nbsp;possível fazer o sorteio; caso contrário, imprima 'N'.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+18 1<br />
+6<br />
+10 2<br />
+4 6<br />
+1 0</p>
+
+
+							</td>
+							<td>
+								<p>Y<br />
+N<br />
+Y</p>
+
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIX Maratona de Programação IME-USP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

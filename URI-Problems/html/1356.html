@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1356 - Júpiter Ataca!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1356 - Júpiter Ataca!" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1356</span>
+            <h1>Júpiter Ataca!</h1>
+            <div><p>Por Fidel I. Schaposnik <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=""/> Argentina</p></div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Júpiter está invadindo! As principais cidades tem sido destruídas por espaçonaves Jovianas e a humanidade está lutando contra. Nlogônia está à frente da contraofensiva, invadindo os sistemas de controle das espaçonaves.</p>
+
+                <p>
+                    Diferente dos computadores Terráqueos, nos quais usalmente um byte possui 2<sup>8</sup> valores possíveis, os computadores Jovianos usam bytes com B possíveis valores, {0,1,...,B-1}. Os engenheiros de software Nlogonianos tem realizado engenharia reversa sobre o firmware das espaçonaves Jovianas, e planejam sabotá-lo de modo que as embarcações eventualmete autodestruam-se.</p>
+
+                <p>
+                    Como uma medida de segurança, entretanto, as espaçonaves Jovianas rodam um programa supervisor que periodicamente checa a integridade do firmware, aplicando hashing sobre porções dele e comparando o resultado contra valores bons conhecidos. Para aplicar o hashing sobre uma porção do firmware do byte na posição i até o byte na posição j, o supervisor usa a função de hashing</p>
+                <p class="center">
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1356.png" style="width: 277px; height: 62px;" />​</p>
+                
+
+                <p>
+                    onde P é um número primo. Por exemplo, se B = 20 e P = 139, enquanto os bytes 2 ao 5 do firmware tem os valores f<sub>2</sub> = 14, f<sub>3</sub> = 2, f<sub>4</sub> = 2 e f<sub>5</sub> = 4 então</p>
+
+                <p class="center" >
+                    H(<em>f</em><sub>2</sub>, . . . <em>f</em><sub>5</sub>) = B<sup>0&nbsp;</sup><em>f</em><sub>5</sub> + B<sup>1&nbsp;</sup><em>f</em><sub>4</sub> + B<sup>2</sup> <em>f</em><sub>3</sub> + B<sup>3&nbsp;</sup><em>f</em><sub>2</sub> (mod P)<br />
+                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 20<sup>0</sup> × 4 + 20<sup>1</sup> × 2 + 20<sup>2</sup> × 2 + 20<sup>3</sup> × 14 (mod 139)<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= 4 + 40 + 800 + 112000 (mod 139)<br />
+                    = 112844 (mod 139)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
+                    = 115&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+
+                <p>
+                    Os criptologistas Nlogonianos precisam encontrar um meio de sabotar o firmware sem esbarrar no supervisor. Como um primeiro passo, a você foi atribuída a função de escrever um programa para simular a intercalagem de dois tipos de comandos: edição de bytes do firmware pelos engenheiros de software Nlogonianos, e o cálculo de hashes de porções do firmware pelo program supervisor Joviano. No início da simulação o valor de cada byte é zero.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste é descrito usando várias linhas. A primeira linha contém quatro inteiros <strong>B, P, L</strong> e <strong>N</strong>, onde <strong>B</strong> é o número de possíveis valores de um byte Joviano, <strong>P</strong> é o módulo da hash Joviana (2 ≤ <strong>B</strong> &lt; <strong>P</strong> ≤ 10<sup>9</sup> e <strong>P</strong> primo), <strong>L</strong> é o comprimento (número de bytes Jovianos) do firmware das espaçonaves, e <strong>N</strong> é o número de comandos a simular (1 ≤<strong> L, N</strong> ≤ 10<sup>5</sup>). No início da simulação o valor de cada byte no firmware é f<sub>i</sub> = 0 para 1 ≤ i ≤ <strong>L</strong>. Cada uma das <strong>N</strong> linhas seguintes descreve um comando a simular. Cada descrição de comando começa com uma letra maiúscula que é ou um 'E' ou um 'H', com os seguintes significados.</p>
+
+                <ul>
+                    <li>'E': A linha descreve um comando de edição. A letra é seguida por dois inteiros <strong>I</strong> e <strong>V</strong> indicando que o byte na posição<strong> I </strong>do firmware (ou seja, f<sub>i</sub>) deve receber o valor <strong>V</strong> (1 ≤<strong> I</strong> ≤ <strong>L</strong> e 0 ≤ <strong>V</strong> ≤ <strong>B</strong>-1).</li>
+                    <li>'H': A linha descreve um comando de hash. A letra é seguida por dois inteiro I e J indicando que H(f<sub>i</sub>...f<sub>j</sub>) deve ser computado (1 ≤ <strong>I</strong> ≤ <strong>J</strong> ≤ <strong>L</strong>).</li>
+                </ul>
+
+                <p>
+                    O último caso de teste é seguido por uma linha contendo quatro zeros.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima os resultados de cada comando de hashing na entrada. Na i-ésima linha escreva um inteiro representando o resultado do i-ésimo comando de hashing. Imprima uma linha contendo um único caractere '-' (hífen) após cada caso de teste.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                20 139 5 7<br />
+                                E 1 12<br />
+                                E 2 14<br />
+                                E 3 2<br />
+                                E 4 2<br />
+                                E 5 4<br />
+                                H 2 5<br />
+                                E 2 14<br />
+                                10 1000003 6 11<br />
+                                E 1 3<br />
+                                E 2 4<br />
+                                E 3 5<br />
+                                E 4 6<br />
+                                E 5 7<br />
+                                E 6 8<br />
+                                H 1 6<br />
+                                E 3 0<br />
+                                E 3 9<br />
+                                H 1 3<br />
+                                H 4 6<br />
+                                999999935 999999937 100000 7<br />
+                                E 100000 6<br />
+                                E 1 7<br />
+                                H 1 100000<br />
+                                E 50000 8<br />
+                                H 1 100000<br />
+                                H 25000 75000<br />
+                                H 23987 23987<br />
+                                0 0 0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                115<br />
+                                -<br />
+                                345678<br />
+                                349<br />
+                                678<br />
+                                -<br />
+                                824973478<br />
+                                236724326<br />
+                                450867806<br />
+                                0<br />
+                                -</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2011.
+            </p>
+        </div>
+
+    </body>
+</html>

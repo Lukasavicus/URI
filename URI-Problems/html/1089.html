@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1089 - Loop Musical</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1089 - Loop Musical" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1089</span>
+                <h1>Loop Musical</h1>
+                <div><p>
+	Por Ricardo Anido&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" />&nbsp;Brasil</p></div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Um <em>loop musica</em>l é um trecho de música que foi composto para repetir continuamente (ou seja, o trecho inicia novamente toda vez que chega ao final), sem que se note descontinuidade. Loops são muito usados na sonorização de jogos, especialmente jogos casuais pela internet.</p>
+<p>
+	Loops podem ser digitalizados por exemplo utilizando PCM. PCM, do inglês Pulse Code Modulation, é uma técnica para representação de sinais analógicos, muito utilizada em áudio digital. Nessa técnica, a magnitude do sinal é amostrada a intervalos regulares de tempo, e os valores amostrados são armazenados em sequência. Para reproduzir a forma de onda amostrada, o processo é invertido (demodulação).</p>
+<p>
+	Fernandinha trabalha para uma empresa que desenvolve jogos e compôs um bonito loopmusical, codificando-o em PCM. Analisando a forma de onda do seu loop em um software de edição de áudio, Fernandinha ficou curiosa ao notar a quantidade de “picos” existentes. Um pico em uma forma de onda é um valor de uma amostra que representa um máximo ou mínimo local, ou seja, um ponto de inflexão da forma de onda. A figura abaixo ilustra (a) um exemplo de forma de onda e (b) o loop formado com essa forma de onda, contendo 48 picos.</p><br>
+<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1089_pt.png" style="width: 533px; height: 338px;"></p>
+<p>
+	Fernandinha é uma amiga muito querida e pediu sua ajuda para determinar quantos picos existem no seu loop musical.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém vários casos de teste. A primeira linha de um caso de teste contém um inteiro <em><strong>N</strong></em>, representando o número de amostras no loop musical de Fernandinha (<i>2 ≤ N ≤ 10<sup>4</sup></i>). A segunda linha contém <em><strong>N </strong></em>inteiros<i> H<sub>i</sub></i>, separados por espaços, representando a sequência de magnitudes das amostras(<i>-10<sup>4</sup> ≤ H<sub>i</sub> ≤ 10<sup>4</sup></i> para <i>1 ≤ i ≤ N</i>, <i>H<sub>1</sub> ≠ H<sub>N</sub></i> e <i>H<sub>i</sub> ≠ H<sub>i+1</sub></i> para <i>1 ≤ i &lt; N</i>). Note que <i>H<sub>1</sub></i> segue <i>H<sub>N</sub></i> quando o loop é reproduzido.</p>
+<p>
+	O final da entrada é indicado por uma linha que contém apenas o número zero.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste da entrada seu programa deve imprimir uma única linha, contendo apenas um inteiro, o número de picos existentes no loop musical de Fernandinha.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	2<br>
+	1 -3<br>
+	6<br>
+	40 0 -41 0 41 42<br>
+	4<br>
+	300 450 449 450<br>
+	0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	2<br>
+	2<br>
+	4</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                 </table> <p class="footer">
+             Maratona de Programação da SBC 2008.</p>
+            </div>
+
+        </body>
+    </html>

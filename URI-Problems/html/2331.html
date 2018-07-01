@@ -1,0 +1,128 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2331 - Uiquipédia</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2331 - Uiquipédia" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2331</span>
+				<h1>Uiquipédia</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A Uiquipédia (Wikipedia em inglês), fundada em 2001 por Jimmy Wales e Larry Sanger, é um site onde qualquer pessoa pode editar os artigos, fazendo correções ou ampliando seu conteúdo.</p>
+
+					<p>Uma das grandes vantagens da Uiquipédia sobre enciclopédias de papel é a facilidade de seguir <strong>referências</strong>; com um simples clique, é possível ir de um artigo para outro relacionado. Essas referências são chamadas de referências diretas. Também é possível navegar a Uiquipédia sequencialmente: cada artigo possui referência para o artigo anterior e para o posterior, na ordem alfabética. Essas referências são chamadas de referências sequenciais.</p>
+
+					<p>Por exemplo, um artigo para o termo "Elefante" pode ter uma referencia direta para "Mamiferos" em seu texto, desta forma pode-se chegar de "Elefante" a "Mamiferos" em um clique. Observe que pode não existir a referência direta contrária, ou seja, de "Mamiferos" para "Elefante". Adicionalmente se "Elevador" é o próximo artigo depois de "Elefante", na ordem alfabética, pode-se ir com um clique de "Elefante" para "Elevador" e de "Elevador" para "Elefante", pois há uma referência sequencial entre eles.</p>
+
+					<p>Paulo e André são dois amigos que contribuem para a Uiquipédia. Muitas vezes, André edita um artigo e quer que Paulo o ajude a revisar a modificação. A conexão de Paulo à Internet é discada, e por isso ele quer chegar na página que André editou usando o menor número de cliques possível, começando do artigo em que está, e navegando apenas por referências, diretas ou sequenciais.</p>
+
+					<p>Escreva um programa que, dados todas as referências diretas existentes na Uiquipédia, a página onde Paulo está, e a página editada por André, determina de quantos cliques Paulo precisa, no mínimo, para ver a página que foi modificada por André, utilizando as referências diretas e sequenciais.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do <em>dispositivo de entrada padrão</em> (normalmente o teclado). A primeira linha contém um único inteiro, <strong><em>N</em></strong> , que é o número de referências da Uiquipédia (1 ≤ <strong><em>N</em> </strong>≤ 1.000). As <em>N</em> linhas contém cada uma duas strings <em><strong>X</strong> </em>e <strong><em>Y</em></strong> , separadas por um espaço, que são os nomes de duas páginas da Uiquipédia conectadas por uma referência direta (de <strong><em>X</em></strong> para <strong><em>Y</em></strong> ). Todo artigo existente na Uiquipédia aparece pelo menos uma vez na descrição das referencias diretas, permitindo que as referencias sequenciais sejam extraídas das informações dadas. Note que uma referência direta pode ligar duas páginas que estariam ligadas também por uma referência sequencial.</p>
+
+					<p>Depois da descrição das referências, há uma linha em branco, e a linha seguinte contém duas cadeias de caracteres, <strong>P</strong> e <strong>A</strong>, que são a página atual de Paulo e a página editada por André. O nome de cada página é limitado a 100 caracteres e contém somente letras maiúsculas, letras minusculas e o símbolo '_'. Observe que na ordem alfabética o simbolo '_' é anterior às letras maiúsculas, que por sua vez são anteriores às letras minusculas</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na <em>saída padrão</em>, uma única linha, contendo um único inteiro, que diz o número mínimo de cliques que são necessários para ir da página atual de Paulo até a página editada por André. Sempre é possível navegar de um artigo a outro.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+							<p>3</p>
+
+							<p>Pink_Floyd O_Lado_Escuro_Da_Lua</p>
+
+							<p>Pink_Floyd O_Muro</p>
+
+							<p>O_Muro Muro_de_Berlim</p>
+
+							<br/>
+
+							<p>O_Muro O_Lado_Escuro_Da_Lua</p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+								<p>Chaves Quico</p>
+
+								<p>Quico Chiquinha Professor_Girafales Dona_Florinda</p>
+
+								<p>Chaves Dona_Clotilde</p> 
+
+								<br/>
+
+								<p>Chaves Chiquinha</p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2007 Fase 2 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

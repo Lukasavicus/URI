@@ -1,0 +1,108 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1910 - Ajude Clotilde</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1910 - Ajude Clotilde" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1910</span>
+				<h1>Ajude Clotilde</h1>
+				<div>
+					<p>Por Dâmi Henrique, Inatel <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Clotilde ama assistir novelas, porém o controle da sua televisão não é nada convencional. Ele possui apenas seis botões, o botão liga/desliga e cinco botões para mudar de canal.</p>
+
+					<p>Os botões de mudança de canal funcionam da seguinte maneira: +1 (avança um canal), -1(volta um canal), x2(vai para o dobro do canal atual), x3(vai para o triplo do canal atual) e /2(vai para a metade do canal atual, esse botão só funciona se o canal atual for par).</p>
+
+					<p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/Ajude_a_Dona_Clotilde_B.png" style="-webkit-transform:rotate(0.00rad); border:none; height:155px; transform:rotate(0.00rad); width:131px"; alt="help Clotilde" /></p>
+
+					<p style="text-align:center">Eis o famoso controle de Clotilde.</p>
+
+					<p>Os vizinhos de Clotilde costumam visitar sua casa nos finais de semana, assistem televisão e não voltam ao canal de sua novela, assim fazendo com que Clotilde perca muito tempo tentando achar o canal de seu interesse novamente.</p>
+
+					<p>Sua tarefa é, dado o número do canal atual e o número do canal de interesse de Clotilde, você deve calcular a menor quantidade de cliques nos botões necessária para sair de um e chegar no outro. Lembrando que como Clotilde é uma pessoa séria, ela não gosta de passar por alguns canais específicos, mesmo que tenha que apertar mais botões para chegar no canal destino. Outra restrição é, não existe canal menor igual a 0 ou maior que 10<sup>5</sup>. Ex: Se está no canal 55000, você não pode apertar o botão x2 nem o x3.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Haverá diversos casos de testes. Cada caso inicia com três inteiros, <strong>O</strong>, <strong>D</strong> e <strong>K </strong>(1 ≤ <strong>O</strong>, <strong>D</strong> ≤ 10<sup>5</sup>, 0 ≤ <strong>K</strong> ≤ 100), representando, respectivamente, o canal de origem, destino, e a quantidade de canais que Clotilde não quer passar. A segunda linha conterá os <strong>K</strong> canais proibidos por Clotilde. É garantido que o canal de origem e destino nunca serão proibidos.</p>
+
+					<p>A entrada termina com <strong>O</strong> = <strong>D</strong> = <strong>K</strong> = 0, a qual não deve ser processada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso, exiba uma única linha, a menor quantidade de cliques nos botões necessária para ir do canal de origem ao destino ou -1 caso seja impossível chegar ao canal de destino devido as restrições de Clotilde.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 8 2</p>
+
+								<p>4 5 </p>
+
+								<p>2 5 5</p>
+
+								<p>1 3 10 6 4</p>
+
+								<p>13 1 4</p>
+
+								<p>15 12 100 5</p>
+
+								<p>0 0 0</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+								<p>-1</p>
+
+								<p>6</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+	
+				<p class="footer">
+					Codando na Vila - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

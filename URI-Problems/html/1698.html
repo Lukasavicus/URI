@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1698 - Metrô Brasileiro</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1698 - Metrô Brasileiro" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1698</span>
+                <h1>Metrô Brasileiro</h1>
+                <div>
+                    <p>Por Caique Porto Lira, ITA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Um grande terremoto destruiu todo o sistema de metrô de São Paulo, porém o Brasil irá ser o anfitrião da Copa do Mundo, de forma que o Governo resolveu tomar duas medidas: A primeira é comprar um sistema de teletransporte entre duas estações de metrô, a segunda é, com a intenção de evitar custos desnecessários, reconstruir algumas rotas de metrô de forma que exista exatamente um caminho entre qualquer par de estações de metrô. Uma configuração é um possível sistema de metrô resultante após as medidas do Governo. Dado o antigo sistema de metrô, determine qual o par de cidades que, se conectadas pelo sistema de teletransporte, geram o número máximo de possíveis configurações.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada consiste de vários casos de teste e termina com final de arquivo (<strong>EOF</strong>).</p>
+                    
+                    <p>Na primeira linha de cada caso de teste temos dois inteiros <strong>N</strong> e <strong>M</strong> (1 &lt; <strong>N</strong> &lt;= 12 e <strong>N</strong> - 1 &lt;= <strong>M</strong> &lt; <strong>N*</strong>(<strong>N</strong> - 1)/2), as próximas <strong>M</strong> linhas contém inteiros <strong>A</strong> e <strong>B</strong> (0 &lt;= <strong>A</strong>, <strong>B</strong> &lt;= <strong>N</strong> - 1), significando que as estações <strong>A</strong> e <strong>B</strong> estavam conectadas por uma rota antes do terremoto.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima dois números <strong>A</strong> e <strong>B</strong> (<strong>A</strong> &lt; <strong>B</strong>) indicando os índices das duas estações que deverão ser conectadas pelo sistema de teletransporte para que o número de configurações possíveis seja o maior possível. Em caso de múltiplas respostas possíveis, imprima a lexicograficamente menor.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>6 6</p>
+
+                                <p>0 1</p>
+
+                                <p>0 2</p>
+
+                                <p>1 2</p>
+
+                                <p>0 3</p>
+
+                                <p>1 4</p>
+
+                                <p>2 5</p>
+
+                            </td>
+                            <td>
+                                <p>3 4</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Road to Fortaleza II 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

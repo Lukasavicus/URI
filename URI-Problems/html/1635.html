@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1635 - Resultado das Eleições</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1635 - Resultado das Eleições" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1635</span>
+                <h1>Resultado das Eleições</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Antes das eleições no ano de 2009 para o Parlamento Europeu, Bill e Ted pediram a seus amigos que opinassem acerca do resultado das eleições. Agora que os resultados foram divulgados, Bill e Ted querem averiguar quem palpitou de maneira correta. Se eles, entretanto, fossem verificar os palpites de cada um de seus amigos - que são muitos - um por um, levariam muito tempo, precisam, portanto, que esta verficação seja feita por um computador. Uma vez que eles não são muito bons em programação, eles precisam de sua ajuda.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>As informações providas por Bill e Ted têm o seguinte formato: a primeira linha consiste em um número <strong>p</strong>&nbsp;de partidos seguido por um número <strong>a</strong>&nbsp;de adivinhações&nbsp;&nbsp;(com&nbsp;<strong><em>1 ≤ p ≤ 50</em></strong>&nbsp;e&nbsp;<strong><em>1 ≤ a ≤ 10000</em></strong>). Tem-se na sequência&nbsp;<strong>p</strong>&nbsp;linhas, cada linha contedo o nome de um partido (estes somente podem ser escritos com letras de a-z, A-Z, dígitos de 0-9 e tamanho&nbsp;≤ 20) e o percentual adquirido por este partido (com um ponto após a casa decimal). Depois dos partidos, seguem-se <strong>a</strong>&nbsp;linhas, cada uma contendo um palpite. Um palptite, ou adivinhação, tem forma <strong>A<em><sub>1</sub>&nbsp;+ A<sub>2</sub>&nbsp;+ ... + A<sub>k</sub>&nbsp;COMP n</em></strong><em>,&nbsp;</em>onde&nbsp;<strong>A<em><sub>1&nbsp;</sub></em></strong>até&nbsp;<strong><em>A<sub>k&nbsp;</sub></em></strong>são nomes de partidos,&nbsp;<strong><em>COMP&nbsp;</em></strong>é um dos operadores de comparação,&nbsp;&lt;, &gt;, &lt;=, &gt;= ou&nbsp;=; e&nbsp;<strong>n</strong>&nbsp;é um inteiro entre 0 e 100, inclusos.&nbsp;</p>
+
+<p>Cada partido somente pode ser citado uma vez em cada palpite.</p>
+
+<p><strong>Obs:</strong> Cuidado com a comparação entre valores de ponto flutuante, porque alguns valores na entrada (como 0,1) não têm uma representação exata de um número de ponto flutuante.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada palpite, some o percentual adquirido por cada partido e compare com o inteiro especificado&nbsp;<strong>n</strong>. Então, imprima uma linha informando se o palpite estava correto. Consulte o exemplo para mais detalhes.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>6 5</p>
+
+<p>CDU 30.7</p>
+
+<p>SPD 20.8</p>
+
+<p>Gruene 12.1</p>
+
+<p>FDP 11.0</p>
+
+<p>DIELINKE 7.5</p>
+
+<p>CSU 7.2</p>
+
+<p>FDP &gt; 11</p>
+
+<p>CDU + SPD &lt; 50</p>
+
+<p>SPD + CSU &gt;= 28</p>
+
+<p>FDP + SPD + CDU &lt;= 42</p>
+
+<p>CDU + FDP + SPD + DIELINKE = 70</p>
+
+                            </td>
+                            <td>
+							 <p>Guess #1 was incorrect.<br />
+								Guess #2 was incorrect.<br />
+								Guess #3 was correct.<br />
+								Guess #4 was incorrect.<br />
+								Guess #5 was correct.</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    
+					Univeristy of Ulm Local Contest 2009 
+                </p>
+            </div>
+
+        </body>
+    </html>

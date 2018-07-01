@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1988 - Circuitos Turísticos</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br"/>
+            <meta name="description" content="URI Online Judge - Problema 1988 - Circuitos Turísticos"/>
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag(){dataLayer.push(arguments);}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-28047757-1');
+		</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1988</span>
+                <h1>Circuitos Turísticos</h1>
+                <div>
+                    <p>Por Joaquin Rodrigues, Universidad de Buenos Aires <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR'/> Argentina</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Todo mundo está ciente da existência do bem conhecido arquipélago Nordenskjold, situado no Oceano Ártico e pertencente ao Krasnoyarsk Krai da Rússia. Este arquipélago é constituído por um grupos de ilhas <strong>N</strong> e <strong>M</strong> rotas aquáticas entre alguns pares de ilhas. Cada percurso liga um par de ilhas e para cada par, há no máximo um percurso ligando-os.</p>
+
+                    <p>Considerando a popularidade do Archipelago Nordenskjold, autoridades de Krasnoyarsk estão preocupadas com o seu valor turístico. O valor turístico do arquipélago é dado pelo número total de ilhas que pertencem a pelo menos um "circuito turístico". Um circuito turístico é um caminho que começa e termina na mesma ilha que visita pelo menos três diferentes ilhas, nunca visita a mesma ilha mais de uma vez e usa apenas as rotas aquáticas para ir de uma ilha para a próxima.</p>
+
+                    <p>Autoridades de Krasnoyarsk quer saber o número mínimo de rotas aquáticas adicionais que devem ser construídas de modo que cada ilha pertença a pelo menos um circuito turístico. Sua tarefa é escrever um programa que responde a esta pergunta.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada teste é descrito em várias linhas. A primeira linha contém dois números inteiros <strong>N</strong> e <strong>M</strong> (3 &lt;= <strong>N</strong> &lt;= 100, 1 &lt;= <strong>M</strong> &lt;= 1000) que indicam o número de ilhas e o número de vias aquáticas, respectivamente. Cada ilha é identificada por um número entre 1 e <strong>N</strong>. Cada uma das <strong>M</strong> linhas seguintes contém dois inteiros <strong>U</strong> e <strong>V</strong> (1 &lt;= <strong>U</strong> &lt;<strong>V</strong> &lt;= <strong>N</strong>), indicando que existe um percurso de ligação aquático ilhas <strong>U</strong> e <strong>V</strong>. Pode-se supor que em cada caso de teste existe no máximo um percurso aquático que liga o mesmo par de ilhas. A última linha da entrada contém o número -1 duas vezes e não deve ser processado como um caso de teste.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima em uma única linha um inteiro que representa o número mínimo de vias aquáticas adicionais que devem ser construídas de modo que cada ilha pertença a pelo menos um circuito turístico.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 1<br/>
+
+1 3<br/>
+
+9 10<br/>
+
+1 2<br/>
+
+2 3<br/>
+
+1 3<br/>
+
+7 9<br/>
+
+5 9<br/>
+
+5 7<br/>
+
+6 8<br/>
+
+4 6<br/>
+
+4 8<br/>
+
+8 9<br/>
+
+4 4<br/>
+
+1 2<br/>
+
+1 4<br/>
+
+1 3<br/>
+
+2 3<br/>
+
+12 9<br/>
+
+1 7<br/>
+
+2 6<br/>
+
+4 9<br/>
+
+9 10<br/>
+
+8 12<br/>
+
+1 5<br/>
+
+1 8<br/>
+
+8 11<br/>
+
+4 10<br/>
+
+-1 -1</p>
+
+                            </td>
+                            <td>
+                                <p>2<br/>
+
+0<br/>
+
+1<br/>
+
+4</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Torneo Argentino de Programación — ACM–ICPC 2011
+                </p>
+            </div>
+
+        </body>
+    </html>

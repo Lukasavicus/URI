@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2522 - Rede do DINF</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2522 - Rede do DINF" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2522</span>
+			<h1>Rede do DINF</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>O prédio do Departamento de Ilhas Naturais Federais (DINF) está passando por uma grande reforma. Por isso, os antigos laboratórios de informática foram destruídos, e um novo será construído no segundo andar do prédio.</p>
+
+				<p>Existem <strong>N</strong> computadores no novo laboratório, numerados de 1 a <strong>N</strong>. Para cada computador <em>i</em>, 1 ≤ <em>i</em> ≤ <strong>N</strong>, é conhecida a posição (<strong>x<sub>i</sub></strong>,<strong>y<sub>i</sub></strong>) na qual ele está instalado. Agora, é necessário construir a rede que irá conectar todos os computadores do laboratório. Para tal, é possível construir cabos de rede entre pares de computadores. Para que a rede seja válida, os cabos devem ligar os computadores de tal forma que seja possível enviar uma mensagem de qualquer máquina para qualquer outra no laboratório, passando por um ou mais cabos instalados. A figura abaixo exemplifica uma possível configuração de uma rede válida:</p>
+
+				<p class="center"><img src='https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2522.png' alt=''/></p>
+
+				<p>Sua tarefa é, dadas as posições de cada computador no laboratório, determinar o comprimento total mínimo de cabo de rede necessário para construir uma rede válida.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha de cada caso de teste contém o inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 500), o número de computadores no laboratório. As próximas <strong>N</strong> linhas contém dois inteiros <strong>x<sub>i</sub></strong> e <strong>y<sub>i</sub></strong> cada (1 ≤ <strong>x<sub>i</sub></strong>, <strong>y<sub>i</sub></strong> ≤ 10<sup>4</sup>), indicando a posição de um computador. Não há mais de um computador na mesma posição.</p>
+
+					<p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma única linha contendo o comprimento total mínimo de cabo de rede necessário. Arredonde e imprima a resposta com exatamente duas casas decimais.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4<br />
+							1 1<br />
+							5 1<br />
+							1 5<br />
+							5 5</p>
+
+						</td>
+						<td>
+							<p>12.00</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

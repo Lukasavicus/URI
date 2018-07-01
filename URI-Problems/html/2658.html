@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2658 - Acordes intergaláticos</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2658 - Acordes intergaláticos" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2658</span>
+			<h1>Acordes Intergaláticos</h1>
+			<div>
+				<p>Por Maratona de Programação da SBC – 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>A maratona de composição de sonatas para piano intergalático está&nbsp;tentando dificultar a vida dos competidores, pois cada vez mais seres de inteligência superior estão participando. O piano é&nbsp;composto de <strong>N</strong> teclas, numeradas de 0 a <strong>N</strong> − 1. O sistema tonal intergalático possui 9 notas musicais, com valores de 0 a 8. Inicialmente todas as teclas do piano estão associadas à&nbsp;mesma nota 1. O competidor vai tocar uma sequência de acordes. Cada acorde intergalático é&nbsp;composto por duas teclas distintas, <strong>a</strong> e <strong>b</strong>, 0 ≤ <strong>a</strong> &lt; <strong>b</strong> &lt; <strong>N</strong>. Quando o acorde é&nbsp;tocado, o piano vai emitir a nota mais frequente, <strong><em>f</em></strong>, entre todas as teclas do intervalo [<strong><em>a</em></strong>, <strong><em>b</em></strong>]. Se houver mais de uma nota mais frequente, ele emite a maior delas. Imediatamente após emitir a nota, o piano muda a nota associada a todas as teclas do intervalo [<strong>a</strong>,<em> <strong>b</strong></em>]. A nova nota associada à&nbsp;tecla <strong>k</strong>, <strong>a</strong> ≤<em> </em><strong>k </strong>≤ <strong>b</strong>, será&nbsp;a anterior mais <strong><em>f</em></strong>, módulo 9.</p>
+
+<p>Por exemplo, se em determinado momento as notas associadas a um piano de <strong>N</strong> = 15 teclas são</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2658-a.png"></p>
+
+<p>e o acorde [3, 9] é&nbsp;tocado, então a nota mais frequente será&nbsp;4 e as novas notas após o acorde serão:</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2658-b.png"></p>
+
+<p>Dada a sequência de <strong>Q</strong> acordes, seu programa deve imprimir as notas que estarão associadas às teclas do piano após todos os acordes da sequência terem sido tocados.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha da entrada contém dois inteiros, <strong>N </strong>(2 ≤ <strong>N</strong> ≤ 100000), e <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 100000), respectivamente o número de teclas do piano intergalático e a quantidade de acordes. As <strong>Q</strong> linhas seguintes contˆem, cada uma, dois inteiros <strong>A</strong> e <strong>B</strong>, (0 ≤ <strong>A</strong> &lt; <strong>B</strong> &lt; <strong>N</strong>), representando um acorde.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Seu programa deve imprimir <strong>N</strong> inteiros, um por linha, representando as notas associadas às teclas do piano, após todos os acordes terem sido tocados.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5 3</p>
+
+<p>1 2</p>
+
+<p>0 4</p>
+
+<p>0 2</p>
+
+						</td>
+						<td>
+							<p>5</p>
+
+<p>6</p>
+
+<p>6</p>
+
+<p>2</p>
+
+<p>2</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>15 15</p>
+
+<p>10 12</p>
+
+<p>4 5</p>
+
+<p>1 14</p>
+
+<p>6 10</p>
+
+<p>9 11</p>
+
+<p>11 12</p>
+
+<p>9 13</p>
+
+<p>8 9</p>
+
+<p>5 7</p>
+
+<p>11 13</p>
+
+<p>8 10</p>
+
+<p>11 12</p>
+
+<p>11 13</p>
+
+<p>8 14</p>
+
+<p>3 9</p>
+
+						</td>
+						<td>
+							<p>1</p>
+
+<p>2</p>
+
+<p>2</p>
+
+<p>1</p>
+
+<p>2</p>
+
+<p>6</p>
+
+<p>7</p>
+
+<p>7</p>
+
+<p>8</p>
+
+<p>6</p>
+
+<p>4</p>
+
+<p>4</p>
+
+<p>8</p>
+
+<p>0</p>
+
+<p>4</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				Maratona de Programação da SBC – ACM ICPC – 2017
+			</p>
+		</div>
+
+	</body>
+</html>

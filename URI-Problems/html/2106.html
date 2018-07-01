@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2106 - Montagem</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2106 - Montagem" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2106</span>
+                <h1>Montagem</h1>
+                <div>
+                    <p>Por XIII Maratona de Programação IME-USP, 2009 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Estamos no ano de 2931. Cientistas detectaram um meteoro que, em 15 meses, irá colidir com a Terra e extinguir a vida no planeta. Não há mais tempo para preparar ofensivas contra o meteoro, então só nos resta realizar nossos últimos desejos e esperar a colisão.</p>
+
+                    <p>Um grupo de pessoas resolve se unir e realizar o último sonho de centenas de milhares de pessoas: ver a Portuguesa campeã da Copa Libertadores da América. Para tal, será necessário a contratação de jogadores de grande habilidade, que também são muito caros.</p>
+
+                    <p>Para conseguir fazer isso, eles estudaram a personalidade dos melhores jogadores do mundo, e chegaram à conclusão que alguns aceitariam jogar na Portuguesa mais facilmente (isto é, seria contratado por um preço menor) se percebessem que seriam as únicas "estrelas"do time. Já outros, viriam mais facilmente caso percebessem que na Portuguesa já existem outras estrelas.</p>
+
+                    <p>Assim, através de um estudo mais detalhado das personalidades, conseguiram definir, para cada jogador, qual seria o preço para contratá-los em vários cenários.</p>
+
+                    <p>Por exemplo, o jogador X poderia ser contratado por $3 se fosse a única estrela do time ou por $5 se já houvesse 1 estrela no time antes dele entrar. Já o jogador Y seria contratado por $4 se fosse a única estrela do time, ou $2 se já houvesse uma estrela no time.</p>
+
+                    <p>Nesse cenário, a melhor maneira de contratar X e Y seria contratar primeiro o jogador X por $3 e depois Y por $2, gastando $5 no total.</p>
+
+                    <p>Você receberá os dados dos custos de contratação dos jogadores em cada cenário, e deverá dizer quanto os torcedores da Lusa deverão economizar para montar o time dos sonhos e conquistar a tão sonhada Libertadores.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém várias instâncias.</p>
+
+                    <p>A primeira linha contém um número inteiro <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 18), representando a quantidade de jogadores a serem contratados. Cada uma das próximas <strong>N</strong> linhas representa um jogador. Cada uma possui <strong>N</strong> inteiros <strong>c<sub>0</sub></strong> , <strong>c<sub>1</sub></strong> , <strong>c<sub>2</sub></strong> , ... <strong>c<sub>N−1</sub></strong> (1 ≤ <strong>c<sub>i</sub></strong> ≤ 1000, para todo 0 ≤ <strong>i</strong> &lt; <strong>N</strong>) separados por espaços, onde <strong>c</strong> <strong>k</strong> representa o custo para se contratar o jogador <strong>c</strong> se já tiverem sido contratados <strong>k</strong> jogadores.</p>
+
+                    <p>A entrada termina quando <strong>N</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância na entrada, imprima uma linha com um inteiro representando a quantidade mínima de dinheiro que deverá ser gasto para a contratação dos <strong>N</strong> jogadores.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3<br />
+4 2 4<br />
+2 2 3<br />
+3 1 5<br />
+2<br />
+1 2<br />
+2 2<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>7<br />
+3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XIII Maratona de Programação IME-USP, 2009
+                </p>
+            </div>
+
+        </body>
+    </html>

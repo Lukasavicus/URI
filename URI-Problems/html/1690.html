@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1690 - Soma de Subconjuntos</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1690 - Soma de Subconjuntos" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1690</span>
+                <h1>Soma de Sobconjuntos</h1>
+                <div>
+                    <p>Por Bruno Adami, ICMC - USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1 segundo</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Você tem em mãos um array de números inteiros positivos, não necessariamente distintos.</p>
+
+                    <p>Vamos escolher alguns dos números no array, isto é, um subconjunto não vazio do array original. O valor de um subconjunto é a soma dos elementos contidos nele.</p>
+
+                    <p>Qual é o menor valor de um subconjunto que não pode ser gerado?</p>
+
+                    <p><br />
+                    Por exemplo, pegue o array [2, 1, 5]. Os seguintes subconjuntos pode ser formados: [1], [2], [5], [1, 2], [1, 5], [2, 5], [1, 2, 5]. Os seus valores são os seguintes: 1, 2, 5, 3, 6, 7, 8, respectivamente. O valor menor do subconjunto que não pode ser gerado, neste caso, é 4.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém um número <strong>T</strong> (<strong>1</strong> ≤ <strong>T</strong> ≤ <strong>1000</strong>), indicando que se seguirão <strong>T</strong> casos de teste.</p>
+
+                    <p>Para cada teste, a primeira linha conterá um número <strong>N</strong> (<strong>1</strong> ≤ <strong>N</strong> ≤ <strong>10000</strong>), indicando a quantidade de números que existem no array. A linha seguinte conterá <strong>N</strong> inteiros positivos separados por espaços, entre 1<strong></strong> a <strong>10<sup>9</sup></strong>.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma única linha, a resposta para o problema.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+                                <p>1</p>
+
+                                <p>1</p>
+
+                                <p>1</p>
+
+                                <p>2</p>
+
+                                <p>3</p>
+
+                                <p>2 1 5</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+
+                                <p>1</p>
+
+                                <p>4</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    A resposta pode não caber em um inteiro de 32 bits! Dados de entrada gigantesco, cuidado com certas linguagens!<br/>
+                    Contest Road to Fortaleza II 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

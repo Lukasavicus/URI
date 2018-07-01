@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1367 - Ajude!</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1367 - Ajude!" />
+            
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1367</span>
+                <h1>Ajude!</h1>
+                <div><p>Maratona de Programacao da SBC, Warm-Up <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt="" /> Brasil</p></div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+                    Então, nós temos que admitir: precisamos da sua ajuda. Esse ano as coisas não estao correndo tão tranquilamente quanto queríamos, e nós não conseguimos finalizar o sistema do software da competição a tempo. Uma parte vital está faltando, e como você sabe, nós precisamos desse sistema funcionando até essa tarde, para a verdadeira competição. A parte que está faltando é a que computa a pontuação dos times, dada a lista de submissões desse time.</p>
+
+                    <p>
+                        Por favor, por favor, alguém nos ajude!</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+                    A entrada contém vários casos de teste. A primeira linha de caso de teste contém um único inteiro <b>N</b> indicando o número de submissões do caso de teste (1 ≤ <b>N</b> ≤ 300). Cada uma das <b>N</b> linhas seguintes descrevem uma submissão; cada uma dessas linhas contém um identificador de problema (uma única letra entre 'A' e 'Z'), seguida por um inteiro <b>T</b> representando o tempo em minutos (0 ≤ <b>T</b> ≤ 300), seguido por um julgamento (a palavra "correct", correto, ou a palavra "incorrect", incorreto).</p>
+                    <p>
+A entrada está em ordem crescente de tempo, e haverá no máximo um julgamento "correct" para cada problema. O final da entrada é indicado por <b>N</b> = 0.
+A entrada deve ser lida da entrada padrão.</p>
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+                    Para cada caso de teste a entrada do seu programa deve imprimir uma linha contendo dois inteiros <b>S</b> e <b>P</b>, separados por um espaço, onde <b>S</b> é o número de problemas distintos com o julgamento "correct" e <b>P</b> é o tempo no qual cada problema distinto foi julgado pela primeira vez como "correct", somado a 20 para cada julgamento "incorrect" recebido nesse problema (desde que no final o problema tenha sido julgado como "correct").
+                    A saída deve ser escrita na saída padrão.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+                                    3<br />
+A 120 incorrect<br />
+A 130 incorrect<br />
+A 200 incorrect<br />
+5<br />
+A 100 correct<br />
+B 110 incorrect<br />
+B 111 correct<br />
+C 200 correct<br />
+D 300 incorrect<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>
+                                    0 0<br />
+3 431</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                    Maratona de Programacao da SBC 2004.
+                    </p>
+            </div>
+
+        </body>
+    </html>

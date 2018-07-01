@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1029 - Fibonacci, Quantas Chamadas?</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1029 - Fibonacci, Quantas Chamadas?" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1029</span>
+                <h1>Fibonacci, Quantas Chamadas?</h1>
+                <div><p>
+				Por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+				</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Quase todo estudante de Ciência da Computação recebe em algum momento no início de seu curso de graduação algum problema envolvendo a sequência de Fibonacci. Tal sequência tem como os dois primeiros valores 0 (zero) e 1 (um) e cada próximo valor será sempre a soma dos dois valores imediatamente anteriores. Por definição, podemos apresentar a seguinte fórmula para encontrar qualquer número da sequência de Fibonacci:<br />
+	<span class="code">
+	fib(0) = 0<br />
+	fib(1) = 1<br />
+	fib(n) = fib(n-1) + fib(n-2);</span></p><p>
+	Uma das formas de encontrar o número de Fibonacci é através de chamadas recursivas. Isto é ilustrado a seguir, apresentando a árvore de derivação ao calcularmos o valor fib(4), ou seja o 5º valor desta sequência:</p>
+	<br />  <p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1029.png" style="width: 468px; height: 265px;" /></p>
+	<br />
+	Desta forma,
+<ul>
+	<li>
+		fib(4) = 1+0+1+1+0 = 3</li>
+	<li>
+		Foram feitas 8 calls, ou seja, 8 chamadas recursivas.</li>
+</ul>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A primeira linha da entrada contém um único inteiro <strong>N</strong>, indicando o número de casos de teste. Cada caso de teste contém um inteiro <strong>X</strong> (1 ≤ <strong>X</strong> ≤ 39) .</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste de entrada deverá ser apresentada uma linha de saída, no seguinte formato: fib(n) = <strong>num_calls</strong> calls = <strong>result</strong>, aonde <strong>num_calls</strong> é o número de chamadas recursivas, tendo sempre um espaço antes e depois do sinal de igualdade, conforme o exemplo abaixo.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	2<br />
+	5<br />
+	4</p>
+
+                            </td>
+                            <td>
+                                <p>
+                                fib(5) = 14 calls = 5<br />
+                                fib(4) = 8 calls = 3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    
+            </div>
+
+        </body>
+    </html>

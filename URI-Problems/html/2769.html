@@ -1,0 +1,90 @@
+﻿
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2769 - Linha de Montagem</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema C - Linha de Montagem" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+		
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2769</span>
+			<h1>Linha de Montagem</h1>
+			<div>
+				<p>Por André Fillipi, INATEL <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Com o advento dos conceitos da Indústria 4.0 e a evolução da internet das coisas, se tornou simples acompanhar todas as etapas da produção de um produto em uma linha de montagem. De posse das informações, é possível otimizar a produção e diminuir o tempo gasto até que esteja pronta.</p>
+
+<p>Uma indústria apresenta o seguinte esquema de produção:</p>
+
+<p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2769.png" alt="" style="height:248px; width:720px" /></p>
+
+<p>Sabendo o tempo gasto em cada estação, e o tempo para trocar entre as duas linhas de montagem, calcule o menor tempo em que é possível realizar a produção de um item.</p>
+			</div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A entrada possui vários casos de teste (EOF). A primeira linha contém um inteiro&nbsp;<strong>N</strong>, o número de etapas na linha de produção. A segunda linha contém dois inteiros&nbsp;<strong>e<sub>1</sub>&nbsp;</strong>e&nbsp;<strong>e<sub>2</sub></strong>, o tempo gasto para a entrada em cada uma das linhas de produção. A próxima linha possui&nbsp;<strong>N</strong>&nbsp;valores,&nbsp;<strong>a<sub>11</sub></strong>,&nbsp;<strong>a<sub>12</sub></strong>, ...,&nbsp;<strong>a<sub>1n</sub></strong>, representando o tempo gasto para executar a iésima etapa na linha 1. A próxima também conterá &nbsp;<strong>N</strong>&nbsp;valores,&nbsp;<strong>a<sub>21</sub></strong>,&nbsp;<strong>a<sub>22</sub></strong>, ...,&nbsp;<strong>a<sub>2n</sub></strong>&nbsp;com os tempos de cada etapa na&nbsp;linha 2. As próximas duas conterá&nbsp;<strong>N-1</strong>&nbsp;inteiros representando os tempos de transição da linha 1 para a linha 2,&nbsp;&nbsp;<strong>t<sub>11</sub></strong>,&nbsp;<strong>t<sub>12</sub></strong>, ...,&nbsp;<strong>t<sub>1n-1</sub></strong>&nbsp;e da linha 2 para a linha 1,&nbsp;&nbsp;<strong>t<sub>21</sub></strong>,&nbsp;<strong>t<sub>22</sub></strong>, ...,&nbsp;<strong>t<sub>2n-1</sub></strong>, respectivamente. Por fim, mais dois inteiros&nbsp;<strong>x<sub>1</sub></strong>&nbsp;e&nbsp;<strong>x<sub>2</sub></strong><sub>&nbsp;</sub>representando o tempo de saída de cada linha.</p>
+
+<p>Considere que&nbsp;número de etapas por caso de teste estará entre 1 e 1000 e os demais valores entre 0 e 10<sup>5</sup>.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>A saída deve mostrar o tempo mínimo gasto na produção.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3</p>
+
+<p>1 1</p>
+
+<p>1 2 3</p>
+
+<p>3 2 1</p>
+
+<p>1 2</p>
+
+<p>2 1</p>
+
+<p>1 1</p>
+
+						</td>
+						<td>
+							<p>7</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+			<p class="footer">
+				V Maratona Norte Mineira de Programação
+			</p>
+		</div>
+	</body>
+</html>

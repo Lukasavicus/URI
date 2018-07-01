@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2528 - Cidade Proibida</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Cidade Proibida" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2528</span>
+			<h1>Cidade Proibida</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Suas férias estão finalmente prestes a começar! Para aproveitar o máximo seu merecido descanso, você decidiu viajar de Curytyba para Riacho de Fevereiro, uma grande cidade turística do país. Existem <strong>N</strong> cidades no país, numeradas de 1 a <strong>N</strong>. Curytyba é a cidade <strong>C</strong>, enquanto Riacho de Fevereiro é a cidade <strong>R</strong>. Além disso, exitem também <strong>M</strong> rotas disponíveis. Cada rota liga duas cidades <strong>A</strong> e <strong>B</strong>, pode ser utilizada para ir de <strong>A</strong> para <strong>B</strong> ou vice-versa, e leva exatamente uma hora para ser realizada.</p>
+
+<p>Tudo estaria bem para sua viagem se não fosse por um detalhe: o prefeito da cidade de Estadunido (cidade <strong>E</strong>), o sr. Donaldo Trumpe, em um decreto polêmico, proibiu todo cidadão de Curytyba de entrar em sua cidade! Por isso, você deve ir para Riacho de Fevereiro sem passar por Estadunido. Sua tarefa é determinar o menor número de horas necessárias para ir de Curytyba para Riacho de Fevereiro, sem passar por Estadunido.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém dois inteiros <strong>N</strong> e <strong>M</strong> (3 ≤ <strong>N</strong> ≤ 1000, 1 ≤ <strong>M</strong> ≤ <strong>N</strong>(<strong>N</strong>-1)/2), o número de cidades e de rotas no país, respectivamente. As próximas <strong>M</strong> linhas descrevem uma rota cada. Cada linha contém dois inteiros <strong>A</strong> e <strong>B</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong>, <strong>A</strong>≠<strong>B</strong>), indicando uma rota entre as cidades <strong>A</strong> e <strong>B</strong>. A última linha contém três inteiros <strong>C</strong>, <strong>R</strong> e <strong>E</strong> (1 ≤ <strong>C</strong>,<strong>R</strong>,<strong>E</strong> ≤ <strong>N</strong>, <strong>C</strong>≠<strong>R</strong>≠<strong>E</strong>), indicando qual cidade é Curytyba, Riacho de Fevereiro e Estatunido, respectivamente.</p>
+
+<p>Nenhuma rota aparece mais de uma vez na entrada. É garantido que é possível ir da cidade <strong>C</strong> para a cidade <strong>R</strong> sem passar pela cidade <strong>E</strong>, utilizando as rotas dadas na entrada.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha contendo o número mínimo de horas necessárias para ir da cidade <strong>C</strong> para a cidade <strong>R</strong>, sem passar pela cidade <strong>E</strong>.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3 1<br />
+1 3<br />
+1 3 2<br />
+							5 5<br />
+1 3<br />
+3 2<br />
+1 4<br />
+4 5<br />
+5 2<br />
+1 2 3</p>
+						</td>
+						<td>
+							<p>1<br />
+							3</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

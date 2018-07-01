@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1994 - Imperialismo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1994 - Imperialismo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1994</span>
+                <h1>Imperialismo</h1>
+                <div>
+                    <p>Por Joaquin Rodrigues, Universidad de Buenos Aires <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A ambição de conquista e expansão é uma doença muito conhecida no planeta Terra... E também em todo o universo.</p>
+
+                    <p>No planeta "Imperius" várias fortalezas foram construídas uma de cada vez e cada uma delas, menos a primeira, estavam ligadas no momento da sua construção para uma fortaleza previamente construída por um caminho direto, para fins comerciais.</p>
+
+                    <p>Imperius estava se tornando um dos planetas mais pacífico e próspero no universo, até que eles pararam de construir mais fortalezas. Naquele momento, surgiram <strong>N</strong> diferentes impérios (numeradas de 1 a <strong>N</strong>), cada um deles dominando uma fortaleza diferente. E a sede de conquista se apoderou de Imperius. Assim, a cada ano, exatamente um dos impérios vivos conquista cada império vizinho, e domina cada fortaleza pertencente a eles. Dois impérios são considerados vizinhos se existem duas fortalezas unidas por um caminho, cada uma dominada por um império diferente destes dois.</p>
+
+                    <p>Eventualmente um único império vai dominar cada fortaleza. Sua tarefa é encontrar o número mínimo de anos que isso pode acontecer.</p>
+
+                    <p>Como um exemplo, no lado esquerdo da figura abaixo um cenário possível é mostrado, onde seis fortalezas são inicialmente dominadas por seis impérios diferentes. Cada fortaleza é identificada com o número do império que a domina. Se o império 2 conquistou cada vizinho no primeiro ano, a situação seria como na figura central. Finalmente, se o império 5 conquistou seus impérios vizinhos, ele acabaria dominando cada fortaleza, como pode ser visto no lado direito da figura.</p>
+
+                    <p class="center">
+                        <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1994.png" /></p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada teste é descrito em duas linhas. A primeira linha contém um inteiro <strong>N</strong> (2 &lt;= <strong>N</strong> &lt;= 10<sup>4</sup>) representando o número de fortalezas no planeta Imperius. A linha seguinte contém <strong>N</strong>-1 inteiros <strong>P_i</strong> indicando que a fortaleza<strong> i </strong>+ 1 foi ligada a fortaleza <strong>P_i</strong> (1 &lt;= <strong>P_i</strong> &lt;=<strong> i</strong> para 1 &lt;=<strong> i </strong>&lt;=<strong> N</strong>-1). A última linha da entrada contém um único -1 e não deve ser processado como um caso de teste.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso, imprima a saída em uma única linha com um número inteiro representando o número mínimo de anos de modo que um único império possa dominar todas as fortalezas.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>6<br/>
+1 2 2 4 5<br/>
+7<br/>
+1 1 3 3 4 4<br/>
+6<br/>
+1 2 2 2 2<br/>
+-1</p>
+
+                            </td>
+                            <td>
+                                <p>2<br/>
+2<br/>
+1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Torneo Argentino de Programación — ACM–ICPC 2011
+                </p>
+            </div>
+
+        </body>
+    </html>

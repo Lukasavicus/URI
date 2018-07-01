@@ -1,0 +1,126 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2277 - Wire Crossing</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2277 - Wire Crossing" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2277</span>
+				<h1>Wire Crossing</h1>
+				<div>
+					<p>Por ICPC 2014 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ru.gif' alt='RU' /> Russian Federation</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Moore’s Law states that the number of transistors on a chip will double every two years. Amazingly, this law has held true for over half a century. Whenever current technology no longer allowed more growth, researchers have come up with new manufacturing technologies to pack circuits even denser. In the near future, this might mean that chips are constructed in three dimensions instead two. But for this problem, two dimensions will be enough.</p>
+
+					<p>A problem common to all two-dimensional hardware design (for example chips, graphics cards, motherboards, and so on) is wire placement. Whenever wires are routed on the hardware, it is problematic if they have to cross each other. When a crossing occurs special gadgets have to be used to allow two electrical wires to pass over each other, and this makes manufacturing more expensive.</p>
+
+					<p>Our problem is the following: you are given a hardware design with several wires already in place (all of them straight line segments). You are also given the start and end points for a new wire connection to be added. You will have to determine the minimum number of existing wires that have to be crossed in order to connect the start and end points. This connection need not be a straight line. The only requirement is that it cannot cross at a point where two or more wires already meet or intersect.</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_154_L.png" width="500" alt=""/> </center>
+
+					<p style="text-align:center">Figure L.1: First sample input</p>
+
+					<p>Figure L.1 shows the first sample input. Eight existing wires form five squares. The start and end points of the new connection are in the leftmost and rightmost squares, respectively. The black dashed line shows that a direct connection would cross four wires, whereas the optimal solution crosses only two wires (the curved blue line).</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case. The first line contains five integers <strong>m</strong>, <strong>x<sub>0</sub></strong>, <strong>y<sub>0</sub></strong>, <strong>x<sub>1</sub></strong>, <strong>y<sub>1</sub></strong>, which are the number of pre-existing wires (<strong>m</strong> ≤ 100) and the start and end points that need to be connected. This is followed by <strong>m</strong> lines, each containing four integers <strong>x<sub>a</sub></strong>, <strong>y<sub>a</sub></strong>, <strong>x<sub>b</sub></strong>, <strong>y<sub>b</sub></strong> describing an existing wire of non-zero length from (<strong>x<sub>a</sub></strong>, <strong>y<sub>a</sub></strong>) to (<strong>x<sub>b</sub></strong>, <strong>y<sub>b</sub></strong>). The absolute value of each input coordinate is less than 10<sup>5</sup> . Each pair of wires has at most one point in common, that is, wires do not overlap. The start and end points for the new wire do not lie on a pre-existing wire.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Display the minimum number of wires that have to be crossed to connect the start and end points.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>8 3 3 19 3</p>
+
+								<p>0 1 22 1</p>
+
+								<p>0 5 22 5</p>
+
+								<p>1 0 1 6</p>
+
+								<p>5 0 5 6</p>
+
+								<p>9 0 9 6</p>
+
+								<p>13 0 13 6</p>
+
+								<p>17 0 17 6</p>
+
+								<p>21 0 21 6</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 0 5 10 5</p>
+
+								<p>0 0 10 10</p>
+
+							</td>
+							<td>
+								<p>0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC 2014 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

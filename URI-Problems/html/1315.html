@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1315 - Não tão Convexo</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1315 - Não tão Convexo" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1315</span>
+            <h1>Não tão Convexo</h1>
+            <div><p>Por Rodrigo Schmidt <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Pregos e Elásticos. Este é um nome sugestivo de um jogo que é disputado por um grupo de crianças (todas elas, filhas de professores de geometria). As crianças determinam um número de pregos em um plano de madeira, colocados aleatoriamente. Então, elas escolhem um dos pregos para ser a origem, e um número <em>B</em> de elásticos. O desafio é usar todos <em>B</em> elásticos para envolver os pregos, de modo que: (i) cada elástico envolve um subconjunto de pregos; (ii) todos os pregos estão dentro de um invólucro; (iii) invólucros não sobrepõe uns aos outros, exceto o prego de origem, que é tocado por todos os elásticos; (iv) os elásticos devem formar invólucros que são polígonos convexos, com no mínimo três cantos; e (v) a área total dentro de um invólucro é a maior de todas as formas possíveis de envolver os pregos. Uma instância do jogo é mostrada na Figura 1.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1315.png" style="width: 277px; height: 218px; margin-left: 10px; margin-right: 10px;" /></p>
+
+                <p class="center">Figura 1: Um jogo com 19 pregos e 2 elásticos.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Seu programa deve resolver diversas instâncias do jogo. Cada descrição do jogo inicia com uma linha contendo dois inteiros <strong><em>B</em></strong> e <strong><em>N</em></strong>, indicando, respectivamente, o número de elásticos e o número de pregos ( 2 ≤ <strong><em>B</em></strong> ≤ 50 e 2<strong><em>B</em></strong> + 1 ≤ <strong><em>N</em></strong> ≤ 101 ). As seguintes <strong><em>N</em> </strong>linhas descrevem a posição dos pregos, cada linha contendo dois inteiros <strong><em>X</em></strong> e <strong><em>Y</em></strong> ( -10000 ≤ <em><strong>X</strong></em>, <strong><em>Y</em></strong>, ≤ 10000 ). A origem é o primeiro prego na entrada. O final da entrada é indicado por <strong><em>B</em></strong> = <strong><em>N</em> </strong>= 0.</p>
+
+                <p>
+                    Em todas as instâncias da entrada:</p>
+
+                <ul>
+                    <li>Não há dois pregos no mesmo ponto;</li>
+                    <li>Não há três pregos na mesma linha;</li>
+                    <li>O prego de origem não pertence ao fecho convexo de todos os pregos (isto é, se você usa um elástico para envolver todos os pregos, ele não toca o prego de origem);</li>
+                </ul>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada jogo na entrada, seu programa deve imprimir uma linha na saída, descrevendo a menor área total dentro dos invólucros. A área deve ser impresa como um número real, com duas casas decimais de precisão, e o último dígito deve ser arrredondado. A entrada não conterá casos de teste onde as diferenças de arredondamento serão significantes.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2 5<br />
+                                0 0<br />
+                                9 4<br />
+                                -8 8<br />
+                                -10 -2<br />
+                                4 -8<br />
+                                2 6<br />
+                                0 0<br />
+                                3 6<br />
+                                -5 7<br />
+                                -4 -6<br />
+                                10 -10<br />
+                                3 5<br />
+                                0 0</p>
+                        </td>
+                        <td>
+                            <p>
+                                92.00<br />
+                                74.00</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2002.
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1791 - Descobrindo uma Matriz</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 999 - Descobrindo uma Matriz" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1791</span>
+                <h1>Descobrindo uma Matriz</h1>
+                <div>
+                    <p>Por Thalyson Nepomuceno, UECE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Uma matriz é uma Matriz de Potências se atende 3 pré-requisitos:</p>
+
+                    <p><br />
+                    1. É uma matriz quadrada.<br />
+                    2. A primeira coluna é formada apenas por 1's.<br />
+                    3. Para todo elemento (<strong>i</strong>,<strong> j</strong>) com<strong> j</strong> &gt; 1, (<strong>i</strong>,<strong> j</strong>) =<strong> </strong>(<strong>i</strong>,<strong> </strong>2)<sup><strong>j</strong>-1</sup> e (<strong>i</strong>, <strong>j</strong>) é diferente de zero.</p>
+
+                    <p>Por exemplo:</p>
+
+                    <p><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1791_1.jpg" style="height:180px; width:510px" /></p>
+
+                    <p>Sua tarefa é descobrir se uma matriz quadrada pode ser transformada em uma Matriz de Potências utilizando dois tipos de operações:</p>
+
+                    <p>1. Troca(<strong>x</strong>, <strong>y</strong>): Inverte as posições de todos os elementos das colunas <strong>x</strong> e <strong>y</strong> da matriz.<br />
+                    2. Transposta(): A matriz é transposta.</p>
+
+                    <p>Por exemplo:</p>
+
+                    <p><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1791_2.jpg" style="height:275px; width:285px" /></p>
+
+                    <p>Logo <strong>P</strong> pode ser transformada em uma Matriz de Potência.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada consiste de múltiplas linhas. A primeira linha contém um inteiro <strong>C</strong> que indica o número de casos de teste. Em seguida, em cada caso de teste a primeira linha contém um inteiro <strong>N</strong> (1 &lt; <strong>N</strong> &lt; 8) que indica o número de linhas e colunas da matriz, em seguida <strong>N </strong>linhas, cada uma com <strong>N</strong> inteiros <strong>d</strong> (􀀀-50000 &lt; <strong>d</strong> &lt; 50000) representando os elementos da matriz .</p>
+
+                    <p> </p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima em uma única linha para cada caso de teste a "Potencia" (sem aspas) caso a matriz possa ser transformada, ou "Nao Potencia" (sem aspas) caso contrário.</p>
+
+                    <p> </p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3<br />
+                                3<br />
+                                16 1 4<br />
+                                1 1 1<br />
+                                9 1 3<br />
+                                3<br />
+                                25 36 9<br />
+                                1 1 1<br />
+                                5 6 3<br />
+                                3<br />
+                                9 35 25<br />
+                                3 6 5<br />
+                                1 1 1</p>
+
+                            </td>
+                            <td>
+                                <p>Potencia<br />
+                                Potencia<br />
+                                Nao Potencia</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Olimpíada Cearense de Informática 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

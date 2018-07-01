@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1502 - Travessia</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1502 - Travessia" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1502</span>
+                <h1>Travessia</h1>
+                <div>
+                    <p>Por VC++, Colégio Etapa <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 7</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Twilight e seus amigos estão tentado impedir Discord de criar caos. Enquanto passavam por um corredor muito comprido em direção a Canterlot, eles se depararam com um labirinto de lasers mortais que bloquearam seu caminho!</p>
+
+<p>O corredor tem largura W. O labirinto de lasers consiste de N postes energizados com uma energia não-negativa Pi. Cada poste é capaz de criar um quadrado de lasers mortais centrado no poste com comprimento igual ao dobro do quadrado de sua energia e um par de lados paralelos às paredes do corredor. Note que quadrados podem se sobrepor, e que pode haver mais de um poste numa mesma posição.</p>
+
+<p>Twilight planeja usar sua magia para alterar as energias dos postes para alguns valores inteiros não-negativos de forma que seja possível atravessar o corredor e continuar sua jornada sem serem descobertos. Desligar todos os postes pode causar suspeitas, portanto Twilight decidiu modificar as energias dos postes de forma que a travessia seja possível e que a diferença absoluta da energia total do sistema antes e depois da travessia seja a mínima possível.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_1502.png" /></p>
+
+<p>Alterar as energias enquanto seus amigos atravessam pode ser perigoso, por isso Twilight decide que fará todas as alterações de antemão, e não fará nenhuma outra mudança durante ou depois da travessia, já que não podem perder tempo.</p>
+
+<p>Ajude Twilight a terminar sua jornada encontrando o menor valor possível para a diferença absoluta da soma das energias da configuração inicial e final do labirinto.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Cada caso de teste contém uma linha com dois inteiros <strong>W</strong> e <strong>N</strong> (1 ≤ <strong>W</strong> ≤ 1000, 1 ≤ <strong>N</strong> ≤ 15). Em seguida há <strong>N</strong> linhas, cada uma contendo três inteiros <strong>X<sub>i</sub></strong>, <strong>Y<sub>i</sub></strong> e <strong>P<sub>i</sub></strong>, descrevendo a posição e a energia inicial de cada poste (0 ≤ <strong>X<sub>i</sub></strong> ≤ <strong>W</strong>, 0 ≤ <strong>Y<sub>i</sub></strong> ≤ 1000, 0 ≤ <strong>P<sub>i</sub></strong> ≤ 200). As paredes dos corredores estão nas posições x = 0 e x = <strong>W</strong>. O último caso de teste é seguido de uma linha contendo dois zeros.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma única linha contendo a menor diferença absoluta possível entre as somas inicial e final dos postes.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 2<br />
+0 0 1<br />
+2 1 1<br />
+6 3<br />
+1 2 2<br />
+3 4 2<br />
+5 1 2<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>1<br />
+3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Maratona Verão 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

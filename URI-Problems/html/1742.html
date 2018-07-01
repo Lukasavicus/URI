@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1742 - Entrando em Confusão</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1742 - Entrando em Confusão" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1742</span>
+                <h1>Entrando em Confusão</h1>
+                <div>
+                    <p>Por Contest Road to Fortaleza VII <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 4</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                   
+
+
+                <p> Bob foi a Babilônia procurando por novas aventuras. Mas, assim que chegou, ele encontrou confusão com as criaturas daquele lugar que não eram muito gentis. Eles tinham um jogo esquisito e agora era a vez de Bob jogá-lo. Eles colocariam o Bob em algum lugar e objetivo era sair com vida. </p>
+
+                <p> Como Bob sabia que ele seria frito caso não fizesse um plano a tempo, ele robou um mapa do terreno em que ele seria jogado. Mas ele ainda não sabia exatamente onde seria largado. Então ele teve que memorizar o mapa inteiro para poder sair com vida. Felizmente, o terreno era retangular (N+1)x(M+1) e as únicas possíveis direções eram ir para o norte,sul, leste e oeste. Uma coisa crucial era memorizar onde eram os buracos, também retangulares. Como ele tinha que sair o mais rápido possível, ele não podia errar o caminho.</p>
+                <p class="center">
+                <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/25_1.png" style="width: 412px; height: 252px; " /></p>
+
+                <p class= "center">Exemplo de um grid 6x6 com dois buracos e um jeito de sair.</p>
+
+                <p> Agora ele está te perguntando de quantas maneiras ele poderia sair o mais rápido possivel se ele fosse largado
+                em uma posição (x<sub>i</sub>, y<sub>i</sub>) e tivesse que chegar em (x<sub>f</sub> , y<sub>f</sub>).</p>
+                
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+
+                <p> A entrada é composta por diversos casos testes e termina com o fim de arquivo. Cada uma descreve um mapa e começa com três inteiros <strong>N</strong>,<strong>M</strong> (1 ≤ <strong>N</strong>, <strong>M</strong> ≤ 1000) e <strong>H</strong> (0 ≤ <strong>H</strong> ≤ 100), os quais são, respectivamente, o tamanho do grid e o número de buracos, como descrito acima. Então, seguem <strong>H</strong> linhas, cada linha com 4 inteiros x<sub>i</sub>, y<sub>i</sub>, x<sub>f</sub> e y<sub>f</sub> (0 ≤ x<sub>i</sub>,x<sub>f</sub> ≤ <strong>N</strong>; 0 ≤ y<sub>i</sub>,y<sub>f</sub> ≤ <strong>M</strong> ) descrevendo o canto inferior esquerdo e o canto superior direito de um buraco. Depois vem um inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 100), o número de queries. As próximas <strong>Q</strong> linhas, cada uma com 4 inteiros x<sub>i</sub>, y<sub>i</sub>, x<sub>f</sub>e y<sub>f</sub> (0 ≤ x<sub>i</sub>,x<sub>f</sub> ≤ <strong>N</strong>; 0 ≤ y<sub>i</sub>,y<sub>f</sub> ≤ <strong>M</strong> ), os quais são o começo e o fim como descrito acima. Entre casos de testes consecutivos, haverá uma linha em branco. É garantido que em um mapa, todos os buracos são disjuntos e terá sempre pelo menos um jeito de sair.
+
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p> Seu programa deve imprimir uma linha para cada query com o número de maneiras de fugir o
+                    mais rápido possível. Como o número pode ser muito grande, sua saída deve ser módulo 10<sup>9</sup> + 7. Imprima uma linha em branco após cada caso teste.</p>
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Entrada </td>
+                            <td>Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+
+10 10 0<br>
+3<br>
+0 0 10 10<br>
+0 1 9 10<br>
+5 5 5 5<br>
+<br>
+6 6 2<br>
+1 0 2 2<br>
+3 2 5 4<br>
+1<br>
+0 1 4 5<br>
+
+                            </td>
+                            <td>
+184756<br>
+48620<br>
+1<br>
+<br>
+46<br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Road to Fortaleza VII 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2083 - Beira da Estrada</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2083 - Beira da Estrada" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2083</span>
+                <h1>Beira da Estrada</h1>
+                <div>
+                    <p>Por Pablo A. Heiber,  Universidad Nacional de La Plata <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+
+                    <p> No lado da estrada, há palmeiras, há um bar, há sombra, há algo mais. Neste problema, estamos particularmente interessados ​​nas palmeiras.</p>
+
+                    <p>Ana, Adam, Alan e Amanda organizou uma viagem: enquanto Ana e Adam vão lidar com coisas insignificantes como verificar o carro, preparar a bagagem e encontrar um lugar para ficar, Alan e Amanda se dedicaram para a parte mais importante: estudar as vistas das palmeiras que eles teriam acesso na estrada.</p>
+
+                    <p>A estrada onde eles estão dirigindo agora é completamente em linha reta, e neste problema vai ser representada pela reta Y = 0 do plano XY. No lado da estrada com coordenadas Y&gt; 0 há palmeiras, que serão representadas por diferentes pontos do plano XY com Y positivo. Alan e Amanda notaram que a partir de cada ponto na estrada certas palmeiras são visíveis, e, em geral, estes variam ao longo da estrada. Uma palmeira é dito ser visível a partir de um ponto na estrada, se e somente se o segmento que une esses dois pontos não passa por qualquer outra palmeira.</p>
+
+                    <p>Na figura a seguir no primeiro exemplo os círculos vazios representam palmeiras , enquanto os cheios representam alguns pontos possíveis na estrada.</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2083.png" style="height:385px; width:532px" /></p>
+
+                    <p>Do ponto P as palmeiras que são visíveis são A, B e D, pois a palmeira C está escondida atrás da palmeira A. Do ponto Q as palmeiras visíveis são A, C e D, pois a palmeira B agora está escondida atrás da palmeira A. Do ponto R todas as palmeiras são visíveis, e do ponto S apenas as palmeiras A e D são visíveis, pois as palmeiras B e C estão escondidas atrás da palmeira D.</p>
+
+                    <p>Enquanto Ana e Adam se revezam para dirigir o carro, Alan e Amanda discutem os benefícios de saber quantas palmeiras visíveis existem. Dado um conjunto de palmeiras, um número inteiro M é o número visível de palmeiras se, e somente se, existir pelo menos um ponto na estrada (isto é, um ponto de coordenada Y = 0) a partir do qual exatamente M palmeiras são visíveis.</p>
+
+                    <p>No exemplo ilustrado acima, 2, 3 e 4 são quantidades visíveis de palmeiras que podem ser vistas dos pontos S, P e R na estrada, respectivamente. Por outro lado, 0 e 1 não são quantidades visíveis, porque a partir de qualquer ponto da estrada, pelo menos, 2 palmeiras são visíveis. Finalmente, nenhuma quantidade M &gt; 4 é visível, uma vez que existem apenas 4 palmeiras no total. Portanto, neste exemplo, existem 3 quantidades visíveis de palmeiras. (Note que se M é uma quantidade visível de palmeiras, pode haver mais do que um ponto sobre a estrada que apresenta esta situação; no exemplo anterior, este é o caso dos pontos P e Q para a quantidade visível 3, bem como um número infinito de outros pontos juntamente com R para a quantidade visível 4.)</p>
+
+                    <p>Ana e Adam estão ficando cansados. Eles querem que Alan e Amanda deixem de lado as palmeiras e pelo menos preparem alguns sanduíches. Por essa razão, você precisa fazer um programa para calcular quantas diferentes quantidades visíveis de palmeiras existem ao longo da estrada.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    A primeira linha contém um número inteiro N que indica o número de palmeiras que existem no lado da estrada (1 ≤ N ≤ 1000). Cada uma das N linhas seguintes descreve uma palmeira diferente usando dois números inteiros X e Y, que representam as coordenadas da referida palmeira no plano XY (1 ≤ X, Y ≤ 10<sup>5</sup>). Não há duas palmeiras que compartilham a mesma posição.
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    Imprimir uma única linha contendo um número inteiro que representa o número de quantidades visíveis de palmeiras que existem ao longo da estrada.
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplos de Entrada</td>
+                            <td>Exemplos de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4</p>
+
+<p>2 1</p>
+
+<p>3 1</p>
+
+<p>3 2</p>
+
+<p>3 3</p>
+
+                            </td>
+                            <td>
+                                <p>3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div><table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>7</p>
+
+<p>2 1</p>
+
+<p>3 1</p>
+
+<p>4 1</p>
+
+<p>1 2</p>
+
+<p>3 2</p>
+
+<p>5 2</p>
+
+<p>3 3</p>
+
+                            </td>
+                            <td>
+                                <p>4</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+              
+            <p class="footer">
+                    Torneo Argentino de Programación — ACM–ICPC 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

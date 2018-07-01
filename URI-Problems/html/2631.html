@@ -1,0 +1,114 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2631 - Formando Duplas</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2631 - Formando Duplas" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2631</span>
+			<h1>Formando Duplas</h1>
+			<div>
+				<p>Por Guilherme de Lima Bernardes, UNB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>
+					Roberto é um dos grandes professores que compõem o corpo docente da universidade de sua cidade. Treinar seus alunos para a maratona de programação é uma de suas maiores paixões, apesar de ser uma tarefa bem difícil. Felizmente, neste semestre, vários alunos se inscreveram para sua disciplina de programação competitiva.
+				</p>
+				<p>
+					Para treinar seus alunos, Roberto costuma aplicar testes e provas regularmente, onde sempre divide sua turma em diferentes duplas, já que neste ano, as equipes da maratona de programação serão formadas por apenas dois integrantes.
+				</p>
+				<p>
+					Ao longo do semestre, analisando os resultados das avaliações e o comportamento dos estudantes em sala de aula, Roberto percebeu que se os alunos escolhidos para formar uma dupla não têm afinidade, o desempenho da equipe é bem inferior em relação às duplas formadas por alunos que apresentam tal comportamento. Podemos dizer que dois estudantes A e B possuem afinidade caso pertençam ao mesmo grupo de amigos, ou seja, caso possuam uma relação direta de amizade, ou se é possível escrever uma sequência de alunos X1, X2, X3, ... , XN , onde para todo i < N exista uma relação direta de amizade entre os alunos Xi e Xi+1, com X1 = A e XN = B.
+				</p>
+				<p>
+					A maratona de programação se aproxima e Roberto decidiu que montará duplas compostas apenas por alunos que possuem afinidade. Desta forma, as equipes de sua universidade serão mais competitivas, aumentando as chances de classificação para a próxima fase. Como a turma está abarrotada de alunos, ele pediu para você escrever um programa em que dadas as relações de amizades entre os alunos e uma série de consultas indicando dois estudantes, determine para cada consulta se é possível montar uma dupla com estes dois alunos.
+				</p>
+				<p>
+
+				</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>
+					A entrada é composta por vários casos de teste. A primeira linha de um caso de teste possui três inteiros <strong>N</strong>, <strong>M</strong> e <strong>Q</strong> (2 ≤ <strong>N</strong> ≤ 10<sup>4</sup>, 0 ≤ <strong>M</strong> ≤ 10<sup>5</sup>, 1 ≤ <strong>Q</strong> ≤ 10<sup>3</sup>), representando, respectivamente, o número de alunos, as relações de amizade entre os estudantes e o número de consultas. As próximas <strong>M</strong> linhas possuem dois inteiros <strong>X</strong> e <strong>Y</strong> (1 ≤ <strong>X</strong>, <strong>Y</strong> ≤ <strong>N</strong> e <strong>X</strong> != <strong>Y</strong>) indicando que o aluno <strong>X</strong> tem uma relação direta de amizade com o aluno <strong>Y</strong>. Em seguida, cada uma das próximas <strong>Q</strong> linhas descreve uma consulta com dois inteiros <strong>A</strong> e <strong>B</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong> e <strong>A</strong> != <strong>B</strong>), indicando os estudantes de uma possível equipe.
+
+				</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>
+					Para cada caso de teste imprima <strong>Q</strong> linhas, onde a i-ésima linha é a resposta para a i-ésima consulta. Se for possível montar uma dupla com os estudantes indicados na consulta imprima o caractere ‘S’, caso contrário imprima o caractere ‘N’. Imprima uma linha em branco ao final de cada caso de teste.
+				</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5 3 3</p>
+							<p>4 2</p>
+							<p>3 5</p>
+							<p>1 2</p>
+							<p>1 4</p>
+							<p>5 1</p>
+							<p>2 4</p>
+							<p>3 1 2</p>
+							<p>3 2</p>
+							<p>1 2</p>
+							<p>2 3</p>
+						</td>
+						<td>
+							<p>S</p>
+							<p>N</p>
+							<p>S</p>
+							</br>
+							<p>N</p>
+							<p>S</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Maratona de Programação UnB/CIC 2015.
+			</p>
+		</div>
+
+	</body>
+</html>

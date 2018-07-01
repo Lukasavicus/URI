@@ -1,0 +1,146 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2317 - Lobo Mau</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2317 - Lobo Mau" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2317</span>
+				<h1>Lobo Mau</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2006 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Na fazenda do Sr. Amarante existe um certo número de ovelhas. Enquanto elas estão dormindo profundamente, alguns lobos famintos tentam invadir a fazenda e atacar as ovelhas. Ovelhas normais ficariam indefesas diante de tal ameaça, mas felizmente as ovelhas do Sr. Amarante são praticantes de artes marciais e conseguem defender-se adequadamente.</p>
+
+<p>A fazenda possui um formato retangular e consiste de campos arranjados em linhas e colunas. Cada campo pode conter uma ovelha (representada pela letra ‘k’), um lobo (letra ‘v’), uma cerca (símbolo ‘#’) ou simplesmente estar vazio (símbolo ‘.’). Consideramos que dois campos pertencem a um mesmo pasto se podemos ir de um campo ao outro através de um caminho formado somente com movimentos horizontais ou verticais, sem passar por uma cerca. Na fazenda podem existir campos vazios que não pertencem a nenhum pasto. Um campo vazio não pertence a nenhum pasto se é&nbsp;possível “escapar” da fazenda a partir desse campo (ou seja, caso exista um caminho desse campo até&nbsp;a borda da fazenda).</p>
+
+<p>Durante a noite, as ovelhas conseguem combater os lobos que estão no mesmo pasto, da seguinte forma: se em um determinado pasto houver mais ovelhas do que lobos, as ovelhas sobrevivem e matam todos os lobos naquele pasto. Caso contrário, as ovelhas daquele pasto são comidas pelos lobos, que sobrevivem. Note que caso um pasto possua o mesmo número de lobos e ovelhas, somente os lobos sobreviverão, já&nbsp;que lobos são predadores naturais, ao contrário de ovelhas.</p>
+
+<p>Escreva um programa que, dado um mapa da fazenda do Sr. Amarante indicando a posição das cercas, ovelhas e lobos, determine quantas ovelhas e quantos lobos estarão vivos na manhã&nbsp;seguinte.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do dispositivo de entrada padrão (normalmente o teclado). A primeira linha da entrada contém dois inteiros <strong>R</strong> e <strong>C</strong> que indicam o número de linhas (3 ≤ <strong>R</strong> ≤ 250) e de colunas (3 ≤ <strong>C</strong> ≤ 250) de campos da fazenda. Cada uma das <strong>R</strong> linhas seguintes contém <strong>C</strong> caracteres, representando o contéudo do campo localizado naquela linha e coluna (espaço vazio, cerca, ovelha ou lobo).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na saída padrão, uma única linha, contendo dois inteiros, sendo que o primeiro representa o número de ovelhas e o segundo representa o número de lobos que ainda estão vivos na manhã&nbsp;seguinte.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6 6<br />
+...#..<br />
+.##v#.<br />
+#v.#.#<br />
+#.k#.#<br />
+.###.#<br />
+...###</p>
+
+							</td>
+							<td>
+								<p>0 2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>8 8<br />
+.######.<br />
+#..k...#<br />
+#.####.#<br />
+#.#v.#.#<br />
+#.#.k#k#<br />
+#k.##..#<br />
+#.v..v.#<br />
+.######.</p>
+
+                    </td>
+                    <td>
+                        <p>3 1</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>9 12<br />
+.###.#####..<br />
+#.kk#...#v#.<br />
+#..k#.#.#.#.<br />
+#..##k#...#.<br />
+#.#v#k###.#.<br />
+#..#v#....#.<br />
+#...v#v####.<br />
+.####.#vv.k#<br />
+.......####</p>
+
+                    </td>
+                    <td>
+                        <p>3 5</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2006 Fase 2 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1316 - Compra Livre de Impostos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1316 - Compra Livre de Impostos" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1316</span>
+            <h1>Compra Livre de Impostos</h1>
+            <div><p>Por Ignacio Laplagne <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=""/> Argentina</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Pedro viajou para a Europa para participar da Olimpíada Internacional de Informática e está voltando para casa. Já que todos os seus amigos pediram para que ele trouxesse alguns presentes, ele comprou dois grandes pacotes de chocolate (um do Mindt e um do Lilka). Cada um desses pacotes contém em certo número de pequenos chocolates. Comprar os dois grandes pacotes foi bem menos caro que comprar as caixas individuais dos mesmos. Em casa, Pedro tinha algumas caixas que guardou de outras viagens. Pedro pretende distribuir os chocolates que recém comprou nessas caixas, para dá-las a seus amigos.</p>
+                <p>
+                    Assim que Pedro começou a encher as caixas, ele percebeu um grande problema: já que ele tem dois tipos de chocolates, se ele misturar chocolates de diferentes tipos nas caixas, o amigo que receber a caixa perceberá o truque de Pedro para economizar dinheiro, e ficará magoado com ele.</p>
+                <p>
+                    Você deve ajudar o pobre Pedro a distribuir os chocolates nas caixas de maneira a que cada caixa esteja cheia e com apenas um tipo de chocolate. Um certo número de pedaços podem acabar sobrando (Pedro ficará com eles se for o caso).</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    O arquivo de entrada contém vários casos de teste. Cada caso consiste em três linhas. A primeira linha contém dois inteiros <b>M</b> e <b>L</b> que indicam respectivamente o número de chocolates Mindt e Lilka que Pedro comprou, sendo (0 ≤ <b>M</b>, <b>L</b> ≤ 1000). A próxima linha contém um inteiro <b>N</b> representando o número de caixinhas que Pedro tem, sendo (<b>N</b> ≤ <b>M</b> + <b>L</b>). A terceira linha contém <b>N</b> inteiros indicando a capacidade <b>Ci</b> (<b>Ci</b> &ge; 0), onde <b>Ci</b> é o número de chocolates necessário para encher a caixa <b>i</b>. O final da entrada é indicado por <b>M</b> = <b>L</b> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste o programa deverá produzir uma linha de saída. Se for possível distribuir os chocolates como foi relatado na declaração do problema, imprima o número de caixas a ser preenchido com chocolate Mindt, seguido de espaço, seguido pela lista do número de caixas, em ordem ascendente. Cada número de caixa na lista deve ser seguido de espaço. Se for impossível distribuir os chocolates, imprima "Impossible to distribute". Se existem mais que uma solução, imprima qualquer uma.&nbsp;</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                12 9<br>
+                                4<br>
+                                5 2 8 5<br>
+                                100 120<br>
+                                5<br>
+                                21 32 110 54 3<br>
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                3 1 2 4<br>
+                                Impossible to distribute</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2002.
+            </p>
+        </div>
+
+    </body>
+</html>

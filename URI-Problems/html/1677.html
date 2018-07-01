@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1677 - A Base de um Grafo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1677 - A Base de um Grafo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+            <div class="header">
+                <span>URI Online Judge | 1677</span>
+                <h1>A Base de um Grafo</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+            <div class="problem">
+                <div class="description">
+                    <p>Usaremos as seguintes definições padrão de teoria dos grafos. Seja V um conjunto finito não vazio e, seus elementos sendo chamados vértices (ou nós). Seja E um subconjunto do produto cartesiano V × V, seus elementos sendo chamado bordas. Então G = (V, E) é chamado um grafo direcionado.</p>
+                    <p>Seja N um inteiro positivo, e P = (e<sub>1</sub>, ..., e<sub>n</sub>) uma sequência de comprimento N de arestas, e e<sub>i</sub> ∈ E de modo que e<sub>i</sub> = (v<sub>i</sub>, v<sub>i +1</sub>) para uma seqüência de vértices (v<sub>1</sub>, ..., v<sub>n+1</sub>). Então P é caminho de vértice v<sub>1</sub> ao vértice v<sub>n +1</sub> em G e dizemos que v<sub>n +1</sub> é acessível a partir de v<sub>1</sub>, escrevendo (v<sub>1</sub> → v<sub>n +1</sub>).</p>
+                    <p>Aqui estão algumas novas definições. Um nó v em um grafo G = (V, E) é chamado de sorvedouro, se para cada nó W em G que é acessível a partir de v, v também é acessível a partir de W. A base de um grafo é o subconjunto de todos os nós que são sorvedouros, ou seja, base(G) = {v ∈ V | ∀w ∈ V: (v → W) ⇒ (W → v)}. Você tem que calcular base de certos grafos.</p>
+                    <p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/promocao/the%20bottom%20of%20a%20graph.gif" alt="" /></p>
+                </div>
+                <h2>Entrada</h2>
+                <div class="input">
+                    <p>A entrada contém vários casos de teste, cada um dos quais corresponde a um grafo orientado <strong>G</strong>. Cada um caso de teste inicia-se com um número inteiro <strong>v</strong>, que denota o número de vértices de <strong>G</strong> = (<strong>V</strong>, <strong>E</strong>), em que cada vértice é identificado por um inteiro no conjunto <strong>V</strong> = {1, ..., <strong>v</strong>}. Você pode assumir que <strong>v</strong>(1 ≤ <strong>v</strong> ≤ 5000). Isto é seguido por um número <em><strong>e</strong></em> inteiro não negativo e, a partir daí, <em><strong>e</strong></em> pares de vértice identificadores <strong>v</strong><sub>1</sub><strong>W</strong><sub>1</sub>, ..., <strong>v</strong><sub>e</sub><strong>W</strong><sub>e</sub>, com o significado de que (<strong>v</strong><sub>i</sub>, <strong>W</strong><sub>i</sub>) ∈ E. Não há outras arestas além das especificadas por estes pares. O último caso de teste é seguido por um zero.</p>
+                </div>
+                <h2>Saída</h2>
+                <div class="output">
+                    <p>Para cada caso a saída de teste imprima a base do grafo especificado em uma única linha. Para este fim, imprima os números de todos os nós que são bases na ordem de classificação, separadas por um único caractere de espaço. Se a base estiver vazia, imprima uma linha vazia.</p>
+                </div>
+                <div class="both"></div>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 3</p>
+                                <p>1 3 2 3 3 1</p>
+                                <p>2 1</p>
+                                <p>1 2</p>
+                                <p>0</p>
+                            </td>
+                            <td>
+                                <p>1 3</p>
+                                <p>2</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                     Univeristy of Ulm Local Contest 2003/2004
+                </p>
+            </div>
+        </body>
+    </html>

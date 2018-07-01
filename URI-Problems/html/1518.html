@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1518 - Tartarugas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1518 - Tartarugas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1518</span>
+                <h1>Tartarugas</h1>
+                <div>
+                    <p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Rafael, em seu primeiro dia de trabalho no zoológico da cidade, foi incubido da tarefa aplicada a todos os novatos: cuidar das tartarugas. Rafael achou aquilo tão fácil que resolveu tirar um cochilo em seu turno, porém quando acordou se viu em uma situação complicada, uma vez que as tartarugas estavam fugindo.</p>
+
+<p>Como está em seu primeiro dia de trabalho, Rafael não quer decepcionar o chefe do zoológico, portanto está decidido a parar todas as tartarugas na menor quantidade de tempo possível.</p>
+
+<p>O terreno em que eles estão pode ser visto como um plano, e Rafael está na posição [<strong>x</strong>, <strong>y</strong>]. A cada segundo, Rafael consegue se mover no máximo duas posições no sentido horizontal ou vertical, ou no máximo uma posição no sentido diagonal.</p>
+
+<p>Rafael tem que parar três tartarugas, as quais estão nas posições [<strong>x1</strong>, <strong>y1</strong>], [<strong>x2</strong>, <strong>y2</strong>] e [<strong>x3</strong>, <strong>y3</strong>], respectivamente. As tartarugas, por sua vez, podem se mover apenas uma posição por segundo, e em apenas uma direção predeterminada: Cima ([<strong>x<sub>i</sub></strong>, <strong>y<sub>i</sub>+1</strong>]) ou Direita ([<strong>x<sub>i</sub>+1</strong>, <strong>y<sub>i</sub></strong>]). Elas estão sempre se movendo.</p>
+
+<p>Para parar uma tartaruga Rafael precisa estar na mesma posição que tal tartaruga. Rafael pode escolher parar as tartarugas na ordem que ele desejar. Descubra a menor quantidade de tempo necessário para que ele pare as três tartarugas.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Haverá diversos casos de teste. Cada caso de teste é iniciado com dois inteiros <strong>x</strong> e <strong>y</strong> (1 ≤ <strong>x</strong>, <strong>y</strong> ≤ 1000), indicando que Rafael está na posição [<strong>x</strong>, <strong>y</strong>] do plano.</p>
+
+<p>A seguir haverá três linhas, cada uma contendo dois inteiros <strong>x<sub>i</sub></strong> e <strong>y<sub>i</sub></strong> (1 ≤ <strong>x<sub>i</sub></strong>, <strong>y<sub>i</sub></strong> ≤ 1000), indicando que a <strong>i</strong>-ésima tartaruga está na posição [<strong>x<sub>i</sub></strong>, <strong>y<sub>i</sub></strong>], e um caractere <strong>c<sub>i</sub></strong>, indicando a direção que a <strong>i</strong>-ésima tartaruga está correndo: 'D' – Direita, ou 'C' – Cima.</p>
+
+<p>O plano em que Rafael e as tarturugas estão se estende da posição [1, 1] (canto inferior esquerdo) até a posição [10⁵, 10⁵] (canto superior direito), portanto há bastante espaço para a perseguição. Duas tartarugas nunca estarão no mesmo lugar ao mesmo tempo.</p>
+
+<p>O último caso de teste é indicado por <strong>x</strong> = <strong>y</strong> = 0, o qual não deverá ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima um inteiro, representando a quantidade mínima de tempo necessária para capturar todas as tartarugas, na ordem desejada por Rafael.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1 1<br />
+1 2 D<br />
+2 2 C<br />
+2 3 D<br />
+1 1<br />
+5 5 D<br />
+3 3 D<br />
+4 1 C<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>5<br />
+10</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Bonilha 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1401 - Gerando Permutações Ordenadas Rapidamente</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1401 - Gerando Permutações Ordenadas Rapidamente" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1401</span>
+            <h1>Gerando Permutações Ordenadas Rapidamente</h1>
+            <div>Por Shahriar Manzoor, SEU <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif' alt=""/> Bangladesh</div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Gerar permutações sempre foi um problema importante na ciência da computação. Neste problema, você terá de gerar todas as permutações de uma dada string, em ordem lexicográfica crescente. Lembre-se que seu algoritmo deve ser eficiente.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A primeira linha da entrada contém um inteiro <strong>n</strong>, indicando o número de strings que seguem. As próximas <strong>n</strong> linhas contém uma string cada. Cada string conterá apenas caracteres alfanuméricos, e nunca conterá espaços. O tamanho máximo de uma string é 10.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada string da entrada, imprima todas as permutações possíveis da string, em ordem lexicográfica crescente. Note que as strings devem ser tratas como Case Sensitive (isto é, letras maiúsculas são diferentes das minúsculas). Além disso, nenhuma permutação deve ser impressa mais de uma vez. Uma linha em branco deve ser impressa após cada lista de permutações.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>3<br />
+                                ab<br />
+                                abc<br />
+                                bca</p>
+
+                        </td>
+                        <td>
+                            <p>ab<br />
+                                ba<br /><br />
+                                abc<br />
+                                acb<br />
+                                bac<br />
+                                bca<br />
+                                cab<br />
+                                cba<br /><br />
+								abc<br />
+                                acb<br />
+                                bac<br />
+                                bca<br />
+                                cab<br />
+                                cba<br /><br /></p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </body>
+</html>

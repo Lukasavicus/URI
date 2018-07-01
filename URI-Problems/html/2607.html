@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2607 2607 - Cidades em Ordem Alfabética</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - SQL - Problema 2607 - Cidades em Ordem Alfabética" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default-sql.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28047757-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <span>URI Online Judge <strong>SQL</strong> | 2607 </span>
+      <h1>Cidades em Ordem Alfabética</h1>
+      <div>
+        <p>Paulo R. Rodegheri <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem-sql">
+      <div>
+        <p>Todos os meses a empresa pede um relatório das cidades que os fornecedores estão cadastrados. 
+          Dessa vez não vai ser diferente, faça uma consulta no Banco de Dados que retorne todas as cidades dos fornecedores, mas em ordem alfabética.</p>
+        <p> OBS: Você não deve mostrar cidades repetidas.</p>
+      </div>
+
+      <div>
+        <h2>Esquema</h2>
+        <div>
+          <table class="tables-fifty">
+            <caption>providers</caption>
+              <tr>
+                <td><strong>Coluna</strong></td>
+                <td><strong>Tipo</strong></td>
+              </tr>
+              <tr>
+                <td>id (PK)</td>
+                <td>numeric</td>
+              </tr>
+              <tr>
+                <td>name</td>
+                <td>varchar</td>
+              </tr>
+              <tr>
+                <td>street</td>
+                <td>varchar</td>
+              </tr>
+              <tr>
+                <td>city</td>
+                <td>varchar</td>
+              </tr>
+              <tr>
+                <td>state</td>
+                <td>char</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+
+        <div>
+          <h2>Tabelas</h2>
+          <div>
+            <table class="tables-fifty">
+              <caption>providers</caption>
+              <tr>
+                <td><strong>id</strong></td>
+                <td><strong>name</strong></td>
+                <td><strong>street</strong></td>
+                <td><strong>city</strong></td>
+                <td><strong>state</strong></td>
+              </tr>
+              <tr>
+                <td class="center">1</td>
+                <td>Henrique</td>
+                <td>Av Brasil</td>
+                <td>Rio de Janeiro</td>
+                <td class="center">RJ</td>
+              </tr>
+              <tr>
+                <td class="center">2</td>
+                <td>Marcelo Augusto</td>
+                <td>Rua Imigrantes</td>
+                <td>Belo Horizonte</td>
+                <td class="center">MG</td>
+              </tr>
+              <tr>
+                <td class="center">3</td>
+                <td>Caroline Silva</td>
+                <td>Av São Paulo</td>
+                <td>Salvador</td>
+                <td class="center">BA</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td>Guilerme Staff</td>
+                <td>Rua Central</td>
+                <td>Porto Alegre</td>
+                <td class="center">RS</td>
+              </tr>
+              <tr>
+                <td class="center">5</td>
+                <td>Isabela Moraes</td>
+                <td>Av Juiz Grande</td>
+                <td>Curitiba</td>
+                <td class="center">PR</td>
+              </tr>
+              <tr>
+                <td class="center">6</td>
+                <td>Francisco Accerr</td>
+                <td>Av Paulista</td>
+                <td>São Paulo</td>
+                <td class="center">SP</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        
+        <div>
+          <h2>Exemplo de saída</h2>
+          <div>
+            <table class="tables-fifty">
+              <tr>
+                <td><strong>city</strong></td>
+              </tr>
+              <tr>
+                <td>Belo Horizonte</td>
+              </tr>
+              <tr>
+                <td>Curitiba</td>
+              </tr>
+              <tr>
+                <td>Porto Alegre</td>
+              </tr>
+              <tr>
+                <td>Rio de Janeiro</td>
+              </tr>
+              <tr>
+                <td>Salvador</td>
+              </tr>
+              <tr>
+                <td>São Paulo</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+          
+    </div>
+      
+  </body>
+</html>

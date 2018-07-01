@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2482 - Etiquetas de Noel</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2482 - Etiquetas de Noel" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2482</span>
+			<h1>Etiquetas de Noel</h1>
+			<div>
+				<p>Por Neilor Tonin, URI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/EtiquetaPapaiNoel.jpg" style="border-style:solid; border-width:0px; float:right; height:168px; margin:10px; width:300px" />Como de costume, neste ano Noel recebeu muitos pedidos de presentes. Só que em função de alguns imprevistos, não terá como entregar todos os presentes pessoalmente neste ano. Daí então decidiu utilizar o velho e bom correio tradicional, para alguns pedidos que podem ser entregues por carta.</p>
+
+				<p>Para esta tarefa, pediu ajuda ao elfo Evergreen Xadada, para que ele imprimisse etiquetas a todos os envelopes que serão destinados a algumas destas crianças, cujo pedido pode ser entregue por carta. Cada uma destas etiquetas deverá conter apenas o nome da criança e a saudação "Feliz Natal" no respectivo idioma desta criança. Para auxiliar nesta tarefa, Noel disponibilizou uma tabela com vários idiomas e o nome e o país de cada uma das crianças selecionadas, de acordo com o exemplo abaixo. Você deve ajudar Evergreen fazendo um programa que imprima estas etiquetas.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+				<p>A entrada é composta por um único caso de teste. A primeira linha de entrada contém um inteiro <strong>N</strong> (1 &lt; <strong>N</strong> &lt; 100) que indica a quantidade de traduções da palavra "Feliz Natal" existentes na entrada. As próximas <strong>N</strong> * 2 linhas contém respectivamente o nome de uma língua seguido da tradução de "Feliz Natal" para esta língua. Segue um inteiro <strong>M</strong> (1 &lt; <strong>M</strong> &lt; 100)&nbsp;que indica a quantidade de crianças que receberão as cartas. As próximas <strong>M</strong> * 2 linhas conterão, respectivamente, o nome da criança e a língua nativa desta criança.</p>
+
+				<p>Obs.: É garantido que nenhuma tradução apareça repetida ou duplicada e os países de todas as crianças estejam presentes na relação dos países.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Seu programa deverá imprimir todas as etiquetas de acordo com a entrada, conforme o exemplo abaixo, sempre com uma linha em branco após a impressão de cada uma das etiquetas, inclusive após a última etiqueta.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>2<br />
+frances<br />
+Joyeux Noel<br />
+ingles<br />
+Merry Christmas<br />
+1<br />
+John Brolargo<br />
+ingles</p>
+
+						</td>
+						<td>
+							<p>John Brolargo<br />
+Merry Christmas</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>7<br />
+frances<br />
+Joyeux Noel<br />
+ingles<br />
+Merry Christmas<br />
+alemao<br />
+Frohe Weihnachten<br />
+espanhol<br />
+Feliz Navidade<br />
+italiano<br />
+buon natale<br />
+polones<br />
+Wesotych Swiat<br />
+portugues<br />
+Feliz Natal<br />
+5<br />
+Joao Paulo Silva<br />
+portugues<br />
+Pedro Guerra<br />
+portugues<br />
+Pietro Gonsalez<br />
+espanhol<br />
+Karol Kosinski<br />
+polones<br />
+John Smith<br />
+ingles</p>
+
+						</td>
+						<td>
+							<p>Joao Paulo Silva<br />
+Feliz Natal<br />
+<br />
+Pedro Guerra<br />
+Feliz Natal<br />
+<br />
+Pietro Gonsalez<br />
+Feliz Navidade<br />
+<br />
+Karol Kosinski<br />
+Wesotych Swiat<br />
+<br />
+John Smith<br />
+Merry Christmas</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				Contest de Natal - 2016.
+			</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,132 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1945 - Simulador</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1945 - Simulador" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1945</span>
+				<h1>Simulador</h1>
+				<div>
+					<p>Por Emilio Wuerges, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Séculos após a invasão alienígena, quando a humanidade já está completamente reconstruída, foram encontrados um conjunto de programas escritos em uma linguagem obsoleta, chamada Java++. Por curiosidade histórica, você foi designado a tentar entender oque estes programas faziam.<br />
+					<p>Sua tarefa é escrever um simulador para estes programas, e como teste inicial, o simulador deve ser capaz de calcular o resultado da última variável atribuída de cada programa.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Cada entrada consiste de um programa. O programa só contem 2 tipos de instruções. Uma para atribuir uma variável e outra para executar uma soma.</p>
+
+					<p>As instruções de declaração são no formato:</p>
+
+					<p>A := B</p>
+
+					<p>Onde A é um nome de variável válido e B é um inteiro positivo.</p>
+
+					<p>As instruções de soma são no formato:</p>
+
+					<p>A := B + C</p>
+
+					<p>Onde A é um nome de variável válido e B ou C são ou um nome de variável válido ou um inteiro positivo.</p>
+
+					<p>Os tokens deste programa são sempre separados por espaço e as instruções são separadas por uma quebra de linha.</p>
+
+					<p>São nomes de variáveis válidos todas as combinações de até 8 letras minúsculas.</p>
+
+					<p>Os programas tem, no máximo, 2000 instruções.</p>
+
+					<p>Variáveis são atribuídas, no máximo, 1 vez.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída consiste de apenas 1 linha, contendo apenas um número inteiro, referente ao valor a última variável atribuída, seja por uma atribuição direta ou por uma soma.</p>
+				</div>
+
+				<div class="both"></div>
+        <table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+                <p>a := 2<br />
+                b := 1<br />
+                c := a + b<br />
+                d := a + b
+                </p>
+							</td>
+							<td>
+								<p>3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>a := 0<br />
+								b := 1<br />
+								c := a + b<br />
+								d := a + b<br />
+								e := a + c<br />
+								f := 7</p>
+
+							</td>
+							<td>
+								<p>7</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					III Maratona de Programação FACE - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,139 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2276 - Surveillance</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2276 - Surveillance" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2276</span>
+				<h1>Surveillance</h1>
+				<div>
+					<p>Por ICPC 2014 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ru.gif' alt='RU' /> Russian Federation</p>
+				</div>
+				<strong>Timelimit: 4</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>The International Corporation for Protection and Control (ICPC) develops efficient technology for, well, protection and control. Naturally, they are keen to have their own headquarters protected and controlled. Viewed from above, the headquarters building has the shape of a convex polygon. There are several suitable places around it where cameras can be installed to monitor the building. Each camera covers a certain range of the polygon sides (building walls), depending on its position. ICPC wants to minimize the number of cameras needed to cover the whole building.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case. Its first line contains two integers <strong>n</strong> and <strong>k</strong> (3 ≤ <strong>n</strong> ≤ 10<sup>6</sup> and 1 ≤ <strong>k</strong> ≤ 10<sup>6</sup> ), where <strong>n</strong> is the number of walls and <strong>k</strong> is the number of possible places for installing cameras. Each of the remaining <strong>k</strong> lines contains two integers <strong>a<sub>i</sub></strong> and <strong>b<sub>i</sub></strong> (1 ≤ <strong>a<sub>i</sub></strong> , <strong>b<sub>i</sub></strong> ≤ <strong>n</strong>). These integers specify which walls a camera at the <strong>i<sup>th</sup></strong> place would cover. If <strong>a<sub>i</sub></strong> ≤ <strong>b<sub>i</sub></strong> then the camera covers each wall <strong>j</strong> such that <strong>a<sub>i</sub></strong> ≤ <strong>j</strong> ≤ <strong>b<sub>i</sub></strong> . If <strong>a<sub>i</sub></strong> &gt; <strong>b<sub>i</sub></strong> then the camera covers each wall <strong>j</strong> such that <strong>a<sub>i</sub></strong> ≤ <strong>j</strong> ≤ <strong>n</strong> or 1 ≤ <strong>j</strong> ≤ <strong>b<sub>i</sub></strong> .</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Display the minimal number of cameras that suffice to cover each wall of the building. The ranges covered by two cameras may overlap. If the building cannot be covered, display 'impossible' instead.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>100 7</p>
+
+								<p>1 50</p>
+
+								<p>50 70</p>
+
+								<p>70 90</p>
+
+								<p>90 40</p>
+
+								<p>20 60</p>
+
+								<p>60 80</p>
+
+								<p>80 20</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>8 2</p>
+
+						<p>8 3</p>
+
+						<p>5 7</p>
+
+                    </td>
+                    <td>
+                        <p>impossible</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>8 2</p>
+
+						<p>8 4</p>
+
+						<p>5 7</p>
+
+                    </td>
+                    <td>
+                        <p>2</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					ICPC 2014 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

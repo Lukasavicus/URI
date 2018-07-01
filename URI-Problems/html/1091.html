@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1091 - Divisão da Nlogônia</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1091 - Divisão da Nlogônia" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1091</span>
+            <h1>Divisão da Nlogônia</h1>
+            <div><p>
+                    Por Ricardo Anido&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" />&nbsp;Brasil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Depois de séculos de escaramuças entre os quatro povos habitantes da Nlogônia, e de dezenas de anos de negociações envolvendo diplomatas, políticos e as forças armadas de todas as partes interessadas, com a intermediação da ONU, OTAN, G7 e SBC, foi finalmente decidida e aceita por todos a maneira de dividir o país em quatro territórios independentes.</p>
+                <p>
+                    Ficou decidido que um ponto, denominado ponto divisor, cujas coordenadas foram estabelecidas nas negociações, definiria a divisão do país, da seguinte maneira. Duas linhas, ambas contendo o ponto divisor, uma na direção norte-sul e uma na direção leste-oeste, seriam traçadas no mapa, dividindo o país em quatro novos países. Iniciando no quadrante mais ao norte e mais ao oeste, em sentido horário, os novos países seriam chamados de Nlogônia do Noroeste, Nlogônia do Nordeste, Nlogônia do Sudeste e Nlogônia do Sudoeste.</p>
+                <p class="center">
+                    <br><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1091.png" style="width: 501px; height: 237px;"></p>
+                <p>
+                    A ONU determinou que fosse disponibilizada uma página na Internet para que os habitantes pudessem consultar em qual dos novos países suas residências estão, e você foi contratado para ajudar a implementar o sistema.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. A primeira linha de um caso de teste contém um inteiro <em><strong>K </strong></em>indicando o número de consultas que serão realizadas (<i>0 &lt; <strong>K </strong>≤ 10<sup>3</sup></i>). A segunda linha de um caso de teste contém dois números inteiros <em><strong>N </strong></em>e <em><strong>M </strong></em>representando as coordenadas do ponto divisor (<i>-10<sup>4</sup> &lt; <strong>N</strong>, <strong>M </strong>&lt; 10<sup>4</sup></i>). Cada uma das K linhas seguintes contém dois inteiros <em><strong>X </strong></em>e <em><strong>Y </strong></em>representando as coordenadas de uma residência (<i>-10<sup>4</sup> ≤ <strong>X</strong>, <strong>Y </strong>≤ 10<sup>4</sup></i>).Em todas as coordenadas dadas, o primeiro valor&nbsp; corresponde à direção leste-oeste, e o segundo valor corresponde à direção norte-sul.</p>
+                <p>
+                    O final da entrada é indicado por uma linha que contém apenas o número zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste da entrada seu programa deve imprimir uma linha contendo:</p>
+                <ul>
+                    <li>
+                        a palavra divisa se a residência encontra-se em cima de uma das linhas divisórias (norte-sul ou leste-oeste);</li>
+                    <li>
+                        NO se a residência encontra-se na Nlogônia do Noroeste;</li>
+                    <li>
+                        NE se a residência encontra-se na Nlogônia do Nordeste;</li>
+                    <li>
+                        SE se a residência encontra-se na Nlogônia do Sudeste;</li>
+                    <li>
+                        SO se a residência encontra-se na Nlogônia do Sudoeste.</li>
+                </ul>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br>
+                                2 1<br>
+                                10 10<br>
+                                -10 1<br>
+                                0 33<br>
+                                4<br>
+                                -1000 -1000<br>
+                                -1000 -1000<br>
+                                0 0<br>
+                                -2000 -10000<br>
+                                -999 -1001<br>
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                NE<br>
+                                divisa<br>
+                                NO<br>
+                                divisa<br>
+                                NE<br>
+                                SO<br>
+                                SE</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table> <p class="footer">
+                Maratona de Programação da SBC 2008.</p>
+        </div>
+
+    </body>
+</html>
+

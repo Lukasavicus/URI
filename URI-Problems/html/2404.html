@@ -1,0 +1,131 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2404 - Reduzindo Detalhes em um Mapa</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2404 - Reduzindo Detalhes em um Mapa" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2404</span>
+				<h1>Reduzindo Detalhes em um Mapa</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2011 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Leonardo Nascimento é um garoto de 13 anos apaixonado por cartografia. Durante as férias de janeiro de 2011, ele alternava seu tempo entre navegar na internet (pesquisando sobre mapas) e arrumar sua coleção de mapas. Navegando na internet, Leonardo descobriu um site especializado em mapas, o Google Maps. Depois de alguns dias usando o site, Leonardo percebeu que quando diminuía o zoom algumas ruas não eram mais exibidas no mapa, isto é, o zoom determinava também o nível de detalhe do mapa. A figura abaixo ilustra um dos testes feito por Leonardo.</p>
+
+<p class="center"><img style="width: 400px" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_172_H_b.png' alt='' /></p>
+
+<p>Ele sabe que você participa da OBI e que você adora resolver os problemas que envolvem mapas. Então resolveu formular o seguinte problema: dado um mapa de cidades e rodovias que as ligam, selecione um subconjunto das rodovias tal que entre qualquer par de cidades exista uma rota ligando-as e a soma dos comprimentos das rodovias é mínimo. Na figura abaixo e à esquerda temos um exemplo com cinco cidades e seis rodovias ligando-as. A figura abaixo e à direita ilustra uma solução cuja soma dos comprimentos é 34.</p>
+
+<p class="center"><img style="width: 550px" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_172_H_a.png' alt='' /></p>
+
+<p>Para facilitar um pouco sua vida, Leonardo determinou que você só precisa dizer a soma dos comprimentos das rodovias do subconjunto selecionado para um dado mapa.</p>
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém dois números <strong>N</strong>&nbsp;(1 ≤&nbsp;<strong><em>N</em>&nbsp;</strong>≤ 500)&nbsp;e&nbsp;<em><strong>M</strong> (</em>1 ≤&nbsp;<strong><em>M</em></strong>&nbsp;≤ 124750<em>)</em>&nbsp;que representam o número de cidades e o número de rodovias respectivamente. Cada uma das próximas&nbsp;<strong><em>M</em></strong>&nbsp;linhas é composta por três inteiros&nbsp;<strong><em>U</em></strong>,&nbsp;<strong><em>V</em>&nbsp;</strong><em>(</em>1 ≤&nbsp;<strong><em>U</em></strong>,&nbsp;<strong><em>V</em></strong>&nbsp;≤&nbsp;<strong><em>N</em></strong>&nbsp;e&nbsp;<strong><em>U</em></strong>&nbsp;≠ <strong>V</strong><em>) e <strong>C</strong></em>&nbsp;(1 ≤&nbsp;<strong><em>C</em></strong>&nbsp;≤ 500)&nbsp;que indiciam que existe uma rodovia de comprimento&nbsp;<strong><em>C</em></strong>&nbsp;que liga as cidades&nbsp;<strong><em>U</em></strong>&nbsp;e&nbsp;<strong><em>V</em></strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída consiste em apenas uma linha contendo a soma do comprimento das rodovias selecionadas.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 6</p>
+
+<p>1 2 15</p>
+
+<p>1 3 10</p>
+
+<p>2 3 1</p>
+
+<p>3 4 3</p>
+
+<p>2 4 5</p>
+
+<p>4 5 20</p>
+
+							</td>
+							<td>
+								<p>34</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 6</p>
+
+<p>1 2 1</p>
+
+<p>1 3 10</p>
+
+<p>1 4 1</p>
+
+<p>2 3 1</p>
+
+<p>2 4 10</p>
+
+<p>3 4 1</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2011 Fase 2 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

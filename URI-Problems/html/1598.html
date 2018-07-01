@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1598 - O Verdadeiro Valor dos Tapetes</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1598 - O Verdadeiro Valor dos Tapetes" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1598</span>
+                <h1>O Verdadeiro Valor dos Tapetes</h1>
+                <div>
+                    <p>Por Marcio T. I. Oshiro <img src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" alt="" style="width: 16px; height: 11px; "> Brasil</p>
+                </div>
+                <strong>Timelimit: 7</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Os tapetes árabes são muito conhecidos. Sua qualidade é reconhecida em todo o mundo, e as características de um bom tapete são apreciadas por todos. Avaliar os tapetes é uma tarefa muito difícil, e os especialistas analisam suas características minuciosamente para estabelecer um preço adequado. Os tapetes são formados por pontos, onde os fios são amarrados. Apesar de ser muito difícil para uma pessoa comum, os especialistas são capazes de dizer a direção em que o fio foi amarrado entre dois pontos. Estes fios formam circuitos nos nós e padrões complicados têm centenas ou mesmo milhares de circuitos e são muito intrincados. Circuitos grandes (em que a quantidade de fio dividida pelo número de nós é muito grande) desvalorizam o tapete, pois o torna menos resistente. Circuitos pequenos são valorizados, e o avaliador sempre busca encontrar o menor circuito existente no tapete, pois este é um indicador do valor do tapete. Sua tarefa neste exercício é ler os dados de um tapete com N nós e M fios (ligações entre estes nós em que a direção em que foi feita é determinada) e determinar o valor do menor circuito do tapete, ou seja, o circuito em que a razão entre a quantidade de fio dividida pelo número de nós é mínimo.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF).</p>
+
+                    <p>A primeira linha de cada instância contém dois inteiros, <strong>N</strong> (3 ≤ <strong>N</strong> ≤ 1.000) e <strong>M</strong> (<strong>N</strong> ≤ <strong>M</strong> ≤ <strong>N</strong> × <strong>N</strong> − 1), correspondendo aos números de nós e ligações, respectivamente. Os nós são numerados de 1 a <strong>N</strong>. Seguem <strong>M</strong> linhas, cada uma com três inteiros <strong>u</strong>, <strong>v</strong> e <strong>c</strong> (0 ≤ <strong>c</strong> ≤ 1.000) descrevendo uma ligação do nó <strong>u</strong> para o nó <strong>v</strong> usando <strong>c</strong> cm de fio.</p>
+
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância, imprima em uma única linha o valor mínimo de um circuito do tapete, onde esse valor é a razão entre a quantidade de fio dividida pelo número de nós no circuito. O valor deve ser impresso com 3 casas decimais. Imprima -1, caso não exista circuito no tapete.</p>
+
+
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 3<br />
+2 1 4<br />
+3 1 2<br />
+3 2 1<br />
+4 5<br />
+1 2 40<br />
+2 3 20<br />
+3 4 20<br />
+4 1 30<br />
+4 2 50</p>
+
+
+
+                            </td>
+                            <td>
+                                <p>-1<br />
+27.500</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Sábio é quem estende seu manto como se fosse tapete, e tolo é quem pisa.<br/>
+                    Preliminar Maratona (Seletiva IME-USP)
+                </p>
+            </div>
+
+        </body>
+    </html>

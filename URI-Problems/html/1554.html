@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1554 - Bilhar N+1</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1554 - Bilhar N+1" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1554 </span>
+                <h1>Bilhar N+1</h1>
+                <div>
+                    <p>Por M.C. Pinto, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Existem muitas variantes de jogos de bilhar. A UFFS (União Federal dos Fãs de Sinuca)&nbsp;resolveu desenvolver uma nova variante, denominada <em>N + 1</em>.</p>
+
+<p>Essa variante consiste em, numa mesa de bilhar padrão, tacar a bola branca para acertá-la na bola mais próxima dela, dentre as <em>N</em> possíveis. O jogo é vencido pelo jogador que&nbsp;completar mais acertos após 50 jogadas.</p>
+
+<p>Como a dificuldade do jogo está em descobrir qual das <em>N</em> bolas é a mais próxima da&nbsp;branca, sua tarefa é escrever um programa que ajude os juízes da partida.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Existem vários casos de teste. A primeira linha contém um inteiro <strong>C</strong> que determina a quantidade de casos de teste que vem a seguir. Para cada caso de teste, a entrada começa com um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 50), que define o número de bolas disponíveis, além da branca. As próximas <strong>N</strong> + 1 linhas possuem dois inteiros, <strong>x</strong> e <strong>y</strong>, separados por um espaço em branco, indicando a posição (<strong>x</strong>, <strong>y</strong>) das bolas no plano da mesa, uma bola por linha (0 &lt; <strong>x</strong> &lt; 1420 mm e 0 &lt; <strong>y</strong> &lt; 2840 mm). A primeira linha indica a posição da bola branca. As demais linhas indicam a posição das bolas 1, 2, 3, . . . , <strong>N</strong>-1, <strong>N</strong> nesta ordem.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste deve ser mostrada uma linha contendo apenas o número da bola que está mais próxima da branca. A margem de erro aceitável é de 0,01 mm. Havendo empate, deve-se mostrar aquela de menor número. Sempre finalize uma linha com o caractere nova linha (\n).</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3<br />
+								1<br />
+								30 60<br />
+								900 1800<br />
+								2<br />
+								710 30<br />
+								710 2100<br />
+								710 1000<br />
+								3<br />
+								710 30<br />
+								710 2100<br />
+								510 1000<br />
+								910 1000</p>
+								
+								</td>
+								<td>
+                                <p>1<br />
+2<br />
+2</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Aquecimento para a OBI 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

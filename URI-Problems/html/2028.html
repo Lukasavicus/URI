@@ -1,0 +1,99 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2028 - Sequência de sequência</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2020 - Sequência de sequência" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2028</span>
+				<h1>Sequência de Sequência</h1>
+				<div>
+					<p>Por Albertinin Mourato, UFPE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Hyam é um menino que adora sequências. Ele anda descobrindo sequências interessantes que nem mesmo Fibonacci imaginaria. Certo dia, Hyam percebeu que dado um número N, ele poderia fazer uma sequência do tipo 0 1 2 2 3 3 3 4 4 4 4 ... N N N ... N. No entanto, Hyam percebeu que cada valor que aumentava no número da sequência, a quantidade total de números da sequência aumentava semelhantemente à um crescimento fatorial, neste caso, ao invés de multiplicar, soma-se o número total de números da sequência com o valor do próximo número da sequência. Por exemplo, se N = 2. A sequência correta seria 0 1 2 2, obtendo-se 4 digitos. Agora, se N = 3, o próximo número da sequência tem valor 3, então a quantidade total de número da sequência seria a quantidade de números com N = 2, que é 4, mais o valor do próximo número da sequência, neste caso 3, obtendo-se 7, já que a sequência correta para N = 3 é 0 1 2 2 3 3 3.</p>
+
+					<p>Sua tarefa é fazer um algoritmo que dado um número inteiro <strong>N</strong>, tenha como resposta a quantidade total de números dessa sequência e logo abaixo a sequência completa.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta de vários casos de testes. Cada caso é composto por um inteiro N (0&lt;=N&lt;=200) que indica o valor dos últimos N números da sequência.</p>
+
+					<p>A entrada termina com final de arquivo (<strong>EOF</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saida é no formato <strong>Caso X: N numeros </strong>onde <strong>X</strong> é a ordem do número de casos e <strong>N</strong> é a quantidade de numeros que contém na sequência completa, na próxima linha a sequência de números com um espaço <strong>entre</strong> eles. É pedido que deixe uma linha em branco após cada caso.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>0</p>
+								<p>1</p>
+								<p>2</p>
+								<p>3</p>
+
+							</td>
+							<td>
+								<p>Caso 1: 1 numero</p>
+								<p>0</p>
+								<br />
+								<p>Caso 2: 2 numeros</p>
+								<p>0 1</p>
+								<br />
+								<p>Caso 3: 4 numeros</p>
+								<p>0 1 2 2</p>
+								<br />
+								<p>Caso 4: 7 numeros</p>
+								<p>0 1 2 2 3 3 3</p>
+								<br />
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					
+				</p>
+			</div>
+
+		</body>
+	</html>

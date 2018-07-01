@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1673 - Codificação Run-length</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1673 - Codificação Run-length" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1673</span>
+                <h1>Codificação Run-length</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                     Sua tarefa é escrever um programa que realiza uma simples Codificação Run-Length, como descrita nas regras abaixo.
+ 
+Qualquer sequencia entre 2 e 9 caracteres idênticos é codificada por dois caracteres. O primeiro caractere é a largura da sequência, representada por um dos caracteres entre 2 a 9. O segundo caractere é o valor do caractere repetido. Uma sequência de mais de 9 caracteres identicos repetidos é resolvida com primeiro codificando 9 caracteres, depois os caracteres restantes.<br>
+<br>
+Qualquer sequência de caracteres que não contém repetições consecutivas de qualquer caracteres é representada por um caractere '1' seguido da sequência de caracteres e terminado com outro '1'. Se um '1' aparecer como parte da sequencia, ele será terminado com um '1', tendo então dois caracteres '1' como saída.
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    A entrada consiste de letras(maiúsculas e minúsculas), digitos, espaços e pontuação. Toda linha é terminada com um caractere terminador de linha.
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    Cada linha da entrada é codificada separadamente como descrito acima. A nova linha no final de cada linha não é codificada, mas é passada diretamente para a saída.
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+AAAAAABCCCC<br />
+12344
+</p>
+
+                            </td>
+                            <td>
+                                <p>
+6A1B14C<br />
+11123124
+</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2004/2005
+                </p>
+            </div>
+
+        </body>
+    </html>

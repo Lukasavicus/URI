@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1532 - Arremesso de Bolas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1532 - Arremesso de Bolas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1532</span>
+                <h1>Arremesso de Bolas</h1>
+                <div>
+                    <p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Seus amigos inventaram uma nova competição: Arremesso de bolas. O objetivo é simples, basta arremessar uma bola de forma que ela caia dentro de um buraco <strong>N</strong> metros a sua frente.</p>
+
+<p>Quando a bola é arremessada, digamos que à uma velocidade inteira <strong>V</strong>, ela permanece no ar por <strong>V</strong> metros e então quica. Ela repete esse processo <strong>V</strong> vezes. Após ela quicar <strong>V</strong> vezes, ela muda sua velocidade para <strong>V</strong>-1, e o processo anterior se repete, até que a velocidade seja igual a 0.</p>
+
+<p>Por exemplo, se a bola for arremessada a uma velocidade igual a 3, ela quicará nos seguintes pontos: 3, 6, 9, 11, 13, 14; conforme pode ser visto na imagem.</p>
+
+<p class="center"><img src='https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1532.png' alt='' /></p>
+
+<p>Você consegue arremessar a bola à uma velocidade inteira menor ou igual a <strong>V</strong>. Dada a distância do buraco, diga se é possível que você arremesse a bola e que ela quique exatamente no buraco, acertando-o.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Haverá diversos casos de teste. Cada caso de teste contém dois inteiros, <strong>N</strong> e <strong>V</strong> (1 ≤ <strong>N</strong> ≤ 1000, 1 ≤ <strong>V</strong> ≤ 30), representando a distância do buraco e a velocidade máxima com a qual você consegue arremessar a bola.</p>
+
+<p>O último caso de teste é indicado quando <strong>N</strong> = <strong>V</strong> = 0, o qual não deverá ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma linha contendo a palavra “possivel” (sem aspas), caso seja possível arremessar a bola a uma velocidade menor ou igual a <strong>V</strong> de forma que ela quique no buraco, ou “impossivel”, caso contrário.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>14 3<br />
+13 3<br />
+12 3<br />
+5 3<br />
+30 4<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>possivel<br />
+possivel<br />
+impossivel<br />
+possivel<br />
+possivel</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                Maratona Algar Telecom XIII 
+                </p>
+            </div>
+
+        </body>
+    </html>

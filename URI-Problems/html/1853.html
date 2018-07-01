@@ -1,0 +1,130 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1853 - O Jogo da Confiança de Daenerys</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1853 - O Jogo da Confiança de Daenerys" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1853</span>
+				<h1>O Jogo da Confiança de Daenerys</h1>
+				<div>
+					<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Daenerys: "<em>(...) então eu deveria deixá-lo me servir porque você assassinou membros de sua própria família?</em>"<br />
+Tyrion: "<em>Lhe servir? Majestade, nós acabamos de nos conhecer. É muito cedo para saber se você merece meus serviços.</em>"</p>
+
+<p>Para acertar as coisas com o anão, Daenerys decidiu desafiar Tyrion para um jogo de 2 jogadores que ela mesma inventou, quando estava no mar Dothraki. Se Tyrion vencê-la no jogo, ela irá fazer dele seu conselheiro, como ele queria. Caso contrário, ela irá mandar executá-lo.</p>
+
+<p>Este é um jogo com palavras. Neste jogo, considera-se apenas o alfabeto Dothraki, que consiste nas primeiras <strong>L</strong> letras minúsculas do nosso alfabeto.</p>
+
+<p>O jogo se inicia com uma lista de <strong>S</strong> strings <strong>s<sub>1</sub></strong>, ..., <strong>s<sub>S</sub></strong>. A partida é jogada por turnos, e Tyrion é o primeiro a jogar. Em cada turno, um jogador escolhe uma string da lista e adiciona uma letra (do alfabeto Dothraki) ao final da string, em seu lado direito.  Entretanto, um jogador não pode adicionar uma letra a uma string <strong>s<sub>i</sub></strong> (1 ≤ i ≤ <strong>S</strong>) se <strong>F<sub>i</sub></strong> letras já foram adicionadas à string durante o jogo. Um jogador também não pode adicionar uma letra a uma string se esta string, incluindo todas as letras adicionadas a ela durante o jogo (mas não a letra que o jogador quer adicionar), contém um adjetivo Dothraki como substring. Todos os adjetivos Dothraki são dados na entrada.</p>
+
+<p>Se um jogador não puder adicionar nenhuma letra a nenhuma string, ele perde o jogo. Tanto Daenerys quanto Tyrion jogam de forma ótima. Sua tarefa é decidir se Tyrion pode vencer Daenerys neste jogo.</p>
+
+<p>No primeiro exemplo, Tyrion pode vencer se adicionar a letra <em>c</em> à string <strong>s<sub>1</sub></strong>: ela conterá um adjetivo e logo não poderá mais ser escolhida. Daenerys é forçada a adicionar uma letra à string <strong>s<sub>2</sub></strong>. Tyrion então adicionará outra letra a <strong>s<sub>2</sub></strong>.  Neste ponto, Daenerys não terá mais opções de jogadas, pois <strong>F<sub>2</sub></strong> = 2 letras já foram adicionadas à string <strong>s<sub>2</sub></strong>.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém os inteiros <strong>D</strong> e <strong>L</strong> (<strong>D</strong> &gt; 0, 2 ≤ <strong>L</strong> ≤ 10), onde <strong>D</strong> é o número de adjetivos Dothraki. Cada uma das próximas <strong>D</strong> linhas contém um adjetivo. A soma dos tamanhos de todos os adjetivos não será maior que 10<sup>5</sup>. A próxima linha contém o número <strong>S</strong> (1 ≤ <strong>S</strong> ≤ 300). Cada uma das próximas <strong>S</strong> linhas contém uma string <strong>s<sub>i</sub></strong> e o inteiro <strong>F<sub>i</sub></strong> (1 ≤ <strong>F<sub>i</sub></strong> ≤ 50). A soma dos tamanhos de todas as strings <strong>s<sub>i</sub></strong> não será maior que 3×10<sup>3</sup>.</p>
+
+<p>É garantido que nenhuma dessas strings contém um adjetivo Dothraki.  Além disso, todos os adjetivos e todas as strings <strong>s<sub>i</sub></strong> contém apenas letras do alfabeto Dothraki.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima una única linha contendo <strong>Tyrion</strong> se Tyrion pode derrotar Daenerys, ou <strong>Daenerys</strong> caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 5<br />
+abc<br />
+2<br />
+eab 10<br />
+de 2</p>
+
+							</td>
+							<td>
+								<p>Tyrion</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 4<br />
+abc<br />
+acd<br />
+2<br />
+ab 1<br />
+ac 1</p>
+
+							</td>
+							<td>
+								<p>Daenerys</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+
+					</tbody>
+				</table>
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,104 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2205 - Asteroid Rangers</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2205 - Asteroid Rangers" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2205</span>
+				<h1>Asteroid Rangers</h1>
+				<div>
+					<p>Por ICPC 2012 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/pl.gif' alt='PL' /> Poland</p>
+				</div>
+				<strong>Timelimit: 30</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>The year is 2112 and humankind has conquered the solar system. The Space Ranger Corps have set up bases on any hunk of rock that is even remotely inhabitable. Your job as a member of the Asteroid Communications Ministry is to make sure that all of the Space Ranger asteroid bases can communicate with one another as cheaply as possible. You could set up direct communication links from each base to every other base, but that would be prohibitively expensive. Instead, you want to set up the minimum number of links so that everyone can send messages to everyone else, potentially relayed by one or more bases. The cost of any link is directly proportional to the distance between the two bases it connects, so this doesn’t seem that hard of a problem.</p>
+
+					<p>There is one small difficulty, however. Asteroids have a tendency to move about, so two bases that are currently very close may not be so in the future. Therefore as time goes on, you must be willing to switch your communication links so that you always have the cheapest relay system in place. Switching these links takes time and money, so you are interested in knowing how many times you will have to perform such a switch.</p>
+
+					<p>A few assumptions make your task easier. Each asteroid is considered a single point. Asteroids always move linearly with a fixed velocity. No asteroids ever collide with other asteroids. Also, any relay system that becomes optimal at a time <strong>t</strong> ≥ 0 will be uniquely optimal for any time <strong>s</strong> satisfying <strong>t</strong> &lt; <strong>s</strong> &lt; t+10<sup>−6</sup> . The initial optimal relay system will be unique.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Each test case starts with a line containing an integer <strong>n</strong> (2 ≤ <strong>n</strong> ≤ 50) indicating the number of asteroid bases. Following this are <strong>n</strong> lines, each containing six integers <strong>x</strong>, <strong>y</strong>, <strong>z</strong>, <strong>v<sub>x</sub></strong>, <strong>v<sub>y</sub></strong>, <strong>v<sub>z</sub></strong>. The first three specify the initial location of an asteroid (−150 ≤ <strong>x</strong>, <strong>y</strong>, <strong>z</strong> ≤ 150), and the last three specify the <strong>x</strong>, <strong>y</strong>, and <strong>z</strong> components of that asteroid’s velocity in space units per time unit (−100 ≤ <strong>v<sub>x</sub></strong>, <strong>v<sub>y</sub></strong>, <strong>v<sub>z</sub></strong> ≤ 100).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>For each test case, display a single line containing the case number and the number of times that the relay system needs to be set up or modified.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+								<p>0 0 0 0 0 0</p>
+
+								<p>5 0 0 0 0 0</p>
+
+								<p>10 1 0 -1 0 0</p>
+
+								<p>4</p>
+
+								<p>0 0 0 1 0 0</p>
+
+								<p>0 1 0 0 -1 0</p>
+
+								<p>1 1 1 3 1 1</p>
+
+								<p>-1 -1 2 1 -1 -1</p>
+
+							</td>
+							<td>
+								<p>Case 1: 3</p>
+
+								<p>Case 2: 3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					ICPC 2012 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

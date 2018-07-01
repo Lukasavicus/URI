@@ -1,0 +1,141 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2272 - Metal Processing Plant</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2272 - Metal Processing Plant" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+			<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+			<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			extensions: ["tex2jax.js"],
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+			inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+			displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+			processEscapes: true
+			},
+			"HTML-CSS": { availableFonts: ["TeX"] }
+			});
+			</script>
+			<script type="text/javascript" src="path-to-MathJax/MathJax.js">
+			</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2272</span>
+				<h1>Metal Processing Plant</h1>
+				<div>
+					<p>Por ICPC 2016 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/th.gif' alt='TH' /> Thailand</p>
+				</div>
+				<strong>Timelimit: 4</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_154_G.png" alt="factory" width="500" style="float:right" />
+
+					<p>Yulia works for a metal processing plant in Ekaterinburg. This plant processes ores mined in the Ural mountains, extracting precious metals such as chalcopyrite, platinum and gold from the ores. Every month the plant receives <strong>n</strong> shipments of unprocessed ore. Yulia needs to partition these shipments into two groups based on their similarity. Then, each group is sent to one of two ore processing buildings of the plant.</p>
+
+					<p>To perform this partitioning, Yulia first calculates a numeric distance <strong>d</strong>(<strong>i</strong>, <strong>j</strong>) for each pair of shipments 1 ≤ <strong>i</strong> ≤ <strong>n</strong> and 1 ≤ <strong>j</strong> ≤ <strong>n</strong>, where the smaller the distance, the more similar the shipments <strong>i</strong> and <strong>j</strong> are. For a subset <strong>S</strong> ⊆ {1, . . . , <strong>n</strong>} of shipments, she then defines the disparity <strong>D</strong> of <strong>S</strong> as the maximum distance between a pair of shipments in the subset, that is,</p>
+
+					$$D(S) = \ _{i,j\in S}^{max}d(i,j)$$
+
+					<p>Yulia then partitions the shipments into two subsets <strong>A</strong> and <strong>B</strong> in such a way that the sum of their disparities <strong>D</strong>(<strong>A</strong>) + <strong>D</strong>(<strong>B</strong>) is minimized. Your task is to help her find this partitioning.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case. The first line contains an integer <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 200) indicating the number of shipments. The following <strong>n</strong> − 1 lines contain the distances <strong>d</strong>(<strong>i</strong>, <strong>j</strong>). The <strong>i<sup>th</sup></strong> of these lines contains <strong>n</strong> − <strong>i</strong> integers and the <strong>j<sup>th</sup></strong> integer of that line gives the value of <strong>d</strong>(<strong>i</strong>, <strong>i</strong> + <strong>j</strong>). The distances are symmetric, so <strong>d</strong>(<strong>j</strong>, <strong>i</strong>) = <strong>d</strong>(<strong>i</strong>, <strong>j</strong>), and the distance of a shipment to itself is 0. All distances are integers between 0 and 10<sup>9</sup> (inclusive).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Display the minimum possible sum of disparities for partitioning the shipments into two groups.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5</p>
+
+								<p>4 5 0 2</p>
+
+								<p>1 3 7</p>
+
+								<p>2 0</p>
+
+								<p>4</p>
+
+							</td>
+							<td>
+								<p>4</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7</p>
+
+								<p>1 10 5 5 5 5</p>
+
+								<p>5 10 5 5 5</p>
+
+								<p>100 100 5 5</p>
+
+								<p>10 5 5</p>
+
+								<p>98 99</p>
+
+								<p>3</p>
+
+							</td>
+							<td>
+								<p>15</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC 2016 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

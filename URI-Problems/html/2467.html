@@ -1,0 +1,138 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2467 - Frequência</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2467 - Frequência" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2467</span>
+				<h1>Frequência</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2014 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Byteland é uma cidade bastante conhecida por propor variados desafios aos seus habitantes. Recentemente, o prefeito de Byteland, Joãozinho, decidiu propor um desafio que ele gosta de chamar de Tabuleiro da Frequência.</p>
+
+<p>A brincadeira ocorre da seguinte forma. Inicialmente, um tabuleiro com dimensões N × N é dado contendo apenas 0’s. Depois disso, Q operações são propostas, podendo ser de 4 tipos:</p>
+
+<ul>
+	<li>1 X R: Atribuir o valor R a todos os números da linha X;</li>
+	<li>2 X R: Atribuir o valor R a todos os números da coluna X;</li>
+	<li>3 X: Imprimir o valor mais frequente na linha X;</li>
+	<li>4 X: Imprimir o valor mais frequente da coluna X.</li>
+</ul>
+
+<p>Joãozinho é muito bom com computadores, mas também é bastante preguiçoso. Sabendo que você é um dos melhores programadores do mundo, ele decidiu pedir sua ajuda para resolver este problema.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada é composta por dois inteiros <strong>N</strong> e <strong>Q </strong>(1 ≤ <strong>N</strong>, <strong>Q</strong> ≤ 10<sup>5</sup>), representando, respectivamente, o tamanho do tabuleiro e a quantidade de operações. As próximas <strong>Q</strong> linhas da entrada vão conter as <strong>Q</strong> operações. O primeiro inteiro de cada linha vai indicar o tipo da operação. Caso seja 1 ou 2, será seguido por mais dois inteiros <strong>X </strong>(1 ≤ <strong>X</strong> ≤ <strong>N</strong>) e <strong>R </strong>(0 ≤ <strong>R</strong> ≤ 50). Caso seja 3 ou 4, será seguido por apenas mais um inteiro <strong>X</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada operação do tipo 3 ou 4, seu programa deve produzir uma linha, contendo o valor da resposta correspondente. Se uma linha ou coluna tiver dois ou mais valores que se repetem o mesmo número de vezes, você deve imprimir o maior deles. Por exemplo, se uma linha tem os valores [5,7,7,2,5,2,1,3], tanto o 2, 5 e 7 se repetem duas vezes, então a resposta será 7, pois é o maior deles.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 9</p>
+								<p>3 1</p>
+								<p>1 1 2</p>
+								<p>1 3 4</p>
+								<p>1 4 4</p>
+								<p>4 2</p>
+								<p>2 2 5</p>
+								<p>2 3 5</p>
+								<p>2 4 5</p>
+								<p>3 3</p>
+							</td>
+							<td>
+								<p>0</p>
+								<p>4</p>
+								<p>5</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 4</p>
+								<p>1 1 1</p>
+								<p>2 2 2</p>
+								<p>3 1</p>
+								<p>3 2</p>
+							</td>
+							<td>
+								<p>2</p>
+								<p>2</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 6
+								<p>1 1 2</p>
+								<p>1 2 3</p>
+								<p>1 3 4</p>
+								<p>4 3</p>
+								<p>1 3 0</p>
+								<p>4 3</p>
+							</td>
+							<td>
+								<p>4</p>
+								<p>3</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática - 2014 Fase 2 Modalidade Universitária (PU)
+				</p>
+			</div>
+
+		</body>
+	</html>

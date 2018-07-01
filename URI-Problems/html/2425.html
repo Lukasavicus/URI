@@ -1,0 +1,150 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2425 - Banco</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2425 - Banco" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2425</span>
+				<h1>Banco</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2012 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A legislação em vigor obriga os bancos a iniciarem o atendimento a um cliente em no máximo 20 minutos após a entrada do cliente na fila única da agência bancária. A fila é única, assim um caixa livre solicita ao primeiro cliente da fila que venha ao seu guichê para ser atendido. (Vamos ignorar aqui o problema dos clientes prioritários, idosos, gestantes, portadores de necessidades especiais, etc.) Estamos supondo também que nenhum caixa atende dois clientes ao mesmo tempo.</p>
+
+<p>Seu programa receberá o número de caixas ativas na agência, o número de clientes e, para cada cliente, duas informações, a saber, o momento de entrada do cliente na fila, e a duração do atendimento daquele cliente.</p>
+
+<p>Inicialmente todos os caixas estão vazios, já que a agência acabou de abrir.</p>
+
+<p>Seu problema é determinar o número de clientes que esperarão mais de 20 minutos para ter seu atendimento iniciado.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém dois inteiros separados por um espaço em branco. O primeiro, <strong>C </strong>(1 ≤ <strong>C</strong> ≤ 10), é o número de caixas ativas na agência bancária. O segundo, <strong>N </strong>(1 ≤ <strong>N</strong> ≤ 1000), o número de clientes que procurarão atendimento na agência naquele dia.</p>
+
+<p>As próximas <strong>N</strong> linhas terão cada uma informações sobre um cliente, consistindo de dois inteiros, <strong>T</strong> (0 ≤ <strong>T</strong> ≤ 300) e <strong>D</strong> (1 ≤ <strong>D</strong> ≤ 10), separados por um espaço em branco. O inteiro <strong>T</strong> fornece o momento em que o cliente entra na fila, em minutos, a partir do instante de abertura da agência. O inteiro <strong>D</strong> fornece, em minutos, o tempo necessário para atender o cliente.</p>
+
+<p>&nbsp;As linhas estão ordenadas por entrada dos clientes na fila.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída deverá conter apenas uma linha, contendo um único inteiro, o número de clientes cujo atendimento será iniciado mais do que 20 minutos após sua entrada na fila.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 5</p>
+
+<p>0 10</p>
+
+<p>0 10</p>
+
+<p>1 10</p>
+
+<p>2 10</p>
+
+<p>30 10</p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 16</p>
+
+<p>0 10</p>
+
+<p>0 10</p>
+
+<p>0 10</p>
+
+<p>3 10</p>
+
+<p>5 10</p>
+
+<p>7 10</p>
+
+<p>11 10</p>
+
+<p>13 10</p>
+
+<p>14 10</p>
+
+<p>15 10</p>
+
+<p>16 10</p>
+
+<p>17 10</p>
+
+<p>18 3</p>
+
+<p>19 10</p>
+
+<p>20 10</p>
+
+<p>23 3</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2012 Fase 2 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,163 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2267 - Buffed Buffet</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2267 - Buffed Buffet" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+			<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+			<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			extensions: ["tex2jax.js"],
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+			inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+			displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+			processEscapes: true
+			},
+			"HTML-CSS": { availableFonts: ["TeX"] }
+			});
+			</script>
+			<script type="text/javascript" src="path-to-MathJax/MathJax.js">
+			</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2267</span>
+				<h1>Buffed Buffet</h1>
+				<div>
+					<p>Por ICPC 2014 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ru.gif' alt='RU' /> Russian Federation</p>
+				</div>
+				<strong>Timelimit: 4</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>You are buying lunch at a buffet. A number of different dishes are available, and you can mix and match them to your heart’s desire. Some of the dishes, such as dumplings and roasted potatoes, consist of pieces of roughly equal size, and you can pick an integral number of such pieces (no splitting is allowed). Refer to these as “discrete dishes.” Other dishes, such as tzatziki or mashed potatoes, are fluid and you can pick an arbitrary real-valued amount of them. Refer to this second type as “continuous dishes.”</p>
+
+					<p>Of course, you like some of the dishes more than others, but how much you like a dish also depends on how much of it you have already eaten. For instance, even if you generally prefer dumplings to potatoes, you might prefer a potato over a dumpling if you have already eaten ten dumplings. To model this, each dish <strong>i</strong> has an initial tastiness <strong>t<sub>i</sub></strong> , and a rate of decay of the tastiness ∆<strong>t<sub>i</sub></strong> . For discrete dishes, the tastiness you experience when eating the <strong>n<sup>th</sup></strong> item of the dish is <strong>t<sub>i</sub></strong> − (<strong>n</strong> − 1)∆<strong>t<sub>i</sub></strong> . For continuous dishes, the tastiness you experience when eating an infinitesimal amount dx grams of the dish after already having eaten <strong>x</strong> grams is (<strong>t<sub>i</sub></strong> − <strong>x</strong>∆<strong>t<sub>i</sub></strong>)<strong>dx</strong>. In other words, the respective total amounts of tastiness you experience when eating <strong>N</strong> items of a discrete dish or <strong>X</strong> grams of a continuous dish are as follows:</p>
+
+					<p style="text-align:center">$\sum_{n=1}^{N}(t_{i}-(n-1)\Delta t_{i})$         and          $\int_{0}^{X}(t_{i}-x\Delta t_{i})dx$</p>
+
+					<p>For simplicity, do not take into account that different dishes may or may not go well together, so define the total tastiness that you experience from a meal as the sum of the total tastinesses of the individual dishes in the meal (and the same goes for the weight of a meal – there are no food antiparticles in the buffet!).</p>
+
+					<ul>
+						<li>You have spent days of painstaking research determining the numbers <strong>t<sub>i</sub></strong> and ∆<strong>t<sub>i</sub></strong> for each of the dishes in the buffet. All that remains is to compute the maximum possible total tastiness that can be achieved in a meal of weight <strong>w</strong>. Better hurry up, lunch is going to be served soon!</li>
+					</ul>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case. The first line of input consists of two integers <strong>d</strong> and <strong>w</strong> (1 ≤ <strong>d</strong> ≤ 250 and 1 ≤ <strong>w</strong> ≤ 10 000), where <strong>d</strong> is the number of different dishes at the buffet and <strong>w</strong> is the desired total weight of your meal in grams.</p>
+
+					<ul>
+						<li>Then follow <strong>d</strong> lines, the <strong>i<sup>th</sup></strong> of which describes the <strong>i<sup>th</sup></strong> dish. Each dish description is in one of the following two forms:</li>
+						<li>A description of the form “<strong>D</strong> <strong>w<sub>i</sub></strong> <strong>t<sub>i</sub></strong> ∆<strong>t<sub>i</sub></strong>” indicates that this is a discrete dish where each item weighs <strong>w<sub>i</sub></strong> grams, with initial tastiness <strong>t<sub>i</sub></strong> and decay of tastiness ∆<strong>t<sub>i</sub></strong>.</li>
+					</ul>
+
+					<p>The numbers <strong>w<sub>i</sub></strong> , <strong>t<sub>i</sub></strong> , and ∆<strong>t<sub>i</sub></strong> are integers satisfying 1 ≤ <strong>w<sub>i</sub></strong> ≤ 10 000 and 0 ≤ <strong>t<sub>i</sub></strong> , ∆<strong>t<sub>i</sub></strong> ≤ 10 000.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Display the maximum possible total tastiness of a meal of weight <strong>w</strong> based on the available dishes. Give the answer with a relative or absolute error of at most 10<sup>−6</sup> . If it is impossible to make a meal of total weight exactly <strong>w</strong> based on the available dishes, display 'impossible'.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 15</p>
+
+								<p>D 4 10 1</p>
+
+								<p>C 6 1</p>
+
+							</td>
+							<td>
+								<p>40.500000000</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+		        <table>
+		            <thead>
+		            </thead>
+		            <tbody>
+		                <tr>
+		                    <td class="division">
+		                        <p>3 15</p>
+
+								<p>D 4 10 1</p>
+
+								<p>C 6 1</p>
+
+								<p>C 9 3</p>
+
+		                    </td>
+		                    <td>
+		                        <p>49.000000000</p>
+
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+
+		        <div class="both"></div>
+
+		        <table>
+		            <thead>
+		            </thead>
+		            <tbody>
+		                <tr>
+		                    <td class="division">
+		                        <p>2 19</p>
+
+								<p>D 4 5 1</p>
+
+								<p>D 6 3 2</p>
+
+		                    </td>
+		                    <td>
+		                        <p>impossible</p>
+
+		                    </td>
+		                </tr>
+		            </tbody>
+		        </table>
+				<p class="footer">
+					ICPC 2014 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

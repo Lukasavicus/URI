@@ -1,0 +1,135 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2346 - Back to the Future</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problem 2346 - Back to the Future" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2346</span>
+				<h1>Back to the Future</h1>
+				<div>
+					<p>By Bruno Junqueira <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Doctor Emmet is working on a safer device to travel in time. He gathered <strong>N</strong> different and rare pieces of metal. Each piece may be compatible with some other different pieces. He has a complete list with <strong>M</strong> distinct pairs of compatible metals. Any pair of metals that is not on the list is incompatible.</p>
+
+<p>In order for the device to work, he must choose a set of metals such that each of them is compatible with at least <strong>A</strong> others in that set. However, in order to preserve some balance, they must also be incompatible with at least <strong>B</strong> others in that set.</p>
+
+<p>More metals mean more energy and a safer device. This is why Doctor Emmet needs your help, he wants to know the size of the largest set he can choose that meets these criteria.</p>
+				</div>
+
+				<h2>Input</h2>
+
+				<div class="input">
+					<p>The first line contains four integers <strong>N</strong>, <strong>M</strong>, <strong>A</strong> and <strong>B</strong>, representing respectively how many different pieces of metal exist (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>), how many compatibilities there are (1 ≤ <strong>M</strong> ≤ 10<sup>5</sup>) and the variables <strong>A</strong> and <strong>B</strong> described in the problem statement (0 ≤ <strong>A</strong>,<strong>B</strong> &lt; N). The different metals are conveniently numbered from 1 to <strong>N</strong>. Each of the following <strong>M</strong> lines contains two integers <strong>X</strong> and <strong>Y</strong> corresponding to a pair of compatible metals (1 ≤ <strong>X</strong>, <strong>Y</strong> ≤ <strong>N</strong> with <strong>X</strong> ≠<strong>Y</strong>). There are no repeated pairs in the input.</p>
+				</div>
+
+				<h2>Output</h2>
+
+				<div class="output">
+					<p>Output a line with one integer representing the size of the largest set of metals satisfying the requirements specified in the problem statement.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Input Samples</td>
+							<td>Output Samples</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 1 1 0<br />
+1 2</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>3 1 1 1<br />
+1 2</p>
+
+                    </td>
+                    <td>
+                        <p>0</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>7 12 2 2<br />
+1 2<br />
+2 3<br />
+3 1<br />
+4 5<br />
+5 6<br />
+6 4<br />
+3 4<br />
+7 1<br />
+2 7<br />
+3 7<br />
+4 7<br />
+5 7</p>
+
+                    </td>
+                    <td>
+                        <p>6</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					ACM/ICPC South America Contest 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

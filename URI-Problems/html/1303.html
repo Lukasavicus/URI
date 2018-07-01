@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1303 - Spurs Rocks</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1303 - Spurs Rocks" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1303</span>
+            <h1>Spurs Rocks</h1>
+            <div><p>IX Maratona de Programação IME-USP, 2005  <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    O San Antonio é o time da cidade na NBA. Já foi algumas vezes campeão de sua conferência e revelou vários excelentes jogadores. </p>
+                <p>
+                    Em um campeonato de basquete os times jogam todos entre si em turno único. A vitória vale dois pontos e a derrota vale um ponto (não há empates no basquete). Havendo empates na pontuação do campeonato ﬁca na frente o time com melhor “cesta average” que é dado pela razão entre o número de pontos marcados pelo time dividido pelo número de pontos recebidos (na improvável hipótese de um time vencer todos os jogos do campeonato sem levar cestas seu cesta average é dado pelo número de pontos marcados). Persistindo o empate, leva vantagem quem marcou mais pontos. Ainda havendo empate, o time com menor número de inscrições na liga ﬁca na frente. </p>
+                <p>
+                    Sua tarefa neste problema é fazer um programa que recebe os resultados dos jogos de um campeonato e imprime a classiﬁcação ﬁnal.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    São dadas várias instâncias. Para cada instância é dada o número 0 ≤ <strong>n</strong> ≤ 100 de times no campeonato. O valor <strong>n</strong> = 0 indica o ﬁm dos dados. A seguir vêm <strong>n (n−1) / 2</strong> linhas indicando os resultados das partidas. Em cada linha são dados quatro inteiros <strong>x</strong>, <strong>y</strong>, <strong>z</strong> e <strong>w</strong>. Os inteiros <strong>x</strong> e <strong>z</strong> pertencem ao conjunto {1, 2, . . . , n} e representam os números de inscrição dos times na liga. Os inteiros <strong>y</strong> e <strong>w</strong> são, respectivamente, os números de pontos do time <strong>x</strong> e do time <strong>z</strong> na partida descrita.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada instância solucionada, você deverá imprimir um identiﬁcador "Instancia <strong>h</strong>" em que <strong>h</strong> é um número inteiro, sequencial e crescente a partir de 1. Na linha seguinte, deve ser impressa a permutação dos inteiros 1 a <strong>n</strong> da classiﬁcação do campeonato. <br /> <br /> Obs: Um espaço em branco deve ser impresso <strong>entre</strong> cada um desses inteiros e uma linha em branco deve deve ser impressa <strong>entre</strong> as saídas de dois casos de teste.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                5<br />
+                                1 102 2 62<br />
+                                1 128 3 127<br />
+                                1 144 4 80<br />
+                                1 102 5 101<br />
+                                2 62 3 61<br />
+                                2 100 4 80<br />
+                                2 88 5 82<br />
+                                3 79 4 90<br />
+                                3 87 5 100<br />
+                                4 110 5 99<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Instancia 1<br />
+                                1 2 4 5 3</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Adaptado por Jean Bez
+            </p>
+        </div>
+
+    </body>
+</html>

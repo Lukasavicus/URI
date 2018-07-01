@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1782 - Honorável Presente</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema H - Honorável Presente" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1782</span>
+                <h1>Honorável Presente</h1>
+                <div>
+                    <p>Por Duhan Caraciolo, UFPE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Guga ganhou um grafo conexo de aniversário, com N nós e N-1 arestas bidirecionais. Cada aresta conecta dois nós e possui um peso. Quando André descobriu a existência do presente de Guga pensou na seguinte brincadeira: Dado um número inteiro X, quantos pares (A,B) (A ≤ B) existem tal que o menor caminho do nó A para o nó B possui todas as arestas com peso menor ou igual a X?</p>
+
+                    <p>Agora Guga e André estão precisando de um programa que responda várias dessas perguntas, para que assim eles possam brincar infinitamente e saber se acertaram a resposta ou não.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada contém um inteiro <strong>T</strong> (1 ≤ <strong>T </strong>≤ 50), o número de casos de teste. A primeira linha de cada caso de teste contém <strong>N</strong> (1 ≤ <strong>N </strong>≤<strong> </strong>10⁵), o número de nós que o grafo de Guga possui. Cada uma das <strong>N</strong>-1 linhas possui três inteiros A (1 ≤ <strong>A</strong> ≤ <strong>N</strong>), <strong>B</strong> (1 ≤ <strong>B</strong> ≤ <strong>N</strong>) e <strong>C</strong> (1 ≤ <strong>C</strong> ≤ 10⁶), indicando que existe uma aresta do nó <strong>A</strong> para o nó <strong>B</strong> com peso <strong>C</strong>. A próxima linha contém um inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 10⁴), o número de partidas que Guga e André irão jogar. A próxima linha possui <strong>Q</strong> inteiros <strong>X</strong><sub><strong>i</strong></sub> (1 ≤ <strong>X</strong><sub><strong>i</strong> </sub>≤ 10⁶), o maior peso permitido no caminho, como explicado acima.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso imprima “Caso #<strong>X</strong>:”, onde <strong>X</strong> é o número do caso atual, iniciando em 1, seguido pelas respostas das <strong>Q</strong> consultas desse caso de teste, precedidas por um espaço.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3<br />
+                                3<br />
+                                1 2 2<br />
+                                1 3 2<br />
+                                2<br />
+                                1 2<br />
+                                4<br />
+                                1 2 3<br />
+                                2 3 5<br />
+                                3 4 7<br />
+                                1<br />
+                                6<br />
+                                1<br />
+                                2<br />
+                                1 10</p>
+
+                            </td>
+                            <td>
+                                <p>Caso #1: 3 6<br />
+                                Caso #2: 7<br />
+                                Caso #3: 1 1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Final da Seletiva UFPE - 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

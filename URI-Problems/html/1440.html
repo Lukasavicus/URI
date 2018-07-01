@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1440 - Praça de Alimentação</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1440 - Praça de Alimentação" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1440</span>
+            <h1>Praça de Alimentação</h1>
+            <div>Por Ricardo Anido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brazil</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>A administração da Universidade planeja construir uma nova praça de alimentação para substituir os vários pequenos e inadequados refeitórios espalhados pelo campus. Para estimar o número de lugares necessários na nova praça de alimentação, foi realizado um experimento para medir o número máximo de clientes dentro dos refeitórios a qualquer instante. Eles contrataram vários estudantes como porteiros, e os posicionaram em cada entrada e saída de todos os refeitórios. A tarefa dos porteiros era anotar em pequenos cartões a hora que cada cliente entrou ou saiu do refeitório (um cartão para cada evento). Em cada carta, eles escreveram a hora, no formato HH:MM:SS, e o evento associado ('E' para entrada, 'X' para saída).</p>
+
+                <p>O experimento teve início na manhã, antes do café-da-manhã, e terminou à noite, após do jantar. Os porteiros tinham seus relógios sincronizados, e os refeitórios estavam vazios tanto antes quanto depois do experimento (ou seja, não havia nenhum cliente antes do café-da-manhã e nenhum cliente permaneceu depois do jantar). Os porteiros escreveram exatamente um cartão para cada cliente que entrou e para cada cliente que saiu.</p>
+
+                <p>Após o experimento, os cartões foram coletadas e enviadas à administração para serem processadas. A tarefa, no entanto, não foi tão fácil como planejada, pois dois problemas ocorreram. Primeiramente, os cartões foram amontoados de forma aleatória e portanto necessitavam ser ordenados; isso é bastante fácil mas demorado para ser feito à mão. Mas o pior é que, apesar dos cartões possuirem as horas corretas, alguns porteiros esqueceram de escrever a letra correspondente ao evento. A administração da Universidade decidiu que necessitava da ajuda de um expert!</p>
+
+                <p>Dado um conjunto de cartões com horas e eventos (o evento pode estar faltando), escreva um programa que determine o número máximo de clientes que poderiam ter estado dentro dos refeitórios a qualquer momento.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. A primeira linha de um caso de teste contém um inteiro <strong>N</strong> indicando o número de cartões coletados no experimento (2 ≤ <strong>N</strong> ≤ 64800). Cada uma das próximas <strong>N</strong> linhas contém a informação escrita em um cartão, que consiste da especificação da hora, seguida por um espaço em branco, seguida pela especificação do evento. A especificação da hora é dada no formato HH:MM:SS, onde <strong>HH</strong> representa horas (06 ≤ <strong>HH</strong> ≤ 23), <strong>MM</strong> representa minutos (00 ≤ <strong>MM</strong> ≤ 59) e <strong>SS</strong> representa segundos (00 ≤ <strong>SS</strong> ≤ 59). Em cada caso de teste, nenhum par de cartões representa o mesmo instante de tempo. A especificação de evento é um único caractere: '<strong>E</strong>' para entrada, '<strong>X</strong>' para saída e '<strong>?</strong>' para incerto. Informações podem estar faltando, mas as informações dadas sempre estão corretas (ou seja, o instante de tempo anotado no cartão é válido). Além disso, se um cartão descreve uma entrada, então um cliente realmente entrou no refeitório naquele momento; se um cartão descreve uma saída, então um cliente realmente saiu do refeitório naquele momento; se um cartão descreve um evento incerto, então um cliente realmente entrou ou saiu de um refeitório naquele momento.</p>
+
+                <p>O último caso de teste é seguido de uma linha contendo um único zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste seu programa deve imprimir uma única linha contendo um único inteiro, o número máximo de clientes que poderiam ter estado dentro dos refeitórios a qualquer momento.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>4<br />
+                                07:22:03 X<br />
+                                07:13:22 E<br />
+                                08:30:51 E<br />
+                                21:59:02 X<br />
+                                4<br />
+                                09:00:00 E<br />
+                                20:00:01 X<br />
+                                09:05:00 ?<br />
+                                20:00:00 ?<br />
+                                8<br />
+                                10:21:00 E<br />
+                                10:25:00 X<br />
+                                10:23:00 E<br />
+                                10:24:00 X<br />
+                                10:26:00 X<br />
+                                10:27:00 ?<br />
+                                10:22:00 ?<br />
+                                10:20:00 ?<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>1<br />
+                                2<br />
+                                4</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+               ACM/ICPC South America Contest 2009.
+            </p>
+        </div>
+
+    </body>
+</html>

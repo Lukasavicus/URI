@@ -1,0 +1,184 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1954 - Caminhos Evolucionários Possíveis</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1954 - Caminhos Evolucionários Possíveis" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1954</span>
+				<h1>Caminhos Evolucionários Possíveis</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+                    <p class="center"><img alt="Lady" src="
+                    https://urionlinejudge.r.worldssl.net/gallery/images/contests/evolucao1.jpg" style="height: 300px; width: 400px"></p>
+
+					<p>— <em>Já que a senhora é bióloga, poderia nos definir o conceito de ‘espécie’?</em></p><p> — <em>Senhora, senhora, volta aqui!</em></p>
+
+<p>Laura é uma bióloga muito interessada em Computação. Recentemente ela escreveu um programa que, dados os códigos genéticos de dois indivíduos <strong>A</strong> e <strong>B</strong>, decide se <strong>A</strong> é um <em>possível pai genético</em> de <strong>B</strong>, o que significa que não há nada nos códigos genéticos de ambos os indivíduos que nos permita afirmar com certeza que <strong>B</strong> não foi gerado por <strong>A</strong>. Note que, se <strong>A</strong> é um possível pai genético de <strong>B</strong>, isso não significa que <strong>B</strong> seja da mesma <em>espécie</em> que <strong>A</strong>, pois pode ter ocorrido uma mutação durante a geração de <strong>B</strong>. Naturalmente, dizemos que um indivíduo <strong>A</strong> é um <em>possível ancestral genético</em> de um indivíduo <strong>B</strong> se existe uma sequência de <strong>k</strong> indivíduos <strong>I</strong><sub>1</sub>, <strong>I</strong><sub>1</sub>, …, <strong>I<sub>k</sub></strong> tais que <strong>I</strong><sub>1</sub> = <strong>A</strong>, <strong>I<sub>k</sub></strong> = <strong>B</strong> e, para todo <strong>j</strong> ∈ {1, …, <strong>k</strong> - 1}, <strong>I<sub>j</sub></strong> é um possível pai genético de <strong>I</strong><sub><strong>j</strong> + 1</sub>.</p>
+
+<p>Laura está estudando os fósseis encontrados mês passado em Chapecó para determinar, através dos códigos genéticos extraídos, as espécies que habitavam a região. Mas o conceito de ‘espécie’ é muito polêmico. Laura, que não quer viver situações como a da senhora da imagem acima, preferiu adotar a seguinte definição: dois indivíduos <strong>A</strong> e <strong>B</strong> pertencem à mesma espécie se e somente se <strong>A</strong> é um possível ancestral genético de <strong>B</strong> e <strong>B</strong> é um possível ancestral genético de <strong>A</strong>. O diagrama abaixo ilustra uma situação com 7 indivíduos fossilizados, em que um arco de um indivíduo <strong>A</strong> para um indivíduo <strong>B</strong> representa que <strong>A</strong> é um possível pai genético de <strong>B</strong>. No exemplo, podemos identificar 3 espécies: <strong>I</strong>, <strong>II</strong> e <strong>III</strong>.</p>
+
+<p class="center"><img alt="Evolutionary Paths" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/evolucao2.jpg" style="height: 275px; width: 275px"></p>
+
+<p>Dados as informações fornecidas pelo programa de Laura, ajude-a a calcular o número de <em>caminhos evolucionários possíveis</em> da espécie de um indíviduo <strong>S</strong> para a espécie de um indivíduo <strong>T</strong>. Um <em>caminho evolucionário possível</em> de uma espécie <strong>E</strong><sub>1</sub> para uma espécie <strong>E<sub>k</sub></strong> é uma sequência de <strong>k</strong> espécies <strong>E</strong><sub>1</sub>, <strong>E</strong><sub>2</sub>, …, <strong>E<sub>k</sub></strong> tal que, para todo <strong>j</strong> ∈ {1, …, <strong>k</strong> - 1}, existe algum indivíduo <strong>B</strong> da espécie <strong>I</strong><sub><strong>j</strong> + 1</sub> que tem um possível pai genético da espécie <strong>I</strong><sub><strong>j</strong></sub>.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada consiste de 4 inteiros, <strong>N</strong>, <strong>M</strong>, <strong>S</strong> e <strong>T</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>, 0 ≤ <strong>M</strong> ≤ 10<sup>6</sup>, 1 ≤ <strong>S</strong>, <strong>T</strong> ≤ <strong>N</strong>), sendo <strong>N</strong> o número de indivíduos fossilizados, designados pelos inteiros de 1 a <strong>N</strong>, cujos códigos genéticos foram obtidos por Laura. Cada uma das próximas <strong>M</strong> linhas consiste de 2 inteiros, <strong>A</strong> e <strong>B</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong>), representando que o programa de Laura considera o indivíduo <strong>A</strong> um possível pai genético de <strong>B</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma linha contendo um único número inteiro, o qual representa o número de <em>caminhos evolucionários possíveis</em> da espécie à qual pertence o indivíduo <strong>S</strong> para a espécie à qual pertence o indivíduo <strong>T</strong>. Como esse número pode ser muito grande, seu programa deve apenas imprimir o resto que esse número deixa quando dividido por 10<sup>9</sup> + 7.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7 10 1 7<br />
+1 2<br />
+2 1<br />
+2 3<br />
+3 4<br />
+4 5<br />
+5 3<br />
+3 6<br />
+2 6<br />
+6 7<br />
+7 6</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7 10 7 4<br />
+1 2<br />
+2 1<br />
+2 3<br />
+3 4<br />
+4 5<br />
+5 3<br />
+3 6<br />
+2 6<br />
+6 7<br />
+7 6</p>
+
+							</td>
+							<td>
+								<p>0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7 10 1 7<br />
+1 2<br />
+2 1<br />
+3 2<br />
+3 4<br />
+4 5<br />
+5 3<br />
+3 6<br />
+2 6<br />
+6 7<br />
+7 6</p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 8 1 5<br />
+1 2<br />
+1 3<br />
+1 4<br />
+2 3<br />
+2 4<br />
+2 5<br />
+3 5<br />
+4 5</p>
+							</td>
+							<td>
+								<p>5</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					2<sup>ạ</sup> Minimaratona Matutina de Grafos da UFFS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

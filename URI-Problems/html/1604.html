@@ -1,0 +1,136 @@
+p<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1604 - Pair-voting no Conselho de Gueliz</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1604 - Pair-voting no Conselho de Gueliz" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1604</span>
+                <h1>Pair-voting no Conselho de Gueliz</h1>
+                <div>
+                    <p>Por Renzo Gomez <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>O bairro de Gueliz em Marrakech é hoje conhecido por ser a parte moderna da cidade, com diversas opções turísticas, restaurantes e bares. Poucos conhecem a formação do bairro, ainda no século XVI. Originalmente o bairro, também conhecido como “Cidade Nova” foi se formando fora da fortaleza (Medina, cidade antiga). O primeiro novo morador ganhou uma autorização oficial da prefeitura para construir sua casa, e ficou responsável por dar novas autorizações. Quando uma rua foi aberta, um habitante do fim da rua (até a primeira esquina formada) foi designado representante da rua juntamente com o primeiro morador. E assim ocorreu para todas as ruas da cidade: os moradores das esquinas eram representantes das ruas que se encontravam naquela esquina, de forma que cada trecho de rua sem esquinas tem exatamente dois representantes. Há em Gueliz uma lenda que impede a formação de quarteirões (conjunto de casas cercadas por ruas). Os antigos contam que uma vez formaram um quarteirão no bairro, e quando uma pessoa má morreu seu espírito ficou ali preso para sempre, assombrando as pessoas que ali moravam. Desde então nunca mais se formaram quarteirões no bairro.</p>
+
+                    <p>O conselho do bairro de Gueliz é formado pelo primeiro morador e os representantes de cada rua. Estes representantes formam comitês para analisar as diversas questões. Nos comitês os conselheiros são agrupados em pares, e todos os conselheiros devem participar de exatamente um par. Cada par tem um único voto e a moção é aprovada quando atinge maioria dos votos. Cada par deve ser formado por conselheiros representantes de ruas que se encontram em alguma esquina (ou pelo primeiro morador e o representante de sua rua). Claramente, quando o número de conselheiros é ímpar não é possível encontrar uma composição dos comitês de que participem todos os conselheiros. Quando isso ocorria, o primeiro morador tinha um voto sozinho, e os demais deveriam ser divididos em pares.</p>
+
+                    <p>Entretanto, com o passar do tempo houve ocasiões em que não foi possível montar um comitê, o que sempre foi motivo de desconfiança entre os moradores de Gueliz. Sua tarefa neste exercício é dado N o número de representantes de rua (o representante 1 é o primeiro morador) decidir se é possível formar um comitê de pares de conselheiros conforme descrito acima.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF).</p>
+
+                    <p>A primeira linha de cada instância contém um inteiro par <strong>N</strong> (1 ≤ N &lt;10<sup>5</sup>). As próximas <strong>N</strong> − 1 linhas contêm 2 inteiros cada uma. A <strong>i</strong>-ésima linha, dessas <strong>N</strong> − 1 linhas, contém os representantes <strong>x</strong> e <strong>y</strong> (1 ≤ <strong>x</strong>, <strong>y</strong> ≤ <strong>N</strong>) de um trecho de rua sem esquinas.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância, imprima na primeira linha Y se é possível formar um comitê de pares de conselheiros ou N, caso contrário. Caso seja possível formar um comitê, imprima uma lista de pares de conselheiros, um par por linha. Um par de conselheiros consiste de dois inteiros <strong>x<sub>i</sub></strong> e <strong>y<sub>i</sub></strong>, separados por um espaço, de forma que <strong>x<sub>i</sub></strong> &lt; <strong>y<sub>i</sub></strong>. Além disso, a lista de pares de conselheiros deve estar ordenada de forma crescente por <strong>x<sub>i</sub></strong>. Caso exista mais de uma forma de montar um comitê, imprima a lexicograficamente menor. Note que, quando o representante 1 tem voto sozinho, ele não pertence a nenhum par.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>8<br />
+
+<p>1 2<br />
+
+<p>1 5<br />
+
+2 4<br />
+
+1 3<br />
+
+5 7<br />
+
+5 8<br />
+
+3 6<br />
+
+10<br />
+
+1 2<br />
+
+1 3<br />
+
+1 4<br />
+
+1 7<br />
+
+3 5<br />
+
+4 6<br />
+
+7 9<br />
+
+7 8<br />
+
+9 10</p>
+
+                            </td>
+                            <td>
+                                <p>N<br />
+
+Y<br />
+
+1 2<br />
+
+3 5<br />
+
+4 6<br />
+
+7 8<br />
+
+9 10</p>
+
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Antes de examinar a casa (para comprar), examina os vizinhos.<br/>
+                    Preliminar Maratona (Seletiva IME-USP)
+                </p>
+            </div>
+
+        </body>
+    </html>

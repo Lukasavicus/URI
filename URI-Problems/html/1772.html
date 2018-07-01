@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1772 - Embaralhamento de Bits</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema D - Embaralhamento de Bits" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1772</span>
+                <h1>Embaralhamento de Bits</h1>
+                <div>
+                    <p>Por Victor Marcilio Peixoto, UNIVASF <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Para descobrir se seus alunos realmente entenderam a aula de representação binária de números inteiros, o professor Marcelo mostrou o seguinte problema:<br />
+                    “Dado um número inteiro e uma sequência de permutações dos bits de sua representação binária, encontre 3 números: o resultado final após todas as permutações, o maior e o menor valor encontrado durante as permutações”.</p>
+
+                    <p>O professor prometeu um ponto extra na média pra quem resolvesse o problema primeiro. Como ele nunca fez isso na vida (dar ponto extra), você se apressou pra resolver o mais rápido possível com medo que o professor mudasse de ideia.</p>
+
+                    <p class="center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1772.png" style="height:72px; width:400px" /></p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha de um caso de teste contém os inteiros <strong>N</strong> <strong>(0 ≤ N ≤ 2<sup>32</sup> - 1)</strong>e <strong>K (1 ≤ K ≤ 100)</strong>, representando o número inicial e a quantidade de permutações, respectivamente. As <strong>K</strong> linhas seguintes conterão dois inteiros <strong>A</strong> e <strong>B </strong>separados por espaço <strong>(0 ≤ A, B ≤ 31)</strong>, indicando que deve haver a permutação entre os bits <strong>A </strong>e <strong>B</strong> do número <strong>N</strong>. A entrada encerra com N = K = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma linha contendo 3 inteiros separados por espaço: <strong>RES MAX MIN</strong>, onde <strong>RES</strong> representa o número <strong>N</strong> após as permutações, <strong>MIN</strong> representa o menor valor intermediário e <strong>MAX</strong> representa o maior valor intermediário. (<strong>MAX</strong> e <strong>MIN</strong> também devem considerar também os valores inicial e final de <strong>N</strong>).</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 2</p>
+
+                                <p>0 5</p>
+
+                                <p>1 2</p>
+
+                                <p>0 0</p>
+
+                            </td>
+                            <td>
+                                <p>34 36 5</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Contest Sigma - 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

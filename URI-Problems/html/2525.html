@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2525 - Cacheiro Viajante</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Cacheiro Viajante" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2525</span>
+			<h1>Cacheiro Viajante</h1>
+			<div>
+				<p>Por Flávio Zavan, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 12</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Clóvis Eduardo é um cacheiro viajante, ou seja, ele viaja o mundo para praticar <em>geocaching</em>. <em>Geocaching</em> é um jogo mundial de GPS no qual os jogadores encontram caixas escondidas (conhecidas como <em>geocaches</em>) por outros jogadores fazendo uso das coordenadas terrestres.</p>
+
+<p>Devido a sua grande reputação e experiência (mais de 32768 <em>geocaches</em> encontrados em todos os continentes), Clóvis Eduardo foi convidado pelo ministério de Lazer e Esporte da Nlogônia a ajudar a esconder o <em>geocache</em> mais importante da história do país, uma grande caixa de ouro maciço em forma de cavalo, em comemoração aos 50 anos da instauração da república na Nlogônia.</p>
+
+<p>Entretanto, não basta apenas encontrar o local perfeito. Novos <em>geocaches</em> devem seguir as regras nacionais de colocação atualizadas este ano:</p>
+
+<ul>
+	<li>Nenhum <em>geocache</em> novo pode ser colocado no mesmo lugar de outro já existente;</li>
+	<li>A soma das distâncias aos <strong>K</strong> <em>geocaches</em> já existentes mais próximos deve ser igual ou superior a <strong>D</strong>;</li>
+	<li>Se existirem menos de <strong>K</strong> <em>geocaches</em>, deverão ser considerados todos os existentes na soma das distâncias.</li>
+</ul>
+
+<p>A Nlogônia é representada por um plano e, atualmente, possui <strong>N</strong> <em>geocaches</em> ativos. O ministério de Lazer e Esporte escolheu <strong>C</strong> possíveis localizações para a colocação do <em>geocache</em> comemorativo e pediu para que Clóvis Eduardo os informasse quantas destas localizações são viáveis de acordo as regras nacionais de colocação.</p>
+
+<p>Como Clóvis Eduardo é preguiçoso, ele pediu para que você escrevesse um programa para resolver o seu problema.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém quatro inteiros separados por espaços <strong>N</strong>, <strong>C</strong> (1 ≤ <strong>N</strong>, <strong>C</strong> ≤ 10<sup>4</sup>), <strong>K</strong> (1 ≤ <strong>K</strong> ≤ 8) e <strong>D</strong> (1 ≤ <strong>D</strong> ≤ 10<sup>5</sup>).</p>
+
+<p>As próximas <strong>N</strong> linhas contém dois inteiros separados por um espaço, <strong>x<sub>i</sub></strong> e <strong>y<sub>i</sub></strong> (0 ≤ <strong>x<sub>i</sub></strong>, <strong>y<sub>i</sub></strong> ≤ 10<sup>4</sup>), a posição do <em>i</em>-ésimo <em>geocache</em> já existente na Nlogônia. Não há posições repetidas.</p>
+
+<p>As próximas <strong>C</strong> linhas contém dois inteiros separados por um espaço, <strong>x<sub>j</sub></strong> e <strong>y<sub>j</sub></strong> (0 ≤ <strong>x<sub>j</sub></strong>, <strong>y<sub>j</sub></strong> ≤ 10<sup>4</sup>), a <em>j</em>-ésima possível posição do novo <em>geocache</em>.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima exatamente uma linha com o número de posições válidas sugeridas pelo Ministério de Lazer e Esporte.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>10 3 3 10<br />
+0 0<br />
+10 10<br />
+0 10<br />
+5 9<br />
+15 18<br />
+3 10<br />
+2 2<br />
+2 4<br />
+3 8<br />
+4 5<br />
+1 1<br />
+0 0<br />
+100 100</p>
+
+						</td>
+						<td>
+							<p>1</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				16o Treino UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

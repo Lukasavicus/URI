@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1781 - Guga e a String</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema G - Guga e a String" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1781</span>
+                <h1>Guga e a String</h1>
+                <div>
+                    <p>Por Duhan Caraciolo, UFPE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Guga tem uma string S contendo apenas letras minúsculas e quer fazer operações nela. Cada operação pode ser de um dos seguintes tipos:</p>
+
+                <ul>
+                	<li>
+                	<p>0 x, deslocar cada vogal de S x posições da esquerda pra direita (voltando para o começo, caso necessário)</p>
+                	</li>
+                	<li>
+                	<p>1 x, deslocar cada consoante de S x posições da esquerda pra direita (voltando para o começo, caso necessário)</p>
+                	</li>
+                	<li>
+                	<p>2, imprimir como S se encontra atualmente</p>
+                	</li>
+                </ul>
+
+                <p>As vogais que estamos considerando são as letras <em>a</em>, <em>e</em>, <em>i</em>, <em>o</em> e <em>u</em>.</p>
+
+                <p>Uma operação do tipo 0 só desloca vogais por posições de S que possuem vogais.</p>
+
+                <p>Uma operação do tipo 1 só desloca consoantes por posições de S que possuem consoantes.</p>
+
+                </br>
+
+                <p>Por exemplo,</p>
+
+                <p>A string “computador” após a operação 1 2 fica “dorcumapot”, ou seja, cada consoante vai para a posição em S da segunda próxima consoante.</p>
+
+                <p>A string “abe” após a operação 0 1, fica “eba”.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada contém <strong>T</strong> (1 ≤ <strong>T</strong> ≤ 100), o número de casos de teste. A primeira linha de cada caso de teste possui <strong>S</strong> (1 ≤ |<strong>S</strong>| ≤ 10⁴), a string que Guga possui. A segunda linha de cada caso possui <strong>Q</strong> (1 ≤ <strong>Q </strong>≤ 10⁵) , o número de operações que Guga irá executar em <strong>S</strong>. Cada uma das próximas <strong>Q</strong> linhas possuem uma operação como explicado acima. Para cada operação, 0 ≤ <strong>x </strong>≤ |<strong>S</strong>|.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso imprima “Caso #<strong>X</strong>:”, onde <strong>X</strong> é o número do caso atual, começando em 1. Para cada operação 2, imprima em uma nova linha como a string <strong>S</strong> se encontra depois de todas as operações anteriores terem sido executadas. A saída possui aproximadamente 3*10⁶ caracteres.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                2<br>
+                                computador<br>
+                                2<br>
+                                0 2<br>
+                                2<br>
+                                abecidfugh<br>
+                                4<br>
+                                2<br>
+                                0 2<br>
+                                1 3<br>
+                                2<br>
+                            </td>
+                            <td>
+                                Caso #1:<br>
+                                campotodur<br>
+                                Caso #2:<br>
+                                abecidfugh<br>
+                                ifugahbecd<br>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Adaptação da Prova Final da Seletiva UFPE - 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

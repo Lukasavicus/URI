@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1286 - Motoboy</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1286 - Motoboy" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1286</span>
+            <h1>Motoboy</h1>
+            <div><p>Por Thobias, Fernando e Luiz, URI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    José é um motoboy e trabalha fazendo entregas para uma pizzaria. Seu salário é baseado no número de pizzas entregues. Só que esta pizzaria está com muito movimento e ele pediu auxílio a seu amigo Roberto para que o ajudasse nas entregas. Como Roberto é camarada e está sem trabalho no momento, ele concordou em pegar aqueles pedidos cujas entregas serão mais demoradas.</p>
+                <p>
+                    Assim, sempre que chegam à pizzaria, antes de partirem para novas entregas José determina a quantidade de pizzas que Roberto deverá entregar e seleciona para ele os pedidos mais demorados. Por exemplo, se há 22 pizzas para serem entregues e José determinar que Roberto entregue no máximo 10 destas pizzas (pode ser menos), estas devem estar obrigatoriamente entre os pedidos que levarão mais tempo para serem entregues. Isso é ilustrado no primeiro caso de teste, onde Roberto deverá fazer a entrega do segundo, terceiro e sexto pedido, somando 8 pizzas e 62 minutos (23 + 21 + 18). Se Roberto fosse realmente entregar 10 pizzas, ele teria que atender o segundo, terceiro e quarto pedido e isto levaria 59 minutos (23 + 21 + 16), o que não é o objetivo de José, pois levaria menos tempo do que a primeira opção, ou seja, a relação pizzas/tempo não importa muito para José (isso pode ser observado no segundo caso de teste do exemplo abaixo).</p>
+                <p>
+                    Para poder fazer a divisão do trabalho, José pediu a um amigo acadêmico em Ciência da Computação que desenvolvesse um programa que determinasse quanto tempo seu amigo Roberto irá levar para entregar estes pedidos mais demorados. </p>
+
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. Cada caso de teste contém na primeira linha um valor inteiro <strong>N</strong> (1 ≤  <strong>N</strong> ≤ 20) que indica o número de pedidos. A linha seguinte contém um valor inteiro  <strong>P</strong> (1 ≤ <strong>P</strong> ≤ 30) indicando o número máximo de pizzas que podem ser entregues por Roberto. Cada uma das próximas <strong>N</strong> linhas contém um pedido com o tempo total para ser entregue e a quantidade de pizzas do pedido, respectivamente. A final da entrada é determinado por <strong>N</strong> = 0, e não deverá ser processado.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste de entrada deve ser impresso um valor inteiro que determina o tempo que Roberto irá levar para entregar as suas pizzas seguido de um espaço em branco e do texto &ldquo;<span class="code">min.</span>&rdquo;, conforme exemplo abaixo.</p>
+
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                6<br />
+                                10<br />
+                                15 5<br />
+                                23 4<br />
+                                21 2<br />
+                                16 4<br />
+                                19 5<br />
+                                18 2<br />
+                                2<br />
+                                15<br />
+                                47 12<br />
+                                39 4<br />
+                                5<br />
+                                23<br />
+                                43 9<br />
+                                4 1<br />
+                                17 2<br />
+                                13 5<br />
+                                54 17<br />
+                                6<br />
+                                7<br />
+                                14 4<br />
+                                21 2<br />
+                                26 7<br />
+                                18 4<br />
+                                30 13<br />
+                                10 2<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                62 min.<br />
+                                47 min.<br />
+                                77 min.<br />
+                                39 min.	</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Adaptado por Neilor. 
+            </p>
+        </div>
+
+    </body>
+</html>

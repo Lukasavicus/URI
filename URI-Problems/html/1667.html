@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1667 - HTML</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1667 - HTML" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1667</span>
+                <h1>HTML</h1>
+                <div>
+                    <p>Por Ralf Engels <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Se você alguma vez já tentou ler um documento html em um Macintosh, você sabe o quão difícil isso é sem um navegador instalado. Agora, quem pode esquecer de instalar um navegador HTML? Isso é muito fácil, pois a maioria das vezes você não precisa de um no MAC, porque existe um Acrobate Reader que é nativo para o MAC. Mas, e se você precisar de um, o que você faz? Sua tarefa é escrever um pequeno navegador html. Ele deve imprimir somente o conteúdo do arquivo de entrada e saber os comandos html (tags) o qual faz a quebra de linhas e</p>
+
+                    <p>que tem a função de régua horizontal. Então, você deve tratar de todos tabuladores, espaços e novas linhas em um único espaço e imprimir o texto resultante com não mais de 80 caracteres em uma única linha.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada consiste de um texto que você deve mostrar. Esse texto é composto por palavras e HTML tags separadas por um ou mais espaços, tabuladores ou novas linhas. Uma palavra é uma sequência de letras, números e pontuações. Por exemplo, “<strong>abc,123</strong>” é uma palavra, mas “<strong>abc, 123</strong>” são duas palavras, chamadas “<strong>abc,</strong>” e “<strong>123</strong>”. Uma palavra é sempre menor que 81 caracteres e não contém nenhum ‘<strong>&lt;</strong>’ ou ‘<strong>&gt;</strong>’. Todas tags HTML são <strong>&lt;br&gt;</strong> ou <strong>&lt;hr&gt;</strong>.</p>
+
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Você deve mostrar o texto resultante usando estas regras:</p>
+
+                    <p>Se você ler uma palavra na entrada e a linha resultante não for maior que 80 caracteres, imprima isto, se não, imprima em uma nova linha.</p>
+
+                    <p>Se você ler <strong>&lt;br&gt;</strong> na entrada, comece uma nova linha.</p>
+
+                    <p>Se você ler <strong>&lt;hr&gt;</strong> na entrada, comece uma nova linha a menos que você já esteja no começo de uma linha, imprima 80 caracteres de ‘<strong>-</strong>‘ e comece uma nova linha (novamente).</p>
+
+                    <p>A última linha deve ser terminada com um caractere de nova linha.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>Hallo, dies ist eine<br/>
+
+                                ziemlich lange Zeile, die in Html<br/>
+
+                                aber nicht umgebrochen wird.<br/>
+
+                                &lt;br&gt;<br/>
+
+                                Zwei &lt;br&gt; &lt;br&gt; produzieren zwei Newlines.<br/>
+
+                                Es gibt auch noch das tag &lt;hr&gt; was einen Trenner darstellt.<br/>
+
+                                Zwei &lt;hr&gt; &lt;hr&gt; produzieren zwei Horizontal Rulers.<br/>
+
+                                Achtung mehrere Leerzeichen irritieren<br/>
+
+                                Html genauso wenig wie<br/>
+
+                                mehrere Leerzeilen.<br/>
+
+                                <br/></p>
+
+                            </td>
+                            <td>
+                                <p>Hallo, dies ist eine ziemlich lange Zeile, die in Html aber nicht umgebrochen<br/>
+
+                                wird.<br/>
+
+                                Zwei<br/><br/>
+
+                                produzieren zwei Newlines. Es gibt auch noch das tag<br/>
+
+                                --------------------------------------------------------------------------------<br/>
+
+                                was einen Trenner darstellt. Zwei<br/>
+
+                                --------------------------------------------------------------------------------<br/>
+
+                                --------------------------------------------------------------------------------<br/>
+
+                                produzieren zwei Horizontal Rulers. Achtung mehrere Leerzeichen irritieren Html<br/>
+
+                                genauso wenig wie mehrere Leerzeilen.<br/>
+                                </p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 1999/2000
+                </p>
+            </div>
+
+        </body>
+    </html>

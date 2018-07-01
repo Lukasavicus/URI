@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1250 - KiloMan</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1250 - KiloMan " />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1250</span>
+            <h1>KiloMan</h1>
+            <div><p>
+                    Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif" style="width: 16px; height: 11px;" /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Você chegou a um dos últimos chefões no novo jogo de ação
+                    2-D de deslocamento lateral, KiloMan. O chefão tem uma arma
+                    grande que pode atirar projéteis em várias alturas. Para cada
+                    tiro, KiloMan pode ficar parado ou pular. Se ele ficar parado e
+                    o tiro estiver na altura 1 ou 2, ele será atingido. Se ele
+                    pular e o tiro estiver a uma altura maior que 2, então ele
+                    também será atingido. Caso contrário, ele não é atingido. Dada
+                    a altura de cada tiro e a sequência de pulos, quantas vezes
+                    KiloMan será atingido?</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. A primeira linha da
+                    entrada contém um inteiro <strong>N</strong> que indica o número de
+                    casos de teste. Cada caso de teste é composto por 3 linhas. A primeira linha contém um inteiro 
+                    <strong>T</strong> (1 ≤ <strong>T</strong> ≤ 50) que indica o número de tiros. A segunda linha contém <strong>T</strong>
+                    inteiros, que representam a sequência das alturas às quais os
+                    tiros estão sendo disparados. Cada elemento da sequência será
+                    entre 1 e 7, inclusive. A terceira linha da entrada contém a
+                    string "pulos", que representa a sequência de pulos que KiloMan
+                    tentará; 'J' significa que ele irá pular e 'S' significa que
+                    ele ficará parado. Por exemplo, se o primeiro número da
+                    sequência de tiros for 3 e o primeiro caractere de "pulos" for
+                    'J', então KiloMan pulará assim que o chefão atirar a uma
+                    altura 3 (e, portanto, ele será atingido).</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso, seu programa deve imprimir um inteiro
+                    representando o número de vezes que KiloMan é atingido.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                4<br/>
+                                9<br/>
+                                1 3 2 3 3 1 2 2 1<br/>
+                                JJSSSJSSJ<br/>
+                                49<br/>
+                                1 1 1 1 1 1 1 2 2 2 2 2 2 2 3 3 3 3 3 3 3 4 4 4 4 4 4 4 5 5 5 5 5 5 5 6 6 6 6 6 6 6 7 7 7 7 7 7 7<br/>
+                                SSSSSSSSSSSSSSJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJJ<br/>
+                                4<br/>
+                                1 2 2 1<br/>
+                                SJJS<br/>
+                                1<br/>
+                                1<br/>
+                                J</p>
+                        </td>
+                        <td>
+                            <p>
+                                4<br/>
+                                49<br/>
+                                2<br/>
+                                0</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                * Este problema é de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por Julio B. para utilização (autorizada) no URI OJ.<br />
+                * A reprodução não autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. é estritamente proibida.</p>
+
+        </div>
+    </body>
+</html>

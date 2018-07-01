@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2622 2622 - Pessoas jurídicas</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - SQL - Problema 2622 - Pessoas jurídicas" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default-sql.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28047757-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <span>URI Online Judge <strong>SQL</strong> | 2622 </span>
+      <h1>Pessoas jurídicas</h1>
+      <div>
+        <p>Paulo R. Rodegheri <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem-sql">
+      <div class="description-sql">
+        <p>O setor de vendas quer fazer uma promoção para todos os clientes que são pessoas jurídicas. Para isso você deve exibir o nome dos clientes que sejam pessoa jurídica.</p>
+      </div>
+
+      <div>
+        <h2>Esquema</h2>
+        <div>          
+          <table class="tables-model-two">
+            <caption>customers</caption>
+            <tr>
+              <td class="half-column"><strong>Coluna</strong></td>
+              <td class="half-column"><strong>Tipo</strong></td>
+            </tr>
+            <tr>
+              <td>id (PK)</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>name</td>
+              <td>character varying (255)</td>
+            </tr>
+            <tr>
+              <td>street</td>
+              <td>character varying (255)</td>
+            </tr>
+            <tr>
+              <td>city</td>
+              <td>character varying (255)</td>
+            </tr>
+            <tr>
+              <td>state</td>
+              <td>char (2)</td>
+            </tr>
+            <tr>
+              <td>credit_limit</td>
+              <td>numeric</td>
+            </tr>
+          </table>
+                                      
+          <table class="tables-model-two-inline">
+            <caption>legal_person</caption>
+            <tr>
+              <td class="half-column"><strong>Coluna</strong></td>
+              <td class="half-column"><strong>Tipo</strong></td>
+            </tr>
+            <tr>
+              <td>id_customers (FK)</td>
+              <td>numeric</td>
+            </tr>
+            <tr>
+              <td>cnpj</td>
+              <td>char (18)</td>
+            </tr>
+            <tr>
+              <td>contact</td>
+              <td>character varying</td>
+            </tr>
+          </table>
+                                                
+          </div>
+        </div>
+
+        <div>
+          <h2>Tabelas</h2>
+          <div>
+            <table class="tables-hundred">
+              <caption>customers</caption>
+              <tr>
+                <td><strong>id</strong></td>
+                <td><strong>name</strong></td>
+                <td><strong>street</strong></td>
+                <td><strong>city</strong></td>
+                <td><strong>state</strong></td>
+                <td><strong>credit_limit</strong></td>
+              </tr>
+              <tr>
+                <td class="center">1</td>
+                <td>Nicolas Diogo Cardoso</td>
+                <td>Acesso Um</td>
+                <td>Porto Alegre</td>
+                <td class="center">RS</td>
+                <td class="center">475</td>
+              </tr>
+              <tr>
+                <td class="center">2</td>
+                <td>Cecília Olivia Rodrigues</td>
+                <td>Rua Sizuka Usuy</td>
+                <td>Cianorte</td>
+                <td class="center">PR</td>
+                <td class="center">3170</td>
+              </tr>
+              <tr>
+                <td class="center">3</td>
+                <td>Augusto Fernando Carlos Eduardo Cardoso</td>
+                <td>Rua Baldomiro Koerich</td>
+                <td>Palhoça</td>
+                <td class="center">SC</td>
+                <td class="center">1067</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td>Nicolas Diogo Cardoso</td>
+                <td>Acesso Um</td>
+                <td>Porto Alegre</td>
+                <td class="center">RS</td>
+                <td class="center">475</td>
+              </tr>
+              <tr>
+                <td class="center">5</td>
+                <td>Sabrina Heloisa Gabriela Barros</td>
+                <td>Rua Engenheiro Tito Marques Fernandes</td>
+                <td>Porto Alegre</td>
+                <td class="center">RS</td>
+                <td class="center">4312</td>
+              </tr>
+              <tr>
+                <td class="center">6</td>
+                <td>Joaquim Diego Lorenzo Araújo</td>
+                <td>Rua Vitorino</td>
+                <td>Novo Hamburgo</td>
+                <td class="center">RS</td>
+                <td class="center">2314</td>
+              </tr>
+            </table>      
+                                               
+            <table class="tables-model-two">
+              <caption>legal_person</caption>
+              <tr>
+                <td><strong>id_customers</strong></td>
+                <td><strong>cnpj</strong></td>
+                <td><strong>contact</strong></td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td>85883842000191</td>
+                <td>99767-0562</td>
+              </tr>
+              <tr>
+                <td class="center">5</td>
+                <td>47773848000117</td>
+                <td>99100-8965</td>
+              </tr>
+            </table>                        
+          </div>
+        </div>
+
+        <div>
+          <h2>Exemplo de saída</h2>
+          <div>
+            <table class="tables-model-two">
+              <tr>
+                <td><strong>name</strong></td>
+              </tr>
+              <tr>
+                <td>Nicolas Diogo Cardoso</td>
+              </tr>
+              <tr>
+                <td>Sabrina Heloisa Gabriela Barros</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        
+    </div>
+      
+  </body>
+</html>

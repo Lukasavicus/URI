@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1201 - Operações em ABP II</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1201 - Operações em ABP II" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1201</span>
+                <h1>Operações em ABP II</h1>
+                <div><p>
+	Por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Marcela nem terminou de fazer o programa anterior e o professor já lhe pediu um novo programa, com aprimoramentos sobre o programa anterior. 
+	Este novo programa é a implementação de uma Árvore Binária de Pesquisa (ou Busca) mas utilizando números inteiros agora, e que deve aceitar um comando 
+	extra (R) com relação ao programa anterior:</p>
+<ul>
+	<li>
+		I <em>n</em>: Insere na árvore binária de pesquisa o elemento n.</li>
+	<li>
+		INFIXA: lista os elementos já inseridos segundo o percurso infixo</li>
+	<li>
+		PREFIXA: lista os elementos já inseridos segundo o percurso prefixo</li>
+	<li>
+		POSFIXA: lista os elementos já inseridos segundo o percurso posfixo</li>
+	<li>
+		P <em>n</em>: Pesquisa se o elemento <em>n</em> existe ou não na árvore.</li>
+	<li>
+		R <em>n</em>: Remove o elemento <em>n</em> da árvore, caso ele exista.</li>
+</ul>
+	<p> A qualquer momento pode-se inserir um elemento, visitar os elementos previamente inseridos na ordem infixa, prefixa ou posfixa, procurar por um elemento na árvore para saber se o elemento existe ou não ou ainda retirar um elemento. </p>
+    <p> Nota: Se um elemento com duas sub-árvores (direita e esquerda) for removido, o antecessor (o elemento maior de sub-árvore esquerda, deve ocupar o seu lugar e ao tentar retirar um elemento que não existe, nenhuma mensagem deve ser apresentada.</p>
+	
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <div class="input">
+	<p>
+		A entrada contém N operações utilizando números inteiros (1-10<sup>6</sup>) sobre uma árvore binária de Busca, que inicialmente se encontra vazia. 
+		A primeira linha de entrada contém a inserção de algum elemento. As demais linhas de entrada podem conter quaiquer um dos comandos descritos acima, 
+		conforme exemplo abaixo. O final da entrada é determinado pelo final de arquivo (EOF).</p>
+</div>
+
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Cada linha de entrada, com exceção das linhas que contém os comandos "I" ou "R", deve produzir uma linha de saída. 
+	A saída deve ser de acordo com o exemplo fornecido abaixo. Não deve haver espaço em branco após o último caractere de cada linha, 
+	caso contrário, sua submissão receberá <em>Presentation Error</em>.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	I 5<br />
+	I 2<br />
+	I 4<br />
+	I 1<br />
+	INFIXA<br />
+	PREFIXA<br />
+	POSFIXA<br />
+	P 3<br />
+	P 1<br />
+	INFIXA<br />
+	R 1<br />
+	INFIXA</p>
+	</td>
+                            <td>
+                                <p>
+	1 2 4 5<br />
+	5 2 1 4<br />
+	1 4 2 5<br />
+	3 nao existe<br />
+	1 existe<br />
+	1 2 4 5<br />
+	2 4 5</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    
+            </div>
+           
+
+        </body>
+    </html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1334 - Poluição Elétrica</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1334 - Poluição Elétrica" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1334</span>
+            <h1>Poluição Elétrica</h1>
+            <div><p>Por Joaquin Rodrigues <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt=""/> Argentina</p></div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Sortônia é a capital da província da Logônia do Norte. A cidade é definida com quase todas as suas ruas em uma grade quadrada alinhadas na direção Norte-Sul ou na direção Oeste-Leste. A única exceção é a Avenida Merge que vai na direção Sudoeste-Nordeste, dividindo os blocos da cidade ao longo de suas diagonais.</p>
+
+                <p>
+                    Sortônia é também uma das cidades mais verdes da Nlogônia. A universidade local desenvolveu uma tecnologia para aproveitar o campo magnético da Terra para geração de energia. Como consequência, todas as interseções da Avenida Merge possuem geradores de força instalados, abastecendo todas as casas e comércios da cidade.</p>
+
+                <p>
+                    A tecnologia foi elogiada pelos ambientalistas na época por ter eliminado a emissão de carbono da Sortônia, mas logo após sua introdução, milhares de abelhas e pássaros foram encontrados mortos na cidade. Confusa, a Rainha da Nlogônia ordenou os biofísicos do reino que investigassem o fenômeno.</p>
+
+                <p>
+                    Após muito meses de estudos, eles descobriram que os geradores usados pelos Sortonianos criaram anomalias no campo magnético local. Os pássaros e abelhas que usam o campo magnético da Terra para guiar seu voo foram confundidos por essas anomalias, começaram a voar em círulos e eventualmente morreram por exaustão.</p>
+
+                <p>
+                    De acordo com os modelos teóricos dos biofísicos, cada gerador cria uma anomalia que é representada por um valor inteiro. Cada anomalia propaga indefinidamente nas quatro direções cardeais. Pontos que não estão diretamente ao norte, sul, oeste ou leste do gerador não são afetados por ele. Por outro lado, se um ponto está alinhado com dois geradores então a anomalia naquele ponto é a soma das duas anomalias produzidas por esses geradores. Por exemplo, considere a figura abaixo que representa uma certa porção da Sortônia. A anomalia no ponto R é apenas aquela produzida pelo gerador naquele ponto enquanto a anomalia no ponto T é a soma das anomalia produzidas pelos geradores no ponto R e no ponto S.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Electrical%20Pollution_Pt.png" style="width: 465px; height: 190px;" />​</p>
+
+                <p>
+                    Os biofísicos gostariam de medir as anomalias para algumas das interseções da cidade, mas essas medições requerem equipamentos caros e perícia técnica. Então eles planejam medir apenas um subconjunto das interseções da cidade e extrapolar os outros dados a partir deles. Prever uma anomalia a partir de um conjunto de medições pode requerer combinar várias delas de modos complicados. Então, a Rainha da Nlogônia ordenou que você escrevesse um programa que prevê as anomalias em certas interseções dadas as medidas préviamente feitas.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste é descrito usando várias linhas. A primeia linha contém cois inteiros <strong>M</strong> e <strong>Q</strong> representando respectivamente o número de medições e o número de consultas (1 ≤ <strong>M, Q</strong> ≤ 10<sup>4</sup>). Cada uma das próximas <strong>M</strong> linhas descreve uma medição usando três inteiros <strong>X, Y</strong> e <strong>A</strong>, indicando que a anomalia medida no ponto (<strong>X, Y</strong>) é <strong>A</strong> (-10<sup>7</sup> ≤ <strong>X, Y</strong> ≤ 10<sup>7</sup> e -10<sup>4</sup> ≤ <strong>A</strong> ≤ 10<sup>4</sup>). Após isso, cada uma das próximas <strong>Q</strong> linhas descreve uma consulta usando dois inteiros<strong> X'</strong> e <strong>Y'</strong>, indicando que a anomalia no ponto (<strong>X', Y'</strong>) deve ser prevista (-10<sup>7</sup> ≤ <strong>X', Y'</strong> ≤ 10<sup>7</sup>). Todas as posições são medidas em blocos da cidade; o primeira coordenada aumenta de Oeste para Leste, enquanto a segunda coordenada aumenta de Sul para Norte. O ponto (0,0) está localizado na Avenida Merge. Você pode assumir que em cada caso de teste cada ponto não será medido mais de uma vez. Da mesma maneira, cada ponto não será consultado mais de uma vez. Você pode assumir que todas as medições são consistentes.</p>
+
+                <p>
+                    O último caso de teste é seguido por uma linha contendo dois zeros.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima <strong>Q + 1</strong> linhas. Na i-ésima linha escreva a resposta para a i-ésima consulta. Se a informação dada pelas medições é suficiente para prever a anomalia no ponto consultado, então escreva um inteiro representando a anomalia no ponto consultado. Caso contrário escreva o caractere '*' (asterisco). Imprima uma linha contendo um único caractere '-' (hífen) após cada caso de teste.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3 3<br />
+                                30 -10 3<br />
+                                30 20 15<br />
+                                40 20 2<br />
+                                -10 40<br />
+                                40 -10<br />
+                                -10 -10<br />
+                                6 8<br />
+                                0 1 11<br />
+                                0 3 8<br />
+                                1 0 11<br />
+                                3 0 8<br />
+                                4 4 0<br />
+                                3 5 6<br />
+                                1 5<br />
+                                0 3<br />
+                                3 0<br />
+                                4 3<br />
+                                0 2<br />
+                                2 4<br />
+                                4 4<br />
+                                5 5<br />
+                                0 0</p>
+                        </td>
+                        <td>
+                            <p>
+                                -10<br />
+                                -10<br />
+                                *<br />
+                                -<br />
+                                9<br />
+                                8<br />
+                                8<br />
+                                *<br />
+                                *<br />
+                                *<br />
+                                0<br />
+                                *<br />
+                                -</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2011.
+            </p>
+        </div>
+
+    </body>
+</html>

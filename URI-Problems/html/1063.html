@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+            <title>URI 1063 - Trilhos Novamente... Traçando Movimentos</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1063 - Trilhos Novamente... Traçando Movimentos" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1063</span>
+                <h1>Trilhos Novamente... Traçando Movimentos</h1>
+                <div><p>
+				Por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+				</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Você lembra daquela estação de trem da cidade PopPush? Apenas para 
+relembrar, existe uma estação de trem em um país incrivelmente 
+acidentado. Além disso, a estação foi construída no século passado e 
+infelizmente os fundos eram muito limitados. Em um determinado trecho 
+foi possível construir apenas uma pista e, a solução encontrada para 
+transportar as cargas nos dois sentidos foi construir uma estação que 
+permitisse desconectar os vagões de uma locomotiva e conectar em outra, 
+que iria em outro sentido.</p>
+<p style="text-align: center;">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1063.jpg" style="width: 600px; height: 174px; margin: 10px;"></p>
+<p>
+	Cada trem que chega na direção A é manobrado e seus vagões continuam na
+ direção B, reorganizados conforme o chefe da estação deseja. Ao chegar 
+pelo lado A, cada vagão é desconectado e vai até a estação e depois 
+segue para a direção B, para ser conectado na segunda 
+locomotiva. Você pode desconectar quantos trens deseja na estação, mas o
+ vagão que entra na estação só pode sair pelo lado B e uma vez que ele 
+sai, não pode mais entrar novamente.</p>
+    <p>
+	Todos vagões são identificados pelas letras minúsculas (<strong>a</strong> até <strong>z</strong>). Isto significa 26 vagões no máximo. O chefe da
+ organização dos vagões precisa agora que você ajude a resolver para 
+ele, através de um programa, qual a sequência de movimentos é necessária
+ para obter a saída desejada após a entrada na estação, seguindo para a 
+direção B. O movimento de entrada e saída da estação é descrito respectivamente pelas letras <strong>I</strong> e <strong>R</strong> (Insere e Remove). Utilizando a figura dada como exemplo, a 
+entrada e,t,d,a para uma saída desejada d,a,t,e, resulta nos movimentos 
+I,I,I,R,I,R,R,R</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada consiste em vários casos de teste, onde cada caso de teste é 
+composto por 3 linhas. A primeira das 3 linhas contém um número inteiro <strong>N</strong>
+ que representa o número total de vagões. A segunda linha contém a 
+sequência dos vagões que vêm do lado A e a Terceira linha contém a 
+sequência que o chefe de organização deseja como saída para o lado B. A 
+última linha de entrada contém apenas 0, indicando o fim da entrada.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	O arquivo de saída contém a quantidade de linhas correspondente ao 
+número de casos de teste de entrada. Cada linha de saída contém uma 
+sequência de <strong>I</strong> e <strong>R</strong> conforme o exemplo. Se não for possível mostrar a saída, as operações devem ser interrompidas e a mensagem "<strong>Impossible</strong>" deve ser impressa, com um espaço após a sequência.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	4<br>
+	e t d a<br>
+	d a t e<br>
+	5<br>
+	o s t a p<br>
+	p a t o s<br>
+	0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	IIIRIRRR<br>
+	IIIIIRRR Impossible</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    
+            </div>
+
+        
+    
+</body></html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1834 - Vogons!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema A - Vogons!" />
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>'
+    </head>
+    <body>
+        <div class="header">
+            <span>URI Online Judge | 1834</span>
+            <h1>Vogons!</h1>
+            <div>
+                <p>Por Edson Alves, Faculdade UnB Gama <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+            </div>
+            <strong>Timelimit: 3</strong>
+        </div>
+        <div class="problem">
+<div class="description">
+<p>Os vogons são uma raça alienígena que habita a Vogosfera, segundo o 
+        "Guia do Mochileiro das Galáxias", escrito por Douglas Adams. Nas 
+        palavras do próprio autor:</p>
+<p><i>"Here is what to do if you want to get a lift from a Vogon: 
+        forget it. They are one of the most unpleasant races in the Galaxy. Not         actually evil, but bad-tempered, bureaucratic, officious and callous. 
+        They wouldn't even lift a finger to save their own grandmothers from 
+        the Ravenous Bugblatter Beast of Traal without orders - signed in 
+        triplicate, sent in, sent back, queried, lost, found, subjected to 
+        public inquiry, lost again, and finally buried in soft peat for three 
+        months and recycled as firelighters. The best way to get a drink out of         a Vogon is to stick your finger down his throat, and the best way to 
+        irritate him is to feed his grandmother to the Ravenous Bugblatter 
+        Beast of Traal. On no account should you allow a Vogon to read poetry 
+        at you."</i></p>
+<p>No romance, os vogons foram os responsáveis pela destruição da 
+        Terra, pois ela ficava na rota de construção de uma autoestrada 
+        intergalática. Este é típico modo de trabalho vogon: muitas raças já 
+        foram exterminadas e planetas inteiros destruídos para que o trânsito 
+        entre as galáxias ficasse menos congestionado.</p>
+<p>Dados dois pontos de referência, pelos quais a nova autoestrada 
+        intergalática passará em linha reta, e as coordenadas e habitantes dos 
+        planetas do setor espacial, escreva um programa que gere um relatório 
+        para os vogons.</p>
+</div>
+<h2>Entrada</h2>
+<div class="input">
+<p>A primeira linha da entrada contém as coordenadas 
+        <b>X<sub>1</sub>, Y<sub>1</sub>, X<sub>2</sub>, Y<sub>2</sub></b> (-10.000 ≤ <b>X<sub>i</sub>, Y<sub>i</sub></b> ≤ 
+        10.000) dos pontos de referência <b>P<sub>1</sub></b> e <b>P<sub>2</sub></b> pelos 
+        quais a autoestrada passará em linha reta, separadas por um espaço em 
+        branco. As coordenadas são números inteiros e a unidade de distância 
+        é o ano-luz.</p>
+<p>A segunda linha da entrada contém o número <b>N</b> (1 ≤ 
+        <b>N</b> ≤ 1.000) de planetas que fazem parte do setor espacial 
+        onde a estrada passará. As próximas <b>N</b> linhas contém, cada 
+        uma, as coordenadas <b>X</b> e <b>Y</b> (-10.000 ≤ 
+        <b>X, Y</b> ≤ 10.000) do planeta e o número <b>H</b> (1 ≤
+        <b>H</b> ≤ 100.000) de habitantes, em bilhões. Estes valores 
+        são números inteiros separados por espaços em branco.</p>
+</div>
+<h2>Saida</h2>
+<div class="output">
+<p>O relatório a ser impresso contém várias linhas. A primeira delas 
+        deverá conter a mensagem "Relatorio Vogon #35987-2". 
+        Em seguida, deve ser impressa, em uma linha, a mensagem "Distancia 
+        entre referencias: <b>d</b> anos-luz", onde <b>d</b> é a 
+        distância entre os dois pontos de referência pelos quais a autoestrada 
+        deve passar, em anos-luz, com duas casas decimais de precisão.</p>
+<p>Na linha seguinte deve ser impressa a mensagem "Setor Oeste:" e, nas         duas linhas seguintes,  as mensagens "<b>P</b> planeta(s)" e 
+        "<b>H</b> bilhao(oes) de habitante(s)", onde <b>P</b> é o 
+        número de planetas que ficaram à esquerda da autoestrada, quando se 
+        viaja no sentido do primeiro ponto de referência ao segundo, e 
+        <b>H</b> é o total de habitantes destes planetas.
+        De modo semelhante, devem ser produzidas três mensagens equivalentes 
+        para o Setor Leste, que fica à direita da autoestrada.</p>
+<p>Por fim, deve ser impressa a mensagem: "Casualidades: <b>P</b> 
+        planeta(s)", onde <b>P</b> é o número de planetas que estavam na 
+        rota da construção da autoestrada e, naturalmente, tiveram que ser 
+        dizimados.</p>
+</div>
+    <div class="both"></div>
+    <table>
+        <thead>
+            <tr>
+                <td>Exemplos de Entrada</td>
+                <td>Exemplos de Saída</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>-10 -10 30 30
+</p>
+<p>5
+</p>
+<p>1 10 6
+</p>
+<p>5 5 8
+</p>
+<p>2 0 4
+</p>
+<p>-3 -3 30
+</p>
+<p>-2 5 3
+</p>
+                </td>
+                <td>
+                    <p>Relatorio Vogon #35987-2
+</p>
+<p>Distancia entre referencias: 56.57 anos-luz
+</p>
+<p>Setor Oeste:
+</p>
+<p>- 2 planeta(s)
+</p>
+<p>- 9 bilhao(oes) de habitante(s)
+</p>
+<p>Setor Leste:
+</p>
+<p>- 1 planeta(s)
+</p>
+<p>- 4 bilhao(oes) de habitante(s)
+</p>
+<p>Casualidades: 2 planeta(s)
+</p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+    </body>
+    <p class="footer">Maratona UnB de Programação 2014</p>
+</html>

@@ -1,0 +1,121 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1888 - Os chedis de Kamphaeng Phet</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1888 - Os chedis de Kamphaeng Phet" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1888</span>
+				<h1>Os chedis de Kamphaeng Phet</h1>
+				<div>
+					<p>Por Stefano Tommasini, Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Um chedi (conhecido também como estupa, pagode ou dágaba) é um monumento geralmente em formato de torre cônica construído sobre os restos mortais de uma pessoa importante da religião budista. Alguns sítios históricos tailandeses contêm dezenas desses monumentos, muitos deles dedicados a monges ou líderes religiosos antigos (bhikkhu - ภิกษุณี, como são chamados na Tailândia). Vários desses monges dedicaram suas vidas à contemplação e oração a diferentes entidades. Para citar um exemplo, no sítio de Kamphaeng Phet encontram-se vários chedi em que as inscrições fazem referência a Garuda (ครุฑ) (não confunda com o personagem homônimo do Street Fighter). O mesmo se repete no sítio de Si Satchanalai e de Sukhothai.</p>
+
+<p>A língua tai tem diferenças muito sutis entre as diferentes letras, que torna a análise dos especialistas extremamente difícil. Por exemplo, quando qualquer símbolo da palavra correspondente ao deus Ramakien (รามเกียรติ์) é mudado, seu significado é completamente alterado. Lembrando que algumas dessas ruínas têm mais de 700 anos, estes escritos já sofrem a ação do tempo e de vândalos há séculos. Assim, o trabalho desses pesquisadores é muito complicado. Um outro exemplo é o par de inscrições abaixo encontrada em chedis diferentes.</p>
+
+<p style="text-align: center;">จัดษุตังขึ้นโดยพรภิะบมพุธานุญาษุ</p>
+
+<p style="text-align: center;">จัดตั้งขึ้โกดยพระบรมษุพุทธานญาต</p>
+
+<p>Os especialistas acreditam que se refiram à mesma entidade. Para chegar a essa conclusão, eles desenvolveram um método que chamam de análise da diferença probabilística mínima.</p>
+
+<p>Essa análise funciona da seguinte maneira. Sejam <em>a</em> = <em>a</em><sub><em>1</em></sub><em>a</em><sub><em>2</em></sub><em>...a</em><sub><em>N</em></sub><em> </em>e <em>b = b</em><sub><em>1</em></sub><em>b</em><sub><em>2</em></sub><em>...b</em><sub><em>M</em></sub> duas inscrições com <em>N</em> e <em>M</em> caracteres, respectivamente. O valor do parâmetro chamado diferença é inicializado com zero. A cada passo, analisa-se um par de caracteres (<em>a</em><sub><em>i</em></sub>, <em>b</em><sub><em>j</em></sub>), com 1 ≤ <em>i</em> ≤ <em>N + 1</em> e 1 ≤ <em>j</em> ≤ <em>M + 1</em>, começando por (<em>a</em><sub><em>1</em></sub><em>,b</em><sub><em>1</em></sub>). Note que quando <em> i = N + 1</em>, <em>a<sub>i</sub></em> é o caracter vazio e o mesmo vale para <em>b<sub>j</sub></em> quando <em>j = M + 1</em>. Se <em>a</em><sub><em>i</em></sub> = <em>b</em><sub><em>j</em></sub>, pode-se considerar que existe uma correspondência entre tais caracteres nas inscrições e trocar o par atual por (<em>a</em><sub><em>i+1</em></sub><em>, b</em><sub><em>j+1</em></sub>). Tal correspondência nunca existe se <em>a</em><sub><em>i</em></sub> ≠ b<sub>j</sub> e um caracter de uma inscrição nunca pode corresponder a dois caracteres da outra inscrição. Se for considerado que não existe correspondência entre os caracteres do par, então o valor da diferença deve ser aumentada por uma das seguintes formas:</p>
+
+<ul>
+	<li>
+	<p>adicionando 1 à diferença e trocando o par atual por (<em>a</em><sub><em>i+1</em></sub>, b<sub>j</sub>) ou por (<em>a</em><sub><em>i</em></sub><em>, b</em><sub><em>j+1</em></sub>);</p>
+	</li>
+	<li>
+	<p>adicionado <em>K</em> à diferença e trocando o par atual por (<em>a</em><sub><em>i+x</em></sub><em>, b</em><sub><em>j+y</em></sub>), onde <em>x</em> e <em>y</em> são escolhidos aleatoriamente com distribuição uniforme nos intervalos [1, <em>N-i+1</em>] e [1, <em>M-j+1</em>], respectivamente. Se <em>i &gt; N</em>, apenas <em>y</em> varia aleatoriamente. Se <em>j &gt; M</em>, apenas <em>x</em> varia aleatoriamente.</p>
+	</li>
+</ul>
+
+<p>A análise termina quando os caracteres <em>a</em><sub><em>i</em></sub> e <em>b</em><sub><em>j</em></sub> são ambos o caracter vazio. Note que o valor da diferença pode variar de acordo com as escolhas tomadas.</p>
+
+<p>Os especialistas consideram que quanto menor for a diferença obtida, maior será a correspondência entre as inscrições. Assim, eles pedem que você escreva um programa para encontrar a diferença mínima esperada entre duas inscrições.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+<p>Cada instância inicia com 3 inteiros, <strong>N</strong>, <strong>M </strong>(1 ≤ <strong>N</strong>,<strong> M</strong> ≤ 3.000), e <strong>K </strong>(0 ≤ <strong>K</strong> ≤ 100.000), onde <strong>N</strong> é o tamanho da primeira inscrição e <strong>M</strong> é o tamanho da segunda inscrição. As próximas duas linhas contém, respectivamente, a primeira e a segunda inscrição. Uma inscrição consiste de uma cadeia de caracteres de 'a' a 'z'.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprima um número real arredondado para 3 casas decimais com a diferença mínima esperada entre as duas inscrições. Imprima a resposta com exatamente 3 casas decimais.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+<p>3 3 2</p>
+
+<p>aab</p>
+
+<p>aba</p>
+
+<p>4 3 0</p>
+
+<p>abcc</p>
+
+<p>eee</p>
+
+							</td>
+							<td>
+								<p>2.000</p>
+
+<p>0.000</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIX Maratona de Programação IME-USP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

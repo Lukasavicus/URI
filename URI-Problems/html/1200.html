@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1200 - Operações em ABP I</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1200 - Operações em ABP I" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1200</span>
+            <h1>Operações em ABP I</h1>
+            <div><p>
+                    Por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Marcela recebeu como trabalho de Algoritmos a tarefa de fazer um programa que implemente uma Árvore Binária de Pesquisa (ou Busca). 
+                    O Programa deve aceitar os seguintes comandos:</p>
+                <ul>
+                    <li>
+                        I <em>n</em>: Insere na árvore binária de pesquisa o elemento n.</li>
+                    <li>
+                        INFIXA: lista os elementos já cadastrado segundo o percurso infixo</li>
+                    <li>
+                        PREFIXA: lista os elementos já cadastrado segundo o percurso prefixo</li>
+                    <li>
+                        POSFIXA: lista os elementos já cadastrado segundo o percurso posfixo</li>
+                    <li>
+                        P <em>n</em>: pesquisa se o elemento <em>n</em> existe ou não.</li>
+                </ul>
+                <p>
+                    A qualquer momento pode-se inserir um elemento, visitar os elementos previamente inseridos na ordem infixa, prefixa ou posfixa 
+                    ou ainda procurar por um elemento na árvore para saber se o elemento existe ou não. </p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            
+                <div class="input">
+                    <p>
+                        A entrada contém N operações utilizando letras (A-Z,a-z) sobre uma árvore binária de Busca, que inicialmente se encontra vazia. 
+                        A primeira linha de entrada contém a inserção de algum elemento. As demais linhas de entrada podem conter quaiquer um dos comandos descritos acima, 
+                        conforme exemplo abaixo. O final da entrada é determinado pelo final de arquivo (EOF).</p>
+                    <p>
+                        Obs: Considere que não serão inseridos elementos repetidos na árvore.</p>
+                </div>
+
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+                        Cada linha de entrada, com exceção das linhas que contém o comando "I", deve produzir uma linha de saída. 
+                        A saída deve ser de acordo com o exemplo fornecido abaixo. Não deve haver espaço em branco após o último caractere de cada linha, 
+                        caso contrário, sua submissão receberá <em>Presentation Error</em>.</p>
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+                                    I c<br />
+                                    I f<br />
+                                    I a<br />
+                                    I h<br />
+                                    INFIXA<br />
+                                    PREFIXA<br />
+                                    POSFIXA<br />
+                                    P z<br />
+                                    P h<br />
+                                    I g<br />
+                                    INFIXA</p>
+
+                            </td>
+                            <td>
+                                <p>
+                                    a c f h<br />
+                                    c a f h<br />
+                                    a h f c<br />
+                                    z nao existe<br />
+                                    h existe<br />
+                                    a c f g h</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            
+        </div>
+    </body>
+</html>

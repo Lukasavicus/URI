@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1769 - CPF 1</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 9696 - CPF 1" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1769</span>
+                <h1>CPF 1</h1>
+                <div>
+                    <p>Por Alexandre Campos, UNIUBE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Você foi contratado pelas Indústrias Udilandenses (INUDIL) para desenvolver uma maneira de verificar se o Cadastro de Pessoa Física (CPF) indicado por um cliente era válido ou não. Conversando com amigos, você chegou à conclusão de que um CPF seria válido se a soma de todos os seus dígitos resultasse em número múltiplo de 11. Após verificação minuciosa, você descobriu que essa maneira só funciona em cerca de 80% dos casos, e você precisa de mais do que isso para garantir a qualidade do seu trabalho. Após pesquisar mais, você descobriu que dos 11 dígitos do CPF, os dois últimos são verificadores e dependem dos 9 dígitos anteriores. Vamos introduzir alguma notação. Considere um CPF com os seguintes dígitos</p>
+
+<p style="text-align: center;">a<sub>1</sub>a<sub>2</sub>a<sub>3</sub>.a<sub>4</sub>a<sub>5</sub>a<sub>6</sub>.a<sub>7</sub>a<sub>8</sub>a<sub>9</sub>-b<sub>1</sub>b<sub>2</sub></p>
+
+<p>Para descobrirmos o dígito b1, procedemos da seguinte maneira: multiplicamos o primeiro por 1, o segundo por 2, o terceiro por 3, o quarto por 4 e vamos assim até multiplicarmos o nono por 9. Então, somamos tudo isto. Após termos somado tudo, dividimos por 11. O dígito b1 será o resto da divisão (ou 0, caso o resto seja 10).</p>
+
+<p>Para o segundo dígito verificador, temos o seguinte: multiplicamos o primeiro por 9, o segundo por 8, o terceiro por 7, o quarto por 6 e vamos assim até multiplicarmos o nono por 1. Então, somamos tudo isto e dividimos por 11. O dígito b2 será o resto da divisão (ou 0, caso o resto seja 10).</p>
+
+<p>Sabendo que isso vale para 100% dos CPFs, sua missão é implementar um programa que, dado um CPF, diga se ele é válido ou não.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém um número desconhecido de CPFs, que não excede 10000 casos. Em cada linha, um CPF na forma</p>
+
+<p style="text-align: center;">d<sub>1</sub>d<sub>2</sub>d<sub>3</sub>.d<sub>4</sub>d<sub>5</sub>d<sub>6</sub>.d<sub>7</sub>d<sub>8</sub>d<sub>9</sub>-d<sub>10</sub>d<sub>11</sub></p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Se o CPF informado for válido, escreva "CPF valido". Caso contrário, escreva "CPF invalido".</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>048.856.829-63<br />
+733.184.680-96<br />
+227.518.471-08<br />
+092.844.842-86<br />
+098.447.895-55</p>
+
+                            </td>
+                            <td>
+                                <p>CPF invalido<br />
+CPF valido<br />
+CPF invalido<br />
+CPF valido<br />
+CPF invalido</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

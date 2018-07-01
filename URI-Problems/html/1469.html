@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1469 - Chefe</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1469 - Chefe" />
+            
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1469</span>
+                <h1>Chefe</h1>
+                <div> Maratona de Programação da SBC <img alt="" src='  https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif'  /> Brasil</div> <strong>Timelimit: 4</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <div class="description">
+<p>Todos conhecem Iks, a última moda em redes sociais, que fez tanto sucesso que competidores como Facebook e Google+ estão começando a ter dificuldades financeiras. Assim como muitas companhias “.com”, Iks surgiu em uma pequena garagem, mas hoje emprega milhares de pessoas no mundo todo. O sistema de gerência utilizado em Iks é bem diferente do padrão. Por exemplo, não há diretorias ou superintendências. No entanto, como é usual em outras companhias, há uma cadeia (ou melhor, várias cadeias) de comando: uma pessoa pode gerenciar outras pessoas, e pode ser gerenciada por outras pessoas. As figuras abaixo mostra a cadeia de comando para alguns empregados, junto com suas idades.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1469.png" style="width: 650px; height: 195px;" /></p>
+
+<p>Uma pessoa <strong>P1</strong> pode gerenciar outra pessoa <strong>P2</strong> diretamente (quando <strong>P1</strong> é o superior imediato de <strong>P2</strong>) ou indiretamente (quando <strong>P1</strong> gerencia diretamente uma pessoa <strong>P3</strong> que gerencia <strong>P2</strong> direta ou indiretamente). Por exemplo, na figura (a) acima, Alice gerencia David diretamente e Clara indiretamente. Uma pessoa não gerencia a si própria, nem direta nem indiretamente. Um folclore que apareceu em Wall Street é que Iks é tão bem sucedido porque em sua rede de comando um(a) gerente é sempre mais jovem do que as pessoas que ele(a) gerencia. Como podemos ver na figura acima, isso não é verdade. Mas esse folclore incentivou Iks a desenvolver uma ferramenta para analisar o seu sistema de gerenciamento, e estudar se tem alguma influência no sucesso da empresa. Você foi contratado para trabalhar nessa ferramenta. Dadas a descrição da cadeia de comando na Iks e as idades de seus empregados, escreva um programa que execute uma série de instruções. Instruções podem ser de dois tipos: trocas de gerência e perguntas. Uma instrução de troca de gerência faz dois empregados <strong>A</strong> e <strong>B</strong> trocarem suas posições na cadeia de comando. Como exemplo, a figura (<strong>b</strong>) acima mostra a cadeia de comando resultante quando David e George trocam suas respectivas posições na cadeia de comando. Uma instrução de pergunta identifica um empregado A e deseja saber a idade do mais jovem gerente (direto ou indireto) de <strong>A</strong> na cadeia de comando. Por exemplo, no cenário da figura (<strong>a</strong>) acima a idade do(a) gerente mais jovem de Clara é 18 anos; já no cenário da figura (<strong>b</strong>), a idade do(a) gerente mais jovem de Clara é 21 anos.</p>
+</div>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <div class="input">
+<p>A entrada contém vários casos de teste. Cada caso de teste é composto de várias linhas. A primeira linha contém três inteiros <strong>N </strong>(1 ≤ <strong>N</strong> ≤ 500), <strong>M</strong>(0 ≤ <strong>M</strong> ≤ 60 × 10<sup>3</sup>) e <strong>I</strong>(1 ≤ <strong>I</strong> ≤ 500), indicando respectivamente o número de empregados, o número de relações de gerência direta e o número de instruçõoes. Empregados são identificados por números de 1 a <strong>N</strong>. A segunda linha contém <strong>N</strong> inteiros <strong>Ki</strong>(1 ≤ <strong>Ki</strong> ≤ 100, para 1 ≤ <strong>i</strong> ≤ <strong>N</strong>), onde <strong>Ki</strong> indica a idade do empregado de número <strong>i</strong>.</p>
+
+<p>Cada uma das <strong>M</strong> linhas seguintes contém dois inteiros <strong>X</strong> e <strong>Y</strong>(1 ≤ <strong>X</strong>, <strong>Y</strong> ≤ <strong>N</strong>, <strong>X</strong> != <strong>Y</strong>) , indicando que <strong>X</strong> gerencia <strong>Y</strong> diretamente. Seguem-se <strong>I</strong> linhas, cada uma descrevendo uma instrução. Uma instruçãao de troca de gerência é descrita em uma linha contendo o identificador <strong>T</strong> seguido de dois inteiros <strong>A</strong> e <strong>B</strong>(1 ≤ <strong>A</strong>,<strong>B</strong> ≤ <strong>N</strong>), indicando os dois empregados que devem trocar seus lugares na cadeia de comando. Uma instrução de pergunta é descrita em uma linha contendo o identificador <strong>P</strong> seguido de um inteiro <strong>E</strong>(1 ≤ <strong>E</strong> ≤ <strong>N</strong>), indicando um empregado. A última instrução será sempre do tipo pergunta.<br /> <br />
+O final da entrada é determinado por EOF (fim de arquivo).</p>
+</div>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instrução de pergunta seu programa deve imprimir uma linha contendo um único inteiro, a idade da pessoa mais jovem que gerencia (direta ou indiretamente) o empregado nomeado na pergunta. Se o empregado nomeado não possui um gerente, imprima o caractere ‘*’ (asterisco).</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>7 8 9<br />
+21 33 33 18 42 22 26<br />
+1 2<br />
+1 3<br />
+2 5<br />
+3 5<br />
+3 6<br />
+4 6<br />
+4 7<br />
+6 7<br />
+P 7<br />
+T 4 2<br />
+P 7<br />
+P 5<br />
+T 1 4<br />
+P 7<br />
+T 4 7<br />
+P 2<br />
+P 6</p>
+
+                            </td>
+                            <td>
+                                <p>18<br />
+21<br />
+18<br />
+18<br />
+*<br />
+26</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                   Maratona de Programação da SBC 2013.
+                </p>
+            </div>
+        </body>
+    </html>

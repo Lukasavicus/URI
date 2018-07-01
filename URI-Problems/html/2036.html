@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2036 - Efeito Dominó</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2036 - Efeito Dominó" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2036</span>
+                <h1>Efeito Dominó</h1>
+                <div>
+                    <p>Por Leopoldo Taravilse, Universidad Nacional de La Plata  <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>O efeito dominó é um fenômeno que ocorre quando, em uma linha de peças de dominó, cada uma sobre o seu menor lado, a primeira peça a partir de uma das extremidades cai em direção à próxima peça. Por sua vez, esta segunda peça cai sobre a terceira na linha, e assim por diante até que a outra extremidade da linha seja atingida, e então todas as peças terão caído. Note que para que isso aconteça, a distância entre as peças consecutivas na linha deve ser menor ou igual à altura das peças.</p>
+
+                    <p>Emma encontrou recentemente sobre o efeito dominó e foi imediatamente surpreendida por ele. Ela passou toda a manhã formando uma linha com N peças de dominó que seu irmão Ezequiel deu a ela, mas pouco antes de fazer a primeira peça cair, sua avó foi a casa dela e levou-a para brincar no parque. Ezequiel sabe que Emma não levou em conta a distancia entre as peças consecutivas quando ela formou sua linha de dominó, e não quer vê-la frustrada se todas as peças não caírem depois que ela derrubar a primeira.</p>
+
+                    <p>Assim, Ezequiel quer mover algumas peças de dentro da linha para que a distância entre peças consecutivas é sempre menor ou igual à sua altura H. Para que Emma não descubra que ele moveu algumas peças, ele irá deixar a primeira e a ultima peça onde elas estão, e ele deseja também mover o mínimo possível de peças de dentro da fila. Qual é o numero mínimo de peças que ele deve mover?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Cada caso de teste é descrito usando duas linhas. A primeira linha contém dois números inteiros N e H, indicando, respectivamente, o número de peças na linha (3 ≤ N ≤ 1000) e sua altura (1 ≤ H ≤ 50). A segunda linha contém N-1 inteiros Di, que representam as distâncias entre pares de peças consecutivas de dominó, na ordem dada pela linha (1 ≤ Di ≤ 100 para i = 1, 2, ..., N-1).</p>
+
+                    <p>O fim da entrada é indicado por uma linha que contém duas vezes o número -1.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada teste, você deve imprimir uma linha contendo um único número inteiro, que representa o número mínimo de peças que têm de ser deslocadas, de modo a manter a distância entre peças consecutivas sempre inferior ou igual a H. Note que a primeira e a última peça não podem ser movidas, e que a ordem relativa entre as peças não pode ser alterada. Se for impossível alcançar o resultado desejado, imprimir o número -1.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>8 3</p>
+
+<p>2 4 4 1 4 3 2</p>
+
+<p>10 2</p>
+
+<p>1 2 2 2 2 2 2 2 3</p>
+
+<p>5 2</p>
+
+<p>2 2 2 2</p>
+
+<p>5 3</p>
+
+<p>1 6 2 4</p>
+
+<p>-1 -1</p>
+
+                            </td>
+                            <td>
+                                <p>3</p>
+
+<p>8</p>
+
+<p>0</p>
+
+<p>-1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Torneo Argentino de Programación — ACM–ICPC 2012
+                </p>
+            </div>
+
+        </body>
+    </html>

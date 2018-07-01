@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1561 - Relógio Binário</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br"/>
+            <meta name="description" content="URI Online Judge - Problema 1561 - Relógio Binário"/>
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+            <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css"/>
+
+            <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+            <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-28047757-1');
+            </script>
+
+            <style>#small{width:40%}#large{width:60%}</style>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1561</span>
+                <h1>Relógio Binário</h1>
+                <div>
+                    <p>Por Gabriel Dalalio, ITA  <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Alguns programadores gostam de ser estranhos e usam relógios binários como o relógio da imagem abaixo:</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1561.jpg" style="height:300px; width:300px" pagespeed_url_hash="1677366545" onload="pagespeed.CriticalImages.checkImageForCriticality(this);"/></p>
+
+                    <p>Há também programadores que gostam de inventar questões para competições online, porém não gostam de escrever textos detalhados e longos para as questões.</p>
+
+                    <p>Sua tarefa nesse problema é desenhar o relógio da imagem em um dado horário.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por vários casos de teste. Cada caso de teste é composto por uma linha conténdo um horário no formato HH:MM (0&nbsp;≤ HH &lt; 12 e&nbsp;0&nbsp;≤ MM &lt; 60). A entrada termina com final de arquivo (EOF). </p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada teste, a saída é composta por um desenho do relógio no horário dado na entrada (o desenho deve seguir o mesmo formato dos desenho dos exemplos). Imprima uma linha em branco após cada desenho.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="small" class="division">
+                                <p>04:16<br/>
+
+07:31<br/>
+
+08:32<br/>
+
+00:00</p>
+
+                            </td>
+                            <td id="large">
+                                <p>&nbsp;____________________________________________<br/>
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|<br/>
+| &nbsp; &nbsp;____________________________________ &nbsp; &nbsp;|_<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |_)<br/>
+| &nbsp; | &nbsp; 8 &nbsp; &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; 1 &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; o &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; 32 &nbsp; &nbsp;16 &nbsp; &nbsp;8 &nbsp; &nbsp; 4 &nbsp; &nbsp; 2 &nbsp; &nbsp; 1 &nbsp;| &nbsp; |_<br/>
+| &nbsp; |____________________________________| &nbsp; |_)<br/>
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|<br/>
+|____________________________________________|<br/>
+
+<br/>
+&nbsp;____________________________________________<br/>
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|<br/>
+| &nbsp; &nbsp;____________________________________ &nbsp; &nbsp;|_<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |_)<br/>
+| &nbsp; | &nbsp; 8 &nbsp; &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; 1 &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; o &nbsp; &nbsp; &nbsp; &nbsp; o &nbsp; &nbsp; &nbsp; &nbsp; o &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; o &nbsp; &nbsp; o &nbsp; &nbsp; o &nbsp; &nbsp; o &nbsp; &nbsp; o &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; 32 &nbsp; &nbsp;16 &nbsp; &nbsp;8 &nbsp; &nbsp; 4 &nbsp; &nbsp; 2 &nbsp; &nbsp; 1 &nbsp;| &nbsp; |_<br/>
+| &nbsp; |____________________________________| &nbsp; |_)<br/>
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|<br/>
+|____________________________________________|<br/>
+
+<br/>
+&nbsp;____________________________________________<br/>
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|<br/>
+| &nbsp; &nbsp;____________________________________ &nbsp; &nbsp;|_<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |_)<br/>
+| &nbsp; | &nbsp; 8 &nbsp; &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; 1 &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; o &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; o &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; 32 &nbsp; &nbsp;16 &nbsp; &nbsp;8 &nbsp; &nbsp; 4 &nbsp; &nbsp; 2 &nbsp; &nbsp; 1 &nbsp;| &nbsp; |_<br/>
+| &nbsp; |____________________________________| &nbsp; |_)<br/>
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|<br/>
+|____________________________________________|<br/>
+
+<br/>
+&nbsp;____________________________________________<br/>
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|<br/>
+| &nbsp; &nbsp;____________________________________ &nbsp; &nbsp;|_<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |_)<br/>
+| &nbsp; | &nbsp; 8 &nbsp; &nbsp; &nbsp; &nbsp; 4 &nbsp; &nbsp; &nbsp; &nbsp; 2 &nbsp; &nbsp; &nbsp; &nbsp; 1 &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;| &nbsp; |<br/>
+| &nbsp; | &nbsp; 32 &nbsp; &nbsp;16 &nbsp; &nbsp;8 &nbsp; &nbsp; 4 &nbsp; &nbsp; 2 &nbsp; &nbsp; 1 &nbsp;| &nbsp; |_<br/>
+| &nbsp; |____________________________________| &nbsp; |_)<br/>
+| &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;|<br/>
+|____________________________________________|<br/>
+
+<br/></p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Dalalio 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,121 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2086 - Ciclofaixa</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2086 - Ciclofaixa" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2086</span>
+				<h1>Ciclofaixa</h1>
+				<div>
+					<p>Por Gabriel Duarte, UNIFESO <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Como todos já sabem, as eleições para prefeito estão chegando. Neste ano nossa cidade possui excelentes candidatos, todos com propostas incríveis de governo.</p>
+
+<p>Um dos candidatos pretende implementar um sistema de transporte revolucionário, onde as ruas serão removidas e trocadas por ciclofaixas. Esta ideia parece ser a solução de todos os problemas que nossa cidade vem enfrentando. Porém, há um falha: a desidratação quando andamos por muito tempo de bicicleta.</p>
+
+<p>Para solucionar esse problema, o candidato pretende fornecer água gelada para toda a população. Sua ideia é colocar pontos de distribuição em todas interseções das ciclofaixas. Porém como água é um recurso que está se esgotando, a quantidade que ele fornecerá será fixa, independente da distância percorrida pelo indivíduo.</p>
+
+<p>Na intenção de validar sua ideia, o candidato contratou você para o ajudar. Sua tarefa é simples: será fornecido o mapa da cidade com todas as interseções e as distâncias entre elas. Em seguida, você deverá responder várias consultas do candidato, onde ele irá informar duas interseções, <strong>A</strong> e <strong>B</strong>, e seu programa deverá mostrar qual a maior distância que será percorrida por uma pessoa sem água entre <strong>A</strong> e <strong>B</strong>. Com essas informações o candidato conseguirá ver se a quantidade que ele pretende fornecer será suficiente. Não esqueça que o candidato pretende diminuir essa distância, então o seu programa deve informar a maior distância no melhor trajeto.</p>
+
+<p>Como as ruas de nossa cidade são bem largas, todas as ciclofaixas serão de mão dupla.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada possui diversos casos de teste. Cada caso de teste começa com dois inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 100) e <strong>M</strong> (1 ≤<strong> M</strong> ≤ 4950), indicando respectivamente o número de interseções no mapa da cidade e quantas ciclofaixas serão criadas. Nas próximas <strong>M</strong> linhas serão fornecidos três inteiros <strong>U </strong>,<strong> V</strong> (1 ≤ <strong>U</strong>, <strong>V</strong> ≤ <strong>N</strong> ) e <strong>W</strong> (0 ≤ <strong>W</strong> ≤ 2000), que indicam que existe uma ciclofaixa entre a interseção <strong>U</strong> e <strong>V</strong> com uma distância <strong>W</strong> . Na próxima linha terá um inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 50), que representa a quantidade de consultas que o candidato deseja fazer. Segue <strong>Q</strong> linhas com dois inteiros <strong>A</strong>, <strong>B</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong>), indicando o par de interseções para o qual deve ser feita a consulta. A entrada termina quando <strong>N</strong> = <strong>M</strong> = 0 e não deve ser processada.</p>
+
+
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada consulta seu programa deverá imprimir uma linha com a maior distância, conforme explicado acima.<br />
+&nbsp;</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>12 17<br />
+1 4 4<br />
+4 7 6<br />
+7 10 6<br />
+2 5 4<br />
+5 8 5<br />
+8 11 2<br />
+3 6 5<br />
+6 9 3<br />
+9 12 1<br />
+1 2 1<br />
+2 3 9<br />
+4 5 3<br />
+5 6 7<br />
+7 8 7<br />
+8 9 2<br />
+10 11 1<br />
+11 12 2<br />
+4<br />
+1 5<br />
+6 8<br />
+6 7<br />
+11 10<br />
+0 0<br />
+&nbsp;</p>
+
+							</td>
+							<td>
+								<p>4<br />
+3<br />
+6<br />
+1<br />
+&nbsp;</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					V Maratona Interna de Programação UNIFESO
+				</p>
+			</div>
+
+		</body>
+	</html>

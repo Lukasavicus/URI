@@ -1,0 +1,121 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2458 - Setas</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2458 - Setas" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2458</span>
+				<h1>Setas</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2014 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Gabriel é um garoto que gosta muito de um jogo onde há várias letras em um tabuleiro e o jogador precisa rapidamente pisar nas letras corretas, de acordo com as instruções na tela, seguindo uma música. Cansado de vencer, Gabriel inventou um novo jogo: agora temos um tabuleiro quadrado, com N células de cada lado, em que cada célula possui uma seta que aponta para uma das quatro posições vizinhas. O jogador primeiro escolhe uma célula inicial para se posicionar e, quando a música começa, ele deve caminhar na direção para onde a seta em que ele está aponta. Ganha o jogo quem pisar em mais setas corretas durante um período de tempo.</p>
+
+<p>O problema é que Gabriel joga tão rápido que quando a seta atual manda ele sair do tabuleiro, ele segue a orientação, muitas vezes quebrando alguns objetos próximos. Quando isso acontece, dizemos que a célula inicial deste jogo não é segura, pois leva a um caminho que termina fora do tabuleiro. A figura abaixo mostra dois tabuleiros.</p>
+
+<p class="center"><img style="width: 500px" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_177_H.png' alt='' /></p>
+
+<p>Ajude Gabriel: dada a configuração do tabuleiro, determine quantas células são seguras para ele iniciar o jogo.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 500), o tamanho do tabuleiro. Cada uma das <strong>N</strong> linhas seguintes contém <strong>N</strong> caracteres, com as direções das setas. As direções válidas são:</p>
+
+<ul>
+	<li>‘V’ Aponta para a célula da linha abaixo, na mesma coluna&nbsp;</li>
+	<li>‘&lt;’ (sinal menor-que) aponta para a célula à esquerda, na mesma linha&nbsp;</li>
+	<li>‘&gt;’ (sinal maior-que) aponta para a célula à direita, na mesma linha&nbsp;</li>
+	<li>‘A’ Aponta para a célula da linha acima, na mesma coluna&nbsp;</li>
+</ul>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve produzir um único inteiro, o número de células seguras.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3</p>
+
+<p>&gt;&gt;V</p>
+
+<p>AV&lt;</p>
+
+<p>A&lt;&gt;</p>
+
+							</td>
+							<td>
+								<p>8</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4&nbsp;<br />
+&gt;&gt;V&lt;&nbsp;<br />
+A&lt;&lt;&lt;&nbsp;<br />
+AAA&gt;&nbsp;<br />
+&gt;&gt;&gt;A&nbsp;</p>
+
+							</td>
+							<td>
+								<p>11</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2014 Fase 1 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

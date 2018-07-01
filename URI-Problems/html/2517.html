@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2517 - Desafio PoGro</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2517 - Desafio PoGro" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2517</span>
+			<h1>Desafio PoGro</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>A PoGro é uma famosa marca de câmeras digitais de alta tecnologia. Este ano, a PoGro está promovendo o <em>Desafio PoGro</em>! Neste desafio, cada participante deve saltar do topo de um prédio e chegar a salvo em um ponto específico no chão, utilizando apenas uma asa delta.</p>
+
+				<p>Considere que o topo do prédio está no ponto (0,<strong>C</strong>) do plano cartesiano, e que a chegada está no ponto (<strong>x</strong><sub><strong>F</strong></sub>, 0). Para completar o desafio, o participante deve seguir rigorosamente o trajeto definido pela parábola dada pela função f(x) =&nbsp; -x²/<strong>A</strong> - x/<strong>B</strong> + <strong>C</strong>, onde <strong>A</strong>, <strong>B</strong> e <strong>C</strong> são escolhidos pela organização do desafio de tal forma que f(<strong>x<sub>F</sub></strong>) = 0. O trajeto é apresentado na figura abaixo.</p>
+
+				<p class="center"><img src='https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_2517.png' alt=''/></p>
+
+				<p>A organização colocou uma câmera PoGro na posição (<strong>x<sub>c</sub></strong>,<strong>y<sub>c</sub></strong>) do plano, que será utilizada para tirar uma foto do participante. Para que a foto tirada seja a melhor possível, a foto será tirada no exato momento em que o participante estiver <em>o mais próximo possível</em> da câmera.</p>
+
+				<p>Entretanto, a organização está com dificultades em determinar qual será a distância entre a câmera e o participante no momento em que a foto será tirada (exemplificada pela reta pontilhada na figura acima). Dado o trajeto do participante e a posição da câmera, determine a distância entre a câmera e o participante no memento em que a foto será tirada!</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha de cada caso de teste contém três inteiros <strong>A</strong>, <strong>B</strong>, <strong>C</strong> (1 ≤ <strong>A</strong>, <strong>B</strong>, <strong>C</strong> ≤ 200) que descrevem o trajeto. A segunda linha contém dois inteiros <strong>x<sub>c</sub></strong> e <strong>y<sub>c</sub></strong> (0 ≤ <strong>x<sub>c</sub></strong>, <strong>y<sub>c</sub></strong> ≤ 200) indicando a posição da câmera. A terceira e última linha de cada caso de teste contém o inteiro <strong>x</strong><sub><strong>F</strong> </sub> (1 ≤ <strong>x</strong><sub><strong>F</strong> </sub> ≤ 200) indicando o ponto de chegada.</p>
+
+					<p>É garantido que f(<strong>x<sub>F</sub></strong>) = 0. Além disso, note que f(x) é tal que a função é sempre decrescente para x ≥ 0, e que a altura do prédio é sempre positiva.</p>
+
+					<p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha contendo a distância entre a câmera e o participante no momento da foto. Arredonde e imprima a resposta com exatamente 2 casas decimais.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>10 2 5<br />
+							2 2<br />
+							5</p>
+
+						</td>
+						<td>
+							<p>1.14</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

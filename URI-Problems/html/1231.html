@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1231 - Palavras</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1231 - Palavras" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1231</span>
+            <h1>Palavras</h1>
+            <div><p>
+                    Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Dados dois conjuntos de palavras formadas por zeros e uns, você deve escrever um programa para determinar se existem concatenações de palavras de cada um dos conjuntos que gerem uma mesma palavra. Por exemplo, se um conjunto A contém as palavras 010 e 11 e outro conjunto B contém as palavras 0 e 101, então a palavra 01011010 pode ser formada tanto por contatenações de palavras 
+                    de A como por contatenações de palavras de B:</p><br />
+                <p class="center">
+                    010 · 11 · 010 = 01011010 = 0 · 101 · 101 · 0</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A primeira linha de um caso de teste contém dois inteiros,&nbsp;<strong>N</strong><sub>1</sub>&nbsp;(1 ≤&nbsp;<strong>N</strong><sub>1</sub>),&nbsp;e&nbsp;<strong>N</strong><sub>2</sub>&nbsp;(<strong>N</strong><sub>2</sub>&nbsp;≤ 20),&nbsp;que indicam respectivamente o número de palavras do primeiro e do segundo conjunto de palavras. Cada uma das&nbsp;<strong>N</strong><sub>1</sub>&nbsp;linhas seguintes contém uma palavra do primeiro conjunto. Cada uma das&nbsp;<strong>N</strong><sub>2</sub>&nbsp;linhas seguintes contém uma palavra do segundo conjunto.<br />
+                    <br />
+                    Obs:&nbsp;cada palavra tem no mínimo um caractere e no máximo 40 caracteres, todos zeros e uns.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste seu programa deve imprimir uma única linha, contendo um único caractere. Se for possivel encontrar uma concatenação de uma ou mais palavras do primeiro conjunto que seja igual a uma concatenação de uma ou mais palavras do segundo conjunto então o caractere deve ser S, caso contrário deve ser N.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2 2<br />
+                                010<br />
+                                11<br />
+                                0<br />
+                                101<br />
+                                3 1<br />
+                                1<br />
+                                00<br />
+                                000<br />
+                                01<br />
+                                1 1<br />
+                                00<br />
+                                000</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                S<br />
+                                N<br />
+                                S</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programação da SBC 2012</p>
+        </div>
+
+    </body>
+</html>

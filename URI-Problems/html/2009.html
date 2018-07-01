@@ -1,0 +1,124 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2009 - Apenas um Pouco Classificadas</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2009 - Apenas um Pouco Classificadas" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2009</span>
+				<h1>Apenas um Pouco Classificadas</h1>
+				<div>
+					<p>Por Jorge Enrique Moreira Broche <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cu.gif' alt='CU' /> Cuba</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Jurgen Guntherswarchzhaffenstrassen é conhecido por sua forma virtuosa de tocar guitarra e os métodos crueis de ensino que emprega com seus alunos. O que a maioria das pessoas ignora sobre ele é que ele também é um fã de números.<br />
+<br />
+Ultimamente Jurgen vem estudando listas ordenadas, mas ele está ficando entediado. Ele acha que estas listas são muito previsível e não muito abundantes, então ele decidiu apimentar as coisas um pouco.<br />
+<br />
+Jurgen diz que uma lista <em>l</em> de N não necessariamente de diferentes inteiros positivos é apenas um pouco sortido se, e somente se, para cada inteiro positivo x &gt; 1 que ocorrido em <em>l</em>, o número x - 1 aparece pelo menos uma vez antes da última ocorrência de x em <em>l</em>. Por exemplo:<br />
+• [2, 3, 1, 2] é um pouco sortida porque um 1 aparece antes do último 2 e um 2 aparece antes do último 3;<br />
+• [2, 3, 4, 3, 2, 1, 3, 4] não é apenas um pouco ordenada porque cada 1 aparece depois do último 2;<br />
+• [1, 1, 3, 1, 3, 3, 1, 3] não é apenas um pouco classificadas porque nenhum 2 aparece antes do último 3 (e o 2 não aparece em nenhum momento nesta lista).<br />
+<br />
+Jurgen está tentando descobrir quantas listas um poucos ordenadas, diferentes de N inteiros positivos e não superiores a K, existem. Duas listas são diferentes se, e apenas se, houver pelo menos uma posição em que as listas têm elementos distintos. Você pode ajudar Jurgen na contagem do número de listas diferentes?</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>N</strong> e <strong>Q</strong>, representando respectivamente o número de elementos nas listas apenas um pouco ordenadas e o número de consultas para responder (1 ≤ <strong>N</strong> ≤ 5000 e 1 ≤ <strong>Q</strong> ≤ 1000).<br />
+A segunda linha contém <strong>Q</strong> inteiros <strong>K<sub>1</sub>, K<sub>2</sub>,. . . , K<sub>Q</sub></strong>, indicando que as listas que você deve contar na consulta <strong>i</strong>-th não pode conter valores maiores do que Ki i (1 ≤ <strong>K<sub>i</sub></strong> ≤ 10<sup>9</sup> for <strong>i</strong> = 1, 2, . . . , <strong>Q</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída deve conter uma linha com <strong>Q</strong> números inteiros, de tal modo que o número inteiro de <strong>i</strong>-th representa o número de diferentes listas apenas um pouco ordenadas classificadas de <strong>n</strong> inteiros positivos não superiores a <strong>K<sub>i</sub></strong> (para <strong>i</strong> = 1, 2,..., <strong>Q</strong>). Uma vez que este número pode ser muito grande, o restante de saída dividindo-o por 10<sup>9</sup> + 7.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 1</p>
+								<p>1</p>
+							</td>
+							<td>
+								<p>1</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 4</p>
+								<p>2 2 1 10</p>
+							</td>
+							<td>
+								<p>5 5 1 6</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1000 3</p>
+								<p>100 5 300</p>
+							</td>
+							<td>
+								<p>265428620 285047952 668355714</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC Latin American Regional – 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

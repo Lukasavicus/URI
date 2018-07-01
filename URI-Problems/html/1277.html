@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1277 - Pouca Frequência </title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1277 - Pouca Frequência " />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1277</span>
+            <h1>Pouca Frequência </h1>
+            <div><p>
+                    Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif" style="width: 16px; height: 11px;" /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Os estudantes da tua universidade recentemente adquiriram o desagrad&aacute;vel h&aacute;bito de cabular as aulas. Para enfrentar este
+                    problema o seu Conselho de Professores decidiu somente permitir que estudantes com ao menos 75% de presen&ccedil;a prestem os exames. A partir de uma lista de nomes de estudantes e seus respectivos registros de frequência, imprima o nome dos estudantes que n&atilde;o
+                    obtiveram o m&iacute;nimo de presen&ccedil;a &agrave;s aulas e que consequentemente n&atilde;o poder&atilde;o prestar os exames.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada possui diversos casos de testes. A primeira linha da entrada cont&eacute;m um inteiro
+                    <strong>T</strong>, que indica o n&uacute;mero de casos de testes que se seguem.</p>
+                    <p>
+                    Cada caso de teste &eacute; composto por três linhas:</p>
+                    <ul>
+                        <li>A primeira linha de um caso de teste ir&aacute; conter um inteiro
+                        <strong>N</strong> (0 &le;&nbsp;<strong>N&nbsp;</strong>&le; 100) que indica o n&uacute;mero de estudantes na turma.
+                        <li>A segunda linha conter&aacute; <strong>N</strong> nomes de estudantes com até 50 caracteres cada nome, separados por um &uacute;nico espa&ccedil;o.
+                        Todos os nomes irão conter somente letras mai&uacute;sculas e min&uacute;sculas
+                        (&lsquo;A&rsquo;-&lsquo;Z&rsquo;,&lsquo;a&rsquo;-&lsquo;z&rsquo;).
+                        <li>A terceira linha conter&aacute; <strong>N</strong> registros de frequência, correspondentes aos respectivos estudantes da
+                        linha anterior. Os registros vir&atilde;o separados por um &uacute;nico espa&ccedil;o, e contêm
+                        apenas os caracteres &lsquo;A&rsquo;, &lsquo;P&rsquo; e &lsquo;M&rsquo;. Um &lsquo;P&rsquo; indica que o estudante estava presente &agrave;
+                        aula, &lsquo;A&rsquo; indica que ele estava ausente (ele cabulou &agrave; aula) e &lsquo;M&rsquo; mostra que, apesar de n&atilde;o ir &agrave; aula,
+                        ele entregou um atestado m&eacute;dico, ent&atilde;o esta aula n&atilde;o dever&aacute; ser considerada no c&aacute;lculo da frequência do estudante.
+                        Registros de frequência conter&atilde;o ao menos um caracter &lsquo;A&rsquo; ou &lsquo;P&rsquo;.</ul>
+
+            </div>
+
+            <h2>Sa&iacute;da</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima os nomes de todos os estudantes que n&atilde;o cumpriram a presen&ccedil;a m&iacute;nima requerida, separados por
+                    um espa&ccedil;o.  N&atilde;o deixe espa&ccedil;os sobrando no final da linha.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Sa&iacute;da</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                4<br />
+                                1<br />
+                                Justin<br />
+                                PAAPP<br />
+                                2<br />
+                                Justin Chris<br />
+                                PAAPP PPPPA<br />
+                                1<br />
+                                Sunny<br />
+                                PPPAM<br />
+                                4<br />
+                                Mansi Arjun Nikhil Taneja<br />
+                                PPPPMPPAPP AAMAAPP PPPPAAP PPPAAAMPP</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Justin<br />
+                                Justin<br />
+                                <br />
+                                Arjun Nikhil Taneja</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+            * Este problema &eacute; de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por bitfreeze para utiliza&ccedil;&atilde;o (autorizada) no URI OJ.<br />
+            * A reprodu&ccedil;&atilde;o n&atilde;o autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. &eacute; estritamente proibida.</p>
+
+    </div>
+
+</body>
+</html>

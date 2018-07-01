@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1726 - Amigos</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1744 - Amigos" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1726</span>
+                <h1>Amigos</h1>
+                <div>
+                    <p>Por Ralf Engels <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Você quer planejar uma grande festa de aniversário com seus amigos. Durante o planejamento você percebeu que você deve fazer inúmeros operações com conjuntos de amigos. Existe um grupo que consiste do Arthur, Biene e Clemens. Existe outro grupo de amigos que você conhece do snowboarding que consiste do Daniel, Ernst, Frida e Gustav. Se você quer convidar ambos, o resultado do grupo da festa consiste de g1 + g2 (o resultado é a união de ambos os grupos). Então você pode computar a intersecção dos dois grupos g1 * g2, que consiste no conjunto vazio. Talvez você queira convidar o grupo g1, mas excluindo todos os membros do outro grupo g2, que pode ser escrito como g1 – g2. Intersecção (*) precede sobre união (+) e diferença (-). Todas as operações são associadas a esquerda, o que significa que em A op<sub>1</sub> B op<sub>2</sub> C você primeiro deve avaliar A op<sub>1</sub> B (desde que op<sub>1</sub> e op<sub>2</sub> possuam uma precedência igual).</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada consiste de uma ou mais linhas. Cada linha contém uma expressão que você deve avaliar. Expressões são sintaticamente corretas e somente consistem dos seguintes caracteres:</p>
+
+                    <ul>
+                    	<li>'<strong>{</strong>' e '<strong>}</strong>'</li>
+                    	<li>Os elementos '<strong>A</strong>' à '<strong>Z</strong>' significando amigos de Arthur até Zora.</li>
+                    	<li>Operações '<strong>+</strong>', '<strong>-</strong>' e '<strong>*</strong>'</li>
+                    	<li>'<strong>(</strong>' e '<strong>)</strong>' para agrupar operações</li>
+                    	<li>Caracter de nova linha '<strong>\n</strong>' marcando o fim de uma expressão.</li>
+                    </ul>
+
+                    <p>Uma linha nunca é maior que 255 caracteres.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Como saída, mostre o conjunto de resultados entre chaves ‘<strong>{</strong>’ e ‘<strong>}</strong>’, cada um em uma linha. Imprima os elementos de cada conjunto em ordem alfabética.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>{ABC}</p>
+
+                                <p>{ABC}+{DEFG}+{Z}+{}</p>
+
+                                <p>{ABE}*{ABCD}</p>
+
+                                <p>{ABCD}-{CZ}</p>
+
+                                <p>{ABC}+{CDE}*{CEZ}</p>
+
+                                <p>({ABC}+{CDE})*{CEZ}</p>
+
+                            </td>
+                            <td>
+                                <p>{ABC}</p>
+
+                                <p>{ABCDEFGZ}</p>
+
+                                <p>{AB}</p>
+
+                                <p>{ABD}</p>
+
+                                <p>{ABCE}</p>
+
+                                <p>{CE}</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 1999/2000
+                </p>
+            </div>
+
+        </body>
+    </html>

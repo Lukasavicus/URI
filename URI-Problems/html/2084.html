@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2084 - Eleições</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2084 - Eleições" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2084</span>
+                <h1>Eleições</h1>
+                <div>
+                    <p>Por Leopoldo Taravilse, Universidad Nacional de La Plata <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Agora eleições presidenciais estão sendo realizadas em Noglônia. Para um candidato ganhar no primeiro turno, ele deve obter mais votos do que cada um dos outros candidatos. Mas isso não é suficiente: ele também deve obter pelo menos 45% de todos os votos, ou, pelo menos, 40% de todos os votos e pelo menos 10% a mais de votos do que cada um dos outros candidatos. Estes 10% são calculados em relação ao total de votos da eleição. Se nenhum candidato vence no primeiro turno, uma nova eleição é realizada como um segundo turno.</p>
+
+                    <p>Benício é um jornalista político em Noglônia, e ele sempre quer ser o primeiro a ter as notícias. É por isso que ele coletou informações a partir de pesquisas, e quer saber se de acordo com estes um dos candidatos vai ganhar no primeiro turno, ou, pelo contrário, haverá um segundo turno. Benício precisa decidir isso com pressa, antes que alguém solte a noticia antes dele. Você pode ajudá-lo?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém um número inteiro <strong>N</strong>, que representa o número de candidatos (2 ≤ <strong>N</strong> ≤ 10). A segunda linha contém <strong>N</strong> números inteiros <strong>V<sub>i</sub></strong> que representam a quantidade de votos obtidos por cada um dos candidatos (0 ≤ <strong>V<sub>i</sub></strong> ≤ 1000 para <strong>i</strong> = 1, ..., <strong>N</strong>). Pelo menos um candidato obteve um voto, e não existem dois candidatos com o mesmo número de votos.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima uma linha contendo um único dígito, indicando se há um vencedor no primeiro turno ou não. Se houver um vencedor no primeiro turno, o digito deve ser '1'; caso contrário (isto é, no caso de haver um segundo turno) o dígito deve ser '2'.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplos de Entrada</td>
+                            <td>Exemplos de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2</p>
+
+<p>60 40</p>
+
+                            </td>
+                            <td>
+                                <p>1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div><table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+<p>16 28 21</p>
+
+                            </td>
+                            <td>
+                                <p>1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+<p>42 23 35</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            <p class="footer">
+                    Torneo Argentino de Programación — ACM–ICPC 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

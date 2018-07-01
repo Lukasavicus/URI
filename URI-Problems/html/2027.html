@@ -1,0 +1,126 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2027 - Aposta com Noel</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema J - Aposta com Noel" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+
+			<style>
+			.box {
+				border: #bbb solid 1px;
+				padding: 10px;
+				
+			}
+			</style>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2027</span>
+				<h1>Aposta com Noel</h1>
+				<div>
+					<p>Por Neilor Tonin, URI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Como é época de Natal, os gnomos Rolien e Naej fizeram uma aposta com o Papai Noel. Rolien e Noel tem 10 segundos para contar a quantidade de enfeites em uma árvore de natal. Após isso, se o máximo divisor comum entre os dois valores contados der um valor maior do que 5, Noel ganha, caso contrario, os gnomos ganham. Bem, o problema é que alguém mexeu no código de Rolien, que antes funcionava perfeitamente e agora dá uns erros estranhos: dependendo do que for mexido, às vezes dá "Presentation Error", às vezes dá "Compilation Error" e às vezes dá "Runtime Error".</p>
+					
+					<p>Tendo o código abaixo, acerte estes pequenos erros e submeta a versão correta para o Papai Noel.</p>
+					
+					<pre class="box">
+#include &lt;bits/stdc++.h&gt;
+
+using namespace std;
+
+int GCDsimp (int num, int den) {
+	cout &lt;&lt; num &lt;&lt; den;
+	if (den &gt; 0)
+		return GCDsimp (den, num % den);
+	}
+	return num;
+}
+
+int main() {
+	int num, den, apostas [100], cont=-1;
+	while (cin &gt;&gt; num &gt;&gt; den) {
+		&nbsp;apostas[++cont] = GCDsimp (num,den);
+		&nbsp;if &nbsp;( apostas[cont] ) &gt; 5)
+			cout &lt;&lt; "Noel" ;
+		&nbsp;else
+			cout &lt;&lt; "Gnomos" &lt;&lt; endl;
+	}
+	for (int i=cont; i&gt;0; i++) {
+		cout &lt;&lt; apostas[cont] &lt;&lt; " ";
+	}
+	return 0;
+}
+					</pre>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada pode conter até 100 casos de teste e termina com EOF. Cada caso de teste é composto por uma linha contendo dois números inteiros separados por um espaço, que representam o número de enfeites contados por Rolien e Noel, respectivamente, para uma das árvores de Noel. </p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste você deverá Imprimir uma linha de saída contendo Noel ou Gnomos, conforme explicação acima. No final, você deve imprimir os valores calculados para as 100 apostas entre os gnomos e Noel. Cada um dos valores é seguido por um espaço em branco, inclusive o último.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>8 12<br />
+9 27<br />
+259 111</p>
+
+							</td>
+							<td>
+								<p>Gnomos<br />
+Noel<br />
+Noel<br />
+37 9 4&nbsp;</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Contest de Natal 2015.
+				</p>
+			</div>
+
+		</body>
+	</html>

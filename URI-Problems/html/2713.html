@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2713 - O Mago é Implacável!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema D - O Mago é Implacável!" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2713</span>
+            <h1>O Mago é Implacável!</h1>
+            <div>
+                <p>Por Diego Rangel, FACIT <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Em jogos de RPG existem diversas classes de personagens que os jogadores podem escolher assim que iniciam um jogo. Uma das classes que os jogadores mais costumam optar é do Mago, pois o Mago é implacável! O Mago é um tipo de personagem que domina as artes místicas e assim, possui um dano constante <strong>V</strong> que varia para cada partida, às vezes, caso o Mago tenha mana, ele pode aumentar o seu dano em um determinado valor, que depende do tipo de monstro que ele batalha.</p>
+
+<p>Rangel está jogando um novo RPG e está tentando subir de nível rapidamente, para isso acontecer, ele precisa jogar bastante! Entretanto, está com pouco tempo, pois está atolado de livros que pegou emprestado com sua amiga Vânia para ler, além disso, é a época de provas e ele precisa estudar para passar. Então ele quer minimizar o tempo que ele gasta com jogo. Calma, vamos explicar como funciona o jogo!</p>
+
+<p>Primeiramente esse RPG funciona da seguinte maneira, são várias partidas, e cada partida possui <strong>N</strong> salas, cada sala, possui um monstro com <strong>X</strong> pontos de vida. Para cada monstro, caso o Mago tenha mana, ele pode aumentar o valor do dano constante em <strong>Di </strong>unidades, o custo para aumentar o dano é fixo de 1 unidade de mana. Para saber o tempo que se gasta para matar um i-ésimo monstro, é a razão entre a quantidade de pontos de vida do monstro pelo dano que o Mago pode causar (obedencendo o que foi descrito no texto).</p>
+
+<p>Lembrando que, para ganhar a partida, é necessário chegar ao final da partida. É sempre garantido que Rangel joga até o final da partida, além disso, ele só pode avançar para a próxima sala no quando ele mata o monstro guardião da sala que ele se encontra.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>São vários casos de teste. Cada caso começa com três inteiros <strong>N</strong>, <strong>K</strong>, <strong>V</strong>, onde <strong>N</strong> (<strong>1 ≤&nbsp;N ≤ 10<sup>3</sup></strong>) indica o número de salas que há na partida, <strong>K (0 ≤&nbsp;K ≤&nbsp;100)</strong> indiciando a quantidade de mana que o poderoso Mago possui e<strong> V (1 ≤&nbsp;V ≤&nbsp;10<sup>4</sup>)</strong> indica o valor do dano constante do Mago nesta fase. As próximas<strong> N</strong> linhas possui dois inteiros <strong>X (1 ≤ X ≤ 10<sup>5</sup>)</strong> indicando os pontos de vida no monstro na i-ésima sala e <strong>Di (1 ≤&nbsp;Di ≤&nbsp;10<sup>5</sup>)</strong> indicado o quando o dano será aumentado na i-ésima sala, caso o Mago possua mana e deseje utilizar.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso, você deverá imprimir uma linha contendo o tempo mínimo que Rangel gastará para mantar todos os monstros da partida com quatro casas decimais.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>5 0 1</p>
+
+<p>1 1</p>
+
+<p>2 1</p>
+
+<p>1 1</p>
+
+<p>1 1</p>
+
+<p>1 1</p>
+
+<p>5 2 1</p>
+
+<p>1 1</p>
+
+<p>2 1</p>
+
+<p>1 1</p>
+
+<p>1 1</p>
+
+<p>1 1</p>
+
+<p>5 2 3</p>
+
+<p>3 5</p>
+
+<p>2 1</p>
+
+<p>7 2</p>
+
+<p>3 1</p>
+
+<p>8 4</p>
+
+                        </td>
+                        <td>
+                            <p>6.0000</p>
+
+<p>4.5000</p>
+
+<p>5.2095</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <p class="footer">
+                VI Maratona Interna de Programação UNIFESO
+            </p>
+        </div>
+
+    </body>
+</html>

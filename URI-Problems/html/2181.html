@@ -1,0 +1,85 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2181 - URI - Uireb Rhom uin Iavas</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2181 - URI - Uireb Rhom uin Iavas" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2181</span>
+				<h1>URI - Uireb Rhom uin Iavas</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A <strong>U</strong>ireb <strong>R</strong>hom uin <strong>I</strong>avas (traduzindo: Eterna Trombeta do Outono), uma importante empresa de Valinor, está fazendo uma pesquisa sobre os diversos públicos do reino abençoado. Para a URI, um <em>público</em> é um conjunto não-vazio maximal de elfos <strong>S</strong> tal que quaisquer dois elfos tomados de <strong>S</strong> são da mesma faixa etária. A propósito, a URI considera que dois elfos são da mesma <em>faixa etária</em> se e só se a diferença entre suas idades não excede um determinado parâmetro <strong>D</strong>. Por exemplo, sob <strong>D</strong> = 500, se Aegnor, Beleg e Celeborn têm respectivamente 1300, 500 e 1000 anos de idade, Aegnor e Celeborn são considerados da mesma faixa etária, assim como Beleg e Celeborn, mas não Aegnor e Beleg. Ainda, se os únicos elfos em Valinor fossem Aegnor, Beleg, Celeborn e Daeron, este de 700 anos de idade, os dois públicos seriam {Aegnor, Celeborn} e {Beleg, Celeborn, Daeron}. Note que o conjunto {Beleg, Celeborn}, apesar de conter dois elfos de mesma faixa etária, não é considerado um público por não ser maximal.</p>
+
+<p>A URI quer saber o que é melhor para o lançamento de um produto: focar num público com o maior número de elfos possível, ou focar num público talvez mais restrito, mas com maior poder aquisitivo? Portanto, as informações que a URI precisa levantar são cruciais para que a empresa faça a escolha certa!</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de três linhas. A primeira linha consiste de dois inteiros positivos <strong>N</strong> e <strong>D</strong> (<strong>N</strong> ≤ 10<sup>5</sup>, <strong>D</strong> ≤ 10<sup>7</sup>), os quais representam respectivamente o número de elfos em Valinor e o parâmetro que define o conceito de faixa etária adotado. A segunda linha consiste de <strong>N</strong> inteiros <strong>a<sub>i</sub></strong> (1 ≤ <strong>i</strong> ≤ <strong>N</strong>, 0 ≤ <strong>a<sub>i</sub></strong> ≤ 10<sup>7</sup>), os quais representam as idades de cada um dos elfos. Por fim, a terceira linha consiste de <strong>N</strong> valores <strong>c<sub>i</sub></strong> (1 ≤ <strong>i</strong> ≤ <strong>N</strong>, 0.00 ≤ <strong>c<sub>i</sub></strong> ≤ 10000.00), fornecidos com exatamente dois dígitos após o ponto separador decimal, os quais representam as rendas correspondentes dos elfos, segundo a ordem em que os elfos foram fornecidos na linha anterior.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma única linha contendo três valores, os quais representem, nesta ordem, o número de públicos em Valinor, o número máximo de elfos num público em Valinor e a soma máxima das rendas dos elfos de um mesmo público em Valinor. Imprima o último valor com exatamente dois dígitos após o ponto separador decimal.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 500<br />
+1300 500 1000 700<br />
+10000.00 2000.00 3000.00 5000.00</p>
+
+							</td>
+							<td>
+								2 3 13000.00
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+                  Aquecimento para a OBI 2016 - Fase 2
+				</p>
+			</div>
+
+		</body>
+	</html>

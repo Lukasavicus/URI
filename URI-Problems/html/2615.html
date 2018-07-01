@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2615 2615 - Expandindo o Negocio</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - SQL - Problema 2615 - Expandindo o Negocio" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default-sql.css">
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28047757-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <span>URI Online Judge <strong>SQL</strong> | 2615 </span>
+      <h1>Expandindo o Negocio</h1>
+      <div>
+        <p>Paulo R. Rodegheri <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem-sql">
+      
+      <div>
+        <p>A locadora tem objetivos de criar várias franquias espalhadas pelo Brasil. Para isso queremos saber em quais cidades nossos clientes moram.</p>
+        <p>Para você nos ajudar selecione o nome de todas as cidades onde a locadora tem clientes. Mas por favor, não repita o nome da cidade.</p>
+      </div>
+  
+      <div>
+        <h2>Esquema</h2>
+        <div>
+          <table class="tables-fifty">
+            <caption>customers</caption>
+              <tr>
+                <td><strong>Coluna</strong></td>
+                <td><strong>Tipo</strong></td>
+              </tr>
+              <tr>
+                <td>id (PK)</td>
+                <td>numeric</td>
+              </tr>
+              <tr>
+                <td>name</td>
+                <td>varchar</td>
+              </tr>
+              <tr>
+                <td>street</td>
+                <td>varchar</td>
+              </tr>
+              <tr>
+                <td>city</td>
+                <td>varchar</td>
+              </tr>
+            </table>
+
+          </div>
+        </div>
+
+        <div>
+          <h2>Tabelas</h2>
+          <div>
+            <table class="tables-hundred">
+              <caption>customers</caption>
+              <tr>
+                <td><strong>id</strong></td>
+                <td><strong>name</strong></td>
+                <td><strong>street</strong></td>
+                <td><strong>city</strong></td>
+              </tr>
+              <tr>
+                <td class="center">1</td>
+                <td>Giovanna Goncalves Oliveira</td>
+                <td>Rua Mato Grosso</td>
+                <td>Canoas</td>
+              </tr>
+              <tr>
+                <td class="center">2</td>
+                <td>Kauã Azevedo Ribeiro</td>
+                <td>Travessa Ibiá</td>
+                <td>Uberlândia</td>
+              </tr>
+              <tr>
+                <td class="center">3</td>
+                <td>Rebeca Barbosa Santos</td>
+                <td>Rua Observatório Meteorológico</td>
+                <td>Salvador</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td>Sarah Carvalho Correia</td>
+                <td>Rua Antônio Carlos da Silva</td>
+                <td>Uberlândia</td>
+              </tr>
+              <tr>
+                <td class="center">5</td>
+                <td>João Almeida Lima</td>
+                <td>Rua Rio Taiuva</td>
+                <td>Ponta Grossa</td>
+              </tr>
+              <tr>
+                <td class="center">6</td>
+                <td>Diogo Melo Dias</td>
+                <td>Rua Duzentos e Cinqüenta</td>
+                <td>Várzea Grande</td>
+              </tr>        
+            </table>
+        
+          </div>
+        </div>
+        
+        <div>
+          <h2>Exemplo de saída</h2>
+          <div>
+            <table class="tables-fifty">
+              <tr>
+                <td><strong>city</strong></td>
+              </tr>
+              <tr>
+                <td>Uberlândia</td>
+              </tr>
+              <tr>
+                <td>Canoas</td>
+              </tr>
+              <tr>
+                <td>Ponta Grossa</td>
+              </tr>
+              <tr>
+                <td>Várzea Grande</td>
+              </tr>
+              <tr>
+                <td>Salvador</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        
+    </div>
+      
+  </body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1405 - O Problema da Parada</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1405 - O Problema da Parada" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1405</span>
+            <h1>O Problema da Parada</h1>
+            <div>Por Pedro Demasi <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>O Problema da Parada (The Halting Problem) é um problema de decisão clássico da Ciência da Computação que consiste, basicamente, em determinar se um dado programa sempre vai parar (ou seja, terminar sua execução) para uma dada entrada arbitrária ou se vai executar infinitivamente. Alan Turing provou, em 1936, que é impossível resolver o problema da parada generalizando para qualquer par programa-entrada. Neste problema, porém, dada a descrição de uma linguagem simples, um programa escrito nessa linguagem e uma entrada para esse programa, você deve determinar se o programa dado pára com a entrada dada e, em caso positivo, qual a saída produzida.</p>
+
+                <p>Esta linguagem só trabalha com números inteiros de 0 a 999 (inclusive). Sendo assim, o sucessor de 999 é 0, e o antecessor de 0 é 999. Além disso, ela possui dez variáveis (R0 a R9), sendo que a R0 sempre é atribuído o valor de chamada do programa (ou seja, o parâmetro de entrada) e a R9 é sempre atribuído o valor de saída (o retorno). No início da execução do programa, é atribuído o valor 0 a todas as variáveis, com exceção de R0 que recebe o parâmetro de entrada.</p>
+
+                <p>As operações básicas são atribuição (MOV), soma (ADD), subtração (SUB), multiplicação (MUL), divisão inteira (DIV) e resto da divisão inteira (MOD). Todas essas operações têm a sintaxe COMANDO OPERANDO1,OPERANDO2 (sem espaços entre a vírgula e os operandos), onde COMANDO é uma dessas operações, OPERANDO1 é uma das 10 variáveis (R0 a R9) e OPERANDO2 pode ser uma das 10 variáveis ou um valor inteiro (entre 0 e 999). Todas as operações modificam o valor de OPERANDO1, sendo assim MOV R4,100 é o equivalente a atribuir o valor 100 a R4, enquanto que MUL R3,R8 é o equivalente a multiplicar R3 por R8 e atribuir o resultado a R3. A operação DIV, assim como a MOD, retornam 0 (zero) se OPERANDO2 for 0 ou se a variável equivalente tiver valor 0. Ou seja, DIV R4,0 é o equivalente a MOV R4,0. Por divisão inteira, entendemos a parte inteira do quociente da divisão (sem a parte fracionária). Por exemplo, a divisão inteira de 7 por 2 é 3 (sendo o resto 1).</p>
+
+                <p>Existem seis comandos de fluxo de decisão: IFEQ (se igual), IFNEQ (se diferente), IFG (se maior), IFL (se menor), IFGE (se maior ou igual) e IFLE (se menor ou igual). A sintaxe de todos eles é COMANDO OPERANDO1,OPERANDO2 (sem espaços entre a vírgula e os operandos), onde OPERANDO1 e OPERANDO2 podem ser variáveis (R0 a R9) ou valores inteiros (entre 0 e 999). Assim, o comando IFEQ R4,123 é o equivalente a testar se R4 é igual a 123. Caso a condição testada seja verdadeira, o programa continua a executar normalmente a linha subsequente ao comando de decisão. Caso a condição seja falsa, o programa passa a executar a linha subsequente ao ENDIF mais próximo. <b>Todos</b> os comandos de decisão devem ter um comando ENDIF correspondente.</p>
+
+                <p>Finalmente, existem os comandos CALL e RET, ambos com a sintaxe COMANDO OPERANDO, onde OPERANDO é uma variável (R0..R9) ou valor direto (entre 0 e 999). O comando CALL chama o próprio programa novamente, passando OPERANDO como parâmetro de entrada, ou seja, atribuindo o valor de OPERANDO à variavel R0. Já RET termina a execução do programa, retornando o valor de OPERANDO como o resultado de saída. <b>A última linha do programa sempre será um comando RET</b>. Observe que, caso o programa chame a si mesmo através do comando CALL, quando a execução voltar, o valor de R9 vai estar alterado com o valor retornado pelo programa. Note também que <b>todas</b> as variáveis (R0..R9) são locais, ou seja, uma chamada subsequente ao programa não pode alterar os valores guardados nas variáveis da instância anterior, com exceção, naturalmente, do valor de R9 que recebe o retorno da instância chamada.</p>
+
+                <p>O exemplo a seguir ilustra um programa que calcula o fatorial de um número.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/O%20Problema%20da%20Parada_A.png" style="width: 171px; height: 229px;" /></p>
+
+                <p>1a linha: Verifica se o valor de R0 vale 0, caso positivo, executa a próxima linha, caso contrário, pula para a 4a linha (ENDIF mais próximo).</p>
+
+                <p>2a linha: Retorna 1 como saída do programa.</p>
+
+                <p>3a linha: Marca o fim do bloco de decisão iniciado na primeira linha.</p>
+
+                <p>4a linha: Atribui o valor de R0 a R1 (R1 ← R0).</p>
+
+                <p>5a linha: Diminui 1 de R1 (R1 ← R1 - 1).</p>
+
+                <p>6a linha: Chama o programa passando R1 como parâmetro de entrada.</p>
+
+                <p>7a linha: Guarda o valor de R9 (retornado pela chamada anterior) em R2 (R2 ← R9).</p>
+
+                <p>8a linha: Multiplica o valor de R2 por R0 (R2 ← R2 * R0).</p>
+
+                <p>9a linha: Retorna o valor de R2 como saída do programa.</p>
+
+                <p>A tabela seguir traz um resumo dos comandos para referência:</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/O%20Problema%20da%20Parada_B.png" style="width: 595px; height: 368px;" /></p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste. Cada caso de teste se inicia com dois inteiros, <strong>L </strong>e <strong>N</strong>, representando respectivamente o número de linhas do programa (1 ≤ <strong>L </strong>≤ 100) e o valor do parâmetro de entrada do programa (0 ≤ <strong>N </strong>≤ 100). As <strong>L </strong>linhas seguintes contêm o programa. Pode-se assumir que ele está sempre sintaticamente correto de acordo com as regras definidas acima. Todos os comandos (bem como o nome das variáveis) só conterão letras maiúsculas. O final da entrada é marcado pelo caso em que <strong>L </strong>= <strong>N </strong>= 0 e não deve ser processado.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, seu programa deve produzir uma linha contendo um inteiro que representa o valor de saída (retorno) para a entrada <strong>N</strong> dada, ou um asterisco (*) no caso de o programa nunca terminar.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>9 6<br />
+                                IFEQ R0,0<br />
+                                RET 1<br />
+                                ENDIF<br />
+                                MOV R1,R0<br />
+                                SUB R1,1<br />
+                                CALL R1<br />
+                                MOV R2,R9<br />
+                                MUL R2,R0<br />
+                                RET R2<br />
+                                2 123<br />
+                                CALL R0<br />
+                                RET R0<br />
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>720<br />
+                                *</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programacao da SBC 2006.
+            </p>
+        </div>
+
+    </body>
+</html>

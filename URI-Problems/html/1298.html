@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1298 - Corrija o Labirinto</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1298 - Corrija o Labirinto" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1298</span>
+            <h1>Corrija o Labirinto</h1>
+            <div><p>Por Guilherme Pinto, UFJF <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    A fazenda de camarão usa um lago retangular construído&nbsp;como uma grade com linhas 2N&nbsp;e colunas 2N + 1&nbsp;de células quadradas, para um dado inteiro N. Cada lado da célula tem um metro de comprimento. A lagoa tem exatamente (2N-1) x N barreiras de dois metros de comprimento, usado para isolar temporariamente seções menores dentro da lagoa para criação de diferentes tipos de camarão. As barreiras têm os seus pontos médios fixados precisamente nas coordenadas inteiro (a, b), para todo 0 &lt;a &lt;2N e 0 &lt;b &lt;2N + 1, onde&nbsp;a e&nbsp;b são ímpares, ou pares.</p>
+                <p>
+                    ​​Cada barreira pode ser girada em torno do seu ponto central para alterar a configuração do tanque, no entanto, sendo girada, uma barreira muda entre apenas duas posições possíveis, sempre sendo estas posições paralelas aos lados da lagoa, vertical ou horizontal. A parte esquerda da figura abaixo mostra uma configuração de tanque, com N = 3.<br />
+                    ​</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1298.png" style="width: 488px; height: 187px;" /></p>
+
+                <p>
+                    <br />
+                    No final de cada temporada a lagoa é&nbsp;fechada&nbsp;para manutenção e limpeza. Em seguida, deve ser reconfigurada para que uma máquina especial possa varrer o chão da lagoa. A máquina inicia o seu trabalho na célula superior esquerda, e precisa passar por todas as células exatamente uma vez, terminando na célula inferior esquerda. A parte direita da figura mostra uma reconfiguração tal, onde seis barreiras foram trocados. Para este exemplo, porém, quatro chaves de barreira seriam suficientes.</p>
+                <p>
+                    Você deve escrever um programa que, dada uma configuração de lagoa, determina o número mínimo de interruptores de barreira&nbsp;necessários para reconfigurar a lagoa, conforme especificado acima. Existe sempre, pelo menos, uma maneira possível para reconfigurar o tanque de acordo com a&nbsp;especificação.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste consiste de diversas linhas. A primeira linha contém um inteiro&nbsp;<strong>N</strong>&nbsp;que indica que a lagoa tem&nbsp;2<strong>N</strong>&nbsp;linhas&nbsp;2<strong>N + </strong>1 colunas&nbsp;( 1 ≤ <strong>N</strong> ≤ 300). Cada uma das próximas 2<strong>N </strong>- 1 linhas contém uma string de <strong>N</strong> caracteres descrevendo a orientação das barreiras. Na enésima (<em><strong>i</strong>-th</em>) linha, o enésimo (<em><strong>j</strong>-th</em>) caractere indicata&nbsp;a orientação da barreira cujo ponto central tem coordenadas&nbsp;(<strong><em>i</em></strong>, 2<strong><em>j</em></strong> - 1) se <strong><em>i</em></strong>&nbsp;for&nbsp;ímpar, ou&nbsp;(<strong><em>i</em></strong>, 2<strong><em>j</em></strong>) caso <strong><em>i</em></strong>&nbsp;for par,&nbsp;para <strong><em>i</em></strong> = 1, 2,..., 2<strong>N</strong> - 1 e&nbsp;<strong><em>j</em></strong> = 1, 2,..., <strong>N</strong>. O caracter é a letra maiúscula&nbsp;'V' se a orientação for vertical ou a letra maiúscula 'H' se ela for&nbsp;horizontal.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima&nbsp;uma linha com um número inteiro que representa o número mínimo de interruptores de barreira necessárias para reconfigurar o tanque conforme&nbsp;especificado.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                HVH<br />
+                                VVV<br />
+                                HHH<br />
+                                HHH<br />
+                                VHV<br />
+                                1<br />
+                                H<br />
+                                1<br />
+                                V</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                4<br />
+                                0<br />
+                                1</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2012.
+            </p>
+        </div>
+
+    </body>
+</html>

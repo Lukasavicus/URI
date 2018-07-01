@@ -1,0 +1,139 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2208 - Fibonacci Words</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2208 - Fibonacci Words" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+			<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+			<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+			extensions: ["tex2jax.js"],
+			jax: ["input/TeX", "output/HTML-CSS"],
+			tex2jax: {
+			inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+			displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+			processEscapes: true
+			},
+			"HTML-CSS": { availableFonts: ["TeX"] }
+			});
+			</script>
+			<script type="text/javascript" src="path-to-MathJax/MathJax.js">
+			</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2208</span>
+				<h1>Fibonacci Words</h1>
+				<div>
+					<p>Por ICPC 2012 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/pl.gif' alt='PL' /> Poland</p>
+				</div>
+				<strong>Timelimit: 5</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>The Fibonacci word sequence of bit strings is defined as:</p>
+
+					$$F(n) =\begin{cases}
+					& \text 0 \\ 
+					& \text 1 \\ 
+					& \text F(n-1)+F(n-2)\\
+					\end{cases} \begin{matrix}
+					\mathbf{if} n = 0 \\ 
+					\mathbf{if} n = 1\\ 
+					\mathbf{if} n \geqslant 2
+					\end{matrix}$$
+
+					<p>Here + denotes concatenation of strings. The first few elements are:</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_152_D.png" width="550" alt="fibonacci"> </center>
+
+					<p>Given a bit pattern p and a number n, how often does p occur in F(n)?</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The first line of each test case contains the integer <strong>n</strong> (0 ≤ <strong>n</strong> ≤ 100). The second line contains the bit pattern <strong>p</strong>. The pattern <strong>p</strong> is nonempty and has a length of at most 100 000 characters.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>For each test case, display its case number followed by the number of occurrences of the bit pattern <strong>p</strong> in F(<strong>n</strong>). Occurrences may overlap. The number of occurrences will be less than 2<sup>63</sup> .</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6</p>
+
+								<p>10</p>
+
+								<p>7</p>
+
+								<p>10</p>
+
+								<p>6</p>
+
+								<p>01</p>
+
+								<p>6</p>
+
+								<p>101</p>
+
+								<p>96</p>
+
+								<p>10110101101101</p>
+
+							</td>
+							<td>
+								<p>Case 1: 5</p>
+
+								<p>Case 2: 8</p>
+
+								<p>Case 3: 4</p>
+
+								<p>Case 4: 4</p>
+
+								<p>Case 5: 7540113804746346428</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					ICPC 2012 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

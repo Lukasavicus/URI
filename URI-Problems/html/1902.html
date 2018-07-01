@@ -1,0 +1,108 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1902 - Sociedade Brasileira Casamenteira</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1902 - Sociedade Brasileira Casamenteira" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1902</span>
+				<h1>Sociedade Brasileira Casamenteira</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A Sociedade Brasileira Casamenteira (SBC) perguntou a todas as pessoas solteiras do país se estavam apaixonadas e por quem estavam apaixonadas. Curiosamente, cada pessoa solteira respondeu que estava apaixonada por exatamente uma outra pessoa, mas que tinha vergonha de declarar seus sentimentos. Dispondo agora dessas informações, a SBC deseja formar casamentos, para que as pessoas vivam mais felizes. Se uma pessoa <strong>A</strong><sub>1</sub> é apaixonada por uma pessoa <strong>A</strong><sub>2</sub> e a pessoa <strong>A</strong><sub>2</sub> também é apaixonada pela pessoa <strong>A</strong><sub>1</sub>, é claro que a SBC pode formar o casamento {<strong>A</strong><sub>1</sub>, <strong>A</strong><sub>2</sub>}. Contudo, se <strong>A</strong><sub>1</sub> é apaixonada por <strong>A</strong><sub>2</sub>, mas <strong>A</strong><sub>2</sub> é apaixonada por <strong>A</strong><sub>3</sub>, que é apaixonada por <strong>A</strong><sub>4</sub>… que é apaixonada por <strong>A<sub>k</sub></strong>, sendo que <strong>A<sub>k</sub></strong> é apaixonada por <strong>A</strong><sub>1</sub>, também é possível formar o casamento {<strong>A</strong><sub>1</sub>, <strong>A</strong><sub>2</sub>, …, <strong>A<sub>k</sub></strong>}, já que, recentemente, foi aprovado o casamento poligâmico no Brasil. Mais formalmente, a SBC pode formar o casamento {<strong>A</strong><sub>1</sub>, …, <strong>A<sub>k</sub></strong>} se e somente se <strong>k</strong> ≥ 2, a pessoa <strong>A<sub>k</sub></strong> é apaixonada pela pessoa <strong>A</strong><sub>1</sub> e, para todo i ∈ {2, …, k}, a pessoa <strong>A</strong><sub><strong>i</strong> - 1</sub> é apaixonada pela pessoa <strong>A<sub>i</sub></strong>.</p>
+
+					<p>Ajude a SBC a formar o maior número possível de casamentos.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por no máximo 10<sup>5</sup> linhas e finalizada por <em>fim de arquivo</em>. Cada linha da entrada consiste dos nomes de duas pessoas <strong>A</strong> e <strong>B</strong>, indicando que a pessoa <strong>A</strong> é apaixonada pela pessoa <strong>B</strong>. Cada nome de pessoa é uma cadeia de no mínimo 1 e no máximo 10 letras do alfabeto latino, sem diacríticos.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir numa linha um único inteiro, representando o maior número de casamentos que é possível a SBC formar.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>Carlos Carla<br />
+Carla Carlos<br />
+Amanda Armando<br />
+Armando Artemis<br />
+Artemis Amanda</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>Louis Louise<br />
+Louise Lucas<br />
+Lucas Luke<br />
+Luke Louise<br />
+Lilica Lucas</p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática-Fase 2, 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

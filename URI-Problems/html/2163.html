@@ -1,0 +1,135 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2163 - O Despertar da Força</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2163 - O Despertar da Força" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2163</span>
+				<h1>O Despertar da Força</h1>
+				<div>
+					<p>Por M.C. Pinto, UNILA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Há muito tempo atrás, em uma galáxia muito, muito distante...</p>
+
+<p>Após o declínio do Império, sucateiros estão espalhados por todo o universo procurando por um sabre de luz perdido. Todos sabem que um sabre de luz emite um padrão de ondas específico: 42 cercado por 7 em toda a volta. Você tem um sensor de ondas que varre um terreno com N x M células. Veja o exemplo abaixo para um terreno 4 x 7 com um sabre de luz nele (na posição (2, 4)).</p>
+
+<p align="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/935.png" style="height:124px; width:209px"/></p>
+
+<p>Você deve escrever um programa que, dado um terreno N x M, procura pelo padrão do sabre de luz nele. Nenhuma varredura tem mais do que um padrão de sabre de luz.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada tem dois números positivos <strong>N</strong> e <strong>M</strong>, representando, respectivamente, o número de linhas e de colunas varridos no terreno (3 ≤ <strong>N</strong>, <strong>M</strong> ≤ 1000). Cada uma das próximas <strong>N</strong> linhas tem <strong>M</strong> inteiros, que descrevem os valores lidos em cada célula do terreno (-100 ≤ <strong>T<sub>ij</sub></strong> ≤ 100, para 1 ≤ <strong>i</strong> ≤ <strong>N</strong> e 1 ≤ <strong>j</strong> ≤ <strong>M</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída é uma única linha com 2 inteiros <strong>X</strong> e <strong>Y</strong> separados por um espaço. Eles representam a coordenada (<strong>X</strong>,<strong>Y</strong>) do sabre de luz, caso encontrado. Se o terreno não tem um padrão de sabre de luz, <strong>X</strong> e <strong>Y</strong> são ambos zero.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 7<br />
+11 12 7 7 7 13 14<br />
+15 6 7 42 7 7 42<br />
+98 -5 7 7 7 42 7<br />
+-1 42 3 9 7 7 7</p>
+
+							</td>
+							<td>
+								<p>2 4</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 7<br />
+11 12 7 7 7 13 14<br />
+15 6 7 12 7 7 42<br />
+98 -5 7 7 7 42 7<br />
+-1 42 3 9 7 7 7</p>
+
+							</td>
+							<td>
+								<p>0 0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 3<br />
+7 7 7<br />
+7 42 7<br />
+7 7 7</p>
+
+							</td>
+							<td>
+								<p>2 2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Prova 2 (D1) de Programação de Computadores 2016/1 da UNILA
+				</p>
+			</div>
+
+		</body>
+	</html>

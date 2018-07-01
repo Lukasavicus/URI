@@ -1,0 +1,134 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1843 - O Enigma do Príncipe</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1234 - O Enigma do Príncipe" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1843</span>
+				<h1>O Enigma do Príncipe</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 8</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Neste ano, ao invés de se submeterem a rituais de iniciação humilhantes, os calouros do curso de Ciência da Computação resolver fazer algo muito mais humanitário para celebrarem seu ingresso numa universidade federal. Primeiramente, eles foram doar sangue no HEMOSC, o hemocentro do estado de Santa Catarina. Depois, ainda com metade do sangue no corpo, eles foram até uma escola pública, o Centro de Educação Infantil Municipal Pequeno Príncipe (ou simplesmente Pequeno Príncipe), realizar trabalhos voluntários. Numa das atividades desenvolvidas, as crianças da escola deveriam jogar no computador um jogo <em>single-player</em> muito interessante chamado <em>Flood It!</em>.</p>
+
+					<p>Em <em>Flood It!</em>, é apresentado ao jogador um <em>grid</em> <strong>N</strong> × <strong>M</strong> em que cada célula está pintada com uma cor, como na figura à esquerda. Quando o jogador clica numa célula qualquer do <em>grid</em> de cor <strong>α</strong>, a célula no canto superior esquerdo do <em>grid</em>, chamada de <em>origem</em>, de cor <strong>β</strong>, assume a cor <strong>α</strong>, mas não somente ela: todas as células que estejam conectadas à origem por caminhos que usam apenas as cores <strong>α</strong> ou <strong>β</strong> também assumem a cor <strong>α</strong>. As adjacências entre as células devem ser consideradas apenas nos sentidos horizontal ou vertical para formar os caminhos. Por exemplo, quando o jogador clica na célula destacada na figura à esquerda, o <em>grid</em> assume a coloração da figura à direita. O objetivo do jogo é tornar o <em>grid</em> monocromático.</p>
+
+					<p class="center">
+					<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1843_a.jpg" style="width: 204px; height: 165px;">&nbsp;&nbsp;&nbsp;&nbsp; <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1843_b.jpg" style="width: 204px; height: 165px;"></p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada é constituída por 2 números inteiros <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong> ≤ 4, 1 ≤ <strong>M</strong> ≤ 5), os quais representam respectivamente o número de linhas e o número de colunas do <em>grid</em>. As próximas <strong>N</strong> linhas descrevem a configuração inicial do <em>grid</em>, representando cada cor por um inteiro entre 0 e 9. A entrada não é constituída por nenhuma outra linha.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo unicamente o inteiro que representa o menor número de cliques que o jogador precisa fazer para tornar o <em>grid</em> monocromático. Tome cuidado! Fomos generosos ao definirmos os casos de teste e o limite de tempo deste problema, mas nem tanto.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 5<br />
+								00162<br />
+								30295<br />
+								45033<br />
+								01837</p>
+
+							</td>
+							<td>
+								<p>10</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 5<br />
+								01234<br />
+								12345<br />
+								23456<br />
+								34567</p>
+
+							</td>
+							<td>
+								<p>7</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 5<br />
+								01234<br />
+								34567<br />
+								67890<br />
+								90123</p>
+
+							</td>
+							<td>
+								<p>12</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					4º Maratona UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

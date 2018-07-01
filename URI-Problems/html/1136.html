@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1136 - Bingo!</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1136 - Bingo!" />
+    
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1136</span>
+                <h1>Bingo!</h1>
+                <div><p>
+					por Ines Kereki <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/uy.gif" style="width: 16px; height: 11px; " /> 
+					Uruguai</p>
+</div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    
+<div>
+	Albert, Charles e Mary inventaram uma nova versão do clássico jogo de Bingo. Na versão tradicional, o jogo é presidido por um não-jogador conhecido como caller. No começo de cada partida, cada jogador recebe uma carta contendo uma única combinação de números de 0 até <strong>N</strong> dispostos em colunas e linhas. O caller opera um globo contendo <strong>N+1</strong> bolas numeradas de 0 até <strong>N</strong>. Em cada turno, o caller sorteia uma bola do globo, anuncia o número sorteado aos jogadores e não a coloca novamente no globo. Cada jogador procura pelo número em sua carta e o marca caso o encontre. O primeiro jogador que marcar um padrão pré-definido completo em sua carta (uma linha horizontal, por exemplo) ganha um prêmio.</div>
+<div>
+	&nbsp;</div>
+<div>
+	Na versão <strong>A</strong>lbert-<strong>C</strong>harles-<strong>M</strong>ary, em cada turno, o caller sorteia uma primeira bola, coloca-a de volta no globo, sorteia uma segunda bola, coloca-a de volta no globo, e então anuncia a diferença absoluta entre os números das duas bolas. Para aumentar o entusiasmo, antes do início da partida, um subconjunto possivelmente vazio de bolas é retirado do globo, de forma que ao menos duas bolas permaneçam no globo. Eles gostariam de saber se cada número de 0 até <strong>N</strong> podem ainda ser anunciados utilizando a nova regra de sorteio e considerando apenas as bolas que permaneceram dentro do globo.</div>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+<div>
+	Cada caso de teste é dado em exatamente duas linhas. A primeira linha contém dois inteiros <strong>N</strong> e <strong>B</strong>. O significado de <strong>N</strong> foi descrito acima&nbsp;(1 ≤&nbsp;<strong style="color: rgb(0, 0, 32); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 13px; text-align: justify; background-color: rgb(246, 249, 224); ">N</strong>&nbsp;≤ 90), enquanto <strong>B</strong> representa o número de bolas que permaneceram no globo (2&nbsp;≤&nbsp;<strong>B</strong>&nbsp;≤&nbsp;<strong>N</strong>+1). A segunda linha contém <strong>B</strong> inteiros distintos <strong>b<sub><em>i</em></sub></strong>, indicando as bolas que permaneceram no globo (0&nbsp;≤&nbsp;<strong>b<sub><em>i</em></sub></strong>&nbsp;≤&nbsp;<strong>N</strong>).</div>
+<div>
+	O último caso de teste é seguido por uma linha contendo dois zeros.</div>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste, imprima uma única linha contendo um único caractere 'Y' se for possível anunciar todos os números de 0 até <strong>N</strong>, inclusive, ou um único caractere 'N' caso contrário.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	6 7<br />
+	2 1 3 4 0 6 5<br />
+	5 4<br />
+	5 3 0 1<br />
+	5 3<br />
+	1 5 0<br />
+	0 0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	Y<br />
+	Y<br />
+	N</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <p class="footer">
+                    ACM/ICPC South America Contest 2010.</p>  
+            </div>
+
+        </body>
+    </html>

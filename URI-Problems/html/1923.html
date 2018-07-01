@@ -1,0 +1,148 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1923 - Rerisson e o Churrasco</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1923 - Rerisson e o Churrasco" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1923</span>
+				<h1>Rerisson e o Churrasco</h1>
+				<div>
+					<p>Por Gustavo Ribeiro, IFPB - Campina Grande <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Após ter feito um churrasco para festejar os resultados da OPI (Olimpíada Paraibana de Informática) com os amigos, Rerisson pretende fazer outro churrasco, dessa vez um bem maior, com o intuito de conhecer novas pessoas. Ele irá convidar todas as pessoas que possuem um grau de relacionamento para com ele (chamado g) de no máximo, <em>G</em>.</p>
+
+					<p>Por exemplo, considere “&gt;” como sendo o sinal de relacionamento direto:</p>
+
+					<p class="center">Rerisson &gt; Lucas</p>
+
+					<p class="center">Rerisson &gt; Jonathan</p>
+
+					<p class="center">Lucas &gt; Jonathan</p>
+
+					<p class="center">Jonathan &gt; Pedro</p>
+
+					<p class="center">Pedro &gt; Juan</p>
+
+					<p class="center">Lucas &gt; Juan</p>
+
+					<p>Para esse exemplo, considerando o <em>G</em> = 1, apenas Lucas e Jonathan seriam convidados para o churrasco.</p>
+
+					<p>Com o auxílio de uma rede social, Rerisson conhece todas os relacionamento diretos, mas está ocupado preparando o churrasco e gostaria que você, com a lista de relacionamentos preparada por Rerisson, informe quais pessoas serão convidadas para a grande festa.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada irá conter dois inteiros 3 ≤ <strong>n</strong> ≤ 10<sup>3</sup> e 1 ≤ <strong>G</strong> ≤ 500, representando a quantidade de relações de amizades direta e o grau de distância máxima a ser considerado. Cada uma das próximas <strong>n</strong> linhas irá conter duas strings sem espaços <strong>S</strong> e <strong>T</strong>, 1 ≤ |<strong>S</strong>|, |<strong>T</strong>| ≤ 20, descrevendo uma relação de amizade direta, (A relação é mútua).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima a quantidade de pessoas que serão convidadas para o churrasco, em seguida o nome de cada uma delas em ordem lexicográfica crescente.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6 1</p>
+
+<p>Rerisson Lucas</p>
+
+<p>Rerisson Jonathan</p>
+
+<p>Lucas Jonathan</p>
+
+<p>Jonathan Pedro</p>
+
+<p>Pedro Juan</p>
+
+<p>Lucas Juan</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+<p>Jonathan</p>
+
+<p>Lucas</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 3</p>
+
+<p>Rerisson Ordan</p>
+
+<p>Ordan Gustavo</p>
+
+<p>Rerisson Yean</p>
+
+<p>Gustavo Yean</p>
+
+							</td>
+							<td>
+								<p>3</p>
+
+<p>Gustavo</p>
+
+<p>Ordan</p>
+
+<p>Yean</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="footer">
+					Homenagem a Rerisson, amigo das caminhadas.<br />
+					Tapioca's Round I, 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

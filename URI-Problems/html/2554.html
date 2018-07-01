@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2554 - Pizza Antes de BH</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Pizza Antes de BH" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2554</span>
+			<h1>Pizza Antes de BH</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Está chegando a grande final do Campeonato Nlogonense de Surf Aquático, que este ano ocorrerá na cidade de Bonita Horeleninha (BH)! Antes de viajar para BH, você e seus <strong>N</strong>-1 amigos decidiram combinar algum dia para ir a uma pizzaria, para relaxar e descontrair (e, naturalmente, comer!).</p>
+
+<p>Neste momento está sendo escolhida a data do evento. Para que todas as pessoas possam participar, foi decidido que o encontro na pizzaria ocorrerá em um data tal que todas as <strong>N</strong> pessoas podem comparecer à pizzaria nesta data. Portanto, nem toda data pode ser escolhida, pois algumas pessoas podem ter outros compromissos já marcados em alguns dias.</p>
+
+<p>Dada a lista de datas consideradas para o evento e a informações de quais pessoas podem comparecer em quais datas, determine se o evento poderá ocorrer e, em caso positivo, sua data. Caso mais de uma data seja possível, o evento deve ocorrer o mais cedo possível.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém os inteiros <strong>N</strong> e <strong>D</strong> (1 ≤ <strong>N</strong>, <strong>D</strong> ≤ 50), o número de pessoas e o número de datas consideradas, respectivamente. As pessoas são numeradas de 1 a <strong>N</strong>. As próximas <strong>D</strong> linhas descrevem uma data considerada. Cada linha começa com a data na forma <em>dia∕mes∕ano</em>. A linha é seguida de <strong>N</strong> inteiros <strong>p<sub>1</sub></strong>,<strong>p<sub>2</sub></strong>,...,<strong>p<sub>N</sub></strong>. O inteiro <strong>p<sub>i</sub></strong> é 1 se a pessoa <em>i</em> pode comparecer na data considerada, ou 0 caso contrário. É garantido que as datas são sempre válidas, e não há zeros à esquerda. Além disso, as datas são dadas em ordem, do dia mais cedo para o dia mais tarde.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha contendo a data que o evento deve ocorrer, na forma <em>dia∕mes∕ano</em>, de maneira <em>idêntica</em> à da entrada. Caso não seja possível realizar o evento, imprima “<em>Pizza antes de FdI</em>” (sem aspas).</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4 4<br />
+1/6/2016 0 0 1 0<br />
+12/7/2016 1 1 1 0<br />
+5/10/2016 1 1 1 1<br />
+25/12/2016 0 0 0 0<br />
+							5 3<br />
+20/9/2016 0 1 1 1 1<br />
+30/9/2016 1 0 1 1 1<br />
+1/10/2016 1 1 0 1 1</p>
+						</td>
+						<td>
+							<p>5/10/2016<br />
+							Pizza antes de FdI</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				Programação Competitiva, UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

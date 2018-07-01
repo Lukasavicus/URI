@@ -1,0 +1,118 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1862 - Casas de Westeros</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 9942 - Casas de Westeros" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1862</span>
+				<h1>Casas de Westeros</h1>
+				<div>
+					<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Daenerys: <em>"Lannister, Targaryen, Baratheon, Stark, Tyrell. Estão todos em uma mesma roda".</em></p>
+
+					<p>As casas nobres de Westeros estão lutando constantemente pelo Trono de Ferro. Para vencer a Guerra dos Tronos, deve-se sempre saber quantas casas existem no continente. Também é importante saber o tamanho de cada casa, uma vez que casas com muitas pessoas são, normalmente, mais fortes que casas com poucos membros.</p>
+
+					<p>Existem <strong>N</strong> pessoas em Westeros. Para cada par de pessoas, um espião lhe informou se elas pertencem à mesma casa ou não. Se a informação obtida pelo espião for consistente, sua tarefa é determinar quantas casas existem em Westeros, e quantas pessoas pertencem a cada casa.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 1000), o número de pessoas. Considere que as pessoas são numeradas de 1 a <strong>N</strong>.</p>
+
+					<p>As próximas <strong>N</strong> linhas contém <strong>N</strong> caracteres cada. O <em>j</em>-ésimo caractere na <em>i</em>-ésima linha (1 ≤ <em>i</em>, <em>j</em> ≤ <strong>N</strong>) é <em>S</em> se as pessoas <em>i</em> e <em>j</em> pertencem à mesma casa, ou <em>D</em> se as pessoas <em>i</em> e <em>j</em> pertencem a casas diferentes. É garantido que, para todo 1 ≤ <em>i</em>, <em>j</em> ≤ <strong>N</strong>, o <em>j</em>-ésimo caractere na <em>i</em>-ésima linha é igual ao <em>i</em>-ésimo caractere na <em>j</em>-ésima linha. Além disso, para todo 1 ≤ <em>i</em> ≤ <strong>N</strong>, o <em>i</em>-ésimo caractere na <em>i</em>-ésima linha é sempre <em>S</em>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Se a informação dada pelo espião é inconsistente e não é possível determinar o número de casas, imprima uma linha contendo o inteiro -1. Caso contrário, imprima duas linhas. A primeira linha contém um inteiro <strong>K</strong>, o número de casas. A segunda linha contém <strong>K</strong> inteiros, o número de pessoas em cada casa. Os inteiros devem ser impressos em ordem não crescente. Imprima um espaço entre dois inteiros consecutivos.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7<br />
+								SDSDDSD<br />
+								DSDSSDD<br />
+								SDSDDSD<br />
+								DSDSSDD<br />
+								DSDSSDD<br />
+								SDSDDSD<br />
+								DDDDDDS</p>
+
+							</td>
+							<td>
+								<p>3<br />
+								3 3 1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4<br />
+								SSDD<br />
+								SSSD<br />
+								DSSS<br />
+								DDSS</p>
+
+							</td>
+							<td>
+								<p>-1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1468 - Balão</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1468 - Balão" />
+            
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1468</span>
+                <h1>Balão</h1>
+                <div> Maratona de Programação da SBC <img alt="" src='  https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif'  /> Brasil</div>  <strong>Timelimit: 5</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Uma das principais dificuldades de organizar uma Maratona de Programação é recolher os bal˜oes que escapam e ficam presos no teto do salão: muitas vezes o contrato com o dono do salão exige que este seja entregue limpo logo após o evento, sob pena de multa.</p>
+
+<p>Este ano a organização da Maratona está mais previdente: ela tem o desenho do teto do salão, e quer sua ajuda para determinar o que pode acontecer com um balão, dependendo da posição no solo onde ele é solto (isto é, se é bloqueado pelo teto ou se escapa para o exterior do salão).</p>
+
+<p>O teto do salão é formado por vários planos que, vistos de lado, podem ser descritos por segmentos de reta, como mostrado na figura abaixo:</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1468.png" style="width: 276px; height: 198px;" /></p>
+
+<p>O balão pode ser considerado pontual. Quando um balão toca um segmento do teto que é horizontal, ele fica preso. Quando um balão toca um segmento que é inclinado, o balão desliza até o ponto mais alto do segmento e escapa, podendo escapar completamente do salão ou podendo tocar em mais segmentos. Não há pontos em comum entre os segmentos que formam o teto.</p>
+
+<p>Por exemplo, se o balão for solto nas posições marcadas como a ou b, será bloqueado na posição de coordenadas (2, 5); se o balão for solto na posição marcada como c, será bloqueado na posição de coordenadas (6, 5); e se o balão for solto na posição marcada como d, não será bloqueado e escapará para fora do salão na posição de coordenada x = 7.</p>
+
+<p>Escreva um programa que, dada a descrição do teto do salão como segmentos de reta, responde a uma série de consultas sobre a posição final de bal˜oes soltos do piso do salão.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. A primeira linha de um caso de teste contém dois inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>) e <strong>C</strong> (1 ≤ <strong>C</strong> ≤ 10<sup>5</sup>) indicando, respectivamente, o número de segmentos de reta do teto e o n´umero de consultas. Cada uma das <strong>N</strong> linhas seguintes contém quatro inteiros<strong> X<sub>1</sub></strong>, <strong>Y<sub>1</sub></strong>, <strong>X<sub>2</sub></strong>, <strong>Y<sub>2</sub></strong>, (0 ≤ <strong>X<sub>1</sub></strong>,<strong>X<sub>2</sub></strong> ≤ 10<sup>6</sup>, 0 &lt; <strong>Y<sub>1</sub></strong>, <strong>Y<sub>2</sub></strong> ≤ 10<sup>6</sup>, <strong>X<sub>1</sub></strong> &lt;&gt; <strong>X<sub>2</sub></strong>) descrevendo um segmento de reta do perfil do teto, com extremos de coordenadas (<strong>X<sub>1</sub>,</strong> <strong>Y<sub>1</sub></strong>) e (<strong>X<sub>2</sub></strong>, <strong>Y<sub>2</sub></strong>). Obs.: não há dois valores de coordenadas <strong>X</strong> iguais, considerando todos os segmentos.</p>
+
+<p>Cada uma das <strong>C</strong> linhas seguintes descreve uma consulta e contém um inteiro <strong>X</strong> (0 ≤ <strong>X</strong> ≤ 10<sup>6</sup>) , indicando que a consulta quer determinar o que acontece com um balão solto no ponto de coordenada (<strong>X</strong>, 0).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada consulta da entrada, seu programa deve imprimir uma única linha. Se o balão escapar do salão, a linha deve conter um único inteiro <strong>X</strong>, indicando a coordenada x pela qual o balão escapa do salão. Caso contrário, a linha deve conter dois inteiros <strong>X </strong>e <strong>Y</strong> indicando a posição <em>(x, y)</em> em que o balão fica retido no teto.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4 4<br />
+0 1 3 3<br />
+1 5 6 5<br />
+5 3 2 4<br />
+7 4 10 2<br />
+2<br />
+5<br />
+8<br />
+6<br />
+4 3<br />
+1 3 4 2<br />
+10 3 7 4<br />
+2 3 8 3<br />
+3 5 5 4<br />
+4<br />
+9<br />
+8</p>
+
+                            </td>
+                            <td>
+                                <p>2 5<br />
+2 5<br />
+7<br />
+6 5<br />
+1<br />
+7<br />
+8 3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                   Maratona de Programação da SBC 2013.
+                </p>
+            </div>
+
+        </body>
+    </html>

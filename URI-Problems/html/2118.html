@@ -1,0 +1,100 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2118 - Qual a Sede?</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 666 - Qual a Sede?" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2118</span>
+				<h1>Qual a Sede?</h1>
+				<div>
+					<p>Por Thalyson Nepomuceno, Universidade Estadual do Ceará <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Em Fortaleza, todos os estudantes pretendem estudar em alguma sede do Colégio Farias Brito, porém como existem muitas sedes na cidade, alguns estudantes ficam em dúvida em qual sede se matricular.</p>
+
+<p>Um estudante opta por estudar na sede mais próxima de onde ele mora. Caso existam sedes com mesma distância de onde ele mora, o estudante opta por estudar na sede que obteve mais medalhas em olimpíadas. Caso ainda permaneça o empate, o estudante opta pela sede mais antiga.</p>
+
+<p>O mapa de Fortaleza pode ser desenhado como um grafo, em que os vértices representam os locais, e as arestas representam as ruas (Conectando dois locais). A distância entre dois locais <strong>X</strong> e <strong>Y</strong> é determinada pelo número mínimo de ruas que se deve utilizar para chegar em <strong>Y</strong> a partir de <strong>X</strong>.</p>
+
+<p>O grande chefe Parcelo Mena ordenou que o estagiário Nhalyson Tepomuceno fizesse um programa que indique qual a melhor sede para os alunos.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por múltiplas linhas. A primeira linha da entrada contém quatro inteiros <strong>L</strong>, <strong>S</strong>, <strong>Q</strong> (1 ≤ <strong>L</strong>, <strong>S</strong>, <strong>Q</strong> ≤ 10<sup>5</sup>) e <strong>A</strong> (1 ≤ <strong>A</strong> ≤ 10<sup>6</sup>), representando o número de locais, o número de sedes, o números de estudantes e o número de ruas. Cada uma das próximas <strong>S</strong> linhas contém três inteiros <strong>P<sub>i</sub></strong>, <strong>M<sub>i</sub></strong> e <strong>T<sub>i</sub></strong> (1 ≤ <strong>M<sub>i</sub></strong>, <strong>T<sub>i</sub></strong> ≤ 10<sup>9</sup>), representando o local onde a sede está localizada, o número de medalhas da sede e o número de dias que a sede foi construída. Cada uma das próximas<strong> A</strong> linhas contém dois inteiros <strong>X</strong> e <strong>Y</strong> cada, representando que existe uma rua que conecta os locais <strong>X</strong> e <strong>Y</strong>. Cada uma das próximas <strong>Q</strong> linhas contém a localização de cada aluno que deseja se matricular no Farias Brito.</p>
+
+<p>É garantido que para quaisquer duas sedes distintas, elas não foram construídas no mesmo dia.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada localização de um aluno que deseja se matricular no Farias Brito, imprima o identificador da melhor sede que o aluno deve se matricular. Caso não exista sede que seja acessível pelo aluno utilizando as ruas de Fortaleza, imprima “Noic”.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2 1 2</p>
+
+<p>1 100000 500000</p>
+
+<p>2 100001 499999</p>
+
+<p>1 3</p>
+
+<p>2 3</p>
+
+<p>3</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					I Contest Farias Brito
+				</p>
+			</div>
+
+		</body>
+	</html>

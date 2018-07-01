@@ -1,0 +1,123 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2249 - Número de Erdos</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2249 - Número de Erdos" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2249</span>
+				<h1>Número de Erdos</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2003 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O matemático húngaro Paul Erdos (1913-1996), um dos mais brilhantes do século XX, é considerado o mais prolífico matemático da história. Erdos publicou mais de 1500 artigos, em colabora- ção com cerca de outros 450 matemáticos. Em homenagem a este gênio húngaro, os matemáticos criaram um número, denominado "número de Erdos". Toda pessoa que escreveu um artigo com Erdos tem o número 1. Todos que não possuem número 1, mas escreveram algum artigo juntamente com alguém que possui número 1, possuem número 2. E assim por diante. Quando nenhuma ligação pode ser estabelecida entre Erdos e uma pessoa, diz-se que esta possui número de Erdos infinito. Por exemplo, o número de Erdos de Albert Einstein é 2. E, talvez surpreendentemente, o número de Erdos de Bill Gates é 4.</p>
+
+<p>Sua tarefa é escrever um programa que, a partir de uma lista de autores de artigos, determine o número de Erdos dos autores.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é constituída por vários conjuntos de teste. A primeira linha de um conjunto de teste contém um número inteiro <strong>A</strong> (1 ≤ <strong>A</strong> ≤ 100), que indica o número de artigos. Cada uma das <strong>A</strong> linhas seguintes contém a lista de autores de um artigo. Cada autor é identificado pela inicial de seu nome (em maiúscula), seguida de um ponto e de um espaço em branco (indicando que o nome está abreviado), seguida de seu último sobrenome (‘P. Erdos’, por exemplo). O sobrenome de um autor possui, no máximo, 15 letras, e apenas a letra inicial aparece em maiúscula. Os autores são separados por vírgulas, e a lista de autores de um artigo termina com um ponto (veja os exem- plos abaixo). Um único espaço em branco separa a abreviatura do nome do sobrenome, bem como o nome de um autor do anterior. Espaços em branco não são usados em outros locais. Um artigo possui, no máximo, 10 autores, e o total de autores não excede 100. O final da entrada é indicado por <strong>A</strong> = 0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada conjunto de teste da entrada seu programa deve produzir um conjunto de linhas na saída. A primeira linha deve conter um identificador do conjunto de teste, no formato “Teste n”, onde n é numerado seqüencialmente a partir de 1. A seguir devem aparecer uma linha para cada&nbsp;autor do conjunto de testes (exceto o próprio P. Erdos). Cada linha deve conter o nome do autor seguido pelo caractere ‘:’, um espaço em branco e o seu número de Erdos. Caso o número de Erdos de um determinado autor seja infinito, escreva ‘infinito’. A saída deve ser ordenada alfabeticamente pelo sobrenome do autor, e, em caso de mesmo sobrenome, o desempate deve ser feito pela inicial do primeiro nome. Imprima uma linha em branco ao final de cada conjunto de teste. A grafia mostrada no Exemplo de Saída, abaixo, deve ser seguida rigorosamente.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5</p>
+
+<p>P. Erdos, A. Selberg.</p>
+
+<p>P. Erdos, J. Silva, M. Souza.</p>
+
+<p>M. Souza, A. Selberg, A. Oliveira.</p>
+
+<p>J. Ninguem, M. Ninguem.</p>
+
+<p>P. Duarte, A. Oliveira.</p>
+
+<p>2</p>
+
+<p>Z. Silva, P. Erdos.</p>
+
+<p>Z. Souza.</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>Teste 1</p>
+
+<p>P. Duarte: 3</p>
+
+<p>J. Ninguem: infinito</p>
+
+<p>M. Ninguem: infinito</p>
+
+<p>A. Oliveira: 2</p>
+
+<p>A. Selberg: 1</p>
+
+<p>J. Silva: 1</p>
+
+<p>M. Souza: 1</p><br/>
+
+<p>Teste 2</p>
+
+<p>Z. Silva: 1</p>
+
+<p>Z. Souza: infinito</p><br/>
+
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2003
+				</p>
+			</div>
+
+		</body>
+	</html>

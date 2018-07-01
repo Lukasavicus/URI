@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2098 - Ilha do Tesouro</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2098 - Ilha do Tesouro" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2098</span>
+                <h1>Ilha do Tesouro</h1>
+                <div>
+                    <p>Por Fidel I. Schaposnik, Universidad Nacional de La Plata <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Encontrar os tesouros escondidos há séculos pelos piratas das ilhas do Caribe não é tarefa fácil, mais difícil ainda é viver para contar a história. Isto porque, como todo mundo sabe, os piratas tinham poderes sobrenaturais que eles usavam para amaldiçoar a pessoa que levou o seu tesouro sem autorização.</p>
+
+                    <p>Uma maldição muito comum entre os mais poderosos dos piratas, e para a qual é sempre uma boa ideia estar preparado, é hoje conhecida como a névoa mortal. Sempre que o tesouro de um pirata for encontrado, esta maldição vai fazer com que a névoa venenosa suba do chão até que toda a ilha fique coberta por ela. Qualquer criatura viva que é tocado pela névoa vai morrer instantaneamente, algo especialmente indesejável para quem acabou de encontrar um tesouro. A única maneira de se salvar é, em seguida, retornar para o seu barco, sempre passando por áreas que ainda não foram cobertas pela névoa, e, assim, fugir com a parte do tesouro que pode ter sido resgatada. Neste problema estamos interessados em saber qual é a quantidade máxima de tempo que uma pessoa pode recolher o tesouro e ser capaz de voltar para o barco vivo.</p>
+                    
+                    <p>Para simplificar o problema, vamos considerar que uma ilha pode ser representada por uma grade com R linhas e C colunas, em que a célula na linha i-th e coluna j-th  tem altura Hij acima do nível do mar. Além disso, vamos supor que o tesouro está sempre escondido na célula de linha 1 e coluna 1, porque esta é a mais distante do único lugar onde o barco pode ancorar, que é a célula da linha R e coluna C. A névoa mortal aparece no nível do mar no mesmo instante que o tesouro é encontrado, em seguida, levanta-se em toda a ilha, a uma taxa de uma unidade de altura por segundo, para que depois de t segundos não se pode estar em qualquer célula de altura menor ou igual a t. A fim de voltar para o barco, você pode ir de uma célula para outra somente se elas compartilham um lado, de modo que, se você estiver em uma determinada célula você só pode mover horizontalmente para a célula antes ou depois da mesma linha, ou verticalmente para a célula antes ou depois, na mesma coluna, mas você não pode se mover na diagonal ou cruzar as fronteiras da ilha. Cada um desses movimentos de uma célula para outra leva exatamente um segundo.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém dois números inteiros R e C, representado, respectivamente, o número de linhas e colunas da grade que representa a ilha, constituído por pelo menos duas células (1 ≤ R, C e R ≤ 500 × C ≥ 2). Cada uma das seguintes R linhas contém C valores. No i-ésimo destas R linhas, o valor j-ésimo é um número inteiro Hij que representa a altura da célula da linha i e coluna j (1 ≤ Hij ≤ 10<sup>6</sup> para i = 1, ..., R e j  = 1, ..., C).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprimir uma única linha contendo um número inteiro que representa a quantidade máxima de tempo, em segundos, que se pode recolher o tesouro, de modo a ser capaz de retornar para o barco sem ser atingido pela névoa mortal. Imprimir o número -1 se for impossível voltar para o barco, mesmo quando se inicia o caminho de volta assim que o tesouro é descoberto.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplos de Entrada</td>
+                            <td>Exemplos de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 3</p>
+
+<p>2 3 4</p>
+
+<p>3 4 5</p>
+
+<p>4 5 6</p>
+
+                            </td>
+                            <td>
+                                <p>1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div><table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 3</p>
+
+<p>1 2 3</p>
+
+<p>2 2 3</p>
+
+<p>2 4 5</p>
+
+                            </td>
+                            <td>
+                                <p>-1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 2</p>
+
+<p>1000000 1000000</p>
+
+<p>1000000 1000000</p>
+
+<p>1000000 314 </p>
+
+                            </td>
+                            <td>
+                                <p>310</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>              
+            <p class="footer">
+                    Torneo Argentino de Programación — ACM–ICPC 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1738 - Rede de Fibra</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1740 - Rede de Fibra" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1738</span>
+                <h1>Rede de Fibra</h1>
+                <div>
+                    <p>University of Ulm local Contest <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Diversas empresas iniciantes decidiram construir uma Internet melhor, a chamada "FiberNet". Eles já instalaram muitos nós que atuam como roteadores em todo o mundo. Infelizmente, eles começaram a discutir sobre as linhas de conexão, e acabou cada empresa estabelecendo seu próprio conjunto de cabos entre alguns dos nós. Agora, provedores de serviços, que querem enviar dados do nó A para o nó B estão curiosos, qual é a empresa capaz de fornecer as conexões necessárias. Ajude os provedores, respondendo às suas perguntas.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada caso de teste inicia-se com o número de nós da rede <strong>n</strong>. A entrada é terminada por <strong>n</strong> = 0 . Caso contrário, 1 ≤ <strong>n</strong> ≤ 200. Os nós tem os números 1 , ..., <strong>n</strong> . Depois segue-se uma lista de conexões . Cada conexão começa com dois números <strong>A</strong>, <strong>B</strong>. A lista de conexões é terminada por <strong>A</strong> = <strong>B</strong> = 0. Caso contrário, 1 ≤ <strong>A,</strong> <strong>B</strong> ≤ <strong>n</strong>, e eles indicam o início e o ponto final da conexão unidirecional, respectivamente. Para cada conexão, os dois nós são seguidos pelas empresas que têm uma ligação do nó <strong>A</strong> para o nó <strong>B</strong>. A companhia é identificada por uma letra minúscula. O conjunto de empresas que possuem uma conexão é uma palavra composta apenas por letras minúsculas.</p>
+
+                    <p>Depois da lista de conexões, cada caso de teste é completado por uma lista de consultas. Cada consulta é composta de dois números <strong>A</strong>, <strong>B</strong>. A lista (e com ela o caso de teste) é terminada por <strong>A</strong> = <strong>B</strong> = 0. Caso contrário, 1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>n</strong>, e eles indicam o início e o ponto final da consulta. Você pode assumir que nenhuma ligação e nenhuma consulta contém os nós iniciais e finais idênticos.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada consulta em todos os casos de teste, gere uma linha contendo os identificadores de todas as empresas que podem rotear pacotes de dados em suas próprias conexões a partir do nó de início para o nó final da consulta. Se não houver empresas, imprima "-". Imprima uma linha em branco após cada caso de teste.</p>
+
+                    <p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/promocao/fiber%20network.gif" alt="" /></p>
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3</p>
+
+                                <p>1 2 abc</p>
+
+                                <p>2 3 ad</p>
+
+                                <p>1 3 b</p>
+
+                                <p>3 1 de</p>
+
+                                <p>0 0</p>
+
+                                <p>1 3</p>
+
+                                <p>2 1</p>
+
+                                <p>3 2</p>
+
+                                <p>0 0</p>
+
+                                <p>2</p>
+
+                                <p>1 2 z</p>
+
+                                <p>0 0</p>
+
+                                <p>1 2</p>
+
+                                <p>2 1</p>
+
+                                <p>0 0</p>
+
+                                <p>0</p>
+
+
+                            </td>
+                            <td>
+                                <p>ab</p>
+
+                                <p>d</p>
+
+                                <p>-</p>
+
+                                <p></br></p>
+
+                                <p>z</p>
+
+                                <p>-</p>
+
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p class="footer">
+                    University of Ulm local Contest 2001/2002.
+                </p>
+            </div>
+
+        </body>
+    </html>

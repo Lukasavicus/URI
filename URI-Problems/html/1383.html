@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1383 - Sudoku</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1383 - Sudoku" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1383</span>
+            <h1>Sudoku</h1>
+            <div>Maratona de Programação IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>O jogo de Sudoku espalhou-se rapidamente por todo o mundo, tornando-se hoje o passatempo mais popular em todo o planeta. Muitas pessoas, entretanto, preenchem a matriz de forma incorreta, desrespeitando as restrições do jogo. Sua tarefa neste problema é escrever um programa que verifica se uma matriz preenchida é ou não uma solução para o problema.</p>
+
+                <p>A matriz do jogo é uma matriz de inteiros 9 x 9 . Para ser uma solução do problema, cada linha e coluna deve conter todos os números de 1 a 9. Além disso, se dividirmos a matriz em 9 regiões 3 x 3, cada uma destas regiões também deve conter os números de 1 a 9. O exemplo abaixo mostra uma matriz que é uma solução do problema.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Sudoku.png" style="width: 247px; height: 208px; margin-left: 10px; margin-right: 10px;" /></p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>São dadas várias instâncias. O primeiro dado é o número <strong>n</strong> &gt; 0 de matrizes na entrada. Nas linhas seguintes são dadas as <strong>n</strong> matrizes. Cada matriz é dada em 9 linhas, em que cada linha contém 9 números inteiros.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada instância seu programa deverá imprimir uma linha dizendo <em>"Instancia <strong>k</strong></em>", onde <strong>k</strong> é o número da instância atual. Na segunda linha, seu programa deverá imprimir "<em>SIM"</em> se a matriz for a solução de um problema de Sudoku, e "<em>NAO"</em> caso contrário. Imprima uma linha em branco após cada instância.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2<br />
+                                1 3 2 5 7 9 4 6 8<br />
+                                4 9 8 2 6 1 3 7 5<br />
+                                7 5 6 3 8 4 2 1 9<br />
+                                6 4 3 1 5 8 7 9 2<br />
+                                5 2 1 7 9 3 8 4 6<br />
+                                9 8 7 4 2 6 5 3 1<br />
+                                2 1 4 9 3 5 6 8 7<br />
+                                3 6 5 8 1 7 9 2 4<br />
+                                8 7 9 6 4 2 1 5 3<br />
+                                1 3 2 5 7 9 4 6 8<br />
+                                4 9 8 2 6 1 3 7 5<br />
+                                7 5 6 3 8 4 2 1 9<br />
+                                6 4 3 1 5 8 7 9 2<br />
+                                5 2 1 7 9 3 8 4 6<br />
+                                9 8 7 4 2 6 5 3 1<br />
+                                2 1 4 9 3 5 6 8 7<br />
+                                3 6 5 8 1 7 9 2 4<br />
+                                8 7 9 6 4 2 1 3 5</p>
+
+                        </td>
+                        <td>
+                            <p>Instancia 1<br />
+                                SIM <br />
+<br />
+                            Instancia 2<br />
+                                NAO
+								<br /></p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                X Maratona de Programação IME-USP 2006.
+            </p>
+
+        </div>
+
+    </body>
+</html>

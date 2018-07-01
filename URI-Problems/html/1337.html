@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1337 - Poker do Rei</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1337 - Poker do Rei" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1337</span>
+            <h1>Poker do Rei</h1>
+            <div><p>Por Ricardo Anido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Poker é um dos jogos de cartas mais jogados, e o Poker do Rei é uma das suas variações. O jogo é jogado com um baralho normal de 52 cartas. Cada carta tem um dos quatro naipes e uma das 13 categorias. Entretanto, no Poker do Rei os naipes das cartas não são relevantes, enquanto as categorias são Ás (categoria 1), 2, 3, 4, 5, 6, 7, 8, 9, 10, Valete (categoria 11), Rainha (categoria 12) e Rei (categoria 13). O nome do jogo vem do fato de que no Poker do Rei, o Rei é a carta com a categoria mais alta. Mas esta não é a única diferença entre o Poker regular e o Poker do Rei. Aos jogadores do Poker do Rei são distribuídos uma mão de apenas três cartas. Existem três tipos de mãos:</p>
+
+                <ul>
+                    <li>Um set, feito de três cartas da mesma categoria.</li>
+                    <li>Um par, que contém duas cartas da mesma categoria, com a outra carta sem correspondente.</li>
+                    <li>Um não-par, onde não tem-se duas cartas da mesma categoria.</li>
+                </ul>
+
+                <p>
+                    As mão são classificadas usando as seguintes regras:</p>
+
+                <ul>
+                    <li>Qualquer set derrota qualquer par e não-par.</li>
+                    <li>Qualquer par derrota qualquer não-par.</li>
+                    <li>Um set formado com cartas de categoria maior derrota qualquer set formado com cartas de categoria menor.</li>
+                    <li>Se as cartas emparelhadas de dois pares têm categorias diferentes, então o par com as cartas emparelhadas de maior categoria derrota o par com as cartas emparelhadas de menor categoria.</li>
+                    <li>Se as cartas emparelhadas de dois pares têm a mesma categoria, então a cartas não emparelhadas de ambos os pares são comparadas; o par com carta não emparelhada de maior categoria derrota o par com carta não emparelhada de menor categoria, a menos que ambas as cartas não emparelhadas sejam da mesma categoria, caso no qual temos um empate.</li>
+                </ul>
+
+                <p>
+                    Uma nova empresa de software quer oferecer jogos de Poker do Rei no seu site de jogos, e precisa de um software que, dada uma mão de Poker do Rei, determine o set ou o par com menor categoria que derrota a mão dada. Você pode codificá-lo?</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste é descrito usando uma única linha. A linha contém três inteiros <strong>A</strong>, <strong>B</strong> e <strong>C</strong> representando as categorias das cartas entregues na mão (1 ≤ <strong>A, B, C</strong> ≤ 13).</p>
+
+                <p>
+                    O último caso de teste é seguido por uma linha contendo três zeros.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima uma única linha. Se existe um set ou um par que derrota a mão dada, escreva a menor mão que o faz. A mão vencedora deve ser escrita especificando as categorias de suas cartas, em ordem não-descrescente. Se nenhum set ou par derrota a mão dada, escreva o caractere '*' (asterisco).</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                1 1 1<br />
+                                1 1 12<br />
+                                1 1 13<br />
+                                1 13 1<br />
+                                10 13 10<br />
+                                1 2 2<br />
+                                13 13 13<br />
+                                13 12 13<br />
+                                12 12 12<br />
+                                3 1 4<br />
+                                1 5 9<br />
+                                0 0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                2 2 2<br />
+                                1 1 13<br />
+                                1 2 2<br />
+                                1 2 2<br />
+                                1 11 11<br />
+                                2 2 3<br />
+                                *<br />
+                                1 1 1<br />
+                                13 13 13<br />
+                                1 1 2<br />
+                                1 1 2</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2011.
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,138 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1965 - A Procura por Spock</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1965 - A Procura por Spock" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1965</span>
+				<h1>A Procura por Spock</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>‘Coxinha’ é o nome dado a uma tradicional comida brasileira que consiste de carne de frango desfiada envolta numa massa e frita. Recentemente, o Sr. Spock, o chefe do <em>Enterprise</em>, um restaurante em Chapecó, ganhou um importante prêmio gastronômico por fazer as coxinhas mais gostosas do mundo. Você devia experimentar uma coxinha do Sr. Spock. Elas são tão maravilhosas que o sabor notoriamente levará você aonde nenhum homem jamais esteve. Mas não é fácil conseguir uma coxinha no Enterprise. A procura por Spock é tanta que é preciso encomendar o pedido com pelo menos 42 dias de antecedência.</p>
+
+<p>O Sr. Spock gosta de fazer coxinhas de diferentes tamanhos e formatos. Para moldar uma coxinha, ele primeiro seleciona ao menos duas formas circulares sem fundo de mesma altura mas diâmetros todos distintos. Em seguida, põe uma forma sobre a outra em ordem decrescente de diâmetro da base até o topo, amarrando-as com um barbante na lateral. Finalmente, usa as formas para dar forma à sua coxinha. A primeira e a segunda figuras exibem a estrutura de formas vista respectivamente de cima e de lado. A terceira e a quarta figuras exibem a coxinha resultante, também vista respectivamente de cima e de lado.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/c1(1).jpg" style=""></p>
+
+<p>Visando atender melhor seus clientes, o Enterprise também oferece o serviço de entrega a domicílio. Algo importante que o Sr. Spock descobriu é que, para não perderem seu sabor e crocância, as coxinhas devem ser colocadas na embalagem sequencialmente, uma ao lado da outra, sempre deitadas de modo que as bases fiquem perfeitamente perpendiculares ao fundo da embalagem. Ainda, coxinhas consecutivas na sequência devem sempre ter ou suas bases ou seus topos se tocando, e as partes que se tocam devem sempre ter o mesmo diâmetro. Coxinhas cujos topos apontam para a esquerda são chamadas de ‘coxinhas de esquerda’, aquelas cujos topos apontam para a direita são chamadas ‘coxinhas de direita’, e o Sr. Spock usa a orientação das coxinhas para que o cliente saiba o tipo de tempero no recheio de cada uma. Não importando o tamanho, duas coxinhas são vendidas pelo mesmo preço se e somente se são ambas de esquerda ou ambas de direita. Há sempre ao menos uma coxinha de esquerda e ao menos uma coxinha de direita numa embalagem. A figura abaixo ilustra uma embalagem (linha tracejada) contendo 4 coxinhas (linhas contínuas). Como se pode ver, as coxinhas sempre cabem perfeitamente na embalagem.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/c2(1).jpg" style=""></p>
+
+<p>Você foi contratado para trabalhar na equipe de controle de qualidade do Enterprise. Sua função é pegar as embalagens já cheias, passar as embalagens por um <em>scanner</em> de raio-X e, com base nas medições reportadas pelo <em>scanner</em>, determinar quantas coxinhas de esquerda e quantas de direita há nas embalagens. As medições são feitas da esquerda para a direita, a um espaçamento idêntico à altura das formas usadas na modelagem das coxinhas. Em cada medição é reportada a altura da coxinha dentro da embalagem naquele ponto, mas apenas se o resultado da medição é diferente do resultado da última medição (senão, nada é reportado). Na figura acima, 14 medições são ilustradas pelas linhas pontilhadas. Note que apenas 10 delas são reportadas.</p>
+
+<p>Como você é novo na equipe, seus colegas esconderam de você os preços das coxinhas e querem não apenas que você calcule quantas coxinhas de esquerda e quantas coxinhas de direita há na embalagem, mas também que adivinhe o preço das coxinhas de esquerda e o preço das coxinhas de direita. Para tanto, eles apenas lhe contaram qual o preço total das coxinhas na embalagem, qual a diferença entre os preços e o tipo das coxinhas que são mais caras.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Três linhas compõem a entrada. A primeira linha da entrada consiste de 3 valores, <strong>N</strong>, <strong>D</strong> e <strong>P</strong>, sendo o primeiro um inteiro e os outros fornecidos com dois dígitos após o ponto separador decimal: <strong>N</strong> (3 ≤ <strong>N</strong> ≤ 10<sup>6</sup>) representa o número de medições reportadas pelo <em>scanner</em>, <strong>D</strong> (0.01 ≤ <strong>D</strong> ≤ 100.00) representa a diferença entre o preço de uma coxinha de esquerda e o preço de uma de direita, e <strong>P</strong> (0.01 ≤ <strong>P</strong> ≤ 10000000.00) representa o preço total das coxinhas na embalagem. A segunda linha da entrada consiste de <strong>N</strong> inteiros positivos não maiores que 30, os quais representam os resultados das medições reportadas. A última linha da entrada consiste unicamente: de uma coxinha de esquerda, representada por <strong><)</strong>, se as coxinhas de esquerda são mais caras que as de direita; ou de uma coxinha de direita, representada por <strong>(></strong>, caso contrário.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir duas linhas, informando na primeira a quantidade de coxinhas de esquerda na embalagem e o preço de cada uma, e na segunda as mesmas informações, mas para as coxinhas de direita. A saída deve obedecer rigorosamente o formato esclarecido nos exemplos abaixo.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>10 0.25 13.50<br />
+1 4 6 7 3 2 3 5 4 2<br />
+&lt;)</p>
+
+							</td>
+							<td>
+								<p>&lt;) 2 R$3.50<br />
+(&gt; 2 R$3.25</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 100.00 100.00<br />
+1 2 1<br />
+(&gt;</p>
+
+							</td>
+							<td>
+								<p>&lt;) 1 R$0.00<br />
+(&gt; 1 R$100.00</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 0.01 0.01<br />
+30 1 30<br />
+&lt;)</p>
+
+							</td>
+							<td>
+								<p>&lt;) 1 R$0.01<br />
+(&gt; 1 R$0.00</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					3<sup>ạ</sup> Maratona de Programação <em>Júnior</em> da UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

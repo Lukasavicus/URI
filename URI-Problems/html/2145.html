@@ -1,0 +1,109 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2145 - A Vida Amorosa dos Números</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2145 - A Vida Amorosa dos Números" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2145</span>
+				<h1>A Vida Amorosa dos Números</h1>
+				<div>
+					<p>Por Joao Marcos Salvanini Bellini de Moraes, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Um número natural ama outro número se a soma de seus divisores for um divisor do outro número. Por exemplo, 9 ama 12, pois a soma dos divisores de 9 é igual a 4, um divisor de 12. Porém, 12 não ama 9, pois 16 (soma dos divisores de 12) não é um divisor de 9. Nesse caso, 9 ama 12 e não é correspondido, o que o torna um número na 'friendzone'.</p>
+
+<p>No entanto, há casos em que o amor será correspondido: quando a soma dos divisores de um número for igual ou divisor do outro número e vice-versa. Por outro lado, um amor quase correspondido é quando a soma dos divisores de um número for exatamente igual à soma dos divisores do outro número.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste. Cada caso de teste é composto por <strong>N</strong> e <strong>M</strong> (2 ≤ <strong>N</strong>, <strong>M</strong> ≤ 10<sup>9</sup>), sendo <strong>N</strong> e <strong>M</strong> números diferentes. A entrada termina com N = M = 0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deverá imprimir a relação entre os dois números, de acordo com as condições abaixo:</p>
+
+<p>1 - Se o amor for correspondido, imprima "Friends and lovers &lt;3";<br />
+2 - Se o amor for quase correspondido, imprima "Almost lovers!";<br />
+3 - Se o amor não for correspondido, imprima "X friendzoned Y!", em que a soma dos divisores de X é diferente da soma dos divisores de Y, e X é múltiplo da soma dos divisores de Y (Y ama X) mas Y não é múltiplo da soma dos divisores de X (X não ama Y);<br />
+4 - Se não houver relação, isto é, a soma dos divisores de X for diferente da soma dos divisores de Y, e X não for múltiplo da soma dos divisores de Y e Y não for múltiplo da soma dos divisores de X, imprima "No connection.".</p>
+
+<p>OBS.: Neste problema, a soma dos divisores não considera o próprio número, e nos casos em que o amor é correspondido e também quase correspondido, prevalece o amor correspondido.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 14</p>
+
+<p>6 25</p>
+
+<p>12 9</p>
+
+<p>9 12</p>
+
+<p>7 3</p>
+
+<p>0 0</p>
+
+							</td>
+							<td>
+								<p>14 friendzoned 2!</p>
+
+<p>Almost lovers!</p>
+
+<p>12 friendzoned 9!</p>
+
+<p>12 friendzoned 9!</p>
+
+<p>Friends and lovers &lt;3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					Aquecimento para a VI Olimpíada Interna de Programação do IFSULDEMINAS - OLIP 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

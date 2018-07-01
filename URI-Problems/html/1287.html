@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1287 - Processador Amigável de Inteiros</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1287 - Processador Amigável de Inteiros" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1287</span>
+            <h1>Processador Amigável de Inteiros</h1>
+            <div><p>
+                    Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif" style="width: 16px; height: 11px;" /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Computadores estão presentes em uma porcentagem significante de casas pelo mundo e, como programadores, somos responsáveis por criar interfaces que todos possam usar. Interfaces de usuário precisam ser flexíveis de forma que se um usuário comete um erro não fatal, a interface ainda pode deduzir o que o usuário queria dizer.</p>
+                <p>
+                    Sua tarefa é escrever um programa que processe um texto de entrada representando um inteiro, porém, como esta é uma interface de usuário, não seremos muito rígidos com o usuário:<p>
+                <p>
+                    1. Se o usuário digita a letra "O" ou "o", assumimos que ele queria digitar o número "0".</p>
+                <p>
+                    2. Se o usuário digita a letra "l", assumimos que ele queria digitar o número "1".</p>
+                <p>
+                    3. Vírgulas e espaços são permitidos, porém não são processados (são ignorados).</p>
+                <p>
+                    Se, mesmo com as regras acima, o usuário não entrou um número não-negativo, imprima a string "error". Overflow (um valor maior que 2147483647) é considerado inválido e "error" deve ser impresso.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada linha da entrada é um caso de teste e contém uma string n.</p>
+                <p>
+                    n conterá entre 0 e 50, inclusive, letras, dígitos, espaços ou vírgulas</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste, seu programa deverá imprimir um
+                    inteiro representado pela string n ou "error" se n não é um
+                    inteiro não-negativo válido.</p>
+                <p>
+                    Nota: Uma string vazia não representa um inteiro
+                    válido.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                lo6<br />
+                                234,657<br />
+                                <br />
+                                hi<br />
+                                ,,,,,5,,5,&nbsp;&nbsp;&nbsp;&nbsp;4<br />
+                                2200000000<br />
+                                00</p>
+                        </td>
+                        <td>
+                            <p>
+                                106<br />
+                                234657<br />
+                                error<br />
+                                error<br />
+                                554<br />
+                                error<br />
+                                0</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                * Este problema é de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por Julio B. para utilização (autorizada) no URI OJ.<br />
+                * A reprodução não autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. é estritamente proibida.</p>
+
+        </div>
+
+    </body>
+</html>

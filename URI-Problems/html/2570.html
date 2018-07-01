@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2570 - Californication</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problem 2570 - Californication" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2570</span>
+			<h1>Californication</h1>
+			<div>
+				<p>By Dâmi Henrique, INATEL <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Red, Hot, Chilli and Peppers are four students who always meet under the bridge after school ends to play a game called Californication. They draw a <strong>N</strong>x<strong>M</strong> grid on the ground, initially empty, and the ultimate goal is to master as much of this grid as possible.</p>
+
+<p>The students play alternately, always following the same order: Red, Hot, Chili and Peppers. After Peppers, the turn returns to Red and so they continue playing until they complete <strong>K</strong> rounds. In each of the rounds, the player can choose between two possible moves:</p>
+
+<p><strong>L X</strong> -&gt; {} It means to dominate the line <strong>X</strong> of the grid, writing the initial of its name in all the elements contained in this line.</p>
+
+<p><strong>C Y</strong> -&gt; {} It means to dominate the column <strong>Y</strong> of the grid, writing the initial of its name in all elements contained in that column.</p>
+			</div>
+
+			<h2>Input</h2>
+
+			<div class="input">
+					<p>The first line of the input contains three integers <strong>N</strong>, <strong>M</strong> (1 &le; <strong>N</strong>, <strong>M</strong> &le; 10<sup>3</sup>) and <strong>K</strong> (1 &le; <strong>K</strong> &le; 5 &times; 10<sup>5</sup>), the grid dimensions (number of rows and columns respectively) and how many rows were played.</p>
+
+<p>After that, there are <strong>K</strong> lines, each containing one<strong>L X</strong>&nbsp;(1 &le; <strong>X</strong> &le; <strong>N</strong>) or <strong>C Y</strong> (1 &le; <strong>Y</strong> &le; <strong>M</strong>) type, both described above.</p>
+			</div>
+
+			<h2>Output</h2>
+
+			<div class="output">
+				<p>Show how dominant each player was at the end of the match in the following format:</p>
+
+<p>Ra Hb Cc Pd, where <strong>a</strong>, <strong>b</strong>, <strong>c</strong> and <strong>d</strong> are integers, representing the final score of Red, Hot, Chili and Peppers, respectively.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Input Sample</td>
+						<td>Output Sample</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3 3 5<br />
+L 2<br />
+L 3&nbsp;<br />
+C 1<br />
+L 3<br />
+C 3&nbsp;</p>
+
+						</td>
+						<td>
+							<p>R4 H0 C2 P2</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				VI Maratona Mineira de Programação
+			</p>
+		</div>
+
+	</body>
+</html>

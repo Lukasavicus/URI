@@ -1,0 +1,157 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2644 - Replicate Replicate Rfplicbte</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 2644 - Replicate Replicate Rfplicbte" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2644</span>
+            <h1>Replicate Replicate Rfplicbte</h1>
+            <div>
+                <p>Por ACM-ICPC World Finals 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif' alt='US' /> United States</p>
+            </div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>The owner of the Automatic Cellular Manufacturing corporation has just patented a new process for the mass production of identical parts. Her approach uses a two-dimensional lattice of two-state cells, each of which is either “empty” or “filled.” The exact details are, of course, proprietary.</p>
+
+<p>Initially, a set of cells in the lattice is filled with a copy of the part that is to be reproduced. In a sequence of discrete steps, each cell in the lattice simultaneously updates its state by examining its own state and those of its eight surrounding neighbors. If an odd number of these nine cells are filled, the cell’s state in the next time step will be filled, otherwise it will be empty. Figure G.1 shows several steps in the replication process for a simple pattern consisting of three filled cells.</p>
+
+<p style="text-align:center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2644_a.jpg" /></p>
+
+<p style="text-align:center">Figure 1: The replication process.</p>
+
+<p>However, a bug has crept into the process. After each update step, one cell in the lattice might spontaneously flip its state. For instance, Figure G.2 shows what might happen if a cell flipped its state after the first time step and another flipped its state after the third time step.</p>
+
+<p style="text-align:center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2644_a.jpg" /></p>
+
+<p style="text-align:center">Figure 2: Errors in the replication process. This figure corresponds to Sample Input 1.</p>
+
+<p>Unfortunately, the original patterns were lost, and only the (possibly corrupted) results of the replication remain. Can you write a program to determine a smallest possible nonempty initial pattern that could have resulted in a given final pattern?</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>The first line of input contains two integers <strong>w</strong> (1 ≤ <strong>w</strong> ≤ 300) and <strong>h</strong> (1 ≤ <strong>h</strong> ≤ 300), where <strong>w</strong> and <strong>h</strong> are the width and height of the bounding box of the final pattern. Following that are <strong>h</strong> lines, each containing <strong>w</strong> characters, giving the final pattern. Each character is either ‘.’ (representing an empty cell) or ‘#’ (repre- senting a filled cell). There is at least one filled cell in the first row, in the last row, in the first column, and in the last column.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Display a minimum-size nonempty pattern that could have resulted in the given pattern, assuming that at each stage of the replication process at most one cell spontaneously changed state. The size of a pattern is the area of its bounding box. If there is more than one possible minimum-size nonempty starting pattern, any one will be accepted. Use the character ‘.’ for empty cells and ‘#’ for filled cells. Use the minimum number of rows and columns needed to display the pattern.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>10 10<br />
+.#...#...#<br />
+##..##..##<br />
+##.#.##...<br />
+##.#.##...<br />
+.#...#####<br />
+...##..#.#<br />
+......###.<br />
+##.#.##...<br />
+#..#..#..#<br />
+##..##..##</p>
+
+                        </td>
+                        <td>
+                            <p>.#<br />
+##</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>8 8<br />
+##..#.##<br />
+#.####.#<br />
+.#.#.#..<br />
+.##.#.##<br />
+.#.#.#..<br />
+.##.#.##<br />
+#..#.###<br />
+##.#.##.</p>
+
+                </td>
+                <td>
+                    <p>####<br />
+#..#<br />
+#.##<br />
+###.</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>5 4<br />
+#....<br />
+..###<br />
+..###<br />
+..###</p>
+
+                </td>
+                <td>
+                    <p>#</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+            <p class="footer">
+                ACM-ICPC World Finals 2017
+            </p>
+        </div>
+
+    </body>
+</html>

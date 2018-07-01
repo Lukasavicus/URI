@@ -1,0 +1,147 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1109 - Burlando a Maratona</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1109 - Burlando a Maratona" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1109</span>
+            <h1>Burlando a Maratona</h1>
+            <div><p>
+                    <em>By</em> Leonardo Alt <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Pela primeira vez a Escola Livre de Matemática, Filosofia e Lingüística de Skyrim vai receber a Maratona de Expressões Regulares (regex) (RegExCon). A maratona acontece da seguinte forma: os participantes competem sempre contra 1 oponente. Um ganha um perde. No final, só o campeão restará. Em uma disputa os participantes recebem uma lista com várias expressões regulares e para cada uma os participantes devem calcular se várias palavras dadas são reconhecidas ou não por tal regex.</p>
+                <p>
+                    Como membro da Escola Livre você está participando, e quer ganhar. Para garantir sua vitória, você deve escrever um programa para resolver o problema e deixá-lo rodando na sua Máquina Calculadora de Coisas Legais em casa. Como um mago, especialista em Alteração e Ilusão, você pode facilmente controlar sua máquina com a mente, então você consegue usar o programa durante a maratona. É proibido utilizar magia na maratona, mas coincidentemente a Escola de Winterhold vai sediar um Congresso de Magos, então você não precisa se preocupar, use sua magia.</p>
+                <p>
+                    Uma expressão regular é utilizada para descrever uma linguagem (um conjunto de palavras). Considere que o alfabeto de todas linguagens neste problema é {a, b}.</p>
+                <p>
+                    Uma regex R é válida se:<br />
+                    1) R é “a” ou “b”;<br />
+                    2) R é “(P.S)” onde P e S são expressões regulares;<br />
+                    3) R é “(P|S)” onde P e S são expressões regulares;<br />
+                    4) R é “(P*)” onde P é uma expressão regular.</p>
+                <p>
+                    Expressões regulares podem ser aninhadas. Não há operação ternária com os operadores “.” e “|”, nem operação binária com o operator “*”. Palavras sempre comçam com “(“ e terminam com “)”. O conjunto L de palavras reconhecidas por R é formado seguindo estas regras:</p>
+                <p>
+                    1) Se R é “(a)”, L = {a};<br />
+                    2) Se R é “(b)”, L = {b};<br />
+                    3) Se R é “(P.S)”, L = todas palavras que podem ser obtidas a partir da concatenação das palavras p e s, onde p é reconhecida por P e s por S;<br />
+                    4) Se R é “(P|S)”, L = união dos conjuntos de palavras reconhecidas por P e S;<br />
+                    5) Se R é “(P*)”, R reconhece a concatenação de 0 ou mais palavras reconhecidas por P.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada é formada por vários casos de teste. A primira linha de um caso de teste contém uma regex (0 &lt; tamanho da regex &lt; 150). A próxima linha contém um inteiro <strong><em>P </em></strong>(1 ≤ <em><strong>P </strong></em>≤ 100). Cada uma das próximas <em><strong>P</strong></em> linhas contém uma palavra (tamanho &lt; 50) formada por 'a's e 'b's que representa a seguinte questão: “Esta palavra é reconhecida pela regex dada?”.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada questão descrita anteriormente, responda “Y” (sem aspas) se a resposta é “sim” ou “N” (sem aspas) se a resposta é “não”. Imprima uma linha em branco após cada caso de teste, inclusive após o último.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                (a)<br />
+                                3<br />
+                                a<br />
+                                b<br />
+                                aa<br />
+                                (a.b)<br />
+                                3<br />
+                                a<br />
+                                ab<br />
+                                b<br />
+                                (a|b)<br />
+                                4<br />
+                                a<br />
+                                b<br />
+                                ab<br />
+                                ba<br />
+                                (a*)<br />
+                                3<br />
+                                a<br />
+                                aaaaaaaaaaa<br />
+                                aaaaabaaaaa<br />
+                                ((a*).(b*))<br />
+                                3<br />
+                                bbbaaa<br />
+                                aaabbb<br />
+                                bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Y<br />
+                                N<br />
+                                N<br />
+                                <br />
+                                N<br />
+                                Y<br />
+                                N<br />
+                                <br />
+                                Y<br />
+                                Y<br />
+                                N<br />
+                                N<br />
+                                <br />
+                                Y<br />
+                                Y<br />
+                                N<br />
+                                <br />
+                                N<br />
+                                Y<br />
+                                Y<br />
+                                &nbsp;</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </body>
+</html>

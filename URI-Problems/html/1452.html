@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1452 - Gloud Computing</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1452 - Gloud Computing" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1452</span>
+            <h1>Gloud Computing</h1>
+           <div>Por Lucas Hermann Negri, UDESC <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>A Gloud Computing está vindo se instalar para a região de Joinville. Eles são conhecidos por proverem aplicativos na internet, mais especificamente um modelo de negócios baseado em cloud computing - computação nas nuvens.</p>
+
+                <p>A fim de selecionar os novos funcionários da empresa, eles contactaram o comitê da maratona da UDESC, para que passassem um problema aos nossos maratonistas. Aquele que resolver, além do balão, pode preencher a ficha funcional com estrelinhas a mais.</p>
+
+                <p>Basicamente, a Gloud Computing tem aplicações espalhadas em seus servidores em diversos lugares do mundo. Estes servidores são especializados em uma lista de aplicativos a serem usados pelos usuários ali conectados na internet das nuvens.</p>
+
+                <p>Por exemplo, o servidor de Joinville pode disponibilizar a aplicação <b>A</b>, enquanto que o de Pasadena na Califórnia provê as aplicações <b>A</b>, <b>B</b> e <b>C</b> e o servidor de Pomerode provê a aplicação <b>C</b>.</p>
+
+                <p>Temos um conjunto de servidores a cada um com um conjunto de aplicações a serem disponibilizados a um conjunto de usuários. Cada usuário pode estar conectado a um ou mais servidores dependendo de sua demanda, como ilustrado na Figura 1.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/gloud_computing.png" style="width: 313px; height: 304px;" /></p>
+
+                <p class="center">Figura 1: 3 provedores de serviços, 2 usuários e 4 conexões.</p>
+
+                <p>Serão disponibilizados a você dados sobre estes dois conjuntos, servidores e demanda dos usuários, e você deverá dizer a quantidade total de conexões entre clietes e servidores. As conexões são feitas de forma a maximizar a redundância. Por exemplo, se um cliente utilizar as aplicações <b>B</b> e <b>C</b>, ele irá se conectar a todos os servidores que disponibilizarem ao menos a aplicação <b>B</b> e a todos os que disponibilizarem ao menos a <b>C</b>. Múltiplas conexões entre um mesmo par de cliente e servidor são contabilizadas como um só. Pode ser que um cliente requeira uma aplicação inexistente, assim como o caso de um servidor prover uma apliação não requisitada por nenhum cliente.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada é composta por vários casos de teste. Cada caso de teste é iniciado por dois inteiros, <b>N</b> e <b>M</b> (0 ≤ <b>N</b>, <b>M</b> ≤ 200), que correspondem ao número de servidores e ao número de clientes. Cada uma das próximas <b>N</b> linhas contém um valor <b>Qi</b> (0 ≤ <b>Qi</b> ≤ 100) correspondente ao número de aplicações fornecidas pelo i-ésimo servidor, seguido por <b>Qi</b> palavras (separadas por espaços) referentes aos nomes das aplicações fornecidas. Após esta descrição dos servidores, seguem <b>M</b> linhas, cada uma contendo um valor <b>Pj</b> (0 ≤ <b>Pj</b> ≤ 100) correspondente ao número de aplicações requisitadas pelo j-ésimo cliente, seguido por <b>Pj</b> palavras (separadas por espaços) referentes aos nomes das aplições requisitadas. <b>A</b> entrada temina quando <b>N</b> = <b>M</b> = 0. Todos os nomes de aplicativos tem tamanho entre 1 e 20 caracteres.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, o programa deve imprimir a soma total de conexões entre cliente e servidores em uma linha, desconsiderando múltiplas conexões entre um mesmo par de cliente e servidor.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>3 2<br/>
+                                1 a<br/>
+                                3 a b c<br/>
+                                1 c<br/>
+                                1 a<br/>
+                                2 b c<br/>
+                                5 2<br/>
+                                2 s1 s2<br/>
+                                2 s3 s4<br/>
+                                2 s5 s6<br/>
+                                2 s7 s8<br/>
+                                2 s1 s2<br/>
+                                3 s1 s2 s20<br/>
+                                3 s1 s2 s21<br/>
+                                0 0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>4<br/>
+                                4
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Maratona de Programacao UDESC 2013.
+            </p>
+        </div>
+
+    </body>
+</html>

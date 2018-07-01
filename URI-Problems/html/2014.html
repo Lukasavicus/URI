@@ -1,0 +1,169 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2014 - Grupos Sanguineos</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2014 - Grupos Sanguineos" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2014</span>
+				<h1>Grupos Sanguineos</h1>
+				<div>
+					<p>Por Guilherme Albuquerque Pinto <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Existem quatro grupos possíveis de sangue para os seres humanos: AB, A, B e O, o que significa que os glóbulos vermelhos têm antigenes de tipos, respectivamente, A e B, a apenas A, apenas B, e sem antigene em tudo. O nosso grupo de sangue é determinado por dois alelos no nosso DNA. Cada alelo é do tipo A, B ou O. A tabela a seguir lista os possíveis combinações de alelos que alguém pode ter para cada grupo sanguíneo:</p>
+
+					<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2014_a.png" style="height:50px; width:335px" /></p>
+
+					<p>Nós herdamos exatamente um alelo de cada um dos nossos dois pais. Assim, tendo em conta os grupos sanguíneos de ambos os pais, podemos dizer com certeza se algum grupo de sangue é possível, ou não, em sua prole. Por exemplo, se os grupos sanguíneos dos dois pais são AB e B, em seguida, as possíveis combinações de alelos para eles são, respectivamente, {AB} e {OB, BB}. Desde o fim dos alelos não importa, as possíveis combinações de alelos para a prole são {OA, AB, OB, BB}. Isso significa que os grupos sanguíneos AB, A e B são possíveis em sua prole, mas o grupo sanguíneo O não é. Muito bom de fato! Mas e se a vida na Terra evoluiu de modo que uma pessoa tinha três pais, três alelos, e três tipos de antígenos diferentes? As combinações de alelos ficaria assim:</p>
+
+					<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2014_b.png" style="height:71px; width:720px" /></p>
+
+					<p>Se os grupos sanguíneos dos três pais são A, BC e O, em seguida, todos os grupos sanguíneos são possíveis em sua prole, exceto os grupos BC e ABC. O universo é vasto! Pode haver, lá fora, no espaço, alguma forma de vida cujos indivíduos têm pais N, N alelos, e N diferentes tipos de antígenos. Tendo em conta os grupos sanguíneos para os pais N, e uma lista de grupos sanguíneos Q para testar, o programa tem de determinar quais os que são possíveis, e quais não são, na descendência dos pais dadas.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>N</strong> e <strong>Q</strong>, representando respectivamente o número de pais (e alelos e tipos de antígenos) e o número de consultas (1 ≤ <strong>N</strong> ≤ 100 e 1 ≤ <strong>Q</strong> ≤ 40). Cada uma das <strong>N</strong> linhas seguintes descreve o grupo de sangue de um dos pais. Depois disso, cada uma das seguintes linhas <strong>Q</strong> descreve um grupo de sangue para testar. Tipos de antigenes são identificados com números inteiros distintos de 1 a <strong>N</strong>, não letras. Cada linha que descreve um grupo sanguíneo contém um número inteiro <strong>B</strong> que indica o número de tipos de antigenes do grupo sanguíneo (0 ≤ <strong>B</strong> ≤ <strong>N</strong>), seguido por <strong>B</strong> inteiros diferentes <strong>C<sub>1</sub></strong>, <strong>C<sub>2</sub></strong>, ..., <strong>C<sub>B</sub></strong> representando os tipos de antigénios presentes no sangue grupo (1 ≤ <strong>C<sub>i</sub></strong> ≤ <strong>N</strong> para <strong>i</strong> = 1, 2, ..., <strong>B</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada uma das Q consultas, mostre uma linha com a letra maiúscula "Y" se o grupo sanguíneo correspondente é possível na descendência dos pais dadas; caso contrário saída a letra maiúscula "N". Escreva os resultados na mesma ordem que as consultas aparecem na entrada.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 1</p>
+
+<p>2 2 1</p>
+
+<p>1 2</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>N</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 4</p>
+
+<p>1 1</p>
+
+<p>2 2 3</p>
+
+<p>0</p>
+
+<p>1 3</p>
+
+<p>3 2 1 3</p>
+
+<p>2 1 2</p>
+
+<p>2 3 2</p>
+
+							</td>
+							<td>
+								<p>Y</p>
+
+<p>N</p>
+
+<p>Y</p>
+
+<p>N</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 3</p>
+
+<p>4 2 1 3 4</p>
+
+<p>4 2 1 3 4</p>
+
+<p>1 1</p>
+
+<p>1 2</p>
+
+<p>1 3</p>
+
+<p>2 2 1</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>Y</p>
+
+<p>Y</p>
+
+<p>N</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC Latin American Regional - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,132 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2348 - Dating On-Line</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problem 2348 - Dating On-Line" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2348</span>
+				<h1>Dating On-Line</h1>
+				<div>
+					<p>By Rafael Garcia Gomes <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/co.gif' alt='CO' /> Colombia</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Alex registered in an online dating system to search for the perfect partner. The system requires each of its members to fill a form specifying how much they enjoy <strong>N</strong> different activities, grading them on a scale from 0 to 100. To present this information to potential dates, the system creates a profile featuring a special kind of polygon called “radial diagram”.</p>
+
+<p>A radial diagram for <strong>N</strong> activities is drawn by marking <strong>N</strong> points on the plane. Starting from the vertical direction, the <strong>i</strong>-th point in clockwise order represents the <strong>i</strong>-th activity specified by the member, and is a distance <strong>S<sub>i</sub></strong> away from the center of the diagram, where <strong>S<sub>i</sub></strong> is the score given by the member for the corresponding activity. The angle sustained at the center of the diagram from each pair of consecutive points is always the same, and the polygon is formed by drawing the segments whose endpoints are consecutive points. Note that for the purposes of the radial diagram, the first and last points are considered to be consecutive.</p>
+
+<p>For example, if <strong>N</strong> = 6 Alex might specify the following activities: singing with score <strong>S<sub>1</sub></strong> = 10, running with score <strong>S<sub>2</sub></strong> = 60, listening to music with score <strong>S<sub>3</sub></strong> = 70, traveling with score <strong>S<sub>4</sub></strong> = 70, eating out with score <strong>S<sub>5</sub></strong> = 80, and visiting museums with score <strong>S<sub>6</sub></strong> = 80. Then the corresponding radial diagram would be as shown in the figure below.</p>
+
+<p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_211_D_01.png" alt=""></p>
+
+<p>The area of a radial diagram depends on the order in which the different activities are specified, and Alex suspects that a profile depicting a radial diagram with greater area might be more successful. For example, the radial diagram in the following figure features the same activities and scores as the example above, but has a greater area.</p>
+
+<p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_211_D_02.png" alt=""></p>
+
+<p>Alex has asked you to write a program to find the maximum possible area of a radial diagram given a list of activities graded with scores between 0 and 100.</p>
+				</div>
+
+				<h2>Input</h2>
+
+				<div class="input">
+					<p>The first line contains an integer <strong>N</strong> representing the number of activities (3 ≤ <strong>N</strong> ≤ 10<sup>5</sup>). The second line contains <strong>N</strong> integers <strong>S<sub>1</sub></strong>, <strong>S<sub>2</sub></strong>, . . . , <strong>S<sub>N</sub></strong> representing the scores given by Alex to each activity (0 ≤ <strong>S<sub>i</sub></strong> ≤ 100 for <strong>i</strong> = 1, 2, . . . , <strong>N</strong>).</p>
+				</div>
+
+				<h2>Output</h2>
+
+				<div class="output">
+					<p>Output a line with a rational number representing the maximum possible area of a radial diagram featuring the scores given in the input. The result must be output as a rational number with exactly 3 digits after the decimal point, rounded if necessary.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Input Samples</td>
+							<td>Output Samples</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6<br />
+10 60 70 70 80 80</p>
+
+							</td>
+							<td>
+								<p>10002.593</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>3<br />
+100 100 100</p>
+
+                    </td>
+                    <td>
+                        <p>12990.381</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>7<br />
+16 37 50 35 12 39 24</p>
+
+                    </td>
+                    <td>
+                        <p>2772.765</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					ACM/ICPC South America Contest 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

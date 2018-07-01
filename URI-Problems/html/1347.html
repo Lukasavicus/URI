@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1347 - Mina Kriptonita</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1347 - Mina Kriptonita" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1347</span>
+            <h1>Mina Kriptonita</h1>
+            <div><p>By Rodrigo Schmidt <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt="" /> Brasil</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    No ano de 2222, um terrível desastre aconteceu na mina de kryptonita em Marte: um marsquake sacudiu parte do planeta. Diferentemente de terremotos na Terra, marsquakes não são incomuns em Marte. Este, no entanto, gerou uma mina que começou a afundar-se lentamente para o solo. A mina tem uma forma externa retangular, e seu interior é como um labirinto, com elevações, paredes retas e, mais o importante, teletransportes. Teletransporte, como você sabe, pode transportar pessoas instantaneamente de um lugar para outro. O teletransporte da mina são dos modelos antigos, usando a tecnologia antiga, e só pode teleportar pessoas se houver uma clara visão a partir de uma outra cabine de teletransporte (isto é, se não existem obstáculos ou paredes entre as cabines). Você pode ver o mapa da mina na figura abaixo.</p>
+
+                <p class="center">​<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Kryptonite%20Mine_PT.png" style="width: 491px; height: 173px;" />​</p>
+
+                <p>
+                    Você está preso sozinho dentro da mina. Felizmente, você tem um mapa de toda a minha, conhece a sua posição atual, a posição das paredes, os locais de saída e todas as cabinas de teletransporte. Infelizmente, o marsquake afetou o sistema de energia, e você sabe que o teletransporte só pode ser usado por um período e número limitado de vezes.</p>
+
+                <p>
+                    Você quer sair andando o mínimo possível, já que torceu o tornozelo durante o marsquake. Você deve encontrar o caminho do seu local atual para a saída que exige a mínima quantidade de caminhada.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada é constituída por vários casos de teste. A primeira linha de um caso de teste contém três inteiros <strong>N</strong>, <strong>M</strong> e <strong>L</strong>, que indicam, respectivamente, o número de vezes que os teletransportes podem ser usados, o número de paredes da mina e o número de cabines do teletransporte (0 ≤ <strong>N</strong>, <strong>M</strong>, <strong>L</strong> ≤ 50). Cada uma das linhas seguintes contém <strong>M</strong> quatro inteiros <strong>X</strong><sub>1</sub>, <strong>Y</strong><sub>1</sub>, <strong>X</strong><sub>2</sub>&nbsp;e <strong>Y</strong><sub>2</sub>, que representam as coordenadas dos pontos de extremidade de uma parede. Você pode ignorar a espessura das paredes e assumir que eles não se cruzam entre si (-20.000 ≤ <strong>X</strong><sub>1</sub>&nbsp;&lt;<strong> X</strong><sub>2</sub>&nbsp;≤ 20.000 e -20000 ≤ <strong>Y</strong><sub>1</sub>&nbsp;≤ <strong>Y</strong><sub>2</sub>&nbsp;20.000). As próximas <strong>L</strong> linhas contêm a localização dos estandes de teletransporte, dada por dois inteiros <strong>X</strong><strong>p</strong>&nbsp;e <strong>Y</strong><sub><strong>p</strong></sub>. A última linha de cada caso de teste contém quatro inteiros <strong>X</strong><sub><strong>b</strong></sub>, <strong>Y</strong><sub><strong>b</strong></sub>,<strong> X</strong><sub><strong>e</strong></sub>&nbsp;e <strong>Y</strong><sub><strong>e</strong></sub>&nbsp;onde (<strong>X</strong><sub><strong>b</strong></sub>, <strong>Y</strong><sub><strong>b</strong></sub>) são as coordenadas da sua localização e (<strong>X</strong><sub><strong>e</strong></sub>, <strong>Y</strong><sub><strong>e</strong></sub>) são as coordenadas para sair da mina. O fim da entrada é indicado por <strong>M</strong> = <strong>N</strong> = <strong>L</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste da entrada, seu programa deverá imprimir uma única linha, contendo um número inteiro representando a distância que você precisa para andar para sair da mina. Claro, você não deve considerar as distâncias que você se teletransportou. A distância deve ser arredondado para o número inteiro mais próximo.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                1 1 3<br />
+                                5 -4 5 4<br />
+                                1 0<br />
+                                5 5<br />
+                                9 0<br />
+                                0 0 10 0<br />
+                                1 1 3<br />
+                                5 -4 5 4<br />
+                                0 0<br />
+                                5 5<br />
+                                10 0<br />
+                                0 0 10 0<br />
+                                0 0 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                8<br />
+                                7</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2003.</p>
+        </div>
+
+    </body>
+</html>

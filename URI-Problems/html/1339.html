@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1339 - O Cubo Mágico do Avô</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1339 - O Cubo Mágico do Avô" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1339</span>
+            <h1>O Cubo Mágico do Avô</h1>
+            <div><p>Por Paulo Oliva <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    O famoso brinquedo/passatempo, chamado Cubo&nbsp;Mágico, consiste em um cubo como mostrado na Figura 1a, onde letras representam cores (e.g. B para azul, R para vermelho). O objetivo do jogo é rotacionar as faces do cubo de modo que no final cada face do cubo contenha uma cor diferente, como mostrado na Figura 1b. Note que,</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Grandpa%E2%80%99s%20Rubik%20Cube_1.png" style="width: 367px; height: 169px;" /></p>
+
+                <p class="center">&nbsp; (a) Embaralhado &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; (b) Posição vencedora</p>
+
+                <p class="center">Figura&nbsp;1: Cubo Mágico</p>
+
+                <p>
+                    quando uma face é rotacionada, as configurações das cores em todas as faces adjacentes trocam. Figura 2a ilustra a rotação de uma das faces. Dada uma configuração embaralhada, chegar até a posição final pode ser bem desafiador, como você já deve saber.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Grandpa%E2%80%99s%20Rubik%20Cube_2.png" style="width: 564px; height: 183px;" /></p>
+
+                <p class="center">Figura 2: Exemplo de rotação</p>
+
+                <p>
+                    Mas seu avô tem muitos anos de experiência, e diz que, dada qualquer configuração do Cubo&nbsp;Mágico, ele consegue apresentar uma sequência de rotações que levam a uma configuração vencedora.</p>
+
+                <p>
+                    Para que todas as faces do cubo estejam visíveis, nós iremos representar o cubo como mostrado na Figura 3a. As seis cores são Amarelo, Vermelho, Azul, Verde, Branco e Magenta, representadas pelas respectivas letras, Y, R, B, G, W e M.</p>
+
+                <p>
+                    Você receberá uma configuração inicial e uma lista de rotações. Uma rotação será representada por um valor inteiro, indicando a face que será rotacionada e a direção da rotação (um valor positivo significa rotação no sentido horário, um valor negativo significa rotação no sentido anti-horário). As faces do cubo são numeradas como mostrado na Figura 3b. Você deverá escrever um programa que checa se a lista de rotações irá levar a uma configuração vencedora.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Grandpa%E2%80%99s%20Rubik%20Cube_3.png" style="width: 525px; height: 178px;" /></p>
+
+                <p class="center">&nbsp; &nbsp; &nbsp; &nbsp; (a) Cores &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; (b) Identificadores de face para rotação</p>
+
+                <p class="center">Figura 3: Representação do cubo</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém diversos casos de teste. A primeira linha da entrada é um inteiro que indica o número de testes. Cada descrição do teste contém dez linhas de entrada. As primeiras nove linhas do teste irão descrever a configuração inicial, no formato mostrado na Figura 3a. A próxima linha irá conter uma lista de rotações, terminando com o valor 0.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste seu programa deverá imprimir uma linha. Se seu avô estiver correto, imprima “Yes grandpa!”, caso contrário imprima “No, you are wrong!”.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G Y Y<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G Y Y<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G Y Y<br />
+                                W W W Y R R M M M G G B<br />
+                                W W W Y R R M M M G G B<br />
+                                W W W Y R R M M M G G B<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R B B<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R B B<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R B B<br />
+                                -1 0<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G Y Y<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G Y Y<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G Y Y<br />
+                                W W W Y R R M M M G G B<br />
+                                W M W Y R R M W M G G B<br />
+                                W W W Y R R M M M G G B<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R B B<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R B B<br />
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R B B<br/>
+                                -1 0<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;M W M<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W W G<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;W W Y<br/>
+                                G Y Y M M B M B G W R B<br/>
+                                B Y Y M M B M G G W R R<br/>
+                                Y M G W B B R R G R R W<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R Y Y<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;G B Y<br/>
+                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;R G B<br/>
+                                +4 +6 -2 +3 -4 +2 -3 -6 0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Yes, grandpa!<br/>
+                                No, you are wrong!<br/>
+                                Yes, grandpa!</p>                            
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2002.
+            </p>
+        </div>
+
+    </body>
+</html>

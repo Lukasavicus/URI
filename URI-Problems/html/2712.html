@@ -1,0 +1,131 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2712 - Rodízio Veicular</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 1 - Rodízio Veicular" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2712</span>
+			<h1>Rodízio Veicular</h1>
+			<div>
+				<p>Por , Silva A M <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>O&nbsp;rodízio municipal de veículos de São Paulo&nbsp;é uma restrição à circulação de veículos automotores na cidade. Implantado desde 1996 com o propósito de melhorar as condições ambientais reduzindo a carga de poluentes na atmosfera, se consolidou como um instrumento para reduzir&nbsp;congestionamentos&nbsp;nas principais vias da cidade, nos&nbsp;horários de maior movimento.&nbsp;Nas vias delimitadoras não é permitido o tráfego de caminhões e automóveis que estejam dentro da&nbsp;restrição. Há uma escala que determina em quais dias da semana quais veículos não podem circular. Essa escala é regida pelo último&nbsp;dígito da placa do veículo, sendo:</p>
+
+<ul>
+	<li>Segunda-feira, digito final da placa 1 e 2</li>
+	<li>Terça-feira, digito final da placa 3 e 4</li>
+	<li>Quarta-feira, digito final da placa 5 e 6</li>
+	<li>Quinta-feira, digito final da placa 7 e 8</li>
+	<li>Sexta-feira, digito final da placa 9 e 0</li>
+</ul>
+
+<p>Os motoristas que são flagrados violando a restrição de circulação são autuados com&nbsp;multa&nbsp;e quatro pontos na&nbsp;carteira de habilitação.</p>
+
+
+
+
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha de entrada representa a quantidade de testes <strong>N</strong>&nbsp;(0 &lt;= <strong>N</strong>&nbsp;&lt; 1000) que deverão ser considerados. As demais entradas são cadeia de caracteres com tamanho máximo <strong>S</strong> (1 &lt;= <strong>S</strong> &lt;= 100) que representam cada placa que deverá ser analisada, de tal forma que, cada placa fique em uma única linha de entrada. O formato esperado para uma placa veicular válida em São Paulo é "<strong>AAA-9999</strong>", tal que A é um caracter válido em [A-Z], e 9 um dígito numérico válido em [0-9].</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>O conjunto de valores válidos como saída são: MONDAY, TUESDAY, WEDNESDAY, THURSDAY e&nbsp;FRIDAY, de acordo com a tabela de restrições predefinida, e FAILURE caso a placa não apresente o padrão definido.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3<br />
+ABC-1234<br />
+XYZ-1010<br />
+AAA3333</p>
+
+
+						</td>
+						<td>
+							<p>TUESDAY<br />
+FRIDAY<br />
+FAILURE</p>
+
+
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>4<br />
+abc-1234<br />
+a-1010<br />
+ABCD-1234<br />
+AIQ-2001</p>
+
+
+
+						</td>
+						<td>
+							<p>FAILURE<br />
+FAILURE<br />
+FAILURE<br />
+MONDAY</p>
+
+
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				*Amsilva copyright (2017), for use (authorized) in the URI OJ. All rights reserved.
+			</p>
+		</div>
+
+	</body>
+</html>

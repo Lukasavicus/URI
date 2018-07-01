@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1305 - Arredondamento por Valor de Corte</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1305 - Arredondamento por Valor de Corte" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1305</span>
+            <h1>Arredondamento por Valor de Corte</h1>
+            <div><p>
+                    Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif" style="width: 16px; height: 11px;" /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Frequentemente, ao arredondar um número real para um inteiro nós o fazemos para cima se a parte fracionária é maior ou igual a 0,5 e para baixo se a parte fracionária é menor do que 0,5. Neste problema você recebe uma string <strong>num</strong> contendo um número real e uma string <strong>cutoff</strong> contendo um valor de corte. A string <strong>cutoff</strong> será formatada exatamente como <span class="code">"0.####"</span>, onde cada&nbsp;<span class="code">'#'</span>&nbsp;representa um dígito ('0'-'9'). Pelo menos um dos dígitos da parte fracionária de <strong>cutoff</strong> será diferente de zero. Sua tarefa é arredondar <strong>num</strong> para cima se a parte fracionária é maior do que o valor de corte e para baixo caso contrário, devolvendo o resultado como um inteiro. Para evitar problemas com imprecisão de representação em ponto flutuante a parte fracionária de <strong>num</strong> não será exatamente igual a <strong>cutoff</strong>. Assim, o método tradicional de arredondamento descrito na frase inicial seria representado por cutoff = "0.5000" </p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contem vários casos de teste. Cada caso de teste é composto por duas linhas. A&nbsp;string <strong>num</strong>&nbsp;está na primeira linha e a string <strong>cutoff</strong>&nbsp;fica na segunda linha. A string <strong>num</strong> é formada por 1 ou mais dígitos ('0' a '9') com um ponto decimal opcional ('.'). A string&nbsp;<strong>num</strong> tem de 1 a 10 caracteres. A string <strong>cutoff</strong> é formatada exatamente como "0.####", onde cada '#' representa um dígito&nbsp;('0'&nbsp;a&nbsp;'9'). Além disso, a parte fracionária de <strong>num</strong> NÃO será exatamente igual a <strong>cutoff</strong>.<br /><br />
+
+                    O final da entrada é determinado por EOF.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste da entrada seu programa deve gerar uma linha de saída somente com a parte inteira de <strong>num</strong> arredondada de acordo com o valor de corte em <strong>cutoff</strong>.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                003.656930<br />
+                                    0.5000<br />
+                                    .001<br />
+                                    0.0001<br />
+                                    1.99999999<br />
+                                    0.9999<br />
+                                    135<br />
+                                    0.6531<br />
+                                    135.<br />
+                                    0.6531<br />
+                                    1356.13671<br />
+                                    0.1367<br />
+                                    0.00010001<br />
+                                    0.0001</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                4<br />
+                                    1<br />
+                                    2<br />
+                                    135<br />
+                                    135<br />
+                                    1357<br />
+                                    1</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                * Este problema é de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por M. C. Pinto para utilização (autorizada) no URI OJ.<br />
+                * A reprodução não autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. é estritamente proibida.</p>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1420 - Contando os Segundos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1420 - Contando os Segundos" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1420</span>
+            <h1>Contando os Segundos</h1>
+            <div>Maratona de Programação IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt="" /> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                Através da pesquisa e do desenvolvimento espetacular de técnicas revolucionárias de computação, estatística e intuição, um grupo de mulheres da Universidade de Torrinha desenvolveram um software capaz de prever o futuro. Na verdade, o programa não consegue descrever exatamente o que vai acontecer, mas através da análise da resposta a uma série de perguntas sobre a pessoa, ele consegue identificar quando acontecerão os próximos cinco eventos mais importantes na vida dela. O programa apresenta dois pequenos problemas. O primeiro é que a pessoa sobre a qual se quer adivinhar o futuro precisa passar centenas de horas ininterruptas na frente do computador, respondendo às perguntas feitas pelo software, para que ele consiga fazer a previsão. O segundo é que as previsões são feitas em número de segundos, a contar do término do processamento da precisão. As moças de Torrinha estão empenhadas na solução do primeiro problema, e pediram aos concorrentes da Maratona de Programação uma ajuda para resolver o segundo.
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada consiste de várias previsões referentes a diferentes pessoas. A primeira linha de cada previsão contém o momento exato em que os 5 números (que correspondem aos 5 momentos importantes) foram impressos pelo programa. Este momento segue o formato:</p>
+
+                <p style="text-align:center">&lt;dia da semana&gt;,&lt;dia&gt;&lt;mês&gt;&lt;ano&gt;:&lt;hora&gt;:&lt;minuto&gt;:&lt;segundo&gt;</p>
+
+                <p>onde &lt;dia da semana&gt; é a abreviação do dia da semana correspondente, composto pela sequencia de 3 caracteres maiúsculos correspondentes aos dias da semana de domingo a sábado, respectivamente, tais sejam: DOM, SEG, TER, QUA, QUI, SEX ou SAB. &lt;dia&gt; é o dia do mês, escrito com 2 dígitos, zero à esquerda se for o caso. &lt;mês&gt; é a abreviação do mês correspondente, composto pela sequencia de 3 caracteres maiúsculos correspondentes aos meses de Janeiro a Dezembro, respectivamente, tais sejam: JAN, FEV, MAR, ABR, MAI, JUN, JUL, AGO, SET, OUT, NOV ou DEZ. &lt;ano&gt; é o ano, escrito com 4 dígitos. &lt;hora&gt;, &lt;minuto&gt; e &lt;segundo&gt; escrito com 2 dígitos, zero à esquerda se for o caso.</p>
+
+                <p>Nas linhas seguintes vem os 5 momentos previstos, um por linha, 5 linhas por previsão. Cada momento consiste no número <strong>d</strong> de segundos (0 &lt; <strong>d</strong> &lt; 2.000.000.000) a contar do momento do processamento. Após o último caso de teste, uma linha iniciada por 'FIM' indica o final do arquivo de entrada.</p>
+
+                <p>Você pode assumir que o programa desenvolvido em 01 de Março de 2002, de modo que nenhuma data de previsão será anterior a esta. Outro fato importante é que as moças de Torrinha só vão usar o programa até as 23:59:59 de 31/12/2099 quando uma delas acha que vai morrer, pois, isso foi previsto por outro programa elaborado pelo departamento de intuição feminina da Unitor (Universidade de Torrinha).</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Seu programa deverá identificar na saída cada previsão por um número sequencial na primeira linha, e nas cinco seguintes deverá escrever os cinco horários completos referentes à previsão efetuada, no mesmo formato utilizado na entrada para o horário de processamento da previsão. Você deve também pular uma linha ao final de cada previsão.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>DOM,18AGO2002:12:00:00<br />
+                                1<br />
+                                2<br />
+                                60<br />
+                                3600<br />
+                                86400<br />
+                                QUI,28FEV2002:23:59:59<br />
+                                1<br />
+                                2<br />
+                                3<br />
+                                4<br />
+                                5<br />
+                                FIM</p>
+
+                        </td>
+                        <td>
+                            <p>Previsao #1<br />
+                                DOM,18AGO2002:12:00:01<br />
+                                DOM,18AGO2002:12:00:02<br />
+                                DOM,18AGO2002:12:01:00<br />
+                                DOM,18AGO2002:13:00:00<br />
+                                SEG,19AGO2002:12:00:00<br />
+                                Previsao #2<br />
+                                SEX,01MAR2002:00:00:00<br />
+                                SEX,01MAR2002:00:00:01<br />
+                                SEX,01MAR2002:00:00:02<br />
+                                SEX,01MAR2002:00:00:03<br />
+                                SEX,01MAR2002:00:00:04</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        <p class="footer">
+            VI Maratona de Programação IME-USP 2002.
+        </p>
+        </div>
+
+    </body>
+</html>

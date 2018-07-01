@@ -1,0 +1,89 @@
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1977 - Não Posso me Atrasar</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1977 - Não Posso me Atrasar" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1977</span>
+				<h1>Não Posso me Atrasar</h1>
+				<div>
+					<p>Por Gustavo Chermout, UNIFESO <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Anne é uma aluna muito aplicada do curso de ciência da computação. Ela não gosta de chegar atrasada de forma alguma, sempre tenta chegar no máximo 18:00 em ponto que é o horário de início das aulas. Porém o trânsito na cidade de Teresópolis entre 16:30 e 19:00 é muito lento, então um trajeto que normalmente levaria 10 minutos, leva um tempo bem maior. Anne sai do seu trabalho às 17:00 e leva aproximadamente <strong>X</strong> minutos para chegar ao ponto, porém os ônibus em direção à faculdade passam exatamente as 17:30, nesse horário passam diversos ônibus com trajetos diferentes que levarão à faculdade, caso Anne os perca, terá de esperar até as 17:50 até passar mais ônibus. Do ponto de ônibus que ela geralmente espera, até a faculdade, levará facilmente mais de 30 minutos se não escolher o ônibus que tenha o melhor trajeto. Anne precisa saber que horas ela chegará a faculdade escolhendo o melhor trajeto e se chegará atrasada.  <br />
+					 <br />
+					Sua tarefa é, a partir de <strong>N</strong> rotas possíveis, dizer que horas Anne chegará na faculdade indo pelo melhor trajeto, sabendo que ela deve sair da varzea e chegar ao alto, com pesos <strong>T</strong> de tempo entre um local e outro, levando em consideração o trânsito (o <strong>T</strong> da varzea ao alto não é o mesmo que do alto a varzea, pois o transito no sentido contrário pode ser diferente) e informar se houve ou não atraso. Assuma que Anne sempre chegará no ponto antes de 17:50 e que sempre terá um caminho entre a Várzea e o Alto.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha contém três inteiros separados por um espaço, <strong>X</strong> (1 ≤ <strong>X</strong> ≤ 50), <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 90) e <strong>V</strong> (1 ≤ <strong>V</strong> ≤ 10), indicando o tempo que Anne levá para ir do trabalho ao ponto, a quantidade possíveis rotas e o número de pontos que ela poderá passar. Seguem-se, então, <strong>N</strong> linhas, cada uma com duas strings não-vazias e únicas contendo os locais das rotas que Anne pode passar e um inteiro separados por espaço, <strong>O</strong>, <strong>D</strong> e <strong>T</strong> (1 ≤ <strong>T</strong> ≤ 60), indicando que existe uma rota para ir do local <strong>O</strong> para o local <strong>D</strong>, e que tal trajeto levará <strong>T</strong> minutos. A entrada termina quando <strong>X</strong> = <strong>N</strong> = <strong>V</strong> = 0, e não deve ser processada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deverá produzir duas linhas na saída. Uma contendo o horário de chegada a faculdade e outra contendo "Ira se atrasar" ou "Nao ira se atrasar".</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>15 4 4<br />
+								varzea tijuca 5<br />
+								araras alto 5<br />
+								varzea alto 25<br />
+								tijuca araras 10<br />
+								0 0 0</p>
+
+							</td>
+							<td>
+								<p>17:50<br />
+								Nao ira se atrasar</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Contest Balões na Serra - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

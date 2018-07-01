@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1058 - Zonas de Ataque Independentes</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1058 - Zonas de Ataque Independentes " />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1058</span>
+            <h1>Zonas de Ataque Independentes</h1>
+            <div><p>
+                    Por Sohel Hafiz <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif" style="width: 16px; height: 11px;" /> Bangladesh*</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Uma técnica comum usada por exércitos invasores é cercar uma cidade em vez de diretamente entrar nela. Os exércitos divididem-se em pelotões com bases em uma forma circular ao redor da cidade. Para assumir o controle interno da cidade, pelotões são agrupados em três para cobrir regiões triangulares. Isso é uma política do general para garantir que não haja duas regiões triangulares sobrepostos. Infelizmente, o processo é um pouco mais complicado porque existem dois tipos de exércitos na força invasora. Os dois exércitos diferentes são conhecidos como Exército Vermelho eo Exército Negro. Cada pelotão é formado por um tipo de exército. Enquanto o Exército Preto tem clara intenção de servir ao General, os vermelhos podem trair na primeira oportunidade. Então se decidiu que cada grupo triangular será composto de no máximo um pelotão do Exército Vermelho para que os vermelhos não dominam em qualquer tarefa que lhes for atribuída.</p>
+                    <p>
+                    Supondo 6 pelotões (4 pretos e 2 vermelhos) como mostrado na figura abaixo:<br /><br />
+                <p class="center">
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1058_a.png" style="width: 150px; height: 138px;" /></p>
+                <br />    
+                Uma vez que são 6 pelotões, nós podemos formar 2 grupos ( 6 / 3 = 2 ). Há duas possibilidades de arranjo para esta configuração.<br />
+                <p class="center">
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1058_b_pt.png" style="width: 368px; height: 175x;" />
+                </p>
+                <br />
+                <strong>Problema: </strong>será dado a você um número de pelotões e suas cores. 
+                Você deve encontrar o número de possíveis configurações tal que cada pelotão faça parte de exatamente um grupo e respeite as restrições passadas acima.
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A primeira linha de entrada é um inteiro <strong>T</strong> <strong>(T</strong>&lt;100<strong>)</strong> que indica o número de casos de teste. Cada caso consiste de duas linhas. A primeira linha é um inteiro <strong>P</strong> <strong>(</strong> 2 &lt;<strong> P</strong> &lt; 40 e <strong>P</strong> é um múltiplo de <strong>3</strong>). <strong>P</strong> representa o número de batalhões. As próximas linhas consistem de uma string de tamanho <strong>P</strong>. Cada caracter da string é&nbsp; ‘R’ (Red: vermelho) ou ‘B’ (Black: preto). A string dá a posição do batalhão no sentido horário. A posição inicial é arbitrariamente escolhida. Portanto, o exemplo acima pode ser representado por qualquer uma das seguintes sequências: ‘RBBBRB’, ‘BBBRBR’, ‘BBRBRB’, ‘BRBRBB’, ‘RBRBBB’ ou ‘BRBBBR’.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso, imprima o número do caso de teste seguido do número de configurações válidas.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                6<br />
+                                RBBBRB<br />
+                                6<br />
+                                BRBRBB<br />
+                                9<br />
+                                BBBBBBBBB</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Case 1: 2<br />
+                                Case 2: 2<br />
+                                Case 3: 12</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Agradecimento especial: Jane Alam Jan</p>
+
+        </div>
+
+    </body>
+</html>

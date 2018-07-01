@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2082 - Viagens no Tempo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2082 - Viagens no Tempo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2082</span>
+                <h1>Viagens no Tempo</h1>
+                <div>
+                    <p>Por XII Maratona de Programação IME-USP, 2008 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Albert Einstein nasceu na Alemanha, mas foi na Suíça, trabalhando como funcionário público, que escreveu em 1905 os trabalhos que revolucionaram a Física moderna e o tornaram famoso. Em 1921 ganhou o prêmio Nobel de Física pela descoberta da lei do efeito fotoelétrico. Muitos acham seus trabalhos sobre a Teoria da Relatividade os mais importantes de sua carreira, entretanto não foram os que renderam o valioso prêmio.</p>
+
+                    <p>Einstein gostava muito de fazer “experimentos mentais” para avaliar suas teorias. Um desses experimentos é muito famoso e descreve um elevador caindo com um relógio dentro. A ideia de viagens no tempo acabaram surgindo como possíveis, desde que se descobrisse como construir máquinas que pudessem viajar em velocidades maiores do que a velocidade da luz. Certamente, num futuro não muito distante, isso será possível e poderemos viajar livremente entre as eras e ver eventos como o descobrimento do Brasil em 1500, a chegada da Família Real em 1808 ou o Corinthians campeão da Libertadores em 2962 ao vivo.</p>
+
+                    <p>Com as constantes viagens no tempo, será importante regular o serviço. As máquinas do tempo estarão espalhadas por toda a História e os viajantes terão de pegá-las para viajar para o presente ou para o futuro. Devido a restrições técnicas destas máquinas, não será possível viajar para qualquer instante do tempo diretamente, mas apenas para outros momentos históricos, de onde uma nova máquina poderá ser usada para seguir viagem. No entanto, estando em um momento histórico, você consegue ir para qualquer outro momento viajando por uma ou mais máquinas.</p>
+
+                    <p>Juntamente com os viajantes do tempo, também surgirão os piratas da História, que tentarão roubar tesouros, inverter acontecimentos e mudar a história com os objetivos mais maldosos. Isso acarretará na criação da Polícia do Tempo. No ano de 2850 (antes do Corinthians ganhar sua primeira Libertadores) a Polícia do Tempo resolve isolar acontecimentos históricos, desabilitando ligações entre algumas máquinas. Cada ligação tem um custo associado para ser desabilitado, e sua tarefa é encontrar, dado um conjunto de momentos históricos, um conjunto de ligações – de custo mínimo – que ao serem desconectadas isolam os acontecimentos, ou seja, estando em uma máquina não será possível viajar para algumas das outras máquinas.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+                    <p>A primeira linha de cada instância contém dois inteiros <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong> ≤ 100 e 1 ≤ <strong>M</strong> ≤ <strong>N</strong>*(<strong>N</strong>-1)/2) indicando o número de máquinas e o número de ligações, respectivamente. Cada uma das <strong>M</strong> linhas seguinte possui três inteiros <strong>u</strong>, <strong>v</strong> e <strong>c</strong> (1 ≤ <strong>u, v</strong> ≤ <strong>N</strong>, 1 ≤ <strong>c</strong> ≤ 100) que representam a existência de uma ligação entre a máquina <strong>u</strong> e <strong>v</strong> com custo <strong>c</strong>. Tal ligação pode ser usada para viajar da máquina <strong>u</strong> para máquina <strong>v</strong> e também da máquina <strong>v</strong> para máquina <strong>u</strong>.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância imprima uma linha contendo a soma dos custos das ligações que devem ser removidas.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3<br />
+5 6<br />
+1 2 1<br />
+1 3 1<br />
+2 3 1<br />
+3 4 10<br />
+3 5 1<br />
+4 5 1<br />
+4 4<br />
+1 2 10<br />
+2 3 5<br />
+3 4 20<br />
+4 1 50<br />
+3 2<br />
+1 2 1<br />
+2 3 2</p>
+
+                            </td>
+                            <td>
+                                <p>2<br />
+15<br />
+1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XII Maratona de Programação IME-USP, 2008
+                </p>
+            </div>
+
+        </body>
+    </html>

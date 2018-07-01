@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1056 - Fatores e Múltiplos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1056 - Fatores e Múltiplos" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1056</span>
+            <h1>Fatores e Múltiplos</h1>
+            <div><p>
+                    Por Sohel Hafiz <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif" style="width: 16px; height: 11px;" /> Bangladesh*</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1056.jpg" style="width: 236px; height: 264px; float: right;" /></p>
+                <p>
+                    Serão fornecidos a você, dois conjuntos de valores de entrada. Vamos chamá-los de conjuntos <strong>A</strong> e <strong>B</strong>. O conjunto <strong>A</strong> contém <strong>n</strong> elementos e o conjunto <strong>B</strong> contém <strong>m</strong> elementos. Você deverá remover <strong>k<sub>1</sub></strong> elementos do conjunto <strong>A</strong> e <strong>k<sub>2</sub></strong> elementos do conjunto <strong>B</strong> de forma que nenhum dos valores inteiros que restarem no conjunto <strong>B</strong> seja múltiplo de algum inteiro do conjunto <strong>A</strong>. <strong>k<sub>1</sub></strong> deverá estar no intervalo <strong>[0,n]</strong> e <strong>k<sub>2</sub></strong> no intervalo <strong>[0,m]</strong>.</p>
+                    <p>
+                    Você deverá encontrar o valor de <strong>(k<sub>1</sub>+k<sub>2</sub>)</strong> tal que <strong>(k<sub>1</sub>+k<sub>2</sub>)</strong> seja tão baixo quanto possível.</p>
+                    <p>
+                    <strong>P</strong> é um múltiplo de <strong>Q</strong> se houver algum inteiro <strong>K</strong> tal que <strong>P = K * Q.</strong></p>
+                    <p>
+                    Suponha que o conjunto <strong>A</strong> seja {2,3,4,5} e o conjunto B seja {6,7,8,9}. Se forem removidos 2 e 3 do conjunto <strong>A</strong> e <strong>8</strong> do conjunto <strong>B</strong>, nós tempos os conjuntos {4,5} e {6,7,9}. Aqui nenhum dos inteiros 6, 7 ou 9 é um múltiplo de 4 ou 5.</p>
+                    <p>
+                    Portanto, para este caso a resposta é 3, que é a quantia de elementos eliminados (2 elementos do conjunto <strong>A</strong> e 1 elemento do conjunto <strong>B</strong>).</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    O primeiro valor da entrada é um inteiro <strong>T </strong>( <strong>T </strong>&lt; 50 <strong>)</strong> que determina o número de casos de teste. Cada caso de teste consiste de duas linhas. A primeira linha inicia com <strong>n</strong> seguida pelos <strong>n</strong> inteiros. A segunda linha inicia com <strong>m</strong> seguido pelos <strong>m</strong> inteiros. Ambos, <strong>n</strong> e <strong>m</strong> estarão no intervalo [1,100]. Todos os elementos destes dois conjuntos devem caber em um inteiro com sinal de 32 bits.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso, imprima o número do caso de teste, seguido pela resposta, conforme exemplo abaixo.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                4 2 3 4 5<br />
+                                4 6 7 8 9<br />
+                                3 100 200 300<br />
+                                1 150</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Case 1: 3<br />
+                                Case 2: 0</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Special Thanks: Jane Alam Jan<br />
+                * Working in University of Texas at San Antonio - USA</p>
+
+        </div>
+
+    </body>
+</html>

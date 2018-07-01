@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1693 - Apenas Outro Problema de Física</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1693 - Apenas Outro Problema de Física" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1693</span>
+                <h1>Apenas Outro Problema de Física</h1>
+                <div>
+                    <p>Por Time da UFCG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 4</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Rafael Richman é um garoto muito rico. Ele está prestes a completar 34 anos e pediu de aniversário uma arena de água para brincar com seus amigos. A arena consiste de uma campo circular plano de raio R. No centro do campo, existe uma torre de altura H. No topo da torre, existe um canhão que atira água com velocidade inicial V. Para deixar as coisas mais interessantes, sua mãe Matilda Richman comprou um dispositivo que altera a gravidade G da arena.</p>
+
+                    Dadas todas as informações sobre a arena, sua tarefa é determinar se a água lançada pelo canhão consegue atravessar campo.</p>
+
+                    <p>Você pode assumir que a diferença entre o alcance do canhão e o raio do campo é sempre maior que 0.01.</p>
+
+                    <p>Rafael é um amante da física, e pode dar-lhe as equações necessárias para resolver o problema:</p>
+
+                    <p>
+                    X(t) = Vcos(a)t<br />
+                    Y(t) = Vsen(a)t - Gt²/2</p>
+
+                    <p>Onde X e Y são as coordenadas da água em função de t, t é o tempo decorrido desde o lançamento da água pelo canhão e "a" é o ângulo do lançamento com a horizontal.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Existem vários casos testes. Cada caso de teste consiste de uma única linha. Cada linha contém <strong>4</strong> inteiros, <strong>R</strong>, <strong>H</strong>, <strong>V</strong>, e <strong>G</strong>. Todos os valores dados são maiores que <strong>0</strong> e menores ou iguais a <strong>10000</strong>. Todas as distâncias são dadas em metros e todas as unidades de tempo em segundos.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, imprima uma única linha contendo '<strong>Y</strong>' se o alcance do canhão é maior que o raio do campo, ou '<strong>N</strong>' caso contrário.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1 1 1 1<br />
+                                100 100 100 100<br />
+                                100 100 1 100</p>
+
+                            </td>
+                            <td>
+                                <p>Y<br />
+                                Y<br />
+                                N</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Road to Fortaleza III 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1219 - Flores Coloridas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1219 - Flores Coloridas" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1219</span>
+            <h1>Flores Coloridas</h1>
+            <div><p>
+                    Por Mak Yan Kei <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/hk.gif" style="width: 16px; height: 11px; " /> Hong Kong</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1219_a.jpg" style="width: 190px; height: 132px; float: right; " />"Roses are red, violets are blue..."<br />
+                    <br />
+                    Mr Smith é um milionário muito conhecido – não por sua saúde, mas por seu senso de "arte"... Mr Smith Fez&nbsp;um jardim circular. Nos limites ele marcou três pontos e fez um triângulo. Ele então encontrou o maior círculo&nbsp;dentro da região triangular. Mais ou menos conforme a figura abaixo:</p>
+                <p class="center">
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1219_b.png" style="width: 363px; height: 188px; " /></p>
+                <p>
+                    Mr Smith então plantou girassóis amarelos, violetas azuis e rosas vermelhas, como mostrado na figura acima. (Combinaçào legal, não?&nbsp;:-) Dado os tamanhos dos 3 lados do triângulo, você deve encontrar as áreas que correspondem respectivamente aos 3 tipos de flores:&nbsp;amarelas, azuis e vermelhas.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada linha de entrada contém 3 inteiros <strong>a</strong>, <strong>b</strong>, <strong>c</strong>, que são os tamanhos dos 3 lados da região triangular, com 0 &lt; <strong>a </strong>≤ <strong>b </strong>≤ <strong>c </strong>≤ 1000. A entrada é terminada por final de arquivo (EOF).</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso, seu programa deverá mostrar as saídas das áreas com girassóis, violetas e rosas respectivamente. Imprima suas&nbsp;respostas corretamente com 4 casas decimais.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3 4 5<br />
+                                4 30 32</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                13.6350 2.8584 3.1416<br />
+                                954.8794 45.2993 8.2824</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Dica1: utilize para valor de PI: 3.1415926535897 ou a constante M_PI da biblioteca matemática<br /><br />
+                Dica2: https://www.mathopenref.com/heronsformula.html<br />
+                <br />
+                A fórmula de Heron é usada para calcular a área de um triângulo&nbsp;quando você sabe os tamanhos dos 3 lados. Sejam <strong>a</strong>,<strong>b</strong>,<strong>c </strong>os tamanhos dos 3 lados de um triângulo, a àrea &nbsp;é dada por:<br />
+                <br />
+                <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1219_c.gif" style="width: 145px; height: 20px; " />&nbsp;Onde p é a metade do perímetro, ou &nbsp;(a + b + c) / 2</p>
+
+        </div>
+
+    </body>
+</html>

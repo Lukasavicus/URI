@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1288 - Canhão de Destruição</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1288 - Canhão de Destruição" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1288</span>
+            <h1>Canhão de Destruição</h1>
+            <div><p>Por Rafael A., Lucas D. e Marlon T., URI <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+
+                <p>
+                    O jogo canhão de destruição é um jogo muito simples de ser entendido. Você recebeu como missão destruir um determinado castelo, sendo que o mesmo possui como característica um número inteiro R que é a sua resistência. Para tentar completar sua missão, você recebeu um canhão que é carregado com projéteis de chumbo, sendo que este canhão pode ser carregado com quantos projéteis forem possíveis desde que a soma do peso deles em quilos não exceda a capacidade de carga do canhão. Podem existir projéteis com pesos iguais e poder de destruição diferentes devido ao seu formato, embora isso não seja tão importante. Ao atingir o castelo, um projétil faz com que o seu valor de destruição seja diminuído da resistência do castelo.</p>
+                <p>
+                    Levando em consideração que o canhão pode ser carregado uma única vez, respeitando o seu limite de quilos, a sua tarefa é carregar o canhão com projéteis que não ultrapassem o seu limite de carga mas que façam o maior estrago possível, para saber se a missão foi completada ou não.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+
+                <p>
+                    A primeira linha de entrada contém o número de casos de teste. Cada caso de teste inicia com uma linha contendo um número inteiro  <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 50), que representa o número de projéteis de chumbo disponíveis. Seguem <strong>N</strong> linhas contendo dois inteiros <strong>X</strong> e <strong>Y</strong>, representando respectivamente o poder de destruição do projétil e o peso do projétil. A próxima linha contém um inteiro <strong>K</strong> (1 ≤ <strong>K</strong> ≤ 100) que representa a capacidade de carga do canhão e a última linha do caso de teste contém um inteiro <strong>R</strong> que indica a resistência total do castelo.
+                </p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Se o dano total das cargas carregadas for maior ou igual à resistência do castelo então deverá ser impressa a mensagem “Missao completada com sucesso”, caso contrário, deverá ser impressa a mensagem “Falha na missao”.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                3<br />
+                                500 5<br />
+                                300 4<br />
+                                30 2<br />
+                                10<br />
+                                680<br />
+                                5<br />
+                                500 5<br />
+                                300 4<br />
+                                100 1<br />
+                                120 1<br />
+                                200 3<br />
+                                12<br />
+                                1120<br />
+                                5<br />
+                                500 5<br />
+                                300 4<br />
+                                100 1<br />
+                                120 1<br />
+                                200 3<br />
+                                12<br />
+                                1020</p>
+                        </td>
+                        <td>
+                            <p>
+                                Missao completada com sucesso<br />
+                                Falha na missao<br />
+                                Missao completada com sucesso</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Adaptado por Neilor.
+            </p>
+        </div>
+
+    </body>
+</html>

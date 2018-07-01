@@ -1,0 +1,104 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2360 - Centrais de Controle</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema F - Centrais de Controle" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2360</span>
+				<h1>Centrais de Controle</h1>
+				<div>
+					<p>Por Lucas Maciel, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Sildávia é um reino muito grande, como todos vocês já devem conhecer. Para controlar todo o sistema de transporte, energia, água, e etc. Sildávia possui centrais de controle para cada uma de suas regiões. Tudo ocorria muito bem, até a chegada da crise economica.</p>
+
+<p>Com a crise, o governador de Sildávia decidiu cortar custos. Para isto, instalou fibra ótica entre as regiões, conectando diversos pares de centrais, de maneira em que cada central conectou-se com as demais direta ou indiretamente. Como o governador não possuia muito dinheiro, ele decidiu utilizar para as <strong>N</strong> regiões, apenas <strong>N-1</strong> cabos. É válido lembrar que nenhuma central ficou desconectada. Com a ligação de fibra ótica, cada central é capaz de controlar uma ou mais centrais que ela está <u>diretamente</u> ligada. Em outras palavras, agora centrais eram capazes de controlar não apenas só sua região, como suas vizinhas ligadas diretamente.</p>
+
+<p>Assim, é possível que algumas centrais de controle em Sildávia possam ser desligadas (pois seriam controladas por centrais em outras regiões), então o governador contratou você para saber de quantas maneiras possíveis podemos desligar centrais de tal forma que todo o reino de Sildávia ainda esteja sobre controle.</p>
+
+<p><u>Observações</u></p>
+
+<p>Manter todo o reino de Sildávia sobre controle significa que cada região de Sildávia será controlada por sua central, ou alguma outra central que esteja ligada a sua.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de diversos casos teste. Cada caso possui um inteiro <strong>N</strong> que é a quantidade de regiões em Sildávia (1 ≤ <strong>N</strong> ≤ 1000). As próximas <strong>N-1</strong> linhas contém as ligações entre as centrais, dois inteiros <strong>A</strong> e <strong>B</strong> (1 ≤ <strong>A, B</strong> ≤ <strong>N</strong>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso teste imprima um inteiro que é a quantidade de formas de controlar Sildávia módulo 10<sup>9</sup>+7.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1<br />
+3<br />
+1 2<br />
+2 3<br />
+5<br />
+1 2<br />
+1 3<br />
+1 4<br />
+1 5</p>
+
+							</td>
+							<td>
+								<p>1<br />
+5<br />
+17</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p>No primeiro caso teste, temos apenas uma regi&#227;o em Sild&#225;via. Logo, para termos o controle total, a &#250;nica forma &#233; deixar a central de controle desta regi&#227;o ligada. No segundo caso, se deixarmos a regi&#227;o 2 ligada, podemos desligar as outras demais, deixar apenas a regi&#227;o 1 ligada, ou deixar apenas a regi&#227;o 3 ligada, ou deixar ambas ligadas, o que nos d&#225; 4 formas. A outra forma &#233; deixar a regi&#227;o 1 e 3 ligada (assim controlamos a regi&#227;o 2) e desligar a 2. Total: 5 formas de controlar Sild&#225;via.</p>
+
+				<br />
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Seletiva UFMG 2014
+				</p>
+			</div>
+
+		</body>
+	</html>

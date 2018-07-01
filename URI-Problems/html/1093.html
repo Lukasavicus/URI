@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1093 - Vampiros</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1093 - Vampiros" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1093</span>
+                <h1>Vampiros</h1>
+                <div><p>
+	Por Pedro Demasi&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" />&nbsp;Brasil</p></div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Felipinho está empolgado com seu novo jogo de RPG sobre guerras entre clãs de vampiros. Nesse jogo ele representa um personagem de um vampiro e constantemente entra em conflito contra vampiros de outros clãs. Tais batalhas são realizadas com base nas características de cada personagem envolvido e com a ajuda de um dado comum de seis faces. Por simplicidade, vamos considerar apenas as lutas entre dois vampiros, vampiro 1 e vampiro 2. Cada um possui uma energia vital (chamaremos de<strong> <i>EV<sub>1</sub></i></strong> <span class="code">e </span><strong><i>EV<sub>2</sub></i></strong> respectivamente) e, além disso, são determinadas uma força de ataque <strong><em>AT </em></strong>e uma capacidade de dano <strong><em>D</em></strong>.</p>
+<p>
+	O combate é realizado em turnos da maneira descrita a seguir. A cada turno um dado é rolado, se o valor obtido for menor do que ou igual a <strong><em>AT</em></strong>, o vampiro 1 venceu o turno, caso contrário o vampiro 2 é quem venceu. O vencedor suga energia vital do adversário igual ao valor <em><strong>D</strong></em>, ou seja, <em><strong>D </strong></em>pontos de <strong>EV </strong>são diminuídos do perdedor e acrescentados ao vencedor. O combate segue até que um dos vampiros fique com <strong>EV </strong>igual a ou menor do que zero.</p>
+<p>
+	Por exemplo, suponhamos que <i><strong>EV<sub>1</sub></strong>=7</i>, <i><strong>EV<sub>2</sub></strong>=5</i>, <i><strong>AT</strong>=2</i> and <i><strong>D</strong>=4</i>. Rola-se o dado e o valor obtido foi 3. Nesse caso, o vampiro 2 venceu o turno e, portanto, 4 pontos de EV são diminuídos do vampiro 1 (<strong><i>EV<sub>1</sub></i></strong>) e acrescentados ao vampiro 2 (<strong><i>EV<sub>2</sub></i></strong>) Sendo assim, os novos valores seriam <i><strong>EV<sub>1</sub></strong>=3</i> <span class="code">e </span><i><strong>EV<sub>2</sub></strong>=9</i>. Observe que se no próximo turno o vampiro 2 ganhar novamente, o combate irá terminar. Os valores de AT e D são constantes durante todo o combate, apenas <strong><i>EV<sub>1</sub></i></strong> e <strong><i>EV<sub>2</sub></i></strong> variam.</p>
+<p>
+	Apesar de gostar muito do jogo, Felipinho acha que os combates estão muito demorados e gostaria de conhecer de antemão a probabilidade de vencer, para saber se vale a pen	a lutar. Assim, ele pediu que você escrevesse um programa que, dados os valores iniciais de <strong><i>EV<sub>1</sub></i></strong>, <strong><i>EV<sub>2</sub></i></strong>, além de <em><strong>AT </strong></em>e <em><strong>D</strong></em>, calculasse a probabilidade de o vampiro 1 vencer o combate.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada consiste de vários casos de teste. Cada caso de teste consiste de uma única linha, contendo 4 inteiros <strong><i>EV<sub>1</sub></i></strong>, <strong><i>EV<sub>2</sub></i></strong>, <strong><i>AT</i> </strong>e <strong><i>D</i> </strong>separados por espaços (<i>1 ≤ <strong>EV<sub>1</sub></strong>, <strong>EV<sub>2</sub> </strong>≤ 10</i>, <i>1 ≤ <strong>AT </strong>≤ 5</i> and <i>1 ≤ <strong>D </strong>≤ 10</i>). O final da entrada é indicado por uma linha contendo quatro zeros, separados por espaços.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste da entrada seu programa deve imprimir uma única linha. A linha deve conter apenas um número real, escrito com precisão de uma casa decimal, representando, em termos de percentagem, a probabilidade de o vampiro 1 vencer o combate.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	1 1 3 1<br>
+	1 2 1 1<br>
+	8 5 3 1<br>
+	7 5 2 4<br>
+	0 0 0 0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	50.0<br>
+	3.2<br>
+	61.5<br>
+	20.0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+              </table> <p class="footer">
+             Maratona de Programação da SBC 2008.</p>
+            </div>
+
+        </body>
+    </html>

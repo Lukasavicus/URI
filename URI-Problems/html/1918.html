@@ -1,0 +1,147 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1918 - Viagem para Acapulco</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1918 - Viagem para Acapulco" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1918</span>
+				<h1>Viagem para Acapulco</h1>
+				<div>
+					<p>Por Jadson José Monteiro Oliveira, Faculdade de Balsas <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Após terem realizado uma grande viagem para Acapulco há algum tempo atrás, o moradores da vila fizeram uma grande reunião e decidiram se unir para viajar novamente para aquela linda cidade. Apesar de Seu Madruga ter tido uma grande sorte e ganhado a viagem passada com todas as despesas pagas, o gasto geral entre todos os moradores da vila foi gigantesco e dessa vez eles estão querendo economizar o máximo possível, ainda mais porque ninguém da vila ganhou a viagem paga novamente.</p>
+
+					<p>Acontece que eles foram informados por um desconhecido, que o melhor hotel da cidade (o mesmo que eles se hospedaram na viagem passada) estará com uma promoção por um tempo limitado, então como eles desejam economizar, estão querendo chegar a tempo de pegar a promoção.</p>
+
+					<p>Seu Barriga responsável por administrar o dinheiro gasto é um homem que entende bem de números e agora quer utilizar o poder da tecnologia para conseguir algumas informações úteis antes de realizar a viagem. Como ele já conhece suas habilidades como matemático e programador, ele contratou você para desenvolver um programa que dado todas as informações sobre as cidades e rotas disponíveis, a data e o horário que eles pretendem sair da vila e a data e o horário limite da promoção do hotel em Acapulco, informe se é possível chegar a Acapulco antes que a promoção termine, e qual a menor data e horário possível, ou se não é possível chegar a tempo de pegar a promoção.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha de entrada contém um único inteiro <strong>QT </strong>(1 ≤ <strong>QT</strong> ≤ 100), indicando a quantidade de casos de teste que vem a seguir. A primeira linha de cada caso de teste é composta por 2 inteiros <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 10<sup>5</sup>) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 3x10<sup>5</sup>), representando respectivamente a quantidade de cidades e a quantidade de rotas que ligam essas cidades. A segunda linha de cada caso de teste é composta pela data e o horário que os moradores da vila pretendem sair e a terceira linha de cada caso é composta pela data e o horário limite que o hotel de Acapulco estará em promoção. As datas e os horários estão descritos na seguinte notação: “<em>DD/MM/AAAA – hh:mm:ss</em>”, onde <strong>DD</strong> (1 ≤ <strong>DD</strong> ≤ 31) representa o dias do mês, <strong>MM</strong> (1 ≤ <strong>MM </strong>≤ 12) representa o mês do ano, <strong>AAAA </strong>(1970 ≤ <strong>AAAA </strong>≤ 2100) representa o ano, <strong>hh </strong>(0 ≤ <strong>hh</strong> ≤ 23) representa as horas, <strong>mm</strong> (0 ≤ <strong>mm</strong> ≤ 59) representa os minutos, <strong>ss</strong> (0 ≤ <strong>ss</strong> ≤ 59) representa os segundos. Seguem <strong>M</strong> linhas, cada linha contêm 2 inteiros<strong> a</strong> e <strong>b</strong> e uma data, indicando que existe uma rota bidirecional entre a cidade <strong>a</strong> (0 ≤ <strong>a</strong> ≤ <strong>N</strong>-1) e <strong>b</strong> (0 ≤ <strong>b</strong> ≤ <strong>N</strong>-1), e a data no formato “<em>DD-hh-mm-ss</em>”, representando o tempo necessário para ir de <strong>a</strong> para <strong>b</strong> e vice-versa. Considere que a vila fica na cidade de número <strong>0</strong> e a cidade de Acapulco é a cidade de número <strong>N-1</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, se for possível chegar a Acapulco antes que a promoção finalize, imprima duas linhas. Na primeira linha a palavra “<em>POSSIBLE</em>” (sem aspas) e na segunda linha a menor data possível no seguinte formato: “<em>DD/MM/AAAA – hh:mm:ss</em>”. Caso não seja possível chegar até a data limite, imprima apenas uma linha com a palavra “<em>IMPOSSIBLE</em>” (sem aspas).</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+								<p>4 3</p>
+
+								<p>29/12/2015 - 20:00:00</p>
+
+								<p>31/12/2015 - 20:00:00</p>
+
+								<p>0 1 01-00-00-00</p>
+
+								<p>0 3 05-00-00-00</p>
+
+								<p>1 3 01-00-00-00</p>
+
+								<p>3 3</p>
+
+								<p>05/09/2015 - 16:30:00</p>
+
+								<p>06/09/2015 - 00:00:00</p>
+
+								<p>0 1 00-07-00-00</p>
+
+								<p>0 2 10-00-00-00</p>
+
+								<p>2 1 00-00-30-00</p>
+
+								<p>3 3</p>
+
+								<p>05/09/2015 - 16:30:00</p>
+
+								<p>06/09/2015 - 00:00:00</p>
+
+								<p>0 1 00-07-00-00</p>
+
+								<p>0 2 10-00-00-00</p>
+
+								<p>2 1 00-00-30-01</p>
+
+								<p>3 3</p>
+
+								<p>27/02/2016 - 00:00:00</p>
+
+								<p>01/03/2016 - 00:00:00</p>
+
+								<p>0 1 02-00-00-00</p>
+
+								<p>0 2 10-00-00-00</p>
+
+								<p>2 1 00-00-30-00</p>
+
+							</td>
+							<td>
+								<p>POSSIBLE</p>
+
+								<p>31/12/2015 - 20:00:00</p>
+
+								<p>POSSIBLE</p>
+
+								<p>06/09/2015 - 00:00:00</p>
+
+								<p>IMPOSSIBLE</p>
+
+								<p>POSSIBLE</p>
+
+								<p>29/02/2016 - 00:30:00</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Lembre-se que existem meses com 28, 29, 30 e 31 dias e que um ano é bissexto quando ele for divisível por 4 e não for divisível por 100, com ressalva de que se o ano for divisível por 400 ele é bissexto. </br>
+					Codando na Vila - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

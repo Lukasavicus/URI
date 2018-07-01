@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1394 - Hooligan</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1394 - Hooligan" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1394</span>
+            <h1>Hooligan</h1>
+            <div>Por Cláudio Lucchesi <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt="" /> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Futebol é o esporte mais popular da América Latina (e do mundo). "Hooligan" é uma palavra usada para descrever um fã agressivo de futebol.</p>
+
+                <p>Em Linearonia, está sendo realizado um campeonato de futebol. Lá o rank funciona assim: para cada jogo o campeão ganha dois pontos e o perdedor não ganha nenhum; em caso de empate cada time recebe um ponto. O campeão é o time com o maior número de pontos. Cada par de times diferentes disputam uma partida um contra o outro um número igual de vezes, chamado de <i>número correspondente</i>.</p>
+
+                <p>Você tem seu time favorito, seu time dos sonhos, e você pondera se é possível o seu time ser o campeão. Você sabe o número de times, o <i>número correspondente</i> e o resultado de alguns jogos que já foram jogados. Escreva um programa que informe se ao fim do campeonato seu time poderá ser o <i>único</i> campeão, extritamente com mais pontos que qualquer outro time.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de teste, cada caso consiste um uma ou mais linhas. A primeira linha contém três inteiros, <b>N</b>, <b>M</b> e <b>G</b>, separados por um espaço cada, representando respectivamente o número de times diputando o campeonato (2 ≤ <b>N</b> ≤ 40), o <i>número correspondente</i> (1 ≤ <b>M</b> ≤ 4) e o número de jogos já concluídos (1 ≤ <b>G</b>). Seu time é identificado pelo número 0, os outros times são identificados pelos inteiros 1, 2,..., N - 1.</p>
+
+                <p>Cada uma das próximas <b>G</b> linhas, descreve os jogos já disputados. A linha contém um inteiro <b>I</b>, um caractere <b>C</b> e um inteiro <b>J</b>, separados por um espaço cada. inteiros <b>I</b> e <b>J</b> são os times que jogaram tal jogo (<b>I</b> ≠ <b>J</b> e 0 ≤ <b>I</b>, <b>J</b> ≤ <b>N</b> - 1). O caractere <b>C</b> será '&lt;' se o time <b>I</b> perder para o time <b>J</b>, ou '=' se terminar empatado.</p>
+
+                <p>O último caso de teste é seguido por uma linha contendo três zeros separados por um espaço cada.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste na entrada, seu programa deve imprimir uma única linha, contendo um único caractere, 'Y' se seu time pode ser campeão ou 'N' caso contrário.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>4 2 6<br />
+                                0 &lt; 3<br />
+                                3 = 2<br />
+                                2 &lt; 0<br />
+                                1 &lt; 0<br />
+                                2 = 0<br />
+                                3 &lt; 0<br />
+                                4 1 5<br />
+                                2 = 0<br />
+                                0 &lt; 1<br />
+                                1 = 3<br />
+                                2 &lt; 1<br />
+                                0 &lt; 3<br />
+                                4 2 5<br />
+                                2 = 0<br />
+                                0 &lt; 1<br />
+                                1 = 3<br />
+                                2 &lt; 1<br />
+                                0 &lt; 3<br />
+                                2 1 1<br />
+                                1 &lt; 0<br />
+                                4 1 1<br />
+                                0 &lt; 1<br />
+                                4 1 2<br />
+                                0 &lt; 1<br />
+                                0 &lt; 2<br />
+                                0 0 0</p>
+
+                        </td>
+                        <td>
+                            <p>Y<br />
+                                N<br />
+                                Y<br />
+                                Y<br />
+                                Y<br />
+                                N</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2009.
+            </p>
+        </div>
+
+    </body>
+</html>

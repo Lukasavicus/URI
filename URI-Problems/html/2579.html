@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2579 - Nagol</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 0000 - Nagol" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2579</span>
+            <h1>Nagol</h1>
+            <div>
+                <p>Por Dâmi Henrique, INATEL <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>&nbsp;Nagol, um ex super-herói que todos acham estar morto, mora em uma calma cidade do interior de Minas. Após se aposentar da agitada vida de herói, ele agora trabalha como designer de azulejos. Iremos imaginar uma parede de azulejos como um grid de <strong>L * C</strong>, <strong>L</strong>&nbsp;linhas identificadas de <strong>0</strong>&nbsp;a <strong>L-1</strong>&nbsp;e <strong>C</strong>&nbsp;colunas identificadas de <strong>0</strong>&nbsp;a <strong>C-1</strong>.<br />
+Nagol possui um estilo próprio de design, ele usa suas mãos para "riscar" cada um dos azulejos e transformar a parede final em uma grande obra de arte.&nbsp;</p>
+
+<p>A ordem que ele usa para fazer isso é&nbsp;sempre a mesma, começa da primeira linha e vai riscando todas as <strong>C</strong>&nbsp;colunas da esquerda para a direita, depois vai para a segunda linha e&nbsp;risca todas as <strong>C</strong>&nbsp;colunas do mesmo modo, isso se repete até terminar as <strong>L</strong>&nbsp;linhas.<br />
+Um detalhe importante é&nbsp;que ele nunca faz dois riscos seguidos com a mesma mão, ele alterna começando sempre com a direita.<br />
+Segue um exemplo de uma parede final onde <strong>L = 2</strong>&nbsp;e <strong>C = 3</strong>:</p>
+
+<p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2579.png" alt="Wall example"/></p>
+
+<p>Sua tarefa é, dado o tamanho da parede (<strong>L</strong>&nbsp;e <strong>C</strong>) e a posição de um azulejo específico (<strong>X</strong>&nbsp;e <strong>Y</strong>), diga qual mão Nagol usará para riscá-la.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>Cada linha da entrada possui quatro inteiros <strong>L </strong>( 0 &lt; <strong>L&nbsp;</strong>, <strong>C </strong>&lt; 10<sup>5&nbsp;</sup>), <strong>X </strong>( 0 <u>&lt;</u>&nbsp;<strong>X&nbsp;</strong>&lt; <strong>L&nbsp;</strong>), <strong>Y </strong>( 0 <u>&lt;&nbsp;</u><strong>Y&nbsp;</strong>&lt; <strong>C&nbsp;</strong>), todos descritos anteriormente.&nbsp;</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Exiba uma única linha com a mensagem "<em>Direita</em>", caso ele tenha riscado o azulejo com a mão direito ou "<em>Esquerda</em>", caso contrário.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2 3 0 1</p>
+
+                        </td>
+                        <td>
+                            <p>Esquerda</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                                <p>4 4 2 2</p>
+
+                        </td>
+                        <td>
+                            <p>Direita</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                VI Maratona Mineira de Programação
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,100 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2185 - Brincando com Pomekons</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2185 - Brincando com Pomekons" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2185</span>
+				<h1>Brincando com Pomekons</h1>
+				<div>
+					<p>Por Gabriel Duarte, UNIFESO <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Depois de capturar muitos Pomekons, Dabriel e Guarte resolveram criar um jogo com os monstrinhos e quem vencesse ficaria com todos eles.</p>
+
+<p>O jogo criado funciona da seguinte maneira: Todos os Pomekons são separados em <strong>N</strong> pilhas, elas não terão necessariamente a mesma quantidade de monstrinhos, o jogador da rodada escolhe uma pilha e remove um ou mais Pomekons dela. O jogo termina quando não existe nenhum monstrinho para ser selecionado, e o jogador desta rodada é considerado o perdedor.</p>
+
+<p>Como Dabriel é sempre o primeiro a jogar e nas últimas rodadas ele está ganhando, Guarte está desconfiado que Dabriel descobriu um macete do jogo, portanto ele propôs uma nova regra. Na nova versão do jogo Guarte irá escolher três inteiros <strong>X</strong>, <strong>Y</strong> e <strong>V</strong>, e a quantidade de monstrinhos em cada pilha entre <strong>X</strong> e<strong> Y</strong>, inclusive, irão ter a quantidade <strong>V </strong>de Pomekons. Dabriel aceitou a proposta, mas ele solicitou sua ajuda para dizer se ele terá chance de ganhar sempre que houver uma modificação nas pilhas. Como Dabriel e Guarte estão muito bons neste jogo, você pode assumir que ambos sempre jogam da melhor maneira possível.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha do caso de teste consiste de dois inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10⁵) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 10⁵), representando a quantidade de pilhas e a quantidade de alterações que serão feitas respectivamente.<br />
+A segunda linha consiste de <strong>N</strong> inteiros <strong>vi</strong> (1 ≤<strong> i</strong> ≤ <strong>N</strong>, 0 ≤ <strong>vi</strong> ≤ 10⁴), representando a quantidade de Pomekons que a pilha <strong>i</strong> contém.<br />
+As próximas <strong>M</strong> linhas consistem de três inteiros <strong>X</strong>, <strong>Y</strong>, <strong>V</strong> (1 ≤ <strong>X</strong> ≤ <strong>Y</strong> ≤ <strong>N</strong>, 1 ≤ <strong>V</strong> ≤ 10⁴), descrevendo as alterações que Guarte irá realizar.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada alteração nas pilhas do jogo, você deverá imprimir "Possivel", se Dabriel tem chance de ganhar, ou "Impossivel", caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>8 6<br />
+1 2 3 4 5 6 7 8<br />
+4 6 5<br />
+7 8 0<br />
+1 8 0<br />
+1 1 1<br />
+1 1 8<br />
+1 8 5</p>
+
+							</td>
+							<td>
+								<p>Possivel<br />
+Possivel<br />
+Impossivel<br />
+Possivel<br />
+Possivel<br />
+Impossivel</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Aquecimento para a OBI 2016 - Fase 2
+				</p>
+			</div>
+
+		</body>
+	</html>

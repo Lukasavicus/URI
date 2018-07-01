@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1482 - Noite no Museu</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1482 - Noite no Museu" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1482</span>
+            <h1>Noite no Museu</h1>
+             <div>Por Ernesto Coto <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cl.gif' alt=''/> Chile</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>A cidade de Viena é chamada “cidade da cultura“ porque, entre outras coisas, abriga uma grande quantidade de museus, mais de 100. Como consequência, é muito difícil e caro visitar todos os museus, não importando o tempo que ficar na cidade. Entretanto, tem uma noite especial, chamada “Noite no Museu”, que se permite a visita a vários museus com apenas um ingresso, das 18:00h até a 01:00h da manhã do próximo dia.</p>
+
+                <p>Porém, é impossível visitar todos os museus da cidade por duas razões principais. A primeira razão é que alguns museus em Viena não entram nessa promoção porque fecham às 17:00 h. A segunda razão é que não há tempo suficiente para visitar os museus, e TODOS os seus interiores, no tempo de 7 horas.</p>
+
+                <p>Sua tarefa é construir um programa que dado o número de museus participantes, o tempo necessário para visitar cada museu e o tempo que leva para ir de um museu ao outro, encontre o melhor “tour” para os visitantes, ou seja, visitar o maior número de museus nessa noite.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém vários casos de testes. A primeira linha de um caso de teste contém um inteiro <strong>N</strong>, que indicará o número de museus participantes na promoção (1 &le; <strong>N</strong> &le; 20). Cada museu tem um identificador único variando de 1 a <strong>N</strong>. A segunda linha contém <strong>N</strong> inteiros indicando o tempo, em minutos, necessário para visitar cada museu, de 1 a <strong>N</strong>. Então, teremos mais <strong>N</strong> linhas descrevendo o tempo para ir de um museu para todos os outros. A <strong>i</strong>-ésima linha contém N inteiros Mk (1 &le; <strong>k</strong> &le; <strong>N</strong>) representando o tempo, em minutos, para ir de um museu <strong>i</strong> para um museu <strong>k</strong>. Assuma que o <strong>i</strong>-ésimo inteiro na <strong>i</strong>-ésima linha é igual a 0. O final da entrada é indicado por <strong>N</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, seu programa deverá produzir uma linha contendo o número máximo de museus que podem ser visitados durante a noite.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                500 500<br />
+                                0 120<br />
+                                200 0<br />
+                                2<br />
+                                220 220<br />
+                                0 30<br />
+                                20 0<br />
+                                2<br />
+                                150 150<br />
+                                0 120<br />
+                                200 0<br />
+                                0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                0<br />
+                                1<br />
+                                2
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                    ACM/ICPC South America Contest 2004.</p>
+        </div>
+
+    </body>
+</html>

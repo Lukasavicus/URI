@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1384 - Sapo Preguiçoso</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1384 - Sapo Preguiçoso" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1384</span>
+            <h1>Sapo Preguiçoso</h1>
+            <div>Por Guilherme Ottoni <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</div>
+            <strong>Timelimit: 6</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>O Sr. Sapo mora num pântano com formato de grade retangular, composto por quadrados de mesmo tamanho, tais que alguns são secos e outros molhados. Sr. Sapo mora num quadrado seco e só pode pular de um quadrado seco para outro quando vai passear pelo pântano.</p>
+
+                <p>Ele quer visitar sua namorada, Srta. Toad, que também mora num quadrado seco no mesmo pântano. Mas Sr. Sapo é preguiçoso, e quer gastar o mínimo de energia pulando até a casa dela. Ele sabe a quantidade de energia que ele gasta em qualquer um de seus pulos. Para cada pulo único, Sr. Sapo sempre usa a figura a seguir para determinar quais são os possíveis quadrados para os quais ele pode pular da posição em que ele se encontra (o quadrado marcado com F), e a energia correspondente gasta nos pulos, em calorias. Qualquer outro quadrado não é alcançável por Sr. Sapo dessa posição com um único pulo.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Lazy%20Jumping%20Frog.png" style="width: 179px; height: 145px;" /></p>
+
+                <p>Seu trabalho é determinar qual é a mínima quantidade de energia que o Sr. Sapo tem que gastar para ir da sua casa à casa da Srta. Toad.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada possui vários casos de teste. A primeira linha de um caso de teste contém dois inteiros, <b>C</b> e <b>R</b>, indicando o número de colunas e o mímero de linhas do pântano (1 ≤ <b>C</b>, <b>R</b> ≤ 1000). A segunda linha de um caso de teste contém quatro inteiros <b>Cf</b>, <b>Rf</b>, <b>Ct</b> e <b>Rt</b>, onde (<b>Cf</b>, <b>Rf</b>) indica o local da casa do Sr. Sapo e (<b>Ct</b>, <b>Rt</b>) indica o local da casa de Srta. Toad (1 ≤ <b>Cf</b>,<b>Ct</b> ≤ <b>C</b>; 1 ≤ <b>Rf</b>,<b>Rt</b> ≤ <b>R</b>). A terceira linha de um caso de teste contem um inteiro <b>W</b> (0 ≤ <b>W</b> ≤ 1000) indicando o número de lugares molhados no pântano. Cada uma das <b>W</b> linhas seguintes contêm quatro inteiros <b>C1</b>, <b>R1</b>, <b>C2</b> e <b>R2</b> (1 ≤ <b>C1</b> ≤ <b>C2</b> ≤ <b>C</b>; 1 ≤ <b>R1</b> ≤ <b>R2</b> ≤ <b>R</b>), descrevendo um espaço retangular molhado compreendendo os qudrados que possuem coordenadas (<b>x</b>,<b>y</b>) tais que <b>C1</b> ≤ <b>x</b> ≤ <b>C2</b> e <b>R1</b> ≤ <b>y</b> ≤ <b>R2</b>. O final da entrada é indicado por <b>C</b> = <b>R</b> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de entrada, seu programa deve produzir uma linha da saída, contendo o mínimo de calorias consumidas por Sr. Sapo para ir de sua casa até a de Srta. Toad. Se for impossível que ele chegue até a casa dela, seu programa deve imprimir "impossible" (impossível).</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>4 4<br />
+                                1 1 4 2<br />
+                                2<br />
+                                2 1 3 3<br />
+                                4 3 4 4<br />
+                                4 4<br />
+                                1 1 4 2<br />
+                                1<br />
+                                2 1 3 4<br />
+                                7 6<br />
+                                4 2 7 6<br />
+                                5<br />
+                                4 1 7 1<br />
+                                5 1 5 5<br />
+                                2 4 3 4<br />
+                                7 5 7 5<br />
+                                6 6 6 6<br />
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>14<br />
+                                impossible<br />
+                                12<br />
+                                &nbsp;</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2006.
+            </p>
+        </div>
+
+    </body>
+</html>

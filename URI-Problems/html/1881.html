@@ -1,0 +1,104 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1881 - Competição de Robótica</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1881 - Competição de Robótica" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1881</span>
+				<h1>Competição de Robótica</h1>
+				<div>
+					<p>Por Antonio Roberto C. Jr., Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Malai participará da final tailandesa de robótica na próxima semana. Nessa competição, cada competidor dará ao seu respectivo robô uma instrução e o número de vezes que essa instrução deverá ser executada. No final da competição, o robô que se aproximar mais do alvo final será o campeão.</p>
+
+					<p>Cada robô pode ser representado como um ponto (<em>x, y</em>) no plano cartesiano e sua posição inicial será a origem do plano. Cada instrução é definida por I(<em>α</em>, <em>l</em>), onde <em>α</em> representa um ângulo em graus e <em>l</em> uma distância em metros. Para executar a instrução I(<em>α</em>, <em>l</em>), o robô deve rotacionar <em>α </em>graus no sentido anti-horário em torno da origem e depois somar <em>l </em>metros na coordenada <em>x</em> da sua posição.</p>
+										
+					<p class="center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/contests/59_3.jpg" style="height:121px; width:583px" /></p>
+
+					<p>Malai é iniciante nessa competição e precisa da sua ajudar para descobrir a posição final do robô.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+				<p>A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+				<p>Cada instância consiste de uma única linha contendo o ângulo <strong>α </strong>(0 ≤ <strong>α</strong> ≤ 365), a distância <strong>l</strong> (0 ≤ <strong>l</strong> ≤ 10) racional e o número inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 1.000.000.000) de vezes que a instrução I(<strong>α</strong>, <strong>l</strong>) deverá ser executada. Considere que <strong>α</strong> <strong>N</strong> são inteiros e <strong>l</strong> é racional.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprima uma única linha contendo as coordenadas (<strong>x</strong>, <strong>y</strong>), em metros, da posição final do robô, após executar <strong>N</strong> vezes a instrução I(<strong>α</strong>, <strong>l</strong>). As coordenadas <strong>x</strong> e <strong>y</strong> devem ser arredondadas e impressas com 2 casas decimais.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+<p>90 10 1</p>
+
+<p>90 10 2</p>
+
+<p>90 10 3</p>
+
+<p>30 1.5 121</p>
+
+							</td>
+							<td>
+								<p>10.00 0.00</p>
+
+<p>10.00 10.00</p>
+
+<p>0.00 10.00</p>
+
+<p>1.50 0.00</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIX Maratona de Programação IME-USP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

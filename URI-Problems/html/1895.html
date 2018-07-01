@@ -1,0 +1,111 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1895 - Jogo do Limite</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema C - Jogo do Limite" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+                <span>URI Online Judge | 1895</span>
+				<h1>Jogo do Limite</h1>
+				<div>
+					<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Alice e Bob decidiram jogar um jogo simples para passar o tempo. Este jogo é jogado com um baralho contendo&nbsp;<strong>N</strong> cartas, numeradas de 1 a <strong>N</strong>. Uma carta está inicialmente na mesa. Além disso, há uma pilha contendo todas as outras cartas do baralho.</p>
+
+					<p>Alice começa retirando uma carta do topo da pilha. Ela então verifica se a diferença absoluta entre a carta que está atualmente na mesa e a carta retirada da pilha é no máximo um limite <strong>L</strong>. Em outras palavras, se a carta atualmente na mesa for <strong>T</strong> e a carta retirada da pilha for <strong>S</strong>, então ela verifica se <strong>|T-S|&nbsp;</strong>≤<strong> L</strong>. Se isto for verdade, ela substitui a carta na mesa pela carta removida, e marca <strong>|T-S|</strong> pontos. Se isto não for verdade, ela não faz nada -- a carta na mesa não é alterada, e ela não marca nenhum ponto.</p>
+
+					<p>Bob então joga fazendo a mesma coisa. Ele remove uma carta da pilha, a compara com a carta atualmente na mesa e age de acordo. Alice então joga novamente, seguida de Bob, seguido novamente de Alice, e assim por diante. Eles continuam jogando até que a pilha de cartas esteja vazia. Sua tarefa é determinar a pontuação final de ambos os jogadores.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém três inteiros <strong>N</strong>, <strong>T<sub>0</sub> </strong>e <strong>L </strong>(1&nbsp;≤ <strong>N</strong> &lt; 60, <strong>N</strong> é impar, 1&nbsp;≤ <strong>T<sub>0</sub></strong>&nbsp;≤ <strong>N</strong>, 1&nbsp;≤ <strong>L</strong>&nbsp;≤ 10), o número de cartas, a carta inicialmente na mesa, e o limite <strong>L</strong>. As próximas <strong>N</strong>-1 linhas contém um inteiro <strong>S<sub>i</sub></strong> cada (1&nbsp;≤ <strong>S<sub>i</sub></strong>&nbsp;≤ <strong>N</strong>). Estes inteiros descrevem as cartas na pilha, em ordem. A primeira carta dada na entrada é a carta no topo da pilha. Todas as cartas usadas no jogo são distintas.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha com dois inteiros <strong>A</strong> e <strong>B </strong>separados por um espaço, onde <strong>A</strong> é a pontuação final de Alice, e <strong>B</strong> é a pontuação final de Bob.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 3 1<br />
+								4<br />
+								2<br />
+								1<br />
+								5</p>
+
+							</td>
+							<td>
+								<p>1 1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 1 2<br />
+								2<br />
+								3<br />
+								4<br />
+								5</p>
+
+							</td>
+							<td>
+								<p>2 2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="footer">
+                Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática-Fase 2, 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

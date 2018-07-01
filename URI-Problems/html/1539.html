@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1539 - Empresa de Telecom</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1539 - Empresa de Telecom" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1539</span>
+                <h1>Empresa de Telecom</h1>
+                <div>
+                    <p>Por Mauricio Amaral, UFU <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Cesário é um analista da Algar Telecom, e está trabalhando em um projeto de análise da rede de telefonia móvel. Ele terá que desenvolver um sistema que analise o alcance de cada uma das antenas dessa rede, e que defina os custos operacionais para o envio de dados de de dispositivo para outro, baseando-se na distancia entre as antenas. O objetivo minimizar esses custos, encontrando a melhor rota disponível. Os cálculos também visam descobrir se é possível estabelecer um caminho entre dois dispositivos, de forma a detectar graves problemas na rede.</p>
+
+
+<p>Mesmo com todos os dados disponíveis para processamento, Cesário tem enfrentado problemas na implementação devido a alta complexidade desse algoritmo, por isso você foi contratado para ajudá-lo. O seu objetivo é analisar todas as antenas da rede da Algar Telecom, observando as suas coordenadas e raios de alcance; verificar quais as antenas possíveis de serem acessadas (dentro do raio de alcance); e calcular o menor caminho entre duas antenas determinadas.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta de vários casos de testes. Sendo que, a primeira linha contém um inteiro não negativo, <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 100), que indica o número de antenas disponíveis para interconexão na rede. Seguem-se <strong>N</strong> linhas, cada uma contendo três números inteiros <strong>X</strong> (0 ≤ <strong>X</strong> ≤ 1000), <strong>Y</strong> (0 ≤ <strong>Y</strong> ≤ 1000) e <strong>R</strong> (1 ≤ <strong>R</strong> ≤ 1000), que descrevem a posição da antena, coordenadas <strong>X</strong> e <strong>Y</strong>, e o seu raio de alcance <strong>R</strong> (separados por espaço em branco). A linha seguinte contém outro inteiro não negativo, <strong>C</strong> (1 ≤ <strong>C</strong> ≤ 100), que descreve a quantidade de cálculos à serem realizados nessa rede. As <strong>C</strong> linhas seguintes contém 2 inteiros cada, <strong>A1</strong> (1 ≤ <strong>A1</strong> ≤ <strong>N</strong>) e <strong>A2</strong> (1 ≤ <strong>A2</strong> ≤ <strong>N</strong>), que descrevem o índice das antenas a serem utilizadas e também separadas por espaço em branco.</p>
+
+<p>O fim das entradas é sinalizado por um número 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, deve-se imprimir <strong>C</strong> linhas, sendo que cada uma representa a distância do menor caminho entre as duas antenas. Os valores devem ser <strong>INTEIROS</strong>, ou seja, a parte real deve ser truncada (não arredondada), e sempre com uma quebra de linha. Caso não seja identificada uma rota entre as antenas, deve ser impresso o valor <strong>-1</strong>.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2</p>
+
+<p>0 3 3</p>
+
+<p>2 1 1</p>
+
+<p>2</p>
+
+<p>1 2</p>
+
+<p>2 1</p>
+
+<p>3</p>
+
+<p>1 1 2</p>
+
+<p>0 0 1</p>
+
+<p>1 2 2</p>
+
+<p>4</p>
+
+<p>1 3</p>
+
+<p>2 3</p>
+
+<p>3 1</p>
+
+<p>3 3</p>
+
+<p>0</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+
+<p>-1</p>
+
+<p>1</p>
+
+<p>-1</p>
+
+<p>1</p>
+
+<p>0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Maratona Algar Telecom XIII 
+                </p>
+            </div>
+
+        </body>
+    </html>

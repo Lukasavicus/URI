@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1522 - Jogo das Pilhas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1522 - Jogo das Pilhas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1522</span>
+                <h1>Jogo das Pilhas</h1>
+                <div>
+                    <p>Por Lucas Hermann Negri, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Claudio inventou um novo jogo, chamado de <em>Jogo das pilhas</em>, e quer submetê-lo ao próximo concurso de jogos da URI (União Recreativa Internacional). Apesar de muito divertido, o jogo parece ser muito difícil de ganhar, logo Claudio pediu sua ajuda para avaliar se algumas instâncias do jogo podem ser vencidas.</p>
+
+<p>O<em> jogo das pilhas</em> é individual, e é jogado com três pilhas, inicialmente com o mesmo número de cartas. Cada carta tem um valor numérico inteiro de 0 até 9. O jogador pode, a qualquer momento ver o valor de qualquer carta, mas só pode jogar com as cartas que estão no topo das pilhas. Em cada rodada, o jogador pode remover qualquer combinação de cartas que estejam no topo da pilha (pode escolher 1, 2 ou até 3 cartas) cuja soma dos valores seja múltipla de 3. O jogo é ganho quando todas as cartas forem removidas das pilhas. Se alguma carta não puder ser removida, perde-se o jogo.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por várias instâncias Cada instância é iniciada por um inteiro <strong>N</strong> (0 ≤<strong> N</strong> ≤ 100), que identifica o número de cartas em cada pilha. A entrada termina quando <strong>N</strong> = 0. Cada uma das <strong>N</strong> linhas seguintes contém três inteiros <strong>A</strong>, <strong>B</strong> e <strong>C</strong>, que descrevem os valores numéricos das cartas em um nível da pilha (0 ≤ <strong> A</strong>, <strong>B</strong>, <strong>C</strong> ≤&nbsp; 9). As pilhas são descritas do topo até o fundo.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância, imprima uma linha contendo o número <strong>1</strong> se o jogador pode ganhar a instância do jogo ou o número <strong>0</strong> se o jogo for impossível.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+1 1 1<br />
+2 0 4<br />
+3<br />
+1 0 0<br />
+0 1 0<br />
+0 0 0<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>1<br />
+0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

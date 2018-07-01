@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2558 - Robô Aspirador</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Robô Aspirador" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2558</span>
+			<h1>Robô Aspirador</h1>
+			<div>
+				<p>Por Flávio Zavan, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Ricciardi, o robô aspirador, recebeu ordens. Deve limpar o máximo possível dos <strong>N</strong> grãos de sujeira no chão e chegar à estação de recarga. Parece uma tarefa trivial, mas Ricciardi está com a bateria viciada e pode realizar apenas <strong>M</strong> movimentos antes de esgotá-la.</p>
+
+<p>Localizado em uma sala retangular dividida em <strong>W</strong> × <strong>H</strong> células quadradas, o robô pode, em um movimento, se movimentar para a célula adjacente diretamente acima, abaixo, à esquerda ou à direita de sua posição atual, desde que não haja obstáculos nela. Determinado a economizar energia e realizar seu trabalho com maestria, Ricciardi pediu a você para escrever um programa que calcule o número máximo de grãos de sujeira que Ricciardi consegue limpar.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém dois inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 8) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 10<sup>9</sup>). A segunda linha também contém dois inteiros <strong>W</strong> e <strong>H</strong> (5 ≤ <strong>W</strong>, <strong>H</strong> ≤ 100).</p>
+
+<p>As <strong>H</strong> linhas seguintes contém <strong>W</strong> caracteres cada e descrevem a sala. Obstáculos são representados por <em>'#'</em>, posições livres por <em>'.' </em>, a posição inicial de Ricciardi por '<em>R</em>', grãos de sujeira por '<em>*</em>' e a estação de recarga por '<em>S</em>'.</p>
+
+<p>Ricciardi coleta os grãos automaticamente ao passar por cima deles e consegue andar sobre a estação de recarga como em qualquer posição livre.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha com um único inteiro, o número máximo de grãos que Ricciardi consegue coletar chegando à estação de recarga. Se o robô não consegue chegar à estação, imprima -1.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3 10<br />
+5 5<br />
+S...*<br />
+.....<br />
+..*..<br />
+.....<br />
+*...R<br />
+                    3 12<br />
+5 5<br />
+S...*<br />
+.....<br />
+..*..<br />
+.....<br />
+*...R<br />
+                    4 3<br />
+7 6<br />
+R*.....<br />
+**.....<br />
+.......<br />
+.......<br />
+...S...<br />
+..*....</p>
+						</td>
+						<td>
+							<p>1<br />
+                    2<br />
+                    -1</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				6a Seletiva UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

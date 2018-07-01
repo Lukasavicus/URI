@@ -1,0 +1,130 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2347 - Counting Self-Rotating Subsets</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problem C - Counting Self-Rotating Subsets" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2347</span>
+				<h1>Counting Self-Rotating Subsets</h1>
+				<div>
+					<p>By Pablo Ariel Heiber <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A set of points in the plane is <em>self-rotating</em> if there is a point <strong>P</strong>,<em> the center,</em> and <em>an angle</em> <strong>α</strong>, expressed in degrees, where 0 &lt; <strong>α</strong> &lt; 360, such that the rotation of the plane, with center <strong>P</strong> and angle, maps every point in the set to some point also in the set.</p>
+
+<p>You are given a set of <strong>N</strong> distinct points, all having <u>integer</u> coordinates. Find the number of distinct subsets of size 1, 2, . . . ,<strong>N</strong> that are self-rotating. Two subsets are considered distinct if one contains a point that the other does not contain.</p>
+				</div>
+
+				<h2>Input</h2>
+
+				<div class="input">
+					<p>The first line of the input contains one integer <strong>N</strong> representing the number of points in the input set (1 ≤ <strong>N</strong> ≤ 1000). Each of the following <strong>N</strong> lines describes a different point of the set, and contains two integers <strong>X</strong> and <strong>Y</strong> giving its coordinates in a Cartesian coordinate system (−10<sup>9</sup> ≤ <strong>X, Y</strong> ≤ 10<sup>9</sup>). All points in the input set are distinct.</p>
+				</div>
+
+				<h2>Output</h2>
+
+				<div class="output">
+					<p>Output a single line containing <strong>N</strong> integers <strong>S<sub>1</sub>, S<sub>2</sub>, . . . , S<sub>N</sub></strong>. For <strong>i</strong> = 1, 2, . . . ,N the integer <strong>S<sub>i</sub></strong> must be the number of subsets of <strong>i</strong> points of the input set that are self-rotating. Since these numbers can be very big, output them modulo 10<sup>9</sup> + 7.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Input Samples</td>
+							<td>Output Samples</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+1 1<br />
+2 2<br />
+1 0</p>
+
+							</td>
+							<td>
+								<p>3 3 0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>7<br />
+-2 0<br />
+-1 1<br />
+0 2<br />
+0 0<br />
+2 0<br />
+1 -1<br />
+0 -2</p>
+
+                    </td>
+                    <td>
+                        <p>7 21 5 5 3 1 1</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>1<br />
+-1000000000 1000000000</p>
+
+                    </td>
+                    <td>
+                        <p>1</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					ACM/ICPC South America Contest 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

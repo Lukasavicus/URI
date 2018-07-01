@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2575 - Árvore de Natal</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 9999 - Árvore de Natal" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2575</span>
+            <h1>Árvore de Natal</h1>
+            <div>
+                <p>Por Lucas Maciel, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+            </div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Roberto é apaixonado por árvores de natal. Todo ano, ele enfeita as árvores de Itajubá com os mais bonitos enfeites. Por isso, esse ano ele foi convidado pelo prefeito de Belo Horizonte&nbsp;a enfeitar as árvores de natal que serão colocadas no final do ano. Para isso, Roberto irá podar galhos das árvores que ele acha que estão feios. Para cada galho <strong>i</strong>&nbsp;da árvore, Roberto definiu o quão bonito ele é por um número <strong>w<sub>i</sub></strong>. Valores negativos representam que o galho é feio. A beleza de uma árvore de natal é então definida pela soma das belezas de seus galhos.</p>
+
+<p>O processo de poda de uma árvore é simples. Roberto corta um galho da árvore, e todos os galhos que partiam dele caem também. Na figura 1 temos um exemplo de árvore e de uma poda feito por Roberto. Em cada galho da árvore na figura temos &nbsp;o valor <strong>w<sub>i</sub></strong>&nbsp;que descreve o quão bonito é o galho. Na árvore à direita, os galhos cortados &nbsp;por Roberto estão pontilhados, enquanto os nós e galhos que caíram após o corte estão tracejados. No exemplo da figura 1, tanto a árvore sem corte, quanto a cortada possuem um valor 10&nbsp;de beleza.</p>
+<p class="center">
+    Figura 1: Corte de Roberto
+</p>
+
+<p class="center">
+    <img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2575_a.png" alt="Example Tree" />
+</p>
+
+<p class="center">
+    A figura 2 apresenta o corte ótimo do caso de exemplo. Note que foram feitos o menor número de cortes para obter essa árvore de beleza 15.
+</p>
+
+<p class="center">
+    Figura 2: Corte ótimo
+</p>
+
+<p class="center">
+    <img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2575_b.png" alt="Example Tree" />
+</p>
+
+<p>Sabendo da VI Maratona Mineira de Programação, Roberto pediu que você fizesse um programa que o ajudasse a definir quais galhos ele deverá cortar da árvore para que ela fique a mais bonita possível de acordo com sua definição.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A entrada consiste de um inteiro <strong>N&nbsp;</strong>(2 &lt; <strong>N &lt; </strong>10<sup>6</sup>)&nbsp;que é a quantidade de nós da árvore. Nas próximas <strong>N</strong>-1&nbsp;linhas, temos quatro inteiros <strong>d<sub>i</sub> </strong>(0 &lt;&nbsp;<strong>d<sub>i</sub></strong> &lt;&nbsp;<strong>N</strong>-2), <strong>a<sub>i</sub>&nbsp;</strong>(0 &lt; <strong>a<sub>i</sub></strong> &lt;&nbsp;<strong>N</strong>-1), <strong>b<sub>i</sub> </strong>(0 &lt; <strong>b<sub>i</sub></strong> &lt;&nbsp;<strong>N</strong>-1),<strong>&nbsp;</strong>&nbsp;e <strong>w<sub>i</sub></strong>&nbsp; (-1000 &lt; <strong>w<sub>i</sub></strong> &lt; 1000)&nbsp;representando o identificador do galho <strong>i</strong>, que ele conecta o nó <strong>a<sub>i</sub></strong>&nbsp;ao nó <strong>b<sub>i</sub></strong>, e que ele possui <strong>w<sub>i</sub></strong>&nbsp;de beleza pela classficação de Roberto. A árvore é sempre enraizada no nó 0. É garantido que o grafo da entrada é conexo e não possui ciclos.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>A saída deve conter dois inteiros, <strong>D</strong>&nbsp;e <strong>M</strong> que representam o quão bonito é a árvore com o corte ótimo e quantos cortes precisam ser feitos, respectivamente. Se o número de cortes for maior do que 0, na próxima linha, imprima <strong>M</strong>&nbsp;inteiros <strong>d<sub>j</sub></strong>&nbsp;em ordem crescente&nbsp;e separados por espaço, onde <strong>d<sub>j</sub></strong>&nbsp;representa o identificador de cada galho <strong>j</strong>&nbsp;a ser cortado.</p>
+
+<p>Caso exista mais de uma árvore com o mesmo grau de beleza, imprima aquela que possui menos galhos. Se ainda existir mais de uma árvore que satisfaça os mesmos criteŕios, imprima a que possua menos cortes.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>12<br />
+0 0 1 2<br />
+1 1 2 -6<br />
+2 2 3 -2<br />
+3 4 2 8<br />
+4 0 5 5<br />
+5 5 6 -5<br />
+6 6 7 2<br />
+7 8 6 2<br />
+8 5 9 3<br />
+9 5 10 3<br />
+10 10 11 -2</p>
+
+                        </td>
+                        <td>
+                            <p>15 3<br />
+2 5 10</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <p class="footer">
+                VI Maratona Mineira de programação
+            </p>
+        </div>
+
+    </body>
+</html>

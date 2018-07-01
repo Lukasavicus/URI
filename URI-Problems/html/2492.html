@@ -1,0 +1,127 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2492 - Ilhas Isoladas</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2492 - Ilhas Isoladas" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+			<style>
+				.desc-example {
+					font-family: "Courier New", Courier, "Nimbus Mono L", monospace;
+				}
+			</style>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2492</span>
+				<h1>Ilhas Isoladas</h1>
+				<div>
+					<p>Por João Marcos Salvanini Bellini de Moraes, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Friederich Estrotoratch, famoso matemático e filósofo, comprou recentemente diversas ilhas no Pacífico. Como ele possui devota paixão por funções inversas, ele quer conectar essas ilhas de forma que elas se assemelhem a uma função inversa. Estrotoratch odeia perder tempo com trabalho que julga desnecessário, e portanto, passou a Johann Fritz, seu subordinado, a tarefa de determinar quais seriam exatamente as conexões entre as ilhas adquiridas. No entanto, Fritz não é muito equilibrado mentalmente (assim como seu superior) e está realizando essa atividade em uma de suas crises.</p>
+
+<p>Sabendo da própria condição nada boa, Fritz decidiu que entregaria a você as conexões para que você diga se estão corretas ou não. Ele quer que você diga se as conexões sequer formam uma função, e caso formem, se a função é invertível ou não invertível. Portanto, ajude o pobre rapaz, pois caso contrário, as consequências para ele (isto é, as punições) são imprevisíveis.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por vários casos de teste. Cada caso de teste contém um inteiro <strong>T</strong> (2 ≤ <strong>T</strong> ≤ 100), indicando a quantidade de conexões que serão dadas a seguir, que sempre estarão na forma "<span class="desc-example">X -&gt; Y</span>", indicando que haverá um caminho conectando a ilha X à ilha Y. Essa conexão não é recíproca, ou seja, não significa que haverá um caminho conectando Y a X. O nome das ilhas terá até 30 caracteres sem espaços. A entrada termina com <strong>T</strong> = 0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, imprima "<span class="desc-example">Not a function.</span>" caso não seja uma função, "<span class="desc-example">Invertible.</span>" se a função for invertível e "<span class="desc-example">Not invertible.</span>" se a função não for invertível.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+<p>Rosamund -&gt; Montonho</p>
+
+<p>Chuiran -&gt; Kirsten</p>
+
+<p>Castro -&gt; Martins</p>
+
+<p>Brandenburg -&gt; Honig</p>
+
+<p>2</p>
+
+<p>Latartuga -&gt; Fritz</p>
+
+<p>Estro -&gt; Fritz</p>
+
+<p>3</p>
+
+<p>1478 -&gt; Vogel</p>
+
+<p>Strauss -&gt; 1478</p>
+
+<p>1478 -&gt; Strauss</p>
+
+<p>3</p>
+
+<p>Kaninchen -&gt; Gebirge</p>
+
+<p>Wahnsinn -&gt; Traurigkeit</p>
+
+<p>Schreien -&gt; Gebirge</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>Invertible.</p>
+
+<p>Not invertible.</p>
+
+<p>Not a function.</p>
+
+<p>Not invertible.</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					The Last Contest 2016 - IFSULDEMINAS
+				</p>
+			</div>
+
+		</body>
+	</html>

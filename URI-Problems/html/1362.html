@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1362 - Minha Camiseta Me Serve</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1362 - Minha Camiseta Me Serve" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1362</span>
+            <h1>Minha Camiseta Me Serve</h1>
+            <div><p>Por Ginés García Mateos, UM <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/es.gif' alt=""/> Espanha</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Nosso amigo Victor é instrutor em um programa ambiental voluntário. O chefe de Victor pediu para ele distribuir N camisetas para M voluntários (N é múltiplo de seis, e N&nbsp;≥ M). Cada voluntário deve receber exatamente uma camiseta (se N&nbsp;≠ M, algumas camisetas podem sobrar). Há o mesmo número de camisetas disponíveis para cada tamanho de camiseta possível: XXL, XL, L, M, S e XS (siglas em inglês para P, M, G, etc.). Victor tem um pequeno problema: apenas dois tamanhos de camisetas servem para cada voluntário.</p>
+
+                <p>
+                    Você deve escrever um programa que decide se Victor pode distribuir as camisetas de tal forma que todo voluntário tenha uma camiseta que lhe serve.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A primeira linha da entrada contém o número de casos de teste.</p>
+
+                <p>
+                    Para cada caso de teste, há uma linha contendo os números <strong>N</strong> e <strong>M</strong>. O número <strong>N</strong> é múltiplo de seis, 1&nbsp;≤ <strong>N</strong>&nbsp;≤ 36, e indica o número total de camisetas disponíveis. O número <strong>M</strong>, 1&nbsp;≤ <strong>M</strong>&nbsp;≤ 30, indica o número de voluntários, com <strong>N</strong>&nbsp;≥ <strong>M</strong>. As próximas <strong>M</strong> linhas descrevem os voluntários, um por linha. Cada linha contém dois tamanhos de camiseta possíveis (<em>XXL</em>, <em>XL</em>, <em>L</em>, <em>M</em>, <em>S</em> ou <em>XS</em>) separados por um espaço, indicando quais tamanhos servem para o voluntário.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso teste, imprima uma linha contendo <em>YES</em> se existe pelo menos uma maneira de distribuir as camisetas de tal forma que todo voluntário tenha uma camiseta que lhe serve, ou <em>NO</em> caso contrário.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                18 6<br />
+                                L XL<br />
+                                XL L<br />
+                                XXL XL<br />
+                                S XS<br />
+                                M S<br />
+                                M L<br />
+                                6 4<br />
+                                S XL<br />
+                                L S<br />
+                                L XL<br />
+                                L XL<br />
+                                6 1<br />
+                                L M</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                YES<br />
+                                NO<br />
+                                YES</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+             </table>
+            <p class="footer">
+                 OMP'09, Facultad de Informatica. Universidad de Murcia (SPAIN).</p>
+        </div>
+
+    </body>
+</html>

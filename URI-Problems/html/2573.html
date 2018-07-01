@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2573 - Caça ao Tesouro</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 0000 - Caça ao Tesouro" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2573</span>
+            <h1>Caça ao Tesouro</h1>
+            <div>
+                <p>Por Dilson Guimarães, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Luan e Larissa são irmãos gêmeos que adoram brincar na piscina. A brincadeira favorita deles é a caça ao tesouro. Nessa brincadeira, ambos se encontram dentro da piscina quando o pai deles joga uma moeda dentro da piscina, em uma posição escolhida aleatoriamente com probabilidade uniforme. Como Larissa e Luan são gêmeos que adoram nadar, ambos conseguem nadar com a mesma velocidade. Por isso, aquele que estiver mais próximo do local em que a moeda cair será o primeiro a pegá-la.</p>
+
+<p>Mateus é o irmão mais novo de Luan e Larissa. Ele não é muito de praticar esportes. Ele prefere ficar no quiosque tomando limonada e resolvendo um Sudoku. Porém, observador como é, Mateus percebeu que o resultado da brincadeira dos irmãos é determinado pela sorte. Agora, ele quer saber qual é a probabilidade que cada um dos irmãos tem de pegar a moeda. Mateus está muito ocupado resolvendo seu Sudoku. Por isso, ele pediu que você calculasse essa probabilidade para ele com base no tamanho da piscina e na posição de cada um dos irmãos.</p>
+
+<p>A piscina é descrita como um retângulo cujo canto inferior esquerdo se encontra no ponto (<strong>0, 0</strong>) e o canto superior direito se encontra no ponto (<strong>L, A</strong>). A posição de Luan é descrita pelo ponto (<strong>X<sub>A</sub>, Y<sub>A</sub></strong>), e a posição de Larissa pelo ponto (<strong>X<sub>B</sub>, Y<sub>B</sub></strong>).&nbsp;</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A entrada é composta por três linhas. A primeira contém dois inteiros <strong>L </strong>( 1 <u>≤</u>&nbsp;<strong>L&nbsp;</strong><u>≤</u>&nbsp;10<sup>4&nbsp;</sup>) e <strong>A&nbsp;</strong>( 1 <u>≤</u>&nbsp;<strong>A&nbsp;</strong><u>≤</u>&nbsp;10<sup>4&nbsp;</sup>), as coordenadas do canto superior direito da piscina. A segunda contém dois inteiros <strong>X<sub>A</sub></strong>&nbsp;( 0 ≤ <strong>X<sub>A&nbsp;</strong>≤ <strong>L&nbsp;</strong>)e <strong>Y<sub>A</sub>&nbsp;</strong>( 0 ≤ <strong>Y<sub>A</sub>&nbsp;</strong>≤ <strong>A</strong><strong>&nbsp;</strong>​​​​​​​), as coordenadas de Luan dentro da piscina. A terceira contém dois inteiros <strong>X<sub>B</sub></strong>&nbsp;( 0 ≤ <strong>X<sub>B</sub></sub>&nbsp;</strong>≤ <strong>L&nbsp;</strong>) e <strong>Y<sub>B</sub>&nbsp;</strong>( 0 ≤ <strong>Y<sub>B</sub>&nbsp;</strong>≤ <strong>A</strong><strong>&nbsp;</strong>​​​​​​​), as coordenadas de Larissa dentro da piscina.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>A saída deve conter uma linha com dois números com <em>6</em> casas decimais separados por espaço, representando a probabilidade de Luan pegar a moeda e a probabilidade de Larissa pegar a moeda.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2 4<br />
+1 0<br />
+1 4</p>
+
+                        </td>
+                        <td>
+                            <p>0.500000 0.500000</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                                <p>4 7<br />
+2 1<br />
+2 3</p>
+
+                        </td>
+                        <td>
+                            <p>0.285714 0.714286</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                VI Maratona Mineira de Programação
+            </p>
+        </div>
+
+    </body>
+</html>

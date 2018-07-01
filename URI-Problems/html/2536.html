@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2536 - FHBZMIPS</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - FHBZMIPS" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2536</span>
+			<h1>FHBZMIPS</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>O FHBZMIPS é um novo processador desenvolvido pela Neboscorp (r). Sua memória interna contém apenas um único registrador <em>r</em>, de 8 bits. Seu conteúdo é sempre interpretado como um inteiro sem sinal, isto é, é possível respresentar inteiros de 0 a 255 em seu registrador.</p>
+
+<p>O valor inicial do registrador é 0. Além disso, o FHBZMIPS suporta as seguintes operações:</p>
+
+<ul>
+	<li><em>add <strong>n</strong></em>: Soma <strong><em>n</em></strong> unidades no registrador (<em>r ← r + <strong>n</strong></em>)</li>
+	<li><em>sub <strong>n</strong></em>: Decrementa <strong><em>n</em></strong> unidades do registrador (<em>r ← r - <strong>n</strong></em>)</li>
+	<li><em>mul <strong>n</strong></em>: Multiplica o valor do registrador por <strong><em>n</em></strong> (<em>r ← r × <strong>n</strong></em>)</li>
+	<li><em>div <strong>n</strong></em>: O registrador recebe o quociente de sua divisão por <strong><em>n</em></strong> (<em>r ← r ∕ <strong>n</strong></em>)</li>
+	<li><em>and <strong>n</strong></em>: Operação E bit-a-bit com <strong><em>n</em></strong> (<em>r ← r AND <strong>n</strong></em>)</li>
+	<li><em>or <strong>n</strong></em>: Operação OU bit-a-bit com <strong><em>n</em></strong> (<em>r ← r OR <strong>n</strong></em>)</li>
+	<li><em>xor <strong>n</strong></em>: Operação OU-exclusivo bit-a-bit com <strong><em>n</em></strong> (<em>r ← r XOR <strong>n</strong></em>)</li>
+	<li><em>gotoif <strong>n</strong> <strong>I</strong></em>: Se o registrador tem valor maior ou igual a <strong><em>n</em></strong>, vá para a instrução de número <strong><em>I</em></strong> (Pular para <strong><em>I</em></strong> se <em>r ≥ <strong>n</strong></em>)</li>
+	<li><em>halt</em>: Termina a execução do programa (Desligar)</li>
+</ul>
+
+<p>Ocorrências de <em>overflow</em>, que ocorrem quando não é possível representar o resultado de alguma operação no registrador, são tratadas como em outros processadores, onde apenas o resto da divisão do resultado por 256 é mantido. Assim, por exemplo, se o registrador contém 240 e a instrução <em>add&nbsp;20</em> é executada, então o registrador passa a conter 4. Se o registrador contém o valor 0 e executa-se <em>sub&nbsp;2</em>, então passa a conter 254. Se o registrador contém 25 e executa-se <em>mul&nbsp;25</em>, passa a conter 113.</p>
+
+<p>Marcelo acabou de escrever um programa em <em>assembly</em> do FHBZMIPS. Sua tarefa é determinar o valor do registrador ao término da execução de seu programa, ou determinar se o programa é executado infinitamente.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 100), o número de instruções no programa. As próximas <strong>N</strong> linhas descrevem o programa, uma instrução por linha.</p>
+
+<p>Cada linha inicia com um inteiro indicando o número <strong>i</strong> da instrução. É garantido que este número é sequencial, isto é, a primeira instrução é a de número 1, a segunda instrução é a de número 2, etc. A linha é seguida pela descrição da instrução, como na tabela acima. Onde for aplicável, 0 ≤ <strong>n</strong> ≤ 255, 1 ≤ <strong>I</strong> ≤ <strong>N</strong>,e <strong>I</strong>≠<strong>i</strong>.</p>
+
+<p>É garantido que há uma única instrução <em>halt</em> no programa, e que ela é sempre a instrução de número <strong>N</strong>, isto é, a última instrução do programa. Também é garantido que <strong>n</strong>≠0 para toda instrução <em>div</em>.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha contendo o valor do registrador ao término da execução. Se o programa é executado infinitamente, imprima a frase “execucao infinita” (sem aspas).</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>6<br />
+1 add 10<br />
+2 gotoif 5 4<br />
+3 sub 20<br />
+4 mul 2<br />
+5 div 6<br />
+6 halt<br />
+							8<br />
+1 add 7<br />
+2 xor 2<br />
+3 gotoif 5 6<br />
+4 and 0<br />
+5 add 3<br />
+6 or 2<br />
+7 gotoif 4 2<br />
+8 halt</p>
+						</td>
+						<td>
+							<p>3<br />
+							execucao infinita</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				7a Seletiva UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

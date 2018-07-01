@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2669 - Laboratório de biotecnologia</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2669 - Laboratório de biotecnologia" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2669</span>
+			<h1>Laboratório de Biotecnologia</h1>
+			<div>
+				<p>Por Maratona de Programção da SBC, ACM ICPC 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 7</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Uma cadeia ponderada é definida sobre um alfabeto <strong>Σ</strong> e uma função <strong>f</strong> que atribui um peso a cada caractere do alfabeto. Assim, podemos definir o peso de uma cadeia <strong>s</strong> como a soma dos pesos de todos os caracteres em <strong>s</strong>.</p>
+
+<p>Vários problemas da bioinformática podem ser formalizados como problemas em cadeias ponderadas. Um exemplo é a espectrometria de massa de proteínas, uma técnica que permite identificar proteínas de forma bastante eficiente. Podemos representar cada aminoácido por um caractere distinto e uma proteína é representada pela cadeia de caracteres relativos aos amino ácidos que a compõe.</p>
+
+<p>Uma das aplicações da espectrometria de massa de proteínas são buscas em bancos de dados. Para isso a cadeia que representa a proteina é dividida em subcadeias, a massa de cada subcadeia é determinada, e a lista de massas é comparada com um banco de dados de proteínas. Um dos desafios para essa técnica é lidar com cadeias muito grandes de caracteres, que podem ter várias possíveis subcadeias. A quantidade de subcadeias selecionadas é fundamental para obter bons resultados.</p>
+
+<p>Em seu primeiro dia de estágio em um renomado laboratório de biotecnologia, Carlos recebeu a tarefa de determinar, para uma cadeia <strong>s</strong>, a quantidade de pesos distintos encontrada ao avaliar os pesos de todas as subcadeias não vazias de caracteres consecutivos de <strong>s</strong>.</p>
+
+<p>Carlos não conseguiu pensar em uma solução eficiente para essa tarefa, mas felizmente ele conhece o grupo ideal para auxiliá-lo.</p>
+
+<p>Considerando que <strong>s</strong> é formada por letras minúsculas e cada letra tem um peso diferente entre 1 e 26: a letra <strong>a</strong> tem peso 1, a letra <strong>b</strong> tem peso 2 e assim por diante. Mostre que seu time é capaz de ajudar Carlos a impressionar seu supervisor logo na primeira semana, com uma solução capaz de lidar facilmente com as maiores cadeias de caracteres existentes.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>Apenas uma linha, que contém a cadeia <strong>s</strong> formada por letras minúsculas, cujo comprimento | <strong>s</strong> | satisfaz 1 ≤| <strong>s</strong> |≤ 10<sup>5</sup>.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Seu programa deve produzir uma única linha com um inteiro representando a quantidade de pesos distintos das subcadeias não vazias de caracteres consecutivos de <strong>s</strong>.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>abbab</p>
+
+						</td>
+						<td>
+							<p>8</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>adbbabdcdbcbacdabbaccdac</p>
+
+						</td>
+						<td>
+							<p>56</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				Maratona de Programção da SBC-ACM ICPC 2017
+			</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,148 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1082 - Componentes Conexos</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1082 - Componentes Conexos" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+
+        <style>
+            .red {
+                color:#ff0000;
+            }
+        </style>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1082</span>
+            <h1>Componentes Conexos</h1>
+            <div><p>
+                    Por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p style="text-align: justify;">
+                    Com base nestas três definições:</p>
+                    <p>
+                        <span class="red">Grafo conexo: </span>Um grafo <em><strong>G(V,A)</strong></em> é conexo se para cada par de nodos u e v existe um caminho entre u e v. Um grafo com apenas um componente é um grafo conexo.</p>
+                    <p>
+                        <span class="red">Grafo desconexo: </span>Um grafo <em><strong>G(V,A) </strong></em>é desconexo se ele for formado por 2 ou mais componentes conexos.</p>
+                    <p>
+                        <span class="red">Componente conexo: </span>Componentes conexos de um grafo são os subgrafos conexos deste grafo.</p>
+                    <p>
+                        O grafo a seguir possui 3 componentes conexos. O primeiro é formado pelos nodos <strong>a</strong>,<strong>b</strong>,<strong>c</strong>. O segundo é formado unicamente pelo nodo <strong>d</strong> e o terceiro componente é formado pelos nodos <strong>e</strong>,<strong>f</strong>.</p>
+                <p class="center">
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1082.jpg" style="width: 216px; height: 88px;"></p>
+                <p>
+                    Com base nestes conceitos, onde cada entrada fornecida que tem a identificação de cada um dos vértices, arestas e as ligações entre os vértices através destas arestas,&nbsp; liste cada um dos componentes conexos que existem no grafo, segundo a entrada fornecida.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A primeira linha do arquivo de entrada contém um valor inteiro <strong>N </strong>que representa a 
+                    quantidade de casos de teste que vem a seguir. Cada caso de teste contém dois valores 
+                    <strong>V </strong>e <strong>E </strong>que são, respectivamente, a quantidade 
+                    de<strong> V</strong>értices e arestas (<strong>E</strong>dges) do grafo. Seguem <strong>E</strong> linhas na sequência, 
+                    cada uma delas representando uma das arestas que ligam tais vértices. 
+                    Cada vértice é representado por uma letra minúscula do alfabeto (<em>'a'</em>-<em>'z'</em>), ou seja, 
+                    cada grafo pode ter no máximo 26 vértices. Cada grafo tem no mínimo 1 componente conexo.</p>
+                    <p>
+                        Obs: Os vértices de cada caso de teste sempre iniciam no 'a'. Isso significa que um caso de teste que tem 3 vértices, 
+                    tem obrigatoriamente os vértices 'a', 'b' e 'c'.
+                </p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste da entrada, deve ser apresentada uma mensagem <em><strong>Case #n:</strong></em>, onde <em><strong>n</strong></em> indica o número do caso de teste (conforme exemplo abaixo). Segue a listagem dos vértices de cada segmento, um segmento por linha, separados por vírgula (inclusive com uma virgula no final da linha). Finalizando o caso de teste, deve ser apresentada uma mensagem indicando a quantidade de componentes conexos do grafo (em inglês). Todo caso de teste deve ter uma linha em branco no final, inclusive o último caso de teste.</p>
+                <p>
+                    Obs: os nodos devem sempre ser apresentados em ordem crescente e se há caminho de a até b significa que há caminho de b até a.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                3 1<br />
+                                a c<br />
+                                10 10<br />
+                                a b<br />
+                                a c<br />
+                                a g<br />
+                                b c<br />
+                                c g<br />
+                                e d<br />
+                                d f<br />
+                                h i<br />
+                                i j<br />
+                                j h<br />
+                                6 4<br />
+                                a b<br />
+                                b c<br />
+                                c a<br />
+                                e f</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Case #1:<br />
+                                a,c,<br />
+                                b,<br />
+                                2 connected components<br />
+                                <br />
+                                Case #2:<br />
+                                a,b,c,g,<br />
+                                d,e,f,<br />
+                                h,i,j,<br />
+                                3 connected components<br />
+                                <br />
+                                Case #3:<br />
+                                a,b,c,<br />
+                                d,<br />
+                                e,f,<br />
+                                3 connected components<br />
+                                &nbsp;<br/>
+                                &nbsp;</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        </div>
+
+    </body>
+</html>

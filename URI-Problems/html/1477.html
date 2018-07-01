@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1477 - Homem, Elefante e Rato</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1477 - Homem, Elefante e Rato" />
+            
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1477</span>
+                <h1>Homem, Elefante e Rato</h1>
+                <div>Maratona de Programação da SBC <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+                <strong>Timelimit: 7</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Um jogo muito popular na Nlogônia é o Homem, Elefante e Rato. Ele é tipicamente jogado com apenas dois jogadores, e funciona da seguinte forma: cada jogador secretamente escolhe um dos três símbolos e, após uma contagem regressiva, ambos revelam simultaneamente o símbolo escolhido através de sinais manuais, estendendo à sua frente uma das mãos sinalizando sua escolha.</p>
+
+<p>O Homem é representado pela mão fechada, como a cabeça de um homem. O Elefante é representado pela mão aberta, exibindo os cinco dedos, como a pata do elefante nlogonense. Por fim, o Rato é representado pela mão fechada, com o dedo indicador e o dedo médio esticados, como as orelhas do pequeno animal.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1477.png" style="width: 301px; height: 100px;" />​</p>
+
+<p class="center">Figura 1: Os três símbolos do jogo Homem, Elefante e Rato.</p>
+
+<p>Para determinar o vencedor é muito simples: o Homem sempre perde para o Elefante (pois é esmagado debaixo de sua pata), o Elefante sempre perde para o Rato (pois tem medo dele e foge correndo) e o Rato sempre perde para o Homem (que espalha ratoeiras para capturá-lo). Se dois jogadores utilizarem o mesmo símbolo, ocorre um empate e joga-se novamente.</p>
+
+<p>Os habitantes da Nlogônia, que são estrategistas natos de Homem, Elefante e Rato, utilizam a seguinte técnica no campeonato nacional, realizado todos os anos: começam sempre jogando Homem até o momento em que este símbolo causa empates com a maioria dos oponentes. Eles então trocam sua estratégia para o símbolo que ganha daquele que usavam anteriormente. Assim, os jogadores vão mudar de Homem para Elefante, depois para Rato, depois de volta a Homem.</p>
+
+<p>Para auxiliar um famoso competidor estrangeiro de um jogo com uma certa similaridade com este jogo de Homem, Elefante e Rato, você irá desenvolver um programa que contabiliza quantos jogadores irão utilizar cada símbolo.</p>
+
+<p>Suponha que todos os N jogadores são dispostos em fila e identificados pela sua posição, de 1 a N. Seu programa deverá processar M comandos, de dois tipos: mudança de símbolo e contar a frequência dos símbolos. Ambos os comandos recebem um intervalo contíguo de jogadores na fila a serem considerados.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversos casos de teste. Cada caso de teste começa com uma linha contendo dois inteiros <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup>) ​​e <strong>M</strong> (0 ≤ <strong>M</strong> ≤ 10<sup>6</sup>) &gt; ​que representam, respectivamente, o número de jogadores no campeonato e o número de operações.</p>
+
+<p>As próximas M linhas contêm cada uma a descrição de uma operação. Operações de mudança de estratégia serão representadas por uma linha da forma "<strong>M A B</strong>" onde <strong>A</strong> (1 ≤ <strong>A</strong>) e <strong>B</strong> (<strong>A</strong> ≤ <strong>B</strong> ≤ <strong>N</strong>) são inteiros. Os jogadores cuja estratégias serão alteradas são aqueles cuja posição na fila está entre <strong>A</strong> e <strong>B</strong>, inclusive.</p>
+
+<p>Operações de contagem serão representadas por uma linha da forma "<strong>C A B</strong>" onde <strong>A</strong> e<strong> B</strong> são inteiros representando o intervalo de jogadores que deverão ser considerados na contagem. Levaremos em conta os jogadores cuja posição na fila está entre <strong>A</strong> e <strong>B</strong>, inclusive.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada operação de contagem, imprima uma linha contendo três inteiros indicando respectivamente o número de símbolos Homem, Elefante e Rato que são usados pelos jogadores no intervalo dado.</p>
+
+<p>Imprima também uma linha em branco após cada caso de teste, inclusive após o último caso de teste da entrada.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>10 7<br />
+C 1 10<br />
+M 5 6<br />
+C 5 6<br />
+M 6 7<br />
+C 4 8<br />
+M 1 10<br />
+C 1 10<br />
+5 6<br />
+M 1 5<br />
+M 2 4<br />
+M 1 2<br />
+M 4 5<br />
+C 1 5<br />
+C 3 4</p>
+
+                            </td>
+                            <td>
+                                <p>10 0 0<br />
+0 2 0<br />
+2 2 1<br />
+1 7 2<br />
+<br />
+2 0 3<br />
+1 0 1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                Maratona de Programação da SBC 2011.
+            </p>
+            </div>
+
+        </body>
+    </html>

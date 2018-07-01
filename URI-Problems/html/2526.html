@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2526 - Cardápio</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Cardápio" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2526</span>
+			<h1>Cardápio</h1>
+			<div>
+				<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>A Universidade Federal da Nlogônia (a UFNl) dispõe de um Restaurante Universitário (o RUFNl) que fornece refeições diárias a todos os alunos da universidade.</p>
+
+<p>O cardápio do restaurante é sempre composto por três alimentos distintos: uma entrada, um acompanhamento e uma sobremesa. Existem <strong>N</strong> alimentos que podem ser utilizados pelo restaurante para formar seu cardápio. Os alimentos são bem variados, de forma que qualquer alimento pode ser utilizado como entrada, como acompanhamento ou como sobremesa.</p>
+
+<p>Entretanto, os nutricionistas exigem que o cardápio seja montado sempre de forma balanceada. Para tal, é necessário que a entrada tenha menos calorias que o acompanhamento e que o acompanhamento tenha menos calorias que a sobremesa. Além disso, é necessário que a entrada tenha mais fibras que o acompanhamento e que o acompanhamento tenha mais fibras que a sobremesa.</p>
+
+<p>Sua tarefa é determinar quantos cardápios distintos podem ser formados, isto é, de quantas maneiras é possível selecionar três alimentos dentre os <strong>N</strong> disponíveis para formar um cardápio válido.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém o inteiro <strong>N</strong> (3 ≤ <strong>N</strong> ≤ 10<sup>6</sup>). Considere que os alimentos são numerados de 1 a <strong>N</strong>, em ordem crescente de calorias. Desta forma, considere que o alimento <em>i</em> tem <em>i</em> Calorias.</p>
+
+<p>A segunda linha contém <strong>N</strong> inteiros distintos <strong>f<sub>1</sub></strong>,<strong>f<sub>2</sub></strong>,...,<strong>f<sub>N</sub></strong> (1 ≤ <strong>f<sub>i</sub></strong> ≤ <strong>N</strong>), indicando a quantidade de fibra nos alimentos. O alimento <em>i</em> possui <strong>f<sub>i</sub></strong> unidades de fibra.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma linha contendo o número de cardápios que podem ser formados.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3<br />
+3 2 1<br />
+                    4<br />
+3 4 2 1<br />
+                    6<br />
+6 2 4 1 5 3</p>
+						</td>
+						<td>
+							<p>1<br />
+                            2<br />
+                            4</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				6a Seletiva UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

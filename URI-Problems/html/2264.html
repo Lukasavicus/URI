@@ -1,0 +1,101 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2264 - Pollution Solution</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2264 - Pollution Solution" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2264</span>
+				<h1>Pollution Solution</h1>
+				<div>
+					<p>Por ICPC 2013 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ru.gif' alt='RU' /> Russian Federation</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>As an employee of Aqueous Contaminate Management, you must monitor the pollution that gets dumped (sometimes accidentally, sometimes purposefully) into rivers, lakes and oceans. One of your jobs is to measure the impact of the pollution on various ecosystems in the water such as coral reefs, spawning grounds, and so on.</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_153_J.png" width="500" alt="Cartesian plane" /> </center>
+
+					<p style="text-align: center;">Figure J.1: Illustration of Sample Input 1.</p>
+
+					<p>The model you use in your analysis is illustrated in Figure J.1. The shoreline (the horizontal line in the figure) lies on the <strong>x</strong>-axis with the source of the pollution located at the origin (0,0). The spread of the pollution into the water is represented by the semicircle, and the polygon represents the ecosystem of concern. You must determine the area of the ecosystem that is contaminated, represented by the dark blue region in the figure.</p>
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case. A test case starts with a line containing two integers <strong>n</strong> and <strong>r</strong>, where 3 ≤ <strong>n</strong> ≤ 100 is the number of vertices in the polygon and 1 ≤ <strong>r</strong> ≤ 1 000 is the radius of the pollution field. This is followed by <strong>n</strong> lines, each containing two integers <strong>x<sub>i</sub></strong> , <strong>y<sub>i</sub></strong> , giving the coordinates of the polygon vertices in counter-clockwise order, where −1 500 ≤ <strong>x<sub>i</sub></strong> ≤ 1 500 and 0 ≤ <strong>y<sub>i</sub></strong> ≤ 1 500. The polygon does not self-intersect or touch itself. No vertex lies on the circle boundary.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Display the area of the polygon that falls within the semicircle centered at the origin with radius <strong>r</strong>. Give the result with an absolute error of at most 10<sup>−3</sup> .</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6 10</p>
+
+								<p>-8 2</p>
+
+								<p>8 2</p>
+
+								<p>8 14</p>
+
+								<p>0 14</p>
+
+								<p>0 6</p>
+
+								<p>-8 14</p>
+
+							</td>
+							<td>
+								<p>101.576437872</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					ICPC 2013 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

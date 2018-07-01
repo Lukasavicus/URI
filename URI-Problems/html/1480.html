@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1480 - O Famoso Campo Minado</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1480 - O Famoso Campo Minado" />
+            
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1480</span>
+                <h1>O Famoso Campo Minado</h1>
+                <div>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Campo Minado é um jogo antigo, que ficou muito conhecido por ser um jogo nativo em um sistema operacional que ninguém lembra o nome. Trata-se de uma grade com N linhas e M colunas, contendo diversas minas espalhadas, e diversas dicas indicando onde elas estariam. O seu objetivo é encontrar todas as minas, sem nunca pisar em uma.</p>
+
+<p>Cada posição da grade pode ou não conter uma mina. Caso não contenha uma mina, tal posição irá conter um valor, conhecido também como dica, que irá identificar quantas minas há nos quadrados adjacentes àquele (nas 8 direções), que varia de 0 a 8 (ver Figura 1).</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1480_a.png" style="width: 102px; height: 99px;" /></p>
+
+<p>Rafael se interessou muito pela proposta do jogo, e achou tão fácil que resolveu escrever por conta própria alguns casos de jogo, onde ele define onde as minas estarão e quais as dicas iniciais. Notou porém que existem duas situações que podem ocorrer durante a partida: em determinados casos, é possível descobrir com certeza onde está a mina, graças às dicas dadas; já em outros casos, não é possível descobrir com certeza onde está a mina, e o jogador vai depender apenas de sua sorte.</p>
+
+<p>Considere uma partida como se segue: há inicialmente um determinado número de quadrados revelados (dicas) e o restante dos quadrados cobertos. O jogador pode então realizar dois movimentos: revelar um quadrado coberto, podendo encontrar uma mina (fim de jogo) ou uma dica; ou sinalizar um quadrado coberto como sendo uma mina, de modo a prevenir a si mesmo de nunca revelar tal quadrado.</p>
+
+<p>Para prosseguir na partida de uma forma lógica (sem se basear na sorte), leve em consideração as seguintes definições, em relação a um conjunto de quadrados adjacentes a algum quadrado sendo analisado:</p>
+
+<ul>
+	<li>Quando o número de quadrados cobertos (adjCob), somado do número de quadrados sinalizados (adjSin) for igual à dica (adjCob + adjSin = dica), então todos os quadrados cobertos contém minas.</li>
+	<li>Quando o número de de quadrados sinalizados (adjSin) for igual à dica (adjSin = dica), então todos os quadrados cobertos não contém minas.</li>
+</ul>
+
+<p>Veja como exemplo na Figura 2.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1480_b.png" style="width: 456px; height: 153px;" /></p>
+
+<p>Na parte a) da figura, temos adjCob = 1, adjSin = 0 e dica = 1, logo 1 + 0 = 1, e podemos sinalizar os quadrados cobertos para identificar as minas.</p>
+
+<p>Na parte b) da figura, temos adjSin = 1 e dica = 1, logo 1 = 1, e podemos revelar os quadrados adjacentes ainda cobertos.</p>
+
+<p>Para que seu caso de jogo ficasse interessante e desafiador, Rafael decidiu que devia ser possível encontrar todas as minas baseando-se apenas na definição dada, porém não sabe verificar quando isso é possível, e para isso pediu sua ajuda.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada irá conter diversos casos de teste. Cada caso de teste inicia com três inteiros <strong>N</strong>, <strong>M</strong> e <strong>K</strong> (1 ≤&nbsp;<strong>N</strong>, <strong>M</strong> ≤&nbsp;20, 1 ≤&nbsp;<strong>K</strong> ≤&nbsp;30), indicando que a grade do jogo contém <strong>N</strong> linhas e <strong>M</strong> colunas, e que há <strong>K</strong> minas escondidas naquela grade. Em seguida, haverá <strong>N</strong> linhas com <strong>M</strong> caracteres em cada linha, onde o caractere da linha <strong>i</strong> e coluna <strong>j</strong> (1 ≤&nbsp;<strong>i</strong> ≤&nbsp;<strong>N</strong> e 1 ≤&nbsp;<strong>j</strong> ≤&nbsp;<strong>M</strong>) indica o que há na posição [<strong>i</strong>, <strong>j</strong>] da grade:</p>
+
+<ul>
+	<li>Caractere “.” - Quadrado coberto.</li>
+	<li>Valor entre 0 e 8 – Quadrado revelado, onde o valor é a dica.</li>
+</ul>
+
+<p>Em seguida haverá <strong>K</strong> pares de inteiros <strong>a</strong> e <strong>b</strong> (1 ≤&nbsp;<strong>a</strong> ≤&nbsp;<strong>N</strong> e 1 ≤&nbsp;<strong>b</strong> ≤&nbsp;<strong>M</strong>), indicando que há uma mina na posição [<strong>a</strong>, <strong>b</strong>] da grade. Note que tal informação é útil quando um quadrado é revelado, para se poder calcular qual a dica que será apresentada.</p>
+
+<p>A entrada termina quando <strong>N</strong> = <strong>M</strong> = <strong>K</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Seu programa deverá imprimir, para cada caso de teste, uma linha, contendo a palavra “Possivel” caso seja possível encontrar todas as minas baseando nas definições acima, ou “Impossivel”, caso isso não seja possível.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>4 4 3<br />
+011.<br />
+13..<br />
+1..2<br />
+.2..<br />
+2 3<br />
+3 2<br />
+3 3<br />
+3 3 1<br />
+111<br />
+1.1<br />
+111<br />
+2 2<br />
+3 3 1<br />
+...<br />
+.1.<br />
+...<br />
+1 1<br />
+0 0 0</p>
+
+                            </td>
+                            <td>
+                                <p>Possivel<br />
+Possivel<br />
+Impossivel</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </body>
+    </html>

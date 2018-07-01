@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1685 - Praça de Daniel</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1685- Praça de daniel" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1685</span>
+                <h1>Praça de Daniel</h1>
+                <div>
+                    <p>Por Jonathan Alberth Quispe Fuentes, Universidad Nacional del Altiplano <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/pe.gif' alt='PE' /> Peru</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Daniel é um engenheiro civil, que foi atribuído a encontrar possíveis locais para a construção de uma praça, no entanto, a pedido da população local para a construção da praça, nenhuma árvore deve ser cortada.</p>
+                    <p>Daniel tem imagens de satélite do lugar, a necessidade de maximizar a área da praça e relatar suas possíveis localizações. Você poderia ajudar?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p> A primeira linha contém a quantidade de casos tests <strong>T</strong> (<strong>T</strong> <= 40). </p>
+                    <p> A segunda linha contém dois números inteiros <strong>n</strong> e <strong>m </strong>(1 &lt;=<strong> n</strong>,<strong> m</strong> &lt;= 1000), a altura e a largura da imagem.</p>
+
+                    <p>As seguintes linhas<strong> n</strong> contém as informações da imagem, onde " <strong>*</strong> " representa terras ocupadas por árvores e " <strong>.</strong> " Representa terra livre. Há pelo menos um " <strong>.</strong> " Na imagem.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso teste, imprima o lado maximun da praça seguido pela lista do ponto superior esquerdo de cada praça na imagem (organizado por linha e em caso de empate para a coluna). Verifique a amostra para mais detalhes.</p>
+                    <p> Não imprima linha em branco entre dois casos testes. </p>
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1<br />5 10<br />
+**********<br/>
+*.....****<br/>
+*........*<br/>
+****.....*<br/>
+**********<br/>
+<br/>
+</p>
+
+                            </td>
+                            <td>
+                                <p>The side of the square is 2 and the locations are:<br/>
+2 2<br/>
+2 3<br/>
+2 4<br/>
+2 5<br/>
+3 5<br/>
+3 6<br/>
+3 7<br/>
+3 8<br/>
+8 in total.<br/>
+<br>
+</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    * as coordenadas indicam o canto superior esquerdo do quadrado<br>
+                    * se tiver apenas um quadrado, você ainda deve imprimir: "locations are"<br>
+                    Contest Road to Fortaleza I 2014
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

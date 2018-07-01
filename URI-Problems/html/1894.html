@@ -1,0 +1,139 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1894 - Filogenia</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema B - Filogenia" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1894</span>
+				<h1>Filogenia</h1>
+				<div>
+					<p>Por Thalyson Nepomuceno, Universidade Estadual do Ceará <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Bino é um naturalista, e viajou para o planeta Binox com o objetivo de estudar a filogenia dos seres desse planeta. Bino conseguiu desenhar as árvores filogenéticas dos seres do planeta Binox, porém ele precisa da sua ajuda para determinar a menor quantidade possível de mudanças evolutivas que ocorreram entre os decendentes diretos na árvore.</p>
+
+					<p>Computacionalmente, as árvores filogenéticas são representadas por árvores binárias, em que suas folhas representam indivíduos conhecidos e seus nós internos e a raiz representam ancestrais hipotéticos, que geralmente não se possui informações genéticas precisas sobre. Com isso, Bino vai fornecer uma topologia de árvore e o código genético dos indivíduos representados pelas folhas. O código genético dos seres de Binox é representado por uma sequência de letras minúsculas do alfabeto.</p>
+
+					<p>Como Bino irá fornecer apenas os códigos genéticos dos indivíduos representados pelas folhas, a sua tarefa será inferir os códigos genéticos dos indivíduos representados pelos outros nós. Sua inferência terá que minimizar a quantidade de mudanças entre os códigos dos indivíduos diretamente ligados na árvore. As figuras a seguir apresentam a configuração inicial e duas possíveis configurações finais para a árvore do primeiro caso de teste:</p>
+
+					<p style="text-align:center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/contests/filogenia.jpg" style="height:184px; width:600px" /></p>
+
+					<p>Para calcular o custo total da árvore depois de inferida, basta comparar todas as posições do código genético de indivíduos ligados diretamente. Para cada diferença encontrada, o custo é incrementado em um. Por exemplo, para a árvore resposta do primeiro caso de teste:</p>
+
+<ul>
+	<li>&nbsp;&nbsp;&nbsp; Custo inicia em 0</li>
+	<li>&nbsp;&nbsp;&nbsp; Ligação entre 1 ("ac") e 4 ("aa"): 'c' ≠ 'a' (Custo + 1).</li>
+	<li>&nbsp;&nbsp;&nbsp; Ligação entre 2 ("ba") e 4 ("aa"): 'b' ≠ 'a' (Custo + 1).</li>
+	<li>&nbsp;&nbsp;&nbsp; Ligação entre 3 ("ab") e 5 ("aa"): 'b' ≠ 'a' (Custo + 1).</li>
+	<li>&nbsp;&nbsp;&nbsp; Ligação entre 4 ("aa") e 5 ("aa"): "aa" = "aa".</li>
+	<li>&nbsp;&nbsp;&nbsp; Custo total 3.</li>
+</ul>
+
+<p>As duas árvores inferidas tem custo total 3. Porém, Bino quer a árvore com menor custo possível e que a raiz tenha o menor valor lexicográfico possível para esse custo. Logo, Bino escolherá a árvore com raiz de código "aa".</p>
+
+<p>É garantido que todos as indivíduos folhas não tenham filhos e que todos os demais tenham exatamente dois filhos.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de múltiplas linhas. A primeira linha contém 2 inteiros <strong>N </strong>(3 ≤ <strong>N</strong> ≤ 10000) e <strong>L </strong>(1 ≤ <strong>L</strong> ≤ 1000), representando o número de espécies e o comprimento dos códigos. As próximas <strong>N</strong> linhas contêm as sequências genéticas dos indivíduos das folhas (1, ..., <strong>N</strong>). As próximas (<strong>N</strong>-1)*2 linhas contêm dois inteiros <strong>A</strong> (1 ≤ <strong>A</strong> ≤ (<strong>N</strong>*2)-1) e <strong>B</strong> (1 ≤ <strong>B</strong> ≤ (<strong>N</strong>*2)-1) representando que existe uma ligação entre o individuo de índice <strong>A</strong> e o individuo de índice <strong>B</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída esperada consiste em duas linhas. A primeira linha contém o custo mínimo da árvore. A segunda linha contém a sequência genética do indivíduo de índice (<strong>N</strong>*2)-1, que sempre é a raiz da árvore.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2<br />
+ac<br />
+ba<br />
+ab<br />
+1 4<br />
+4 5<br />
+2 4<br />
+3 5</p>
+
+							</td>
+							<td>
+								<p>3<br />
+aa</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 3<br />
+kgs<br />
+hkd<br />
+dgs<br />
+1 4<br />
+4 5<br />
+2 4<br />
+3 5</p>
+
+							</td>
+							<td>
+								<p>4<br />
+dgs</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				
+				<p class="footer">
+					Contest Oficial de Aquecimento da Olimpíada Brasileira de Informática-Fase 2, 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

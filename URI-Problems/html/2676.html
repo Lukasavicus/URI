@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2676 - Cidade no Centro</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema C - Cidade no Centro" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2676</span>
+            <h1>Cidade no Centro</h1>
+            <div>
+                <p>Por Hamilton José Brumatto, UESC <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Seu colega, vendedor mascate, possui um cartel de clientes em um conjunto de cidades interligadas por rodovias. Ele precisa escolher uma cidade para morar. O que ele quer é que a cidade fique aproximadamente no centro do conjunto. Ele pediu a você que indique qual a cidade que fica no centro. A cidade é dita localizar-se no centro, se a soma da distância desta para todas as demais é a mínima possível. As rodovias que interligam as cidades não possuem cruzamentos, somente se encontram nas cidades em si. E é garantido que todas as cidades são atingíveis a partir de qualquer outra usando uma ou um conjunto de estradas.</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A entrada é composta de vários casos de teste. Cada caso de teste inicia com dois valores inteiros positivos: <strong>N</strong> e <strong>R</strong>, onde 0 &lt; <strong>N</strong> ≤ 100 o número de cidades, e 0 ≤ <strong>R</strong> ≤ 4950 o número de rodovias que interligam as cidades. Em seguida são <strong>R</strong> linhas contendo três valores inteiros positivos: <strong>A</strong>, <strong>B</strong> e <strong>D</strong>, separados por um espaço em branco cada. <strong>A</strong> e <strong>B</strong> são duas cidades distintas 0 &lt; <strong>A</strong> ≠ B ≤ <strong>N</strong>. As <strong>N</strong> cidades são numeradas de 1 a <strong>N</strong> inclusive. <strong>D</strong> é a distância entre <strong>A</strong> e <strong>B</strong> através de uma estrada que liga ambas, 0 &lt; <strong>D</strong> &lt; 1.000. Os casos de teste terminam com <strong>N</strong> = <strong>R</strong> = 0.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste deve ser impresso na saída o número da "Cidade que fica no centro". Se houver mais de uma cidade nestas condições, devem ser listadas todas, em ordem crescente do número da cidade. Sempre haverá um único espaço em branco após cada número de cidade, inclusive da última.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>4 6<br />
+1 2 3<br />
+1 3 4<br />
+1 4 1<br />
+2 3 7<br />
+2 4 2<br />
+3 4 3<br />
+2 1<br />
+1 2 1<br />
+0 0</p>
+
+                        </td>
+                        <td>
+                            <p>4<br />
+1 2</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <p class="footer">
+                Este problema é o problema número 3 da competição ProgBASE-2017, que acontece dentro da ERBASE (Escola Regional Bahia Alagoas e Sergipe).
+            </p>
+        </div>
+
+    </body>
+</html>

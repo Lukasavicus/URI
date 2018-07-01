@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 2577 - Jogo das caixas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 0000 - Jogo das caixas" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 2577</span>
+            <h1>Jogo das Caixas</h1>
+            <div>
+                <p>Por Dilson Guimarães, UFMG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Bruno e Henrique vão jogar para passar o tempo. No jogo que eles escolheram, existem <strong>N</strong>&nbsp;caixas. Dentro de cada caixa, existe um papel com número inteiro escrito. Além das caixas, existem <strong>M</strong>&nbsp;barbantes. Cada um deles amarra duas caixas.</p>
+
+<p>O jogo funciona assim. Primeiro, Bruno escolhe uma das caixas e a remove do jogo, juntamente com os barbantes que a conectam a outras caixas. Em seguida, Henrique pode escolher um subconjunto qualquer das caixas tal que, se uma caixa for escolhida, todas as caixas amarradas a ela também devem ser escolhidas.</p>
+
+<p>A pontuação de Henrique é a soma dos números escirtos nos papeis dentro das caixas escolhidas por ele. O objetivo de Bruno é minimizar a maior pontuação que Henrique pode escolher. Por isso, para cada caixa, Bruno quer saber qual é a maior pontuação que pode ser obtida por Henrique se ela for a caixa removida.<br />
+&nbsp;</p>
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                    <p>A primeira linha da entrada contém dois inteiros <strong>N&nbsp;</strong>( 1&nbsp;<u>&lt;</u>&nbsp;<strong>N&nbsp;</strong><u>&lt;</u>&nbsp;10<sup>5</sup>&nbsp;)&nbsp;&nbsp;e <strong>M&nbsp;</strong>(&nbsp;0&nbsp;<u>&lt;</u>&nbsp;<strong>M</strong><strong>&nbsp;</strong><u>&lt;</u>&nbsp;10<sup>5</sup>&nbsp;), o número de caixas e o número de barbantes. A segunda linha contém&nbsp;<strong>N</strong>&nbsp;inteiros <strong>C<sub>1</sub>,C<sub>2</sub>, ...,C<sub>N</sub></strong> (-10<sup>4</sup> <u>&lt;</u> <strong>C<sub>i</sub></strong><u>&lt;</u> 10<sup>4</sup>) separados por espaço. O i-ésimo deles corresponde ao número no papel dentro da <strong>i</strong>-ésima caixa. Cada uma das <strong>M</strong>&nbsp;linhas seguintes descreve um barbante. A <strong>i</strong>-ésima delas contém dois inteiros <strong>A<sub>i</sub></strong>&nbsp;e <strong>B<sub>i</sub></strong>&nbsp;( 1&nbsp;<u>&lt;</u>&nbsp;<strong>A<sub>i</sub></strong>&nbsp;&lt;&nbsp;<strong>B<sub>i&nbsp;</strong><u>&lt;</u>&nbsp;<strong>N&nbsp;</strong>), indicando que o i-ésimo bargante amarra as <strong>A<sub>i</sub></strong>-ésima e <strong>B<sub>i</sub></strong>-ésima caixas.</p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>A saída deve ser composta por <strong>N</strong>&nbsp;inteiros separados por espaço. O <strong>i</strong>-ésimo inteiro deve corresponder à maior<br />
+pontuação que Henrique pode conseguir se Bruno remover a <strong>i</strong>-ésima caixa.<br />
+&nbsp;</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplos de Entrada</td>
+                        <td>Exemplos de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>3 2<br />
+5 5 -5<br />
+1 2<br />
+2 3</p>
+
+                        </td>
+                        <td>
+                            <p>0 5 10</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+        <div class="both"></div>
+
+            <table>
+                <thead>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                                <p>4 4<br />
+5 5 -5 -10<br />
+1 2<br />
+2 3<br />
+2 4<br />
+3 4</p>
+
+                        </td>
+                        <td>
+                            <p>0 5 0 5</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                VI Maratona Mineira de Programação
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1470 - Máquina Dobradora</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1470 - Máquina Dobradora" />
+            
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1470</span>
+                <h1>Máquina Dobradora</h1>
+                <div> Maratona de Programação da SBC <img alt="" src='  https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' /> Brasil</div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Uma das principais ferramentas de uma Máquina de Turing, que possibilita que seu poder de computação seja maior do que de outros modelos mais simples, é uma fita infinita, dividida em células, onde informações de um alfabeto ficam armazenadas.</p>
+
+<p>Uma Máquina Dobradora é uma máquina inspirada na Máquina de Turing, onde a fita é finita, os dados armazenados são números inteiros e, ao invés do mecanismo de funcionamento tradicional de Turing, a máquina utiliza operações de dobras da fita para fazer computações.</p>
+
+<p>Para efetuar uma dobra, a máquina escolhe uma posição entre células adjacentes e, ao realizar a dobra, ela soma os valores das células que se sobrepuseram, como pode ser visto na figura abaixo.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1470_a.png" style="width: 421px; height: 113px;" /></p>
+
+<p>Observe também que a dobra pode ser feita em uma posição anterior ao centro da fita, como ilustrado a seguir. Note também que, com isso, podem ser feitas dobras também no início e no final da fita, invertendo a ordem desta.</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1470_b.png" style="width: 418px; height: 141px;" /></p>
+
+<p>A empresa Science of Bends Company vem desenvolvendo versões comerciais da Máquina Dobradora e a produção tem aumentado recentemente. Infelizmente o último lote de Máquinas Dobradoras produzidas está com problemas e algumas máquinas não estão funcionando corretamente. Assim, testes são necessários para evitar a venda de produtos com defeito, o que poderia denegrir a imagem da empresa.</p>
+
+<p>Para testar as máquinas, um conjunto de testes é dado e, para cada fita, a máquina devolve o resultado da computação. Assim os engenheiros responsáveis pelos testes tomam nota do resultado e podem verificar se este está correto. Mas os engenheiros esqueceram-se de tomar nota de qual computa ção foi feita em cada conjunto de teste. Para evitar a necessidade de testar todas as máquinas novamente, os engenheiros estariam satisfeitos em descobrir se pelo menos existe uma sequência de dobras coerente para um par de fitas de entrada e saída. Para isso, eles contrataram você para desenvolver um programa que verifique, para cada fita de entrada, se existe uma sequência de dobraduras que leve a uma fita de saída.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada caso de teste é composto por 4 linhas. As primeiras duas linhas referem-se à entrada fornecida à Máquina Dobradora e as duas seguintes referem-se à saída fornecida pela Máquina. A primeira linha da entrada contém um único inteiro <strong>N </strong>(<strong>M</strong> ≤ <strong>N</strong> ≤ 15), descrevendo o tamanho da fita de entrada. A linha seguinte conterá <strong>N</strong> inteiros <em><strong>v</strong><sub>1</sub>, . . . , <strong>v</strong><sub>N</sub></em>, correspondentes ao conteúdo da fita de entrada. A terceira linha contém um inteiro <strong>M</strong> (1 ≤ <strong>M </strong>≤ <strong>N</strong>), o tamanho da fita de saída e a última linha conterá inteiros <em>w<sub>1</sub>, . . . ,w<sub><strong>M</strong></sub></em>, correspondentes ao conteúdo da fita de saída. O final da entrada é indicado por EOF (fim de arquivo).</p>
+
+<p>Nota: 0 ≤<strong> </strong><em><strong>v</strong><sub>i, </sub><strong>w</strong><sub>j </sub></em>≤ 10<sup>8</sup> para&nbsp;1 ≤ <sub><em>i</em></sub> ≤ <strong>N</strong> e 1 ≤ <sub><em>j</em></sub> ≤ <strong>M</strong>.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>A saída de cada caso de teste conterá uma única linha contendo a letra “S” caso exista uma sequência de dobraduras que transforme a fita de entrada na fita de saída e “N” em caso contrário.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>7<br />
+5 6 23 8 19 7 10<br />
+4<br />
+5 16 30 27<br />
+7<br />
+1 2 3 4 5 6 7<br />
+5<br />
+7 6 5 5 5<br />
+4<br />
+1 2 3 4<br />
+1<br />
+10<br />
+6<br />
+19 23 3 51 2 0<br />
+2<br />
+34 64<br />
+6<br />
+1 2 3 4 5 6<br />
+6<br />
+1 2 3 4 5 6<br />
+6<br />
+1 2 3 4 5 6<br />
+6<br />
+6 5 4 3 2 1</p>
+
+                            </td>
+                            <td>
+                                <p>S<br />
+S<br />
+S<br />
+N<br />
+S<br />
+S</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">      
+                   Maratona de Programação da SBC 2013.
+                </p>                
+            </div>
+
+        </body>
+    </html>

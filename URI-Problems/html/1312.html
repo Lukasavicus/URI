@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1312 - Empilhamento de Bolas</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1312 - Empilhamento de Bolas" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1312</span>
+            <h1>Empilhamento de Bolas</h1>
+            <div><p>Por Vinicius Santos <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    O canal de TV XYZ está desenvolvendo uma novo&nbsp;<em>game show</em>, onde o competidor tem que fazer algumas escolhas de modo a obter um prêmio. O jogo consiste de uma pilha triangular de bolas, cada uma delas tendo um valor inteiro, como mostrado no exemplo a seguir.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Ball%20Stacking.png" style="width: 152px; height: 135px;" />​</p>
+
+                <p>
+                    O competidor deve escolher quais bolas ele irá levar e seu prêmio é a soma dos valores destas bolas. Entretanto, o competidor pode levar uma bola apenas se ele também levar todas as bolas diretamente acima dela. Isto pode requerer levar bolas adicionais usando a mesma regra. Note que o competidor pode escolher não levar bola alguma, caso no qual o prêmio é zero.</p>
+
+                <p>
+                    O diretor do programa de TV está preocupado a respeito do prêmio máximo que um competidor pode obter dada uma pilha. Como ele é seu chefe e ele não sabe como responder essa questão, ele atribuiu esta tarefa a você.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste é descrito usando várias linhas. A primeira linha contém um inteiro N representando o número de linhas da pilha (1 = N = 1000).</p>
+
+                <p>
+                    A <em>i-ésima</em> das próximas <strong>N</strong> linhas contém <strong>i</strong> inteiros B<sub>ij</sub>(-10<sup>5</sup> ​≤&nbsp;Bij ≤ 10<sup>5</sup> e 1 ≤ j ≤ i ≤ N); o número Bij é o valor da<em> j-ésima</em> bola na<em> i-ésima</em> linha da pilha (a primeira linha é a mais ao topo, e em cada linha a primeira bola é a mais a esquerda).</p>
+
+                <p>
+                    O último caso de teste é seguido por uma linha contendo um zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima uma linha com um inteiro representando o prêmio máximo que um competidor pode fazer a partir da pilha.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+
+                                4<br />
+                                3<br />
+                                -5 3<br />
+                                -8 2 -8<br />
+                                3 9 -2 7<br />
+                                2<br />
+                                -2<br />
+                                1 -10<br />
+                                3<br />
+                                1<br />
+                                -5 3<br />
+                                6 -4 1<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                7<br />
+                                0<br />
+                                6</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2011.
+            </p>
+        </div>
+
+    </body>
+</html>

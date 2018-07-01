@@ -1,0 +1,123 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2465 - Passa Bolinha</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2465 - Passa Bolinha" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2465</span>
+				<h1>Passa Bolinha</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2014 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O professor Miguel desafiou os alunos do colégio onde ele leciona com uma brincadeira que exige muita atenção! No pátio do colégio, os alunos formam um quadrado com N fileiras e N colunas, de modo que a primeira fileira esteja voltada para o norte. Cada um dos N<sup>2</sup> alunos segura uma bandeira e tem um número colado na camiseta. Inicialmente, as bandeiras estão abaixadas e os alunos estão voltados para o norte. Todos os alunos têm que seguir exatamente o mesmo comportamento:</p>
+
+<ul>
+	<li>Ao receber a bolinha, levanta sua bandeira e realiza a seguinte ação quatro vezes, em sequência:</li>
+</ul>
+
+<ul><p>– Vira-se 90 graus no sentido horário. Se o colega que ficou à sua frente tiver um número na camiseta maior ou igual ao seu, e estiver com a bandeira abaixada, passa a bolinha ao colega e aguarda que ele lhe devolva a bolinha;</p></ul>
+
+<ul>
+	<li>Devolve a bolinha a quem lhe passou a bolinha inicialmente.</li>
+</ul>
+
+<p>Nesta tarefa, você deve escrever um programa que, dados os números nas camisetas de cada aluno, e a posição do aluno a quem o professor Miguel vai entregar a bolinha, calcule quantas bandeiras estarão levantadas ao final, quando esse aluno devolver a bolinha ao professor. Por exemplo, a parte direita da figura abaixo mostra que sete alunos vão levantar a bandeira se o professor entregar inicialmente a bolinha ao aluno na fileira 3, coluna 1, como indicado na parte esquerda da figura.</p>
+<p class="center"><img style="width: 450px" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_178_L.png' alt='' /></p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 100), o número de fileiras (que é igual ao de colunas). A segunda linha contém dois números, <strong>I</strong> e <strong>J </strong>(1 ≤ <strong>I</strong>,<strong> J</strong>&nbsp;≤ N), indicando respectivamente, a fileira e a coluna do aluno a quem o professor Miguel entregará a bolinha. As <strong>N</strong> linhas seguintes contém <strong>N</strong> inteiros cada uma, indicando os números que estão nas camisetas dos alunos (os números nas camisetas estão entre 1 e 9, inclusive).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir apenas uma linha contendo um inteiro, o número de bandeiras que estarão levantadas ao final.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4<br />
+3 1<br />
+6 7 9 9<br />
+1 4 3 5<br />
+2 4 5 1<br />
+1 3 2 9</p>
+
+							</td>
+							<td>
+								<p>7</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6<br />
+4 5<br />
+9 4 9 6 1 9<br />
+9 9 3 8 9 3<br />
+9 9 3 9 9 6<br />
+9 9 3 9 2 1<br />
+9 9 9 9 7 9<br />
+9 4 9 4 9 7</p>
+
+							</td>
+							<td>
+								<p>21</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2014 Fase 2 Nível Júnior
+				</p>
+			</div>
+
+		</body>
+	</html>

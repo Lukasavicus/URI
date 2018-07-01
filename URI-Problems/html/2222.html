@@ -1,0 +1,120 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2222 - Brincando com Conjuntos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - Problema 2222 - Brincando com Conjuntos" />
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+  </head>
+  <body>
+
+    <div class="header">
+      <span>URI Online Judge | 2222</span>
+      <h1>Brincando com Conjuntos</h1>
+      <div>
+        <p>Por Gabriel Duarte, UNIFESO <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem">
+
+      <div class="description">
+        <p>Dabriel é um menino fissurado por matemática, ele acaba de aprender em sua escola operações sobre conjuntos.<br />
+          Após passar a tarde toda brincando com alguns conjuntos que ele possui, chega a hora de resolver as lições de casa, porém ele já está muito cansado e com medo de que possa cometer alguns erros, solicitou sua ajuda.</p>
+
+        <p>Dabriel deseja um programa de computador que dado <strong>N</strong> conjuntos e os elementos de cada conjunto, ele possa realizar algumas operações, são elas:</p>
+
+        <p><strong>1 X Y</strong>: Retorna a quantidade de elementos distintos da intersecção entre o conjunto <strong>X</strong> com o <strong>Y</strong>.</p>
+
+        <p><strong>2 X Y</strong>: Retorna a quantidade de elementos distintos da união entre o conjunto <strong>X</strong> com o <strong>Y</strong>.</p>
+      </div>
+
+      <h2>Entrada</h2>
+
+      <div class="input">
+        <p>
+          A entrada é composta por
+          diversas instâncias. A primeira linha da entrada contém um inteiro <b>T</b>
+          indicando o número de instâncias.
+
+          Cada instância inicia com um inteiro <strong>N</strong> (1 ≤
+          <strong>N</strong> ≤ 10⁴), representando a quantidade de conjuntos
+          que Dabriel possui. As próximas <strong>N</strong> linhas começam com
+          um inteiro <strong>Mi </strong>(1 ≤ <strong>Mi</strong> ≤ 60), que
+          indica o total de elementos que o conjunto <strong>i</strong> possui,
+          segue então <strong>Mi</strong> inteiros<strong> Xij</strong> (1 ≤
+          <strong>Xij</strong> ≤ 60), que representam o valor de cada elemento.
+          Na próxima linha contém um inteiro <strong>Q</strong> (1 ≤
+          <strong>Q</strong> ≤ 10⁶), representando quantas operações Dabriel
+          deseja realizar. Nas próximas <strong>Q </strong>linhas terá a
+          descrição de uma operação.</p>
+      </div>
+
+      <h2>Saída</h2>
+
+      <div class="output">
+        <p>Para cada operação seu programa deverá imprimir a quantidade de elementos, conforme explicado na descrição.</p>
+      </div>
+
+      <div class="both"></div>
+
+      <table>
+        <thead>
+          <tr>
+            <td>Exemplo de Entrada</td>
+            <td>Exemplo de Saída</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="division">
+              <p>1<br />
+                4<br />
+                1 1<br />
+                2 1 5<br />
+                3 2 4 6<br />
+                4 1 3 5 7<br />
+                5<br />
+                1 1 2<br />
+                1 1 4<br />
+                2 1 4<br />
+                2 3 4<br />
+                1 2 4
+                </p>
+
+            </td>
+            <td>
+              <p>1<br />
+                1<br />
+                4<br />
+                7<br />
+                2</p>
+
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="both"></div>
+
+      <p class="footer">
+        II Maratona de programação do IFCE-Aracati 
+      </p>
+    </div>
+
+  </body>
+</html>

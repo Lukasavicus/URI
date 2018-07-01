@@ -1,0 +1,127 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2328 - Chocolate</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2328 - Chocolate" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2328</span>
+				<h1>Chocolate</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Juliana é uma famosa doceira reconhecida internacionalmente pelos seus bombons, exportados para todo o mundo. Embora não revele a ninguém as suas receitas, ela já deu entrevistas contando alguns de seus segredos. Sua fábrica de bombons utiliza somente chocolates comprados de um único produtor suíço, que envia barras gigantescas que são cortadas por grandes máquinas.</p>
+
+<p>Dada uma barra grande de chocolate, Juliana realiza divisões sucessivas da barra até obter uma barra que contém a quantidade exata de chocolate para aquela receita. Após cada divisão, ela seleciona um dos pedaços resultantes e armazena os demais para uso futuro. As divisões são determinadas por critérios técnicos relacionados ao tamanho das barras e aos equipamentos disponiveis em um dado momento.</p>
+
+<p>Por exemplo, se ela deseja obter uma barra de 100g de chocolate a partir de uma barra de 3Kg, primeiro ela divide a barra ao meio. Em seguida, um dos pedaços é dividido em cinco partes iguais e por fim, um desses pedaços de 300g é dividido em 3 pedaços, resultando no pedaço de 100g necessário para a receita. Nesse processo, 1 pedaço é utilizado para a receita e 7 pedaços de diferentes tamanhos serão guardados para uso futuro. A figura abaixo ilustra esse cenário.</p>
+
+<p class="center"><img style="width: 500px;" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_161_D.png' alt='' /></p>
+
+<p>Dada uma sequência de divisões realizadas por Juliana em uma barra de chocolate, determinar quantos pedaços serão armazenados em estoque para uso futuro.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do&nbsp;<em>dispositivo de entrada padrão</em>&nbsp;(normalmente o teclado). A primeira linha da entrada contém um inteiro&nbsp;<strong><em>N</em></strong>&nbsp;que indica o número de divisões feitas na barra de chocolate original (1 ≤&nbsp;<strong><em>N</em></strong>&nbsp;≤ 1.000). A linha seguinte contém&nbsp;<strong><em>N</em></strong>&nbsp;inteiros&nbsp;<strong><em>I</em></strong>&nbsp;(2 ≤&nbsp;<strong><em>I</em></strong>&nbsp;≤ 10) representando o número de pedaços em que o pedaço atual foi dividido. Sempre que é feita uma divisão, um pedaço é utilizado para a próxima divisão e os demais são separados para serem armazenados em estoque.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na&nbsp;<em>saída padrão</em>, uma única linha, contendo o número de pedaços de chocolate que serão armazenados em estoque.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+2 3 5</p>
+
+							</td>
+							<td>
+								<p>7</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>5 2 2 2 3 3</p>
+
+                    </td>
+                    <td>
+                        <p>7</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>7<br />
+2 3 4 5 6 7 8</p>
+
+                    </td>
+                    <td>
+                        <p>28</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2007 Fase 1 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

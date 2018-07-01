@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1657 - Corretor Automático de Erros de Soletração</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1657 - Corretor Automático de Erros de Soletração" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1657</span>
+                <h1>Corretor Automático de Erros de Soletração</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Certos editores de texto oferecem um mecanismo de correção para palavras que aparentam estar escritas incorretamente.</p>
+
+                    <p>Neste problema, você deve implementar um simples Corretor Automático de Erros de Soletração (Automatic Correction of Misspellings - ACM). ACM corrige os seguintes erros de soletração:</p>
+
+                    <ol>
+                    	<li>Uma letra faltando (por exemplo, paso ao invés de passo) ou letras escritas a mais (por exemplo, peasso ao invés de passo).</li>
+                    	<li>Uma letra errada (por exemplo, passu ao invés de passo).</li>
+                    	<li>Ordem de duas letras adjacentes errada (por exemplo, pasos ao invés de passo).</li>
+                    </ol>
+
+                    <p>ACM é baseado em um dicionário de palavras. Quando um texto contem uma palavra que não está no dicionário, ACM tentará substitui-la por uma palavra similar do dicionário. Duas palavras são similares se nós podemos transformar uma palavra em outra seguindo exatamente um dos passos listados acima. Uma palavra desconhecida não é alterada se não existem palavras similares no dicionário.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha do conjunto de entrada contém um número <strong>N</strong> representando o número de palavras no dicionário (<strong>N</strong> ≤ 10000). As próximas <strong>N</strong> linhas contêm as palavras do dicionário. A linha seguinte contém um número inteiro <strong>Q</strong> (<strong>Q</strong> ≤ 1000) representando o número de palavras a serem corrigidas. Você pode assumir que cada palavra do conjunto de entrada consiste de 1 a 25 letras minúsculas (de ‘a’ a ‘z’).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada palavra a ser corrigida, imprima uma linha com a palavra a ser corrigida seguida de uma das possibilidades abaixo:</p>
+
+                    <ol>
+                    	<li><strong>is correct</strong>, (está correta em inglês) se a palavra está no dicionário.</li>
+                    	<li><strong>is a misspelling of X</strong>, (é um erro de soletração de em inglês) onde <strong>X</strong> significa a palavra similar do dicionário, uma vez que a palavra a ser corrigida não está no dicionário. Como neste caso poderão existir várias possibilidades, escolha a palavra do dicionário que aparece primeiro no conjunto de entrada.</li>
+                    	<li><strong>is unknown</strong>, (é desconhecida em inglês) se os casos 1 e 2 não se aplicam.</li>
+                    </ol>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>10<br />
+this<br />
+is<br />
+a<br />
+dictionary<br />
+that<br />
+we<br />
+will<br />
+use<br />
+for<br />
+us<br />
+6<br />
+su<br />
+as<br />
+the<br />
+dictonary<br />
+us<br />
+willl</p>
+
+                            </td>
+                            <td>
+                                <p>su is a misspelling of us<br />
+as is a misspelling of is<br />
+the is unknown<br />
+dictonary is a misspelling of dictionary<br />
+us is correct<br />
+willl is a misspelling of will</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2006/2007
+                </p>
+            </div>
+
+        </body>
+    </html>

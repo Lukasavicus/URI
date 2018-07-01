@@ -1,0 +1,283 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2141 - P4 Simplificado</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2141 - P4 Simplificado" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2141</span>
+				<h1>P4 Simplificado</h1>
+				<div>
+					<p>Por Joao Marcos Salvanini Bellini de Moraes, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Você, fã da franquia de jogos eletrônicos "A Verdadeira Reencarnação da Deusa", foi contratado pela empresa desenvolvedora ATULS para ajudar na criação de uma versão simplificada do jogo Personalidade 4, um spin-off dessa franquia. Você será responsável pela implementação do sistema de batalha. A tabela a seguir contém as habilidades possíveis e suas respectivas características:</p>
+
+<style>
+	.p4s {
+		border:1px solid #C0C0C0;
+		border-collapse:collapse;
+		padding:5px;
+		width: 100%;
+	}
+	.p4s th {
+		border:1px solid #C0C0C0;
+		padding:5px;
+		background:#F0F0F0;
+	}
+	.p4s td {
+		border:1px solid #C0C0C0;
+		text-align:center;
+		padding:5px;
+	}
+</style>
+<table class="p4s">
+	<thead>
+	<tr>
+		<th>Habilidade</th>
+		<th>Tipo</th>
+		<th>Poder</th>
+		<th>Custo HP</th>
+		<th>Custo MP</th>
+		<th><div style="width: 300px;">Efeito</div></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>MightySwing</td>
+		<td>Físico</td>
+		<td>270</td>
+		<td>14%</td>
+		<td>-</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>GiganticFist</td>
+		<td>Físico</td>
+		<td>560</td>
+		<td>16%</td>
+		<td>-</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>RainyDeath</td>
+		<td>Físico</td>
+		<td>350</td>
+		<td>20%</td>
+		<td>-</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Agilao</td>
+		<td>Mágico - Fogo<br></td>
+		<td>200</td>
+		<td>-</td>
+		<td>8</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Agidyne</td>
+		<td>Mágico - Fogo<br></td>
+		<td>320</td>
+		<td>-</td>
+		<td>12</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Bufula</td>
+		<td>Mágico - Gelo<br></td>
+		<td>200</td>
+		<td>-</td>
+		<td>8</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Bufudyne</td>
+		<td>Mágico - Gelo<br></td>
+		<td>320</td>
+		<td>-</td>
+		<td>12</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Megidola</td>
+		<td>Mágico<br></td>
+		<td>360</td>
+		<td>-</td>
+		<td>32</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Megidolaon</td>
+		<td>Mágico<br></td>
+		<td>420</td>
+		<td>-</td>
+		<td>60</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>BlackViper</td>
+		<td>Mágico<br></td>
+		<td>440</td>
+		<td>-</td>
+		<td>64</td>
+		<td>-</td>
+	</tr>
+	<tr>
+		<td>Tarukaja</td>
+		<td>Suporte</td>
+		<td>-</td>
+		<td>-</td>
+		<td>12</td>
+		<td>Ataque Físico atual do atacante aumenta em 25% e fica ativo até que ele use um atk físico</td>
+	</tr>
+	<tr>
+		<td>Rakukaja</td>
+		<td>Suporte<br></td>
+		<td>-</td>
+		<td>-</td>
+		<td>12</td>
+		<td>Defesa atual do atacante aumenta em 25% e fica ativo até que ele sofra um atk qualquer</td>
+	</tr>
+	<tr>
+		<td>Tarunda</td>
+		<td>Suporte<br></td>
+		<td>-</td>
+		<td>-</td>
+		<td>12</td>
+		<td>Ataque Físico atual do defensor diminui em 25% e fica ativo até que ele use um atk físico</td>
+	</tr>
+	<tr>
+		<td>Rakunda</td>
+		<td>Suporte<br></td>
+		<td>-</td>
+		<td>-</td>
+		<td>12</td>
+		<td>Defesa atual do defensor diminui em 25% e fica ativo até que ele sofra um atk qualquer</td>
+	</tr>
+	<tbody>
+</table>
+
+<p>OBS.: As habilidades do tipo Suporte não acumulam e sempre consomem MP, mesmo não tendo mais efeito. Por exemplo, se o jogador usa a habilidade Rakunda 5 vezes seguida, a DEF do defensor ainda será 25% menor e o consumo de MP terá sido 60. Para testar a funcionalidade desse sistema, você deverá considerar uma batalha 1 vs. 1. Cada combatente terá nível, HP (pontos de vida), MP (pontos de magia) e os atributos ATK (ataque físico), MAG (ataque mágico) e DEF (defesa geral). A fórmula de dano é a seguinte:</p>
+
+<p><div align="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2141.png" style="height:80px; width:250px" /></div></p>
+
+<p>AT = Ataque do atacante atual. Se ataque físico, substitua por ATK, se ataque mágico, substitua por MAG.<br />
+DF = Defesa geral do defensor atual, isto é, o atributo DEF.<br />
+P = Poder do ataque.<br />
+DIFF = Diferença entre o nível do atacante atual e o nível do defensor atual. Este valor não será menor do que -10 e nem maior do que 10.</p>
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Haverá somente um caso de teste. A primeira linha deve conter o nome do combatente 1 e a segunda linha, seu respectivo nível (inteiro: 1 ≤ <strong>N</strong> ≤ 99), <strong>HP</strong>, <strong>MP</strong> (ponto flutuante: 1 ≤ <strong>HP</strong>, <strong>MP</strong> ≤ 999), <strong>ATK</strong>, <strong>MAG</strong> e <strong>DEF</strong> (ponto flutuante: 1 ≤ <strong>ATK</strong>, <strong>MAG</strong>, <strong>DEF</strong> ≤ 40). A terceira e a quarta linha deverá conter o mesmo que a primeira e a segunda, mas para o combatente 2. O primeiro a atacar é o combatente 1, ou seja, no primeiro turno, o combatente 1 é o atacante atual e o combatente 2 é o defensor atual. No segundo turno, o atacante é o combatente 2 e o defensor é o combatente 1. A mesma lógica se aplica nos turnos seguintes.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Assim que o HP do combatente X chegar a 0 ou ficar abaixo de 0, imprima "X is dead." e na linha seguinte, o HP, MP, ATK, MAG e DEF do sobrevivente.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>Daisoujou</p>
+
+<p>25 200 100 28 12 20</p>
+
+<p>Matador</p>
+
+<p>22 250 89 35 10 30</p>
+
+<p>MightySwing</p>
+
+<p>Megidolaon</p>
+
+<p>Tarukaja</p>
+
+<p>RainyDeath</p>
+
+<p>GiganticFist</p>
+
+							</td>
+							<td>
+								<p>Matador is dead.</p>
+
+<p>Daisoujou HP: 29.11, MP: 88.00, ATK: 28.0, MAG: 12.0, DEF: 20.0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>Chie</p>
+
+<p>1 1 1 1 1 1</p>
+
+<p>Shadow</p>
+
+<p>1 1 1 1 1 1</p>
+
+<p>Tarunda</p>
+
+<p>MightySwing</p>
+
+							</td>
+							<td>
+								<p>Chie is dead.</p>
+
+<p>Shadow HP: 0.86, MP: 1.00, ATK:1.0, MAG: 1.0, DEF: 1.0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Aquecimento para a VI Olimpíada Interna de Programação do IFSULDEMINAS - OLIP 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

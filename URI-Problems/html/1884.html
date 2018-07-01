@@ -1,0 +1,99 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1884 - Lutando Contra os Rajasi</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1884 - Lutando contra os Rajasi" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1884</span>
+				<h1>Lutando Contra os Rajasi</h1>
+				<div>
+					<p>Por Stefano Tommasini, Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O Muay Thai é uma arte marcial originária da Tailândia. Muitos praticantes dessa arte são considerados lendas pelo povo tailandês. Dentre todos eles, Nai Khanom Tom é considerado o "pai" do muay thai. A seguinte história faz parte da lenda desse lutador.</p>
+
+					<p>O rei Mangra da Birmânia organizou uma luta entre um preso de guerra tailandês e um guerreiro birmano para decidir qual tinha o melhor estilo de luta. Nai Khanom Tom foi escolhido para lutar e derrotou com muita facilidade seu adversário. Porém, o árbitro da luta alegou que isso aconteceu pela dança (Ram Muay) feita por Nai Khanom Tom. Por isso, o rei mandou a que Nai lutasse contra dez guerreiros birmanos, um após o outro. Ainda assim, o resultado foi o mesmo, Nai Khanom Tom venceu todos. Após ver as habilidades de Nai, o rei Mangra concedeu-lhe a liberdade.</p>
+
+					<p>Essa história passou de geração a geração. Existem até pessoas que acreditam que Nai Khanom Tom podia vencer qualquer quantidade de adversários, incluindo seres da mitologia tailandesa.</p>
+
+					<p>Você é um grande fã do muay thai e deseja testar a veracidade dessa afirmação. Suponha que Nai Khanom Tom possui <i>H</i> pontos de vida e tem que lutar contra <i>N</i> Rajasis. Cada um deles possui <i>x<sub>i</sub></i> pontos de vida e <i>y<sub>i</sub></i> pontos de recuperação. Para vencer uma luta, os pontos de vida de Nai devem de ser maiores do que os pontos de vida do Rajasi. Após lutar, Nai perde <i>x<sub>i</sub></i> pontos de vida e recupera <i>y<sub>i</sub></i> pontos em seguida. Além disso, pelo seu treinamento Nai conhece <i>K</i> feitiços que podem ser usados para derrotar um Rajasi instantaneamente. Porém, nesse caso, ele não perde nem ganha os pontos de vida como o caso anterior.</p>
+
+					<p>Agora, chegou a sua oportunidade de provar essa hipótese. Dada a descrição de um conjunto de <i>N</i> Rajasis, você deve responder se Nai Khanom Tom pode vencer todos eles. Note que Nai Khanom Tom pode lutar com os Rajasis na ordem que ele quiser.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+					<p>A primeira linha de cada instância contém 3 inteiros, <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 2000), <strong>H</strong> (0 ≤ <strong>H</strong> &lt; 10<sup>9</sup>) e <strong>K</strong> (1 ≤ <strong>K</strong> ≤ 2000), onde <strong>H</strong> representa o valor inicial dos pontos de vida. Cada uma das <strong>N</strong> linhas seguintes contém 2 inteiros, <strong>x<sub>i</sub></strong> e <strong>y<sub>i</sub></strong> (1 ≤ <strong>x<sub>i</sub></strong>, <strong>y<sub>i</sub></strong> &lt; 10<sup>9</sup>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprima uma linha contendo 'Y' se for possível que Nai Khanom Tom vença todos os Rajasis; imprima 'N' caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2<br />
+2 10 2<br />
+20 10<br />
+100 1<br />
+2 10 0<br />
+9 10<br />
+10 1</p>
+
+							</td>
+							<td>
+								<p>Y<br />
+Y</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIX Maratona de Programação IME-USP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,162 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1855 - Mapa do Meistre</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1855 - Mapa do Meistre" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1855</span>
+				<h1>Mapa do Meistre</h1>
+				<div>
+					<p>Por Emilio Wuerges, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Sam encontrou um conjunto de mapas do velho Meistre Aemon, que a princípio, deviam mostrar, cada um, a localização de um baú com obsidiana. Entretanto, ao analizar alguns mapas possuíam erros óbvios, e outros só mandando uma equipe para explorar para saber.</p>
+
+					<p>É certo que alguns mapas apontam para uma localização absurda fora do mapa e alguns terminam em círculos, tornando estes mapas completamente inúteis.</p>
+
+					<p>Como são muitos mapas, os irmãos da patrulha da noite são poucos e o inverno está chegando, o seu trabalho é fazer um programa para verificar se um mapa leva ou não a um ponto com um baú de obsidiana.</p>
+
+					<p>Os mapas tem as seguintes características:</p>
+
+					<ul>
+						<li>
+						<p>O ponto de partida de todos os mapas é o canto superior esquerdo.</p>
+						</li>
+						<li>
+						<p>São retangulares e em cada ponto apresenta um destes símbolos:</p>
+
+						<ul>
+							<li>
+							<p>Um espaco de terreno atravessável.</p>
+							</li>
+							<li>
+							<p>Uma flecha, representando uma possível troca de direção;</p>
+							</li>
+							<li>
+							<p>Um baú.</p>
+							</li>
+						</ul>
+						</li>
+					</ul>
+
+					<p>Como os lugares que estes mapas descrevem são cheios de perigos, é vital que se siga o caminho descrito no mapa.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Na primeira linha, está um inteiro positivo <strong>x
+                    &lt; 100 </strong> que simboliza a <strong>largura</strong> do mapa.</p>
+
+					<p>Na segunda linha, está um inteiro positivo <strong>y &lt; 100</strong> que simboliza a <strong>altura</strong> do mapa.</p>
+
+					<p>As linhas seguintes contêm diversos caracteres respeitando as dimensões do mapa.<br />
+					Os caracteres válidos são:</p>
+
+					<ul>
+						<li>
+						<p>Uma flecha para a direita: <strong>&gt;</strong></p>
+						</li>
+						<li>
+						<p>Uma flecha para a esquerda: <strong>&lt;</strong></p>
+						</li>
+						<li>
+						<p>Uma flecha para baixo: <strong>v</strong></p>
+						</li>
+						<li>
+						<p>Uma flecha para cima: <strong>^</strong></p>
+						</li>
+						<li>
+						<p>Um espaco de terreno atravessável: <strong>.</strong></p>
+						</li>
+						<li>Um baú: <strong>*</strong></li>
+					</ul>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída deve consistir de uma única linha com um único caracter <strong>!</strong> ou <strong>*</strong>.</p>
+
+					<p><strong>!</strong> significa que o mapa é inválido. <strong>*</strong> significa que o mapa é válido.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6<br />
+								1<br />
+								&gt;....*</p>
+
+							</td>
+							<td>
+								<p>*</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7<br />
+								5<br />
+								&gt;.....v<br />
+								.......<br />
+								.......<br />
+								.......<br />
+								^.....&lt;</p>
+
+							</td>
+							<td>
+								<p>!</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1753 - Cavaleiros Da Tàvola Redonda</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1753 - Cavaleiros Da Tàvola Redonda" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1753</span>
+                <h1>Cavaleiros Da Tàvola Redonda</h1>
+                <div>
+                    <p>Por Jorge Enrique Moreira Broche, Universidad Central “Marta Abreu” de Las Villas <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cu.gif' alt='CU' /> Cuba</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Todos os meses o Rei Arthur celebra uma reunião do Conselho Superior. Os K cavaleiros que participam desses encontros são conhecidos como Os Cavaleiros da Távola Redonda, provavelmente porque eles se sentam em uma enorme mesa de carvalho redonda tendo <em>K</em> lugares e um grande trono com uma espada e uma pedra esculpidas em sua parte traseira.</p>
+
+                    <p>Para a reunião de hoje, cada cavaleiro recebeu um número entre 1 e <em>K</em> que indica o assento que ele deve tomar durante a reunião. Os assentos são numerados no sentido horário de 1 a <em>K</em>, sendo o assento numerado 1 o primeiro a esquerda do grande trono. Obviamente, o próprio rei não foi dado um número, porque ele se senta no trono. O escudeiro do Rei Arthur garantiu que não há dois cavaleiros com o mesmo número portanto não deverá haver nenhum problema.</p>
+
+                    <p>Como de costume, o rei foi o primeiro a entrar na sala do conselho hoje. De acordo com as regras de protocolo, ele sentou-se no seu trono e preparou-se para receber os <em>K</em> cavaleiros que devem entrar e sentar-se um a um. Após os <em>D</em> primeiros cavaleiros chegarem, o rei observou que alguns deles poderiam ter-se sentado em assentos errados, porque eles estavam distraídos falando sobre quem iria ganhar o próximo torneio. Que confusão! O escudeiro do Rei Arthur prontamente interveio e deu instruções para o restante <em>K</em> - <em>D</em> cavaleiros. Cada um deles deve entrar na sala do conselho e tentar sentar-se em seu assento legítimo; se sua cadeira já está ocupada, o cavaleiro deve caminhar no sentido horário ao redor da mesa e sentar no primeiro assento desocupado que ele encontra. Assim, a distribuição final de cavaleiros em torno da mesa depende da ordem em que entram na sala.</p>
+
+                    <p>Rei Arthur está agora interessado em saber o número de distribuições distintas dos <em>K</em> cavaleiros ao redor da mesa, dadas as cadeiras ocupadas pelos primeiros <em>D</em> cavaleiros. Duas distribuições são consideradas distintas quando há pelo menos um cavaleiro que se sente em diferentes lugares em ambas as distribuições.</p>
+
+                    <p>Como o Royal Advisor in Combinatorics and other Mathematics (ou Real ACM) a tarefa é atribuída a você. Você precisa dar uma resposta dentro de cinco horas em risco de perder o favor do rei. Anda logo!</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém dois inteiros <strong>K</strong> (1 ≤ <strong>K</strong> ≤ 10<sup>6</sup>) e <strong>D</strong> (1 ≤ <strong>D</strong> ≤ 10<sup>5</sup>), representando, respectivamente, o número de cavaleiros e o número de cavaleiros distraídos. Cada uma das linhas próximas <strong>D</strong> descreve um cavaleiro distraído diferente com dois inteiros <strong>A</strong> e <strong>B</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>K</strong>), indicando que o cavaleiro que foi atribuído o assento <strong>A</strong> na verdade sentou-se no assento <strong>B</strong>. É garantido que não há dois cavaleiros que se sentaram no mesmo assento.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Apresente uma linha com um inteiro que representa o número de distribuições distintas dos <strong>K</strong> cavaleiros ao redor da mesa. Este número pode ser bastante grande, por isso imprima o resto da divisão por 10<sup>9</sup> + 7.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplos de Entrada</td>
+                            <td>Exemplos de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 1<br />
+1 2</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div><table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 4<br />
+5 5<br />
+1 2<br />
+2 3<br />
+3 4</p>
+
+                            </td>
+                            <td>
+                                <p>1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>8 3<br />
+3 3<br />
+4 8<br />
+2 4</p>
+
+                            </td>
+                            <td>
+                                <p>2</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>              
+            <p class="footer">
+                    ACM/ICPC Latin America Contest 2014.
+                </p>
+            </div>
+
+        </body>
+    </html>

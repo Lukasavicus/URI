@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1778 - Defesa ao Grafo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema D - Defesa ao Grafo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1778</span>
+                <h1>Defesa ao Grafo</h1>
+                <div>
+                    <p>Por Gustavo Stor, UFPE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Tower Defense é um famoso jogo de estratégia onde o jogador deve posicionar torres de defesa para proteger algo - seja um castelo, um tesouro ou até você mesmo - contra uma horda de monstros. Há várias variações do jogo: em alguns tipos, o mapa se assemelha a um tabuleiro, e os monstros tem um caminho especifico a seguir; em outros tipos, o mapa é aberto e os monstros podem chegar ao destino final por vários meios diferentes.</p>
+
+                    <p>Graph Defense é uma variação do Tower Defense comum. Aqui, o mapa é representado como um grafo de N vértices e M arestas. Cada vértice é uma posição em que um monstro ou uma torre (ou ambos) podem estar, em um dado momento, e as arestas representam conexões bidirecionais entre esses vértices (i.e. se há uma aresta de u para v, um monstro que está no vértice u em um dado momento pode ir para o vértice v no momento seguinte e vice-versa). O castelo, que você deseja proteger, se encontra no vértice F.</p>
+
+                    <p>Cada torre i possui um alcance C<sub>i</sub>, um ataque A<sub>i</sub> e está no vértice V<sub>i</sub>. Todos os vértices que estão a no máximo C<sub>i</sub> arestas de distância de V<sub>i</sub> receberão A<sub>i</sub> de dano a cada unidade de tempo. As torres não se movem, e existem desde o início do jogo. O castelo possui um escudo mágico protetor que faz com que nenhuma torre consiga atacar o vértice F onde ele se encontra, tampouco propagar o ataque, ou seja, o vértice F é uma barreira e nada passa por ele, a não ser os monstros, possivelmente.</p>
+
+                    <p>Cada monstro i surge durante o decorrer do jogo em um vértice K<sub>i</sub> e possui H<sub>i</sub> pontos de vida. Os monstros nunca ficam parados e, a cada unidade de tempo, se movem para um vértice adjacente. Eles sempre vão seguir para o destino final, o castelo, pelo caminho que causará o menor dano possível. Os monstros morrem quando alcançam 0 ou menos pontos de vida. Um monstro só consegue invadir o castelo quando chega ao destino F vivo. Se houver uma torre que alcança a posição inicial K<sub>i </sub>do monstro, ela irá inflingir dano já no primeiro instante em que o monstro surge. Um monstro pode surgir já no castelo.</p>
+
+                    <p>Você foi contratado para fazer uma simulação do jogo. Depois de todas as aparições de monstros, quantos conseguiram invadir o castelo ainda com vida?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha da entrada contém <strong>T</strong> (1 ≤ <strong>T</strong> ≤ 100), o número de casos de teste. Cada caso de teste começa com três inteiros <strong>N </strong>(1 ≤ <strong>N</strong> ≤ 1000), <strong>M</strong> (0 ≤  <strong>M</strong> ≤ (<strong>N</strong>*(<strong>N</strong>-1))/2) e <strong>F</strong> (1 ≤ <strong>F</strong> ≤ <strong>N</strong>), o número de vértices, arestas e o vértice em que se encontra o castelo, respectivamente. A seguir há <strong>M</strong> linhas, cada uma com dois inteiros <strong>u</strong> (1 ≤ <strong>u</strong> ≤ <strong>N</strong>) e <strong>v </strong>(1 ≤ <strong>v</strong> ≤ <strong>N</strong> e <strong>v</strong> != <strong>u</strong>), indicando a existência de uma aresta que liga os vértices <strong>u</strong> e <strong>v</strong>. Não haverá mais de uma aresta entre um mesmo par de vértices. A seguir há um número <strong>P </strong>(0 ≤ <strong>P </strong>≤ 100), indicando o número de torres. Cada uma das próximas <strong>P</strong> linhas conterá três inteiros <strong>V</strong><sub><strong>i</strong> </sub>(1 ≤ <strong>V</strong><sub><strong>i </strong></sub>≤ <strong>N</strong> e <strong>V<sub>i</sub></strong> != <strong>F</strong>), <strong>A</strong><sub><strong>i</strong></sub> (1 ≤ <strong>A<sub>i</sub> </strong>≤ 10⁵), e <strong>C</strong><sub><strong>i</strong></sub> (1 ≤ <strong>C<sub>i</sub></strong><strong> </strong>≤ 1000), indicando que a <strong>i</strong>-ésima torre se encontra no vértice <strong>V</strong><sub><strong>i</strong></sub> com <strong>A</strong><sub><strong>i</strong></sub> de ataque e <strong>C</strong><sub><strong>i</strong></sub> de alcance, conforme explicado na descrição do problema. Pode haver mais de uma torre no mesmo vértice, e não haverá nenhuma torre no vértice <strong>F</strong>. Por fim, haverá um inteiro <strong>Q </strong>(1 ≤  <strong>Q</strong> ≤ 10⁴), indicando o número de monstros. Cada uma das próximas <strong>Q</strong> linhas contém dois inteiros <strong>K</strong><sub><strong>i </strong></sub>(1 ≤ <strong>K</strong><sub><strong>i</strong></sub> ≤ <strong>N</strong>) e <strong>H</strong><sub><strong>i</strong></sub>  (1 ≤ <strong>H<sub>i </sub></strong>≤ 10⁸),  indicando o vértice onde o <strong>i</strong>-ésimo monstro nasce e a quantidade de pontos de vida que ele tem no começo, respectivamente. É garantido que existe pelo menos um caminho que, não fosse pelos ataques das torres, o monstro conseguiria chegar ao castelo.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso imprima “Caso #<strong>X</strong>: <strong>Y</strong>”, onde <strong>X</strong> é o número do caso atual, começando em 1, e <strong>Y</strong> é o número de monstros que conseguiram chegar ao castelo com vida.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+                                1 0 1<br />
+                                0<br />
+                                3<br />
+                                1 3<br />
+                                1 2<br />
+                                1 1<br />
+                                9 8 1<br />
+                                1 2<br />
+                                2 3<br />
+                                3 4<br />
+                                3 5<br />
+                                4 7<br />
+                                5 6<br />
+                                8 4<br />
+                                9 5<br />
+                                2<br />
+                                6 2 3<br />
+                                7 4 2<br />
+                                9<br />
+                                1 15<br />
+                                2 2<br />
+                                3 9<br />
+                                4 14<br />
+                                5 11<br />
+                                6 50<br />
+                                7 20<br />
+                                8 15<br />
+                                9 15</p>
+
+                            </td>
+                            <td>
+                                <p>Caso #1: 3<br />
+                                Caso #2: 6</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Final da Seletiva UFPE - 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

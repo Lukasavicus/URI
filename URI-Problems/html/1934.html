@@ -1,0 +1,144 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1934 - Quebra-cabeça</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1930 - Tomadas" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1934</span>
+				<h1>Quebra-cabeça</h1>
+				<div>
+					<p>Por Ricardo Anido, Universidade Estadual de Campinas <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Discussões recentes na Internet causaram uma onda de renovado interesse em quebra-cabeças de lógica. Neste problema a sua tarefa é escrever um programa que resolva quebra-cabeças como o mostrado na figura abaixo, muito comum em revistas de desafios lógicos. Nesse quebra-cabeças, as letras dentro do quadriculado representam variáveis, e os números representam as somas dos valores das variáveis em cada linha ou coluna.</p>
+					<p class="center"><img src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1934_a.png" alt="Puzzle"></p>
+					<p>O objetivo desse tipo de quebra-cabeça é determinar o valor de cada variável de modo a satisfazer as somas das linhas e colunas mostradas. Mas como esse tipo de quebra-cabeças é para crianças, ele tem uma propriedade que o torna mais fácil de encontrar a solução: sempre é possível encontrar uma linha ou coluna em que há apenas uma variável cujo valor ainda é desconhecido. Assim, uma possível maneira de resolver o problema é, a cada passo da solução, encontrar o valor de uma variável.	</p>
+
+					<p>Dado um quebra-cabeça, você deve determinar os valores das variáveis que o solucionam.</p>
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>L</strong> (1 ≤ <strong>L</strong> ≤ 100) e <strong>C</strong> (1 ≤ <strong>C</strong> ≤ 100) indicando o número de linhas e o número de colunas do quebra-cabeça. Cada uma das <strong>L</strong> linhas seguintes contém <strong>C</strong> nomes de variáveis, seguidos de um inteiro <strong>S</strong>, a soma resultante das variáveis dessa linha (−10<sup>8</sup> ≤ <strong>S</strong> ≤ 10<sup>8</sup>). A última linha contém <strong>C</strong> inteiros <strong>X<sub>i</sub></strong> (−10<sup>8</sup> ≤ <strong>X<sub>i</sub></strong> ≤ 10<sup>8</sup>), indicando respectivamente a soma das variáveis na coluna <strong>i</strong>. Nomes de variáveis são formados por precisamente duas letras minúsculas, de ’a’ a ’z’. Todos os quebra-cabeças têm solução única, em que todas as variáveis são números inteiros entre −10<sup>6</sup> and 10<sup>6</sup>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve produzir uma linha para cada variável do quebra-cabeças, contendo o nome da variável e o seu valor inteiro. As variáveis devem ser escritas em ordem alfabética crescente, ou seja,respeitando a ordem</p>
+
+					<p class="center"> <strong> aa, ab, . . . , az, ba, bb, . . . , za, zb, . . . , zz.</strong></p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 5</p>
+								<p>df bb cg df df 11</p>
+								<p>ee az cg az ee 6</p>
+								<p>df cg cg df df 10</p>
+								<p>az az cg az az 6</p>
+								<p>6 7 8 6 6</p>
+							</td>
+							<td>
+								<p>az 1</p>
+								<p>bb 3</p>
+								<p>cg 2</p>
+								<p>df 2</p>
+								<p>ee 1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<thead>
+						<tr>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 4</p>
+								<p>aa bb cc dd 10</p>
+								<p>aa bb cc dd 10</p>
+								<p>aa bb cc dd 10</p>
+								<p>3 6 9 12</p>
+							</td>
+							<td>
+								<p>aa 1</p>
+								<p>bb 2</p>
+								<p>cc 3</p>
+								<p>dd 4</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<thead>
+						<tr>
+
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 3</p>
+								<p>aa zz aa 27</p>
+								<p>vv zz aa -5</p>
+								<p>kk kk aa 40</p>
+								<p>15 -7 54</p>
+							</td>
+							<td>
+								<p>aa 18</p>
+								<p>kk 11</p>
+								<p>vv -14</p>
+								<p>zz -9</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="both"></div>
+
+				<p class="footer">
+					XX Maratona de Programação da SBC 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

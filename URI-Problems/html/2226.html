@@ -1,0 +1,92 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2226 - Fabrica de Balões</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2226 - Fabrica de Balões" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2226</span>
+				<h1>Fabrica de Balões</h1>
+				<div>
+					<p>Por Maycon Alves, INATEL <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Dâmião acabou de ser contratado como gerente da linha de produção de uma fabrica que produz os balões comercializados em Nlogonia. Dâmião quer mostrar serviço, e para isso aumentou e muito a produção da fabrica. Os balões produzidos por tal fabrica são empacotados e cada pacote recebe um código de identificação de até 18 dígitos, no processo de otimização da produção Dâmião fez com que o código do primeiro pacote fosse o numero 0, e para cada pacote produzido a partir de então, seu código seria o valor do ultimo pacote somado de uma unidade. Porém um imprevisto aconteceu, Dâmião não é natural da Nlogonia, por tanto não conhecia as superstições locais, e somente depois que vários pacotes foram produzidos foi alertado de que existem alguns números que são tidos com mal agouro para os habitantes de Nlogonia, e por este motivo nenhum pacote em que o numero aparece em seu código pode ser comercializado, independente do numero ser todo o código do produto ou apenas uma sub string do mesmo. Por exemplo, supondo que o numero 13 é tido como mal agouro, e ultimo pacote produzido foi o de código 130, somente os pacotes 13 e 130 não podem ser comercializados. Agora Dâmião quer saber o prejuízo que ele causou a empresa, e para isso ele precisa de sua ajuda</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta de diversos casos de teste. Cada caso de teste começa com uma linha com os inteiros <strong>N</strong> (0 ≤ <strong>N </strong>≤ 10<sup>18</sup> ) que representa o código do ultimo pacote produzido. A linha seguinte contem um inteiro <strong>M</strong> ( 0 ≤ <strong>M</strong> ≤ 5000 ) que representa a quantidade de números tidos como mal agouro, segue então <strong>M</strong> inteiros <strong>Ci</strong> ( 0 ≤ <strong>Ci </strong>≤ 10<sup>18</sup> ) representando o i-ésimo numero que não pode aparecer em qualquer código. O final da entrada é representado pelo caso onde <strong>N</strong> = 0 e não deve ser processado.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste seu programa deve imprimir uma linha contendo o numero de pacotes que não poderão ser comercializados</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>20</p>
+
+<p>1 1</p>
+
+<p>1000</p>
+
+<p>2 201 731</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>11</p>
+
+<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					
+				</p>
+			</div>
+
+		</body>
+	</html>

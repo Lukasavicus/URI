@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2662 - Escala musica</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2662 - Escala musica" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2662</span>
+			<h1>Escala Musical</h1>
+			<div>
+				<p>Por Maratona de Programação da SBC – 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>As notas musicais são as unidades mais básicas da composição musical no ocidente. Muitas pessoas acreditam que existem apenas 7 notas musicais:</p>
+
+<p style="text-align:center"><strong>dó&nbsp;ré&nbsp;mi fá&nbsp;sol lá&nbsp;si</strong></p>
+
+<p>Chamaremos essas notas de notas elementares. Na verdade, existem notas além destas acima, normalmente identificadas pelo nome de uma das notas acima seguido do símbolo sustenido (<strong>#</strong>):</p>
+
+<p style="text-align:center"><strong>dó&nbsp;dó# ré&nbsp;ré# mi fá&nbsp;fá# sol sol# lá&nbsp;lá# si</strong></p>
+
+<p>Assim, existem 12 notas musicais básicas distintas. Entretanto, a rigor, esta sequência é&nbsp;infinita e periódica: após um “si” existe um outro “dó”, e a sequência se repete novamente.</p>
+
+<p>As notas elementares são mais conhecidas, por estarem em um tom musical conhecido como “dó&nbsp;maior”. Em qualquer tom “maior”, as distâncias entre as possíveis notas seguem um padrão. No tom “dó&nbsp;maior”, por exemplo:</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2662-a.png"></p>
+
+<p>Note que eu poderia usar qualquer “dó” na escala de “dó&nbsp;maior”, pois a nota seguinte ao “si” será, novamente, um “dó”. O mesmo vale para as demais notas. Um outro exemplo de notas em um determinado tom maior seria a escala de “dó# maior”:</p>
+
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2662-b.png"></p>
+
+<p>Guilherme está&nbsp;aprendendo a tocar um teclado com 61 teclas, numeradas de 1 a 61. Assim, a nota 1 corresponde a um “dó”, a nota 2 corresponde a um “dó&nbsp;#” e assim por diante, até&nbsp;chegar nas notas 60 (um “si”) e 61 (um “dó”).</p>
+
+<p>Acredita-se que as músicas com as melhores melodias são aquelas que estão em algum tom maior, ou seja, músicas em que todas as notas pertencem à&nbsp;escala de algum tom maior. Enquanto pratica no teclado, Guilherme usa um aparelho que grava todas as notas tocadas durante a música. Para ajudá-lo a melhorar sua técnica você&nbsp;decidiu criar um programa capaz de avaliar as músicas gravadas por ele e determinar se elas estão em algum tom maior ou não.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha da entrada terá&nbsp;um número inteiro <strong>N</strong>, com 1 ≤ <strong>N</strong> ≤ 10<sup>5</sup> , correspondente ao número de notas musicais da música. Em seguida, serão fornecidos <strong>N</strong> números, um por linha, todos entre 1 e 61, inclusive, correspondendo às notas musicais.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Seu programa deve verificar se a música está&nbsp;em algum tom maior. Em caso afirmativo, seu programa deve imprimir uma única linha com o tom maior <strong>(sem acentos)</strong> em que a música está. Caso contrário, seu programa deve imprimir uma linha contendo a palavra desafinado. Caso a música possa estar em mais de um tom maior imprima aquele relativo a menor nota musical básica, sendo que “<strong>do</strong>” &lt; “<strong>do#</strong>” &lt; “<strong>re</strong>”, . . .</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>8</p>
+
+<p>1</p>
+
+<p>3</p>
+
+<p>5</p>
+
+<p>6</p>
+
+<p>8</p>
+
+<p>10</p>
+
+<p>12</p>
+
+<p>13</p>
+
+						</td>
+						<td>
+							<p>do</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>10</p>
+
+<p>8</p>
+
+<p>11</p>
+
+<p>21</p>
+
+<p>16</p>
+
+<p>11</p>
+
+<p>8</p>
+
+<p>27</p>
+
+<p>57</p>
+
+<p>27</p>
+
+<p>21</p>
+
+                </td>
+                <td>
+                    <p>re#</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>7</p>
+
+<p>2</p>
+
+<p>2</p>
+
+<p>4</p>
+
+<p>3</p>
+
+<p>12</p>
+
+<p>12</p>
+
+<p>3</p>
+
+                </td>
+                <td>
+                    <p>desafinado</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+				Maratona de Programação da SBC – ACM ICPC – 2017
+			</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1583 - Contaminação</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1583 -  Contaminação" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1583 </span>
+                <h1>Contaminação</h1>
+                <div>
+                    <p>Por Lucas Hermann Negri, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Estamos no ano 2241, e a colonização de outros planetas já é uma realidade. Você trabalha no centro de controle de recursos, no planeta URI-942, controlando principalmente os estoques de água. A água é armazenada em tanques subterrâneos, protegida das altas temperaturas da superfície.</p>
+
+<p>Porém, seus colegas Márcio e Ana descobriram falhas nas paredes de alguns tanques, o que pode levar a contaminação do estoque de água. Seus colegas conseguiram identificar os pontos com falhas onde pode haver a infiltração de contaminantes. Sabendo que os agentes contaminantes se espalham por todo o tanque de água afetado, sua tarefa é estimar a contaminação da água de acordo com os mapas fornecidos por seus colegas.</p>
+
+<p>Os mapas foram discretizados em células, sendo que as células podem corresponder a uma região com rocha, água (tanque) ou agente contaminante. Devido as rachaduras, uma célula com agente contaminante contamina as células adjacentes (esquerda, direita, acima e abaixo) contendo água, porém a contaminação é barrada por células de rocha.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por vários mapas, sendo que a descrição de cada mapa começa com uma linha contendo dois inteiros <strong>N </strong>e <strong>M</strong>, correspondente ao número de linhas e de colunas do mapa. As <strong>N </strong>linhas a seguir descrevem o mapa, cada linha contendo <strong>M</strong> caracteres, além do pulo de linha. Os caracteres possíveis são: <strong>A</strong>, que representa uma célula contendo água, <strong>X</strong>, que representa uma célula com rocha e <strong>T</strong> que representa uma célula com agente contaminante.</p>
+
+<p>A entrada termina quando <strong>N</strong> = <strong>M</strong> = 0, caso que não deve ser processado. Em todos os mapas, <strong>N</strong> e <strong>M</strong> são menores ou iguais a 50.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada mapa, imprima uma estimação da contaminação futura. Esta estimação deverá corresponder ao mapa original (como visto na entrada), porém trocando as células com água que foram contaminadas pelo caractere <strong>T</strong>. Deixe uma linha em branco após cada mapa (incluindo o último mapa).</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>6 7<br />
+XXAAXXX<br />
+XXAAXAX<br />
+XXXXAXX<br />
+XAAAAAX<br />
+TAAXAAA<br />
+XXXXXXX<br />
+3 3<br />
+TTT<br />
+XXX<br />
+AAA<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>
+								XXAAXXX<br />
+XXAAXAX<br />
+XXXXTXX<br />
+XTTTTTX<br />
+TTTXTTT<br />
+XXXXXXX<br />
+<br />
+TTT<br />
+XXX<br />
+AAA<br />
+<br />
+</p>
+                            </td>
+                        </tr>
+                    </tbody>
+               </table>
+                
+                <p class="footer">
+                    Aquecimento para a OBI 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

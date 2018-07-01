@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1451 - Teclado Quebrado</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1451 - Teclado Quebrado" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1451</span>
+            <h1>Teclado Quebrado</h1>
+            <div>Por Rujia Liu <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cn.gif' alt='' /> China</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Você está digitando um texto longo com um teclado quebrado. Bem, não tão quebrado. O único problema com o teclado é que às vezes a tecla "home" ou a tecla "end" é automaticamente pressionada (internamente). Você não está ciente deste problema, já que você está focado no texto e nem sequer ligou o monitor! Depois que você terminar de digitar, você pode ver um texto na tela (se você ligar o monitor). Em chinês, podemos chamar este texto de Beiju. Sua tarefa é encontrar o texto Beiju.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Há diversos casos de teste. Cada teste é uma única linha que contém pelo menos uma e, no máximo, 100.000 letras, underscores e dois caracteres especiais '[' e ']'. '[' Significa que a tecla "Home" é pressionada internamente, e ']' significa que a tecla "End" é pressionada internamente. A entrada é terminada por fim de arquivo (EOF). O tamanho do arquivo de entrada não excede 5MB.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso, imprimir o texto Beiju na tela.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                   <tr>
+                        <td class="division">
+                            <p>This_is_a_[Beiju]_text<br />
+                                [[]][]Happy_Birthday_Tsinghua_University</p>
+
+                        </td>
+                        <td>
+                            <p>BeijuThis_is_a__text<br />
+                                Happy_Birthday_Tsinghua_University</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        </div>
+
+    </body>
+</html>

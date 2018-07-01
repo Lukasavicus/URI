@@ -1,0 +1,112 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2477 - Rede de Distribuição</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2477 - Rede de Distribuição" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2477</span>
+				<h1>Rede de Distribuição</h1>
+				<div>
+					<p>Por Lucas Bucior, URI Online Judge <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>O Natal está chegando e como muitas pessoas ainda não enfeitaram suas casas, o chanceler Jack Redd está distribuindo as luzes vermelhas para as cidades-sede. Como são muitas luzes para distribuir, Jack entregou um mapa a você, que contém informações sobre a cidade, a unidade central, seus pontos de decoração e as ruas. observe a imagem.</p>
+
+						<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_230_D.png" style="width:244px; height:247px"></p>
+
+					<p>
+					Na imagem, a unidade central recebe as luzes e envia para os pontos de decoração 1, 2, 3 e 4, respectivamente. Cada ponto de decoração precisa de uma certa quantidade de luzes que é medida pelo: tamanho do agrupamento de pontos ( <strong>.</strong> ) vezes a distância mínima deste agrupamento até a unidade central. É possível andar por um ponto de decoração se ele for maior que 1 e se por acaso os fios não conseguirem chegar em um ponto de decoração, a cidade não fará mais parte do show de Natal.
+					</p>
+					<p>Um ponto decorativo é formado por um grupo de pontos ( <strong>.</strong> ). É necessário chegar com os fios em todos os pontos de decoração, para que a festa seja grande e bonita. Um ponto decorativo pode passar fios para seus adjacentes.</p>
+					<p>A unidade central é definida pelo maior agrupamento de pontos ( <strong>.</strong> ) do mapa. Jack revelou apenas para você, por questões de segurança. Como os fios já fazem parte da unidade central, preste atenção em que partes precisam mesmo de fios, mais precisamente onde tem ( <strong>+</strong> ) ou em seus pontos decorativos. Os fios podem ser encaminhados para as quatro direções (Norte, Sul, Leste e Oeste). Com base nestas informações, será que você pode distribuir as luzes para a festa?</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de várias instâncias. A primeira linha de cada instância contém dois inteiros <strong>N </strong>e <strong> M</strong> (1 ≤ <strong>N</strong>, <strong>M </strong>≤ 10<sup>3</sup>), que correspondem ao número de linhas e colunas do mapa entregue por Jack. As <strong>N </strong> linhas seguintes contém <strong>M </strong> caracteres, definidos como ( <strong>.</strong> ), ( <strong>+</strong> ) ou ( <strong>#</strong> )</strong>, representando respectivamente a unidade central e seus pontos de decoração, um ponto válido a ser explorado e uma barreira que impede a passagem dos fios. A entrada termina com final de arquivo (EOF).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, seu programa deverá imprimir a mensagem <strong>"</strong>Instance #<strong>H</strong>:<strong>"</strong>, onde <strong>H</strong> é o número da instância, sequencial e crescente (de 01 a 99). Em seguida imprimir o tamanho da unidade central, o caminho mínimo para chegar em todos os pontos de decoração e quantas luzes a cidade precisa. Se por acaso os fios não puderem alcançar todos os pontos de decoração o seu programa deverá imprimir a mensagem  <strong>"</strong>Network Error<strong>"</strong>. </p> <p>Seu programa deverá imprimir uma linha em branco <strong>entre</strong> duas instâncias consecutivas. </p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>7 7<br />
+. . + # + . .<br />
+. + + # + + .<br />
++ + + . + + +<br />
+# # . . . # #<br />
++ + + . + + +<br />
+. + + # + + .<br />
+. . + # + . .<br />
+10 10<br />
+. . . . . . . . . .<br />
++ + + + + + + + + +<br />
+. . # # # # # # # #<br />
++ + + + + + + + + +<br />
+# # # # # # # # . .<br />
++ + + + + + + + + +<br />
+. . # # # # # # # #<br />
++ + + + + + + + + +<br />
+# # # # # # # # . .<br />
+. . . . + + + + + +</p>
+
+							</td>
+							<td>
+								<p>Instance #01:<br />
+								5 12 36<br />
+								<br />
+								Instance #02:<br />
+								10 92 252<br />
+								<br /></p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Contest de Natal 2016.
+				</p>
+			</div>
+
+		</body>
+	</html>

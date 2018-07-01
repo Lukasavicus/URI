@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1527 - Guildas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1527 - Guildas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1527</span>
+                <h1>Guildas</h1>
+                <div>
+                    <p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Rafael está jogando um novo e excitante jogo de RPG, e acaba de notar a existência de algo chamado Guilda. Para aqueles que não sabem, Guilda se trata de um grupo de jogadores que se unem com um objetivo em comum dentro do jogo, tirando assim vantagem do trabalho em equipe.</p>
+
+<p>O jogo que Rafael joga tem um sistema de GVG (Guilda versus Guilda) bem disputado, e logo percebeu que deveria tomar algumas providencias para se sair bem nessas batalhas.</p>
+
+<p>O sistema de GVG funciona da seguinte maneira: a batalha acontece entre duas guildas, e vence a guilda que tiver o maior número de pontos. O número de pontos de uma guilda é dado pela soma do número de pontos de todos os jogadores presentes na guilda. Cada jogador tem um número de pontos, que corresponde ao seu nível atual.</p>
+
+<p>Considere que inicialmente, todos os jogadores fazem parte de uma guilda, contendo apenas o próprio jogador. A união entre duas guildas faz com que todos os jogadores de ambas as guildas passem a participar apenas de uma guilda, e a outra deixa de existir.</p>
+
+<p>Dada uma lista de ações no decorrer do jogo, entre elas união entre duas guildas e batalhas entre duas guildas, diga o número de vezes em que a guilda em que Rafael estava saiu vitoriosa de uma batalha.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Haverá diversos casos de teste. Cada caso de teste inicia com dois inteiros <strong>N</strong> e <strong>M</strong> (1 ≤ <strong>N</strong> ≤ 10⁵, 1 ≤ <strong>M</strong> ≤ 5 * 10⁵), representando o número de jogadores dentro do jogo, e o número de ações no decorrer do jogo, respectivamente.</p>
+
+<p>Em seguida haverá <strong>N</strong> inteiros <strong>P<sub>i</sub></strong> (1 ≤ <strong>P<sub>i</sub></strong> ≤ 100), onde o <strong>i</strong>-ésimo inteiro representa o número de pontos que o <strong>i</strong>-ésimo jogador tem, para todo 1 ≤ <strong>i</strong> ≤ <strong>N</strong>. Rafael é o jogador número 1, sempre.</p>
+
+<p>Em seguida, haverá <strong>M</strong> linhas, contendo três inteiros cada, <strong>Q</strong>, <strong>A</strong> e <strong>B</strong> (1 ≤ <strong>Q</strong> ≤ 2, 1 ≤ <strong>A</strong>, <strong>B</strong> ≤ <strong>N</strong>), representando o tipo da ação, e as duas guildas envolvidas na ação. Se <strong>Q</strong> for igual a 1, significa que a guilda que contém o jogador <strong>A</strong> e a guilda que contém o jogador <strong>B</strong> estão se unindo. Se <strong>Q</strong> for igual a 2, significa que a guilda que contém o jogador <strong>A</strong> e a guilda que contém o jogador <strong>B</strong> participarão de uma batalha.</p>
+
+<p>O último caso de teste é indicado quando <strong>N</strong> = <strong>M</strong> = 0, o qual não deverá ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma linha, contendo um inteiro, indicando o número de batalhas em que a guilda em que Rafael está participando ganhou uma batalha. Note que empates não são considerados vitórias.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 5<br />
+5 3 4 3 2<br />
+1 1 2<br />
+1 3 4<br />
+2 2 4<br />
+1 4 5<br />
+2 1 3<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>1</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

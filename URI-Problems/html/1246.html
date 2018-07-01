@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1246 - Estacionamento</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1246 - Estacionamento" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1246</span>
+                <h1>Estacionamento</h1>
+                <div><p>
+	Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Um estacionamento utiliza um terreno em que os veículos têm que ser guardados em fila única, um atrás do outro. A tarifa tem o valor fixo de R$ 10,00 por veiculo estacionado, cobrada na entrada, independente de seu porte e tempo de permanência. Como o estacionamento é muito concorrido, nem todos os veículos que chegam ao estacionamento conseguem lugar para estacionar.<br />
+	<br />
+	Quando um veículo chega ao estacionamento, o atendente primeiro determina se há vaga para esse veículo. Para isso, ele percorre a pé o estacionamento, do início ao fim, procurando um espaço que esteja vago e tenha comprimento maior ou igual ao comprimento do veículo. Para economizar seu tempo e energia, o atendente escolhe o primeiro espaço adequado que encontrar; isto é, o espaço mais próximo do início.<br />
+	<br />
+	Uma vez encontrada a vaga para o veículo, o atendente volta para a entrada do estacionamento, pega o veículo e o estaciona no começo do espaço encontrado. Se o atendente não encontrar um espaço adequado, o veículo não entra no estacionamento e a tarifa não é cobrada. Depois de estacionado, o veículo não é movido até o momento em que sai do estacionamento.<br />
+	<br />
+	O dono do estacionamento está preocupado em saber se os atendentes têm cobrado corretamente a tarifa dos veículos estacionados e pediu para você escrever um programa que, dada a lista de chegadas e saídas de veículos no estacionamento, determina o faturamento total esperado.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada é composta por diversos casos de teste. A primeira linha de um caso de teste contém dois números inteiros 
+	<strong>C</strong> (1 ≤ <strong>C</strong> ≤ 1000) e <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10000) que indicam 
+	respectivamente o comprimento em metros do estacionamento e o número total de eventos ocorridos (chegadas e saídas de veículos). 
+	Cada uma das <strong>N</strong> linhas seguintes descreve uma chegada ou saída. Para uma chegada de veículo, a linha contém a letra 'C', 
+	seguida de dois inteiros <strong>P</strong> (1000 ≤ <strong>P</strong> ≤ 9999) e <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 1000), 
+	todos separados por um espaço em branco. <strong>P</strong> indica a placa do veículo e <strong>Q</strong> o seu comprimento. 
+	Para uma saída de veículo, a linha contém a letra 'S' seguida de um inteiro <strong>P</strong> , separados por um espaço em branco, onde <strong>P</strong> 
+	indica a placa do veículo. As ações são dadas na ordem cronológica, ou seja, na ordem em que acontecem.<br />
+	<br />
+	No início de cada caso de teste o estacionamento está vazio. No arquivo de entrada, um veículo sai do estacionamento somente se está realmente estacionado, e a placa de um veículo que chega ao estacionamento nunca é igual a placa de um veículo já estacionado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste seu programa deve imprimir uma linha contendo um número inteiro representando o faturamento do estacionamento, em reais.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	10 7<br />
+	C 1234 5<br />
+	C 1111 4<br />
+	C 2222 4<br />
+	C 4321 3<br />
+	S 1111<br />
+	C 2002 6<br />
+	C 4321 3<br />
+	30 10<br />
+	C 1000 10<br />
+	C 1001 10<br />
+	C 1002 10<br />
+	S 1000<br />
+	S 1002<br />
+	C 1003 20<br />
+	S 1001<br />
+	C 1004 20<br />
+	S 1004<br />
+	C 1005 30<br />
+	20 10<br />
+	C 1234 20<br />
+	C 5678 1<br />
+	S 1234<br />
+	C 1234 20<br />
+	C 5678 1<br />
+	S 1234<br />
+	C 5678 1<br />
+	C 1234 20<br />
+	C 5555 1<br />
+	S 5678</p>
+
+                            </td>
+                            <td>
+                                <p>
+	30<br />
+	50<br />
+	40</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+                    Maratona de Programação da SBC 2011</p>
+    
+            </div>
+
+        </body>
+    </html>

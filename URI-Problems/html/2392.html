@@ -1,0 +1,144 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2392 - Pulo do Sapo</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2392 - Pulo do Sapo" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2392</span>
+				<h1>Pulo do Sapo</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2011 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Sebastião Bueno Coelho, apelidado de SBC pelos familiares e amigos, passou as férias de janeiro de 2011 no sítio de seus avós. Durante sua estadia, uma das atividades prediletas do SBC era nadar no rio que havia no fundo da casa onde morava.</p>
+
+<p>Uma das características do rio que mais impressionava SBC era um belo caminho, feito inteiramente com pedras brancas. Há muito tempo, o avô de SBC notara que os habitantes do sítio atravessavam o rio com grande frequência e, por isso, construiu um caminho no rio com pedras posicionadas em linha reta; ao fazê-lo, tomou muito cuidado para que o espaçamento das pedras fosse de exatamente um metro.</p>
+
+<p>Hoje em dia, a única utilidade do caminho é servir de diversão para os sapos que vivem no rio, que pulam de uma pedra a outra agitadamente. Um certo dia, enquanto descansava e nadava nas águas, SBC assistiu atentamente às acrobacias dos bichos e notou que cada sapo sempre pulava (zero, uma ou mais vezes) uma quantidade fixa de metros.</p>
+
+<p>SBC sabe que você participa da OBI todos os anos e, chegando na escola, resolveu desafiar-te com o seguinte problema: Dado o número de pedras no rio, o número de sapos, a pedra inicial sobre a qual cada sapo está (cada pedra é identificada por sua posição na sequência de pedras) e a distância que cada sapo pula, determinar as posições onde pode existir um sapo depois que SBC chega no rio.</p>
+
+<p>No primeiro caso de teste abaixo, SBC indicou a existência de 5 pedras no rio e 2 sapos. Os sapos estavam inicialmente nas pedras 3 e 4. SBC também lhe disse que o primeiro sapo da entrada sempre pula 2 metros, e o segundo sempre pula 4 metros. A figura a seguir ilustra as possíveis pedras que podem ser ocupadas pelos sapos quando eles começam a pular.</p>
+
+<p class="center"><img style="width: 200px;" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_171_C_a.png' alt='' /></p>
+
+<p>No segundo caso de teste abaixo, SBC indicou a existência de 8 pedras no rio e 3 sapos. Os sapos estavam inicialmente nas pedras 3, 2 e 6. SBC também lhe disse que o primeiro sapo da entrada sempre pula 3 metros, o segundo e terceiro sempre pulam 2 metros. Dessa forma, o primeiro sapo pode estar nas pedras 3 ou 6; o segundo sapo pode estar nas pedras 2, 4, 6 ou 8; e o terceiro sapo pode estar nas pedras 6, 4, 2 e 8. A figura a seguir ilustra as possíveis pedras que podem ser ocupadas pelos sapos quando eles começam a pular.</p>
+
+<p class="center"><img style="width: 300px;" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_171_C_b.png' alt='' /></p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém dois inteiros&nbsp;<strong><em>N</em></strong>&nbsp;e&nbsp;<strong><em>M&nbsp;</em></strong><em>(</em>1 ≤&nbsp;<strong><em>N</em></strong>,&nbsp;<strong><em>M</em></strong>&nbsp;≤ 100​<em>)</em>&nbsp;representando o número de pedras no rio e o número de sapos, respectivamente. Cada uma das&nbsp;<strong><em>M</em></strong>&nbsp;linhas seguintes possui dois inteiros&nbsp;<strong><em>P</em></strong>&nbsp;e&nbsp;<strong><em>D</em></strong>&nbsp;(1 ≤&nbsp;<strong><em>P</em></strong>,&nbsp;<strong><em>D</em></strong>&nbsp;≤&nbsp;<strong><em>N</em></strong>)&nbsp;representando a posição inicial de um sapo e a distância fixa de pulo, respectivamente.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída contém&nbsp;<em>N</em>&nbsp;linhas. A i-ésima linha indica a possibilidade ou não de ter um sapo na i-ésima pedra. Para as pedras que podem ter um sapo você deve imprimir 1, e para as pedras que com certeza não podem ter nenhum sapo você deve imprimir 0.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 2</p>
+
+<p>3 2</p>
+
+<p>4 4</p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+<p>0</p>
+
+<p>1</p>
+
+<p>1</p>
+
+<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>8 3</p>
+
+<p>3 3</p>
+
+<p>2 2</p>
+
+<p>6 2</p>
+
+							</td>
+							<td>
+								<p>0</p>
+
+<p>1</p>
+
+<p>1</p>
+
+<p>1</p>
+
+<p>0</p>
+
+<p>1</p>
+
+<p>0</p>
+
+<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2011 Fase 1 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

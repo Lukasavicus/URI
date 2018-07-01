@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1625 - Robocopia</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1625 - Robocopia" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1625</span>
+                <h1>Robocopia</h1>
+                <div>
+                    <p>Por Enrique Finn, Universidade Federal de Uberlândia <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 7</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Robocopiadores são pequeninos drones que uma vez ativados copiam o movimento de rotação uns dos outros. Quando um drone é ativado junto com outros, eles trabalham em conjunto, como se fossem um só.</p>
+
+                    <p>Recentemente Daniel comprou uma fábrica de robocopiadores. Um braço mecânico coloca cada ropocobiador aleatoriamente em uma área, formando assim um conjunto de robocopiadores. Cada conjunto pode ser de composto por números diferentes de robocopiadores. E para testá-los, eles são ativados. Os robocopiadores ativados devem passar por uma esteira para posteriormente serem desativados e armazenados. Vários conjuntos de rodocopiadores podem passar pela mesma esteira. A largura da esteira deve ser sempre a menor possível, mas que comporte todos os conjuntos.</p>
+
+                    <p>Como Daniel é um empresário inexperiente, não fez um planejamento adequado e então teve de contratar funcionários adicionais para verificar manualmente qual o tamanho da esteira que ele tem de configurar para suportar os diferentes conjuntos de robocopiadores. E claro, este processo é muito custoso e demorado.</p>
+
+                    <p>Para diminuir os gastos e aumentar a eficiência, Daniel contratou você para calcular, de maneira automática, qual a menor largura da esteira para que todos os conjuntos de robocopiadores possam ser armazenados corretamente.</p>
+
+
+
+                    <p style="text-align: center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1625_a.png" style="height: 250px" /></p>
+                    <p style="text-align: center">Figure 1.</p>
+                    </br>
+
+                    <p style="text-align: center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1625_b.png" style="height: 250px" /></p>
+                                               
+                    
+                    <p style="text-align: center">Figure 2.</p>
+                    </br>
+
+                    
+
+
+                    <p>Na Figura 1, por exemplo, a máquina ativou 3 robocopiadores (A,B e C) e a menor distância é a = 2, entre BC. Quando a máquina fizer o outro conjunto de robocopiadores (A,B,C e D) da Figura 2, a menor distância é AB ou DC, b = 3, e neste caso, o conjunto tem de ser rotacionado 90 graus para passar na esteira, que tem tamanho 3. Logo, se estes conjuntos fossem passar pela esteira, esta teria que ter uma largura mínima de 3.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por vários casos de testes.</p>
+
+                    <p>A primeira linha é composta de um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10000) que representa o número de casos de testes.</p>
+
+                    <p>Cada caso de teste é composto por um número inteiro <strong>C</strong> (1 ≤ <strong>C</strong> ≤ 100) indicando o número de conjuntos de robocopiadores fabricados. Cada conjunto é composto por um número inteiro <strong>c</strong> (1 ≤ <strong>c</strong> ≤ 10000) representando o número de robocopiadores do conjunto, seguido de <strong>c</strong> linhas de números inteiros, indicando a coordenada -100000 ≤ (<strong>x</strong>, <strong>y</strong>) ≤ 100000 de cada robocopiador do conjunto.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Em cada linha deverá ser impresso o tamanho da menor esteira para produzir todos os conjuntos de robocopiadores, com precisão de 10 casas decimais.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1</p>
+
+                                <p>2<br />
+                                4<br />
+                                1 4<br />
+                                1 1<br />
+                                5 1<br />
+                                5 4<br />
+                                3<br />
+                                1 1</p>
+                                
+                                <p>1 3<br />
+                                3 3</p>
+
+                            </td>
+                            <td>
+                                <p>3.0000000000</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XIV Contest Algar Telecom 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

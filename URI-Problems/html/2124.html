@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2124 - Cardápio da Sra. Montagny!</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2124 - Cardápio da Sra. Montagny!" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2124</span>
+                <h1>Cardápio da Sra. Montagny!</h1>
+                <div>
+                    <p>Por XI Maratona de Programação IME-USP, 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ad.gif' alt='AD' /> Andorra</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Sra. Montagny é uma socialite de Quebec, que passa as férias em Banff, na sua mansão à beira do Lake Louise. Seus jantares são famosos porque ela com antecedência passa um questionário aos convidados onde os mesmos participam da escolha do cardápio. No questionário, a famosa magnata lista todos os pratos que poderá fazer no jantar, oferecendo uma coluna para o convidado selecionar o prato e outra para vetá-lo.</p>
+
+                    <p>É permitido fazer apenas duas escolhas no questionário, ou seja, cada convidado pode selecionar um prato e vetar outro, vetar dois pratos ou selecionar dois pratos. A Sra. Montagny garante que todos os convidados terão pelo menos um de seus desejos atendidos.</p>
+
+                    <p>Antigamente ela mesma dava conta de montar o cardápio e atender o que prometia, mas com o crescimento de suas festas isso tem se tornado impossível. Assim, ela resolveu contratar vocês para fazer um programa que recebe os pedidos dos convidados e responde se é possível montar o cardápio para a festa.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta de diversas casos. Cada caso começa com um inteiro <em><strong>N</strong></em> (1 ≤ <em><strong>N</strong></em> ≤ 1000), indicando a quantidade de questionários recebidos pela Sra. Montagny. Cada uma das próximas <em><strong>N </strong></em>linhas contém dois nomes de comida indicando a preferência de cada convidado. Um nome de comida é uma sequencia de letras [a-z] com no máximo 20 letras. Quando o nome de uma comida é iniciado por ‘‘!’’ significa que o convidado deseja vetar a comida, caso contrário ele deseja selecionar.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso, você deverá imprimir um identificador "Instancia K", onde <em><strong>K</strong></em> é o número da caso atual. Na linha seguinte você deve imprimir "sim" se for possível atender pelo menos um desejo de cada convidado e "nao" caso contrário. Após cada caso, seu programa deve imprimir uma linha em branco.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+!feijoada !file<br />
+rabada feijoada<br />
+4<br />
+arroz churrasco<br />
+!arroz !churrasco<br />
+arroz !churrasco<br />
+!arroz churrasco</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+sim<br />
+<br /></p>
+
+<p>Instancia 2<br />
+nao<br />
+<br /></p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XI Maratona de Programação IME-USP, 2007
+                </p>
+            </div>
+
+        </body>
+    </html>

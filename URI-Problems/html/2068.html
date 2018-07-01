@@ -1,0 +1,105 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2068 - Marcando um Encontro</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2068 - Marcando um Encontro" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2068</span>
+				<h1>Marcando um Encontro</h1>
+				<div>
+					<p>Por Marianne Linhares, UFCG <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Um aplicativo bastante popular hoje em dia é o Taynder. A proposta do aplicativo é conhecer pessoas, se relacionar e marcar encontros. Foi no Taynder que Mel e Tob se conheceram.</p>
+
+<p>Como Mel e Tob já conversaram por 40 minutos, eles acham que é hora de se conhecerem pessoalmente então marcaram de se encontrar na principal praça da cidade. O único problema é que a hora do encontro não ficou muito bem definida, tudo que eles sabem é o intervalo de tempo marcado para o encontro, mas não sabem de que horas o outro vai chegar. Para não passar o dia esperando a pessoa que chegar primeiro espera um pouco e se a outra pessoa não chegar ela vai para casa achar outra pessoa no Taynder.</p>
+
+<p> Por exemplo: se Mel e Tob marcam de se encontrar no intervalo real [16h, 17h] com espera máxima de 15 minutos significa que Mel e Tob podem chegar em qualquer momento do intervalo (incluindo 16h e 17h) e quem chegar primeiro, digamos no tempo x, ficará esperando o outro no intervalo de tempo definido por [x, x+15].
+</p>
+
+<p>Você deve escrever um programa que, dado o intervalo de tempo do encontro e dado o tempo de espera máximo, determine a probabilidade de haver o encontro.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Cada caso de teste consiste de uma única linha contendo: <strong>t1</strong>, <strong>t2</strong>, <strong>N</strong>.
+					<p><strong>t1</strong> e <strong>t2</strong> são inteiros representando o tempo em horas tal que <strong>t2</strong> &gt; <strong>t1</strong> e 1 ≤ <strong>t1</strong>, <strong>t2</strong> ≤ 10⁶, <strong>N</strong> também é um inteiro e representa o tempo máximo que Mel ou Tob irão esperar em minutos tal que 1 ≤ <strong>N</strong> ≤ (<strong>t2</strong>-<strong>t1</strong>) * 60.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída deve ser a probabilidade de haver o encontro no formato <strong>a</strong>/<strong>b</strong>, tal que <strong>a</strong>/<strong>b</strong> é uma fração irredutível.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 2 15</p>
+
+							</td>
+							<td>
+								<p>7/16</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 2 60</p>
+
+							</td>
+							<td>
+								<p>1/1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">Aquecimento para a OBI 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

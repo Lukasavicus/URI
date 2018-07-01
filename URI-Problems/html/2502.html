@@ -1,0 +1,107 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2502 - Decifrando a Carta Criptografada</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2502 - Decifrando a Carta Criptografada" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2502</span>
+				<h1>Decifrando a Carta Criptografada</h1>
+				<div>
+					<p>Por Hamilton José Brumatto <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A cifra mais antiga conhecida é a Cifra de César. César escrevia suas cartas trocando cada letra pela próxima do alfabeto, para evitar que, quando a carta fosse interceptada, conseguissem ler. Com o tempo, a criptografia adquiriu melhor qualidade, mas a criptografia por substituição ainda é uma brincadeira de criança interessante, por exemplo:</p>
+
+<p style="text-align: center;">ZEN I T<br />
+POLAR</p>
+
+<p>Neste tipo de brincadeira, ao escrever uma carta a letra Z é trocada pela letra P e vice versa, bem como: E e O e assim sucessivamente. A frase cifrada desta forma: "<strong>Osro roxre osri caftide</strong>" pode ser decifrada como: "<strong>Este texto esta cifrado</strong>". Como a brincadeira ficou séria, a você foi solicitado um programa que decifre as mensagens cifradas a partir de uma chave fornecida.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste. Cada caso de teste começa com uma linha indicando dois números inteiros <strong>C</strong> e <strong>N</strong>, 0 &lt; C &lt; 21 e 0 &lt; N &lt; 100. <strong>C</strong> é&nbsp;o tamanho da cifra. Nas duas linhas seguintes está&nbsp;a cifra de tamanho <strong>C</strong> indicando quais caracteres da primeira linha será substituído por caracteres da segunda linha, um caracter aparece uma única vez, na primeira ou na segunda linha.</p>
+
+<p>A cifra pode conter letras de ‘A’ a ‘Z’, números de ‘0’ a ‘9’ além do espaço em branco e alguns símbolos de pontuação: '.' ',' ';' ':' '(' ')' '!' e '?'. Nas próximas <strong>N</strong> linhas estão frases e sentenças criptografadas pela cifra fornecida, que você deve decifrar. Cada linha contém no mínimo 1 e no máximo 1000 caracteres. São permitidos quaisquer caracteres ASCII (não extendido) imprimíveis, neste caso não estão&nbsp;presentes nenhum caracter acentuado, nem mesmo 'ç'.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste da entrada seu programa deve gerar para cada linha de frase e sentença de entrada, uma linha com a saída decifrada, respeitando a capitalização da letra (letras maiúsculas são decifradas como maiúsculas e minúsculas como minúsculas quando for possível aplicar a diferenciação, se não&nbsp;for possível&nbsp;serão decifrados como letras minúsculas). Após cada caso de teste deve ser impressa uma linha em branco, inclusive após o último.<br />
+&nbsp;</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 3<br />
+ZENIT<br />
+POLAR<br />
+Osro roxre osri caftide<br />
+Osri o umi roclaci do ctazregtifai zet subsraruacie<br />
+Zedo sot ficanmolro quobtide i zitrat do umi bei imesrti do roxre<br />
+3 2<br />
+UMA<br />
+123<br />
+C3d3 12 por si<br />
+123 3 123</p>
+
+							</td>
+							<td>
+								<p>Este texto esta cifrado<br />
+Esta e uma tecnica de criptografia por substituicao<br />
+Pode ser facilmente quebrado a partir de uma boa amostra de texto<br />
+<br />
+Cada um por si<br />
+uma a uma<br />
+&nbsp;</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					Este problema fez parte da CPU2016 (Competição de Programação Universitária) da Universidade Estadual de Santa Cruz - UESC.
+				</p>
+			</div>
+
+		</body>
+	</html>

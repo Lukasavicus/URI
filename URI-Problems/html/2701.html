@@ -1,0 +1,185 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2701 - Portas da Incerteza</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema G - Portas da Incerteza" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2701</span>
+			<h1>Portas da Incerteza</h1>
+			<div>
+				<p>Por Ricardo Anido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Uma porta NAND (porta AND negada) é um circuito digital que produz uma saída que é falsa apenas se todas as entradas são verdadeiras; em outras palavras, a saída de uma porta NAND é o oposto para a saída de uma porta AND para as mesmas entradas. A seguinte figura mostra o símbolo usual de uma porta NAND de duas entradas e sua tabela verdade resultante, usando 1 para verdade e 0 para falso.</p>
+
+			  <p style="text-align:center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2701_a.png" style="height:122px; width:539px" /></p>
+
+<p>Neste problema nos temos uma árvore binaria representado o circuito composto apenas por portas NAND de duas entradas. Em uma árvore, cada nó interno representa uma porta NAND, a qual usa como entrada os valores produzidos pelas suas filhas. Cada folha na árvore representa uma entrada externa ao circuito, e é um valor em {0, 1}. O valor produzido pelo circuito é o valor produzido pela porta na raiz da árvore. A seguinte imagem mostra um circuito com 9 nós, o dos quais 4 são portas NAND e cinco são entradas externas.</p>
+
+<p style="text-align:center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2701_b.png" style="height:156px; width:220px" /></p>
+
+<p>Cada porta no circuito pode estar emperrada, quer dizer que ela apenas produzem 0 ou apenas produzem 1 independente das entradas do portão. Um padrão teste é um array de valores associados às entradas externas de forma que o valore produzido pelo circuito está incorreto devido ao emperramento de uma das portas.</p>
+
+<p>Dada uma descrição do circuito, você deve escrever um programa que determine o número de maneiras diferentes de escrever um padrão de testes para o circuito.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A primeira linha contem um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>5</sup> ) representando o número de portas no circuito, o qual possui forma de uma árvore binaria. Portas são identificadas por inteiros distintos indo de 1&nbsp;a <strong>N</strong>, porta um sendo a raiz da árvore. Para <em>i</em> = 1, 2,…,<strong>N</strong>, o <em>i</em>-ésimo das próximas <strong>N</strong> linhas descreve a porta i com três inteiros <strong>X</strong>, <strong>Y</strong> e <strong>F</strong> (0 ≤ <strong>X</strong>, <strong>Y</strong> ≤ <strong>N</strong> e −1 ≤ <strong>F</strong> ≤ 1). Os valores <strong>X</strong> e <strong>Y</strong> indicam as duas entradas da porta. Se <strong>X</strong> = 0 a primeira entrada é proveniente de uma entrada externa, senão a entrada é a saída produzida pela porta <strong>X</strong>. Analogamente, se <strong>Y</strong> = 0, a segunda entrada é uma entrada externa, senão a entrada é a saída produzida pela porta <strong>Y</strong>. O valor de <strong>F</strong> representa o estado da porta: -1 significa que a porta está normal, 0 significa que ela está emperrada em 0, e 1 significa que a porta está emperrada em 1.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Imprima uma única linha com um inteiro indicando o número de maneiras diferentes de padrões teste para o dado circuito. Devido à possibilidade deste número ser muito grande, imprima o resto de sua divisão por 10<sup>9</sup>&nbsp;+ 7.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>4</p>
+
+<p>2 3 1</p>
+
+<p>0 0 -1</p>
+
+<p>4 0 0</p>
+
+<p>0 0 -1</p>
+
+						</td>
+						<td>
+							<p>15</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<div class="both"></div>
+
+	    <table>
+	        <thead>
+	        </thead>
+	        <tbody>
+	            <tr>
+	                <td class="division">
+	                    <p>2</p>
+
+	<p>2 0 1</p>
+
+	<p>0 0 -1</p>
+
+	                </td>
+	                <td>
+	                    <p>3</p>
+
+	                </td>
+	            </tr>
+	        </tbody>
+	    </table>
+
+
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>6</p>
+
+<p>5 4 -1</p>
+
+<p>0 0 -1</p>
+
+<p>0 0 0</p>
+
+<p>6 3 -1</p>
+
+<p>0 2 1</p>
+
+<p>0 0 -1</p>
+
+                </td>
+                <td>
+                    <p>93</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>7</p>
+
+<p>2 3 -1</p>
+
+<p>4 5 -1</p>
+
+<p>6 7 -1</p>
+
+<p>0 0 1</p>
+
+<p>0 0 -1</p>
+
+<p>0 0 -1</p>
+
+<p>0 0 -1</p>
+
+                </td>
+                <td>
+                    <p>21</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+				ICPC Latin American Regional – 2017
+			</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,119 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2250 - Tetris</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2250 - Tetris" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2250</span>
+				<h1>Tetris</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2003 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A sua turma do colégio resolveu organizar um campeonato de tetris. Após discussão sobre as regras, ficou definido que cada aluno jogaria um total de 12 partidas. Das 12 pontuações obtidas por um aluno, a maior e a menor são descartadas, e as demais são somadas, resultando na pontuação final do aluno.</p>
+
+<p>Como você possui conhecimentos de programação, acabou sendo designado pela turma para escrever um programa para imprimir a classificação final do campeonato, a partir das pontuações de cada jogador.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta de vários conjuntos de teste. A primeira linha de um conjunto de testes contém um número inteiro <strong>J</strong> (0 ≤ <strong>J</strong> ≤ 1000), que indica o número de jogadores que participaram do campeonato. A seguir, para cada jogador há duas linhas na entrada: a primeira possui o nome do jogador (formado apenas por letras, sendo apenas a inicial em maiúscula, e com no máximo 15 letras), e a segunda possui as 12 pontuações que o jogador obteve, separadas por espaço. As pontuações são inteiros entre 0 e 1000. O final da entrada é indicado por um conjunto de teste com <strong>J</strong> = 0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada conjunto de teste, o seu programa deve escrever uma linha contendo o identificador do conjunto de teste, no formato “Teste n”, onde n é numerado seqüencialmente a partir de 1. A seguir, o seu programa deve escrever a classificação final no campeonato, utilizando uma linha&nbsp;para cada participante. Cada linha deve conter três informações, separadas por um espaço em branco: a classificação do jogador, a sua pontuação final, e o seu nome. A classificação de um jogador é igual a 1 mais o número de jogadores que obtiveram pontuação maior do que a sua. Em caso de empate, os jogadores devem ser ordenados em ordem alfabética. Depois de toda a classificação, deve ser deixada uma linha em branco. O formato do exemplo de saída abaixo deve ser seguido rigorosamente.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+<p>Zezinho 100 123 133 333 400 300 129 200 360 340 200 600</p>
+
+<p>Luizinho 60 50 120 250 170 190 190 220 260 270 290 300</p>
+
+<p>Carlinhos 10 10 20 10 10 10 10 20 20 20 20 20</p>
+
+<p>Joaozinho 200 300 400 400 500 500 500 600 650 650 700 810</p>
+
+<p>3</p>
+
+<p>Pedrinho 100 100 200 200 300 300 400 400 500 500 600 600</p>
+
+<p>Huguinho 50 100 200 200 300 300 500 500 400 400 600 700</p>
+
+<p>Zezinho 100 100 100 100 100 100 100 100 100 100 100 100</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>Teste 1</p>
+
+<p>1 5200 Joaozinho</p>
+
+<p>2 2518 Zezinho</p>
+
+<p>3 2020 Luizinho</p>
+
+<p>4 150 Carlinhos</p><br/>
+
+<p>Teste 2</p>
+
+<p>1 3500 Huguinho</p>
+
+<p>1 3500 Pedrinho</p>
+
+<p>3 1000 Zezinho</p><br/>
+
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2003
+				</p>
+			</div>
+
+		</body>
+	</html>

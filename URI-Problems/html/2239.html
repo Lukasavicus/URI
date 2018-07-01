@@ -1,0 +1,106 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2239 - Estatística Hexa</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2239 - Estatística hexa" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2239</span>
+				<h1>Estatística Hexa</h1>
+				<div>
+					<p>Por Maratona de Programação da SBC – 2016 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Dada uma sequência de inteiros positivos em hexadecimal, por exemplo, S = [9af47c0b, 2545557, ff6447979], definimos soma(S) como sendo a soma de todos os elementos de S. Considere agora uma certa permutação dos 16 dígitos hexadecimais, por exemplo, p = [4, 9, 5, a, 0, c, f, 3, d, 7, 8, b, 1, 2, 6, e]. A partir da sequência base S, podemos definir uma sequência transformada S<sup>[4]</sup> , que é&nbsp;obtida pela remoção de todas as ocorrêcias do dígito hexadecimal 4 de todos os inteiros em S, S<sup>[4]</sup> = [9af7c0b, 255557, ff67979]. Em seguida, podemos remover o dígito 9 e obter S<sup>[4,9]</sup> = [af7c0b, 255557, ff677]. Seguindo a ordem dos dígitos na permutação&nbsp;<strong>p</strong>, podemos definir dessa forma 16 sequências: S<sup>[4]</sup> , S<sup>[4,9]</sup> , S<sup>[4,9,5]</sup> ,...,S<sup>[4,9,5,a,0,c,f,3,d,7,8,b,1,2,6,e]</sup> . Estamos interessados em somar todos os elementos dessas 16 sequências:</p>
+
+<p style="text-align: center;">total(S, <strong>p</strong>) = soma(S<sup>[4]</sup>) + soma(S<sup>[4,9]</sup>) + soma(S<sup>[4,9,5]</sup>) + ··· + soma(S<sup>[4,9,5,a,0,c,f,3,d,7,8,b,1,2,6,e]</sup>)</p>
+
+<p>Claramente, esse total depende da permutação <strong>p</strong> usada na remoção sucessiva. Dada uma sequência de <strong>N</strong> inteiros positivos em hexadecimal, seu programa deve computar, considerando todas as possíveis permutações dos 16 dígitos hexadecimais: o total mínimo, o total máximo e o somatório dos totais de todas as permutações. Para o somatório dos totais de todas as permutações, imprima o resultado módulo 3b9aca07 (10<sup>9</sup> + 7 na base 10).</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém um inteiro <strong>N</strong>, 1 ≤&nbsp;<strong>N</strong> ≤&nbsp;3f, representando o tamanho da sequência. As <strong>N</strong> linhas seguintes contêm, cada uma, um inteiro positivo <strong>P</strong>, 0 ≤&nbsp;<strong>P</strong>&nbsp;≤ fffffffff, definindo a sequência inicial <strong>S</strong> de inteiros. Todos os números na entrada estão em hexadecimal, com letras minúsculas.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve produzir uma única linha na saída contendo três inteiros positivos, em hexadecimal com letras minúsculas, representando o total mínimo, o total máximo e o somatório dos totais considerando todas as permutações possíveis dos 16 dígitos hexadecimais.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br/>
+								9af47c0b<br/>
+								2545557<br/>
+								ff6447979</p>
+
+							</td>
+							<td>
+								<p>1312c99c b4e87e9387 5bb5fc</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 <br/>
+								fffffffff</p>
+
+							</td>
+							<td>
+								<p>0 effffffff1 15dac189</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Maratona de Programação da SBC – 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

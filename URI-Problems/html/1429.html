@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1429 - Fatorial de Novo!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1429 - Fatorial de Novo!" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1429</span>
+            <h1>Fatorial de Novo!</h1>
+            <div>Por Ines Kereki <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/uy.gif' alt=''/> Uruguai</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Mateus, um calouro de engenharia, está desenvolvendo uma nova notação posicional para representar números inteiros. Ele o apelidou de "A Curious Method" ("Um Método Curioso"), representado pela sigla ACM. A notação ACM usa os mesmos dígitos que a notação decimal, isto é, de 0 a 9.</p>
+
+                <p>Para converter um número <em>A</em> da notação ACM para a notação decimal, você deve adicionar <em>k</em> termos, onde <em>k</em> é o número de dígitos de <em>A</em> (na notação ACM), O valor do <em>i</em>-ésimo termo, correspondente ao <em>i</em>-ésimo dígito <em>a<sub>i</sub></em>, contando da direita para a esquerda, é <em>a<sub>i </sub></em>× <em>i</em>!. Por exemplo, 719<em><sub>ACM</sub></em> é equivalente a 53<sub>10</sub>, já que 7 × 3! + 1 × 2! + 9 × 1! = 53.</p>
+
+                <p>Mateus acabou de iniciar seus estudos sobre teoria dos números, e provavelmente não sabe quais propriedades um sistema numérico deve ter, mas no momento, ele só está interessado em converter um número de ACM para decimal. Você pode ajudá-lo?</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Cada caso de teste é dado por uma única linha não-nula contendo, no máximo, 5 dígitos, representando um número na notação ACM. A linha não possui zeros no início.</p><p>O último caso de teste é representado por uma linha contendo um único zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, escreva uma única linha contendo a representação decimal do número ACM correspondente.</p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>719<br />
+                                1<br />
+                                15<br />
+                                110<br />
+                                102<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>53<br />
+                                1<br />
+                                7<br />
+                                8<br />
+                                8</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2010.
+            </p>
+        </div>
+
+    </body>
+</html>

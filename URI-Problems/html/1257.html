@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1257 - Array Hash</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1257 - Array Hash" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1257</span>
+            <h1>Array Hash</h1>
+            <div><p>
+                    Por TopCoder* <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif" style="width: 16px; height: 11px;" /> EUA</p>
+            </div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Você terá como uma entrada várias linhas, cada uma com uma string. O valor de cada caracter é computado como segue:</p>
+                    <p>
+                    Valor = (Posição no alfabeto) + (Elemento de entrada) + (Posição do elemento)</p>
+                    <p>
+                    Todas posições são baseadas em zero. 'A' tem posição 0 no alfabeto, 'B' tem posição 1 no alfabeto, ... O cálculo de hash retornado é a soma de todos os caracteres da entrada. Por exemplo, se a entrada for:<br />
+                    CBA<br />
+                    DDD</p>
+                    <p>
+                    então cada caractere deverá ser computado como segue:</p>
+                    <p>
+                        <span class="code">
+                            2 = 2 + 0 + 0 : 'C' no elemento 0 posição 0<br />
+                            2 = 1 + 0 + 1 : 'B' no elemento 0 posição 1<br />
+                            2 = 0 + 0 + 2 : 'A' no elemento 0 posição 2<br />
+                            4 = 3 + 1 + 0 : 'D' no elemento 1 posição 0<br />
+                            5 = 3 + 1 + 1 : 'D' no elemento 1 posição 1<br />
+                            6 = 3 + 1 + 2 : 'D' no elemento 1 posição 2<br />
+                        </span></p>
+                    <p>
+                        O cálculo final de hash será 2+2+2+4+5+6 = 21.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. A primeira linha de entrada contém um inteiro <strong>N</strong> que 
+                    indica a quantidade de casos de teste. Cada caso de teste inicia com um inteiro <strong>L</strong> 
+                    (1 ≤ <strong>L</strong> ≤ 100) que indica a quantidade 
+                    de linhas que vem a seguir. Cada uma destas <strong>L</strong> linhas contém uma string com até 50 letras maiúsculas 
+                    ('A' - 'Z').</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste imprima o valor de hash que é calculado conforme o exemplo apresentado acima.</p>
+            </div>
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                5<br />
+                                2<br />
+                                CBA<br />
+                                DDD<br />
+                                1<br />
+                                Z<br />
+                                6<br />
+                                A<br />
+                                B<br />
+                                C<br />
+                                D<br />
+                                E<br />
+                                F<br />
+                                6<br />
+                                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />
+                                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />
+                                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />
+                                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />
+                                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />
+                                ABCDEFGHIJKLMNOPQRSTUVWXYZ<br />
+                                1<br />
+                                ZZZZZZZZZZ</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                21<br />
+                                25<br />
+                                30<br />
+                                4290<br />
+                                295</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>
+            <p class="footer">
+                * Este problema é de autoria do TopCoder (www.topcoder.com/tc) e foi adaptado por Neilor para utilização (autorizada) no URI OJ.<br />
+                * A reprodução não autorizada deste problema sem o consentimento por escrito de TopCoder, Inc. é estritamente proibida.</p>
+
+        </div>
+
+    </body>
+</html>

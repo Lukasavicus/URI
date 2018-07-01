@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1325 - Mapas Bolha</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1325 - Mapas Bolha" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1325</span>
+            <h1>Mapas Bolha</h1>
+            <div><p>Por Vinicius Fortuna <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    A Bubble Inc. está desenvolvendo uma nova tecnologia para a navegação em um mapa em diferentes níveis de zoom. Sua nova tecnologia assume que a região a ser mapeada é uma superfície retangular plana, e que divide sua superfície em sub-regiões retangulares, as quais representam níveis de zoom mais profundos. A tecnologia da Bubble Inc. representa um mapa usando uma estrutura conhecida como <em>quad-tree</em>. Em uma&nbsp;<em>quad-tree</em>, uma região retangular chamada&nbsp;<em>x</em> pode ser dividida pela metade, tanto horizontal como verticalmente, resultando em 4 sub-regiões retangulares de tamanhos iguais. Estas sub-regiões são chamadas de regiões filhas de&nbsp;<em>x</em>, e são nomeadas de&nbsp;<em>xp</em> para o canto superior esquerdo, <em>xq</em> para o superior direito,&nbsp;<em>xr</em> para o inferior direito e&nbsp;<em>xs</em> para o inferior esquerdo, onde&nbsp;<em>xc</em> representa a concatenação da string&nbsp;<em>x</em> e o caracter&nbsp;<em>c</em> = 'p', 'q', 'r' e 's'. Por exemplo, se a região base a ser mapeada é chamada de&nbsp;<em>m</em>, então as regiões filhas de&nbsp;<em>m</em> são, à partir do canto superior esquerdo e em sentido horário:&nbsp;<em>mp</em>,&nbsp;<em>mq</em>,&nbsp;<em>mr</em> e&nbsp;<em>ms</em>, como ilustrado abaixo.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Bubble%20Maps_A.png" style="width: 91px; height: 49px; margin-left: 10px; margin-right: 10px;" /></p>
+
+                <p>
+                    Qualquer região pode ser subdividida. Por exemplo, a região chamada&nbsp;<em>ms</em> pode ser subdividida em sub-regiões&nbsp;<em>msp</em>,&nbsp;<em>msq</em>,&nbsp;<em>msr</em> e&nbsp;<em>mss</em>, como ilustrado abaixo.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Bubble%20Maps_B.png" style="width: 105px; height: 49px; margin-left: 10px; margin-right: 10px;" /></p>
+
+                <p>
+                    Como outro exemplo, a figura abaixo mostra o resultado da subdivisão das sub-regiões filhas da região chamada&nbsp;<em>msr</em>.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Bubble%20Maps_C.png" style="width: 268px; height: 93px; margin-left: 19px; margin-right: 19px;" /></p>
+
+                <p>
+                    Sub-regiões com nomes de mesmo comprimento tem o mesmo nível de zoom, uma vez que eles representam regiões de mesmo tamanho. Sub-regiões no mesmo nível de zoom e que compartilham um lado comum são considerados vizinhos.</p>
+
+                <p>
+                    Qualquer coisa que esteja fora da região base&nbsp;<em>m</em> não está mapeada e, para todo nível de zoom, todas as sub-regiões de&nbsp;<em>m</em> são mapeadas.</p>
+
+                <p>
+                    A tecnologia de mapa da Bubble Inc. fornece um meio&nbsp;para o usuário navegar a partir de uma sub-região dada até as sub-regiões vizinhas, nas quatro direções: cima, baixo, esquerda e direita. Sua missão é ajudar a Bubble Inc. na procura pelas sub-regiões vizinhas de uma sub-região dada. Isto é, dado o nome de uma sub-região retangular, você deve determinar os nomes de suas quatro sub-regiões vizinhas.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém diversos casos de teste. A primeira linha contém um inteiro <b><i>N</i></b> indicando o número de casos de teste. Cada uma das <b><i>N</i></b> linhas representam um caso de teste, contendo o nome da região composta por&nbsp;<strong><em>C</em></strong> caracteres ( 2&nbsp;≤ <b><i>C</i></b>&nbsp;≤ 5000 ), sendo que o primeiro sempre será o caractere 'm', e os seguintes serão ou 'p', 'q', 'r' ou 's'.</p>
+
+                <p>
+                    <em>A entrada deve ser lida da entrada padrão.</em></p>
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste na entrada&nbsp;seu programa deve produzir uma linha na saída, contendo os nomes das quatro regiões vizinhas da região informada, na seguinte ordem de direção: cima, baixo, esquerda, direita. Para os vizinhos que não estão mapeados, você deve escrever na saída <em><strong>&lt;none&gt;</strong></em> ao invés do nome. Deixe um espaço em branco entre dois nomes consecutivos.</p>
+
+                <p>
+                    <em>A saída deve ser escrita na saída padrão.</em></p>
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                mrspr<br />
+                                mps</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                mrspq mrssq mrsps mrsqs<br />
+                                mpp msp &lt;none&gt; mpr</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2006.
+            </p>
+        </div>
+
+    </body>
+</html>

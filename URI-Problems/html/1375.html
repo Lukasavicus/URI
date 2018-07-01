@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1375 - Painel de Posições</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1375 - Painel de Posições" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1375</span>
+            <h1>Painel de Posições</h1>
+            <div><p>Por Ricardo Anido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Em corridas de carro, sempre há um painel perto da linha de chegada da pista. Antes da corrida começar, o painel é usado para mostrar o grid de largada. O número do primeiro carro do grid é mostrado no topo do painel, o número do segundo carro é mostrado em baixo dele e assim por diante.</p>
+
+                <p>
+                    Durante a corrida o painel é usado para mostrar as posições atuais de cada carro: o carro que está ganhando tem seu número a mostra no topo do painel, seguido do carro que está em segundo e assim por diante.</p>
+
+                <p>
+                    Além de mostrar a posição atual do carro, o painel&nbsp; também é usado para mostrar o número de posições que o carro ganhou ou perdeu relativo ao grid de largada. Isso é feito, mostrando do lado do número do carro, um número inteiro. Um valor positivo v do lado do número do carro no painel, que significa que o carro ganhou v posições relativo a sua posição inicial no grid. Um zero do lado do número do carro no painel, significa que ele não ganhou nem perdeu posições no grid (o carro está na mesma posição que iniciou a corrida).</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Pole%20Position.png" style="width: 212px; height: 212px" /></p>
+
+                <p>
+                    Nós estamos no meio do Grand Prix da Suécia, a última corrida do Campeonato Mundial. O diretor de prova, Dr. Shoo Makra, está ficando preocupado: houve algumas reclamações que o Software que controla o painel de posições é defeituoso, mostrando informações que não refletem a ordem correta de posições da corrida.</p>
+
+                <p>
+                    Dr. Shoo Makra desenvolveu um jeito de checar se o sistema do painel de posições está funcionando corretamente. Dada a informação exibida no painel de posições, ele quer reconstruir o grid de largada da corrida. Se for possível reconstruir um grid de largada válido, ele planeja checar ele contra o grid de largada real. No entanto, se não for possível reconstruir um grid de largada valido, o sistema do painel de posições está mesmo defeituoso.</p>
+
+                <p>
+                    Você pode ajudar o Dr. Shoo Makra?</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    O arquivo de entrada contém vários casos de teste. A primeira linha do teste contém um valor inteiro <strong>N</strong> indicando o número de carros na corrida (2 ≤ <strong>N</strong> ≤ 10³). As próximas <strong>N</strong> linhas contém dois inteiros <strong>C</strong> e <strong>P</strong>, separados por um espaço, representando o número do carro (1 ≤ <strong>C</strong> ≤ 10<sup>4</sup>) e o número de posições que o carro ganhou ou perdeu relativo ao grid de largada (-10<sup>6</sup> ≤ <strong>P</strong> ≤ 10<sup>6</sup>), de acordo com o painel de posições. Todos os carros na corrida tem números diferentes.</p>
+
+                <p>
+                    O último caso de teste é seguido por uma linha que contém apenas um número zero.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste da entrada seu programa deve imprimir apenas uma linha, contendo o grid de largada reconstruído, com o número dos carros separados por um espaço. Se não foi possível reconstruir um grid de largada válido, a linha deve conter -1.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                4<br />
+                                1 0<br />
+                                3 1<br />
+                                2 -1<br />
+                                4 0<br />
+                                4<br />
+                                22 1<br />
+                                9 1<br />
+                                13 0<br />
+                                21 -2<br />
+                                3<br />
+                                19 1<br />
+                                9 -345<br />
+                                17 0<br />
+                                7<br />
+                                2 2<br />
+                                8 0<br />
+                                5 -2<br />
+                                7 1<br />
+                                1 1<br />
+                                9 1<br />
+                                3 -3<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                1 2 3 4<br />
+                                -1<br />
+                                -1<br />
+                                5 8 2 3 7 1 9</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2008.
+            </p>
+        </div>
+
+    </body>
+</html>

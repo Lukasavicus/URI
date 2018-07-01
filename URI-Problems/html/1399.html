@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1399 - Transformador de Matriz</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1399 - Transformador de Matriz" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1399</span>
+            <h1>Transformador de Matriz</h1>
+             <div>Por Rujia Liu <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cn.gif' alt=""/> China</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Escreva um programa que transforme uma matriz <em>A[1], A[2], ..., A[n]</em> de acordo com as <em>m</em> instruções. Cada instrução (L, R, v, p) significa: Primeiro, calcular quantos números de A[L] a A[R] (inclusive) são estritamente inferiores a v, chame esta resposta de k. Em seguida, altere o valor de A[p] para u*k/(R - L + 1), aqui nós usamos a divisão inteira (ou seja, ignorando parte fracionária).</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A primeira linha de entrada contém três inteiro <strong>n</strong>, <strong>m</strong>, <strong>u</strong> (1 ≤<strong> n</strong> ≤ 300.000, 1 ≤ <strong>m</strong> ≤ 50.000, 1 ≤ <strong>u</strong> ≤ 1.000.000.000). Cada uma das <strong>n</strong> linhas seguintes contém um número inteiro <strong>A</strong>[i] (1 ≤ <strong>A</strong>[i] ≤ <strong>u</strong>). Cada uma das <strong>m</strong> linhas seguintes contém uma instrução que consiste de quatro números inteiros <strong>L</strong>, <strong>R</strong>, <strong>v</strong>, <strong>p </strong>(1 ≤ <strong>L</strong> ≤ <strong>R</strong> ≤ <strong>n</strong>, 1 ≤<strong> v</strong> ≤ <strong>u</strong>, 1 ≤ <strong>p</strong> ≤ <strong>n</strong>).</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Imprimir <strong>n</strong> linhas, uma para cada número inteiro da matriz final.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>10 1 11<br />
+                                1<br />
+                                2<br />
+                                3<br />
+                                4<br />
+                                5<br />
+                                6<br />
+                                7<br />
+                                8<br />
+                                9<br />
+                                10<br />
+                                2 8 6 10</p>
+
+                        </td>
+                        <td>
+                            <p>1<br />
+                                2<br />
+                                3<br />
+                                4<br />
+                                5<br />
+                                6<br />
+                                7<br />
+                                8<br />
+                                9<br />
+                                6</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+               Explicação: Neste caso há apenas uma instrução: L = 2, R = 8, v = 6, p = 10. Há 4 números (2,3,4,5) menores do que 6, portanto k = 4. O novo número em A[10] será portanto: 11*4/(8 - 2 + 1) = 44/7 = 6. I/O por Neilor.
+            </p>
+        </div>
+
+    </body>
+</html>

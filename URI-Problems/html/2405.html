@@ -1,0 +1,199 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2405 - Colorindo</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2405 - Colorindo" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2405</span>
+				<h1>Colorindo</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2011 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A Sociedade Brasileira das Cores (SBC) é uma editora de livros de colorir. As crianças adoram os livros da SBC porque suas figuras, depois de pintadas, ficam muito coloridas e bonitas. Isso acontece porque a SBC se preocupa em não deixar grandes regiões contínuas em suas figuras, que devem ser pintadas com uma cor só.</p>
+
+<p>Até agora, o processo de verificar se uma figura tinha uma região contínua grande era completamente visual, mas a SBC resolveu automatizar esse processo e você foi contratado para programar uma parte desse sistema.</p>
+
+<p>Uma figura é representada por uma grade, de dimensão&nbsp;<em>N</em>&nbsp;por&nbsp;<em>M</em>. Cada quadrado dessa grade é representado por uma coordenada (<em>i</em>,&nbsp;<em>j</em>), com 1 ≤&nbsp;<em>i</em>&nbsp;≤&nbsp;<em>N</em>&nbsp;e 1 ≤&nbsp;<em>j</em>&nbsp;≤&nbsp;<em>M</em>. Por exemplo, a coordenada (1, 5) representa o quadrado na primeira linha e quinta coluna, enquanto que a coordenada (3, 7) representa o quadrado na terceira linha e sétima coluna. As linhas são contadas de baixo para cima e as colunas da esquerda para a direita.</p>
+
+<p>Cada quadrado pode estar vazio ou cheio. Assumimos que uma criança só vai pintar sobre quadrados vazios e se ela pintar um quadrado de uma cor, ela irá pintar os oito vizinhos da mesma cor, desde que eles estejam vazios e que ela não saia da área da figura.</p>
+
+<p>No segundo exemplo de&nbsp;caso de teste abaixo, temos uma figura de dimensões 5 × 5. A criança começa a pintar na posição (3, 3). Na figura abaixo ilustramos este caso. A posição que a criança inicia está marcada com a letra "X", e os quadrados que a criança consegue pintar estão destacandos em cinza claro. Note que ela consegue pintar o quadrado (4, 4), pois este quadrado é um dos quadrados que ela consegue pintar após ter pintado o quadrado (3, 3).</p>
+
+<p class="center"><img style="width: 200px" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_172_C_b.png' alt='' /></p>
+
+<p>No terceiro exemplo de caso de teste abaixo, temos uma figura de dimensões 10 × 10. A criança começa a pintar na posição (5, 5). Na figura abaixo ilustramos este caso. A posição que a criança inicia está marcada com a letra "X", e os quadrados que a criança consegue pintar estão destacandos em cinza claro.</p>
+
+<p class="center"><img style="width: 200px" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_172_C_a.png' alt='' /></p>
+
+<p>Dada a figura e a coordenada onde uma criança vai começar a pintar, sua tarefa é descobrir quantos quadrados ela irá pintar.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém 5 números inteiros,&nbsp;<strong><em>N</em></strong>,&nbsp;<strong><em>M</em></strong>,&nbsp;<strong><em>X</em></strong>,&nbsp;<strong><em>Y</em></strong>&nbsp;e&nbsp;<em><strong>K</strong>&nbsp;(</em>1 ≤&nbsp;<strong><em>N</em></strong>,&nbsp;<strong><em>M</em></strong>&nbsp;≤ 200<em>), (</em>1 ≤&nbsp;<strong><em>K</em></strong>&nbsp;≤ 10 000<em>)</em>. Os números inteiros&nbsp;<strong><em>N</em></strong>&nbsp;e&nbsp;<strong><em>M</em></strong>&nbsp;são respectivamente o número de linhas e colunas da grade, enquanto que (<strong><em>X</em></strong>,&nbsp;<strong><em>Y</em></strong>) é a coordenada onde a criança vai começar a pintar e&nbsp;<strong><em>K</em></strong>&nbsp;é o número de quadrados cheios na figura.</p>
+
+<p>Seguem-se&nbsp;<strong><em>K</em></strong>&nbsp;linhas, cada uma com dois inteiros&nbsp;<strong><em>A</em></strong>&nbsp;e&nbsp;<em><strong>B</strong> (</em>1 ≤&nbsp;<strong><em>X</em></strong>,&nbsp;<strong><em>A</em></strong>&nbsp;≤&nbsp;<strong><em>N</em></strong><em>),&nbsp;</em>(1 ≤&nbsp;<strong><em>Y</em></strong>,&nbsp;<strong><em>B</em></strong>&nbsp;≤&nbsp;<strong><em>M</em></strong>) que são as coordenadas de um quadrado cheio.</p>
+
+<p>Garantimos que o quadrado na posição (<strong><em>X</em></strong>,&nbsp;<strong><em>Y</em></strong>) está sempre vazio.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma linha contendo o número de quadrados pintados pela criança.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 5 1 2 2</p>
+
+<p>1 1</p>
+
+<p>1 4</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>5 5 3 3 7</p>
+
+<p>2 2</p>
+
+<p>2 3</p>
+
+<p>2 4</p>
+
+<p>3 2</p>
+
+<p>3 4</p>
+
+<p>4 2</p>
+
+<p>4 3</p>
+
+                    </td>
+                    <td>
+                        <p>18</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>10 10 5 5 22</p>
+
+<p>2 2</p>
+
+<p>2 3</p>
+
+<p>2 4</p>
+
+<p>2 5</p>
+
+<p>2 6</p>
+
+<p>2 7</p>
+
+<p>2 8</p>
+
+<p>3 2</p>
+
+<p>3 8</p>
+
+<p>4 2</p>
+
+<p>4 8</p>
+
+<p>5 2</p>
+
+<p>5 8</p>
+
+<p>6 2</p>
+
+<p>6 8</p>
+
+<p>7 2</p>
+
+<p>7 3</p>
+
+<p>7 4</p>
+
+<p>7 5</p>
+
+<p>7 6</p>
+
+<p>7 7</p>
+
+<p>7 8</p>
+
+                    </td>
+                    <td>
+                        <p>20</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2011 Fase 2 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

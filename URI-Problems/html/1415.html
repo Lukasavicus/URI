@@ -1,0 +1,112 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1415 - Galou Está de Volta!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br"/>
+        <meta name="description" content="URI Online Judge - Problema 1415 - Galou Está de Volta!"/>
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css"/>
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-28047757-1');
+        </script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1415</span>
+            <h1>Galou Está de Volta!</h1>
+            <div>Por Alessandro de Luna Almeida, UFPE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>O famoso bruxo está de volta. Depois de matar um incrível número de monstros para achar um tesouro escondido, Zak Galou decidiu comprar vinhedos na Borgonha e se aposentou. Tudo estava calmo em sua nova vida, até que um dia seu trator parou de funcionar.</p>
+
+                <p>O motor de seu trator funciona baseado em um mecanismo de rodas dentadas. O motor pode ser representado por uma grade bidimensional. No máximo uma roda dentada pode ser presa a cada posição da grade. Todas as engrenagens são idênticas e podem engrenar com as rodas adjacentes. Nessa grade, uma roda dentada pode ter até seis engrenagens adjacentes, veja a figura abaixo:</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Galou%20is%20back!_A.png" style="width: 379px; height: 193px;"/></p>
+
+                <p>Em condições normais, quando o trator é ligado, algumas das engrenagens são inicialmente ativadas e tentam giram em sentido horário. Quando uma engrenagem tenta girar em um sentido, todas as outras adjacentes tentam girar no sentido oposto.</p>
+
+                <p>Quando Zak Galou abriu o motor ele percebeu que ele havia sido sabotado (provavelmente por um caçador de tesouros que não conseguiu achar o tesouro). Algumas das engrenagens foram removidas do motor e outras adicionadas. Como consequência, algumas engrenagens estavam imóveis. Uma engrenagem pode estar imóvel tanto quando ela está livre ou está bloqueada. Uma engrenagem está livre quando ela não é ativada inicialmente e não tem nenhuma engrenagem adjacente tentando girar. Uma engrenagem está bloqueada quando ela está tentando girar em ambos sentidos ao mesmo tempo. Por exemplo, considere que existam três engrenagens no motor como mostrado na figura abaixo. Se qualquer uma delas é ativada inicialmente, todas estarão bloqueadas. Se nenhuma delas é ativada inicialmente, todas estarão livres.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Galou%20is%20back!_B.png" style="width: 83px; height: 76px;"/>​</p>
+
+                <p>Como parte do trabalho para consertar seu trator, Zak Galou pede sua ajuda para resolver o seguinte problema. Dada a descrição do motor e das engrenagens que estão ativadas inicialmente em sentido horário, ele quer saber para cada uma delas qual o seu estado quando o trator é ligado: girando no sentido horário, girando no sentido horário, livre ou bloqueado.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém diversos casos de teste. A primeira linha de um caso de teste contém dois inteiros <strong>R</strong> e <strong>C</strong>, separados por um espaço, representando respectivamente o número de fileiras e colunas da grade do motor (1 ≤ <strong>R</strong>, <strong>C</strong> ≤ 100). As próximas <strong>R</strong> linhas descrevem o motor. A i-ésima linha representa a i-ésima fileira do motor e contém <strong>C</strong> caracteres. O caractere "." indica que não existem engrenagens naquela posição, o caractere "*" indica que existe uma engrenagem que não é ativada inicialmente e um "I" indica que existe uma engrenagem que é inicialmente ativada quando o motor é ligado. Perceba que, por razões de simplicidade, o paralelogramo representando a grade do motor é descrito na entrada como se fosse um retângulo com cada fileira alinhada à esquerda. O final da entrada é indicado por <strong>R</strong> = <strong>C</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, seu programa deve imprimir <strong>R + 1</strong> linhas. A primeira linha deve estar vazia; cada uma das <strong>R</strong> linhas seguintes deve ter <strong>C</strong> caracteres. Os caracteres impressos devem representar o estado de cada posição da grade quando o motor é ligado. Imprima um "." se não existem engrenagens na posição; um "(" se existe uma engrenagem girando em sentido horário; um ")" se existe uma engrenagem girando em sentido anti-horário; um "F" maiúsculo se existe uma engrenagem que está livre e um "B" maiúsculo se existe uma engrenagem bloqueada.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>4 3<br/>
+                                ...<br/>
+                                .*.<br/>
+                                .I.<br/>
+                                ...<br/>
+                                4 4<br/>
+                                ....<br/>
+                                .**.<br/>
+                                .I..<br/>
+                                ..*.<br/>
+                                0 0</p>
+
+                        </td>
+                        <td>
+                            <p>    <br/>
+                                ...<br/>
+                                .).<br/>
+                                .(.<br/>
+                                ...</p>
+
+                            <p><br/>
+                                ....<br/>
+                                .BB.<br/>
+                                .B..<br/>
+                                ..F.</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+               ACM/ICPC South America Contest 2007.
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,132 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1968 - A Terra Desconhecida</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1968 - A Terra Desconhecida" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1968</span>
+				<h1>A Terra Desconhecida</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 2</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>No último dia 12 de outubro comemoramos no Brasil o Dia das Crianças. Quem dera nós adultos vivêssemos mais no mundo das crianças, pois o inverso não tem dado certo, não mesmo. Nós adultos dividimos o mundo em nações, e são as crianças que mais sofrem com as guerras. Nós adultos criamos um sistema de distribuição de riqueza, e são as crianças que mais sofrem com a fome. Mas há uma Terra Desconhecida, não muito distante daqueles que ainda conservam um pouco da sua imaginação, que pertence às crianças. Lá não há guerra, não há pobreza, não há fome. Lá as crianças brincam dia e noite.</p>
+
+<p>Mas uma catástrofe está ocorrendo com a Terra Desconhecida. Uma catástrofe! Os carneiros que habitavam a Terra Desconhecida acabaram ficando velhos, ou doentes, ou engolidos por jiboias. Com isso, os baobás começaram a crescer e tomaram conta da Terra Desconhecida. Agora, os cidadãos precisam se mudar urgentemente. Para auxiliar na evacuação, todos os cidadãos foram numerados de <strong>A</strong> a <strong>B</strong> (é óbvio que essa ideia foi dos adultos — eles adoram essas coisas!). Para definir quem seriam os líderes dos grupos durante a evacuação, alguém sugeriu que os líderes deveriam ser todos aqueles que houvessem recebido um número primo (é óbvio que essa ideia foi de uma criança — crianças têm muita imaginação e adoram se deleitar com coisas que dispensam maiores explicações!). Mas logo outra ideia surgiu:</p>
+
+<p>— Um número primo é um número que possui exatamente 2 divisores. E se os líderes fossem aqueles que receberam um número com exatamente <strong>N</strong> divisores?</p>
+
+<p>Todas as crianças adoraram a ideia. Já os adultos ficaram um longo tempo debatendo sobre como o número <strong>N</strong> deveria ser escolhido. Quando finalmente o número <strong>N</strong> foi escolhido, cada cidadão que não fosse líder de um grupo deveria escolher o grupo que quisesse para nele entrar. Nenhuma outra restrição foi imposta aos grupos. Nada impedia, por exemplo, que um grupo consistisse apenas do seu líder. Note que, dependendo do valor de <strong>N</strong>, nem haveria grupo algum.</p>
+
+<p>Sabendo dos valores de <strong>A</strong>, <strong>B</strong> e <strong>N</strong>, solte a criança dentro de você e tente descobrir o número total de possibilidades para a formação dos grupos. Se, por exemplo, <strong>A</strong> = 5, <strong>B</strong> = 8 e <strong>N</strong> = 4, situação em que os líderes são os cidadãos 6 e 8, há 4 possibilidades:</p>
+
+<ul>
+	<li>ambos os cidadãos 5 e 7 escolhem entrar para o grupo liderado pelo cidadão 6;</li>
+	<li>ambos os cidadãos 5 e 7 escolhem entrar para o grupo liderado pelo cidadão 8;</li>
+	<li>o cidadão 5 escolhe entrar para o grupo liderado pelo cidadão 6 e o cidadão 7 escolhe entrar para o grupo liderado pelo cidadão 8;</li>
+	<li>o cidadão 5 escolhe entrar para o grupo liderado pelo cidadão 8 e o cidadão 7 escolhe entrar para o grupo liderado pelo cidadão 6.</li>
+</ul>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A única linha da entrada consiste unicamente dos inteiros positivos <strong>A</strong>, <strong>B</strong> e <strong>N</strong> (<strong>A</strong> ≤ <strong>B</strong>; <strong>B</strong>, <strong>N</strong> ≤ 10<sup>7</sup>).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo unicamente um valor que represente o número de possibilidades para a formação dos grupos. Como esse número pode ser muito grande, imprima apenas o resto que ele deixa quando dividido por 10<sup>9</sup> + 7.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 8 4</p>
+
+							</td>
+							<td>
+								<p>4</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 10 2</p>
+
+							</td>
+							<td>
+								<p>4096</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 100 5</p>
+
+							</td>
+							<td>
+								<p>494092823</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					3<sup>ạ</sup> Maratona de Programação <em>Júnior</em> da UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

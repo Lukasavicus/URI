@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2792 - Golnaldinho</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema E - Golnaldinho" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+		<script type="text/javascript" src="https://urionlinejudge.r.worldssl.net/judge/js/math-jax/MathJax.js?config=TeX-MML-AM_CHTML"> </script>
+	</head>
+	<body>
+		<div class="header">
+			<span>URI Online Judge | 2792</span>
+			<h1>Golnaldinho</h1>
+			<div>
+				<p>Por Pablo Luiz <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 2</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+
+<p>
+Golnaldinho foi um brilhante jogador de futebol, tendo passagens marcantes em todas as equipes em que atuou durante sua carreira, sejam nacionais tais como Grêmio, Flamengo e Atlético-MG, ou internacionais, tais como Milan, PSG e Barcelona. Sua genialidade com a bola nos pés lhe rendeu diversas convocações para representar a Seleção Brasileira, além de uma legião de fãs espalhados pelo mundo. Este ano, em busca de novos desafios, Golnaldinho decidiu aposentar as chuteiras e se aventurar no mundo da Computação.
+</p>
+<p>
+Tal notícia surpreendeu diversas pessoas que não conheciam o amor de Golnaldinho por algoritmos e estruturas de dados. Tamanho amor fazia com que o ex-jogador passasse horas estudando o assunto enquanto se concentrava para as partidas de futebol. Durante a entrevista coletiva em que anunciou sua aposentadoria, ele mesmo afirmou que à medida em que melhorava suas habilidades em programação, melhor era o seu desempenho em campo.
+</p>
+<p>
+Durante seus estudos, Golnaldinho encontrou um livro de problemas computacionais e intrigou-se com um problema em específico, pois não conseguiu solucioná-lo. Competitivo como ele é e sabendo de suas habilidades de programação, Golnaldinho lhe desafiou a resolvê-lo.
+</p>
+<p>
+O enunciado de tal problema é o seguinte:
+</p>
+<p><em>Suponha um array com <span class="math-class">\(\displaystyle{N}\)</span> inteiros, onde a i-ésima posição desse array é ocupada pelo valor <span class="math-class">\(\displaystyle{i}\)</span>, ou seja, a posição 1 é ocupada pelo valor 1, a posição 2 é ocupada pelo valor 2 e assim por diante, como pode ser visualizado na figura abaixo:</em></p>
+<p><p class="center">
+<img src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/gonaldinho1.png" style="width: 112px; height: 40px; "alt=''/></p>
+</p>
+<p><em>Kaká gostaria de remover todos os números desse array.
+        Porém, as exclusões a serem efetuadas devem respeitar uma ordem específica.
+        Pensando nisso, Kaká implementou uma função que deleta um único elemento por vez,
+        dado o índice do elemento a ser excluído.
+        Ou seja, caso Cacá deseje excluir o elemento 2 no array acima, bastaria informar o índice do elemento, que neste caso é igual a 2.
+        Como resultado, a função retornaria o seguinte array após realizar a exclusão:</em></p>
+<p><p class="center">
+<img src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/gonaldinho2.png" style="width: 93px; height: 39px; "alt=''/></p>
+</p>
+<p><em>Agora, se Kaká desejasse excluir o elemento 4 do array, bastaria informar o índice que neste caso é igual a 3. A função retornaria:</em></p>
+<p><p class="center">
+<img src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/gonaldinho3.png" style="width: 68px; height: 38px; "alt=''/></p>
+</p>
+<p><em>Tal procedimento é realizado até que não haja mais nenhum elemento no array.</em></p>
+<p><em>Kaká está com problemas em automatizar as chamadas para essa função. Isso porque não conseguiu implementar um script que forneça a ordem dos índices a serem excluídos, respeitando a ordem de exclusão dos elementos. Ou seja, se para um array com <span class="math-class">\(\displaystyle{N=5}\)</span> a ordem de exclusão dos elementos for {2,4,5,1,3}, a ordem dos índices será {2,3,3,1,1}. Você poderia ajudá-lo nesta implementação?</em></p>
+
+         </div>
+			<h2>Entrada</h2>
+
+			<div class="input">
+			   <p>
+A entrada começa com uma linha contendo um inteiro <span class="math-class">\(N\)</span>, indicando o número de elementos do array.
+A segunda linha de entrada possui <span class="math-class">\(N\)</span> inteiros separados por espaço, indicando a ordem de exclusão dos elementos.
+É garantido que, nos valores da segunda linha de entrada, cada um dos inteiros de <span class="math-class">\(1\)</span> a <span class="math-class">\(N\)</span> aparece
+exatamente uma vez.
+</p>
+<p><p><span class="math-class">\(1 \leq N \leq 5\times10^5\)</span></p>
+</p>
+
+         </div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+			   <p>
+Escreva na saída uma linha com <span class="math-class">\(N\)</span> inteiros separados por um espaço, que representem a ordem dos índices a serem excluídos.
+</p>
+
+         </div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>5<br />
+2 4 5 1 3<br />
+</p>
+
+						</td>
+						<td>
+							<p>2 3 3 1 1<br />
+</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		<div class="both"></div>
+
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p> 4<br />
+1 2 3 4<br />
+ </p>
+						</td>
+						<td>
+							<p> 1 1 1 1<br />
+ </p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p> 7<br />
+2 6 1 4 5 7 3<br />
+ </p>
+						</td>
+						<td>
+							<p> 2 5 1 2 2 2 1<br />
+ </p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+			<p class="footer">
+				Maratona Mineira 2018
+			</p>
+		</div>
+	</body>
+</html>

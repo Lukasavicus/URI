@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1057 - Chegando Junto</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1057 - Chegando Junto" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1057</span>
+                <h1>Chegando Junto</h1>
+                <div><p>
+	Por Sohel Hafiz <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif" style="width: 16px; height: 11px;" /> Bangladesh*</p>
+</div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Você está jogando um jogo de computador no qual três robôs (Aneed, Ben e Cindy) estão presos em um labirinto. Inicialmente todos os três estão situados em três localizações diferentes no labirinto. Existem três saídas através das quais os robôs têm que sair. Como esperado, há vários obstáculos no labirinto e os robôs não podem passar por eles.</p>
+    <p>
+	O labirinto pode ser modelado como uma grade quadrada, com células <strong>N</strong>x<strong>N</strong>. Os robôs são colocados em três diferentes células no labirinto. Você pode comandá-los a se mover. Um único comando será ativado para os três robôs simultaneamente. Um robô irá mover-se para uma nova posição se for uma célula vazia dentro do labirinto ou se for uma das células alvo. Caso contrário, o comando será ignorado para aquele robô. A sua tarefa é comandá-los de forma &nbsp;que todos eles cheguem nas três células alvo (em qualquer ordem).<br />
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1057.jpg" style="width: 450px; height: 279px; float: right;" /><br />
+	Cada movimento leva 1 unidade de tempo e consiste em:<br />
+	<em>Move North</em>  - O robô se move uma célula para o norte.<br />
+	<em>Move East </em> - O robô se move uma célula para o leste.<br />
+	<em>Move South</em> - O robô se move uma célula para o sul.<br />
+	<em>Move West </em> - O robô se move uma célula para o oeste.</p>
+    <p>
+	Cada célula consiste em um dos seguintes caracteres:<br />
+	A – Posição Inicial de Aneed<br />
+	B – Posição Inicial de Ben<br />
+	C – Posição Inicial de Cindy<br />
+	. – Célula vazia<br />
+	# - Obstáculo<br />
+	X – Célula alvo</p>
+    <p>
+	Assuma que para todo labirinto cada uma das três letras&nbsp; (A B C) aparecerá exatamente uma vez e cada X aparecerá 3 vezes.</p>
+
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A primeira linha de entrada é um inteiro <strong>T</strong> (<strong>T </strong>&lt; 50), que indica o número de casos de testes. Cada caso inicia com um inteiro <strong>N </strong>(2 &lt; N &lt; 10).&nbsp; Cada uma das próximas <strong>N</strong> linhas contém <strong>N</strong> caracteres cada que preencherão o labirinto.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso, imprima o número do caso seguido do menor tempo requerido. Se for impossível movê-los como descrito, imprima <strong>‘trapped’</strong> ao invés de imprimir o tempo. Note que o primeiro caso de teste corresponde à figura acima.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	3<br />
+	7<br />
+	.....#.<br />
+	.......<br />
+	.#B....<br />
+	...A.#.<br />
+	.CX....<br />
+	.X.X.#.<br />
+	.#.....<br />
+	3<br />
+	ABC<br />
+	...<br />
+	XXX<br />
+	3<br />
+	ABC<br />
+	###<br />
+	XXX</p>
+
+                            </td>
+                            <td>
+                               <p>
+Case 1: 2<br />
+Case 2: 2<br />
+Case 3: trapped</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+	Desenho da figura e Solução alternativa: Jane Alam Jan<br />
+	* Working in University of Texas at San Antonio - USA</p>
+    
+            </div>
+
+        </body>
+    </html>

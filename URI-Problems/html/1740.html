@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1740 - Está Ordenado?</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1740 - Está Ordenado?" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+               <style>
+                #lista{
+                    list-style-type:square;;
+                    margin-left: 30px;
+                }
+                </style>
+          
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1740</span>
+                <h1>Está Ordenado?</h1>
+                <div>
+                    <p>Por Paulo Cezar Pereira Costa <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 4</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                
+
+                <p> Chavaska gosta de jogar com sequência de inteiros. Ele tem uma sequência A que contém N inteiros que ele modifica
+                e analisa. Particularmente ele está interessado na ordem de algumas sequências contíguas.</p>
+
+                <p> Ele explicou a Kabralouco como ele está se divertido e lhe convidou para jogar. Kabralouco quer jogar, mas como ele não consegue pensar tão rápido como Chavaska e não gosta de ficar atrás, ele decidiu roubar e agora esté te
+                pedindo para ajudá-li criando um programa que pode realizar as seguintes operações</p>
+
+
+                <ul>
+                    <li>0 X Y – Troca os elementos X e Y.</li>
+                    <li>1 X Y – Troca o valor do elemento na posição X por Y.</li>
+                    <li>2 X Y – Insere o elemento Y na posição X.</li>
+                    <li>3 X – Remove o elemento na posição X X.</li>
+                    <li>4 X Y – Pergunta a estrutura dos elementos A[X..Y] e as respostas devem ser:</br>
+                
+                <ul id="lista">
+                    <li>“ALL EQUAL” – Se A[i] = A[i+1] para todo i em [X,Y −1]</li>
+                    <li>“NON DECREASING” – Se A[i] ≤ A[i+1] para todo i em [X,Y−1] e A[i] ≠ A[i+1] para algum i em [X,Y−1]</li>
+                    <li>“NONINCREASING” – Se A[i] ≥ A[i+1] para todo i em [X,Y−1] e A[i] ≠ A[i+1] para algum i em [X,Y−1]</li>
+                    <li>“NONE” – Se nenhum dos casos acontecem.</li>
+                </ul>
+                </ul>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    
+
+                <p>A entrada contém diversos casos testes e termina com o fim de arquivo. A primeira linha de cada caso teste começa com um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>4</sup>,) o número de elementos na sequência inicial. Na próxima linha tem <strong>N</strong> inteiros |A[i]| ≤ 10<sup>9</sup> (1 ≤ i ≤ <strong>N</strong>). A próxima linha contém um inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 10<sup>5</sup>), o número de operações que devem ser executadas. As próximas <strong>Q</strong> linhas são as operações.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>O programa deve imprimir uma linha por pergunta do tipo 4 (“4 X Y”), respondendo se a sequência A[X...Y] é NON INCREASING, NON DECREASING, ALL EQUAL ou NONE como explicado acima.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+<p>
+8<br>
+15 6 24 48 56 6 2 11<br>
+11<br/>
+4 3 5<br>
+4 5 7<br>
+4 1 7<br>
+0 3 6<br>
+4 2 5<br>
+2 4 6<br>
+4 2 4<br>
+1 3 13<br>
+4 2 4<br>
+3 3<br>
+4 2 4<br>
+</p>
+
+
+                            </td>
+                            <td>
+<p>                                
+NON DECREASING<br>
+NON INCREASING<br>
+NONE<br>
+NON DECREASING<br>
+ALL EQUAL<br>
+NONE<br>
+NON DECREASING<br>
+</p>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Contest Road to Fortaleza VII 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2220 - Ajudando Gust-Avô</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - Problema B - Subsequência" />
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+  </head>
+  <body>
+
+    <div class="header">
+      <span>URI Online Judge | 2220</span>
+      <h1>Ajudando Gust-Avô</h1>
+      <div>
+        <p>Por Joel Uchoa, IFCE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem">
+
+      <div class="description">
+        <p>K-rina é uma jovem mestre pokemon que gosta de ajudar pokemons
+          anciãos. Em uma de suas últimas caçadas, ela capiturou um velho,
+          dislexo e gago pokemon escritor, chamado Gust-Avô. Por causa de
+          sua gagueira e dislexia, Gust-Avô quando escreve uma palavra, as
+          vezes repete letras e/ou adiciona caracteres não pertencentes a 
+          palavra que deseja escrever. K-rina quer ajudá-lo interpretando
+          seus textos. Para isso precisa resolver o problema descrito abaixo.</p>
+
+        <p>Dados, <b>A</b> e <b>B</b> duas sequências de letras, nós dizemos
+          que <b>B</b> é uma
+          <strong>subsequência</strong> de <b>A</b> se nós podemos encontrar todas as
+          letras de <b>B</b> em <b>A</b>, na mesma ordem em que elas aparecem em <b>B</b>, não
+          necessariamente adjacentes. Por exemplo, <b>abc</b> é subsequência de
+            <b>xaywbzc</b>, enquanto <b>xyz</b> não é subsequência de <b>xabzcy</b>.</p>
+
+          <p>Dado uma sequência <b>B</b>, nós definimos <b>B<sup>i</sup></b> como sendo
+            uma sequência onde cada caractere de <b>B</b> aparece <b>i</b>
+            vezes. Por exemplo, se <b>B=xyzzx</b>, então
+            <b>B<sup>3</sup>=xxxyyyzzzzzzxxx</b>.</p>
+
+          <p>Para ajudar K-rina e Gust-Avô, sua tarefa é, dado duas sequências
+            <b>A</b> e <b>B</b>, encontrar o maior valor <b>i</b>, tal que
+            <b>B<sup>i</sup></b> é uma subsequência de <b>A</b>.</p>
+        </div>
+
+        <h2>Entrada</h2>
+
+        <div class="input">
+          <p>A entrada é composta por
+            diversas instâncias. A primeira linha da entrada contém um inteiro <b>T</b>
+            indicando o número de instâncias.
+
+          Cada instância é composta de duas linhas. A primeira linha
+            de cada instância contêm uma sequência de letras que
+            representa <b>A</b> (|A| &le; 10<sup>5</sup>) e a segunda linha
+            ontêm uma sequência de letras que representa <b>B</b> (|B| &le; 10<sup>4</sup>).</p>
+        </div>
+
+        <h2>Saída</h2>
+
+        <div class="output">
+          <p>Para cada instância na entrada, imprima uma única linha contendo o
+            maior valor inteiro <b>i</b>, tal que <b>B<sup>i</sup></b> é subsequência
+            de <b>A</b>. Caso <b>B</b> não seja subsequencia de <b>A</b>, imprima 0 (zero).</p>
+        </div>
+
+        <div class="both"></div>
+
+        <table>
+          <thead>
+            <tr>
+              <td>Exemplo de Entrada</td>
+              <td>Exemplo de Saída</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="division">
+                <p>4<br />
+                  qwer<br />
+                  qr<br />
+                  qweqwewseerfgr<br />
+                  qr<br />
+                  aaaaaaaaa<br />
+                  a<br />
+                  qwer<br />
+                  asdf</p>
+
+              </td>
+              <td>
+                <p>1<br />
+                  2<br />
+                  9<br />
+                  0</p>
+
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <p class="footer">
+          II Maratona de programação do IFCE-Aracati
+        </p>
+      </div>
+
+    </body>
+  </html>

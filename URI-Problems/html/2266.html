@@ -1,0 +1,137 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2266 - Baggage</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2266 - Baggage" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2266</span>
+				<h1>Baggage</h1>
+				<div>
+					<p>By ICPC 2014 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ru.gif' alt='RU' /> Russian Federation</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>An airline has two flights leaving at about the same time from ICPCity, one to city B and one to city A. The airline also has <strong>n</strong> counters where passengers check their baggage. At each counter there is a pair of identical baggage bins, one for city B and one for city A.</p>
+
+					<p>Just before the flights depart, each pair of baggage bins is moved by a motorized cart to a sorting area. The cart always moves two bins at a time, one for city B and one for city A. After all the bins have been moved, they line up in the sorting area like this:</p>
+
+					<p style="text-align: center;">B A B A B A ... B A</p>
+
+					<p>That is, there are 2<strong>n</strong> baggage bins in a row, starting with a bin for city B, then one for city A, and so forth. The task now is to reorder them so all the baggage bins for city A precede the baggage bins for city B. Then the bins can be loaded on the appropriate aircraft.</p>
+
+					<p>The reordering is done by moving pairs of adjacent baggage bins (not necessarily B then A), again via the motorized cart. For proper balance, the cart must always carry two bins, never just one. A pair of bins must always be moved to an empty space that is at least two bins wide. On the left of the first bin are some empty spaces that can be used as needed during the reordering.</p>
+
+					<p>When the reordering process begins, the bin locations are numbered from 1 (initially containing the leftmost B baggage bin) to 2<strong>n</strong> (initially containing the rightmost A baggage bin). There are 2<strong>n</strong> initially empty spaces to the left of the bins, numbered from 0 to −2<strong>n</strong> + 1, as shown in Figure A.1 for the case <strong>n</strong> = 4.</p>
+
+					<center> <img src="https://www.urionlinejudge.com.br/gallery/images/contests/UOJ_154_A.png" alt="" width="500" /> </center>
+
+					<p style="text-align: center;">Figure A.1: Initial configuration of bins and empty spaces for <strong>n</strong> = 4</p>
+
+					<p>Given <strong>n</strong>, find a shortest sequence of moves that will reorder the bins so that all the A bins are to the left of all the B bins. At the end of the process, it is possible that the leftmost A bin is at some location other than 1, but the bins must be adjacent in a sequence of 2<strong>n</strong> locations.</p>
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case, which consists of the integer <strong>n</strong> (3 ≤ <strong>n</strong> ≤ 100).</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Display a shortest sequence of moves that will correctly reorder the bins. Each move is of the form “<strong>f</strong> to <strong>t</strong>”, where <strong>f</strong> and <strong>t</strong> are integers representing the movement of the bins in locations <strong>f</strong> and <strong>f</strong> + 1 to locations <strong>t</strong> and <strong>t</strong> + 1. If multiple solutions are possible, display any one of them.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5</p>
+
+							</td>
+							<td>
+								<p>8 to -1</p>
+
+								<p>3 to 8</p>
+
+								<p>6 to 3</p>
+
+								<p>0 to 6</p>
+
+								<p>9 to 0</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>8</p>
+
+							</td>
+							<td>
+								<p>10 to -1</p>
+
+								<p>3 to 10</p>
+
+								<p>14 to 3</p>
+
+								<p>7 to 14</p>
+
+								<p>0 to 7</p>
+
+								<p>11 to 0</p>
+
+								<p>4 to 11</p>
+
+								<p>15 to 4</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC 2014 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

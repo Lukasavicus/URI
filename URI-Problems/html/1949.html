@@ -1,0 +1,107 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1949 - Registrador de Deslocamento</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1949 - Registrador de Deslocamento" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1949</span>
+				<h1>Registrador de Deslocamento</h1>
+				<div>
+					<p>Por Fábio Dias Moreira, PUC-Rio <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 4</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+
+					<p>Um Registrador de Deslocamento é um circuito que desloca de uma posição os elementos de um vetor de <em>bits</em>. O registrador de deslocamento tem uma entrada (um <em>bit</em>) e uma saída (também um <em>bit</em>), e é comandado por um pulso de relógio. Quando o pulso ocorre, o <em>bit</em> de entrada se transforma no <em>bit</em> menos significativo do vetor, o <em>bit</em> mais significativo é jogado na saída do registrador, e todos os outros <em>bits</em> são deslocados de uma posiçãoo em direção ao <em>bit</em> mais significativo do vetor (em direçãoo à saída).</p>
+
+					<p>Um Registrador de Deslocamento com Retroalimentação Linear (em inglês, LFSR) é um registrador de deslocamento no qual o <em>bit</em> de entrada é determinado pelo valor do OU-EXCLUSIVO de alguns dos <em>bits</em> do registrador antes do pulso de relógio. Os <em>bits</em> que são utilizados na retroalimentação do registrador são chamados de torneiras. A figura abaixo mostra um LFSR de 8 <em>bits</em>, com três torneiras (<em>bits</em> 0, 3 e 5).</p>
+
+					<p style="text-align:center"><img alt="" src="https://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1949_pt.png" /></p>
+
+					<p>Neste problema, você deve escrever um programa que, dados o número de <em>bits</em> de um LFSR, quais <em>bits</em> são utilizados na retroalimentação, um estado inicial e um estado final do LFSR, determine quantos pulsos de relógio serão necessários para que, partindo do estado inicial, o LFSR chegue ao estado final (ou determinar que isso é impossível).</p>
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+
+					<p>A entrada contém vários casos de teste. Cada caso de teste é composto por três linhas. A primeira linha contém dois números inteiros <strong>N</strong>, <strong>T</strong>, indicando respectivamente o número de <em>bits</em> (2 ≤ <strong>N</strong> ≤ 32) e o número de torneiras (2 ≤ <strong>T</strong> ≤ <strong>N</strong>). Os <em>bits</em> são identificados por inteiros de 0 (<em>bit</em> menos significativo) a <strong>N</strong> − 1 (<em>bit</em> mais significativo). A segunda linha contém <strong>T</strong> inteiros, separados por espaços, apresentando os identificadores dos <em>bits</em> que são torneiras, em ordem crescente. O <em>bit</em> 0 sempre é uma torneira. A terceira linha contém dois números em notação hexadecimal <strong>I</strong> e <strong>F</strong>, separados por um espaço em branco, representando respectivamente o estado inicial e o estado final do LFSR.</p>
+
+					<p>O final da entrada é indicado por uma linha que contém dois zeros separados por espaços em branco.</p>
+
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+
+					<p>Para cada caso de teste da entrada seu programa deve imprimir uma única linha. Se for possível chegar ao estado final a partir do estado inicial dado, a linha da saída deve conter apenas um inteiro, o menor número de pulsos de relógio necessários para o LFSR atingir o estado final. Caso não seja possível, a linha deve conter apenas o caractere '*'.</p>
+					
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>8 3<br />
+0 3 5<br />
+a9 35<br />
+5 2<br />
+0 4<br />
+1b 2<br />
+7 3<br />
+0 2 3<br />
+4d 1a<br />
+0 0</p>
+
+							</td>
+							<td>
+								<p>3<br />
+*<br />
+61</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIV Maratona de Programação da SBC 2009
+				</p>
+			</div>
+
+		</body>
+	</html>

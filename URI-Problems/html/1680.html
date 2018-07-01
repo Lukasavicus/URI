@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1680 - Borda</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1680 - Borda" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1680</span>
+                <h1>Borda</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Para produtos que são embalados em pequenos pacotes é necessário que a folha de instruções de uso seja dobrada até que seu tamanho se torne suficientemente pequeno. Assume-se que uma folha é retangular e só pode ser dobrada ao longo de linhas paralelas à sua menor borda inicial. O ato de dobrar tal linha, contudo, pode ser realizado em duas direções: tanto a superfície superior da folha é dobrada, ou a superfície inferior. Em ambos os casos as duas partes do retângulo que estão separadas pela linha da dobra são dispostas em conjunto e ignora-se qualquer diferença de espessura na folha dobrada resultante.</p
+                    
+                    <p>Depois de diversas dobras serem realizadas pode-se desdobrar a folha novamente e observar sua maior curva de forma que pareça uma curva unidimensional, na verdade a junção de segmentos de linhas. Ao se mover por entre essa curva em uma direção fixa pode-se classificar cada ponto em que a folha foi dobrada como um <em>tipo <strong>A</strong></em>, uma rotação em sentido horário, ou <em>tipo <strong>V</strong></em>, uma rotação em sentido anti-horário. Dadas tais sequências de classificações, produza um desenho da maior borda da folha assumindo rotações de 90 graus em pontos equidistantes.</p>
+					
+					<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1680.gif" style="height:128px; width:65px" /></p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém diversos casos de testes, cada um em uma linha separada. Cada linha contém uma string não vazia de caracteres <strong>A</strong> e <strong>V</strong> descrevendo a maior borda da folha. Você pode assumir que o tamanho da string é menor que 200. O aquivo de entrada termina imediatamente após o último caso de teste.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste gere um desenho PostScript da borda com comandos em linhas separadas. Comece cada desenho nas coordenadas (300, 420) com o comando "<em>300 420 moveto</em>". A primeira rotação ocorre em (310, 420) utilizando o comando "<em>310 420 lineto</em>". Continue com rotações em sentido horário ou anti-horário de acordo com a string de entrada, usando a sequência "<em>x y lineto</em>" de comandos com as coordenadas devidas. Os pontos de rotações são separados por uma distância de 10 unidades. Não se esqueça do último ponto da borda e de terminar cada caso de teste com os comando <em>stroke</em> e <em>showpage</em>.</p>
+                    
+                    <p>Você pode exibir tais desenhos com o interpretador de PostScript <em>gv</em>, opcionalmente depois de uma conversão utilizando o <em>ps2ps</em>.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>V<br />
+AVV</p>
+
+                            </td>
+                            <td>
+                                <p>300 420 moveto<br />
+310 420 lineto<br />
+310 430 lineto<br />
+stroke<br />
+showpage<br />
+300 420 moveto<br />
+310 420 lineto<br />
+310 410 lineto<br />
+320 410 lineto<br />
+320 420 lineto<br />
+stroke<br />
+showpage</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                     Univeristy of Ulm Local Contest 2003/2004
+                </p>
+                </p>
+            </div>
+
+        </body>
+    </html>

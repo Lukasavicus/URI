@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1752 - Jornada Pelo Reino</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1752 - Jornada Pelo Reino" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1752</span>
+                <h1>Jornada Pelo Reino</h1>
+                <div>
+                    <p>Por Fidel I. Schaposnik Massolo, Universidad Nacional de La Plata <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+                </div>
+                <strong>Timelimit: 10</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>O reino de Quadradônia é dividido em províncias que formam um padrão de grade de R linhas e C colunas. Diz a lenda que muitas coisas maravilhosas esperam ser descobertas em algumas das províncias, embora não esteja claro se você pode realmente encontrar a forma sólida indescritível de histórias de água chamada de "gelo", ou se são apenas dragões.</p>
+
+                    <p>Você está planejando uma viagem através do reino para descobrir, mas as estradas são perigosas por isso você tem que ter muito cuidado. Para ir de uma província para outra que você gostaria de usar o sistema de transporte conveniente escoltado, gerido pela Interprovincial Communication &amp; Peregrination Company (ICPC). Em cada província, o ICPC fornece uma carruagem fortemente guardada para você viajar para qualquer outra província em um retângulo que a contém, com a mesma taxa fixa (que pode no entanto variar de uma província para outra). Mais formalmente, na província na linha <em>i</em>-ésima e coluna <em>j</em>-ésima você pode alugar um carro escoltado por um custo de <em>V<sub>ij</sub></em>, que lhe permite viajar com segurança para qualquer província na maioria das linhas <em>R<sub>ij</sub></em> de distância da linha <em>i</em>, e na maioria das colunas <em>C<sub>ij</sub></em> de distância da coluna <em>j</em> (isto é, ter número da linha <em>i'</em> e coluna <em>j'</em> com número | <em>i</em> - <em>i'</em> | ≤ <em>R<sub>ij</sub></em> e | <em>j</em> - <em>j'</em> | ≤ <em>C<sub>ij</sub></em>).</p>
+
+                    <p>Em sua jornada você deseja visitar <em>N</em> províncias <em>p<sub>1</sub></em>, <em>p<sub>2</sub></em>,. . . , <em>p<sub>N</sub></em>, nessa ordem. Andando à procura de aventuras é um negócio caro e seu orçamento é limitado, então você gostaria de gastar o mínimo possível no transporte. Portanto, você gostaria de calcular o custo mínimo de cada etapa de sua viagem, ou seja, o custo mínimo dos carros que você tem que alugar para ir da província <em>p<sub>k</sub></em> para a província <em>p</em><sub><em>k </em>+ 1</sub>, para <em>k</em> = 1, 2,. . . , <em>N</em> - 1.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém três inteiros <strong>R</strong>, <strong>C</strong> e <strong>N</strong>, representando respectivamente o número de linhas, o número de colunas e o número de províncias que deseja visitar (1 ≤ <strong>R</strong>, <strong>C</strong> ≤ 500 e 2 ≤ <strong>N</strong> ≤ 5). As linhas são numeradas de 1 a <strong>R</strong> e colunas são numeradas de 1 a <strong>C</strong>. As próximas 3 × <strong>R</strong> linhas descrevem o sistema de transporte escoltado do ICPC por meio de três grupos de <strong>R</strong> linhas cada, com cada linha contendo <strong>C</strong> inteiros. Na <strong>i</strong>-ésima linha do primeiro grupo, o <strong>j</strong>-ésimo número representa o custo <strong>V<sub>ij</sub></strong> de alugar um carro na província de linha <strong>i</strong> e coluna <strong>j</strong>, enquanto os números correspondentes no segundo e terceiro grupo representam, respectivamente, <strong>R<sub>ij</sub></strong> e <strong>C<sub>ij</sub></strong> (1 ≤ <strong>V<sub>ij</sub></strong> ≤ 1000, 0 ≤ <strong>R<sub>ij</sub></strong> ≤ <strong>R</strong> e 0 ≤ <strong>C<sub>ij</sub></strong> ≤ <strong>C</strong>, para <strong>i</strong> = 1, 2,..., <strong>R</strong> e <strong>j</strong> = 1, 2,..., <strong>C</strong>). As <strong>N</strong> linhas seguintes descrevem as províncias <strong>p<sub>1</sub></strong>, <strong>p<sub>2</sub></strong>,. . . , <strong>p<sub>N</sub></strong> que você quer visitar, na mesma ordem que você quiser visitá-los. O <strong>k</strong>-ésimo número dessas linhas descreve a província <strong>p<sub>k</sub></strong> com dois inteiros <strong>I<sub>k</sub></strong> e <strong>J<sub>k</sub></strong>, indicando que <strong>p<sub>k</sub></strong> esta na linha <strong>I<sub>k</sub></strong> e coluna <strong>J<sub>k</sub></strong> (1 ≤ <strong>I<sub>k</sub></strong> ≤ <strong>R</strong> e 1 ≤ <strong>J<sub>k</sub></strong> ≤ <strong>C</strong> para <strong>k</strong> = 1 , 2,..., <strong>N</strong>).</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Apresente uma linha com <strong>N</strong> - 1 inteiros que representam o custo mínimo de cada etapa de sua viagem, ou o valor -1 se é impossível viajar usando o sistema de transporte escoltado do ICPC para aquela etapa. Mais precisamente, para <strong>k</strong> = 1, 2,. . . , <strong>N</strong> - 1, o <strong>k</strong>-ésimo número deve ser o custo mínimo dos carros que você tem que alugar para ir da província <strong>p<sub>k</sub></strong> para província <strong>p</strong><sub><strong>k</strong> + 1</sub>, utilizando o sistema escoltado de transporte do ICPC , ou o valor -1 se é impossível viajar da província <strong>p<sub>k</sub></strong> para província <strong>p</strong><sub><strong>k</strong> + 1</sub> com este sistema.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 4 5<br />
+1 2 1 1<br />
+1 5 3 4<br />
+1 1 6 3<br />
+1 2 3 3<br />
+3 3 1 2<br />
+0 0 0 1<br />
+1 4 0 1<br />
+2 3 0 1<br />
+4 1 3 1<br />
+1 1<br />
+3 4<br />
+1 1<br />
+2 2<br />
+2 2</p>
+
+                            </td>
+                            <td>
+                                <p>3 -1 1 0</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    ACM/ICPC Latin America Contest 2014.
+                </p>
+            </div>
+
+        </body>
+    </html>

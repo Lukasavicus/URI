@@ -1,0 +1,127 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2321 - Detectando Colisões</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2321 - Detectando Colisões" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2321</span>
+				<h1>Detectando Colisões</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2007 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Detecção de colisão é uma das operações mais comuns (e importantes) em jogos eletrônicos. O objetivo, basicamente, é verificar se dois objetos quaisquer colidiram, ou seja, se a interseção entre eles é diferente de vazio. Isso pode ser usado para saber se duas naves colidiram, se um monstro bateu numa parede, se um personagem pegou um item, etc.</p>
+
+<p>Para facilitar as coisas, muitas vezes os objetos são aproximados por figuras geométricas simples (esferas, paralelepípedos, triângulos etc). Neste problema, os objetos são aproximados por retângulos num plano 2D.</p>
+
+<p>Escreva um programa que, dados dois retângulos, determine se eles se interceptam ou não.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém um único conjunto de testes, que deve ser lido do&nbsp;<em>dispositivo de entrada padrão</em>&nbsp;(normalmente o teclado). Cada caso de teste contém duas linhas. Cada linha contém quatro inteiros (<strong><em>x</em><sub>0</sub></strong>,<strong>&nbsp;<em>y</em><sub>0</sub></strong>,<strong>&nbsp;<em>x</em><sub>1</sub></strong>,<strong>&nbsp;<em>y</em><sub>1</sub></strong>, sendo 0 ≤&nbsp;<strong><em>x</em><sub>0</sub></strong>&nbsp;&lt;&nbsp;<strong><em>x</em><sub>1</sub></strong>&nbsp;≤ 1.000.000 e 0 ≤&nbsp;<strong><em>y</em><sub>0</sub></strong>&nbsp;&lt;&nbsp;<strong><em>y</em><sub>1</sub></strong>&nbsp;≤ 1.000.000) separados por um espaço em branco representando um retângulo. Os lados do retângulo são sempre paralelos aos eixos&nbsp;<em>x</em>&nbsp;e&nbsp;<em>y</em>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir, na&nbsp;<em>saída padrão</em>, uma única linha para cada caso de teste, contendo o número 0 (zero) caso não haja interseção ou o número 1 (um) caso haja.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>0 0 1 1</p>
+
+<p>0 0 1 1</p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>0 0 2 2</p>
+
+<p>1 1 3 3</p>
+
+                    </td>
+                    <td>
+                        <p>1</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>0 0 1 1</p>
+
+<p>&nbsp;2 2 3 3</p>
+
+                    </td>
+                    <td>
+                        <p>0</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2007 Fase 1 Nível 1
+				</p>
+			</div>
+
+		</body>
+	</html>

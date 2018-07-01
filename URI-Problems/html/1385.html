@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1385 - Recuperação de Relatório</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1385 - Recuperação de Relatório" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1385</span>
+            <h1>Recuperação de Relatório</h1>
+            <div>Por Rodrigo Cardoso <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt="" /> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>No final da semana, John pediu para Maria enviar-lhe um relatório urgente de vendas. Maria estava com pressa, porque estava saindo para suas férias. Ela, então, copiou e colou a folha de vendas em um e-mail, enviou para John e saiu. Ela não queria ser incomodada com questões de trabalho, de modo que ela saiu sem dizer a ninguém onde ela estaria. Ela anunciou simplesmente que não estaria disponível para as próximas duas semanas, desligou o celular e saiu.</p>
+
+                <p>Quando João recebeu a mensagem, ele percebeu que o relatório não tinha nenhum espaço! Ele sabia que o relatório deveria ter uma linha de cabeçalho com códigos de produtos da forma P1, P2,. . ., PN e a palavra "Totals" (Totais) no final. Então haveria várias linhas de relatórios de vendas de produtos para os diferentes vendedores de escritório de Maria. Cada vendedor foi identificado com um nome composto por uma palavra (apenas caracteres alfabéticos). A linha correspondente a um vendedor deve começar com o seu nome, seguido do número de produtos vendidos, de acordo com as colunas do relatório. A última linha do relatório deve começar com as duas letras TP seguidos pelos totais de cada coluna no relatório (é claro, o nome de nenhum vendedor começa com as letras TP). John sabia que não havia números negativos no relatório, uma quantidade de zero foi avaliado como um único 0, e não há zeros à esquerda ao relatar uma quantidade positiva.</p>
+
+                <p>Neste ponto, John decidiu reconstruir o relatório de Maria. Ele sabia que não poderia ser mais de um resultado possível, mas queria fazê-lo de qualquer maneira com a primeira solução consistente que ele poderia encontrar (talvez ele pudesse corrigir os erros quando Maria voltasse).</p>
+
+                <p>Você poderia ajudar John com a recuperação de relatório de vendas de Maria?</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada consiste em vários casos de teste. A primeira linha de entrada contém um número inteiro <strong>C</strong> especificando o número de casos de teste. A primeira linha de um relatório é uma linha de cabeçalho, contendo o código dos produtos <strong>P</strong>1, <strong>P</strong>2. . . <strong>PN</strong> e a palavra Totais, como descrito acima. A numeração dos produtos nesta linha de cabeçalho é consecutiva, de 1 a <strong>N</strong>, com 1 ≤ <strong>N</strong> ≤ 5. Depois, há um número de linhas, cada uma representando uma linha do relatório, como descrito acima. A última linha do relatório inicia com as letras TP e têm o formato descrito acima. Considere que cada vendedor tenha vendido menos de 1000 unidades de cada produto. Há não mais de 4 vendedores em cada caso de teste. Cada nome de vendedor não poderá exceder 10 caracteres (apenas letras maiúsculas e minúsculas).</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste da entrada seu programa deve produzir um possível relatório de Maria. Cada linha da resposta deve ser alinhado à esquerda, com seus itens separados por um único espaço, e sem espaços a mais no final.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>2<br />
+                                P1P2P3Totals<br />
+                                Amanda121100131<br />
+                                Charles5141772<br />
+                                Monique14121238<br />
+                                TP1862629241<br />
+                                P1P2Totals<br />
+                                Ingrid9519851936<br />
+                                Candid49212504<br />
+                                Peter10313<br />
+                                Camila000<br />
+                                TP145310002453</p>
+
+                        </td>
+                        <td>
+                            <p>P1 P2 P3 Totals<br />
+                                Amanda 121 10 0 131<br />
+                                Charles 51 4 17 72<br />
+                                Monique 14 12 12 38<br />
+                                TP 186 26 29 241<br />
+                                P1 P2 Totals<br />
+                                Ingrid 951 985 1936<br />
+                                Candid 492 12 504<br />
+                                Peter 10 3 13<br />
+                                Camila 0 0 0<br />
+                                TP 1453 1000 2453</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+             </table>
+            <p class="footer">
+               ACM/ICPC South America Contest 2006.
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2111 - Entendendo o Sorobov</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2111 - Entendendo o Sorobov" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2111</span>
+                <h1>Entendendo o Sorobov</h1>
+                <div>
+                    <p>Por XVII Maratona de Programação IME-USP, 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Instrumentos de ajuda a calcular existem há séculos. Muito antes do surgimento das máquinas de calcular no século XVII, chineses e japoneses faziam uso de ábacos com os quais podem fazer operações matemáticas sofisticadas em velocidade estonteante. Um instrumento semelhante foi recentemente descoberto em escavações nas imediações da cidade de Ecaterimburgo. Acredita-se ser um ábaco similar ao japonês, chamado, em russo, sorobov (copoбob).</p>
+
+                    <p>O sorobov tem nove colunas, onde cada coluna corresponde a um dígito. A coluna mais à direita representa a unidade, a segunda mais à direita representa as dezenas e assim por diante. Existem 7 linhas, sendo as duas primeiras separadas, por uma barra, das 5 últimas. Na parte de cima (duas primeiras linhas) cada coluna possui uma única pedra, que se encostada na barra separadora soma 5 ao valor do dígito correspondente. Na parte de baixo cada coluna possui 4 pedras e um espaço vazio e a quantidade de pedras entre a barra separadora e o espaço vazio é somado ao valor do dígito correspondente. Dessa forma, dizemos que as pedras de cima valem 5 e as de baixo valem 1.</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2111.png" style="width: 780px; height: 208px;"></p>
+
+                    <p class="center">Figura 1: Ilustração de como representar os números de 0 a 9.</p>
+
+                    <p>Sua tarefa neste problema será, dado um número N imprimir uma representação da configuração do sorobov correspondente ao número.</p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF). Cada instância corresponde a uma única linha contendo o número <strong>N</strong> a ser inserido no sorobov. A entrada deve ser lida da entrada padrão.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância imprima a representação do número <strong>N</strong> (0 &le; <strong>N</strong> &lt; 10<sup>9</sup>) no sorobov com o seguinte formato.</p>
+
+                    <p>As duas primeiras linhas correspondem às pedras que valem 5, na linha seguinte imprima --------- (nove hífens) e as próximas cinco linhas correpondem às pedras que valem 1. Cada linha de pedras deve conter nove caracteres, onde '0' corresponde a um espaço vazio e '1' a uma pedra. Imprima uma linha em branco ao final de cada instância (inclusive a última).</p>
+
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+16</p>
+
+                            </td>
+                            <td>
+                                <p>111111111<br />
+000000000<br />
+---------</p>
+<p>000000001<br />
+111111111<br />
+111111110<br />
+111111111<br />
+111111111<br />
+<br />
+111111110<br />
+000000001<br />
+---------</p>
+<p>000000011<br />
+111111100<br />
+111111111<br />
+111111111<br />
+111111111</p>
+<br />
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XVII Maratona de Programação IME-USP, 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

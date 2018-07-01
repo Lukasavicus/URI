@@ -1,0 +1,117 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2178 - Lagoa Azul</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2178 - Lagoa Azul" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2178</span>
+				<h1>Lagoa Azul</h1>
+				<div>
+					<p>Por Thalyson Nepomuceno, UECE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A Lagoa Azul é uma lagoa redonda, onde várias aves vivem tranquilamente (ou nem tanto). Bino, um garoto malino, quer capturar todas as aves que vivem na Lagoa Azul. Existem <strong>P</strong> locais na lagoa onde alguma ave pode ficar, como ilustrado na figura abaixo para <strong>P</strong> = 8.</p>
+
+<p><CENTER><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_165_E_a.jpg" style="height:273px; width:300px"  /></CENTER></p>
+
+<p>Bino sabe que as aves se cansam, e não querem sair da lagoa em nenhum momento. Cada ave pode realizar um determinado número de voos, após isso ficara cansada demais para voar novamente. Bino vai iniciar na posição 0, e seguir sempre na direção horária, até conseguir capturar todas as aves.</p>
+
+<p>Cada ave tem uma lista ordenada de locais para onde ela prefere fugir caso Bino chegue ao local onde ela está. Por exemplo, para o primeiro caso de teste, existe apenas uma ave que começa no local 1, quando Bino chega em 1, ela foge para 2, quando Bino chega em 2, ela foge para 3, e quando Bino chega em 3, ela já está cansada e é capturada.</p>
+
+<p>Sua tarefa é descobrir qual a quantidade mínima de voltas completas na lagoa que Bino deve realizar para capturar todas as aves. Em uma volta completa, Bino visita todos os locais, e retorna para a posição 0 (revisitando a posição 0).</p>
+
+<p>É garantido que nenhuma ave comece na posição 0, e também que nenhuma ave tente fugir para o mesmo local onde ela está.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>A (1 &lt; A ≤ 10<sup>3</sup>)</strong> e <strong>P (1 &lt; P ≤ 10<sup>9</sup>)</strong>, representando respectivamente o número de aves e o número de locais. Em seguida serão apresentadas <strong>A</strong> linhas. Cada linha iniciará com um inteiro <strong>N<sub>i </sub>(1 ≤ N<sub>i</sub> ≤ 10<sup>3</sup>)</strong>, representando a quantidade de locais que a ave <strong>i </strong>vai tentar fugir, em seguida, serão apresentados<strong> N<sub>i</sub></strong> inteiros, representando a lista de locais par onde a ave vai fugir.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma única linha contendo a quantidade mínima de voltas completas na lagoa que Bino deve realizar para capturar todas as aves.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1 8<br />
+3 1 2 3<br />
+ </p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+<p> </p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2 8<br />
+3 1 2 3<br />
+3 3 6 1<br />
+ </p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+<p> </p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					Aquecimento para a OBI 2016 - Fase 2
+				</p>
+			</div>
+
+		</body>
+	</html>

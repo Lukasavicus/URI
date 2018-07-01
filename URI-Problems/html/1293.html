@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1293 - Romeu e Julieta!</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1293 - Romeu e Julieta!" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1293</span>
+            <h1>Romeu e Julieta!</h1>
+            <div><p>Por Shahriar Manzoor <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif' alt=""/> Bangladesh</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Neste problema, vamos discutir os problemas de um Romeu moderno e uma Julieta moderna. Você está convidado a resolver os problemas deles para que eles não tenham que ser um par trágico como o de Shakespeare. Como de costume as famílias de Romeu e Julieta têm relações hostis e por isso eles estão trancados em dois lugares diferentes M e N. Dois canhões são colocados no local A e dois canhões são colocados no local B. Um canhão na localização A é apontado para M e o outro é apontado para N. a mesma coisa se ​​aplica aos dois canhões de localização B. M e N estão sempre no lado oposto de AB.</p><br />
+
+                <p class="center">
+                    <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1293.jpg" style="width: 550px; height: 291px;" />​<br />Fig: Cenário parcial de Romeu e Julieta</p><br />
+
+                <p>
+                    Os movimentos dos canhões, que estão visando M, estão interrelacionados, ou seja, o ângulo entre suas direções é constante. Portanto o ângulo CMD ((5 graus) ≤ (ângulo CMD) &lt;(80 graus)) é constante. A mesma regra se aplica aos outros dois canhões. Ou seja, o ângulo ENF ((5 graus) ≤ (ângulo ENF) &lt;(80 graus)) também é constante. Todas essas coisas são mostradas na imagem acima. Mas outra coisa que é importante e que está faltando na figura acima é que os locais N, A, M, são mantidos sempre em uma linha reta. A razão por trás disso é muito estranha. Um robô foi contratado como guarda de Romeu e Julieta. Ele tem dois olhos em lados opostos da sua cabeça e este robô é posicionado no ponto A. Para ser mais preciso, A, B e ângulo de CMD e ângulo ENF são constantes em um cenário e todas as outras posições ou valores são variáveis. Também lembro que o ponto M deve permanecer sempre apontado pelos dois canhões. A mesma coisa se ​​aplica ao ponto N.</p>
+                <p>
+                    O problema é que, nas noites estreladas Romeu canta a música "Noites Azuis" de "Michael Learns to Rock" em voz alta e ambos os pais não querem que Julieta ouça essa música. Então, eles querem colocar as casas (M e N), tão distantes uma da outra quanto for possível para preservar todas as restrições explicadas antes. Seu trabalho é medir esta máxima distância entre M e N e informá-la a Romeu, para que ele possa decidir se ele deve ou não cantar ou qual o volume de voz que deve usar.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste e termina com final de arquivo (EOF). Cada caso de teste é composto por uma linha que coném seis valores de ponto-flutuante, <strong>x<sub>1</sub></strong>, <strong>y<sub>1</sub></strong>, <strong>x<sub>2</sub></strong>, e <strong>y<sub>2</sub> </strong>(0 ≤ <strong>x<sub>1</sub></strong>, <strong>y<sub>1</sub></strong>, <strong>x<sub>2</sub></strong>, <strong>y<sub>2</sub> </strong>≤10000) <strong>CMD</strong>, <strong>ENF</strong>. Aqui (<strong>x<sub>1</sub></strong>, <strong>y<sub>1</sub></strong>) é a coordenada de <strong>A</strong>, (<strong>x<sub>2</sub></strong>,<strong> y<sub>2</sub></strong>) é a coordenada de <strong>B</strong>, <strong>CMD </strong>é o ângulo entre as direções dos canhões apontados na direção de <strong>M </strong>e <strong>ENF </strong>é o valor similar para o ponto <strong>N</strong>.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada linha de entrada, você deve produzir uma linha de saída, que contém um número de ponto flutuante <strong>F</strong>. <strong>F</strong> é a maior distância possível entre a casa de Romeu e casa de Julieta, e tem três dígitos após o ponto decimal.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                10 10 10 20 48 48<br />
+                                10 10 20 20 60 70</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                18.008<br />
+                                13.312</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Adaptado por Neilor.
+            </p>
+        </div>
+
+    </body>
+</html>

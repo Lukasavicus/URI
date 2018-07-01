@@ -1,0 +1,100 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2289 - Distância Hamming</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 6666 - Distância Hamming" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2289</span>
+				<h1>Distância Hamming</h1>
+				<div>
+					<p>Por Francisco Elio Parente Arcos Filho, UEA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Na teoria da informação, a distância de Hamming entre duas strings de mesmo comprimento é o número de posições nas quais elas diferem entre si. Vista de outra forma, ela corresponde ao menor número de substituições necessárias para transformar uma string na outra, ou o número de erros que transformaram uma na outra.</p>
+
+<p>A distância de Hamming é assim chamada em homenagem a Richard Hamming, que introduziu o conceito em um artigo fundamental sobre códigos de Hamming <em>Error detecting and error correcting codes</em> em 1950.</p>
+
+<p>Nas telecomunicações, ela é utilizada para sinalizar erros na transmissão de palavras binárias de comprimento fixo entre um emissor e um receptor, e por isso é algumas vezes chamada de "distância do sinal". Esta forma de análise de bits é usada em várias disciplinas incluindo a teoria da informação, a teoria de códigos e a criptografia.</p>
+
+<p>Por exemplo, a representação binária de 9<sub>10</sub> é 1001<sub>2</sub> e do 10<sub>10</sub> é 1010<sub>2</sub> logo a distância Hamming entre eles é 2 porque só é preciso alternar os dois últimos bits de 1001<sub>2</sub> para transformar em 1010<sub>2</sub>.</p>
+
+<p>Sua tarefa consiste em, dados dois números inteiros positivos, calcular a distância Hamming entre eles.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de vários casos de teste. Cada caso de teste é composto por dois números inteiros positivos na base decimal <strong>X</strong> e <strong>Y</strong> (<strong>0 &le; X, Y &lt; 2<sup>64</sup></strong>) fornecidos em uma única linha. A entrada termina quando <strong>X=Y=0</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída possui uma linha por caso de teste contendo a Distância Hamming das representações binárias de <strong>X</strong> e <strong>Y</strong>.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>9 10</p>
+
+<p>6 9</p>
+
+<p>7 15</p>
+
+<p>0 0</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+<p>4</p>
+
+<p>1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					
+				</p>
+			</div>
+
+		</body>
+	</html>

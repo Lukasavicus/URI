@@ -1,0 +1,126 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2351 - Hotel Rewards</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problem H - Hotel Rewards" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2351</span>
+				<h1>Hotel Rewards</h1>
+				<div>
+					<p>By Fidel I. Schaposnik <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>You are planning to spend your holidays touring Europe, staying each night in a different city for <strong>N</strong> consecutive nights. You have already chosen the hotel you want to stay in for each city, so you know the price <strong>P<sub>i</sub></strong> of the room you’ll be staying at during the <strong>i</strong>-th night of your holidays, for <strong>i</strong> = 1, . . . ,<strong>N</strong>.</p>
+
+<p>You will book your accommodation through a website that has a very convenient rewards program, which works as follows. After staying for a night in a hotel you booked through this website you are awarded one point, and at any time you can exchange <strong>K</strong> of these points in your account for a free night in any hotel (which will however not give you another point).</p>
+
+<p>For example, consider the case with <strong>N</strong> = 6 and <strong>K</strong> = 2 where the prices for the rooms are <strong>P<sub>1</sub></strong> = 10, <strong>P<sub>2</sub></strong> = 3, <strong>P<sub>3</sub></strong> = 12, <strong>P<sub>4</sub></strong> = 15, <strong>P<sub>5</sub></strong> = 12 and <strong>P<sub>6</sub></strong> = 18. After paying for the first four nights you would have four points in your account, which you could exchange to stay for free the remaining two nights, paying a total of <strong>P<sub>1</sub></strong> + <strong>P<sub>2</sub></strong> + <strong>P<sub>3</sub></strong> + <strong>P<sub>4</sub></strong> = 40 for your accommodation. However, if after the first three nights you use two of the three points you earned to stay the fourth night for free, then you can pay for the fifth night and use the final two points to get the sixth one for free. In this case, the total cost of your accommodation is <strong>P<sub>1</sub></strong> + <strong>P<sub>2</sub></strong> + <strong>P<sub>3</sub></strong> + <strong>P<sub>5</sub></strong> = 37, so this option is actually more convenient.</p>
+
+<p>You want to make a program to find out what the minimum possible cost for your holidays’ accommodation is. You can safely assume that all hotels you want to stay always will have a room available for you, and that the order of the cities you are going to visit cannot be altered.</p>
+				</div>
+
+				<h2>Input</h2>
+
+				<div class="input">
+					<p>The first line of input contains two integers <strong>N</strong> and <strong>K</strong>, representing the total number of nights your holidays will last, and the number of points you need in order to get a free night (1 ≤ <strong>N</strong>,<strong>K</strong> ≤ 10<sup>5</sup>). The second line contains <strong>N</strong> integers <strong>P<sub>1</sub></strong>, <strong>P<sub>2</sub></strong>, . . . , <strong>P<sub>N</sub></strong>, representing the price of the rooms you will be staying at during your holidays (1&nbsp;≤ <strong>P<sub>i</sub></strong> ≤ 10<sup>4</sup> for <strong>i</strong> = 1, 2, . . . ,<strong>N</strong>).</p>
+				</div>
+
+				<h2>Output</h2>
+
+				<div class="output">
+					<p>Output a line with one integer representing the minimum cost of your accommodation for all of your holidays.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Input Samples</td>
+							<td>Output Samples</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>6 2<br />
+10 3 12 15 12 18</p>
+
+							</td>
+							<td>
+								<p>37</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>6 1<br />
+10 3 12 15 12 18</p>
+
+                    </td>
+                    <td>
+                        <p>25</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>5 5<br />
+1 2 3 4 5</p>
+
+                    </td>
+                    <td>
+                        <p>15</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					ACM/ICPC South America Contest 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

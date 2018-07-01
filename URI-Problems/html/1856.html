@@ -1,0 +1,106 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1856 - A Lista da Morte de Arya</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 9996 - A Lista da Morte de Arya" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1856</span>
+				<h1>A Lista da Morte de Arya</h1>
+				<div>
+					<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Arya: <em>"Cersei. Walder Frey. Montanha. Meryn Trant."</em></p>
+
+					<p>Para se manter motivada, Arya sempre lembra a lista de inimigos que ela mais odeia. O principal objetivo de sua jornada é matar todos na sua lista!</p>
+
+					<p>Entretanto, às vezes algum inimigo dela pode ser morto por outra pessoa.  Quando ela descobre que tal inimigo morreu, ela o remove da sua lista.  Além disso, Arya também pode fazer novos inimigos durante sua jornada. Quando ela faz um novo inimigo, tal inimigo é incluído na sua lista.</p>
+
+					<p>Arya quer matar seus inimigos um por um, na mesma ordem em que aparecem na sua lista. A qualquer momento, ela pode se perguntar quanto tempo irá levar para matar todos que estão entre dados dois inimigos. Para tal, dados dois inimigos <strong>a</strong> e <strong>b</strong>, ela deve determinar quantos inimigos estão na lista entre <strong>a</strong> e <strong>b</strong>, excluindo ambos. Ajude Arya respondendo tais perguntas.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 5×10<sup>4</sup>), o número de inimigos inicialmente em sua lista.</p>
+
+					<p>Considere que todas as pessoas são numeradas de 1 a 10<sup>9</sup>, inclusive. A próxima linha contém <strong>N</strong> inteiros, descrevendo a lista inicial de Arya. A próxima linha contém um inteiro <strong>Q</strong> (1 ≤ <strong>Q</strong> ≤ 5×10<sup>4</sup>), o número de operações. As próximas <strong>Q</strong> linhas descrevem as operações. Cada operação pode estar em um dos seguintes formatos:</p>
+
+					<ul>
+						<li><strong>I p e</strong> (1 ≤ <strong>e</strong>, <strong>p</strong> ≤ 10<sup>9</sup>): Insira a pessoa <strong>p </strong><em>depois</em> do inimigo <strong>e</strong> na lista. É garantido que <strong>e</strong> está na lista, e <strong>p</strong> não está na lista;</li>
+						<li><strong>R e</strong> (1 ≤ <strong>e</strong> ≤ 10<sup>9</sup>): Remova o inimigo <strong>e</strong> da lista. É garantido que <strong>e</strong> está na lista;</li>
+						<li><strong>Q a b</strong> (1 ≤ <strong>a</strong>, <strong>b </strong>≤ 10<sup>9</sup>): Determine quantos inimigos estão na lista entre <strong>a</strong> e <strong>b</strong>, excluindo ambos. É garantido que <strong>a</strong> e <strong>b</strong> estão na lista.</li>
+					</ul>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha para cada operação do tipo <strong>Q</strong> com sua resposta.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+								3 8 2<br />
+								6<br />
+								Q 3 2<br />
+								I 9 8<br />
+								Q 3 2<br />
+								R 8<br />
+								I 1 2<br />
+								Q 9 1</p>
+
+							</td>
+							<td>
+								<p>1<br />
+								2<br />
+								1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

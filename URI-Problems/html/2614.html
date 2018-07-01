@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URI 2614 2614 - Locações de Setembro</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+    <meta name="description" content="URI Online Judge - SQL - Problema 2614 - Locações de Setembro" />
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default-sql.css">
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-28047757-1');
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+      <span>URI Online Judge <strong>SQL</strong> | 2614 </span>
+      <h1>Locações de Setembro</h1>
+      <div>
+        <p>Paulo R. Rodegheri <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+      </div>
+      <strong>Timelimit: 1</strong>
+    </div>
+
+    <div class="problem-sql">
+      
+      <div>
+        <p>A vídeo locadora está fazendo seu relatório semestral e precisa da sua ajuda. Basta você selecionar o nome dos clientes e a data de locação, das locações realizadas no mês de setembro de 2016.</p>
+      </div>
+  
+      <div>
+        <h2>Esquema</h2>
+        <div>
+          <table class="tables-model-two">
+            <caption>customers</caption>
+              <tr>
+                <td class="half-column"><strong>Coluna</strong></td>
+                <td class="half-column"><strong>Tipo</strong></td>
+              </tr>
+              <tr>
+                <td>id (PK)</td>
+                <td>numeric</td>
+              </tr>
+              <tr>
+                <td>name</td>
+                <td>varchar</td>
+              </tr>
+              <tr>
+                <td>street</td>
+                <td>varchar</td>
+              </tr>
+              <tr>
+                <td>city</td>
+                <td>varchar</td>
+              </tr>
+            </table>
+            
+            <table class="tables-model-two-inline">
+              <caption>rentals</caption>
+              <tr>
+                <td class="half-column"><strong>Coluna</strong></td>
+                <td class="half-column"><strong>Tipo</strong></td>
+              </tr>
+              <tr>
+                <td>id (PK)</td>
+                <td>numeric</td>
+              </tr>
+              <tr>
+                <td>rentals_date</td>
+                <td>date  (ISO/YMD)</td>
+              </tr>
+              <tr>
+                <td>id_customers (FK)</td>
+                <td>numeric</td>
+              </tr>			
+            </table>
+		
+          </div>
+        </div>
+
+        <div>
+          <h2>Tabelas</h2>
+          <div>
+            <table class="tables-hundred">
+              <caption>customers</caption>
+              <tr>
+                <td><strong>id</strong></td>
+                <td><strong>name</strong></td>
+                <td><strong>street</strong></td>
+                <td><strong>city</strong></td>
+              </tr>
+              <tr>
+                <td class="center">1</td>
+                <td>Giovanna Goncalves Oliveira</td>
+                <td>Rua Mato Grosso</td>
+                <td>Canoas</td>
+              </tr>
+              <tr>
+                <td class="center">2</td>
+                <td>Kauã Azevedo Ribeiro</td>
+                <td>Travessa Ibiá</td>
+                <td>Uberlândia</td>
+              </tr>
+              <tr>
+                <td class="center">3</td>
+                <td>Rebeca Barbosa Santos</td>
+                <td>Rua Observatório Meteorológico</td>
+                <td>Salvador</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td>Sarah Carvalho Correia</td>
+                <td>Rua Antônio Carlos da Silva</td>
+                <td>Apucarana</td>
+              </tr>
+              <tr>
+                <td class="center">5</td>
+                <td>João Almeida Lima</td>
+                <td>Rua Rio Taiuva</td>
+                <td>Ponta Grossa</td>
+              </tr>
+              <tr>
+                <td class="center">6</td>
+                <td>Diogo Melo Dias</td>
+                <td>Rua Duzentos e Cinqüenta</td>
+                <td>Várzea Grande</td>
+              </tr>        
+            </table>
+            
+            <table class="tables-model-two">
+              <caption>rentals</caption>
+              <tr>
+                <td><strong>id</strong></td>
+                <td><strong>rentals_date</strong></td>
+                <td><strong>id_customers</strong></td>
+              </tr>
+              <tr>
+                <td class="center">1</td>
+                <td class="center">2016-10-09</td>
+                <td class="center">3</td>
+              </tr>
+              <tr>
+                <td class="center">2</td>
+                <td class="center">2016-09-02</td>
+                <td class="center">1</td>
+              </tr>
+              <tr>
+                <td class="center">3</td>
+                <td class="center">2016-08-02</td>
+                <td class="center">4</td>
+              </tr>
+              <tr>
+                <td class="center">4</td>
+                <td class="center">2016-08-02</td>
+                <td class="center">2</td>
+              </tr>
+              <tr>
+                <td class="center">5</td>
+                <td class="center">2016-03-02</td>
+                <td class="center">6</td>
+              </tr>
+              <tr>
+                <td class="center">6</td>
+                <td class="center">2016-04-04</td>
+                <td class="center">4</td>
+              </tr>
+            </table>            
+        
+          </div>
+        </div>
+        
+        <div>
+          <h2>Exemplo de saída</h2>
+          <div>
+            <table class="tables-model-two">
+              <tr>
+                <td><strong>name</strong></td>
+                <td><strong>rentals_date</strong></td>
+              </tr>
+              <tr>
+                <td>Giovanna Goncalves Oliveira</td>
+                <td class="center">2016-09-02</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+        
+    </div>
+      
+  </body>
+</html>

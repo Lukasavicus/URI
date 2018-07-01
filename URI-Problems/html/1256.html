@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1256 - Tabelas Hash</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1256 - Tabelas Hash" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1256</span>
+                <h1>Tabelas Hash</h1>
+                <div><p>
+	Por Neilor Tonin, URI <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	As tabelas Hash, também conhecidas como tabelas de dispersão, armazenam elementos com base no valor absoluto de suas chaves e em técnicas de tratamento de colisões. Para o cálculo do endereço onde deve ser armazenada uma determinada chave, utiliza-se uma função denominada função de dispersão, que transforma a chave em um dos endereços disponíveis na tabela.</p>
+                    <p>
+	Suponha que uma aplicação utilize uma tabela de dispersão com 13 endereços-base (índices de 0 a 12) e empregue a função de dispersão h(x) = x mod 13, em que x representa a chave do elemento cujo endereço-base deve ser calculado.</p>
+                    <p>
+	Se a chave x for igual a 49, a função de dispersão retornará o valor 10, indicando o local onde esta chave deverá ser armazenada. Se a mesma aplicação considerar a inserção da chave 88, o cálculo retornará o mesmo valor 10, ocorrendo neste caso uma colisão. O Tratamento de colisões serve para resolver os conflitos nos casos onde mais de uma chave é mapeada para um mesmo endereço-base da tabela. Este tratamento pode considerar, ou o recálculo do endereço da chave ou o encadeamento externo ou exterior.</p>
+                    <p>
+	O professor gostaria então que você o auxiliasse com um programa que calcula o endereço para inserções de diversas chaves em algumas tabelas, com funções de dispersão e tratamento de colisão por encadeamento exterior.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada contém vários casos de teste. A primeira linha de entrada contém um inteiro N indicando a quantidade de casos de
+	teste. Cada caso de teste é composto por duas linhas. 
+	A primeira linha contém um valor <strong>M</strong> (1 ≤ <strong>M</strong> ≤ 100) que indica a quantidade de 
+	endereços-base na tabela (normalmente um número primo) seguido por um espaço e um 
+	valor <strong>C</strong> (1 ≤ <strong>C</strong> ≤ 200) que indica a quantidade de chaves a serem armazenadas. 
+	A segunda linha contém cada uma das chaves (com valor entre 1 e 200), separadas por um espaço em branco.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	A saída deverá ser impressa conforme os exemplos fornecidos abaixo, onde a quantidade de linhas de cada caso de teste é determinada pelo valor de <strong>M</strong>. Uma linha em branco deverá separar dois conjuntos de saída.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	2<br/>
+	13 9<br />
+	44 45 49 70 27 73 92 97 95<br />
+	7 8<br />
+	35 12 2 17 19 51 88 86</p>
+
+                            </td>
+                            <td>
+                                <p>
+	0 -&gt; \<br />
+	1 -&gt; 27 -&gt; 92 -&gt; \<br />
+	2 -&gt; \<br />
+	3 -&gt; \<br />
+	4 -&gt; 95 -&gt; \<br />
+	5 -&gt; 44 -&gt; 70 -&gt; \<br />
+	6 -&gt; 45 -&gt; 97 -&gt; \<br />
+	7 -&gt; \<br />
+	8 -&gt; 73 -&gt; \<br />
+	9 -&gt; \<br />
+	10 -&gt; 49 -&gt; \<br />
+	11 -&gt; \<br />
+	12 -&gt; \<br />
+	<br />
+	0 -&gt; 35 -&gt; \<br />
+	1 -&gt; \<br />
+	2 -&gt; 2 -&gt; 51 -&gt; 86 -&gt; \<br />
+	3 -&gt; 17 -&gt; \<br />
+	4 -&gt; 88 -&gt; \<br />
+	5 -&gt; 12 -&gt; 19 -&gt; \<br />
+	6 -&gt; \</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>                    
+            </div>
+
+        </body>
+    </html>

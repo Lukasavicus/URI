@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1792 - Ataque Programado</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1235 - Ataque Programado" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1792</span>
+                <h1>Ataque Programado</h1>
+                <div>
+                    <p>Por Cristhian Bonilha, UTFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Você é o líder de uma equipe de soldados de elite, e acaba de descobrir que os soldados que você enviou recentemente para atacar os postos inimigos foram capturados e mantidos como refém. Sua estratégia agora é recuperar sua tropa sem perder um soldado em batalha, e sem nunca deixar que o inimigo soe o alarme.</p>
+
+                    <p>Existem <strong>N</strong> postos inimigos e <strong>M</strong> linhas de visão entre eles, de tal modo que se existe uma linha de visão do posto A ao posto B, os soldados do posto A saberiam quando o posto B fosse atacado e soariam o alarme. Como seu objetivo é total descrição você decidiu que só atacaria um posto quando todos os postos que tem linha de visão sobre ele tivessem sido atacados anteriormente, o que impossibilitaria que o alarme fosse soado.</p>
+
+                    <p>Inicialmente você tem <strong>S</strong> soldados em sua tropa. Em cada posto inimigo há <strong>E</strong> soldados inimigos e <strong>F</strong> soldados reféns. Para garantir que cada ataque seja um sucesso, você decidiu que só vai atacar um posto quando o número de soldados em sua tropa for maior que o número de soldados inimigos daquele posto. Após cada ataque, os soldados reféns daquele posto são adicionados à sua tropa para os próximos ataques.</p>
+
+                    <p>O plano parece bom, mas é preciso ter absoluta certeza de que é possível completá-lo. Com os dados sobre os postos trazidos pelo seu espião, descubra se é possível atacar todos os postos inimigos seguindo as duas restrições acima.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Haverá no máximo 30 casos de teste. Cada caso de teste inicia com três inteiros, <strong>N</strong>, <strong>M</strong> e <strong>S</strong>, indicando o número de postos, o número de linhas de visão e o número inicial de soldados de elite em sua equipe, respectivamente (1 ≤ <strong>N</strong> ≤ 10<sup>4</sup>, 0 ≤ <strong>M</strong> ≤ 10<sup>5</sup>, 1 ≤ <strong>S</strong> ≤ 100).</p>
+
+                    <p>Em seguida haverá uma linha com <strong>N</strong> inteiros <strong>e<sub>i</sub></strong>, onde o <strong>i</strong>-ésimo inteiro indica quantos soldados inimigos há no posto <strong>i</strong> (1 ≤ <strong>e<sub>i</sub></strong> ≤ 10<sup>6</sup>, para todo 1 ≤ <strong>i</strong> ≤ <strong>N</strong>).</p>
+
+                    <p>Em seguida haverá uma linha com <strong>N</strong> inteiros <strong>f<sub>i</sub></strong>, onde o <strong>i</strong>-ésimo inteiro indica quantos soldados reféns há no posto <strong>i</strong> (0 ≤ <strong>f<sub>i</sub></strong> ≤ 100, para todo 1 ≤ <strong>i</strong> ≤ <strong>N</strong>).</p>
+
+                    <p>Em seguida haverá <strong>M</strong> linhas, cada uma contendo dois inteiros <strong>A</strong> e <strong>B</strong>, indicando que o posto <strong>A</strong> tem uma linha de visão sobre o posto <strong>B</strong> (1 ≤ <strong>A</strong>, <strong>B</strong> ≤ N, <strong>A</strong> &lt;&gt; <strong>B</strong>).</p>
+
+                    <p>O último caso de teste é indicado quando <strong>N</strong> = <strong>M</strong> = <strong>S</strong> = 0, o qual não deverá ser processado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma linha, contendo a palavra “possivel” caso seja possível atacar todos os postos respeitando as restrições dadas, ou “impossivel” caso contrário.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2 1 2<br />
+                                1 2<br />
+                                1 0<br />
+                                1 2<br />
+                                2 1 2<br />
+                                1 2<br />
+                                1 0<br />
+                                2 1<br />
+                                3 3 2<br />
+                                1 2 3<br />
+                                1 1 1<br />
+                                1 2<br />
+                                2 3<br />
+                                2 1<br />
+                                0 0 0</p>
+
+                            </td>
+                            <td>
+                                <p>possivel<br />
+                                impossivel<br />
+                                impossivel</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

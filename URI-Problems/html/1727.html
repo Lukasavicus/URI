@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1727 - Copa Européia 2000</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1743 - Copa Européia 2000" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1727</span>
+                <h1>Copa Européia 2000</h1>
+                <div>
+                    <p>Por Mark Dettinger <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Como você talvez saiba, a qualificação para o Campeonato Europeu de Futebol 2000 é um torneio em que em cada grupo cada time joga um contra o outro duas vezes.A Alemanha está no grupo 3 junto com a Turquia, Finlândia, Moldávia e Irlanda do Norte. 14 jogos foram disputados e 6 ainda acontecerão. </p>
+                    <p>Uma olhada rápida nas posições atuais talvez te faça pensar que a Irlanda do Norte já está fora do páreo. Mas isso está errado! Imagine que a Irlanda do Norte ganhe os seus três jogos restantes, a Alemanha empata com a Turquia e perde para a Finlândia, e a Moldávia derrota a Turquia. Aí a Irlanda do Norte fica em primeiro!</p>
+                    <p>Para aqueles que não estão familiarizados com o modelo de pontuação: Em cada jogo um time ganha 3 pontos por uma vitória, 1 ponto por um empate ou 0 pontos por uma derrota. Depois que todos os jogos tenham sido jogados, os times são ordenados de acordo com seus pontos. No caso de empate, os desempates adicionais são: diferença de gols (gols feitos - gols tomados), gols feitos e escolha aleatória, nessa ordem.</p>
+                    <p>A questão que seu programa deve responder é: Levando em conta todas as possibilidades de como os jogos restantes possam terminar, qual é a posição mais alta e mais baixa de cada time no grupo quando o torneio acabar?</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada consistirá em um ou mais estudos de caso. Cada estudo de caso se atém ao seguinte formato:</p>
+
+                <ul>
+                    <li>Na primeira linha haverá um inteiro <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 20), representando o número de times no grupo.</li>
+                    <li>Nas próximas <strong>n</strong> linhas, os nomes dos times se seguirão. Nomes sempre são menores que 30 caracteres e não contém espaços em branco.</li>
+                    <li>Na próxima linha, haverá um inteiro <strong>g</strong>, representando o número de jogos completos.</li>
+                    <li>Finalmente, cada uma das <strong>g</strong> linhas seguintes, descrevem um jogo completo no formato <strong>time1 time2 gols1 gols2</strong>.</li>
+                    <li>Você pode partir do pressuposto que no máximo 10 jogos restam e cada time tem ao menos um jogo a jogar. (Isso simplifica o problema um pouco).</li>
+            </ul>
+                    <p>A entrada será encerrada quando o valor de <strong>n</strong> for igual a zero.</p>
+
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada estudo de caso, primeiro exiba uma linha escrito “Grupo #x” onde <strong>x</strong> é o número do caso (contando de 1).</p>
+
+                    <p>Então, imprima uma linha por time na ordem em que aparecem na entrada. Em cada linha, exiba o nome do time, um caractere vazio, sua melhor posição possível, um sinal de menos e sua pior posição possível.</p>
+
+                    <p>Imprima uma linha vazia após cada estudo de caso, inclusive após a última.</p>
+
+                    <p><br/></p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>2<br />
+                                A<br />
+                                B<br />
+                                1<br />
+                                A B 1 0<br />
+                                5<br />
+                                Ger<br />
+                                Tur<br />
+                                Fin<br />
+                                Nor<br />
+                                Mol<br />
+                                14<br />
+                                Fin Mol 3 2<br />
+                                Tur Nor 3 0<br />
+                                Tur Ger 1 0<br />
+                                Nor Fin 1 0<br />
+                                Mol Ger 1 3<br />
+                                Tur Fin 1 3<br />
+                                Nor Mol 2 2<br />
+                                Nor Ger 0 3<br />
+                                Tur Mol 2 0<br />
+                                Ger Fin 2 0<br />
+                                Mol Fin 0 0<br />
+                                Ger Mol 6 1<br />
+                                Fin Tur 2 4<br />
+                                Mol Nor 0 0</p>
+
+                            </td>
+                            <td>
+                                <p>Group #1<br />
+                                A 1-2<br />
+                                B 1-2<br />
+                                <br />
+                                Group #2<br />
+                                Ger 1-3<br />
+                                Tur 1-3<br />
+                                Fin 1-4<br />
+                                Nor 1-5<br />
+                                Mol 4-5<br />
+                                <br/></p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 1999/2000
+                </p>
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2092 - Assistindo o Jogo</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2092 - Assistindo o Jogo" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2092</span>
+                <h1>Assistindo o Jogo</h1>
+                <div>
+                    <p>Por Fidel Schaposnik, Universidad Nacional de La Plata <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif' alt='AR' /> Argentina</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>No reino de Noglônia há um lago conhecido como o "Grande O" por causa de sua forma perfeitamente redonda. No lado do lago há n casas, cada um deles a uma distância de uma unidade noglônica de seus vizinhos. As casas são numeradas de 1 a N em sentido horário, como pode ser visto na figura a seguir para N = 8.</p>
+
+                    <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2092.png" style="height:427px; width:829px" /></p>
+
+                    <p>Desta forma, se i &lt;j a distância em sentido horário a partir de casa i para a casa j é j-i, ao passo que a distância correspondente no sentido anti-horário é N - j + i. Note que a distância a partir de uma casa até ela mesma é N, em ambas as direções. Todos sabem que o povo de Noglônia são ávidos fãs de futebol, por isso, quando uma família se muda para uma casa do lado do lago é muito importante para eles saberem quem são os vizinhos mais próximos que torcem para a mesma equipe que eles. Isso nem sempre é fácil, uma vez que pode haver muitas casas ao redor do lago, muitos times de futebol diferentes em Noglônia e várias mudanças. Dada uma sequência de M mudanças, as pessoas que vivem na margem do lago querem saudar cada nova família que chega, dizendo-lhes a distância do seu novo lar para as casas mais próximas que torcem para a mesma equipe que eles, tanto no sentido horário e anti-horário. Observe que, se não houver outra casa na margem do lago cuja família torce para a mesma equipe como o recém-chegado, essa distância será N em ambas as direções, pois a casa mais próxima seria de fato a sua própria casa. Você quer participar do comitê de boas-vindas? Em Noglônia existem F times de futebol, identificados por diferentes números inteiros de 0 a F-1. Não quero que você perca tempo indo de porta em porta perguntando qual equipe é seguida em cada casa, vamos supor que, inicialmente, a família que vive na casa de número i é fã da equipe de número e<sub>i</sub>, sendo este número gerado, de forma pseudoaleatória, pela fórmula recursiva:</p>
+
+                    <p>e<sub>1</sub> = A e e<sub>i</sub> = (B x e<sub>i-1</sub> + C) mod F para i = 2, 3, ..., N</p>
+
+                    <p>onde A, B e C são constantes e a expressão x mod y representa o resto da divisão inteira de x por y.</p>
+
+
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém dois números inteiros N e F, indicando, respectivamente, o número de casas ao redor do lago e do número de equipes de futebol em Noglônia (3 ≤ N ≤ 10<sup>5 </sup>e 1 ≤ F ≤ 10<sup>6</sup>). A segunda linha contém três números inteiros A, B e C, que determinam qual equipe é as famílias vivendo inicialmente ao redor do lago torcem, como é descrito na descrição do problema (0 ≤ A, B, C &lt; F).</p>
+
+                    <p>A terceira linha contém um único número inteiro M, que representa o número de mudanças que irão acontecer (1 ≤ M ≤ 10<sup>5</sup>). Cada uma das M seguintes linhas descrevem um movimento usando dois números inteiros I e E, o que significa que a família que torce para o time E está mudando para a casa de número I (1≤ I ≤ N e 0 ≤ E &lt; F). As mudanças aparecem na ordem que elas acontecem, e devem ser levadas em consideração pelo comitê para futuras boas-vindas.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprimir M linhas, a i-ésimo delas indicando o resultado da i-ésima mudança descrita na entrada. Cada linha deve conter dois inteiros números d<sub>ccw</sub> e d<sub>cw</sub>, representando as distâncias em unidades noglônicas da casa que está mudando para a primeira casa cuja família torce para a mesma equipe, no sentido anti-horário e no sentido horário, respectivamente.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 10</p>
+
+<p>1 1 1</p>
+
+<p>6</p>
+
+<p>1 1</p>
+
+<p>2 2</p>
+
+<p>3 1</p>
+
+<p>4 2</p>
+
+<p>5 1</p>
+
+<p>3 1</p>
+
+                            </td>
+                            <td>
+                                <p>5 5</p>
+
+<p>5 5</p>
+
+<p>2 3</p>
+
+<p>2 3</p>
+
+<p>2 1</p>
+
+<p>2 2</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Torneo Argentino de Programación — ACM–ICPC 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

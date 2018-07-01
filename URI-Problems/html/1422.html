@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1422 - Bactérias</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1422 - Bactérias" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1422</span>
+            <h1>Bactérias</h1>
+            <div>By Wanderley Guimarães, IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt="" /> Brasil</div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Pietro Demazio é um terrorista italiano condenado que fugiu para o Brasil, onde conseguiu um disfarce trabalhando como programador de jogos.&nbsp; Em seu novo plano de destruição do planeta, Pietro desenvolveu um novo tipo de bactéria mortal, capaz de dizimar toda a população terrestre.</p>
+
+                <p>Durante 4 dias, Demazio criou colônias desses micro-organismos, mas ao fim do quarto dia, descobriu que o código genético das mesmas possuía um grave erro, que fazia com que as bactérias morressem depois de 4 dias de vida. Como a primeira colônia fora criada 3 dias atrás, ele rapidamente modificou o código genético delas (através de radiação), de modo que elas se reproduzissem todas os dias. Tal reprodução é assexuada, e é feita por bipartição (ou seja, uma bactéria gera exatamente outra bactéria por dia).</p>
+
+                <p>Assim, se Pietro criou 3 bactérias no dia 1, 4 no dia 2, 2 no dia 3 e 5 no dia 4, terá no total 14 bactérias ao final do quarto dia, quanto ele faz a mutação. Logo após tal mutação, elas se reproduzem, e aí teremos 28 bactérias. Como a primeira colônia (com 3 bactérias) morre ao final desse quarto dia, o número de bactérias no início do quinto dia é 25. Ao final do quinto dia, essas 25 se reproduzem, resultando em 50 bactérias. Mas como a segunda colônia (com 4 bactérias) morre ao final desse dia, no início do sexto dia tem-se 46 bactérias.</p>
+
+                <p>Demazio observa com atenção tal crescimento da população de bactérias, e já está planejando quando vai liberá-las para fazer o serviço. Para tal, ele precisa saber quantas bactérias existirão depois de um determinado número de dias. Ele pede a você que faça um programa que determine a quantidade de bactérias existentes depois de N dias, dadas as populações das 4 primeiras colônias.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada contém várias instâncias. Cada instância possui duas linhas. A primeira linha possui um inteiro <strong>N</strong> (5 &le; <strong>N</strong> &le; 1.000.000.000), representando o dia para o qual Pietro deseja saber a população de bactérias que ele terá. A segunda linha contém quatro inteiros <strong>a<sub>1</sub></strong>, <strong>a<sub>2</sub></strong>, <strong>a<sub>3</sub></strong>, <strong>a<sub>4</sub></strong> (1 &le; <strong>a<sub>1</sub></strong>, <strong>a<sub>2</sub></strong>, <strong>a<sub>3</sub></strong>, <strong>a<sub>4</sub></strong> &le; 1.000), onde <strong>a<sub>k</sub></strong> representa a quantidade de bactérias criadas no dia <strong>k</strong>.</p>
+
+                <p>A entrada termina quando <strong>N</strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada instância na entrada, imprima uma linha contendo a quantidade de bactérias que Pietro terá no início do dia <strong>N</strong>. A resposta dada deve ser módulo 13371337.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>5<br />
+                                1 2 3 4<br />
+                                7<br />
+                                9 2 3 4<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>19<br />
+                                101</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                XIII Maratona de Programação IME-USP 2009.
+            </p>
+        </div>
+
+    </body>
+</html>

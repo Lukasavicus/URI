@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1530 - Quantas Substrings?</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1530 - Quantas Substrings?" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1530</span>
+                <h1>Quantas Substrings?</h1>
+                <div>
+                    <p>Por Gabriel Dalalio, ITA <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Iniciamente, há uma string vazia. Seu programa deve realizar dois tipos de instruções:</p>
+
+<ol>
+	<li>Adicionar um caractere entre 'a' e 'z' ao final da string.</li>
+	<li>Calcular quantas substrings diferentes a string possui.</li>
+</ol>
+
+<p>Por exemplo, a string "aba" possui 5 substrings diferentes: "a", "ab", "aba", "b", "ba".</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por vários casos de teste. Cada caso de teste consiste de uma linha contendo uma sequência com até 2.10<sup>5</sup> caracteres. Cada caractere representa uma instrução que deve ser feita. Um caractere entre 'a' e 'z' indica que deve ser realizado uma instrução do tipo 1 com esse caractere. Um caractere '?' representa uma instrução do tipo 2.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instrução do tipo 2, imprima uma linha contendo o número de substrings diferentes que a string possui.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>aba?<br />
+?z?z?z?<br />
+abc?abc?</p>
+
+                            </td>
+                            <td>
+                                <p>5<br />
+0<br />
+1<br />
+2<br />
+3<br />
+6<br />
+15</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

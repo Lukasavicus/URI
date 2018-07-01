@@ -1,0 +1,108 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2142 - Pegue o Pombo!</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2142 - Pegue o Pombo!" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2142</span>
+				<h1>Pegue o Pombo!</h1>
+				<div>
+					<p>Por Joao Marcos Salvanini Bellini de Moraes, IFSULDEMINAS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A Esquadrilha Abutre está cansada de tentar caçar o pombo Doodle. Em vista disso, Dick Vigarista elaborou um plano de caça infalível, pelo menos em sua concepção.</p>
+
+<p><div align="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2142.jpg" style="height:263px; width:350px" /></div></p>
+
+<p>Toda vez que eles acionam o turbo de velocidade em suas máquinas voadoras, eles alcançam o pombo viajando uma quantidade a mais do que já viajaram, e conseguem finalmente pegá-lo quando viajam mais metade de onde já estão.</p>
+
+<p>Porém, se o pombo sair da área de ação da esquadrilha e, dessa forma, não for capturado, Dick Vigarista se irrita e resmunga, dizendo: "Raios! Raios Duplos! Raios Triplos!".</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada tem vários casos de teste. Em cada, você deverá informar a área de ação da esquadrilha (25 ≤ <strong>A</strong> &lt; 10<sup>6</sup>), isto é, sempre um quadrado perfeito, e o momento em que o turbo é ativado. A entrada termina com fim de arquivo.</p>
+
+<p>O voo do pombo e da esquadrilha são espirais e iniciam sempre a partir do elemento central, que é o número 1.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir o percurso do pombo. O símbolo '*' indica o momento em que o pombo é alcançado e o símbolo '!', o momento em que ele é capturado. Caso ele saia da área de ação da esquadrilha, imprima: "Raios! Raios Duplos! Raios Triplos!". Não deve haver espaço em branco somente após o último caractere da última linha da matriz, que deve ser justificada.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>121 40<br />
+25 2<br />
+729 244</p>
+
+							</td>
+							<td>
+								<p>121&nbsp;&nbsp; ! 119 118 117 116 115 114 113 112 111<br />
+&nbsp;82&nbsp; 81&nbsp;&nbsp; *&nbsp; 79&nbsp; 78&nbsp; 77&nbsp; 76&nbsp; 75&nbsp; 74&nbsp; 73 110<br />
+&nbsp;83&nbsp; 50&nbsp; 49&nbsp; 48&nbsp; 47&nbsp; 46&nbsp; 45&nbsp; 44&nbsp; 43&nbsp; 72 109<br />
+&nbsp;84&nbsp; 51&nbsp; 26&nbsp; 25&nbsp; 24&nbsp; 23&nbsp; 22&nbsp; 21&nbsp; 42&nbsp; 71 108<br />
+&nbsp;85&nbsp; 52&nbsp; 27&nbsp; 10&nbsp;&nbsp; 9&nbsp;&nbsp; 8&nbsp;&nbsp; 7&nbsp; 20&nbsp; 41&nbsp; 70 107<br />
+&nbsp;86&nbsp; 53&nbsp; 28&nbsp; 11&nbsp;&nbsp; 2&nbsp;&nbsp; 1&nbsp;&nbsp; 6&nbsp; 19&nbsp; 40&nbsp; 69 106<br />
+&nbsp;87&nbsp; 54&nbsp; 29&nbsp; 12&nbsp;&nbsp; 3&nbsp;&nbsp; 4&nbsp;&nbsp; 5&nbsp; 18&nbsp; 39&nbsp; 68 105<br />
+&nbsp;88&nbsp; 55&nbsp; 30&nbsp; 13&nbsp; 14&nbsp; 15&nbsp; 16&nbsp; 17&nbsp; 38&nbsp; 67 104<br />
+&nbsp;89&nbsp; 56&nbsp; 31&nbsp; 32&nbsp; 33&nbsp; 34&nbsp; 35&nbsp; 36&nbsp; 37&nbsp; 66 103<br />
+&nbsp;90&nbsp; 57&nbsp; 58&nbsp; 59&nbsp; 60&nbsp; 61&nbsp; 62&nbsp; 63&nbsp; 64&nbsp; 65 102<br />
+&nbsp;91&nbsp; 92&nbsp; 93&nbsp; 94&nbsp; 95&nbsp; 96&nbsp; 97&nbsp; 98&nbsp; 99 100 101<br />
+25 24 23 22 21<br />
+10&nbsp; 9&nbsp; 8&nbsp; 7 20<br />
+11&nbsp; 2&nbsp; 1&nbsp; ! 19<br />
+12&nbsp; 3&nbsp; *&nbsp; 5 18<br />
+13 14 15 16 17<br />
+Raios! Raios Duplos! Raios Triplos!</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					Aquecimento para a VI Olimpíada Interna de Programação do IFSULDEMINAS - OLIP 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

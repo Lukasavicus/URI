@@ -1,0 +1,154 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2432 - Tiro ao Alvo</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2432 - Tiro ao Alvo" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2432</span>
+				<h1>Tiro ao Alvo</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Recentemente Juquinha ganhou de aniversário um joguinho bem clássico: Tiro ao Alvo. Ele arrumou um ótimo lugar em seu quarto para se divertir com o jogo, porém após ler todas as regras do jogo ele percebeu que precisa da sua ajuda para calcular a pontuação obtida.</p>
+
+<p>Segundo as regras, o alvo do jogo é composto por C círculos, todos centrados na origem (0,0). Juquinha atira T vezes e após cada tiro informa suas coordenadas. A pontuação de cada tiro é feita da seguinte forma: para cada círculo em que o tiro estiver contido Juquinha recebe um ponto.</p>
+
+<p>Considere por exemplo a figura abaixo. O tiro marcado com a letra A recebe zero pontos, pois não está contido por nenhum círculo. O tiro marcado com a letra B recebe um ponto, pois está contido por um círculo (o mais externo). O tiro marcado com a letra C recebe dois pontos, pois está contido por dois círculos (note que este caso mostra que tiros exatamente na borda de um círculo são considerados como contidos pelo círculo). Já o tiro marcado com a letra D recebe três pontos, pois está contido pelos três círculos. Considerando todos os pontos, a pontuação total de Juquinha é de 13 pontos.</p>
+
+<p class="center"><img style="width:250px" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_175_G.png' alt='' /></p>
+
+<p>Dados os raios de C círculos centrados na origem e as coordenadas dos T tiros realizados por Juquinha, escreva um programa que calcula o total de pontos que Juquinha obteve.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha da entrada contém dois inteiros positivos, <strong>C</strong> (1 ≤ <strong>C</strong> ≤ 10<sup>5</sup>) e T (1 ≤&nbsp;<strong><em>T</em></strong>&nbsp;≤ 10<sup>5</sup>), que representam, respectivamente, o número de círculos do alvo e o número de tiros.</p>
+
+<p>Cada uma das <strong>C</strong> linhas seguintes contém um inteiro positivo. O i-ésimo inteiro <strong>R<sub>i</sub></strong> (1 ≤&nbsp;<strong><em>R<sub>i</sub></em></strong>&nbsp;≤ 10<sup>6</sup>&nbsp;para 1 ≤&nbsp;<strong><em>i</em></strong>&nbsp;≤&nbsp;<strong><em>C</em></strong>) ,<strong><em>R<sub>i</sub></em></strong>&nbsp;&gt;&nbsp;<strong><em>R</em></strong><sub><strong><em>i</em></strong>-1</sub>&nbsp;para 2&nbsp;≤&nbsp;<strong><em>i</em></strong>&nbsp;≤&nbsp;<em><strong>C</strong>)&nbsp;</em>representa o raio do i-ésimo círculo. Os raios <strong>R<sub>i</sub></strong> são fornecidos em ordem crescente.</p>
+
+<p>Cada uma das <strong>T</strong> linhas seguintes contém um par <strong>X</strong>, <strong>Y</strong> (-10<sup>5</sup>&nbsp;≤&nbsp;<strong><em>X</em></strong>,&nbsp;<strong><em>Y</em></strong>&nbsp;≤ 10<sup>5</sup>) de inteiros, que representam as coordenadas de cada tiro.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve imprimir uma única linha, contendo apenas um inteiro, o total de pontos obtidos por Juquinha.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 10</p>
+
+<p>1</p>
+
+<p>2</p>
+
+<p>5</p>
+
+<p>0 0</p>
+
+<p>-2 0</p>
+
+<p>0 -2</p>
+
+<p>3 -4</p>
+
+<p>-4 -3</p>
+
+<p>3 1</p>
+
+<p>6 2</p>
+
+<p>-1 2</p>
+
+<p>-5 -2</p>
+
+<p>1 -1</p>
+
+							</td>
+							<td>
+								<p>13</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 6</p>
+
+<p>1</p>
+
+<p>2</p>
+
+<p>5</p>
+
+<p>1 0</p>
+
+<p>0 3</p>
+
+<p>-5 0</p>
+
+<p>0 0</p>
+
+<p>-3 -3</p>
+
+<p>1 1</p>
+
+							</td>
+							<td>
+								<p>11</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2013 Fase 1 Nível 2
+				</p>
+			</div>
+
+		</body>
+	</html>

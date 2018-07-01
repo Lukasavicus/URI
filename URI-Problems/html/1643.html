@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1643 - Converter Quilômetros para Milhas</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1643 - Converter Kilometros para Milhas" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1643</span>
+                <h1>Converter Quilômetros para Milhas</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Este ano, Bruce Force passa suas férias em Flagstaff, Arizona, onde ele quer treinar para a próxima meia maratona (uma corrida de mais de 21 km). Em seu primeiro treino, ele correu até a casa de seu amigo Greedy Gonzales, que fica a 21 milhas de distância de Flagstaff.</p>
+
+                    <p>Chegando lá, ele já muito cansado, percebe que 21 milhas são muito mais de 21 km. Greedy Gonzales diz que 21 km é igual a 13 milhas. 21, 13? Bruce percebe imediatamente que deve haver uma relação mais profunda! Ambos, 13 e 21 são números de Fibonacci!</p>
+
+                    <p>Números Fibonacci podem ser definidos da seguinte forma:</p>
+
+                    <p>F1 = 1</p>
+
+                    <p>F2 = 2</p>
+
+                    <p>Fn+1 = Fn+Fn-1 para n &gt; 1</p>
+
+                    <p>Bruce está aprendendo sobre o sistema numérico Fibonacci em sua universidade. Cada inteiro positivo X pode ser escrito como a soma de diferentes números Fibonacci, isso significa que dado um numero k e b1, b2, ..., bk tal que x = ∑i=1..k bi * Fi, onde bk = 1 e bi (1 ≤ i &lt; k) é 0 ou 1. Em resumo, podemos escrever a representação como: b (x) = (bk, bk-1, ..., b1). Para tornar a representação única, é necessário que bi * bi-1 = 0 para todo i > 1.</p>
+
+                    <p>Por exemplo 21 pode ser representado por (1,0,0,0,0,0,0) e 13 como (1,0,0,0,0,0) no sistema Fibonacci. Bruce percebe que se pode converter uma x distância em quilômetros em uma distância y correspondente a milhas da seguinte forma: Primeiro, anote x em seu Fibonacci representação do sistema b(x). Em segundo lugar, mudar os bits de b (x) uma posição para a direita (o último bit é excluído) e obter b(y). Em terceiro lugar, calcular y de b(y) através da avaliação da soma dada acima.</p>
+
+                    <p>Por exemplo, o número 42 escrito no sistema de Fibonacci é (1,0,0,1,0,0,0,0). Na etapa dois iríamos mudar os bits uma posição para a direita e termos (1,0,0,1,0,0,0). No terceiro passo, calcular 0*1 + 0*2 + 0*3 + 1*5 + 0*8 + 0*13 + 1*21 = 26.</p>
+
+                    <p>Agora é a sua vez de escrever um programa para Bruce que converte quilômetros em milhas de acordo com o algoritmo de Bruce.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha de entrada contém <strong>t</strong>, o número de distâncias que Bruce quer converter de quilômetros em milhas (0 &lt; <strong>t</strong> &lt;25000). Cada uma das <strong>t</strong> linhas contem um inteiro, correspondente a distância <strong>x</strong> (2 &lt; <strong>x</strong> &lt; 25000) em quilômetros.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada <strong>x</strong> distância em quilômetros imprima a distância em milhas <strong>y</strong> calculadas de acordo com o algoritmo de Bruce.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5</p>
+
+<p>42</p>
+
+<p>100</p>
+
+<p>180</p>
+
+<p>300</p>
+
+<p>360</p>
+
+                            </td>
+                            <td>
+                                <p>26</p>
+
+<p>62</p>
+
+<p>111</p>
+
+<p>185</p>
+
+<p>222</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    Univeristy of Ulm Local Contest 2008/2009
+                </p>
+            </div>
+
+        </body>
+    </html>

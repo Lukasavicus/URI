@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1629 - DescompactaFACE</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1629 - DescompactaFACE" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1629</span>
+                <h1>DescompactaFACE</h1>
+                <div>
+                    <p>Por Tiago Zonta, Unoesc <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Em 2013 a Feira FACE compactou os dados de seus visitantes com um compactador livre,&nbsp;infelizmente esta ferramenta se tornou paga e você foi convidado a criar um algoritmo&nbsp;para descompactar os dados. Os dados estão compactados em formato decimal, e para funcionar o descompactador você&nbsp;terá que encontrar o dígito verificador de cada linha compactada. A organização da FACE conseguiu uma documentação de como funcionava o processo, mas algumas&nbsp;informações de como chegar ao dígito não estão muito claras, o documento apenas disponibiliza&nbsp;alguns exemplos, conforme segue:</p>
+
+                    <ul>
+                      <li>Linha compactada composta por 54782 ao descompactar iria resultar na cadeia binária&nbsp;00000111100000001111111100, com isso o valor do dígito ficaria 8.</li>
+                      <li>Linha compactada composta por 045 ao descompactar iria resultar na cadeia binária&nbsp;111100000, com isso o valor do dígito ficaria 9.</li>
+                    </ul>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. A primeira linha de um caso de teste contém um inteiro&nbsp;<strong>N</strong> (1 ≤ <strong>N</strong> ≤ 25), representando o número de dados dos visitantes daquele arquivo, sendo que cada&nbsp;linha representa um visitante. As <strong>N</strong> linhas seguintes são compostas por <strong>K</strong> dígitos (1 ≤ <strong>K</strong> ≤ 10<sup>3</sup>) sem espaço&nbsp;representando a linha compactada. A parada é determinada por <strong>N</strong> igual a 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada linha compactada você deve exibir o dígito verificador descompactado.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5<br />
+7<br />
+54782<br />
+0158309<br />
+12345678910<br />
+987654321<br />
+0</p>
+
+                            </td>
+                            <td>
+                                <p>7<br />
+8<br />
+17<br />
+10<br />
+9</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    II Maratona FACE 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

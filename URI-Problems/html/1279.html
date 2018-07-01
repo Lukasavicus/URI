@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1279 - Ano Bissexto ou Ano não Bissexto</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problem 1279 - Ano Bissexto ou Ano não Bissexto" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1279</span>
+            <h1>Ano Bissexto ou Ano não Bissexto</h1>
+            <div><p>
+                    Por Shahriar Manzoor&nbsp;<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/bd.gif" style="width: 16px; height: 11px; " /> Bangladesh</p>
+            </div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    A antiga raça de Gulamatu é muito avançada no seu esquema de cálculo dos anos. Eles entendem o que é ano bissexto (ano que é divisível por 4 e não é divisível por 100, com a ressalva de que ano que são divisíveis por 400 são também anos bissextos.), E têm também alguns anos que ocorrem alguns festivais. Um deles é o festival Huluculu (acontece em anos divisíveis por 15) e o festival Bulukulu (acontece em anos divisíveis por 55 desde que também seja um ano bissexto). Dado um ano você terá de indicar quais propriedades este ano tem. Se o ano não é ano bissexto e nem ano de festival imprima a linha 'This is an ordinary year.', ou seja, que é um ano comum. A ordem de impressão das propriedades dos anos (se presente) é leap year -&gt; huluculu -&gt; bulukulu.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada conterá vários casos de teste. Cada caso de teste consiste de uma linha contendo um ano que nunca será menor do que 2000 (para evitar regras anteriores diferentes para anos bissextos), mas pode ter mais do que 1.000 dígitos.&nbsp;O final da entrada é determinado por fim de arquivo (EOF).</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada entrada, imprima as diferentes propriedades dos anos em diferentes linhas de acordo com a descrição anterior e os exemplos fornecidos abaixo. &nbsp;Uma linha em branco deve separar cada caso de teste de saída. Note que existem quatro diferentes propriedades. Obviamente não deverá ter uma linha em branco após o último caso de teste.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2000<br />
+                                3600<br />
+                                4515<br />
+                                2001</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                This is leap year.<br />
+                                <br />
+                                This is leap year.<br />
+                                This is huluculu festival year.<br />
+                                <br />
+                                This is huluculu festival year.<br />
+                                <br />
+                                This is an ordinary year.</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Adaptado por Neilor.</p>
+
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,138 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2273 - Pachinko</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2273 - Pachinko" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2273</span>
+				<h1>Pachinko</h1>
+				<div>
+					<p>Por ICPC 2014 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/ru.gif' alt='RU' /> Russian Federation</p>
+				</div>
+				<strong>Timelimit: 6</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>You have been hired by Addictive Coin Machines to help design the next hit in their line of eye-catching, coin-guzzling, just-one-more-try Pachinko machines for casinos around the world.</p>
+
+					<p>Playing a Pachinko machine involves launching balls into a rectangular grid filled with pegs, obstacles, and targets. The ball bounces around the grid until it eventually hits one of the targets. The player earns a certain number of points depending on which target is hit.</p>
+
+					<p>The grid pattern for the next Pachinko machine has already been designed, but point values for the targets have not been assigned. These must be set so that like all casino machines, the machine is profitable but not too profitable. Thus it is important to figure out the probability of a ball hitting any particular target. That’s your job!</p>
+
+					<p>For simplicity, the grid is modeled as a tall rectangle filled with mostly-open spaces (each represented by ‘.’), impassable obstacles (each represented by ‘X’), and targets (each represented by ‘T’).</p>
+
+					<p>A ball is launched randomly with uniform probability into one of the mostly-open spaces on the top row of the grid. From that point on, collisions with pegs cause the ball to randomly bounce up, down, left, or right, with various given probabilities. For simplicity, assume these probabilities are the same for every space in the grid. If the ball bounces into an obstacle or attempts to move off the grid, it won’t actually move from its current space. When the ball moves into a target it is removed from play.</p>
+
+					<p>You can safely assume that the average number of spaces visited by a ball before hitting a target will not exceed 109 . It would not make for a very enjoyable game if the ball just bounces forever!</p>
+
+					<p>For each target, calculate the probability that it is the one hit by a launched ball.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>The input consists of a single test case. The first line contains integers <strong>w</strong> and <strong>h</strong>, which are the width and height of the Pachinko grid (1 ≤ <strong>w</strong> ≤ 20 and 2 ≤ <strong>h</strong> ≤ 10 000). The next line contains four non-negative integers <strong>u</strong>, <strong>d</strong>, <strong>l</strong>, and <strong>r</strong>, which sum to 100 and are the percentage probabilities of the ball bouncing up, down, left, or right from any open space.</p>
+
+					<p>Each of the next <strong>h</strong> lines contains <strong>w</strong> characters, each of which is ‘.’, ‘X’, or ‘T’. These lines describe the Pachinko grid. The first line, which describes the top row of the grid, contains at least one ‘.’ and no ‘T’s.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Display one line for each ‘T’ in the grid, in order from top to bottom, breaking ties left to right. For each target, display the probability that a launched ball will hit it. Give the answer with an absolute error of at most 10<sup>−6</sup>.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 2</p>
+
+								<p>20 20 20 40</p>
+
+								<p>X.X</p>
+
+								<p>T.T</p>
+
+							</td>
+							<td>
+								<p>0.333333333</p>
+
+           						<p>0.666666667</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4 5</p>
+
+								<p>12 33 28 27</p>
+
+								<p>....</p>
+
+								<p>.XX.</p>
+
+								<p>....</p>
+
+								<p>T..T</p>
+
+								<p>XTTX</p>
+
+							</td>
+							<td>
+								<p>0.435853889</p>
+
+								<p>0.403753221</p>
+
+								<p>0.081202502</p>
+
+								<p>0.079190387</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					ICPC 2014 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

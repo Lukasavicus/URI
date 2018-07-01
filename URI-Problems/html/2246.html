@@ -1,0 +1,134 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2246 - Ladrilhos</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2246 - Ladrilhos" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2246</span>
+				<h1>Ladrilhos</h1>
+				<div>
+					<p>Por Maratona de Programação da SBC 2016 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Avelino tem um mosaico em uma das paredes de sua casa. É&nbsp;uma mosaico muito antigo, composto&nbsp;por pequenos ladrilhos coloridos. Como é&nbsp;um mosaico antigo, alguns ladrilhos se soltaram ao longo dos anos formando buracos.</p>
+
+<p>Agora, Avelino quer restaurar o mosaico cobrindo os buracos com novos ladrilhos. Entretanto, para economizar, Avelino quer comprar ladrilhos de uma única cor para tapar os buracos. Em particular, quer comprar ladrilhos de uma das cores originais ou de uma cor ainda não contida no mosaico.</p>
+
+<p>Por ser um mosaico, não se deseja que hajam áreas muito grandes com a mesma cor. Avelino resolveu que vai escolher a cor dos ladrilhos tentando fazer com que o tamanho da menor área monocromática seja o menor possível, para que haja mais detalhes. Veja que pode existir mais de uma cor possível. Uma área é&nbsp;monocromática se todos os ladrilhos nela são da mesma cor. Dois ladrilhos adjacentes fazem parte da mesma área se possuem a mesma cor, e dois ladrilhos são adjacentes se compartilham um lado.</p>
+
+<p>Veja o primeiro caso de exemplo, temos três áreas da cor 1 (uma de tamanho 3 e duas de tamanho 2), uma área da cor 2 (de tamanho 3) e uma área da cor 3 de tamanho 7. Uma resposta possível seria escolher a cor 2, fazendo com que a menor área monocromática seja de tamanho 2. Se escolhermos a cor 1 a menor área seria de tamanho 3.</p>
+
+<p>Crie um programa que imprima o tamanho da menor área possível.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>H</strong> e <strong>L</strong>, a altura e largura do mosaico, respectivamente, satisfazendo 1 ≤ <strong>H</strong> ≤ 200 e 1 ≤ <strong>L</strong> ≤ 200 . Em seguida, <strong>H</strong> linhas conterão cada uma <strong>L</strong> inteiros, separados por espaço, correspondendo às cores dos ladrilhos. Um inteiro 0 corresponde a um buraco e um inteiro <strong>i</strong> ≠ 0 corresponde a um ladrilho com a i-ésima cor, podendo ir de 1 até&nbsp;40000 no máximo.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Seu programa deve produzir uma linha, contendo um inteiro, o tamanho da menor área possível.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 8<br />
+3 3 3 1 1 0 0 0<br />
+3 1 1 0 2 2 0 1<br />
+3 3 3 0 0 2 1 1</p>
+
+							</td>
+							<td>
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>3 7<br />
+1 1 0 2 2 1 1<br />
+1 1 0 2 2 1 1<br />
+1 1 0 0 3 3 3</p>
+
+                    </td>
+                    <td>
+                        <p>3</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="both"></div>
+
+        <table>
+            <thead>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="division">
+                        <p>3 6<br />
+2 2 2 2 0 2<br />
+2 2 2 0 2 2<br />
+2 2 2 2 0 2</p>
+
+                    </td>
+                    <td>
+                        <p>1</p>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+				<p class="footer">
+					Maratona de Programação da SBC 2016
+				</p>
+			</div>
+
+		</body>
+	</html>

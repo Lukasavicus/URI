@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1349 - Efeito Ruído</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1349 - Efeito Ruído" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1349</span>
+            <h1>Efeito Ruído</h1>
+          <div><p>Por Ernesto Coto <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cl.gif' alt=""/> Chile</p></div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Pequenos e baratos scanners industriais podem apenas ler imagens em escala cinza, onde são imagens com pixels de valores de intensidade em um raio de inteiros [0, 255]. Uma companhia que fabrica máquinas de venda automáticas deseja utilizar estes pequenos scanners para validar os símbolos usados em suas máquinas. Símbolos são pequenos chips quadrados de metal com buracos estrategicamente colocados. Símbolos com diferentes buracos são utilizados para diferentes valores.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Noise%20Effect.png" style="width: 141px; height: 121px;" /></p>
+
+                <p class="center">Figura 1: Símbolo para uma máquina de vendas.</p>
+
+                <p>
+                    Um scanner vai produzir uma imagem do símbolo introduzido pelo cliente e o programa de computador vai validar isso. Na imagem produzida pelo scanner, metal vai aparecer como pixels escuros (valores próximos a 0) e buracos vão aparecer como pixels mais claros (valores próximos a 255). Há dois problemas que devem ser resolvidos no processo de validação. O primeiro problema é que, visto que o símbolo é um quadrado, um cliente pode introduzi-lo na máquina de diversas maneiras. O segundo problema é que, graças à baixa qualidade da imagem gerada por aqueles scanners baratos, as mesmas poderão conter “ruídos” (erros). Para validar o símbolo, a máquina deverá comparar o resultado do scanner com uma “imagem padrão” do símbolo, previamente produzida usando um scanner de alta qualidade.</p>
+
+                <p>
+                    Você deverá escrever um programa o qual, dada a imagem padrão de um símbolo e uma imagem produzida pelo scanner, determina a taxa de precisão a qual o símbolo obterá. A taxa de precisão é a porcentagem de pixels da imagem do scanner os quais o valor da intensidade difere em 100 ou menos dos pixels da imagem padrão. Como o símbolo pode ter sido introduzido de diversas maneiras, nós estamos interessados na maior taxa de precisão possível, considerando todas as posições do símbolo.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Seu programa deverá processar diversos casos de teste. Cada caso de teste especifica o tamanho da imagem do símbolo e os valores dos pixels da imagem padrão e da imagem do scanner. A primeira linha de um caso de teste contém um inteiro <strong>L </strong>que indica o tamanho, em pixels, da imagem (1 ≤&nbsp;<strong>L </strong>≤&nbsp;400). As próximas <strong>L </strong>linhas irão conter <strong>L </strong>inteiros cada, representando os valores dos pixels das linhas da imagem padrão. Após estas, as próximas <strong>L </strong>linhas irão conter os valores dos pixels das linhas da imagem do scanner.</p>
+
+                <p>O final da entrada é indicado por <strong>L </strong>= 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste seu programa deverá imprimir apenas uma linha contendo a taxa de precisão da imagem correspondente. A taxa de precisão deverá ser impressa como um número real com dois dígitos de precisão, e o último dígito decimal deverá ser arredondado. A entrada não conterá nenhum caso de teste onde diferenças em arredondamento serão significantes.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                4<br />
+                                250 251 249 250<br />
+                                251 120 245 248<br />
+                                248 5 190 247<br />
+                                5 5 180 246<br />
+                                0 1 240 240<br />
+                                250 2 250 254<br />
+                                244 251 255 253<br />
+                                230 250 250 252<br />
+                                3<br />
+                                250 250 250<br />
+                                150 0 150<br />
+                                250 2 250<br />
+                                253 150 253<br />
+                                0 2 248<br />
+                                251 150 250<br />
+                                5<br />
+                                255 255 255 255 255<br />
+                                255 0 255 0 0<br />
+                                255 0 0 255 255<br />
+                                255 255 0 255 255<br />
+                                255 255 255 255 0<br />
+                                255 0 255 255 0<br />
+                                255 0 255 255 255<br />
+                                255 255 0 0 255<br />
+                                255 0 0 255 255<br />
+                                154 154 255 255 255<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                93.75<br />
+                                100.00<br />
+                                92.00</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2002.
+            </p>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1062 - Trilhos</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1062 - Trilhos" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1062</span>
+                <h1>Trilhos</h1>
+                <div><p>
+	Autor Desconhecido</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Há uma famosa estação de trem na cidade PopPush. Esta cidade fica em um país incrivelmente acidentado e a estação foi criada no último século. Infelizmente os fundos eram extremamente limitados naquela época. Foi possível construir somente uma pista. Além disso, devido a problemas de espaço, foi feita uma pista apenas até a estação (veja figura abaixo).<br />
+	&nbsp;</p>
+<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1062_pt.png" style="width: 289px; height: 172px;" /></p>
+<p>
+	A tradição local é que todos os comboios que chegam vindo da direção A continuam na direção B com os vagões&nbsp; reorganizados, de alguma forma. Suponha que o trem que está chegando da direção A tem N &lt;= 1000 vagões numerados <strong>sempre </strong>em ordem crescente <strong>1,2, ..., N</strong>. O primeiro que chega é o <strong>1</strong> e o último que chega é o <strong>N</strong>. Existe um chefe de reorganizações de trens que quer saber se é possível reorganizar os vagões para que os mesmos saiam na direção B na ordem <strong>a<sub>1</sub>, a<sub>2</sub>, a<sub>n</sub></strong>..</p>
+    <p>
+	O&nbsp; chefe pode utilizar qualquer estratégia para obter a saída desejada. No caso do desenho ilustrado acima, por exemplo, basta o chefe deixar todos os vagões entrarem na estação (do 1 ao 5) e depois retirar um a um: retira o 5, retira o 4, retira o 3, retira o 2 e por último retira o 1.&nbsp; Desta forma, se o chefe quer saber se a saída 5,4,3,2,1 é possível em <strong>B, </strong>a resposta seria <strong>Yes</strong>. Vagão que entra na estação <strong>só pode sair para a direção B</strong> e é possível incluir quantos forem necessários para retirar o primeiro vagão desejado.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	O arquivo de entrada consiste de um bloco de linhas, cada bloco, com exceção do último, descreve um trem e possivelmente mais do que uma requisição de reorganização. Na primeira linha de cada bloco há um inteiro N que é a quantidade de vagões. Em cada uma das próximas linhas de entrada haverá uma permutação dos valores <strong>1,2, …, N</strong>. A última linha de cada bloco contém apenas 0. Um bloco iniciando com zero (0) indica o final da entrada.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	O arquivo de saída contém a quantidade de linhas correspondente às linhas com permutações no arquivo de entrada. Cada linha de saída deve ser <strong>Yes</strong> se for possível organizar os vagões da forma solicitada e <strong>No</strong>, caso contrário. Há também uma linha em branco após cada bloco de entrada. No exemplo abaixo, &nbsp;O primeiro caso de teste tem 3 permutações para 5 vagões. O ultimo zero dos testes de entrada não devem ser processados.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	5<br />
+	5 4 3 2 1<br />
+	1 2 3 4 5<br />
+	5 4 1 2 3<br />
+	0<br />
+	6<br />
+	1 3 2 5 4 6<br />
+	0<br />
+	0</p>
+
+                            </td>
+                            <td>
+                                <p>
+	Yes<br />
+	Yes<br />
+	No<br /><br />
+	Yes<br /><br />
+	</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="footer">
+	Tradução &amp; Dataset por Neilor</p>
+    
+            </div>
+
+        </body>
+    </html>

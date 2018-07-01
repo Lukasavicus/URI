@@ -1,0 +1,158 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1841 - O Cálice de Fogo</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1234 - O Cálice de Fogo" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+            <style>
+              #carta{
+                margin: 15px auto;
+                width: 600px;
+              }
+            </style>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1841</span>
+				<h1>O Cálice de Fogo</h1>
+				<div>
+					<p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Uma das provas do Torneio Tribruxo de 2015 será uma partida de futebol, e a Chapecoense tem treinado duro para enfrentar os jogadores de Hogwarts. A Associação Chapecoense de Futebol (ACF, ou simplesmente Chapecoense) é o time de futebol da cidade de Chapecó. Fundado em 1973, o time hoje joga entre os melhores times do Brasil, e não são uns adolescentes esquisitos de chapéu e vassoura que vão amedrontar nossos desbravadores guerreiros, mesmo que todos nós tenhamos ficado espantados quando o Cálice de Fogo escolheu os trouxas dos nossos jogadores para participarem do Torneio Tribruxo. Como já mencionamos, a história do time começa 1973 quando…</p>
+
+					<p>Interrompemos este texto para a transmissão de um comunicado urgente do Ministro da Magia.</p>
+
+				<table id="carta">
+					<tbody>
+						<tr>
+							<td>
+								<p>Boa tarde, senhores e senhoras trouxas! Maldito o dia em que Dolores Umbridge saiu da prisão. Agora, vive a me atazanar com esses problemas de Matemática. E ela sabe que eu não sou bom nessas coisas. Enfim, vocês podem fazer um programa para me ajudar? O problema é o seguinte: ela me diz um número inteiro <strong>N</strong> e pede que eu lhe diga quantos divisores <strong>N</strong> tem e guarde esse <strong>N</strong> na minha cabeça. Até aí tudo bem. Não sou tão burro e não preciso de ajuda nesta parte. Mas daí ela fica me dizendo alguns números primos e, para cada primo <strong>p</strong> que ela diz, eu devo multiplicar <strong>p</strong> por <strong>N</strong>, atualizando o valor de <strong>N</strong> na minha cabeça, e, como se não bastasse, preciso ainda lhe dizer quantos divisores tem esse novo <strong>N</strong> que são compostos apenas por fatores primos menores que <strong>p</strong>. Por exemplo, se eu tenho guardado na minha cabeça <strong>N</strong> = 630 e ela diz <strong>p</strong> = 5, eu tenho que atualizar <strong>N</strong> para 3150 e dizer 6, pois os únicos divisores de 3150 compostos apenas por fatores primos menores que 5 são: 1, 2, 3, 6, 9 e 18. Mas o número <strong>N</strong> cresce muito rápido, e eu não quero perder o jogo para ela. Por favor, façam alguma coisa!</p>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por no mínimo 2 e no máximo 10<sup>5</sup> linhas. A primeira linha consiste unicamente do inteiro <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 10<sup>12</sup>). Cada uma das linhas seguintes consiste unicamente de um número primo <strong>p</strong> (2 ≤ <strong>p</strong> ≤ 10<sup>7</sup>). Os inteiros são fornecidos na entrada na ordem em que são proferidos por Dolores Umbridge. A entrada termina em fim de arquivo.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada primo <strong>p</strong> proferido por Dolores Umbridge, imprima uma linha consistindo unicamente da resposta que o Ministro da Magia deveria lhe dar. Como a resposta pode ser um número muito grande, imprima apenas o resto que a resposta deixa quando dividida por 10<sup>9</sup> + 7.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>630<br />
+								5<br />
+								7<br />
+								2<br />
+								3<br />
+								11</p>
+
+							</td>
+							<td>
+								<p>6<br />
+								18<br />
+								1<br />
+								3<br />
+								108</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2<br />
+								3<br />
+								5<br />
+								7<br />
+								11</p>
+
+							</td>
+							<td>
+								<p>2<br />
+								4<br />
+								8<br />
+								16</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2<br />
+								2<br />
+								2<br />
+								2<br />
+								3</p>
+
+							</td>
+							<td>
+								<p>1<br />
+								1<br />
+								1<br />
+								5</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+					4º Maratona UFFS
+				</p>
+			</div>
+
+		</body>
+	</html>

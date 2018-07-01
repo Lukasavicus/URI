@@ -1,0 +1,109 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2032 - Jogo dos Oito</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1 - Jogo dos Oito" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2032</span>
+				<h1>Jogo dos Oito</h1>
+				<div>
+					<p>Por Gabriel Duarte, UNIFESO <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 5</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>João é um menino que adora brincar com jogos de lógica, ele passa diversas horas de seu dia solucionando puzzles.<br />
+Atualmente o jogo que ele está gastando mais horas brincando é o Sliding puzzle, também conhecido como Jogo dos Oito, no qual ele tem em mãos um tabuleiro de 3 linhas e 3 colunas, onde cada elemento desse tabuleiro possui um número ou um espaço em branco.<br />
+<br />
+O objetivo desse jogo é simples, dado um tabuleiro embaralhado (Figura 1), João deve deixá-lo ordenado (Figura 2) e o único movimento possível para solucionar o problema é mover algum número para o espaço em branco.<br />
+Resolver o brinquedo não é um problema para João, ele já está fazendo isso sem dificuldades, porém ele ficou intrigado em saber qual é quantidade mínima de movimentos necessários para resolver.<br />
+<br />
+<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2032_1.jpg"/> <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2032_2.jpg"/></p>
+<p class="center">Figura 1 - Figura 2</p>
+<br />
+O que você precisa fazer para ajudar João na sua curiosidade é simples, ele te dará a configuração inicial do tabuleiro e você deverá mostrar, caso exista, a menor quantidade de passos possíveis para solucionar o brinquedo e quais passos são necessários para encontrar a solução.
+<br/>Porém há um detalhe, João é um garoto bem metódico, portanto quando ele está jogando e existem diversas possibilidades em um dado momento ele usa a seguinte prioridade para definir a jogada:<br/>
+1) Mover a peça que está em cima do espaço em branco<br/>
+2) Mover a peça que está embaixo do espaço em branco<br/>
+3) Mover a peça que está na direita do espaço em branco<br/>
+4) Mover a peça que está na esquerda do espaço em branco<br/>
+Você deverá usar a mesma prioridade que ele.</p>
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por vários casos de teste, cada caso terá <strong>3</strong> linhas cada uma com <strong>3</strong> números de 0 a 8, onde o número zero um representa o espaço em branco. Assuma que o brinquedo sempre estará embaralhado.<br />
+A entrada termina com o final do arquivo.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste imprima a mensagem "Quantidade minima de passos = <strong>X</strong>", onde <strong>X</strong> é o total necessário, seguido por todos os passos feitos para solucionar, cada passo deve ser separado por uma linha em branco, para melhor visualização de João. Caso não seja possível solucionar o problema imprima: "Problema sem solucao".</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>123<br />
+456<br />
+078</p>
+
+							</td>
+							<td>
+								<p>Quantidade minima de passos = 2<br />
+123<br />
+456<br />
+708</p>
+<br/>
+<p>123<br />
+456<br />
+780<br />
+&nbsp;</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1735 - Codifique a Árvore</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1737 - Codifique a Árvore" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1735</span>
+                <h1>Codifique a Árvore</h1>
+                <div>
+                    <p>University of Ulm local Contest <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Uma árvore (isto é, um grafo conexo sem ciclos) com os vértices numerados por números inteiros 1, 2, ..., n é dado. O código "Prufer" de tal estrutura é construído como da seguinte forma: a folha (um vértice que é incidente a uma única aresta) com o menor número é tomado. Esta folha, juntamente com a sua aresta incidente é removida do grafo, enquanto o número do vértice que era adjacente à folha é anotado. No grafo obtido, este procedimento se repete, até que haja apenas um vértice restante (que, por sinal, sempre tem o número n). A sequência de escrita com n-1 números, é chamado o código Prufer da árvore.</p>
+
+                    <p>Sua tarefa é, dada uma árvore, para calcular o seu código Prufer. A árvore é indicada por uma palavra do idioma especificado pela seguinte gramática:</p>
+
+                    <p>T ::= "(" N S ")"</p>
+
+                    <p>S ::= " " T S</p>
+
+                    <p>| vazio</p>
+
+                    <p>N ::= número</p>
+
+                    <p>Ou seja, as árvores têm parênteses em torno deles, e um número indicando o identificador do vértice raiz, seguido por arbitrariamente muitas (talvez nenhuma) subárvores separadas por um único caractere de espaço. Como exemplo, dê uma olhada na árvore na figura abaixo que é indicado na primeira linha da entrada de amostra.</p>
+
+                    <p>Observe que, de acordo com a definição dada acima, a raiz de uma árvore pode ser uma folha também. É só para facilitar a denotação que designa algum vértice para ser a raiz. Normalmente, o que estamos lidando aqui com é chamada de "árvore não enraizada".</p>
+
+                    <p style="text-align: center;"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/promocao/code%20de%20tree.gif" style="height:159px; width:222px" /></p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste. Cada caso de teste especifica uma árvore, como descrito acima em uma linha do arquivo de entrada. A entrada é terminada por EOF. Você pode assumir que 1 ≤ <strong>n</strong> ≤ 50.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste imprima uma única linha que contém o código Prufer da árvore especificada. Separe os números por um único espaço. Não imprima espaços no final da linha.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>(2 (6 (7)) (3) (5 (1) (4)) (8))<br />
+                                (1 (2 (3)))<br />
+                                (6 (1 (4)) (2 (3) (5)))</p>
+
+                            </td>
+                            <td>
+                                <p>5 2 5 2 6 2 8<br />
+                                2 3<br />
+                                2 1 6 2 6</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    University of Ulm local Contest 2001/2002.
+                </p>
+            </div>
+
+        </body>
+    </html>

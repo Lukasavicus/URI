@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1345 - Região Segura</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1345 - Região Segura" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1345</span>
+            <h1>Região Segura</h1>
+            <div><p>Por Rodrigo Schmidt <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt="" /> Brasil</p></div>
+            <strong>Timelimit: 1</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Você foi contratado pela Minas Nunca Mais, uma organização não-governamental que tem como objetivo o banimento do uso de minas terrestres. Além de trabalhar no aspecto político, tal como convencer governantes a entrar na Campanha Internacional de Banimento das Minas Terrestres, MNM também trabalha desarmando minas deixadas por guerras passadas.</p>
+
+                <p>
+                    Hoje em dia, minas são detectadas por satélites ou aviões de vigilância. Mas para desarmar uma mina você precisa chegar próximo a ela. Na maioria dos casos, a única maneira de se aproximar de um campo minado é de helicóptero. Para limpar o campo, você precisa encontrar a região mais segura dentro do campo para que o helicóptero possa pousar nela. Esta região é um retângulo com lados paralelos aos eixos das coordenadas, sem nenhuma mina dentro e sendo o menor lado o maior possível. Mais precisamente, seja A e B o comprimento dos lados de todos os possíveis retângulos com não contém nenhuma mina e A &lt;= B; a região mais segura é um retângulo com o maior valor de A e o maior valor de B. Isto é, entre todos os retângulos que não contém nenhuma mina e nos quais o menor lado é o A (maior possível), a região mais segura é o retângulo que contém o maior B.</p>
+
+                <p>
+                    Dado o limite do retângulo de um campo minado e as posições de todas as minas dentro deste, você deverá escrever um programa para encontrar o tamanho da região mais segura.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Seu programa deverá processar dados de diversos casos de teste. A primeira linha de um campo minado contém quatro inteiros <strong>X<sub>1</sub></strong>, <strong>Y<sub>1</sub></strong>, <strong>X<sub>2</sub></strong> e <strong>Y<sub>2</sub></strong> os quais são os limites do campo. (<strong>X<sub>1</sub></strong>, <strong>Y<sub>1</sub></strong>) são as coordenadas do canto inferior esquerdo do campo, (<strong>X<sub>2</sub></strong>, <strong>Y<sub>2</sub></strong>) são as coordenadas do canto superior direito do campo (-20000 ≤ <strong>X<sub>1</sub></strong> &lt; <strong>X<sub>2</sub></strong> ≤&nbsp;20000 e -20000 ≤&nbsp;<strong>Y<sub>1</sub></strong> &lt; <strong>Y<sub>2</sub></strong> ≤&nbsp;20000). A segunda linha contém um único inteiro <strong>N</strong> indicando o número de minas detectadas no campo (1 ≤&nbsp;<strong>N</strong> ≤&nbsp;300). As seguintes <strong>N</strong> linhas contém dois inteiros <strong>X</strong> e <strong>Y</strong> cada, descrevendo a posição da uma mina (<strong>X<sub>1</sub></strong> ≤&nbsp;<strong>X</strong> ≤&nbsp;<strong>X<sub>2</sub></strong> e <strong>Y<sub>1</sub></strong> ≤&nbsp;<strong>Y</strong> ≤&nbsp;<strong>Y<sub>2</sub></strong>). Duas minas não compartilham a mesma posição. O final da entrada é indicado quando <strong>X<sub>1</sub></strong> = <strong>Y<sub>1</sub></strong> = <strong>X<sub>2</sub></strong> = <strong>Y<sub>2</sub></strong> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada campo minado de sua entrada seu programa deverá escrever uma linha com dois inteiros <strong>A</strong> e <strong>B</strong>, onde <strong>A</strong> ≤ <strong>B</strong>, descrevendo o tamanho da posição mais segura.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                0 0 100 100<br />
+                                9<br />
+                                0 0<br />
+                                0 100<br />
+                                100 0<br />
+                                100 100<br />
+                                50 50<br />
+                                25 50<br />
+                                50 25<br />
+                                75 50<br />
+                                50 75<br />
+                                -2 0 6 8<br />
+                                3<br />
+                                0 2<br />
+                                2 4<br />
+                                4 6<br />
+                                0 0 0 0</p>
+                        </td>
+                        <td>
+                            <p>
+                                50 50<br />
+                                4 6</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2003.</p>
+        </div>
+
+    </body>
+</html>

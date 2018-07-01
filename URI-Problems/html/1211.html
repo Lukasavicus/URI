@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1211 - Lista Telefônica Econômica</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1211 - Lista Telefônica Econômica" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1211</span>
+                <h1>Lista Telefônica Econômica</h1>
+                <div><p>
+	Por Renato Parente <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px;" /> Brasil</p>
+</div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>
+	Devido ao grande número de reclamações, a companhia telefônica de São Petersburgo está sendo obrigada a investir pesado na melhora de seus serviços. Para isso a companhia decidiu diminuir o orçamento de alguns setores para aumentar o de outros mais essenciais. Um dos setores que terá seu orçamento reduzido é o de impressão de listas telefônicas.<br />
+	<br />
+	Com um orçamento reduzido, o setor de impressão de listas telefônicas 
+	não consegue comprar toner suficiente para imprimir as listas completas. 
+	Como os números de telefone são impressos alinhados na vertical, foi sugerida 
+	a seguinte solução: a partir do segundo número de telefone impresso, os dígitos 
+	iniciais do próximo número a ser impresso que coincidirem com os do número acima 
+	são omitidos, ficando apenas um espaço em branco. Por exemplo, para os números 
+	535456,	535488, 536566 e 835456 a impressão é a seguinte:</p><br />
+<p class="center">
+	<span class="code">5 3 5 4 5 6<br />
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8 8<br />
+	&nbsp;&nbsp;&nbsp; 6 5 6 6<br />
+	8 3 5 4 5 6</span></p>
+	<br />
+<p>
+	Note que esta impressão economizou a impressão de 6 caracteres. A companhia telefonica cogitou também não imprimir os sufixos repetidos, mas nos testes feitos viram que a resposta não foi boa para o usuário e decidiram, portanto, fazer apenas a eliminação em prefixos. Para saber se a economia será suficiente, o setor de impressão quer saber o número máximo de caracteres que podem ser omitidos. No entanto, como em qualquer cidade grande, são vários os números telefônicos e eles não querem gastar homens-hora para calcular manualmente este valor. Então cabe a você, novo empregado da companhia, automatizar a economia feita pelo toner, no número de caracteres.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>
+	A entrada é composta por diversas instâncias e termina com final de arquivo (EOF). Cada caso de teste contém um inteiro 
+	<strong>N</strong>, que informa o número de telefones na lista. As próximas <strong>N</strong> 
+	(1 ≤ <strong>N</strong>	≤ 10<sup>5</sup>) linhas possuem, cada uma delas, um telefone <strong>X</strong><em>i</em>, 
+	de até 200 caracteres. Para um mesmo caso de teste os números de telefone têm a mesma quantidade de caracteres. 
+	Um número de telefone pode começar com o caracter ’0’.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>
+	Para cada caso de teste imprima uma linha informando o maior número possível de caracteres economizados por este processo.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	2<br />
+	12345<br />
+	12354<br />
+	3<br />
+	535456<br />
+	535488<br />
+	835456</p>
+
+                            </td>
+                            <td>
+                                <p>
+	3<br />
+	4</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table> 
+				<p class="footer">
+                  		XVI Maratona de Programação IME-USP, 2012.</p>  
+            </div>
+
+        </body>
+    </html>

@@ -1,0 +1,120 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2496 - A Única Chance</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2496 - A Única Chance" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2496</span>
+				<h1>A Única Chance</h1>
+				<div>
+					<p>Por Beatriz Souza, IFPB <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Todo mundo sabe que as decisões que são tomadas fazem toda a diferença no resultado obtido. Um exemplo bastante conhecido é o paradoxo de Monty Hall, que é composto por três etapas e, na terceira, o concorrente dá a cartada final e, dependendo da sua escolha, pode ou não ganhar um carro.</p>
+
+					<p>Você deseja obter um “Accepted” e, para isso, terá que escrever um programa que verifique se uma única troca de posição entre duas letras resultará em uma sequência ordenada. Considere as seguintes sequências:</p>
+
+					<p style="text-align:center">ABCDFGHIEJ</p>
+
+					<p style="text-align:center">ABCDEFGHJIKLMNO</p>
+
+					<p>Para que a primeira sequência seja ordenada, é necessário mais de uma troca entre a posição das letras. Na segunda, por outro lado, basta que o I e o J mudem de posição. Sua missão é verificar se para cada sequência recebida existe uma única troca entre duas letras que a faça ordenada.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por um inteiro <strong>N</strong>, que representa a quantidade de casos de teste (1 &lt;= <strong>N</strong> &lt;= 100). Cada caso de teste é composto por um inteiro <strong>M</strong>, que representa a quantidade de letras de uma sequência (2 &lt;= <strong>M</strong> &lt;= 26) e por uma sequência alfabética composta por <strong>M</strong> letras. As letras são sempre maiúsculas e não se encontram em um índice superir a <strong>M</strong>. Caso <strong>M </strong>seja 4, as únicas letras possíveis para a sequência são: A, B, C ou D, em qualquer ordem.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada sequência informada, o programa deve retornar uma única linha que apresentará “There are the chance.” se a sequência obedecer a regra de ordenação mencionada, ou “There aren't the chance.” caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2<br />
+								4<br />
+								ABDC<br />
+								4<br />
+								ACDB</p>
+
+							</td>
+							<td>
+								<p>There are the chance.<br />
+								There aren't the chance.</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+								<p>10<br />
+								ABCDFGHIEJ</p>
+
+								<p>26<br />
+								ZBCDEFGHIJKLMNOPQRSTUVWXYA</p>
+
+							</td>
+							<td>
+								<p>There aren't the chance.</p>
+
+								<p>There are the chance.</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p class="footer">
+
+				</p>
+			</div>
+
+		</body>
+	</html>

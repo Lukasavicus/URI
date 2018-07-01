@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1821 - Miai Chinês</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1821 - Miai Chinês" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1821</span>
+                <h1>Miai Chinês</h1>
+                <div>
+                    <p>Por Desconhecido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 0</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>São notórios os problemas que a China vem enfrentando ao longo do tempo para controlar a explosão populacional que aflige o país. Para piorar a situação, no interior, os casamentos costumam ser tradicionalmente arranjados nas famílias, aumentando as chances do nascimento de crianças com pais aparentados.</p>
+	                   
+                    <p>Ciente do problema, o governo chinês resolveu criar uma agência oficial de matrimônios. Esta agência deve receber as informações dos jovens que pretendem se casar e decidir se é possível realizar casamentos entre eles que evitem uniões de parentes e de tal forma que nenhum dos jovens termine solteiro. Como em muitos outros países do mundo, na China são permitidos apenas casamentos monogâmicos entre rapazes e garotas.</p>
+
+                    <p>Sua tarefa neste problema é auxiliar o governo, escrevendo um programa para descobrir se é possível realizar casamentos em dados grupos de jovens.</p>
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Seu programa deve estar preparado para trabalhar com diversos grupos de jovens, doravante denominados instâncias. Cada instância tem a estrutura que segue.</p>
+
+                    <p>Na primeira linha são fornecidos inteiros <strong>n</strong> (0 ≤ <strong>n</strong> ≤ 100), que representa o número de rapazes e garotas, e <strong>m</strong> (0 ≤ <strong>m</strong> ≤ 1000) que representa o número de parentescos existentes entre eles. Não foram incluídos em m parentescos entre um mesmo sexo, pois isso é irrelevante ao problema.</p>
+
+                    <p>Nas próximas <strong>m</strong> linhas são fornecidos <strong>m</strong> pares de números entre 1 e <strong>n</strong>, inclusive, um par por linha. O primeiro número representa um rapaz e o segundo uma garota que são parentes.</p>
+
+                    <p>Valores <strong>n</strong> = <strong>m</strong> = 0 indicam o final das instâncias e não devem ser processados.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identificador <em>Instancia <strong>h</strong></em>, em que <strong>h</strong> é um número inteiro, sequencial e crescente a partir de 1. Na linha seguinte, você deve imprimir <em>possivel</em> se for possível realizar os casamentos entre os <strong>n</strong> rapazes e as <strong>n</strong> garotas sem que parentes se casem, e imprimir <em>impossivel</em> em caso contrário.</p>
+
+<p>Uma linha em branco deve separar a saída de cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 5<br />
+1 1<br />
+2 2<br />
+3 3<br />
+4 4<br />
+5 5<br />
+3 5<br />
+1 1<br />
+1 2<br />
+2 2<br />
+2 3<br />
+3 3<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+possivel</p>
+<br>
+<p>Instancia 2<br />
+possivel</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VIII Maratona de Programação IME-USP 2004.
+                </p>
+            </div>
+
+        </body>
+    </html>

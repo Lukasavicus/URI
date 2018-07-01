@@ -1,0 +1,146 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1913 - Ajude o Sr. Barriga</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1913 - Ajude o Sr. Barriga" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1913</span>
+				<h1>Ajude o Sr. Barriga</h1>
+				<div>
+					<p>Por Jadson José Monteiro Oliveira, Faculdade de Balsas <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Nhonho, filho do Sr. Barriga está participando de uma brincadeira nova criada pelas crianças da vila bastante conhecida por “Torre de cilindros”. A brincadeira consiste em construir a maior torre composta por cilindros, respeitando todas as regras, claro! Logo abaixo está descrito o funcionamento da brincadeira.</p>
+
+					<ul>
+						<li>
+						<p>Será disposta em uma mesa, uma quantidade N de cilindros.</p>
+						</li>
+						<li>
+						<p>Cada cilindro possui uma cor, que pode ser: Vermelho, laranja, verde ou azul.</p>
+						</li>
+						<li>
+						<p>Cada cilindro possui uma altura h, e uma base com um raio de tamanho r.</p>
+						</li>
+						<li>
+						<p>Para a construção da torre, os cilindros deverão ser empilhados, sendo que o cilindro do topo deverá sempre ter a base menor que a do cilindro logo abaixo dele. Exceto o primeiro cilindro, que poderá ter a base de qualquer tamanho, já que não existe nenhum outro cilindro abaixo dele.</p>
+						</li>
+						<li>
+						<p>Existem também algumas restrições bem interessantes quanto às cores dos cilindros. Elas estão descritas abaixo:</p>
+
+						<ul>
+							<li>
+							<p>Um cilindro vermelho nunca pode ser colocado sobre um cilindro laranja.</p>
+							</li>
+							<li>
+							<p>Um cilindro laranja nunca pode ser colocado sobre um cilindro azul.</p>
+							</li>
+							<li>
+							<p>Um cilindro azul nunca pode ser colocado sobre um cilindro verde.</p>
+							</li>
+							<li>
+							<p>Um cilindro verde nunca pode ser colocado sobre um cilindro vermelho.</p>
+							</li>
+						</ul>
+						</li>
+					</ul>
+
+					<p>Cansado de ver o seu filho reclamar de perder sempre e consequentemente de ouvir a frase</p>
+
+					<p>“Olha ele hein! Olha ele hein! Olha ele...” repetidas vezes, Sr. Barriga quer dar uma pequena dica para Nhonho, informando a maior altura que é possível ser construída dado a lista com as características dos cilindros disponíveis para construção da torre. Porém, apesar de ser bom em matemática e cobrar o preço do aluguel corretamente, Sr. Barriga não conseguiu calcular a altura máxima que a torre pode ter, devido a grande quantidade de cilindros disponíveis. Então ele contratou você para escrever um programa capaz de informar esse valor.</p>
+
+					<p>Para lhe ajudar a entender melhor o problema, Sr. Barriga lhe demonstrou através de um desenho a altura da maior torre possível de ser construída com cinco peças, seguindo todas as regras da brincadeira. Logo abaixo você pode consultar o desenho do Sr. Barriga.</p>
+
+					<p class="center"><img alt="torre_cilindro.png" src="https://urionlinejudge.r.worldssl.net/gallery/images/Ajude_Sr_Barriga.png" style="-webkit-transform:rotate(0.00rad); border:none; height:451px; transform:rotate(0.00rad); width:602px" /></p>
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso de teste contém um inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10³ ), que representa a quantidade de cilindros dispostos sobre a mesa, seguem <strong>N</strong> linhas, cada linha contendo a altura <strong>h</strong> (1 ≤ <strong>h</strong> ≤ 1000) do cilindro em centimetros, o raio <strong>r</strong> (1 ≤ <strong>r</strong> ≤ 1000) da base do cilindro e uma palavra <strong>p</strong> representando a cor do cilindro. A palavra pode ser: <em>VERMELHO</em>, <em>LARANJA</em>, <em>VERDE</em> ou <em>AZUL</em>.</p>
+
+					<p>O fim da entrada é indicado quando <strong>N </strong>== <strong>0</strong>, a qual não deverá ser processada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste, seu programa deverá imprimir uma única linha com o valor da altura da maior torre de cilindros que pode ser construída, seguido da palavra “<em>centimetro(s)</em>”.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5</p>
+
+								<p>5 3 VERMELHO</p>
+
+								<p>4 2 LARANJA</p>
+
+								<p>1 1 VERDE</p>
+
+								<p>3 5 LARANJA</p>
+
+								<p>2 4 AZUL</p>
+
+								<p>3</p>
+
+								<p>10 10 LARANJA</p>
+
+								<p>5 10 VERDE</p>
+
+								<p>6 5 VERMELHO</p>
+
+								<p>0</p>
+
+							</td>
+							<td>
+								<p>15 centimetro(s)</p>
+
+								<p>11 centimetro(s)</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+	
+				<p class="footer">
+					Codando na Vila - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

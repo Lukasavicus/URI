@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1582 - O Teorema de Pitágoras</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1582 - O Teorema de Pitágoras" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1582 </span>
+                <h1>O Teorema de Pitágoras</h1>
+                <div>
+                    <p>Por Leandro Zatesko, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Pitágoras foi um matemático grego anterior a Euclides que viveu entre 570 e 495 a.C, considerado por Aristóteles como ‘o primeiro matemático’. Um dos mais antigos e mais importantes teoremas da História, o Teorema de Pitágoras estabelece que, em qualquer triângulo retângulo, o quadrado da hipotenusa é igual à soma dos quadrados dos catetos. O Teorema possui inúmeras aplicações, sendo a base de diversos resultados na Matemática, na Engenharia, na Física e na Ciência da Computação. Embora o Teorema leve o nome de Pitágoras, acredita-se que matemáticos ainda mais antigos, da Babilônia, já tivessem conhecimento da fórmula.</p>
+
+                    <p class="center"><img alt="" src="http://www.urionlinejudge.com.br/gallery/images/problems/UOJ_1582.jpg" style="height:260px; width:500px" /></p>
+
+                    <p>Diz-se que uma tripla de inteiros positivos (<strong>x</strong>, <strong>y</strong>, <strong>z</strong>) é uma tripla pitagórica se é possível existir um triângulo retângulo que tenha <strong>x</strong>, <strong>y</strong> e <strong>z</strong> como lados, independentemente da ordem em que os inteiros figurem na tripla. Por exemplos, (3, 4, 5), (6, 8, 10) e (5, 13, 12) são triplas pitagóricas, pois 5<sup>2</sup> = 3<sup>2</sup> + 4<sup>2</sup>, 10<sup>2</sup> = 6<sup>2</sup> + 8<sup>2</sup> e 13<sup>2</sup> = 5<sup>2</sup> + 12<sup>2</sup>. No entanto, a tripla (6, 8, 10) é apenas a tripla (3, 4, 5) multiplicada por 2, e, por isso, dizemos que (6, 8, 10) não é uma tripla pitagórica primitiva. Um tripla pitagórica (<strong>x</strong>, <strong>y</strong>, <strong>z</strong>) é dita primitiva se mdc(<strong>x</strong>, <strong>y</strong>, <strong>z</strong>) = 1. Euclides mostrou no século III a.C. que existem infinitas triplas pitagóricas primitivas.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Cada linha da entrada é formada por 3 inteiros, <strong>x</strong>, <strong>y</strong> e <strong>z</strong> (1 ≤ <strong>x</strong>, <strong>y</strong>, <strong>z</strong> ≤ 10<sup>4</sup>), separados entre si por um espaço em branco e fornecidos não necessariamente em ordem alguma, terminando em EOF.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Imprima para cada linha da entrada a linha “tripla pitagorica primitiva” (sem as aspas) se os inteiros dados formam uma tripla pitagórica primitiva, “tripla pitagorica” se os inteiros dados formam uma tripla pitagórica não-primitiva, ou “tripla” se não formam uma tripla pitagórica.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 4 5<br />
+6 8 10<br />
+5 13 12<br />
+4 5 6</p>
+
+                            </td>
+                            <td>
+                                <p>tripla pitagorica primitiva<br />
+tripla pitagorica<br />
+tripla pitagorica primitiva<br />
+tripla</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+               </table>
+                
+                <p class="footer">
+                    Aquecimento para a OBI 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

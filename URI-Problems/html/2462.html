@@ -1,0 +1,160 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2462 - Voo</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2462 - Voo" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2462</span>
+				<h1>Voo</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2014 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>João estava navegando na internet, olhando horários de voos de várias companhias aéreas entre diferentes cidades, e notou que em alguns casos voos diretos entre duas cidades tinham tempos diferentes, dependendo se eram voos de ida ou de volta.</p>
+
+<p>A única explicação possível era a de voos ligando cidades localizadas em diferentes fusos horários. João então chegou à conclusão que seria possível determinar a diferença entre os fusos horários, com base apenas nos horários fornecidos pelas companhias aéreas.</p>
+
+<p>Por exemplo, um voo sai da Haquérnia às 10:00 horas e chega na Nerdínia às 22:00 horas, ao passo que outro voo sai da Nerdínia às 10:00 horas e chega na Haquérnia às 18:00 horas. Qual a explicação? Note que ambos os voos utilizam aeronaves idênticas, na mesma rota, um de ida, outro de volta. Na realidade, o voo dura 10 horas e Nerdínia fica em um fuso horário +2 horas à frentedo fuso horário da Haquérnia (portanto o fuso horário de Haquérnia fica −2 horas à frente do fuso horário de Nerdínia).</p>
+
+<p>João anotou então a tabela de horários de várias companhias aéreas, porém cometeu um engano. Esqueceu-se de anotar datas de partida e chegada. Por exemplo, se a partida de um voo é às 18:00 e a chegada é às 14:00, João não sabe dizer se a data de chegada é a seguinte à da partida, em voo que dura 20 horas, entre cidades no mesmo fuso horário, ou se a data de chegada é a mesma da de partida, com uma duração de voo de uma hora, em que a cidade destino está em fuso horário com cinco horas a menos do fuso horário da cidade origem.</p>
+
+<p>Sua tarefa é ajudar João a determinar a duração do voo e a diferença entre os fusos horários de chegada e de partida de cada par de voos da tabela, um de ida outro de volta, mesmo sem saber as datas dos voos.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta de apenas uma linha, com 4 horários, separados por um espaço em branco. Esses horários envolvem voos entre duas cidades, <strong>A</strong> e <strong>B</strong> e são, respectivamente, <strong><em>p</em>A</strong>, <strong><em>c</em>B</strong>, <strong><em>p</em>B</strong> e <strong><em>c</em>A</strong>. O horário <strong><em>p</em>A</strong> indica a hora da partida de um voo de <strong>A</strong> para <strong>B</strong>, hora local de <strong>A</strong>. O horário <strong><em>c</em>B</strong> indica a hora de chegada do mesmo voo na cidade <strong>B</strong>, hora local de <strong>B</strong>. O horário <strong><em>p</em>B</strong> é a hora de partidado voo de volta, de <strong>B</strong> para <strong>A</strong>, hora local de <strong>B</strong>. O horário <strong><em>c</em>A</strong> é a hora de chegada do voo de volta, hora local de <strong>A</strong>.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída consiste de uma linha, informando a duração do voo em minutos e quantas horas B está à frente de A, em termos de fusos horários. Os dois valores devem ser separados por um espaço em branco.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>10:00 22:00 10:00 18:00</p>
+
+							</td>
+							<td>
+								<p>600 2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>17:00 23:00 17:00 13:00</p>
+
+							</td>
+							<td>
+								<p>60 5</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>10:00 18:00 10:00 22:00</p>
+
+							</td>
+							<td>
+								<p>600 -2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>17:00 13:00 17:00 23:00</p>
+
+							</td>
+							<td>
+								<p>60 -5</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>18:00 12:00 18:00 14:00</p>
+
+							</td>
+							<td>
+								<p>420 11</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<table>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>18:00 14:00 18:00 12:00</p>
+
+							</td>
+							<td>
+								<p>420 -11</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática - 2014 Fase 2 Modalidade Universitária (PU)
+				</p>
+			</div>
+
+		</body>
+	</html>

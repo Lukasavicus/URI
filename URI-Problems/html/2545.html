@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2545 - Manyfile</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 9999 - Manyfile" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2545</span>
+			<h1>Manyfile</h1>
+			<div>
+				<p>Por Flávio Zavan, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>No ano de 2569, Vasya recebe de sua mãe um grandioso presente de aniversário, o código fonte do seu vídeo-game favorito, Aranha Paciente. Vasya corre direto ao seu computador, com 4096 núcleos de processamento, insere o disquete, digita <em>ls</em> no diretório do código e nota que ele é composto de <strong>N</strong> arquivos fonte e um <em>Manyfile</em>.</p>
+
+<p>Um <em>Manyfile</em> é como uma receita de bolo para compilar o código. Ao se executar o comando <em>many</em>, o <em>Manyfile</em> é lido e os arquivos começam a ser compilados, de forma que o máximo de núcleos de processamento são utilizados simultaneamente. Se o mundo fosse perfeito, este processo seria muito rápido, uma vez <em>que cada arquivo fonte do jogo demora exatamente um minuto para ser compilado</em>, mas infelizmente a compilação de alguns arquivos depende da conclusão de outros, impossibilitando que todos os arquivos sejam processados simultaneamente.</p>
+
+<p>Considerando a compilação da Aranha Paciente como terminada quando todos os seus <strong>N</strong> arquivos tiverem sido compilados e sabendo quais arquivos dependem de qual, escreva um programa que calcule para Vasya quantos minutos demorará para que a Aranha Paciente seja compilada.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha de cada caso contém o inteiro <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 1000), o número de arquivos fonte da Aranha Paciente. Os arquivos são numerados de 1 a <strong>N</strong>. As <strong>N</strong> linhas seguintes descrevem os arquivos. A <em>i</em>-ésima linha contém um inteiro <strong>M<sub>i</sub></strong> (0 ≤ <strong>M<sub>i</sub></strong> &lt; <strong>N</strong>) seguido de <strong>M<sub>i</sub></strong> inteiros com valor entre 1 e <strong>N</strong> e diferentes de <em>i</em>, representando o índice dos arquivos dos quais o arquivo <em>i</em> depende.</p><p>A entrada termina com fim-de-arquivo (EOF).</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Para cada caso de teste, imprima uma única linha contendo o tempo total em minutos que demorará para que a Aranha Paciente seja compilada. Caso seja impossível terminal a compilação, imprima -1.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplo de Entrada</td>
+						<td>Exemplo de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>2<br />
+1 2<br />
+1 1<br />
+                    3<br />
+0<br />
+1 3<br />
+0</p>
+     					</td>
+						<td>
+							<p>-1<br />
+                            2</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<p class="footer">
+				7a Seletiva UFPR
+			</p>
+		</div>
+
+	</body>
+</html>

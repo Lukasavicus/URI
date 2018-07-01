@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1320 - Metrô Engenhoso</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1320 - Metrô Engenhoso" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1320</span>
+            <h1>Metrô Engenhoso</h1>
+            <div><p>Por Ricardo Anido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brazil</p></div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    O Rei da Logônia em breve irá inaugurar um novo e revolucionário metrô, baseado numa invenção dos Engenheiros Reais, que permite teletransporte.</p>
+                <p>
+                    O novo metrô consiste de um longo túnel com uma estação a cada quilômetro. Existem também <strong>T</strong> teletransportadores, que estão localizados em algumas das estações. Em cada estação existe um teclado com <strong>T</strong> teclas, onde cada tecla corresponde a um teletransportador. A figura abaixo ilustra um sistema de metrô com três teletransportadores localizados nas estações marcadas como A, B e C.</p>
+
+                <p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Ingenious%20Metro.png" style="width: 523px; height: 43px;" /></p>
+                <p>
+                    O metrô funciona da seguinte maneira: o usuário vai até uma estação (a estação inicial) e pressiona a tecla correspondente ao teletransportador que ele quer usar. O usuário então é teletransportado para a estação que está à mesma distância do teletransportador que a estação inicial, mas do lado oposto ao teletransportador. Mais precisamente, se a localização da estação inicial é i e o usuário pressiona a tecla correspondente ao teletransportador localizado na posição j, ele será levado à estação localizada na posição 2 x j - i. Por exemplo, se o usuário está na estação 6 e quer ir até a estação -2, ele pode usar o teletransportador C (e ir do 6 ao 10) e depois o teletransportador A (e ir do 10 ao -2).</p>
+                
+                ​<p>
+                    O Rei, no entanto, sabe que é possível que não exista uma sequência de teletransportadores que leve um usuário de uma estação X até uma estação Y. Para evitar que os usuários tentem ir para um lugar inacessível, ele quer criar um programa disponível na Internet para os ajudar. O Rei quer que você escreva um programa que, dadas as posições de cada teletransportador, responda uma sequência de consultas. Para cada consulta, as estações inicial e final são dadas, e seu programa deve determinar se é possível para um usuário ir da estação inicial até a estação final.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    Cada caso de teste se estende por várias linhas. A primeira linha contém dois inteiros <strong>T</strong> e<strong> Q</strong> indicando, respectivamente, o número de teletransportadores (1 ≤<strong> T</strong> ≤ 10<sup>5</sup>) e o número de consultas (1 ≤ <strong>Q</strong> ≤ 10). A segunda linha contém <strong>T</strong> inteiros distintos <strong>t<sub>i</sub></strong> indicando a posição do i-ésimo teletransportador (-10<sup>7</sup> ≤<strong> t<sub>i</sub></strong> ≤ 10<sup>7</sup>). Cada uma das <strong>Q</strong> linhas seguintes descreve uma consulta e contém dois inteiros distintos <strong>S</strong> e <strong>D</strong> indicando a posição das estações inicial e final (-10<sup>7</sup> ≤ <strong>S,&nbsp;D</strong> ≤ 10<sup>7</sup>).</p>
+                <p>
+                    ​O último caso de teste é seguido de uma linha contendo dois zeros.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste, imprima uma única linha contendo as respostas para as <strong>Q</strong> consultas, na mesma ordem em que as consultas aparecem na entrada e separadas por um espaço em branco. Para cada consulta, você deve imprimir um caractere 'Y' se for possível chegar ao destino a partir da estação inicial usando o metrô, ou 'N' caso contrário.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                1 1<br/>
+                                -2<br/>
+                                -6 2<br/>
+                                5 2<br/>
+                                10 20 30 40 50<br/>
+                                10 15<br/>
+                                20 40<br/>
+                                5 3<br/>
+                                0 5 -3 -8 4<br/>
+                                -1 499<br/>
+                                4 237<br/>
+                                -1 -591<br/>
+                                0 0</p>
+                        </td>
+                        <td>
+                            <p>
+                                Y<br/>
+                                N Y<br/>
+                                Y N Y</p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2010.</p>
+        </div>
+
+    </body>
+</html>

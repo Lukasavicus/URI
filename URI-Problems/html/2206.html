@@ -1,0 +1,135 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2206 - Curvy Little Bottles</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2206 - Curvy Little Bottles" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2206</span>
+				<h1>Curvy Little Bottles</h1>
+				<div>
+					<p>Por ICPC 2012 World Finals <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/pl.gif' alt='PL' /> Poland</p>
+				</div>
+				<strong>Timelimit: 3</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>In her bike rides around Warsaw, Jill happened upon a shop that sold interesting glass bottles. She thought it might make an interesting project to use such bottles for measuring liquids, but this would require placing markings on the bottles to indicate various volumes. Where should those volume marks be placed?</p>
+
+					<p>Jill formalized the problem as follows. Assume a bottle is formed by revolving a shape that is the same as the graph of a polynomial <strong>P</strong> between <strong>x</strong> = <strong>x<sub>low</sub></strong> and <strong>x</strong> = <strong>x<sub>high</sub></strong> around the <strong>x-axis</strong>. Thus the <strong>x-axis</strong> is coincident with a vertical line through the center of the bottle. The bottom of the bottle is formed by a solid circular region at <strong>x</strong> = <strong>x<sub>low</sub></strong>, and the top of the bottle, at <strong>x</strong> = <strong>x<sub>high</sub></strong>, is left open.</p>
+
+					<p>The first sample input represents a bottle formed using the simple polynomial 4 − 0.25<strong>x</strong>, with <strong>x<sub>low</sub></strong> = 0 and <strong>x<sub>high</sub></strong> = 12. The bottom of this bottle is a circle with a radius of 4, and the opening at the top is a circle with a radius of 1. The height of this bottle is 12. Volume markings are in increments of 25.</p>
+
+					<p>Given a polynomial <strong>P</strong>, <strong>x<sub>low</sub></strong>, <strong>x<sub>high</sub></strong>, and the volume increment between successive marks on the bottle, compute the distances up from <strong>x<sub>low</sub></strong> for the marks at successive volume increments. A mark cannot be made past the top of the bottle, and no more than the first 8 increments should be marked. Assume the value of <strong>P</strong> is greater than zero everywhere between <strong>x<sub>low</sub></strong> and <strong>x<sub>high</sub></strong>.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Each test case consists of three lines of bottle data:</p>
+
+					<ul>
+						<li>Line 1: <strong>n</strong>, the degree of the polynomial (an integer satisfying 0 ≤ <strong>n</strong> ≤ 10).</li>
+						<li>Line 2: <strong>a<sub>0</sub></strong>, <strong>a<sub>1</sub></strong>, . . ., <strong>a<sub>n</sub></strong>, the real coefficients of the polynomial <strong>P</strong> defining the bottle’s shape, where <strong>a<sub>0</sub></strong> is the constant term, <strong>a<sub>1</sub></strong> is the coefficient of <strong>x<sup>1</sup></strong> , . . ., and an is the coefficient of <strong>x<sup>n</sup></strong> . For each <strong>i</strong>, −100 ≤ <strong>a<sub>i</sub></strong> ≤ 100, and <strong>a<sub>n</sub></strong> != 0.</li>
+						<li>Line 3:
+						<ul>
+							<li><strong>x<sub>low</sub></strong> and <strong>x<sub>high</sub></strong>, the real valued boundaries of the bottle (−100 ≤ <strong>x<sub>low</sub></strong> &lt; <strong>x<sub>high</sub></strong> ≤ 100 and <strong>x<sub>high</sub></strong> − <strong>x<sub>low</sub></strong> &gt; 0.1).</li>
+							<li><strong>inc</strong>, an integer which is the volume increment before each successive mark on the bottle (1 ≤ <strong>inc</strong> ≤ 500).</li>
+						</ul>
+						</li>
+					</ul>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>For each test case, display the case number and the volume of the full bottle on one line. On a second line, display the increasing sequence of no more than 8 successive distances up from the bottom of the bottle for the volume markings. All volumes and height marks should be accurate to two decimal places. If the bottle does not have a volume that allows at least one mark, display the phrase 'insufficient volume'. No test case will result in a mark within 0.01 from the top of the bottle. The volume of the bottle will not exceed 1 000. All rounded distances for marks on a bottle differ by at least 0.05.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1</p>
+
+								<p>4.0 -0.25</p>
+
+								<p>0.0 12.0 25</p>
+
+								<p>1</p>
+
+								<p>4.0 -0.25</p>
+
+								<p>0.0 12.0 300</p>
+
+								<p>0</p>
+
+								<p>1.7841241161782</p>
+
+								<p>5.0 10.0 20</p>
+
+								<p>0</p>
+
+								<p>1.0</p>
+
+								<p>0.0 10.0 10</p>
+
+							</td>
+							<td>
+								<p>Case 1: 263.89</p>
+
+								<p>0.51 1.06 1.66 2.31 3.02 3.83 4.75 5.87</p>
+
+								<p>Case 2: 263.89</p>
+
+								<p>insufficient volume</p>
+
+								<p>Case 3: 50.00</p>
+
+								<p>2.00 4.00</p>
+
+								<p>Case 4: 31.42</p>
+
+								<p>3.18 6.37 9.55</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					ICPC 2012 World Finals
+				</p>
+			</div>
+
+		</body>
+	</html>

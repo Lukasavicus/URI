@@ -1,0 +1,118 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2030 - Pit Stop</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2030 - Pit Stop" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2030</span>
+				<h1>Pit Stop</h1>
+				<div>
+					<p>Por Daniel Saad, Instituto Federal de Goiás <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>“Grazie, grazie, bellissimo!” – dizia um engenheiro da Scuderia Ferrari após uma estratégia inusitada que os fez ganhar o GP de Formosa de 2016, famoso circuito de rua do calendário da Fórmula 1. <!--l. 22--></p>
+
+					<p>Fórmula 1 é um esporte meio maluco. Às vezes, quando o pneu está muito desgastado, compensa fazer uma paradinha, denominada de pit stop, para colocar pneus novos e fazer voltas mais rápidas do que se estava fazendo antes. <!--l. 24--></p>
+
+					<p>No entanto, nem sempre vale a pena trocar de pneu, dependendo da quantidade de voltas que faltam e do atraso de uma parada de pit stop. <!--l. 26--></p>
+
+					<p>Cada pneu tem uma determinada autonomia de algumas voltas, depois ele volta a ficar desgastado e possivelmente uma nova troca será necessária para conseguir bons tempos. <!--l. 28--></p>
+
+					<p>Será que você, como futuro engenheiro da Ferrari consegue calcular a melhor estratégia de pit stops? <!--l. 30--></p>
+
+
+					<p class="center"><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_2030.png" style="height:35%; width:35%" title="Pit Stop" /></p>
+
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada consiste de uma linha contendo um número N (1 ≤ N ≤ 1000) indicando a quantidade de casos de teste. As N linhas seguintes representam os casos de teste. Cada caso de teste é composto por cinco inteiros:</p>
+
+					<ul>
+						<li>T<sub>1</sub> o tempo de volta em milésimos de segundo com o pneu novo (1 ≤ T<sub>1</sub> ≤ 10<sup>6</sup>).</li>
+						<li>T<sub>2</sub>, o tempo de volta em milésimos de segundo com o pneu desgastado (1 ≤ T<sub>1</sub> ≤ T<sub>2</sub> ≤ 10<sup>6</sup>).</li>
+						<li>A, o atraso em milésimos de segundo do pit stop (1 ≤ A ≤ 10<sup>6</sup>).</li>
+						<li>V, o número de voltas que um pneu novo pode dar até ficar desgastado (1 ≤ V ≤ 100).</li>
+						<li>R, o número de voltas totais do GP de Formosa (1 ≤ R ≤ 100).</li>
+					</ul>
+
+					<p>Considere que os carros largam de pneus novos.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Cada saída de um caso de teste deve conter a linha “Teste #i”, indicando o número do teste. Após isso uma nova linha deve ser impressa informando o menor tempo possível (soma do tempo de todas as voltas e dos atrasos de pit stops) para que um piloto possa completar a prova e o menor número de pit stops para que isto ocorra, separados por espaço. <!--l. 51--></p>
+
+					<p>A cada caso de teste deve haver uma linha em branco.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3<br />
+								110000 113000 20000 15 70<br />
+								110000 113000 20000 20 15<br />
+								110000 112000 20000 15 70</p>
+
+							</td>
+							<td>
+								<p>Teste #1<br />
+								7780000 4</p>
+
+								<p><br />
+								Teste #2<br />
+								1650000 0</p>
+
+								<p><br />
+								Teste #3<br />
+								7780000 3</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Aquecimento da III Maratona de Programação do IFG - Formosa
+				</p>
+			</div>
+
+		</body>
+	</html>

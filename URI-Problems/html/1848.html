@@ -1,0 +1,128 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1848 - Corvo Contador</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 6661 - Corvo Contador" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1848</span>
+				<h1>Corvo Contador</h1>
+				<div>
+					<p>Por Emilio Wuerges, UFFS <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Como se sabe, existe um corvo com três olhos. O que não se sabia é que o corvo com três olhos pode prever o resultado da loteria de Westeros. Enquanto todos os outros corvos coletam as apostas, o corvo de três olhos já sabe o resultado, e quando Bran sonha com o corvo, o corvo conta o resultado. O problema é que Bran apesar de lembrar do sonho, não consegue interpretá-lo sozinho em tempo hábil. A sua tarefa é fazer um programa para interpretar o sonho de Bran e calcular o resultado da loteria.</p>
+
+<p>Durante o sonho, o corvo pisca diversas vezes e grita apenas 3 vezes. A cada grito um número do resultado da loteria é calculado.</p>
+
+<p>Cada piscada do corvo comunica um número em binário. Um olho aberto significa <strong>1</strong> e um olho fechado significa <strong>0</strong>. O olho da esquerda é o <strong>mais significativo</strong> e o da direita é o <strong>menos significativo</strong>. A cada piscada, este número deve ser somado, e quando o corvo grita, essa <strong>soma</strong> é um resultado.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada descreve, em cada linha, em sequência, ou um grito ou uma piscada do corvo.</p>
+
+<p>Um grito é representado pela string <strong>caw caw</strong></p>
+
+<p>Uma piscada é representada por três caracteres <strong>*</strong> ou <strong>-</strong>, representando, respectivamente, um olho aberto ou um olho fechado, da esquerda para a direita.</p> <p> Lembre-se que o corvo tem <strong>3</strong> olhos.</p> <p>Os números sorteados na loteria não excedem 1000.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>A saída são três linhas, cada linha com um número da loteria.</p>
+				</div>
+
+					<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+                                --*</br>
+                                caw caw</br>
+                                *--</br>
+                                caw caw</br>
+                                caw caw</br>
+							</td>
+							<td>
+                                1 </br>
+                                4 </br>
+                                0 </br>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both">
+                <table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+--* </br>
+--* </br>
+--* </br>
+caw caw </br>
+*-- </br>
+*-- </br>
+caw caw </br>
+--* </br>
+*-- </br>
+caw caw </br>
+							</td>
+							<td>
+3 </br>
+8 </br>
+5 </br>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+
+                
+                </div>
+	
+
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

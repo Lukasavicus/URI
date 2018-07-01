@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2648 - Tarot Sham Boast</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema 2648 - Tarot Sham Boast" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2648</span>
+			<h1>Tarot Sham Boast</h1>
+			<div>
+				<p>Por ACM-ICPC World Finals 2017 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/us.gif' alt='US' /> United States</p>
+			</div>
+			<strong>Timelimit: 2</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>Curse your rival! Every year at the annual Rock Paper Scissors tournament, you have made it to the final match. (Your Rock technique is unmatched, and your Paper cuts to the bone! Your Scissors need a little work, though.) But every year, he defeats you, even though his moves appear entirely random! And he claims to the press that he simply cannot be beaten. What is his secret?</p>
+
+<p>Fortunately, you think you have figured it out. This year, just before the tournament, you caught him visiting various shamans around town. Aha! He is using the supernatural against you! You figured two can play at this game. So you went and visited a set of fortune-tellers, who have each used a Tarot deck to predict a sequence that your rival will end up using, sometime during the match.</p>
+
+<p>However, your initial excitement has passed, and now you are feeling a little silly. This cannot possibly work, right? In the end it feels like you have paid good money for a fraudulent, random set of predictions. Oh well; you might as well keep an eye out for some of them during the match. But which predictions will you use?</p>
+
+<p>In the final match, you and your rival will play <strong>n</strong> rounds of Rock Paper Scissors. In each round, your rival and you will both choose one of the three options (Rock, Paper, or Scissors). Based on your selections, a winner of the round will be determined (exactly how is irrelevant to this problem).</p>
+
+<p>Given the length of the final match and the various predictions, sort them in order of how likely they are to appear sometime during the match as a contiguous sequence of options chosen by your rival, assuming he is choosing his symbol in each round independently and uniformly at random.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>The first line of input contains two integers <strong>n</strong> (1 ≤ <strong>n</strong> ≤ 10<sup>6</sup> ), the number of rounds in the final match, and <strong>s</strong> (1 ≤ <strong>s</strong> ≤ 10), the number of sequences. The remaining <strong>s</strong> lines each describe a prediction, consisting of a string of characters ‘R’, ‘P’, and ‘S’. All predictions have the same length, which is between 1 and <strong>n</strong> characters long, inclusive, and no longer than 10<sup>5</sup> .</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Display all of the predictions, sorted by decreasing likelihood of appearance sometime during the final match. In the case of tied predictions, display them in the same order as in the input.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>3 4<br />
+PP<br />
+RR<br />
+PS<br />
+SS</p>
+
+						</td>
+						<td>
+							<p>PS<br />
+PP<br />
+RR<br />
+SS</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+			<table>
+				<thead>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+								<p>20 3<br />
+PRSPS<br />
+SSSSS<br />
+PPSPP</p>
+
+						</td>
+						<td>
+							<p>PRSPS<br />
+PPSPP<br />
+SSSSS</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<p class="footer">
+				ACM-ICPC World Finals 2017
+			</p>
+		</div>
+
+	</body>
+</html>

@@ -1,0 +1,122 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1911 - Ajude Girafales</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1911 - Ajude Girafales" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1911</span>
+				<h1>Ajude Girafales</h1>
+				<div>
+					<p>Por Dâmi Henrique, Inatel <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Minutos antes do término das aulas, professor Girafales passa uma lista de presença. Certo dia, ele resolveu conferir as assinaturas e notou que alguns alunos assinavam diferente em algumas aulas e desconfiou que alguém poderia estar assinando por eles. Como o professor possui muitos alunos e pouco tempo (o café com dona Florinda é prioridade), ele pediu sua ajuda para validar as assinaturas. Uma assinatura é considerada falsa se houver mais de uma diferença entre a original e a que estiver sendo checada. Considere diferença uma troca de maiúscula para minúscula ou o contrário.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Haverá diversos casos de testes. A primeira linha de cada caso inicia com um inteiros <strong>N </strong>(1 ≤ <strong>N</strong> ≤ 50) representando a quantidade de alunos de sua turma. As próximas <strong>N</strong> linhas serão da seguinte forma:</p>
+
+					<p><strong><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nome do aluno &nbsp;&nbsp;Assinatura Original</em></strong></p>
+
+					<p>A seguir haverá um inteiro <strong>M</strong>&nbsp;(0 ≤&nbsp;<strong>M </strong>≤ <strong>N</strong>), representando a quantidade de alunos que compareceram a uma aula. <strong>M </strong>linhas seguem, no seguinte formato:</p>
+
+					<p><strong><em>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Nome do aluno &nbsp;&nbsp;Assinatura na aula</em></strong></p>
+
+					<p>Todos os alunos possuem apenas o primeiro nome na lista, nenhum nome se repete e todos os nomes contêm no máximo 20 letras (<strong>a-z A-Z</strong>).</p>
+
+					<p>A entrada termina com <strong>N</strong> = 0, a qual não deve ser processada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso, exiba uma única linha, a quantidade de assinaturas falsas encontradas.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4</p>
+
+								<p>Chaves ChAvEs</p>
+
+								<p>Kiko kikO</p>
+
+								<p>Nhonho NHONHO</p>
+
+								<p>Chiquinha CHIquinHa</p>
+
+								<p>3</p>
+
+								<p>Chaves ChAvEs</p>
+
+								<p>Kiko kIKO</p>
+
+								<p>Chiquinha CHIquinHA</p>
+
+								<p>2</p>
+
+								<p>Jadson jadsON</p>
+
+								<p>Crishna Crishna</p>
+
+								<p>2</p>
+
+								<p>Crishna CRISHNA</p>
+
+								<p>Jadson JADson</p>
+
+								<p>0 </p>
+
+							</td>
+							<td>
+								<p>1</p>
+
+								<p>2</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+	
+				<p class="footer">
+					Codando na Vila - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

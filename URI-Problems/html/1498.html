@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1498 - Inversão de Huffman</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1498 - Inversão de Huffman" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1498</span>
+                <h1>Inversão de Huffman</h1>
+                <div>Por Leopoldo Taravilse <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Argentina</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Codificação Estática de Huffman é um algoritmo de codificação usado principalmente para compressão de texto. Dado um texto de determinado tamanho feito de n caracteres diferentes, o algoritmo escolhe <em>N</em> códigos , um para cada diferente caractere. O texto é compactado usando esses códigos. Para escolher os códigos, o algoritmo constrói uma árvore binária com <em>N</em> folhas. Para <em>N</em> ≥ 2 a árvore pode ser construído como se segue. 1. Para cada caractere diferente no texto construa uma árvore contendo apenas um único nodo, e atribua a ele um peso coincidente com o número de ocorrências de caracteres no texto.<br />
+					2. Construia um conjunto s contendo as <em>N</em> árvores acima.<br />
+					3. Enquanto s contiver mais de uma árvore:<br />
+					(a) Escolha <em>t</em><sub>1</sub> ∈ <em>s</em> com peso mínimo e remova-o de s.<br />
+					(b) Escolha <em>t</em><sub>2</sub> ∈ <em>s</em> com peso mínimo e remova-o de s.<br />
+					(c) Crie uma nova árvore t com t<sub>1</sub> como a sua subárvore esquerda e t<sub>2</sub> como sua subárvore direita e atribua para t a soma dos pesos de t<sub>1</sub> e t<sub>2</sub>.<br />
+					(d) Inclua <em>t</em> em <em>s</em>.<br />
+					4. Retorne a única árvore que sobrar em <em>s</em> .<br />
+
+					Para o texto "<strong>abracadabra</strong>" , a árvore produzido pelo processo acima descrito pode ser semelhante a imagem à esquerda, onde cada nodo interno é marcado com o peso da sub-árvore esquerda daquele nodo. Note que a árvore obtida também pode se parecer com a imagem da direita, entre outras coisas, porque nas etapas 3a e 3b do conjunto s pode conter várias árvores com peso mínimo. Para cada caractere diferente do texto, seu código depende do caminho que existe na árvore final, à partir da raiz até a folha correspondente ao caracter. O tamanho do código é o número de arestas existentes no caminho (que coincide com o número de nodos internos do caminho). Assumindo que a árvore da esquerda foi construída por um algoritmo, o código para “<em>r</em>” tem tamanho 3 enquanto que o código para “<em>d</em>” tem tamanho 4. 
+					<p class="center">
+	<img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1498.png" style="width: 532px; height: 228px;" /></p>
+					Sua tarefa é, dado os tamanhos dos <em>N</em> códigos escolhidos pelo algoritmo, encontrar a árvore mínima (em número total de caracteres) que o texto poderá ter de forma que os códigos gerados tenham comprimento <em>N</em></p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém vários casos de teste e terminam com EOF. A primeira linha de cada caso de teste contém um inteiro <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 50) que representa o número de caracteres diferentes que aparece no texto. A segunda linha contém <strong>N</strong> inteiros <strong>L<sub>i</sub></strong> indicam os comprimentos dos códigos escolhido pelo algoritmo de Huffman para os diferentes caracteres (1 ≤ <strong>L<sub>i</sub></strong> ≤ 50 para <strong>i</strong> = 1, 2, ..., <strong>N</strong>). você pode assumir que existe pelo menos uma árvore, construída tal como descrito, que produz códigos com o dado comprimentos.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste de entrada, imprima uma linha com um inteiro que representa o tamanho mínimo (número total de caracteres) que o texto pode ter assim como os códigos gerados têm os comprimentos determinados.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+2<br />
+1 1<br />
+4<br />
+2 2 2 2<br />
+10<br />
+8 2 4 7 5 1 6 9 3 9<br />
+</p>
+
+                            </td>
+                            <td>
+                                <p>2<br />
+4<br />
+89</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                   </table>
+                <p class="footer">
+                    ACM/ICPC South America Contest 2013.
+                </p>
+            </div>
+
+        </body>
+    </html>

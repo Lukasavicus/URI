@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1432 - Strings Binárias Triple-Free</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1432 - Strings Binárias Triple-Free" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1432</span>
+            <h1>Strings Binárias Triple-Free</h1>
+            <div>Por Rujia Liu, TU <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/cn.gif' alt=''/> China</div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Uma sequência binária consiste em zeros e uns. Dada uma string binária <b>T</b>, se não houver uma seqüência binária <b>S</b> tal que <b>SSS</b> (três cópias do S concatenadas) é uma subsequência de <b>T</b>, dizemos que <b>T</b> é o triplo-free.</p>
+
+                <p>Um padrão consiste de uns e zeros, asteriscos, onde um asterisco (*) pode ser substituído por um ou zero. Por exemplo, o padrão de 0**1 contém strings 0001, 0011, 0101, 0111, mas não 1001 ou 0000.</p>
+
+                <p>Dado um padrão <b>P</b>, quantas strings binárias triple-livres contém?</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>Cada linha da entrada representa um caso de teste, que contem o tamanho do padrão <b>N</b> (1 ≤ <b>N</b> ≤ 30), e o padrão <b>P</b>. Pode haver um máximo de 35 casos de teste. A entrada termina quando <b>N</b> é 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada caso de teste, imprima o número do caso e a resposta, como mostrado abaixo.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                4 0**1<br />
+                                5 *****<br />
+                                10 **01**01**<br />
+                                0
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Case 1: 2<br />
+                                Case 2: 16<br />
+                                Case 3: 9
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                Adaptado para o UOJ por Robert Ubiñas
+            </p>
+        </div>
+
+    </body>
+</html>

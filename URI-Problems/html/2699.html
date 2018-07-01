@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>URI 2699 - Enigma</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+		<meta name="description" content="URI Online Judge - Problema E - Enigma" />
+
+		<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+		<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+	</head>
+	<body>
+
+		<div class="header">
+			<span>URI Online Judge | 2699</span>
+			<h1>Enigma</h1>
+			<div>
+				<p>Por Jeferson Lesbão <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+			</div>
+			<strong>Timelimit: 1</strong>
+		</div>
+
+		<div class="problem">
+
+			<div class="description">
+				<p>O famoso pirato Cornelius “Cabeça Queijosa” Bakker foi um renomado astrônomo e matemático. Ele enterrou a maioria de seus tesouros na ilha caribenha de São Basil, onde o Pico Colombo é um conhecido marco geográfico. Cabeça Queijosa desapareceu quando sua frota de três navios foi pega em um furacão em 1617. Talvez por algum tipo de premonição, antes de sua excursão fatal, ele escreveu em uma carta para uma de suas sobrinhas na Holanda a distância exata ao seu tesouro oculto, partindo Pico Colombo em direção sul.</p>
+
+<p>Preocupado que seu mapa pudesse acabar nas mãos erradas, “Cabeça Queijosa” usou suas habilidades em matemática como seguro contra ladrões. Em vez de escrever na carta o número indicando a distância, ele multiplicou-o por um segundo número <strong>N</strong>, e escreveu o resultado <strong>D</strong> na carta, junto com o valor de <strong>N</strong> e uma explicação de como o cálculo deveria ser feito. Ele sabia que mesmo se uma pessoa indesejada obtivesse a carta, ela deveria saber como dividir dois números, coisa que poucos criminosos conseguiam fazer naquele tempo. Infelizmente, quando a carta chegou em seu destino na Europa, a sobrinha de Cabeça Queijosa havia entrado em um convento e nem se importou em abrir a carta.</p>
+
+<p>Exatamente quatro séculos após o ocorrido, Maria por ventura veio a obter um baú com os pertences de sua ancestral freira. E você pode imaginar sua surpresa quando ela descobriu a carta, ainda lacrada! Maria está planejando uma viagem para buscar o tesouro de Cabeça Queijosa, mas ela precisa de sua ajuda. Apesar do valor de <strong>N</strong> estar intacto e ela poder lelo, o número <strong>D</strong> foi parcialmente comido por traças de forma que apenas alguns dos dígitos estão visíveis . A única pista que Maria tem é que o digito mais à esquerda de <strong>D</strong> não é zero pois Cabeça Queijosa disse em sua carta.</p>
+
+<p>Dada a representação parcial de <strong>D</strong> e o valor de <strong>N</strong>, você deve determinar o menor valor possível de <strong>D</strong> de forma que este seja um múltiplo de <strong>N</strong> e que não comece com zeros.</p>
+			</div>
+
+			<h2>Entrada</h2>
+
+			<div class="input">
+					<p>A entrada consiste de uma única linha que contem uma string <strong>S</strong> não vazia com no maximo 1000 caracteres e um inteiro N (1 ≤ <strong>N</strong> ≤ 1000). Cada caractere de <strong>S</strong> é ou um digito ou o caractere “?” (question mark); o digito mais à esquerda não é “0” e no mínimo um caractere de <strong>S</strong> é “?”.</p>
+			</div>
+
+			<h2>Saída</h2>
+
+			<div class="output">
+				<p>Imprima uma única linha com um inteiro <strong>D</strong>, que não comece com zeros, indicando o menor múltiplo de <strong>N</strong> que possua |<strong>S</strong>| dígitos e cujos dígitos em <strong>S</strong> coincidam com os dígitos correspondentes em <strong>D</strong>. Caso não exista tal inteiro <strong>D</strong>, imprima um “*” (asterisco) para a saída.</p>
+			</div>
+
+			<div class="both"></div>
+
+			<table>
+				<thead>
+					<tr>
+						<td>Exemplos de Entrada</td>
+						<td>Exemplos de Saída</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="division">
+							<p>1??????????????????????????????? 2</p>
+
+						</td>
+						<td>
+							<p>10000000000000000000000000000000</p>
+
+						</td>
+					</tr>
+				</tbody>
+			</table>
+
+		<div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>???????????????????????????????1 2</p>
+
+                </td>
+                <td>
+                    <p>*</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="both"></div>
+
+    <table>
+        <thead>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="division">
+                    <p>?294?? 17</p>
+
+                </td>
+                <td>
+                    <p>129404</p>
+
+                </td>
+            </tr>
+        </tbody>
+    </table>
+			<p class="footer">
+				
+			</p>
+		</div>
+
+	</body>
+</html>

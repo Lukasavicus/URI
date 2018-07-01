@@ -1,0 +1,99 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1887 - As Vias Férreas Kunming-Cingapura</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 1887 - As vias férreas Kunming-Cingapura" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1887</span>
+				<h1>As Vias Férreas Kunming-Cingapura</h1>
+				<div>
+					<p>Por Arthur Nascimento, Universidade de São Paulo <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 10</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>A via férrea Kunming-Cingapura é um conjunto de vias (já construídas e em plano de construção) que têm como objetivo ligar diferentes cidades da Ásia. Esse projeto começou em 1900 com a proposta de construir uma via férrea que ligasse a cidade de Kunming (China) a Cingapura, por parte do império britânico. Depois, em 1918, essa via férrea foi conectada ao conjunto de vias de Tailândia mediante uma via férrea que ligava Bangkok e Cingapura. No ano 2000, a ASEAN (Associação de Nações do Sudeste Asiático) propôs completar esse sistema de vias férreas.</p>
+
+<p>O término desse projeto está previsto para o ano 2020. Devido à importância desse sistema para a integração do sudeste asiático, as empreiteiras responsáveis têm contactado você para calcular o custo mínimo para manter este sistema ao longo do tempo. Cada via (já construída e por construir) tem um custo de manutenção. O que se deseja é, dadas as <em>N</em> cidades que o sistema Kumming-Cingapura liga, as <em>M</em> vias iniciais do sistema e as <em>Q</em> vias que serão adicionadas ao longo do tempo, calcular o custo mínimo para manter o sistema conectado após construir cada uma dessas <em>Q</em>&nbsp;vias. Consideramos que o sistema está conectado se, para cada par de cidades existe um conjunto de vias que as ligam.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta por diversas instâncias. A primeira linha da entrada contém um inteiro <strong>T</strong> indicando o número de instâncias.</p>
+
+<p>Cada instância é composta por diversas linhas. A primeira linha de cada instância contém três inteiros, <strong>N</strong>, <strong>M</strong> e <strong>Q</strong> (descritos no enunciado, 1 ≤ <strong>N, M, Q </strong> ≤ 3*10<sup>4</sup>) separados por um espaço. As seguintes <strong>M</strong> linhas descrevem as vias iniciais do sistema. Cada via é representada por três inteiros <strong>a</strong>, <strong>b</strong> e <strong>c</strong> (1 ≤ <strong>a, b</strong> ≤ N e 1 ≤ <strong>c</strong> ≤ 3*10<sup>4</sup>), onde <strong>a</strong> e <strong>b</strong> representam as cidades que são ligadas por essa via, e <strong>c</strong> é o custo de manutenção. As <strong>Q</strong> linhas seguintes representam as vias adicionadas ao sistema. A <em>i</em>-ésima linha desse grupo de <strong>Q</strong> linhas descreve a <em>i</em>-ésima via adicionada ao sistema através de três inteiros, como no caso anterior.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada instância, imprima <strong>Q</strong> linhas. A <em>i</em>-ésima linha desse grupo de <strong>Q</strong> linhas deve conter um único inteiro que representa o custo mínimo de manutenção do sistema após a adição da <em>i</em>-ésima via.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>1<br />
+4 3 5<br />
+1 2 5<br />
+2 3 6<br />
+3 4 7<br />
+1 4 8<br />
+1 2 4<br />
+2 4 5<br />
+3 4 5<br />
+1 4 6</p>
+
+							</td>
+							<td>
+								<p>18<br />
+17<br />
+15<br />
+14<br />
+14</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					XIX Maratona de Programação IME-USP 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,126 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2040 - O Campeão</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2040 - O Campeão" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2040</span>
+				<h1>O Campeão</h1>
+				<div>
+					<p>Por Nivaldo Carvalho, UNIPE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Thyago é um torcedor fanático do Sport Clube de Recife e sempre acompanha as finais dos campeonatos em que seu time <img alt="" src="http://i.imgur.com/gebNakQ.png" style="float:right; height:160px; width:144px" />está jogando. Como os jogos são geralmente à noite e Thyago está ocupado nesse horário trabalhando ou ministrando aula, ele não está com tempo de ver os jogos do seu time de coração e nem acompanhar a pontuação total do campeonato ao longo do dia, no qual está na rodada final. Deoclécio, que é amigo de Thyago e também gosta muito de futebol, está assistindo o campeonato e anotou a pontuação de todos os times até então e também o placar dos jogos da rodada final.</p>
+
+<p>Sua tarefa é ajudar Deoclécio fazendo um programa que, dado o nome dos times participantes do campeonato, a sua pontuação até então e o placar dos últimos jogos, determine qual foi o time campeão e a pontuação final desse time.</p>
+
+<p>Regras desse campeonato:</p>
+
+<ul>
+	<li>Cada gol marcado valerá 3 pontos;</li>
+	<li>Caso os times empatem, será adicionado +1 ponto para cada time da partida;</li>
+	<li>O time vencedor de uma partida ganhará +5 pontos.</li>
+</ul>
+
+<p>Observações:</p>
+
+<ul>
+	<li>É garantido que sempre haverá um time vencedor do campeonato;</li>
+	<li>O time Sport sempre aparece nas entradas do problema;</li>
+	<li>Não haverá empates de pontuação final entre dois ou mais times após os placares dados;</li>
+	<li>O nome do time da entrada sempre terá apenas uma palavra;</li>
+	<li>Os nomes dos times não se repetem e não contém caracteres especiais;</li>
+	<li>Nenhum dos times joga mais de uma vez (mais de uma partida no mesmo caso de teste).</li>
+</ul>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste. A primeira linha contém um inteiro <strong>N</strong> (2 ≤ <strong>N</strong> ≤ 100) representando a quantidade de times a seguir que estão participando do campeonato. Seguem <strong>N<sub>i</sub> </strong>linhas contendo o nome do time <strong>S</strong> e a pontuação do time <strong>P</strong> até então (0 ≤ <strong>P</strong> ≤ 100). Logo após, seguem <strong>N/2</strong> linhas contendo o placar de cada jogo da última rodada, no formato "<strong>TimeA</strong> <strong>golsA</strong>-<strong>golsB</strong> <strong>TimeB</strong>", conforme ilustrado no exemplo abaixo. A entrada termina com <strong>N</strong> = 0, na qual não deve ser processada.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste na entrada, seu programa deve produzir uma linha de saída, contendo caso o Sport seja o campeão: "O Sport foi o campeao com <strong>X</strong> pontos :D", sendo <strong>X</strong> a quantidade total de pontos. Caso contrário, o seu programa deve produzir a seguinte linha: "O Sport nao foi o campeao. O time campeao foi o <strong>S</strong> com <strong>X</strong> pontos :(", sendo <strong>S</strong> o nome do time vencedor e <strong>X</strong> a quantidade total de pontos. Deixe uma linha em branco depois de cada caso de teste.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>4<br />
+Treze 20<br />
+Campinense 35<br />
+Fortaleza 25<br />
+Sport 20<br />
+Sport 4-0 Campinense<br />
+Fortaleza 2-2 Treze<br />
+6<br />
+Bahia 42<br />
+Sport 43<br />
+Vitoria 41<br />
+Fortaleza 32<br />
+Ceara 33<br />
+Campinense 22<br />
+Sport 2-0 Bahia<br />
+Vitoria 3-1 Ceara<br />
+Campinense 2-1 Fortaleza<br />
+0</p>
+
+							</td>
+							<td>
+								<p>O Sport foi o campeao com 37 pontos :D</p>
+
+<p><br /> </p>
+
+<p>O Sport nao foi o campeao. O time campeao foi o Vitoria com 55 pontos :(</p>
+
+<p><br /> </p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Problema dedicado a Thyago Maia, grande torcedor do Sport Recife, mais do que um professor, um grande amigo.
+				</p>
+			</div>
+
+		</body>
+	</html>

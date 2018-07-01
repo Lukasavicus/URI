@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1775 - André e os Mentos</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema A - André e os Mentos" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1775</span>
+                <h1>André e os Mentos</h1>
+                <div>
+                    <p>Por Mário Henrique, UFPE <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 2</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>André é um maratonista do CIn-UFPE. Todo sábado, durante os treinos, ele come de tudo: salgadinho, refrigerante, biscoito, água e mentos. Principalmente mentos. Mas o problema, porém, é que toda vez que André vai tirar alguns mentos do tubo, ele tem que parar de codar por alguns instantes, o que atrapalha sua concentração.</p>
+
+                    <p>O mentos vem em um tubo com duas pontas. Cada vez que André quer chupar alguns, ele escolhe um certo sabor, e olha pra cada ponta do mentos. Em cada uma, se houver um mentos do sabor escolhido, ele pega. Se não houver nenhum daquele sabor nas pontas, ele não pega nenhum, e só parou de codar à toa. Para diminuir a perda de tempo durante o contest, André decidiu minimizar suas paradas para pegar mentos. Ele fez um corte fino ao longo do tubo, para poder ver com antecedência quais sabores tem dentro dele. Mas ele não vai pegar do meio, e fez isso apenas para poder decidir melhor quais sabores irá escolher tirar das pontas em cada uma de suas paradas.</p>
+
+                    <p>Agora, André precisa calcular o número mínimo de vezes que ele deve parar para pegar seus mentos, seguindo o método descrito, até eles acabarem. Ele calcularia isso facilmente usando Transformada de Fourier, mas ele está ocupado codando uma questão. Por isso cabe a você, um companheiro de time dele, fazer isso para ajudá-lo.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha contém um inteiro <strong>T</strong> (1 &le; <strong>T</strong> &le; 200), o número de casos de teste. Cada caso de teste começa com uma linha com um inteiro <strong>N</strong>, o número de mentos do tubo (1 &le; <strong>N</strong> &le; 1000). Na linha seguinte, há <strong>N</strong> inteiros, o <strong>i</strong>-ésimo deles é o número do sabor do <strong>i</strong>-ésimo mentos no tubo. Cada um desses números está entre 1 e 10⁹.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso imprima uma linha contendo "Caso #<strong>X</strong>:<strong> Y</strong>", onde <strong>X</strong> é o número do caso atual, iniciando em 1, e <strong>Y</strong> é a quantidade mínima de vezes que André precisa parar para pegar mentos.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3<br />
+                                5<br />
+                                1 3 1 3 2<br />
+                                5<br />
+                                1 2 3 2 1<br />
+                                7<br />
+                                1 1 2 3 3 4 2</p>
+
+                            </td>
+                            <td>
+                                <p>Caso #1: 4<br />
+                                Caso #2: 3<br />
+                                Caso #3: 5</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    Adaptação da Prova Final da Seletiva UFPE - 2014
+                </p>
+            </div>
+
+        </body>
+    </html>

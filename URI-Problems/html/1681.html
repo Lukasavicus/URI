@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1681 - Dobra</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1681 - Dobra" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1681</span>
+                <h1>Dobra</h1>
+                <div>
+                    <p>Contest Local, Universidade de Ulm <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/de.gif' alt='DE' /> Alemanha</p>
+                </div>
+                <strong>Timelimit: 3</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+<p>Leia a descrição do problema 1680 (Lado) para entender como dobrar uma folha de papel e como interpretar a entrada. Uma "tira" é definida como a parte maximal de uma folha que não tem vincos atravessando-a. Como as dobras ocorrem em locais equidistantes, todas as tiras são congruentes.</p>
+<p>Neste problema é dada a descrição do resultado da realização de diversas dobras como no problema E: Lado, ou seja, no estado desdobrado. Adicionalmente, é sabido que o comprimento da folha em seu estado dobrado é exatamente o comprimento de uma tira (novamente a grossura do papel é ignorada).</p>
+<p>Encontre o número mínimo de dobraduras necessárias para gerar a folha descrita a partir de uma folha de papel inicialmente plana. Note que realizar uma dobradura pode criar mais que uma dobra no resultado porque partes do papel estão sobrepostas devido à dobraduras anteriores. No entanto, quando um passo de dobradura é realizado todas as partes sobrepostas do papel são afetadas, isso é, não é permitido dobrar, por exemplo, apenas as três camadas superiores.</p>
+<p>Por último, note que todo resultado pode ser obtido iterando as dobras em uma direção fixa e realizando uma dobradura por vez, acumulando dessa forma uma pilha de todas as tiras, com comprimento de uma tira. Se n é o número de dobras na descrição de entrada, esse procedimento requer então n passos de dobradura, que não é necessariamente o mínimo, como pode ser observado na saída de exemplo.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+<p>A entrada contém vários casos de teste, cada um em uma linha distinta. Cada linha contém uma string não vazia de caracteres <strong>A</strong> e <strong>V</strong> descrevendo o lado mais longo da folha. Assuma que o comprimento da string é menor que 200. O arquivo de entrada termina imediatamente após o último caso de teste.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+<p>Para cada caso de teste, imprima em em uma linha o número mínimo de passos de dobradura necessários para produzir a folha de papel descrita.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+<p>V</p>
+<p>AVV</p>
+<p>AAVAAVVVAAV</p>
+
+                            </td>
+                            <td>
+<p>1</p>
+<p>2</p>
+<p>4</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                 </table>
+                
+               <p class="footer">
+                     Univeristy of Ulm Local Contest 2003/2004
+                </p>
+                </p>
+            </div>
+
+        </body>
+    </html>

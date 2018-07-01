@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1788 - Brincando com Números</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1788 - Brincando com Números" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1788</span>
+                <h1>Brincando com Números</h1>
+                <div>
+                    <p>Por Dâmi Henrique Pelegrino, Inatel <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Alguns amigos, entediados em uma tarde de domingo, resolveram inventar uma brincadeira. Eles desenharam uma matriz de <strong>L</strong> linhas e <strong>C</strong> colunas em uma folha de papel, e em seguida escreveram um número em cada uma de suas <strong>L</strong>x<strong>C</strong> posições.</p>
+
+                    <p>A brincadeira funciona da seguinte maneira:</p>
+
+                    <ul>
+                    	<li>Uma posição (<strong>i</strong>, <strong>j</strong>) qualquer da matriz pode ser escolhida para começar o jogo, <strong>i</strong> representando uma linha, e <strong>j</strong> uma coluna.</li>
+                    	<li>A partir dessa posição, é possível mover para as posições (i-1, j) – (i, j+1) se o modo do jogo for <strong>normal</strong> ou para as posições (i+1, j) – (i, j-1) se o modo do jogo for <strong>reverso</strong>. Porém, só é possível mover para alguma dessas posições, se o número contido nela for menor que o número da posição atual.</li>
+                    	<li>Nesse jogo, há algumas posições especiais. São as posições que contêm um número primo. Quando um jogador cai nessa posição, ele pode se mover para qualquer uma das 2 adjacentes(de acordo com o modo do jogo), mesmo que o número contido nela não seja menor que o número atual.</li>
+                    	<li>Em uma partida, é possível utilizar apenas <strong>K</strong> posições especiais. Após a utilização das <strong>K</strong> posições, uma posição com número primo será tratada como uma posição normal.</li>
+                    	<li>O objetivo do jogo é “visitar” o maior número de posições possíveis.</li>
+                    </ul>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Haverá diversos casos de testes. Cada caso inicia com três inteiros, <strong>L</strong>, <strong>C</strong> e <strong>K </strong>(1 ≤ <strong>L</strong>, <strong>C</strong> ≤ 1000, 0 ≤ <strong>K</strong> ≤ 5), representando, respectivamente, a quantidade de linhas, colunas, e a quantidade de posições especiais que podem ser utilizadas. A segunda linha contém um caractere <strong>P</strong> (‘<strong>N</strong>’ ou ‘<strong>R</strong>’) representando o modo do jogo, normal ou reverso.</p>
+
+                    <p>A seguir haverá <strong>L</strong> linhas, cada linha contendo <strong>C</strong> inteiros <strong>X</strong> (0 &lt;= <strong>X </strong>&lt;= 10^7).</p>
+
+                    <p>A entrada termina com <strong>L</strong> = <strong>C</strong> = <strong>K</strong> = 0, a qual não deve ser processada.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso, exiba uma única linha, a quantidade máxima de posições possíveis de serem visitadas se a posição de início for escolhida de forma ótima.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 3 2</p>
+
+                                <p>N</p>
+
+                                <p>16 8 6</p>
+
+                                <p>20 3 12</p>
+
+                                <p>7 20 7</p>
+
+                                <p>3 3 0</p>
+
+                                <p>N</p>
+
+                                <p>16 8 6</p>
+
+                                <p>20 3 12</p>
+
+                                <p>7 20 7</p>
+
+                                <p>3 4 3</p>
+
+                                <p>R</p>
+
+                                <p>1 11 15 7</p>
+
+                                <p>4 30 9 6</p>
+
+                                <p>8 2 0 7</p>
+
+                                <p>0 0 0</p>
+
+                            </td>
+                            <td>
+                                <p>5</p>
+
+                                <p>4</p>
+
+                                <p>6</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="both"></div>              
+            <p class="footer">
+                    
+                </p>
+            </div>
+
+        </body>
+    </html>

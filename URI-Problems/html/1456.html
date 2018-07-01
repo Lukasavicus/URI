@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1456 - Brainfuck</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1456 - Brainfuck" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1456</span>
+            <h1>Brainfuck</h1>
+            <div>X Maratona de Programação IME-USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+            <strong>Timelimit: 2</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>Linguagens de programação, times de futebol e religião não se discute. Cada um tem seus favoritos e não admite que o do outro seja melhor (que me perdoem os corinthianos, palmeirenses e são-paulinos). Um grupo de pesquisadores (que não tinha o que fazer) resolveu escrever uma linguagem de programação ideal'' (ideal prá quem, cara pálida?): o Brainfuck. Brainfuck é uma linguagem de programação cujo funcionamento é muito parecido com uma máquina de Turing. Essa máquina possui como componentes um vetor de 30000 bytes, indexado de 0 a 29999, e um ponteiro, que guarda uma posição desse vetor. Em cada passo, a máquina realiza uma instrução de acordo com o byte armazenado na posição do vetor indicada pelo ponteiro. Quando esse byte é igual a zero, a execução é terminada. O conjunto de instruções válidas da linguagem é o seguinte:</p>
+
+                <table id="brainfuck">
+                    <thead>
+                        <tr>
+                            <td class="brainfuck-left">Instrução</td>
+                            <td>Descrição</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="brainfuck-left"><code>&gt; </code></td>
+                            <td>Incrementa o ponteiro.</td>
+                        </tr>
+                        <tr>
+                            <td class="brainfuck-left"><code>&lt; </code></td>
+                            <td>Decrementa o ponteiro.</td>
+                        </tr>
+                        <tr>
+                            <td class="brainfuck-left"><code>+ </code></td>
+                            <td>Incrementa o byte na posição indicada pelo ponteiro.</td>
+                        </tr>
+                        <tr>
+                            <td class="brainfuck-left"><code>- </code></td>
+                            <td>Decrementa o byte na posição indicada pelo ponteiro.</td>
+                        </tr>
+                        <tr>
+                            <td class="brainfuck-left"><code>. </code></td>
+                            <td>Imprime o valor do byte na posição indicada pelo ponteiro.</td>
+                        </tr>
+                        <tr>
+                            <td class="brainfuck-left"><code>, </code></td>
+                            <td>Lê um byte e armazena na posição indicada pelo ponteiro. Se não houver nada que possa ser lido (entrada acabou), armazenar zero.</td>
+                        </tr>
+                        <tr>
+                            <td class="brainfuck-left"><code>[ </code></td>
+                            <td>Início do loop: Executa o código delimitado até que o byte na posição indicada pelo ponteiro seja igual a zero.</td>
+                        </tr>
+                        <tr>
+                            <td class="brainfuck-left"><code>]</code></td>
+                            <td>Fim do loop.</td>
+                        </tr>
+                        <tr>
+                            <td class="brainfuck-left"><code># </code></td>
+                            <td>Imprime os valores das 10 primeiras posições do vetor.</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p>O ponteiro sempre começa com valor 0, assim como todas as posições do vetor. Na descrição de programas na linguagem brainfuck, caracteres diferentes dos descritos acima são ignorados.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>A entrada é composta de diversas instâncias. O número de instâncias é dado na primeira linha da entrada. Cada instância começa com uma linha em branco. A próxima linha contém uma cadeia de caracteres não-brancos (ou seja, diferentes de espaço em branco e tabulação), que vai conter a entrada para o programa. Ou seja, os comandos de leitura são realizados nessa cadeia. Toda a entrada para o programa está contida em uma única linha. Por fim, a terceira linha contém a descrição do programa. Assim como a segunda linha, esta também não contém caracteres brancos e está inteiramente contida em uma única linha (a separação feita no segundo exemplo de entrada foi feita para evitar o estouro de linha). Tanto a segunda como a terceira linha têm entre 1 e 100000 caracteres.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>Para cada instância, você deverá imprimir um identificador "Instancia <strong>k</strong>", onde <strong>k</strong>&nbsp;é o número da instância atual. Na linha seguinte você deve imprimir a saída do código fornecido na entrada. Após cada instância, seu programa deve imprimir uma linha em branco.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                2<br />
+                                <br />
+                                marrocos<br />
+                                +[&gt;,]&lt;-[+.&lt;-]<br />
+                                <br />
+                                nada<br />
+                                ++++++++++[&gt;+++++++&gt;++++++++++&gt;+++&gt;+&lt;&lt;&lt;&lt;-]&gt;++.&gt;+.+++++++..+++.&gt;++.&lt;&lt;+++++++++++++++.&gt;.+++.------.--------.&gt;+.&gt;.
+                            </p>
+
+                        </td>
+                        <td>
+                            <p>
+                                Instancia 1<br />
+                                socorram<br />
+                                <br />
+                                Instancia 2<br />
+                                Hello World!
+                            </p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                X Maratona de Programação IME-USP 2006.</p>            
+        </div>
+
+    </body>
+</html>

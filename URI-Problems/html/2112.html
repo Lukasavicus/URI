@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 2112 - Escalonamento de Salas de Aula</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 2112 - Escalonamento de Salas de Aula" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 2112</span>
+                <h1>Escalonamento de Salas de Aula</h1>
+                <div>
+                    <p>Por XVII Maratona de Programação IME-USP, 2013 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+                </div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Os professores da Universidade de Ecaterimburgo não gostam de deslocar-se por longas distâncias. Cada docente deseja que as salas em que ele vai dar aula estejam em posições adjacentes. No início de cada semestre cabe ao responsável pela Comissão de Graduação determinar as salas de aula em que os docentes deverão dar aula. Cada docente sabe que turma de alunos deverá assistir às suas aulas como, por exemplo, alunos do terceiro período de Engenharia Mecânica, ou alunos do primeiro período de Computação, etc. Os alunos de cada turma permanecem na mesma sala em todas as aulas. O importante é que todas as salas em que um docente dá aulas fiquem em posições adjacentes. Nem sempre é possível satisfazer os requisitos dos docentes. Se, por exemplo, um docente dá aulas para o terceiro semestre de Matemática e primeiro semestre de Computação, um segundo dá aulas para o primeiro semestre de Computação e segundo período de Engenharia Elétrica e um terceiro professor dá aulas para os alunos do segundo período de Engenharia Elétrica e terceiro semestre de Matemática, claramente não é possível satisfazer os três professores. Sua tarefa é ajudar o responsável pela alocação das salas, e determinar se é possível satisfazer todos os requisitos dos docentes.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada é composta por diversas instâncias e termina com final de arquivo (EOF). Na primeira linha de cada instância é dado o número de turmas <strong>T</strong> (1 &lt; <strong>T</strong> &lt; 10<sup>3</sup>), numeradas de 1 a <strong>T</strong>, e o número de docentes <strong>D </strong>(1 &lt; <strong>D</strong> &lt; 10<sup>3</sup>). Nas <strong>D</strong> linhas seguintes são dados o número <strong>K</strong> (0 &lt; <strong>K</strong> &lt; <strong>T</strong>) de turmas em que o docente correspondente dá aulas seguido pelas identificações destas turmas em ordem crescente.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância o seu programa deverá imprimir uma permutação das turmas que atenda os requisitos de todos os docentes, ou seja, todas as turmas em que um docente dá aula estejam adjacentes. Caso não exista uma tal permutação seu programa deverá imprimir "impossivel". Se existir mais de uma permutação possível, qualquer uma será aceita.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>5 4<br />
+3 2 4 5<br />
+2 2 5<br />
+2 1 5<br />
+2 1 3<br />
+3 3<br />
+2 1 2<br />
+2 2 3<br />
+2 1 3</p>
+
+                            </td>
+                            <td>
+                                <p>4 2 5 1 3<br />
+impossivel</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    XVII Maratona de Programação IME-USP, 2013
+                </p>
+            </div>
+
+        </body>
+    </html>

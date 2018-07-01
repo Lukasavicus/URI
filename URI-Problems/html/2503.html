@@ -1,0 +1,96 @@
+
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2503 - Corrida de Regularidade</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2503 - Corrida de Regularidade" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2503</span>
+				<h1>Corrida de Regularidade</h1>
+				<div>
+					<p>Por Hamilton José Brumatto, UESC <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Um tipo de corrida de automóveis, veículos em geral, mesmo bicicleta ou a pé, é a corrida de regularidade. Neste tipo de corrida existe um percurso a ser percorrido e uma velocidade média a ser mantida. Para garantia existem vários pontos de controle de tempo. Estes pontos são desconhecidos dos competidores para evitar que eles tentem corrigir o tempo na chegada ao ponto. A contagem em cada ponto de controle é de penalização por atraso ou adiantamento em pontos. Uma corrida de Enduro a Pé, possui vários pontos de controle. Em cada ponto de controle, se o corredor (ou equipe) atrasar, é punido com 1 ponto por segundo de atraso, com limite de 1200 pontos por ponto de controle (20 minutos de atraso) ou 2 pontos por segundo de adiantamento, com limite de 1200 pontos por ponto de controle (10 minutos). Vence a prova quem tiver menos pontos. Como critério de desempate a equipe inscrita de menor número.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada contém vários casos de teste. Cada caso de teste utiliza várias linhas da entrada, começa com uma linha indicando três números inteiros: <strong>V</strong>, <strong>P</strong>,&nbsp;<strong>T</strong>: 0 &lt; <strong>V</strong> &lt; 20,&nbsp;a velocidade média, em km/h, a ser mantida na corrida; 0 &lt; <strong>P</strong> &lt; 10 o número de pontos de controle; e 0 &lt; <strong>T</strong> &lt; 20 o número de times competidores. Na segunda linha estão <strong>P</strong>&nbsp;números inteiros indicando a posição de cada ponto de controle, em metros, a partir da origem, 0 &lt; <strong>P</strong><sub>i</sub>&nbsp;&lt; 4.000. O último ponto de controle coincide com o final da corrida. As próximas <strong>T</strong> linhas representam <strong>P</strong> valores inteiros indicando os tempos de cada competidor, em segundos, em cada ponto de controle, time 1 na linha 1, e assim sucessivamente. Os casos de entrada terminam com <strong>V =&nbsp;P =&nbsp;T =&nbsp;</strong>0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada caso de teste da entrada seu programa&nbsp;deve gerar, na saída, uma linha única com a classificação final da corrida, listando os times pelos seus números com um único espaço em branco entre cada time.<br />
+&nbsp;</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>10 5 4<br />
+3000 5000 9500 12000 14500<br />
+1090 1820 3460 4400 5350<br />
+1070 1790 3410 4310 5210<br />
+1070 1810 3420 4310 5240<br />
+1100 1820 3420 4320 5210<br />
+10 3 3<br />
+3000 6000 10000<br />
+1070 2160 3610<br />
+1080 2170 3610<br />
+1070 2160 3600<br />
+0 0 0</p>
+
+							</td>
+							<td>
+								<p>4 3 2 1<br />
+2 3 1</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<p class="footer">
+					Este problema fez parte da CPU2016 (Competição de Programação Universitária) da Universidade Estadual de Santa Cruz - UESC.
+				</p>
+			</div>
+
+		</body>
+	</html>

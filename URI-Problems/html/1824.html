@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1824 -Sapos de Tsé-Tsé</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1824 -Sapos de Tsé-Tsé" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+<style type="text/css"> 
+#sapos{
+    border:#bbb solid 1px; 
+    margin:15px auto; 
+    text-align:center;
+    width:150px;   
+}
+#sapos td{
+    border:#bbb solid 1px; 
+    width:33%;
+
+}
+</style>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1824</span>
+                <h1>Sapos de Tsé-Tsé</h1>
+                <div>
+                    <p>Por VIII Maratona de Programação, IME–USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 0</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>A mosca do sono é uma das pragas mais sérias na China, que causa prejuízos enormes ao governo do país. Populações inteiras de pequenas cidades são picadas pela mosca e acabam caindo no sono durante o trabalho (muitos suspeitam que nem são as moscas as causadoras do problema, mas isso é outra história...).</p>
+
+                    <p>Preocupados com esta situação os pesquisadores de Engenharia Genética da Universidade de Zhao-Zhao estudaram o genoma de um sapo comedor de insetos da região e descobriram que o padrão de saltos do sapo poderia ser facilmente controlado se uma alteração fosse feita em seu cromossomo 12. Infelizmente nem todos os experimentos resultaram em sucesso e, além de alguns sapos sem pernas e com 12 olhos, os experimentos deram origem a várias espécies de sapos com características diferentes de saltos. O objetivo deste problema é que vocês desenvolvam um programa que, a partir da observação do padrão de saltos de um sapo, verifique se ele é do tipo desejado. Um sapo é do tipo desejado se colocado no canto superior esquerdo de um lago retangular ele cobrir toda a extensão do lago com um número mínimo de saltos.</p>
+
+                    <p>Para anotar o padrão de saltos de um sapo foram feitos vários experimentos. Em cada experimento o sapo foi colocado em uma posição do lago e se anotou para que posição vizinha ele saltou. As posições vizinhas são ordenadas de 1 a 8 no sentido dos ponteiros do relógio, começando na posição imediatamente acima da posição do sapo, como na figura abaixo.</p>
+
+                    <table id="sapos">
+                    	<tbody>
+                    	<tr>
+                    		<td>8</td>
+                            <td>1</td> 
+                            <td>2</td>
+                        </tr>
+                    <tr>
+                    		<td>7</td>
+                            <td>sapo</td> 
+                            <td>3</td>
+                        </tr>
+
+                    		<tr>
+                    		<td>6</td>
+                            <td>5</td> 
+                            <td>4</td>
+                        </tr>
+                    	</tbody>
+                    </table>
+
+                    <p>Sua tarefa é dada uma instância de um lago, marcado em cada uma de suas posições com o padrão de saltos do sapo, verificar se este, quando colocado no canto superior esquerdo do lago, percorre todas as suas posições.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>São dadas várias instâncias. Cada instância começa com dois inteiros <strong>m</strong> (0 ≤ <strong>m</strong> ≤ 1000) e <strong>n</strong> (0 ≤ <strong>n</strong> ≤ 1000) que definem a dimensão do lago. Em seguida vêm <strong>m</strong> linhas com <strong>n</strong> números inteiros, descrevendo o comportamento do sapo quando colocado naquela posição do lago. Valores <strong>m</strong> = <strong>n</strong> = 0 indicam o final das instâncias e não devem ser processados.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identificador <em>Instancia <strong>h</strong>,</em> em que <strong>h</strong> é um número inteiro, sequencial e crescente a partir de 1. Na linha seguinte, você deve imprimir <em>sim</em> se o sapo passou por todas as <strong>mn</strong> posições do lago e <em>nao</em> em caso contrário. Uma linha em branco deve separar a saída de cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 3<br />
+3 3 5<br />
+5 7 7<br />
+3 3 3<br />
+2 3<br />
+4 4 2<br />
+1 1 2<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+sim</p>
+
+<p>Instancia 2<br />
+nao</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VIII Maratona de Programação IME-USP 2004.
+                </p>
+            </div>
+
+        </body>
+    </html>

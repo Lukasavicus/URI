@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1358 - Cortando Extremidades</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - Problema 1358 - Cortando Extremidades" />
+        
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1358</span>
+            <h1>Cortando Extremidades</h1>
+            <div><p>Por Ricardo Anido <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=""/> Brasil</p></div>
+            <strong>Timelimit: 3</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Tio Jeff é dono de uma loja de vidros, que vende painéis de vidros para janelas e quadros de foto. Como você provavelmente sabe, um painel de vidro pode ser cortado apenas de extremidade à extremidade em linha reta. A figura abaixo mostra como o painel de vidro pode ser cortado em três painéis menores.</p>
+
+                <p class="center">
+                        <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/novos/Cutting%20Edge.png" style="width: 543px; height: 162px;" />​</p>
+
+				<p class="center">
+                    (a) painel de vidro original &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) primeiro corte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) segundo corte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+                <p>
+                    Tio Jeff normalmente opera da seguinte forma. Ele primeiro coleta vários pedidos de pequenos painéis retangulares, para janelas ou quadros de foto. Ele então marca a posição de cada painel retangular em um grande painel retangular, de forma a que nenhum deles se sobreponha. Finalmente ele realiza uma sequência de cortes verticais e horizontais, sempre de extremidade à extremidade do painel, para produzir painéis para todos os clientes.</p>
+
+                <p>
+                    Já que a última fase (a de cortar o grande painel em pedaços) é a parte mais chata que alguém possa jamais imaginar, tio Jeff está pedindo sua ajuda. Ele quer um programa no qual dado um grande painel retangular e as coordenadas esquerdo-inferior e direito-superior de cada retângulo marcado, determine a ordem no qual cada corte de extremidade à extremidade deve ser feito. Essa lista de cortes será dada a máquina que fará os entediantes cortes para ele!</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <p>
+                    A entrada contém vários casos de teste. A primeira linha do teste contém um inteiro <b>N</b> indicando o número de janelas e quadros de foto, sendo (2 ≤ <b>N</b> ≤ 2000). Cada uma das próximas N linhas contém quatro inteiros <b>X1</b>, <b>Y1</b>, <b>X2</b>, <b>Y2</b>, onde (<b>X1</b>, <b>Y1</b>) e (<b>X2</b>, <b>Y2</b>) representam as coordenadas esquerda-inferior e direita-superior marcadas por tio Jeff no grande painel de vidro (-5000 ≤ <b>X1</b>, <b>Y1</b>, <b>X2</b>, <b>Y2</b> ≤ 5000; <b>X1</b> &lt; <b>X2</b> e <b>Y1</b> &lt; <b>Y2</b>). Você deve assumir o seguinte caso de teste:</p>
+
+                <ul>
+                    <li>Os retângulos marcados não se sobrepõem (mas pode haver interseções nos pontos as bordas) e dividem o grande painel de vidro em regiões retângulares, de modo a não haver desperdídio. Isso significa que as coordenadas esqueda-inferior e direita-superior do grande painel podem ser inferidas com as coordenadas dos triângulos marcados.</li>
+
+                    <li>É possível partir o o grande painel de vidro em retângulos menores atravéz de uma sequência de cortes de extremidade à extremidade.</li>
+                </ul>
+
+                <p>
+                    O fim da entrada é indicado por <b>N</b> = 0.</p>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste na entrada, seu programa deve produzir uma lista ordenada de cortes que devem ser feitos para separar o grande painel nos painéis menores desejados. Cada corte deve aparecer em uma linha diferente. Um corte é descrito em quatro inteiros <b>X1</b>, <b>Y1</b>, <b>X2</b>, <b>Y2</b>, onde (<b>X1</b>, <b>Y1</b>) e (<b>X2</b>, <b>Y2</b>) especificam as marcações do corte, sendo <b>X1</b> &lt; <b>X2</b> e <b>Y1</b> = <b>Y2</b> para um corte horizontal, e <b>X1</b> = <b>X2</b> e <b>Y1</b> &lt; <b>Y2</b> para um corte vertical. Como mais de um corte é possível, seu programa deve imprimir a lista em uma ordem particular. Se em algum ponto mais que um corte for possível, imprima primeiramente o corte com o <b>X1</b> menor; se mais de um corte ainda for possível, imprima primeiro aquele com o <b>Y1</b> menor. Imprima uma linha em branco após cada lista do caso de teste.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                3<br />
+                                0 0 20 30<br />
+                                20 0 40 20<br />
+                                20 20 40 30<br />
+                                6<br />
+                                1 2 2 4<br />
+                                2 3 3 5<br />
+                                1 4 2 5<br />
+                                2 2 3 3<br />
+                                3 2 4 3<br />
+                                3 3 4 5<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                20 0 20 30<br />
+                                20 20 40 20<br />
+								<br />
+                                2 2 2 5<br />
+                                1 4 2 4<br />
+                                2 3 4 3<br />
+                                3 2 3 3<br />
+                                3 3 3 5</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                ACM/ICPC South America Contest 2004.
+            </p>
+        </div>
+
+    </body>
+</html>

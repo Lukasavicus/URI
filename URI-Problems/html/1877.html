@@ -1,0 +1,118 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 1877 - O Castelo de Neve de Sansa</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 9888 - O Castelo de Neve de Sansa" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 1877</span>
+				<h1>O Castelo de Neve de Sansa</h1>
+				<div>
+					<p>Por Ricardo Oliveira, UFPR <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Robin: <em>"O que você está fazendo?"</em><br />
+Sansa: <em>"Estou construindo minha casa, Winterfell."</em></p>
+
+<p>Sansa está construindo um castelo de neve no jardim do Ninho da Águia. O castelo de neve é feito para parecer com o verdadeiro castelo de Winterfell.</p>
+
+<p>O castelo de neve pode ser descrito como uma sequência de <strong>N</strong> torres de neve, numeradas de 1 a <strong>N</strong> da esquerda para a direita. A altura da torre i (1&nbsp;≤ <strong>i</strong>&nbsp;≤ <strong>N</strong>) é igual a h<sub>i</sub> centímetros.</p>
+
+<p>Sansa diz que o castelo é <em>bonito</em> se ele consiste em uma sequência de <strong>K</strong> "picos" alterados com <strong>K</strong>-1 "vales", como o castelo de Winterfell. Em outras palavras, o castelo é bonito se existe uma sequência de <strong>K</strong> torres T<sub>1</sub> &lt; T<sub>2</sub> &lt; ... &lt; T<sub>K</sub> tal que:</p>
+
+<ul>
+	<li>As alturas das torres no intervalo [1, T<sub>1</sub>] estão em ordem crescente;</li>
+	<li>Existe um "vale" no intervalo [T<sub>i</sub>, T<sub>i+1</sub>], para todo 1&nbsp;≤ i &lt; <strong>K</strong>;</li>
+	<li>As alturas das torres no intervalo [T<sub>K</sub>, <strong>N</strong>] estão em ordem decrescente.</li>
+</ul>
+
+<p>Existe um "vale" em um intervalo [A, B] se B&nbsp;≥ A+2 e existe alguma torre J, A&nbsp;≤ J&nbsp;≤ B, tal que as alturas das torres no intervalo [A,J] estão em ordem decrescente, e as alturas das torres no intervalo [J,B] estão em ordem crescente.</p>
+
+<p>Ajude Sansa a determinar se seu castelo é bonito ou não!</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A primeira linha contém dois inteiros <strong>N</strong> e <strong>K</strong> (1&nbsp;≤ <strong>N</strong>&nbsp;≤ 1000, 1&nbsp;≤ <strong>K</strong> ≤ <strong>N</strong>). A segunda linha contém <strong>N</strong> inteiros h<sub>1</sub>, h<sub>2</sub>, ..., h<sub>N</sub> (1&nbsp;≤ h<sub>i</sub>&nbsp;≤ 100), as alturas das torres, em centímetros. A primeira e a última torre sempre terão 1 centímetro de altura. Duas torres consecutivas nunca terão a mesma altura.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Imprima uma linha contendo a palavra <strong>beautiful</strong> se o castelo dado é bonito, ou a palavra <strong>ugly</strong> caso contrário.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplos de Entrada</td>
+							<td>Exemplos de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>9 3<br />
+1 2 3 2 4 3 1 2 1</p>
+
+							</td>
+							<td>
+								<p>beautiful</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+	
+				<table>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>5 3<br />
+1 2 1 2 1</p>
+
+							</td>
+							<td>
+								<p>ugly</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<p class="footer">
+					Escola de Inverno da Maratona - Erechim RS - 2015
+				</p>
+			</div>
+
+		</body>
+	</html>

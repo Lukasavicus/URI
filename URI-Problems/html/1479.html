@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1479 - Ajude seu General</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1479 - Ajude seu General" />
+            
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1479</span>
+                <h1>Ajude seu General</h1>
+                <div>Por Cristhian Bonilha <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt=''/> Brasil</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Um bom general de guerra deve tomar decisões rápidas, e ao mesmo tempo ser um bom estrategista. Uma das funções do general é delegar soldados a diversos pontos estratégicos, de modo que o inimigo seja supreendido e derrotado. Há diversos pontos estratégicos no campo de batalha, assim como diversas rotas que interligam esses pontos.</p>
+
+<p>O seu campo está, porém, sendo bombardeado, e essas rotas não são tão seguras mais. Uma vez que uma bomba caia em uma rota, tal terreno se torna irregular e a sua travessia se torna impossível. Para contornar tal problema, o general delegou uma nova tarefa a alguns soldados: encontrar novas rotas.</p>
+
+<p>O general pediu sua ajuda então para calcular qual o caminho mais curto entre a base da operação e os pontos estratégicos. Você será informado sobre o estado inicial do campo de batalha, com <strong>N</strong> pontos estratégicos (sendo o ponto 1 a base da operação) e <strong>M</strong> rotas. Conforme as bombas inutilizam algumas rotas, e outras rotas vão sendo encontradas pelos soldados, você deve atualizar seu cálculo para que o general possa fazer bom uso de tais informações.</p>
+
+<p>Boa sorte, o país depende de você.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A entrada contém diversos casos de teste. Cada caso de teste inicia com dois inteiros, <strong>N</strong> e <strong>M</strong> (2 ≤ <strong>N</strong> ≤ 1000 e 1 ≤ <strong>M</strong> ≤ 10000), representando, respectivamente, o número de pontos estratégicos e o número de rotas que interligam dois pontos estratégicos. Após, haverão <strong>M</strong> linhas, cada uma com três inteiros <strong>U</strong>, <strong>V</strong> e <strong>W</strong> (1 ≤ <strong>U</strong>, <strong>V</strong> ≤ <strong>N</strong> e 1 ≤ <strong>W</strong> ≤ 100) cada, representando que há uma rota que interliga o ponto <strong>U</strong> ao ponto <strong>V</strong>, em direção única, com distância <strong>W</strong>.</p>
+
+<p>Haverá então um inteiro <strong>Q </strong>(1 ≤ <strong>Q</strong> ≤ 1000), que representa o número de consultas ou atualizações que serão feitas sobre essas rotas. Nas próximas <strong>Q</strong> linhas haverá uma letra e um determinado número de inteiros.</p>
+
+<p>Se a letra digitada for a letra <strong>R</strong>, haverá em seguida dois inteiros <strong>U</strong> e <strong>V</strong> (1 ≤ <strong>U</strong>, <strong>V</strong> ≤ <strong>N</strong>), indicando que a rota que antes interligava o ponto <strong>U</strong> até o ponto <strong>V</strong> foi bombardeada.</p>
+
+<p>Caso a letra digitada for a letra <strong>I</strong>, haverá em seguida três inteiros <strong>U</strong>, <strong>V</strong> e <strong>W</strong> (1 ≤ <strong>U</strong>, <strong>V</strong> ≤ <strong>N</strong> e 1 ≤ <strong>W</strong> ≤ 100), indicando que foi encontrada uma nova rota que interliga o ponto <strong>U</strong> até o ponto <strong>V</strong>, com distância <strong>W</strong>. E caso a letra digitada for a letra <strong>P</strong>, haverá em seguida um inteiro <strong>V</strong> (1 ≤ <strong>V</strong> ≤ <strong>N</strong>), e você deve informar ao general qual a distância mínima entre a base da operação e o ponto estratégico <strong>V</strong>.</p>
+
+<p>A entrada termina quando <strong>N</strong> = <strong>M</strong> = 0.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste haverá um número não definido de linhas de saída. Sempre que, na entrada, o general requisitar a distância mínima entre a base da operação e um ponto estratégico (letra <strong>P</strong>), tal distância deve ser impressa em uma linha única. Caso não seja possível chegar a tal ponto estratégico, deve-se imprimir <em>-1</em>. Deve haver uma linha em branco após cada caso de teste.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>3 3<br />
+1 2 2<br />
+2 3 3<br />
+1 3 4<br />
+5<br />
+P 3<br />
+R 2 3<br />
+P 3<br />
+I 2 3 1<br />
+P 3<br />
+0 0</p>
+
+                            </td>
+                            <td>
+                                <p>4<br />
+4<br />
+3</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+            </div>
+
+        </body>
+    </html>

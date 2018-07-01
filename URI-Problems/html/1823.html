@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1823 - O Penúltimo Imperador</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problema 1823 - O Penúltimo Imperador" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1823</span>
+                <h1>O Penúltimo Imperador</h1>
+                <div>
+                    <p>Por VIII Maratona de Programação, USP <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brasil</p>
+                </div>
+                <strong>Timelimit: 0</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Muito se conhece do último imperador da China, imortalizado no clássico filme vencedor do Oscar. Porém, seu antecessor, o Imperador Thang Po Lop teve uma vida muito mais interessante, uma vez que morreu ainda na cidade proibida, cercado de concubinas e criados eunucos.</p>
+
+                    <p>O Imperador Po Lop era um grande colecionador de pauzinhos (daqueles que os orientais utilizam para comer). Desde seus 9 anos ele os guardava e construía com eles enormes labirintos utilizando uma estratégia bastante interessante. Inicialmente Po Lop escolhia um dos pátios retangulares da cidade proibida para construir o labirinto, e esse labirinto sempre ocupava todo o espaço do pátio escolhido. Os pauzinhos eram então colocados nesse pátio aparentemente em lugares aleatórios, sempre paralelos a um dos cantos do pátio. O imperador nunca colocava pauzinhos sobrepostos (nem mesmo parte deles), apesar de ser possível existir cruzamentos ou até mesmo pauzinhos se encostando. Consta na biografia do imperador Po Lop que ele construiu labirintos gigantescos, sempre tomandos esses cuidados.</p>
+
+                    <p>Infelizmente havia um problema. Apesar de exímio construtor de labirintos, o imperador era incapaz de saber se afinal o labirinto continha ou não um caminho ligando sua a entrada à sua saída (sempre em lados opostos do pátio). Para saber isso, ele se utilizava de seus eunucos. Ele instruía o eunuco a procurar o caminho naquele labirinto. Muitas vezes, o eunuco dizia não ser possível. O imperador Po Lop se zangava e degolava o infeliz, pois duvidava da resposta do criado. Felizmente, além de muito paciente (não com eunucos) o imperador era bastante cuidadoso, e anotava criteriosamente as informações sobre os labirintos que construía. Estas anotações foram encontradas na biblioteca da cidade proibida quando da revolução e salvas da destruição. Sua tarefa neste problema é resolver finalmente o enigma, verificando se os labirintos construídos pelo Imperador Po Lop têm ou não saída.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>Seu programa deve estar preparado para trabalhar com diversos labirintos, doravante denominados instâncias. Cada instância é iniciada com uma linha contendo 5 números, ditos  <strong>n x<sub>i</sub> y<sub>i</sub> x<sub>f</sub> y<sub>f</sub> </strong>. O valor  <strong>n </strong> indica o número de pauzinhos que foram usados para construir o labirinto. O par ( <strong>x<sub>i</sub> , y<sub>i</sub> </strong>) é o canto inferior esquerdo do pátio e também o ponto de partida. O par ( <strong>x<sub>f</sub> , y<sub>f</sub> </strong>) é o canto superior direito e também ponto de chegada do labirinto. Nas próximas  <strong>n </strong> linhas são dadas as coordenadas  <strong>x<sub>1</sub> y<sub>1</sub> x<sub>2</sub> y<sub>2</sub> </strong> representando os extremos ( <strong>x<sub>1</sub> , y<sub>1</sub> </strong>) e ( <strong>x<sub>2</sub> , y<sub>2</sub> </strong>) de um dos pauzinhos usados na construção do labirinto. O arquivo de entrada termina com  <strong>n </strong> &lt; 0. Pode-se assumir que todos os números dados são inteiros e que  <strong>n </strong> ≤ 1000.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada instância solucionada, você deverá imprimir um identificador <strong>Instancia h</strong> em que <strong>h</strong> é um número inteiro, seqüencial e crescente a partir de 1. Na linha seguinte, voce deve imprimir <strong>sim</strong> se existir uma maneira de ir do ponto de partida do labirinto até seu ponto de chegada (sem atravessar nenhum pauzinho...), e imprimir <strong>nao</strong> em caso contrário.</p>
+
+                    <p>Uma linha em branco deve separar a saída de cada instância.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>1 0 0 2 2</p>
+
+<p>0 1 1 1</p>
+
+<p>2 0 0 2 2</p>
+
+<p>1 2 1 0</p>
+
+<p>0 1 2 1</p>
+
+<p>-1</p>
+
+<p> </p>
+
+                            </td>
+                            <td>
+                                <p>Instancia 1<br />
+sim</p>
+
+<p><br />
+Instancia 2<br />
+nao</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                
+                <p class="footer">
+                    VIII Maratona de Programação IME-USP 2004.
+                </p>
+            </div>
+
+        </body>
+    </html>

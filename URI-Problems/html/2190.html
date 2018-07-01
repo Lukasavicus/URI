@@ -1,0 +1,125 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2190 - Rede Ótica</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2190 - Rede Ótica" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2190</span>
+				<h1>Rede Ótica</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2000 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Os caciques da região de Tutuaçu pretendem integrar suas tribos à chamada “aldeia global”. A primeira providência foi a distribuição de telefones celulares a todos os pajés. Agora, planejam montar uma rede de fibra ótica interligando todas as tabas. Esta empreitada requer que sejam abertas novas picadas na mata, passando por reservas de flora e fauna. Conscientes da necessidade de preservar o máximo possível o meio ambiente, os caciques encomendaram um estudo do impacto ambiental do projeto. Será que você consegue ajudá-los a projetar a rede de fibra ótica?</p>
+
+<p>Vamos denominar uma ligação de fibra ótica entre duas tabas de um ramo de rede. Para possibilitar a comunicação entre todas as tabas é necessário que todas elas estejam interligadas, direta (utilizando um ramo de rede) ou indiretamente (utilizando mais de um ramo). Os caciques conseguiram a informação do impacto ambiental que causará a construção dos ramos. Alguns ramos, no entanto, nem foram considerados no estudo ambiental, pois sua construção é impossível.</p>
+
+<p class="center"><img alt='' style="width: 600px; height: 200px;" src='https://urionlinejudge.r.worldssl.net/gallery/images/contests/UOJ_148_D2.png'/></p>
+
+<p>Sua tarefa é escrever um programa para determinar quais ramos devem ser construídos, de forma a possibilitar a comunicação entre todas as tabas, causando o menor impacto ambiental possível.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>A entrada é composta de vários conjuntos de teste. A primeira linha de um conjunto de teste contém dois números inteiros positivos <strong>N</strong> (0 ≤ <strong>N</strong> ≤ 100) e <strong>M</strong> (1 ≤ <strong>M</strong> ≤ <strong>N</strong>(<strong>N</strong>-1)/2) que indicam, respectivamente, o número de tabas e o número de ramos de redes possíveis. As tabas são numeradas de 1 a <strong>N</strong>. As <strong>M</strong> linhas seguintes contêm três inteiros positivos <strong>X</strong>, <strong>Y</strong> e <strong>Z</strong> (1 ≤ <strong>X</strong>,<strong>Y</strong>,<strong>Z</strong> ≤ 100), que indicam que o ramo de rede que liga a taba <strong>X</strong> à taba <strong>Y</strong> tem impacto ambiental <strong>Z</strong>. Com os conjuntos de teste dados sempre é possível interligar todas as tabas. O final da entrada é indicado quando <strong>N</strong> = 0.</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada conjunto de teste da entrada seu programa deve produzir uma lista dos ramos de redes que devem ser construídos. A lista deve ser precedida de uma linha que identifica o conjunto de teste, no formato "Teste <strong>n</strong>", onde <strong>n</strong> é numerado a partir de 1. A lista é composta por uma sequência de ramos a serem construídos, um ramo por linha. Um ramo é descrito por um par de tabas <strong>X</strong> e <strong>Y</strong> , com <strong>X</strong> &lt; <strong>Y</strong>. Os ramos de rede podem ser listados em qualquer ordem, mas não deve haver repeti- ção. Se houver mais de uma solução possível, imprima apenas uma delas. O final de uma lista de ramos deve ser marcado com uma linha em branco. A grafia mostrada no Exemplo de Saída, abaixo, deve ser seguida rigorosamente.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>3 3</p>
+
+<p>1 2 8</p>
+
+<p>2 3 8</p>
+
+<p>3 1 10</p>
+
+<p>5 6</p>
+
+<p>1 2 14</p>
+
+<p>1 3 11</p>
+
+<p>2 4 12</p>
+
+<p>2 5 4</p>
+
+<p>3 2 5</p>
+
+<p>3 4 5</p>
+
+<p>0 0</p>
+
+							</td>
+							<td>
+								<p>Teste 1</p>
+
+<p>1 2</p>
+
+<p>2 3</p><br/>
+
+
+<p>Teste 2</p>
+
+<p>2 5</p>
+
+<p>2 3</p>
+
+<p>3 4</p>
+
+<p>1 3</p><br/>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2000
+				</p>
+			</div>
+
+		</body>
+	</html>

@@ -1,0 +1,128 @@
+
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<title>URI 2191 - Saldo de Gols</title>
+			<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+			<meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+			<meta name="description" content="URI Online Judge - Problema 2191 - Saldo de Gols" />
+
+			<link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+			<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/contest.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+		</head>
+		<body>
+
+			<div class="header">
+				<span>URI Online Judge | 2191</span>
+				<h1>Saldo de Gols</h1>
+				<div>
+					<p>Por OBI - Olimpíada Brasileira de Informática 2000 <img src='https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif' alt='BR' /> Brazil</p>
+				</div>
+				<strong>Timelimit: 1</strong>
+			</div>
+
+			<div class="problem">
+
+				<div class="description">
+					<p>Hipólito é um torcedor fanático. Coleciona flâmulas, bandeiras, recortes de jornal, figurinhas de jogadores, camisetas e tudo o mais que se refira a seu time preferido. Quando ganhou um computador de presente em uma festa, resolveu montar um banco de dados com os resultados de todos os jogos de seu time ocorridos desde a sua fundação, em 1911. Depois de inseridos os dados, Hipólito começou a ficar curioso sobre estatísticas de desempenho do time. Por exemplo, ele deseja saber qual foi o período em que o seu time acumulou o maior saldo de gols. Como Hipólito tem o computador há muito pouco tempo, não sabe programar muito bem, e precisa de sua ajuda.</p>
+
+<p>É dada uma lista, numerada seqüencialmente a partir de 1, com os resultados de todos os jogos do time (primeira partida: 3 x 0, segunda partida: 1 x 2, terceira partida: 0 x 5 ...). Sua tarefa é escrever um programa que determine em qual período o time conseguiu acumular o maior saldo de gols. Um período é definido pelos números de seqüência de duas partidas, A e B (A ≤ B ≤ N). O saldo de gols acumulado entre A e B é dado pela soma dos gols marcados pelo time em todas as partidas realizadas entre A e B (incluindo as mesmas) menos a soma dos gols marcados pelos times adversários no período. Se houver mais de um período com o mesmo saldo de gols, escolha o maior período (ou seja, o período em que B - A é maior). Se ainda assim houver mais de uma solução possível, escolha qualquer uma delas como resposta.</p>
+				</div>
+
+				<h2>Entrada</h2>
+
+				<div class="input">
+					<p>Seu programa deve ler vários conjuntos de teste. A primeira linha de um conjunto de teste contém um inteiro não negativo, <strong>N</strong> (0 ≤ <strong>N</strong> ≤ 10000), que indica o número de partidas realizadas pelo time (o valor <strong>N</strong> = 0 indica o final da entrada). Seguem-se <strong>N</strong> linhas, cada uma contendo um par de números inteiros não negativos <strong>X</strong> e <strong>Y</strong> (0 ≤ <strong>X</strong>,<strong>Y</strong> ≤ 50) que representam o resultado da partida: <strong>X</strong> são os gols a favor e <strong>Y</strong> os gols contra o time de Hipólito. As partidas são numeradas sequencialmente a partir de 1, na ordem em que aparecem na entrada.&nbsp;</p>
+				</div>
+
+				<h2>Saída</h2>
+
+				<div class="output">
+					<p>Para cada conjunto de teste da entrada seu programa deve produzir três linhas na saída. A primeira linha deve conter um identificador do conjunto de teste, no formato “Teste&nbsp;<strong>n</strong>”, onde&nbsp;<strong>n</strong>&nbsp;é numerado a partir de 1. A segunda linha deve conter um par de inteiros&nbsp;<strong>I</strong>&nbsp;e&nbsp;<strong>J</strong>&nbsp;que indicam respectivamente a primeira e última partidas do melhor período, conforme determinado pelo seu programa, exceto quando o saldo de gols do melhor período for menor ou igual a zero; neste caso a segunda linha deve conter a expressão “nenhum”. A terceira linha deve ser deixada em branco. A grafia mostrada no Exemplo de Saída, abaixo, deve ser seguida rigorosamente.</p>
+				</div>
+
+				<div class="both"></div>
+
+				<table>
+					<thead>
+						<tr>
+							<td>Exemplo de Entrada</td>
+							<td>Exemplo de Saída</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="division">
+								<p>2</p>
+
+<p>2 3</p>
+
+<p>7 1</p>
+
+<p>9</p>
+
+<p>2 2</p>
+
+<p>0 5</p>
+
+<p>6 2</p>
+
+<p>1 4</p>
+
+<p>0 0</p>
+
+<p>5 1</p>
+
+<p>1 5</p>
+
+<p>6 2</p>
+
+<p>0 5</p>
+
+<p>3</p>
+
+<p>0 2</p>
+
+<p>0 3</p>
+
+<p>0 4</p>
+
+<p>0</p>
+
+							</td>
+							<td>
+								<p>Teste 1</p>
+
+<p>2 2</p><br/>
+
+<p>Teste 2</p>
+
+<p>3 8</p><br/>
+
+<p>Teste 3</p>
+
+<p>nenhum</p>
+
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<div class="both"></div>
+
+				<p class="footer">
+					OBI - Olimpíada Brasileira de Informática 2000
+				</p>
+			</div>
+
+		</body>
+	</html>

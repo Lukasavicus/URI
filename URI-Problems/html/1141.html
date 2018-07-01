@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>URI 1141 - Cultivando Strings</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+        <meta name="description" content="URI Online Judge - 1141 - Cultivando Strings" />
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+    </head>
+    <body>
+
+        <div class="header">
+            <span>URI Online Judge | 1141</span>
+            <h1>Cultivando Strings</h1>
+            <div><p>
+                    por Pablo Ariel Heiber <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/ar.gif" style="width: 16px; height: 11px; " /> Argentina</p>
+            </div>
+            <strong>Timelimit: 5</strong>
+        </div>
+
+        <div class="problem">
+
+            <div class="description">
+                <p>
+                    Gene e Gina possuem um tipo peculiar de fazenda. Ao invés de criar animais e plantar vegetais como acontece em fazendas normais, eles cultivam strings. Uma string é uma sequência de caracteres. As strings, ao crescerem, adicionam caracteres à esquerda e/ou à direita delas mesmas, mas nunca perdem caracteres nem inserem caracteres no meio.<br />
+                    <br />
+                    Gene e Gina possuem uma coleção de fotos de algumas strings durante diferentes etapas de seus crescimentos. O problema é que a coleção não é rotulada, portanto eles esqueceram a qual string pertence cada uma das fotos. Eles querem montar um painel para ilustrar os procedimentos do cultivo de strings, mas eles necessitam sua ajuda para encontrar uma sequência de fotos apropriada.<br />
+                    <br />
+                    Cada foto ilustra uma string. A sequência de fotos precisa ter a seguinte propriedade: se <em>s<sub>i</sub></em> aparece imediatamente antes de <em>s<sub>i</sub></em>+1 na sequência, então <em>s<sub>i</sub></em>+1 é uma string que pode ter crescido a partir de <em>s<sub>i</sub></em> (ou seja, <em>s<sub>i</sub></em> é uma substring contígua de <em>s<sub>i</sub></em>+1). Além disso, eles não querem usar fotos repetidas, portanto todas as strings na sequência devem ser diferentes.<br />
+                    <br />
+                    Dado um conjunto de strings representando todas as fotos disponíveis, sua tarefa é calcular o tamanho da maior sequência que pode ser produzida com as restrições acima.</p>
+
+            </div>
+
+            <h2>Entrada</h2>
+
+            <div class="input">
+                <div>
+                    Cada caso de teste se estende por várias linhas. A primeira linha contém um inteiro <strong>N</strong> representando o número de strings no conjunto (1 ≤ <strong>N </strong> ≤ 10<sup>4</sup>). Cada uma das próximas <strong>N</strong> linhas contém uma string não-vazia e única com no máximo 1000 caracteres minúsculos do alfabeto inglês. Em cada caso de teste, a soma dos tamanhos das strings é no máximo 10<sup>6</sup>.<br />
+                    <br />
+                    O último caso de teste é seguido de uma linha contendo um zero.</div>
+
+            </div>
+
+            <h2>Saída</h2>
+
+            <div class="output">
+                <p>
+                    Para cada caso de teste, imprima uma única linha com um único inteiro representando o tamanho da maior sequência de fotos que pode ser produzida.</p>
+
+            </div>
+
+            <div class="both"></div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <td>Exemplo de Entrada</td>
+                        <td>Exemplo de Saída</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="division">
+                            <p>
+                                6<br />
+                                plant<br />
+                                ant<br />
+                                cant<br />
+                                decant<br />
+                                deca<br />
+                                an<br />
+                                2<br />
+                                supercalifragilisticexpialidocious<br />
+                                rag<br />
+                                0</p>
+
+                        </td>
+                        <td>
+                            <p>
+                                4<br />
+                                2</p>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p class="footer">
+                    ACM/ICPC South America Contest 2010.</p>
+        </div>
+
+    </body>
+</html>

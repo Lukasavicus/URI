@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>URI 1230 - Integral</title>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <meta name="author" content="URI Online Judge; www.urionlinejudge.edu.br" />
+            <meta name="description" content="URI Online Judge - Problem 1230 - Integral" />
+
+            <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,700" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" type="text/css" href="https://urionlinejudge.r.worldssl.net/repository/default.css" />
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-28047757-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-28047757-1');
+	</script>
+        </head>
+        <body>
+
+            <div class="header">
+                <span>URI Online Judge | 1230</span>
+                <h1>Integral</h1>
+                <div><p>
+	Maratona de Programação da SBC <img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/flags/br.gif" style="width: 16px; height: 11px; " /> Brasil</p>
+</div>
+                <strong>Timelimit: 1</strong>
+            </div>
+
+            <div class="problem">
+
+                <div class="description">
+                    <p>Dado um inteiro positivo <em>n</em>, denotaremos por [<em>n</em>] o intervalo real {<em>x</em> : 0 ≤ <em>x</em> ≤ <em>n</em>}. Uma função <em>f</em> : [<em>n</em>] ⇒ R é parcialmente especificada, sendo fornecidos valores de <em>f</em> apenas em pontos de um subconjunto <em>S</em> de [<em>n</em>].</p>
+                	<p>O conjunto <em>S</em> satisfaz as seguintes propriedades:</p>
+                	<p>1. Os pontos em <em>S</em> são todos inteiros.</p>
+                	<p>2. Os extremos 0 e <em>n</em> de [<em>n</em>] estão ambos em <em>S</em>.</p>
+                	<p>A função <em>f</em> satisfaz as seguintes propriedades:</p>
+                	<p>1. Os valores de<em>f</em> nos pontos inteiros de [<em>n</em>] são inteiros.</p>
+                	<p>2. Para cada ponto inteiro <em>x</em> em [<em>n</em>] \ <em>S</em> (ou seja, nos pontos inteiros de [<em>n</em>] que não estão em S), a função f</em> é monótona no intervalo [<em>x</em> − 1, <em>x</em> + 1]. Em outras palavras, pelo menos uma das desigualdades f</em>(<em>x</em> − 1) ≤ f</em>(<em>x</em>) ≤ f</em>(<em>x</em> + 1) ou f</em>(<em>x</em> − 1) ≥ f</em>(<em>x</em>) ≥ f</em>(<em>x</em> + 1) é satisfeita.</p>
+                	<p>3. Para cada ponto não inteiro <em>x</em> em [<em>n</em>], o valor de <em>f</em>(x) é dado pela interpolação linear de <em >f</em>(⌊<em>x</em>⌋) e <em >f</em>(⌈<em>x</em>⌉), isto é, <em> f</em>(<em>x</em>) = (<em>x</em> − ⌊<em>x</em>⌋)<em>f</em>(⌊<em>x</em>⌋) + (⌈<em>x</em>⌉<sub> </sub> − <em>x</em>)<em>f</em>(⌈<em>x</em>⌉).</p>
+                    <p>Temos ainda a liberdade de especificar os valores de <em> f</em> nos pontos inteiros de [<em>n</em>] \ <em>S</em> (note no entanto que <em>S</em> pode conter todos os pontos inteiros de [<em>n</em>]). Gostaríamos de utilizar essa flexibilidade para fazer com que<sub><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1230.png" style="width: 22px; height: 24px; " /></sub> <em>f(x)dx = y</em>, isto é, a área sob <em>f</em>(<em>x</em>) entre os extremos 0 e n seja igual a <em>y</em>, um valor dado.</p>
+                    <p>Seu problema então é decidir se isso é possível ou não.</p>
+
+                </div>
+
+                <h2>Entrada</h2>
+
+                <div class="input">
+                    <p>A primeira linha de um caso de teste contém três inteiros, <strong>N</strong> (1 ≤ <strong>N</strong> ≤ 10<sup>6</sup>), <strong>M</strong> e <strong>Y</strong> (0 ≤ <strong>Y</strong> ≤ 10<sup>9</sup>), respectivamente a amplitude do intervalo, o tamanho do conjunto <em>S</em> e o valor de <strong>y</strong>. Cada uma das <strong>M</strong> linhas seguintes descreve a função <em>f </em>em um ponto de <em>S</em>, contendo dois inteiros <strong>X</strong> (0 ≤ <strong>X</strong> ≤ <strong>N</strong>, ∀<strong>X</strong> ∈ <strong>S</strong>) e <strong>F</strong> (0 ≤ <strong>F</strong> ≤ 10<sup>6</sup>), representando <em >f</em><em>(X)</em> = <strong>F</strong>. Os valores de <strong>X</strong> não estão necessariamente em ordem crescente.</p>
+	               <p>Obs.: <sub><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1230.png" style="width: 22px; height: 24px; " /></sub> <em>f(x)dx </em>≤ 10<sup>9 </sup>para qualquer atribuição de valores a <em>f</em>(<em>x</em>) para <em>x</em> ∈ [<em>n</em>] \ <strong>S</strong> satisfazendo as \restrições do enunciado.</p>
+
+                </div>
+
+                <h2>Saída</h2>
+
+                <div class="output">
+                    <p>Para cada caso de teste, determine se existe atribuição de valores a <em >f</em><em>(x)</em> para os pontos inteiros <em>x </em>∈ [<em>n</em>] \ <em>S</em> tal que<sub><img alt="" src="https://urionlinejudge.r.worldssl.net/gallery/images/problems/UOJ_1230.png" style="width: 22px; height: 24px; " /></sub> <em>f(x)dx = y</em>, isto é, a área sob <em>f</em><em>(x)</em> entre os extremos 0 e <em>n</em> seja igual a <em>y</em>. Em caso negativo, seu programa deve imprimir uma linha contendo apenas o caractere ‘N’. Em caso afirmativo, seu programa deve imprimir uma linha contendo o caractere ‘S’, seguido dos valores de <em>f</em><em>(x)</em> para os pontos inteiros <em>x</em> ∈ [<em>n</em>] \ <em>S</em>, e, em ordem crescente de valores de <em>x</em>. O caractere inicial e os valores seguintes, se houver, devem ser separados por um espaço em branco. Caso mais de uma solução seja possível, imprima aquela que for lexicograficamente menor.</p>
+
+                </div>
+
+                <div class="both"></div>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Exemplo de Entrada</td>
+                            <td>Exemplo de Saída</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="division">
+                                <p>
+	5 6 10<br />
+	0 2<br />
+	1 2<br />
+	5 2<br />
+	2 2<br />
+	3 2<br />
+	4 2<br />
+	5 2 10<br />
+	0 0<br />
+	5 10<br />
+	2 2 5<br />
+	0 1<br />
+	2 2<br />
+	10 3 18<br />
+	0 2<br />
+	6 4<br />
+	10 0<br />
+	2 2 1<br />
+	0 0<br />
+	2 1</p>
+
+                            </td>
+                            <td>
+                                <p>
+	S<br />
+	S 0 0 0 5<br />
+	N<br />
+	S 2 2 2 2 2 1 1 1<br />
+	N</p>
+
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                    <p class="footer">
+                Maratona de Programação da SBC 2012</p>
+            </div>
+
+        </body>
+    </html>
