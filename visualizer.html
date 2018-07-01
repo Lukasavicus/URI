@@ -11,9 +11,10 @@
 		<button id="search_prob" onclick="update_search()"> Search </button>
 		<button id="next" onclick="update_next()"> Next problem </button>
 		<button id="previous" onclick="update_previous()"> Previous problem </button>
+		<button id="_toggle" onclick="toggle_code_viz()">Show me dat Code!</button>
 	</div>
 
-	<div align="center" width="90%">
+	<div align="center" width="90%" height="500 px">
 
 		<div  style="float: left">
 			<object id='myPdfObject' type='application/pdf' width="800 px" height="500 px">
@@ -21,9 +22,7 @@
 			</object>
 		</div>
 
-		<button id="_toggle" onclick="toggle_code_viz()">Show me dat Code!</button>
-
-		<div width="70%" height="500 px" id="_div_code" style="display:none">
+		<div height="500 px" id="_div_code" style="display:none">
 			<pre>
 				<code id="_code" class="language-clike"></code>
 			</pre>
@@ -45,6 +44,9 @@
 			document.getElementById("_div_code").style.display = "none";
 			document.getElementById("_toggle").innerHTML = "Show me dat Code!";
 			toggle = false;
+
+			var precode = document.getElementById('_code');
+			Prism.highlightElement(precode);
 		}
 
 		function update_search(){
