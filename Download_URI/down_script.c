@@ -8,6 +8,13 @@
 #include  <sys/types.h>
 #include <sys/wait.h>
 
+struct _Parameter{
+	int min;
+	int max;
+	char lang;
+
+}Parameter;
+
 void int2str(char *s, const int n){
 
 	int r = n;
@@ -21,20 +28,78 @@ void int2str(char *s, const int n){
 
 }
 
-long long int str2int(const char *s){
+int str2int(const char *s){
 	int size = strlen(s);
 	int i;
-	long long int ans = 0;
+	int ans = 0;
 	for(i = 0; i < size; i++){
 		ans += pow(s[i], size-i);
 	}
 	return ans;
 }
 
-int main(const int argc, const char **argv ){
 
-	//if(argc != 3)
-	//	printf("Error, parameters min_id and max_id not founded\nPlease use the program as follow:\n\turi_down 1001 1020");
+int check_helper(const int argc, const char **argv){
+	int i;
+	for(i = 1; i < argc; i++){
+		if(strcmp(argv[i], "-h")){
+			printf("URI Down Problems\n\n");
+			printf("\t-m : min integer that defines the minumum value id to download\n\n");
+			printf("\t-M : max integer that defines the maximum value id to download\n\n");
+			printf("\t-l : lang char that defines the language of the problems to be download\n\n");
+		}
+	}
+}
+
+Parameter grab_parameters(const int argc, const char **argv){
+	int min = 1001, max = 2795;
+	char lang = 'p';
+	int i;
+
+	Parameter p;
+
+	for(i = 1; i < argc; i++){
+		if(strcmp(argv[i], "-m")){
+			if((i+1) < argc){
+				min = str2int(argv[i+1]);
+			}
+			else{
+				printf("Error -m flag founded, but the value was not founded\n");
+				break;
+			}
+		}
+		if(strcmp(argv[i], "-M")){
+			if((i+1) < argc){
+				max = str2int(argv[i+1]);
+			}
+			else{
+				printf("Error -M flag founded, but the value was not founded\n");
+				break;
+			}
+		}
+		if(strcmp(argv[i], "-l")){
+			if((i+1) < argc){
+				lang = (argv[i+1]);
+			}
+			else{
+				printf("Error -l flag founded, but the value was not founded\n");
+				break;
+			}
+		}
+	}
+
+	p.min = min;
+	p.max = max;
+	p.lang = lang;
+
+	return p;
+
+}
+
+int main(const int argc, const char **argv){
+
+	Parameter p;
+	p = grab_parameters(argc, argv);
 	
 	int i;
 	int min = 1363;

@@ -1,0 +1,4 @@
+1120 - Ler string, substituir valor na string por vazio, retirar 0s à esquerda;
+1271 - regex.find(r'[a-z]\·');
+1249 - Deslocar letras (mod13(+)) (maiúsculos/minúsculos) e incluir símbolos diversos (!@#$%^&*()-_=+[]{}|;':,./<>);
+1255 - Ler string determinar 
